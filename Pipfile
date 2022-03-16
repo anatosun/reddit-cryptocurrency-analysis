@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 networkx = "*"
 tweepy = "*"
+twint = {ref = "origin/master", git = "https://github.com/twintproject/twint.git"}
+neo4j = "*"
 
 [dev-packages]
 
