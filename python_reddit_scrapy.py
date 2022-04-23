@@ -16,13 +16,13 @@ def main():
     reddit = praw.Reddit(user_agent=user_agent,
                          client_id=client_id,
                          client_secret=client_secret)
-    subreddits = ["Cryptocurrency", "Bitcoin", "Ethereum", "Askreddit"]
-    queries = ["Bitcoin", "Ethereum", "Cryptocurrency", "btc",
-               "CryptoMarkets", "bitcoinbeginners", "CryptoCurrencies",
-               "altcoin", "icocrypto", "CryptoCurrencyTrading",
-               "Crypto_General", "ico", "Ripple", "litecoin", "Monero",
-               "Stellar", "binance", "Coinbase", "ledgerwallet",
-               "defi"]
+    subreddits = ["Cryptocurrency", "Bitcoin", "Ethereum", "Askreddit", "btc",
+                  "CryptoMarkets", "bitcoinbeginners", "CryptoCurrencies",
+                  "altcoin", "icocrypto", "CryptoCurrencyTrading",
+                  "Crypto_General", "ico", "Ripple", "litecoin", "Monero",
+                  "Stellar", "binance", "Coinbase", "ledgerwallet",
+                  "defi"]
+    queries = ["Bitcoin", "Ethereum", "Cryptocurrency", "coin"]
     min_score = 5
     s: str
     for s in subreddits:
