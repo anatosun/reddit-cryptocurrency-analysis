@@ -24,10 +24,15 @@ def main():
                   "defi"]
     queries = ["Bitcoin", "Ethereum", "Cryptocurrency", "coin"]
     min_score = 5
-    s: str
+    data_path = os.path.join("data")
+
+    if not os.path.exists(data_path):
+        os.mkdir(data_path)
+
     for s in subreddits:
         subreddit: SubredditHelper = reddit.subreddit(s)
         file = f"{subreddit.display_name}.json"
+        file = os.path.join(data_path, file)
         schema = {
             "subreddit": subreddit.display_name,
             "queries": queries,
