@@ -3,17 +3,15 @@
 #######
 
 import praw
+import os
 import pandas as pd
-
-
 # Acessing the reddit api
-
-
-reddit = praw.Reddit(client_id="",  # my client id
-                     client_secret="",  # your client secret
-                     user_agent="",  # user agent name
-                     username="",     # your reddit username
-                     password="")     # your reddit password
+user_agent = os.getenv('REDDIT_USER_AGENT')
+client_id = os.getenv('REDDIT_CLIENT_ID')
+client_secret = os.getenv('REDDIT_CLIENT_SECRET')
+reddit = praw.Reddit(user_agent=user_agent,
+                     client_id=client_id,
+                     client_secret=client_secret)
 
 # make a list of subreddits you want to scrape the data from
 sub = ['CryptoCurrency']
