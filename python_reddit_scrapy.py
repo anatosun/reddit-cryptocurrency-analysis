@@ -17,7 +17,12 @@ def main():
                          client_id=client_id,
                          client_secret=client_secret)
     subreddits = ["Cryptocurrency", "Bitcoin", "Ethereum", "Askreddit"]
-    queries = ["Bitcoin", "Ethereum", "Cryptocurrency"]
+    queries = ["Bitcoin", "Ethereum", "Cryptocurrency", "btc",
+               "CryptoMarkets", "bitcoinbeginners", "CryptoCurrencies",
+               "altcoin", "icocrypto", "CryptoCurrencyTrading",
+               "Crypto_General", "ico", "Ripple", "litecoin", "Monero",
+               "Stellar", "binance", "Coinbase", "ledgerwallet",
+               "defi"]
     min_score = 5
     s: str
     for s in subreddits:
@@ -41,8 +46,6 @@ def main():
         with open(file, 'w') as f:
             print(file)
             json.dump(schema, f, indent=4)
-            # for post in reddit.subreddit(subreddit).new(limit=1000):
-            #     dump_replies(replies=post.comments, context=[post.title])
 
 
 def submission_schema(submission: Submission, min_score=0):
