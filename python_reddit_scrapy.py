@@ -5,11 +5,14 @@
 import praw
 from praw.models import SubredditHelper, Submission, Comment, MoreComments, ListingGenerator, Redditor
 from praw.models.comment_forest import CommentForest
+from concurrent.futures import ProcessPoolExecutor
+from multiprocessing import cpu_count
 import json
 import os
 
 
 def main():
+    pool = ProcessPoolExecutor(max_workers=cpu_count())
     user_agent = os.getenv('REDDIT_USER_AGENT')
     client_id = os.getenv('REDDIT_CLIENT_ID')
     client_secret = os.getenv('REDDIT_CLIENT_SECRET')
@@ -30,27 +33,29 @@ def main():
         os.mkdir(data_path)
 
     for s in subreddits:
-        subreddit: SubredditHelper = reddit.subreddit(s)
-        file = f"{subreddit.display_name}.json"
-        file = os.path.join(data_path, file)
-        schema = {
-            "subreddit": subreddit.display_name,
-            "queries": queries,
-            "type": subreddit.subreddit_type,
-            "posts": []
-        }
-        for q in queries:
+        pool.submit(save_subreddit, reddit.subreddit(
+            s), os.path.join(data_path, f"{s}.json"), queries, min_score)
 
-            listing: ListingGenerator = subreddit.search(
-                q, sort="hot", limit=100)
-            for submission in listing:
-                if submission.score >= min_score:
-                    ss = submission_schema(
-                        submission=submission, min_score=min_score)
-                    schema['posts'].append(ss)
-        with open(file, 'w') as f:
-            print(file)
-            json.dump(schema, f, indent=4)
+
+def save_subreddit(subreddit: SubredditHelper,  file: str, queries: list, min_score=0):
+    schema = {
+        "subreddit": subreddit.display_name,
+        "queries": queries,
+        "type": subreddit.subreddit_type,
+        "posts": []
+    }
+    for q in queries:
+
+        listing: ListingGenerator = subreddit.search(
+            q, sort="hot", limit=100)
+        for submission in listing:
+            if submission.score >= min_score:
+                ss = submission_schema(
+                    submission=submission, min_score=min_score)
+                schema['posts'].append(ss)
+    with open(file, 'w') as f:
+        print(file)
+        json.dump(schema, f, indent=4)
 
 
 def submission_schema(submission: Submission, min_score=0):
