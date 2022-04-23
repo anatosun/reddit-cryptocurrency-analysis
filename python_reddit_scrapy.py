@@ -31,13 +31,12 @@ def main():
         for q in queries:
 
             listing: ListingGenerator = subreddit.search(
-                q, sort="hot", limit=1)
+                q, sort="hot", limit=100)
             for submission in listing:
                 ss = submission_schema(submission=submission)
                 schema['posts'].append(ss)
-                with open(file, 'w') as f:
-                    print(file)
-                    json.dump(schema, f, indent=4)
+        with open(file, 'w') as f:
+            json.dump(schema, f, indent=4)
             # for post in reddit.subreddit(subreddit).new(limit=1000):
             #     dump_replies(replies=post.comments, context=[post.title])
 
