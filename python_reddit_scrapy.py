@@ -3,70 +3,95 @@
 #######
 
 import praw
+from praw.models import SubredditHelper, Submission, Comment, MoreComments, ListingGenerator, Redditor
+from praw.models.comment_forest import CommentForest
+import json
 import os
-import pandas as pd
-# Acessing the reddit api
-user_agent = os.getenv('REDDIT_USER_AGENT')
-client_id = os.getenv('REDDIT_CLIENT_ID')
-client_secret = os.getenv('REDDIT_CLIENT_SECRET')
-reddit = praw.Reddit(user_agent=user_agent,
-                     client_id=client_id,
-                     client_secret=client_secret)
-
-# make a list of subreddits you want to scrape the data from
-sub = ['CryptoCurrency']
-
-for s in sub:
-    subreddit = reddit.subreddit(s)   # Chosing the subreddit
 
 
-########################################
-#   CREATING DICTIONARY TO STORE THE DATA WHICH WILL BE CONVERTED TO A DATAFRAME
-########################################
-
-#   NOTE: ALL THE POST DATA AND COMMENT DATA WILL BE SAVED IN TWO DIFFERENT
-#   DATASETS AND LATER CAN BE MAPPED USING IDS OF POSTS/COMMENTS AS WE WILL
-#   BE CAPTURING ALL IDS THAT COME IN OUR WAY
-
-# SCRAPING CAN BE DONE VIA VARIOUS STRATEGIES {HOT,TOP,etc} we will go with keyword strategy i.e using search a keyword
-    query = ['bitcoin']
-    sort = "top"
-    limit = 5
-    for item in query:
-        post_dict = {
-            "title": [],
-            "score": [],
-            "id": [],
-            "url": [],
-            "comms_num": [],
-            "created": [],
-            "body": []
+def main():
+    user_agent = os.getenv('REDDIT_USER_AGENT')
+    client_id = os.getenv('REDDIT_CLIENT_ID')
+    client_secret = os.getenv('REDDIT_CLIENT_SECRET')
+    reddit = praw.Reddit(user_agent=user_agent,
+                         client_id=client_id,
+                         client_secret=client_secret)
+    subreddits = ["Cryptocurrency", "Bitcoin", "Ethereum", "Askreddit"]
+    queries = ["Bitcoin", "Ethereum", "Cryptocurrency"]
+    s: str
+    for s in subreddits:
+        subreddit: SubredditHelper = reddit.subreddit(s)
+        file = f"{subreddit.display_name}.json"
+        schema = {
+            "subreddit": subreddit.display_name,
+            "queries": queries,
+            "type": subreddit.subreddit_type,
+            "posts": []
         }
-        comments_dict = {
-            "comment_id": [],
-            "comment_parent_id": [],
-            "comment_body": [],
-            "comment_link_id": []
+        for q in queries:
+
+            listing: ListingGenerator = subreddit.search(
+                q, sort="hot", limit=1)
+            for submission in listing:
+                ss = submission_schema(submission=submission)
+                schema['posts'].append(ss)
+                with open(file, 'w') as f:
+                    print(file)
+                    json.dump(schema, f, indent=4)
+            # for post in reddit.subreddit(subreddit).new(limit=1000):
+            #     dump_replies(replies=post.comments, context=[post.title])
+
+
+def submission_schema(submission: Submission):
+    subreddit: str = submission.subreddit.display_name
+    schema = {}
+    schema['title'] = submission.title
+    schema['url'] = submission.url
+    schema['author'] = submission.author.name
+    schema['created_utc'] = submission.created_utc
+    schema['id'] = submission.id
+    schema['score'] = submission.score
+    schema['num_comments'] = submission.num_comments
+    schema['subreddit'] = subreddit
+
+    schema['comments'] = fetch_comments_schema(
+        comments=submission.comments, context=[submission.title])
+
+    return schema
+
+
+def fetch_comments_schema(comments: CommentForest, context):
+    fetched = []
+    comment: Comment
+    for comment in comments:
+        if isinstance(comment, praw.models.MoreComments):
+            continue
+
+        data = {
+            "author": fetch_author_schema(author=comment.author),
+            "score": comment.score,
+            "response": comment.body,
+            "comments": []
         }
-        for submission in subreddit.search(query, sort=sort, limit=limit):
-            post_dict["title"].append(submission.title)
-            post_dict["score"].append(submission.score)
-            post_dict["id"].append(submission.id)
-            post_dict["url"].append(submission.url)
-            post_dict["comms_num"].append(submission.num_comments)
-            post_dict["created"].append(submission.created)
-            post_dict["body"].append(submission.selftext)
 
-            # Acessing comments on the post
-            submission.comments.replace_more(limit=1)
-            for comment in submission.comments.list():
-                comments_dict["comment_id"].append(comment.id)
-                comments_dict["comment_parent_id"].append(comment.parent_id)
-                comments_dict["comment_body"].append(comment.body)
-                comments_dict["comment_link_id"].append(comment.link_id)
+        context.append(comment.body)
+        data["comments"] = fetch_comments_schema(comment.replies, context)
+        context.pop()
+        fetched.append(data)
+    return fetched
 
-        post_comments = pd.DataFrame(comments_dict)
 
-        post_comments.to_csv(s+"_comments_" + item + "subreddit.csv")
-        post_data = pd.DataFrame(post_dict)
-        post_data.to_csv(s+"_" + item + "subreddit.csv")
+def fetch_author_schema(author: Redditor):
+    return {
+        "author": author.name,
+        "created_utc": author.created_utc,
+        "id": author.id,
+        "link_karma": author.link_karma,
+        "comment_karma": author.comment_karma,
+        "is_employee": author.is_employee,
+        "has_verified_email": author.has_verified_email
+    }
+
+
+if __name__ == "__main__":
+    main()
