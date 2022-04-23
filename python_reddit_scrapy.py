@@ -18,6 +18,7 @@ def main():
                          client_secret=client_secret)
     subreddits = ["Cryptocurrency", "Bitcoin", "Ethereum", "Askreddit"]
     queries = ["Bitcoin", "Ethereum", "Cryptocurrency"]
+    min_score = 5
     s: str
     for s in subreddits:
         subreddit: SubredditHelper = reddit.subreddit(s)
@@ -33,15 +34,18 @@ def main():
             listing: ListingGenerator = subreddit.search(
                 q, sort="hot", limit=100)
             for submission in listing:
-                ss = submission_schema(submission=submission)
-                schema['posts'].append(ss)
+                if submission.score >= min_score:
+                    ss = submission_schema(
+                        submission=submission, min_score=min_score)
+                    schema['posts'].append(ss)
         with open(file, 'w') as f:
+            print(file)
             json.dump(schema, f, indent=4)
             # for post in reddit.subreddit(subreddit).new(limit=1000):
             #     dump_replies(replies=post.comments, context=[post.title])
 
 
-def submission_schema(submission: Submission):
+def submission_schema(submission: Submission, min_score=0):
     subreddit: str = submission.subreddit.display_name
     schema = {}
     schema['title'] = submission.title
@@ -54,29 +58,36 @@ def submission_schema(submission: Submission):
     schema['subreddit'] = subreddit
 
     schema['comments'] = fetch_comments_schema(
-        comments=submission.comments, context=[submission.title])
+        comments=submission.comments,
+        context=[submission.title],
+        min_score=min_score)
 
     return schema
 
 
-def fetch_comments_schema(comments: CommentForest, context):
+def fetch_comments_schema(comments: CommentForest, context, depth=0, min_score=0):
     fetched = []
     comment: Comment
     for comment in comments:
-        if isinstance(comment, praw.models.MoreComments):
+        if isinstance(comment, MoreComments):
             continue
+        if comment.score >= min_score:
+            if comment.author is not None:
+                data = {
+                    "author": comment.author.name,
+                    "score": comment.score,
+                    "response": comment.body,
+                    "comments": []
+                }
 
-        data = {
-            "author": fetch_author_schema(author=comment.author),
-            "score": comment.score,
-            "response": comment.body,
-            "comments": []
-        }
-
-        context.append(comment.body)
-        data["comments"] = fetch_comments_schema(comment.replies, context)
-        context.pop()
-        fetched.append(data)
+                context.append(comment.body)
+                data["comments"] = fetch_comments_schema(
+                    comments=comment.replies,
+                    context=context,
+                    depth=depth+1,
+                    min_score=min_score)
+                context.pop()
+                fetched.append(data)
     return fetched
 
 
