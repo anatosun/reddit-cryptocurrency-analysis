@@ -1,5 +1,8 @@
 from neo4j import GraphDatabase
 
+import json
+import os
+
 
 class Neo4jConnection:
 
@@ -11,7 +14,10 @@ class Neo4jConnection:
 
     def close(self):
         if self.driver is not None:
-            self.driver.close()
+            try:
+                self.driver.close()
+            except Exception as e:
+                print("Failed to close driver:", e)
 
     def query(self, query, parameters=None, db=None):
         assert self.driver is not None, "Driver not initialized!"
@@ -28,30 +34,63 @@ class Neo4jConnection:
                 session.close()
         return response
 
-    def insert_tweet(self, tweet):
-        assert tweet['id'] is not None, "id cannot be None"
-        assert tweet['datetime'] is not None, "datetime cannot be None"
-        assert tweet['user_id'] is not None, "user_id cannot be None"
-        assert tweet['username'] is not None, "username cannot be None"
-        assert tweet['mentions'] is not None, "mentions cannot be None"
-        assert tweet['tweet'] is not None, "tweet cannot be None"
-        assert tweet['hashtags'] is not None, "hashtags cannot be None"
-        user_id = tweet['user_id']
-        username = tweet['username']
-        tweet_id = tweet['id']
-        tweet_content = str(tweet['tweet']).replace(
-            '"', '\\"').replace("'", "\\'")
-        time = tweet['datetime']
-        hashtags = tweet['hashtags']
-        qp = f'(p:Person {{id: {user_id}, username: "{username}"}})'
-        self.query(f'MERGE {qp}')
-        qt = f'(t:Tweet {{id: {tweet_id}, content: "{tweet_content}", datetime: "{time}"}})'
-        self.query(f'MERGE {qt}')
-        q = f'MATCH {qp}, {qt} MERGE (p)-[rel:POSTED]->(t)'
-        self.query(q)
-        for i in range(0, len(hashtags)):
-            hashtag = str(hashtags[i]).lower()
-            qh = f'(h:Hashtag {{id: "{hashtag}"}})'
-            self.query(f'MERGE {qh}')
-            q = f'MATCH {qt}, {qh} MERGE (t)-[:HAS]->(h)'
-            self.query(q)
+    def insert_post(self, post: dict):
+        assert post['title'] is not None, "title cannot be None"
+        assert post['url'] is not None, "url cannot be None"
+        assert post['author'] is not None, "author cannot be None"
+        assert post['created_utc'] is not None, "created_utc cannot be None"
+        assert post['id'] is not None, "id cannot be None"
+        assert post['score'] is not None, "score cannot be None"
+        assert post['num_comments'] is not None, "num_comments cannot be None"
+        assert post['subreddit'] is not None, "subreddit cannot be None"
+        self.insert_comments(post['comments'], [(post['author'], 1)])
+
+    def insert_comments(self, comments: list, context: list):
+        for comment in comments:
+            assert comment['author'] is not None, "author cannot be None"
+            assert comment['score'] is not None, "score cannot be None"
+            assert comment['created_utc'] is not None, "created_utc cannot be None"
+            assert comment['response'] is not None, "response cannot be None"
+            assert comment['depth'] is not None, "depth cannot be None"
+            query_author = f"MERGE (n:User {{username: '{comment['author']}'}})"
+            self.query(query_author)
+            for a, d in context:
+                if a != comment['author']:
+                    query_context_author = f"MERGE (n:User {{username: '{a}'}})"
+                    self.query(query_context_author)
+                    query_relation = f"""MATCH
+                    (a:User {{username: '{comment['author']}'}}),
+                    (b:User {{username: '{a}'}})
+                    MERGE (a)-[r:COMMENTED {{weight: {comment['score']/d}}}]->(b)
+                    ON CREATE 
+                        SET r.weight = {comment['score']/d}
+                    ON MATCH 
+                        SET r.weight = r.weight + {comment['score']/d}
+                    """
+                    self.query(query_relation)
+
+            if len(comment['comments']) > 0:
+                self.insert_comments(
+                    comment['comments'], context + [(comment['author'], comment['score'])])
+
+    def insert_json_dump(self, file: str):
+
+        with open(file, 'r') as f:
+            subreddit = json.load(f)
+            assert subreddit['subreddit'] is not None, "subreddit name cannot be None"
+            assert subreddit['queries'] is not None, "subreddit name cannot be None"
+            assert subreddit['type'] is not None, "subreddit name cannot be None"
+            assert subreddit['posts'] is not None, "subreddit name cannot be None"
+            for post in subreddit['posts']:
+                self.insert_post(post)
+
+
+if __name__ == "__main__":
+    uri = "bolt://localhost:7687"
+    user = "neo4j"
+    password = "neo"
+    db = "reddit"
+    nc = Neo4jConnection(uri, user, password)
+    for file in os.listdir(os.path.join('data')):
+        if file.endswith(".json"):
+            nc.insert_json_dump(os.path.join('data', file))
