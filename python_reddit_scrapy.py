@@ -25,8 +25,9 @@ def main():
                   "Crypto_General", "ico", "Ripple", "litecoin", "Monero",
                   "Stellar", "binance", "Coinbase", "ledgerwallet",
                   "defi"]
-    queries = ["Bitcoin", "Ethereum", "Cryptocurrency", "coin"]
-    min_score = 5
+    queries = ["Bitcoin", "Ethereum",
+               "Cryptocurrency", "Crypto", "Crypto Wallet", "nft"]
+    min_score = 2
     data_path = os.path.join("data")
 
     if not os.path.exists(data_path):
@@ -90,6 +91,7 @@ def fetch_comments_schema(comments: CommentForest, context, depth=0, min_score=0
                     "author": comment.author.name,
                     "score": comment.score,
                     "response": comment.body,
+                    "depth": depth,
                     "comments": []
                 }
 
