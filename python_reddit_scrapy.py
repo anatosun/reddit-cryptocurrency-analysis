@@ -74,12 +74,13 @@ def submission_schema(submission: Submission, min_score=0):
     schema['comments'] = fetch_comments_schema(
         comments=submission.comments,
         context=[submission.title],
+        depth=1,
         min_score=min_score)
 
     return schema
 
 
-def fetch_comments_schema(comments: CommentForest, context, depth=0, min_score=0):
+def fetch_comments_schema(comments: CommentForest, context, depth=1, min_score=0):
     fetched = []
     comment: Comment
     for comment in comments:
@@ -90,6 +91,7 @@ def fetch_comments_schema(comments: CommentForest, context, depth=0, min_score=0
                 data = {
                     "author": comment.author.name,
                     "score": comment.score,
+                    "created_utc": comment.created_utc,
                     "response": comment.body,
                     "depth": depth,
                     "comments": []
