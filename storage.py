@@ -52,12 +52,15 @@ class Neo4jConnection:
             assert comment['created_utc'] is not None, "created_utc cannot be None"
             assert comment['response'] is not None, "response cannot be None"
             assert comment['depth'] is not None, "depth cannot be None"
+            # author query ###### username: author
             query_author = f"MERGE (n:User {{username: '{comment['author']}'}})"
             self.query(query_author)
             for a, d in context:
                 if a != comment['author']:
+                    # context query ###### username: author
                     query_context_author = f"MERGE (n:User {{username: '{a}'}})"
                     self.query(query_context_author)
+                    # relation query ###### weight: score/depth
                     query_relation = f"""MATCH
                     (a:User {{username: '{comment['author']}'}}),
                     (b:User {{username: '{a}'}})
