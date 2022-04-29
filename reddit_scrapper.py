@@ -51,7 +51,8 @@ def save_subreddit(subreddit: SubredditHelper, posts: set, file: str, queries: l
     schema = {
         "subreddit": subreddit.display_name,
         "queries": queries,
-        "type": subreddit.subreddit_type,
+        "limit": limit,
+        "sorting options": sorting_options,
         "posts": []
     }
     for q in queries:
