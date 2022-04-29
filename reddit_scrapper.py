@@ -5,14 +5,14 @@
 import praw
 from praw.models import SubredditHelper, Submission, Comment, MoreComments, ListingGenerator, Redditor
 from praw.models.comment_forest import CommentForest
-from concurrent.futures import ProcessPoolExecutor
-from multiprocessing import cpu_count
+from concurrent.futures import ProcessPoolExecutor as Pool
+from multiprocessing import cpu_count, Lock
 import json
 import os
 
 
 def main():
-    pool = ProcessPoolExecutor(max_workers=cpu_count())
+    pool = Pool(max_workers=cpu_count())
     user_agent = os.getenv('REDDIT_USER_AGENT')
     client_id = os.getenv('REDDIT_CLIENT_ID')
     client_secret = os.getenv('REDDIT_CLIENT_SECRET')
@@ -27,18 +27,19 @@ def main():
                   "defi"]
     queries = ["Bitcoin", "Ethereum",
                "Cryptocurrency", "Crypto", "Crypto Wallet", "nft"]
+    sorting_options = ["relevance", "hot", "top", "new", "comments"]
     min_score = 10
     data_path = os.path.join("data")
-
+    posts = set()
     if not os.path.exists(data_path):
         os.mkdir(data_path)
 
     for s in subreddits:
         pool.submit(save_subreddit, reddit.subreddit(
-            s), os.path.join(data_path, f"{s}.json"), queries, min_score)
+            s), posts, os.path.join(data_path, f"{s}.json"), queries, sorting_options, min_score)
 
 
-def save_subreddit(subreddit: SubredditHelper,  file: str, queries: list, min_score=0):
+def save_subreddit(subreddit: SubredditHelper, posts: set, file: str, queries: list, sorting_options: list, min_score=0):
     schema = {
         "subreddit": subreddit.display_name,
         "queries": queries,
@@ -46,14 +47,18 @@ def save_subreddit(subreddit: SubredditHelper,  file: str, queries: list, min_sc
         "posts": []
     }
     for q in queries:
-
-        listing: ListingGenerator = subreddit.search(
-            q, sort="hot", limit=100)
-        for submission in listing:
-            if submission.score >= min_score:
-                ss = submission_schema(
-                    submission=submission, min_score=min_score)
-                schema['posts'].append(ss)
+        for sort in sorting_options:
+            listing: ListingGenerator = subreddit.search(
+                q, sort=sort, limit=100)
+            for submission in listing:
+                with Lock():
+                    exists = submission.id in posts
+                if submission.score >= min_score and not exists:
+                    ss = submission_schema(
+                        submission=submission, min_score=min_score)
+                    schema['posts'].append(ss)
+                    with Lock():
+                        posts.add(submission.id)
     with open(file, 'w') as f:
         print(file)
         json.dump(schema, f, indent=4)
@@ -62,14 +67,15 @@ def save_subreddit(subreddit: SubredditHelper,  file: str, queries: list, min_sc
 def submission_schema(submission: Submission, min_score=0):
     subreddit: str = submission.subreddit.display_name
     schema = {}
+    schema['id'] = submission.id
     schema['title'] = submission.title
     schema['url'] = submission.url
     schema['author'] = submission.author.name
     schema['created_utc'] = submission.created_utc
-    schema['id'] = submission.id
     schema['score'] = submission.score
     schema['num_comments'] = submission.num_comments
     schema['subreddit'] = subreddit
+    schema['id'] = submission.id
 
     schema['comments'] = fetch_comments_schema(
         comments=submission.comments,
@@ -89,6 +95,7 @@ def fetch_comments_schema(comments: CommentForest, context, depth=1, min_score=0
         if comment.score >= min_score:
             if comment.author is not None:
                 data = {
+                    "id": comment.id,
                     "author": comment.author.name,
                     "score": comment.score,
                     "created_utc": comment.created_utc,
