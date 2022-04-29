@@ -27,9 +27,9 @@ def main():
                   "defi"]
     queries = ["Bitcoin", "Ethereum",
                "Cryptocurrency", "Crypto", "Crypto Wallet", "nft"]
-    sorting_options = ["relevance", "hot", "top", "new", "comments"]
+    sorting_options = ["relevance", "hot", "top", "new"]
     min_score = 3
-    limit = 1000
+    limit = 100
     data_path = os.path.join("data")
     posts = set()
     if not os.path.exists(data_path):
@@ -61,7 +61,10 @@ def save_subreddit(subreddit: SubredditHelper, posts: set, file: str, queries: l
             for submission in listing:
                 with Lock():
                     exists = submission.id in posts
-                if submission.score >= min_score and not exists:
+                is_link = submission.selftext == ""
+                if submission.score >= min_score and not exists and not is_link:
+                    print(
+                        f"scrapping submission {submission.id} in subreddit {subreddit.display_name}")
                     ss = submission_schema(
                         submission=submission, min_score=min_score)
                     schema['posts'].append(ss)
@@ -83,7 +86,7 @@ def submission_schema(submission: Submission, min_score=0):
     schema['score'] = submission.score
     schema['num_comments'] = submission.num_comments
     schema['subreddit'] = subreddit
-    schema['id'] = submission.id
+    schema['text'] = submission.selftext
 
     schema['comments'] = fetch_comments_schema(
         comments=submission.comments,
