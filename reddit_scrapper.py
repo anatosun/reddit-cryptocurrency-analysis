@@ -1,4 +1,4 @@
-import praw
+from praw import Reddit
 from praw.models import SubredditHelper, Submission, Comment, MoreComments, ListingGenerator, Redditor
 from praw.models.comment_forest import CommentForest
 from concurrent.futures import ProcessPoolExecutor as Pool
@@ -12,9 +12,9 @@ def main():
     user_agent = os.getenv('REDDIT_USER_AGENT')
     client_id = os.getenv('REDDIT_CLIENT_ID')
     client_secret = os.getenv('REDDIT_CLIENT_SECRET')
-    reddit = praw.Reddit(user_agent=user_agent,
-                         client_id=client_id,
-                         client_secret=client_secret)
+    reddit = Reddit(user_agent=user_agent,
+                    client_id=client_id,
+                    client_secret=client_secret)
     subreddits = ["Cryptocurrency", "Bitcoin", "Ethereum", "Askreddit", "btc",
                   "CryptoMarkets", "bitcoinbeginners", "CryptoCurrencies",
                   "altcoin", "icocrypto", "CryptoCurrencyTrading",
