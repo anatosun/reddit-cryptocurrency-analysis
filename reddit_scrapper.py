@@ -1,7 +1,3 @@
-#######
-# IMPORT PACKAGES
-#######
-
 import praw
 from praw.models import SubredditHelper, Submission, Comment, MoreComments, ListingGenerator, Redditor
 from praw.models.comment_forest import CommentForest
@@ -90,7 +86,7 @@ def submission_schema(submission: Submission, min_score=0):
     schema['subreddit'] = subreddit
     schema['text'] = submission.selftext
 
-    schema['comments'] = fetch_comments_schema(
+    schema['comments'] = comments_schema(
         comments=submission.comments,
         context=[submission.title],
         depth=1,
@@ -99,7 +95,7 @@ def submission_schema(submission: Submission, min_score=0):
     return schema
 
 
-def fetch_comments_schema(comments: CommentForest, context, depth=1, min_score=0):
+def comments_schema(comments: CommentForest, context, depth=1, min_score=0):
     fetched = []
     comment: Comment
     for comment in comments:
@@ -118,7 +114,7 @@ def fetch_comments_schema(comments: CommentForest, context, depth=1, min_score=0
                 }
 
                 context.append(comment.body)
-                data["comments"] = fetch_comments_schema(
+                data["comments"] = comments_schema(
                     comments=comment.replies,
                     context=context,
                     depth=depth+1,
@@ -128,7 +124,7 @@ def fetch_comments_schema(comments: CommentForest, context, depth=1, min_score=0
     return fetched
 
 
-def fetch_author_schema(author: Redditor):
+def author_schema(author: Redditor):
     return {
         "author": author.name,
         "created_utc": author.created_utc,
