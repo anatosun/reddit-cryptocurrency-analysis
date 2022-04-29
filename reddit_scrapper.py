@@ -29,7 +29,7 @@ def main():
                "Cryptocurrency", "Crypto", "Crypto Wallet", "nft"]
     sorting_options = ["relevance", "hot", "top", "new"]
     min_score = 3
-    limit = 100
+    limit = 1000
     data_path = os.path.join("data")
     posts = set()
     if not os.path.exists(data_path):
@@ -52,7 +52,8 @@ def save_subreddit(subreddit: SubredditHelper, posts: set, file: str, queries: l
         "subreddit": subreddit.display_name,
         "queries": queries,
         "limit": limit,
-        "sorting options": sorting_options,
+        "minimum_score": min_score,
+        "sorting_options": sorting_options,
         "posts": []
     }
     for q in queries:
