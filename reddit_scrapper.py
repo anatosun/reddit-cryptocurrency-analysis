@@ -28,18 +28,26 @@ def main():
     queries = ["Bitcoin", "Ethereum",
                "Cryptocurrency", "Crypto", "Crypto Wallet", "nft"]
     sorting_options = ["relevance", "hot", "top", "new", "comments"]
-    min_score = 10
+    min_score = 3
+    limit = 1000
     data_path = os.path.join("data")
     posts = set()
     if not os.path.exists(data_path):
         os.mkdir(data_path)
 
     for s in subreddits:
-        pool.submit(save_subreddit, reddit.subreddit(
-            s), posts, os.path.join(data_path, f"{s}.json"), queries, sorting_options, min_score)
+        pool.submit(
+            save_subreddit,
+            reddit.subreddit(s),
+            posts,
+            os.path.join(data_path, f"{s}.json"),
+            queries,
+            sorting_options,
+            limit,
+            min_score)
 
 
-def save_subreddit(subreddit: SubredditHelper, posts: set, file: str, queries: list, sorting_options: list, min_score=0):
+def save_subreddit(subreddit: SubredditHelper, posts: set, file: str, queries: list, sorting_options: list, limit=10, min_score=0):
     schema = {
         "subreddit": subreddit.display_name,
         "queries": queries,
@@ -49,7 +57,7 @@ def save_subreddit(subreddit: SubredditHelper, posts: set, file: str, queries: l
     for q in queries:
         for sort in sorting_options:
             listing: ListingGenerator = subreddit.search(
-                q, sort=sort, limit=100)
+                q, sort=sort, limit=limit)
             for submission in listing:
                 with Lock():
                     exists = submission.id in posts
