@@ -47,7 +47,7 @@ def get_tweets_for_model(cleaned_tokens_list):
    for tweet_tokens in cleaned_tokens_list:
       yield dict([token, True] for token in tweet_tokens)
 
-def tuto_1():
+def get_classifier_tuto_1():
    # See: https://www.digitalocean.com/community/tutorials/how-to-perform-sentiment-analysis-in-python-3-using-the-natural-language-toolkit-nltk
    
    print("Train classifier with tweets...")
@@ -89,8 +89,8 @@ def tuto_1():
    print("Accuracy is:", classify.accuracy(classifier, test_data), "\n")
 
    return classifier
-
-def add_sentiment_analysis_to_file(file_name, classifier):
+   
+def add_sentiment_analysis_to_file(file_name, sa_function):
    print(f"Update {file_name} with sentiment analysis...")
 
    file = os.path.join('data', file_name)
@@ -100,29 +100,27 @@ def add_sentiment_analysis_to_file(file_name, classifier):
       subreddit = json.load(f)
       for post in subreddit['posts']:
          text = post['text'] if post['text'] else post['title']
-         tokens = remove_noise(word_tokenize(text))
-         post['sentiment_analysis'] = classifier.classify(dict([token, True] for token in tokens))
-
-         recursive_comment_update(post)
+         post['sentiment_analysis'] = sa_function(text)
+         recursive_comment_update(post, sa_function)
 
    with open(new_file, 'w') as f:
       json.dump(subreddit, f, indent=4)      
 
-def recursive_comment_update(post):
+def recursive_comment_update(post, sa_function):
    if post['comments']:
       for comment in post['comments']:
          text = comment['response']
-         tokens = remove_noise(word_tokenize(text))
-         comment['sentiment_analysis'] = classifier.classify(dict([token, True] for token in tokens))
-         recursive_comment_update(comment)
-
-def tuto_2():
-   None
+         comment['sentiment_analysis'] = sa_function(text)
+         recursive_comment_update(comment, sa_function)
 
 if __name__ == "__main__":
-   classifier = tuto_1()
+   classifier = get_classifier_tuto_1()
 
+   sa_tuto_1 = lambda text: classifier.classify(dict([token, True] for token in remove_noise(word_tokenize(text))))
+   
    # Update all files with sentiment analysis
+   '''
    for file in os.listdir(os.path.join('data')):
       if file.endswith(".json"):
-         add_sentiment_analysis_to_file(file, classifier)
+         add_sentiment_analysis_to_file(file, sa_tuto_1)
+   '''
