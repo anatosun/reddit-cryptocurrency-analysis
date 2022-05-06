@@ -81,7 +81,6 @@ class Neo4jConnection:
         with open(file, 'r') as f:
             subreddit = json.load(f)
             assert subreddit['subreddit'] is not None, "subreddit name cannot be None"
-            assert subreddit['queries'] is not None, "subreddit name cannot be None"
             assert subreddit['posts'] is not None, "subreddit name cannot be None"
             for post in subreddit['posts']:
                 self.insert_post(post)
@@ -96,7 +95,6 @@ class EdgeListDumper():
         with open(file, 'r') as f:
             subreddit = json.load(f)
             assert subreddit['subreddit'] is not None, "subreddit name cannot be None"
-            assert subreddit['queries'] is not None, "subreddit name cannot be None"
             assert subreddit['posts'] is not None, "subreddit name cannot be None"
             for post in subreddit['posts']:
                 self.insert_post(post)
