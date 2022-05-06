@@ -142,7 +142,7 @@ class EdgeListDumper():
 
     def dump_to_file(self, file: str):
         with open(file, 'w') as f:
-            f.write("Source,Source_Total_Score,Target,Target_Total_Score,Weight\n")
+            f.write("source,source_score,target,target_score,weight\n")
             for key in self.edges.keys():
                 source, target = key
                 weight = self.edges[key]
@@ -162,4 +162,4 @@ if __name__ == "__main__":
     for file in os.listdir(os.path.join('data')):
         if file.endswith(".json"):
             dp.insert_json_dump(os.path.join('data', file))
-    dp.dump_to_file('edgelist.csv')
+    dp.dump_to_file('./data/edgelist.csv')
