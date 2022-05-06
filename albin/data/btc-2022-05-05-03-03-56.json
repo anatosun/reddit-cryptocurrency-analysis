@@ -1,0 +1,424 @@
+{
+    "subreddit": "btc",
+    "limit": 1000,
+    "minimum_score": 3,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uikdiv",
+            "title": "Kim Dotcom continues to spread the truth about BCH on twitter.",
+            "url": "https://twitter.com/kimdotcom/status/1521963535081041920?s=21&t=EatoeEbIosA03EXaC8IU_A",
+            "author": "Ancapworld",
+            "created_utc": 1651709219.0,
+            "score": 68,
+            "num_comments": 55,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7eapkg",
+                    "author": "jessquit",
+                    "score": 26,
+                    "created_utc": 1651733047.0,
+                    "response": "Until Kim actually delivers something, I'm not sure whether these tweets help or hurt more.\n\nHe's a high profile figure sure but he's losing reputational authority by the minute.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7ewdwz",
+                            "author": "fiendishcrypro",
+                            "score": 8,
+                            "created_utc": 1651750714.0,
+                            "response": "Good point. Endless hype without product has diminishing returns and can be very hard to rekindle at a future point.\n\nThat said, all news is good news, and it's not like the btc subreddit is swamped with posts and people, so I think it's good overall.\n\nAnd if he delivers? \nWell Kim may very well become the darling of BCH. \ud83e\udd70",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7f1o5e",
+                                    "author": "jessquit",
+                                    "score": 5,
+                                    "created_utc": 1651753765.0,
+                                    "response": "I'll be excited when something exciting happens.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7diyuy",
+                    "author": "big--if-true",
+                    "score": 6,
+                    "created_utc": 1651716753.0,
+                    "response": "Sad yet true.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uih4hl",
+            "title": "Bitcoin Verde has released our first scaling report funded by BCHN. Check out the results and give us your feedback! We have more reports to come and would love to make improvements to our process.",
+            "url": "https://docs.google.com/document/d/1tTzqZ4umSOvO7f92dtz05pcjOgqXfeQqVgBOtOzCvVA/edit",
+            "author": "JackalDGAF",
+            "created_utc": 1651699850.0,
+            "score": 52,
+            "num_comments": 31,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7ctz8d",
+                    "author": "LovelyDayHere",
+                    "score": 9,
+                    "created_utc": 1651705545.0,
+                    "response": "Love the format, and great to see this collaboration towards more performance testing of Bitcoin Cash infrastructure!\n\nI suppose the links at the end of the main section point to the custom '_emitter_' software that Verde has written to perform this test?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7dcj2z",
+                    "author": "wildlight",
+                    "score": 10,
+                    "created_utc": 1651713840.0,
+                    "response": "Fantastic work!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7cw5oz",
+                    "author": "jtoomim",
+                    "score": 22,
+                    "created_utc": 1651706547.0,
+                    "response": "Looks like Fulcrum servers with specs similar to your laptop would end up falling behind at sustained block sizes around 83 MB per 600 seconds (based on the 0.139 MB/sec figure). Unless the ecosystem has another SPV server available with better performance, it may be a good idea to postpone raising the limit beyond 64 or 80 MB until performance is fixed.\n\nOn the other hand, a reasonable argument can be made that Fulcrum desync is not a critical failure, as Fulcrum will catch up eventually as long as the peak loads aren't sustained, and Fulcrum desync does not compromise the protocol's safety or mining incentives in any way.\n\nFulcrum appears to be about 40x slower than BCHN at block processing. BCHN serves a more performance-critical role in the BCH ecosystem, and needs to be able to consistently validate *and propagate* blocks in about 20 seconds or less to avoid unsafe mining incentives, whereas Fulcrum only needs to do so in about 600 seconds or less (i.e. 30x slower). This implies that both Fulcrum and BCHN are likely to present bottlenecks in network performance at similar block sizes.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7ea1jp",
+                            "author": "jessquit",
+                            "score": 7,
+                            "created_utc": 1651732517.0,
+                            "response": "Calin seems to feel confident that the Fulcrum numbers are off or that there exists a resolvable bottleneck so maybe we should put an asterisk beside the Fulcrum numbers  pending a deeper review and some bottleneck investigation.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7efb4r",
+                                    "author": "NilacTheGrim",
+                                    "score": 11,
+                                    "created_utc": 1651736895.0,
+                                    "response": "Yes I'm pretty sure the apparent slowdown is due to something dumb and easily fixed.  I'll work on reproducing the setup asap (well, I'm traveling now so definitely after May 20 when I get back, if not before).  It's a high priority for me!",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i7era7r",
+                                            "author": "moleccc",
+                                            "score": 5,
+                                            "created_utc": 1651747237.0,
+                                            "response": "Awesome!",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i7fo2k5",
+                            "author": "FerriestaPatronum",
+                            "score": 4,
+                            "created_utc": 1651763711.0,
+                            "response": "I think (and hope) that it's something less fundamental.  Fulcrum has been amazingly fast when it gets what it needs, but, from the logs, our suspicion is that something was breaking.  In fact, my theory (although just a theory) was that Fulcrum wasn't getting the information it needed in a timely manner because of the BCHN global lock blocking the RPC calls (I think BCHN complained in the logs that the RPC queue got filled up, IIRC, so it just started dropping stuff).\n\nRegardless, I'm optimistic that we can get Calin the information he needs to look into why we're seeing what we're seeing.  Of course, it's possible we just messed something up or misconfigured something, but at a minimum, the results we were seeing were very repeatable.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7cucd8",
+                    "author": "jtoomim",
+                    "score": 19,
+                    "created_utc": 1651705711.0,
+                    "response": "Good work, thanks.\n\nhttps://blockchair.com/bitcoin-cash/transaction/44c7072dda7ba27d572523141914cd496b735428050aef1a48ec72f72aaf873c",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7fmwwj",
+                            "author": "FerriestaPatronum",
+                            "score": 3,
+                            "created_utc": 1651763243.0,
+                            "response": "Hey, thanks Toomim!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7cund2",
+                    "author": "jessquit",
+                    "score": 15,
+                    "created_utc": 1651705850.0,
+                    "response": "1. Great preliminary results!\n\n2. Steady state should be blocks mostly consisting of 2-3 in / 2-3-out txns as these represent the typical  \"eCash\" type txn\n\n3. Regardless the interesting number is BCHN's steady state / 90% seen throughput of ~5000tps!\n\n4. Why is fulcrum so slow",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7dlg21",
+                            "author": "emergent_reasons",
+                            "score": 14,
+                            "created_utc": 1651717920.0,
+                            "response": "Fulcrum is by far the most performant electrum server in existence. Even BTC peeps were promoting it, maybe before getting banned from rbitcoin, I don't know \ud83d\ude02. It's not a node though so it can't be compared on an apples to apples basis with a node.\n\nI'm sure Calin will take a good look at making it even better.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7ef6r8",
+                                    "author": "NilacTheGrim",
+                                    "score": 11,
+                                    "created_utc": 1651736788.0,
+                                    "response": "Yes, Fulcrum is really fast, if I do say so myself as the author. Thanks for that. Yes, BTC people are discovering it and using it now.\n\nI suspect the apparent slowdown is not sumething fundamental to Fulcrum but rather a bug causing a bottleneck in the HTTP-RPC communication between Fulcrum <-> bitcoind.  I will reproduce the Bitcoin Verde testing setup and investigate this.\n\nI know the code I wrote for the HTTP-RPC client in Fulcrum was a bit fragile to large blocks and I suspect that is rearing its ugly head here.\n\n0.15 MB/s is just incredibly slow and there is no way this is the actual real speed that Fulcrum chews on blocks.  It can process BTC blocks in under 100 msec and largish BCH blocks in under 200 msec.  Even with a huge fan-in style block it should not be this much slower.\n\nDefinitely something is amiss and I will investigate it.\n\nBut I do thank you for reminding people Fulcrum is (in general) fast.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i7fve7v",
+                                            "author": "tl121",
+                                            "score": 3,
+                                            "created_utc": 1651766588.0,
+                                            "response": "Fulcrum is indeed fast.  Even on a Raspberry pi, which has extremely limited IO performance. I have two machines that are bitcoin nodes with Fulcrum servers, one on the BCH blockchain (BCHN) and one on the BTC blockchain (Core).    I compiled the Fulcrum from source code and was surprised that the same image worked on both block chains.  \n\nThe only problem I had with Fulcrum was due to database corruption during a hard operating system crash, which necessitated rebuilding the database from genesis, which took a few days.  One of my systems used an EVO 980 Nvme SSD and this model would not boot reliably connected to the pi due to excessive power consumption, and with a powered USB hub the system would sometimes lock up. The other system used a EVO 970 which was in spec for the pi\u2019s USB ports and has run reliably for months at a time. I mention this detail because it surfaces another concern regarding scaling:  How resilient is the database software to hardware and OS related crashes and how long does it take to recover full operation after crash recovery? In this regard, bitcoin node software was better than Fulcrum,  because despite many of these crashes it was never necessary to recover the blockchain and UTXO data all the way back to genesis.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i7e6qay",
+                            "author": "NilacTheGrim",
+                            "score": 10,
+                            "created_utc": 1651730026.0,
+                            "response": "> Why is fulcrum so slow\n\nI will have to look into how the test was done, if it's reproducible here, and also at speeding it up.  I suspect that Fulcrum itself is not being slow, but rather communication between bitcoind <-> Fulcrum via RPC has some bug in it introducing a bottleneck.  0.156 MB/S is atrocious and doesn't align with anything I have ever seen here in terms of block processing speed.  Fulcrum can chew on a 5MB block in under 200 msec normally.  Even for huge fan-ins it should not be this bad. \n\nI suspect the Fulcrum HTTP client implementation \"times out\" on long RPC transfers and restarts, thus causing the apparent slowness.  Or maybe something else is happening.\n\nI will work on investigating what is going on.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7e9i2v",
+                                    "author": "jessquit",
+                                    "score": 5,
+                                    "created_utc": 1651732095.0,
+                                    "response": "Thank you for being awesome.\n\n/u/chaintip",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i7efcac",
+                                            "author": "NilacTheGrim",
+                                            "score": 5,
+                                            "created_utc": 1651736924.0,
+                                            "response": "Thank you sir!  W00! 20 bucks! I can buy coffee and bacon! :D",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i7fybaw",
+                            "author": "FerriestaPatronum",
+                            "score": 4,
+                            "created_utc": 1651767731.0,
+                            "response": "> Steady state should be blocks mostly consisting of 2-3 in / 2-3-out txns as these represent the typical \"eCash\" type txn\n\nSigh ...yep.  I intended to have 2-in and 2-out, I just messed that up when coding the blocks.  I noticed it before running the tests, but mining the blocks takes a while (and it was already the 3rd+ time we re-mined them), so we rolled with it.  For the next set of tests we're going to have a proper 2-in and 2-out spree as well as SLP outputs.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7donvp",
+                    "author": "thesis_st8mint",
+                    "score": 4,
+                    "created_utc": 1651719445.0,
+                    "response": "I don\u2019t see BCH needing that high of a block size anytime soon, but great to see that devs are ahead of the game",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7erkdq",
+                            "author": "moleccc",
+                            "score": 5,
+                            "created_utc": 1651747447.0,
+                            "response": "If it isn't shown bch can offer this kind of throughput, it will deter applications that need it from jumping in.\n\nThe fidelity effect.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7dm701",
+                    "author": "EmergentCoding",
+                    "score": 7,
+                    "created_utc": 1651718276.0,
+                    "response": "I want to see lots more of this!\n\nIt is not enough to want Bitcoin Cash to become electronic cash for the world, we must *demonstrate* the capacity to do so in order to give industry confidence to build on it.\n\nWell done.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uij2n4",
+            "title": "Sunfresh Supermarket located at Cayon Street,St Kitts now accepts BitcoinCash. most of the Groceries in St Kitts and nevis now started to accept BCH.",
+            "url": "https://v.redd.it/t1sbnifbijx81",
+            "author": "Sunnyskn",
+            "created_utc": 1651705364.0,
+            "score": 50,
+            "num_comments": 9,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7du48g",
+                    "author": "EmergentCoding",
+                    "score": 6,
+                    "created_utc": 1651722244.0,
+                    "response": "Great work. Bitcoin Cash adoption is miles ahead of all other coins combined.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uiiv1g",
+            "title": "Califonria Governer Signs Executive Order on Crypto, Exploring Potential For \"New Companies, New Jobs, and New Opportunities\"...",
+            "url": "https://www.globalcryptopress.com/2022/05/califonria-governer-signs-executive.html?=new",
+            "author": "Capulous7217",
+            "created_utc": 1651704769.0,
+            "score": 14,
+            "num_comments": 6,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "uiee37",
+            "title": "Lots of BTC supportors are having war with Elon Musk. We BCH community will not join BTC. We don\u2019t bad mouth Elon. Shadow banning of BCH on Twitter will end.",
+            "url": "https://www.reddit.com/r/btc/comments/uiee37/lots_of_btc_supportors_are_having_war_with_elon/",
+            "author": "No-Bookkeeper4061",
+            "created_utc": 1651692307.0,
+            "score": 11,
+            "num_comments": 31,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7cxu2v",
+                    "author": "ShadowOrson",
+                    "score": 18,
+                    "created_utc": 1651707306.0,
+                    "response": "I'll bad mouth Elon if I like. My being a member of the BCH community has nothing to with how I feel about him. Stop trying to control what members of this community do.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7bxpsc",
+                    "author": "SoiledCold5",
+                    "score": 14,
+                    "created_utc": 1651692637.0,
+                    "response": "We just don't care about bitcoin core, we just want to spread p2p cash.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7c840h",
+                    "author": "CDSagain",
+                    "score": 7,
+                    "created_utc": 1651696675.0,
+                    "response": "Elon is a manipulative dick.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7c81j9",
+                    "author": "CrispyKeebler",
+                    "score": 9,
+                    "created_utc": 1651696647.0,
+                    "response": "Fuck Elon, he's not a \"Free Speech Champion\" he a billionaire trying to further enrich himself and he's not on our side. Hes already used Twitter to pump shit to make a buck, I have no doubt that will increase. If shadow banning BCH makes him money, he'll do it.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7c9vzi",
+                            "author": "Remora_101",
+                            "score": 6,
+                            "created_utc": 1651697369.0,
+                            "response": "I second this.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7c1e0r",
+                    "author": "BCHisFuture",
+                    "score": 5,
+                    "created_utc": 1651694055.0,
+                    "response": "I agree  !! *\n\nI have personally tipped 0.01$ Elon through chaintip\n\nHope we will be thousand to do it lol\nWe need to got hia attention on BCH.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7dia5c",
+                    "author": "saylor_moon",
+                    "score": 4,
+                    "created_utc": 1651716436.0,
+                    "response": "Really?\n\nElon Musk doesn't like BCH. He likes to pump DOGE.\n\nBefore Elon started pumping DOGE, someone spent a year buying up [a whole bunch of doge.](https://bitinfocharts.com/dogecoin/address/DH5yaieqoZN36fDVciNyRueRGvGLR3mr7L)\n\nSeriously, what are these guys trying to pull?",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uick76",
+            "title": "Privacy On Demand",
+            "url": "https://www.reddit.com/r/btc/comments/uick76/privacy_on_demand/",
+            "author": "33TITAN",
+            "created_utc": 1651687271.0,
+            "score": 3,
+            "num_comments": 12,
+            "subreddit": "btc",
+            "selftext": "Are there any plans to implement a privacy on demand type of feature on BCH, similar to what Litecoin has recently rolled out?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7bs8ys",
+                    "author": "MobTwo",
+                    "score": 14,
+                    "created_utc": 1651690487.0,
+                    "response": "Bitcoin Cash was already way ahead of Litecoin in privacy with Cash Shuffle and Cash Fusion. You can enable these privacy features in the Electron Cash wallet.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7bqngp",
+                    "author": "xm-arrr",
+                    "score": 3,
+                    "created_utc": 1651689865.0,
+                    "response": "How does privacy work on litecoin now?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7bzwx6",
+                            "author": "knowbodynows",
+                            "score": 4,
+                            "created_utc": 1651693485.0,
+                            "response": "Something called MWEB.\n\nnot ready yet.\n\nhttps://www.btc-pulse.com/privacy-is-coming-to-litecoin-in-less-than-a-month/",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
