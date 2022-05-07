@@ -184,7 +184,7 @@ def save_subreddit(subreddit: SubredditHelper, existing_posts, data_path: str, s
         #save JSON file with posts for that crawl
         file_path = os.path.join(data_path, f"{subreddit.display_name}-{crawl_ts}.json")
         with open(file_path, 'w') as f:
-            logger(f"Stored file: {file_path}", "main")
+            logger(f"Stored file: {file_path} with {len(schema['posts'])} new posts ", "main")
             json.dump(schema, f, indent=4)
     else:
         logger(f"No new posts for {subreddit.display_name}", "main")
