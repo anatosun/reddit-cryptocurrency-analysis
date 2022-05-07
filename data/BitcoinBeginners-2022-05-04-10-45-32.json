@@ -327,8 +327,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uhvgqb/does_every_bitcoin_transaction_get_logged_to_the/",
             "author": "csmart01",
             "created_utc": 1651628174.0,
-            "score": 17,
-            "num_comments": 36,
+            "score": 14,
+            "num_comments": 55,
             "subreddit": "BitcoinBeginners",
             "selftext": "I know it\u2019s a stupid question but I can\u2019t wrap my head around how big the blockchain could get if every cup of coffee purchased is logged. Wouldn\u2019t it become just too large. Also - another dumb one - what if you are without an internet connection, is the transaction logged temporarily and then registered once you are in line? And if you have a desktop hard wallet and make a phone transaction how does it link to the hard wallet if that is off line?",
             "stickied": false,
@@ -345,7 +345,7 @@
                 {
                     "id": "i78nh5j",
                     "author": "lightninghero-node",
-                    "score": 13,
+                    "score": 15,
                     "created_utc": 1651629740.0,
                     "response": "Yes it does. Every transaction is saved in the blockchain forever. I agree it\u2019s pretty stupid to have every small transaction take up space on the blockchain, but this is why lightning is being developed. \n\nLightning is a second layer protocol, that allows you to use Bitcoin similar to using a bank account and cash. You can make one transaction on chain to load up your lightning wallet with \u201ccash\u201d and then use it to make small purchases on the lighting network without having to record it on the blockchain until you run out of funds.\n\nThis way, the blockchain is similar to your bank statement, where you only record one transaction when you take out money from an ATM and daily spendings are done off-chain.",
                     "depth": 1,
@@ -357,6 +357,15 @@
                     "score": 3,
                     "created_utc": 1651644130.0,
                     "response": "Most Bitcoin transactions occur offchain or on other layers today. think of onchain transactions more as a settlement network",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7a7n2p",
+                    "author": "harryvl",
+                    "score": 3,
+                    "created_utc": 1651666861.0,
+                    "response": "Check out ligtning network .",
                     "depth": 1,
                     "comments": []
                 }

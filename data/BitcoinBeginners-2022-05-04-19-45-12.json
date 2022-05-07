@@ -100,128 +100,6 @@
             ]
         },
         {
-            "id": "ui7fvr",
-            "title": "PSA: Secure your Bitcoin - 2FA",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ui7fvr/psa_secure_your_bitcoin_2fa/",
-            "author": "information-zone",
-            "created_utc": 1651673340.0,
-            "score": 26,
-            "num_comments": 51,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "I\u2019m sure the veterans in here already know this, so this is for any actual Beginners reading this sub.\n\nOnce you start to accumulate BTC, you should worry about scammers trying to trick you out of your Bitcoin.\n\nYou thought your Bitcoin was safe on the exchange because you turned on 2FA with an SMS as the second factor, but no.  \n\nOne thing that really does happen is a SIM-swap attack. This is where the thieves trick the phone company into issuing a new SIM for your number & they then use that to reset your password on the exchange, stealing all your Bitcoin.\n\nYou should get a hardware device, like a Yubikey, and use that for the 2FA. Most emails and many other financial institutions support these devices also. Turn it on everywhere. And to be smart, you should have a backup of that key\u2026 so buy two.\n\nI decided to post this today because Yubikey is running a promo today where you can get 2 for the price if one.\n\nIf you haven\u2019t considered Yubikey before, consider it today.\n\nI am not affiliated with Yubikey in anyway. I am just a fan of their products.\n\n\nhttps://www.yubico.com/store/2022/may-the-4th",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7anq8a",
-                    "author": "CSDude01",
-                    "score": 11,
-                    "created_utc": 1651674374.0,
-                    "response": "Most exchanges don't use 2FA via SMS, so SIM-swapping doesn't work. An authenticator like Authy or Google Authenticator is much safer than SMS-2FA, but a security key is the safest one, obviously.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i7apiiw",
-                            "author": "information-zone",
-                            "score": 4,
-                            "created_utc": 1651675113.0,
-                            "response": "All of the US-based exchanges I\u2019ve used offered SMS-based 2FA (when I first signed up)\n- Coinbase\n- Gemini\n- crypto.com\n- River",
-                            "depth": 2,
-                            "comments": []
-                        },
-                        {
-                            "id": "i7bo8d9",
-                            "author": "Simcom",
-                            "score": 3,
-                            "created_utc": 1651688914.0,
-                            "response": "Just a reminder, Authy is susceptible to sim swap attacks unless you manually go into the settings and disable \"Allow multi-device\". If \"Allow multi-device\" is on, it's essentially the same as SMS 2FA and will automatically migrate to any new phone.",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i7anoyf",
-                    "author": "KallistiOW",
-                    "score": 8,
-                    "created_utc": 1651674358.0,
-                    "response": "Don't leave your coins on exchanges.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i7apao2",
-                            "author": "information-zone",
-                            "score": 5,
-                            "created_utc": 1651675025.0,
-                            "response": "Not everyone is ready for self-custody, but that is the ideal. Everyone should strive for self-custody!",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i7cddmi",
-                                    "author": "NeuroLingual",
-                                    "score": 6,
-                                    "created_utc": 1651698712.0,
-                                    "response": "I\u2019m going to get downvoted but self-custody doesn\u2019t give interest and Bitcoin has been trading sideways all year.\n\nI\u2019ll take on the risk.",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i7anqe8",
-                    "author": "valoremz",
-                    "score": 3,
-                    "created_utc": 1651674376.0,
-                    "response": "How would the scammer know your phone number to begin with? \n\nIt seems like they would need a ton of info to make this happen: \n\nFirst the email address you use to login to the exchange and also your password. I guess they could get this from a data breach.\n\nTwo, when the 2FA prompt pops up, it will send something you phone. At this stage, the scammer would need to know your phone number. How would they know it?\n\nThree, assuming they know your phone number, they call the phone company to do the SIM swap, but the phone company is going to ask for your name, address, and probably your PIN (Verizon does this). I don't know how the scammer would have all this info.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i7aoxcf",
-                            "author": "bitusher",
-                            "score": 8,
-                            "created_utc": 1651674872.0,
-                            "response": ">How would the scammer know your phone number to begin with? \n\nOne of many examples that is not a hypothetical is the ledger leak \n\n>but the phone company is going to ask for your name, address, and probably your PIN (Verizon does this). I don't know how the scammer would have all this info.\n\nThese aren't hypothetical attacks , they do happen all the time with social engineering or the employees themselves",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ui1p54",
-            "title": "App to trade",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ui1p54/app_to_trade/",
-            "author": "FlimsyIce2457",
-            "created_utc": 1651651975.0,
-            "score": 4,
-            "num_comments": 20,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "Hi, I would like to ask if there is app that does not constraint the amount of bought bitcoin. I looked at binance on euro currency. I have to pay at least 35 euro to buy crypto. Do you know app that does not have such constraints?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i79pxrk",
-                    "author": "bitusher",
-                    "score": 3,
-                    "created_utc": 1651653825.0,
-                    "response": "I would use Kraken.com instead as the withdrawal fees are much lower at 0.00002 BTC onchain or Free with a lightning withdrawal",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i79verl",
-                    "author": "Faceless1820",
-                    "score": 3,
-                    "created_utc": 1651658674.0,
-                    "response": "You will always have to pay a fee to buy bitcoin. Some exchanges have higher fees than others. You'll have to research what exchanges are available to you.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "ui92n9",
             "title": "Is it viable to just get a big loan and dump it all into bitcoin?",
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ui92n9/is_it_viable_to_just_get_a_big_loan_and_dump_it/",
@@ -349,6 +227,138 @@
                     "score": 3,
                     "created_utc": 1651716758.0,
                     "response": "uh? No. do not do that.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ui7fvr",
+            "title": "PSA: Secure your Bitcoin - 2FA",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ui7fvr/psa_secure_your_bitcoin_2fa/",
+            "author": "information-zone",
+            "created_utc": 1651673340.0,
+            "score": 27,
+            "num_comments": 68,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I\u2019m sure the veterans in here already know this, so this is for any actual Beginners reading this sub.\n\nOnce you start to accumulate BTC, you should worry about scammers trying to trick you out of your Bitcoin.\n\nYou thought your Bitcoin was safe on the exchange because you turned on 2FA with an SMS as the second factor, but no.  \n\nOne thing that really does happen is a SIM-swap attack. This is where the thieves trick the phone company into issuing a new SIM for your number & they then use that to reset your password on the exchange, stealing all your Bitcoin.\n\nYou should get a hardware device, like a Yubikey, and use that for the 2FA. Most emails and many other financial institutions support these devices also. Turn it on everywhere. And to be smart, you should have a backup of that key\u2026 so buy two.\n\nI decided to post this today because Yubikey is running a promo today where you can get 2 for the price if one.\n\nIf you haven\u2019t considered Yubikey before, consider it today.\n\nI am not affiliated with Yubikey in anyway. I am just a fan of their products.\n\n\nhttps://www.yubico.com/store/2022/may-the-4th",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7anq8a",
+                    "author": "CSDude01",
+                    "score": 10,
+                    "created_utc": 1651674374.0,
+                    "response": "Most exchanges don't use 2FA via SMS, so SIM-swapping doesn't work. An authenticator like Authy or Google Authenticator is much safer than SMS-2FA, but a security key is the safest one, obviously.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7apiiw",
+                            "author": "information-zone",
+                            "score": 6,
+                            "created_utc": 1651675113.0,
+                            "response": "All of the US-based exchanges I\u2019ve used offered SMS-based 2FA (when I first signed up)\n- Coinbase\n- Gemini\n- crypto.com\n- River",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i7bo8d9",
+                            "author": "Simcom",
+                            "score": 4,
+                            "created_utc": 1651688914.0,
+                            "response": "Just a reminder, Authy is susceptible to sim swap attacks unless you manually go into the settings and disable \"Allow multi-device\". If \"Allow multi-device\" is on, it's essentially the same as SMS 2FA and will automatically migrate to any new phone.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7anoyf",
+                    "author": "KallistiOW",
+                    "score": 11,
+                    "created_utc": 1651674358.0,
+                    "response": "Don't leave your coins on exchanges.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7apao2",
+                            "author": "information-zone",
+                            "score": 8,
+                            "created_utc": 1651675025.0,
+                            "response": "Not everyone is ready for self-custody, but that is the ideal. Everyone should strive for self-custody!",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7cddmi",
+                                    "author": "NeuroLingual",
+                                    "score": 7,
+                                    "created_utc": 1651698712.0,
+                                    "response": "I\u2019m going to get downvoted but self-custody doesn\u2019t give interest and Bitcoin has been trading sideways all year.\n\nI\u2019ll take on the risk.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i7cn74i",
+                                            "author": "lordsamadhi",
+                                            "score": 6,
+                                            "created_utc": 1651702617.0,
+                                            "response": "Won't downvote you, but I'd like to encourage you and others to look into all the other reasons to be part of this revolution beyond only number-go-up.  Bitcoin is more like a charity than an investment to me.  Let's change the world for the better!",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7anqe8",
+                    "author": "valoremz",
+                    "score": 5,
+                    "created_utc": 1651674376.0,
+                    "response": "How would the scammer know your phone number to begin with? \n\nIt seems like they would need a ton of info to make this happen: \n\nFirst the email address you use to login to the exchange and also your password. I guess they could get this from a data breach.\n\nTwo, when the 2FA prompt pops up, it will send something you phone. At this stage, the scammer would need to know your phone number. How would they know it?\n\nThree, assuming they know your phone number, they call the phone company to do the SIM swap, but the phone company is going to ask for your name, address, and probably your PIN (Verizon does this). I don't know how the scammer would have all this info.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7aoxcf",
+                            "author": "bitusher",
+                            "score": 8,
+                            "created_utc": 1651674872.0,
+                            "response": ">How would the scammer know your phone number to begin with? \n\nOne of many examples that is not a hypothetical is the ledger leak \n\n>but the phone company is going to ask for your name, address, and probably your PIN (Verizon does this). I don't know how the scammer would have all this info.\n\nThese aren't hypothetical attacks , they do happen all the time with social engineering or the employees themselves",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ui1p54",
+            "title": "App to trade",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ui1p54/app_to_trade/",
+            "author": "FlimsyIce2457",
+            "created_utc": 1651651975.0,
+            "score": 7,
+            "num_comments": 31,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Hi, I would like to ask if there is app that does not constraint the amount of bought bitcoin. I looked at binance on euro currency. I have to pay at least 35 euro to buy crypto. Do you know app that does not have such constraints?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i79pxrk",
+                    "author": "bitusher",
+                    "score": 3,
+                    "created_utc": 1651653825.0,
+                    "response": "I would use Kraken.com instead as the withdrawal fees are much lower at 0.00002 BTC onchain or Free with a lightning withdrawal",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i79verl",
+                    "author": "Faceless1820",
+                    "score": 3,
+                    "created_utc": 1651658674.0,
+                    "response": "You will always have to pay a fee to buy bitcoin. Some exchanges have higher fees than others. You'll have to research what exchanges are available to you.",
                     "depth": 1,
                     "comments": []
                 }

@@ -22,29 +22,6 @@
             "comments": []
         },
         {
-            "id": "ui9cg9",
-            "title": "How to calculate the \"Txn Savings Fees\" of an ethereum txn?",
-            "url": "https://www.reddit.com/r/ethereum/comments/ui9cg9/how_to_calculate_the_txn_savings_fees_of_an/",
-            "author": "BreadIntelligent4598",
-            "created_utc": 1651678561.0,
-            "score": 5,
-            "num_comments": 10,
-            "subreddit": "ethereum",
-            "selftext": "When I view the  details of a transact record on etherscan,  I notice the Txn Savings Fees, any one know how to calculate it? \n\nhttps://preview.redd.it/69wn666a9hx81.png?width=995&format=png&auto=webp&s=0913dae73cb6bcfd53804ec2ea45741edad858b0",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7bojni",
-                    "author": "Nonocoiner",
-                    "score": 3,
-                    "created_utc": 1651689039.0,
-                    "response": "It's what is left over (edit: and returned to your wallet) after the priority tip and basefee are paid.\n\n (max fee - priority fee - basefee) x gas used",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "ui504b",
             "title": "Will ETH ever be depleted?",
             "url": "https://www.reddit.com/r/ethereum/comments/ui504b/will_eth_ever_be_depleted/",
@@ -391,6 +368,29 @@
                             "comments": []
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "id": "ui9cg9",
+            "title": "How to calculate the \"Txn Savings Fees\" of an ethereum txn?",
+            "url": "https://www.reddit.com/r/ethereum/comments/ui9cg9/how_to_calculate_the_txn_savings_fees_of_an/",
+            "author": "BreadIntelligent4598",
+            "created_utc": 1651678561.0,
+            "score": 4,
+            "num_comments": 14,
+            "subreddit": "ethereum",
+            "selftext": "When I view the  details of a transact record on etherscan,  I notice the Txn Savings Fees, any one know how to calculate it? \n\nhttps://preview.redd.it/69wn666a9hx81.png?width=995&format=png&auto=webp&s=0913dae73cb6bcfd53804ec2ea45741edad858b0",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7bojni",
+                    "author": "Nonocoiner",
+                    "score": 3,
+                    "created_utc": 1651689039.0,
+                    "response": "It's what is left over (edit: and returned to your wallet) after the priority tip and basefee are paid.\n\n (max fee - priority fee - basefee) x gas used",
+                    "depth": 1,
+                    "comments": []
                 }
             ]
         }

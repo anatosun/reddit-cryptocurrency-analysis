@@ -33614,29 +33614,6 @@
             ]
         },
         {
-            "id": "uh7rpf",
-            "title": "Best place to loan against eth",
-            "url": "https://www.reddit.com/r/ethereum/comments/uh7rpf/best_place_to_loan_against_eth/",
-            "author": "jeux99",
-            "created_utc": 1651550801.0,
-            "score": 4,
-            "num_comments": 20,
-            "subreddit": "ethereum",
-            "selftext": "What is the best place I can take a loan against my eth holdings? Ideally the loan would be in a stablecoin. Also what would the interest rates be? Please give me your thoughts",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7517c3",
-                    "author": "Wisgood",
-                    "score": 5,
-                    "created_utc": 1651570211.0,
-                    "response": "Makerdao is the place. You can mint your own dai, there's nothing cooler than that. But if you don't have enough for 15k, I've also used Liquity and it's pretty good too, but ETH only (whereas Maker lets you borrow against interest bearing steth)",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "ug5oe6",
             "title": "StarkNet Roundup #14 - DevConnect mega-edition",
             "url": "https://swagtimus.substack.com/p/starknet-roundup-14?s=w",
@@ -33676,203 +33653,6 @@
                     "score": 3,
                     "created_utc": 1651442163.0,
                     "response": "Rollups like Loopring commit a single hash to L1 (to ethereum \u00ab\u00a0on-chain\u00a0\u00bb).\n\nThis on-chain hash correspond to the hash of a Merkle Tree.\n\nThe Rollups L2 pretending to have \u00ab\u00a0ethereum security\u00a0\u00bb (like at least Loopring) meaning is that : \n\nIf ever the whole Loopring (L2) ecosystem would come down (exchange down, relayer down), YOU would still able to forcefully \u00ab\u00a0withdraw\u00a0\u00bb your on-L2-assets (ETH + tokens + NFTs) to L1 ethereum, by calling the \u00ab\u00a0forceWithdrawal\u00a0\u00bb function on the L1 Loopring contrat (albeit at a normal gas fee cost)\n\n\nTo call this \u00ab\u00a0force withdraw\u00a0\u00bb contract function,\nYou would need :\n- your private key of course\n- the hash of the proof (the Merkle Tree hash root regurlarly commited by the Loopring relayer to L1)\n- and\u2026 the data\u2026 which the Merkle Tree contains.\n\nThe Merkle Tree somehow contains the \u00ab\u00a0L2 accounts\u00a0\u00bb which contains a per-account Tree of accounts tokensId<->balance.\n\nYou thus need to call the \u00ab\u00a0force withdraw\u00a0\u00bb function with the Merkle Tree root hash, and the part of the Merklee Tree \u00ab\u00a0data\u00a0\u00bb (the part related to your accountId).\n\nAnd to answer to your question specifically :\n\nThe Merklee Tree data in Loopring can either be submitted \u00ab\u00a0on-chain\u00a0\u00bb (on L1 Ethereum) OR can only be \u00ab\u00a0made available\u00a0\u00bb (in the case of Loopring, that is at the choice of the \u00ab\u00a0exchange\u00a0\u00bb which \u00ab\u00a0open\u00a0\u00bb and holds \u00ab\u00a0account\u00a0\u00bb.\n\nI ***Think*** that the official Loopring \u00ab\u00a0exchange\u00a0\u00bb submit those Merkle Tree \u00ab\u00a0data\u00a0\u00bb to Ethereum L1 (in \u00ab\u00a0function call data\u00a0\u00bb).\n\nThus, even if it is a little complicated, any community member could reconstruct the \u00ab\u00a0Merkle Tree data\u00a0\u00bb (for everyone and every other community member) necessary to the reconstruction of a proof needed by the \u00ab\u00a0force withdrawal\u00a0\u00bb L1 contract.\n\nHowever, for a reduced per-L2 transaction cost, a future Loopring \u00ab\u00a0exchange\u00a0\u00bb could also choose to not submit the Merkle Tree data \u00ab\u00a0on L1 chain\u00a0\u00bb (in function call data).\n\nThen, the \u00ab\u00a0Merkle Tree data\u00a0\u00bb should be made AVAILABLE (in the sense you intended) by the exchange/relayer, by another mean.\n(Like: be available to be downloaded and feeded in real-time)\n\nIf this is not yet clear : L2 Rollups commit the \u00ab\u00a0hash of the Tree proof\u00a0\u00bb to L1, but to successfully forcefully withdraw your assets, you still need to \u00ab\u00a0know\u00a0\u00bb the \u00ab\u00a0data\u00a0\u00bb to be able to prove that the \u00ab\u00a0root Tree hash\u00a0\u00bb really signs and certifies this \u00ab\u00a0data\u00a0\u00bb.\n\n\u00ab\u00a0Data availability\u00a0\u00bb meaning is WHERE this data can be find :\n- either on-L1 (in \u00ab\u00a0function call data\u00a0\u00bb)\n- OR off-chain (at a reduced cost)\n\nSorry this is a bit Loopring-centric, which is because I use it.\n\nI still think that is generally relevant, because I expect many of those concept above to be the same for other \u00ab\u00a0true\u00a0\u00bb L2 Rollups.\n\nRegards,",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "uhipmb",
-            "title": "The Raiden Network: Now Live on Arbitrum",
-            "url": "https://medium.com/raiden-network/the-raiden-network-now-live-on-arbitrum-3d57fedf7961",
-            "author": "wmelon123",
-            "created_utc": 1651591934.0,
-            "score": 37,
-            "num_comments": 12,
-            "subreddit": "ethereum",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i774j23",
-                    "author": "frank__costello",
-                    "score": 8,
-                    "created_utc": 1651605754.0,
-                    "response": "Didn't realize Raiden Network was still around\n\nFor anyone not familiar Raiden Network is basically Bitcoin's Lightning Network, but on Ethereum",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i77lwyb",
-                            "author": "cafo92",
-                            "score": 4,
-                            "created_utc": 1651612884.0,
-                            "response": "I was about to say -- Raiden *cigarette drag* now that's a name I hadn't heard in a while",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i76851u",
-                    "author": "coinfeeds-bot",
-                    "score": 5,
-                    "created_utc": 1651592716.0,
-                    "response": "tldr; The Raiden protocol is now available on the Arbitrum rollup. The move to a rollup-centric future opens possibilities to leverage the full potential of the Raiden Network for future M2M and IoT use cases. The new deployment on Arbitrum One will lower the setup costs and make Raiden the fastest and most inexpensive decentralized ERC20 transfer solution.\n\n*This summary is auto generated by a bot and not meant to replace reading the original article. As always, DYOR.*",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i76xg9x",
-                            "author": "par5ha",
-                            "score": 4,
-                            "created_utc": 1651602733.0,
-                            "response": "Good bot",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "uhebfe",
-            "title": "What's your favorite L2 solution and why is it zkSync?",
-            "url": "https://www.reddit.com/r/ethereum/comments/uhebfe/whats_your_favorite_l2_solution_and_why_is_it/",
-            "author": "Fuliggine",
-            "created_utc": 1651578672.0,
-            "score": 4,
-            "num_comments": 31,
-            "subreddit": "ethereum",
-            "selftext": "The title is of course provocative, but I'm really enjoying zkSync more and more, particularly the ZigZagDEX: it has the widest selection of tokens between the ones I usually buy and its lower gas fees allow me to space out my purchases.",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i763bvw",
-                    "author": "javixuyee",
-                    "score": 6,
-                    "created_utc": 1651590837.0,
-                    "response": "zkSync used with Argent is the most user friendly experience for Ethereum ecosystem. And also with zk proof security. It's my L2 daily cripto wallet. \n\nAlso I like Arbitrum and Optmism with the new governance system.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i769tb9",
-                    "author": "frank__costello",
-                    "score": 7,
-                    "created_utc": 1651593363.0,
-                    "response": "Man, there's gonna be maximalists of different L2s arguing and competing with eachother\n\nThink of how bullish that is for Ethereum",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i77l1zd",
-                            "author": "Perleflamme",
-                            "score": 3,
-                            "created_utc": 1651612521.0,
-                            "response": "Lol. That was pretty funny. XD \n\nThink of how bullish that is for crypto. ;)\n\nAs long as shilled still realize any other competitor is benefiting the ecosystem and are helping them profit from it, I don't see them as maximalists, just shills. I'm fine with it, personally. To a lesser degree, it also helps people keep being on their toes regarding scams.",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i75i8r4",
-                    "author": "AESTHTK",
-                    "score": 14,
-                    "created_utc": 1651581668.0,
-                    "response": "Optimism, zkSync, Starknet, ImmutableX, Arbitrum, Metis, Loopring... in that order. Out of those that I\u2019ve tried!\n\nCan\u2019t wait for zkSync 2.0 to hit mainnet. \ud83d\ude09\n\nIf you haven\u2019t played with BRIQS on Starknet, highly recommend trying that out (you\u2019ll need the ArgentX wallet).\n\nEdit: BRIQS!",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i764jfm",
-                            "author": "hanniabu",
-                            "score": 8,
-                            "created_utc": 1651591312.0,
-                            "response": "I'm not a fan of Starknet's proprietary approach, very anti-Ethereum",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i77yis0",
-                                    "author": "AESTHTK",
-                                    "score": 3,
-                                    "created_utc": 1651618368.0,
-                                    "response": "Fair enough.\n\nWelcome to Layer 2 - it\u2019s a different world up there and we\u2019re going to see a whole spectrum of approaches.",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        },
-                        {
-                            "id": "i78vsh1",
-                            "author": "Asccandreceive",
-                            "score": 3,
-                            "created_utc": 1651633548.0,
-                            "response": "You don\u2019t like polygon?",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i75ij3b",
-                    "author": "Puddingbuks26",
-                    "score": 14,
-                    "created_utc": 1651581815.0,
-                    "response": "Loopring!",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i75fsv7",
-                    "author": "thekindeagle",
-                    "score": 4,
-                    "created_utc": 1651580380.0,
-                    "response": "I've been checking out zkSync recently. I'm using the Argent wallet (which I believe is tied to ZigZag) and have found it to be simple enough to recommend to my crypto-curious normie friends/family, but robust enough for degens.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i75dqu9",
-                    "author": "MinimalGravitas",
-                    "score": 7,
-                    "created_utc": 1651579234.0,
-                    "response": "Matter Labs are the only team I know with an EVM compatible ZK rollup in testnet, so they seem to be ahead in the long game.\n\nOn the other hand, I really like the mentality behind Optimism, the whole concept of Ethereum's Phoenix is something I very much hope we manage to manifest.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i76a749",
-                            "author": "Maswasnos",
-                            "score": 7,
-                            "created_utc": 1651593512.0,
-                            "response": "My only concern with Optimism is that they've moved forward with their token and governance before fraud proofs are live and before the sequencer is decentralized. I know they're working on it, but I get the impression they want to play catch-up with Arbitrum's TVL and releasing a token is their way to do that.",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i76bk98",
-                                    "author": "MinimalGravitas",
-                                    "score": 5,
-                                    "created_utc": 1651594042.0,
-                                    "response": "Yea, I think that's a completely fair analysis.",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i75k8fi",
-                    "author": "bocceballbarry",
-                    "score": 3,
-                    "created_utc": 1651582658.0,
-                    "response": "Optimism because their DAO governance structure encapsulates the values and spirit of web3. \u201cWe must scale our values not just the tech\u201d",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i75wh7w",
-                    "author": "-Aporia",
-                    "score": 3,
-                    "created_utc": 1651588083.0,
-                    "response": "My favorite is Polygon. They are dropping 4 ZK solutions and I think they are the most developer friendly chain out there by an absolute mile.",
                     "depth": 1,
                     "comments": []
                 }
@@ -34955,6 +34735,235 @@
             "selftext": "",
             "stickied": false,
             "comments": []
+        },
+        {
+            "id": "uhipmb",
+            "title": "The Raiden Network: Now Live on Arbitrum",
+            "url": "https://medium.com/raiden-network/the-raiden-network-now-live-on-arbitrum-3d57fedf7961",
+            "author": "wmelon123",
+            "created_utc": 1651591934.0,
+            "score": 36,
+            "num_comments": 16,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i774j23",
+                    "author": "frank__costello",
+                    "score": 10,
+                    "created_utc": 1651605754.0,
+                    "response": "Didn't realize Raiden Network was still around\n\nFor anyone not familiar Raiden Network is basically Bitcoin's Lightning Network, but on Ethereum",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i77lwyb",
+                            "author": "cafo92",
+                            "score": 4,
+                            "created_utc": 1651612884.0,
+                            "response": "I was about to say -- Raiden *cigarette drag* now that's a name I hadn't heard in a while",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i76851u",
+                    "author": "coinfeeds-bot",
+                    "score": 5,
+                    "created_utc": 1651592716.0,
+                    "response": "tldr; The Raiden protocol is now available on the Arbitrum rollup. The move to a rollup-centric future opens possibilities to leverage the full potential of the Raiden Network for future M2M and IoT use cases. The new deployment on Arbitrum One will lower the setup costs and make Raiden the fastest and most inexpensive decentralized ERC20 transfer solution.\n\n*This summary is auto generated by a bot and not meant to replace reading the original article. As always, DYOR.*",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i76xg9x",
+                            "author": "par5ha",
+                            "score": 5,
+                            "created_utc": 1651602733.0,
+                            "response": "Good bot",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "uhebfe",
+            "title": "What's your favorite L2 solution and why is it zkSync?",
+            "url": "https://www.reddit.com/r/ethereum/comments/uhebfe/whats_your_favorite_l2_solution_and_why_is_it/",
+            "author": "Fuliggine",
+            "created_utc": 1651578672.0,
+            "score": 3,
+            "num_comments": 42,
+            "subreddit": "ethereum",
+            "selftext": "The title is of course provocative, but I'm really enjoying zkSync more and more, particularly the ZigZagDEX: it has the widest selection of tokens between the ones I usually buy and its lower gas fees allow me to space out my purchases.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i763bvw",
+                    "author": "javixuyee",
+                    "score": 6,
+                    "created_utc": 1651590837.0,
+                    "response": "zkSync used with Argent is the most user friendly experience for Ethereum ecosystem. And also with zk proof security. It's my L2 daily cripto wallet. \n\nAlso I like Arbitrum and Optmism with the new governance system.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i769tb9",
+                    "author": "frank__costello",
+                    "score": 7,
+                    "created_utc": 1651593363.0,
+                    "response": "Man, there's gonna be maximalists of different L2s arguing and competing with eachother\n\nThink of how bullish that is for Ethereum",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i77l1zd",
+                            "author": "Perleflamme",
+                            "score": 3,
+                            "created_utc": 1651612521.0,
+                            "response": "Lol. That was pretty funny. XD \n\nThink of how bullish that is for crypto. ;)\n\nAs long as shilled still realize any other competitor is benefiting the ecosystem and are helping them profit from it, I don't see them as maximalists, just shills. I'm fine with it, personally. To a lesser degree, it also helps people keep being on their toes regarding scams.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i75i8r4",
+                    "author": "AESTHTK",
+                    "score": 13,
+                    "created_utc": 1651581668.0,
+                    "response": "Optimism, zkSync, Starknet, ImmutableX, Arbitrum, Metis, Loopring... in that order. Out of those that I\u2019ve tried!\n\nCan\u2019t wait for zkSync 2.0 to hit mainnet. \ud83d\ude09\n\nIf you haven\u2019t played with BRIQS on Starknet, highly recommend trying that out (you\u2019ll need the ArgentX wallet).\n\nEdit: BRIQS!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i764jfm",
+                            "author": "hanniabu",
+                            "score": 8,
+                            "created_utc": 1651591312.0,
+                            "response": "I'm not a fan of Starknet's proprietary approach, very anti-Ethereum",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i77yis0",
+                                    "author": "AESTHTK",
+                                    "score": 3,
+                                    "created_utc": 1651618368.0,
+                                    "response": "Fair enough.\n\nWelcome to Layer 2 - it\u2019s a different world up there and we\u2019re going to see a whole spectrum of approaches.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i78vsh1",
+                            "author": "Asccandreceive",
+                            "score": 3,
+                            "created_utc": 1651633548.0,
+                            "response": "You don\u2019t like polygon?",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i75tqer",
+                            "author": "dindles",
+                            "score": 3,
+                            "created_utc": 1651586941.0,
+                            "response": "\\*briqs\\* \ud83d\ude09",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i75ij3b",
+                    "author": "Puddingbuks26",
+                    "score": 13,
+                    "created_utc": 1651581815.0,
+                    "response": "Loopring!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i75fsv7",
+                    "author": "thekindeagle",
+                    "score": 5,
+                    "created_utc": 1651580380.0,
+                    "response": "I've been checking out zkSync recently. I'm using the Argent wallet (which I believe is tied to ZigZag) and have found it to be simple enough to recommend to my crypto-curious normie friends/family, but robust enough for degens.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i75dqu9",
+                    "author": "MinimalGravitas",
+                    "score": 8,
+                    "created_utc": 1651579234.0,
+                    "response": "Matter Labs are the only team I know with an EVM compatible ZK rollup in testnet, so they seem to be ahead in the long game.\n\nOn the other hand, I really like the mentality behind Optimism, the whole concept of Ethereum's Phoenix is something I very much hope we manage to manifest.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i76a749",
+                            "author": "Maswasnos",
+                            "score": 7,
+                            "created_utc": 1651593512.0,
+                            "response": "My only concern with Optimism is that they've moved forward with their token and governance before fraud proofs are live and before the sequencer is decentralized. I know they're working on it, but I get the impression they want to play catch-up with Arbitrum's TVL and releasing a token is their way to do that.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i76bk98",
+                                    "author": "MinimalGravitas",
+                                    "score": 4,
+                                    "created_utc": 1651594042.0,
+                                    "response": "Yea, I think that's a completely fair analysis.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i75wh7w",
+                    "author": "-Aporia",
+                    "score": 4,
+                    "created_utc": 1651588083.0,
+                    "response": "My favorite is Polygon. They are dropping 4 ZK solutions and I think they are the most developer friendly chain out there by an absolute mile.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uh7rpf",
+            "title": "Best place to loan against eth",
+            "url": "https://www.reddit.com/r/ethereum/comments/uh7rpf/best_place_to_loan_against_eth/",
+            "author": "jeux99",
+            "created_utc": 1651550801.0,
+            "score": 6,
+            "num_comments": 27,
+            "subreddit": "ethereum",
+            "selftext": "What is the best place I can take a loan against my eth holdings? Ideally the loan would be in a stablecoin. Also what would the interest rates be? Please give me your thoughts",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7517c3",
+                    "author": "Wisgood",
+                    "score": 4,
+                    "created_utc": 1651570211.0,
+                    "response": "Makerdao is the place. You can mint your own dai, there's nothing cooler than that. But if you don't have enough for 15k, I've also used Liquity and it's pretty good too, but ETH only (whereas Maker lets you borrow against interest bearing steth)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i75036l",
+                    "author": "PinkPuppyBall",
+                    "score": 3,
+                    "created_utc": 1651569256.0,
+                    "response": "Alchemix, self repaying loan.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
         }
     ]
 }
