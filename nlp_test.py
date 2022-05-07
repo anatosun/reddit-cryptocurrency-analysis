@@ -4,8 +4,9 @@ import re, string, random
 from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.corpus import twitter_samples, stopwords
 from nltk.tag import pos_tag
-from nltk.tokenize import word_tokenize
 from nltk import classify, NaiveBayesClassifier
+from nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA
+from textblob import TextBlob
 
 # Install first within the python interpreter
 '''
@@ -89,7 +90,12 @@ def get_classifier_tuto_1():
    print("Accuracy is:", classify.accuracy(classifier, test_data), "\n")
 
    return classifier
-   
+
+def get_sentiment_analysis_sia(sia, text):
+   scores = {k : sia.polarity_scores(text)[k] for k in ( "pos", "neu", "neg")}
+   r = max(scores, key=scores.get)
+   return 1 if r == "pos" else 0 if r == "neu" else -1
+
 def add_sentiment_analysis_to_file(file_name, sa_function):
    print(f"Update {file_name} with sentiment analysis...")
 
@@ -114,13 +120,20 @@ def recursive_comment_update(post, sa_function):
          recursive_comment_update(comment, sa_function)
 
 if __name__ == "__main__":
-   classifier = get_classifier_tuto_1()
+   # Only pos / neg
+   # classifier = get_classifier_tuto_1()
+   # sa_tuto_1 = lambda text: classifier.classify(dict([token, True] for token in remove_noise(word_tokenize(text))))
 
-   sa_tuto_1 = lambda text: classifier.classify(dict([token, True] for token in remove_noise(word_tokenize(text))))
-   
+   # SentimentIntensityAnalyzer: 1, 0, -1
+   sia = SIA()
+   sa_sia = lambda text: get_sentiment_analysis_sia(sia, text)
+
+   # TextBlob: [-1, 1]
+   blob = lambda text: round(TextBlob(text).polarity, 2)
+
    # Update all files with sentiment analysis
    '''
    for file in os.listdir(os.path.join('data')):
       if file.endswith(".json"):
-         add_sentiment_analysis_to_file(file, sa_tuto_1)
+         add_sentiment_analysis_to_file(file, sa_sia)
    '''

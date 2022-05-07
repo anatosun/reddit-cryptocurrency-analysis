@@ -108,9 +108,11 @@ class EdgeListDumper():
         assert post['score'] is not None, "score cannot be None"
         assert post['num_comments'] is not None, "num_comments cannot be None"
         assert post['subreddit'] is not None, "subreddit cannot be None"
-        self.insert_comments(post['comments'], [(post['author'], 1)])
+        subreddit = post['subreddit']
+        self.insert_comments(post['comments'], [
+                             (post['author'], 1)], subreddit)
 
-    def insert_comments(self, comments: list, context: list):
+    def insert_comments(self, comments: list, context: list, subreddit):
         for comment in comments:
             assert comment['author'] is not None, "author cannot be None"
             assert comment['score'] is not None, "score cannot be None"
@@ -127,9 +129,10 @@ class EdgeListDumper():
                     # context query ###### username: author
                     key = (author, a)
                     if key not in self.edges.keys():
-                        self.edges[key] = comment['score']/d
+                        self.edges[key] = (comment['score']/d, subreddit)
                     else:
-                        self.edges[key] += comment['score']/d
+                        w, s = self.edges[key]
+                        self.edges[key] = (w+comment['score']/d, s)
 
                     if self.vertices.get(a) is None:
                         self.vertices[a] = comment['score']
@@ -138,18 +141,18 @@ class EdgeListDumper():
 
             if len(comment['comments']) > 0:
                 self.insert_comments(
-                    comment['comments'], context + [(comment['author'], comment['score'])])
+                    comment['comments'], context + [(comment['author'], comment['score'])], subreddit)
 
     def dump_to_file(self, file: str):
         with open(file, 'w') as f:
-            f.write("Source,Source_Total_Score,Target,Target_Total_Score,Weight\n")
+            f.write("source,source_score,target,target_score,weight,subreddit\n")
             for key in self.edges.keys():
                 source, target = key
-                weight = self.edges[key]
+                weight, subreddit = self.edges[key]
                 source_total_score = self.vertices[source]
                 target_total_score = self.vertices[target]
                 f.write(
-                    f"{source},{source_total_score},{target},{target_total_score},{weight}\n")
+                    f"{source},{source_total_score},{target},{target_total_score},{weight},{subreddit}\n")
 
 
 if __name__ == "__main__":
@@ -162,4 +165,4 @@ if __name__ == "__main__":
     for file in os.listdir(os.path.join('data')):
         if file.endswith(".json"):
             dp.insert_json_dump(os.path.join('data', file))
-    dp.dump_to_file('edgelist.csv')
+    dp.dump_to_file('./data/edgelist.csv')
