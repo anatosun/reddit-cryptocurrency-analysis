@@ -7,6 +7,9 @@ import json
 import os
 import datetime
 import pandas as pd
+import reddit2fa_connector
+import sys
+
 
 #config
 data_path = os.path.join("data")
@@ -29,18 +32,20 @@ def logger(string, file, overwrite=False):
 
 def main():
 
+    # login to get refresh token
+    #reddit2fa_connector.connect()
+
     # Prepare Pools & PRAW
     pool = Pool(max_workers=cpu_count())
     user_agent = os.getenv('REDDIT_USER_AGENT')
     client_id = os.getenv('REDDIT_CLIENT_ID')
     client_secret = os.getenv('REDDIT_CLIENT_SECRET')
-    client_username = os.getenv('REDDIT_CLIENT_USERNAME')
-    client_password = os.getenv('REDDIT_CLIENT_PASSWORD')
+    refresh_token = os.getenv('REDDIT_REFRESH_TOKEN')
+
     reddit = Reddit(user_agent=user_agent,
                     client_id=client_id,
                     client_secret=client_secret,
-                    password=client_username,
-                    username=client_password)
+                    refresh_token=refresh_token)
     
     # Create folders
     if not os.path.exists(data_path):
