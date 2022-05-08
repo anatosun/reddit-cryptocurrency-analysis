@@ -1,3 +1,4 @@
+#copied this from some blog which turns out to have been copied from https://praw.readthedocs.io/en/v7.1.4/tutorials/refresh_token.html
 from praw import Reddit
 import random
 import webbrowser
