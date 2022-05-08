@@ -9,19 +9,6 @@
     ],
     "posts": [
         {
-            "id": "uklh8v",
-            "title": "Question about debt",
-            "url": "https://www.reddit.com/r/ethereum/comments/uklh8v/question_about_debt/",
-            "author": "Mori-Spumae",
-            "created_utc": 1651954731.0,
-            "score": 3,
-            "num_comments": 1,
-            "subreddit": "ethereum",
-            "selftext": "So I have recently gotten into monetary theory. Basically, transactions in the world of fiat are pretty much all just debt being thrown around in the form of government currencies or bank deposits. This means that most transactions change the amount of debt and thereby the amount of money in circulation.\n\nNow, my question is this: Since many coins has a fixed supply but can be lent out, is there a way of knowing how much there actually is including the debt? Do you know any reliable data sources to find out how much bitcoin (or other crypto currencies) have been lent? \n\nI think this might be especially interesting for DeFi since I wouldn't be surprised if a large amount of ETH for example might be borrowed multiple times. That's kinda what yield farming is about right? Also any form of investing on margin.\n\nNot trying to offend anyone here, really just looking for data or other input.",
-            "stickied": false,
-            "comments": []
-        },
-        {
             "id": "ttaumd",
             "title": "Staking on Coinbase - Waitlist",
             "url": "https://www.reddit.com/r/ethereum/comments/ttaumd/staking_on_coinbase_waitlist/",
@@ -33,6 +20,143 @@
             "selftext": "I am interested in Staking on Coinbase but I see there is a \"waitlist\". Did I miss something?",
             "stickied": false,
             "comments": []
+        },
+        {
+            "id": "uklh8v",
+            "title": "Question about debt",
+            "url": "https://www.reddit.com/r/ethereum/comments/uklh8v/question_about_debt/",
+            "author": "Mori-Spumae",
+            "created_utc": 1651954731.0,
+            "score": 82,
+            "num_comments": 29,
+            "subreddit": "ethereum",
+            "selftext": "So I have recently gotten into monetary theory. Basically, transactions in the world of fiat are pretty much all just debt being thrown around in the form of government currencies or bank deposits. This means that most transactions change the amount of debt and thereby the amount of money in circulation.\n\nNow, my question is this: Since many coins has a fixed supply but can be lent out, is there a way of knowing how much there actually is including the debt? Do you know any reliable data sources to find out how much bitcoin (or other crypto currencies) have been lent? \n\nI think this might be especially interesting for DeFi since I wouldn't be surprised if a large amount of ETH for example might be borrowed multiple times. That's kinda what yield farming is about right? Also any form of investing on margin.\n\nNot trying to offend anyone here, really just looking for data or other input.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7pwjq5",
+                    "author": "NamisKnockers",
+                    "score": 37,
+                    "created_utc": 1651956166.0,
+                    "response": "Any asset could be used as potential collateral and it can be claimed a few times.  I get a mortgage on my house.   Then the bank uses my house as collateral to get cash from another bank or lender.  Then they use that cash to lend more money.  \n\nEach time it is lent the amount available for credit is lower.  And in the end doesn\u2019t change the fact that there is only one house.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7px1oa",
+                            "author": "Mori-Spumae",
+                            "score": 16,
+                            "created_utc": 1651956381.0,
+                            "response": "Exactly! That's why I would love to know how many times over all the crypto assets are lent out.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7qilum",
+                                    "author": "mooremo",
+                                    "score": 11,
+                                    "created_utc": 1651966666.0,
+                                    "response": "Crypto is actually good at solving this problem. You can trace it all on chain and you can only borrow against a given token a single time. Whereas in traditional markets it might be possible to take multiple mortgages on a single property if someone wasn't paying attention or corrupt. Or multiple insurance policies on a single asset for the same reasons.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i7q3vdw",
+                                    "author": "NamisKnockers",
+                                    "score": 3,
+                                    "created_utc": 1651959494.0,
+                                    "response": "As long as the coins themselves can\u2019t be spent twice they could continue to be used that way.  \n\nI imagine the risk is higher though so the available credit on a digital coin might be less than on an asset like real estate.  \n\nIn the end though if it\u2019s used as collateral then it\u2019s not technically spent.  Some other coin or fiat is spent.   Maybe that (holding) increases price.\n\nI wonder how you signify they are the collateral?",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i7q90t9",
+                                    "author": "kybernetikos",
+                                    "score": 3,
+                                    "created_utc": 1651961941.0,
+                                    "response": "The problem is tracking all the lending and borrowing.  You might be able to come up with a decent estimate by aggregating data across all the biggest defi venues for lending/borrowing, but it's impossible to reliably get it all.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i7r00mr",
+                                            "author": "point_breeze69",
+                                            "score": 3,
+                                            "created_utc": 1651975795.0,
+                                            "response": "Why would it be impossible?",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7pzx55",
+                    "author": "g_squidman",
+                    "score": 14,
+                    "created_utc": 1651957672.0,
+                    "response": "If you're talking about Modern Monetary Theory, that's about how fiat currency is debt *which can be paid back in the same currency, itself.* Ethereum is a really good example of MMT in practice, but not in the DeFi space so much as in the issuance schedule. Ethereum will always print as many coins as it needs to in order to pay for its own security, no matter how much it might cause inflation of the coin. It balances this money printing by creating demand for the coin. It requires gas to be paid in Eth, and requires stakes to be denominated in Eth. Ethereum is printed and the taxes are burned. \"We don't tax so that we can spend, rather we spend so that we can tax.\"",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7q07rs",
+                            "author": "Mori-Spumae",
+                            "score": 8,
+                            "created_utc": 1651957807.0,
+                            "response": "I was not talking about MMT actually, just the credit theory of money. But yes, that is another interesting dimension that I hadn't thought of yet!",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7qthaj",
+                                    "author": "g_squidman",
+                                    "score": 5,
+                                    "created_utc": 1651972347.0,
+                                    "response": "A while back I tried to find out something similar to your question and ended up on this website: https://cryptoquant.com/asset/eth/summary\n\nI didn't get much further, because it required an account to look at more advanced analytics and I'm not good enough with finance to understand what I'm looking at anyway. I think that might be the place to go if you want to try and determine long and short interest. \n\nIt looks like there are some Dune graphs for Aave, Maker, and Compound loans you could try to use as well. https://dune.com/datanut/Compound-Maker-and-Aave-Deposits-Loans-LTV Dune Analytics is always a good resource for this kind of stuff. It lets you put your own graphs together based on publicly available variables on the chain. I think they're funded by Gitcoin grants.\n\nMost of these protocols overcollateralize though, so they're not actually increasing the circulating M2 money supply or whatever. I think.... so... the main culprit for that would be Tether, right? That's what people always complain about, that Tether is undercollateralized so they \"BaSiCaLlY ReInVeNtEd ThE FeDeRaL ReSeRvE.\" I don't know how accurately we can speculate about Tether's reserve holdings.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7qnmhh",
+                    "author": "fakeaccount628",
+                    "score": 6,
+                    "created_utc": 1651969275.0,
+                    "response": "The word you\u2019re looking for is rehypothecation",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7ptmpz",
+                    "author": "Mori-Spumae",
+                    "score": 9,
+                    "created_utc": 1651954856.0,
+                    "response": "Would love to post this on r/CryptoCurrency for more discussion but don't have enough karma sadly",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7q8zy1",
+                            "author": "frank__costello",
+                            "score": 11,
+                            "created_utc": 1651961930.0,
+                            "response": "/r/CC rarely has quality discussions\n\nTry /r/ethfinance for discussions like these :)",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7q2gav",
+                    "author": "1ncehost",
+                    "score": 5,
+                    "created_utc": 1651958825.0,
+                    "response": "I don't know of an index that tracks it, but yes you are right about it.\n\nOne of the big debt circles are the stablecoins.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
         }
     ]
 }

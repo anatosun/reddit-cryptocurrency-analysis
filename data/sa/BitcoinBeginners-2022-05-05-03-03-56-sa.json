@@ -1,0 +1,51 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": 3,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "tz5mf0",
+            "title": "those of you who use non hardware cold storage, what does your setup look like",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/tz5mf0/those_of_you_who_use_non_hardware_cold_storage/",
+            "author": "SilentCardiologist51",
+            "created_utc": 1649430428.0,
+            "score": 3,
+            "num_comments": 54,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i3wt207",
+                    "author": "bitusher",
+                    "score": 5,
+                    "created_utc": 1649431281.0,
+                    "response": "One easy solution :\n\n1) download TAILs -\n\nhttps://tails.boum.org/install/download/index.en.html\n\nand make a linux live USB which is easy to do with software like this\n\nhttps://www.linuxliveusb.com/\n\n2) insert USB stick in port and restart your computer or laptop and press the right keys to enter the boot manager(different for every make/model) and select to boot from the USB instead of local hard drive . select TAILs live usb\n\n3) tails comes with electrum preinstalled, setup tails(select segwit) and write down 12 word seed with the word \"electrum\" next to it for context and write down 1 or multiple bitcoin addresses.\n\nhttps://www.youtube.com/watch?v=E4EhZg5QslI\n\n4) do not put seed words into anything digital , send some bitcoin to one of the addresses, keep the seed words private and secure . \n\nOptional - To use a passphrase feature click \"Options\" on the seed generation, and then check \"Extend this seed with custom words\" in electrum , than input at least 4-6 random words not found in literature, scripts or music as a phrase . Make sure you writedown exactly what you input (case sensitive and spaces do matter)\n\nThan you will want to store your backups in this manner -\n\nhttps://www.reddit.com/r/BitcoinBeginners/comments/g42ijd/faq_for_beginners/fouo3kh/\n\n\nDone\n\nIf this is too complicated for you than just buy a 60 dollar trezor one",
+                    "depth": 1,
+                    "comments": [],
+                    "sentiment_analysis": 0
+                }
+            ],
+            "sentiment_analysis": 0
+        },
+        {
+            "id": "uibjqj",
+            "title": "As a (web) programmer without a college degree, how do I give myself a solid technical education in Bitcoin?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uibjqj/as_a_web_programmer_without_a_college_degree_how/",
+            "author": "AppSecPleb",
+            "created_utc": 1651684491.0,
+            "score": 6,
+            "num_comments": 16,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I've been programming for a few years and currently work as a web developer. While I'm a reasonably competent developer, I don't have a formal computer science education. \n\nI've become fascinated (obsessed, really) with bitcoin over the last year and I'd like to dedicate the time to understanding it as deeply as I can. This means learning some of the fundamental aspects of the technology like cryptography and distributed systems, but going back to school isn't something I'm interested in. I've got the time to learn, I just don't really know where to start or what to focus on.\n\nI do have a copy of Jimmy Song's book \"Programming Bitcoin\" and I'm a few chapters deep and enjoying it a lot. Are there any other technical resources anyone can recommend? Any tips on how to best spend my study time? \n\nIdeally, I'd like to be able to understand the details of the latest BIPs, what the core devs are doing, and generally be as informed as I can to become a better steward of the network. Maybe in a perfect world I'd land a job in the space one day.",
+            "stickied": false,
+            "comments": [],
+            "sentiment_analysis": 0
+        }
+    ]
+}

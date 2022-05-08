@@ -1,0 +1,154 @@
+{
+    "subreddit": "CryptoTechnology",
+    "limit": 1000,
+    "minimum_score": 3,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "ul1utb",
+            "title": "When it comes to zero knowledge proofs, how does it practically work in a private chain?",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ul1utb/when_it_comes_to_zero_knowledge_proofs_how_does/",
+            "author": "RedEagle_MGN",
+            "created_utc": 1652016906.0,
+            "score": 11,
+            "num_comments": 4,
+            "subreddit": "CryptoTechnology",
+            "selftext": "I get that ZK can allow you to share info without sharing the exact info, e.g.:\n\nQuestion: Does Bob drink 10 cups of coffee a day\n\nAnswer: Yes, Bob drinks more than 10 cups of coffee a day but I am not going to tell you how many.\n\n&#x200B;\n\nBut how do ZK proofs practically work in a private chain?\n\nAs I see it the Blockchain is like a paper. Each node is a copy of the piece of paper and transactions are validates across nodes. With ZK proofs, is all the transaction data (who is sending what to who, how much is in each wallet, who requested the info and who verified it), is that all private or is the meta data still exposed?  \nIf the above is the case, why isn't ZK used in all cases on all blockchains?\n\nIs all the validation or just the info sent to companies private? \n\nWould not the 20x number of calculations needed for ZK for everything cause HUGE efficiency problems?",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "ukxhur",
+            "title": "What are issues Layer 2 (specifically on Ethereum) does not solve?",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ukxhur/what_are_issues_layer_2_specifically_on_ethereum/",
+            "author": "Matt-ayo",
+            "created_utc": 1651999275.0,
+            "score": 25,
+            "num_comments": 16,
+            "subreddit": "CryptoTechnology",
+            "selftext": "There is rightfully a lot of hype around layer 2 protocols on Ethereum. They are certainly an improvement from a day-to-day user perspective.\n\nI've gotten a bit behind on the recent Eth changes, the coming Eth changes and how they will interact with layer-2, but I have heard select folk talk about how layer-2 and even Eth 2 don't fix all of Ethereum's issues and was just hoping to get a better grasp of that argument.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7s3g94",
+                    "author": "Simple_Yam",
+                    "score": 19,
+                    "created_utc": 1652002883.0,
+                    "response": "Fast finality. \n\nIf you take a look at ZK Sync or Starkware explorers you'll see that it can take hours for submitted blocks to reach finality on L1.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7scrrw",
+                            "author": "frank__costello",
+                            "score": 9,
+                            "created_utc": 1652010573.0,
+                            "response": "This is an economy-of-scale issue\n\nGenerating ZK proofs is very expensive, so most ZKRs wait for many transactions before submitting a proof. This will get faster as usage increases. Arbitrum used to submit a batch once every hour or two, now they submit a batch almost every minute.\n\nHowever, the finality of an L2 is ultimately bound by the finality of the L1 that it settles on.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7sz3sv",
+                                    "author": "domotheus",
+                                    "score": 4,
+                                    "created_utc": 1652022567.0,
+                                    "response": ">This will get faster as usage increases\n\nand as their L1 costs decrease with [blob transactions](https://eip4844.com) being priced independently of the regular layer 1 congestion.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7s3jh5",
+                    "author": "diomediocre",
+                    "score": 11,
+                    "created_utc": 1652002964.0,
+                    "response": "Data availability is a big one. Tracking the whole blockchain takes up a lot of space that still needs to be offloaded using the shard design. There's also issues with blockspace on Ethereum now that are indirectly involved in gas fee issues that severely limit layer-2s ability to do data calls so proto-danksharding and danksharding are looking to solve these through the use of \"blob\" transactions. Neither of these fix the underlying issues but should kick the can down the road a very long ways.\n\nNext is EVM compatibility and silos of resources. Most Ethereum L1 protocols can use existing tooling from Optimism or Arbitrum to migrate to an L2 but this took a substantial amount of effort and preparation, and launching on either isn't 1-1 to launching on another OR. This gets even worse when considering zkRollups which will apparently have a very difficult time achieving EVM parity and are similar to a whole new chain with a custom language. All these separate rollups also separate off developers and improvements for Ethereum as an L1 and are pretty directly in competition with each other for the competent developers who will move to L2s. On a customer side this makes liquidity and TVL splintered and highly dependent on non-Ethereum dependent bridges like Hop, Synapse, or Multichain. This effect will likely end up looking quite similar to the EVM dominated L1 wars recently.\n\nSome issues with Ethereum don't get solved by L2s but get solved by The Merge which is a phased delivery of sharding, rollups, and PoS. And some issues with Ethereum won't be affected at all in a bad way like the high level of dependence on a few entities for infrastructure support like Alchemy, Infura, and Metamask. These weaknesses have been exposed and are being slowly addressed on their own.\n\nL2s also create some issues we didn't really have before. Optimistic rollups currently have a \"weak assumption\" of trust with their whole fraud proof/sequencer setup and a week long return of resources to the main chain due to this setup. ZKrollups lose a lot of transparency with the simple mechanics of validity proofs and how products like Etherscan will be able to understand them supposedly (unsure of this claim), and have  extremely high processing requirements centralizing their creation and utilization somewhat.\n\nAs for the major issues people are looking to address of TPS and gas fees, most implementations are artificially capped right now so accurate numbers are hard to come by as with rollups gas fees should have a weird \"check-mark\" curve as gas will get cheaper until blocks start filling. I think most ORs are in the 5-10k TPS range while zkRollups are theoretically in the 50k range. Most online implementations bring Ethereum to Avalanche/Terra levels of fees on l2fees.com but those are noted to be the expensive L1s right now (Ethereum's fees being the whacky outlier) so most active L1s beat most active L2s on fees/TPS metrics currently though L2s are basically holding their own leash here.\n\nPromising stuff to look into would be Polygon's multiple investments into new L2 teams, Celestia approach to modularity and potentially Sovereign rollups, Aztec Network/Starknet/ZkSync just starting to rev up, whatever Polynya is hyped about currently, Optimism governance and airdrop release, I think it was zkSync hyping L3s, and Metis network or Loopring as dark horse candidates.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7s54m8",
+                    "author": "Cemetate",
+                    "score": 5,
+                    "created_utc": 1652004378.0,
+                    "response": "Composabillity. \n\nSeen as the LEGO blocks of DEFI, L2s break this!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7scuiv",
+                            "author": "frank__costello",
+                            "score": 3,
+                            "created_utc": 1652010629.0,
+                            "response": "Composability works fine on each individual L2, there's many DeFi apps already composed on Arbitrum.\n\nComposability can work across rollups, however it's not _atomic_ composability.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7sd0qn",
+                    "author": "frank__costello",
+                    "score": 3,
+                    "created_utc": 1652010747.0,
+                    "response": "Rollups solve the issues of computation and state storage, however they're still limited by historical data availability (the \"data availability problem\")\n\nThis issue either needs to be solved by the L1 (data sharding, danksharding and EIP-4844 proto-danksharding), or can also be addressed by using a different platform for data availability (such as Celestia or ZKSync's ZK-porter)",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ukvhvw",
+            "title": "ZK Rollups are the missing piece to complete the blockchain scaling solution puzzle",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ukvhvw/zk_rollups_are_the_missing_piece_to_complete_the/",
+            "author": "J-59",
+            "created_utc": 1651990132.0,
+            "score": 7,
+            "num_comments": 5,
+            "subreddit": "CryptoTechnology",
+            "selftext": "One of the main issues that\u2019s still holding blockchain from being adopted worldwide is scalability, whether its transaction speed related or high gas fees that users are currently suffering from. \n\n\nZK Rollups are playing a major role in blockchain scalability, since Rollups vastly reduce the computing and storage resources required to validate blocks, by decreasing the amount of data in a transaction. \n\n\nOne of the industry\u2019s leading ZK powerhouses is Polygon, that committed $1 billion aiming to acquire world-class ZK projects and teams, building ZK-based solutions, hiring premium talent, adoption of ZK solutions, research funding\u2026 \n\n\nMATIC has introduced zk based solutions like Hermez, Nightfall, Miden, Zero\u2026 and even the the first ever zk cryptography powered digital identity platform, Polygon ID.",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "ukpwr4",
+            "title": "In Less Than 7 Hours, Decred Will Make a Radical Consensus Change",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ukpwr4/in_less_than_7_hours_decred_will_make_a_radical/",
+            "author": "Corp-Por",
+            "created_utc": 1651968708.0,
+            "score": 15,
+            "num_comments": 3,
+            "subreddit": "CryptoTechnology",
+            "selftext": "Decred is a project conceived by ex-Bitcoin devs,  the same devs who wrote the btcd node that is used by Lightning Labs.   The fundamental difference between Bitcoin and Decred is that the latter uses a hybrid PoW/PoS consensus.   Currently, 60% of rewards go to proof-of-work miners, 30% to proof-of-stake, and 10% to a Treasury (Decred stakeholders then vote on how the Treasury is spent, which development projects to fund, etc.)\n\nThe consensus will change on 4 points.  The most popular one is that the subsidy to PoS will increase to 80%, while the subsidy to PoW decreases to 10%.  This will give DCR stakers a 10% APY, which is very high, and DCR staking doesn't require custody, so there's no counterparty risk.  Prima facie this may sound like the stakeholders trying to enrich themselves, but it's not the case; the reasoning behind it is provided [here, in the original proposal for](https://proposals.decred.org/record/427e1d4) the change (that was voted upon by the DCR coin holders/stakeholders).  Keep in mind that reducing PoW subsidy does not reduce Decred's security, as [Decred is, apples to apples, 20x harder to 51% attack than Bitcoin](https://medium.com/@0xmzz/apples-to-apples-decred-is-20x-more-expensive-to-attack-than-bitcoin-68bafeb4546f)\n\n[This website](https://voting.decred.org/) contains updates about the consensus change, the timing, and the details about each of the 4 consensus changes.",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "ukwuca",
+            "title": "Top Blockchain Programming Languages",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ukwuca/top_blockchain_programming_languages/",
+            "author": "NOWNodes",
+            "created_utc": 1651996146.0,
+            "score": 3,
+            "num_comments": 5,
+            "subreddit": "CryptoTechnology",
+            "selftext": "According to market research estimates, blockchain technology will witness astounding growth in its market size in the next five years. Between 2020 and 2025, the global blockchain market size is expected to grow at a rate of 67.3% CAGR to reach US$39.7 billion in 2025 from US$3.0 billion in 2020.\u00a0\n\nOne can reasonably presume that this growth will drive innovation and would also require the scaling up of existing platforms. For both of these to happen, the most important role would be that of the developers. While some of the existing languages would be continuously used, some of the innovations would require knowing new languages.\u00a0\n\nOverall, developers and blockchain enthusiasts must remain aware of the benefits and drawbacks of multiple programming languages. This would help them to choose the most appropriate language \u2013 the best fit for their needs.\n\n[Here, in this article, we would look at the top blockchain programming languages and discuss what their qualities are.](https://nownodes.io/blog/top-blockchain-programming-languages/)",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7s1xfw",
+                    "author": "shape_shifty",
+                    "score": 3,
+                    "created_utc": 1652001491.0,
+                    "response": "No mention of Rust when a lot of popular cryptos are using it for their client and others are using it for smart contracts. No mention of JavaScript/TypeScript either when the vast majority of cryptocurrencies have a layer 1 SDK in JavaScript. On the other hand Kotlin and Haskell are in this article and they are very niche, there is no concrete arguments that would indicate that these technologies will be used more in the future",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

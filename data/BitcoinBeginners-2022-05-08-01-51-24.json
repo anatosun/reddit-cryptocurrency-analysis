@@ -1,0 +1,35 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": 3,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "ukjypb",
+            "title": "Guessing last 4 words of mnemonic phrase",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ukjypb/guessing_last_4_words_of_mnemonic_phrase/",
+            "author": "sumofighter666",
+            "created_utc": 1651950060.0,
+            "score": 3,
+            "num_comments": 7,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I would like to know how long it would take to brute force 4 last missing words from 12 mnemonic phrase. The last of course is checksum so I believe the challenge is to find 3 in this case. Can anyone give me a rough calculation on a single machine?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7pslan",
+                    "author": "Desperate-Barnacle-4",
+                    "score": 3,
+                    "created_utc": 1651954382.0,
+                    "response": "Perhaps not possible or at least a few years on a modern pc. Checkout btcrecover https://github.com/gurnec/btcrecover do some test runs with a known seed missing 2 words, then 3 words before your 4.\n\nAssuming you have the first 8 words & an address with derivation path (& optional pass phrase if used) then you have a chance.\n\nBe aware bip39 has some protection from this kind of brute forcing. Words -> checksum (fast) -> master private (slow, needs 2048 hashes in series) -> hash to derivation path (fast) -> public key to address & compare fast. If you know the address but not the number or derivation then you have to check multiple addresses taking even longer.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

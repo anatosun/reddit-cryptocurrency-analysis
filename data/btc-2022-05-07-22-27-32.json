@@ -9,251 +9,6 @@
     ],
     "posts": [
         {
-            "id": "uk7fd1",
-            "title": "Node operators: please update your nodes prior to the May 15 upgrade",
-            "url": "/r/Bitcoincash/comments/uk7dwz/node_operators_please_update_your_nodes_prior_to/",
-            "author": "jessquit",
-            "created_utc": 1651905689.0,
-            "score": 40,
-            "num_comments": 4,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": true,
-            "comments": [
-                {
-                    "id": "i7nvgz0",
-                    "author": "LovelyDayHere",
-                    "score": 8,
-                    "created_utc": 1651919794.0,
-                    "response": "Links to downloads for full nodes that are ready for the release (minimum versions in brackets are based on what's available that you need to to be compatible with the May 15, 2022 upgrade):\n\nBU: https://www.bitcoinunlimited.info/download (v1.10.0)\n\nBCHN: https://bitcoincashnode.org/en/download.html (v24.0.0)\n\nVerde: https://bitcoinverde.org / https://github.com/SoftwareVerde/bitcoin-verde/releases/tag/v2.2.0  (v2.2.0)\n\nKnuth: http://kth.cash/#download / https://github.com/k-nuth/kth/releases (v0.24.0, although v0.23.0 is minimum for this network upgrade - and you need to follow the instructions on the main website to download and install the upgrade)\n\nBCHD: https://bchd.cash / https://github.com/gcash/bchd/releases/tag/v0.19.0 (v0.19.0)\n\nI'm unsure whether Flowee supports the network upgrade, but its author Tom Zander issued a release of Flowee Pay that he described as the 'May release' https://gitlab.com/FloweeTheHub/pay/-/tags/2022.05.0. Might be better to ask him directly if you're running Flowee. Site: https://flowee.org  Reddit post: https://www.reddit.com/r/Flowee/comments/ui40gs",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "ukgpeo",
-            "title": "Electron Cash 4.2.8 (with Cash Fusion) is now available for Windows, Mac, and Linux",
-            "url": "https://electroncash.org/#download",
-            "author": "NilacTheGrim",
-            "created_utc": 1651940302.0,
-            "score": 28,
-            "num_comments": 12,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7ox8mc",
-                    "author": "NilacTheGrim",
-                    "score": 11,
-                    "created_utc": 1651940338.0,
-                    "response": "# RELEASE NOTES\n\nThis is a maintenance release of Electron Cash. Various small changes and fixes were applied. A new major feature was added, [LNS Name](https://app.bch.domains/) support.  You can now send money to LNS names (e.g. `calin.bch`) which end up resolving to BCH addresses.  See `Tools` -> `Lookup LNS Names`. Additionally, a minor UI quirk was addressed: seeing temporary negative balances in the history tab due to CTOR transaction ordering has been worked around by sorting the history with receives coming before sends for each block in the transaction history.\n\n# What's New in 4.2.8\n\n- Patch for Satochip v0.12 support #2410 (Toporin)\n- Add **smartBCH** LNS name lookup support #2414 (mainnet-pat, cculianu)\n  -  Register your LNS names here: https://app.bch.domains/\n  - You can use Electron Cash to send to LNS names (which resolve to BCH addresses) e.g. `calin.bch`\n- Build: Update the Wine build docker container to use the MSVC compiler (Axel Gembe)\n- Misc build fixups related to the addition of web3 support (cculianu)\n- wine-build: add workaround for installing pyinstaller (SomberNight)\n- Build: Patch pip vendored distlib to produce deterministic zip archives (Axel Gembe)\n- Build: Install a MSVC linker wrapper to make PE timestamps deterministic (Axel Gembe, cculianu)\n- CashFusion: Add 10BCH fusion tier (SahidMiller)\n- CTOR workaround: Always display receives before sends for the same block (cculianu)\n  - This avoids ever seeing *negative* temporary balances in the History Tab (which was a common complaint about the UI post-CTOR)\n- MacOS-build: Build custom pyinstaller from git (SomberNight, cculianu)\n- Update libsqlite3 version for AppImage #2435 (Axel Gembe)\n- Update bundled Tor to version 0.4.7.7 #2434 (Axel Gembe)\n- Update OpenSSL to version 1.1.1o #2437 (Axel Gembe)\n- Wine: Update to version 7.7 #2436 (Axel Gembe)\n- Network: Fix for incorrect usage of python when formatting an errmsg (cculianu)\n\n---\n\n## Download Notes\n\n- **`.AppImage`** is for any **Linux 64 bit** (it's a self-contained app bundle with everything inside) \n  - **Note**: Be sure to set this to executable to run it (`chmod +x`)\n- **`.dmg`** is for **macOS** (Mojave or above is required otherwise it may not run)\n- **`.exe`** is for **Windows**\n- **Srcdist** is provided as **`.tar.gz`** and/or **`.zip`** files \n  - Includes Python dependencies inside in `packages/`\n  - This is built on a **Linux 64-bit** system, and also includes `libsecp256k1.so.0` and the embedded `tor` static binary.\n- **ShaSums and Signatures:** Sha256 hashes and pgp signatures for the below release [are available here](https://github.com/Electron-Cash/keys-n-hashes/tree/master/sigs-and-sums).",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7p0u2h",
-                    "author": "psiconautasmart",
-                    "score": 6,
-                    "created_utc": 1651941933.0,
-                    "response": "The LNS name mechanism creates new addresses? Does it maintain some privacy?",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i7p13gh",
-                            "author": "NilacTheGrim",
-                            "score": 8,
-                            "created_utc": 1651942044.0,
-                            "response": "it doesn't create new addresses.  You need to go to https://app.bch.domains and register an address to associate a friendly name, e.g. \"Satoshi.bch\" with an address.  It's somewhat like Cash Accounts except it uses the smartBCH chain to store the data.  You need a smartBCH wallet to be able to register an address and it's done at https://app.bch.domains.\n\nAnd no, this is not a privacy feature. It's quite the opposite, actually.  But that's ok, it's for use cases where privacy is not a concern.",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i7p1jw6",
-                                    "author": "psiconautasmart",
-                                    "score": 4,
-                                    "created_utc": 1651942243.0,
-                                    "response": "Ohh ok, thanks! Cash Accounts have nothing to do with reusable payment addresses right?",
-                                    "depth": 3,
-                                    "comments": [
-                                        {
-                                            "id": "i7p1tae",
-                                            "author": "NilacTheGrim",
-                                            "score": 5,
-                                            "created_utc": 1651942360.0,
-                                            "response": "That is correct, they do not.  RPA is coming I still have to do some work on that.",
-                                            "depth": 4,
-                                            "comments": []
-                                        },
-                                        {
-                                            "id": "i7p5ce6",
-                                            "author": "emergent_reasons",
-                                            "score": 5,
-                                            "created_utc": 1651943898.0,
-                                            "response": "Not directly related, but cash accounts have space reserved in the specification for RPA. When RPA is available, you can share a (new) cash account that represents your RPA. Which will be great since the single RPA will work to use a new address for every interaction.",
-                                            "depth": 4,
-                                            "comments": []
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i7p5d4w",
-                    "author": "FUBAR-BDHR",
-                    "score": 3,
-                    "created_utc": 1651943907.0,
-                    "response": "Will there be a new SLP version?",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i7p7syx",
-                            "author": "NilacTheGrim",
-                            "score": 3,
-                            "created_utc": 1651944995.0,
-                            "response": "I don't know since I don't really work on that project much these days.",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "uki0mz",
-            "title": "New milestone reached while accumulating BCH at these bargain deal prices",
-            "url": "https://i.redd.it/mtjo7nmg83y81.jpg",
-            "author": "DeepCryptoValue",
-            "created_utc": 1651944189.0,
-            "score": 22,
-            "num_comments": 21,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7p8x1u",
-                    "author": "DeepCryptoValue",
-                    "score": 8,
-                    "created_utc": 1651945489.0,
-                    "response": "After researching for years and thinking about what the future of cryptocurrency will look like in the next decade. I believe Bitcoin Cash is best positioned to become the next world reserve currency. As Elon Musk says, layer 1 scaling is necessary for a blockchain to scale and become massively adopted. Bitcoin Cash is one of the few crypto communities that actually have the right mindset when it comes to layer 1 scaling. Unfortunately big and reputable cryptocurrencies like BTC have lost their way and is stuck at 1 MB blocks forever. Ethereum does not use a UTXO technology so it doesn't work well for payments and recently they seem to be falling into the BTC mindset of not prioritizing layer 1 scaling. Dogecoin, Litecoin and others do not show interest in layer 1 scaling either. BSV has a horrible reputation that will be near impossible to recover from. Dash has potential but it has a smaller adoption and network effect when compared to BCH which is farther ahead. Monero will run into too many regulatory challenges and risks for mass adoption given its native privacy features.  \n\n\nWith all that said, BCH has the best shot at becoming the winner for the next world reserve currency. It shares the same mining infrastructure and limited coin supply as big daddy BTC, but unlike BTC, BCH actually can scale for the entire world to use. I am super excited to see it upgrade to 256 MB blocks in the near future which will give it the ability to process 1,000 transactions per second.  \n\n\nThis doesn't even go over all the other amazing development happening in the BCH ecosystem such as Smart BCH which gives Ethereum like smart contract functionality.  \n\n\nI am all in on BCH baby.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i7pau5f",
-                            "author": "RowanSkie",
-                            "score": 5,
-                            "created_utc": 1651946320.0,
-                            "response": "I suggest you should withdraw those towards a non-custodial wallet. It's not really your BCH until then.",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i7p7yzq",
-                    "author": "tradr_fun",
-                    "score": 8,
-                    "created_utc": 1651945070.0,
-                    "response": "LOL, cool but those are not your coins. If you keep Bitcoin on an exchange its not your Bitcoin.    I always wondered what kind of person buys Bitcoin just to give it right back to the bankers, maybe you could help me understand? Why?",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i7pap5e",
-                            "author": "DeepCryptoValue",
-                            "score": 7,
-                            "created_utc": 1651946258.0,
-                            "response": "The topic eventually boils down to trust. If you don't trust an institution, person, entity, whatever then don't let them near your valuables. If you trust literally no one, then I guess you would be in the category of stuffing all your cash under your mattress or I guess in modern terms you have all your crypto in a non-custodial wallet. I respect this decision and there is nothing inherently wrong with it, but you should also consider the trade offs when making a decision like this.  Just like with stuffing your cash in your mattress you don't get to participate in ways to grow your wealth, buying cds, bonds or stocks, or whatever other assets that will be in custody with an institution.  \n\n\nIn this particular scenario I have my Bitcoin Cash in custody with Gemini because I trust them and I am also earning 5.3% interest for taking the risk of lending. There is of course risk that Gemini gets hacked or goes bankrupt, and I have considered those risks and believe the 5.3% interest is worth the risk I am taking. The ones that took the risk will be rewarded with interest if they are lucky. Just like anything with life there is risk and reward, even when investing in a new asset class such as crypto. Everyone has to make the decision that they think is best for themselves.  \n\n\nNow just because I trust Gemini doesn't mean I trust all banks and institutions. That is far from the truth. For example, I would never ever in a million years store my crypto in Western Union Bank or some shady ass exchange.",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ukbqfn",
-            "title": "Why Blockstream stifled BTC innovation for their own profit:",
-            "url": "https://www.reddit.com/r/btc/comments/4zg7y9/what_exactly_is_blockstream_cores_excuse_for/d6vtj45/?utm_source=share&utm_medium=ios_app&utm_name=iossmf&context=3",
-            "author": "Ancapworld",
-            "created_utc": 1651924552.0,
-            "score": 28,
-            "num_comments": 13,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7o3rg8",
-                    "author": "CurvyGorilla202",
-                    "score": 7,
-                    "created_utc": 1651925751.0,
-                    "response": "Sure did, those bastards",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7olz3r",
-                    "author": "mtrycz",
-                    "score": 6,
-                    "created_utc": 1651935268.0,
-                    "response": "Does anybody even know what is their official business model? How do they \"officially\" earn money?",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i7oxaxh",
-                            "author": "wildlight",
-                            "score": 4,
-                            "created_utc": 1651940367.0,
-                            "response": "print tether, buy BTC, short BCH, repeat.",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i7p2k3k",
-                                    "author": "mtrycz",
-                                    "score": 3,
-                                    "created_utc": 1651942687.0,
-                                    "response": "I mean, yes, but official.",
-                                    "depth": 3,
-                                    "comments": [
-                                        {
-                                            "id": "i7pe4ft",
-                                            "author": "Adrian-X",
-                                            "score": 3,
-                                            "created_utc": 1651947774.0,
-                                            "response": "Liquid. They have BTC and USDT on their liquid network with partnered exchanges. They are effectively sidechains and they can front-run customers and arbitrage any discrepancies in price without having to wait for confirmations.",
-                                            "depth": 4,
-                                            "comments": []
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i7oj0il",
-                    "author": "hero462",
-                    "score": 3,
-                    "created_utc": 1651933903.0,
-                    "response": "Except there has been no profit and the investors don't seem to mind.  What other motive could they have had \ud83e\udd14",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7on5dj",
-                    "author": "SomeoneElse899",
-                    "score": 3,
-                    "created_utc": 1651935811.0,
-                    "response": "5 years ago. Clearly no one gives a shit. Sad world we live in. The info is all there, yet people willfully ignore it.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "uk9619",
             "title": "Green all the way with Solar Installation on BCH! \ud83c\udf1e",
             "url": "https://youtube.com/watch?v=pT30RlcIJ3o&feature=share",
@@ -293,164 +48,6 @@
                     "comments": []
                 }
             ]
-        },
-        {
-            "id": "ukl0lq",
-            "title": "\"Do you all think this is why custodial LN is so commonly used?\"",
-            "url": "https://www.reddit.com/r/btc/comments/ukl0lq/do_you_all_think_this_is_why_custodial_ln_is_so/",
-            "author": "unstoppable-cash",
-            "created_utc": 1651953312.0,
-            "score": 5,
-            "num_comments": 1,
-            "subreddit": "btc",
-            "selftext": "\"Am I just the unluckiest bastard out there when it comes to LN or are there other people running into issues like this constantly and just not talking about it due to self-censorship?\"\n\n\"I've even gone the simplest  non-custodial route (Muun) and still have issues regularly.\"",
-            "stickied": false,
-            "comments": []
-        },
-        {
-            "id": "ukauqp",
-            "title": "Why I Am Optimistic With Bitcoin Cash - Thank You BCHSunny",
-            "url": "https://read.cash/@annayks/why-i-am-optimistic-with-bitcoin-cash-thank-you-bchsunny-b1322fdc",
-            "author": "AnnayksB",
-            "created_utc": 1651920946.0,
-            "score": 21,
-            "num_comments": 2,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
-        },
-        {
-            "id": "uk99de",
-            "title": "An update to CryptoWoo: Two goals completed from the second Flipstarter campaign.",
-            "url": "https://read.cash/@OlavOlsm/an-update-to-the-second-cryptowoo-flipstarter-a55a7d06",
-            "author": "OlavOlsm",
-            "created_utc": 1651913825.0,
-            "score": 34,
-            "num_comments": 1,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
-        },
-        {
-            "id": "ukfo1n",
-            "title": "Hello everyone! I have 2 transactions made with bch which are blocked and there are no confirmations. Can anyone help me? The track ids are: 32a457b140b599d8c0502f4b1d10efe5c65cc436a24c1062a74c6a706bb1df81 a2e1c0710ab302210b442bc8ba857d1ccd79a5839badcfd508e2cd0cfbde04ab",
-            "url": "https://www.reddit.com/r/btc/comments/ukfo1n/hello_everyone_i_have_2_transactions_made_with/",
-            "author": "Euphoric_Ad_3989",
-            "created_utc": 1651937286.0,
-            "score": 8,
-            "num_comments": 7,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7ou9kc",
-                    "author": "Rucknium",
-                    "score": 13,
-                    "created_utc": 1651939026.0,
-                    "response": "I see your second transaction here:\n\n[https://blockchair.com/bitcoin-cash/transaction/a2e1c0710ab302210b442bc8ba857d1ccd79a5839badcfd508e2cd0cfbde04ab](https://blockchair.com/bitcoin-cash/transaction/a2e1c0710ab302210b442bc8ba857d1ccd79a5839badcfd508e2cd0cfbde04ab)\n\nYour fee less less than one satoshi per byte (it is 0.991 satoshis per byte), which is less than the minimum transaction fee relay level, so it is not arriving at the miners. Re-send the transaction with a slightly higher fee. What wallet are you using?",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i7oufgo",
-                            "author": "Euphoric_Ad_3989",
-                            "score": 6,
-                            "created_utc": 1651939097.0,
-                            "response": "ledger",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i7ozakg",
-                                    "author": "Rucknium",
-                                    "score": 12,
-                                    "created_utc": 1651941251.0,
-                                    "response": "Try to raise the fee in the Ledger software and re-send. But also notify Ledger, since it is a bug if they set the fee to below the minimum fee relay amount. Others may be experiencing your issue.",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i7oy9fh",
-                    "author": "NilacTheGrim",
-                    "score": 9,
-                    "created_utc": 1651940793.0,
-                    "response": "These txids never even made it to my bitcoind.  The fee is too low so they are not being relayed properly and likely not making it to miners.   Figure out a way to re-send them with a higher fee.  Possibly use Electron Cash in conjunction with your ledger if in the ledger app it shows them as still pending (the txs won't show up in Electron Cash).",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "ukb90q",
-            "title": "Ethereum slowly but surely winning against BtC",
-            "url": "https://i.redd.it/2lxxdy7fg1y81.jpg",
-            "author": "Egon_1",
-            "created_utc": 1651922585.0,
-            "score": 13,
-            "num_comments": 6,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7nzj6i",
-                    "author": "LovelyDayHere",
-                    "score": 11,
-                    "created_utc": 1651922912.0,
-                    "response": "I think what some of us unfortunately predicted may come to pass.\n\nBTC has been engineered to fail now (in multiple effective ways), and this is very likely in the interests of those who co-opted its roadmap.\n\nIt seems like it may just be propped up long enough until SHTF and the fiat economies go down the tubes, then they could pop the BTC bubble and try to take down the whole crypto market so badly that the general public loses interest and willingly accepts a new central bank digital currency as their savior from all the chaos.\n\nAny cryptocurrencies that are actually useful and not just centralized shitshows, may stand a chance of surviving this period.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7nz435",
-                    "author": "Egon_1",
-                    "score": 3,
-                    "created_utc": 1651922602.0,
-                    "response": "Source https://www.blockchaincenter.net/en/flippening/",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7o1pl0",
-                    "author": "WippleDippleDoo",
-                    "score": 5,
-                    "created_utc": 1651924419.0,
-                    "response": "Quite the shame as it is also a dysfunctional shitcoin and it was pre-issued too.\n\nThe whole cryptomarket is a farce.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "ukhl74",
-            "title": "FREE 0.0001 BCH in your wallet",
-            "url": "https://free.bitcoin.com/",
-            "author": "1BitcoinWebsite",
-            "created_utc": 1651942912.0,
-            "score": 4,
-            "num_comments": 0,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
-        },
-        {
-            "id": "ukj92g",
-            "title": "Ya puedes enviar BCH a direcciones LNS usando Electron Cash",
-            "url": "https://github.com/Electron-Cash/Electron-Cash/releases/tag/4.2.8",
-            "author": "XolosRamirez",
-            "created_utc": 1651947915.0,
-            "score": 3,
-            "num_comments": 0,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
         },
         {
             "id": "uk4mvl",
@@ -527,19 +124,6 @@
             ]
         },
         {
-            "id": "ukag5i",
-            "title": "T3 Apartment in Braga was the first property to be sold in cryptocurrency in Europe",
-            "url": "https://www.brytfmonline.com/t3-apartment-in-braga-was-the-first-property-to-be-sold-in-cryptocurrency-in-europe/",
-            "author": "Puzzleheaded_Top_794",
-            "created_utc": 1651919169.0,
-            "score": 5,
-            "num_comments": 2,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
-        },
-        {
             "id": "uk02n4",
             "title": "SmartBCH & Mistswap presentation in the DevConnect",
             "url": "https://www.reddit.com/r/btc/comments/uk02n4/smartbch_mistswap_presentation_in_the_devconnect/",
@@ -585,65 +169,6 @@
                     "score": 3,
                     "created_utc": 1651880968.0,
                     "response": "Great event overall, many interesting people around crypto were present. Good thing to know that sBCH had its contribution there.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "ujya0o",
-            "title": "My dinner tonight after buying the dip.",
-            "url": "https://i.redd.it/6zzki1igfxx81.jpg",
-            "author": "Adv3ntur0us_",
-            "created_utc": 1651873824.0,
-            "score": 36,
-            "num_comments": 9,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7naqjp",
-                    "author": "gotw2",
-                    "score": 3,
-                    "created_utc": 1651902098.0,
-                    "response": "Oh that's cold...",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7me6e8",
-                    "author": "tisallfair",
-                    "score": 4,
-                    "created_utc": 1651883911.0,
-                    "response": "Gambling on a volatile, speculative asset with everything you have is nothing to be proud of.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7n3dqx",
-                    "author": "Unpopular1",
-                    "score": 4,
-                    "created_utc": 1651897200.0,
-                    "response": "I've bought BCH over a year ago for a few G's at several intervals from 420 to 1400 ...it's not been fun the past year.  But it was $ that was just sitting there and now it's minus money.  I believed in it then and I still do.  If/when it shoots to 10 G's, I probably still wont sell.  It's more practical than BTC for everyday usage and makes much more sense.  Time will tell I guess.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7lu6yd",
-                    "author": "lifevicarious",
-                    "score": 3,
-                    "created_utc": 1651874234.0,
-                    "response": "Finish it off with a glass of air and you\u2019ll have more than I had.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7mcjei",
-                    "author": "1s44c",
-                    "score": 4,
-                    "created_utc": 1651883075.0,
-                    "response": "\"Don't invest what you can't afford to lose\"",
                     "depth": 1,
                     "comments": []
                 }
@@ -868,19 +393,6 @@
             ]
         },
         {
-            "id": "uk3jgo",
-            "title": "Adoption: Sending Bitcoin payment requests with bitrequests.io",
-            "url": "https://v.redd.it/h01wsybjoyx81",
-            "author": "bitrequest",
-            "created_utc": 1651890647.0,
-            "score": 10,
-            "num_comments": 1,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
-        },
-        {
             "id": "ujwa71",
             "title": "Can someone please make a post about the May 15 update",
             "url": "https://www.reddit.com/r/btc/comments/ujwa71/can_someone_please_make_a_post_about_the_may_15/",
@@ -1027,19 +539,6 @@
                     "comments": []
                 }
             ]
-        },
-        {
-            "id": "ujxmf3",
-            "title": "AI-upscaled 'magic internet money' ad picture 600%, free to everyone :)",
-            "url": "https://imgur.com/2Vzszir.jpg",
-            "author": "Anenome5",
-            "created_utc": 1651871977.0,
-            "score": 20,
-            "num_comments": 1,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
         },
         {
             "id": "ujsbfw",
@@ -1309,32 +808,6 @@
             ]
         },
         {
-            "id": "ujp923",
-            "title": "U.S. adds cryptocurrency mixer Blender to sanctions list over alleged North Korea links",
-            "url": "https://www.reuters.com/business/us-adds-virtual-currency-mixer-sanctions-list-over-north-koreas-cyber-activities-2022-05-06/",
-            "author": "BewareOfShills",
-            "created_utc": 1651848815.0,
-            "score": 19,
-            "num_comments": 1,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
-        },
-        {
-            "id": "ujt7lc",
-            "title": "1 Bitcoin Cash",
-            "url": "https://www.1bitcoincash.com/",
-            "author": "1BitcoinWebsite",
-            "created_utc": 1651859717.0,
-            "score": 9,
-            "num_comments": 1,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
-        },
-        {
             "id": "ujn13f",
             "title": "The Future is BitcoinCash (A view from Marc Falzon's latest video)",
             "url": "https://read.cash/@nomadghada/the-future-is-bitcoincash-a-view-from-marc-falzons-latest-video-4b70f74b",
@@ -1456,6 +929,821 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "uk7fd1",
+            "title": "Node operators: please update your nodes prior to the May 15 upgrade",
+            "url": "/r/Bitcoincash/comments/uk7dwz/node_operators_please_update_your_nodes_prior_to/",
+            "author": "jessquit",
+            "created_utc": 1651905689.0,
+            "score": 45,
+            "num_comments": 7,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": true,
+            "comments": [
+                {
+                    "id": "i7nvgz0",
+                    "author": "LovelyDayHere",
+                    "score": 7,
+                    "created_utc": 1651919794.0,
+                    "response": "Links to downloads for full nodes that are ready for the release (minimum versions in brackets are based on what's available that you need to to be compatible with the May 15, 2022 upgrade):\n\nBU: https://www.bitcoinunlimited.info/download (v1.10.0)\n\nBCHN: https://bitcoincashnode.org/en/download.html (v24.0.0)\n\nVerde: https://bitcoinverde.org / https://github.com/SoftwareVerde/bitcoin-verde/releases/tag/v2.2.0  (v2.2.0)\n\nKnuth: http://kth.cash/#download / https://github.com/k-nuth/kth/releases (v0.24.0, although v0.23.0 is minimum for this network upgrade - and you need to follow the instructions on the main website to download and install the upgrade)\n\nBCHD: https://bchd.cash / https://github.com/gcash/bchd/releases/tag/v0.19.0 (v0.19.0)\n\nI'm unsure whether Flowee supports the network upgrade, but its author Tom Zander issued a release of Flowee Pay that he described as the 'May release' https://gitlab.com/FloweeTheHub/pay/-/tags/2022.05.0. Might be better to ask him directly if you're running Flowee. Site: https://flowee.org  Reddit post: https://www.reddit.com/r/Flowee/comments/ui40gs",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ukgpeo",
+            "title": "Electron Cash 4.2.8 (with Cash Fusion) is now available for Windows, Mac, and Linux",
+            "url": "https://electroncash.org/#download",
+            "author": "NilacTheGrim",
+            "created_utc": 1651940302.0,
+            "score": 63,
+            "num_comments": 23,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7ox8mc",
+                    "author": "NilacTheGrim",
+                    "score": 15,
+                    "created_utc": 1651940338.0,
+                    "response": "# RELEASE NOTES\n\nThis is a maintenance release of Electron Cash. Various small changes and fixes were applied. A new major feature was added, [LNS Name](https://app.bch.domains/) support.  You can now send money to LNS names (e.g. `calin.bch`) which end up resolving to BCH addresses.  See `Tools` -> `Lookup LNS Names`. Additionally, a minor UI quirk was addressed: seeing temporary negative balances in the history tab due to CTOR transaction ordering has been worked around by sorting the history with receives coming before sends for each block in the transaction history.\n\n# What's New in 4.2.8\n\n- Patch for Satochip v0.12 support #2410 (Toporin)\n- Add **smartBCH** LNS name lookup support #2414 (mainnet-pat, cculianu)\n  -  Register your LNS names here: https://app.bch.domains/\n  - You can use Electron Cash to send to LNS names (which resolve to BCH addresses) e.g. `calin.bch`\n- Build: Update the Wine build docker container to use the MSVC compiler (Axel Gembe)\n- Misc build fixups related to the addition of web3 support (cculianu)\n- wine-build: add workaround for installing pyinstaller (SomberNight)\n- Build: Patch pip vendored distlib to produce deterministic zip archives (Axel Gembe)\n- Build: Install a MSVC linker wrapper to make PE timestamps deterministic (Axel Gembe, cculianu)\n- CashFusion: Add 10BCH fusion tier (SahidMiller)\n- CTOR workaround: Always display receives before sends for the same block (cculianu)\n  - This avoids ever seeing *negative* temporary balances in the History Tab (which was a common complaint about the UI post-CTOR)\n- MacOS-build: Build custom pyinstaller from git (SomberNight, cculianu)\n- Update libsqlite3 version for AppImage #2435 (Axel Gembe)\n- Update bundled Tor to version 0.4.7.7 #2434 (Axel Gembe)\n- Update OpenSSL to version 1.1.1o #2437 (Axel Gembe)\n- Wine: Update to version 7.7 #2436 (Axel Gembe)\n- Network: Fix for incorrect usage of python when formatting an errmsg (cculianu)\n\n---\n\n## Download Notes\n\n- **`.AppImage`** is for any **Linux 64 bit** (it's a self-contained app bundle with everything inside) \n  - **Note**: Be sure to set this to executable to run it (`chmod +x`)\n- **`.dmg`** is for **macOS** (Mojave or above is required otherwise it may not run)\n- **`.exe`** is for **Windows**\n- **Srcdist** is provided as **`.tar.gz`** and/or **`.zip`** files \n  - Includes Python dependencies inside in `packages/`\n  - This is built on a **Linux 64-bit** system, and also includes `libsecp256k1.so.0` and the embedded `tor` static binary.\n- **ShaSums and Signatures:** Sha256 hashes and pgp signatures for the below release [are available here](https://github.com/Electron-Cash/keys-n-hashes/tree/master/sigs-and-sums).",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7p0u2h",
+                    "author": "psiconautasmart",
+                    "score": 9,
+                    "created_utc": 1651941933.0,
+                    "response": "The LNS name mechanism creates new addresses? Does it maintain some privacy?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7p13gh",
+                            "author": "NilacTheGrim",
+                            "score": 9,
+                            "created_utc": 1651942044.0,
+                            "response": "it doesn't create new addresses.  You need to go to https://app.bch.domains and register an address to associate a friendly name, e.g. \"Satoshi.bch\" with an address.  It's somewhat like Cash Accounts except it uses the smartBCH chain to store the data.  You need a smartBCH wallet to be able to register an address and it's done at https://app.bch.domains.\n\nAnd no, this is not a privacy feature. It's quite the opposite, actually.  But that's ok, it's for use cases where privacy is not a concern.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7p1jw6",
+                                    "author": "psiconautasmart",
+                                    "score": 5,
+                                    "created_utc": 1651942243.0,
+                                    "response": "Ohh ok, thanks! Cash Accounts have nothing to do with reusable payment addresses right?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i7p1tae",
+                                            "author": "NilacTheGrim",
+                                            "score": 8,
+                                            "created_utc": 1651942360.0,
+                                            "response": "That is correct, they do not.  RPA is coming I still have to do some work on that.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i7p5ce6",
+                                            "author": "emergent_reasons",
+                                            "score": 9,
+                                            "created_utc": 1651943898.0,
+                                            "response": "Not directly related, but cash accounts have space reserved in the specification for RPA. When RPA is available, you can share a (new) cash account that represents your RPA. Which will be great since the single RPA will work to use a new address for every interaction.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7p5d4w",
+                    "author": "FUBAR-BDHR",
+                    "score": 4,
+                    "created_utc": 1651943907.0,
+                    "response": "Will there be a new SLP version?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7p7syx",
+                            "author": "NilacTheGrim",
+                            "score": 6,
+                            "created_utc": 1651944995.0,
+                            "response": "I don't know since I don't really work on that project much these days.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7pkwiy",
+                    "author": "hegjon",
+                    "score": 3,
+                    "created_utc": 1651950865.0,
+                    "response": "~~If you run Fedora Linux and want to test the 4.2.8 before it is in stable official Fedora repository, then it would be great if you give feedback here:~~\n\n~~Fedora 34:~~ [~~https://bodhi.fedoraproject.org/updates/FEDORA-2022-d8259ccbd0~~](https://bodhi.fedoraproject.org/updates/FEDORA-2022-d8259ccbd0)\n\n~~Fedora 35:~~ [~~https://bodhi.fedoraproject.org/updates/FEDORA-2022-992f093da3~~](https://bodhi.fedoraproject.org/updates/FEDORA-2022-992f093da3)\n\nEdit: Update have been revoked",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7pno3u",
+                            "author": "NilacTheGrim",
+                            "score": 4,
+                            "created_utc": 1651952132.0,
+                            "response": "Oh hey Jonny. I forgot to tell you there is a new dependency now, \"web3\".  I think you picked that up right?\n\nEDIT: Oh. I see it in the noarch rpm.  python3.9(web3) is there.  Cool. Thanks.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7ppws8",
+                                    "author": "hegjon",
+                                    "score": 4,
+                                    "created_utc": 1651953155.0,
+                                    "response": "Thanks for detecting it. The build tools detected the new dependency, but Fedora Linux does not have this in their repo. Is it possible to have web3 optional?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i7prnhk",
+                                            "author": "NilacTheGrim",
+                                            "score": 4,
+                                            "created_utc": 1651953945.0,
+                                            "response": "Hmm.  not right now, sadly. It's pretty integrated into the main codebase.  We can work towards that but .. we haven't yet.  If web3 is missing right now the app just refuses to start.  However if this makes it impossible to make a Fedora package, I can see about doing a follow-up release that handles this more gracefully and proceeds with the LNS feature disabled if web3 is missing.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "uki0mz",
+            "title": "New milestone reached while accumulating BCH at these bargain deal prices",
+            "url": "https://i.redd.it/mtjo7nmg83y81.jpg",
+            "author": "DeepCryptoValue",
+            "created_utc": 1651944189.0,
+            "score": 50,
+            "num_comments": 84,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7ppvfu",
+                    "author": "fiendishcrypro",
+                    "score": 17,
+                    "created_utc": 1651953137.0,
+                    "response": "Great for you OP, I think you'll be very happy in a few years.\nBe wary though, you are putting a target on your back sharing this info and I'm not sure it's that wise!\n\nStay safe out there, and keep stacking those BCH Sats up to the point where you don't need fiat anymore, and every shop you use accepts BCH \ud83d\udc4d",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7pqqsd",
+                            "author": "DeepCryptoValue",
+                            "score": 9,
+                            "created_utc": 1651953543.0,
+                            "response": "Thank you. I am using a secondary reddit account as to not reveal my true identity. But I appreciate your concern :)  \n\n\nI dream of the day to see the whole world accepting BCH as money :)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7pt8mi",
+                                    "author": "fiendishcrypro",
+                                    "score": 7,
+                                    "created_utc": 1651954677.0,
+                                    "response": "Good to hear! The next few years are going to be a rip roaring ride for us all, and expecially those with 500 BCH \ud83e\udd20",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7p8x1u",
+                    "author": "DeepCryptoValue",
+                    "score": 21,
+                    "created_utc": 1651945489.0,
+                    "response": "After researching for years and thinking about what the future of cryptocurrency will look like in the next decade. I believe Bitcoin Cash is best positioned to become the next world reserve currency. As Elon Musk says, layer 1 scaling is necessary for a blockchain to scale and become massively adopted. Bitcoin Cash is one of the few crypto communities that actually have the right mindset when it comes to layer 1 scaling. Unfortunately big and reputable cryptocurrencies like BTC have lost their way and is stuck at 1 MB blocks forever. Ethereum does not use a UTXO technology so it doesn't work well for payments and recently they seem to be falling into the BTC mindset of not prioritizing layer 1 scaling. Dogecoin, Litecoin and others do not show interest in layer 1 scaling either. BSV has a horrible reputation that will be near impossible to recover from. Dash has potential but it has a smaller adoption and network effect when compared to BCH which is farther ahead. Monero will run into too many regulatory challenges and risks for mass adoption given its native privacy features.  \n\n\nWith all that said, BCH has the best shot at becoming the winner for the next world reserve currency. It shares the same mining infrastructure and limited coin supply as big daddy BTC, but unlike BTC, BCH actually can scale for the entire world to use. I am super excited to see it upgrade to 256 MB blocks in the near future which will give it the ability to process 1,000 transactions per second.  \n\n\nThis doesn't even go over all the other amazing development happening in the BCH ecosystem such as Smart BCH which gives Ethereum like smart contract functionality.  \n\n\nI am all in on BCH baby.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7qmvl7",
+                            "author": "jbrev01",
+                            "score": 7,
+                            "created_utc": 1651968883.0,
+                            "response": "I'm hearing that centralized exchanges, and companies that offer returns on your BCH, are turning around and lending your BCH to be shorted, manipulating the price. I'm not sure how accurate this is, but the price history seems to reflect manipulation.\n\nI would advise not keeping all your crypto eggs in one basket. Not a smart move. Even Roger Ver who is one of the most prominent BCH supporters (and who also does most of the work promoting BCH to the world) recommends balancing out your crypto portfolio.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i7pau5f",
+                            "author": "RowanSkie",
+                            "score": 13,
+                            "created_utc": 1651946320.0,
+                            "response": "I suggest you should withdraw those towards a non-custodial wallet. It's not really your BCH until then.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7pc6a8",
+                                    "author": "DeepCryptoValue",
+                                    "score": 4,
+                                    "created_utc": 1651946902.0,
+                                    "response": "I replied to u/tradr_fun for why I don't do this.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i7qb1oc",
+                                            "author": "btcxio",
+                                            "score": 4,
+                                            "created_utc": 1651962905.0,
+                                            "response": "You should at least self-custody some of it yourself just in case.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i7pdrlj",
+                                            "author": "RowanSkie",
+                                            "score": 7,
+                                            "created_utc": 1651947614.0,
+                                            "response": "Ah. It's a good explanation, to be honest. Most BCHers do adhere to a crypto anarchy mindset which is why a few of us suggested and more will most likely suggest moving your coins out of an exchange.\n\nGranted, it's just the same answer I have for why I use SmartBCH, haha.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7p7yzq",
+                    "author": "tradr_fun",
+                    "score": 9,
+                    "created_utc": 1651945070.0,
+                    "response": "LOL, cool but those are not your coins. If you keep Bitcoin on an exchange its not your Bitcoin.    I always wondered what kind of person buys Bitcoin just to give it right back to the bankers, maybe you could help me understand? Why?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7pap5e",
+                            "author": "DeepCryptoValue",
+                            "score": 15,
+                            "created_utc": 1651946258.0,
+                            "response": "The topic eventually boils down to trust. If you don't trust an institution, person, entity, whatever then don't let them near your valuables. If you trust literally no one, then I guess you would be in the category of stuffing all your cash under your mattress or I guess in modern terms you have all your crypto in a non-custodial wallet. I respect this decision and there is nothing inherently wrong with it, but you should also consider the trade offs when making a decision like this.  Just like with stuffing your cash in your mattress you don't get to participate in ways to grow your wealth, buying cds, bonds or stocks, or whatever other assets that will be in custody with an institution.  \n\n\nIn this particular scenario I have my Bitcoin Cash in custody with Gemini because I trust them and I am also earning 5.3% interest for taking the risk of lending. There is of course risk that Gemini gets hacked or goes bankrupt, and I have considered those risks and believe the 5.3% interest is worth the risk I am taking. The ones that took the risk will be rewarded with interest if they are lucky. Just like anything with life there is risk and reward, even when investing in a new asset class such as crypto. Everyone has to make the decision that they think is best for themselves.  \n\n\nNow just because I trust Gemini doesn't mean I trust all banks and institutions. That is far from the truth. For example, I would never ever in a million years store my crypto in Western Union Bank or some shady ass exchange.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7psx57",
+                                    "author": "ThomasZander",
+                                    "score": 10,
+                                    "created_utc": 1651954533.0,
+                                    "response": "> The topic eventually boils down to trust.\n\nWell, yes. But no.\n\nIt boils down to who has the most guns.\n\nSee, you are trusting that the company won't steal your funds. That is your trade-off to make. I don't think it is wise as the list of exchanges that lost users funds is a very very long list. But, again, if you want to trust such a company that is your good right.  \nBut the important part is that it misses the point.\n\nGimini is an American company and they will freeze your funds if the government asks about it. They have done so in the past (for Russians and Canadians) and will do it again the moment a judge tells them to.\n\nSo its not the company you trust, it is the US government. You trust that the US government doesn't decide that they will decide your money broke a law and can be confiscated. (yes, your money, not you). You trust that the US government will never want to openly fight against crypto which is undermining their power over the citizens. And you trust that we won't again see a bail-in when the real inflation starts.\n\nYou trust that the US government will fight fair, in short. And there is no evidence to support this.\n\nOr, in the words of Satoshi himself;\n\n> The root problem with conventional currency is all the trust that's required to make it work. The central bank must be trusted not to debase the currency, but the history of fiat currencies is full of breaches of that trust.\n> Banks must be trusted to hold our money and transfer it electronically, but they lend it out in waves of credit bubbles with barely a fraction in reserve. We have to trust them with our privacy, trust them not to let identity thieves drain our accounts.\n\nTrust (the government) at your peril.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i7pw7i2",
+                                            "author": "DeepCryptoValue",
+                                            "score": 5,
+                                            "created_utc": 1651956023.0,
+                                            "response": "Fair point, those are additional risks that one should fully understand before storing their funds in an institution that is regulated by a government body.\n\nI will say that I believe it is an unlikely scenario that the U.S. government would seize everybody's cryptocurrencies that are in custody by regulated institutions. But I agree that if you believe you may be a target to getting your assets frozen by authorities then you should consider self-custody as possibly the best option for you.\n\nI personally do not think there is a huge risk that my assets will be frozen by any of the U.S. authorities anytime soon. If I have suspicion in the future that I am a potential target, then I would definitely reconsider the self-custody option.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i7q0cee",
+                                                    "author": "ThomasZander",
+                                                    "score": 8,
+                                                    "created_utc": 1651957866.0,
+                                                    "response": "Easy to overlook, its not a black/white issue. Its not about **all** your assets being frozen.\n\n[Bail-ins](https://www.investopedia.com/terms/b/bailin.asp) are a real thing and very likely to occur as the inflation continues going up.\n\n> bail-ins attracted attention in 2013 after government officials resorted to the strategy in Cyprus. As discussed in [The National Herald](https://www.thenationalherald.com/202009/greeks-suing-cyprus-for-lost-millions-in-bank-bail-in/), the consequences were that uninsured depositors (defined in the European Union as people with deposits larger than 100,000 euros) in the Bank of Cyprus lost a substantial portion of their deposits.\n\n\nConsider the government position that those using crypto's are to blame (read: easy scapegoat) for the financial instability that causes 50% inflation YoY. And thus they need to take some of your funds.  \nIf they can confiscate rich Russians properties, why do you think your money is safe?",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i7r4an2",
+                                            "author": "hero462",
+                                            "score": 3,
+                                            "created_utc": 1651978084.0,
+                                            "response": "Great post, Thomas!",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i7s5wdn",
+                                            "author": "proxyz10",
+                                            "score": 3,
+                                            "created_utc": 1652005061.0,
+                                            "response": "The thing about trust is that you shouldn't have it on the people that you don't know.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i7pre2c",
+                            "author": "Artist-Any",
+                            "score": 3,
+                            "created_utc": 1651953824.0,
+                            "response": "5.33 yield 0.51 BCH per week yield. He\u2019s growing his stack without investing more of his own capital. BCH has been a hard asset to invest in. Most of us are in a loss still. 5 years later.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7ps1tj",
+                                    "author": "DeepCryptoValue",
+                                    "score": 3,
+                                    "created_utc": 1651954132.0,
+                                    "response": "Exactly <3 As a long term investor, the 5.3% yield will compound very nicely year after year.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ukl0lq",
+            "title": "\"Do you all think this is why custodial LN is so commonly used?\"",
+            "url": "https://www.reddit.com/r/btc/comments/ukl0lq/do_you_all_think_this_is_why_custodial_ln_is_so/",
+            "author": "unstoppable-cash",
+            "created_utc": 1651953312.0,
+            "score": 20,
+            "num_comments": 23,
+            "subreddit": "btc",
+            "selftext": "\"Am I just the unluckiest bastard out there when it comes to LN or are there other people running into issues like this constantly and just not talking about it due to self-censorship?\"\n\n\"I've even gone the simplest  non-custodial route (Muun) and still have issues regularly.\"",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7pw8xd",
+                    "author": "bitrequest",
+                    "score": 19,
+                    "created_utc": 1651956039.0,
+                    "response": "Using lightning in a non custodial way is way too hard for the avarage joe.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7pqecn",
+                    "author": "unstoppable-cash",
+                    "score": 12,
+                    "created_utc": 1651953384.0,
+                    "response": "[Source](https://twitter.com/sethforprivacy/status/1522919244253614081)\n\nArchived [here](https://archive.ph/86Dws)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7qgvp2",
+                    "author": "WippleDippleDoo",
+                    "score": 6,
+                    "created_utc": 1651965795.0,
+                    "response": "I\u2019ve never seen LN implemented not to mention used.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ukbqfn",
+            "title": "Why Blockstream stifled BTC innovation for their own profit:",
+            "url": "https://www.reddit.com/r/btc/comments/4zg7y9/what_exactly_is_blockstream_cores_excuse_for/d6vtj45/?utm_source=share&utm_medium=ios_app&utm_name=iossmf&context=3",
+            "author": "Ancapworld",
+            "created_utc": 1651924552.0,
+            "score": 38,
+            "num_comments": 47,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7o3rg8",
+                    "author": "CurvyGorilla202",
+                    "score": 9,
+                    "created_utc": 1651925751.0,
+                    "response": "Sure did, those bastards",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7oj0il",
+                    "author": "hero462",
+                    "score": 8,
+                    "created_utc": 1651933903.0,
+                    "response": "Except there has been no profit and the investors don't seem to mind.  What other motive could they have had \ud83e\udd14",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7olz3r",
+                    "author": "mtrycz",
+                    "score": 8,
+                    "created_utc": 1651935268.0,
+                    "response": "Does anybody even know what is their official business model? How do they \"officially\" earn money?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7oxaxh",
+                            "author": "wildlight",
+                            "score": 5,
+                            "created_utc": 1651940367.0,
+                            "response": "print tether, buy BTC, short BCH, repeat.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7p2k3k",
+                                    "author": "mtrycz",
+                                    "score": 4,
+                                    "created_utc": 1651942687.0,
+                                    "response": "I mean, yes, but official.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i7pe4ft",
+                                            "author": "Adrian-X",
+                                            "score": 7,
+                                            "created_utc": 1651947774.0,
+                                            "response": "Liquid. They have BTC and USDT on their liquid network with partnered exchanges. They are effectively sidechains and they can front-run customers and arbitrage any discrepancies in price without having to wait for confirmations.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7ovxxb",
+                    "author": "mrtest001",
+                    "score": 6,
+                    "created_utc": 1651939763.0,
+                    "response": "If there is anyone that *knows* BTC is sabotaged, wouldn't they be balls deep in BCH - since it is a great opportunity to 200x ROI ?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7pqhce",
+                            "author": "jessquit",
+                            "score": 7,
+                            "created_utc": 1651953423.0,
+                            "response": "you're sitting at a poker table.  the guy sitting across from you has a machine that stamps out poker chips.  every time a new hand is dealt, he stamps out more chips than you're holding.  how you gonna win?  you can't even call his bluff.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i7p2vzg",
+                            "author": "Shibinator",
+                            "score": 6,
+                            "created_utc": 1651942830.0,
+                            "response": "No, because the sabotage of BTC is about keeping control of the entire monetary system.\n\nAny help to BCH on their part is risking a -infinity ROI, since it ends the fiat printer perpetual taxation spigot forever.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7on5dj",
+                    "author": "SomeoneElse899",
+                    "score": 4,
+                    "created_utc": 1651935811.0,
+                    "response": "5 years ago. Clearly no one gives a shit. Sad world we live in. The info is all there, yet people willfully ignore it.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ukj92g",
+            "title": "Ya puedes enviar BCH a direcciones LNS usando Electron Cash",
+            "url": "https://github.com/Electron-Cash/Electron-Cash/releases/tag/4.2.8",
+            "author": "XolosRamirez",
+            "created_utc": 1651947915.0,
+            "score": 8,
+            "num_comments": 1,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "ukauqp",
+            "title": "Why I Am Optimistic With Bitcoin Cash - Thank You BCHSunny",
+            "url": "https://read.cash/@annayks/why-i-am-optimistic-with-bitcoin-cash-thank-you-bchsunny-b1322fdc",
+            "author": "AnnayksB",
+            "created_utc": 1651920946.0,
+            "score": 29,
+            "num_comments": 3,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "ukhl74",
+            "title": "FREE 0.0001 BCH in your wallet",
+            "url": "https://free.bitcoin.com/",
+            "author": "1BitcoinWebsite",
+            "created_utc": 1651942912.0,
+            "score": 9,
+            "num_comments": 12,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7py46a",
+                    "author": "BoomCoin10",
+                    "score": 4,
+                    "created_utc": 1651956858.0,
+                    "response": "I have never gotten it to work.  It always says my region has maxed out for the day.  Sad face",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7qc6fy",
+                            "author": "KnowledgeMurky9635",
+                            "score": 4,
+                            "created_utc": 1651963456.0,
+                            "response": "u/chaintip",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7qce31",
+                                    "author": "chaintip",
+                                    "score": 5,
+                                    "created_utc": 1651963563.0,
+                                    "response": "***\nu/BoomCoin10, you've [been sent](https://www.blockchain.com/bch/address/bitcoincash:qrelay25k9tt9nayr45g8xnszrhkymnvfc04yww3fa) `0.0001 BCH` | `~0.03 USD` by u/KnowledgeMurky9635\nvia [chaintip](http://www.chaintip.org).\n***",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7qcxcf",
+                    "author": "BoomCoin10",
+                    "score": 3,
+                    "created_utc": 1651963826.0,
+                    "response": "Thanks. I\u2019m huge on working to get adoption going. I love this idea but I am concerned it won\u2019t help me get newbies to sign up. If I can\u2019t get to work how are they?  But I\u2019ll be sure to pass along my newly found fortune to get other people into BCH!!!!\ud83d\udc4d\ud83d\ude00",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uk99de",
+            "title": "An update to CryptoWoo: Two goals completed from the second Flipstarter campaign.",
+            "url": "https://read.cash/@OlavOlsm/an-update-to-the-second-cryptowoo-flipstarter-a55a7d06",
+            "author": "OlavOlsm",
+            "created_utc": 1651913825.0,
+            "score": 31,
+            "num_comments": 3,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "ukfo1n",
+            "title": "Hello everyone! I have 2 transactions made with bch which are blocked and there are no confirmations. Can anyone help me? The track ids are: 32a457b140b599d8c0502f4b1d10efe5c65cc436a24c1062a74c6a706bb1df81 a2e1c0710ab302210b442bc8ba857d1ccd79a5839badcfd508e2cd0cfbde04ab",
+            "url": "https://www.reddit.com/r/btc/comments/ukfo1n/hello_everyone_i_have_2_transactions_made_with/",
+            "author": "Euphoric_Ad_3989",
+            "created_utc": 1651937286.0,
+            "score": 8,
+            "num_comments": 10,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7ou9kc",
+                    "author": "Rucknium",
+                    "score": 15,
+                    "created_utc": 1651939026.0,
+                    "response": "I see your second transaction here:\n\n[https://blockchair.com/bitcoin-cash/transaction/a2e1c0710ab302210b442bc8ba857d1ccd79a5839badcfd508e2cd0cfbde04ab](https://blockchair.com/bitcoin-cash/transaction/a2e1c0710ab302210b442bc8ba857d1ccd79a5839badcfd508e2cd0cfbde04ab)\n\nYour fee less less than one satoshi per byte (it is 0.991 satoshis per byte), which is less than the minimum transaction fee relay level, so it is not arriving at the miners. Re-send the transaction with a slightly higher fee. What wallet are you using?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7oufgo",
+                            "author": "Euphoric_Ad_3989",
+                            "score": 7,
+                            "created_utc": 1651939097.0,
+                            "response": "ledger",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7ozakg",
+                                    "author": "Rucknium",
+                                    "score": 17,
+                                    "created_utc": 1651941251.0,
+                                    "response": "Try to raise the fee in the Ledger software and re-send. But also notify Ledger, since it is a bug if they set the fee to below the minimum fee relay amount. Others may be experiencing your issue.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7oy9fh",
+                    "author": "NilacTheGrim",
+                    "score": 10,
+                    "created_utc": 1651940793.0,
+                    "response": "These txids never even made it to my bitcoind.  The fee is too low so they are not being relayed properly and likely not making it to miners.   Figure out a way to re-send them with a higher fee.  Possibly use Electron Cash in conjunction with your ledger if in the ledger app it shows them as still pending (the txs won't show up in Electron Cash).",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7otvn2",
+                    "author": "jessquit",
+                    "score": 3,
+                    "created_utc": 1651938853.0,
+                    "response": ">  The track ids are:\n\nwhat are these numbers?  where did you get these?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7ovn39",
+                            "author": "Euphoric_Ad_3989",
+                            "score": 4,
+                            "created_utc": 1651939629.0,
+                            "response": "are the transaction id that the ledger gives me",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7p1s4c",
+                                    "author": "LovelyDayHere",
+                                    "score": 11,
+                                    "created_utc": 1651942346.0,
+                                    "response": "Minimum fee rate on BCH for transactions to get relayed is 1.0 sat/byte\n\nI wonder why Ledger software allows to go below this, it shouldn't. Looks like a bug. As others have suggested, you need to find a way to re-do those transactions with sufficient fees.\n\nMight be worth a post in /r/ledgerwallet/ too.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ukb90q",
+            "title": "Ethereum slowly but surely winning against BtC",
+            "url": "https://i.redd.it/2lxxdy7fg1y81.jpg",
+            "author": "Egon_1",
+            "created_utc": 1651922585.0,
+            "score": 23,
+            "num_comments": 17,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7nzj6i",
+                    "author": "LovelyDayHere",
+                    "score": 11,
+                    "created_utc": 1651922912.0,
+                    "response": "I think what some of us unfortunately predicted may come to pass.\n\nBTC has been engineered to fail now (in multiple effective ways), and this is very likely in the interests of those who co-opted its roadmap.\n\nIt seems like it may just be propped up long enough until SHTF and the fiat economies go down the tubes, then they could pop the BTC bubble and try to take down the whole crypto market so badly that the general public loses interest and willingly accepts a new central bank digital currency as their savior from all the chaos.\n\nAny cryptocurrencies that are actually useful and not just centralized shitshows, may stand a chance of surviving this period.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7nz435",
+                    "author": "Egon_1",
+                    "score": 3,
+                    "created_utc": 1651922602.0,
+                    "response": "Source https://www.blockchaincenter.net/en/flippening/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7o1pl0",
+                    "author": "WippleDippleDoo",
+                    "score": 6,
+                    "created_utc": 1651924419.0,
+                    "response": "Quite the shame as it is also a dysfunctional shitcoin and it was pre-issued too.\n\nThe whole cryptomarket is a farce.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ukag5i",
+            "title": "T3 Apartment in Braga was the first property to be sold in cryptocurrency in Europe",
+            "url": "https://www.brytfmonline.com/t3-apartment-in-braga-was-the-first-property-to-be-sold-in-cryptocurrency-in-europe/",
+            "author": "Puzzleheaded_Top_794",
+            "created_utc": 1651919169.0,
+            "score": 5,
+            "num_comments": 3,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "ujya0o",
+            "title": "My dinner tonight after buying the dip.",
+            "url": "https://i.redd.it/6zzki1igfxx81.jpg",
+            "author": "Adv3ntur0us_",
+            "created_utc": 1651873824.0,
+            "score": 40,
+            "num_comments": 12,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7naqjp",
+                    "author": "gotw2",
+                    "score": 3,
+                    "created_utc": 1651902098.0,
+                    "response": "Oh that's cold...",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7n3dqx",
+                    "author": "Unpopular1",
+                    "score": 4,
+                    "created_utc": 1651897200.0,
+                    "response": "I've bought BCH over a year ago for a few G's at several intervals from 420 to 1400 ...it's not been fun the past year.  But it was $ that was just sitting there and now it's minus money.  I believed in it then and I still do.  If/when it shoots to 10 G's, I probably still wont sell.  It's more practical than BTC for everyday usage and makes much more sense.  Time will tell I guess.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7me6e8",
+                    "author": "tisallfair",
+                    "score": 4,
+                    "created_utc": 1651883911.0,
+                    "response": "Gambling on a volatile, speculative asset with everything you have is nothing to be proud of.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7mcjei",
+                    "author": "1s44c",
+                    "score": 3,
+                    "created_utc": 1651883075.0,
+                    "response": "\"Don't invest what you can't afford to lose\"",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uk3jgo",
+            "title": "Adoption: Sending Bitcoin payment requests with bitrequests.io",
+            "url": "https://v.redd.it/h01wsybjoyx81",
+            "author": "bitrequest",
+            "created_utc": 1651890647.0,
+            "score": 12,
+            "num_comments": 2,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "ujxmf3",
+            "title": "AI-upscaled 'magic internet money' ad picture 600%, free to everyone :)",
+            "url": "https://imgur.com/2Vzszir.jpg",
+            "author": "Anenome5",
+            "created_utc": 1651871977.0,
+            "score": 25,
+            "num_comments": 2,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "ujp923",
+            "title": "U.S. adds cryptocurrency mixer Blender to sanctions list over alleged North Korea links",
+            "url": "https://www.reuters.com/business/us-adds-virtual-currency-mixer-sanctions-list-over-north-koreas-cyber-activities-2022-05-06/",
+            "author": "BewareOfShills",
+            "created_utc": 1651848815.0,
+            "score": 20,
+            "num_comments": 2,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "ujt7lc",
+            "title": "1 Bitcoin Cash",
+            "url": "https://www.1bitcoincash.com/",
+            "author": "1BitcoinWebsite",
+            "created_utc": 1651859717.0,
+            "score": 10,
+            "num_comments": 2,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
         }
     ]
 }
