@@ -100,12 +100,12 @@ def add_sentiment_analysis_to_file(file_name, sa_function):
    print(f"Update {file_name} with sentiment analysis...")
 
    file = os.path.join('data', file_name)
-   new_file = os.path.join('data', file_name.split(".")[0] + "-sa.json")
+   new_file = os.path.join('data/sa', file_name.split(".")[0] + "-sa.json")
 
    with open(file, 'r') as f:
       subreddit = json.load(f)
       for post in subreddit['posts']:
-         text = post['text'] if post['text'] else post['title']
+         text = post['selftext'] if post['selftext'] else post['title']
          post['sentiment_analysis'] = sa_function(text)
          recursive_comment_update(post, sa_function)
 
@@ -132,8 +132,8 @@ if __name__ == "__main__":
    blob = lambda text: round(TextBlob(text).polarity, 2)
 
    # Update all files with sentiment analysis
-   '''
+   
    for file in os.listdir(os.path.join('data')):
       if file.endswith(".json"):
          add_sentiment_analysis_to_file(file, sa_sia)
-   '''
+   
