@@ -70,8 +70,8 @@ class CSVDumper():
         pass
 
 if __name__ == "__main__":
-    dp = EdgeListDumper()
-    dp.parse_folder('../data')
-    dp.dump_scores('../data/csv/scores.csv')
-    dp.dump_active_subs('../data/csv/subs.csv')
-    dp.dump_edges('../data/csv/edges.csv')
+    dp = CSVDumper()
+    dp.parse_folder('data')
+    dp.dump_scores('data/csv/scores.csv')
+    dp.dump_active_subs('data/csv/subs.csv')
+    dp.dump_edges('data/csv/edges.csv')
