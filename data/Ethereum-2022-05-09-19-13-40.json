@@ -1,0 +1,497 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": 3,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uladiy",
+            "title": "Can someone ELI5 what EVM (Ethereum Virtual Machine) means for a Layer 1 Ecosystem?",
+            "url": "https://www.reddit.com/r/ethereum/comments/uladiy/can_someone_eli5_what_evm_ethereum_virtual/",
+            "author": "thenotoriousbull",
+            "created_utc": 1652041577.0,
+            "score": 12,
+            "num_comments": 10,
+            "subreddit": "ethereum",
+            "selftext": "Curious what exactly EVM entails? For instance, if an L1 wants to build towards an EVM, are they doing it in solidity? What if it\u2019s a purpose specific chain say for instance, gaming and NFTs like Ronin/Flow? If someone were to launch a native token off that EVM chain - but with their own token standard (so not ERC20) how does that work? What about custom consensus mechanisms? \n\nDoes EVM essentially mean:\n1. Build own chain with custom scalability, consensus, etc\n2. \u201cTurn on\u201d EVM - where developers of Ethereum apps like Curve and ENS, etc can import those apps onto this custom chain? \n3. Equals = Reap the rewards of Ethereum apps but on a faster, custom built chain? \n\nI\u2019m gonna need the ELI5 because I\u2019m not a dev but curious about this topic as Ethereum is labeled \u201cthe world computer\u201d \n\nThanks! FYI: Will be cross posting this around a couple threads",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7u7kcg",
+                    "author": "amemulo",
+                    "score": 8,
+                    "created_utc": 1652042067.0,
+                    "response": "EVM is the part of ethereum that understands code. When you send a transaction to a contract the EVM is in charge of executing whatever that contract is meant to do.\n\nFor a blockchain to be EVM compatible just means that every contract written for Ethereum will work for that other blockchain, as the part that understands contracts is equivalent (many times not exactly equal, for example gas costs may differ)",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ul3v5y",
+            "title": "Anyone know where to get good ETH branded clothing?",
+            "url": "https://www.reddit.com/r/ethereum/comments/ul3v5y/anyone_know_where_to_get_good_eth_branded_clothing/",
+            "author": "finilias",
+            "created_utc": 1652022924.0,
+            "score": 5,
+            "num_comments": 14,
+            "subreddit": "ethereum",
+            "selftext": "They used to have a swag site that had shirts and other apparel items with designs for each of the hard forks like London and Berlin, but now I can't seem to find them. Most of the other apparel sites just have 'ETH TO THE MOON' type of swag.\n\nI'd like to wear something that represents the progress that ETH has made, not the price of it.\n\n&#x200B;\n\nEDIT: when I say 'They' I mean the [ethereum.org](https://ethereum.org) website.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7t69s4",
+                    "author": "frank__costello",
+                    "score": 5,
+                    "created_utc": 1652025734.0,
+                    "response": "Bankless has some cool stuff\n\nhttps://shop.metafactory.ai/collections/bankless",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7u6dza",
+                            "author": "Visible-Ad743",
+                            "score": 3,
+                            "created_utc": 1652041547.0,
+                            "response": "I love their stuff but it is spendy.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7t0w1j",
+                    "author": "MinimalGravitas",
+                    "score": 3,
+                    "created_utc": 1652023361.0,
+                    "response": "Maybe try Gitcoin:\n https://store.gitcoin.co/collections/autumn-2021-collection\n\nOr MetaFactory: \n\nhttps://shop.metafactory.ai/collections/fresh-drops",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ukr9zg",
+            "title": "is it possible to get the encrypted seed phrase from metamask?",
+            "url": "https://www.reddit.com/r/ethereum/comments/ukr9zg/is_it_possible_to_get_the_encrypted_seed_phrase/",
+            "author": "iMnoTGudd",
+            "created_utc": 1651973575.0,
+            "score": 3,
+            "num_comments": 10,
+            "subreddit": "ethereum",
+            "selftext": "hey guys, a friend of mine got hacked, he says that he just entered the password (and not the seed phrase, he has the seed phrase under a tree \\[literally\\]).\n\nanyways , he entered the password on a phishing website and not the seed phrase, 20 mins later his wallet was empty, he lost a lot of money.\n\nso is it possible to get the encrypted file just with js?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7qzkao",
+                    "author": "edmundedgar",
+                    "score": 5,
+                    "created_utc": 1651975551.0,
+                    "response": "What you're describing shouldn't cause loss of funds on its own. The password unlocks the wallet in MetaMask, but you can't reproduce the wallet from just the password. So something else must have happened:\n\n * He also approved a transaction from the phishing website.\n * Browser or PC was compromised (via the phishing site or otherwise), so just typing the password (even if not into a phishing website) was enough to give the attacker access to the wallet\n * Somebody dug up the seed phrase from under the tree. (Why was he using a tree? Doesn't he know you have to use a bird bath?)",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uluqvq",
+            "title": "Max Pain - The Daily Gwei #477",
+            "url": "https://thedailygwei.substack.com/p/max-pain-the-daily-gwei-477",
+            "author": "DailyGweiBot",
+            "created_utc": 1652112687.0,
+            "score": 3,
+            "num_comments": 1,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "ul49ai",
+            "title": "Are you afraid of sending tokens to the wrong address?",
+            "url": "https://www.reddit.com/r/ethereum/comments/ul49ai/are_you_afraid_of_sending_tokens_to_the_wrong/",
+            "author": "serban1313",
+            "created_utc": 1652024056.0,
+            "score": 4,
+            "num_comments": 13,
+            "subreddit": "ethereum",
+            "selftext": "Hi! After reading some posts, I can conclude that some individuals have anxiety about sending crypto tokens to their fellow friends. \nWhat solutions shall we use, so we can get rid of this problem? Do you know any wallets that have built-in protection stuff?\n\n[View Poll](https://www.reddit.com/poll/ul49ai)",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7t6wwd",
+                    "author": "SAPPER00",
+                    "score": 10,
+                    "created_utc": 1652026017.0,
+                    "response": "ENS fixes this. Very simple to use and lowers the chances of sending to the wrong address.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7t7czk",
+                    "author": "Sad-Dot000",
+                    "score": 4,
+                    "created_utc": 1652026216.0,
+                    "response": "Ens name service, have a .ETH name connected to your address that can be a sendable address and way easier to remember",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ul3ks2",
+            "title": "Restoring My MetaMask Wallet with Seedphrase",
+            "url": "https://www.reddit.com/r/ethereum/comments/ul3ks2/restoring_my_metamask_wallet_with_seedphrase/",
+            "author": "Electrical_Yam5077",
+            "created_utc": 1652022098.0,
+            "score": 4,
+            "num_comments": 9,
+            "subreddit": "ethereum",
+            "selftext": "Last week I did a clean install on my Firefox browser without thinking about it. It uninstalled my MetaMask extension. I have the seed phrase but I\u2019m REALLY paranoid about entering it in my PC to restore my meta mask wallet. As the saying goes, anything connected to the internet isn\u2019t 100% safe. Currently there\u2019s nothing in there so I have nothing to lose technically. Is it safe to restore my wallet access by using the seed phrase? Or am I better off just making a new wallet?\n\nOh yeah, obligatory scammers fuck off. I\u2019m not answering any DMs",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7sz7n9",
+                    "author": "Rey_Mezcalero",
+                    "score": 5,
+                    "created_utc": 1652022616.0,
+                    "response": "Yes safe to restore your wallet with seed phrase. \n\nI had to do the same. Just make sure you not have anything else running like websites or apps and security scans been running ok. \n\nUnless you going to piracy sites and clicking links and doing things that might get malware dropped on you, should be fine. \n\nJust my 2 cents",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ujuvy1",
+            "title": "7 Reasons To Be Excited About Polygon In 2022",
+            "url": "https://www.reddit.com/r/ethereum/comments/ujuvy1/7_reasons_to_be_excited_about_polygon_in_2022/",
+            "author": "nousemercenary",
+            "created_utc": 1651864387.0,
+            "score": 3,
+            "num_comments": 25,
+            "subreddit": "ethereum",
+            "selftext": "Polygon has been making waves in Web3.0 since inception. But the recent development & activity has made crypto natives more bullish on the ecosystem than ever before.\n\n1. **Stripe X Polygon**  \nStripe, the global payments giant, is making its foray into the cryptoverse with Polygon. Soon, Stripe will allow business owners to pay using USDC. Plus, Twitter will be the first to use this! Imagine the possibilities...\n2. **Underpinning blockchain in Lugano**  \nLugano is a pro-crypto city based in Switzerland and has decided to settle its stablecoin (USDT & LVGA) transactions on Polygon Thanks to its low fees The crypto-friendly Swiss town recently made Bitcoin and crypto legal tender.\n3. **Investors\u2764\ufe0fPolygon**  \nPolygon has been massively funded In Feb, Polygon raised $450M in funding led by Asia\u2019s biggest crypto investing firm Sequoia Capital with participation from leading global investors including: Animoca, Seven Seven Six & Kevin O\u2019Leary aka Mr. Wonderful.\n4. **Redpilling Web2.0 companies**  \nPolygon is onboarding Web2.0 based companies into the decentralized world of Web3.0. Draft Kings, a NASDAQ-listed sports betting company, has partnered with Polygon & has announced setting up a validator\u2019s node to help decentralize its PoS network.\n5. **Frontrunning P2E gaming**  \nPolygon Studios, the gaming/Metaverse arm of Polygon, is working at the forefront to bring GameFi & Metaverse to the masses. Guess who\u2019s heading it? Ryan Wyatts\u2014 Ex-head of gaming at Youtube to build out the gaming division at Polygon.\n6. **Supernet chains**  \nPolygon has several other scaling solutions besides its famed & widely used PoS chain. One of them is Supernet Chains. These are a set of highly scalable interconnected chains allowing devs to build their projects in customizable environments with 0 costs. To incentivize devs to build on these Supernet Chains, the foundation has announced a $100M support fund.\n7. **Hermez 2.0, NightFall, Avail, Miden, Zero (Plonky 2.0) - Launching Live / TestNet**  \nThe Polygon team will be launching Hermez 2.0 & NightFall to the livenet later this year. And Avail, Miden, and Zero chains will be hitting TestNet before the end of the year. These coupled with the Ethereum merge (expected in the Fall) will drive huge adoption. Also, don't forget an Enterprise chain is also in the works.\n\nhttps://preview.redd.it/q6aggc5cnwx81.jpg?width=1820&format=pjpg&auto=webp&s=4e587a296444c0612d4e032e0dd22f119b8a29eb",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7lan6m",
+                    "author": "marsangelo",
+                    "score": 4,
+                    "created_utc": 1651865167.0,
+                    "response": "MATIC and DOT are the only alts ive been DCAing so far, though this could be a marathon",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ulsau8",
+            "title": "The Eight Fortune 500 Companies Looking To Adopt Cryptocurrency Soon",
+            "url": "https://www.reddit.com/r/ethereum/comments/ulsau8/the_eight_fortune_500_companies_looking_to_adopt/",
+            "author": "lemondeisyours",
+            "created_utc": 1652105934.0,
+            "score": 66,
+            "num_comments": 23,
+            "subreddit": "ethereum",
+            "selftext": " \n\n# The Eight Fortune 500 Companies Looking To Adopt Cryptocurrency\u00a0Soon\n\n&#x200B;\n\n[https://cryptoibex.wordpress.com/2021/08/16/the-eight-fortune-500-companies-looking-to-adopt-cryptocurrency-soon/](https://cryptoibex.wordpress.com/2021/08/16/the-eight-fortune-500-companies-looking-to-adopt-cryptocurrency-soon/)",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7xt79j",
+                    "author": "Iamtutut",
+                    "score": 21,
+                    "created_utc": 1652114723.0,
+                    "response": "One year old article, nothing happened.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7y208v",
+                            "author": "Tron22",
+                            "score": 11,
+                            "created_utc": 1652118234.0,
+                            "response": "And a terrible article at that. Wtf is this? Who tf is cryptoibex.wordpress and good for them for making a list of companies with 0 information to back it up... Terrible. Just... Terrible.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7yk1gx",
+                    "author": "TheFcknVoid",
+                    "score": 4,
+                    "created_utc": 1652125589.0,
+                    "response": "Article is from **16th August 2021**. We get it, everything is tanking right now and people need hope. Just don\u2019t misrepresent things.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7xgnjr",
+                    "author": "KlopKlop10293",
+                    "score": 28,
+                    "created_utc": 1652109712.0,
+                    "response": "8/500 isn\u2019t that great",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7xj2ki",
+                            "author": "lostharbor",
+                            "score": 37,
+                            "created_utc": 1652110687.0,
+                            "response": "The number 8 doesn\u2019t look great until you look at who the 8 are.\n\nAmazon/Apple/McDolands/Walmart carry a lot of weight",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7y1rug",
+                                    "author": "chemical_slingshot",
+                                    "score": 15,
+                                    "created_utc": 1652118138.0,
+                                    "response": "These eight do carry weight, and this is great, mate.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i7ya4gl",
+                                    "author": "No-Height2850",
+                                    "score": 5,
+                                    "created_utc": 1652121551.0,
+                                    "response": "Adopting cryptocurrency doesnt mean your crypto currency will go up. It just means they will set up theirs.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ulolxr",
+            "title": "Do you need a solution that double-checks if you sent the money where you wanted and guarantees it?",
+            "url": "https://www.reddit.com/r/ethereum/comments/ulolxr/do_you_need_a_solution_that_doublechecks_if_you/",
+            "author": "serban1313",
+            "created_utc": 1652093924.0,
+            "score": 24,
+            "num_comments": 50,
+            "subreddit": "ethereum",
+            "selftext": "Hi, community! I saw so many comments and posts about people being anxious while doing transfers on crypto.\n\n[View Poll](https://www.reddit.com/poll/ulolxr)",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7wls9b",
+                    "author": "The-Francois8",
+                    "score": 17,
+                    "created_utc": 1652094213.0,
+                    "response": "So you want to add a centralized step to person to person transactions?  These options exist. \n\nYou have three very different questions posted, with a single yes no response. \n\nTo your first question in the title, my answer is no. \n\nTo your second question in the text, I think it\u2019s extremely easy, so yes.\n\nTo your third question, sometimes, it is not always user friendly. QR codes are, long text less so.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7wm34e",
+                            "author": "Longjumping-Quiet-77",
+                            "score": 12,
+                            "created_utc": 1652094425.0,
+                            "response": "just check the first and last bits of the address and confirm that it matches - pretty straight forward",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7x3x2g",
+                                    "author": "WilliamShattnerpants",
+                                    "score": 4,
+                                    "created_utc": 1652104342.0,
+                                    "response": "This is the way.\n\n1) Check that you are using correct blockchain.\n2) In sending wallet, check that first / last 4 digits of \u201cto\u201d address match with address of destination.\n3) Send a small amount.\n4) Confirm it reaches destination.\n5) Repeat step 1, 2, 4, for full amount.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i7xlirz",
+                                            "author": "IamAFlaw",
+                                            "score": 5,
+                                            "created_utc": 1652111660.0,
+                                            "response": "I do what you do, but I have never ever sent a small amount first. I know it is good practice but I just never bother, too cheap to pay the fees.\n\nAs long as the network is correct and the address I sent to is correct, I am happy and it has never failed me.\n\nI just make sure I am doing it right entering everything, then I go over it and double check. If all checks off, it send it with my blessing.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i7y8llh",
+                                                    "author": "WilliamShattnerpants",
+                                                    "score": 3,
+                                                    "created_utc": 1652120927.0,
+                                                    "response": "Yeah, I guess \u201csmall amount\u201d is relative. If you\u2019re moving 20 ETH, a $100 test transaction with a $15 gas\nfee is worth it for peace of mind. But if you\u2019re moving $500 total worth of ETH, a test transaction may be overkill.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i7wmw8w",
+                            "author": "serban1313",
+                            "score": 4,
+                            "created_utc": 1652094997.0,
+                            "response": "I want a decentralized step =))",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7xpoes",
+                    "author": "fonzdm",
+                    "score": 3,
+                    "created_utc": 1652113314.0,
+                    "response": "Even though it would be great, this basically requires some sort of centralized party that handles this types of check.. mmh\n\nI mean, I think a cool way could be found, but at the moment if you look at how utxo and account based models are designed, you will see that the recipient address is nothing more than a string. No on-chain check needed.\n\nI think that by the time ENS and services like that become popular, there will be much less need for a pre-validation check.\n\nAnyway, do you think that something like a smart contract that requires confirmation on both side could be a good solution? Like for example, Alice signs a transaction to Bob but a time-lock sc requires Bob to confirm with an on-chain tx, otherwise the funds are released.\n\nIn this case we can prevent transactions SC addresses like token ones (like when people sends MATIC to the matic address on chain, and not to a person's address), and transactions to dead/not-yet-generated addresses\n\nOf course, if you send some tokens to a valid address and they claim...",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7ww4hl",
+                    "author": "AESTHTK",
+                    "score": 3,
+                    "created_utc": 1652100560.0,
+                    "response": "If you want this, use VISA.\n\n45 day clawback.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ulkjcn",
+            "title": "Frequently Asked Questions + Weekly Discussion Thread",
+            "url": "https://www.reddit.com/r/ethereum/comments/ulkjcn/frequently_asked_questions_weekly_discussion/",
+            "author": "AutoModerator",
+            "created_utc": 1652076010.0,
+            "score": 17,
+            "num_comments": 6,
+            "subreddit": "ethereum",
+            "selftext": "**Welcome to the Weekly Discussion. Please read the disclaimer, guidelines, and rules before participating.**\n\nRules:\n\n* All [sub rules](https://www.reddit.com/r/Ethereum/about/rules/) apply in this thread.\n* Discussion topics must be related to Ethereum.\n* Behave with civility and politeness. Do not use offensive, racist or homophobic language.\n* Comments will be sorted by newest first.\n\nUseful Links:\n\n* [Ethereum.org](https://ethereum.org)\n* [ETHHub](https://ethhub.io/)\n* [ETHMerge.com](https://ethmerge.com/)\n\n**Reminder**\n\n/r/ethereum is a community for discussing the technology, news, applications and community of Ethereum. **Discussion of the Ether price or trading is not allowed.** Please keep those discussions to [/r/ethfinance](https://www.reddit.com/r/ethfinance) and [/r/ethstaker](https://www.reddit.com/r/ethstaker).\n\n&#x200B;\n\n**Frequently Asked Questions**\n\n**Where's the best place to buy ETH?**\n\nThere are many centralized exchanges that support Ethereum. If you live in the US, the most popular exchanges are Coinbase, Gemeni and Kraken. Coinbase users can use Coinbase Pro for lower fees.\n\n**When is Eth2 launching?**\n\nEth2 is a marketing term used to represent a number of updates to Ethereum. The Eth2 proof-of-stake chain first launched in December 2020. \"The Merge\", which is the event that will fully switch Ethereum's consensus to proof-of-stake, is estimated to be ready in early 2022, although there is no exact timeline. Other updates, such as data shards, will follow that update.\n\nVisit [ethmerge.com](https://ethmerge.com/) to learn more about \"The Merge\".\n\n**Do I need to do anything to update to Eth2? Will Eth2 create a new token?**\n\nNo, ETH holders *never* need to take any action to keep holding ETH. Ethereum users will be unaffected by the Eth2 upgrade. And the Eth2 updates will not create any new tokens.\n\n**How can I stake my ETH?**\n\nThere are two ways that you can stake your ETH: by running your own validator, or providing your ETH to a staking pool.\n\n* Running your own validator requires a modern computer and 32 ETH. Visit /r/ethstaker for more details\n* Staking pools accept any amount of ETH. We recommend [Lido](https://lido.fi/) or [StakeWise](https://stakewise.io/)\n\n**Why are Ethereum transaction fees so high?**\n\nLike most blockchains, Ethereum fees are determined by supply-and-demand. The large demand to use Ethereum has pushed transaction fees quite high (however, fees were just a few cents only 2 years ago). Fees are especially high during market volatility, and during NFT drops.\n\n**What is being done to lower Ethereum transaction fees?**\n\nEthereum fees are reduced by using layer-2 rollups. Rollups are scaling solutions that allow for significantly cheaper transactions, while still maintaining Ethereum's security.\n\nAdditionally, Eth2's data shards will make rollups even cheaper.\n\nWhile rollups are cutting-edge technology being actively developed, a number are already live on Ethereum mainnet. Visit [l2beat.com](https://l2beat.com/) to learn more about rollups.\n\n**What's the best wallet for Ethereum?**\n\nThe most popular tool for using decentralized applications is Metamask. However, for security reasons, we recommend using a hardware wallet such as a Trezor or Ledger.\n\n&#x200B;\n\nAre there questions you'd like to see added? Leave a comment below.",
+            "stickied": true,
+            "comments": [
+                {
+                    "id": "i7ye9kv",
+                    "author": "Icy-Perspective-0420",
+                    "score": 4,
+                    "created_utc": 1652123235.0,
+                    "response": "Who else buying on this dip? I\u2019m so close to 32 ETH to run my own validator",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ulush6",
+            "title": "Manipulating the velocity of money in proof-of-stake",
+            "url": "https://dataalways.substack.com/p/manipulating-the-velocity-of-money",
+            "author": "domotheus",
+            "created_utc": 1652112807.0,
+            "score": 16,
+            "num_comments": 10,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7xx7jj",
+                    "author": "BronyFrenZony",
+                    "score": 5,
+                    "created_utc": 1652116316.0,
+                    "response": "Nice to see some intelligent writing on the subject. I read the POS one as well and thought both were spot on. \n\nhttps://dataalways.substack.com/p/pos-cantillon-effect?s=w",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7zw8tv",
+                    "author": "Perleflamme",
+                    "score": 3,
+                    "created_utc": 1652146767.0,
+                    "response": "Good article. Pretty on point. \n\nWell, the protocol doesn't need to favor either deflation or inflation. That's why it doesn't. \n\nWhat it does is solving some vulnerabilities and reducing unnecessary issuance costs, as staking costs are way lesser than mining costs. Keeping the same token issuance would have been an additional feature of drastically increasing security, way beyond what's currently accepted. It would have needed strong proofs that it was needed. \n\nAmong the vulnerabilities that are solved: \n\n* increased beyond profitability level the cost of manipulating gas price with transaction spam, thanks to gas being burnt; \n\n* increased censorship resistance by switching from PoW to PoS, as such allowing any consensus actor to be as anonymous as they desire to avoid any risk of coercion from anyone else; \n\n* solved the 51% vulnerability of PoW through layer 0 consensus adoption. \n\nThe fact ETH is most probably becoming *temporarily* deflationary as a result is only coincidental.\n\nTo be noted that, if ETH price increases without any increase in gas demand, we may just as well end up with a temporarily inflationary currency, because that's what the network self-regulation entails.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7xt64e",
+                    "author": "coinfeeds-bot",
+                    "score": 3,
+                    "created_utc": 1652114711.0,
+                    "response": "tldr; In a proof-of-work system, a lower inflation rate leads to less usage and less spending, while a higher inflation rate encourages more usage and more spending. If the inflation rate of a cryptoasset is higher, there is less incentive to save it, leading to a more active supply. If you want to incentivize transactions, then you need to increase the issuance rate to disincentivize absolute saving of coins.\n\n*This summary is auto generated by a bot and not meant to replace reading the original article. As always, DYOR.*",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7yt1k5",
+                            "author": "sven_adams",
+                            "score": 7,
+                            "created_utc": 1652129282.0,
+                            "response": "\"Inflation is good\" is the argument every dictator makes",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ultbgo",
+            "title": "ethsign down?",
+            "url": "https://www.reddit.com/r/ethereum/comments/ultbgo/ethsign_down/",
+            "author": "pheonix10yson",
+            "created_utc": 1652108796.0,
+            "score": 3,
+            "num_comments": 7,
+            "subreddit": "ethereum",
+            "selftext": "Maybe not the right place to ask this, but is [ethsign.xyz](https://ethsign.xyz) website down? It doesn't open up for me? Any idea what happened?",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "ule0wd",
+            "title": "How Web3 can change the traditional buy-sell transaction model between businesses and consumers",
+            "url": "https://medium.com/@boris_85519/web3-commerce-a-new-model-for-business-consumer-transactions-a3e2fc231fb6",
+            "author": "WSBLebron",
+            "created_utc": 1652052526.0,
+            "score": 11,
+            "num_comments": 7,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "uldwe5",
+            "title": "Curious what you guys think of this article.",
+            "url": "https://medium.com/@BurntBubba/making-money-a-social-public-good-8f2476db328b",
+            "author": "Burntbubba",
+            "created_utc": 1652052095.0,
+            "score": 4,
+            "num_comments": 21,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7wityn",
+                    "author": "thomas_m_k",
+                    "score": 3,
+                    "created_utc": 1652091924.0,
+                    "response": "I've seen proposals before that couple the coin supply to economic activity, but the problem is that you can't really tell which transactions are economic activity and which are just moving coins around.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ulji6u",
+            "title": "I did a video on MEV, frontrunning, and other blockchain bots. What do you think?",
+            "url": "https://youtu.be/oxeMOJfSBhU",
+            "author": "pschoffer",
+            "created_utc": 1652071763.0,
+            "score": 3,
+            "num_comments": 1,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        }
+    ]
+}

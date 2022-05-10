@@ -1,0 +1,67 @@
+{
+    "subreddit": "CryptoTechnology",
+    "limit": 1000,
+    "minimum_score": 3,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "ulk7h1",
+            "title": "Avalanche Consensus overview",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ulk7h1/avalanche_consensus_overview/",
+            "author": "Interested-Investor",
+            "created_utc": 1652074582.0,
+            "score": 16,
+            "num_comments": 9,
+            "subreddit": "CryptoTechnology",
+            "selftext": "I\u2019m trying to learn the avalanche consensus and avalanche network architecture but have been struggling just a bit. I feel like I\u2019ve sifted through white papers, blog posts, and  AVAX developer YT vids but can\u2019t quite wrap my head around it. Would anyone out there be willing to take a stab or does anyone know some oversimplified educational resources? I\u2019m looking for an unbiased overview not just \u201cavalanche is perfect. Zero concerns here\u201d \n\nThanks everyone and happy late Mother\u2019s Day to all the mothers out there!",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7w4mzg",
+                    "author": "Dormage",
+                    "score": 10,
+                    "created_utc": 1652079240.0,
+                    "response": "It is an adaptation of one of the oldest and most simple consensus protocols. The idea is simply, the majority opinion wins. Since there is no central party that gathers the votes and counts them to obtain the opinion of the majority, nodes select a random subset of nodes and asks them for their opinion, if the majority says A, the node changes its opinion to A. \n\nIt is called probabilistic as there is a high probability that if the majority of the network is of opnion A, the entire network will converge to adopt A.\nHowever, there is a small probability that even if a small subset of the network is of opnion B, the nodes with A may change their opinion to B if by chance their quorum is randomly chosen to be nodes of opinion B.\n\nTo avoid this as much as possible, the selection and query is done multiple times thereby reducing the probability the chance for a minority opinion to prevaile due to random sampling.\n\nThere are some specific changes avalanche made to the original algorithm but the idea behind it remains the same.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7w5m7y",
+                    "author": "remind_me_later",
+                    "score": 3,
+                    "created_utc": 1652080045.0,
+                    "response": "[This image](https://docs.avax.network/assets/images/howavalancheconsensusworks-a37dc2bdf67c7c2997dcbfd01ee28e64.png) is from their website, & is as simple as it can get in terms of confirming a transaction. It fundamentally relies on 2 core pillars:\n\n1. Is the transaction valid?\n2. Do others also think that the transaction is valid?\n\nAs more nodes confirm the transaction as valid, it'll eventually cross a set treshold for acceptance & be included into the chain. If there turns out to be any conflict, the the node verifies with other nodes to see if they accept the conflicting transaction. Over a long enough period of time, [the network will make up its mind on the conflict](https://docs.avax.network/overview/getting-started/avalanche-consensus#finality) & come to the same conclusion on whether to accept or reject a given transaction. As more blocks are added to the DAG, the confidence of a transaction being correct increases over time.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ukwf74",
+            "title": "\u00bfHow can i use/get Blockchain for a personal project?",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ukwf74/how_can_i_useget_blockchain_for_a_personal_project/",
+            "author": "Loudi2918",
+            "created_utc": 1651994237.0,
+            "score": 4,
+            "num_comments": 3,
+            "subreddit": "CryptoTechnology",
+            "selftext": "I have a project that is based on storing information on the Blockchain (The Blockchain technology, not to be confused with the websites for example), it's main use would be for security since the data stored there, by using the Blockchain, the data would be unchangeable, veridic, and in general guarantee a good level of security, however, i can't find anything close to what i need, which is how to access to the Blockchain, or just using it, \u00bfIs there a source code, or a tutorial, or something that explains this?, thanks in advance",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7s5vfc",
+                    "author": "wanderingcfa",
+                    "score": 5,
+                    "created_utc": 1652005038.0,
+                    "response": "Start from the beginning: https://cryptozombies.io/",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

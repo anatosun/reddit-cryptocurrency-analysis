@@ -1,0 +1,216 @@
+{
+    "subreddit": "btc",
+    "limit": 1000,
+    "minimum_score": 3,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "ulwgbe",
+            "title": "Help Setting Up a Node",
+            "url": "https://www.reddit.com/r/btc/comments/ulwgbe/help_setting_up_a_node/",
+            "author": "the_mighty_chewbacca",
+            "created_utc": 1652117244.0,
+            "score": 14,
+            "num_comments": 9,
+            "subreddit": "btc",
+            "selftext": "I have an older Raspberry Pi. Never have used it. I am wanting to set up a Crypto node and am thinking this community might be helpful. Does BCH lend itself to easily setting up a node? If so can you provide guidance or resources? Thanks in advance.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7y1srl",
+                    "author": "Remora_101",
+                    "score": 7,
+                    "created_utc": 1652118150.0,
+                    "response": "You download the package and install it. Here i someone running a raspi that should give you some performance guides:\n\nread.cash/@mtrycz/how-my-rpi4-handles-scalenets-256mb-blocks-e356213b",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7y29ul",
+                    "author": "LovelyDayHere",
+                    "score": 5,
+                    "created_utc": 1652118342.0,
+                    "response": "> I have an older Raspberry Pi.\n\nToo unspecific.\n\nAn RPi3 could still work, an RPi4 is fine.\n\nOlder models than that, I wouldn't bother trying.\n\nhttps://bitcoincashnode.org/en/newsroom/bchn-on-raspberry-pi-2021-06\n\nIf you do it, make sure to get the latest version (v24.0.0). These instructions should also work with minor modifications for Bitcoin Unlimited (refer to https://bitcoinunlimited.info for docs, I guess).\n\n@Telesfor wrote a tutorial a while back. You will need to replace the \"dot\" in the domain with a real period, since Reddit filters readcash links.\n\n    https://read dot cash/@Telesfor/how-to-operate-a-bitcoin-cash-full-node-bitcoin-unlimited-on-raspberry-pi-3030f63e",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7y4k9f",
+                    "author": "CurvyGorilla202",
+                    "score": 3,
+                    "created_utc": 1652119269.0,
+                    "response": "Came full circle didn\u2019t you chewy?",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ulvaof",
+            "title": "USD \"stablecoin\" (UST - TerraUSD) but backed by Bitcoin has lost its peg as it falls below $1 USD per coin. Bitcoin is propped up by scams like this, while actual usage is impossible due to their high fees.",
+            "url": "https://coinmarketcap.com/currencies/terrausd/",
+            "author": "big--if-true",
+            "created_utc": 1652114156.0,
+            "score": 37,
+            "num_comments": 41,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7yc7at",
+                    "author": "sanch_o_panza",
+                    "score": 4,
+                    "created_utc": 1652122396.0,
+                    "response": "Coingecko says\n\n> What was the lowest price for TerraUSD?\n\n> TerraUSD had an all time low of $0.857992 on May 19, 2021 (12 months).\n\nThat doesn't show up on Coingecko's price chart, but that's the only place I've looked... and only time will tell if this is going to be a new record :D",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7yc9eu",
+                    "author": "doramas89",
+                    "score": 5,
+                    "created_utc": 1652122420.0,
+                    "response": "Currently at 0.90 lol",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7yeqmz",
+                    "author": "265",
+                    "score": 4,
+                    "created_utc": 1652123431.0,
+                    "response": "Luna Foundation Guard bought billions worth of BTC with premined LUNA (diluting circulating supply) while so many LUNA holders were cheering. How? They created temporary demand for UST by offering 20% yield. Then they converted locked LUNA to UST as much as market can take. LUNA -> UST -> USDT -> BTC\n\nNow LUNA holders getting punished hard and UST holders sweating until LFG comes to rescue.\n\nIf you don't care about fair distribution, sell early and don't let large holders dump on you.\n\nEdit: LUNA market cap dropped below UST lol",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7ymnll",
+                            "author": "wildlight",
+                            "score": 3,
+                            "created_utc": 1652126650.0,
+                            "response": "the same principle as not your keys not your coins really applies and coins backed by some other coin. if you're buying LUNA thats back by BTC you're really buying BTC IOUs except the IOU is for something else worth even less then an IOU.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i7yii85",
+                            "author": "265",
+                            "score": 3,
+                            "created_utc": 1652124970.0,
+                            "response": "The scammy part is, normally you can't just sell billions worth of coins without tanking the price. But LUNA <-> UST can be converted to each other without a counter party. So as long as there is a demand for UST, they were able to buy BTC with LUNA.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i7ykhhr",
+                            "author": "265",
+                            "score": 3,
+                            "created_utc": 1652125769.0,
+                            "response": "https://bitinfocharts.com/bitcoin/address/bc1q9d4ywgfnd8h43da5tpcxcn6ajv590cg6d3tg6axemvljvt2k76zs50tv4q\n\nLFG BTC wallet just spent all of the coins. Selling? &#x1F914;",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7yan8t",
+                    "author": "jdefgh",
+                    "score": 7,
+                    "created_utc": 1652121762.0,
+                    "response": "UST is not backed by Bitcoin. It's backed by LUNA but they came up with this dumb idea to add Bitcoin backing as well.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7zzv96",
+                            "author": "i_have_chosen_a_name",
+                            "score": 3,
+                            "created_utc": 1652148371.0,
+                            "response": "Yeah the foundation publicly stated that in the event of a peg breaking they would dump their BTC holdings to restore it. \n\nSo bunch of big whales took out big loans go get big UST and luna bags, then opened massive short positions on BTC. Then dumped their luna and UST at the same time, breaking the peg which lead to the foundation selling of their BTC, making the entire crypto market crash a good 20% today.\n\nWhich makes the shorters a lot of money. And then all the longs getting liquidated means even more coins are being sold of as longs get liquidated and it cascades down.\n\nNow they just wait till people open more and more shorts expecting the market to go even down more and then they will pump it up again, liquidating all the shorts.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i7ycf0x",
+                            "author": "Twoehy",
+                            "score": 4,
+                            "created_utc": 1652122484.0,
+                            "response": "But Luna is backed by Bitcoin.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7yegkk",
+                                    "author": "jessquit",
+                                    "score": 9,
+                                    "created_utc": 1652123317.0,
+                                    "response": "turtles all the way down",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i7yipfw",
+                                    "author": "jdefgh",
+                                    "score": 7,
+                                    "created_utc": 1652125052.0,
+                                    "response": "What do you mean Luna is backed by bitcoin? Luna is a normal coin, not a stable coin. It's not backed by anything.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7yrc7g",
+                    "author": "joj1205",
+                    "score": 3,
+                    "created_utc": 1652128578.0,
+                    "response": "Thank fuck. Now destroy it. It's completely false. Gives everything a bad name",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7y9sbp",
+                    "author": "LovelyDayHere",
+                    "score": 6,
+                    "created_utc": 1652121414.0,
+                    "response": "Oh lol.\n\nBut isn't that still within the range of what Tether had been to before?\n\nIt's definitely trending down though, so ... _grabs popcorn_",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7ycbob",
+                            "author": "jtooker",
+                            "score": 5,
+                            "created_utc": 1652122447.0,
+                            "response": "The lowest I remember USDT was $0.90 for a few hours.  I figured it was sunk at that time, but people kept using it.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7xrsqe",
+                    "author": "big--if-true",
+                    "score": 9,
+                    "created_utc": 1652114160.0,
+                    "response": "https://coinmarketcap.com/currencies/terrausd/\n\nHopefully one of these days BCH can break its peg to Bitcoin and soar free.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7ycc8g",
+                            "author": "Twoehy",
+                            "score": 10,
+                            "created_utc": 1652122453.0,
+                            "response": "Let's not confuse people by speaking interchangeably about stablecoins which have an actual peg (or are supposed to) and coins that just fluctuate more or less in sync with BTC and ETH.\n\nBut I agree that we're more likely to see coins trading places on the top 100 during times of volatility. You only find out who's swimming naked when the tide goes out.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

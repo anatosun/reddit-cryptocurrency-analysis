@@ -95,48 +95,6 @@
             ]
         },
         {
-            "id": "uiddwc",
-            "title": "Argent Wallet with Ledger Question",
-            "url": "https://www.reddit.com/r/ethereum/comments/uiddwc/argent_wallet_with_ledger_question/",
-            "author": "hardcoregamer84",
-            "created_utc": 1651689522.0,
-            "score": 5,
-            "num_comments": 10,
-            "subreddit": "ethereum",
-            "selftext": "Hello!\nI just started playing with Argent ZKsync wallet.  I currently stake ETH using LIDO through Ledger Live, but the fees can range from $5 to $50 depending on the gas price.\n\nIs it possible to attach a Ledger wallet to the Argent App and stake ETH through the Argent app, while the ETH stays on my Ledger?\n\nThe part I am a little confused about is the Ledger ETH app would be considered an L1 Wallet, and I would have to move that to an L2 Wallet like that ZKSync wallet that Argent offers.\n\nI just wasnt sure if it was it was possbile without the ETH having to leave my ledger wallet.\n\nThank you,",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7cgfpy",
-                    "author": "Maswasnos",
-                    "score": 5,
-                    "created_utc": 1651699934.0,
-                    "response": "Argent isn't really designed to pair with a hardware wallet, it's supposed to be a \"social recovery wallet\". It has implementations on both ETH mainnet and on zkSync, and you can access both in the same app. The zkSync part of the app basically lets you trade certain tokens, buy crypto with fiat through Ramp Network, and get yield on certain assets through bridged Gro and Yearn tokens. \n\nLedger Live is an app interface you can use with your Ledger hardware wallet, and it does pretty much everything on mainnet- hence the high fees you mentioned. \n\nYou can transfer assets between these wallets, but you'll need to [activate your Ledger's ETH address on zkSync](https://wallet.zksync.io/) first and then bridge assets there. Then you can transfer from your Ledger's zkSync address to your Argent address. \n\nNow, technically you *can* stake ETH through Argent and then transfer to your Ledger. The process would look like this starting with ETH on mainnet:\n\n1. Bridge ETH to zkSync on your ledger\n2. Activate your address on zkSync\n3. Transfer ETH from your zkSync ledger address to your zkSync Argent address\n4. Buy wstETH or whichever staking option you prefer\n5. Transfer the wstETH or icETH from Argent to your zkSync Ledger \n\nStep 1 would cost $20-$40 in gas most likely, with the rest of the steps being pretty cheap. You're probably better off just buying ETH directly on Argent and staking in the app.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i7d18ce",
-                            "author": "hardcoregamer84",
-                            "score": 3,
-                            "created_utc": 1651708825.0,
-                            "response": "I really appreciate this answer!   Thanks very much!",
-                            "depth": 2,
-                            "comments": []
-                        },
-                        {
-                            "id": "i7d6aoq",
-                            "author": "hardcoregamer84",
-                            "score": 3,
-                            "created_utc": 1651711081.0,
-                            "response": "Would it be safe to say that in the future retail won\u2019t even be on L1 mainnet anymore, so hardware wallets will be freely able to interact with different L2s or dapps that have been built on L2?  Basically how L1 works today for retail but with much lower fees, while maintaining security of a personal hardware wallet?",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "id": "ui9cg9",
             "title": "How to calculate the \"Txn Savings Fees\" of an ethereum txn?",
             "url": "https://www.reddit.com/r/ethereum/comments/ui9cg9/how_to_calculate_the_txn_savings_fees_of_an/",
@@ -383,6 +341,48 @@
                     "response": "**Even if ethereum stayed deflationary forever, it would never deplete**. The reason for that is that the burn is a (small) proportion of whatever is left, not of the original amount. As a very simplified example, if we started with 100M eth and burned 1% per year (1M burn the first year), once the supply reached 90M, the burn would be 1% of 90M, that is 0.9M. At 50M, the burn is \"only\" 0.5M, etc. After 100 years, there would still be 36.6M eth left (not 0!).",
                     "depth": 1,
                     "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uiddwc",
+            "title": "Argent Wallet with Ledger Question",
+            "url": "https://www.reddit.com/r/ethereum/comments/uiddwc/argent_wallet_with_ledger_question/",
+            "author": "hardcoregamer84",
+            "created_utc": 1651689522.0,
+            "score": 6,
+            "num_comments": 14,
+            "subreddit": "ethereum",
+            "selftext": "Hello!\nI just started playing with Argent ZKsync wallet.  I currently stake ETH using LIDO through Ledger Live, but the fees can range from $5 to $50 depending on the gas price.\n\nIs it possible to attach a Ledger wallet to the Argent App and stake ETH through the Argent app, while the ETH stays on my Ledger?\n\nThe part I am a little confused about is the Ledger ETH app would be considered an L1 Wallet, and I would have to move that to an L2 Wallet like that ZKSync wallet that Argent offers.\n\nI just wasnt sure if it was it was possbile without the ETH having to leave my ledger wallet.\n\nThank you,",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7cgfpy",
+                    "author": "Maswasnos",
+                    "score": 4,
+                    "created_utc": 1651699934.0,
+                    "response": "Argent isn't really designed to pair with a hardware wallet, it's supposed to be a \"social recovery wallet\". It has implementations on both ETH mainnet and on zkSync, and you can access both in the same app. The zkSync part of the app basically lets you trade certain tokens, buy crypto with fiat through Ramp Network, and get yield on certain assets through bridged Gro and Yearn tokens. \n\nLedger Live is an app interface you can use with your Ledger hardware wallet, and it does pretty much everything on mainnet- hence the high fees you mentioned. \n\nYou can transfer assets between these wallets, but you'll need to [activate your Ledger's ETH address on zkSync](https://wallet.zksync.io/) first and then bridge assets there. Then you can transfer from your Ledger's zkSync address to your Argent address. \n\nNow, technically you *can* stake ETH through Argent and then transfer to your Ledger. The process would look like this starting with ETH on mainnet:\n\n1. Bridge ETH to zkSync on your ledger\n2. Activate your address on zkSync\n3. Transfer ETH from your zkSync ledger address to your zkSync Argent address\n4. Buy wstETH or whichever staking option you prefer\n5. Transfer the wstETH or icETH from Argent to your zkSync Ledger \n\nStep 1 would cost $20-$40 in gas most likely, with the rest of the steps being pretty cheap. You're probably better off just buying ETH directly on Argent and staking in the app.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7d18ce",
+                            "author": "hardcoregamer84",
+                            "score": 3,
+                            "created_utc": 1651708825.0,
+                            "response": "I really appreciate this answer!   Thanks very much!",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i7d6aoq",
+                            "author": "hardcoregamer84",
+                            "score": 3,
+                            "created_utc": 1651711081.0,
+                            "response": "Would it be safe to say that in the future retail won\u2019t even be on L1 mainnet anymore, so hardware wallets will be freely able to interact with different L2s or dapps that have been built on L2?  Basically how L1 works today for retail but with much lower fees, while maintaining security of a personal hardware wallet?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 }
             ]
         }

@@ -14,18 +14,74 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ukjypb/guessing_last_4_words_of_mnemonic_phrase/",
             "author": "sumofighter666",
             "created_utc": 1651950060.0,
-            "score": 3,
-            "num_comments": 7,
+            "score": 4,
+            "num_comments": 15,
             "subreddit": "BitcoinBeginners",
             "selftext": "I would like to know how long it would take to brute force 4 last missing words from 12 mnemonic phrase. The last of course is checksum so I believe the challenge is to find 3 in this case. Can anyone give me a rough calculation on a single machine?",
             "stickied": false,
             "comments": [
+                {
+                    "id": "i7ptacr",
+                    "author": "sciencetaco",
+                    "score": 4,
+                    "created_utc": 1651954700.0,
+                    "response": "This guy claims to have brute forced 4 missing words using a GPU cluster: \n\nhttps://bitcoinwords.github.io/how-i-checked-over-1-trillion-mnemonics\n\nIf you\u2019re intending to remove words from your seed to make it harder for an attacker\u2026don\u2019t. Use a BIP39 passphrase instead:\n\nhttps://www.ledger.com/academy/passphrase-an-advanced-security-feature",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7qzmxo",
+                    "author": "igadjeed",
+                    "score": 4,
+                    "created_utc": 1651975591.0,
+                    "response": "> The last of course is checksum\n\nThis is incorrect. The checksum for a 12-word recovery mnemonic is 4 bits, and each word is 11 bits. The last word is 7 bits of random plus 4 bits of checksum. The last 3 words is 29 bits plus the checksum, so the brute force effort is 2^29 iterations",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7pjp7d",
+                    "author": "IRightReelGud",
+                    "score": 3,
+                    "created_utc": 1651950311.0,
+                    "response": "It's like 1 in 2187^4. \n\nYou also need to write some custom scripts.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7pknzu",
+                            "author": "sumofighter666",
+                            "score": 3,
+                            "created_utc": 1651950755.0,
+                            "response": ">1 in 2187  \n>  \n>4\n\nSo how would this translate for single machine (let's say mac book) . I would rather be interested in time scope and focus on 3 words, because as mentioned last is a checksum.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7pxml9",
+                                    "author": "bitusher",
+                                    "score": 6,
+                                    "created_utc": 1651956635.0,
+                                    "response": "very expensive computer- \n\n3 words = 10 days \n\n4 words = 55 years \n\n5 words = good luck",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
                 {
                     "id": "i7pslan",
                     "author": "Desperate-Barnacle-4",
                     "score": 3,
                     "created_utc": 1651954382.0,
                     "response": "Perhaps not possible or at least a few years on a modern pc. Checkout btcrecover https://github.com/gurnec/btcrecover do some test runs with a known seed missing 2 words, then 3 words before your 4.\n\nAssuming you have the first 8 words & an address with derivation path (& optional pass phrase if used) then you have a chance.\n\nBe aware bip39 has some protection from this kind of brute forcing. Words -> checksum (fast) -> master private (slow, needs 2048 hashes in series) -> hash to derivation path (fast) -> public key to address & compare fast. If you know the address but not the number or derivation then you have to check multiple addresses taking even longer.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7px1fv",
+                    "author": "bitusher",
+                    "score": 3,
+                    "created_utc": 1651956378.0,
+                    "response": "A bunch of gpus can do this in a little over 200 days , 5 words is when it starts to get very difficult\n\n\nhttps://coldbit.com/can-bip-39-passphrase-be-cracked/\n\n\n2048^4 = 44 bits",
                     "depth": 1,
                     "comments": []
                 }

@@ -9,26 +9,13 @@
     ],
     "posts": [
         {
-            "id": "ukkiyj",
-            "title": "Cron Transactions Precompile for the EVM (blockchain cronjobs), possible on any chain, including Ethereum",
-            "url": "https://youtu.be/1whMSUM0JyQ",
-            "author": "lorecirstea",
-            "created_utc": 1651951785.0,
-            "score": 9,
-            "num_comments": 1,
-            "subreddit": "ethereum",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
-        },
-        {
             "id": "ukmey3",
             "title": "Does Ledger set automatically additional Ethereum wallets?",
             "url": "https://www.reddit.com/r/ethereum/comments/ukmey3/does_ledger_set_automatically_additional_ethereum/",
             "author": "mirojoy",
             "created_utc": 1651957594.0,
-            "score": 4,
-            "num_comments": 8,
+            "score": 5,
+            "num_comments": 11,
             "subreddit": "ethereum",
             "selftext": "I created an Ethereum account with Ledger Nano X (my first one there), then I tried to connect Ledger to Metamask, but Metamask is asking which wallet I want to connect from Ledger in a list of 5 addresses (the address which I created is there).\n\nI thought I had created only one Ethereum account with Ledger, does Ledger set automatically additional Ethereum wallets?",
             "stickied": false,
@@ -36,7 +23,7 @@
                 {
                     "id": "i7qjyup",
                     "author": "trentrand",
-                    "score": 6,
+                    "score": 5,
                     "created_utc": 1651967360.0,
                     "response": "These 5 public addresses are deterministically generated as defined in the HD Wallet specification. Read more about it by searching for BIP32: https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki\n\nDespite some comments here, any of the generated addresses are perfectly safe to use. None of them provide any additional security over one another.",
                     "depth": 1,
@@ -61,6 +48,19 @@
                     "comments": []
                 }
             ]
+        },
+        {
+            "id": "ukkiyj",
+            "title": "Cron Transactions Precompile for the EVM (blockchain cronjobs), possible on any chain, including Ethereum",
+            "url": "https://youtu.be/1whMSUM0JyQ",
+            "author": "lorecirstea",
+            "created_utc": 1651951785.0,
+            "score": 9,
+            "num_comments": 3,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
         }
     ]
 }
