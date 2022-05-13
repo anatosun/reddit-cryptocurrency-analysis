@@ -28,7 +28,8 @@ Regarding the algorithms, I've found these to be applicable to our data. Maybe w
 
 ### SL09 Link Analysis
 
-We can do Link analysis, too. However, we need some kind of labels. The examples shown were disjoint labels, e.g. an independent politician is not a republican and not a democrat etc. An user in our graph can comment on multiple subreddits, and these are the only labels we have. So when doing Link Analysis, we either choose a main label (e.g. the subreddit the user posted most on) or we always only look for 3 labels for pairs of subreddits: user who posted only on subreddit X, user who posted only subreddit Y and user who posted on X and Y. This yields 3 labels w
+We can do Link analysis, too. However, we need some kind of labels. The examples shown were disjoint labels, e.g. an independent politician is not a republican and not a democrat etc. An user in our graph can comment on multiple subreddits, and these are the only labels we have. So when doing Link Analysis, we either choose a main label (e.g. the subreddit the user posted most on) or we always only look for 3 labels for pairs of subreddits: user who posted only on subreddit X, user who posted only subreddit Y and user who posted on X and Y. This yields 3 labels. Yet, we can also use SVD to yield a 2D representation of our network which might come in handy for visualisation purposes. However, if we take a matrix such as $x$ commented $y$ then then the complexity is of order $\mathcal(O)(n^2)$...
+
 
 ## Next steps
 
