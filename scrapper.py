@@ -8,6 +8,9 @@ import os
 import datetime
 import reddit2fa_connector
 import sys
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 #config
