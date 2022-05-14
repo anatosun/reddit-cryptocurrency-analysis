@@ -6,7 +6,6 @@ from multiprocessing import cpu_count, Lock
 import json
 import os
 import datetime
-import pandas as pd
 import reddit2fa_connector
 import sys
 
