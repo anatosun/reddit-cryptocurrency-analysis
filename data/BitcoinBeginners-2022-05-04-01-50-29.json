@@ -370,29 +370,6 @@
             ]
         },
         {
-            "id": "udai0i",
-            "title": "Is there a place where I can get a virtual credit/debit card that I can top-up with bitcoin or any other cryptocurrency for online shopping?",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/udai0i/is_there_a_place_where_i_can_get_a_virtual/",
-            "author": "D0wnVoteMe_PLZ",
-            "created_utc": 1651084611.0,
-            "score": 14,
-            "num_comments": 55,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i6fsiiv",
-                    "author": "IRightReelGud",
-                    "score": 3,
-                    "created_utc": 1651086939.0,
-                    "response": "Fold, Strike, or bitpay. All are good.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "ucx1uq",
             "title": "Randomized phrase in the open.",
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ucx1uq/randomized_phrase_in_the_open/",
@@ -419,56 +396,6 @@
                     "score": 3,
                     "created_utc": 1651045972.0,
                     "response": "> bad idea\n\nThe BIP39 system of wallet recovery mnemonics was designed to solve the problem of losing Bitcoin by user error. Reordering the words introduces user error, defeating the purpose of using a recovery mnemonic  \n\nThere is a reason that the recovery mnemonic system is designed for the words to be written by hand, on paper. No digital copy means no exposure to the world of automated intrusion tools  \n\nYou have \"invented\" a weak encryption mechanism. Because you invented it, you think it's strong enough to store the scrambled recovery mnemonic on-line. But you're exposing it to millions of automated hacking tools  \n\n> How could anyone find unusual patterns if it's randomized\n\n\"Anyone\" can find it quickly using a computer, because your randomization is weak\n\n> loose\n\nYour method is so **loose** that you will **lose** your coins",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "ucpcxb",
-            "title": "Is Bitcoin actually stored in the wallet ?",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ucpcxb/is_bitcoin_actually_stored_in_the_wallet/",
-            "author": "rawhahs",
-            "created_utc": 1651014520.0,
-            "score": 26,
-            "num_comments": 46,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "Hi Guys,\n\nI have been reading up on bitcoin and blockchain and trying to understand how the whole thing works, but I'm confused on a few points. \n\n1 - When receiving a transaction, how does the network know where the wallet is located to send the bitcoin to ? I understand the public key is used as the address, but then there also has to be some network address that this is sent to correct, otherwise how does the network know where this address is located on the physical network ?\n\n2 - Thinking about the above question, i thought maybe there is nothing ever sent to any wallet anywhere, and the bitcoin or transaction is encoded with the public key of the receiver so only they can then spend that amount later on, i.e take ownership of it. Is this correct, or is there something actually in your wallet, which you then use to spend ?\n\nI have a vague understanding that the wallet is just for the purpose of creating and storing the public/private key pair, and no crypto is actually stored in the wallet. Is this correct ?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i6by2fp",
-                    "author": "AD1AD",
-                    "score": 27,
-                    "created_utc": 1651015374.0,
-                    "response": "The transaction is sent to an address that, if you really want to give it a location, exists \"on the blockchain\". Really, it doesn't exist anywhere though. It's just a string of text with built in rules about whether a transaction trying to spend funds associated with that address is valid or not.\n\nSPV wallets just get notified about balances currently at that wallet's addresses, so while they do sort of \"receive\" the transaction, they're really just \"finding out\" about it. (And your wallet has to request it, the transaction information doesn't automatically seek out your wallet on the internet.)\n\nBut since the device your wallet is on (your phone, computer, or whatever) is the only place where the private keys that were used to create the public keys are stored, only that device can cryptographically sign transactions that try to spend the funds at those addresses.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i6c3hhp",
-                    "author": "bitusher",
-                    "score": 3,
-                    "created_utc": 1651017844.0,
-                    "response": ">When receiving a transaction, how does the network know where the wallet is located to send the bitcoin to ?\n\nWhen you send a transaction you broadcast it to all nodes that peer it among themselves and if the transaction is valid they add it to their mempool. This usually happens in less than 1 second. If you run a full node you see the transaction that gets added to your local mempool , if you run a light wallet you see the transaction that gets added to the full node mempool you are connected to. \n\nThis is why you can see the transaction instantly even if it has not been added to the blockchain by miners who confirm it (as opposed to all full nodes that validate , most of them not in control of miners). \n\nIf the transaction is onchain it shows in the wallet as 0 confirmations  until it gets added to the blockchain. If you are using a bitcoin lightning wallet the transaction is both validated and confirmed instantly with no wait . \n\n>understand the public key is used as the address,\n\nThis is a common misunderstanding. You don't share public keys with others . public keys are used within wallets to simply create bitcoin addresses that you than share with others \n\n>some network address that this is sent to correct\n\nyou give out the address to others to pay you \n\n--------------------\n\n> i thought maybe there is nothing ever sent to any wallet anywhere,\n\nTechnically bitcoin are not sent from wallet A to wallet B . Bitcoin ownership are changed on the blockchain where wallet A private keys no longer control ownership after the transaction is validated and confirmed and wallet B private keys than control ownership to sign or send those UTXOs\n\nBitcoins = UTXOs(Unspent transaction outputs) on the blockchain\n\n>and no crypto is actually stored in the wallet.\n\nCorrect from a technical perspective and here is where is gets even more interesting: Bitcoin (UTXOs) are not stored in \"accounts\" or \"addresses\" . An \"address\" is merely an attribute of the UTXO and you do not send bitcoin from an \"address\" but by \"sending\" the bitcoin you can change the address attribute once the transaction is confirmed. This may seem like a subtle distinction but an important one for at least developers to understand or people who try and use legacy paper wallets to understand. \n\nFurther explanation :\n\nhttps://www.reddit.com/r/BitcoinBeginners/comments/s5apqz/why_the_following_terms_are_incorrect/",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i6bwzzn",
-                    "author": "Rieger_not_Banta",
-                    "score": 9,
-                    "created_utc": 1651014897.0,
-                    "response": "A cryptocurrency wallet consists of a set of public addresses and private keys. Anyone can deposit cryptocurrency in a public address, but funds cannot be removed from an address without the corresponding private key. Private keys represent final control and ownership of cryptocurrency.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i6c4iss",
-                    "author": "cohonan",
-                    "score": 3,
-                    "created_utc": 1651018310.0,
-                    "response": "Your Bitcoin is on every copy of the blockchain on thousands of computers all around the world that only your wallet has the keys to access and move it around. \n\n(they really kind of messed up calling it a wallet, because it\u2019s not, it\u2019s a keychain that has your keys and your Bitcoin is kept with all the other Bitcoin on the public ledger that is the Blockchain).",
                     "depth": 1,
                     "comments": []
                 }
@@ -24091,38 +24018,6 @@
             ]
         },
         {
-            "id": "ufgyn8",
-            "title": "Which pair should use?",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ufgyn8/which_pair_should_use/",
-            "author": "obitaites",
-            "created_utc": 1651343242.0,
-            "score": 3,
-            "num_comments": 25,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "I just started learning about bitcoin and crypto and I have several doubts, some of them stupid. I always buy btc with eur, but when I do the graphic analysis, I use the btc/usd pair. Should I use the btc/eur pair?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i6tg68q",
-                    "author": "bitusher",
-                    "score": 4,
-                    "created_utc": 1651343465.0,
-                    "response": "There are different liquidity pools with each exchange and with each pair so the answer is always changing . Due to  fx fees its usually best to stay in the fiat that you deposited however.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i6tsb00",
-                    "author": "blaze1234",
-                    "score": 3,
-                    "created_utc": 1651349235.0,
-                    "response": "Use the fiat you need to live.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "ueq4xk",
             "title": "Looking for the best place that's user friendly and has the best price on fees",
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ueq4xk/looking_for_the_best_place_thats_user_friendly/",
@@ -24149,29 +24044,6 @@
                     "score": 3,
                     "created_utc": 1651269484.0,
                     "response": "If you want to buy just a little bit every week to DCA, I can't say enough good things about [Swan Bitcoin](https://www.swanbitcoin.com/). Very very cheap, like 0.99% (so that's like 5$ in your $500 example purchase above).\n\nIt's very beginner friendly and has one of the most simple formats you can find as far as purchasing bitcoin.\n\nAt the very least, it deserves some consideration. I have also heard Strike has very low fee though I have no experience with them myself.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "ugy8fy",
-            "title": "Should I trust desktop wallets?",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ugy8fy/should_i_trust_desktop_wallets/",
-            "author": "thecowmilk_",
-            "created_utc": 1651521568.0,
-            "score": 12,
-            "num_comments": 41,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "Hi guys, sorry to be repetitive if this question have been asked before but I need a genuine advice. I have some btc on an online wallet and I'd like to withdraw them. First I want to withdraw them to a desktop wallet.\n\nI have been using `electrum` a long time ago and apparently it seemed that some services didn't accepts electrum btc addresses. Now I have come to know `sparrow` and `specter` from another reddit post.\n\nTo come to the real question, can I trust desktop wallets like sparrow and specter that it won't just get the coins to a void and never be able to take withdraw from another service? Thanks!",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i72lvqx",
-                    "author": "bitusher",
-                    "score": 5,
-                    "created_utc": 1651523043.0,
-                    "response": "I would not use any wallet in OSX or windows without a hardware wallet. If you cannot afford a 60 dollars hardware wallet than just withdraw to a non custodial wallet open source wallet in ios or android \n\nhttps://walletscrutiny.com\n\nhttps://docs.google.com/spreadsheets/d/1aZ1zbaUEzCo9NCctN8-eL2VLIiSdY009tTJvRXDUWEw/edit#gid=0\n\nhttps://www.reddit.com/r/BitcoinBeginners/comments/g42ijd/faq_for_beginners/",
                     "depth": 1,
                     "comments": []
                 }
@@ -25465,6 +25337,134 @@
                     "score": 6,
                     "created_utc": 1650904035.0,
                     "response": "Put a copy of the old wallet.dat into:\n\n    C:\\Users\\yourusername\\AppData\\Roaming\\Bitcoin\\\n\nThen go to Window -> Console and use the dumpwallet command:\n\n    dumpwallet 'C:\\Users\\yourusername\\Desktop\\bitcoin.txt'\n\nOnce you have your text file on your desktop you can import/sweep the private key with Bluewallet or Electrum for example.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ugy8fy",
+            "title": "Should I trust desktop wallets?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ugy8fy/should_i_trust_desktop_wallets/",
+            "author": "thecowmilk_",
+            "created_utc": 1651521568.0,
+            "score": 12,
+            "num_comments": 55,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Hi guys, sorry to be repetitive if this question have been asked before but I need a genuine advice. I have some btc on an online wallet and I'd like to withdraw them. First I want to withdraw them to a desktop wallet.\n\nI have been using `electrum` a long time ago and apparently it seemed that some services didn't accepts electrum btc addresses. Now I have come to know `sparrow` and `specter` from another reddit post.\n\nTo come to the real question, can I trust desktop wallets like sparrow and specter that it won't just get the coins to a void and never be able to take withdraw from another service? Thanks!",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i72lvqx",
+                    "author": "bitusher",
+                    "score": 6,
+                    "created_utc": 1651523043.0,
+                    "response": "I would not use any wallet in OSX or windows without a hardware wallet. If you cannot afford a 60 dollars hardware wallet than just withdraw to a non custodial wallet open source wallet in ios or android \n\nhttps://walletscrutiny.com\n\nhttps://docs.google.com/spreadsheets/d/1aZ1zbaUEzCo9NCctN8-eL2VLIiSdY009tTJvRXDUWEw/edit#gid=0\n\nhttps://www.reddit.com/r/BitcoinBeginners/comments/g42ijd/faq_for_beginners/",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ufgyn8",
+            "title": "Which pair should use?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ufgyn8/which_pair_should_use/",
+            "author": "obitaites",
+            "created_utc": 1651343242.0,
+            "score": 4,
+            "num_comments": 33,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I just started learning about bitcoin and crypto and I have several doubts, some of them stupid. I always buy btc with eur, but when I do the graphic analysis, I use the btc/usd pair. Should I use the btc/eur pair?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i6tg68q",
+                    "author": "bitusher",
+                    "score": 4,
+                    "created_utc": 1651343465.0,
+                    "response": "There are different liquidity pools with each exchange and with each pair so the answer is always changing . Due to  fx fees its usually best to stay in the fiat that you deposited however.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i6tsb00",
+                    "author": "blaze1234",
+                    "score": 3,
+                    "created_utc": 1651349235.0,
+                    "response": "Use the fiat you need to live.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "udai0i",
+            "title": "Is there a place where I can get a virtual credit/debit card that I can top-up with bitcoin or any other cryptocurrency for online shopping?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/udai0i/is_there_a_place_where_i_can_get_a_virtual/",
+            "author": "D0wnVoteMe_PLZ",
+            "created_utc": 1651084611.0,
+            "score": 13,
+            "num_comments": 72,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i6fsiiv",
+                    "author": "IRightReelGud",
+                    "score": 4,
+                    "created_utc": 1651086939.0,
+                    "response": "Fold, Strike, or bitpay. All are good.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ucpcxb",
+            "title": "Is Bitcoin actually stored in the wallet ?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ucpcxb/is_bitcoin_actually_stored_in_the_wallet/",
+            "author": "rawhahs",
+            "created_utc": 1651014520.0,
+            "score": 26,
+            "num_comments": 60,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Hi Guys,\n\nI have been reading up on bitcoin and blockchain and trying to understand how the whole thing works, but I'm confused on a few points. \n\n1 - When receiving a transaction, how does the network know where the wallet is located to send the bitcoin to ? I understand the public key is used as the address, but then there also has to be some network address that this is sent to correct, otherwise how does the network know where this address is located on the physical network ?\n\n2 - Thinking about the above question, i thought maybe there is nothing ever sent to any wallet anywhere, and the bitcoin or transaction is encoded with the public key of the receiver so only they can then spend that amount later on, i.e take ownership of it. Is this correct, or is there something actually in your wallet, which you then use to spend ?\n\nI have a vague understanding that the wallet is just for the purpose of creating and storing the public/private key pair, and no crypto is actually stored in the wallet. Is this correct ?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i6by2fp",
+                    "author": "AD1AD",
+                    "score": 26,
+                    "created_utc": 1651015374.0,
+                    "response": "The transaction is sent to an address that, if you really want to give it a location, exists \"on the blockchain\". Really, it doesn't exist anywhere though. It's just a string of text with built in rules about whether a transaction trying to spend funds associated with that address is valid or not.\n\nSPV wallets just get notified about balances currently at that wallet's addresses, so while they do sort of \"receive\" the transaction, they're really just \"finding out\" about it. (And your wallet has to request it, the transaction information doesn't automatically seek out your wallet on the internet.)\n\nBut since the device your wallet is on (your phone, computer, or whatever) is the only place where the private keys that were used to create the public keys are stored, only that device can cryptographically sign transactions that try to spend the funds at those addresses.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i6c3hhp",
+                    "author": "bitusher",
+                    "score": 3,
+                    "created_utc": 1651017844.0,
+                    "response": ">When receiving a transaction, how does the network know where the wallet is located to send the bitcoin to ?\n\nWhen you send a transaction you broadcast it to all nodes that peer it among themselves and if the transaction is valid they add it to their mempool. This usually happens in less than 1 second. If you run a full node you see the transaction that gets added to your local mempool , if you run a light wallet you see the transaction that gets added to the full node mempool you are connected to. \n\nThis is why you can see the transaction instantly even if it has not been added to the blockchain by miners who confirm it (as opposed to all full nodes that validate , most of them not in control of miners). \n\nIf the transaction is onchain it shows in the wallet as 0 confirmations  until it gets added to the blockchain. If you are using a bitcoin lightning wallet the transaction is both validated and confirmed instantly with no wait . \n\n>understand the public key is used as the address,\n\nThis is a common misunderstanding. You don't share public keys with others . public keys are used within wallets to simply create bitcoin addresses that you than share with others \n\n>some network address that this is sent to correct\n\nyou give out the address to others to pay you \n\n--------------------\n\n> i thought maybe there is nothing ever sent to any wallet anywhere,\n\nTechnically bitcoin are not sent from wallet A to wallet B . Bitcoin ownership are changed on the blockchain where wallet A private keys no longer control ownership after the transaction is validated and confirmed and wallet B private keys than control ownership to sign or send those UTXOs\n\nBitcoins = UTXOs(Unspent transaction outputs) on the blockchain\n\n>and no crypto is actually stored in the wallet.\n\nCorrect from a technical perspective and here is where is gets even more interesting: Bitcoin (UTXOs) are not stored in \"accounts\" or \"addresses\" . An \"address\" is merely an attribute of the UTXO and you do not send bitcoin from an \"address\" but by \"sending\" the bitcoin you can change the address attribute once the transaction is confirmed. This may seem like a subtle distinction but an important one for at least developers to understand or people who try and use legacy paper wallets to understand. \n\nFurther explanation :\n\nhttps://www.reddit.com/r/BitcoinBeginners/comments/s5apqz/why_the_following_terms_are_incorrect/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i6bwzzn",
+                    "author": "Rieger_not_Banta",
+                    "score": 8,
+                    "created_utc": 1651014897.0,
+                    "response": "A cryptocurrency wallet consists of a set of public addresses and private keys. Anyone can deposit cryptocurrency in a public address, but funds cannot be removed from an address without the corresponding private key. Private keys represent final control and ownership of cryptocurrency.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i6c4iss",
+                    "author": "cohonan",
+                    "score": 3,
+                    "created_utc": 1651018310.0,
+                    "response": "Your Bitcoin is on every copy of the blockchain on thousands of computers all around the world that only your wallet has the keys to access and move it around. \n\n(they really kind of messed up calling it a wallet, because it\u2019s not, it\u2019s a keychain that has your keys and your Bitcoin is kept with all the other Bitcoin on the public ledger that is the Blockchain).",
                     "depth": 1,
                     "comments": []
                 }

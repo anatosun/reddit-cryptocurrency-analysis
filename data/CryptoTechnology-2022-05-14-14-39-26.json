@@ -1,0 +1,369 @@
+{
+    "subreddit": "CryptoTechnology",
+    "limit": 1000,
+    "minimum_score": 3,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "up0vwn",
+            "title": "Decentralized Social Network",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/up0vwn/decentralized_social_network/",
+            "author": "LegitimateConstant27",
+            "created_utc": 1652474422.0,
+            "score": 13,
+            "num_comments": 11,
+            "subreddit": "CryptoTechnology",
+            "selftext": "Interesting White Paper regarding a decentralized social network like twitter. Let me know what you guys think and if this is something that could be accomplished. \n\n# CAW\n\n**A Manifesto on a Decentralized Social Clearing House ...(AKA) CAW**\n\nThe concept of decentralization has been lost to some of us over time, those who forgot why Bitcoin was created, the issues blockchain and cryptocurrency is meant to solve.\n\nTo be decentralized means there is no single person, entity, nor group which has ultimate control nor benefit over a system.\n\nIn a decentralized system, there is not one man who via desire or persuasion could cripple the system in any meaningful way.\n\nThis means from both a technical standpoint (i.e, a developer who can stop trading, or disable the protocol through the use of smart contracts) and a financial one (e.g, an entity who has n+1 (infinite) tokens, and could dump them if they so wished, but decides not to).\n\nThat is not to say that a proper decentralized system is without whales nor its own cornerstones. There are always those that may have a greater affect upon a network, or 'matter' through entropy or their own hard work.\n\nCAW began as nothing, there was no developer, no information, no medium of communication. Simply, a contract.\n\n**Freedom given to the people to discover CAW's meaning amongst themselves.**\n\nThis has gone well, and so we would like to present our specification for the second phase of CAW. But before we do, some things must be said and taken note of:\n\n1. This is a only a specification. It is up to the cawmmunity to write and deploy the protocol.\n2. It is strongly recommended that a peer group is formed to develop and review smart contracts. As there is no leader in this process, all types will attempt to claim ownership of the process. There will those everso helpful who claim to be able to 'do it all' but will write the perfect code with the perfect backdoor. Only a cawmmunity reviewed and accepted contract on a public github will be acceptable.\n3. After deployment, the deployer must renounce any keys they have to the contracts. There will be no multi-sig, no upgradeable proxyies. It will not matter who deployed because they will be equal with all with no specific benefit nor advantage. Just get the contract right.\n\n**We propose:**\n\na. A protocol made up of many on-chain smart contracts for sending messages publicly or p2p with a max character limit of 420.\n\nb. A specification for the frontends, of which many will be made, to interact with this protocol.\n\nThe general function of the protocol and its contracts is as follows:\n\ni. Burn CAW through a contract to mint an NFT. This burned caw will go to 0x0. The NFT will be your username.\n\na. The fewer characters in your username, the higher the cost.\n\nb. Every username is unique, and may use a-z and 0-9, without the use of special characters (emojis, etc..,) or capital letters.\n\nii. All user activity, social and financial flows through their NFT username. Whoever owns this NFT has access to that account. This includes, but is not limited to, their CAW balance and access to that user's direct messages (DMs).\n\niii. Ownership and management of the NFTs will be completely on-chain. For instance, the registration of the username 'cawdev' will be stored directly on-chain, along with all of the data associated.\n\niv. Holding the NFT (note holding, not staking), allows the user to deposit or withdraw CAW into a contract wallet.\n\nThe ownership of the NFT will serve as the key to this wallet. For users using multiple NFTs they may specify which by a unique number associated.\n\n**v. A user may spend CAW in the following way on the protocol.**\n\ni. Making a CAW (Akin to tweeting).\n\na. This cost will be taken in CAW, and then distributed proportionally to all other stakers.\n\nii. Liking someone else's CAW.\n\na. This is closer to tipping. The CAW will be taken and directly sent to the OP (original poster's) wallet.\n\niii. ReCAWing (akin to a retweet).\n\na. The cost of which will be taken in CAW and sent to OP's wallet.\n\nvi. For receiving the CAW we envision a mostly gasless contract, in which signatures may push CAW balance between users and the application in a contract.\n\nThe only thing a user should be spending gas on is:\n\na. The minting of an NFT.\n\nb. Depositing or withdrawing CAW.\n\nvii. DM's should be 'free' and executed via a trustless handshake between two accounts to enable secure peer-to-peer messaging.\n\nGroup chats would bring on unneeded complexity, and are not recommended at this point.\n\nviii. All data will be stored permanently. Due to limitations of the Ethereum network, Arweave or similar blockchains may be preferred.\n\n**The CAW liquidity**\n\n\u2026 may migrate at some point to the QOMQQL1, but that will be addressed once the technical merits reveal itself and the move is obvious.\n\nData storage must be completely trustless, and permanent. The importance of being both censorship resistant and self-policing for the betterment of a protocol cannot be overstated. CAW is meant only to give you the raw tool kit to build your own online society.\n\nBecause of this, there is a distinct gap between the protocol itself, and the frontends.\n\nAt the base level, CAW's contracts for trustless data storage and communication, anything can be posted. We are not naive, and we understand what may be posted.\n\nAs a result of this, it is up to the frontends to limit content that might obfuscate the reason for CAW's creation.\n\n**That being said, at the level of a protocol no username or message will be blocked or quarantined.**\n\nDue to the nature of renounced ownership of smart contracts, there will be nobody who can limit such content. (perhaps now you see why renouncing the contract with no multi-sig or upgrades is important).\n\nNow onto the frontends. Anybody is free to make or host their own frontend which will show whatever they would like (or don't). We expect there will be many along with a goal of a mobile app and browser extension that serves as cawing/wallet and instant messager platform that executes the sigs fast and invisible to give a smoother messaging experience (signing a metamask every time can be tiresome).\n\n**We would recommend that the community makes an alpha frontend, that is more or less 'neutral'.**\n\nIt may filter overt hate/violence, along with hard-illegal activity, remember we need to win the world first.\n\nOthers may have a better idea of what should be shown, and their perogative should be to create and host their own frontend.\n\nThe point being, CAW is like Twitter. Except it is bound by no laws, and no central content moderation.\n\nHowever, the frontends may choose to moderate the content however they like, or must to fit whatever legal guidelines they need to fit.\n\nSo even if one frontend blocks you, you cannot be policed, and are still free to use the protocol itself.\n\n**Appendix.**\n\na. It is fairly obvious individuals will begin buying and selling the NFT usernames.\n\nIt would be wise of a community member to create a trustless and feeless marketplace for such trades, similar to Crypto Punk feeless trades.\n\nThat being said we are pretty aware that as CAW grows to scale, many will still use FEE marketplaces such as opensea and looks.\n\nThis means that the deployer of the contract that mints NFTS will have the technical ability to set themselves fee's from opensea.\n\nWe do not think this is a good thing, and ask the cawmmunity to self police/renounce in order to make sure that trading fees are not set and sent to a private wallet.\n\nIf it helps, this will imply liability for the content posted if your wallet is receiving trading fees\n\nb. Economically, these are the numbers open for debate and structured so that we understand the practical dollar amount of CAW.\n\ni. 50 mln market cap (near or current MC).\n\nii. 1 bln market cap (typical memecoin mooning for a bit MC).\n\niii. 10 bln market cap (SHIB-like).\n\nWe will need to be aware of the realities of what happens as the burn of CAW scales, as we will not be able to change the cost of the protocol once set in motion.\n\n**The necessary cost calculations in CAW are:**\n\ni. Amount of CAW to send CAW (all of which is distributed among stakers).\n\nii. Amount of CAW to like a CAW. (sent to OP).\n\niii. Amount of CAW to reCAW a CAW (distributed amount OP and stakers).\n\niv. Burn amounts for various length'd username NFTs.\n\n**We did quite a bit of math to consider the following numbers, but we may have missed something.**\n\nIt was calculated in such a way that liking, reCAWing, and posting, is always affordable at a market cap of 10 billion, while ensuring that the more rare and shorter usernames remain damn expensive.\n\nThe following is the recommended cost, along with the estimated amount in US Dollars in brackets at the three target MC's (50 mln, 1 bln, 10 bln).\n\n\\- Single Character username (rare!) BURN 1,000,000,000,000 ($89,985, $1,799,712, $17,997,120)\n\n\\- 2 Character username - BURN 240,000,000,000 CAW ($21,600, $432,000, $4,320,000)\n\n\\- 3 Character Username - BURN 60,000,000,000 CAW ($5400, $108,000, $1,080,000)\n\n\\- 4 Character Username - BURN 6,000,000,000 CAW ($540, $10,800 $108,000)\n\n\\- 5 Character username - BURN 200,000,000 CAW ($18, $360, $3600)\n\n\\- 6 Character username - BURN 20,000,000 CAW ($1.80, $36, $360)\n\n\\- 7 Character username -BURN 10,000,000 CAW (90c, $18, $180)\n\n\\- 8 Character and up username - BURN 1,000,000 CAW (9c, $1.80, $18)\n\n\\- Follow an Account (paid 80/20 to account and stakepool) 30000 (na,0.009,9c)\n\n\\- Send a CAW (max xxx Characters) (paid 100 to stakepool) 5000 (na, na, 1.5c)\n\n\\- Like a CAW (paid 80/20 to account and stakepool) 2000 (na,na, $0.007)\n\n\\- ReCAW (paid 50/50 to account and stakepool) 4000 (na,na,1.2c)\n\nc. Image hosting, and management\n\ni. The protocol will have no involvement in the hosting of images. This will be up to the frontends to filter, display, host.\n\nii. It is recommended that frontends render URLs from external sources placed inside posts,\n\nor employ their own URL shortener so URLs do not destroy the character limit on CAW.\n\nFor example if my CAW was ... \"Just had some great fried fish on Point Road with [u/tk420](https://www.reddit.com/u/tk420/) \\#yum #foodie #bestfrens\n\nA frontend should shorten the URL to something like '[https://c.aw/cawdev](https://c.aw/cawdev)' prior to the users post, and automically render the URL as a snippet.\n\nLove, one who still dreams.\n\n**P.S.**\n\nP.S. There are no official socials, nor partner projects or further releases.\n\nCAW is by design without design, and it is up the CAWMmunity to shape CAW.\n\nOnly by giving you the vision and seeing what comes next may we have a truly free and decentralized system.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8jkv5d",
+                    "author": "estebanabaroa",
+                    "score": 11,
+                    "created_utc": 1652504333.0,
+                    "response": "It seems you are planning on storing all posts on some smart contracts? IMO this is not a good idea, because it means each user will have to pay to post something, and even if the cost is 1c or less, the user will have to maintain some small crypto wallet to use it. 99% of the world isn't ready to do this in 2022. Also all blockchains have theoretical throughput limits, even L2s and new blockchains like Solana couldn't handle 1% of Twitter traffic, even if it's text only (no media).\n\nI am working on a decentralized p2p reddit alternative that doesn't use blockchain, rather it uses a network similar to bittorrent, where peers store and seed their own data and the data they consume, but not the entire network, so it can scale infinitely, and doesn't require any cryptocurrency to post. This is the whitepaper [https://github.com/plebbit/whitepaper/discussions/2](https://github.com/plebbit/whitepaper/discussions/2) you are welcome to use this design without crediting me and you can DM me if you have any question.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8jtns9",
+                            "author": "lanatork",
+                            "score": 5,
+                            "created_utc": 1652510829.0,
+                            "response": "That sounds awesome. Many people hear decentralisation and only think of smart contracts. In reality they are only one part of it and there are other things like BitTorrent and IPFS that are much better suited to store big amounts of data.\n\nI\u2019ll ch check out your white paper for sure!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8iijhy",
+                    "author": "Blockchain_Surfer",
+                    "score": 3,
+                    "created_utc": 1652484121.0,
+                    "response": "A Ravencoin community member already built something almost exactly like you describe, even has a similar name! Check out squawker.app\n\nIt leverages IPFS and the Ravencoin network to publish censorship-resistant messages and tokenized access controls (also on the Ravencoin network) for trustless authentication/authorization.\n\nUX could be better but a browser web-wallet (similar to metamask) is being developed to abstract all the signing from the user.\n\nThe main hindrance to doing something like this on ETH are network fees. The other existing smart-chains are, in my opinion, too centralized for this usecase with censorship being a primary concern.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uoog2b",
+            "title": "The blockchains problem of rewarding crypto wallets",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/uoog2b/the_blockchains_problem_of_rewarding_crypto/",
+            "author": "uralresp",
+            "created_utc": 1652436719.0,
+            "score": 27,
+            "num_comments": 18,
+            "subreddit": "CryptoTechnology",
+            "selftext": "As an active crypto user, it makes me super annoyed to use 4, 5 or more applications at once. One wallet does not support bitcoin segwit but supports TRON, another one only applies Cosmos Network, and etc. I came across an article by Bob Stewell \"Do Unhosted Wallets Dream of Network Fees?\". He argues that due to the fact that blockchains do not reward crypto-wallets they are not in a hurry to make a multi-currency crypto-wallet, which are needed for comfortable usage.\n\nHere where I came to understanding why all those problems are happening. For example, I realized why there are huge purchase fees and a bad exchange rate in wallets. We often have to refer to p2p, CEXs, and DEXs just because of it. In case someone out of the crypto world needs to explain how to switch from one currency to another, the disaster is happening. Oh, I guess the support is the main issue here! At the beginning of my crypto way, I was waiting for answers for several days, and as a result, I\u2019ve figured everything out by myself.\n\nEvery time a new blockchain project that is not supported by one or another wallet is released you have to install a specific application. \n\nThere are many places where the wallet is imported via a 12-word seed phrase, and a 24-word seed phrase is often found in new ones ... Is it so difficult to make a choice? And then I found out that these seed phrases may be in different languages! Even in Chinese, and not all wallets support it also! As for me, I have been using cryptocurrencies for more than 5 years now and I see that wallets are developing really slow. It got so bad that I'm already thinking of developing a wallet myself. \n\nBob believes that the problem essence is in the monetization model - wallets live off a percentage of the purchase or exchange. Adding all the variety of blockchains for wallets is resource-intensive, and wallet revenues will not grow much from this. For me as a user, the problem is really serious, since the ecosystems of Ethereum, Cosmos, Solana, Polygon, and others are actively developing, and it is impossible to use them all in one wallet.\n\nFrankly, it is much more natural for a wallet that offers a variety of blockchains to provide a range of payment systems and exchangers. But no one does this, because the more profitable this exchange for the user is, the less the wallet\u2019s profit is, or there is even no profit at all. This is a bad system.\n\nThe problem is in the blockchains themselves: they pay miners, they pay stackers, but they don't pay wallets. It seems to me that blockchains can change this situation and start stimulating wallets, and this will give an impetus to development, and strengthen competition. Wallets will fight each other to become number 1! To make the most convenient and intuitive interface (this is a problem for many wallets). \n\nThe solution is the integration of the mechanism into the blockchain, which will send part of the network transaction fee to the wallet that helped the user to carry out this transaction. Then the functionality and service of wallets will improve significantly. What do you think about it?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8fqrzw",
+                    "author": "keijyu",
+                    "score": 28,
+                    "created_utc": 1652439966.0,
+                    "response": "You are talking as if making a wallet application is easy but in fact it is not.\n\nFirstly, you do not understand how many wallet applications and cryptocurrency libraries are developed. Many of these developers are unpaid and contributing to these projects in their free time. People aren\u2019t constantly working on the code. \n\nSecondly, it takes time for written code to be released as it has to go through review after review with fixes in-between. I can vouch from experience that smaller bug fixes takes around week to be merged into the main code branch and larger feature implementations can span months. And this is good. This is what should be expected of any critical applications and infrastructure code. You could write your own code without having it reviewed but that\u2019s not a development process I, or others, would trust.\n\nThirdly, wallet applications often depend on other lower level libraries to implement the finer details of chain protocols. So wallet applications often have to wait for these lower level libraries to finish implementing the newest chain features and bug fixes before adapting it for end users. There are layers and layers of abstraction for code to reach the end user and wallet apps are only the tippy top. \n\nFurther, the best software is often software that does something of a limited scope very well. Creating a single application that manages multiple cryptocurrencies would not be inline with this. Things get complex real quick. \n\n\nNow let\u2019s talk about the system you proposed. \nI can already think of an exploit. What if a malicious wallet developer decided to spam transactions linked to their wallet in order to reap rewards? What\u2019s stopping them and others from doing this? I can only see your system being abused by malicious parties.\n\nAnd don\u2019t you find it a little unfair that wallet developers can make use of open source libraries to build their app but still rake in the rewards themselves? Where are the rewards for the protocol level and lower level library developers?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8h0btm",
+                    "author": "krism142",
+                    "score": 5,
+                    "created_utc": 1652460721.0,
+                    "response": "Ledger live works with tons of chains",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8gvg81",
+                    "author": "Treyzania",
+                    "score": 3,
+                    "created_utc": 1652458819.0,
+                    "response": "https://en.wikipedia.org/wiki/Sybil_attack\n\nAlso you use the phrase \"to the wallet\" here.  Wallets are just software, how do you pay a piece of software?  The way I initially interpreted that sentence would imply that the user gets like a \"cash back\" on every transaction.  I know you *meant* to say \"wallet developer\", but that's not how these systems work.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8h1lln",
+                    "author": "002timmy",
+                    "score": 3,
+                    "created_utc": 1652461223.0,
+                    "response": "I wish this were true, but it shows a fundamental lack of understanding of what a wallet actually is and/or how a blockchain transacts. \n\nTo start, seed phrases are not your private keys. They are a mnemonic used to convert to your private keys/decrypt to the keys. Wallets, when created, have 2 components. The public key and the private key. \n\nHowever, the wallet isn\u2019t actually doing anything other than providing an interface to the blockchain. It\u2019s why you can import your private keys (in the form of a seed phrase) from one wallet to another. \n\nAs for rewarding the blockchain rewarding the wallet, that is impossible. When transacting, the blockchain and miners/validators (pow v PoS) have no visibility into what Wallet sent the transaction. They are simply looking to make sure the public key and private key signatures line up (roughly speaking). \n\nWhen I want to send Bitcoin, the miners don\u2019t care nor can they see if I am using my ledger or exodus or mycelium or electrum or cashapp. They are just looking to see the signatures match. Nothing else matters.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8hp64j",
+                    "author": "Strange_Cantaloupe56",
+                    "score": 3,
+                    "created_utc": 1652470875.0,
+                    "response": "You just described the reason why we shouldn\u2019t have so many shitcoins.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "unsma7",
+            "title": "Why do people obsess over expensive hardware wallets?",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/unsma7/why_do_people_obsess_over_expensive_hardware/",
+            "author": "ihavethefactz",
+            "created_utc": 1652329312.0,
+            "score": 22,
+            "num_comments": 100,
+            "subreddit": "CryptoTechnology",
+            "selftext": "If I'm reading correctly, the ledger nano S has 100mb of storage, and costs $40+ and I can get a 16 GB USB and turn it into a hardware wallet with multiple layers of encryption including a \"extra hidden\" part of the USB. \n\nVeracrypt can be combined with other software, and wallets can be held as text or encrypted data on a USB. \n\nSo why does everyone get so upset and say you have to buy a dedicated hardware wallet? Is it because they think regular people don't know how to make a USB as secure?\n\nI've even gotten to the point where I've gotten metamask to recognize my USB as a hardware wallet from the small selection they give you. \n\nWhat is the point of spending $50 when I can bet there's no way 100 MB is worth it when I know for a fact my current wallet is 200 MB.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8a2zuk",
+                    "author": "cannedshrimp",
+                    "score": 127,
+                    "created_utc": 1652329878.0,
+                    "response": "Your usb stick can\u2019t sign transactions on the device. Private key never gets exposed to the computer. I\u2019m pretty sure that is the #1 reason amongst others. \n\nI thought this was a fantastic podcast about hardware wallets - pretty specific to one brand, but they go into a lot of detail. https://www.theinvestorspodcast.com/bitcoin-fundamentals/creating-bitcoin-products-and-infrastructure-nvk/",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8aesyz",
+                            "author": "FaceDeer",
+                            "score": 26,
+                            "created_utc": 1652338014.0,
+                            "response": "Yes, this is the big giant huge number one thing that hardware wallets provide. They're not just storage, they're a wee little computer that hides a private key away inside it with no way for the private key to ever get back out (aside from the recovery phrase, which you should never ever put into digital form). The hardware wallet can use that private key to sign transactions, but can never be hacked because the silicon that has the key on it is physically isolated from any electronic pathways that it could follow.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8c0nci",
+                                    "author": "xenapan",
+                                    "score": 3,
+                                    "created_utc": 1652371517.0,
+                                    "response": "How does this work technically? At some point in the transaction the private key has to reach whatever the ledger is plugged into or whats the point of plugging it in?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8c3bf5",
+                                            "author": "ShadowKing94",
+                                            "score": 10,
+                                            "created_utc": 1652372552.0,
+                                            "response": "As far as I understand it, as a total crypto buffoon:\n\nThe message comes into the wallet, asking to be signed. Inside the wallet some cryptography happens that proves this is your wallet and your seed phrase. Then the message leaves the wallet with a proof that it's signed. \n\nThe actual seed phrase and encryption never leave the device. The message enters unsigned and leaves signed. But the change from unsigned to signed happens inside the wallet, and outside of the computer. So the seed phrase never leaves.\n\nSomeone else can probably explain more detailed, but I think this is the gist of it.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8c3lzk",
+                                                    "author": "xenapan",
+                                                    "score": 4,
+                                                    "created_utc": 1652372666.0,
+                                                    "response": "Cool thanks for the explanation!",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i8c60mq",
+                                            "author": "FaceDeer",
+                                            "score": 4,
+                                            "created_utc": 1652373608.0,
+                                            "response": "No, the private key itself never leaves the Ledger. You create your unsigned transaction outside the Ledger via whatever mechanism, for example \"transfer eleventy billion Flooz from address X to address Y\". Then you feed that transaction into the Ledger, hit the \"sign this\" button that's physically on the Ledger's casing, and the Ledger spits out the cryptographic signature that tells the blockchain that that specific transaction is authorized. Only the signature comes out, the private key and the microprocessor that did the work to create the signature from it stay inside the Ledger.\n\nHardware wallets are generally designed so securely that even if you physically have the wallet in your possession it's still going to take a ton of highly specialized equipment to even attempt to pry the private key out. And the wallet is on a hair trigger ready to destroy that private key if it thinks you're trying to do that. I've got probably the lowest-end Ledger on the market currently, since I just use Ether for practical purposes rather than investment, and it automatically factory-resets itself after three failed attempts at entering the PIN to unlock it. I expect the higher-end units that have onboard batteries would have ways of detecting if their casing was opened to wipe themselves immediately.\n\nThese things are definitely more than just low-capacity USB sticks.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i8anuxn",
+                            "author": "HashMapsData2Value",
+                            "score": 7,
+                            "created_utc": 1652345710.0,
+                            "response": "Also the Ledger Nano X has bluetooth so there are smartphone wallet integrations.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8a7cls",
+                    "author": "dotdioscorea",
+                    "score": 35,
+                    "created_utc": 1652332646.0,
+                    "response": "Hardware wallets store the private key on a separate part of the device which literally can\u2019t be read through the USB port. It\u2019s not just encryption or clever tricks, the hardware is designed physically so that that part of the board is not accessible from the port - you could take a hardware wallet and plug it straight into a virus infected machine and use it for hours, and there\u2019s zero risk of someone stealing your private key or funds in a hundred years. An encrypted usb is only as secure as the machine you plug it into. If that machine is compromised, then it\u2019s hardly better than simply having a hot wallet. You might get away with it for a bit with hidden partitions or whatnot, but if you are able to interact with your seed through the port interface, so is somebody else and it\u2019s now just a game of who\u2019s smarter",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8a8ffc",
+                            "author": "TheMooseyOne",
+                            "score": 4,
+                            "created_utc": 1652333360.0,
+                            "response": "I mean in the end that's really the game right, who is smarter? Because there are always insane hardware exploits that come out way after the product is released, and for the sake of this guy's argument, there is definitely merit to his USB based solution. An encrypted partition can't be read by an infected computer, and is indistinguishable from random data even if someone is smart enough to try to clone it at block level, depending on the USB you can also set it up to self destruct if someone tires to do this :)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8a9100",
+                                    "author": "dotdioscorea",
+                                    "score": 15,
+                                    "created_utc": 1652333768.0,
+                                    "response": "But if he wishes to use the usb stick to sign transactions would he/a program not need to decrypt the seed on a computer in some capacity in order to sign the transaction? If so, the software becomes the point of failure rather than the encryption. In that case whether it\u2019s hidden/looks like random data, it\u2019s still just encryption based, just with a couple more steps than a normal wallet. In theory, a hardware wallet is literally impossible to access the private key through software, you would need a physical interface with the pcb inside the device to read - this is my understanding anyway, and like you say a vulnerability may one day be detected.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8aa3gg",
+                    "author": "becks7",
+                    "score": 26,
+                    "created_utc": 1652334511.0,
+                    "response": "$50 you call expensive hardware wallet?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8azzcn",
+                    "author": "fiveonethreefour",
+                    "score": 27,
+                    "created_utc": 1652355145.0,
+                    "response": "Were you using one of your homemade wallets when your NFT's were stolen? https://www.reddit.com/r/NFT/comments/uhf1wb/my_nfts_were_stolen_no_idea_what_to_do/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8a3i80",
+                    "author": "joenastyness",
+                    "score": 29,
+                    "created_utc": 1652330187.0,
+                    "response": "$50 is a drop in the bucket if you\u2019re holding $10k. (And want it secured)\n\nLedgers come with Ledger Live software and consistent updates.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8a7tbh",
+                    "author": "JohnsonAutista",
+                    "score": 8,
+                    "created_utc": 1652332949.0,
+                    "response": "For an usb stick and the encryption you need a computer wich can be infected as soon as you decrypt your key on your pc you can lose it. A Hardware wallet protects the key from infected computer or mobile.\nYou can of course lower the risk with usb stick if you use a bootable usb stick with linux and so on or have an extra computer.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8brvs1",
+                    "author": "Dabehman",
+                    "score": 9,
+                    "created_utc": 1652368085.0,
+                    "response": "For the same reason 9 days ago you posted about having your NFTs stolen.\n\nDunning-Kruger effect, ladies and gentlemen.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8ak2fw",
+                    "author": "Charming_Face_1203",
+                    "score": 6,
+                    "created_utc": 1652342343.0,
+                    "response": "I really wish this post doesn't get downvoted so much. I had the exact same thought process and all the discussions in the comments is very informative",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8amd2t",
+                            "author": "droctagonau",
+                            "score": 3,
+                            "created_utc": 1652344385.0,
+                            "response": "Definitely. This post was inviting discussion and that's a good thing. We get different points of view and good information. I like it. \n\nAlso reminds me I should get a hardware wallet.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8a5uf2",
+                    "author": "Cerrocampenario",
+                    "score": 14,
+                    "created_utc": 1652331660.0,
+                    "response": "99% of people don\u2019t want a DIY solution. It\u2019s like saying why don\u2019t people who smoke weed or cigarettes just grow their own? Because most people don\u2019t want to be a horticulturist just like most people don\u2019t want to setup their own hardware wallet when you can just buy one",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8ai9a0",
+                    "author": "Desperate-Turn1097",
+                    "score": 18,
+                    "created_utc": 1652340788.0,
+                    "response": "Boy, I encourage you to challenge your certainties and do some research",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8alrdz",
+                    "author": "Neophyte-",
+                    "score": 5,
+                    "created_utc": 1652343836.0,
+                    "response": "ive got the trezor T, its more pricey but its way better than using the two buttons on the nano. \n\nin general hw wallets are mandatory if u got sizeable funds, otherwise its prob more safu leaving it on the exchange for most ppl",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8amjos",
+                    "author": "technolaaji",
+                    "score": 4,
+                    "created_utc": 1652344546.0,
+                    "response": "While you can get a usb stick and store your wallet there, it is not practical and it gets more difficult to do basic things \n\nAlso when you have more than 10K$+ and a problem happened with your usb stick then you are in serious trouble, someone has already did a product that can handle this situation for you without worrying shit about it so why not invest a little bit and save you a huge amount of headaches? \n\nKeep in mind that I have both a Nano X and a Coldcard MK4 along with 3 OpenDimes as spare, they get the job done easily",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8asvyc",
+                            "author": "alpacadaver",
+                            "score": 6,
+                            "created_utc": 1652350057.0,
+                            "response": "You're missing the only important factors of a hardware wallet. A legitimate seed generator, and a security chip that never exposes the generated private keys to any device you connect it to, to sign transactions. A USB stick is not even in the same universe as a hardware wallet, they do entirely different things.\n\nIt's not a \"might as well\", it's \"i want to make sure my generated key has been created through a legitimate generator, offline\" and \"i don't want any of my devices to know that private key no matter what\".",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8an0h5",
+                    "author": "SulaBurmeister27",
+                    "score": 4,
+                    "created_utc": 1652344956.0,
+                    "response": "its all about how much you value security..this obv depends on the marginal cost of your total assets in the wallet vs. subscription/usage fees. If it costs $50 to store your $1000, then thats like 5% of the total--which is a lot. But if we're talking about 10/100ks, the added cost of a higher-security wallet is worthwhile IMO. marginal cost and benefit bud",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8bdqcy",
+                    "author": "aDDnTN",
+                    "score": 3,
+                    "created_utc": 1652362297.0,
+                    "response": "$40 is expensive? i pay more for my safe deposit box.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8be4i4",
+                    "author": "ayouyoub",
+                    "score": 3,
+                    "created_utc": 1652362478.0,
+                    "response": "Yeah\u2026 you don\u2019t have the factz.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8dkg7x",
+                    "author": "WySphero",
+                    "score": 3,
+                    "created_utc": 1652393754.0,
+                    "response": "LOL. Comparing a hardware wallet and a USB Flash Drive. Complete with megabyte-to-megabyte comparison. I'm honestly genuinely amused. Thanks for the laugh. No offense, though",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

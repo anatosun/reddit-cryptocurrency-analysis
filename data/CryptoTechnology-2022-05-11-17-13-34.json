@@ -9,49 +9,6 @@
     ],
     "posts": [
         {
-            "id": "un55sq",
-            "title": "Using the blockchain to create \"unhackable\" leaderboards for games?",
-            "url": "https://www.reddit.com/r/CryptoTechnology/comments/un55sq/using_the_blockchain_to_create_unhackable/",
-            "author": "rashaza",
-            "created_utc": 1652258035.0,
-            "score": 12,
-            "num_comments": 10,
-            "subreddit": "CryptoTechnology",
-            "selftext": "Just a thought that popped into my head the other day, could blockchain tech not be used to create unhackable leaderboards / scoreboards for games? So on the blockchain the user \"mines\" blocks that prove certain actions as they are playing the game and that is then used to create a leaderboard that in theory should be unhackable?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i85t275",
-                    "author": "PinkPuppyBall",
-                    "score": 13,
-                    "created_utc": 1652258491.0,
-                    "response": "The problem is the bad data input into the leaderboard. Not that the developers of the game go in and manipulating it. Blockchains only protect against the latter.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i85tmne",
-                            "author": "rashaza",
-                            "score": 4,
-                            "created_utc": 1652258983.0,
-                            "response": "But if you make it so that blocks get mined from correct user input? Or does that simply pass the buck down the road\n\nSo I'm thinking that the user' input and actions are what creates the blocks, then that gets verified by the other nodes to be verified and added to the leaderboard, otherwise rejected",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i85v9vz",
-                                    "author": "PinkPuppyBall",
-                                    "score": 3,
-                                    "created_utc": 1652260404.0,
-                                    "response": "Could work, depends on the complexity of the game. I'm thinking that advanced 3d games are incredibly hard to verify in a distributed manner. Then again I've seen some cool stuff by starkware that run \"3d graphics on chain\".\n\nIt would be really nice if someone figured out a perfect anti cheat system that wasn't also incredibly intrusive.",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "id": "umqfpv",
             "title": "A Good Smart Contract for Specifically Voting Purposes with DAO",
             "url": "https://www.reddit.com/r/CryptoTechnology/comments/umqfpv/a_good_smart_contract_for_specifically_voting/",
@@ -138,6 +95,86 @@
                     "score": 3,
                     "created_utc": 1652224799.0,
                     "response": "As people mentioned it does exist, but without knowing those very much, I want to point out the big issue: Oracles/ how do you get the real world data about one specific individual into the Blockchain - reliable?\n\nWant to capitalize on future income streams of this individual, because you funded education/ projects/ etc early? What do you do if this person is successful but misrepresents data?\n\nIn traditional companies, that is what we have reporting requirements for and you can take them to court. Blockchain technology, so far, is lacking on a connection to the real world to make such use cases feasible. There is no \"decentralized Blockchain court\" with Blockchain police you could go to, if you invest in a person, and this person rips you off (you could go to the regular legal system, but then we get pretty close to existing loans).",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "un55sq",
+            "title": "Using the blockchain to create \"unhackable\" leaderboards for games?",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/un55sq/using_the_blockchain_to_create_unhackable/",
+            "author": "rashaza",
+            "created_utc": 1652258035.0,
+            "score": 30,
+            "num_comments": 25,
+            "subreddit": "CryptoTechnology",
+            "selftext": "Just a thought that popped into my head the other day, could blockchain tech not be used to create unhackable leaderboards / scoreboards for games? So on the blockchain the user \"mines\" blocks that prove certain actions as they are playing the game and that is then used to create a leaderboard that in theory should be unhackable?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i85t275",
+                    "author": "PinkPuppyBall",
+                    "score": 38,
+                    "created_utc": 1652258491.0,
+                    "response": "The problem is the bad data input into the leaderboard. Not that the developers of the game go in and manipulating it. Blockchains only protect against the latter.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i85tmne",
+                            "author": "rashaza",
+                            "score": 3,
+                            "created_utc": 1652258983.0,
+                            "response": "But if you make it so that blocks get mined from correct user input? Or does that simply pass the buck down the road\n\nSo I'm thinking that the user' input and actions are what creates the blocks, then that gets verified by the other nodes to be verified and added to the leaderboard, otherwise rejected",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i85zpoq",
+                                    "author": "shoo_p-k",
+                                    "score": 9,
+                                    "created_utc": 1652264143.0,
+                                    "response": "Blockchain won't differentiate against an actual user input and an automated one. Even if it did, cheaters would quickly find a way to spoof it, and I'm 100% sure, the blockchain wont be able to adapt in time",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i85v9vz",
+                                    "author": "PinkPuppyBall",
+                                    "score": 5,
+                                    "created_utc": 1652260404.0,
+                                    "response": "Could work, depends on the complexity of the game. I'm thinking that advanced 3d games are incredibly hard to verify in a distributed manner. Then again I've seen some cool stuff by starkware that run \"3d graphics on chain\".\n\nIt would be really nice if someone figured out a perfect anti cheat system that wasn't also incredibly intrusive.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i86ygzi",
+                    "author": "wasabi991011",
+                    "score": 6,
+                    "created_utc": 1652281691.0,
+                    "response": "Is leaderboard hacking a common concern? I'm not big into gaming, but still I hadn't heard of that before.\n\nEdit:typo",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i89fp7g",
+                            "author": "Harucifer",
+                            "score": 4,
+                            "created_utc": 1652318413.0,
+                            "response": "Its not at all. People hack/cheat in the games to reach high scores and submit them to the leaderboards. The boards weren't hacked whatsoever.\n\nIronically, having them on a blockchain would remove developers powers of removing cheated highscores.\n\nOp is a dumdum",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i874gp9",
+                    "author": "black_diamonds2",
+                    "score": 7,
+                    "created_utc": 1652284037.0,
+                    "response": "It\u2019s unnecessary, serious latency issues would probably occur waiting from validation from the blockchain, and the network has to be monitized someway to pay for the security of the network. It is very unnecessary to use a blockchain instead of a traditional game server. This is a perfect example of a solution looking for a problem that doesn\u2019t exist.",
                     "depth": 1,
                     "comments": []
                 }

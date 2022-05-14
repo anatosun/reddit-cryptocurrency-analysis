@@ -9,334 +9,6 @@
     ],
     "posts": [
         {
-            "id": "un6l6b",
-            "title": "Celebrating Bitcoin Cash May-2022 Upgrade - 2 BCH Giveaway",
-            "url": "https://www.reddit.com/r/btc/comments/un6l6b/celebrating_bitcoin_cash_may2022_upgrade_2_bch/",
-            "author": "bitcoincashautist",
-            "created_utc": 1652264245.0,
-            "score": 36,
-            "num_comments": 16,
-            "subreddit": "btc",
-            "selftext": "I have already funded the giveaway by sending ~~2~~ 2.5 BCH to [bitcoincash:pzq2vg8ppftlnk7raj452eae33upjgedj5dnc5efg5](https://blockchair.com/bitcoin-cash/address/pzq2vg8ppftlnk7raj452eae33upjgedj5dnc5efg5).\n\n(edit: topped it up to 2.5 so it qualifies for posting on /r cc)\n\nThis is no ordinary address, this is a [P2SH address](https://btcinformation.org/en/developer-guide#pay-to-script-hash-p2sh),  which means that it is a \"smart contract\" address. Anyone who wants to  spend from it must satisfy the contract, and I designed it so that  ANYONE will be able to satisfy it. First come, first served! :)\n\nThere's a catch, though - the contract uses [Script](https://reference.cash/protocol/blockchain/script) features ([native introspection opcodes](https://gitlab.com/GeneralProtocols/research/chips/-/blob/master/CHIP-2021-02-Add-Native-Introspection-Opcodes.md#chip-2021-02-native-introspection-opcodes) and [OP\\_MUL](https://gitlab.com/GeneralProtocols/research/chips/-/blob/master/CHIP-2021-02-Bigger-Script-Integers.md#technical-specification))  that will only become available when the May 2022 Bitcoin Cash upgrade  will be activated. Because of that, nobody can spend from the address  yet and that gives you a few days of time to figure out how to craft the  spending transaction in anticipation of the upgrade activation.\n\nAnyone is able to do the same, so it will be a race - who will  broadcast the valid spending transaction first and at the right time to  claim the reward?\n\nThe contract redeem script is: `0xc3518876cd00c788cc00c65f956096a269cd3a6a38486170707920426974636f696e2043617368204d61792d32303232207570677261646521202d20626974636f696e6361736861757469737487`\n\nand here's a link to a very useful tool for Script contracts (kudos to /u/bitjson): [https://ide.bitauth.com/](https://ide.bitauth.com/).\n\nI suggest using [Electron Cash](https://electroncash.org/index.html)  to make a dummy TX that sends to your address, export the TX into a  file then edit it in your favorite text editor to replace the input with  the one spending the reward, load it back into Electron Cash and  broadcast!\n\nThe transaction format is documented here: [https://reference.cash/protocol/blockchain/transaction/](https://reference.cash/protocol/blockchain/transaction/)\n\nI will not give any other help - you figure it out, good luck!",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i865y27",
-                    "author": "CDSagain",
-                    "score": 8,
-                    "created_utc": 1652268492.0,
-                    "response": "If I had any idea what you were talking about on scripts and stuff I'd be happy to try claim some sweet free BCH but the reason I like bch is it's pretty dam simple to use, unlike this giveaway !! But fair play to you for putting  your own coin in the pot to help those who want to learn about these fancy features themselves.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i866ycj",
-                            "author": "bitcoincashautist",
-                            "score": 6,
-                            "created_utc": 1652269104.0,
-                            "response": "Yeah my goal is to maybe motivate folks to learn and get some PR for the BCH upgrade :)",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i862ttt",
-                    "author": "bitcoincashautist",
-                    "score": 5,
-                    "created_utc": 1652266447.0,
-                    "response": "Someone else added to the pot so there are now 2 utxos to compete for, cool :) https://explorer.bitcoinunlimited.info/tx/d89da0f71a7dbcc8e3015464730041fbc10ec09fc9f4357502f879dd4c9d4052",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i86761s",
-                            "author": "bitcoincashautist",
-                            "score": 6,
-                            "created_utc": 1652269231.0,
-                            "response": "Topped it up to 2.5 so it can be posted on r cc, 3 utxos now",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i86gowc",
-                    "author": "nikola-crypto",
-                    "score": 5,
-                    "created_utc": 1652274193.0,
-                    "response": "This is very very cool",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i86gsvf",
-                            "author": "bitcoincashautist",
-                            "score": 3,
-                            "created_utc": 1652274244.0,
-                            "response": "Thanks, I'm excited to see what happens on activation! :D",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i86h53e",
-                                    "author": "nikola-crypto",
-                                    "score": 3,
-                                    "created_utc": 1652274400.0,
-                                    "response": "Same. I haven\u2019t had time to learn about doing dev with smart contracts yet- this is kinda like a hackathon so def keen to give it a shot.",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i86akj4",
-                    "author": "LovelyDayHere",
-                    "score": 3,
-                    "created_utc": 1652271158.0,
-                    "response": "A fun competition!\n\nThanks for doing this.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i86ivm5",
-                    "author": "Phptower",
-                    "score": 3,
-                    "created_utc": 1652275195.0,
-                    "response": "Nice! Any help how to do this?",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i86j3fd",
-                            "author": "bitcoincashautist",
-                            "score": 3,
-                            "created_utc": 1652275289.0,
-                            "response": "I gave all the info and references you need, now it will take some effort to study it :)\n\nHere's another helpful link for those unfamiliar with P2SH, it helped me when I was learning this stuff: https://learnmeabitcoin.com/technical/p2sh",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "un0x2r",
-            "title": "BitcoinCash adaption at its best ..Many Establishments in the islands are accepting BitcoinCash (and they are doing it by themselves).Today spotted was BitcoinCash ATM in a casino in St Maarten.",
-            "url": "https://v.redd.it/9ytqqcmosry81",
-            "author": "Sunnyskn",
-            "created_utc": 1652241506.0,
-            "score": 55,
-            "num_comments": 8,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i85c2tt",
-                    "author": "fiendishcrypro",
-                    "score": 6,
-                    "created_utc": 1652245394.0,
-                    "response": "This is great! BCH adoption at its best!",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i85m6fk",
-                    "author": "Nordle_420D",
-                    "score": 3,
-                    "created_utc": 1652252600.0,
-                    "response": "Nice, can only get better now if they accept xmr in the future",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "un6vvx",
-            "title": "I'm not bragging but....9 days ago I said",
-            "url": "https://www.reddit.com/r/btc/comments/un6vvx/im_not_bragging_but9_days_ago_i_said/",
-            "author": "stewbits22",
-            "created_utc": 1652265459.0,
-            "score": 13,
-            "num_comments": 14,
-            "subreddit": "btc",
-            "selftext": "Solana the centralised shitcoin that runs on one server run by one company, that can't keep its service online, is telling us how to run our crypto.\n\nAm I in a simulation here?\n\n&#x200B;\n\nBCH for the win and FlexUSD the only stable coin backed by fully transparent collateral that pays interest on the blockhain to your ledger wallet also for the win.",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i863shp",
-                    "author": "GETSOME88-007",
-                    "score": 4,
-                    "created_utc": 1652267106.0,
-                    "response": "Cream rises to the top!",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "un6iat",
-            "title": "Western Digital announces 26TB hard drives and 15TB server SSDs",
-            "url": "https://arstechnica.com/gadgets/2022/05/western-digital-announces-26tb-hard-drives-and-15tb-server-ssds/",
-            "author": "Ancapworld",
-            "created_utc": 1652263914.0,
-            "score": 16,
-            "num_comments": 2,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
-        },
-        {
-            "id": "un38sx",
-            "title": "PT in North Queensland on BicoinCash! \ud83c\udfcb\ud83c\udffb\u200d\u2642\ufe0f",
-            "url": "https://youtube.com/watch?v=s1AC8kWCkFg&feature=share",
-            "author": "BitcoinCashCity",
-            "created_utc": 1652250276.0,
-            "score": 30,
-            "num_comments": 4,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i85twe8",
-                    "author": "stewbits22",
-                    "score": 5,
-                    "created_utc": 1652259219.0,
-                    "response": "BCH for the pump.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i85j833",
-                    "author": "BitcoinCashCity",
-                    "score": 6,
-                    "created_utc": 1652250326.0,
-                    "response": "You know you're on a winner when you can pay for competition prep and/or lifestyle coaching by personal trainer Michael Spowart with Bitcoin Cash. \ud83d\udc4a\ud83c\udffc\n\nMichael is a reputable trainer with a broad clientele base in North Queensland and has 15+ years of experience in the industry and a diploma in master bodybuilding and fitness methods.\n\n[https://michael-spowart.square.site/](https://michael-spowart.square.site/)\n\nCheck it!\n\n\ud83c\udfa5 DigiRyder\n\n\\#healthandfitness #gym #personaltrainer #BCHmerchant #BitcoinCash #MichaelSpowart #BitcoinCashCity #mealplans #coaching #bodybuilding",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i85mu55",
-                    "author": "bitcoinjason",
-                    "score": 3,
-                    "created_utc": 1652253133.0,
-                    "response": "This great, Gym Membership in BCH, Gym Wear in BCH and Now a Personal Trainer in BCH.\n\nNext Gym nutrition in BCH",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i85k5f8",
-                    "author": "EmergentCoding",
-                    "score": 3,
-                    "created_utc": 1652251016.0,
-                    "response": "So many new Bitcoin Cash merchant options in North Queensland. Bitcoin Cash - Let's go!",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "un9dg7",
-            "title": "Claim the credits in your omnibus accounts and transfer them to private keys so you don't become a general unsecured creditor. NYK-NYC!",
-            "url": "https://i.redd.it/q4cyhftkmqy81.jpg",
-            "author": "2q_x",
-            "created_utc": 1652274235.0,
-            "score": 8,
-            "num_comments": 1,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i86k263",
-                    "author": "Remora_101",
-                    "score": 4,
-                    "created_utc": 1652275726.0,
-                    "response": "That we still have to repeat not your keys not your coins is kinda down putting.\n\nIt was always this way, they just wrote it down nicely now. Anyway good reminder.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "umx26a",
-            "title": "\"It's fine.\"",
-            "url": "https://i.redd.it/0bx8p21jrqy81.jpg",
-            "author": "user4morethan2mins",
-            "created_utc": 1652228988.0,
-            "score": 59,
-            "num_comments": 20,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i84faew",
-                    "author": "user4morethan2mins",
-                    "score": 12,
-                    "created_utc": 1652229189.0,
-                    "response": "\u201cHistory Doesn't Repeat Itself, but It Often Rhymes\u201d \u2013\u00a0Mark Twain most frequently credited. \n\n[Terra Woes Worsen Despite $1.5 Billion Bailout From Luna Guard Foundation](https://leofinance.io/@xabi/terra-woes-worsen-despite-usd1-5-billion-bailout-from-luna-guard-foundation)\n\n[\"Chancellor on Brink of Second Bailout for Banks\"](https://anecdotage.com/anecdotes/why-satoshi-nakamoto-embedded-a-newspaper-headline-in-bitcoin)",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i85v2q1",
-                    "author": "pyalot",
-                    "score": 5,
-                    "created_utc": 1652260230.0,
-                    "response": "UST was 0.9-0.73 yesterday, the \u201ebailout\u201c propped it up to 0.9 for a few hours, now is at ~~0.56~~ 0.5. Luna is in freefall, went from $80 to ~~$5~~ $2 in the last 7 days.\n\nThey would both hit 0, if it wasnt that soon nobody will buy them, at any price and no price ticks will happen on the empty bid orderbooks. Then they will be delisted.\n\nAnd that is the true end of two of these cmc \u201etop 10\u201c clown coins. Only another 10 to go. This is a BTC/Tether preview.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "un7d0t",
-            "title": "Cheapest Crypto Coins To Transfer In 2022",
-            "url": "https://www.oobit.com/blog/cheapest-crypto-coins-to-send/",
-            "author": "FallonLundquist36",
-            "created_utc": 1652267326.0,
-            "score": 6,
-            "num_comments": 1,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
-        },
-        {
-            "id": "umsvnj",
-            "title": "Huiyang Restaurant located next to the Police Station,St Kitts accepts Bitcoin Cash. The Graph for BCH Merchants & Adaption is only going upwards..\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f",
-            "url": "https://v.redd.it/aq3tfwfarpy81",
-            "author": "Sunnyskn",
-            "created_utc": 1652217045.0,
-            "score": 56,
-            "num_comments": 6,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i84gok8",
-                    "author": "MemoryDealers",
-                    "score": 10,
-                    "created_utc": 1652229822.0,
-                    "response": "There are now likely more places accepting BCH in St Kitts than places that don't.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i85c2p9",
-                            "author": "sq66",
-                            "score": 4,
-                            "created_utc": 1652245392.0,
-                            "response": "That is an amazing achievement!\n\n-\n\nSeems to me you are making a blueprint on how to get adoption, which can then be scaled to the world.\n\nIs there a next step in the plan? Getting B2B using it as well?",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "id": "umttme",
             "title": "7 day ban extended to 28 day ban for telling people in this sub that i got banned from r bitcoin lol",
             "url": "https://www.reddit.com/r/btc/comments/umttme/7_day_ban_extended_to_28_day_ban_for_telling/",
@@ -406,198 +78,6 @@
             ]
         },
         {
-            "id": "umznzh",
-            "title": "PayButton v1.2.0 is now live!",
-            "url": "https://twitter.com/thepaybutton/status/1524218655319330816",
-            "author": "PayButton",
-            "created_utc": 1652237243.0,
-            "score": 13,
-            "num_comments": 4,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i851gdt",
-                    "author": "RowanSkie",
-                    "score": 6,
-                    "created_utc": 1652239476.0,
-                    "response": "Holy shit, I haven't heard of anything about this for a while\u2026",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "umx9lw",
-            "title": "El Salvador expected to default as bitcoin plummets",
-            "url": "https://www.msn.com/en-us/money/markets/el-salvador-expected-to-default-as-bitcoin-plummets/ar-AAX7sSJ?ocid=entnewsntp&cvid=14e0fe7c8710414f9d19b176d1336e0c",
-            "author": "Nonotreallyu",
-            "created_utc": 1652229631.0,
-            "score": 18,
-            "num_comments": 4,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i86aufy",
-                    "author": "megankerr7",
-                    "score": 5,
-                    "created_utc": 1652271308.0,
-                    "response": "lol well bukele will at least go down in history after all",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "un515j",
-            "title": "Why invest more on BCH?",
-            "url": "https://www.reddit.com/r/btc/comments/un515j/why_invest_more_on_bch/",
-            "author": "Initial_Blueberry_29",
-            "created_utc": 1652257483.0,
-            "score": 5,
-            "num_comments": 25,
-            "subreddit": "btc",
-            "selftext": "Please don\u2019t get me wrong! I am just a newbie and have started to DCA small amounts to BCH. I have come across to a post here (which I can\u2019t find anymore) that made me convert my mining payouts to BCH. I am thinking of investing a bit more but I still haven\u2019t got that much confidence about BCH as I need more knowledge about it. Can someone enlighten me. Thanks!",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i85w021",
-                    "author": "BewareOfShills",
-                    "score": 4,
-                    "created_utc": 1652261035.0,
-                    "response": "What knowledge are you missing?",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i85w9t3",
-                            "author": "Initial_Blueberry_29",
-                            "score": 3,
-                            "created_utc": 1652261274.0,
-                            "response": "More of how to utilize and maximize yield potential. Best defi app, best wallet to use, how to use as payment option if I want to integrate in a website or a store. Where to go for further DMOR",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i85yy0w",
-                                    "author": "BewareOfShills",
-                                    "score": 4,
-                                    "created_utc": 1652263526.0,
-                                    "response": "Wallets see: http://bestbchwallets.com/\n\nbitcoin.com for mobil and EC for desktop are popular choices.\n\nFor defi and yield maybe someone else can help I'm more into p2p cash.\n\nFor Payment options check\n\n- http://use.cash\n- http://gocrypto.com\n- https://www.bitcoin.com/bitcoin-cash-register/\n\nOnline, promt.cash and https://www.cryptowoo.com or the usual like bitpay etc.\n\nFor more info about the blocksize wars and how BCH came to be:\n\nhttps://hackernoon.com/the-great-bitcoin-scaling-debate-a-timeline-6108081dbada\n\nhttps://www.youtube.com/watch?v=eafzIW52Rgc",
-                                    "depth": 3,
-                                    "comments": [
-                                        {
-                                            "id": "i8606w4",
-                                            "author": "jessquit",
-                                            "score": 4,
-                                            "created_utc": 1652264509.0,
-                                            "response": "Comment removed by Reddit, manually approved by mods",
-                                            "depth": 4,
-                                            "comments": [
-                                                {
-                                                    "id": "i861buo",
-                                                    "author": "BewareOfShills",
-                                                    "score": 4,
-                                                    "created_utc": 1652265369.0,
-                                                    "response": "thx forgot that hackernoon  gets censored by reddit.",
-                                                    "depth": 5,
-                                                    "comments": []
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i86aw1u",
-                    "author": "jessquit",
-                    "score": 3,
-                    "created_utc": 1652271331.0,
-                    "response": "In my opinion the crypto markets are completely irrational and highly manipulated. It's hard for me to recommend any particular \"investment\" in crypto. \"Go with the flow\" (ie. buy popular things) has been a fairly successful strategy for the past few years. Crypto is still highly speculative no matter what anyone tells you. DYOR and don't invest more than you can afford to lose completely.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i86il2i",
-                            "author": "Knorssman",
-                            "score": 3,
-                            "created_utc": 1652275063.0,
-                            "response": "Bad time to engage in short term investing, still a good time to get on the train of globally adopted p2p electronic cash",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i85u7s4",
-                    "author": "ShortSqueeze20k",
-                    "score": 7,
-                    "created_utc": 1652259493.0,
-                    "response": "If you believe Satoshi's whitepaper provided a solution to the double spend problem (in the internet age) and created the best form of money we have ever seen, then invest in BCH.\n\nIt's really that simple.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i85yc4e",
-                    "author": "Ancapworld",
-                    "score": 3,
-                    "created_utc": 1652263036.0,
-                    "response": "[whyBitcoinCash.com](https://whyBitcoinCash.com)",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "un1kkx",
-            "title": "SEC Chief Gensler Worries Crypto Exchanges Bet Against Clients",
-            "url": "https://www.bloomberg.com/news/articles/2022-05-10/sec-chief-questions-whether-crypto-exchanges-bet-against-clients",
-            "author": "user4morethan2mins",
-            "created_utc": 1652243885.0,
-            "score": 10,
-            "num_comments": 6,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i85a3dv",
-                    "author": "user4morethan2mins",
-                    "score": 5,
-                    "created_utc": 1652244169.0,
-                    "response": " >Gensler said he\u2019s concerned that crypto exchanges aren\u2019t putting up proper walls between different parts of their businesses such as custody, market-making, and offering a trading venue. He said the \u201ccommingling\u201d of services may not be in clients\u2019 best interests.\u00a0\n\u201cCrypto\u2019s got a lot of those challenges-- of platforms trading ahead of their customers,\u201d Gensler said. \u201cIn fact, they\u2019re trading against their customers often because they\u2019re market-marking against their customers.\u201d\u00a0\n\n>The securities regulator also raised issues with stablecoins, digital assets that are typically pegged to the dollar or another fiat currency. The three largest stablecoins -- Tether, USD Coin, and Binance USD -- are all affiliated with exchanges, Gensler said in the interview.\n\n>\u201cI don\u2019t think that\u2019s a coincidence,\u201d he said. \u201cEach one of the three big ones were founded by the trading platforms to facilitate trading on those platforms and potentially avoid AML and KYC,\u201d he added, referring to anti-money laundering and know-your-customer controls.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i85crpy",
-                            "author": "FreeFactoid",
-                            "score": 3,
-                            "created_utc": 1652245840.0,
-                            "response": "If he's concerned, he should put out regulations that everyone can rely on instead of regulating by litigation",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "un2ic6",
-            "title": "Liquidity farming starts in a few hours on KoingFu.com , join us!",
-            "url": "https://www.reddit.com/r/btc/comments/un2ic6/liquidity_farming_starts_in_a_few_hours_on/",
-            "author": "estebansaa",
-            "created_utc": 1652247406.0,
-            "score": 4,
-            "num_comments": 2,
-            "subreddit": "btc",
-            "selftext": "Good news everyone! Our farm is ready and liquidity farming will start on block: 4436888 .  We are doing things with complete transparency and believe that in order for farming to be fair, everyone should know in advance! So here is our invitation to checkout our farm at: [https://farm.koingfu.com](https://farm.koingfu.com)\n\nJoin us and earn $Ki on our Ki/FlexUSD liquidity pool!\n\nFarming will start on block 4436888, approximately 20 hours from this post!\n\nThank you for your support!",
-            "stickied": false,
-            "comments": []
-        },
-        {
             "id": "umglct",
             "title": "BCH price is a shitshow",
             "url": "https://www.reddit.com/r/btc/comments/umglct/bch_price_is_a_shitshow/",
@@ -639,13 +119,693 @@
             ]
         },
         {
+            "id": "un6l6b",
+            "title": "Celebrating Bitcoin Cash May-2022 Upgrade - 2 BCH Giveaway",
+            "url": "https://www.reddit.com/r/btc/comments/un6l6b/celebrating_bitcoin_cash_may2022_upgrade_2_bch/",
+            "author": "bitcoincashautist",
+            "created_utc": 1652264245.0,
+            "score": 50,
+            "num_comments": 42,
+            "subreddit": "btc",
+            "selftext": "I have already funded the giveaway by sending ~~2~~ 2.5 BCH to [bitcoincash:pzq2vg8ppftlnk7raj452eae33upjgedj5dnc5efg5](https://blockchair.com/bitcoin-cash/address/pzq2vg8ppftlnk7raj452eae33upjgedj5dnc5efg5).\n\n(edit: topped it up to 2.5 so it qualifies for posting on /r cc)\n\nThis is no ordinary address, this is a [P2SH address](https://btcinformation.org/en/developer-guide#pay-to-script-hash-p2sh),  which means that it is a \"smart contract\" address. Anyone who wants to  spend from it must satisfy the contract, and I designed it so that  ANYONE will be able to satisfy it. First come, first served! :)\n\nThere's a catch, though - the contract uses [Script](https://reference.cash/protocol/blockchain/script) features ([native introspection opcodes](https://gitlab.com/GeneralProtocols/research/chips/-/blob/master/CHIP-2021-02-Add-Native-Introspection-Opcodes.md#chip-2021-02-native-introspection-opcodes) and [OP\\_MUL](https://gitlab.com/GeneralProtocols/research/chips/-/blob/master/CHIP-2021-02-Bigger-Script-Integers.md#technical-specification))  that will only become available when the May 2022 Bitcoin Cash upgrade  will be activated ([countdown](https://cash.coin.dance/)). Because of that, nobody can spend from the address  yet and that gives you a few days of time to figure out how to craft the  spending transaction in anticipation of the upgrade activation.\n\nAnyone is able to do the same, so it will be a race - who will  broadcast the valid spending transaction first and at the right time to  claim the reward?\n\nThe contract redeem script is: `0xc3518876cd00c788cc00c65f956096a269cd3a6a38486170707920426974636f696e2043617368204d61792d32303232207570677261646521202d20626974636f696e6361736861757469737487`\n\nand here's a link to a very useful tool for Script contracts (kudos to /u/bitjson): [https://ide.bitauth.com/](https://ide.bitauth.com/).\n\nI suggest using [Electron Cash](https://electroncash.org/index.html)  to make a dummy TX that sends to your address, export the TX into a  file then edit it in your favorite text editor to replace the input with  the one spending the reward, load it back into Electron Cash and  broadcast!\n\nThe transaction format is documented here: [https://reference.cash/protocol/blockchain/transaction/](https://reference.cash/protocol/blockchain/transaction/)\n\nI will not give any other help - you figure it out, good luck!",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i865y27",
+                    "author": "CDSagain",
+                    "score": 12,
+                    "created_utc": 1652268492.0,
+                    "response": "If I had any idea what you were talking about on scripts and stuff I'd be happy to try claim some sweet free BCH but the reason I like bch is it's pretty dam simple to use, unlike this giveaway !! But fair play to you for putting  your own coin in the pot to help those who want to learn about these fancy features themselves.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i866ycj",
+                            "author": "bitcoincashautist",
+                            "score": 10,
+                            "created_utc": 1652269104.0,
+                            "response": "Yeah my goal is to maybe motivate folks to learn and get some PR for the BCH upgrade :)",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i862ttt",
+                    "author": "bitcoincashautist",
+                    "score": 9,
+                    "created_utc": 1652266447.0,
+                    "response": "Someone else added to the pot so there are now 2 utxos to compete for, cool :) https://explorer.bitcoinunlimited.info/tx/d89da0f71a7dbcc8e3015464730041fbc10ec09fc9f4357502f879dd4c9d4052",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i86761s",
+                            "author": "bitcoincashautist",
+                            "score": 8,
+                            "created_utc": 1652269231.0,
+                            "response": "Topped it up to 2.5 so it can be posted on r cc, 3 utxos now",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i86gowc",
+                    "author": "nikola-crypto",
+                    "score": 6,
+                    "created_utc": 1652274193.0,
+                    "response": "This is very very cool",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i86gsvf",
+                            "author": "bitcoincashautist",
+                            "score": 5,
+                            "created_utc": 1652274244.0,
+                            "response": "Thanks, I'm excited to see what happens on activation! :D",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i86h53e",
+                                    "author": "nikola-crypto",
+                                    "score": 3,
+                                    "created_utc": 1652274400.0,
+                                    "response": "Same. I haven\u2019t had time to learn about doing dev with smart contracts yet- this is kinda like a hackathon so def keen to give it a shot.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i86akj4",
+                    "author": "LovelyDayHere",
+                    "score": 4,
+                    "created_utc": 1652271158.0,
+                    "response": "A fun competition!\n\nThanks for doing this.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i86ivm5",
+                    "author": "Phptower",
+                    "score": 4,
+                    "created_utc": 1652275195.0,
+                    "response": "Nice! Any help how to do this?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i86j3fd",
+                            "author": "bitcoincashautist",
+                            "score": 3,
+                            "created_utc": 1652275289.0,
+                            "response": "I gave all the info and references you need, now it will take some effort to study it :)\n\nHere's another helpful link for those unfamiliar with P2SH, it helped me when I was learning this stuff: https://learnmeabitcoin.com/technical/p2sh",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i86qy4o",
+                                    "author": "Phptower",
+                                    "score": 3,
+                                    "created_utc": 1652278677.0,
+                                    "response": "Ok, thanks. I am looking into it but it looks too complicated. I can only use Electroncash and the fee button a bit. Please could you publish a eli5 step-by-step tutorial after the contest? Thanks!",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "un6iat",
+            "title": "Western Digital announces 26TB hard drives and 15TB server SSDs",
+            "url": "https://arstechnica.com/gadgets/2022/05/western-digital-announces-26tb-hard-drives-and-15tb-server-ssds/",
+            "author": "Ancapworld",
+            "created_utc": 1652263914.0,
+            "score": 44,
+            "num_comments": 12,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i87lchp",
+                    "author": "KallistiOW",
+                    "score": 5,
+                    "created_utc": 1652290559.0,
+                    "response": "144 blocks per day with 1gb blocks = 52.56TB/year\n\n144 blocks per day with 256mb blocks = 12.83TB/year\n\nWelp, looks like TODAY we can run 256mb full blocks and only need to buy one SSD per year. Yay, metrics!\n\nSamsung offers 15TB server SSDs at around ~$3200 USD... you can break that down to $266.66/month.\n\nFor anyone producing real economic value with their full, non-pruned node... that cost is very inexpensive. :)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i87k2pw",
+                    "author": "Evideyear",
+                    "score": 7,
+                    "created_utc": 1652290071.0,
+                    "response": "Almost like Bitcoin devs lied when they said blocks had to stay 1MB because tech wouldn't advance.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i87dj1t",
+                    "author": "Ikinoki",
+                    "score": 3,
+                    "created_utc": 1652287539.0,
+                    "response": "Meanwhile samsung selling 30tb ssds for years already",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "un9dg7",
+            "title": "Claim the credits in your omnibus accounts and transfer them to private keys so you don't become a general unsecured creditor. NYK-NYC!",
+            "url": "https://i.redd.it/q4cyhftkmqy81.jpg",
+            "author": "2q_x",
+            "created_utc": 1652274235.0,
+            "score": 17,
+            "num_comments": 8,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i86k263",
+                    "author": "Remora_101",
+                    "score": 10,
+                    "created_utc": 1652275726.0,
+                    "response": "That we still have to repeat not your keys not your coins is kinda down putting.\n\nIt was always this way, they just wrote it down nicely now. Anyway good reminder.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "un6vvx",
+            "title": "I'm not bragging but....9 days ago I said",
+            "url": "https://www.reddit.com/r/btc/comments/un6vvx/im_not_bragging_but9_days_ago_i_said/",
+            "author": "stewbits22",
+            "created_utc": 1652265459.0,
+            "score": 20,
+            "num_comments": 24,
+            "subreddit": "btc",
+            "selftext": "Solana the centralised shitcoin that runs on one server run by one company, that can't keep its service online, is telling us how to run our crypto.\n\nAm I in a simulation here?\n\n&#x200B;\n\nBCH for the win and FlexUSD the only stable coin backed by fully transparent collateral that pays interest on the blockhain to your ledger wallet also for the win.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i863shp",
+                    "author": "GETSOME88-007",
+                    "score": 3,
+                    "created_utc": 1652267106.0,
+                    "response": "Cream rises to the top!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i86eu5g",
+                    "author": "Aggravated-Bread489",
+                    "score": 3,
+                    "created_utc": 1652273317.0,
+                    "response": "How does FlexUSD collateral work? I understand that it is partially/mostly backed by repo positions whose sum (Crypto + short positions) is always fixed. \n\nIs this really safe? It sounds risky to me, but I don't really understand repos so they sounds risky to me.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i86no8v",
+                            "author": "johndoeisback",
+                            "score": 6,
+                            "created_utc": 1652277304.0,
+                            "response": "The only thing that is guaranteed to maintain its dollar value is the dollar. If you back your stablecoin with anything else then there is non-zero probability of depegging under certain conditions.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i871ep4",
+                    "author": "chainxor",
+                    "score": 3,
+                    "created_utc": 1652282845.0,
+                    "response": "Yes!",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "un0x2r",
+            "title": "BitcoinCash adaption at its best ..Many Establishments in the islands are accepting BitcoinCash (and they are doing it by themselves).Today spotted was BitcoinCash ATM in a casino in St Maarten.",
+            "url": "https://v.redd.it/9ytqqcmosry81",
+            "author": "Sunnyskn",
+            "created_utc": 1652241506.0,
+            "score": 68,
+            "num_comments": 11,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i85c2tt",
+                    "author": "fiendishcrypro",
+                    "score": 6,
+                    "created_utc": 1652245394.0,
+                    "response": "This is great! BCH adoption at its best!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i85m6fk",
+                    "author": "Nordle_420D",
+                    "score": 3,
+                    "created_utc": 1652252600.0,
+                    "response": "Nice, can only get better now if they accept xmr in the future",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8604c3",
+                    "author": "Ancapworld",
+                    "score": 3,
+                    "created_utc": 1652264456.0,
+                    "response": "Thank you Sunny!!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i86chbw",
+                    "author": "CDSagain",
+                    "score": 3,
+                    "created_utc": 1652272162.0,
+                    "response": "My worst nightmare, on holiday, few beers in, having a good time, find myself in a casino, lose the fiat I'm carrying, no worries, see a bch ATM, temptation overwhelming, withdraw, lose, nooooooo !!!!",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "un38sx",
+            "title": "PT in North Queensland on BicoinCash! \ud83c\udfcb\ud83c\udffb\u200d\u2642\ufe0f",
+            "url": "https://youtube.com/watch?v=s1AC8kWCkFg&feature=share",
+            "author": "BitcoinCashCity",
+            "created_utc": 1652250276.0,
+            "score": 36,
+            "num_comments": 8,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i85j833",
+                    "author": "BitcoinCashCity",
+                    "score": 6,
+                    "created_utc": 1652250326.0,
+                    "response": "You know you're on a winner when you can pay for competition prep and/or lifestyle coaching by personal trainer Michael Spowart with Bitcoin Cash. \ud83d\udc4a\ud83c\udffc\n\nMichael is a reputable trainer with a broad clientele base in North Queensland and has 15+ years of experience in the industry and a diploma in master bodybuilding and fitness methods.\n\n[https://michael-spowart.square.site/](https://michael-spowart.square.site/)\n\nCheck it!\n\n\ud83c\udfa5 DigiRyder\n\n\\#healthandfitness #gym #personaltrainer #BCHmerchant #BitcoinCash #MichaelSpowart #BitcoinCashCity #mealplans #coaching #bodybuilding",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i85mu55",
+                    "author": "bitcoinjason",
+                    "score": 6,
+                    "created_utc": 1652253133.0,
+                    "response": "This great, Gym Membership in BCH, Gym Wear in BCH and Now a Personal Trainer in BCH.\n\nNext Gym nutrition in BCH",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i85twe8",
+                    "author": "stewbits22",
+                    "score": 4,
+                    "created_utc": 1652259219.0,
+                    "response": "BCH for the pump.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i85k5f8",
+                    "author": "EmergentCoding",
+                    "score": 4,
+                    "created_utc": 1652251016.0,
+                    "response": "So many new Bitcoin Cash merchant options in North Queensland. Bitcoin Cash - Let's go!",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "umx26a",
+            "title": "\"It's fine.\"",
+            "url": "https://i.redd.it/0bx8p21jrqy81.jpg",
+            "author": "user4morethan2mins",
+            "created_utc": 1652228988.0,
+            "score": 68,
+            "num_comments": 31,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i85v2q1",
+                    "author": "pyalot",
+                    "score": 8,
+                    "created_utc": 1652260230.0,
+                    "response": "UST was 0.9-0.73 yesterday, the \u201ebailout\u201c propped it up to 0.9 for a few hours, now is at ~~0.56~~ 0.5. Luna is in freefall, went from $80 to ~~$5~~ ~~$2~~ $1 in the last 7 days.\n\nThey would both hit 0, if it wasnt that soon nobody will buy them, at any price and no price ticks will happen on the empty bid orderbooks. Then they will be delisted.\n\nAnd that is the true end of two of these cmc \u201etop 10\u201c clown coins. Only another 10 to go. This is a BTC/Tether preview.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i84faew",
+                    "author": "user4morethan2mins",
+                    "score": 11,
+                    "created_utc": 1652229189.0,
+                    "response": "\u201cHistory Doesn't Repeat Itself, but It Often Rhymes\u201d \u2013\u00a0Mark Twain most frequently credited. \n\n[Terra Woes Worsen Despite $1.5 Billion Bailout From Luna Guard Foundation](https://leofinance.io/@xabi/terra-woes-worsen-despite-usd1-5-billion-bailout-from-luna-guard-foundation)\n\n[\"Chancellor on Brink of Second Bailout for Banks\"](https://anecdotage.com/anecdotes/why-satoshi-nakamoto-embedded-a-newspaper-headline-in-bitcoin)",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "un7d0t",
+            "title": "Cheapest Crypto Coins To Transfer In 2022",
+            "url": "https://www.oobit.com/blog/cheapest-crypto-coins-to-send/",
+            "author": "FallonLundquist36",
+            "created_utc": 1652267326.0,
+            "score": 4,
+            "num_comments": 4,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i86lsz1",
+                    "author": "Remora_101",
+                    "score": 3,
+                    "created_utc": 1652276505.0,
+                    "response": "BCH missing.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "un515j",
+            "title": "Why invest more on BCH?",
+            "url": "https://www.reddit.com/r/btc/comments/un515j/why_invest_more_on_bch/",
+            "author": "Initial_Blueberry_29",
+            "created_utc": 1652257483.0,
+            "score": 8,
+            "num_comments": 46,
+            "subreddit": "btc",
+            "selftext": "Please don\u2019t get me wrong! I am just a newbie and have started to DCA small amounts to BCH. I have come across to a post here (which I can\u2019t find anymore) that made me convert my mining payouts to BCH. I am thinking of investing a bit more but I still haven\u2019t got that much confidence about BCH as I need more knowledge about it. Can someone enlighten me. Thanks!",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i86aw1u",
+                    "author": "jessquit",
+                    "score": 10,
+                    "created_utc": 1652271331.0,
+                    "response": "In my opinion the crypto markets are completely irrational and highly manipulated. It's hard for me to recommend any particular \"investment\" in crypto. \"Go with the flow\" (ie. buy popular things) has been a fairly successful strategy for the past few years. Crypto is still highly speculative no matter what anyone tells you. DYOR and don't invest more than you can afford to lose completely.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i86il2i",
+                            "author": "Knorssman",
+                            "score": 5,
+                            "created_utc": 1652275063.0,
+                            "response": "Bad time to engage in short term investing, still a good time to get on the train of globally adopted p2p electronic cash",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i85u7s4",
+                    "author": "ShortSqueeze20k",
+                    "score": 14,
+                    "created_utc": 1652259493.0,
+                    "response": "If you believe Satoshi's whitepaper provided a solution to the double spend problem (in the internet age) and created the best form of money we have ever seen, then invest in BCH.\n\nIt's really that simple.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i85yc4e",
+                    "author": "Ancapworld",
+                    "score": 5,
+                    "created_utc": 1652263036.0,
+                    "response": "[whyBitcoinCash.com](https://whyBitcoinCash.com)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i870dgz",
+                    "author": "rshap1",
+                    "score": 6,
+                    "created_utc": 1652282444.0,
+                    "response": "u/chaintip",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i86bsis",
+                    "author": "BCHisFuture",
+                    "score": 4,
+                    "created_utc": 1652271804.0,
+                    "response": "Welcome\n\nLook this video\nhttps://youtu.be/aMt8IltK3TA\n\nUnder it\nGreat links about BCH and crypto\nVery useful\n\nI have spent 8h to search and do videos\n\nHow buy anonymously\nSpend it\nEarn it\nEtc",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i85w021",
+                    "author": "BewareOfShills",
+                    "score": 9,
+                    "created_utc": 1652261035.0,
+                    "response": "What knowledge are you missing?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i85w9t3",
+                            "author": "Initial_Blueberry_29",
+                            "score": 3,
+                            "created_utc": 1652261274.0,
+                            "response": "More of how to utilize and maximize yield potential. Best defi app, best wallet to use, how to use as payment option if I want to integrate in a website or a store. Where to go for further DMOR",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i85yy0w",
+                                    "author": "BewareOfShills",
+                                    "score": 9,
+                                    "created_utc": 1652263526.0,
+                                    "response": "Wallets see: http://bestbchwallets.com/\n\nbitcoin.com for mobil and EC for desktop are popular choices.\n\nFor defi and yield maybe someone else can help I'm more into p2p cash.\n\nFor Payment options check\n\n- http://use.cash\n- http://gocrypto.com\n- https://www.bitcoin.com/bitcoin-cash-register/\n\nOnline, promt.cash and https://www.cryptowoo.com or the usual like bitpay etc.\n\nFor more info about the blocksize wars and how BCH came to be:\n\nhttps://hackernoon.com/the-great-bitcoin-scaling-debate-a-timeline-6108081dbada\n\nhttps://www.youtube.com/watch?v=eafzIW52Rgc",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8606w4",
+                                            "author": "jessquit",
+                                            "score": 8,
+                                            "created_utc": 1652264509.0,
+                                            "response": "Comment removed by Reddit, manually approved by mods",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i861buo",
+                                                    "author": "BewareOfShills",
+                                                    "score": 6,
+                                                    "created_utc": 1652265369.0,
+                                                    "response": "thx forgot that hackernoon  gets censored by reddit.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i876aq2",
+                                                            "author": "knowbodynows",
+                                                            "score": 3,
+                                                            "created_utc": 1652284748.0,
+                                                            "response": "Why? It's one of the few intelligent sober publishers.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i86b28a",
+                                            "author": "Initial_Blueberry_29",
+                                            "score": 6,
+                                            "created_utc": 1652271423.0,
+                                            "response": "Thanks!\ud83d\ude0a This would help.\ud83d\ude0a\ud83d\ude0a",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i86c1lv",
+                                                    "author": "Aggravated-Bread489",
+                                                    "score": 3,
+                                                    "created_utc": 1652271936.0,
+                                                    "response": "A good passive investment platform (and exchange) is coinflex.com.\n\nI believe you can use your BCH as collateral to create AMM+ with certain trading pairs. So you can choose the highest yield pair, but keep your collateral in BCH.\n\nFrom what I've seen, impermanent loss (IL) can gobble up yield on AMMs whether the assets go up or down. Any variation increases IL.\nBenefit of AMM+ is you can select increasing, decreasing, or neutral. For example, if you select increasing, there is no impermanent loss when your asset value crosses the upper range on your investment. So you yield farm the whole time the asset is in your range and then you close your position when the asset goes above it.\n\nOther options, use coinflex.com to bridge your BCH to SmartBCH. Send to an dex like mistswap and stake your sBCH to yield farm.\n\nHayden Otto has some videos to get you started.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "umsvnj",
+            "title": "Huiyang Restaurant located next to the Police Station,St Kitts accepts Bitcoin Cash. The Graph for BCH Merchants & Adaption is only going upwards..\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f",
+            "url": "https://v.redd.it/aq3tfwfarpy81",
+            "author": "Sunnyskn",
+            "created_utc": 1652217045.0,
+            "score": 57,
+            "num_comments": 8,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i84gok8",
+                    "author": "MemoryDealers",
+                    "score": 9,
+                    "created_utc": 1652229822.0,
+                    "response": "There are now likely more places accepting BCH in St Kitts than places that don't.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i85c2p9",
+                            "author": "sq66",
+                            "score": 5,
+                            "created_utc": 1652245392.0,
+                            "response": "That is an amazing achievement!\n\n-\n\nSeems to me you are making a blueprint on how to get adoption, which can then be scaled to the world.\n\nIs there a next step in the plan? Getting B2B using it as well?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "umx9lw",
+            "title": "El Salvador expected to default as bitcoin plummets",
+            "url": "https://www.msn.com/en-us/money/markets/el-salvador-expected-to-default-as-bitcoin-plummets/ar-AAX7sSJ?ocid=entnewsntp&cvid=14e0fe7c8710414f9d19b176d1336e0c",
+            "author": "Nonotreallyu",
+            "created_utc": 1652229631.0,
+            "score": 24,
+            "num_comments": 6,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i86aufy",
+                    "author": "megankerr7",
+                    "score": 7,
+                    "created_utc": 1652271308.0,
+                    "response": "lol well bukele will at least go down in history after all",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i86yogr",
+                            "author": "Meth-Heads",
+                            "score": 13,
+                            "created_utc": 1652281775.0,
+                            "response": "Samson Mow. Samson Mow, Blockstream and Bitfinex are the only ones responsible for this. They use the third world struggling country to push their tether and BTC scam to try to make it look like they had some sort of valid use case. They don't. There is no valid use case for BTC anymore. It's sad to see that a country like this has to suffer before people will realize what a Ponzi scheme block stream has turned Bitcoin core into",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "un1kkx",
+            "title": "SEC Chief Gensler Worries Crypto Exchanges Bet Against Clients",
+            "url": "https://www.bloomberg.com/news/articles/2022-05-10/sec-chief-questions-whether-crypto-exchanges-bet-against-clients",
+            "author": "user4morethan2mins",
+            "created_utc": 1652243885.0,
+            "score": 15,
+            "num_comments": 14,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i85a3dv",
+                    "author": "user4morethan2mins",
+                    "score": 5,
+                    "created_utc": 1652244169.0,
+                    "response": " >Gensler said he\u2019s concerned that crypto exchanges aren\u2019t putting up proper walls between different parts of their businesses such as custody, market-making, and offering a trading venue. He said the \u201ccommingling\u201d of services may not be in clients\u2019 best interests.\u00a0\n\u201cCrypto\u2019s got a lot of those challenges-- of platforms trading ahead of their customers,\u201d Gensler said. \u201cIn fact, they\u2019re trading against their customers often because they\u2019re market-marking against their customers.\u201d\u00a0\n\n>The securities regulator also raised issues with stablecoins, digital assets that are typically pegged to the dollar or another fiat currency. The three largest stablecoins -- Tether, USD Coin, and Binance USD -- are all affiliated with exchanges, Gensler said in the interview.\n\n>\u201cI don\u2019t think that\u2019s a coincidence,\u201d he said. \u201cEach one of the three big ones were founded by the trading platforms to facilitate trading on those platforms and potentially avoid AML and KYC,\u201d he added, referring to anti-money laundering and know-your-customer controls.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i85crpy",
+                            "author": "FreeFactoid",
+                            "score": 5,
+                            "created_utc": 1652245840.0,
+                            "response": "If he's concerned, he should put out regulations that everyone can rely on instead of regulating by litigation",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i85p9sw",
+                    "author": "ronoda12",
+                    "score": 3,
+                    "created_utc": 1652255169.0,
+                    "response": "Scumbag GG should first look into stock market exchanges, brokers and market makers where commingling is not only extreme but incestuous level.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "umznzh",
+            "title": "PayButton v1.2.0 is now live!",
+            "url": "https://twitter.com/thepaybutton/status/1524218655319330816",
+            "author": "PayButton",
+            "created_utc": 1652237243.0,
+            "score": 17,
+            "num_comments": 6,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i851gdt",
+                    "author": "RowanSkie",
+                    "score": 8,
+                    "created_utc": 1652239476.0,
+                    "response": "Holy shit, I haven't heard of anything about this for a while\u2026",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "un2ic6",
+            "title": "Liquidity farming starts in a few hours on KoingFu.com , join us!",
+            "url": "https://www.reddit.com/r/btc/comments/un2ic6/liquidity_farming_starts_in_a_few_hours_on/",
+            "author": "estebansaa",
+            "created_utc": 1652247406.0,
+            "score": 10,
+            "num_comments": 9,
+            "subreddit": "btc",
+            "selftext": "Good news everyone! Our farm is ready and liquidity farming will start on block: 4436888 .  We are doing things with complete transparency and believe that in order for farming to be fair, everyone should know in advance! So here is our invitation to checkout our farm at: [https://farm.koingfu.com](https://farm.koingfu.com)\n\nJoin us and earn $Ki on our Ki/FlexUSD liquidity pool!\n\nFarming will start on block 4436888, approximately 20 hours from this post!\n\nThank you for your support!",
+            "stickied": false,
+            "comments": []
+        },
+        {
             "id": "un77wz",
             "title": "Blockchain.com does not pay my 1 500 000 DAI and 500 000 USDT",
             "url": "https://www.reddit.com/r/btc/comments/un77wz/blockchaincom_does_not_pay_my_1_500_000_dai_and/",
             "author": "BelarusOK",
             "created_utc": 1652266808.0,
             "score": 3,
-            "num_comments": 3,
+            "num_comments": 7,
             "subreddit": "btc",
             "selftext": "Hello peoples!\n\n3 months ago, I invested my crypto money in their Rewards program.Verified the account completely. Answered all the questions what where from.I replenished my wallet with a private key and went on for a reward:\n\nTransaction Hash:\n\n**500 000 USDT** 0xf690f3a25ecdc3911e11eda6c8698c961efb13c552d8a35db5fbaaed14cfab5f  \n**1 500 000 DAI** 0x3feb63bab76175f680542c8e9bed67ca84e3d77bfee03e7575e5e775326daea6\n\nTheir wallet with movements [0xa00e2a7652248abeb209398227dae413e9479e52](https://etherscan.io/address/0xa00e2a7652248abeb209398227dae413e9479e52)\n\nThere were very favorable conditions of **13.5%** per annum for stablecoins.I switched to them because they have been known for a long time, and for example, the remuneration in NEXO was **12%** per annum.\n\nMost recently, they reduced the remuneration to **9%**, there were no notifications and mails!\n\nOn April 24, I started withdrawing funds and profits.\n\nThe rewards written will be paid within 2 days.\n\nAfter 3 days, the statuses have not changed - ***In review / Pending***I have written a ticket #3438259.The answer came just a couple of hours later, we are dealing with your question.Today is already April 28, I have written 3 more letters and ask for the help of the community.\n\nI have saved all the pages (screenshots) of withdrawals, deposits, computer and mobile versions.I will definitely post everything if my situation is not resolved. [14 days ago, the person was also not paid 177 ETH](https://www.reddit.com/r/btc/comments/u2o7pi/blockchaincom_suspsended_account_177eth_gone/)\n\nThere are 7.3M$ rewards on their wallet, someone gets small payments. Did they really decide to arrange a worldwide SCAM?\n\n***UPDATE 11.05.2022***\n\n\\~2.7M$ left on their wallet  \nSupport does not respond for 14 days!  \n[Trustpilot](https://www.trustpilot.com/review/blockchain.com) only negative reviews!",
             "stickied": false,
@@ -653,9 +813,27 @@
                 {
                     "id": "i86ivjf",
                     "author": "xjunda",
-                    "score": 3,
+                    "score": 7,
                     "created_utc": 1652275193.0,
                     "response": "Truly sorry to hear but crypto is all about self custody as someone once said, not your keys not your coins.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i86zbe0",
+                    "author": "i_have_chosen_a_name",
+                    "score": 6,
+                    "created_utc": 1652282032.0,
+                    "response": "You send 2 million dollars worth of stablecoins to total strangers that said \"trust us bro we will give you 13.5% on it ever year\"???? \n\nWhy????\n\nWhy not sell all the stablecoins for fiat and then get 2 million dollars in 100 dollar bills and then just hand em out to the first person on the street that says they will give you more back.\n\nThat's what you did.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i86jrdd",
+                    "author": "Remora_101",
+                    "score": 4,
+                    "created_utc": 1652275592.0,
+                    "response": "Use the search function. This is some regular occurrence on Bockchain.com. Unfortunately I don't know how any of the cases got resolved.",
                     "depth": 1,
                     "comments": []
                 }
