@@ -162,13 +162,17 @@ def save_subreddit(subreddit: SubredditHelper, existing_posts, data_path: str, s
                     file_path = os.path.join(data_path, f"{subreddit.display_name}-{old_ts}.json")
                     
                     with open(file_path, 'r') as f:
-                        old_json_submission = json.load(f)
-                        to_remove = None
-                        #search
-                        for post in old_json_submission['posts']:
-                            if post['id'] == submission.id:
-                                to_remove = post
-                                break
+                        try:
+                            old_json_submission = json.load(f)
+                            to_remove = None
+                            #search
+                            for post in old_json_submission['posts']:
+                                if post['id'] == submission.id:
+                                    to_remove = post
+                                    break
+                        except:
+                            logger(f"there was an issue with {file_path}", "main")
+                    
 
                     #remove and add new
                     if to_remove is not None:
