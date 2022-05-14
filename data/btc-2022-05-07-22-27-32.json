@@ -1756,8 +1756,8 @@
             "url": "/r/Bitcoincash/comments/uk7dwz/node_operators_please_update_your_nodes_prior_to/",
             "author": "jessquit",
             "created_utc": 1651905689.0,
-            "score": 55,
-            "num_comments": 28,
+            "score": 64,
+            "num_comments": 42,
             "subreddit": "btc",
             "selftext": "",
             "stickied": true,
@@ -1765,11 +1765,40 @@
                 {
                     "id": "i7nvgz0",
                     "author": "LovelyDayHere",
-                    "score": 11,
+                    "score": 14,
                     "created_utc": 1651919794.0,
                     "response": "Links to downloads for full nodes that are ready for the release (minimum versions in brackets are based on what's available that you need to to be compatible with the May 15, 2022 upgrade):\n\nBU: https://www.bitcoinunlimited.info/download (v1.10.0)\n\nBCHN: https://bitcoincashnode.org/en/download.html (v24.0.0)\n\nVerde: https://bitcoinverde.org / https://github.com/SoftwareVerde/bitcoin-verde/releases/tag/v2.2.0  (v2.2.0)\n\nKnuth: http://kth.cash/#download / https://github.com/k-nuth/kth/releases (v0.24.0, although v0.23.0 is minimum for this network upgrade - and you need to follow the instructions on the main website to download and install the upgrade)\n\nBCHD: https://bchd.cash / https://github.com/gcash/bchd/releases/tag/v0.19.0 (v0.19.0)\n\nI'm unsure whether Flowee supports the network upgrade, but its author Tom Zander issued a release of Flowee Pay that he described as the 'May release' https://gitlab.com/FloweeTheHub/pay/-/tags/2022.05.0. Might be better to ask him directly if you're running Flowee. Site: https://flowee.org  Reddit post: https://www.reddit.com/r/Flowee/comments/ui40gs",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i7s2a32",
+                            "author": "ThomasZander",
+                            "score": 3,
+                            "created_utc": 1652001800.0,
+                            "response": "> I'm unsure whether Flowee supports the network upgrade, but its author Tom Zander issued a release of Flowee Pay that he described as the 'May release'\n\nThe ([link](https://www.reddit.com/r/Flowee/comments/ui40gs/flowee_pay_released_desktop_linux_update/)) 'May release' was for **[Flowee Pay](https://flowee.org/products/pay/)**. See, Flowee is our brand name and \"Pay\" is one of the products. We also have the full node which has product name \"the Hub\". Like Microsoft Office is one product from Microsoft.\n\nAnyway, the topic:  \nthere has not been a release from Flowee **the Hub** for some time.\n\nThe protocol upgrade planned for May 15th was nice in that its date was announced more than a year in advance. But up until this day we don't actually have an **official** specification on what this upgrade entails.  \nThere are some texts, but they are in some personal github repos. Imagine new laws in a country being only published on some company's blog. Not very reassuring, that. To this day there is no mention of the upgrade existing at all on https://bitcoincash.org. Would have been appropriate, no?\n\nRight, the spec of the upgrade (needed to provide support)!   \nWhen I asked when the spec would be part of the BCH specifications (https://www.reference.cash/ for instance) I got the answer that would be AFTER the actual hard fork. I just checked, its not there yet.  \nAs an aside; who owned https://bitcoinprotocol.cash ? Was that BU? That one seems offline today.\n\nI did look at the specs, its tricky to actually implement things from it. For instance the \"Bigger Script Integers\" spec doesn't list which OPCODES are affected by it. Nor does it have any examples of scripts and their behaviour before and after the May 15th date.  \nThe spec doesn't even link to existing implementations, of which there must be various now, I pushed to get that included some months ago (there are placeholder \"(in progress)\" statements today), but that hasn't happened to this day.  And, yes, I mentioned these problems to the various people over the last months. But its not my new feature to push, so I'll wait for it to activate and decide what to do after.\n\nI honestly don't think this upcoming protocol upgrade was done with a decentralized community in mind. We honestly can't say we are more decentralized than BTC Core after this.\n\nWould you agree with the general idea that:\nOutside observers should not have any problems following the chain without being forced into using the approved clients.\n\npps. this is the first time anyone contacted me about this upgrade since it was announced in November. As a full node owner being contacted a week before the upgrade is very timely. :-) Thanks for that /u/LovelyDayHere !",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7wfhdy",
+                                    "author": "LovelyDayHere",
+                                    "score": 3,
+                                    "created_utc": 1652089022.0,
+                                    "response": "Thanks for clarifying, Tom.\n\n[Flowee Pay looks great from what I've read about it.](https://flowee.org/products/pay/)\n\nAll projects are struggling with resources, but I hope that Flowee will find developers to bring the Hub into consensus and keep it running.\nLike you mentioned, there are several (3) C++ based nodes that can serve as references, so there should be quite a lot of info in those to help implementation.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i7ty9ja",
+                                    "author": "zquestz",
+                                    "score": 6,
+                                    "created_utc": 1652037941.0,
+                                    "response": "That is a lot of excuses considering every other full node was able to put out a compatible version.\n\nYes, things could have better documentation, however being a decentralized protocol it is up to everyone to document and make sure the upgrade details are clear. Where was your assistance to make this happen?\n\nSame goes for bitcoincash.org, the repo is open source, where was your PR to inform people about the upgrade. Why is it someone else's responsibility but not your own?\n\nI do agree that documentation and test vectors could have been done better, but complaining about them a week before the upgrade and blaming others that you couldn't update your product is not a good look. Your customers and users don't want excuses. They want a product that is reliable and they can trust to continue working smoothly through upgrades.\n\nAre you going to at least recommend a new full node for them to use? Or are you going to just let them all fall off the chain without any warning?",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

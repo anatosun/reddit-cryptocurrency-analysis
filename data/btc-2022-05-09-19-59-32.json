@@ -9,47 +9,6 @@
     ],
     "posts": [
         {
-            "id": "ulwgbe",
-            "title": "Help Setting Up a Node",
-            "url": "https://www.reddit.com/r/btc/comments/ulwgbe/help_setting_up_a_node/",
-            "author": "the_mighty_chewbacca",
-            "created_utc": 1652117244.0,
-            "score": 14,
-            "num_comments": 9,
-            "subreddit": "btc",
-            "selftext": "I have an older Raspberry Pi. Never have used it. I am wanting to set up a Crypto node and am thinking this community might be helpful. Does BCH lend itself to easily setting up a node? If so can you provide guidance or resources? Thanks in advance.",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7y1srl",
-                    "author": "Remora_101",
-                    "score": 7,
-                    "created_utc": 1652118150.0,
-                    "response": "You download the package and install it. Here i someone running a raspi that should give you some performance guides:\n\nread.cash/@mtrycz/how-my-rpi4-handles-scalenets-256mb-blocks-e356213b",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7y29ul",
-                    "author": "LovelyDayHere",
-                    "score": 5,
-                    "created_utc": 1652118342.0,
-                    "response": "> I have an older Raspberry Pi.\n\nToo unspecific.\n\nAn RPi3 could still work, an RPi4 is fine.\n\nOlder models than that, I wouldn't bother trying.\n\nhttps://bitcoincashnode.org/en/newsroom/bchn-on-raspberry-pi-2021-06\n\nIf you do it, make sure to get the latest version (v24.0.0). These instructions should also work with minor modifications for Bitcoin Unlimited (refer to https://bitcoinunlimited.info for docs, I guess).\n\n@Telesfor wrote a tutorial a while back. You will need to replace the \"dot\" in the domain with a real period, since Reddit filters readcash links.\n\n    https://read dot cash/@Telesfor/how-to-operate-a-bitcoin-cash-full-node-bitcoin-unlimited-on-raspberry-pi-3030f63e",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7y4k9f",
-                    "author": "CurvyGorilla202",
-                    "score": 3,
-                    "created_utc": 1652119269.0,
-                    "response": "Came full circle didn\u2019t you chewy?",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "ulvaof",
             "title": "USD \"stablecoin\" (UST - TerraUSD) but backed by Bitcoin has lost its peg as it falls below $1 USD per coin. Bitcoin is propped up by scams like this, while actual usage is impossible due to their high fees.",
             "url": "https://coinmarketcap.com/currencies/terrausd/",
@@ -209,6 +168,65 @@
                             "comments": []
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "id": "ulwgbe",
+            "title": "Help Setting Up a Node",
+            "url": "https://www.reddit.com/r/btc/comments/ulwgbe/help_setting_up_a_node/",
+            "author": "the_mighty_chewbacca",
+            "created_utc": 1652117244.0,
+            "score": 18,
+            "num_comments": 18,
+            "subreddit": "btc",
+            "selftext": "I have an older Raspberry Pi. Never have used it. I am wanting to set up a Crypto node and am thinking this community might be helpful. Does BCH lend itself to easily setting up a node? If so can you provide guidance or resources? Thanks in advance.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7y29ul",
+                    "author": "LovelyDayHere",
+                    "score": 9,
+                    "created_utc": 1652118342.0,
+                    "response": "> I have an older Raspberry Pi.\n\nToo unspecific.\n\nAn RPi3 could still work, an RPi4 is fine.\n\nOlder models than that, I wouldn't bother trying.\n\nhttps://bitcoincashnode.org/en/newsroom/bchn-on-raspberry-pi-2021-06\n\nIf you do it, make sure to get the latest version (v24.0.0). These instructions should also work with minor modifications for Bitcoin Unlimited (refer to https://bitcoinunlimited.info for docs, I guess).\n\n@Telesfor wrote a tutorial a while back. You will need to replace the \"dot\" in the domain with a real period, since Reddit filters readcash links.\n\n    https://read dot cash/@Telesfor/how-to-operate-a-bitcoin-cash-full-node-bitcoin-unlimited-on-raspberry-pi-3030f63e",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7y1srl",
+                    "author": "Remora_101",
+                    "score": 5,
+                    "created_utc": 1652118150.0,
+                    "response": "You download the package and install it. Here i someone running a raspi that should give you some performance guides:\n\nread.cash/@mtrycz/how-my-rpi4-handles-scalenets-256mb-blocks-e356213b",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7y4k9f",
+                    "author": "CurvyGorilla202",
+                    "score": 3,
+                    "created_utc": 1652119269.0,
+                    "response": "Came full circle didn\u2019t you chewy?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7yfjz4",
+                    "author": "sanch_o_panza",
+                    "score": 3,
+                    "created_utc": 1652123765.0,
+                    "response": "I would recommend syncing the blockchain to an SSD on a laptop or desktop.\n\nDoing that on the Pi takes a lot longer.\n\nBut if you don't mind waiting...",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7ypna4",
+                    "author": "KallistiOW",
+                    "score": 3,
+                    "created_utc": 1652127882.0,
+                    "response": "Yeah, just grab a copy of [BitcoinCashNode](https://bitcoincashnode.org/en/download.html) or [BitcoinUnlimited](https://www.bitcoinunlimited.info/download) and install it on your server. Both work out of the box, just run the binary and it will start syncing.",
+                    "depth": 1,
+                    "comments": []
                 }
             ]
         }
