@@ -54,6 +54,8 @@ REDDIT_REFRESH_TOKEN=TOKEN
 - `REDDIT_CLIENT_USERNAME`, `REDDIT_CLIENT_PASSWORD` self-explanatory.
 - `REDDIT_REFRESH_TOKEN` needs to be obtained by following the actions below.
 
+These environment variables should be loaded with the script. If you use pipenv, it will automatically do this for you. Otherwise you might need to source this file where you export each variable using something like `xargs`.
+
 ##### Getting the `REDDIT_REFRESH_TOKEN`
 If you don't sign in to Reddit using "2FA" (that's what they call it, even though you just allow the app to access your user profile on Reddit), there might arise authentication issues. To avoid this, it's best practice to get the `REDDIT_REFRESH_TOKEN`. To the the refresh token, one can use the `reddit2fa_connector.py` file. Before running it, create the `.env` file as above but without the `REDDIT_REFRESH_TOKEN`. Then run `python reddit2fa_connector.py` and you should be redirected to your browser where you'll allow the app access. Once you'll alow it, you should automatically be redirected to `localhost:8080`. You'll see the token being displayed in the browser. Copy it and add it to the `.env` file.
 
