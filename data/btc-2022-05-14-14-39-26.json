@@ -9,47 +9,6 @@
     ],
     "posts": [
         {
-            "id": "updxq0",
-            "title": "Help the devs make history tomorrow, on May 15th, the upgrade day",
-            "url": "https://www.reddit.com/r/btc/comments/updxq0/help_the_devs_make_history_tomorrow_on_may_15th/",
-            "author": "mtrycz",
-            "created_utc": 1652521918.0,
-            "score": 25,
-            "num_comments": 4,
-            "subreddit": "btc",
-            "selftext": "On May 15th, Bitcoin Cash will fork with two new cool improvements: Bigger Integers and Native Introspection. Check out the specs, for example, [here](https://upgradespecs.bitcoincashnode.org/2022-05-15-upgrade/) (as usual there is no one *official* source, I pasted the one that I had handy). \n\nThe fork/upgrade will happen when the first transaction that is incompatible with the old rules will be mined. And guess what, you can be part of this history, if you are so inclined. \n\n---\n\nu/bitcoincashautist has created an UTXO that is spendable only by using the new features. It's actually really clever, because with it, you can make history *while also* getting BCH for it. Do check out the details [in his recent thread](https://old.reddit.com/r/btc/comments/un6l6b/celebrating_bitcoin_cash_may2022_upgrade_2_bch/). The clock is ticking so hurry up!\n\n---\n\nIf you're not into riddles, and making history is a reward in itself, you can just propagate your own forking transaction, you can do so with this [script by Mr Culianu](https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/merge_requests/1537/diffs). Don't be intimidated, most of it is just boilerplate to avoid dependecies. This lets you wait for the right time to propagate a transaction, so that you don't need to do it manually. As written in the documentation, the usage is `poll_broadcast_txn.py <host> <port> <rpcuser> <rpcpass> <mtptarget> <txnhex> [sleeptime]`. Very conveniently, Mr Culianu has already set up a P2SH UTXO for this, and you can actually use the following to fork: \n\n`./poll_broadcast_txn.py localhost 8332 MyRPCUserName MyRPCPassword 1652616000 0200000001f3aaf89275c451ba0668a34dcbdb759a657ad2a2eee35fbee41d9fd825ebaf16000000007a10476f20424348212059617921010203044c677400a06375687400a06375687400a06375687400a06375687400a06375687400a06375687400a06375687400a06375680400000001040000000295070000000000000288c35188c4518800cd1976a9147ee7b62fa98a985c5553ff66120a91b8189f658188ac87ffffffff0119030000000000001976a9147ee7b62fa98a985c5553ff66120a91b8189f658188ac00000000`\n\nRequirements: an up to date bitcoind, python. \n\n---\n\nActually, you can do both, and solve u/bitcoincashautist's challenge beforehand, and plug the solution into Mr Culianu's script, and have it execute at the fork second. How awesome is that?\n\nAnyway, Happy Fork Day!",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8k6q8l",
-                    "author": "bitcoincashautist",
-                    "score": 8,
-                    "created_utc": 1652522286.0,
-                    "response": "Considering we're getting close, here's a little more help/spoiler, this is how I spent from that contract on testnet: https://testnet4.imaginary.cash/tx/f8aa63ebedfc1292a4617720965ad2de35c9655b624cfabbbfed351d564d608a",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8kcl2v",
-                    "author": "lugaxker",
-                    "score": 4,
-                    "created_utc": 1652527131.0,
-                    "response": "I'll give it a try. Really fun to code transactions again!",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8kevhk",
-                    "author": "MobTwo",
-                    "score": 3,
-                    "created_utc": 1652528794.0,
-                    "response": "Great job to the developers. I have a way of thinking how we may promote the technical upgrades in the future.\n\nIn my opinion, most people are non-technical and lack the ability to understand why these big integers or native introspection matter. They sound like another technical word to them and so they don't connect with it. And if they are unable to see how it is beneficial to them, they are less likely to invest in the coin.\n\nMy opinion is that we might want to start thinking about the marketing approach where we emphasize the potential outcomes of the upgrades rather than the technical outcomes. This computer has 16gb ram doesn't sound as exciting as you can finally play the video games you love without lag and at ultra high definition. This iPhone has xefi 4d technology doesn't sound as exciting as you can see and speak to your family as if they are right beside you.\n\nIt also helps to make it easy for journalists to write about BCH if they understand things more easily.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "upcf2w",
             "title": "Tether\u2019s IT guy confirms that everything is fine! #USDT",
             "url": "https://i.redd.it/iuf0r7pmdez81.jpg",
@@ -240,19 +199,6 @@
                     "comments": []
                 }
             ]
-        },
-        {
-            "id": "upaitb",
-            "title": "Tether, for the first time ever has burned a significant amount of Tether. 5 billion in total. The end of what has been build up since 2016 might be near.",
-            "url": "https://www.reddit.com/r/btc/comments/upaitb/tether_for_the_first_time_ever_has_burned_a/",
-            "author": "i_have_chosen_a_name",
-            "created_utc": 1652506855.0,
-            "score": 14,
-            "num_comments": 15,
-            "subreddit": "btc",
-            "selftext": "We all know Tether is pure fraud. However nobody really knows how many reserves they have, if those are in crypto or in cash or in whatever.\n\nThey are a black box. \n\nThis 5 billion, is it them pretending to cashing out a whale?\n\nAre THEY cashing out themselves?\n\nDid they really just redeem 5 billion Tether for 5 billion dollars?\n\nNobody knows ... well somebody does ... but it's not me or you. \n\nWe all know that one day Tether will die.\n\nIt's very possible that it will happen now.\n\nRight now after these massive crashes, everybody is expecting a recovery.\n\nBut if the fed announces they are touching interest rates again or if Europe and the USA come out with strict regulation on stablecoins.\n\nThis might spook the stablecoin system. When there is panic amongst the whales, the entire cryptocurrency system will follow luna in absolutely no time.\n\nIt will be unlike anything the world has ever seen. \n\nThis is the best thing ever for P2P cash cause it will be the great reset after which everybody loses almost everything.\n\nAnd BCH can start over from basically zero, trying to find adoption. \n\nBut in the process the price of BCH will dip and dip and dip and dip and dip.\n\nIf there are cryptocurrencies that survives such a reset it will be only three. Ethereum, monero and Bitcoin Cash.\n\nSure, Bitcoin will look to the be the first recovering. But then people will be like: wait a minute, this stuff has no utility why does it have value?\n\nThe world post Tether will be radically different.\n\nOne way of looking at the insane increase of stablecoins the last 2 years is the following.\n\nIf you believe the prices of cryptocurrencies will go up, you don't put your money in stablecoins.\n\nSo that means the more stable coins there are and the more money in those stablecoins the more people bet on the prices of crypto going down, not up. \n\nBUSD, USDC, DAI .... they should survive.\n\nAnd once Tether is gone, the system will be much fairer for Ethereum, monero and Bitcoin Cash.\n\nIf this reset happens it's pretty much a given that Ethereum will overtake Bitcoin in marketcap, because of it's utility. \n\nBecause of all the stablecoins and tokens on Ethereum it's more economic resilient then Bitcoin.\n\nBitcoin only has one thing going for it. The high price and the believe that the price will go even higher.\n\nSomething happens to Tether that causes the right amount of panic and that Bitcoin believe melts like snow when the sun comes up.\n\nAnd then Bitcoin has nothing left. \n\nI could see all of this play out in just 3 weeks. \n\nLuna went to zero in 3 days. 99,9% of crypto could go to zero in just 3 weeks. \n\nAnd even if you would short, you would most likely still lose because of how Tether has infected every single part of the ecosystem.\n\nLuna went down in just 3 days. The moon went blood red. Maybe it's a sign. And everybody is incredibly nervous right now, and this makes for the perfect possible panic.",
-            "stickied": false,
-            "comments": []
         },
         {
             "id": "up7krw",
@@ -700,19 +646,6 @@
                     "comments": []
                 }
             ]
-        },
-        {
-            "id": "up4e0w",
-            "title": "I think he woke up after this",
-            "url": "https://i.redd.it/jmsc0m70wbz81.png",
-            "author": "MisterChoky",
-            "created_utc": 1652484817.0,
-            "score": 8,
-            "num_comments": 2,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
         },
         {
             "id": "uovwdd",
@@ -1657,19 +1590,6 @@
             ]
         },
         {
-            "id": "uol4iy",
-            "title": "Meet Marc De Mesel, a seasoned investor since 2008 and a legend in the Bitcoin Cash space",
-            "url": "https://read.cash/@alberdioni8406/meet-marc-de-mesel-a-seasoned-investor-since-2008-and-a-legend-in-the-bitcoin-cash-space-bd20791f",
-            "author": "alberdioni8406_",
-            "created_utc": 1652421870.0,
-            "score": 6,
-            "num_comments": 3,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
-        },
-        {
             "id": "uo76w7",
             "title": "Tether supply convulsing and BTC mempool rocketing UHH OHH",
             "url": "https://www.reddit.com/r/btc/comments/uo76w7/tether_supply_convulsing_and_btc_mempool/",
@@ -1911,19 +1831,6 @@
                     "comments": []
                 }
             ]
-        },
-        {
-            "id": "uoi67p",
-            "title": "\"Kwontitative easing gone wrong\"",
-            "url": "https://www.reddit.com/r/btc/comments/uoi67p/kwontitative_easing_gone_wrong/",
-            "author": "RicRic920",
-            "created_utc": 1652410877.0,
-            "score": 9,
-            "num_comments": 3,
-            "subreddit": "btc",
-            "selftext": "https://twitter.com/BCHpizza_org/status/1524930059072847873",
-            "stickied": false,
-            "comments": []
         },
         {
             "id": "uo89lp",
@@ -5167,6 +5074,149 @@
             "num_comments": 3,
             "subreddit": "btc",
             "selftext": "Hey, Just want to let you know, with your help and 3 tipps i won the bet against my working college and He payed my Chinese food :D so thank you all :)  ps: He want to check out bitcoin and Co also now :D",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "updxq0",
+            "title": "Help the devs make history tomorrow, on May 15th, the upgrade day",
+            "url": "https://www.reddit.com/r/btc/comments/updxq0/help_the_devs_make_history_tomorrow_on_may_15th/",
+            "author": "mtrycz",
+            "created_utc": 1652521918.0,
+            "score": 47,
+            "num_comments": 15,
+            "subreddit": "btc",
+            "selftext": "On May 15th, Bitcoin Cash will fork with two new cool improvements: Bigger Integers and Native Introspection. Check out the specs, for example, [here](https://upgradespecs.bitcoincashnode.org/2022-05-15-upgrade/) (as usual there is no one *official* source, I pasted the one that I had handy). \n\nThe fork/upgrade will happen when the first transaction that is incompatible with the old rules will be mined. And guess what, you can be part of this history, if you are so inclined. \n\n---\n\nu/bitcoincashautist has created an UTXO that is spendable only by using the new features. It's actually really clever, because with it, you can make history *while also* getting BCH for it. Do check out the details [in his recent thread](https://old.reddit.com/r/btc/comments/un6l6b/celebrating_bitcoin_cash_may2022_upgrade_2_bch/). The clock is ticking so hurry up!\n\n---\n\nIf you're not into riddles, and making history is a reward in itself, you can just propagate your own forking transaction, you can do so with this [script by Mr Culianu](https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/merge_requests/1537/diffs). Don't be intimidated, most of it is just boilerplate to avoid dependecies. This lets you wait for the right time to propagate a transaction, so that you don't need to do it manually. As written in the documentation, the usage is `poll_broadcast_txn.py <host> <port> <rpcuser> <rpcpass> <mtptarget> <txnhex> [sleeptime]`. Very conveniently, Mr Culianu has already set up a P2SH UTXO for this, and you can actually use the following to fork: \n\n`./poll_broadcast_txn.py localhost 8332 MyRPCUserName MyRPCPassword 1652616000 0200000001f3aaf89275c451ba0668a34dcbdb759a657ad2a2eee35fbee41d9fd825ebaf16000000007a10476f20424348212059617921010203044c677400a06375687400a06375687400a06375687400a06375687400a06375687400a06375687400a06375687400a06375680400000001040000000295070000000000000288c35188c4518800cd1976a9147ee7b62fa98a985c5553ff66120a91b8189f658188ac87ffffffff0119030000000000001976a9147ee7b62fa98a985c5553ff66120a91b8189f658188ac00000000`\n\nRequirements: an up to date bitcoind, python. \n\n---\n\nActually, you can do both, and solve u/bitcoincashautist's challenge beforehand, and plug the solution into Mr Culianu's script, and have it execute at the fork second. How awesome is that?\n\nAnyway, Happy Fork Day!",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8kevhk",
+                    "author": "MobTwo",
+                    "score": 11,
+                    "created_utc": 1652528794.0,
+                    "response": "Great job to the developers. I have a way of thinking how we may promote the technical upgrades in the future.\n\nIn my opinion, most people are non-technical and lack the ability to understand why these big integers or native introspection matter. They sound like another technical word to them and so they don't connect with it. And if they are unable to see how it is beneficial to them, they are less likely to invest in the coin.\n\nMy opinion is that we might want to start thinking about the marketing approach where we emphasize the potential outcomes of the upgrades rather than the technical outcomes. This computer has 16gb ram doesn't sound as exciting as you can finally play the video games you love without lag and at ultra high definition. This iPhone has xefi 4d technology doesn't sound as exciting as you can see and speak to your family as if they are right beside you.\n\nIt also helps to make it easy for journalists to write about BCH if they understand things more easily.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8klykq",
+                            "author": "Bad_Chicken_2",
+                            "score": 6,
+                            "created_utc": 1652533293.0,
+                            "response": "I completely agree. I'm somewhat technical, but not when it comes to cryptocurrencies. This post left me with questions like \"what's the big deal?\" and \"is my BCH at risk?\".",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8kqxfo",
+                                    "author": "locuester",
+                                    "score": 5,
+                                    "created_utc": 1652536008.0,
+                                    "response": "I\u2019m a crypto engineer and a 10 year bitcoin holder. This post left me perplexed as well. No clue what these new features are.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8k6q8l",
+                    "author": "bitcoincashautist",
+                    "score": 9,
+                    "created_utc": 1652522286.0,
+                    "response": "Considering we're getting close, here's a little more help/spoiler, this is how I spent from that contract on testnet: https://testnet4.imaginary.cash/tx/f8aa63ebedfc1292a4617720965ad2de35c9655b624cfabbbfed351d564d608a",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8kcl2v",
+                    "author": "lugaxker",
+                    "score": 4,
+                    "created_utc": 1652527131.0,
+                    "response": "I'll give it a try. Really fun to code transactions again!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8kk5ey",
+                            "author": "mtrycz",
+                            "score": 3,
+                            "created_utc": 1652532225.0,
+                            "response": "If you give it a go, you could possibly implement a transaction that spends from bitcoincashautist's contract back to itself, so anybody can propagate it, and be part of history with a simple script. \n\nThe more crafty people could modify it to claim the BCH reward, but would probably take some time. \n\nAnyway, cheers!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upaitb",
+            "title": "Tether, for the first time ever has burned a significant amount of Tether. 5 billion in total. The end of what has been build up since 2016 might be near.",
+            "url": "https://www.reddit.com/r/btc/comments/upaitb/tether_for_the_first_time_ever_has_burned_a/",
+            "author": "i_have_chosen_a_name",
+            "created_utc": 1652506855.0,
+            "score": 20,
+            "num_comments": 26,
+            "subreddit": "btc",
+            "selftext": "We all know Tether is pure fraud. However nobody really knows how many reserves they have, if those are in crypto or in cash or in whatever.\n\nThey are a black box. \n\nThis 5 billion, is it them pretending to cashing out a whale?\n\nAre THEY cashing out themselves?\n\nDid they really just redeem 5 billion Tether for 5 billion dollars?\n\nNobody knows ... well somebody does ... but it's not me or you. \n\nWe all know that one day Tether will die.\n\nIt's very possible that it will happen now.\n\nRight now after these massive crashes, everybody is expecting a recovery.\n\nBut if the fed announces they are touching interest rates again or if Europe and the USA come out with strict regulation on stablecoins.\n\nThis might spook the stablecoin system. When there is panic amongst the whales, the entire cryptocurrency system will follow luna in absolutely no time.\n\nIt will be unlike anything the world has ever seen. \n\nThis is the best thing ever for P2P cash cause it will be the great reset after which everybody loses almost everything.\n\nAnd BCH can start over from basically zero, trying to find adoption. \n\nBut in the process the price of BCH will dip and dip and dip and dip and dip.\n\nIf there are cryptocurrencies that survives such a reset it will be only three. Ethereum, monero and Bitcoin Cash.\n\nSure, Bitcoin will look to the be the first recovering. But then people will be like: wait a minute, this stuff has no utility why does it have value?\n\nThe world post Tether will be radically different.\n\nOne way of looking at the insane increase of stablecoins the last 2 years is the following.\n\nIf you believe the prices of cryptocurrencies will go up, you don't put your money in stablecoins.\n\nSo that means the more stable coins there are and the more money in those stablecoins the more people bet on the prices of crypto going down, not up. \n\nBUSD, USDC, DAI .... they should survive.\n\nAnd once Tether is gone, the system will be much fairer for Ethereum, monero and Bitcoin Cash.\n\nIf this reset happens it's pretty much a given that Ethereum will overtake Bitcoin in marketcap, because of it's utility. \n\nBecause of all the stablecoins and tokens on Ethereum it's more economic resilient then Bitcoin.\n\nBitcoin only has one thing going for it. The high price and the believe that the price will go even higher.\n\nSomething happens to Tether that causes the right amount of panic and that Bitcoin believe melts like snow when the sun comes up.\n\nAnd then Bitcoin has nothing left. \n\nI could see all of this play out in just 3 weeks. \n\nLuna went to zero in 3 days. 99,9% of crypto could go to zero in just 3 weeks. \n\nAnd even if you would short, you would most likely still lose because of how Tether has infected every single part of the ecosystem.\n\nLuna went down in just 3 days. The moon went blood red. Maybe it's a sign. And everybody is incredibly nervous right now, and this makes for the perfect possible panic.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8jv31i",
+                    "author": "emage_",
+                    "score": 3,
+                    "created_utc": 1652511981.0,
+                    "response": "The FUD is real! \ud83d\ude05",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8k1ifh",
+                            "author": "i_have_chosen_a_name",
+                            "score": 3,
+                            "created_utc": 1652517567.0,
+                            "response": "Yes, absolutely. This was one of the violent crashes ever, all\nTop 10 coins crashed 40% or more in 10 days or less. We went from 3 trillion to 1.2 a 60%  reduction in about 6 months. I guess now we will trail down another 50% in the next 2 years and  then another bull market? \n\nBut these cycles they won\u2019t keep repeating, they are not a given. Just because we usually crash 80% from ath does not mean it won\u2019t be 95% this time.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "up4e0w",
+            "title": "I think he woke up after this",
+            "url": "https://i.redd.it/jmsc0m70wbz81.png",
+            "author": "MisterChoky",
+            "created_utc": 1652484817.0,
+            "score": 7,
+            "num_comments": 3,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "uol4iy",
+            "title": "Meet Marc De Mesel, a seasoned investor since 2008 and a legend in the Bitcoin Cash space",
+            "url": "https://read.cash/@alberdioni8406/meet-marc-de-mesel-a-seasoned-investor-since-2008-and-a-legend-in-the-bitcoin-cash-space-bd20791f",
+            "author": "alberdioni8406_",
+            "created_utc": 1652421870.0,
+            "score": 6,
+            "num_comments": 4,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "uoi67p",
+            "title": "\"Kwontitative easing gone wrong\"",
+            "url": "https://www.reddit.com/r/btc/comments/uoi67p/kwontitative_easing_gone_wrong/",
+            "author": "RicRic920",
+            "created_utc": 1652410877.0,
+            "score": 9,
+            "num_comments": 4,
+            "subreddit": "btc",
+            "selftext": "https://twitter.com/BCHpizza_org/status/1524930059072847873",
             "stickied": false,
             "comments": []
         }
