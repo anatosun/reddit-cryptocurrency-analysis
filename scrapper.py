@@ -74,6 +74,7 @@ def main():
 
     for s, p in enumerate(ps):
         logger(f"finished job for {subreddits[s]}; errors: {p.exception()}", "main")
+        print(p.result())
 
 
 def parse_existing_ids(file):
