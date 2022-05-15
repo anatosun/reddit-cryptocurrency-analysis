@@ -22,29 +22,6 @@
             "comments": []
         },
         {
-            "id": "umrgxl",
-            "title": "Why 13 TPS? Where does the time go?",
-            "url": "https://www.reddit.com/r/ethereum/comments/umrgxl/why_13_tps_where_does_the_time_go/",
-            "author": "AdamSpitz",
-            "created_utc": 1652213265.0,
-            "score": 5,
-            "num_comments": 23,
-            "subreddit": "ethereum",
-            "selftext": "(I don't mean this to be a Blockchain Holy War question! I'm asking a technical question, not a philosophical one.)\n\nI keep hearing that Ethereum layer-1 is capable of doing something on the order of 13 transactions per second (give or take, depending on the complexity of the transaction). Why is that? Like, what exactly is so expensive about processing Ethereum transactions, such that a normal computer can only do 13 of them in a second?\n\nI understand that L1 (rightly!) prioritizes decentralization, and that from now on apps should be built on L2s, and that L2s' TPS can be much much higher.\n\nI understand that Ethereum L1 is meant to run on consumer hardware, for the sake of decentralization, and so throughput is intentionally kept low enough that reasonably-cheap hardware can handle it.\n\nI'm just kinda confused because 13 TPS still seems like a surprisingly low number for a modern-but-ordinary consumer laptop. How is all that time being spent?\n\n(e.g. I'm imagining that the answer might be something like, \"Modern cryptographic hash functions are pretty expensive to run, and Ethereum nodes have to do a whole bunch of hashes for every block, and that's where most of the time goes.\" Or, \"Every block requires downloading a whole bunch of data; most of the time is spent waiting for data to be transferred over the network.\" Or something like that. But I'm just making those up; I don't know what the real costs are, so I'm wondering if anyone here can help me understand.)",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i83vmhw",
-                    "author": "Perleflamme",
-                    "score": 7,
-                    "created_utc": 1652220413.0,
-                    "response": "It's ~55 TPS on average, with 21k gas per transaction handling native token transfer (the simplest transaction that can easily be compared with other chains). You can check it yourself knowing that there are 15M gas on average per block every ~13s and 21k gas per transaction. \n\nTo be noted: some chains advertise their maximum TPS rather than their average TPS. To compare maximum TPS, simply double the average TPS of Ethereum, as it's 15M gas on average, but 30M gas max. Though consuming max gas would be extremely expensive extremely quickly, as for many other chains.\n\nThe biggest issue with more TPS is storing the result in the chain. The ever growing size of the chain is a problem in itself, as nodes aren't paid, they're benevolent.\n\nThere is work intended to be done about that, notably to reduce the chain size: notably statelightness and statelessness. But it's still far from being the priority.\n\nThe best bet to improve scalability indeed is to ensure work is done off chain (hence layer 2) and data storage consumption per data is reduced (data compression).",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "t6cyvq",
             "title": "ConsenSys lawsuit reveals JPMorgan owns critical Ethereum infrastructure: MetaMask, Infura || Are you kidding?!",
             "url": "https://protos.com/consensys-lawsuit-jpmorgan-owns-critical-ethereum-infrastructure/",
@@ -2113,26 +2090,13 @@
             ]
         },
         {
-            "id": "unaguf",
-            "title": "Bancor 3 Goes Live With Polygon, Yearn, Others as Partners",
-            "url": "https://www.coindesk.com/tech/2022/05/11/bancor-3-goes-live-with-polygon-yearn-others-as-partners/",
-            "author": "waysixyes",
-            "created_utc": 1652277475.0,
-            "score": 28,
-            "num_comments": 4,
-            "subreddit": "ethereum",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
-        },
-        {
             "id": "un12cl",
             "title": "Releasing our Layer 2 wallet for Opti and Arbi: Token prices, DeFi Portfolio, Push alerts, Decoded transaction history and more",
             "url": "https://medium.com/imtoken/major-arbitrum-release-everything-you-need-from-beginner-to-degen-e45c8380db45",
             "author": "imToken",
             "created_utc": 1652242004.0,
-            "score": 15,
-            "num_comments": 5,
+            "score": 16,
+            "num_comments": 7,
             "subreddit": "ethereum",
             "selftext": "",
             "stickied": false,
@@ -2149,13 +2113,26 @@
             ]
         },
         {
+            "id": "unaguf",
+            "title": "Bancor 3 Goes Live With Polygon, Yearn, Others as Partners",
+            "url": "https://www.coindesk.com/tech/2022/05/11/bancor-3-goes-live-with-polygon-yearn-others-as-partners/",
+            "author": "waysixyes",
+            "created_utc": 1652277475.0,
+            "score": 29,
+            "num_comments": 8,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
             "id": "umxd7u",
             "title": "is trust wallet controled by binance?",
             "url": "https://www.reddit.com/r/ethereum/comments/umxd7u/is_trust_wallet_controled_by_binance/",
             "author": "themediagrapher",
             "created_utc": 1652229954.0,
             "score": 8,
-            "num_comments": 12,
+            "num_comments": 16,
             "subreddit": "ethereum",
             "selftext": "Beginner question here, does trust wallet dependent on binance? If binancy disappears or go bankrupt does that affect trustwallet at all?\nI Know hardware wallet are the most safe option but I don't have access to those,\nI would go for a paper wallet but I am also not sure what would be the safest way to do that how to securely generate it, so I am considering trust wallet unless someone knows a safe way to generate a paper wallet for long term storage? Any ideas?",
             "stickied": false,
@@ -2172,13 +2149,71 @@
             ]
         },
         {
+            "id": "umwyjt",
+            "title": "Getting prices for non standard tokens? e.g. Uniswap LP tokens with an oracle",
+            "url": "/r/ethdev/comments/umwyd3/getting_prices_for_non_standard_tokens_eg_uniswap/",
+            "author": "Bitman321",
+            "created_utc": 1652228671.0,
+            "score": 3,
+            "num_comments": 6,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "umrgxl",
+            "title": "Why 13 TPS? Where does the time go?",
+            "url": "https://www.reddit.com/r/ethereum/comments/umrgxl/why_13_tps_where_does_the_time_go/",
+            "author": "AdamSpitz",
+            "created_utc": 1652213265.0,
+            "score": 5,
+            "num_comments": 31,
+            "subreddit": "ethereum",
+            "selftext": "(I don't mean this to be a Blockchain Holy War question! I'm asking a technical question, not a philosophical one.)\n\nI keep hearing that Ethereum layer-1 is capable of doing something on the order of 13 transactions per second (give or take, depending on the complexity of the transaction). Why is that? Like, what exactly is so expensive about processing Ethereum transactions, such that a normal computer can only do 13 of them in a second?\n\nI understand that L1 (rightly!) prioritizes decentralization, and that from now on apps should be built on L2s, and that L2s' TPS can be much much higher.\n\nI understand that Ethereum L1 is meant to run on consumer hardware, for the sake of decentralization, and so throughput is intentionally kept low enough that reasonably-cheap hardware can handle it.\n\nI'm just kinda confused because 13 TPS still seems like a surprisingly low number for a modern-but-ordinary consumer laptop. How is all that time being spent?\n\n(e.g. I'm imagining that the answer might be something like, \"Modern cryptographic hash functions are pretty expensive to run, and Ethereum nodes have to do a whole bunch of hashes for every block, and that's where most of the time goes.\" Or, \"Every block requires downloading a whole bunch of data; most of the time is spent waiting for data to be transferred over the network.\" Or something like that. But I'm just making those up; I don't know what the real costs are, so I'm wondering if anyone here can help me understand.)",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i83vmhw",
+                    "author": "Perleflamme",
+                    "score": 9,
+                    "created_utc": 1652220413.0,
+                    "response": "It's ~55 TPS on average, with 21k gas per transaction handling native token transfer (the simplest transaction that can easily be compared with other chains). You can check it yourself knowing that there are 15M gas on average per block every ~13s and 21k gas per transaction. \n\nTo be noted: some chains advertise their maximum TPS rather than their average TPS. To compare maximum TPS, simply double the average TPS of Ethereum, as it's 15M gas on average, but 30M gas max. Though consuming max gas would be extremely expensive extremely quickly, as for many other chains.\n\nThe biggest issue with more TPS is storing the result in the chain. The ever growing size of the chain is a problem in itself, as nodes aren't paid, they're benevolent.\n\nThere is work intended to be done about that, notably to reduce the chain size: notably statelightness and statelessness. But it's still far from being the priority.\n\nThe best bet to improve scalability indeed is to ensure work is done off chain (hence layer 2) and data storage consumption per data is reduced (data compression).",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i83ocwo",
+                    "author": "43345243235",
+                    "score": 3,
+                    "created_utc": 1652217358.0,
+                    "response": "13 TPS is for security reasons, not because it takes a long time to compute transactions\n\nbitcoin could support as many TPS as it wanted to by increasing block size and decreasing block difficulty (ie the time to mine each new block). But it keeps block size low and block difficulty high because the slower you add data to the blockchain, the more secure it is.\n\nActually litecoin is just a less-secure higher-TPS bitcoin (its just bitcoin with a larger block size and lower block difficulty)\n\nso anyway, ethereum could increase TPS as much as we wanted, just by increasing block size and/or decreasing block difficulty. But we don't do that, because we care about security.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ums2lw",
+            "title": "Crypto & DeFi Security Subreddit",
+            "url": "https://www.reddit.com/r/ethereum/comments/ums2lw/crypto_defi_security_subreddit/",
+            "author": "rfhacker",
+            "created_utc": 1652214878.0,
+            "score": 3,
+            "num_comments": 6,
+            "subreddit": "ethereum",
+            "selftext": "Howdy Eth fam, for those who might be interested in Crypto/DeFi/Chain security related topics, we've started a subreddit:\n\n/r/DeFiSecurity \\- Decentralized Finance (DeFi) and Crypto Cybersecurity related Conversations\n\nIf this is an area of interest, please drop in, join and add to the conversations...thanks!",
+            "stickied": false,
+            "comments": []
+        },
+        {
             "id": "umpc19",
             "title": "Does Proof of Stake use the longest blockchain rule ?",
             "url": "https://www.reddit.com/r/ethereum/comments/umpc19/does_proof_of_stake_use_the_longest_blockchain/",
             "author": "Griimlix",
             "created_utc": 1652207379.0,
-            "score": 4,
-            "num_comments": 12,
+            "score": 5,
+            "num_comments": 16,
             "subreddit": "ethereum",
             "selftext": "When the selected validator add a block, how is the broadcast of the new block happening ? I can't find good sources about this topic.",
             "stickied": false,
@@ -2186,7 +2221,7 @@
                 {
                     "id": "i832xpr",
                     "author": "shim__",
-                    "score": 6,
+                    "score": 7,
                     "created_utc": 1652208828.0,
                     "response": "Longest chain relies on there being a difficulty which does not exist in PoS. The valid chain is simply selected by following the trail of valid attestations.",
                     "depth": 1,
@@ -2202,32 +2237,6 @@
                     "comments": []
                 }
             ]
-        },
-        {
-            "id": "umwyjt",
-            "title": "Getting prices for non standard tokens? e.g. Uniswap LP tokens with an oracle",
-            "url": "/r/ethdev/comments/umwyd3/getting_prices_for_non_standard_tokens_eg_uniswap/",
-            "author": "Bitman321",
-            "created_utc": 1652228671.0,
-            "score": 3,
-            "num_comments": 3,
-            "subreddit": "ethereum",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
-        },
-        {
-            "id": "ums2lw",
-            "title": "Crypto & DeFi Security Subreddit",
-            "url": "https://www.reddit.com/r/ethereum/comments/ums2lw/crypto_defi_security_subreddit/",
-            "author": "rfhacker",
-            "created_utc": 1652214878.0,
-            "score": 3,
-            "num_comments": 3,
-            "subreddit": "ethereum",
-            "selftext": "Howdy Eth fam, for those who might be interested in Crypto/DeFi/Chain security related topics, we've started a subreddit:\n\n/r/DeFiSecurity \\- Decentralized Finance (DeFi) and Crypto Cybersecurity related Conversations\n\nIf this is an area of interest, please drop in, join and add to the conversations...thanks!",
-            "stickied": false,
-            "comments": []
         }
     ]
 }

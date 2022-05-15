@@ -22,48 +22,6 @@
             "comments": []
         },
         {
-            "id": "ul1utb",
-            "title": "When it comes to zero knowledge proofs, how does it practically work in a private chain?",
-            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ul1utb/when_it_comes_to_zero_knowledge_proofs_how_does/",
-            "author": "RedEagle_MGN",
-            "created_utc": 1652016906.0,
-            "score": 29,
-            "num_comments": 7,
-            "subreddit": "CryptoTechnology",
-            "selftext": "I get that ZK can allow you to share info without sharing the exact info, e.g.:\n\nQuestion: Does Bob drink 10 cups of coffee a day\n\nAnswer: Yes, Bob drinks more than 10 cups of coffee a day but I am not going to tell you how many.\n\n&#x200B;\n\nBut how do ZK proofs practically work in a private chain?\n\nAs I see it the Blockchain is like a paper. Each node is a copy of the piece of paper and transactions are validates across nodes. With ZK proofs, is all the transaction data (who is sending what to who, how much is in each wallet, who requested the info and who verified it), is that all private or is the meta data still exposed?  \nIf the above is the case, why isn't ZK used in all cases on all blockchains?\n\nIs all the validation or just the info sent to companies private? \n\nWould not the 20x number of calculations needed for ZK for everything cause HUGE efficiency problems?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7t6tg0",
-                    "author": "DATY4944",
-                    "score": 6,
-                    "created_utc": 1652025974.0,
-                    "response": "I thought zk proofs is like proving you control a private key without giving away the private key. Your example doesn't quite fit the intent that I'm familiar with.\n\nIt's like.. I can unlock a safe and let you have some of the contents without telling you the safe key.\n\nOr a better example: I can prove I know the safe key without even opening the safe.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i7t84ay",
-                            "author": "T0Bii",
-                            "score": 3,
-                            "created_utc": 1652026546.0,
-                            "response": "That's one use case but you can proof lots of different things without sharing the information.",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i7tvrd2",
-                    "author": "Dormage",
-                    "score": 6,
-                    "created_utc": 1652036853.0,
-                    "response": "Zkp are just cryptographic protocols. They dont enforce a particular use. You can use them for many things but in general the protocols can be used for what you say.\n\nYou can prove you have some data, without sending the data. But not just any data, we need ana greement on that as well. Unkess your protocol is about coffee cups, you cant verify hoe many someone drank. In public chains, the data is transactions. In a private chain setup, it depends on the usecase.\n\nThere isnt realy much value to be gained by a private blockchain anyway. I suppose you could come up with some type of application where users need to provide a proof they have some digital information without violating ther privacy but the security considerations of the private network will outweight the privacy concerns.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "ukvhvw",
             "title": "ZK Rollups are the missing piece to complete the blockchain scaling solution puzzle",
             "url": "https://www.reddit.com/r/CryptoTechnology/comments/ukvhvw/zk_rollups_are_the_missing_piece_to_complete_the/",
@@ -214,6 +172,48 @@
                     "score": 3,
                     "created_utc": 1652010747.0,
                     "response": "Rollups solve the issues of computation and state storage, however they're still limited by historical data availability (the \"data availability problem\")\n\nThis issue either needs to be solved by the L1 (data sharding, danksharding and EIP-4844 proto-danksharding), or can also be addressed by using a different platform for data availability (such as Celestia or ZKSync's ZK-porter)",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ul1utb",
+            "title": "When it comes to zero knowledge proofs, how does it practically work in a private chain?",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ul1utb/when_it_comes_to_zero_knowledge_proofs_how_does/",
+            "author": "RedEagle_MGN",
+            "created_utc": 1652016906.0,
+            "score": 30,
+            "num_comments": 10,
+            "subreddit": "CryptoTechnology",
+            "selftext": "I get that ZK can allow you to share info without sharing the exact info, e.g.:\n\nQuestion: Does Bob drink 10 cups of coffee a day\n\nAnswer: Yes, Bob drinks more than 10 cups of coffee a day but I am not going to tell you how many.\n\n&#x200B;\n\nBut how do ZK proofs practically work in a private chain?\n\nAs I see it the Blockchain is like a paper. Each node is a copy of the piece of paper and transactions are validates across nodes. With ZK proofs, is all the transaction data (who is sending what to who, how much is in each wallet, who requested the info and who verified it), is that all private or is the meta data still exposed?  \nIf the above is the case, why isn't ZK used in all cases on all blockchains?\n\nIs all the validation or just the info sent to companies private? \n\nWould not the 20x number of calculations needed for ZK for everything cause HUGE efficiency problems?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7t6tg0",
+                    "author": "DATY4944",
+                    "score": 8,
+                    "created_utc": 1652025974.0,
+                    "response": "I thought zk proofs is like proving you control a private key without giving away the private key. Your example doesn't quite fit the intent that I'm familiar with.\n\nIt's like.. I can unlock a safe and let you have some of the contents without telling you the safe key.\n\nOr a better example: I can prove I know the safe key without even opening the safe.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7t84ay",
+                            "author": "T0Bii",
+                            "score": 4,
+                            "created_utc": 1652026546.0,
+                            "response": "That's one use case but you can proof lots of different things without sharing the information.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7tvrd2",
+                    "author": "Dormage",
+                    "score": 5,
+                    "created_utc": 1652036853.0,
+                    "response": "Zkp are just cryptographic protocols. They dont enforce a particular use. You can use them for many things but in general the protocols can be used for what you say.\n\nYou can prove you have some data, without sending the data. But not just any data, we need ana greement on that as well. Unkess your protocol is about coffee cups, you cant verify hoe many someone drank. In public chains, the data is transactions. In a private chain setup, it depends on the usecase.\n\nThere isnt realy much value to be gained by a private blockchain anyway. I suppose you could come up with some type of application where users need to provide a proof they have some digital information without violating ther privacy but the security considerations of the private network will outweight the privacy concerns.",
                     "depth": 1,
                     "comments": []
                 }

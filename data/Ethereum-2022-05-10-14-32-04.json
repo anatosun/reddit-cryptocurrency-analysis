@@ -261,94 +261,6 @@
             ]
         },
         {
-            "id": "umeld2",
-            "title": "stuck eth transaction",
-            "url": "https://www.reddit.com/r/ethereum/comments/umeld2/stuck_eth_transaction/",
-            "author": "Cloughy16",
-            "created_utc": 1652174443.0,
-            "score": 9,
-            "num_comments": 10,
-            "subreddit": "ethereum",
-            "selftext": "Hello, 5 days ago I sent an ETH transaction with my ledger nano S, used too low of a gas fee like a fool now its stuck.\n\nI have tried resending the TXN of the same Nonce with metamask however I just get a fail message every time.\n\nLedger support said they cannot do anything\n\nany help would be appreciated.\n\nThanks",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i81d0mc",
-                    "author": "Wurstgewitter",
-                    "score": 4,
-                    "created_utc": 1652181666.0,
-                    "response": "What exactly is the fail message you get in Metamask? Sending the tx again on the same nonce with higher gas is the correct way, this should allow you to replace a pending tx.\n\nAlternatively you can send a 0 ETH tx to yourself, on the same nonce as the pending tx, to cancel the pending transaction, and then try again after the 0 ETH tx confirmed.\n\nThere is also this simple web app allowing you to do the same [https://cancel-ethereum-transactions.web.app/](https://cancel-ethereum-transactions.web.app/) (You should confirm yourself that this is the correct link, never trust strangers on the internet)",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i81rlph",
-                            "author": "lanatork",
-                            "score": 3,
-                            "created_utc": 1652189585.0,
-                            "response": "That website is a bit scammy. When I click on cancel there is a checkbox labeled \"Buy me a beer\". But no matter if it is selected or not it will still send some ETH to the same address, which seems to be the developer of the website. I don't mind if they want a small tip, because the provide a valuable service, but in my opinion they should be clearer about it.  \n\n\nMetaMask has a support page, which gives some advice on how to solve this: https://metamask.zendesk.com/hc/en-us/articles/360015489251-How-to-speed-up-or-cancel-a-pending-transaction",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "umckvw",
-            "title": "Bancor V3 is Set to Launch in May",
-            "url": "https://cryptomode.com/bancor-v3-is-set-to-launch-in-may/",
-            "author": "jantranek",
-            "created_utc": 1652165681.0,
-            "score": 40,
-            "num_comments": 9,
-            "subreddit": "ethereum",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
-        },
-        {
-            "id": "um6b0h",
-            "title": "Just in the last few weeks, Polygon has partnered with Twitter via Stripe and now Meta (Facebook & Instagram)",
-            "url": "https://www.coindesk.com/business/2022/05/08/metas-instagram-to-support-nfts-from-ethereum-polygon-solana-flow/",
-            "author": "nousemercenary",
-            "created_utc": 1652144625.0,
-            "score": 86,
-            "num_comments": 12,
-            "subreddit": "ethereum",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i81s3dg",
-                    "author": "TranceMist",
-                    "score": 17,
-                    "created_utc": 1652189812.0,
-                    "response": "It is so clear to me what Facebook is doing here:\n\n>\tInstagram intends to support widely used crypto wallets such as MetaMask. Plugging in their wallets, users will be able to prove NFT ownership, showcase them on their profiles and tag the creators who made them.\n\nThey want to extend their data about you into the blockchain world so they can graph who\u2019s doing what in the blockchain world.\n\nTo do this they need to map real people to blockchain addresses. What better way to do it than to have the users themselves give Facebook all of the data.\n\nThen they can sell this data to people who want to target you based on your crypto activity and holdings.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i808a95",
-                    "author": "EasyRawlins",
-                    "score": 9,
-                    "created_utc": 1652152390.0,
-                    "response": "MATIC, that chain that went offline for 11hrs in march?",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i80mo9s",
-                            "author": "Im-a_dinosaur",
-                            "score": 8,
-                            "created_utc": 1652160513.0,
-                            "response": "Perfect platform for a company like META if MATIC users don't care about the security of their assets.",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "id": "umblqc",
             "title": "Victim of fraud and all I have is wallet address",
             "url": "https://www.reddit.com/r/ethereum/comments/umblqc/victim_of_fraud_and_all_i_have_is_wallet_address/",
@@ -401,19 +313,6 @@
             ]
         },
         {
-            "id": "um9znl",
-            "title": "EVM Decompiler & Toolkit released",
-            "url": "https://twitter.com/beckerrjon/status/1523875680349470721?s=21&t=8n-IEpbBH49v3ETjO79BJQ",
-            "author": "Jon-Becker",
-            "created_utc": 1652156031.0,
-            "score": 4,
-            "num_comments": 4,
-            "subreddit": "ethereum",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
-        },
-        {
             "id": "um24xs",
             "title": "Block Times / Ethstats.net",
             "url": "https://www.reddit.com/r/ethereum/comments/um24xs/block_times_ethstatsnet/",
@@ -423,6 +322,107 @@
             "num_comments": 8,
             "subreddit": "ethereum",
             "selftext": "Is something wrong with ethstats.net right now, or am I just mistaken. Seems like very frequent high block times, over what should be happening right now?\n\nEx.. a lot are more than 20 seconds, but at the time of posting this, last block was at 63 seconds?",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "umeld2",
+            "title": "stuck eth transaction",
+            "url": "https://www.reddit.com/r/ethereum/comments/umeld2/stuck_eth_transaction/",
+            "author": "Cloughy16",
+            "created_utc": 1652174443.0,
+            "score": 12,
+            "num_comments": 14,
+            "subreddit": "ethereum",
+            "selftext": "Hello, 5 days ago I sent an ETH transaction with my ledger nano S, used too low of a gas fee like a fool now its stuck.\n\nI have tried resending the TXN of the same Nonce with metamask however I just get a fail message every time.\n\nLedger support said they cannot do anything\n\nany help would be appreciated.\n\nThanks",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i81d0mc",
+                    "author": "Wurstgewitter",
+                    "score": 4,
+                    "created_utc": 1652181666.0,
+                    "response": "What exactly is the fail message you get in Metamask? Sending the tx again on the same nonce with higher gas is the correct way, this should allow you to replace a pending tx.\n\nAlternatively you can send a 0 ETH tx to yourself, on the same nonce as the pending tx, to cancel the pending transaction, and then try again after the 0 ETH tx confirmed.\n\nThere is also this simple web app allowing you to do the same [https://cancel-ethereum-transactions.web.app/](https://cancel-ethereum-transactions.web.app/) (You should confirm yourself that this is the correct link, never trust strangers on the internet)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i81rlph",
+                            "author": "lanatork",
+                            "score": 3,
+                            "created_utc": 1652189585.0,
+                            "response": "That website is a bit scammy. When I click on cancel there is a checkbox labeled \"Buy me a beer\". But no matter if it is selected or not it will still send some ETH to the same address, which seems to be the developer of the website. I don't mind if they want a small tip, because the provide a valuable service, but in my opinion they should be clearer about it.  \n\n\nMetaMask has a support page, which gives some advice on how to solve this: https://metamask.zendesk.com/hc/en-us/articles/360015489251-How-to-speed-up-or-cancel-a-pending-transaction",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "umckvw",
+            "title": "Bancor V3 is Set to Launch in May",
+            "url": "https://cryptomode.com/bancor-v3-is-set-to-launch-in-may/",
+            "author": "jantranek",
+            "created_utc": 1652165681.0,
+            "score": 39,
+            "num_comments": 13,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "um6b0h",
+            "title": "Just in the last few weeks, Polygon has partnered with Twitter via Stripe and now Meta (Facebook & Instagram)",
+            "url": "https://www.coindesk.com/business/2022/05/08/metas-instagram-to-support-nfts-from-ethereum-polygon-solana-flow/",
+            "author": "nousemercenary",
+            "created_utc": 1652144625.0,
+            "score": 89,
+            "num_comments": 16,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i81s3dg",
+                    "author": "TranceMist",
+                    "score": 16,
+                    "created_utc": 1652189812.0,
+                    "response": "It is so clear to me what Facebook is doing here:\n\n>\tInstagram intends to support widely used crypto wallets such as MetaMask. Plugging in their wallets, users will be able to prove NFT ownership, showcase them on their profiles and tag the creators who made them.\n\nThey want to extend their data about you into the blockchain world so they can graph who\u2019s doing what in the blockchain world.\n\nTo do this they need to map real people to blockchain addresses. What better way to do it than to have the users themselves give Facebook all of the data.\n\nThen they can sell this data to people who want to target you based on your crypto activity and holdings.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i808a95",
+                    "author": "EasyRawlins",
+                    "score": 8,
+                    "created_utc": 1652152390.0,
+                    "response": "MATIC, that chain that went offline for 11hrs in march?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i80mo9s",
+                            "author": "Im-a_dinosaur",
+                            "score": 8,
+                            "created_utc": 1652160513.0,
+                            "response": "Perfect platform for a company like META if MATIC users don't care about the security of their assets.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "um9znl",
+            "title": "EVM Decompiler & Toolkit released",
+            "url": "https://twitter.com/beckerrjon/status/1523875680349470721?s=21&t=8n-IEpbBH49v3ETjO79BJQ",
+            "author": "Jon-Becker",
+            "created_utc": 1652156031.0,
+            "score": 6,
+            "num_comments": 6,
+            "subreddit": "ethereum",
+            "selftext": "",
             "stickied": false,
             "comments": []
         }
