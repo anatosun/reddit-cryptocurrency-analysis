@@ -726,8 +726,8 @@
             "url": "https://www.reddit.com/r/btc/comments/un6l6b/celebrating_bitcoin_cash_may2022_upgrade_2_bch/",
             "author": "bitcoincashautist",
             "created_utc": 1652264245.0,
-            "score": 55,
-            "num_comments": 57,
+            "score": 58,
+            "num_comments": 76,
             "subreddit": "btc",
             "selftext": "I have already funded the giveaway by sending ~~2~~ 2.5 BCH to [bitcoincash:pzq2vg8ppftlnk7raj452eae33upjgedj5dnc5efg5](https://blockchair.com/bitcoin-cash/address/pzq2vg8ppftlnk7raj452eae33upjgedj5dnc5efg5).\n\n(edit: topped it up to 2.5 so it qualifies for posting on /r cc)\n\nThis is no ordinary address, this is a [P2SH address](https://btcinformation.org/en/developer-guide#pay-to-script-hash-p2sh),  which means that it is a \"smart contract\" address. Anyone who wants to  spend from it must satisfy the contract, and I designed it so that  ANYONE will be able to satisfy it. First come, first served! :)\n\nThere's a catch, though - the contract uses [Script](https://reference.cash/protocol/blockchain/script) features ([native introspection opcodes](https://gitlab.com/GeneralProtocols/research/chips/-/blob/master/CHIP-2021-02-Add-Native-Introspection-Opcodes.md#chip-2021-02-native-introspection-opcodes) and [OP\\_MUL](https://gitlab.com/GeneralProtocols/research/chips/-/blob/master/CHIP-2021-02-Bigger-Script-Integers.md#technical-specification))  that will only become available when the May 2022 Bitcoin Cash upgrade  will be activated ([countdown](https://cash.coin.dance/)). Because of that, nobody can spend from the address  yet and that gives you a few days of time to figure out how to craft the  spending transaction in anticipation of the upgrade activation.\n\nAnyone is able to do the same, so it will be a race - who will  broadcast the valid spending transaction first and at the right time to  claim the reward?\n\nThe contract redeem script is: `0xc3518876cd00c788cc00c65f956096a269cd3a6a38486170707920426974636f696e2043617368204d61792d32303232207570677261646521202d20626974636f696e6361736861757469737487`\n\nand here's a link to a very useful tool for Script contracts (kudos to /u/bitjson): [https://ide.bitauth.com/](https://ide.bitauth.com/).\n\nI suggest using [Electron Cash](https://electroncash.org/index.html)  to make a dummy TX that sends to your address, export the TX into a  file then edit it in your favorite text editor to replace the input with  the one spending the reward, load it back into Electron Cash and  broadcast!\n\nThe transaction format is documented here: [https://reference.cash/protocol/blockchain/transaction/](https://reference.cash/protocol/blockchain/transaction/)\n\nI will not give any other help - you figure it out, good luck!",
             "stickied": false,
@@ -743,7 +743,7 @@
                         {
                             "id": "i866ycj",
                             "author": "bitcoincashautist",
-                            "score": 11,
+                            "score": 10,
                             "created_utc": 1652269104.0,
                             "response": "Yeah my goal is to maybe motivate folks to learn and get some PR for the BCH upgrade :)",
                             "depth": 2,
@@ -773,7 +773,7 @@
                 {
                     "id": "i86gowc",
                     "author": "nikola-crypto",
-                    "score": 5,
+                    "score": 6,
                     "created_utc": 1652274193.0,
                     "response": "This is very very cool",
                     "depth": 1,
@@ -781,7 +781,7 @@
                         {
                             "id": "i86gsvf",
                             "author": "bitcoincashautist",
-                            "score": 7,
+                            "score": 6,
                             "created_utc": 1652274244.0,
                             "response": "Thanks, I'm excited to see what happens on activation! :D",
                             "depth": 2,
@@ -829,7 +829,7 @@
                         {
                             "id": "i86j3fd",
                             "author": "bitcoincashautist",
-                            "score": 4,
+                            "score": 3,
                             "created_utc": 1652275289.0,
                             "response": "I gave all the info and references you need, now it will take some effort to study it :)\n\nHere's another helpful link for those unfamiliar with P2SH, it helped me when I was learning this stuff: https://learnmeabitcoin.com/technical/p2sh",
                             "depth": 2,

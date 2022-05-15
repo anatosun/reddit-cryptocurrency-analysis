@@ -9,65 +9,6 @@
     ],
     "posts": [
         {
-            "id": "uoog2b",
-            "title": "The blockchains problem of rewarding crypto wallets",
-            "url": "https://www.reddit.com/r/CryptoTechnology/comments/uoog2b/the_blockchains_problem_of_rewarding_crypto/",
-            "author": "uralresp",
-            "created_utc": 1652436719.0,
-            "score": 27,
-            "num_comments": 18,
-            "subreddit": "CryptoTechnology",
-            "selftext": "As an active crypto user, it makes me super annoyed to use 4, 5 or more applications at once. One wallet does not support bitcoin segwit but supports TRON, another one only applies Cosmos Network, and etc. I came across an article by Bob Stewell \"Do Unhosted Wallets Dream of Network Fees?\". He argues that due to the fact that blockchains do not reward crypto-wallets they are not in a hurry to make a multi-currency crypto-wallet, which are needed for comfortable usage.\n\nHere where I came to understanding why all those problems are happening. For example, I realized why there are huge purchase fees and a bad exchange rate in wallets. We often have to refer to p2p, CEXs, and DEXs just because of it. In case someone out of the crypto world needs to explain how to switch from one currency to another, the disaster is happening. Oh, I guess the support is the main issue here! At the beginning of my crypto way, I was waiting for answers for several days, and as a result, I\u2019ve figured everything out by myself.\n\nEvery time a new blockchain project that is not supported by one or another wallet is released you have to install a specific application. \n\nThere are many places where the wallet is imported via a 12-word seed phrase, and a 24-word seed phrase is often found in new ones ... Is it so difficult to make a choice? And then I found out that these seed phrases may be in different languages! Even in Chinese, and not all wallets support it also! As for me, I have been using cryptocurrencies for more than 5 years now and I see that wallets are developing really slow. It got so bad that I'm already thinking of developing a wallet myself. \n\nBob believes that the problem essence is in the monetization model - wallets live off a percentage of the purchase or exchange. Adding all the variety of blockchains for wallets is resource-intensive, and wallet revenues will not grow much from this. For me as a user, the problem is really serious, since the ecosystems of Ethereum, Cosmos, Solana, Polygon, and others are actively developing, and it is impossible to use them all in one wallet.\n\nFrankly, it is much more natural for a wallet that offers a variety of blockchains to provide a range of payment systems and exchangers. But no one does this, because the more profitable this exchange for the user is, the less the wallet\u2019s profit is, or there is even no profit at all. This is a bad system.\n\nThe problem is in the blockchains themselves: they pay miners, they pay stackers, but they don't pay wallets. It seems to me that blockchains can change this situation and start stimulating wallets, and this will give an impetus to development, and strengthen competition. Wallets will fight each other to become number 1! To make the most convenient and intuitive interface (this is a problem for many wallets). \n\nThe solution is the integration of the mechanism into the blockchain, which will send part of the network transaction fee to the wallet that helped the user to carry out this transaction. Then the functionality and service of wallets will improve significantly. What do you think about it?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8fqrzw",
-                    "author": "keijyu",
-                    "score": 28,
-                    "created_utc": 1652439966.0,
-                    "response": "You are talking as if making a wallet application is easy but in fact it is not.\n\nFirstly, you do not understand how many wallet applications and cryptocurrency libraries are developed. Many of these developers are unpaid and contributing to these projects in their free time. People aren\u2019t constantly working on the code. \n\nSecondly, it takes time for written code to be released as it has to go through review after review with fixes in-between. I can vouch from experience that smaller bug fixes takes around week to be merged into the main code branch and larger feature implementations can span months. And this is good. This is what should be expected of any critical applications and infrastructure code. You could write your own code without having it reviewed but that\u2019s not a development process I, or others, would trust.\n\nThirdly, wallet applications often depend on other lower level libraries to implement the finer details of chain protocols. So wallet applications often have to wait for these lower level libraries to finish implementing the newest chain features and bug fixes before adapting it for end users. There are layers and layers of abstraction for code to reach the end user and wallet apps are only the tippy top. \n\nFurther, the best software is often software that does something of a limited scope very well. Creating a single application that manages multiple cryptocurrencies would not be inline with this. Things get complex real quick. \n\n\nNow let\u2019s talk about the system you proposed. \nI can already think of an exploit. What if a malicious wallet developer decided to spam transactions linked to their wallet in order to reap rewards? What\u2019s stopping them and others from doing this? I can only see your system being abused by malicious parties.\n\nAnd don\u2019t you find it a little unfair that wallet developers can make use of open source libraries to build their app but still rake in the rewards themselves? Where are the rewards for the protocol level and lower level library developers?",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8h0btm",
-                    "author": "krism142",
-                    "score": 5,
-                    "created_utc": 1652460721.0,
-                    "response": "Ledger live works with tons of chains",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8gvg81",
-                    "author": "Treyzania",
-                    "score": 3,
-                    "created_utc": 1652458819.0,
-                    "response": "https://en.wikipedia.org/wiki/Sybil_attack\n\nAlso you use the phrase \"to the wallet\" here.  Wallets are just software, how do you pay a piece of software?  The way I initially interpreted that sentence would imply that the user gets like a \"cash back\" on every transaction.  I know you *meant* to say \"wallet developer\", but that's not how these systems work.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8h1lln",
-                    "author": "002timmy",
-                    "score": 3,
-                    "created_utc": 1652461223.0,
-                    "response": "I wish this were true, but it shows a fundamental lack of understanding of what a wallet actually is and/or how a blockchain transacts. \n\nTo start, seed phrases are not your private keys. They are a mnemonic used to convert to your private keys/decrypt to the keys. Wallets, when created, have 2 components. The public key and the private key. \n\nHowever, the wallet isn\u2019t actually doing anything other than providing an interface to the blockchain. It\u2019s why you can import your private keys (in the form of a seed phrase) from one wallet to another. \n\nAs for rewarding the blockchain rewarding the wallet, that is impossible. When transacting, the blockchain and miners/validators (pow v PoS) have no visibility into what Wallet sent the transaction. They are simply looking to make sure the public key and private key signatures line up (roughly speaking). \n\nWhen I want to send Bitcoin, the miners don\u2019t care nor can they see if I am using my ledger or exodus or mycelium or electrum or cashapp. They are just looking to see the signatures match. Nothing else matters.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8hp64j",
-                    "author": "Strange_Cantaloupe56",
-                    "score": 3,
-                    "created_utc": 1652470875.0,
-                    "response": "You just described the reason why we shouldn\u2019t have so many shitcoins.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "unsma7",
             "title": "Why do people obsess over expensive hardware wallets?",
             "url": "https://www.reddit.com/r/CryptoTechnology/comments/unsma7/why_do_people_obsess_over_expensive_hardware/",
@@ -360,6 +301,65 @@
                     "score": 3,
                     "created_utc": 1652484121.0,
                     "response": "A Ravencoin community member already built something almost exactly like you describe, even has a similar name! Check out squawker.app\n\nIt leverages IPFS and the Ravencoin network to publish censorship-resistant messages and tokenized access controls (also on the Ravencoin network) for trustless authentication/authorization.\n\nUX could be better but a browser web-wallet (similar to metamask) is being developed to abstract all the signing from the user.\n\nThe main hindrance to doing something like this on ETH are network fees. The other existing smart-chains are, in my opinion, too centralized for this usecase with censorship being a primary concern.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uoog2b",
+            "title": "The blockchains problem of rewarding crypto wallets",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/uoog2b/the_blockchains_problem_of_rewarding_crypto/",
+            "author": "uralresp",
+            "created_utc": 1652436719.0,
+            "score": 27,
+            "num_comments": 24,
+            "subreddit": "CryptoTechnology",
+            "selftext": "As an active crypto user, it makes me super annoyed to use 4, 5 or more applications at once. One wallet does not support bitcoin segwit but supports TRON, another one only applies Cosmos Network, and etc. I came across an article by Bob Stewell \"Do Unhosted Wallets Dream of Network Fees?\". He argues that due to the fact that blockchains do not reward crypto-wallets they are not in a hurry to make a multi-currency crypto-wallet, which are needed for comfortable usage.\n\nHere where I came to understanding why all those problems are happening. For example, I realized why there are huge purchase fees and a bad exchange rate in wallets. We often have to refer to p2p, CEXs, and DEXs just because of it. In case someone out of the crypto world needs to explain how to switch from one currency to another, the disaster is happening. Oh, I guess the support is the main issue here! At the beginning of my crypto way, I was waiting for answers for several days, and as a result, I\u2019ve figured everything out by myself.\n\nEvery time a new blockchain project that is not supported by one or another wallet is released you have to install a specific application. \n\nThere are many places where the wallet is imported via a 12-word seed phrase, and a 24-word seed phrase is often found in new ones ... Is it so difficult to make a choice? And then I found out that these seed phrases may be in different languages! Even in Chinese, and not all wallets support it also! As for me, I have been using cryptocurrencies for more than 5 years now and I see that wallets are developing really slow. It got so bad that I'm already thinking of developing a wallet myself. \n\nBob believes that the problem essence is in the monetization model - wallets live off a percentage of the purchase or exchange. Adding all the variety of blockchains for wallets is resource-intensive, and wallet revenues will not grow much from this. For me as a user, the problem is really serious, since the ecosystems of Ethereum, Cosmos, Solana, Polygon, and others are actively developing, and it is impossible to use them all in one wallet.\n\nFrankly, it is much more natural for a wallet that offers a variety of blockchains to provide a range of payment systems and exchangers. But no one does this, because the more profitable this exchange for the user is, the less the wallet\u2019s profit is, or there is even no profit at all. This is a bad system.\n\nThe problem is in the blockchains themselves: they pay miners, they pay stackers, but they don't pay wallets. It seems to me that blockchains can change this situation and start stimulating wallets, and this will give an impetus to development, and strengthen competition. Wallets will fight each other to become number 1! To make the most convenient and intuitive interface (this is a problem for many wallets). \n\nThe solution is the integration of the mechanism into the blockchain, which will send part of the network transaction fee to the wallet that helped the user to carry out this transaction. Then the functionality and service of wallets will improve significantly. What do you think about it?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8fqrzw",
+                    "author": "keijyu",
+                    "score": 28,
+                    "created_utc": 1652439966.0,
+                    "response": "You are talking as if making a wallet application is easy but in fact it is not.\n\nFirstly, you do not understand how many wallet applications and cryptocurrency libraries are developed. Many of these developers are unpaid and contributing to these projects in their free time. People aren\u2019t constantly working on the code. \n\nSecondly, it takes time for written code to be released as it has to go through review after review with fixes in-between. I can vouch from experience that smaller bug fixes takes around week to be merged into the main code branch and larger feature implementations can span months. And this is good. This is what should be expected of any critical applications and infrastructure code. You could write your own code without having it reviewed but that\u2019s not a development process I, or others, would trust.\n\nThirdly, wallet applications often depend on other lower level libraries to implement the finer details of chain protocols. So wallet applications often have to wait for these lower level libraries to finish implementing the newest chain features and bug fixes before adapting it for end users. There are layers and layers of abstraction for code to reach the end user and wallet apps are only the tippy top. \n\nFurther, the best software is often software that does something of a limited scope very well. Creating a single application that manages multiple cryptocurrencies would not be inline with this. Things get complex real quick. \n\n\nNow let\u2019s talk about the system you proposed. \nI can already think of an exploit. What if a malicious wallet developer decided to spam transactions linked to their wallet in order to reap rewards? What\u2019s stopping them and others from doing this? I can only see your system being abused by malicious parties.\n\nAnd don\u2019t you find it a little unfair that wallet developers can make use of open source libraries to build their app but still rake in the rewards themselves? Where are the rewards for the protocol level and lower level library developers?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8h0btm",
+                    "author": "krism142",
+                    "score": 6,
+                    "created_utc": 1652460721.0,
+                    "response": "Ledger live works with tons of chains",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8gvg81",
+                    "author": "Treyzania",
+                    "score": 4,
+                    "created_utc": 1652458819.0,
+                    "response": "https://en.wikipedia.org/wiki/Sybil_attack\n\nAlso you use the phrase \"to the wallet\" here.  Wallets are just software, how do you pay a piece of software?  The way I initially interpreted that sentence would imply that the user gets like a \"cash back\" on every transaction.  I know you *meant* to say \"wallet developer\", but that's not how these systems work.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8h1lln",
+                    "author": "002timmy",
+                    "score": 3,
+                    "created_utc": 1652461223.0,
+                    "response": "I wish this were true, but it shows a fundamental lack of understanding of what a wallet actually is and/or how a blockchain transacts. \n\nTo start, seed phrases are not your private keys. They are a mnemonic used to convert to your private keys/decrypt to the keys. Wallets, when created, have 2 components. The public key and the private key. \n\nHowever, the wallet isn\u2019t actually doing anything other than providing an interface to the blockchain. It\u2019s why you can import your private keys (in the form of a seed phrase) from one wallet to another. \n\nAs for rewarding the blockchain rewarding the wallet, that is impossible. When transacting, the blockchain and miners/validators (pow v PoS) have no visibility into what Wallet sent the transaction. They are simply looking to make sure the public key and private key signatures line up (roughly speaking). \n\nWhen I want to send Bitcoin, the miners don\u2019t care nor can they see if I am using my ledger or exodus or mycelium or electrum or cashapp. They are just looking to see the signatures match. Nothing else matters.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8hp64j",
+                    "author": "Strange_Cantaloupe56",
+                    "score": 3,
+                    "created_utc": 1652470875.0,
+                    "response": "You just described the reason why we shouldn\u2019t have so many shitcoins.",
                     "depth": 1,
                     "comments": []
                 }

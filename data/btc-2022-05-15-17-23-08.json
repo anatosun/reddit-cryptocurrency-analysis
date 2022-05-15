@@ -1,0 +1,58 @@
+{
+    "subreddit": "btc",
+    "limit": 1000,
+    "minimum_score": 3,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uqaj1a",
+            "title": "If you were running a Bitcoin Cash full node and slept past the upgrade and you now discover...",
+            "url": "https://www.reddit.com/r/btc/comments/uqaj1a/if_you_were_running_a_bitcoin_cash_full_node_and/",
+            "author": "LovelyDayHere",
+            "created_utc": 1652634472.0,
+            "score": 25,
+            "num_comments": 4,
+            "subreddit": "btc",
+            "selftext": "... that your node considered block 740238 with the hash below as an invalid block,\n\n... and upgrading your node to the most recent version (one compatible with the May 15 upgrade) hasn't solved the problem because your node STILL remembers that it considered that block to be invalid,\n\nYou should give this RPC command a go (while your node is running).\n\n    reconsiderblock 000000000000000002afc6fbd302f01f8cf4533f4b45207abc61d9f4297bf969\n\nThis will cause it to reconsider the upgrade block and should cause it to continue synchronizing with the rest of the network.\n\nAnd next time, please upgrade beforehand!\n\n---\n\nIf you're not running a node: This is nothing to worry about, it is expected behavior. When a node is not upgraded on time, it usually will not be able to follow the Bitcoin Cash blockchain that the upgraded network considers valid.\nIt will simply hang around, while receiving blocks it considers invalid unless someone extends the old rules chain (which is normally not the case unless the upgrade is contentious).",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8psi5t",
+                    "author": "LovelyDayHere",
+                    "score": 5,
+                    "created_utc": 1652634671.0,
+                    "response": "NOTE: this should work on nodes which have the RPC interface and the `reconsiderblock` RPC call.\n\nNot all BCH nodes work in the exact same way, but this should work on BCH Unlimited and BCHN nodes at least, possibly on some others. Consult your friendly node developers on the specifics if the above didn't help you.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uqamxa",
+            "title": "Happy Bitcoin Cash May-2022 upgrade! Follow up on the 2.5 BCH giveaway (or how I outsourced making history)",
+            "url": "https://www.reddit.com/r/btc/comments/uqamxa/happy_bitcoin_cash_may2022_upgrade_follow_up_on/",
+            "author": "bitcoincashautist",
+            "created_utc": 1652634778.0,
+            "score": 22,
+            "num_comments": 4,
+            "subreddit": "btc",
+            "selftext": "First, congratulations to everyone on a smooth and successful Bitcoin Cash upgrade, and I'd dare say biggest upgrade Bitcoin has had since genesis!\n\nI wanted to be part of history so I made sure of it by making a [competition](https://old.reddit.com/r/btc/comments/un6l6b/celebrating_bitcoin_cash_may2022_upgrade_2_bch/) and had so much fun observing how it went! Vanity can be fun! :D\n\n1st block using new Bitcoin Cash features has been successfully mined and is full of transactions with the OP_RETURN message:\n\n> Happy Bitcoin Cash May-2022 upgrade! - bitcoincashautist\n\nand not one of those TXes was created by me! All of them were made by someone else, taking Bitcoin Cash out of my reward pool! :)\n\nThe reward pool has been almost entirely depleted in the first block, so congratulations to the winner or winners! There's now 205 transactions with the competition contract: https://bch.loping.net/address/bitcoincash:pzq2vg8ppftlnk7raj452eae33upjgedj5dnc5efg5 and each transaction that spends from that address has my message, because the contract requires it in order to be spent from :D\n\nIt's not the 1st TX in the block, however one of the reward spends made 2nd place, and congrats to whomever sent [this one](https://bch.loping.net/tx/00b73cd14c113a3b1d6ab88dfd61560c98d78d503e924d98bf6f7a11f63a567d) and made the first place. Still, the competition TX is the 1st one that uses and demonstrates features from both CHIPs so mission accomplished!\n\nAlso, congrats to ViaBTC and Mr. aziz2025 for mining the first [upgraded block](https://bch.loping.net/block/000000000000000002afc6fbd302f01f8cf4533f4b45207abc61d9f4297bf969)!\n\nHow does my contract work? It simply requires that:\n\n- 15/16 of the amount being spent goes back to the same contract address\n- an OP_RETURN output with my message is part of the transaction\n\nThe 1/16 is there for the taking and fee payment - winner(s) simply had to fill in their address and repeat the process until they depleted the contract address.\n\nCongrats to all, and I hope to make something more cool for May 2023 upgrade!\n\nPS Here's how the contract looks like in [Bitauth IDE](https://ide.bitauth.com/import-template/eJy1Ve-PmjAY_le6Zh_1LCAFjDHx1M1LtjuH5y3LXEwtVdlpIVCM5nL_-94C3mBh92HLSYT2_fH06fv2gSf8PuU7cWC4h3dKxWmv01mHimVqd8WjQ6dwph1tEFKFnKkwkm0lDvGeKdE-kqsi5OpnGkncwoFIeRLGOgogwSDZQcDoMzsjk5gmWsTbhAUCjaJDLFSYB7awxlahSHHv6bmFCwg9wTySKmFc6XEJ9WK6BIKt00ELuY_4Yyi3aJ5bl5KcCNF321hKCPBFIMThxdsnJ27Zhus6lAeEcMd1OYcntTeeTYlHmUk9HliMMsvtutRwCFyeSbpgd7rUohvqUQFzC3wWdWEUwMgzA8u0CPxNkzi2Q6jjmNSgXWqbBpQgMAmtIdAyH-42WD3HcrquM1jKnPXMnE9RUlAvtouOIgk3ZSuW8m62mg7nU4OSfE8uYdQkwiDMdjZesOaW4Gzdtamz9lzYpOEBscCzB3nm5Mti-KlcabQXLEHQZ5Qqxh-RilAaHjLdZyROgmd6PbQTichTDXTJf5j4Nx--lSi1KqPJJa_0PmjqZxTKOFOIR5mERkTxSp1yS2noGxVyNfAynUdHIZkOhajxYpZjRJkCiPVZCR4FYsV3TG4LpgSBO1On6OJ8Hf3I9pmoQJbzKlBp6hv2QJugSCvD1nM60FUZ3zzk8R_9yfB-4t9Ph7d3fr6e9jateRBpyraiaSNRnAiVJRDeX0oEP4DwJ_cL_7aY9pd4yuL4jK5DKGAo0YilOwR6a-d6ywq9vUNttC4COPhBz2GqlhgKXTsIGNT3dwoVEb4SVJGlroV_N3sz6s10i9a_SrYMaaIKZP9fUhdm1VNXJ1TzvDmPqsDqPGqeOg-jVt78zDcVtXA0dt3zqoVoQPhtbsw3CLkAFBqrZ5e2SmquyD_FfXlJVJ7D8fif5vOvw5nGny-utVj0tyqL4yhRIsC97_h6NF3B0SUrYuMfLQwv6jT_EJLnX1A-cWo=) if anyone wants to study it.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8q47ca",
+                    "author": "Remora_101",
+                    "score": 4,
+                    "created_utc": 1652639779.0,
+                    "response": "Awesome! Thanks for organizing this little competition \ud83d\ude42",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

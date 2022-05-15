@@ -1,0 +1,104 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": 3,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uq312b",
+            "title": "Hypothetically, could an emp (electromagnetic pulse) interfere with a ledger wallet, permanently corrupting/destroying the stored btc? What about esd? Are there any measures to prevent this?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uq312b/hypothetically_could_an_emp_electromagnetic_pulse/",
+            "author": "binley",
+            "created_utc": 1652609554.0,
+            "score": 3,
+            "num_comments": 31,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8oi0vy",
+                    "author": "Relative_Leek_2173",
+                    "score": 35,
+                    "created_utc": 1652609716.0,
+                    "response": "BTC are not stored inside your ledger. Only the private key to access them. As long as you keep a copy of the seed phrase used when you set your ledger up, you\u2019ll be able to get a new one and restore it.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8ojcks",
+                            "author": "Downtown-Ad-4117",
+                            "score": 9,
+                            "created_utc": 1652610842.0,
+                            "response": "This. It doesn't matter. The ledger is just a convenience.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i8olhcs",
+                            "author": "escape1979uk",
+                            "score": 6,
+                            "created_utc": 1652612589.0,
+                            "response": "I mean... when setting up the Ledger, you literally have to read and accept terms that say that your coins aren't stored in the Ledger, but it acts as a secondary access mode to your keys",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8oj2y3",
+                    "author": "sciencetaco",
+                    "score": 10,
+                    "created_utc": 1652610617.0,
+                    "response": "Hardware wallets can fail like any piece of electronic equipment. \n\nHowever, unintuitively, bitcoin are not actually stored in hardware wallets. All bitcoins are entries in the blockchain database\u2026a copy of which is stored on many of the thousands of publicly accessible nodes. \n\nWhat the wallets store are private keys. And the keys are derived from the wallet\u2019s recovery seed, which users are encouraged to store by writing on paper or stamping into metal plates. \n\nAn EMP isn\u2019t going to corrupt a piece of paper or a metal plate.\n\nYou can throw your Ledger into a volcano and it won\u2019t matter. You just import the recovery seed into a new wallet. \n\nMore info: https://bitcoinbriefly.com/ultimate-guide-to-bitcoin-wallets-seeds-private-keys-public-keys-and-addresses/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8ojn8k",
+                    "author": "The-Francois8",
+                    "score": 6,
+                    "created_utc": 1652611094.0,
+                    "response": "I think we confuse people when we call it a wallet. They expect their money to live inside it.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8oldhi",
+                    "author": "escape1979uk",
+                    "score": 3,
+                    "created_utc": 1652612502.0,
+                    "response": "No, that isn't how Ledgers or any key abstraction technology works \n\nA hardware wallet is an abstraction from the actual keys that give access to assets on the ledger. When you put a code in to your Ledger, all you are doing is verifying that you are the person allowed to interact with your stored keys \n\nAn EMP might toast your ledger, but unless it also is able to wipe your written down recovery phrase, your coins are safe \n\nAnd even if it was a nuclear fallout, where you, your ledger and your recovery phrase were all atomised, technically your coins are still safe on the blockchain ledger.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uq9rnn",
+            "title": "If you thought the Coinbase bankruptcy disclosures were bad\u2026 (just wait 'til you see the government's bail-in rules)",
+            "url": "https://bombthrower.com/articles/if-you-thought-the-coinbase-bankruptcy-disclosures-were-bad/",
+            "author": "stuntpope",
+            "created_utc": 1652632305.0,
+            "score": 10,
+            "num_comments": 6,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8pq19q",
+                    "author": "Nada_Lives",
+                    "score": 3,
+                    "created_utc": 1652633603.0,
+                    "response": "Keep in mind that this has nothing to do with Bitcoin or the Bitcoin system. It only affects \"custodially held crypto assets\" held within the legacy banking system, or as we often put it:\n\nNot your Keys, Not your Bitcoin.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

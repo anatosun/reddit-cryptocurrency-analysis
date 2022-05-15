@@ -1,0 +1,53 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": 3,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uq4odp",
+            "title": "still cannot understand how bitcoin can win with 7 transaction per second (expert opinion needed)",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uq4odp/still_cannot_understand_how_bitcoin_can_win_with/",
+            "author": "vitalyevodin",
+            "created_utc": 1652616321.0,
+            "score": 3,
+            "num_comments": 16,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I know but LN network but if it is like galaxy currency even store of value how is it possible to use it in example if people will leave on several planets and we will be much more \n\nI don\u2019t see that LN is solution for all this, really interested of thought about future of bitcoin adaptation",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8or9oa",
+                    "author": "bitusher",
+                    "score": 5,
+                    "created_utc": 1652616693.0,
+                    "response": ">I don\u2019t see that LN is solution for all this\n\nWhy not? Be specific. Lightning is merely one way bitcoin is scaling and allows for millions of transactions per second",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8pcilf",
+                    "author": "DukeFlipside",
+                    "score": 3,
+                    "created_utc": 1652627681.0,
+                    "response": "Betamax was technically better than VHS but that didn't make it win.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8orhlk",
+                    "author": "bitusher",
+                    "score": 3,
+                    "created_utc": 1652616839.0,
+                    "response": ">\"can win with 7 transaction per second\"\n\n\nThe size of the block doesn't matter much in the context , what matters is the tx throughput, so here is the math if you are curious- (not including future improvements with MAST and schnorr)\n\nhttps://bitcoin.stackexchange.com/questions/59408/with-100-segwit-transactions-what-would-be-the-max-number-of-transaction-confi\n\n4 bytes version\n\n1 byte input count\n\nInput\n\n36 bytes outpoint\n\n1 byte scriptSigLen (0x00)\n\n0 bytes scriptSig\n\n4 bytes sequence\n\n1 byte output count\n\n8 bytes value\n\n1 byte scriptPubKeyLen\n\n22 bytes scriptPubKey (0x0014{20-byte keyhash})\n\n4 bytes locktime\n\n>This sums up to a total of 82 bytes for the non-witness part. So with a total non-witness blocksize of 1 million bytes we get a maximum of 12195 transactions. Assuming that all spent outputs were P2WPKH the witness part for each transaction consists of two pushes: one for the signature and one for the pubkey. These are around 72 bytes and 33 bytes long, and each need a length prefix of 1 byte. Additionally there is 1 byte witness version. So the total witness size is 108 bytes. With 3 MB of space in the witness block left, this brings us to about 27777 witnesses per block. So the limiting factor is the space in the non-witness part of the block, so that's the final number that we should consider.\n\n>Notice that I used the non-segwit serialization for the non-segwit part since that is what non-upgraded nodes will enfore. Notice also that this is an extreme example, since most transactions are not single-input-single-output. A corresponding non-segwit transaction would have a size of 192 bytes, which, together with the 1MB size limit brings us to 5208 transactions per block, **compared to 12195 max segwit transaction per block.**\n\n>The second part of your question regarding maximum UTXO in a block is rather easy. We'd like to amortize the overhead from the transaction structure, and maximize inputs + outputs. Since inputs are larger than outputs we will simple use a single input and compute the **maximum number of outputs that fits in a block which is 32256.** Since the outputs are non-segwit data, it also changes minimally from before the segwit activation (only the signature from the one input is moved to the segwit part). Therefore the maximum UTXO churn is 1 UTXO gets removed, 32256 get added. For comparison, without segwit the maximum number added was 32252. Notice that there may be other limits that I haven't considered, but this definitely are the upper limits, and these limits are unlikely to have changed during the activation of segwit.\n\n**12195/600 = 20 TPS for 10 minute average blocks max**\n\n**32256/600 = 53.76 TPS for 10 minute average blocks max for maximum batching in a block**\n\nOf course you know as well as I do Blocks are often found quicker than 10 minutes so these TPS numbers are variable and sometimes it will be higher than this. Also this doesn't include tx throughput on other layers which allows for millions of TPS.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}
