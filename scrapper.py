@@ -17,7 +17,7 @@ load_dotenv()
 #config
 data_path = os.path.join(os.getenv('DATA_PATH'))
 logs_path = os.path.join(os.getenv('LOGS_PATH'))
-min_score = 3
+min_score = -5000
 limit = 1000
 sorting_options = ["hot", "top", "new"]
 subreddits = ["Bitcoin", "Ethereum", "Dogecoin", "BitcoinBeginners", "CryptoCurrencies", "CryptoTechnology", "CryptoMarkets", "Binance", "CoinBase", "btc"]
