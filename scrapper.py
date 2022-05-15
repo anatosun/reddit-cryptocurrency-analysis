@@ -15,8 +15,8 @@ load_dotenv()
 
 
 #config
-data_path = os.path.join("data")
-logs_path = os.path.join("data/logs")
+data_path = os.path.join(os.getenv('DATA_PATH'))
+logs_path = os.path.join(os.getenv('LOGS_PATH'))
 min_score = 3
 limit = 1000
 sorting_options = ["hot", "top", "new"]
@@ -73,8 +73,7 @@ def main():
             min_score)),)
 
     for s, p in enumerate(ps):
-        logger(f"finished job for {subreddits[s]}; errors: {p.exception()}", "main")
-        print(p.result())
+        logger(f"finished job for {subreddits[s]}; exception: {p.exception()}; result: {p.result()}", "main")
 
 
 def parse_existing_ids(file):
