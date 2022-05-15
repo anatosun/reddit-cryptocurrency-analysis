@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/upmcjz/if_proof_of_work_is_a_process_what_signals_the/",
             "author": "PeleMaradona",
             "created_utc": 1652550114.0,
-            "score": 3,
-            "num_comments": 10,
+            "score": 6,
+            "num_comments": 16,
             "subreddit": "BitcoinBeginners",
             "selftext": "I understand that proof of work is the process used by bitcoin miners to prove they have burned enough energy to propose a new valid block that may be added to the blockchain.\n\nBut what would signal the of the proof of work process? Is it receiving the block subsidy? Is it seeing the block proposed by the miner added to the bitcoin blockchain?",
             "stickied": false,
@@ -23,9 +23,18 @@
                 {
                     "id": "i8llzeh",
                     "author": "sos755",
-                    "score": 3,
+                    "score": 5,
                     "created_utc": 1652550452.0,
                     "response": "There is no requirement to burn a sufficient amount of energy. The process ensures that some amount of energy must be used to achieve a valid hash. The actual amount is random, but the average is determined by the difficulty.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8ln3gz",
+                    "author": "bitusher",
+                    "score": 3,
+                    "created_utc": 1652550952.0,
+                    "response": ">what signals the end of this process?\n\nSignals to whom? To other full nodes and miners? If so the signal is when the miner who creates a valid block broadcasts it to all other full nodes(most not controlled by miners) and those full nodes see the block and validate it and either accept or reject it in accordance to the consensus rules . Miners order transactions and full nodes validate and enforce the consensus rules.  Some of those full nodes will be used by miners and those miners will build off it .",
                     "depth": 1,
                     "comments": []
                 }

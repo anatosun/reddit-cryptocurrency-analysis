@@ -119,125 +119,6 @@
             ]
         },
         {
-            "id": "un6l6b",
-            "title": "Celebrating Bitcoin Cash May-2022 Upgrade - 2 BCH Giveaway",
-            "url": "https://www.reddit.com/r/btc/comments/un6l6b/celebrating_bitcoin_cash_may2022_upgrade_2_bch/",
-            "author": "bitcoincashautist",
-            "created_utc": 1652264245.0,
-            "score": 50,
-            "num_comments": 42,
-            "subreddit": "btc",
-            "selftext": "I have already funded the giveaway by sending ~~2~~ 2.5 BCH to [bitcoincash:pzq2vg8ppftlnk7raj452eae33upjgedj5dnc5efg5](https://blockchair.com/bitcoin-cash/address/pzq2vg8ppftlnk7raj452eae33upjgedj5dnc5efg5).\n\n(edit: topped it up to 2.5 so it qualifies for posting on /r cc)\n\nThis is no ordinary address, this is a [P2SH address](https://btcinformation.org/en/developer-guide#pay-to-script-hash-p2sh),  which means that it is a \"smart contract\" address. Anyone who wants to  spend from it must satisfy the contract, and I designed it so that  ANYONE will be able to satisfy it. First come, first served! :)\n\nThere's a catch, though - the contract uses [Script](https://reference.cash/protocol/blockchain/script) features ([native introspection opcodes](https://gitlab.com/GeneralProtocols/research/chips/-/blob/master/CHIP-2021-02-Add-Native-Introspection-Opcodes.md#chip-2021-02-native-introspection-opcodes) and [OP\\_MUL](https://gitlab.com/GeneralProtocols/research/chips/-/blob/master/CHIP-2021-02-Bigger-Script-Integers.md#technical-specification))  that will only become available when the May 2022 Bitcoin Cash upgrade  will be activated ([countdown](https://cash.coin.dance/)). Because of that, nobody can spend from the address  yet and that gives you a few days of time to figure out how to craft the  spending transaction in anticipation of the upgrade activation.\n\nAnyone is able to do the same, so it will be a race - who will  broadcast the valid spending transaction first and at the right time to  claim the reward?\n\nThe contract redeem script is: `0xc3518876cd00c788cc00c65f956096a269cd3a6a38486170707920426974636f696e2043617368204d61792d32303232207570677261646521202d20626974636f696e6361736861757469737487`\n\nand here's a link to a very useful tool for Script contracts (kudos to /u/bitjson): [https://ide.bitauth.com/](https://ide.bitauth.com/).\n\nI suggest using [Electron Cash](https://electroncash.org/index.html)  to make a dummy TX that sends to your address, export the TX into a  file then edit it in your favorite text editor to replace the input with  the one spending the reward, load it back into Electron Cash and  broadcast!\n\nThe transaction format is documented here: [https://reference.cash/protocol/blockchain/transaction/](https://reference.cash/protocol/blockchain/transaction/)\n\nI will not give any other help - you figure it out, good luck!",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i865y27",
-                    "author": "CDSagain",
-                    "score": 12,
-                    "created_utc": 1652268492.0,
-                    "response": "If I had any idea what you were talking about on scripts and stuff I'd be happy to try claim some sweet free BCH but the reason I like bch is it's pretty dam simple to use, unlike this giveaway !! But fair play to you for putting  your own coin in the pot to help those who want to learn about these fancy features themselves.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i866ycj",
-                            "author": "bitcoincashautist",
-                            "score": 10,
-                            "created_utc": 1652269104.0,
-                            "response": "Yeah my goal is to maybe motivate folks to learn and get some PR for the BCH upgrade :)",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i862ttt",
-                    "author": "bitcoincashautist",
-                    "score": 9,
-                    "created_utc": 1652266447.0,
-                    "response": "Someone else added to the pot so there are now 2 utxos to compete for, cool :) https://explorer.bitcoinunlimited.info/tx/d89da0f71a7dbcc8e3015464730041fbc10ec09fc9f4357502f879dd4c9d4052",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i86761s",
-                            "author": "bitcoincashautist",
-                            "score": 8,
-                            "created_utc": 1652269231.0,
-                            "response": "Topped it up to 2.5 so it can be posted on r cc, 3 utxos now",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i86gowc",
-                    "author": "nikola-crypto",
-                    "score": 6,
-                    "created_utc": 1652274193.0,
-                    "response": "This is very very cool",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i86gsvf",
-                            "author": "bitcoincashautist",
-                            "score": 5,
-                            "created_utc": 1652274244.0,
-                            "response": "Thanks, I'm excited to see what happens on activation! :D",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i86h53e",
-                                    "author": "nikola-crypto",
-                                    "score": 3,
-                                    "created_utc": 1652274400.0,
-                                    "response": "Same. I haven\u2019t had time to learn about doing dev with smart contracts yet- this is kinda like a hackathon so def keen to give it a shot.",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i86akj4",
-                    "author": "LovelyDayHere",
-                    "score": 4,
-                    "created_utc": 1652271158.0,
-                    "response": "A fun competition!\n\nThanks for doing this.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i86ivm5",
-                    "author": "Phptower",
-                    "score": 4,
-                    "created_utc": 1652275195.0,
-                    "response": "Nice! Any help how to do this?",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i86j3fd",
-                            "author": "bitcoincashautist",
-                            "score": 3,
-                            "created_utc": 1652275289.0,
-                            "response": "I gave all the info and references you need, now it will take some effort to study it :)\n\nHere's another helpful link for those unfamiliar with P2SH, it helped me when I was learning this stuff: https://learnmeabitcoin.com/technical/p2sh",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i86qy4o",
-                                    "author": "Phptower",
-                                    "score": 3,
-                                    "created_utc": 1652278677.0,
-                                    "response": "Ok, thanks. I am looking into it but it looks too complicated. I can only use Electroncash and the fee button a bit. Please could you publish a eli5 step-by-step tutorial after the contest? Thanks!",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "id": "un6iat",
             "title": "Western Digital announces 26TB hard drives and 15TB server SSDs",
             "url": "https://arstechnica.com/gadgets/2022/05/western-digital-announces-26tb-hard-drives-and-15tb-server-ssds/",
@@ -834,6 +715,164 @@
                     "score": 4,
                     "created_utc": 1652275592.0,
                     "response": "Use the search function. This is some regular occurrence on Bockchain.com. Unfortunately I don't know how any of the cases got resolved.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "un6l6b",
+            "title": "Celebrating Bitcoin Cash May-2022 Upgrade - 2 BCH Giveaway",
+            "url": "https://www.reddit.com/r/btc/comments/un6l6b/celebrating_bitcoin_cash_may2022_upgrade_2_bch/",
+            "author": "bitcoincashautist",
+            "created_utc": 1652264245.0,
+            "score": 55,
+            "num_comments": 57,
+            "subreddit": "btc",
+            "selftext": "I have already funded the giveaway by sending ~~2~~ 2.5 BCH to [bitcoincash:pzq2vg8ppftlnk7raj452eae33upjgedj5dnc5efg5](https://blockchair.com/bitcoin-cash/address/pzq2vg8ppftlnk7raj452eae33upjgedj5dnc5efg5).\n\n(edit: topped it up to 2.5 so it qualifies for posting on /r cc)\n\nThis is no ordinary address, this is a [P2SH address](https://btcinformation.org/en/developer-guide#pay-to-script-hash-p2sh),  which means that it is a \"smart contract\" address. Anyone who wants to  spend from it must satisfy the contract, and I designed it so that  ANYONE will be able to satisfy it. First come, first served! :)\n\nThere's a catch, though - the contract uses [Script](https://reference.cash/protocol/blockchain/script) features ([native introspection opcodes](https://gitlab.com/GeneralProtocols/research/chips/-/blob/master/CHIP-2021-02-Add-Native-Introspection-Opcodes.md#chip-2021-02-native-introspection-opcodes) and [OP\\_MUL](https://gitlab.com/GeneralProtocols/research/chips/-/blob/master/CHIP-2021-02-Bigger-Script-Integers.md#technical-specification))  that will only become available when the May 2022 Bitcoin Cash upgrade  will be activated ([countdown](https://cash.coin.dance/)). Because of that, nobody can spend from the address  yet and that gives you a few days of time to figure out how to craft the  spending transaction in anticipation of the upgrade activation.\n\nAnyone is able to do the same, so it will be a race - who will  broadcast the valid spending transaction first and at the right time to  claim the reward?\n\nThe contract redeem script is: `0xc3518876cd00c788cc00c65f956096a269cd3a6a38486170707920426974636f696e2043617368204d61792d32303232207570677261646521202d20626974636f696e6361736861757469737487`\n\nand here's a link to a very useful tool for Script contracts (kudos to /u/bitjson): [https://ide.bitauth.com/](https://ide.bitauth.com/).\n\nI suggest using [Electron Cash](https://electroncash.org/index.html)  to make a dummy TX that sends to your address, export the TX into a  file then edit it in your favorite text editor to replace the input with  the one spending the reward, load it back into Electron Cash and  broadcast!\n\nThe transaction format is documented here: [https://reference.cash/protocol/blockchain/transaction/](https://reference.cash/protocol/blockchain/transaction/)\n\nI will not give any other help - you figure it out, good luck!",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i865y27",
+                    "author": "CDSagain",
+                    "score": 13,
+                    "created_utc": 1652268492.0,
+                    "response": "If I had any idea what you were talking about on scripts and stuff I'd be happy to try claim some sweet free BCH but the reason I like bch is it's pretty dam simple to use, unlike this giveaway !! But fair play to you for putting  your own coin in the pot to help those who want to learn about these fancy features themselves.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i866ycj",
+                            "author": "bitcoincashautist",
+                            "score": 11,
+                            "created_utc": 1652269104.0,
+                            "response": "Yeah my goal is to maybe motivate folks to learn and get some PR for the BCH upgrade :)",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i862ttt",
+                    "author": "bitcoincashautist",
+                    "score": 10,
+                    "created_utc": 1652266447.0,
+                    "response": "Someone else added to the pot so there are now 2 utxos to compete for, cool :) https://explorer.bitcoinunlimited.info/tx/d89da0f71a7dbcc8e3015464730041fbc10ec09fc9f4357502f879dd4c9d4052",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i86761s",
+                            "author": "bitcoincashautist",
+                            "score": 9,
+                            "created_utc": 1652269231.0,
+                            "response": "Topped it up to 2.5 so it can be posted on r cc, 3 utxos now",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i86gowc",
+                    "author": "nikola-crypto",
+                    "score": 5,
+                    "created_utc": 1652274193.0,
+                    "response": "This is very very cool",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i86gsvf",
+                            "author": "bitcoincashautist",
+                            "score": 7,
+                            "created_utc": 1652274244.0,
+                            "response": "Thanks, I'm excited to see what happens on activation! :D",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i86h53e",
+                                    "author": "nikola-crypto",
+                                    "score": 3,
+                                    "created_utc": 1652274400.0,
+                                    "response": "Same. I haven\u2019t had time to learn about doing dev with smart contracts yet- this is kinda like a hackathon so def keen to give it a shot.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i86akj4",
+                    "author": "LovelyDayHere",
+                    "score": 5,
+                    "created_utc": 1652271158.0,
+                    "response": "A fun competition!\n\nThanks for doing this.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i86cap8",
+                            "author": "bitcoincashautist",
+                            "score": 3,
+                            "created_utc": 1652272068.0,
+                            "response": "My pleasure, I hope it'll be fun!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i86ivm5",
+                    "author": "Phptower",
+                    "score": 4,
+                    "created_utc": 1652275195.0,
+                    "response": "Nice! Any help how to do this?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i86j3fd",
+                            "author": "bitcoincashautist",
+                            "score": 4,
+                            "created_utc": 1652275289.0,
+                            "response": "I gave all the info and references you need, now it will take some effort to study it :)\n\nHere's another helpful link for those unfamiliar with P2SH, it helped me when I was learning this stuff: https://learnmeabitcoin.com/technical/p2sh",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i86qy4o",
+                                    "author": "Phptower",
+                                    "score": 3,
+                                    "created_utc": 1652278677.0,
+                                    "response": "Ok, thanks. I am looking into it but it looks too complicated. I can only use Electroncash and the fee button a bit. Please could you publish a eli5 step-by-step tutorial after the contest? Thanks!",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i86zi6l",
+                                            "author": "bitcoincashautist",
+                                            "score": 3,
+                                            "created_utc": 1652282105.0,
+                                            "response": "Sure, I can do something like that later... I'm using electroncash too, first I pretend as if I'll send my own bch to my own address, then instead of sign&send I click export, and then edit the file in notepad (remove the input and replace with the one spending the reward utxo, and add the outputs that the contract requires). All you need to do the edit is the ability to read hex and know where to look for - and transaction format tells you that: https://reference.cash/protocol/blockchain/transaction/\n\nTo know what each Script raw byte means, you gotta look at Script reference + the 2 CHIPs.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i86zy8i",
+                                                    "author": "Phptower",
+                                                    "score": 3,
+                                                    "created_utc": 1652282283.0,
+                                                    "response": "Great, I am looking into it! Cheers \ud83d\ude0a",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i86zjbp",
+                    "author": "rshap1",
+                    "score": 3,
+                    "created_utc": 1652282118.0,
+                    "response": "What a brilliant idea! Thanks for doing this!",
                     "depth": 1,
                     "comments": []
                 }
