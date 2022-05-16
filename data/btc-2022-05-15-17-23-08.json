@@ -9,29 +9,6 @@
     ],
     "posts": [
         {
-            "id": "uqaj1a",
-            "title": "If you were running a Bitcoin Cash full node and slept past the upgrade and you now discover...",
-            "url": "https://www.reddit.com/r/btc/comments/uqaj1a/if_you_were_running_a_bitcoin_cash_full_node_and/",
-            "author": "LovelyDayHere",
-            "created_utc": 1652634472.0,
-            "score": 25,
-            "num_comments": 4,
-            "subreddit": "btc",
-            "selftext": "... that your node considered block 740238 with the hash below as an invalid block,\n\n... and upgrading your node to the most recent version (one compatible with the May 15 upgrade) hasn't solved the problem because your node STILL remembers that it considered that block to be invalid,\n\nYou should give this RPC command a go (while your node is running).\n\n    reconsiderblock 000000000000000002afc6fbd302f01f8cf4533f4b45207abc61d9f4297bf969\n\nThis will cause it to reconsider the upgrade block and should cause it to continue synchronizing with the rest of the network.\n\nAnd next time, please upgrade beforehand!\n\n---\n\nIf you're not running a node: This is nothing to worry about, it is expected behavior. When a node is not upgraded on time, it usually will not be able to follow the Bitcoin Cash blockchain that the upgraded network considers valid.\nIt will simply hang around, while receiving blocks it considers invalid unless someone extends the old rules chain (which is normally not the case unless the upgrade is contentious).",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8psi5t",
-                    "author": "LovelyDayHere",
-                    "score": 5,
-                    "created_utc": 1652634671.0,
-                    "response": "NOTE: this should work on nodes which have the RPC interface and the `reconsiderblock` RPC call.\n\nNot all BCH nodes work in the exact same way, but this should work on BCH Unlimited and BCHN nodes at least, possibly on some others. Consult your friendly node developers on the specifics if the above didn't help you.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "uqamxa",
             "title": "Happy Bitcoin Cash May-2022 upgrade! Follow up on the 2.5 BCH giveaway (or how I outsourced making history)",
             "url": "https://www.reddit.com/r/btc/comments/uqamxa/happy_bitcoin_cash_may2022_upgrade_follow_up_on/",
@@ -49,6 +26,48 @@
                     "score": 4,
                     "created_utc": 1652639779.0,
                     "response": "Awesome! Thanks for organizing this little competition \ud83d\ude42",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uqaj1a",
+            "title": "If you were running a Bitcoin Cash full node and slept past the upgrade and you now discover...",
+            "url": "https://www.reddit.com/r/btc/comments/uqaj1a/if_you_were_running_a_bitcoin_cash_full_node_and/",
+            "author": "LovelyDayHere",
+            "created_utc": 1652634472.0,
+            "score": 41,
+            "num_comments": 6,
+            "subreddit": "btc",
+            "selftext": "... that your node considered block 740238 with the hash below as an invalid block,\n\n... and upgrading your node to the most recent version (one compatible with the May 15 upgrade) hasn't solved the problem because your node STILL remembers that it considered that block to be invalid,\n\nYou should give this RPC command a go (while your node is running).\n\n    reconsiderblock 000000000000000002afc6fbd302f01f8cf4533f4b45207abc61d9f4297bf969\n\nThis will cause it to reconsider the upgrade block and should cause it to continue synchronizing with the rest of the network.\n\nAnd next time, please upgrade beforehand!\n\n---\n\nIf you're not running a node: This is nothing to worry about, it is expected behavior. When a node is not upgraded on time, it usually will not be able to follow the Bitcoin Cash blockchain that the upgraded network considers valid.\nIt will simply hang around, while receiving blocks it considers invalid unless someone extends the old rules chain (which is normally not the case unless the upgrade is contentious).",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8psi5t",
+                    "author": "LovelyDayHere",
+                    "score": 9,
+                    "created_utc": 1652634671.0,
+                    "response": "NOTE: this should work on nodes which have the RPC interface and the `reconsiderblock` RPC call.\n\nNot all BCH nodes work in the exact same way, but this should work on BCH Unlimited and BCHN nodes at least, possibly on some others. Consult your friendly node developers on the specifics if the above didn't help you.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8q1j8p",
+                            "author": "tl121",
+                            "score": 4,
+                            "created_utc": 1652638592.0,
+                            "response": "If worse comes to worst you can always delete all the blockchain files and start over from genesis. This might take a few hours if you have a decent setup.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8quvh4",
+                    "author": "NilacTheGrim",
+                    "score": 1,
+                    "created_utc": 1652651503.0,
+                    "response": "Excellent PSA. Thanks for posting this.",
                     "depth": 1,
                     "comments": []
                 }
