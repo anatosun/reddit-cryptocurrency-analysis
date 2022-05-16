@@ -103,9 +103,9 @@ class CSVDumper():
         for comment in comments:
             for prev_author, depth in context:
                 if prev_author != comment['author']: #avoid self loops
-                    #"id","source", "target", "score", "weight", "time", "sub"
+                    #"source", "target", "score", "weight", "time", "sub"
                     weight = comment['score']/depth
-                    row = (comment['id'], comment['author'], prev_author, comment['score'], weight, comment['created_utc'], sub)
+                    row = (comment['author'], prev_author, comment['score'], weight, comment['created_utc'], sub)
                     self.edges['deep_link_no_merge'].append(row)
                     
             if len(comment['comments']) > 0:
@@ -147,7 +147,7 @@ class CSVDumper():
 
         #dump nomerge
         file = f"{folder}/edges_deep_link_no_merge.csv"
-        pd.DataFrame(columns = ["id","source", "target", "score", "weight", "time", "sub"],data=self.edges['deep_link_no_merge']).to_csv(file, index=False)
+        pd.DataFrame(columns = ["source", "target", "score", "weight", "time", "sub"],data=self.edges['deep_link_no_merge']).to_csv(file, index=False)
     
     def dump_gephi(self,file):
         pass
