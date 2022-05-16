@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/btc/comments/uq8z4p/nano_x_ledger_showing_slightly_more_than_expected/",
             "author": "irregulartheory",
             "created_utc": 1652630047.0,
-            "score": 3,
-            "num_comments": 4,
+            "score": 1,
+            "num_comments": 7,
             "subreddit": "btc",
             "selftext": "Hello, essentially my ledger is showing that I have amount X in my accounts, which is about 10% higher than the expected amount Y after I sent a little BTC from an exchange to it. I looked at \"latest operations\" and added up everything my ledger has said I received over time and it adds to the expected amount Y, yet the display says X.\n\nJust curious if anyone else has experienced this and what could be the problem. Surely I didn't receive 10% MORE BTC than expected, but at the same time I've only ever seen a ledger lag and show a smaller amount.",
             "stickied": false,
@@ -27,7 +27,46 @@
                     "created_utc": 1652631279.0,
                     "response": "I have no NanoX but does it have a search for addresses feature? Usually these errors occur when there are gaps with empty addresses and the wallets stops searching.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i8pzuxu",
+                            "author": "irregulartheory",
+                            "score": 1,
+                            "created_utc": 1652637863.0,
+                            "response": "Not that I know of!",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8q07df",
+                                    "author": "irregulartheory",
+                                    "score": 1,
+                                    "created_utc": 1652638012.0,
+                                    "response": "Should that explain me getting MORE though?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8q2auf",
+                                            "author": "Remora_101",
+                                            "score": 2,
+                                            "created_utc": 1652638922.0,
+                                            "response": "Now that I think of it, it should be less. Its not like it is missing a spending tx, if at all it is missing an address.\n\nMaybe try asking  /r/ledgerwallet",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i8qs9oy",
+                                            "author": "tl121",
+                                            "score": 1,
+                                            "created_utc": 1652650374.0,
+                                            "response": "If somehow you made a payment that did not register than that could cause your indicated balance to be increased.  You could rescan the wallet or recover from seed and see what happens.  You could also try using different wallet software, e.g. ElectronCash, and see what it does.  (If you have a substantial amount of crypto, don\u2018t try to recover from seed words into a software wallet.)",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }
