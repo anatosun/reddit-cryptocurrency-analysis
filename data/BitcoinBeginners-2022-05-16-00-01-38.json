@@ -14,18 +14,45 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uqiwyj/security_weakness_of_watch_only_wallets/",
             "author": "GiantRobotAlien",
             "created_utc": 1652659148.0,
-            "score": 1,
-            "num_comments": 1,
+            "score": 2,
+            "num_comments": 6,
             "subreddit": "BitcoinBeginners",
             "selftext": "Just trying to reassure myself that im not missing anything from a security standpoint; (as the saying goes: you dont know what you dont know)\n\nIs there any risk in using watch-only wallets? Is there something I should be looking out for?\n\nUsing a Keystone Hardware wallet and their software \"watch-only\" companion app.\n\nSeems like when scanning the QR code for the hardware wallet to be added to the companion wallet to monitor, it could transmit the seedphrases / passphrases, etc. How crazy is it to expect some kind of attack like this? \n\nAny advice for things I should be looking out for?",
             "stickied": false,
             "comments": [
+                {
+                    "id": "i8rfvew",
+                    "author": "sciencetaco",
+                    "score": 7,
+                    "created_utc": 1652661572.0,
+                    "response": "You can scan the QR code with an app that shows you what\u2019s in it. \n\nWatch only wallets work by using something called your Extended Public Key (\u201cxpub\u201d for short). With this key a wallet can generate every address associated with the seed. But it cannot know the seed or the private keys. It\u2019s mathematically impossible. \n\nThis allows watch only wallets to well\u2026*watch* the addresses and the blockchain to show the wallet\u2019s balance and even receive new payments while the seed and private keys are safe elsewhere. \n\nA few things to consider:\n\n- Anyone with your xpub can see your addresses and all future transactions in and out. \n\n- The wallet app is likely connected to somebody else\u2019s node and that node could know your IP address and which addresses you are checking. You can fix this by running your own and ensuring your wallet only connects to your own node. It requires extra work and knowledge though.",
+                    "depth": 1,
+                    "comments": []
+                },
                 {
                     "id": "i8raxjn",
                     "author": "AutoModerator",
                     "score": 1,
                     "created_utc": 1652659149.0,
                     "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8si8xv",
+                    "author": "Desperate-Barnacle-4",
+                    "score": 1,
+                    "created_utc": 1652683267.0,
+                    "response": "There are two main risks when using a watch-only wallet (that uses the master public key (or x,y,zpub)).\n\nThe first is privacy where anyone that knows your xpub can watch all your addresses.\n\nThe second is that given an xpub and a single private key then some private keys from the wallet may be recovered. Andreas wrote it about it clearly here: [https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch05.asciidoc](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch05.asciidoc). There are some limitations for example you cannot recover hardened derivation paths and you cannot go back up the tree as a hash is used making it forward only.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8sx632",
+                    "author": "KaiN_SC",
+                    "score": 1,
+                    "created_utc": 1652696384.0,
+                    "response": "I would never use anything that depends on my wallet. \n\nGet an app where you can just enter your transactions manually, asuming you dont do 1k each day.",
                     "depth": 1,
                     "comments": []
                 }

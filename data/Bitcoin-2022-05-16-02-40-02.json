@@ -1,0 +1,83 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uqlk6t",
+            "title": "How to achieve anonymity?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uqlk6t/how_to_achieve_anonymity/",
+            "author": "BackInTheDay23",
+            "created_utc": 1652668052.0,
+            "score": 1,
+            "num_comments": 7,
+            "subreddit": "Bitcoin",
+            "selftext": "Ever since I got into crypto I have been buying from centralized exchanges like crypto.com and Coinbase.\n\nAs my government is starting to introduce some regulations on crypto, I would like to keep a low profile.\n\nI am using a ledger nano S right now and I have all my Bitcoin on it. (which I purchased on Coinbase and crypto.com).\n\nSince Bitcoin is traceable, what can I do to become completely anonymous with it?\n\nThanks in advance.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8rvshc",
+                    "author": "uncontrollableop",
+                    "score": 3,
+                    "created_utc": 1652668973.0,
+                    "response": "at the very minimum, you have to move it from the addresses your kyc exchanges sent to.  that gives the bare minimum kind of plausible deniability to what happens next.  and of course when you do move it, make sure you use a tor native wallet, or a wallet linked to your own private node. there are of course other methods like coinjoin mixing if you want more than a plausible deniability.    \n\nbut being anonymous has just as much to do with your operational security as it has to do with your bitcoin procedures.  for example, obviously you can't order something shipped to your home address while remaining anonymous.  unless, again, mere plausible deniability suits your purpose.  you also have to avoid cameras, known ip addresses, and other forms of surveillance.  and these things have nothing to do with bitcoin.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8rwbc8",
+                            "author": "BackInTheDay23",
+                            "score": 1,
+                            "created_utc": 1652669242.0,
+                            "response": "The address I sent to is my personal cold wallet. Would I be able to reset it?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8rz7jr",
+                                    "author": "caploves1019",
+                                    "score": 1,
+                                    "created_utc": 1652670768.0,
+                                    "response": "Create a secondary hot wallet, send all to new wallet, then incrementally send chunks to your long term storage. Wait a few years, if you need more obfuscation, use a Samourai wallet mixer to coinjoin for a while before spending any.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8s4yrt",
+                                            "author": "ndgoLiberty",
+                                            "score": 1,
+                                            "created_utc": 1652674110.0,
+                                            "response": "Yeah if you send it all at once that\u2019s gonna forensically tie your old cold wallet with your new cold wallet. Bitcoin anonymity isn\u2019t worth it for me. Too much time and effort.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8s3lap",
+                    "author": "solomonsatoshi",
+                    "score": 1,
+                    "created_utc": 1652673283.0,
+                    "response": "[bisq.network](https://bisq.network)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8s4typ",
+                    "author": "Boe_Ning",
+                    "score": 1,
+                    "created_utc": 1652674027.0,
+                    "response": "Samourai wallet coinjoin.  Because of the flat mixing pool fee, it can be quite economical to mix if you have enough BTC.  On top of that, mixed BTC can remain in the mixing pool for as long as you want to continue mixing, increasing the degrees of separation from your original address, for no additional fee",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

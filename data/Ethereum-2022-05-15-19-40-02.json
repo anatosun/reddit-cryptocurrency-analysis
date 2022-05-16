@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/ethereum/comments/uq8vt3/zkevm_eli5/",
             "author": "celticwarrior72",
             "created_utc": 1652629774.0,
-            "score": 3,
-            "num_comments": 4,
+            "score": 1,
+            "num_comments": 6,
             "subreddit": "ethereum",
             "selftext": "I have been following the developments in the L2 rollup space and using Arbitrum and Optimism.  I'm very interested in the zk rollup tech and could use a concise explanation as to why zkEVM is such an important development and how it works (in layman's terms).  Anyone care to write a short ELI5 on the topic?",
             "stickied": false,
@@ -25,9 +25,58 @@
                     "author": "babossa77",
                     "score": 6,
                     "created_utc": 1652630805.0,
-                    "response": "The main idea behind zkEVM is to use zk proofs to proof that any EVM compatible smart contract call has been executed. \n\nThis means that you must be able to generate zkProofs for any possible EVM opcode (opcodes are basically the low level programming commands that the ethereum virtual machine executes when you call a smart contract).\n\nIf you are able to achieve that, you can do all of the execution and computation of smart contracts off chain (on layer 2) and only post the proofs that this execution happened on layer 1, which is way cheaper than doing everything on layer 1.",
+                    "response": "The main idea behind zkEVM is to use zk proofs to prove that any EVM compatible smart contract call has been executed. \n\nThis means that you must be able to generate zkProofs for any possible EVM opcode (opcodes are basically the low level programming commands that the ethereum virtual machine executes when you call a smart contract).\n\nIf you are able to achieve that, you can do all of the execution and computation of smart contracts off chain (on layer 2) and only post the proofs that this execution happened on layer 1, which is way cheaper than doing everything on layer 1.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i8ru6rh",
+                            "author": "lorenzomofo",
+                            "score": 1,
+                            "created_utc": 1652668175.0,
+                            "response": "But I heard that computing zkProofs is more expensive than the alternative, right? The only advantage it has that because it is zero knowledge, it is more anonymous?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8phgxz",
+                    "author": "jinjiii",
+                    "score": 1,
+                    "created_utc": 1652629904.0,
+                    "response": "I\u2018m curious what it means to \u201ezk everything\u201c as Vitalik has out it (I think in his roadmap post)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8phtf6",
+                            "author": "Scarcity-Pretend",
+                            "score": 2,
+                            "created_utc": 1652630057.0,
+                            "response": "Its based on Zero Knowledge therefore the \u201czk\u201d. Loopring has a good explanation for it on their website. They\u2019ve developed L2 zkRollups for the eth chain. Vitalik seems to think highly of it.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8pijli",
+                                    "author": "jinjiii",
+                                    "score": 3,
+                                    "created_utc": 1652630379.0,
+                                    "response": "I know what zero knowledge proofs are on a high level and what rollups are. I was asking with regard to zk-ing every part of Ethereum. With regards to the question I guess the EVM itself? But what does it mean to zk the EVM?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8rqxy4",
+                                            "author": "domotheus",
+                                            "score": 1,
+                                            "created_utc": 1652666663.0,
+                                            "response": "If we zk everything then the whole chain becomes much easier to verify. Right now, the only way to verify that a block is valid is by running the transactions in it and check everything yourself. But you also have to check that the block before that was valid... So this goes all the way back to the very first genesis block which is always treated as valid.\n\nIf you zk everything, you get to create blocks that contain a proof that all the transactions in it are valid and their results affected the blockchain's state properly, as well as a proof that the previous block was valid as well. It's gonna be proofs within proofs within proofs, and the result is a light client doesn't have to store any data to nearly-instantly check for itself that the block that just got proposed is 100% valid.\n\nBut that's a \"nice to have\" on the roadmap, on the long long term. In reality this recursive zk stuff is still being researched and is gonna roll out on various Layer 2s way before Layer 1 gets close to getting zkified",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
@@ -37,12 +86,68 @@
             "url": "https://www.reddit.com/r/ethereum/comments/uqayhg/how_to_sell_ethereum_without_proof_of_address/",
             "author": "Sakswa",
             "created_utc": 1652635716.0,
-            "score": 2,
-            "num_comments": 8,
+            "score": 182,
+            "num_comments": 17,
             "subreddit": "ethereum",
             "selftext": "I have some eth, but I can't find a website to sell it on. I used to use coinbase, but it looks like they don't accept norwegian cards anymore. I moved out of Norway a while back, and don't have access to any documents from the last 3 months proving my address there. I also don't have these documents where I'm staying right now.\n\nIs there a website I could sell on? I've tried zipmex and coinbase as well, but no dice.",
             "stickied": false,
             "comments": [
+                {
+                    "id": "i8scj1a",
+                    "author": "IndividualPriority81",
+                    "score": 79,
+                    "created_utc": 1652678960.0,
+                    "response": "Use Fixedfloat and Simpleswap for crosschain swaps.\n\nUse Localcryptos and Agoradesk for crypto<->fiat trading.  You can create your own ads there if you can't find what you want.\n\nSearch for Bitcoin ATMs on Google, Google Maps, and Coinatmradar.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8pwj7f",
+                    "author": "Gagarin1961",
+                    "score": 5,
+                    "created_utc": 1652636407.0,
+                    "response": "Pretty much everywhere requires KYC (Know Your Customer) by law when converting crypto to fiat currency or vice verse, with only a few exceptions globally. The reason for this is tax laws and other financial regulations. \n\nYou can usually connect you bank account to these sites though, so credit cards shouldn\u2019t be a reason you can\u2019t sell. \n\nIf you really want to sell without KYC, you can sell peer to peer. Just find someone you trust to sell it to at the market rate, or risk working a deal with someone over the internet. They can pay you directly in cash or PayPal or whatever.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8sn6hj",
+                            "author": "RealPain43",
+                            "score": 1,
+                            "created_utc": 1652687392.0,
+                            "response": "Are there any legal implications for peer to peer selling?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8qi0hf",
+                    "author": "mooremo",
+                    "score": 3,
+                    "created_utc": 1652645916.0,
+                    "response": "Fiat currency is a KYC system, other than cash. So unless you sell to some random person in a parking lot for actual cash, you're going to have to KYC at some point.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8r9p7w",
+                            "author": "Perleflamme",
+                            "score": 3,
+                            "created_utc": 1652658532.0,
+                            "response": "This. I guess that's more or less what Bisq provides, in a sense.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8ryo25",
+                    "author": "dopef123",
+                    "score": 2,
+                    "created_utc": 1652670472.0,
+                    "response": "You could make a kucoin account. Sell for Bitcoin. Use a Bitcoin ATM or local Bitcoin website for selling.\n\nYou can also buy usdt by swapping eth on uniswap or curve then you can have the tether site directly deposit the cash to your bank. I've never done this and you probably need documents.",
+                    "depth": 1,
+                    "comments": []
+                },
                 {
                     "id": "i8q2y4y",
                     "author": "RediLataj",
@@ -54,31 +159,78 @@
                         {
                             "id": "i8qsbw2",
                             "author": "Sakswa",
-                            "score": 1,
+                            "score": 0,
                             "created_utc": 1652650399.0,
                             "response": "Damn, that blows. Do you think I could cashout to paypal? Or does everything require an address now? Cause I have no problems identifying other than that",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i8qw3mn",
+                                    "author": "Key-Cucumber-1919",
+                                    "score": 1,
+                                    "created_utc": 1652652043.0,
+                                    "response": "Try local bitcoin maybe?",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i8ryqym",
+                                    "author": "dopef123",
+                                    "score": 1,
+                                    "created_utc": 1652670515.0,
+                                    "response": "Venmo has eth/BTC on it btw",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         }
                     ]
                 },
                 {
-                    "id": "i8qi0hf",
-                    "author": "mooremo",
+                    "id": "i8qndop",
+                    "author": "silverBet2",
                     "score": 1,
-                    "created_utc": 1652645916.0,
-                    "response": "Fiat currency is a KYC system, other than cash. So unless you sell to some random person in a parking lot for actual cash, you're going to have to KYC at some point.",
+                    "created_utc": 1652648236.0,
+                    "response": "https://coinatmradar.com/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8rkv6h",
+                    "author": "stKKd",
+                    "score": 1,
+                    "created_utc": 1652663887.0,
+                    "response": "reddit.com/r/nokyc\nOr Localmonero.com",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8sn30t",
+                    "author": "stranger84",
+                    "score": 1,
+                    "created_utc": 1652687307.0,
+                    "response": "BTC ATM or localmonero",
                     "depth": 1,
                     "comments": []
                 },
                 {
                     "id": "i8qsccw",
                     "author": "IndefiniteHypoaction",
-                    "score": 1,
+                    "score": -5,
                     "created_utc": 1652650405.0,
                     "response": "Answering your question could be a crime in some jurisdictions. Reddit is not the place to ask this.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i8rl1jl",
+                            "author": "stKKd",
+                            "score": 2,
+                            "created_utc": 1652663969.0,
+                            "response": "System bot",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 }
             ]
         }

@@ -1,0 +1,63 @@
+{
+    "subreddit": "CoinBase",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uqqp5w",
+            "title": "Can you set limits up and down at the same time?",
+            "url": "https://www.reddit.com/r/CoinBase/comments/uqqp5w/can_you_set_limits_up_and_down_at_the_same_time/",
+            "author": "camera_tips_pls",
+            "created_utc": 1652688004.0,
+            "score": 1,
+            "num_comments": 4,
+            "subreddit": "CoinBase",
+            "selftext": "I'm trying to figure out if there's a way to set up an order or combination of orders that would make a sale if the price goes up by X or if it goes down by Y. Basically I want to be able to protect myself from big losses by putting in a stop limit that would trigger if the price went down by a specified amount,  but I also want to be able to lock in gains by putting in a limit if instead the price goes up by a specified amount. And if the price stays between those two points just continue to hold. \n\nDoes anybody know if something like this is possible, and if so how to set it up on coinbase pro?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8snv1v",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652688004.0,
+                    "response": "This subreddit is a public forum. For your security, do not post personal information to a public forum, including your Coinbase account email. If you\u2019re experiencing an issue with your Coinbase account, please [contact us](https://help.coinbase.com/en/contact-us.html) directly. \n\nIf you have a case number for your support request please respond to this message with that case number.\n\nYou should only trust [verified Coinbase staff](https://help.coinbase.com/en/coinbase/other-topics/other/is-coinbase-present-on-social-media.html). Please report any individual impersonating Coinbase staff to the moderators.\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/CoinBase) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8soiem",
+                    "author": "coinbasesupport",
+                    "score": 1,
+                    "created_utc": 1652688573.0,
+                    "response": "Hi u/camera_tips_pls.\n\nYou can set up a limit order on Coinbase pro. You can find more info on limit orders along with other types of orders here: https://help.coinbase.com/en/pro/trading-and-funding/orders/overview-of-order-types-and-settings-stop-limit-market\n\nLet us know if you have any other questions.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8sp8vj",
+                    "author": "Kiwip0rn",
+                    "score": 1,
+                    "created_utc": 1652689247.0,
+                    "response": "Nope, not with the same coins on Pro. I have been avoiding the \"Advanced Trading\" platform; perhaps there?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8spme6",
+                            "author": "camera_tips_pls",
+                            "score": 1,
+                            "created_utc": 1652689594.0,
+                            "response": "Thanks for the reply. I'm new to this but from what I can tell so far the trade options are pretty much the same between Pro and Advanced. Wondering now if any other platform allows for what I'm trying to do, or if it might be possible to use some python code with the coinbase pro API to replicate what I'm looking for (maybe cancel the down order and place the up order when the price is closer to my upper limit,  and vice versa when the price is closer to my down limit,  so there's only ever one order in okay at a time but it still accomplishes what I'm hoping for).",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
