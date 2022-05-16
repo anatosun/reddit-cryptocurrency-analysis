@@ -1,0 +1,82 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uqjbrw",
+            "title": "Do I need a bunch of .dat files saved on my computer?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uqjbrw/do_i_need_a_bunch_of_dat_files_saved_on_my/",
+            "author": "damndirtyape",
+            "created_utc": 1652660516.0,
+            "score": 6,
+            "num_comments": 8,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I'm new to Bitcoin. I have the Bitcoin Core wallet, and I've recently been trying to get it up to date. I just realized that a large number of .dat files are being saved on my computer. They have names like blk00017.dat. \n\nMy computer is warning me that I'm running out of space. \nDo I need these files? What happens if I delete them?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8rwahw",
+                    "author": "LunaGuardian",
+                    "score": 3,
+                    "created_utc": 1652669230.0,
+                    "response": "Bitcoin Core is a full node, which means that you're downloading the entire blockchain so your computer can validate everything itself, and relay blocks to other nodes. It's nice to have a full node to support the network, but it's not required to use a bitcoin wallet. \n\nYou can use a \"lightweight wallet\" to transact on the network, but utilize preexisting nodes to send the transaction through the network, without having to download the entire blockchain data on your machine. Personally I like [Electrum](https://electrum.org/) for this purpose.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8rkkjm",
+                    "author": "fluxprdx",
+                    "score": 2,
+                    "created_utc": 1652663746.0,
+                    "response": "not sure about dat files but i believe a full copy of the blockchain is like half a terabyte so if you dont have that amount right now you prob shouldnt run core on your computer until you get more storage",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8rpu4p",
+                    "author": "BTCMachineElf",
+                    "score": 2,
+                    "created_utc": 1652666151.0,
+                    "response": "You should not be using bitcoin core as a wallet. Whoever gave you that idea? Do not use any wallet that keeps the key on your computer. Use an open source phone wallet like bluewallet or blockstream green until you buy a hardware wallet.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8rrcnh",
+                            "author": "damndirtyape",
+                            "score": 2,
+                            "created_utc": 1652666854.0,
+                            "response": "I bought Bitcoin once before in 2017, and I haven't tried to buy it again until recently. At that time, I tried to follow some of the advice provided by the r/bitcoin sub. I guess that either this advice is out of date or I misunderstood what I was reading...",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8rrqcm",
+                                    "author": "BTCMachineElf",
+                                    "score": 2,
+                                    "created_utc": 1652667031.0,
+                                    "response": "This is the right place to get sorted. Read the faq (which has a section on wallets) or ask questions here until you feel confident in the answers. Pay extra attention to our mod u/bitusher's worda of wisdom. He's always on point.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8rdoq0",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652660517.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}
