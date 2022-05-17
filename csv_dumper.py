@@ -4,7 +4,7 @@ import pandas as pd
 
 class CSVDumper():
     def __init__(self):
-        self.edges = { 'deep_link' : {}, 'next_link': {}, 'cartesian_link' : [] } # keys=(source,target), val weight
+        self.edges = { 'deep_link' : {}, 'next_link': {}, 'cartesian_link' : [], 'deep_link_no_merge': [] }
         self.vertices = {}
         self.data = []
         
@@ -19,9 +19,9 @@ class CSVDumper():
                 self.parse_comments_pd(post, subreddit['subreddit']) #for internal pd data frame
 
                 self.parse_comments_deep_link(post['comments'], [(post['author'], 1)], subreddit['subreddit'])
+                self.parse_comments_deep_link_no_merge(post['comments'], [(post['author'], 1)], subreddit['subreddit'])
                 self.parse_comments_next_link(post['comments'], [(post['author'], 1)], subreddit['subreddit'])
                 self.parse_comments_ucartesian_link(post['comments'], post['author'], subreddit['subreddit'])
-
 
     def parse_comments_pd(self, post, sub):
         self.data.append((post['id'], post['author'], post['score'], post['created_utc'], 1, sub))
@@ -99,6 +99,18 @@ class CSVDumper():
 
 
 
+    def parse_comments_deep_link_no_merge(self,comments,context, sub):
+        for comment in comments:
+            for prev_author, depth in context:
+                if prev_author != comment['author']: #avoid self loops
+                    #"source", "target", "score", "weight", "time", "sub"
+                    weight = comment['score']/depth
+                    row = (comment['author'], prev_author, comment['score'], weight, comment['created_utc'], sub)
+                    self.edges['deep_link_no_merge'].append(row)
+                    
+            if len(comment['comments']) > 0:
+                self.parse_comments_deep_link_no_merge(comment['comments'], context + [(comment['author'], comment['depth'])], sub)
+    
     def parse_folder(self, folder):
         for file in os.listdir(os.path.join(folder)):
             if file.endswith(".json"):
@@ -132,6 +144,10 @@ class CSVDumper():
 
         #dump ucartesian
         self.parse_comments_ucartesian_link_dump(folder)
+
+        #dump nomerge
+        file = f"{folder}/edges_deep_link_no_merge.csv"
+        pd.DataFrame(columns = ["source", "target", "score", "weight", "time", "sub"],data=self.edges['deep_link_no_merge']).to_csv(file, index=False)
     
     def dump_gephi(self,file):
         pass
