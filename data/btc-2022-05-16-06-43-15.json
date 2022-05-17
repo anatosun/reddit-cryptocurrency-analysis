@@ -14,8 +14,8 @@
             "url": "https://www.ft.com/content/02cad9b8-e2eb-43d4-8c18-2e9d34b443fe",
             "author": "Egon_1",
             "created_utc": 1652683130.0,
-            "score": 8,
-            "num_comments": 7,
+            "score": 27,
+            "num_comments": 16,
             "subreddit": "btc",
             "selftext": "",
             "stickied": false,
@@ -23,35 +23,93 @@
                 {
                     "id": "i8sm90t",
                     "author": "chainxor",
-                    "score": 7,
+                    "score": 23,
                     "created_utc": 1652686587.0,
-                    "response": "He doesn't have a friggin' clue what he is talking about (or the journalist interviewing him doesn't). Scaling has NOTHING to do with the consensus algorithm and hence whether it is POW or POS is completely irrelevant to the scaling issues.\n\nAlso, he is verifiably wrong that blockchains with POW are more inefficient at scaling than blockchains with POS. A POW blockchain actually becomes more and more efficient at scale, since the energy required to discover a block is not correlated to the number of transactions going in to the block. Sure, there is a verfication cost that is correlated to the number of transactions, but that is a tiny fraction. So mining a block where 10.000 tx goes in or mining a block with 1.000.000 transactions going in is the same in terms of mining-energy usage - ie. energy cost pr. transaction goes down with scale.   \n\n\nHe is right about one thing though - BTC has no future is a payments crypto, because it's blocksize is limited and the scaling tech work done on e.g. BCH is sorely missing on BTC.",
+                    "response": "He doesn't have a friggin' clue what he is talking about (or the journalist interviewing him doesn't). Scaling has NOTHING to do with the consensus algorithm and hence whether it is POW or POS is completely irrelevant to the scaling issues.\n\nAlso, he is verifiably wrong that blockchains with POW are more inefficient at scaling than blockchains with POS. A POW blockchain actually becomes more and more efficient at scale, since the energy required to discover a block is not correlated to the number of transactions going in to the block. Sure, there is a verfication cost that is correlated to the number of transactions, but that is a tiny fraction. So mining a block where 10.000 tx goes in or mining a block with 1.000.000 transactions going in is the same in terms of mining-energy usage - ie. energy cost pr. transaction goes down with scale.\n\nHe is right about one thing though - BTC has no future as a payments crypto, because it's blocksize is limited and the scaling tech work done on e.g. BCH is sorely missing on BTC.",
                     "depth": 1,
                     "comments": [
                         {
-                            "id": "i8soxdr",
-                            "author": "Egon_1",
-                            "score": 3,
-                            "created_utc": 1652688959.0,
-                            "response": "> He is right about one thing though - BTC has no future is a payments crypto\n\n\ud83d\udc46\ud83d\udc46\ud83d\udc46",
+                            "id": "i8srzgb",
+                            "author": "Doublespeo",
+                            "score": 10,
+                            "created_utc": 1652691753.0,
+                            "response": ">\tHe doesn\u2019t have a friggin\u2019 clue what he is talking about (or the journalist interviewing him doesn\u2019t). Scaling has NOTHING to do with the consensus algorithm and hence whether it is POW or POS is completely irrelevant to the scaling issues.\n\nThis, I dont know how many time peoples say with PoS we can get 100k tps!\n\nPoS is not fundamentaly more scalable than PoW. \n\nThe bottleneck is verifying and transmitting tx, consensus mechanism either PoW or PoS is very \u201clight\u201d",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i8tmu0z",
+                                    "author": "acinomrahg1",
+                                    "score": 0,
+                                    "created_utc": 1652711099.0,
+                                    "response": "Database Sharding and rollups Delivers scale. The POS consensus approach removes the Hardware bottleneck (ASICS) and computation bottleneck of having to win the right to publish a block (hash function) imposed (by good initial design) by the proof of work approach. The \"bottleneck\" is not the validation of transactions, it's establishing trust and the security inferred by the ability to solve complex puzzles. POS buys the credibility through putting the validators digital assets at risk - POW derives this credibility through proving you have skin in the game by way of having the hardware chops (massive investment) to solve the puzzle. Remove the puzzle, and you democratize \"mining\" by \"scaling\" access to block publication down. This gives \"mining\" access to all who stake. Staking removes the \"economy of scale\" enjoyed today by miners, which some say leads to centralization, but most certainly MEV. (Miner extractible\nValue) - \n\nProbably room for, and a need for both POW and POS. MEV would be a great way to fund governments. We are going to need lots of processing power to render the graphics for the metaverse, so it's not like the miners will be suffering, even if they choose not to \"stake\".  \n\nI'm still learning, but why do some people view POS and POW as mutually exclusive? Are these not different paths to the same end?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8tyh5d",
+                                            "author": "Collaborationeur",
+                                            "score": 1,
+                                            "created_utc": 1652715983.0,
+                                            "response": "> The POS consensus approach removes the Hardware bottleneck (ASICS) and computation bottleneck of having to win the right to publish a block\n\nThat has been shown to be false years ago, PoS leads to grinding - a hidden type of PoW - that uses just as much energy: https://www.truthcoin.info/blog/pow-cheapest/",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8tyoy2",
+                                                    "author": "acinomrahg1",
+                                                    "score": 2,
+                                                    "created_utc": 1652716070.0,
+                                                    "response": "Just when you think have it figured out...\ud83d\ude04- thx, I'll check this out.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             "id": "i8sr7xa",
                             "author": "jessquit",
-                            "score": 1,
+                            "score": 8,
                             "created_utc": 1652691050.0,
                             "response": "I'm convinced that we could roll out an update that processes 10Mtps on cheap hardware and the public perception wouldn't budge a bit. We could demo it for 50M ppl during the super bowl and the announcer would probably talk right over the demo declaring it's been proven that blockchain can't scale.",
                             "depth": 2,
                             "comments": []
                         },
                         {
-                            "id": "i8srzgb",
-                            "author": "Doublespeo",
+                            "id": "i8soxdr",
+                            "author": "Egon_1",
+                            "score": 6,
+                            "created_utc": 1652688959.0,
+                            "response": "> He is right about one thing though - BTC has no future is a payments crypto\n\n\ud83d\udc46\ud83d\udc46\ud83d\udc46",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8spkeu",
+                    "author": "mtrycz",
+                    "score": 13,
+                    "created_utc": 1652689543.0,
+                    "response": "BTC doesn't, Bitcoin certainly does.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8t1llm",
+                    "author": "munchee",
+                    "score": 4,
+                    "created_utc": 1652699750.0,
+                    "response": "isn't this the guy who described crypto as a big ponzi scheme on some podcast?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8t4550",
+                            "author": "SippieCup",
                             "score": 1,
-                            "created_utc": 1652691753.0,
-                            "response": ">\tHe doesn\u2019t have a friggin\u2019 clue what he is talking about (or the journalist interviewing him doesn\u2019t). Scaling has NOTHING to do with the consensus algorithm and hence whether it is POW or POS is completely irrelevant to the scaling issues.\n\nThis, I dont know how many time peoples say with PoS we can get 100k tps!\n\nPoS is not fundamentaly more scalable than PoW. \n\nThe bottleneck is verifying and transmitting tx, consensus mechanism either PoW or PoS is very \u201clight\u201d",
+                            "created_utc": 1652701418.0,
+                            "response": "Yes",
                             "depth": 2,
                             "comments": []
                         }
@@ -60,18 +118,18 @@
                 {
                     "id": "i8si73g",
                     "author": "Egon_1",
-                    "score": 4,
+                    "score": 5,
                     "created_utc": 1652683230.0,
                     "response": "Full access https://archive.ph/zsJjb",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i8spkeu",
-                    "author": "mtrycz",
-                    "score": 3,
-                    "created_utc": 1652689543.0,
-                    "response": "BTC doesn't, Bitcoin certainly does.",
+                    "id": "i8t7qf9",
+                    "author": "TinosNitso",
+                    "score": -2,
+                    "created_utc": 1652703616.0,
+                    "response": "Coincidentally it works fine for payments over $400, since all such withdrawals from FTX are free (SBF pays all the BTC network fees for us). I guess he's hinting our **free withdrawals** are a limited time offer. :(\n\n(**Edit**: Even BTC txns under $400 are free, but only [one/day](https://help.ftx.com/hc/en-us/articles/360034865571-Blockchain-Deposits-and-Withdrawals). I never realized! That means paying for a cup of coffee out of an FTX custodial a/c is technically free!)",
                     "depth": 1,
                     "comments": []
                 }
@@ -83,8 +141,8 @@
             "url": "/r/CryptoCurrency/comments/uqp4we/explanation_of_how_usdt_could_burn_8_billion_with/",
             "author": "Remora_101",
             "created_utc": 1652683324.0,
-            "score": 12,
-            "num_comments": 2,
+            "score": 15,
+            "num_comments": 6,
             "subreddit": "btc",
             "selftext": "",
             "stickied": false,
@@ -92,9 +150,18 @@
                 {
                     "id": "i8smr68",
                     "author": "joj1205",
-                    "score": 3,
+                    "score": 5,
                     "created_utc": 1652687023.0,
                     "response": "Gme over. Protect yourself. Shits about to fly",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8t2wlv",
+                    "author": "BewareOfShills",
+                    "score": 2,
+                    "created_utc": 1652700621.0,
+                    "response": "Sounds plausible, but as always there is little evidence for it?!?",
                     "depth": 1,
                     "comments": []
                 }

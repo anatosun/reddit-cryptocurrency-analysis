@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/upmbgg/setting_up_hardware_wallet_question_about_segwit/",
             "author": "GiantRobotAlien",
             "created_utc": 1652550016.0,
-            "score": 7,
-            "num_comments": 12,
+            "score": 5,
+            "num_comments": 16,
             "subreddit": "BitcoinBeginners",
             "selftext": "I'm setting up a hardware wallet (keystone) for a family member and after a firmware update there is now three Bitcoin wallets as options to deposit. \n\n* Original\n\n* Native SegWit \n\n* Nested SegWit \n\nWhich one should I be using to get funds off Coinbase? \n\nIs there any reason to not just hide the two non native Segwit wallets? I thought Segwit was backwards compatible?\n\nThanks in advance",
             "stickied": false,
@@ -23,9 +23,76 @@
                 {
                     "id": "i8lnbom",
                     "author": "bitusher",
-                    "score": 5,
+                    "score": 4,
                     "created_utc": 1652551057.0,
                     "response": "Native segwit because it have a better address standard, a better checksum , and lowers the tx fees when you send off it. Once you have your bitcoin in a native segwit address you can send to any address types , even legacy ones too.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8lorhy",
+                            "author": "information-zone",
+                            "score": 2,
+                            "created_utc": 1652551705.0,
+                            "response": "+1 for Native Segwit \n\nMany exchanges support this address format\u2026 maybe all, but I\u2019m not 100% sure.\n\nExchanges & Companies that I\u2019ve personally used which support Native Segwit include:\n- Coinbase\n- Strike\n- Gemini\n- River\n- Crypto.com\n- FTX\n- Fold.app\n- BlockFi\n- Celsius\n- LVL\n- Nexo\n- Voyager",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i8ltg7u",
+                            "author": "GiantRobotAlien",
+                            "score": 1,
+                            "created_utc": 1652553848.0,
+                            "response": "Is there an issue sending from an legacy address to a native Segwit?\n\nHow is that done for future understanding. \n\nSo since Coinbase supports Native SegWit, you would recommend hiding the two non native Segwit wallets and just have that on the device?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8lu8w0",
+                                    "author": "bitusher",
+                                    "score": 2,
+                                    "created_utc": 1652554213.0,
+                                    "response": "From a protocol standpoint all addresses can send to any address , and once you have btc in a native segwit address you can send to any address, even wallets who dont support segwit \n\n\nThe issue is sometimes receiving bitcoin, if the sender is using really old code than they might only be able to send to a p2sh nested segwit instead , so you can create an account with that as a secondary but you likely will never need it as most wallets support sending to native segwit",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8lvps9",
+                                            "author": "GiantRobotAlien",
+                                            "score": 1,
+                                            "created_utc": 1652554895.0,
+                                            "response": "Thanks. I think I get it.\n\nIf using a legacy address send it to a nested Segwit then to a native Segwit. \n\nSegwit is fully backwards compatible so the other two shouldn't be needed unless in special use cases.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8m6tm8",
+                                                    "author": "bitusher",
+                                                    "score": 2,
+                                                    "created_utc": 1652560065.0,
+                                                    "response": ">If using a legacy address send it to a nested Segwit then to a native Segwit.\n\nNo , legacy addresses can technically send to native segwit just fine. When the sender is using a legacy address starting from 1 its merely a hint that they might be using a horribly outdated wallet",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8ll0tx",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652550016.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8oawnr",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1652603570.0,
+                    "response": "A lot of wallets now are native SegWit only. A few smaller exchanges and gambling sites still refuse to send a BTC withdrawal to a SegWit address. Their customers have to make a once-off Legacy wallet for those withdrawals",
                     "depth": 1,
                     "comments": []
                 }

@@ -1,0 +1,1185 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "skb5h6",
+            "title": "How Ethereum scales: ELI12",
+            "url": "https://www.reddit.com/r/ethereum/comments/skb5h6/how_ethereum_scales_eli12/",
+            "author": "Liberosist",
+            "created_utc": 1643974334.0,
+            "score": 500,
+            "num_comments": 231,
+            "subreddit": "ethereum",
+            "selftext": "In short: Ethereum scales with rollups & data availability sampling. But what does that mean?\n\nFirstly, I'll note that the Ethereum roadmap is evolving, so whatever you may have read is already out of date. Especially all the 2018/19 articles about sharding and \"Ethereum 2.0\" - yeah, those are obsolete. Here, I'll briefly describe the state of affairs in February 2022.\n\n# Rollups\n\nRollups are layer 2 chains that fully inherit Ethereum's security, decentralization, liquidity & network effect properties. [Multiple rollups are live today](https://l2beat.com/), with application-specific rollups like dYdX, zkSync 1.x and Loopring mature & optimized already. Smart contract rollups like Optimism, Arbitrum and StarkNet are in their early stages and awaiting optimizations through 2022.\n\nOptimized rollups today are capable of $0.10 transaction fees with up to 4,500 TPS. Certain highly optimized rollups like dYdX can even scale up to 12,000 TPS. The likes of dYdX, Immutable X and Loopring actually have zero gas fees for trades as it's abstracted from the user. But this is just the beginning. This is like smart contracts in 2016.\n\nThe next question becomes - how can we push rollups further?\n\n1. Rollups and application developers themselves will continue to optimize. We have seen Optimism decrease transaction fees by 30% in January, with another 30% cut due soon. Arbitrum also cut their fees in January, with Arbitrum Nitro estimated to slash fees by 50%. This will continue throughout 2022. [Aave developer Emilio describes](https://twitter.com/The3D_/status/1485732340571807745) how they have reduced transaction fees 10x to $0.16-$0.25 on optimistic rollups through optimizations. These are some examples - costs on rollups will continue to decrease over time as they mature.\n2. Unlike L1s, rollups get cheaper the more activity there is. So as rollups mature, there's more activity, and token incentives, we'll see rollups get cheaper.\n\n# The Surge\n\nThe Surge are upgrades to Ethereum consists of multiple steps that will open the floodgates for rollups. First, we will have intermediate steps like [EIP-4488](https://eips.ethereum.org/EIPS/eip-4488) or [blob-carrying transactions](https://notes.ethereum.org/@vbuterin/blob_transactions_simple). These will drop transaction fees by 5 times or more, over and above the two points described above. At least one of these intermediate steps is likely to be implemented around the end of 2022.\n\nThe final stage for The Surge is [danksharding](https://www.reddit.com/r/ethfinance/comments/sh1trh/danksharding/) \\- a data layer built specifically to accelerate rollups. This integrates data availability sampling, and ushers in a new paradigm for blockchains. With data availability sampling, the more decentralized your network is, the more capacity there is for rollups. As bandwidth improves and Ethereum decentralizes, capacity will continue to increase. Over the years, there'll be enough to have millions of TPS across rollups - enough so the whole concept of TPS and transaction fees melts away. We'll be sitting and laughing about the time we used to worry about gas fees. Danksharding will roll out over time, with the first steps likely happening in 2023.\n\n# Statelessness & zkEVM\n\nWith The Surge, rollups will have massive scale and ultra low transaction fees. But Ethereum L1 will still be expensive. This doesn't matter because the end users will all be on rollups. But Ethereum L1 will also scale, first through statelessness, and then several years down the line with zkEVM. Even then, the cheapest fees will continue to be on rollups, which is why most people will just use rollups.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "hvkblg7",
+                    "author": "yvv1",
+                    "score": 13,
+                    "created_utc": 1643984825.0,
+                    "response": "Could somebody clarify ELI5, when they are talking about data availability for rollups what kind of data is meant? Is it off chain transaction data, or some data on L1?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvkgz3x",
+                            "author": "domotheus",
+                            "score": 26,
+                            "created_utc": 1643987071.0,
+                            "response": "\"data availability\" is about on-chain data. It means rollups can post data on the blockchain and be confident that the data will be secure, unchanging and available in the future. \n\nThe way I like to think about it is that a rollup is itself a blockchain, and you can \"sync from genesis\" using the data that they previously posted on Ethereum. Meaning they don't have to worry about running thousands of nodes to secure/decentralize their data and guarantee its uptime/availability, since Ethereum does that for them.\n\nSo if you want to mess with a rollup's current state, you have to alter the data it posted on Ethereum in the past, meaning you have to mess with Ethereum's current state which is very hard to do.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvkhb2q",
+                                    "author": "yvv1",
+                                    "score": 2,
+                                    "created_utc": 1643987207.0,
+                                    "response": "Ah, got it. Thanks!",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "hvnf5zh",
+                                    "author": "MyCryptoStuffAccount",
+                                    "score": 2,
+                                    "created_utc": 1644029260.0,
+                                    "response": "This was a really helpful comment. thank you",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hvju8aw",
+                    "author": "Maswasnos",
+                    "score": 40,
+                    "created_utc": 1643975659.0,
+                    "response": "Great post as usual, thanks for sharing! What single upgrade/event are you most looking forward to this year when it comes to scaling? \n\nI'm personally very excited for zkSync 2.0 to launch, especially since Argent will be able to vastly expand their feature set on the L2 app.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvjurep",
+                            "author": "Liberosist",
+                            "score": 30,
+                            "created_utc": 1643976015.0,
+                            "response": "I'm most looking forward to dapps built specifically for rollups, enabling new usecases that have not been possible on L1s. \n\nBut really, rollups will evolve rapidly over the year, and there's a lot to look forward to.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hwo5wj0",
+                                    "author": "__init__2nd_user",
+                                    "score": 1,
+                                    "created_utc": 1644688186.0,
+                                    "response": "Can you give an example of app that will only be possible with rollups?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hwsxaod",
+                                            "author": "LavoP",
+                                            "score": 1,
+                                            "created_utc": 1644774907.0,
+                                            "response": "A game like TreasureDAO for one. Anything that requires lots of transactions.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hvk1g5n",
+                            "author": "frank__costello",
+                            "score": 16,
+                            "created_utc": 1643979988.0,
+                            "response": "> What single upgrade/event are you most looking forward to this year\n\nI think this is the wrong mentality: there's no single event that will \"suddenly\" scale Ethereum\n\nMost of the scaling solutions are live: Arbitrum and Optimism have been live for months, StarkNet is in mainnet beta and ZKSync should be launching soon\n\nWhat we need isn't new technology, what we need is adoption\n\nIf I had to pick one event that would be biggest for Ethereum scaling, it would be Coinbase adding support for L2s",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvk1v45",
+                                    "author": "Maswasnos",
+                                    "score": 11,
+                                    "created_utc": 1643980212.0,
+                                    "response": "I'm mostly fishing for specific events so people reading the thread can see all the crazy things on the schedule for this year :) \n\nAnd yes! I'm also very excited for Coinbase to support L2s. I've been using Crypto.com to get ETH onto Arbitrum and the interface just isn't all that great; I like my easy ACH payments and limit orders with Coinbase Pro.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvm6v3y",
+                                            "author": "tsurutatdk",
+                                            "score": 3,
+                                            "created_utc": 1644010229.0,
+                                            "response": "Cool!",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hvktnaa",
+                                    "author": "Bwahehe",
+                                    "score": 5,
+                                    "created_utc": 1643991919.0,
+                                    "response": "They are live, but still need a lot of development. Simple transactions are easy on L2, but handling smart contracts is where a lot of L2s differ. ZK is still very new tech. It'll take some time to smooth things out.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvl3tx1",
+                                            "author": "frank__costello",
+                                            "score": 5,
+                                            "created_utc": 1643995638.0,
+                                            "response": "Exactly\n\nPeople are hoping for a switch to be flipped that will suddenly make Ethereum scalable, but in reality, it will be a very gradual process",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hx0wuni",
+                            "author": "thomatrain112288",
+                            "score": 2,
+                            "created_utc": 1644925946.0,
+                            "response": "zksync is looking veryyy exciting! https://twitter.com/mt_1466/status/1491403782290558977",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hvjxmo3",
+                            "author": "Few_Possibility7432",
+                            "score": 1,
+                            "created_utc": 1643977830.0,
+                            "response": "Personally I feel that Nahmii is doing great in scaling solution, since they offers real world use cases such as Blockchain gaming, DEFI, and some supply chain mgt platform, and seems they uses state pool architecture as well.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvm6w3v",
+                                    "author": "tsurutatdk",
+                                    "score": 2,
+                                    "created_utc": 1644010240.0,
+                                    "response": "Havent checked that",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvopkii",
+                                            "author": "MrVodnik",
+                                            "score": 2,
+                                            "created_utc": 1644059271.0,
+                                            "response": "I just did and am not impressed. Their docs is rather vague with some marketing and buzz words. Their list of dApps contains one entry with even more of mentioned apporach: \"*NiiFi will be used to solve real business problems and will give more back to users by providing simple, elegant and user-friendly tools. NiiFi is DeFi for the masses.*\"",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "hvoec0n",
+                                            "author": "Few_Possibility7432",
+                                            "score": 1,
+                                            "created_utc": 1644050277.0,
+                                            "response": "You might want to take a look mate.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hvl6ova",
+                    "author": "elmosworld37",
+                    "score": 8,
+                    "created_utc": 1643996674.0,
+                    "response": "L2 sounds dandy and all, but when will we actually be able to buy useful things on it? For example, if I bought an ENS domain, am I doomed to pay high L1 gas prices to configure/renew it for the rest of time?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvl7u6u",
+                            "author": "Liberosist",
+                            "score": 5,
+                            "created_utc": 1643997093.0,
+                            "response": "There are many useful apps on rollups already. ENS will be supporting soon.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvl82bh",
+                                    "author": "elmosworld37",
+                                    "score": 1,
+                                    "created_utc": 1643997175.0,
+                                    "response": ">\tENS will be supporting soon\n\nSource?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvl97k3",
+                                            "author": "Liberosist",
+                                            "score": 4,
+                                            "created_utc": 1643997593.0,
+                                            "response": "https://youtu.be/fTgNVu1Y720",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "hvmb8ti",
+                                            "author": "Kike328",
+                                            "score": 2,
+                                            "created_utc": 1644011909.0,
+                                            "response": "https://nitter.net/BrantlyMillegan/status/1488574491752120323#m",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hvl6oq2",
+                    "author": "goldayce",
+                    "score": 6,
+                    "created_utc": 1643996673.0,
+                    "response": "With so many different L2s wouldn't liquidity be super fractured? And the dapps have to be deployed on each L2 right? In your opinion will we see one single L2 emerge as a winner?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvlknxf",
+                            "author": "Mathje",
+                            "score": 9,
+                            "created_utc": 1644001841.0,
+                            "response": ">With so many different L2s wouldn't liquidity be super fractured?\n\nNot necessarily, solutions like decentralized AMM's are being developed.\n\nFor example: \nhttps://medium.com/starkware/caspian-an-l2-powered-amm-f20e93b5421",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hvk39nr",
+                    "author": "thomatrain112288",
+                    "score": 11,
+                    "created_utc": 1643980946.0,
+                    "response": "This was a fantastic post! I just wanted to add this (below) for anyone that may want to dig even deeper into the subject and Etheruem scaling writ large. We wrote in back in December and its currently being updated. The space moves fast!\n\nhttps://drive.google.com/file/d/14QJuTiOptkXZhFUgqN5HJi41Fdkpyb-a/view",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hvlacrr",
+                    "author": "suprones",
+                    "score": 5,
+                    "created_utc": 1643998010.0,
+                    "response": "Thanks for sharing OP. I\u2019m thinking of moving all my ETH on to L2",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hvjy5b7",
+                    "author": "quenque",
+                    "score": 11,
+                    "created_utc": 1643978136.0,
+                    "response": "This being ELI12 hurts... i guess I'm barely 12 then.\n\nJokes aside, great & insightful content as usual! Thanks for sharing.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hvljfev",
+                    "author": "dinglebarry9",
+                    "score": 3,
+                    "created_utc": 1644001371.0,
+                    "response": "Couple of questions. Do you use Eth on the rollups, if so why have LRC or whatever token and why does it need a separate value? As with all blockchain tech what are the tradeoffs being made in this particular path? How can the path be evolving and set? Sharding and Eth2.0 was sold as the future but now Rollups are the future, why will this not be replaced with some new scaling tech or just multi-chain?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvlv4wh",
+                            "author": "Maswasnos",
+                            "score": 4,
+                            "created_utc": 1644005790.0,
+                            "response": "> Do you use Eth on the rollups\n\nYou can, yes. It's technically up to the rollup to decide what token is used to pay fees on it, as long as they can sell it for ETH to actually settle the proofs to mainnet. \n\n> why have LRC or whatever token and why does it need a separate value?\n\nIt might be a governance token for a DAO in charge of L2 development, or it might be used for fee-sharing with a DEX like Loopring. Or it could be used to incentivize running L2 nodes, or any number of things. It's a completely open design space. \n\n> why will this not be replaced with some new scaling tech or just multi-chain?\n\nIt's the most scalable technology we have right now, bar none. If something better comes along it could be replaced just like sharding was replaced and just like multi-chain is being replaced, but we don't know of anything like that.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hvk62ev",
+                    "author": "ChadDriveler",
+                    "score": 7,
+                    "created_utc": 1643982319.0,
+                    "response": "I don't see a single mention of POS in this post.  Isn't the elimination of POW electricity wastes the real key to making transactions cheaper?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvk75mo",
+                            "author": "domotheus",
+                            "score": 45,
+                            "created_utc": 1643982827.0,
+                            "response": "No. Transactions aren't expensive because mining is expensive and energy intensive, they're expensive because there's a limited quantity of gas available each block and a high demand for it. Low supply, high demand = high price of gas. The supply won't change significantly under PoS (it will increase by roughly 10%)\n\nPoW and PoS are both just consensus mechanisms, i.e. they let the whole network come to a consensus about the order of transactions such that everyone can be very confident that a settled transaction won't change. PoW achieves this by making it very expensive to reorg the chain by spending a shit ton of energy on an alternate fork. PoS achieves it by having block producers put up Ether as collateral so that anyone caught trying to reorg will be slashed (and any reorg from past the point of finality will slash at least 2/3 of all Ether staked so that alternate fork is very unlikely to be considered the canonical one by pretty much anyone)\n\ntl;dr [the merge won't lower gas fees](https://willthemergelowergasprices.org/)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvoemgi",
+                                    "author": "KrazyKraka",
+                                    "score": 1,
+                                    "created_utc": 1644050508.0,
+                                    "response": "1/ will the merge have an impact on energy usage? Ethereum will never be adopted if it continues to be so energy intensive in an era where we are increasingly concerned with climate change 2/ when will the merge be? It\u2019s not even mentioned in this post\u2026what happened to Eth 2.0 and sharding? Thx",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvzx3a6",
+                                            "author": "Rapante",
+                                            "score": 1,
+                                            "created_utc": 1644269531.0,
+                                            "response": "With yethereum mining getting phased out, energy use of the network will decrease by more than 99%. We may expect the merge around June, provided no big bugs show up in testing. Eth2 was just a name that is no longer used. Some form of sharding will come, possibly even by the end of the year. If not, then next year.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hvk76xo",
+                            "author": "frank__costello",
+                            "score": 13,
+                            "created_utc": 1643982844.0,
+                            "response": "No, consensus is not a bottleneck of Ethereum or pretty much any blockchain\n\nSwitching to PoS will not affect transaction fees",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvkp539",
+                                    "author": "ChadDriveler",
+                                    "score": 2,
+                                    "created_utc": 1643990243.0,
+                                    "response": "What is the incentive for switching to proof of work?  Is it mainly just to appease environmentalists and give governments fewer excuses to ban crypto?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvl21i5",
+                                            "author": "cryptOwOcurrency",
+                                            "score": 7,
+                                            "created_utc": 1643994988.0,
+                                            "response": "* Reduces ETH issuance for a similar amount of network security (or greater, depending on how you look at it)\n* Paves the way for better sharding designs",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "hvkru9r",
+                                            "author": "frank__costello",
+                                            "score": 10,
+                                            "created_utc": 1643991254.0,
+                                            "response": "You should give this a read:\n\nhttps://vitalik.ca/general/2020/11/06/pos2020.html",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hvl8dpf",
+                                                    "author": "ChadDriveler",
+                                                    "score": 6,
+                                                    "created_utc": 1643997291.0,
+                                                    "response": "That was informative.  I guess the the overall takeaway here is that the ability for Ethereum to evolve is the real key to success.  All these other ideas are confusing to me though, so I hope they are able to offer the full security of a regular ethereum transaction while also being transparent to the user.  Traditional banking can provide secure transactions for pennies, so Ethereum needs to be able to compete with that.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "hvl5col",
+                                            "author": "epic_trader",
+                                            "score": 8,
+                                            "created_utc": 1643996189.0,
+                                            "response": "Proof of Stake is much more secure than Proof of Work and offers other benefits like finality and predictable block times.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "hvmau85",
+                                            "author": "Kike328",
+                                            "score": 4,
+                                            "created_utc": 1644011754.0,
+                                            "response": "Mining is extremely inefficient, from an environmental standpoint and from an economic standpoint, we\u2019re currently overpaying miners for securing the network giving them 2 eth each 13 seconds. POS is way cheaper, we just need to give validators way less ethereum to secure the network",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "hvnbjhp",
+                                            "author": "lugaidster",
+                                            "score": 2,
+                                            "created_utc": 1644027597.0,
+                                            "response": "Anything else being equal, the ongoing operating costs of PoW mean that rewards need to be higher to maintain network security. This means transactions are more expensive. \n\nPoS makes it so operating costs are substantially less. That means that for the same security, you will be paying less rewards. It makes the network cheaper to run, or makes the network much more secure for the same cost. \n\nKeep in mind I said nothing of environmental impact or anything I'd the sort. And there are also other benefits to going PoS, but this is easier to illustrate.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hvk6fx0",
+                            "author": "Liberosist",
+                            "score": 21,
+                            "created_utc": 1643982496.0,
+                            "response": "No, the move to proof of stake will have no noticeable impact on transaction cost. It's a common misconception though.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvoemuk",
+                                    "author": "KrazyKraka",
+                                    "score": 2,
+                                    "created_utc": 1644050516.0,
+                                    "response": "1/ will the merge have an impact on energy usage? Ethereum will never be adopted if it continues to be so energy intensive in an era where we are increasingly concerned with climate change 2/ when will the merge be? It\u2019s not even mentioned in this post\u2026what happened to Eth 2.0 and sharding? Thx",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvogfv7",
+                                            "author": "Liberosist",
+                                            "score": 2,
+                                            "created_utc": 1644051924.0,
+                                            "response": "Yes, the Merge will decrease energy usage by 99.9%. Current target is June 2022. It wasn't mentioned in this post because it doesn't materially impact scaling, which this post was about. Plans have evolved as better solutions have been researched. Currently, rollups + data layers are the best for ethereum.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hvohgwr",
+                                                    "author": "KrazyKraka",
+                                                    "score": 1,
+                                                    "created_utc": 1644052755.0,
+                                                    "response": "Ok thanks!",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hvl64p1",
+                    "author": "LetheMariner",
+                    "score": 2,
+                    "created_utc": 1643996470.0,
+                    "response": "Thanks op!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hvmh1gx",
+                    "author": "DrGoat7630",
+                    "score": 2,
+                    "created_utc": 1644014202.0,
+                    "response": "Given all this bullish stuff surely 10k ETH is programmed !",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hvn3a89",
+                    "author": "tjackson_12",
+                    "score": 2,
+                    "created_utc": 1644023769.0,
+                    "response": "As someone whom really only invests in ETH\u2026how could we expect the the value of ETH grow as more people utilize the L2?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvnktn7",
+                            "author": "jcm2606",
+                            "score": 1,
+                            "created_utc": 1644032001.0,
+                            "response": "ETH should continue to grow, because it's still being used by L2s, as L2s settle on the L1 network, and so still need to pay for L1 gas fees in ETH.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvofvly",
+                                    "author": "KrazyKraka",
+                                    "score": 1,
+                                    "created_utc": 1644051475.0,
+                                    "response": "Yeah but if 90% of transactions occur on L2, how often is Eth actually used? Do we know how much Eth L2 solutions currently use?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvoi03d",
+                                            "author": "jcm2606",
+                                            "score": 1,
+                                            "created_utc": 1644053181.0,
+                                            "response": "> Yeah but if 90% of transactions occur on L2, how often is Eth actually used?\n\nL2 transactions settle on Ethereum. Every so often, L2 transactions will be rounded up into distinct batches, and these batches are posted on the Ethereum network, where they are verified and stored.\n\nThis verification and storage, as well as the batches themselves, use L1 gas just like any other L1 transaction, meaning that, by extension, L2 transactions also use L1 gas, just much, much less of it.\n\n> Do we know how much Eth L2 solutions currently use?\n\nIt depends on the exact type of solution, but, to my knowledge, it can be anywhere from the cost of an ERC20 token transfer, to the cost of a token swap, or more.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hvn6ikk",
+                    "author": "randomizedsim",
+                    "score": 2,
+                    "created_utc": 1644025263.0,
+                    "response": "Are rollups vulnerable to double spending? Or rather how do rollups prevent double spending? If I have a rollup that withdraws 10 ETH and then just after that withdraw 10 ETH from L1 (aka Ethereum main net), is that possible?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvnwzg6",
+                            "author": "Liberosist",
+                            "score": 2,
+                            "created_utc": 1644038388.0,
+                            "response": "No, that's not possible. There are two ways to ensure this never happens - through fraud proofs or validity proofs.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hvne3qc",
+                    "author": "PresentCompanyExcl",
+                    "score": 2,
+                    "created_utc": 1644028766.0,
+                    "response": "> But Ethereum L1 will also scale, first through statelessness, and then several years down the line with zkEVM. \n\nBut why? I imagine these carry implementation and unseen risks. What's the need of the surge worked well?\n\n> EIP-4488 \n\nThis was rejected once right? Do you think core devs or stakers will reconsider?  (Stakers since they can decide to follow a fork with it in)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvnx4yz",
+                            "author": "Liberosist",
+                            "score": 2,
+                            "created_utc": 1644038475.0,
+                            "response": "EIP-4488 wasn't rejected, just put on hold to prioritize on The Merge. \n\nWe still need scalability for L1, and a solution for state bloat. But it's a lower priority than The Surge.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hvnlpja",
+                    "author": "Old-Landscape2",
+                    "score": 2,
+                    "created_utc": 1644032434.0,
+                    "response": "I'm on L2s. They're the future of Ethereum.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hvoq7ki",
+                    "author": "Upstairs-Report",
+                    "score": 2,
+                    "created_utc": 1644059798.0,
+                    "response": "If the transaction ability increases to lets just say 12,000 TPS, would that not inherently tank Ethereums price? If its so cheap to transact on, wouldn't the value of Ethereum decrease?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvot5xs",
+                            "author": "Liberosist",
+                            "score": 1,
+                            "created_utc": 1644062090.0,
+                            "response": "Good question! We have seen there's always a baseline transaction demand for L1, and for larger players the fees are negligible. Beyond that, it's certainly possible in the short term we see base fees decrease a lot - but this will likely unlock new demand and new usecases that'll onboard more users. Still very speculative, of course, we shall see how it plays out.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hvzxzdl",
+                            "author": "Rapante",
+                            "score": 1,
+                            "created_utc": 1644269876.0,
+                            "response": "Read this for a more holistic view\n\nhttps://squish.substack.com/p/the-triple-halving-where-we-stand",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hvqlx2n",
+                    "author": "Impossible-Sink1065",
+                    "score": 2,
+                    "created_utc": 1644094211.0,
+                    "response": "Won\u2019t this blob transaction format push the rollups launch since they need to do an upgrade on how they process the data? EIP-4488 is about call data which is already working well with the rollups.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hvkoa7g",
+                    "author": "-Aporia",
+                    "score": 0,
+                    "created_utc": 1643989922.0,
+                    "response": "Thanks a lot. Polygon has dropped the fastest ZK and are working on rollup solutions. Everyone is really bullish on this and I didn't quite exactly understand why. I didn't even understand how \"Ethereum scaling\" even worked. Very necessary post, thank you.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hvo00ft",
+                    "author": "layzor",
+                    "score": 1,
+                    "created_utc": 1644040210.0,
+                    "response": "Silly question, where does Polygon sit in all this? I noticed that Polygon wanted listed in the L2Beat. Unless Polygon Hermez is the same thing? I'm confused.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvocvqo",
+                            "author": "jcm2606",
+                            "score": 2,
+                            "created_utc": 1644049167.0,
+                            "response": "Polygon have nestled themselves in a spot that makes them a key player in the greater L2 ecosystem, as they're building an entire ecosystem of scaling solutions, that both they and other entities can use to build their own L2 platforms that settle on Ethereum, including:\n- Polygon PoS, formerly Matic: Polygon's proof-of-stake EVM side chain acting as a central hub for their ecosystem.\n- Polygon Hermez: An open source payment platform hosted within a ZK rollup.\n- Polygon Zero: A high performance zkEVM rollup focusing on fast and efficient proof generations on lower end hardware.\n- Polygon Miden: A zkEVM rollup using STARKs to deliver higher transparency and better security over the traditional SNARK approach to ZK rollups.\n- Polygon Nightfall: An optimistic rollup that uses ZK cryptography to support private payments within the rollup.\n\nSome of these are already live, while others are in active development.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvodpt4",
+                                    "author": "layzor",
+                                    "score": 1,
+                                    "created_utc": 1644049798.0,
+                                    "response": "Sounds like the most promising L2 no?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvoe10d",
+                                            "author": "jcm2606",
+                                            "score": 2,
+                                            "created_utc": 1644050042.0,
+                                            "response": "These are all separate projects, and Polygon is just one of multiple entities working on innovating in the rollups ecosystem. Just as Polygon has Polygon Miden for a STARK-powered zkEVM rollup, StarkWare are *also* working on a STARK-powered zkEVM rollup, among zkSync and Loopring both working on their own SNARK-powered zkEVM rollups.\n\nSo, it's less that Polygon is the most promising L2s, it's that they own multiple L2s that are all playing key parts in innovating, hence Polygon has a good sized slice of the ecosystem.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hvogkil",
+                                    "author": "KrazyKraka",
+                                    "score": 1,
+                                    "created_utc": 1644052025.0,
+                                    "response": "Why wasn\u2019t Polygon mentioned in OP\u2019s post if they\u2019re such a major/instrumental player in rollups?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvoie64",
+                                            "author": "jcm2606",
+                                            "score": 1,
+                                            "created_utc": 1644053499.0,
+                                            "response": "Because they really only have one usable rollup right now, to my knowledge. The rest are in some stage of development, and so can't really be listed here, for the same reason they aren't listed under L2Beat.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hvo50x7",
+                    "author": "irodoku",
+                    "score": 1,
+                    "created_utc": 1644043435.0,
+                    "response": "Ethereum should have an official fraud prevention dapp, specially for the new trend of stolen art NFTs",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hvowktd",
+                    "author": "MisterMaury",
+                    "score": 1,
+                    "created_utc": 1644064566.0,
+                    "response": "Or you could just use Solana...\n\n60,000 transactions per second, fees always less than a penny and all on L1.\n\nAll this Ethereum nonsense is too complicated for new users and introduces new problems. The UX is cumbersome and the learning curve makes adoption difficult.\n\nThe Ethereum technical debt is just too high. I've been hearing since 2017 about how it will scale \"any day now\" and the avg transaction fee last year was $26...\n\nThe fact we even need to have ELI12 is the problem with Ethereum.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvqkjju",
+                            "author": "bobbgingras",
+                            "score": 1,
+                            "created_utc": 1644093534.0,
+                            "response": "Well you get what you pay for. Unlike Solana, Ethereum has been online 24/7 for as long as I've been using it. It's also actually decentralized, which is something a lot of us care about",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hwyb0l3",
+                                    "author": "MisterMaury",
+                                    "score": 1,
+                                    "created_utc": 1644871199.0,
+                                    "response": "If you really care about decentralisation, why aren't you using ethereum classic instead of ethereum?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hwyjq2n",
+                                            "author": "bobbgingras",
+                                            "score": 1,
+                                            "created_utc": 1644874728.0,
+                                            "response": "lol",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hvzy9eh",
+                            "author": "Rapante",
+                            "score": 1,
+                            "created_utc": 1644269986.0,
+                            "response": "What technical debt?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hwybn1b",
+                                    "author": "MisterMaury",
+                                    "score": 1,
+                                    "created_utc": 1644871450.0,
+                                    "response": "For starters, the programming language solidity was a horrible choice and is hated by almost all developers.\n\nThe proof of work mechanism used also makes it nearly impossible for Eth to verify transactions at their rate it needs to.\n\nThey have two choices, rewrite things from scratch with more efficient tech (e.g. essentially turn it into Solana and use Rust) or layer on a bunch of patch jobs to hobble along and hopefully get incremental improvements to keep it functional.\n\nI'd argue the last year Ethereum has not been functional due to the ridiculously high gas fees.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hvq5uzr",
+                    "author": "littlebrushwooddog",
+                    "score": 1,
+                    "created_utc": 1644085576.0,
+                    "response": "Well written post but you forgot the most important roll up.. POLYGON",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvzyflp",
+                            "author": "Rapante",
+                            "score": 1,
+                            "created_utc": 1644270052.0,
+                            "response": "It is currently not a roll-up but a commit-chain.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hw189w8",
+                                    "author": "littlebrushwooddog",
+                                    "score": 1,
+                                    "created_utc": 1644289572.0,
+                                    "response": "But doesn\u2019t it have zero-knowledge proofs?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hw1ubuy",
+                                            "author": "Rapante",
+                                            "score": 2,
+                                            "created_utc": 1644300936.0,
+                                            "response": "No. But they have multiple projects working on it.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hw1vyof",
+                                                    "author": "littlebrushwooddog",
+                                                    "score": 1,
+                                                    "created_utc": 1644301974.0,
+                                                    "response": "Will they become a L2 or just have L2 hosted on network?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hw1wf99",
+                                                            "author": "Rapante",
+                                                            "score": 2,
+                                                            "created_utc": 1644302278.0,
+                                                            "response": "They will probably have multiple Ethereum rollups. Not sure if they can or will turn the current POS chain into a roll-up.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hvubbfw",
+                    "author": "Konreadit",
+                    "score": 1,
+                    "created_utc": 1644172504.0,
+                    "response": "Looks like there are about 20 layer 2 rollups today, what does the future look like after danksharding?  Will only the top 5 be adopted or will there be more than 20 that you see today?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hwyas6o",
+                    "author": "MisterMaury",
+                    "score": 1,
+                    "created_utc": 1644871105.0,
+                    "response": "Meanwhile, hacker discover an exploit on Optimism that would allow hackers to print unlimited Eth...\n\nhttps://protos.com/ether-hacker-optimism-ethereum-layer2-scaling-bug-bounty/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hx0wrrt",
+                    "author": "thomatrain112288",
+                    "score": 1,
+                    "created_utc": 1644925890.0,
+                    "response": "this was great! If readers want an extended version of this and more, this (long) article covers rollups in more detail plus The Merge, sharding, data availability, and more\nhttps://mirror.xyz/0x3D5FE39342e661776bb5273521F52E99B624288c/NFOsWYCb2eVk612VSnrrCsoKcwI_EMObp_q9uNKa4uA",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hvl6ezy",
+                    "author": "augustofretes",
+                    "score": -9,
+                    "created_utc": 1643996575.0,
+                    "response": "> Rollups are layer 2 chains that fully inherit Ethereum's security, decentralization, liquidity & network effect properties\n\nSo you just straight out start with a lie. Look, I think rollups are interesting and generally a good compromise for Ethereum, but all that mumbo-jumbo of them being the same as L1 are disingenuous.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvl8uhh",
+                            "author": "soccerchamp99",
+                            "score": 5,
+                            "created_utc": 1643997460.0,
+                            "response": "Can you please elaborate on how that statement is incorrect?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvl9otw",
+                                    "author": "frank__costello",
+                                    "score": 2,
+                                    "created_utc": 1643997769.0,
+                                    "response": "I'll take a shot:\n\nRollups _do_ have Ethereum's security, they _can_ have Ethereum's decentralization, but they don't have the liquidity. And network effect is kinda mixed.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvm9f01",
+                                            "author": "soccerchamp99",
+                                            "score": 3,
+                                            "created_utc": 1644011208.0,
+                                            "response": "Got it. Although ethereum\u2019s liquidity is not on L2s, they do have relatively direct access to that liquidity via bridges vs other chains. Maybe that\u2019s how OP was thinking about it",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hvnxavj",
+                                                    "author": "Liberosist",
+                                                    "score": 3,
+                                                    "created_utc": 1644038570.0,
+                                                    "response": "Yes, that's right, you get secure access to liquidity. \n\nOf course, there are nuances missed with the statement made, but I was trying to write a simplified version after all. I disagree it's a \"lie\", though.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hvo2ahy",
+                                                            "author": "soccerchamp99",
+                                                            "score": 1,
+                                                            "created_utc": 1644041631.0,
+                                                            "response": "Agreed, good write up",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "hvngpnk",
+                                                    "author": "levskarcheto96",
+                                                    "score": 0,
+                                                    "created_utc": 1644029995.0,
+                                                    "response": "Technically everything's just bridges and chains.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hvkeud8",
+                    "author": "A_solo_tripper",
+                    "score": -22,
+                    "created_utc": 1643986203.0,
+                    "response": "Wait. So, ETH 2.0 was bullshit the whole time?? (told you so). \n\n> Unlike L1s, rollups get cheaper the more activity there is. So as rollups mature, there's more activity, and token incentives, we'll see rollups get cheaper.\n\nHmmmm... that sounds a lot like bsv. But not really because bsv everything is done on the mainchain ;)\n\nSounds like the central team are making these changes, no? I thought eth was soooo *decentralized*, no?\n\nSo, no more POS bullshit talk?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvkkrlt",
+                            "author": "Liberosist",
+                            "score": 13,
+                            "created_utc": 1643988583.0,
+                            "response": "Craig Wright is not Satoshi, he's a very naughty boy",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvkl0ls",
+                                    "author": "A_solo_tripper",
+                                    "score": -12,
+                                    "created_utc": 1643988680.0,
+                                    "response": "> Craig Wright is not Satoshi, he's a very naughty boy\n\nReally doesn't matter what you believe about Craig Wright. BSV easily scales, with more transactions, which will allow rapid adoption, and cheaper fees.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvmz0o9",
+                                            "author": "Imadethisacc4anidiot",
+                                            "score": 8,
+                                            "created_utc": 1644021845.0,
+                                            "response": "Yep, any day now BSV will fade into relevance",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hvkttyo",
+                            "author": "Maswasnos",
+                            "score": 12,
+                            "created_utc": 1643991987.0,
+                            "response": "Gotta step up your troll game, man. This is some lame stuff.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvl7uuj",
+                                    "author": "A_solo_tripper",
+                                    "score": -5,
+                                    "created_utc": 1643997100.0,
+                                    "response": "> Gotta step up your troll game, man. This is some lame stuff.\n\nTell everyone that Eth 2.0 POS was bullshit without telling everyone Eth 2.0 PoS was Bullshit.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hvl29aq",
+                            "author": "cryptOwOcurrency",
+                            "score": 6,
+                            "created_utc": 1643995066.0,
+                            "response": "With zk rollups, everything is also \"done\" on the main chain in terms of validation.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvl7mmk",
+                                    "author": "A_solo_tripper",
+                                    "score": 2,
+                                    "created_utc": 1643997016.0,
+                                    "response": "> With zk rollups, everything is also \"done\" on the main chain in terms of validation.\n\nWay to redefine main chain with layer 2 for the dummies who didn't pick up on it. If you have to have a layer two, there is a problem with layer **one**. \n\nAnd are you just going to ignore what I said about the whole Eth 2.0 POS scam?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvldv3s",
+                                            "author": "cryptOwOcurrency",
+                                            "score": 3,
+                                            "created_utc": 1643999307.0,
+                                            "response": "> Way to redefine main chain with layer 2 for the dummies who didn't pick up on it.\n\nNo redefining here. If you don't understand that zk rollup data and execution validation both happen directly on the main chain (yes, the Ethereum Layer 1 chain), then you don't understand Layer 2.\n\n> If you have to have a layer two, there is a problem with layer one. \n\nThat's your opinion, I guess.\n\n> And are you just going to ignore what I said about the whole Eth 2.0 POS scam?\n\nYou didn't actually say anything about it.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hvlezm5",
+                                                    "author": "A_solo_tripper",
+                                                    "score": 0,
+                                                    "created_utc": 1643999724.0,
+                                                    "response": "> No redefining here. If you don't understand that zk rollup data and execution validation both happen directly on the main chain (yes, the Ethereum Layer 1 chain), then you don't understand Layer 2.\n\nYes, layer two **is dependent on layer one**. And layer one's fees are astronomical. The layer one fees aren't going to disappear. \n\n> That's your opinion, I guess.\n\nSee above. What person in their right mind would knowingly build a house on sinking sand? You all are out of your minds. There is not going to be any development worthwhile done on the 1st layer nor 2nd layer.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hvli7bz",
+                                                            "author": "cryptOwOcurrency",
+                                                            "score": 3,
+                                                            "created_utc": 1644000913.0,
+                                                            "response": "> Yes, layer two is dependent on layer one.\n\nNobody said it wasn't dependent on Layer 1.\n\n> And layer one's fees are astronomical. The layer one fees aren't going to disappear. \n\nLayer 2 spreads Layer 1 fees out over many Layer 2 transactions. Through zk proofs, hundreds of Layer 2 transactions can be batched up into the same amount of L1 gas usage as a single L1 transaction.\n\n> What person in their right mind would knowingly build a house on sinking sand?\n\nAny evidence that Layer 1 is sinking sand, or are you just saying that because it's a neat-sounding, catchy soundbite? Needing to build a Layer 2 for cheap user transactions does not mean that Layer 1 is broken. It's solid as witnessed by the last 7 years, it's just oversubscribed.\n\n> There is not going to be any development worthwhile done on the 1st layer nor 2nd layer.\n\nKeep your eyes shut, buddy. I have a feeling that if I spent a bunch of time to do a detailed write-up about all the new Layer 1 and Layer 2 developments over the past year, you'd find some issue with it.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "hvltrhg",
+                                                                    "author": "A_solo_tripper",
+                                                                    "score": 2,
+                                                                    "created_utc": 1644005268.0,
+                                                                    "response": "> Layer 2 spreads Layer 1 fees out over many Layer 2 transactions. Through zk proofs, hundreds of Layer 2 transactions can be batched up into the same amount of L1 gas usage as a single L1 transaction.\n\nSo, people are paying the same amount of fees!!! lol You are saying that instead of 100 people paying $100 worth of fees, you are saying that 100 people can pay small payments that equal to $100 of fees. It's the same shit. \n\n> Any evidence that Layer 1 is sinking sand, \n\nYes, look at the large fees on layer 1, and the attempt to fix the high fees with layer 2, but it's really not changing anything. It's an attempt to obfuscate the fees so people wont realize the high fees they are paying. People will realize this either sooner or later. \n\n> Keep your eyes shut, buddy. I have a feeling that if I spent a bunch of time to do a detailed write-up about all the new Layer 1 and Layer 2 developments over the past year, you'd find some issue with it.\n\nHow are those cryptokitty fees working out for you??",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "hvly9vs",
+                                                                            "author": "cryptOwOcurrency",
+                                                                            "score": 2,
+                                                                            "created_utc": 1644006966.0,
+                                                                            "response": "> So, people are paying the same amount of fees!!! lol You are saying that instead of 100 people paying $100 worth of fees, you are saying that 100 people can pay small payments that equal to $100 of fees.\n\nYes, instead of 100 people paying $100 each, 100 people pay $1 each. We call this an improvement.\n\n> It's an attempt to obfuscate the fees so people wont realize the high fees they are paying.\n\nPeople pay lower fees each.\n\n> How are those cryptokitty fees working out for you??\n\nCryptokitties are not a Layer 2 product.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "hvlzji9",
+                                                                                    "author": "A_solo_tripper",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1644007450.0,
+                                                                                    "response": "> Yes, instead of 100 people paying $100 each, 100 people pay $1 each. We call this an improvement.\n\nAs you admitted to before, the fees don't go anywhere, they are just place in a different area. It's the same as someone selling a $5 for $0.01. Just pay $4.99 for the taxes. And advertise a burger for $0.01. \n\nYou are being tricked. But, who cares?\n\n> People pay lower fees each.\n\nNo they wont. \n\n> Cryptokitties are not a Layer 2 product.\n\nlol... So you are just going to ignore the first layer? How? You are literally building atop of it. If cryptokitties couldn't survive, then something built on top of it can't survive either. Use your logical skills.,",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "hvm0dxc",
+                                                                                            "author": "cryptOwOcurrency",
+                                                                                            "score": 2,
+                                                                                            "created_utc": 1644007769.0,
+                                                                                            "response": "> As you admitted to before, the fees don't go anywhere, they are just place in a different area. It's the same as someone selling a $5 for $0.01. Just pay $4.99 for the taxes. And advertise a burger for $0.01. \n\nNot true, and I didn't admit that. Fees per transaction are lower on L2.\n\n> You are being tricked.\n\nNope.\n\n> No they wont. \n\nThey already do. https://l2fees.info/\n\n> lol... So you are just going to ignore the first layer? How? You are literally building atop of it. If cryptokitties couldn't survive, then something built on top of it can't survive either. Use your logical skills.\n\nBecause zk rollups replace execution with zero knowledge proofs of execution, saving CPU time.\n\nThis isn't hypothetical, it's been running in prod for over a year now.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "hvmbvp3",
+                                                                            "author": "Kike328",
+                                                                            "score": 1,
+                                                                            "created_utc": 1644012156.0,
+                                                                            "response": "Lol no, L2 compresses transactions and publish in the L1 a proof of those transactions instead the full tx. You came here to FUD without even understanding the basics of L2. My man, they are already working, it\u2019s not something OP invented",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "hvnebeu",
+                                                                                    "author": "A_solo_tripper",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1644028866.0,
+                                                                                    "response": "> Lol no, L2 compresses transactions and publish in the L1 a proof of those transactions instead the full tx.\n\nAnd multiple inputs for smart contracts on layer 2 too??",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "hvnn5cd",
+                                                                                            "author": "Kike328",
+                                                                                            "score": 2,
+                                                                                            "created_utc": 1644033138.0,
+                                                                                            "response": "Idk what are you talking about, they public the fucking proof of the execution for a bunch of txs which are the same txs you could include in your usual L1 block, with the same smart contract interactions etc",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "hvnf1bt",
+                                                                                            "author": "cryptOwOcurrency",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1644029200.0,
+                                                                                            "response": "What do you mean by \"inputs\"?",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "hvmz51m",
+                                                            "author": "Imadethisacc4anidiot",
+                                                            "score": 2,
+                                                            "created_utc": 1644021900.0,
+                                                            "response": "> What person in their right mind would knowingly build a house on sinking sand?\n\nWhy are you on the internet now? You're not seriously going to pretend you're using L1 are you?",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "hvl9mrf",
+                                            "author": "HackLaddy",
+                                            "score": 2,
+                                            "created_utc": 1643997747.0,
+                                            "response": "But... ETH is still moving to POS? How exactly is it a scam?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hvlcvyl",
+                                                    "author": "A_solo_tripper",
+                                                    "score": 2,
+                                                    "created_utc": 1643998945.0,
+                                                    "response": "> But... ETH is still moving to POS? How exactly is it a scam?\n\nRead the OP\n\n> Especially all the 2018/19 articles about sharding and **\"Ethereum 2.0\" - yeah, those are obsolete**.\n\nThere is not going to be an eth 2.0. Never was going to happen.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hvlda1v",
+                                                            "author": "HackLaddy",
+                                                            "score": 5,
+                                                            "created_utc": 1643999090.0,
+                                                            "response": "But Ethereum is still moving to POS, and it never took money from anyone. So how does this make it a \"Scam?\"",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "hvle96j",
+                                                                    "author": "A_solo_tripper",
+                                                                    "score": -2,
+                                                                    "created_utc": 1643999452.0,
+                                                                    "response": "> But Ethereum is still moving to POS,\n\nNo. It's not. It was all bullshit like I said. \n\n> and it never took money from anyone. \n\nYou have absolutely no idea what you are talking about. Thousands of people gave money to ethereum, also during the ICO. Many more gave when Vitaly said eth was moving to 2.0, sounds like even you gave them money. Eth is a security.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "hvlkvfp",
+                                                                            "author": "HackLaddy",
+                                                                            "score": 2,
+                                                                            "created_utc": 1644001919.0,
+                                                                            "response": "https://blog.ethereum.org/category/research-and-development/\n\nI wonder what all these updates on the merge are then...\n\nIt took money during the ICO, and delivered on it's promises.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "hvls8vi",
+                                                                                    "author": "A_solo_tripper",
+                                                                                    "score": 0,
+                                                                                    "created_utc": 1644004693.0,
+                                                                                    "response": "> https://blog.ethereum.org/category/research-and-development/\n> \n> \n> \n> I wonder what all these updates on the merge are then...\n\nAhhh... did you not read the OP? Are you in disagreement with OP?? lol\n\n> > Especially all the 2018/19 articles about sharding and **\"Ethereum 2.0\" - yeah, those are obsolete**.\n\nYou either disagree with OP or you agree that Vatalik lied about Eth 2.0 in 2020. Which is it?\n\n> It took money during the ICO, and delivered on it's promises.\n\nWhat was the promise and what did they deliver?",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "hvlt9hf",
+                                                                                            "author": "HackLaddy",
+                                                                                            "score": 3,
+                                                                                            "created_utc": 1644005077.0,
+                                                                                            "response": "Did you not read the dates on the blog posts? Most recent post was **5 days ago.** not 2018/2019.\n\nThe promise was a decentralized cryptocurrency that could run smart contracts, among other things. Delivered. And scalability is being addressed as we speak.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hvzz7fo",
+                            "author": "Rapante",
+                            "score": 1,
+                            "created_utc": 1644270356.0,
+                            "response": "The switch to proof  of stake (\"the merge\") will happen by June. This is one part of what used to be called Eth2. The other part, sharding will be implemented in the year following the merge.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hw06gee",
+                                    "author": "A_solo_tripper",
+                                    "score": 1,
+                                    "created_utc": 1644273265.0,
+                                    "response": "> The switch to proof of stake (\"the merge\") will happen by June.\n\nThe Eth foundation has been singing this same song for 5 years :)",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hw1ujtb",
+                                            "author": "Rapante",
+                                            "score": 1,
+                                            "created_utc": 1644301074.0,
+                                            "response": "That may be the case. But we did not have a spec. Now we have a spec. And it has even been implemented in multiple software clients. And it is already testing.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

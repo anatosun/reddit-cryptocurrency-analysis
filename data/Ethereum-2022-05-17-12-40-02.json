@@ -1,0 +1,53 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "url8b4",
+            "title": "What's the APR for stake ETH?",
+            "url": "https://www.reddit.com/r/ethereum/comments/url8b4/whats_the_apr_for_stake_eth/",
+            "author": "mkiob",
+            "created_utc": 1652790122.0,
+            "score": 1,
+            "num_comments": 3,
+            "subreddit": "ethereum",
+            "selftext": "\nI know currently it's possible to do staking using some third parties platforms or validator aggregators. Can anyone say what's the current APR for stake ETH and the expected APR after merge?\n\nAlso, will it be a stable and guaranteed APR? Has network usage and charged fees any influence on APR level?\n\nIf possible would like also to know how different is the staking APR of you have at least 32E and run a house by yourself. Is it require much technical knowledge to do that?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8xt7q8",
+                    "author": "kristoforo22",
+                    "score": 1,
+                    "created_utc": 1652790986.0,
+                    "response": "Currently it\u2019s about 4% per 32 ETH stake. There is an inverse \u201cyield curve\u201d; the more validators, the lower the return. Post merge it\u2019s supposed to go up significantly (I\u2019ve seen 5-10% APR predictions, but don\u2019t want to spread rumors; I don\u2019t think any definitive statement on this has come out yet. As I understand it, this higher level of APR will be in effect in the immediate-term post-merge, but will also decline as more and more validators come online.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8xtc7f",
+                    "author": "Maswasnos",
+                    "score": 1,
+                    "created_utc": 1652791054.0,
+                    "response": "https://ethereum.org/en/staking/\n\n4.3% APR right now for a basic solo validator. \n\nAverage APR post-merge is really hard to guess since it's dependent on network traffic/congestion. Could be around 10% APR, but could also be less. If you're in a big pool I think 6-10% is likely for several months post-merge. \n\n> Also, will it be a stable and guaranteed APR? Has network usage and charged fees any influence on APR level?\n\nThere is a base \"guaranteed\" APR that will lower over time as more validators join the network. Then there is the APR from block tips, which is highly variable and will also get lower as more validators join the pool. Block tips will go up during periods of high congestion, mainly NFT mints. \n\n> If possible would like also to know how different is the staking APR of you have at least 32E and run a house by yourself. Is it require much technical knowledge to do that?\n\nSolo staking APR is 4.3% currently; pooled staking is 10-25% less than that due to the pool fees. It's not too technical, there are great guides on /r/ethstaker.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8xwtq0",
+                    "author": "NabyK8ta",
+                    "score": 1,
+                    "created_utc": 1652792866.0,
+                    "response": "Here\u2019s a spreadsheet with some good guesses on\n\nhttps://docs.google.com/spreadsheets/d/1vrK5sY5ooq-F8dcyRhmmAJ5YtgkvWKWP3OfGCZIYxSA/htmlview#gid=0",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

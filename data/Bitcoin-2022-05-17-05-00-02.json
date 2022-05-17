@@ -1,0 +1,102 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "ureq5w",
+            "title": "Full node advice",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/ureq5w/full_node_advice/",
+            "author": "OdoIcontradictmyself",
+            "created_utc": 1652762926.0,
+            "score": 3,
+            "num_comments": 8,
+            "subreddit": "Bitcoin",
+            "selftext": "I\u2019m non-technical. Currently hold my BTC on a trezor and interested in setting up a node to learn more about Bitcoin and help secure the network. I\u2019m capable of learning but literally wouldn\u2019t even know where to go to download Bitcoin core. What\u2019s the best node hardware for someone like me and what are the steps to set it up? Once it\u2019s up and running, can I direct my trezor wallet to it or should I switch to a node based wallet. Sorry if this sounds rookie, just trying to learn.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8wwe97",
+                    "author": "tinycorperation",
+                    "score": 2,
+                    "created_utc": 1652765214.0,
+                    "response": "Umbrel",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8wwpm0",
+                            "author": "OdoIcontradictmyself",
+                            "score": 1,
+                            "created_utc": 1652765445.0,
+                            "response": "Appreciate the suggestion. Any reasons why?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8wzmii",
+                                    "author": "lightbulb-7",
+                                    "score": 1,
+                                    "created_utc": 1652767632.0,
+                                    "response": "Super straightforward setup and optimized for UX/UI\n\nYes, you can direct your Trezor to it, but AFAIK you need to do it through Electrum\n\nEdit: I am also no programmer and came across bitcoin 2 years ago. I also have an Umbrel node",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8xhrxx",
+                                            "author": "FreakyPriest",
+                                            "score": 1,
+                                            "created_utc": 1652783565.0,
+                                            "response": "Umbrel runs Electrum automatically. After the blockchain is fully synchronized you need to wait some hours or a day for Electrum to sync. This is not shown in the UI. But no knowledge is needed to seit it up. It does automatically.\n\nThe wallet software needs support for the Tor network though. Umbrel only supports connection via Tor. I don't know if the Trezor wallet software can do this. And you need to run a Tor proxy on the PC that runs the wallet software. You can just run Tor Browser while using the wallet.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i8x2fpk",
+                                    "author": "tinycorperation",
+                                    "score": 1,
+                                    "created_utc": 1652769907.0,
+                                    "response": "It\u2019s a bitcoin and lightning node. It is easy to set up with a very well designed UX/UI.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i8x71k8",
+                            "author": "Boe_Ning",
+                            "score": 1,
+                            "created_utc": 1652773941.0,
+                            "response": "Is it a full node?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8x81h5",
+                                    "author": "dlq84",
+                                    "score": 1,
+                                    "created_utc": 1652774855.0,
+                                    "response": "Yes, it's running Bitcoin Core.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8xmny5",
+                    "author": "TronixPhonics",
+                    "score": 1,
+                    "created_utc": 1652787081.0,
+                    "response": "Like others have said, Umbrel. I set mine up last year with a pi (before the crazy prices \ud83d\ude01) and hard drive and it was straight forward (had some issues but I think it was due to my previous hard drive). You can also have a lightning node with it if you want. It was my first time setting it up and I was able to figure it out. You can access it via tor when you're not near it which is cool.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

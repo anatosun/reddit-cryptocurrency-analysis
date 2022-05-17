@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uq2esb/can_exchanges_reverse_a_btc_transaction_in_some/",
             "author": "Own_Ad_7321",
             "created_utc": 1652606752.0,
-            "score": 19,
-            "num_comments": 19,
+            "score": 29,
+            "num_comments": 25,
             "subreddit": "BitcoinBeginners",
             "selftext": "So I am reading through the terms and conditions of the exchange that I am using atm. And I came across this section where they said they can \n\n\u201cblock, cancel, or reverse a Transaction you have authorized (even after Digital Assets and/or fiat currency have been debited from or credited to your Account)\u201d if the government demands. \n\nI know BTC transactions are irreversible. So I am surprised why they have this statement\ud83e\udd72\n\nSo I am curious if somehow exchanges have some sort of way to reverse my transactions?\n\nI have withdrawn all my bitcoin from this exchange to my hardware wallet but I am worried they may \u201cconfiscate\u201d it in the future.\n\nI am asking because the political climate in my country is about to get really bad and I criticize my government openly so Im worried they might \u201cconfiscate\u201d of freeze my bitcoin.\n\nThank you in advance. Sorry if its a noob question\ud83d\ude1e\ud83d\ude05\u270c\ud83c\udffd",
             "stickied": false,
@@ -23,18 +23,148 @@
                 {
                     "id": "i8ofm6h",
                     "author": "sciencetaco",
-                    "score": 25,
+                    "score": 32,
                     "created_utc": 1652607624.0,
                     "response": "They cannot reverse a bitcoin transaction once it\u2019s confirmed in your wallet. Nobody can! \n\nThey can probably cancel and reverse fiat transactions, as well as purchases and trades within their system. But a bitcoin transaction is irreversible. That\u2019s the whole point!",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i8ohnmf",
+                            "author": "putyograsseson",
+                            "score": 2,
+                            "created_utc": 1652609398.0,
+                            "response": "Is RBF impossible when there\u2019s already 1 confirmation?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8oiqzp",
+                                    "author": "sciencetaco",
+                                    "score": 9,
+                                    "created_utc": 1652610338.0,
+                                    "response": "RBF only works for unconfirmed transactions. \n\nhttps://river.com/learn/terms/r/replace-by-fee-rbf/\n\n> RBF only works while the transaction is in the mempool. As soon as a transaction enters a block, it cannot be replaced by fee.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8ol1ue",
+                                            "author": "putyograsseson",
+                                            "score": 1,
+                                            "created_utc": 1652612247.0,
+                                            "response": "Thanks for the clarification!",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i8oi7iu",
+                            "author": "Own_Ad_7321",
+                            "score": 1,
+                            "created_utc": 1652609876.0,
+                            "response": "Thank you! \u270a\ud83c\udffd",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i8ozxhf",
                     "author": "ourielohayon",
-                    "score": 8,
+                    "score": 9,
                     "created_utc": 1652621702.0,
                     "response": "absolutely yes. as long as the funds are on their exchange they can do whatever they want. reverse, seize, sell it for you.....\n\nThat is why you need a wallet",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8oy3vz",
+                    "author": "YangWenli1",
+                    "score": 3,
+                    "created_utc": 1652620731.0,
+                    "response": "They can only confiscate it if you keep it on their exchange since they own the wallet.\n\nAfter you withdraw, it is impossible for them to take it.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8pwk3t",
+                    "author": "igadjeed",
+                    "score": 3,
+                    "created_utc": 1652636418.0,
+                    "response": "Exchange transactions are not Bitcoin transactions. On an exchange the only real Bitcoin transactions are Bitcoin deposits into your account, and Bitcoin withdrawals from your account",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8ogi9n",
+                    "author": "mibjt",
+                    "score": 2,
+                    "created_utc": 1652608403.0,
+                    "response": "Short answer, no. Long answer, no.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8oi6l8",
+                            "author": "Own_Ad_7321",
+                            "score": 1,
+                            "created_utc": 1652609854.0,
+                            "response": "Haha thank you!\u270a\ud83c\udffd",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i8ouoju",
+                            "author": "yasire",
+                            "score": 1,
+                            "created_utc": 1652618797.0,
+                            "response": "If your private key is kept on the exchange then I don\u2019t see why they couldn\u2019t undo the transaction with a new reverse transaction.  If OP has his/her private key then I agree an exchange can\u2019t reverse anything",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8oiikb",
+                    "author": "Greenery_Financial",
+                    "score": 1,
+                    "created_utc": 1652610130.0,
+                    "response": "To explain the legalize of this it's not related to fiat transactions in particular (but also), but also is for crypto. \n\nWhat it's trying to say is that if your account is flagged by the government they will cooperate fully and block attempted transactions outside, even if you've fully authorised it.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8owa93",
+                    "author": "shelton123johnnie",
+                    "score": 1,
+                    "created_utc": 1652619716.0,
+                    "response": "I think that's not the case. A Bitcoin transaction is irreversible.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8qntrk",
+                    "author": "d3vrandom",
+                    "score": 1,
+                    "created_utc": 1652648431.0,
+                    "response": "They can't reverse transactions that have been incorporated into the bitcoin blockchain like your withdrawal transaction. But they can reverse trades on the exchange itself since those are offchain.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8tovyw",
+                    "author": "Thomill12",
+                    "score": 1,
+                    "created_utc": 1652711988.0,
+                    "response": "They can only reverse whatever happens in their own systems, not on the chain.    \nLets talk Binance: If you send 1 BTC to another Binance account, it won't happen onChain but centralized. This is like Paypal. And we all know what that means",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8oelzf",
+                    "author": "AutoModerator",
+                    "score": -1,
+                    "created_utc": 1652606752.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
                     "depth": 1,
                     "comments": []
                 }

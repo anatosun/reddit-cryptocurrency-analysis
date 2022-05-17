@@ -1,0 +1,1341 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "url4m0",
+            "title": "this eth community set a world record",
+            "url": "https://twitter.com/famous_dyl/status/1525833559939895297",
+            "author": "famous_Dyl",
+            "created_utc": 1652789767.0,
+            "score": 1,
+            "num_comments": 0,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "lvhoqk",
+            "title": "How Ethereum will become a \"green\" blockchain through Proof of Stake",
+            "url": "https://twitter.com/iamDCinvestor/status/1366459228110655488?s=20",
+            "author": "DCinvestor",
+            "created_utc": 1614626118.0,
+            "score": 43,
+            "num_comments": 5,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "gpcoyi2",
+                    "author": "supersoeak",
+                    "score": -18,
+                    "created_utc": 1614638931.0,
+                    "response": "There is nothing green about locking up capital and getting a return by creating currency out of thin air compared to PoW where you have an incentive to develop more efficient chips and better forms of energy.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gpdpwdy",
+                            "author": "Hanzburger",
+                            "score": 12,
+                            "created_utc": 1614658646.0,
+                            "response": "I can only assume this was a sarcastic comment.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "gpejzq8",
+                            "author": "Crypto_Economist42",
+                            "score": 6,
+                            "created_utc": 1614683937.0,
+                            "response": "This is a factually false statement.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "6d1mca",
+            "title": "Proof of Stake leads to centralization, with worse consequences than PoW",
+            "url": "https://www.reddit.com/r/ethereum/comments/6d1mca/proof_of_stake_leads_to_centralization_with_worse/",
+            "author": "fuckharvey",
+            "created_utc": 1495626487.0,
+            "score": 76,
+            "num_comments": 171,
+            "subreddit": "ethereum",
+            "selftext": "Please let me preface this by saying PoS is a *technical* improvement beyond PoW. It allows the network to use significantly fewer resources in mining. This is good because it doesn't require the energy requirements of a small country to maintain the network.\n\nThat said, once it interacts with the real world and economics it is no better than Proof of Work.\n\nProof of Work is based upon a numbers game of who has the most hashing power while proof of stake is based upon a statistically fair game of whoever has the most crypto. Each nominal unit of coin has equal odds to be picked for its wallet to be the next miner. One stipulation of PoS, however, is that the wallet must be online. To be online, it requires resources (hardware, electricity, and internet connection). Resources have a real world cost. Due to the fact PoS doesn't require you to fight with hashing power, the energy cost and hardware costs don't rise with odds of being chose to mine the next block (the mining lottery).\n\nBecause of this, larger stakes, have a cheaper cost to mine than smaller stakes. To illustrate this fact, imagine you have a PC in your house with 1 ETH and your neighbor has an identical PC setup in his house but with 2 ETH. The energy requires to run the two setups are exactly the same and the overhead hardware are the same so the cost to run each of your mining operations is the same. However, your neighbor has 2x odds you do since he has 2x more ETH. Since each block will offer the same mining reward regardless of your stake size, the expected value (odds*payout) for each unit of ETH is the same, you and your neighbor both have the same expected EV. However, because those machines have a cost to run, their profitabilities are different. Your neighbor has 1/2 the cost per unit of production, as you.\n\nGiven the fact that the larger stake holder ends up with a larger profit margin, as a rational investor, he would keep more of the mined ETH to increase his production ability. So a larger stake holder would grow his ETH stake faster than a smaller stake holder.\n\nAfter a point, the cost of being part of the mining operation would be too high relative to the payout for small stake holders and they would rationally drop out of the mining business, taking their wallets offline.\n\nThis leads to centralization of mining and the rich get richer, faster.\n\nThe alternative would be for smaller stake holders to band together and move all of their wallets to a central service then share all mined ETH and running costs as it would reduce the per unit cost of the operation.\n\nThis is called economies of scale. We saw this early on in Bitcoin. The difference with Proof of Stake is that it would require all of the smaller holders to put their stakes in the same location. This creates a vulnerability not only to hacking but to outside jurisdictional force such as regulation, taxation, etc.\n\nSo one way or the other, PoS will lead to centralization the same way PoW does due to economies of scale. While it does end up reducing the energy cost to run the backbone of the network to a fraction of what PoW requires, it ends up introducing a significant amount of new risk which cryptos aren't designed to handle (i.e. outside regulation and jurisdictional control).\n\n**EDIT**: Just to clarify, this isn't an issue of comparing one person with 100 ETH and the guy next door that holds 200 ETH. It's more like the guy holding 100 ETH compared to Staking business next door that's holding 100k or 1M.\n\nThe cost difference in operations *does* end up making a massive difference.\n\n**EDIT 2**: Thanks to /u/Miffers (below) for the link to the other thread.\n\nSo only 250 validators will be allowed (unless the devs can figure out a way to open it up to everyone, later on)\n\nhttps://www.reddit.com/r/ethereum/comments/4yuerh/how_will_casper_select_validators_and_avoid/\n\nSo yeah, Vitalik and Vlad *know* PoS is going to lead to centralization and worse, centralized pools. I wonder if they're considering the risk they're exposing from outside forces.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "dhz6wz3",
+                    "author": "desorl",
+                    "score": 39,
+                    "created_utc": 1495634316.0,
+                    "response": "To accurately model centralization arising from economics of scale it's better to compare a validator with 2000 coins to one with 1000 coins, not 2 coins vs. 1 coin. Or even better, one validator with 2000 coins versus 20 validators with 100 coins each. In any case, at these scales the cost of operating a node will likely be negligible.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "dhz8c7x",
+                            "author": "latetot",
+                            "score": 7,
+                            "created_utc": 1495635850.0,
+                            "response": "exactly",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "dhz9w4t",
+                            "author": "MagnesiumCarbonate",
+                            "score": 3,
+                            "created_utc": 1495637457.0,
+                            "response": "A 100eth node against 100M eth total has to wait ~139\u00b133 days at 12sec per block. At 0.1 kWh idle this costs $40.0\u00b1$8. Meanwhile a 10eth node spends 1388 days and spends $330. Once eth goes to PoS 100eth could be $100k, so to be a reasonable player in that world you'd have to lay out significant capital...",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "dhzaf75",
+                                    "author": "latetot",
+                                    "score": 8,
+                                    "created_utc": 1495637988.0,
+                                    "response": "Worst case all you have is the cost of running a node (about $60 per year) which thousands do today for free . This is no where close to the costs of trying to compete in POW mining.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "dhzan7t",
+                                    "author": "fuckharvey",
+                                    "score": 2,
+                                    "created_utc": 1495638219.0,
+                                    "response": "Which is exactly what the BTC miners ended up doing.\n\nI look at this like I would the profitability of mining gold. It can still be a profitable business but the overall margins have fallen over the decades.\n\nBTC's mining margins are only being maintained by the constantly rising price.\n\nSince mining in PoS will be significantly easier to do than PoW (since it doesn't require extremely specialized hardware), the margins will get squeezed to where the large operations end up doing the best.\n\nThe returns will drop like a rock to where it'll be just a handful of players. This is even more true since the amount of work and time required to scale operations is very minimal. Most of the cost is simply obtaining more ETH.\n\nPoW scaling requires more equipment which takes time to fabricated, build, and install. PoS scaling simply requires buying more ETH and sticking it in the node (maybe spinning up another cloud server).",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "dhzluje",
+                                            "author": "sandball",
+                                            "score": 2,
+                                            "created_utc": 1495649346.0,
+                                            "response": "> The returns will drop like a rock to where it'll be just a handful of players. \n\nThat doesn't make sense to me. The only situation in which that would be true would be where ETH protocol itself sets the staker reward very low, like way sub-1%. Even if the rewards are 1%, and mining is so friction free that everybody stakes, the returns will be 1%. If only half the people stake, the returns at 2%. I bet in reality the risk and overhead of staking will lead to maybe 20% of ETH being staked, so you could get 5% return. Nice free market action there to find that point.\n\nI wouldn't call 1% a \"rock\" bottom return in this age.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "di048de",
+                                                    "author": "buqratis",
+                                                    "score": 1,
+                                                    "created_utc": 1495669092.0,
+                                                    "response": "Especially when those returns are likely assumed to increase in value over time. The actual value of returns over time will be worth more than 1%.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "dhz8b20",
+                            "author": "fuckharvey",
+                            "score": 6,
+                            "created_utc": 1495635817.0,
+                            "response": "And that leads to centralization by way of a small group of whales, which is exactly what happened in bitcoin.\n\nIt was originally mining pools made up of ham operators. Then the ASIC move came in and it was people running small ASIC setups. Then the ASIC makers vertically integrated the mining business and they ended up becoming the small group of miners for the entire bitcoin network.\n\nThe same will happen with ETH. It has to do with economic scaling nothing else. This time, the means of production aren't ASIC boards, but rather ETH itself.\n\nWhile I am fine with a small group of whales running the backbone, it is still centralization at its finest. At the end of the day, it just means that PoS isn't any \"fairer\" than PoW.\n\nMy analysis was not to play PoS against PoW, but rather to point out the possibility that PoS creates that PoW doesn't, the centralization of wallets and holdings in mining consortiums.\n\nPoW doesn't allow small production holders to be economically competitive. PoS does allow small production holders to be competitive by banding together in consortiums/co-ops (call it what you want). But this banding will end up creating a new risk that PoW doesn't face.\n\nRemember governments don't normally attack single rich people (because they have an economic incentive and ability to fight back). They *do* however attack groups of small people and individuals as they don't have the resources to fight back.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "dhz8zz7",
+                                    "author": "latetot",
+                                    "score": 15,
+                                    "created_utc": 1495636538.0,
+                                    "response": "The difference in profit margins between large and small staking pools is tiny compared to difference profit margins between large and small mining pools. To assume that these are equally strong centralizing forcing defies all economic reasoning ",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "dhz9a82",
+                                            "author": "fuckharvey",
+                                            "score": 1,
+                                            "created_utc": 1495636826.0,
+                                            "response": "The difference in profit margin just changes the growth rates. We can't adequately model how long it takes for one to eventually be priced out because we don't have the data.\n\nBut the outcome still stands.\n\nThe real difference is that capital investment will flow to the larger ones rather than the smaller ones as they can maintain higher profit margins. This will accelerate their growth.\n\nI'm not saying there will be some precise way of who gets picked, it could be random luck that group A gets a large capital investment and group B doesn't, but it doesn't change the fact that group A will then increase profitability more and be able to grow faster (as well as attract more capital investment).",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "dhz9qxg",
+                                                    "author": "latetot",
+                                                    "score": 10,
+                                                    "created_utc": 1495637309.0,
+                                                    "response": "If all pos miners combined into 1 pool, the price of ETH could fall to zero.  Do you really think stakers would against their economic interests and destroy the value of their stakes just to impact a tiny difference in profit margins? The centralizing force is tiny here compared to fears of losing the value of their stakes. ",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "dhz9tps",
+                                                            "author": "fuckharvey",
+                                                            "score": 6,
+                                                            "created_utc": 1495637386.0,
+                                                            "response": "> If all pos miners combined into 1 pool, the price of ETH could fall to zero.\n\nNobody said 1 pool. But say 10 pools, what logic or proof do you have to support your argument that the price would drop to zero?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "dhzapdw",
+                                                                    "author": "latetot",
+                                                                    "score": 7,
+                                                                    "created_utc": 1495638280.0,
+                                                                    "response": "Not zero but if 10 pools was perceived as negative for ETH and was hurting the price , that would strongly incentivize people to form smaller pools to make their profits higher from a rising value of ETH.  Much easier to do this in POS than POW since the costs of forming a small pool are tiny in POS. And yes - mining centralization is definitely a negative for bitcoin and if users could pay $60 per year to form new POW mining pools , thousands would do so to help the bitcoin price even if they lost their $60. ",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "dhzgads",
+                                                                            "author": "fuckharvey",
+                                                                            "score": 2,
+                                                                            "created_utc": 1495643740.0,
+                                                                            "response": "> Not zero but if 10 pools was perceived as negative for ETH and was hurting the price\n\nBut you can't know when the negative will start to outweigh the positive until it happens.\n\nThis means consolidation will occur and further happen until consolidation ends up causing detriment (if the holders even allow it to be broken up at that point as they could decide the afforded power is worth more than the margin increase in profitability by breaking up).",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        },
+                                                                        {
+                                                                            "id": "dlzbsp3",
+                                                                            "author": "Hazdude",
+                                                                            "score": 2,
+                                                                            "created_utc": 1503428862.0,
+                                                                            "response": "For me this assumes too much \"goodwill\" or willingness to act for the collective interest by the pools. For example, if a pool is built by a speculator simply to extract value from the rising ETH price, what incentive do they have (without regulation) to act in the long term future of ETH when they could simply move on to another crypto/cash out if it looks like a crash is coming. \n\nEven if there is some level of goodwill by one particular pool, they would still expose themselves to a significant \"first mover\" risk if they decided to unilaterally break up their pool at the wrong time or when there was still speculative gains to be made. \n\nSome of these risks could be mitigated by some form of group planning and regulation among the leading players (as is seen in most cryptos, to an extent), but then how does this differ from the financial system we have today, and the potential for cartel forming, collusion etc.? ",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "dhztq71",
+                                                                    "author": "TheTruthHasSpoken",
+                                                                    "score": 3,
+                                                                    "created_utc": 1495656964.0,
+                                                                    "response": "I don't know if I get correctly your point, but I try to answer anyway.\n\nDo you have an idea of how much computer power is needed to run a pos node? I would suppose that a 10 Wh device can do it.\nNow with a price of 0,16kw/h that would be 15\u20ac in a YEAR.\n\nYou can add even the cost of this small device, you can double, triple the watt consumption, but the price would still be paltry.\n\nDespite it being really small and negligible you could argue that it exists, but you are not taking in consideration the fact that, while joining a pow pool has no risk except of losing 1-2 hours of mining power, in POS you could lose your entire stack. So I can't really see a centralized future at all, but maybe I'm missing something.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "dhzpc6j",
+                                                            "author": "race2tb",
+                                                            "score": 1,
+                                                            "created_utc": 1495652698.0,
+                                                            "response": "Prove it. Average crypto investor does not have a clue about this and does not care.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "di18zw2",
+                                                    "author": "AlainCo",
+                                                    "score": 2,
+                                                    "created_utc": 1495733992.0,
+                                                    "response": "with home mining there was an advantage to the small, provided he was working for a pool as a hired gun.\nbig company may not be competitive with homework by hobbyists, despite economy of scale (because of bureaucracy).\npool concentrate, but they can be abandonned by democratic choice of the pool members...\nthey are no more than workers union.\n\nwhat PoS is doing is repeating the finance tragedy, where seamless traffic of money and risk make money without real work.\n\nit is less work, thus more effective (sure), but there is a systemic risk.\nthe strenght of cryptocoin is that consensus is related to some real work, with a mass of self-employed hired-guns who can democratically refuse to follow what they judge bad.\n\nhash pool are not a problem, but money pool are.\n\nthere should be an incentive to be very different, very small, to have different incentives, values, understanding, nationality, industry, experience, age...\n\nI'me afraid PoS will be a tragedy like subprime, starting from a good green idea, ending is a planetary catastrophe.\n\nif there is research to do it is on about how to promote different people, different interests, stakes, political opinion, religions, values, nationalities, mafia influence, among the people who participate a consensus.\n\nthe Chinise hashocracy don't do politics, as the islandic hashocracy, or the gamers hashocracy, but sure goldman sachs will do politics.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "dhzprqo",
+                                    "author": "BudDePo",
+                                    "score": 3,
+                                    "created_utc": 1495653097.0,
+                                    "response": ">At the end of the day, it just means that PoS isn't any \"fairer\" than PoW.\n\nEven if that's true, you're title claims POS has *worse* consequences than POW, despite margins being larger in POS compared to POW.  Correct me if I'm wrong, but your argument hinges on this idea:\n\n>The difference with Proof of Stake is that it would require all of the smaller holders to put their stakes in the same location. This creates a vulnerability not only to hacking but to outside jurisdictional force such as regulation, taxation, etc.\n\nI agree with you that we would need a safe way to pool funds that wouldn't be vulnerable to a DAO type attack.  I imagine that is one of the major difficulties in implementing POS and why it isn't already implemented.  I don't understand how this would create vulnerabilities to regulation and taxation though.  Please explain that further.\n\n\n\n\n",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "dhzq5c6",
+                                            "author": "fuckharvey",
+                                            "score": 1,
+                                            "created_utc": 1495653459.0,
+                                            "response": "Regulation would be in the form of things like KYC which introduces new cost and risk (of things like identity theft).\n\nAlso, KYC is getting more restrictive.\n\nLook at the difference between Bitmex and Poloniex. It's a startling difference in how the two operate.\n\nI prefer companies I DON'T have to give my information to especially when they're not on the hook for paying me back if something goes wrong.\n\nRemember, none of these places carry FDIC or SIPC like insurance on your crypto deposits. So you're SoL if they get hacked or something. Why would I want to give them my ID when it simply adds *more* risk for me?\n\nEspecially when a ton of these companies will be other countries from where you live and therefore have zero criminal liability for fucking you over.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "dhzrowv",
+                                                    "author": "BudDePo",
+                                                    "score": 2,
+                                                    "created_utc": 1495654922.0,
+                                                    "response": "I didn't ask what the regulations are, I asked how POS would increase risk of regulation.  \n\nWhat companies are you referring to?  I think you're forgetting what we're dealing with here.  This is Ethereum.  We don't need a third party to consolidate ETH staking pools, that's what smart contracts are for.   IMO staking pools will be a similar risk to a DAO, which were already doing anyway.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "dhzs0bg",
+                                                            "author": "fuckharvey",
+                                                            "score": 2,
+                                                            "created_utc": 1495655233.0,
+                                                            "response": "Because the DAO existed on the blockchain, i.e. the database, not in the physical world.\n\nPoS increases the risk because nodes have to be on *physical* servers *somewhere*.\n\nThose servers are under the legal purview of the local and domestic jurisdictions.\n\nWhile a US website hosted in Russia might be a little iffy for apply US law, it DEFINITELY has Russian law applied as that's where the server is physically hosted and therefore law enforcement have jurisdiction over the server and all information on it.\n\nSo if the servers for a PoS validating pool is in the US, US law gets applied regardless of where the owning company is located.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "dhzv7f5",
+                                                                    "author": "BudDePo",
+                                                                    "score": 1,
+                                                                    "created_utc": 1495658504.0,
+                                                                    "response": "Ah I see what you mean.  Would it be possible for a staking smart contract to pool computing power from a decentralized source such as Golem so that there really is no centralized physical server that would be subject to regulation?  I don't know if that makes sense or not, just curious if anyone has come up with a solution to this problem yet...",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "dhzw2oj",
+                                                                            "author": "fuckharvey",
+                                                                            "score": -1,
+                                                                            "created_utc": 1495659408.0,
+                                                                            "response": "Except that Golem runs on TOP of the network which uses the staking mechanism.\n\nSince I'm guessing you don't know much about recursive programming and stack protocols, the answer is no you can't.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "dhzwlhq",
+                                                                                    "author": "BudDePo",
+                                                                                    "score": 2,
+                                                                                    "created_utc": 1495659972.0,
+                                                                                    "response": "No not too much, but I'm sure that that answer doesn't depend on how much I know.  \n\nDo you believe that there is a better solution to centralization outside of POS or POW or are we just spinning our wheels?",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                },
+                                                                                {
+                                                                                    "id": "di0456c",
+                                                                                    "author": "buqratis",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1495668979.0,
+                                                                                    "response": "SmartPool already does distributed pools on top of ethereum, their white paper and their developers are very clever.",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "di04j2a",
+                                                                                            "author": "fuckharvey",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1495669472.0,
+                                                                                            "response": "Fair enough, happy to be wrong.\n\nThat said, are they then having to *pay* ETH to validate and be rewarded ETH?",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "die2jle",
+                                    "author": "Redanditchy",
+                                    "score": 1,
+                                    "created_utc": 1496454400.0,
+                                    "response": "What is your opinion on nem's Proof of Importance?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "die2nzh",
+                                            "author": "fuckharvey",
+                                            "score": 2,
+                                            "created_utc": 1496454585.0,
+                                            "response": "Haven't looked into it.\n\nBeen busy lately. PoS came to me in the shower.\n\nI'm actually not sure ANY scheme is going to be any better than another.\n\nAt the end of the day, network security is only going to be as secure as it costs to destroy.\n\nPayment for it can't be higher than the collective costs of running the nodes (both opportunity and operational costs).",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "dhzjlnd",
+                    "author": "panek",
+                    "score": 12,
+                    "created_utc": 1495647025.0,
+                    "response": "The cost of staking in POS would be marginal. Many run nodes for free now. You can buy a Raspberry Pi and run it on minimal energy costs. In fact I wouldn't be surprised if we see an industry around manufacturing energy efficient staking computers.\n\nThis seems like a non issue. There will be far more validators than miners in POW because of the low barrier to entry. There is also an economic incentive for large ETH holders to move their ETH into other investments with better returns (i.e. diversify) because larger amounts of capital have greater opportunities such as real estate. ",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "dhzkinn",
+                            "author": "fuckharvey",
+                            "score": 6,
+                            "created_utc": 1495647980.0,
+                            "response": "> You can buy a Raspberry Pi and run it on minimal energy costs. In fact I wouldn't be surprised if we see an industry around manufacturing energy efficient staking computers.\n\nThis is probably the BEST argument made so far. This makes a fair point. The question then, however, is will it marginalize the cost *enough*.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "dhzkqtt",
+                                    "author": "panek",
+                                    "score": 5,
+                                    "created_utc": 1495648215.0,
+                                    "response": "Raspberry Pis have been used for other staking coins like SDC (which transitioned to Particl). I don't know exactly what the energy costs are but they become essentially trivial (<$10 per year) after the initial upfront investment. And second hand Pis are cheap. I think we may see an industry sprout up around this ($30 or less ready to stake out the box running on <$10 a year energy) unless the Pi is sufficient. I think it will marginalize the cost enough. It would be decades before the marginal costs mean anything. It may be a barrier for those with say <5 ETH but I think we'll be fine!",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "dhzlew1",
+                                            "author": "fuckharvey",
+                                            "score": 4,
+                                            "created_utc": 1495648919.0,
+                                            "response": "Alright, then that works.\n\nThen the next question falls to what is the lock-in period for staking on a node and what is the annualized return?\n\nAs I said, I'm not against solutions, I just realized a serious potential problem and thought I'd post a discussion.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "dhzlh3m",
+                                                    "author": "panek",
+                                                    "score": 2,
+                                                    "created_utc": 1495648984.0,
+                                                    "response": "I recall something like 3 months but I'm not sure on the return. Remains to be seen! ",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "dhzm1x9",
+                                                            "author": "fuckharvey",
+                                                            "score": 2,
+                                                            "created_utc": 1495649547.0,
+                                                            "response": "3 months is too long for people to do like a \"petty cash\". Therefore it won't be able to be people's \"savings accounts\".\n\nNot sure if that's too long for \"rainy day fund\" either.\n\nIt may not be able to compete with RobinHood's service. Therefore public market investing may still produce a better return without a lock-in period (which is important for non-rich who require liquidity more than return). If RobinHood didn't exist, then I'd say it'd DEFINITELY be for the non-rich but RH makes moving into and out of the market costless (since liquidity isn't an issue at the levels we're speaking).\n\nTherefore it's competing with equity market returns.\n\nThough it could exist as part of a replacement to bonds in a person's investment portfolio (if the risk and price volatility aren't too high).",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "dhzmtrz",
+                                                                    "author": "panek",
+                                                                    "score": 2,
+                                                                    "created_utc": 1495650281.0,
+                                                                    "response": "There's also the potential that the ETH will appreciate so the real return may be greater. Now it could also depreciate... But to place those funds into RH would require conversion to fiat which many may not want to do for tax or other reasons. I'm also not clear what investment vehicle you're referring to for RH but keep in mind that staking ETH would be guaranteed returns.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "dhzn8jq",
+                                                                            "author": "fuckharvey",
+                                                                            "score": 1,
+                                                                            "created_utc": 1495650671.0,
+                                                                            "response": "That's a good point. I do believe, however, that a RasPi solution would still be the minority of ETH due to the high technical knowledge requirements for it.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "dhznbri",
+                                                                                    "author": "panek",
+                                                                                    "score": 2,
+                                                                                    "created_utc": 1495650758.0,
+                                                                                    "response": "Setting it up would be a pain but I could see an easy out-of-the-box solution with Ethereum wallet pre-installed popping up in the future. Maybe something for the Ledger team to consider!",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "dhznu76",
+                                                                                            "author": "fuckharvey",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1495651255.0,
+                                                                                            "response": "Sounds like a security issue just waiting to happen.\n\nhttp://lifehacker.com/this-chart-shows-how-computer-literate-most-people-are-1789761598",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "di0424s",
+                            "author": "fuckharvey",
+                            "score": 1,
+                            "created_utc": 1495668870.0,
+                            "response": "I made an edit to my original post. There are a limited number of spots for validators and the required minimum to become one is relatively high.\n\nThe devs hope to be able to open it up to everyone but aren't sure if they will be able to.\n\nTherefore they see the problem further than I was looking and there may be network constraints on having too many nodes.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "di046h5",
+                                    "author": "panek",
+                                    "score": 1,
+                                    "created_utc": 1495669026.0,
+                                    "response": "Yeah there has been discussions on as much as 1000 ETH down to 32 ETH from what I recall as a min for staking. Pools would take care of that though. ",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "di04okg",
+                                            "author": "fuckharvey",
+                                            "score": 1,
+                                            "created_utc": 1495669672.0,
+                                            "response": "> Pools would take care of that though.\n\nBut pools are exactly the risk I described in the original post.\n\n1000x 10 watt devices still use 1000x more than one 10 watt device.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "dhz2byg",
+                    "author": "Drumsetplyr87",
+                    "score": 26,
+                    "created_utc": 1495628742.0,
+                    "response": "This is one of the best critical posts about POS that I have seen that doesnt just say \"POS SUCKS DONT DO IT\". Thanks for your input. I don't know enough to try to counter your arguments, and look forward to seeing the discussion. ",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "dhz341h",
+                            "author": "fuckharvey",
+                            "score": 13,
+                            "created_utc": 1495629807.0,
+                            "response": "I personally like the fact that it uses a LOT less energy and would TOTALLY be all for it but it makes it a MASSIVE target to outside forces.\n\nI'm significantly more worried about governments going after the wallet \"banks\" (yes they'd be banks) and forcing fiat regulations on them like KYC (and everything *is* headed in that direction).\n\nKYC is become more and more cumbersome, restrictive, and predatory.\n\nThis kind of risk is actually one of the central reasons the blockchain was *invented*, so that it could avoid a lot of the problems fiat has.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "dhz362k",
+                                    "author": "Drumsetplyr87",
+                                    "score": 6,
+                                    "created_utc": 1495629879.0,
+                                    "response": "I know what you mean about the energy- I run a small mining farm and although I love the income, the ridiculous amount of energy used is crazy. My energy is sourced via 100% renewable means, but it still tickles the environmentalist in me in a bad way. ",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "dhz55rh",
+                                            "author": "fuckharvey",
+                                            "score": 11,
+                                            "created_utc": 1495632339.0,
+                                            "response": "I mean PoS is a BRILLIANT engineering solution but it's a piss poor security solution when you don't take into consideration the economics of scaling.\n\nUnfortunately I'm sure I'll just get downvoted because I'm not all gung-ho for whatever Vitalik is selling.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "dhz8r31",
+                                                    "author": "zaphod42",
+                                                    "score": 13,
+                                                    "created_utc": 1495636280.0,
+                                                    "response": "I don't see you being downvoted...  Ethereum isn't a cult, and we don't worship vitalik...  I think you'll find that this subreddit welcomes discussion about the technology.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "dhz5z3q",
+                                                    "author": "Drumsetplyr87",
+                                                    "score": 4,
+                                                    "created_utc": 1495633268.0,
+                                                    "response": "I think people need to be critical of every decision when it comes to ethereum. It helps keep the ecosystem as fit as possible, and as long as the critical discussion is productive, Its all good to me. ",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "dhz8956",
+                                                    "author": "latetot",
+                                                    "score": 9,
+                                                    "created_utc": 1495635761.0,
+                                                    "response": "You haven't made any arguments about scaling.  Your OP says that centralization incentives are the same as in POW.  That is false for several reasons: 1) while it is true that larger pools may have tiny increase in their profit margin compared to smaller pools based on fixed price of staking, the difference in profit margin is NO WHERE EVEN CLOSE to the difference in profit margin for large POW mining pools compared to small POW mining pools.  So yes, while this is a small centralizing incentive, POW is far worse in this regard.  2) you are ignoring people's incentive to stake based on their expectations for what it will do to the token price.  Token price has a huge impact on mining rewards in POW and POS.  So even if there is a small difference in  profit margin when looking at revenue streams between large pools and small pools, if people believe that decentralization benefits from many small pools will help to support the token price they have a strong incentive to do so.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "dhz8zpk",
+                                                            "author": "fuckharvey",
+                                                            "score": 4,
+                                                            "created_utc": 1495636530.0,
+                                                            "response": "> if people believe that decentralization benefits from many small pools will help to support the token price they have a strong incentive to do so.\n\nThis is the argument of paying more for ideological belief rather than the bottom line.\n\nThis works for individual to individual, but doesn't work well in straight up financial businesses.\n\nBusinesses that deal in money and only money, don't really care one way or the other. They are just looking to make more, regardless of social outcomes.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "dhz984v",
+                                                                    "author": "latetot",
+                                                                    "score": 1,
+                                                                    "created_utc": 1495636768.0,
+                                                                    "response": "Wrong - it is absolutely the bottom line - if people believe that by forming small staking pools it will make the price of ETH go higher - then they will do this to help their profits not out of benevolence ",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "dhz9gd4",
+                                                                            "author": "fuckharvey",
+                                                                            "score": 5,
+                                                                            "created_utc": 1495637005.0,
+                                                                            "response": "But there is no proof that forming small groups will drive the price higher compared to consolidating into larger pools for cost savings.\n\nYou're making an assumption without any proof or valid argument to back it up.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "dhza16q",
+                                                                                    "author": "latetot",
+                                                                                    "score": 0,
+                                                                                    "created_utc": 1495637600.0,
+                                                                                    "response": "I believe that having a decentralized Ethereum will make the value of my ether higher. Therefore I plan to solo stake rather than pool. Any tiny difference in profit margin I could get from pooling is far outweighed by what I believe would be the negative impact of centralized mining on the value of my ETH holdings. I expect that many others will see it this way as well. Time will tell. But it's nothing like pow mining - I can run a node for $60 year and do it now for free anyway.  I would never run a pow mining rig out of my home. ",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "dhzawzw",
+                                                                                            "author": "fuckharvey",
+                                                                                            "score": 5,
+                                                                                            "created_utc": 1495638492.0,
+                                                                                            "response": "> I believe that having a decentralized Ethereum will make the value of my ether higher.\n\nWhy though? What reason do you have for this?\n\n> Any tiny difference in profit margin I could get from pooling is far outweighed by what I believe would be the negative impact of centralized mining on the value of my ETH holdings.\n\nBut why? What makes you believe this?\n\nYou still haven't stated a *reason* for why you believe your way is better.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "di04c8p",
+                                                    "author": "buqratis",
+                                                    "score": 1,
+                                                    "created_utc": 1495669222.0,
+                                                    "response": "Aren't you essentially saying that the dangers of POS are the same as POW, and the deficiency in POS is that it doesn't fix the issue with POW? In that case, if the centralization issue remains the same (all POW is concentrated geographically for example) then the benefit of efficiency is still a net positive right?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "di04nem",
+                                                            "author": "fuckharvey",
+                                                            "score": 1,
+                                                            "created_utc": 1495669630.0,
+                                                            "response": "No, because PoW will *never* allow individuals to band together and be able to effectively compete with a hardware whale miner as the individuals will have general purpose computing devices while the whales will use highly specialized computing devices.\n\nIn PoS, specialized equipment doesn't give you any better odds at production, it can simply help to reduce your cost of running your production machine (the node with all of the stake in it).",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "dhzhzwg",
+                                            "author": "_Mr_E",
+                                            "score": 1,
+                                            "created_utc": 1495645369.0,
+                                            "response": "If it's renewable and given that energy is never destroyed, only modified, why does it even matter? The sun has crazy amounts of energy put out every second, why are people so concerned about this?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "dhzi2ks",
+                                                    "author": "Drumsetplyr87",
+                                                    "score": 3,
+                                                    "created_utc": 1495645443.0,
+                                                    "response": "The vast majority of the energy used in the world is not by renewable resources. If it was, the issue wouldn't be that big. ",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "di00c71",
+                                                            "author": "Mordan",
+                                                            "score": 0,
+                                                            "created_utc": 1495664243.0,
+                                                            "response": "oil is renewable... it just takes time.\n\nalso all the oil available to humans will be burned over the 4 coming centuries. a blip on the earth timescale.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        },
+                                                        {
+                                                            "id": "dhzih9q",
+                                                            "author": "_Mr_E",
+                                                            "score": -1,
+                                                            "created_utc": 1495645870.0,
+                                                            "response": "well perhaps Bitcoin mining will actually incentivize the development of more of these renewal sources?",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "di004u5",
+                                            "author": "Mordan",
+                                            "score": 0,
+                                            "created_utc": 1495664004.0,
+                                            "response": "the sun fries the earth with its photons. why are environmentalists so emotionally stupid.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "dhz544l",
+                    "author": "benjaminion",
+                    "score": 8,
+                    "created_utc": 1495632287.0,
+                    "response": "How do I fit in to your economic model?\n\nI don't mine at all as I believe that PoW is a shocking waste of CPU/GPU cycles. However I do currently run a node for fun (no profit), so that cost is already sunk as far as I am concerned. I'd gladly lock up some Ether for PoS; at least then I'd get something back from my investment in running a node, which I'd just be running anyway.\n\nIf there are others like myself around then this would be a trend against centralisation. But, then again, I might be unique :-)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "dhz5gdt",
+                            "author": "fuckharvey",
+                            "score": 1,
+                            "created_utc": 1495632677.0,
+                            "response": "If you're ETH production isn't covering the costs to obtain it, then you're not acting ~~economically~~ financially rational and you're in the extreme minority of the ETH population.\n\nThis is because you'd be paying to support this network when you shouldn't be.\n\nPlease understand I'm not calling you stupid or an idiot. If you truly believe in the technology, then that's one thing. But then the return you're seeking isn't financially based.\n\nIt'd be akin to investing in TSLA. The people who buy into that are doing it because they believe in Musk not because they're looking for a financial return (cause TSLA is a HORRIBLE financial investment).\n\nEDIT: changed \"economically\" to \"financially\" because he could still be economically rational just not looking for tangible returns (i.e. looking to feel good about himself not looking to get money back)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "dhz62g3",
+                                    "author": "latetot",
+                                    "score": 10,
+                                    "created_utc": 1495633378.0,
+                                    "response": "Several thousand people run ETH nodes today for free.  Why do you think they wouldn't continue and get rewarded with POS if that was an option even if they didn't cover their costs? Furthermore you are ignoring a critical  important source of return all mining operations- the increasing  value of the token  in fiat terms. If people spend $5 month to run a node but by doing so help to increase the value of their tokens, it is absolutely in their economic interest to do so. ",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "dhz7f4s",
+                                            "author": "fuckharvey",
+                                            "score": 3,
+                                            "created_utc": 1495634869.0,
+                                            "response": "Except the price won't rise indefinitely. This isn't bitcoin with a finite supply.\n\nMy economic model isn't a statement of today, it's a statement of the limit as time progresses.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "dhz7t13",
+                                                    "author": "latetot",
+                                                    "score": 5,
+                                                    "created_utc": 1495635286.0,
+                                                    "response": "The issue of finite supply has nothing to do with this.  Remember finite supply in bitcoin is just a hope that all costs of network security can be paid by taxing users of the system instead of coin holders.  This is completely unproven that this is possible without dramatic drop in price - look at what's happening today with bitcoins crippling transaction fees -   Users could just leave for a cheaper chain.  Anyway- the point is that of course prices will fluctuate and mining in either POW or POS can prove to be unprofitable especially if token values are falling.  With regard to centralization incentive, however, the incentive to stake is based on expected reward from 1) POS mining rewards and 2) impact of decentralized staking on token price.   If people believe that by staking in small pools it helps to support the price increases in the price of the token, they absolutely have a rational economic incentive to do so",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "dhz93w2",
+                                                    "author": "zaphod42",
+                                                    "score": 5,
+                                                    "created_utc": 1495636650.0,
+                                                    "response": "A small amount of inflation can actually be a good thing...  People hoard deflationary assets and are more willing to spend inflationary assets.  When people are willing to spend, it creates more liquidity in the economy, which can increase adoption and subsequently raise the price.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "dhz9jgh",
+                                                            "author": "fuckharvey",
+                                                            "score": 2,
+                                                            "created_utc": 1495637093.0,
+                                                            "response": "I agree. Currency requires a balance between circulation and hoarding for it to maintain value. Complete hoarding and the value goes up on paper but without liquidity, they're just that, paper gains.\n\nWithout hoarding, you end up with a currency that is effectively credit (as in debt, not futuristic 'credits') and nothing more.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "di00s42",
+                                                                    "author": "Mordan",
+                                                                    "score": 1,
+                                                                    "created_utc": 1495664778.0,
+                                                                    "response": "I enjoy reading your post. I am a sceptic about Ethereum and Bitcoin for that matter as well. How can you hope to store millions of contracts/coffe buys for bitcoin on the Eth blockchain and keep the network decentralized?  \nDo you realize that Eth/Btc chains are public databases? Paying the transaction fee allows your to save information forever. How big those databases can be and stay decentralized? ",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "di03kqn",
+                                                                            "author": "fuckharvey",
+                                                                            "score": 1,
+                                                                            "created_utc": 1495668246.0,
+                                                                            "response": "I've been a skeptic of cryptos since the start, not because of the technology (which I actually think is brilliant) but rather because of outside forces (mostly governments) that have no interest in allowing a crypto to displace it's own currency and therefore part of it's power. Once they pile on the laws and regulations, the value proposition of crypto ends up being worse than that of fiat.\n\nBut that's for another discussion entirely. This discussion is simply on the concept of Proof of Stake.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "dhznfwr",
+                                    "author": "felixwatts",
+                                    "score": 5,
+                                    "created_utc": 1495650872.0,
+                                    "response": "You must be an economist.\n\nWhy does a mother feed her children? \n\nWhere did all the open source code in the world come from?\n\nWho wrote Wikipedia?\n\nFinancial profit is just one of many motivations for _rational_ behaviour.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "dhzrfrn",
+                                            "author": "NessDan",
+                                            "score": 3,
+                                            "created_utc": 1495654676.0,
+                                            "response": "Reading something so human in all this game theory discussion is refreshing :)",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "dhz7qfy",
+                    "author": "dombah",
+                    "score": 9,
+                    "created_utc": 1495635212.0,
+                    "response": "I upvoted you - always good to have a crtitical point of view that's well thought out.\n\nSlightly tangential-- but the point of centralization / decentralization IMO goes deeper than all this crypto/pos/pow business. It's basically the heart of politics and something I've pondered for a bit with no definitive answer (just a gray one). \n\nIt all comes down to the mechanism that answers the question \"who determines who gets what?\". A \"decentralized\" system with no central authority to mandate a specific distribution of the pie, by definition does not guarantee equal distribution - in fact it is a vacuum that is left open for someone or some people *to* take power. Markets are free but they also concentrate towards the strong, whatever the parameters are in that system (computational power, connection time, stake, good looks...). \n\nOn the other hand, a system with an authority that dictates the \"fair distribution\" (ok, no competition, everyone will get X...) will be egalitarian in a sense....but is in effect also centralized. That power can be abused as we have seen through history. A paradox. So, which one of the two is actually \"decentralized\"? (IMO that is a matter of semantics and what level of the fractal you look at -- and that's why we should look at \"decentralization\" as degrees on a spectrum, and something to be balanced - not in absolutes)\n\nI would be curious to know what in your mind would be the best solution to that. Btw google vitalik's medium post on decentralization and give that a read. He has some very good perspective. Also you might see if you can start a discussion with vlad if you have a technical improvement.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "dhz8271",
+                            "author": "fuckharvey",
+                            "score": 1,
+                            "created_utc": 1495635559.0,
+                            "response": "I agree on power. It always tends to accumulate to a central point.\n\nThe problem is that power *does* corrupt and those who seek it do it because they're corrupt.\n\nBut the matter here is not of who has the power but of the vulnerability to forces outside the network that can impose their power upon the users of the network.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "dhzh15i",
+                                    "author": "escapevelo",
+                                    "score": 3,
+                                    "created_utc": 1495644450.0,
+                                    "response": "I look at as a natural part of evolution whether is it's atoms centralizing in stars until it explodes or civilization centralizing until political revolution. Decentralization leads to centralization, which in turn leads to a more complex form of decentralization. However, that doesn't not mean we cannot delay the onset of centralization, but it is inevitable. I expect that since the life cycle of cryptocurrencies has just begun we have at least 20+ years before it comes a real problem. ",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "dhz7tfc",
+                    "author": "cogneato69",
+                    "score": 9,
+                    "created_utc": 1495635298.0,
+                    "response": "I wouldn't say worse consequences. This is an apples to oranges comparison, a lesser of two evils choice I think. Vitalik has admitted to some limitations of POS and I'm sure knows Casper is not the perfect and final consensus model. Hopefully the nut can be cracked before too much centralization sets in. It's going to be fun to see how it plays out, personally I'm all for POS because of the environmental issue of POW.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "dhziz9g",
+                    "author": "Qith_Karrar",
+                    "score": 6,
+                    "created_utc": 1495646389.0,
+                    "response": "So there are a few misconceptions here.\n\nFirst, the rewards are not per block but per prepare and commit. This means everyone can get a reward every block. See this spreadsheet. https://docs.google.com/spreadsheets/d/1ecdbTXd1n7j970YRuhiyiny3ej6dXUEYmkTHDVcRpIc/edit#gid=0\nAlthough it's a couple of months old, so their might be additional changes that need to be made. This doesn't change your main point though.\n\nSecondly, it is possible to make a stake pool that is 100% decentralized on chain. Yes, at some point a (or a set of) real physical nodes will have to sign prepares and commits, and those are vulnerable to interference. It can be set up to be impossible for a stake pool to steal your money under any circumstance (at worst the validator could behave badly and get slashed). \n\nIt's also possible to have a stake pool that requires 2/3ds (or any fraction) of participants to sign the commits before they become valid. In this case, every pool member has to effectively run their own node, but there is no centralized node operator who can cause everyone to get slashed. Between these two, I don't think stake pools are as risky as you imply they are.\n\nFinally, the cost to run a node and stake is not just the cost of upkeep on the node, but also the opportunity cost of keeping your ETH locked up in the casper contract or a pool contract. I suspect that this cost will outweigh the node cost for most people with a lot of ETH. For instance, if staking ETH gives you a 2% yearly real returns, someone who could use that money to get 3% real returns is losing money by staking ETH. Now, this opportunity cost is dependent on the individual and their situation, 2% might be the best they can do. I'm speculating here, but rich individuals generally have better investment opportunities then people with less income, so the rich might be priced out of the stake market before the average person is!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "dhzk14u",
+                            "author": "fuckharvey",
+                            "score": 1,
+                            "created_utc": 1495647479.0,
+                            "response": "> Secondly, it is possible to make a stake pool that is 100% decentralized on chain. Yes, at some point a (or a set of) real physical nodes will have to sign prepares and commits, and those are vulnerable to interference. It can be set up to be impossible for a stake pool to steal your money under any circumstance (at worst the validator could behave badly and get slashed).\nIt's also possible to have a stake pool that requires 2/3ds (or any fraction) of participants to sign the commits before they become valid. In this case, every pool member has to effectively run their own node, but there is no centralized node operator who can cause everyone to get slashed. Between these two, I don't think stake pools are as risky as you imply they are.\n\nBut it's likely that any formed pool will require participants to stay online or not be awarded any of the payout (or there's an incentive to be part of the pool but NOT stay online). Being online is what produces the high cost factor unless they all share the same physical server.\n\nIt doesn't matter if the pool is decentralized on the chain if the physical hardware running the pool is decentralized as well. This isn't an on-chain issue, but rather a problem in the physical world, not electronic one. The chain runs the same on 100 computers as it does on 10 but 100 computers costs 10x more.\n\n> Finally, the cost to run a node and stake is not just the cost of upkeep on the node, but also the opportunity cost of keeping your ETH locked up in the casper contract or a pool contract. I suspect that this cost will outweigh the node cost for most people with a lot of ETH. For instance, if staking ETH gives you a 2% yearly real returns, someone who could use that money to get 3% real returns is losing money by staking ETH. Now, this opportunity cost is dependent on the individual and their situation, 2% might be the best they can do. I'm speculating here, but rich individuals generally have better investment opportunities then people with less income, so the rich might be priced out of the stake market before the average person is!\n\nActually that's not true. The rich look at risk vs reward (more so than poorer people). If ETH holds a consistent price (or matches inflation), then that 2% is likely to be *significantly* lower than other investments.\n\nThe poorer people are the ones that will likely drop in favor of other investments. The ability to manage larger portfolios means you considering risk vs reward more than overall growth.\n\nRemember most private funds don't really do any better than index funds in overall returns much less risk vs reward.\n\nMost rich people would take 2% risk free over 5% with risk any day of the week.\n\n",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "dhzmtnp",
+                                    "author": "Qith_Karrar",
+                                    "score": 3,
+                                    "created_utc": 1495650277.0,
+                                    "response": ">The chain runs the same on 100 computers as it does on 10 but 100 computers costs 10x more.\n\nYes, but that's a 10x increase on a very small number. The cost to run a node is small, and the marginal cost might be even smaller if you're using the hardware for something else as well. A lot of people already run nodes altruistically. I mean hell, people run BTC nodes altruistically and those are a much bigger PITA. I don't see how the physical cost to run a node could drive so many people out of the market.\n\n>Most rich people would take 2% risk free over 5% with risk any day of the week.\n\nI don't see how being net long (or short, for that matter) on any cryptocurrency counts as a low risk investment. Volatility would have to come down by orders or magnitude for that to be the case.\n\n",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "dhzn9rx",
+                                            "author": "fuckharvey",
+                                            "score": 2,
+                                            "created_utc": 1495650704.0,
+                                            "response": "Use futures to lock in price.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "dhzoi05",
+                                                    "author": "Qith_Karrar",
+                                                    "score": 2,
+                                                    "created_utc": 1495651890.0,
+                                                    "response": "In an efficient market, the basis on a future is equal to the negative of the rate of riskless return on the asset over the length of the contract. Otherwise you could buy ETH, short futures, and stake till the contract expires for free money.\n\nCurrent derivatives markets for cryptos are far from efficient (you can make quite a bit from this trade right now), but if a large amount of cash tries to hedge this way the basis will fall and eat into the stake profits.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "dhzprul",
+                                                            "author": "fuckharvey",
+                                                            "score": 1,
+                                                            "created_utc": 1495653100.0,
+                                                            "response": "I know how they work. I trade them.\n\nI just meant you can lock in the price of some future profits, today, if you foresee a drop in the price. That would lower your volatility risk.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "dhzggjw",
+                    "author": "remainingpace",
+                    "score": 6,
+                    "created_utc": 1495643902.0,
+                    "response": "I think your argument places too much emphasis on the notion that economies of scale applies equally to PoS as it applies to PoW.\n\nIn PoW, $100,000 of computing equipment gets you a far more profitable node than 100 nodes each having $1,000 worth of computing equipment. Think of a datacenter versus 100 regular desktop computers. The datacenter will be more powerful. \n\nWhereas in PoS, $1,000 worth of ether at stake spread across 100 nodes is equivalent to $100,000 worth of ether at stake in one node. The 100 nodes with $1,000 at stake and the 1 node with $100,000 at stake both gain ether at the same rate.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "dhzgt3m",
+                            "author": "fuckharvey",
+                            "score": 2,
+                            "created_utc": 1495644234.0,
+                            "response": "> The 100 nodes with $1,000 at stake and the 1 node with $100,000 at stake both gain ether at the same rate.\n\nBut the amount of money spent on maintaining an active node is significantly lower for the $100k stake node instead of 100 nodes.\n\nThe other important factor is the difficult of *entering* the game of being a staked node.\n\nIn PoW becoming a mining nodes takes time to get the equipment (only a handful of vendors even produce the equipment, much less sell it), space, setup everything, etc.\n\nIn PoS, it just takes a little bit of software setup time. Then go buy ETH and stick it in the node. That's *incredibly* simple.\n\nIt means *anyone* could become a staker. This is an EASY way for anyone with LARGE private ETH reserves to just go become a node.\n\nIt'll turn into a race to the bottom. Those races happen only as fast as it takes for capital to take notice and enter the space. In this instance, ETH will be well known by that point and the large stakes will be prepaired and ready to go.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "dhzj88t",
+                                    "author": "remainingpace",
+                                    "score": 6,
+                                    "created_utc": 1495646644.0,
+                                    "response": "I think you are missing the point that because anyone can easily join the PoS model, it  leads to decentralization. High barriers to entry create monopolies whereas low barriers to entry are a characteristic of competitive markets.\n\nYou also mention that \"the rich get richer\" and that's even more true in PoW than PoS since the rich get richer at an exponential rate rather than a linear one. Further, having a large stake in the blockchain, by definition, means that you have more to lose if your nodes are faulty and verify false transactions, so people will still only put in what they're willing to lose in the event that their nodes are compromised. Someone here mentioned the costs of securing nodes in the PoS model since that security actually matters now, and I think that's a good point that will impact willingness to contribute a larger stake.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "dhz8bw1",
+                    "author": "zaphod42",
+                    "score": 3,
+                    "created_utc": 1495635841.0,
+                    "response": "> After a point, the cost of being part of the mining operation would be too high relative to the payout for small stake holders and they would rationally drop out of the mining business, taking their wallets offline.\n\nI've already got 3 computers in my house that are running 24/7.  4 if you count the VM running linux that I use as a staking node for Blackcoin.  The cost of running a computer is marginal.  I don't see people taking nodes offline just because of short term profit margins...  The long term value outweighs the short term electricity costs.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "dhzhum3",
+                    "author": "malefizer",
+                    "score": 3,
+                    "created_utc": 1495645219.0,
+                    "response": "The point is that Economies of Scale always perform worse for PoS than with PoW.  Because fix costs are marginal in PoS. General Purpose Computing is a commodity in our days.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "dhziqi6",
+                            "author": "fuckharvey",
+                            "score": 0,
+                            "created_utc": 1495646138.0,
+                            "response": "But the electricity cost is massive. The cost to run a 100W of PC power (probably average for the required use of mining) for a month on residential power is between $6.50 and $7.00 in the USA.\n\nA cloud server can be rented for $5/month. While the difference between two users isn't such a big deal, the big difference is in comparing 1 node with 100k ETH vs 100 users with 1k ETH or 1,000 users with 100 ETH.\n\nTo make it simple, lets assume everyone just rents a cloud server and runs their node from that. The 100k user costs $5/month to mine while the 100 users cost $500 and the 1,000 users cost $5,000. Remember, each group receives the same amount of ETH (statistically speaking). But the 100k user ends up with a LOT more in profit and therefore can invest his returns and obtain more ETH than the competing nodes.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "dhzje1x",
+                                    "author": "latetot",
+                                    "score": 6,
+                                    "created_utc": 1495646805.0,
+                                    "response": "Where are you getting a lot more in  profit?  Thats absurd.  and $6.50 month electricity cost is massive !?! LOL have you seen what it costs to run a POW rig?  You are making a huge mistake here in your assumptions:  we are talking about likely having several hundred large pools with about 1m ETH in them.  These pools will have profit margins of 99.99% and if they combined their profit would go to 99.999% - a few pennies difference for the small staker.   But if that staker was worried about the risks of centralization they easily give up a few cents in revenue.  its the rational thing to do because centralization can hurt price.   ",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "dhzmdqu",
+                                    "author": "malefizer",
+                                    "score": 2,
+                                    "created_utc": 1495649852.0,
+                                    "response": "Yes you are totaly right. And is was never disputed. If you compare it to PoW it is still a massive Improvement. PoW favours Mining farms in a geopolitical situation where labor and energy is cheap and accessable by a political elite. Your Gedankenexperiment shows that PoS favors wales across the world. Which is way more \"egalitarian\" than the PoW game.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "dhzkrfd",
+                    "author": "jesusthatsgreat",
+                    "score": 3,
+                    "created_utc": 1495648233.0,
+                    "response": "You're right but I don't get why this is less fair than PoW... \n\nSurely early adopters / investors in ETH for example are more trusted / worthy actors than someone who comes along today (or years from now) with lots of fiat and decides to build a huge mining farm...\n\nStaking ETH locks it up, takes it out of circulation and prevents you from selling. Only people who believe in the long term future of ETH will do it.\n\nWith PoW, you could mine ETH with the sole intention of selling it immediately for fiat. You may have no interest whatsoever in the future of Ethereum bar the immediate price. \n\nIf people stake ETH to get more ETH, clearly they're thinking of their value in ETH and not in fiat. If everyone thought like that, fiat and all of it's pitfalls would be redundant, so surely rewarding this type of behavior makes more sense than rewarding those who can potentially sell ETH at any stage and stop mining at any stage without any repercussions.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "dhzlktf",
+                            "author": "fuckharvey",
+                            "score": 1,
+                            "created_utc": 1495649093.0,
+                            "response": "> With PoW, you could mine ETH with the sole intention of selling it immediately for fiat. You may have no interest whatsoever in the future of Ethereum bar the immediate price.\n\nMiners actually tend to use futures to lock in prices so they have to continue producing anyway.\n\n> Staking ETH locks it up, takes it out of circulation and prevents you from selling. Only people who believe in the long term future of ETH will do it.\n\nHow long does it get locked up?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "di3953y",
+                                    "author": "cyounessi",
+                                    "score": 1,
+                                    "created_utc": 1495836946.0,
+                                    "response": "Yeah? Where's the futures market? What entity is taking the other side?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "di39951",
+                                            "author": "fuckharvey",
+                                            "score": 1,
+                                            "created_utc": 1495837109.0,
+                                            "response": "Bitmex and OKCoin.\n\nThey have darkpools for large holders. Likely whales are taking the other side.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "dhzmfu7",
+                    "author": "sandball",
+                    "score": 3,
+                    "created_utc": 1495649908.0,
+                    "response": "I was mulling over your argument and I think it's backwards.\n\nIn PoS, due to the risk of trusting a third party with owning the private keys to your ETH combined with the drastically *reduced* performance requirements for running a node of PoS vs. PoW, I think there is a huge incentive to decentralize in PoS.\n\nAs a possible staker of moderate means, I would be terrified of sending my ETH over to some random pool to centralize it, precisely because of the fears of confiscation that you highlight. Not out of a motive for the greater good of Ethereum (which I agree with you is not a factor that's reliable to count on) but for the sake of my own net worth!\n\nI think for your argument you need a much more clear motivating example why I would take the enormous trusting step of sending say $100k of ETH to stake with a centralized third party instead of running a node myself.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "dhzmori",
+                            "author": "fuckharvey",
+                            "score": 1,
+                            "created_utc": 1495650147.0,
+                            "response": "I wasn't necessarily describing the guy who has $100k of ETH, more like the guy with $100 to $1k of ETH.\n\nAlso, it was an argument because most money is too stupid and has no interest in trying to maintain the technical requirements or security.\n\nI saw a report on computer abilities of people in America (not even the entire world which would have regions with ZERO computers) and it was staggering just how few people were actually computer literate.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "dhzhlus",
+                    "author": "herbivorous-cyborg",
+                    "score": 2,
+                    "created_utc": 1495644991.0,
+                    "response": "PoW: Whoever can afford the best mining equipment ends up with the most tokens\n\nPoS: Whoever can afford the most tokens ends up with the most tokens\n\nI fail to see the problem.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "dhzegkw",
+                    "author": "ThriceMeta",
+                    "score": 1,
+                    "created_utc": 1495641967.0,
+                    "response": "Everyone has a computer. Can mobile phones run ETH nodes? Off of wifi obviously.\n\nWould a light client be able to stake? Maybe some secondary use to secure the network? Because I'd so then just everybody can be walking around with a node, staked with the ETH they don't need for day-to-day.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "dhzf4ge",
+                            "author": "fuckharvey",
+                            "score": 2,
+                            "created_utc": 1495642618.0,
+                            "response": "> Everyone has a computer.\n\nFew leave their computers on all the time. Most end up turning it to sleep which is a suspended state saved in active memory (uses battery still but very little).\n\n> Can mobile phones run ETH nodes? Off of wifi obviously.\n\nWouldn't work. The data costs would be too high and it would drain your battery *very* fast.\n\n> Would a light client be able to stake?\n\nNot likely because it would need to be able to hold the entire history (even if only for a short period of time) to maintain validation of the chain.\n\nFew devices (relative to all out there) have enough bandwidth, processing power, and disk space to run the entire chain even if only for a short period of time. This problem is mentioned in the Github document on Sharding.\n\nIt's why *very* few people run Core as a wallet for bitcoin even though it's technically the best wallet for a full user.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "dhzirvf",
+                                    "author": "ThriceMeta",
+                                    "score": 1,
+                                    "created_utc": 1495646177.0,
+                                    "response": "> Few leave their computers on all the time. Most end up turning it to sleep which is a suspended state saved in active memory (uses battery still but very little).\n\nI was referring to mobile phones but fair point. I could see people running a node in the background anyway while they do other stuff but then staking would have to be possible in short, sporadical intervals.\n\n> Wouldn't work. The data costs would be too high and it would drain your battery very fast.\n\nYou're probably right about the drain but data would be essentially free given that they're on wifi.\n\n> Not likely because it would need to be able to hold the entire history (even if only for a short period of time) to maintain validation of the chain.\n\nI'm wondering if the functionality outlined [here](https://www.reddit.com/r/ethereum/comments/690y1u/scaling_tezos_in_which_we_do_not_pursue_sharding/dh3y1ib/) would help. I know that tezos outright uses git to handle state but I don't know enough to say if that lets clients become very light.\n\n---\n\nThanks for responding!",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "dhzgoo9",
+                    "author": "oncemoor",
+                    "score": 1,
+                    "created_utc": 1495644117.0,
+                    "response": "You haven't adequately thought about administrative cost to maintain a pool. It cost a lot more money to secure 100,000 ETH than to secure 100 ETH. The incentive to costly and highly specialized attacks need to be defended against. These costs would well outweigh node cost hosting. You also have strategies for disincentiving pooling by requiring the private keys to be held by the pool.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "dhzheq3",
+                            "author": "fuckharvey",
+                            "score": 1,
+                            "created_utc": 1495644806.0,
+                            "response": "> It cost a lot more money to secure 100,000 ETH than to secure 100 ETH.\n\nActually it costs the same to secure a 100,000 ETH in one wallet as 100 ETH in another wallet.\n\nIf it's 1,000 ETH in 100 wallets, then yes, it's more expensive than just one. However, that's a pool. But if you pay a security person to do it, it's less for one person to do all of them for 100 people to all learn it and do it individually.\n\nThat said, the point of the post was to illustrate that PoS *will* move towards centralization regardless of the timeline (though I think it'll be a LOT faster than it took bitcoin).\n\nI was just pointing out the only way to keep it from being centralized to just a handful of whales operating nodes (like what happened in bitcoin) is for individuals to form pools and wanted to show the risks associated with that.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "dhzy3zk",
+                                    "author": "oncemoor",
+                                    "score": 1,
+                                    "created_utc": 1495661638.0,
+                                    "response": "There are attacks a user with 100 eth doesn't have to defend against that a person with 100k has to  worry about. Attacks cost money so someone might spend 1,000,000 to atack 100,000 eth but wouldn't for 100. This is why banks needs better security than a person who has $1000.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "dhzyeoy",
+                                            "author": "fuckharvey",
+                                            "score": 1,
+                                            "created_utc": 1495661973.0,
+                                            "response": "And the person with 100k ETH isn't nearly as likely to lose their key because they accidentally let the dog rip it to shreds or their kid took it for coloring paper.\n\nBoth sets face risks, just different ones.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "dhziprn",
+                    "author": "ethlong",
+                    "score": 1,
+                    "created_utc": 1495646115.0,
+                    "response": "Whilst I'm not a NEM supporter or invested into it in any way, the only use method I've come across as a viable option to PoS is Prof of Importance which in some ways is a hybrid of Proof of Stake.\n\nI wonder down the line in 3-5 years when PoS and Sharding are implemented, whether it's worth a closer look.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "dhzjp00",
+                    "author": "spacetractor",
+                    "score": 1,
+                    "created_utc": 1495647126.0,
+                    "response": "I have a completely different approach to proof-of-x, I should probably write a paper draft of it. Sort of meshy and a bit co-operation based, would probably lead to a multithreaded blockchain as well. Thoughts? Is POS already set in stone?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "dhzokcq",
+                    "author": "hautdoge",
+                    "score": 2,
+                    "created_utc": 1495651954.0,
+                    "response": "Is it possible to disincentivise large stakes? Like a slowly decreasing reward per # of eth at stake? This could help control the size of pools and whales. Sure, you could then just have whales running a bunch more nodes staking less, but that would also incur slightly more maintenance cost of running said nodes.\n\nAlso, could one use a method of 'geo-tagging' the nodes so we keep a more geographically spread out distribution of nodes? You can easily spoof your IP address and location information, but doing so can risk your stake.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "dhzq0hd",
+                    "author": "Miffers",
+                    "score": 1,
+                    "created_utc": 1495653331.0,
+                    "response": "Wasn't there a limit set on how many validators were going to be?  I remembered it was 2,000 ETH to become a validator.  ",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "dhzqpfv",
+                            "author": "fuckharvey",
+                            "score": 1,
+                            "created_utc": 1495653984.0,
+                            "response": "WHOA. If that's true, then it *is* a rich person's (only) game.\n\nThe only way poorer people could get in would be to pool and centralization, as I described, occurs.\n\nCould you find a source?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "dhzqy0y",
+                                    "author": "Miffers",
+                                    "score": 1,
+                                    "created_utc": 1495654204.0,
+                                    "response": "https://www.reddit.com/r/ethereum/comments/4yuerh/how_will_casper_select_validators_and_avoid/\n\nSo, yeah 250 Validators only.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "dhzr4k5",
+                                            "author": "fuckharvey",
+                                            "score": 1,
+                                            "created_utc": 1495654382.0,
+                                            "response": "Vlad and Vitalik would like to \"open it up\" to everyone if possible.\n\nBut even if they could, it would still centralize. So either you have to be rich to get in or join a centralized pool (which you may have to even if you are \"rich\").\n\nSo they know it'll push to centralization, but I wonder if they're looking at the risk of outside jurisdictional forces.\n\nCause in PoW, you don't have to be a stake holder to help maintain the integrity of the network. That means you don't have to have special reporting requirements (if you're American).\n\nBut in PoS, you have to so even if you setup the server in another country, the regulatory forces will still push you out (if you're American) or require you to hand over information that you probably shouldn't.\n\nAnd lets be honest, people WILL hand over information in KYC situations. I've been on the receiving end for KYC. People will THROW information at you to get it over with. In fact, you'd be surprised just how MUCH private information they'll give to get through.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "dhzq1o9",
+                    "author": "race2tb",
+                    "score": 1,
+                    "created_utc": 1495653364.0,
+                    "response": "My observation is that the users dont care, performance and price will drive their adoption rate. PoS and PoW as implemented in major blockchains currently cannot be proven to not all be done by the same organization and people still put billions into it them. This is why decentralization always loses, people do not care until something goes horribly wrong and they are easily herded into centralized platforms.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "dhzquo7",
+                            "author": "fuckharvey",
+                            "score": 1,
+                            "created_utc": 1495654118.0,
+                            "response": "> This is why decentralization always loses, people do not care until something goes horribly wrong and they are easily herded into centralized platforms.\n\nI thought of this too. The smart individuals that run an individual setup understand the risks and are ok when they lose. Dumb people don't understand the risks and run for safety when they get burned (such as getting a massive security system when their house gets broken into despite the fact that the odds are they won't get broken into again).",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "dhzq3lv",
+                    "author": "pa7is",
+                    "score": 1,
+                    "created_utc": 1495653415.0,
+                    "response": "So what would you suggest? What do you think about POI that NEM has brought forward?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "dhzs4li",
+                    "author": "EthereumMasterRace",
+                    "score": 1,
+                    "created_utc": 1495655347.0,
+                    "response": "Solution: Hybrid POS/POW protocol. \n\n/thread ",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "dhztcld",
+                    "author": "SamsaraDaolord",
+                    "score": 1,
+                    "created_utc": 1495656569.0,
+                    "response": "The cost of keeping a wallet online is so negligible, especially compared to the costs of PoW. There's also the cost of staking which is totally ignored in these arguments. If staking earns less reliable money than investing in something else, then the whole thing falls apart.\n\nPoW is far, far more centralizing, especially when special computers  get developed specifically for mining. And they will eventually get developed for any PoW coin once the economic incentives are enough. Half the reason why bitcoin has such a governance problem is b/c of the disparity and contrast of interests between the economic majority and centralized miners. ",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "dhztsvz",
+                            "author": "fuckharvey",
+                            "score": 1,
+                            "created_utc": 1495657042.0,
+                            "response": "> If staking earns less reliable money than investing in something else, then the whole thing falls apart.\n\nIt comes down to RoI, risk, and liquidity. It'd be much more akin to investing in a bond than anything else.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "dhzx4gb",
+                    "author": "sjalq",
+                    "score": 1,
+                    "created_utc": 1495660544.0,
+                    "response": "Mining keys can be delegated to staking pools and need not expose the original funds they were delegated from Tezos already implements this. ",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "dhzxtne",
+                            "author": "fuckharvey",
+                            "score": 1,
+                            "created_utc": 1495661311.0,
+                            "response": "But does the original wallet which the key was sourced from have to be on?\n\nIf the answer is yes, then it is effectively part of the staking pool and to be assigned a reward, it would have to be registered with the pool. Otherwise the pool is effectively running individual servers, collecting the expected payout from all participants then paying it back to all said participants. Wasteful, unnecessary and adds middleman risk.\n\nIf no, then how does it know it got assigned the key to delegate it out? Magic?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "di0m2z6",
+                                    "author": "sjalq",
+                                    "score": 1,
+                                    "created_utc": 1495697448.0,
+                                    "response": "Geez man, take a breath. \n\nWallet A contains 1000 ETH. From wallet A you can generate a delegate key, the delegate key remains valid while the funds in Wallet A are not reduced. The delegate key is then sent to the staking server for use.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "di0pqwi",
+                                            "author": "fuckharvey",
+                                            "score": 1,
+                                            "created_utc": 1495707537.0,
+                                            "response": "But you didn't answer the question. Does the wallet have to be on or not?\n\nYou already said it can delegate a key and I'm not arguing that. What I want to know is if a wallet can use zero resources and still get awarded the validation rights.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "di11qju",
+                                                    "author": "sjalq",
+                                                    "score": 1,
+                                                    "created_utc": 1495725983.0,
+                                                    "response": "I was addressing your funds at risk vulnerability point. You don't have to risk funds to participate in a staking pool (outside of the staking rules)",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "di128vy",
+                                                            "author": "fuckharvey",
+                                                            "score": 1,
+                                                            "created_utc": 1495726550.0,
+                                                            "response": "But if you still have to be online then you're not benefiting from the economy of scale and therefore might as well NOT be in the pool and run the node on your own as your expected payout doesn't change.\n\nThe point of pooling would be to put all the wallets in the SAME place to reduce the overhead cost of keeping the wallets online.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "di027fj",
+                    "author": "Lloydie1",
+                    "score": 1,
+                    "created_utc": 1495666514.0,
+                    "response": "Seriously? The profit MARGIN is exactly the SAME in POS. It's proportional to the coins you have.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "di05dko",
+                    "author": "Upnorthwest12",
+                    "score": 1,
+                    "created_utc": 1495670564.0,
+                    "response": "Thankyou for such a good sub! Been scrolling down ETHtrader looking for something interesting to read but lately it's gone very repetitive.. lambo..moon.. Korea.. hold.. ",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "di0devb",
+                    "author": "oojacoboo",
+                    "score": 1,
+                    "created_utc": 1495681058.0,
+                    "response": "Why couldn't Ethereum limit the number of ETH of a given miner, such that, anything over a certain amount of ETH isn't calculated for staking purposes?\n\nWould this not create a more fair and distributed mining environment?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "di49fpi",
+                            "author": "buqratis",
+                            "score": 1,
+                            "created_utc": 1495907098.0,
+                            "response": "you just make a new staking account and put your money there, break your large amount into smaller ones.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "di4c9kg",
+                                    "author": "oojacoboo",
+                                    "score": 1,
+                                    "created_utc": 1495910912.0,
+                                    "response": "This may work, but depending on the number of accounts, this could be counter productive.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "di0gyom",
+                    "author": "BitcoinIsTehFuture",
+                    "score": 1,
+                    "created_utc": 1495686515.0,
+                    "response": "The cost of a PoS computer and electricity is NOWHERE NEAR the hardware and electric costs for PoW. Like in different universes completely.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "di0klx4",
+                    "author": "ArticulatedGentleman",
+                    "score": 1,
+                    "created_utc": 1495693940.0,
+                    "response": "1. Create a staking pool contract that allows transfers only from depositor accounts and staking by a designated staking account.\n2. Require the staker to deposit ERC20 tokens as margin reserve to \"borrow\" the depositor ether against.\n3. Pay out a cut of earnings to the staker.\n\nDid I miss something or is this relatively trivial to implement?\n\nObviously this could be improved with more clever mechanics.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "dhzlh70",
+                    "author": "sandball",
+                    "score": 0,
+                    "created_utc": 1495648987.0,
+                    "response": ">The difference with Proof of Stake is that it would require all of the smaller holders to put their stakes in the same location.\n\nThere is no such requirement. There is a very small economy of scale for very small stakers, as you've illustrated, but it pales in comparison to the economies of scale of large PoW pools where there is a time race to mine each new block and very large incentives to be hosted in a high-speed datacenter environment. In PoS the necessary hardware to run the staking node is quickly put to noise for even a moderate staker. (Especially given the run up in price, while computing hardware and networking costs stay constant.)\n\nSo I disagree with your thesis. PoS is not a perfect decentralization, but it is way better than PoW.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

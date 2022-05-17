@@ -1,0 +1,404 @@
+{
+    "subreddit": "Binance",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "m6giaq",
+            "title": "This payment method is currently unavailable based on our current Terms of Use and Internal Policy. If you have more questions, please contact our customer support team.",
+            "url": "https://www.reddit.com/r/binance/comments/m6giaq/this_payment_method_is_currently_unavailable/",
+            "author": "N3locoInvestments",
+            "created_utc": 1615921169.0,
+            "score": 37,
+            "num_comments": 47,
+            "subreddit": "binance",
+            "selftext": "If you encounter the error above on your Binance account while trying to deposit Fiat using either Bank Transfer(SEPA) or Bank Card(Visa/MC). I might have a solution for you.   \n\n\n(Contacted Binance support 7 times on this issues and everytime they said I should use P2P instead. Thank you, Useless Binance Support!)  \n\n\nI should begin that in order to use Fiat on your Binance account you have to be verified, which I did 2 years ago, as you can see in the screenshot below.\n\nhttps://preview.redd.it/n8abrjg0ofn61.png?width=1064&format=png&auto=webp&s=d8629e64f8025b9b6bd47544d6c9640fb0834dcd\n\nIf you go to Buy Crypto -> Bank Deposit ->  Bank Transfer(SEPA), for some of you this sceren might appear:\n\nhttps://preview.redd.it/qd7q9ahgofn61.png?width=1702&format=png&auto=webp&s=3a6449790bf51ca6d7ff879ffa32f00271133771\n\nThe same thing appears for Bank Card(Visa/MC):\n\nhttps://preview.redd.it/pppznminofn61.png?width=1700&format=png&auto=webp&s=f15a670984c009812cfefcc1e776c393b9b31cc1\n\nOk, so as you can see the My Privilege above are not really applying to me, right Useless Binance Support?  \n\n\nNext steps are for people who know what Chrome Developer Tools are. You have to Right Click -> Inspect on the payment details rectangle. and delete the 'div' element as in the screenshot below:\n\nhttps://preview.redd.it/nwjvgbumpfn61.png?width=1718&format=png&auto=webp&s=26b96aa32489e1899ecc25f0e925f4cce6669c8b\n\n Once you delete it you should have something like this (looks like we are getting somewhere right?): \n\nhttps://preview.redd.it/x2mvoneqpfn61.png?width=1079&format=png&auto=webp&s=ff02ff86c71b8709e7bd1955b9b54b42d676b6e9\n\nAs you will probably realize you can't type in the Enter Amount input, so what you'll have to do is Inspect on the input element, remove the 'disabled' attribute, insert the amount and hit Continue.  \n\n\nhttps://preview.redd.it/t824m43bqfn61.png?width=1719&format=png&auto=webp&s=80ef739a1b43867c899d6f3722b8cce4f7ae684e\n\n[I redacted all the details above this is why you have Os and 0s.](https://preview.redd.it/9sszlo02sfn61.png?width=1066&format=png&auto=webp&s=b42345e1d605f38f12eb216ed9a07822880d05f3)\n\nI think that this is a bug on Binance part that they are too incompetent to fix it. The Support team is alos incompetent to at least flag it to the dev team. I did a small transfer to test it and it worked.   \n\n\nDiscalimer: Please be carefull with what I presented above as you might lose your money, try to transfer the minimum amount of money at first in order to verify this actually works. For me it did.  \n\n\nHave a great day!",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "gs3zmcu",
+                    "author": "kwrush",
+                    "score": 2,
+                    "created_utc": 1616628943.0,
+                    "response": "It's funny Binance just add a component on top of deposit interface....I tried your solution with a small amount of money, it's still processing after two days. BTW I have the exact same warning in mobile app, so I don't think it's a bug but Binance randomly suspends my fiat deposit for whatever reason.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gs3a16k",
+                    "author": "MarionT111",
+                    "score": 1,
+                    "created_utc": 1616617305.0,
+                    "response": "I am having the same issue. I am waiting for Binance Support to answer my ticket. If they don't solve it then I might try what you did here. Thank you for this!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gsogagg",
+                            "author": "Kitty_cats_only_",
+                            "score": 1,
+                            "created_utc": 1617019690.0,
+                            "response": "They answer your ticket and fixed your problem mate ?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "gt4krgi",
+                                    "author": "MarionT111",
+                                    "score": 1,
+                                    "created_utc": 1617357589.0,
+                                    "response": "Yes they did. It took them2 minutes to fix it.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "gt4kzr1",
+                                            "author": "Kitty_cats_only_",
+                                            "score": 1,
+                                            "created_utc": 1617357834.0,
+                                            "response": "I try what he did here and they never add the money i try with 15 .. can you tell is what you say to the support because seems they dont understand what i need i have write many time and everytime they answer to try p2p",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "gt4q3r1",
+                                                    "author": "MarionT111",
+                                                    "score": 1,
+                                                    "created_utc": 1617362829.0,
+                                                    "response": "First of all, the country you are from matters the most. There are countries that are not allowed to use this payment method. You should be sure that you country is allowed, otherwise it won't work.\n\nWhat I did:\n\nI copy/pasted the message shown at Payment details. Sent them a screenshot to see what it looks like and told them that a friend of mine was sitting right next to me and he was able to do it and I wasn't. Then the guy from support took a closer look into my account and realized that their system had my country set wrong. He changed my country and the issue was fixed.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "gy5c491",
+                                                            "author": "Piizzz_",
+                                                            "score": 1,
+                                                            "created_utc": 1621027786.0,
+                                                            "response": "Please on which email address did you reach them",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "gybpj8d",
+                                                                    "author": "MarionT111",
+                                                                    "score": 1,
+                                                                    "created_utc": 1621173594.0,
+                                                                    "response": "I reached them on binance live support, not email.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "gwjhlqr",
+                            "author": "hinthue",
+                            "score": 1,
+                            "created_utc": 1619877752.0,
+                            "response": "I opened a ticket and actually they replied pretty quickly, but the answer is:\"You are ineligible to use Binance's Fiat payment method either due to an internal risk assessment or a geographic restriction by our fiat payment partners\"",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "h0kdbu8",
+                            "author": "favsync",
+                            "score": 1,
+                            "created_utc": 1622813596.0,
+                            "response": "Can you please let me know how you created the ticket? I really don't manage to do it. Every time i try throug the chat I get this message that it's not available in my country (which is a bug, it is available in my country)",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "gs9vu2u",
+                    "author": "MarionT111",
+                    "score": 1,
+                    "created_utc": 1616752076.0,
+                    "response": "Like I said in my previous reply, I was waiting for Binance Support to help me with the same thing. They replied after 1 day and the guy from Customer Support solved it in 2 minutes. He said that the system thought I was from a different country (a country that probably is not allowed to deposit in this way) so he made a small change (probably a country change in the system).  Now it works!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gsapjbd",
+                            "author": "Novlan0",
+                            "score": 1,
+                            "created_utc": 1616770220.0,
+                            "response": "Can you tell me how you did it exactly? Because in the binance support chat I don't see the option for this problem",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "gt4kygq",
+                                    "author": "MarionT111",
+                                    "score": 1,
+                                    "created_utc": 1617357796.0,
+                                    "response": "There is no option for this problem. Just go to the end of the options and they will give you a real person to chat with and explain to that person what is your issue. It till get fixed fast.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "gsktwsr",
+                    "author": "haozhoz",
+                    "score": 1,
+                    "created_utc": 1616936573.0,
+                    "response": "Nope, I'm getting this country is not supported, it looks like they introduced  the backend validation",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gstddxn",
+                    "author": "vcn_100",
+                    "score": 1,
+                    "created_utc": 1617121516.0,
+                    "response": "Oh my god, you are a life saver. I've been waiting for an answer from the Support team for ages and they told me the same thing that  I should use P2P instead....",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gt6polo",
+                    "author": "ogzorhn",
+                    "score": 1,
+                    "created_utc": 1617401500.0,
+                    "response": "I got \"risk account detected\" mate. I thought like there is no solution to it.. \n\nIs this method still effective?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gt85982",
+                    "author": "Live_Ad3503",
+                    "score": 1,
+                    "created_utc": 1617435887.0,
+                    "response": "Finally, thanks bro! You are better than binance support!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gtgnh0n",
+                    "author": "GKmusix",
+                    "score": 1,
+                    "created_utc": 1617636275.0,
+                    "response": "Can someone help me please? I have the same problem I cannot buy with Card.And binance is not helping me with that issue.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gtjl958",
+                    "author": "sonofathief",
+                    "score": 1,
+                    "created_utc": 1617691446.0,
+                    "response": "I have the same issue for whatever reason, despite having a Verified Account since 2018. Binance has the most useless customer support I've ever had to deal with so far. A random CS guy named Tengku entered the chat, reviewed my conversation, told me to use P2P, and just left. Unbelievably dumb, what do they pay these guys, $50 a month?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gtkj3f0",
+                    "author": "No_Run_8282",
+                    "score": 1,
+                    "created_utc": 1617717494.0,
+                    "response": "same problem for me, cs also useless. did you guys find any solution?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gtwvfse",
+                    "author": "cquenc86",
+                    "score": 1,
+                    "created_utc": 1617961260.0,
+                    "response": "I tried it didn't work out fore me. The div element as mentioned in your thread is not available in my case, maybe they have made some changes. Anyways, I contacted their CS and they have absolutely no freaking idea and the agent is asking me to raise a fiat deposit appeal. The appeal page requires you to submit proof of funds that you have deposited otherwise you cannot make any appeal. I mean they are not even allowing me to start the deposit process so how can i provide them any proof, How lame, stupid, pathetic CS team ever.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gu1tiyv",
+                    "author": "user_4958",
+                    "score": 1,
+                    "created_utc": 1618067994.0,
+                    "response": "Thanks, Indeed a nice hack however in my case deleting this div element makes it blank.\n\nI've been struggling with this exact same issue for quite a while now since I migrated to another country (wherein the country I moved to - Germany does allow SEPA transfers), i also reset my new ID verification and the address which is showing verified and Binance CS support being highly incompetent have no freakin idea about the resolution and giving me weird pre-scripted responses about using P2P.\n\nI've never seen such a worst CS support by far.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "guwje53",
+                    "author": "Kaedehana",
+                    "score": 1,
+                    "created_utc": 1618695120.0,
+                    "response": "I had a try of this method and got a red cross and asked me to retry. It seems that it's invalid now :(",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "guzvtcw",
+                    "author": "trouglsti_moljac",
+                    "score": 1,
+                    "created_utc": 1618771848.0,
+                    "response": "I have encountered the same problem as you guys. CS is useless and tried this method as well, but no luck. I am not sue how I will deposit the funds for god sake..",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gvb2lgp",
+                    "author": "Mohhhs94",
+                    "score": 1,
+                    "created_utc": 1618999358.0,
+                    "response": "I opened a ticket with Binance and this is what they said to me:\n\nHi, we are very sorry, you are ineligible to use Binance\u2019s fiat payment methods either due to an internal risk assessment or a geographic restriction by our fiat payment partners.\n\nWe apologize for any inconvenience caused. Our team does a check on all accounts, and they have determined that, unfortunately, your account only qualifies for 3rd party payments or p2p trading.\n\nSo I can't withdraw GBP, no idea why.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gw9rib3",
+                            "author": "No_fap_Guru_",
+                            "score": 2,
+                            "created_utc": 1619680631.0,
+                            "response": "Hi, me 2. If you found a way around to use the Faster payments let me know. I am from UK by the way",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hasbpjy",
+                                    "author": "Mohhhs94",
+                                    "score": 1,
+                                    "created_utc": 1630230896.0,
+                                    "response": "Only just seen this, my crypto has been moved elsewhere.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "gwjiawv",
+                            "author": "hinthue",
+                            "score": 2,
+                            "created_utc": 1619878094.0,
+                            "response": "cheapest way it's to convert whatever crypto you have to XLM and send it to another exchange...",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hasbr72",
+                                    "author": "Mohhhs94",
+                                    "score": 1,
+                                    "created_utc": 1630230935.0,
+                                    "response": "Done already, would have saved a fair few quid.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "gy5z5i7",
+                    "author": "cquenc86",
+                    "score": 1,
+                    "created_utc": 1621039677.0,
+                    "response": "Did anyone found any solution? they have even started sending automatic responses on zendesk tickets. Isnt there anyway to contact them, can we altogether sue them?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gyrt80v",
+                            "author": "PinkFloyder1",
+                            "score": 1,
+                            "created_utc": 1621475477.0,
+                            "response": "did you recieve any response ? they are sending automated msg now for god sake",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "gz1ml9o",
+                    "author": "ShiSui_UNCHIHA",
+                    "score": 1,
+                    "created_utc": 1621681965.0,
+                    "response": "Burh this even work now ?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gzbihrv",
+                    "author": "BrantPantfanta",
+                    "score": 1,
+                    "created_utc": 1621891521.0,
+                    "response": "For me, the problem was using Firefox with privacy extensions active.As soon as I logged into Binance using Chrome, the add bank account button magically appeared and I'm now currently verifying",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gzbvulv",
+                            "author": "BrantPantfanta",
+                            "score": 1,
+                            "created_utc": 1621898135.0,
+                            "response": "So the small verification amount went into my bank account. I copy/pasted the value into the verify field and it immediately went back to the original error message  - \n\n*This payment method is currently unavailable based on our current Terms of Use and Internal Policy.*\n\nugh",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "h1gbuyf",
+                    "author": "L1bel",
+                    "score": 1,
+                    "created_utc": 1623448653.0,
+                    "response": "Getting the same issue also. My account is fully verified and I\u2019ve deposited and withdrawn Fiat in the past (to check no problems like this) and all was fine. Now I\u2019m getting the \u201cthis payment method isn\u2019t available\u2026\u201d to withdraw Fiat via faster payments or card. \n\nCustomer service atrocious. Telling me they have the right to do this under their terms of service and to trade via p2p. \n\nBinance is dead to me now. As soon as I can figure out a way to get my Fiat out. Really shady business practice.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ur6ctp",
+            "title": "this man never stops!!!!",
+            "url": "http://x2crypt.net",
+            "author": "Living_Celestial",
+            "created_utc": 1652735945.0,
+            "score": 0,
+            "num_comments": 4,
+            "subreddit": "binance",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8vdm9i",
+                    "author": "summonsterism",
+                    "score": 2,
+                    "created_utc": 1652736671.0,
+                    "response": "reported",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8veal8",
+                    "author": "GoldAd5968",
+                    "score": 2,
+                    "created_utc": 1652736965.0,
+                    "response": "Scam",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8veftu",
+                    "author": "Toastedweasel0",
+                    "score": 2,
+                    "created_utc": 1652737027.0,
+                    "response": "Malware....",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8vipw9",
+                    "author": "Seekingfatgrowth",
+                    "score": 1,
+                    "created_utc": 1652738895.0,
+                    "response": "This *scammer* never stops",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

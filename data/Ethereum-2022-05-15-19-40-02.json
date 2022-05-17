@@ -15,7 +15,7 @@
             "author": "celticwarrior72",
             "created_utc": 1652629774.0,
             "score": 1,
-            "num_comments": 6,
+            "num_comments": 8,
             "subreddit": "ethereum",
             "selftext": "I have been following the developments in the L2 rollup space and using Arbitrum and Optimism.  I'm very interested in the zk rollup tech and could use a concise explanation as to why zkEVM is such an important development and how it works (in layman's terms).  Anyone care to write a short ELI5 on the topic?",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i8pjjjj",
                     "author": "babossa77",
-                    "score": 6,
+                    "score": 5,
                     "created_utc": 1652630805.0,
                     "response": "The main idea behind zkEVM is to use zk proofs to prove that any EVM compatible smart contract call has been executed. \n\nThis means that you must be able to generate zkProofs for any possible EVM opcode (opcodes are basically the low level programming commands that the ethereum virtual machine executes when you call a smart contract).\n\nIf you are able to achieve that, you can do all of the execution and computation of smart contracts off chain (on layer 2) and only post the proofs that this execution happened on layer 1, which is way cheaper than doing everything on layer 1.",
                     "depth": 1,
@@ -35,7 +35,17 @@
                             "created_utc": 1652668175.0,
                             "response": "But I heard that computing zkProofs is more expensive than the alternative, right? The only advantage it has that because it is zero knowledge, it is more anonymous?",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i8sq1hn",
+                                    "author": "babossa77",
+                                    "score": 1,
+                                    "created_utc": 1652689977.0,
+                                    "response": "zk Rollups are way more scalable than Optimistic Rollups  and are more secure, as every state transition has to be verifiable, so they inherit the security of Layer 1. \n\nThe computation of zk proofs is expensive, but it does not happen on chain. Only the computed proof is published to the chain and can be easily verified.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         }
                     ]
                 },
@@ -66,7 +76,7 @@
                                         {
                                             "id": "i8rqxy4",
                                             "author": "domotheus",
-                                            "score": 1,
+                                            "score": 2,
                                             "created_utc": 1652666663.0,
                                             "response": "If we zk everything then the whole chain becomes much easier to verify. Right now, the only way to verify that a block is valid is by running the transactions in it and check everything yourself. But you also have to check that the block before that was valid... So this goes all the way back to the very first genesis block which is always treated as valid.\n\nIf you zk everything, you get to create blocks that contain a proof that all the transactions in it are valid and their results affected the blockchain's state properly, as well as a proof that the previous block was valid as well. It's gonna be proofs within proofs within proofs, and the result is a light client doesn't have to store any data to nearly-instantly check for itself that the block that just got proposed is 100% valid.\n\nBut that's a \"nice to have\" on the roadmap, on the long long term. In reality this recursive zk stuff is still being researched and is gonna roll out on various Layer 2s way before Layer 1 gets close to getting zkified",
                                             "depth": 4,
@@ -86,8 +96,8 @@
             "url": "https://www.reddit.com/r/ethereum/comments/uqayhg/how_to_sell_ethereum_without_proof_of_address/",
             "author": "Sakswa",
             "created_utc": 1652635716.0,
-            "score": 182,
-            "num_comments": 17,
+            "score": 230,
+            "num_comments": 23,
             "subreddit": "ethereum",
             "selftext": "I have some eth, but I can't find a website to sell it on. I used to use coinbase, but it looks like they don't accept norwegian cards anymore. I moved out of Norway a while back, and don't have access to any documents from the last 3 months proving my address there. I also don't have these documents where I'm staying right now.\n\nIs there a website I could sell on? I've tried zipmex and coinbase as well, but no dice.",
             "stickied": false,
@@ -95,7 +105,7 @@
                 {
                     "id": "i8scj1a",
                     "author": "IndividualPriority81",
-                    "score": 79,
+                    "score": 85,
                     "created_utc": 1652678960.0,
                     "response": "Use Fixedfloat and Simpleswap for crosschain swaps.\n\nUse Localcryptos and Agoradesk for crypto<->fiat trading.  You can create your own ads there if you can't find what you want.\n\nSearch for Bitcoin ATMs on Google, Google Maps, and Coinatmradar.",
                     "depth": 1,
@@ -104,7 +114,7 @@
                 {
                     "id": "i8pwj7f",
                     "author": "Gagarin1961",
-                    "score": 5,
+                    "score": 9,
                     "created_utc": 1652636407.0,
                     "response": "Pretty much everywhere requires KYC (Know Your Customer) by law when converting crypto to fiat currency or vice verse, with only a few exceptions globally. The reason for this is tax laws and other financial regulations. \n\nYou can usually connect you bank account to these sites though, so credit cards shouldn\u2019t be a reason you can\u2019t sell. \n\nIf you really want to sell without KYC, you can sell peer to peer. Just find someone you trust to sell it to at the market rate, or risk working a deal with someone over the internet. They can pay you directly in cash or PayPal or whatever.",
                     "depth": 1,
@@ -112,18 +122,47 @@
                         {
                             "id": "i8sn6hj",
                             "author": "RealPain43",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1652687392.0,
                             "response": "Are there any legal implications for peer to peer selling?",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i8srrt8",
+                                    "author": "Turbulent-Speech9115",
+                                    "score": 4,
+                                    "created_utc": 1652691568.0,
+                                    "response": "It depends on the jurisdiction.  In USA for example, it's legal to exchange $10k peer-to-peer without a license if it's \"on an infrequent basis and not for gain or profit\"\n\nhttps://www.law.cornell.edu/cfr/text/31/1010.100\n\n> **(8) Limitation.** For the purposes of this section, the term \u201cmoney services business\u201d shall not include:\n\n> ...\n\n> (iii) A natural person who engages in an activity identified in paragraphs (ff)(1) through (ff)(5) of this section on an infrequent basis and not for gain or profit.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8tdrs7",
+                                            "author": "masterfap",
+                                            "score": 1,
+                                            "created_utc": 1652706862.0,
+                                            "response": "Hey buddy I have a question for you. How is it that you made a post to Buttcoin, removed it, then magically it continued to get upvotes?",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i8t6wzm",
+                                    "author": "danhakimi",
+                                    "score": 1,
+                                    "created_utc": 1652703133.0,
+                                    "response": "Yes.\n\nBut don't get legal advice from reddit.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "id": "i8qi0hf",
                     "author": "mooremo",
-                    "score": 3,
+                    "score": 4,
                     "created_utc": 1652645916.0,
                     "response": "Fiat currency is a KYC system, other than cash. So unless you sell to some random person in a parking lot for actual cash, you're going to have to KYC at some point.",
                     "depth": 1,
@@ -131,7 +170,7 @@
                         {
                             "id": "i8r9p7w",
                             "author": "Perleflamme",
-                            "score": 3,
+                            "score": 5,
                             "created_utc": 1652658532.0,
                             "response": "This. I guess that's more or less what Bisq provides, in a sense.",
                             "depth": 2,
@@ -214,9 +253,27 @@
                     "comments": []
                 },
                 {
+                    "id": "i8subj8",
+                    "author": "EnvironmentalJello95",
+                    "score": 1,
+                    "created_utc": 1652693898.0,
+                    "response": "If you want to sell and withdraw to a norwegian bank account you could use Norwegian Block Exchange, Nbx.com. you can connect your bank account to the exchange with bankID.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8t95t2",
+                    "author": "No_Committee5595",
+                    "score": 1,
+                    "created_utc": 1652704434.0,
+                    "response": "I'm sure there are other 'local' options for ETH but you can transfer the ETH into monero then sell that via 'localmonero'. Most CEX do KYC so the alternative is selling vai local meetups or trusting internet strangers.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i8qsccw",
                     "author": "IndefiniteHypoaction",
-                    "score": -5,
+                    "score": -6,
                     "created_utc": 1652650405.0,
                     "response": "Answering your question could be a crime in some jurisdictions. Reddit is not the place to ask this.",
                     "depth": 1,
@@ -224,7 +281,7 @@
                         {
                             "id": "i8rl1jl",
                             "author": "stKKd",
-                            "score": 2,
+                            "score": 3,
                             "created_utc": 1652663969.0,
                             "response": "System bot",
                             "depth": 2,

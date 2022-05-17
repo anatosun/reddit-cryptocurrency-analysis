@@ -74,47 +74,6 @@
             ]
         },
         {
-            "id": "uq2d9n",
-            "title": "What happened in Block 736452?",
-            "url": "https://i.redd.it/wuv4v6f8ylz81.jpg",
-            "author": "Jakeomio",
-            "created_utc": 1652606552.0,
-            "score": 7,
-            "num_comments": 14,
-            "subreddit": "Bitcoin",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8oinet",
-                    "author": "igadjeed",
-                    "score": 17,
-                    "created_utc": 1652610250.0,
-                    "response": "One of the mining pools is too lazy to pre-populate their blocks with transactions. They start empty, and fill after about 50 seconds. If a block follows the previous block by less than about 54 seconds, and if the block is mined by that pool, it will be empty  \n\nhttps://blog.lopp.net/empty-bitcoin-blocks-full-mempool/",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8of53r",
-                    "author": "Charming_Sheepherder",
-                    "score": 8,
-                    "created_utc": 1652607214.0,
-                    "response": "It happens once in awhile.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8okxq6",
-                    "author": "CarbonCG",
-                    "score": 3,
-                    "created_utc": 1652612152.0,
-                    "response": "Miners can do this, its sorta a trick to speed up block processing. Back in the day some \u201cmalicious\u201d mining pools would \u201conly\u201d mining empty blocks as btc fees were high and helped bog down network. \n\nI put them in quotes because it\u2019s not that malicious in hindsight and btc don\u2019t care. And the total empty blocks was like less than 3%",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "uq3ip9",
             "title": "Buttcoiners too lazy to do anything.",
             "url": "https://i.redd.it/n1bbhawgdmz81.png",
@@ -2102,6 +2061,170 @@
                     "score": 1,
                     "created_utc": 1652669864.0,
                     "response": "That ip is on a local network, or maybe VPN connected?",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uq2d9n",
+            "title": "What happened in Block 736452?",
+            "url": "https://i.redd.it/wuv4v6f8ylz81.jpg",
+            "author": "Jakeomio",
+            "created_utc": 1652606552.0,
+            "score": 12,
+            "num_comments": 19,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8of53r",
+                    "author": "Charming_Sheepherder",
+                    "score": 8,
+                    "created_utc": 1652607214.0,
+                    "response": "It happens once in awhile.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8oinet",
+                    "author": "igadjeed",
+                    "score": 20,
+                    "created_utc": 1652610250.0,
+                    "response": "One of the mining pools is too lazy to pre-populate their blocks with transactions. They start empty, and fill after about 50 seconds. If a block follows the previous block by less than about 54 seconds, and if the block is mined by that pool, it will be empty  \n\nhttps://blog.lopp.net/empty-bitcoin-blocks-full-mempool/",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8rnyj6",
+                            "author": "Corbimos",
+                            "score": 2,
+                            "created_utc": 1652665295.0,
+                            "response": "It's not too lazy. It's more efficient to try and solve a block without txns while you are compiling them from the mempool. Because you could still find the hash and get paid the block reward. \n\nThis is what happened. If they waited till they had txns, they could have missed the hash and block reward.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8sf77x",
+                                    "author": "igadjeed",
+                                    "score": 1,
+                                    "created_utc": 1652680896.0,
+                                    "response": "> It's more efficient to try and solve a block without txns\n\nIt's not. Other pools compile their next 2 blocks while hashing the current one. Only one pool does it your way",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8okxq6",
+                    "author": "CarbonCG",
+                    "score": 3,
+                    "created_utc": 1652612152.0,
+                    "response": "Miners can do this, its sorta a trick to speed up block processing. Back in the day some \u201cmalicious\u201d mining pools would \u201conly\u201d mining empty blocks as btc fees were high and helped bog down network. \n\nI put them in quotes because it\u2019s not that malicious in hindsight and btc don\u2019t care. And the total empty blocks was like less than 3%",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8oekna",
+                    "author": "Jakeomio",
+                    "score": 2,
+                    "created_utc": 1652606720.0,
+                    "response": "What happened in Block 736452?\n\nBeside the fact that it has 0 transactions. How is it possible that Block 736452 is mined at 10:03 and the following Block 736453 is mined at 10:01?\n\nCan somebody explain me what happened here?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8oiv4v",
+                            "author": "igadjeed",
+                            "score": 7,
+                            "created_utc": 1652610436.0,
+                            "response": "The Bitcoin network does not rely on accurate clock time. Negative time delta from one block to the next is one of the things discussed here  \nhttps://blog.lopp.net/bitcoin-block-time-variance/",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8okiip",
+                                    "author": "XZPUMAZX",
+                                    "score": 3,
+                                    "created_utc": 1652611797.0,
+                                    "response": "Thank you for both links provided in this conversation. So much to learn.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i8oi8zx",
+                            "author": "dlq84",
+                            "score": 2,
+                            "created_utc": 1652609909.0,
+                            "response": "The timestamps aren't very accurate if the miner hasn't synchronized its clocks.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8vvkzd",
+                                    "author": "Neinfu",
+                                    "score": 1,
+                                    "created_utc": 1652744951.0,
+                                    "response": "They might also modify the timestamp to increase entropy (the nonce doesn't provide enough entropy for today's difficulty)",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8ofst9",
+                    "author": "GannicusXIII",
+                    "score": 0,
+                    "created_utc": 1652607782.0,
+                    "response": "Here comes the FUD......Are you from the fed ? \ud83d\ude02\ud83d\ude02",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8oiev9",
+                            "author": "BrokebackStonker",
+                            "score": -1,
+                            "created_utc": 1652610043.0,
+                            "response": "Read my mind \ud83d\ude02\ud83e\udd23",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8ow5zu",
+                    "author": "Due-Remote1405",
+                    "score": 1,
+                    "created_utc": 1652619652.0,
+                    "response": "Hmmm?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8p8tb6",
+                    "author": "Old-Government-3142",
+                    "score": 1,
+                    "created_utc": 1652625996.0,
+                    "response": "Miner just hate that number for some reasons..",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8ptbwd",
+                    "author": "turick",
+                    "score": 1,
+                    "created_utc": 1652635033.0,
+                    "response": "Once a block is accepted, miners can throw a couple of feeble attempts at mining an empty block in the background while they're assembling their transactions for a full block. If the empty block happens to get mined, boom, 6.25 bitcoin.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8oflgi",
+                    "author": "comfyggs",
+                    "score": 0,
+                    "created_utc": 1652607609.0,
+                    "response": "Not much apparently. This does happen. There will be one transaction which is the coinbase reward paid to the miner.",
                     "depth": 1,
                     "comments": []
                 }

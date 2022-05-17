@@ -1,0 +1,53 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "urbtaw",
+            "title": "Why has the mempool been so large in terms of size but not that many transactions the last few days.",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/urbtaw/why_has_the_mempool_been_so_large_in_terms_of/",
+            "author": "FamousAstronaut2153",
+            "created_utc": 1652752708.0,
+            "score": 2,
+            "num_comments": 3,
+            "subreddit": "Bitcoin",
+            "selftext": "Just like the title, I noticed that there has been a lot of network congestion the past few days. Strangely though it shows a lot of information to be mined but not that many transactions. Can anyone give some insight as to what is going on. Thank you for replies.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8wbvlf",
+                    "author": "Sendmedoge",
+                    "score": 1,
+                    "created_utc": 1652753111.0,
+                    "response": "Not a pro, but maybe layer 2 stuff that registers as 1 big transaction?\n\nLike lightning network?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8wcnaz",
+                    "author": "tiredfornow1",
+                    "score": 1,
+                    "created_utc": 1652753499.0,
+                    "response": "Binance consolidated a lot of their utxos. This typically means large transactions (many utxos in a transaction) so the blocks will be full of info, but a small number of transactions.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8wg6wc",
+                    "author": "SnooBunnies3560",
+                    "score": 1,
+                    "created_utc": 1652755306.0,
+                    "response": "due to many batched transactions (one to many transactions or many to many transactions)",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

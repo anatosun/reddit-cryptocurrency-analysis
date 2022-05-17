@@ -1,0 +1,293 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "ur068i",
+            "title": "Is lightning network fully operational?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/ur068i/is_lightning_network_fully_operational/",
+            "author": "mybed54",
+            "created_utc": 1652719249.0,
+            "score": 16,
+            "num_comments": 29,
+            "subreddit": "Bitcoin",
+            "selftext": "Is lightning network full operational now? If so what challenges are there for every exchange / merchant to just adopt it tomorrow / why hasn't it just been integrated?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8u7m7d",
+                    "author": "MatthiasLee11",
+                    "score": 8,
+                    "created_utc": 1652719654.0,
+                    "response": "It is fully functional and adopted in some places. It hasn't been fully adopted yet for the same reasons bitcoin itself hasn't been adoped everywhere yet. There are not many other challenges to accept lightning BTC as opposed to normal BTC.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8uggi0",
+                            "author": "bbultimate",
+                            "score": 9,
+                            "created_utc": 1652723160.0,
+                            "response": "Not really true about a lack of challenges to accepting Bitcoin via Lightning. It requires substantially more effort. \n\nTo accept onchain Bitcoin one has to simply share the address.\n\nTo accept Bitcoin via Lightning you have to have a Lightning node, have channels open and have inbound liquidity. Furthermore your node needs to be online at least once every two weeks, but really it's recommended to keep it online 24/7 as it has to be online the moment you want to receive.\n\nYou can kind of get around this by letting someone else manage your channels, or use watchtowers, or receive the payment and have that open a channel to you too. None of those really reduce the challenges, they just offload them to other people or use an onchain tx.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8utq30",
+                                    "author": "RecommendationNo6041",
+                                    "score": 9,
+                                    "created_utc": 1652728495.0,
+                                    "response": "This needs to be simplified or there won\u2018t be adaption. I hope the nerdy guys recognize this.\n\nIt needs to be VERY simple.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8v40cm",
+                                            "author": "halt_spell",
+                                            "score": 3,
+                                            "created_utc": 1652732695.0,
+                                            "response": "> This needs to be simplified or there won\u2018t be adaption. I hope the nerdy guys recognize this.\n\nSpeaking as a \"nerdy guy\" plenty of people told me email and the internet were too complicated and therefore a fad. These things didn't get materially simpler, but people educated themselves and once the knowledge hit critical mass it became recognized as simple.\n\nThere was a time when deciding which wifi network to connect to or the difference between wifi or xG internet was considered too complicated. The same attitude came up with regard to user interfaces of PCs and mobile devices.\n\nThere's nothing unattainable about the knowledge for someone who wants to use the lighting network. There may be meager reductions in complexity but far more likely people will do what it takes to learn about it.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i8v4qxf",
+                                    "author": "Br0kenRabbitTV",
+                                    "score": 1,
+                                    "created_utc": 1652733000.0,
+                                    "response": "Agreed, I have to run a whole extra server to accept LN without using any third parties, while I can accept on chain BTC on shared hosting still without using any third parties.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8u7oss",
+                    "author": "iamthereal_jb",
+                    "score": 2,
+                    "created_utc": 1652719683.0,
+                    "response": "I dunno but Exodus now allows you to load up to 1000$ in lightening wallet, up from 100$ last month.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8uafio",
+                            "author": "Nada_Lives",
+                            "score": -15,
+                            "created_utc": 1652720761.0,
+                            "response": "You cannot put $100 into a Lightning wallet. You cannot put $1000 into a Lightning wallet. Ain't picking on you for being a newb, but I am pointing out that USD will just not fit into Bitcoin in any way, period. When you say things like this, you are misinforming those who come after you about the function of Bitcoin.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8uauwt",
+                                    "author": "Peter4real",
+                                    "score": 14,
+                                    "created_utc": 1652720933.0,
+                                    "response": "Calm the fuck down, we all know he means X USD worth of BTC.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8ufpws",
+                                            "author": "Nada_Lives",
+                                            "score": -12,
+                                            "created_utc": 1652722870.0,
+                                            "response": "No we all don't. And just because a wallet conveniently converts the units to USD for you does not mean that the wallet is pointing to those fiat units.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8ujuow",
+                                                    "author": "Peter4real",
+                                                    "score": 3,
+                                                    "created_utc": 1652724488.0,
+                                                    "response": "You must have a diagnosis if you have a hard time translating a semi-intellegible sentence to an accurate one that fit the intention of the sentence. Do you have a hard time with metaphors as well?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i8w64ep",
+                                                            "author": "Nada_Lives",
+                                                            "score": 1,
+                                                            "created_utc": 1652750228.0,
+                                                            "response": "You can vote me down all day, but you still won't be able to put USD into a Lightning wallet.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i8uapoe",
+                                    "author": "iamthereal_jb",
+                                    "score": 1,
+                                    "created_utc": 1652720874.0,
+                                    "response": "I haven't tried it and I am in Canada, so if I \"move\" BTC into Exodus' Lightening Wallet.. I am essentially selling my BTC for UDSC, sort of like topping up my Crypto Visa' cards with TCAD?\n\nThanks",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8ufynm",
+                    "author": "Jeeproe",
+                    "score": 2,
+                    "created_utc": 1652722965.0,
+                    "response": "it is fully operational. As every network, with increasing adoption, there is something called the network effect. every new user creates more value for the network, thus again attracting more users. lightning will have to reach this tipping point, then it will be an exponential game\n\n*typos edit",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8ulzg6",
+                    "author": "mrmishmashmix",
+                    "score": 2,
+                    "created_utc": 1652725339.0,
+                    "response": "Lightning is one of those networks that works better, not worse, the more people who use it. Its design means that the more money you have on there, and the more you use lightning, the less trouble you have with routing as your node becomes more established and you have more inbound and outbound capacity. So there is a kind of chicken and egg problem, in the sense that most people might dip their toe in, so to speak, and not really experience what its like when you have serious node liquidity and everything works fine.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8upmku",
+                    "author": "HodlOnToYourButts",
+                    "score": 2,
+                    "created_utc": 1652726810.0,
+                    "response": "Merchant How-To:\n\n1. Install Raspiblitz on a RPI4\n2. Install RTL, Lightning Terminal, and LNBits\n3. Transfer BTC to your node using RTL\n4. Rent channel(s) with inbound liquidity using Lightning Terminal (Pool)\n5. Create separate wallets for your services using LNBits.\n6. Start receiving Lightning payments.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8vhb0v",
+                            "author": "jesusrambo",
+                            "score": 3,
+                            "created_utc": 1652738273.0,
+                            "response": "When step 1 for merchants is \u201cbuy and configure a Linux server\u201d, a simpler solution is needed",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8vim8s",
+                                    "author": "jackwhite411",
+                                    "score": 0,
+                                    "created_utc": 1652738849.0,
+                                    "response": "If merchants are too lazy or incompetent to run their own server, they could just use a LSP (Lightning Service Provider) like opennode.com",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8umd2j",
+                    "author": "Asum_chum",
+                    "score": 2,
+                    "created_utc": 1652725490.0,
+                    "response": "\ud83c\udfb5 This Lightning is Non-operational - At the Drive-In",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8um572",
+                    "author": "bert_and_earnie",
+                    "score": 1,
+                    "created_utc": 1652725401.0,
+                    "response": ">  merchant to just adopt it tomorrow / why hasn't it just been integrated?\n\nWhy would they? The people who hold bitcoin don't want to spend it.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8v6p7f",
+                            "author": "Br0kenRabbitTV",
+                            "score": 1,
+                            "created_utc": 1652733798.0,
+                            "response": "This is a culture that needs addressing TBH. All the people who came along in 2017 and again in 2021 are actually a hindrance to the peer to peer cash cause/use case in reality.\n\nThey only really care about how much the next person will buy their coin from them for.\n\nI've accepted BTC on webstores since 2011, and far less people spend it with me now days.\n\nI also have a LN payment option before anybody asks.\n\nIf people truly want it to become a payment system, then they need to do their bit as well.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8vgekg",
+                                    "author": "ludwigvonmises",
+                                    "score": 1,
+                                    "created_utc": 1652737879.0,
+                                    "response": "Spending an asset doesn't make it a money. People spend an asset when it becomes money. Your theory of monetization is backwards.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i8uxznc",
+                            "author": "mybed54",
+                            "score": 1,
+                            "created_utc": 1652730234.0,
+                            "response": "That is the conundrum with a \"peer to peer cash system\"",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i8w8v4z",
+                            "author": "0x1a3c3e7",
+                            "score": 1,
+                            "created_utc": 1652751604.0,
+                            "response": "No, they do but only after it's appreciated from widespread adoption.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8uq8sp",
+                    "author": "harryvl",
+                    "score": 1,
+                    "created_utc": 1652727060.0,
+                    "response": "I lookt at it for my shop in the netherlands .\nIt is possible  to accept treu lightning but it wil bring my to much paperwork .becauce i accept a New valuta.\nAnd tax payment is hard to calculate.\nSo i think the anser must be some kind of cashapp that wil transfer directly into euro.    \nDutch law is not ready for this yet.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8uawke",
+                    "author": "Eyonizback",
+                    "score": -10,
+                    "created_utc": 1652720952.0,
+                    "response": "Too slow and expensive, cheaper and faster alternatives already exist sadly :/",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8ubiv8",
+                            "author": "caploves1019",
+                            "score": 7,
+                            "created_utc": 1652721198.0,
+                            "response": "You're joking right?\n\nEdit: nevermind, buttcoin wsb shill, opinion is worthless.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8ufkeh",
+                                    "author": "Runner4567",
+                                    "score": -3,
+                                    "created_utc": 1652722812.0,
+                                    "response": "So is it basically like a preloaded Visa card?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8v491r",
+                                            "author": "SomeBrokeChump",
+                                            "score": 2,
+                                            "created_utc": 1652732794.0,
+                                            "response": "No. The Lightning Network is an open source second layer payment protocol built on top of the Bitcoin blockchain. The Lightning Network enables Bitcoin users to instantly send and receive bitcoin with fees so low that they are negligible. And all of the BTC on the Lightning Network is backed by signed transactions that can broadcasted to the Bitcoin network at any time. Click the link below to view a short technical summary of the Lightning Network. \n\nhttps://lightning.network/lightning-network-technical-summary.pdf",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/upmcjz/if_proof_of_work_is_a_process_what_signals_the/",
             "author": "PeleMaradona",
             "created_utc": 1652550114.0,
-            "score": 7,
-            "num_comments": 21,
+            "score": 5,
+            "num_comments": 28,
             "subreddit": "BitcoinBeginners",
             "selftext": "I understand that proof of work is the process used by bitcoin miners to prove they have burned enough energy to propose a new valid block that may be added to the blockchain.\n\nBut what would signal the of the proof of work process? Is it receiving the block subsidy? Is it seeing the block proposed by the miner added to the bitcoin blockchain?",
             "stickied": false,
@@ -35,6 +35,151 @@
                     "score": 3,
                     "created_utc": 1652550952.0,
                     "response": ">what signals the end of this process?\n\nSignals to whom? To other full nodes and miners? If so the signal is when the miner who creates a valid block broadcasts it to all other full nodes(most not controlled by miners) and those full nodes see the block and validate it and either accept or reject it in accordance to the consensus rules . Miners order transactions and full nodes validate and enforce the consensus rules.  Some of those full nodes will be used by miners and those miners will build off it .",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8myx7x",
+                            "author": "putyograsseson",
+                            "score": 1,
+                            "created_utc": 1652573259.0,
+                            "response": "Is there a rough % estimate on how many miner nodes there are in relation to the total node count?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8mzdxr",
+                                    "author": "bitusher",
+                                    "score": 1,
+                                    "created_utc": 1652573499.0,
+                                    "response": "There are about 50k bitcoin full nodes worldwide \n\nhttp://luke.dashjr.org/programs/bitcoin/files/charts/software.html\n\nhttps://luke.dashjr.org/programs/bitcoin/files/charts/services.html\n\nAnd only a couple hundred of these are used by miners since most miners mine from a pool",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8ptha0",
+                                            "author": "PeleMaradona",
+                                            "score": 1,
+                                            "created_utc": 1652635098.0,
+                                            "response": "Is the source you list the best available source on how many nodes there are worldwide, or are there competing sources (with different numbers)?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8q2xbn",
+                                                    "author": "bitusher",
+                                                    "score": 1,
+                                                    "created_utc": 1652639201.0,
+                                                    "response": "This is the most accurate estimate. Other numbers you see elsewhere just reflect nodes that are listening instead of most full nodes that are nonlistening",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8mitia",
+                    "author": "Narmotur",
+                    "score": 2,
+                    "created_utc": 1652565620.0,
+                    "response": "A block is \"successful\" when you find a hash that converts to an integer value below the current target value. It's a lottery where everyone else can verify that you have the winning ticket, and so they accept your block as valid.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8obetd",
+                    "author": "igadjeed",
+                    "score": 2,
+                    "created_utc": 1652603998.0,
+                    "response": "Miners operate independently, participating in a guessing competition which only one miner can win. The guessing competition is designed so that the average winning time is 10 minutes  \n\nWhen a miner has a block which has a header which has a hash smaller than the current target hash, he sends the block to the node network. That's the end of the work. Proof of work is in the node network. Each and every node, operating independently, checks that the miner's new block and transactions in the new block are all valid  \n\nFor a single node, the proof of the block's validity includes proof of work. This is trivial. The node hashes the block header and checks that the hash is lower than the current target",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8pr34e",
+                            "author": "PeleMaradona",
+                            "score": 1,
+                            "created_utc": 1652634057.0,
+                            "response": ">which has a header which has a hash smaller\n\nIs the header a nonce?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8pv6m2",
+                                    "author": "igadjeed",
+                                    "score": 1,
+                                    "created_utc": 1652635830.0,
+                                    "response": "No  \n\nhttps://developer.bitcoin.org/reference/block_chain.html#block-headers",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8ll8nt",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652550114.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8m1kxf",
+                    "author": "vitalyevodin",
+                    "score": 1,
+                    "created_utc": 1652557652.0,
+                    "response": "in example you have difficulty \nto calculate all your current mempool transactions and previous block to hash that starts with 0001AFAKxxxxxxxx\n\nit calls difficulty after some node did it it sends to everybody and they agreed with it and starts it over with new difficulty in example 0000ABCDxxxxxxxx\n\nif two nodes or more  create two blocks in almost the same time they all becomes valid and then network enters competition mode with different members produce different chains but after a while only the strongest chain wins that means that longest chain is harder to work out that means if you can solve you proved it must remains after that another groups that worked on \u201cwrong\u201d chain will switch on this \u201cnew\u201d longest \n\nit is explained abstracted on first page of bitcoin white paper and more detailed in next pages",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8osb5o",
+                            "author": "bitusher",
+                            "score": 2,
+                            "created_utc": 1652617360.0,
+                            "response": ">while only the longest chain wins\n\nIts the most cumulatively weighted(strongest or most worked) valid chain that is accepted , not the longest.\n\nLongest was a flaw that satoshi fixed in july 2010\n\nhttps://github.com/bitcoin/bitcoin/commit/40cd0369419323f8d7385950e20342e998c994e1#diff-623e3fd6da1a45222eeec71496747b31R420\n\nIf the longest or strongest chains break any consensus rules as well they are immediately rejected regardless the hashrate supporting them",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8osq1z",
+                                    "author": "vitalyevodin",
+                                    "score": 1,
+                                    "created_utc": 1652617620.0,
+                                    "response": "it was an example to simplify understanding from high level, I was mention white paper quotes \n\n> The longest chain not only serves as proof of the sequence of events witnessed, but proof that it came from the largest pool of CPU power",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8otiod",
+                                            "author": "bitusher",
+                                            "score": 2,
+                                            "created_utc": 1652618107.0,
+                                            "response": "Sure , The whitepaper is a decent high level overview but I still like to make corrections to avoid any confusion and spreading misinformation (example- I certainly wont be citing \"alerts\" as a way bitcoin works in the SPV section of the whitepaper)\n\nStrongest is a better word to use  than longest, and without clarifying the importance of validity and consensus rules users will get the very flawed idea that miners control the network",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8otmmr",
+                                                    "author": "vitalyevodin",
+                                                    "score": 2,
+                                                    "created_utc": 1652618174.0,
+                                                    "response": "edited )",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8lscnr",
+                    "author": "IRightReelGud",
+                    "score": -4,
+                    "created_utc": 1652553354.0,
+                    "response": "Why do you just assume nonsense? \n\nWho says Bitcoin miners will ever stop mining Bitcoin?\n\nEven when the block reward drops to zero, miners still get paid in Bitcoin transaction fees. \n\nProof of work isn't a process. It's a consensus mechanism that can't be cheated. \n\nhttps://mempool.space see for yourself",
                     "depth": 1,
                     "comments": []
                 }

@@ -1,0 +1,75 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "ur3f0l",
+            "title": "Bear Market Building, Nation-State Stacking, and Bitcoin Jobs w/ Bitcoin Magazine's Eric Podwojski",
+            "url": "https://www.youtube.com/watch?v=4-QdcOVz91M&t=796s",
+            "author": "bradmines",
+            "created_utc": 1652727985.0,
+            "score": 1,
+            "num_comments": 0,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "ur3elh",
+            "title": "Merkle Root & Transactions - Question",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/ur3elh/merkle_root_transactions_question/",
+            "author": "harmless_sven",
+            "created_utc": 1652727952.0,
+            "score": 5,
+            "num_comments": 4,
+            "subreddit": "Bitcoin",
+            "selftext": "Hello, I have a short question regarding the merkle root/tree in a block. \n\nHas each block only stored the merkle root of its transactions or also the whole merkle tree? \n\nI know that each block uses the root to compute a nonce that fits the difficulty with f.e. the hash of the previous block. But I cant seem to find any information on if the rest of the merkle tree is stored in the block aswell or somewhere else.\n\nThanks for your help !",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8vzsn7",
+                    "author": "Wilynesslessness",
+                    "score": 1,
+                    "created_utc": 1652747059.0,
+                    "response": "As I understand it the full merkle tree can be \"decompressed\" by using merkle paths and merkle proofs. It's been awhile since I deep dove into this, so I could be mistaken. Here's a paper that may help.\n\nhttps://bitzuma.com/posts/how-bitcoin-works/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8w4v0f",
+                    "author": "Quantris",
+                    "score": 1,
+                    "created_utc": 1652749591.0,
+                    "response": "The block has the transactions themselves.\n\nThe Merkle tree of hashes of those transactions is computed and the root hash of that tree is included in the header. Part of checking block validity is confirming that this hash matches up with the transactions.\n\nThere is no need to store that tree as part of the block because it can just be generated as needed by looking at the transactions in the block. It just exists in memory (not necessarily all at once, in fact) while processing a block.\n\nEDIT: you can basically think of it as just the particular process used to hash the list of transactions. This begs the question of why use this tree structure vs. a simple concat-and-hash, the basic answers to that are covered by Satoshi in the whitepaper. One is \"reclaiming disk space\" (I don't know whether / which full nodes bother with this idea) and the other is \"simplified payment verification\": the Merkle tree enables so-called SPV nodes to not store blocks but rather just block hashes, and they can then confirm whether a transaction happened just by being told which block it was in & the chain of hashes from that transaction to the root of the tree.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8v7s6v",
+                    "author": "hVMjjxumF45DKy13",
+                    "score": 1,
+                    "created_utc": 1652734237.0,
+                    "response": "[Go read the code](https://github.com/bitcoin/bitcoin/blob/master/src/primitives/block.h).",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8vmpt1",
+                    "author": "ihatethelastcookie",
+                    "score": 1,
+                    "created_utc": 1652740703.0,
+                    "response": "Not 100% sure but I think this chapter of Mastering Bitcoin has the answer what you are looking for https://www.oreilly.com/library/view/mastering-bitcoin/9781491902639/ch07.html",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

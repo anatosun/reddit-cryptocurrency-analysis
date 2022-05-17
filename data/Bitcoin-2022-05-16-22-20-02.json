@@ -1,0 +1,574 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "ur7ijw",
+            "title": "Why does the network need a consensus algorithm?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/ur7ijw/why_does_the_network_need_a_consensus_algorithm/",
+            "author": "Leading-Fail-7263",
+            "created_utc": 1652739102.0,
+            "score": 4,
+            "num_comments": 11,
+            "subreddit": "Bitcoin",
+            "selftext": "I apologise for the basic question (obviously not suggesting there shouldn\u2019t be a consensus algrothim). \n\nBut if every node checks whether a broadcasted transaction is legitimate, why do you need a consensus mechanism (PoW) to determine if someone can update the public database? \n\nIf a transaction has been approved by everyone, isn\u2019t that enough to add it to the ledger?\n\nThank you.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8vlkwe",
+                    "author": "nullc",
+                    "score": 16,
+                    "created_utc": 1652740180.0,
+                    "response": "Because if you make two versions of a transaction, one that pays all your coins to Alice and the other that pays them all to Bob,  the network needs some way to decide which of these two is accepted.  If both were accepted you'd create more coins out of thin air.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8vs2w6",
+                            "author": "satoshishash",
+                            "score": 3,
+                            "created_utc": 1652743232.0,
+                            "response": "Ahh the old double spend problem? Am I mistaken?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8x0j8d",
+                                    "author": "never_safe_for_life",
+                                    "score": 1,
+                                    "created_utc": 1652768360.0,
+                                    "response": "Correct",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8x0llu",
+                                            "author": "satoshishash",
+                                            "score": 1,
+                                            "created_utc": 1652768412.0,
+                                            "response": "Thank you.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8vl5px",
+                    "author": "SHA256dynasty",
+                    "score": 7,
+                    "created_utc": 1652739988.0,
+                    "response": "you need a mechanism to keep the blocks to be slow to achieve consensus, otherwise you'd keep having different versions of the blockchain appear simultaneously (orphan blocks). if everyone doesn't agree A-> B happened before B->C happened, then B->C isn't necessarily a valid tx  \nyou also need to limit the size of the blockchain and bandwidth required to maintain decentralization so everyone who wants to can run a node",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8vs4l9",
+                    "author": "satoshishash",
+                    "score": 6,
+                    "created_utc": 1652743253.0,
+                    "response": "Is to fix the double spend problem?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8w6yi6",
+                            "author": "LeagueReplays2",
+                            "score": 4,
+                            "created_utc": 1652750640.0,
+                            "response": "yes",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8vjhzj",
+                    "author": "NiceDoctorBeam",
+                    "score": 5,
+                    "created_utc": 1652739247.0,
+                    "response": "Make it too expensive to cheat.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8vx31z",
+                    "author": "savinelli_smoker",
+                    "score": 4,
+                    "created_utc": 1652745697.0,
+                    "response": "Because you can have two legit transactions spending the same money at the same time. Without a central authority to decide who to get the money, PoW is needed to sort out the truth. The decision was made that we always trust the longest chain. And this is the ingenious part and the actual breakthrough of bitcoin.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8w68k8",
+                    "author": "Suspicious-Cry-6756",
+                    "score": 1,
+                    "created_utc": 1652750285.0,
+                    "response": "Because it needs the algorithm consent per se.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8wtszm",
+                    "author": "Independent-Snow-129",
+                    "score": 1,
+                    "created_utc": 1652763416.0,
+                    "response": "A transaction doesn't need to be approved by everyone(p2p).  It just need to be confirm in the blockchain.  Your node *or someone else node* verify your transaction and it follows the way you want to interact with the blockchain.\n\nTo have consensus you need more than 51% of the hashrate, bitcoin is backward compatible , therefor It means you can avoid consensus upgrade If you don't trust it.\n\nIn a case where this upgrade have draconian measure and affect your node , they can hardfork if they have less hashrate, *or* you can hardfork   .    *Consensus determine the validity of transactions .*\n\n***The Byzantine Formula(don't trust, verify)***",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ur7h5c",
+            "title": "Is there a bitcoin custodian for private holders?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/ur7h5c/is_there_a_bitcoin_custodian_for_private_holders/",
+            "author": "ProEngineerXD",
+            "created_utc": 1652738991.0,
+            "score": 7,
+            "num_comments": 14,
+            "subreddit": "Bitcoin",
+            "selftext": "I'm kind of scared of leaving my bitcoin on exchanges and I also don't want to hold them on a ledger inside my home or in a bank safe. I know that some companies offer custody services for institutional investors that may cost about 0.5%-1% of your bitcoin's value per year but your bitcoin is secured and insured. I was wondering if there are custody services for private investors.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8vk633",
+                    "author": "NiceDoctorBeam",
+                    "score": 11,
+                    "created_utc": 1652739546.0,
+                    "response": "Your wallet does not hold Bitcoin.  \nWallets conceal and protect private key information.  \nThey generate receive addresses and can sign spending transactions.  \nThey are backed up via a 24 word seed phrase - as long as you have that, you can access (spend) your Bitcoin.  \nHardware wallets have PIN numbers.  Too many bad guesses and the wallet \"bricks\" itself.  \nWhat is it about your situation which stops you from being able to have your own wallet?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8w25so",
+                            "author": "VPNApe",
+                            "score": 1,
+                            "created_utc": 1652748244.0,
+                            "response": "Do trezors brick themselves? Idk if I really want that as a feature.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8w41pm",
+                                    "author": "NiceDoctorBeam",
+                                    "score": 2,
+                                    "created_utc": 1652749189.0,
+                                    "response": "I'm very patient and I program robots.\n\nDo you want me to get access to your hardware wallet, then program a robot to try every possible combination until it gets in?  Robots don't get tired, don't take breaks, don't sleep.  They'll run 24/7.\n\nIF you have properly backed up your wallet, you would want your hardware wallet to brick itself after a \"large number\" of failed PIN attempts -- that would thwart me and save your Bitcoin from me and my robot.  You'd just have to buy another wallet, input the backed up seed phrase, and have access to your life savings.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8w4pey",
+                                            "author": "VPNApe",
+                                            "score": 1,
+                                            "created_utc": 1652749513.0,
+                                            "response": "Last I checked it'd take several centuries to brute force both my pin AND my pass phrase so I think I'd be safe.\n\nBut I get your point lol",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i8x2zwt",
+                                    "author": "dlq84",
+                                    "score": 1,
+                                    "created_utc": 1652770386.0,
+                                    "response": "It resets, wipes, deletes data. Not bricking itself, they used the wrong terminology. After that you can restore the seed on the same device and keep using it.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8vjug5",
+                    "author": "SHA256dynasty",
+                    "score": 6,
+                    "created_utc": 1652739401.0,
+                    "response": "Grayscale Bitcoin Trust.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8vu99v",
+                            "author": "Mr_Pocket_",
+                            "score": 2,
+                            "created_utc": 1652744293.0,
+                            "response": "God dammit GBTC needs to convert to a spot ETF already. Next shot is in July\u2026 what are your thoughts on their chances?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8vw1wc",
+                                    "author": "SHA256dynasty",
+                                    "score": 3,
+                                    "created_utc": 1652745179.0,
+                                    "response": "Literally betting my future on it lol\n\nI mean that it will happen eventually. Not holding my breath for this year.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8vkkn1",
+                    "author": "Ok_Aerie3546",
+                    "score": 2,
+                    "created_utc": 1652739722.0,
+                    "response": "Casa and unchained capital!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8vsatc",
+                    "author": "satoshishash",
+                    "score": 2,
+                    "created_utc": 1652743336.0,
+                    "response": "Casa is the best option, most transparent, and even if the company goes under you can recover your Bitcoin without them. Multisig has risks but it can also eliminate a lot of risks /attack vectors too. I trust Casa but am no expert.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8whxrk",
+                    "author": "mrv1ckt3r",
+                    "score": 1,
+                    "created_utc": 1652756239.0,
+                    "response": "https://keys.casa\n\nTry looking at Casa.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8wpig6",
+                    "author": "TheChoosey1",
+                    "score": 1,
+                    "created_utc": 1652760603.0,
+                    "response": "That's really really really dumb. \n\nHold your own private keys. That's the only way to get what Bitcoin was made for: self custody. And self custody is what gives you the true freedom of money.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8vj5q3",
+                    "author": "Random_Person_246810",
+                    "score": 0,
+                    "created_utc": 1652739094.0,
+                    "response": "Check out Fireblocks.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8vje2g",
+                            "author": "ProEngineerXD",
+                            "score": 1,
+                            "created_utc": 1652739198.0,
+                            "response": "As far as I can tell they only offer it to institutional investors.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ur7bbk",
+            "title": "Millionaire Investor sells all his assets to Buy The Bitcoin Dip. Onward and Upward!!",
+            "url": "https://medium.com/@trevorstark02/im-selling-all-my-assets-to-buy-one-thing-seriously-255f1298f6b6",
+            "author": "Illegal-Couch",
+            "created_utc": 1652738539.0,
+            "score": 129,
+            "num_comments": 34,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8vlri5",
+                    "author": "NotPresidentChump",
+                    "score": 28,
+                    "created_utc": 1652740264.0,
+                    "response": "Truly one of us",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8wrebp",
+                            "author": "Walmart_Warrior_420",
+                            "score": 11,
+                            "created_utc": 1652761820.0,
+                            "response": "The New York Post actually did an interview with him: \n\nhttps://youtu.be/xaB3GDWY0m4\n\n( \u0361\u00b0 \u035c\u0296 \u0361\u00b0)",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8ws5u6",
+                    "author": "JustNutsandBolts",
+                    "score": 17,
+                    "created_utc": 1652762322.0,
+                    "response": "Yep...give it 20 years, when the younger generation are in power and see bitcoin's true value, instead of the dinosaurs in the office.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8xlrhj",
+                            "author": "Lurked_Emerging",
+                            "score": 1,
+                            "created_utc": 1652786475.0,
+                            "response": "The twist is the younger generations are increasingly frozen out of accruing assets to save their value in by inflation and consistently blocked out of progressing in life because of that. Meanwhile they will increasingly bear the tax burden as their productivity is what keeps their aging seniors existing lifestyles afloat (older people draw pensions, require/cost more healthcare etc.). To attempt breaking out they have to take on debt that goes back to the same asset holders.\n\nBitcoin is inevitable because it's consistently what new generations value and need to break the system siphoning off their lives. Sadly alot turn to nfts, s coins etc. but alot will find bitcoin and profit from the most assymetric trade in history.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8wkxb1",
+                    "author": "Rokey76",
+                    "score": 13,
+                    "created_utc": 1652757874.0,
+                    "response": ">Bitcoin is protected by a global, decentralized wall of encrypted energy.\n\nWell, I'm convinced.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8wu95l",
+                    "author": "BlockChainR3volution",
+                    "score": 6,
+                    "created_utc": 1652763713.0,
+                    "response": "He\u2019s going to be really upset after it keeps dipping for the next 3/4 mos\ud83d\ude44\ud83d\ude44",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8vuse5",
+                    "author": "N-Bluth",
+                    "score": 17,
+                    "created_utc": 1652744556.0,
+                    "response": "You could research something your entire life, but don't ever put your life savings in one asset class. Especially when the FED has just pivoted to a monetary tightening strategy.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8wg5bo",
+                            "author": "XXsforEyes",
+                            "score": 4,
+                            "created_utc": 1652755283.0,
+                            "response": "One asset within one asset class no less. I\u2019m bullish on BTC but not maniacal.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i8wcqkz",
+                            "author": "VPNApe",
+                            "score": 5,
+                            "created_utc": 1652753545.0,
+                            "response": "Idk I yolod gme and retired off of it. High conviction plays have the highest profit potential. What other assets have a chance of doing a x20 in ten years like Bitcoin? Not many my dude.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8wphvv",
+                                    "author": "Public-Gap4804",
+                                    "score": -3,
+                                    "created_utc": 1652760593.0,
+                                    "response": "Any other crypto shitcoin \ud83d\ude05 for a while they all go up a lot",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8x03g7",
+                                            "author": "ElephantsAreHeavy",
+                                            "score": 1,
+                                            "created_utc": 1652768013.0,
+                                            "response": "They go up once, the difference with bitcoin is that the latter recovers from a bear.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i8xnea9",
+                                            "author": "kellnoidiii",
+                                            "score": 1,
+                                            "created_utc": 1652787557.0,
+                                            "response": "Untrue.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i8w9t65",
+                            "author": "TheChoosey1",
+                            "score": -4,
+                            "created_utc": 1652752082.0,
+                            "response": "You clearly don't understand Bitcoin. \n\nThis might help. https://youtu.be/t1brCcgi174",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8waosu",
+                                    "author": "TommyTornstus",
+                                    "score": 15,
+                                    "created_utc": 1652752520.0,
+                                    "response": "You clearly don't understand risk. Even if you 100% agree with The Bitcoin Standard, what the person you replied to said is just sound money management",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8wb0xl",
+                                            "author": "TheChoosey1",
+                                            "score": -15,
+                                            "created_utc": 1652752689.0,
+                                            "response": "Bitcoin is the least risky asset I've ever seen. Have you even looked at the price chart? We're not looking at the same thing.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8wb70w",
+                                                    "author": "TommyTornstus",
+                                                    "score": 10,
+                                                    "created_utc": 1652752775.0,
+                                                    "response": "Ok guy, be more humble",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i8wbn65",
+                                                            "author": "TheChoosey1",
+                                                            "score": -13,
+                                                            "created_utc": 1652752998.0,
+                                                            "response": "Who cares? I'm right about Bitcoin. That's what matters. Talk about Bitcoin, not about social conventions that distract from the topic. \n\nThe risk is not owning as much Bitcoin as possible.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i8wcpom",
+                                                                    "author": "EnkiduFox",
+                                                                    "score": 11,
+                                                                    "created_utc": 1652753532.0,
+                                                                    "response": "What our levelheaded dudes are saying is that the market can stay fucked up for way longer that you can remain solvent. It does not matter whether Bitcoin succeeds if you wipeout before you get to enjoy it.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                },
+                                                                {
+                                                                    "id": "i8wbxci",
+                                                                    "author": "TommyTornstus",
+                                                                    "score": 6,
+                                                                    "created_utc": 1652753135.0,
+                                                                    "response": "Money management is not a social convention. I don't think you are capable of understanding the point because it's pretty simple and obvious. I agree with everything you're saying but no intelligent person puts all their eggs in one basket.\n\nEven if you end up being right, your approach is still stupid. I'd love to play poker with you.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i8wny70",
+                                                                            "author": "Since_1979",
+                                                                            "score": 3,
+                                                                            "created_utc": 1652759642.0,
+                                                                            "response": "That dude is a moonboi",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        },
+                                                                        {
+                                                                            "id": "i8wch0c",
+                                                                            "author": "TheChoosey1",
+                                                                            "score": -6,
+                                                                            "created_utc": 1652753410.0,
+                                                                            "response": "And then there was Bitcoin. \n\nBitcoin changed the world. You apparently haven't noticed yet. \n\nYou're telling me you would've rather bought a large fries instead of a small fries and put the difference into Bitcoin when Bitcoin was at $1? \n\nIn r/personalfinance today some goon posted that he saved up $63k in 5 years in a savings account. I pointed out that had he saved that same amount in the same time in Bitcoin that he'd had $349k and I cited my source. \n\nIt was removed by the mods. \n\nTell me, do you think the guy with $63k would've done better buying Bitcoin instead?\n\nThere's others like him.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i8wi1tg",
+                                                                                    "author": "MajorWeenis",
+                                                                                    "score": 4,
+                                                                                    "created_utc": 1652756299.0,
+                                                                                    "response": "Hindsight is 20/20. It\u2019s about personal risk tolerance as well. Keep that in mind. I think a lot of people would have invested in Bitcoin five years ago if they knew it would eventually increase in value by 30x - 50x by now.",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i8wi66c",
+                                                                                            "author": "TheChoosey1",
+                                                                                            "score": -3,
+                                                                                            "created_utc": 1652756364.0,
+                                                                                            "response": "Hindsight my ass. I've been holding for 5 years already. I said the same shit then. You don't understand Bitcoin. Obviously. \n\nBitcoin is the least risky asset.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i8wd007",
+                                    "author": "N-Bluth",
+                                    "score": 2,
+                                    "created_utc": 1652753677.0,
+                                    "response": "There is one problem with this video. It was made when the FED was printing money. But currently the FED is tightening and removing money supply. Making dollars more valuable (than yesterdays value) and intentionally crashing the stock market. Bitcoin has never been in this environment so it will be interesting to see how it reacts, but I expect it to mirror other risk assets.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8wq43w",
+                    "author": "ketoboi1",
+                    "score": 6,
+                    "created_utc": 1652760989.0,
+                    "response": "If I had no choice but to put literally all my money into one thing it would be bitcoin, period.  Yeah diversification is nice but put yourself in a situation where if you could ONLY choose one.  The answer is obvious..at least for me.  The thing is though, in the real world, we can choose multiple things.  I think the best thing is choose a few things not many things\u2026index funds are ok but choose companies you\u2019ve researched or other coins..assets..etc\u2026But in the end any profit I get I personally always find it back in sats maybe us die hard bitcoiners are crazy lol. But we shall see in the coming decade or two.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8wuc8v",
+                            "author": "abhilodha",
+                            "score": 10,
+                            "created_utc": 1652763773.0,
+                            "response": "100$ portfolio people act like u",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8x6byi",
+                    "author": "cagrinvestor",
+                    "score": 0,
+                    "created_utc": 1652773296.0,
+                    "response": "I love his convinction but Bitcoin is so rare that you don't have to go all-in to make a fortune. There are only 21 million BTC so owning just 1 or 2 will be worth hundreds of millions of dollars in the future.\n\nI personally hold BTC as my largest overall holding but I wouldn't go all-in. Right now, I'm sitting at a 50% allocation of BTC and [crypto stocks](https://www.investortrip.com/cryptocurrency-stocks/) (Coinbase, Marathon Digital, BTCS, etc).\n\nOver time, Bitcoin will grow faster than my other growth stocks and it will naturally reach 80% over time. There are additional risks to Bitcoin and I don't need to go all-in to build a substantial nest egg.\n\n50% exposure is more than enough for me and I still buy Bitcoin before ANYTHING ELSE when I receive my regular paycheck. Thanks for the article!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8x9oms",
+                            "author": "paperboyjess",
+                            "score": 2,
+                            "created_utc": 1652776393.0,
+                            "response": "A single BTC will be worth hundreds of millions of dollars? How\u2026.?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8wt40f",
+                    "author": "Appropriate_Money_",
+                    "score": 0,
+                    "created_utc": 1652762948.0,
+                    "response": "> Diversification is for preserving wealth, concentration is for building it.\n\nThis sentiment is fucking poison and ignorant. If you're used to lottery tickets, sure, it doesnt make sense to diversify between negative EV bets. Slightly smarter people know that diversifying doesnt lower your average EV, just cuts the variance. Take risky +EV bets and diversify between them. The hard part is actually finding good expected returns and much more importantly good *uncorrelated* expected returns.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8xn6v4",
+                    "author": "bitcoinharambeee",
+                    "score": 1,
+                    "created_utc": 1652787423.0,
+                    "response": "Was written in April\u2026 rekt I guess haha",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

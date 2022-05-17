@@ -1,0 +1,217 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "urhhpg",
+            "title": "Laughing Spanish dude goes through the recent Bitcoin crash",
+            "url": "https://v.redd.it/u4ucizpftzz81",
+            "author": "AssHassle",
+            "created_utc": 1652774599.0,
+            "score": 25,
+            "num_comments": 11,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8x8li1",
+                    "author": "superboget",
+                    "score": 1,
+                    "created_utc": 1652775382.0,
+                    "response": "\"Laughing Spanish dude\" lmao",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8x9gez",
+                    "author": "Zetalos",
+                    "score": 1,
+                    "created_utc": 1652776181.0,
+                    "response": "I love these kind of clips hahaha",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8x9yzb",
+                    "author": "sujithgodavarthi",
+                    "score": 1,
+                    "created_utc": 1652776662.0,
+                    "response": "This is too good \ud83e\udd23\ud83e\udd23\ud83e\udd23\ud83e\udd23",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8x9z9c",
+                    "author": "Silver13Foxx",
+                    "score": 1,
+                    "created_utc": 1652776670.0,
+                    "response": "brilliant lol",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8xa783",
+                    "author": "AdventurousPraline57",
+                    "score": 1,
+                    "created_utc": 1652776875.0,
+                    "response": "Bruhh this is gold \ud83e\udd23\ud83e\udd23",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8xa9mi",
+                    "author": "SirSkittles111",
+                    "score": 1,
+                    "created_utc": 1652776938.0,
+                    "response": "I will never not burst out laughing with borja, this guys laugh is so infectious \ud83d\ude02",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8xaf16",
+                    "author": "Confusedcryptonian",
+                    "score": 1,
+                    "created_utc": 1652777074.0,
+                    "response": "This has just made my day. Amazing and hilarious. \ud83d\ude02",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8xb7r9",
+                    "author": "RedTurkeybacon",
+                    "score": 1,
+                    "created_utc": 1652777811.0,
+                    "response": "Rest in peace,\n\nEl Risitas \u2665\ufe0f\u2665\ufe0f",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8xb8wl",
+                    "author": "mnijs",
+                    "score": 1,
+                    "created_utc": 1652777840.0,
+                    "response": "Native Spanish speakers are never thrilled at this meme.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8xam5t",
+                    "author": "priapic_green_dildo",
+                    "score": 1,
+                    "created_utc": 1652777259.0,
+                    "response": "why are you shilling a trading service and disguising it as a meme ?",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "urhj2s",
+            "title": "Payment channels on lightning network",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/urhj2s/payment_channels_on_lightning_network/",
+            "author": "king_size_slim",
+            "created_utc": 1652774770.0,
+            "score": 2,
+            "num_comments": 10,
+            "subreddit": "Bitcoin",
+            "selftext": "So if I understand it correctly, to use the lightning network a payment channel has to be set up between to parties. This is set up on the L1 whilst the transactions within the payment channel occurs on L2. This makes lightning efficient when multiple transactions will occur between the two parties but still seems inefficient if only one transaction needs to be made. \n\nMy question: Can one party set up an \"open\" payment channel that allows anyone to join to send single transactions and then the party who created the channel choose to close this payment channel lets say every night.\n\nScenario: Coffee shop accepts BTC payments. Everyday they open up a payment channel where multiple customers can join to send satoshis. When the shop closes for the day the payment channel is finalised and verified on L1?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8x8hnr",
+                    "author": "pink_raya",
+                    "score": 3,
+                    "created_utc": 1652775282.0,
+                    "response": "a channel is just some bitcoin locked in 2/2 multisig, so by design it only can have 2 parties.\n\nBut LN nodes can have multiple channels open.\n\nA cafe in your scenario doesn't need to have a separate channel with each customer and doesn't need to close it every day. \n\nLN invoice is already open to everyone on LN, if your node can find a path to the destination via other ppls channels.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8x90k9",
+                            "author": "vitalyevodin",
+                            "score": 2,
+                            "created_utc": 1652775766.0,
+                            "response": "> LN invoice is already open to everyone on LN\n\ncould you explain this detailed",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8xbbb6",
+                                    "author": "pink_raya",
+                                    "score": 3,
+                                    "created_utc": 1652777900.0,
+                                    "response": "receiving LN wallet provides a secret (LN invoice, contains the LN address and amount of sats to receive), and this is shared between the LN nodes on the network from the sending node until the receiving node.\n\nSo you don't need a direct channel to pay in a cafe, you scan the QR at the counter and your wallet will try to find the shortest way through other LN channels until the sats reach the wallet of the cafe.\n\nThis need to insert amount to receive bitcoin on LN is bypassed by modern LN wallets and it looks pretty much the same as regular btc transaction, but settles in few seconds and for few satoshis.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8xes39",
+                    "author": "sciencetaco",
+                    "score": 3,
+                    "created_utc": 1652781049.0,
+                    "response": "You\u2019re forgetting about the \u201cnetwork\u201d part of the Lightning Network. \n\nLightning transactions can route through other nodes in the network. So the coffee shop can open a large channel to any node in the network, and then receive payments from any other node/user in the network. (Liquidity is an issue here but I won\u2019t go into it for simplicity)\n\nEach customer can also open payment channels to any other node of their choosing and use it for all their payments to various stores. \n\nThere is no need to open a channel with each customer. And there is no need to settle balances at the end of each day. Channels can stay open for months or years. There\u2019s really no need to close a channel other than to settle disputes or if you require your money back on chain again.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8xbwcz",
+                    "author": "Simple_Yam",
+                    "score": 1,
+                    "created_utc": 1652778429.0,
+                    "response": "No, what you're describing is not really possible. A channel opening requires known participants. A coffee shop can't pre-open a channel/s because they don't know which customers will come through their door that day. And even if they did, that channel could not be used by the customer because it would only have liquidity on one side. The customer needs to initiate the channel creation and put outbound liquidity in it.\n\nA customer could leave their channel open to be used continuously until its liquidity dries out, but then you have other issues, you fragment large amounts of liquidity and you're required to run and monitor your own node 24/7 to secure them unlike L1.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8xcnr4",
+                            "author": "king_size_slim",
+                            "score": 1,
+                            "created_utc": 1652779136.0,
+                            "response": "So there is atm no efficient way of taking single transactions on lightning for a business?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8xkuw7",
+                                    "author": "Simple_Yam",
+                                    "score": 1,
+                                    "created_utc": 1652785856.0,
+                                    "response": "Use a 3rd party service provider that manages your channels and nodes. Businesses are not gonna waste time with this type of headaches, they have a business to run. If it doesn't work out of the box, a centralized service will make it seem like it works.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8xmdr9",
+                                            "author": "Shroom_Boofer",
+                                            "score": 1,
+                                            "created_utc": 1652786892.0,
+                                            "response": "Customers don't need to open a channel with the businesses. Lightning payments can be routed across other nodes to reach the node the business is running.\n\nBTCPay Server is easy for a business to use on their own to accept lightning payments and on-chain payments. BTCPay server is not a centralized service. It's a self-hosted and open source cryptocurrency payment processor.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8xn3u0",
+                                                    "author": "Simple_Yam",
+                                                    "score": 1,
+                                                    "created_utc": 1652787367.0,
+                                                    "response": "Wether you open a channel to the business or other node is meaningless, it's the same process.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

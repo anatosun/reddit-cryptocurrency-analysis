@@ -1,0 +1,98 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uri0ms",
+            "title": "How to read BTC transaction?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uri0ms/how_to_read_btc_transaction/",
+            "author": "simphack",
+            "created_utc": 1652777106.0,
+            "score": 1,
+            "num_comments": 3,
+            "subreddit": "Bitcoin",
+            "selftext": "Hi guys, I need help to understand what happened in a BTC transaction. A friend told me he sent me 1.23 BTC from Trijo (Swedish Exchange), but I can see on my wallet only 0.03 BTC.\n\nCan you check ASAP this link and explain me how to read the transfer, please? Thank you\n\n[https://www.blockchain.com/btc/tx/1c806ed8d11cbbc43d614ec827cd776c6a342c9705ef20790b4532894442382d](https://www.blockchain.com/btc/tx/1c806ed8d11cbbc43d614ec827cd776c6a342c9705ef20790b4532894442382d)",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8xaodu",
+                    "author": "dlq84",
+                    "score": 1,
+                    "created_utc": 1652777315.0,
+                    "response": "> 0,03217263\n\nThat went to one wallet (yours), the other output went to another (most likely a change address) https://en.bitcoin.it/wiki/Change\n\nThis is more readable: https://mempool.space/tx/1c806ed8d11cbbc43d614ec827cd776c6a342c9705ef20790b4532894442382d\n\nThe blockchain never lies, your \"friend\" can.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8xbgi8",
+                            "author": "simphack",
+                            "score": 1,
+                            "created_utc": 1652778029.0,
+                            "response": "is it possible that the sender address doesn't have 1.23 BTC actually, because he used an exchange?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8xbtgh",
+                                    "author": "dlq84",
+                                    "score": 1,
+                                    "created_utc": 1652778351.0,
+                                    "response": "Yes it is very likely. Exchanges control their keys and a users' balance is just a number in their database and has no direct relation to any address.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "uri468",
+            "title": "#Bitcoin mining getting the green light in Norway, LOL is there anyone mining with f2pool? \ud83d\udc1f",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uri468/bitcoin_mining_getting_the_green_light_in_norway/",
+            "author": "Xinqiu-",
+            "created_utc": 1652777586.0,
+            "score": 5,
+            "num_comments": 3,
+            "subreddit": "Bitcoin",
+            "selftext": "I find Mining enterprises\u2019 quarterly reports on their Twitter. Lots of informations about miners.\n\n&#x200B;\n\n[https://docs.google.com/presentation/d/e/2PACX-1vSkur1RXUKCcRzOh6Fc\\_Xf5e5isb17yeGufOGN91KfEB6dq3zz3LdsCeDv0vqHrcYmawPgPFn114UMm/pub?start=false&loop=false&delayms=3000&slide=id.p1](https://docs.google.com/presentation/d/e/2PACX-1vSkur1RXUKCcRzOh6Fc_Xf5e5isb17yeGufOGN91KfEB6dq3zz3LdsCeDv0vqHrcYmawPgPFn114UMm/pub?start=false&loop=false&delayms=3000&slide=id.p1)",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8xbbaw",
+                    "author": "PuscH311",
+                    "score": 1,
+                    "created_utc": 1652777900.0,
+                    "response": "I mined @ f2p 2017",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8xbdfp",
+                            "author": "Xinqiu-",
+                            "score": 1,
+                            "created_utc": 1652777955.0,
+                            "response": "hah, since 2017?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8xm79c",
+                                    "author": "PuscH311",
+                                    "score": 1,
+                                    "created_utc": 1652786770.0,
+                                    "response": "2017-2018",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uqjbrw/do_i_need_a_bunch_of_dat_files_saved_on_my/",
             "author": "damndirtyape",
             "created_utc": 1652660516.0,
-            "score": 6,
-            "num_comments": 8,
+            "score": 7,
+            "num_comments": 15,
             "subreddit": "BitcoinBeginners",
             "selftext": "I'm new to Bitcoin. I have the Bitcoin Core wallet, and I've recently been trying to get it up to date. I just realized that a large number of .dat files are being saved on my computer. They have names like blk00017.dat. \n\nMy computer is warning me that I'm running out of space. \nDo I need these files? What happens if I delete them?",
             "stickied": false,
@@ -36,7 +36,17 @@
                     "created_utc": 1652663746.0,
                     "response": "not sure about dat files but i believe a full copy of the blockchain is like half a terabyte so if you dont have that amount right now you prob shouldnt run core on your computer until you get more storage",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i8tzzzd",
+                            "author": "no_clever_ideas",
+                            "score": 2,
+                            "created_utc": 1652716602.0,
+                            "response": "I've been running Bitcoin Core for about 5 months now. I am trying to learn the internals of how BTC works. It's fascinating.\n\nThe .dat files contain the actual raw blockchain data. It's the BTC public ledger. Yeah, it's around 0.5 TB now. I run Core using an external SSD to store the blockchain.\n\nYou can run Core in \"prune\" mode. In this mode it only stores the most recent blocks (size configurable, I believe). You're looking at like maybe 5 GB in that case. You still have to download the entire blockchain to get synced up. This may burden your internet resource if you have a monthly cap. And it takes a long time (took me 3 days running mostly on off hours).  If you want to run Bitcoin Core you will have to devote *some* storage resource to .dat files.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i8rpu4p",

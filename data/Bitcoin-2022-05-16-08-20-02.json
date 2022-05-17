@@ -14,12 +14,22 @@
             "url": "https://www.reddit.com/r/Bitcoin/comments/uqqs82/how_accessible_are_bitcoin_applications/",
             "author": "knueffelbund",
             "created_utc": 1652688350.0,
-            "score": 1,
-            "num_comments": 0,
+            "score": 5,
+            "num_comments": 1,
             "subreddit": "Bitcoin",
             "selftext": "I am looking to learn what the current state of accessibility in bitcoin is, the biggest pain points, and how people overcome them (in the context of open-source and self-custody). Goal is to identify some best practices and make them available via the [Bitcoin Design Guide](https://bitcoin.design/guide/).\n\nFrom some initial testing, it seems like many mobile apps fail at basic practices, like properly labelling interactive elements so screen readers can understand them. I would also assume that QR codes, addresses, and security (specifically backup of recovery phrases) are problematic. What else?\n\nWould appreciate it if anyone had insight or experience with this. Anonymous sharing is fine, too (although not sure how to best do that here on Reddit - maybe via throw-away accounts?).",
             "stickied": false,
-            "comments": []
+            "comments": [
+                {
+                    "id": "i8v6wxt",
+                    "author": "cpt_charisma",
+                    "score": 1,
+                    "created_utc": 1652733884.0,
+                    "response": "There is a general lack of educational content in Bitcoin apps, especially around transaction status, processing times, fee estimation/calculations and everything related to Lightning channels.  We need to do way better at setting expectations and helping people understand what's going on.  More general info would be nice too.  Basic stuff about how Bitcoin works, keys, security, etc.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
         },
         {
             "id": "uqqvhc",
@@ -27,16 +37,25 @@
             "url": "https://www.reddit.com/r/Bitcoin/comments/uqqvhc/software_vs_hardware_wallets/",
             "author": "mantits-",
             "created_utc": 1652688764.0,
-            "score": 1,
-            "num_comments": 8,
+            "score": 5,
+            "num_comments": 11,
             "subreddit": "Bitcoin",
             "selftext": "I use exodus, I understand the whole closed sourced thing is an issue with many. But if everything is just a seed phrase regardless what\u2019s the point of hardware over the software?",
             "stickied": false,
             "comments": [
                 {
+                    "id": "i8sp94r",
+                    "author": "nullama",
+                    "score": 5,
+                    "created_utc": 1652689254.0,
+                    "response": "The issue is Cold vs Hot.\n\nYou should get a cold storage wallet.\n\nThat means, your private keys should never be stored or typed in any device that is, has ever, or will be connected to the Internet.\n\nIt doesn't matter if it's software or hardware, or open or closed source.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i8soza3",
                     "author": "dlq84",
-                    "score": 1,
+                    "score": 3,
                     "created_utc": 1652689009.0,
                     "response": "Can your computer get a virus? Yes\n\nWould you want your seed stored on a machine that can get virus? No.\n\nIf you agree; then you also think hardware is better than software.",
                     "depth": 1,
@@ -45,7 +64,7 @@
                 {
                     "id": "i8sp2lg",
                     "author": "Raphae1",
-                    "score": 1,
+                    "score": 3,
                     "created_utc": 1652689094.0,
                     "response": "The point is not hardware vs software but offline vs online.",
                     "depth": 1,
@@ -53,11 +72,29 @@
                         {
                             "id": "i8sp6iw",
                             "author": "mantits-",
-                            "score": 1,
+                            "score": 0,
                             "created_utc": 1652689193.0,
                             "response": "But isn\u2019t the blockchain and your public address always online?\n\nI feel like I\u2019m missing something super simple and obvious here. Lol",
                             "depth": 2,
                             "comments": [
+                                {
+                                    "id": "i8spdu1",
+                                    "author": "TheGreatMuffin",
+                                    "score": 2,
+                                    "created_utc": 1652689374.0,
+                                    "response": "> But isn\u2019t the blockchain and your public address always online?\n\nThis doesn't matter here. What matter is your *private* key, which is offline at all times on a hardware wallet, while a software wallet exposes your private key to an online machine.  \n\nOpen source vs closed source is another topic (but generally open source is better when it comes to bitcoin).",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i8ssjfr",
+                                    "author": "sciencetaco",
+                                    "score": 2,
+                                    "created_utc": 1652692259.0,
+                                    "response": "With a software wallet your seed and private keys are in your computer memory. They are vulnerable to being stolen by malicious software. \n\nWith a hardware wallet the seed and private keys are on the device and designed not to leave. Your computer transfers an unsigned transaction to the hardware wallet, which then signs it and returns it to the computer to broadcast to the bitcoin network. At no point we\u2019re the private keys in your computer.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
                                 {
                                     "id": "i8sp849",
                                     "author": "dlq84",
@@ -66,26 +103,17 @@
                                     "response": "It has nothing to do with that. It's about protecting you **private** keys.",
                                     "depth": 3,
                                     "comments": []
-                                },
-                                {
-                                    "id": "i8spdu1",
-                                    "author": "TheGreatMuffin",
-                                    "score": 1,
-                                    "created_utc": 1652689374.0,
-                                    "response": "> But isn\u2019t the blockchain and your public address always online?\n\nThis doesn't matter here. What matter is your *private* key, which is offline at all times on a hardware wallet, while a software wallet exposes your private key to an online machine.  \n\nOpen source vs closed source is another topic (but generally open source is better when it comes to bitcoin).",
-                                    "depth": 3,
-                                    "comments": []
                                 }
                             ]
                         }
                     ]
                 },
                 {
-                    "id": "i8sp94r",
-                    "author": "nullama",
-                    "score": 1,
-                    "created_utc": 1652689254.0,
-                    "response": "The issue is Cold vs Hot.\n\nYou should get a cold storage wallet.\n\nThat means, your private keys should never be stored or typed in any device that is, has ever, or will be connected to the Internet.\n\nIt doesn't matter if it's software or hardware, or open or closed source.",
+                    "id": "i8sq1pk",
+                    "author": "gotamm",
+                    "score": 2,
+                    "created_utc": 1652689983.0,
+                    "response": "To be sure your seed phrase has not leaked, you have to generate it on a hardware wallet and NEVER type it on a computer. Aka keep it offline.",
                     "depth": 1,
                     "comments": []
                 },
@@ -99,13 +127,23 @@
                     "comments": []
                 },
                 {
-                    "id": "i8sq1pk",
-                    "author": "gotamm",
+                    "id": "i8vg8y7",
+                    "author": "bitcoin_barry",
                     "score": 1,
-                    "created_utc": 1652689983.0,
-                    "response": "To be sure your seed phrase has not leaked, you have to generate it on a hardware wallet and NEVER type it on a computer. Aka keep it offline.",
+                    "created_utc": 1652737809.0,
+                    "response": "Precisely because your key is everything.\n\nInternet connected device can leak your key online.\n\nComputer with storage can retain your key somewhere to be leaked later on.\n\nHardware devices are often offline, usb is considered bad to use, and other mediums of transfer (qr code, SD card) are harder to exploit.\n\nThey also provide physical security in a lot of cases, things like self destruct, or decoy accounts.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i8vjrcj",
+                            "author": "mantits-",
+                            "score": 1,
+                            "created_utc": 1652739363.0,
+                            "response": "Let\u2019s say I get one of those air gapped cold wallets. If I wanted to get a friend of mine into btc how can I send him anything?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 }
             ]
         }

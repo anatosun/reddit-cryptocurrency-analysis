@@ -14,8 +14,8 @@
             "url": "https://www.blockchain.com/btc/address/15SLrNo6PKVfsH5JLtatJcVkSQXCk1LXyq",
             "author": "electricmaster23",
             "created_utc": 1652608086.0,
-            "score": 4,
-            "num_comments": 10,
+            "score": 6,
+            "num_comments": 14,
             "subreddit": "Bitcoin",
             "selftext": "",
             "stickied": false,
@@ -32,7 +32,7 @@
                 {
                     "id": "i8oobd1",
                     "author": "Sufficient_Tooth_949",
-                    "score": 4,
+                    "score": 5,
                     "created_utc": 1652614734.0,
                     "response": "It could maybe be an address for receiving tips? Just a guess",
                     "depth": 1,
@@ -40,11 +40,21 @@
                         {
                             "id": "i8oofmi",
                             "author": "electricmaster23",
-                            "score": 3,
+                            "score": 5,
                             "created_utc": 1652614817.0,
                             "response": "That was my thought as well. Kinda shocked he'd only got that much in donations for such a legendary post.",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i8vw14t",
+                                    "author": "Neinfu",
+                                    "score": 1,
+                                    "created_utc": 1652745169.0,
+                                    "response": "He probably replaced the address in his signature since then",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         }
                     ]
                 },
@@ -72,7 +82,37 @@
                             "created_utc": 1652673187.0,
                             "response": "So how many addresses can one wallet have?",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i8soi79",
+                                    "author": "explorer-9",
+                                    "score": 1,
+                                    "created_utc": 1652688568.0,
+                                    "response": "My understanding is the upper limit is 2^160, in other words one quindecillion four hundred and sixty-one quattuordecillion five hundred one tredecillion six hundred and thirty-seven duodecillion three hundred thirty undecillion nine hundred two decillion nine hundred eighteen nonillion two hundred three octillion six hundred and eighty-four septillion eight hundred and thirty-two sextillion seven hundred sixteen quintillion two hundred and eighty-three quadrillion nineteen trillion six hundred and fifty-five billion nine hundred and thirty-two million five hundred and forty-two thousand nine hundred and seventy-six, but maybe others know better? u/mimblezimble u/Eislemike u/Amber_Sam",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8t3tpj",
+                                            "author": "PoopShootBlood",
+                                            "score": 1,
+                                            "created_utc": 1652701217.0,
+                                            "response": "So you telling me my offline wallet comes preloaded with that many addresses?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8vfl68",
+                                                    "author": "explorer-9",
+                                                    "score": 1,
+                                                    "created_utc": 1652737521.0,
+                                                    "response": "No, it computes additional addresses as needed. This is part of the reason why if you provide your mnemonic backup to a new wallet, it can take some time to compute all your funded addresses if you've previously transacted a lot.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }

@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/btc/comments/uqi6zf/pending_transaction_in_bitcoincom_wallet/",
             "author": "gabbabikeguy",
             "created_utc": 1652656742.0,
-            "score": 3,
-            "num_comments": 4,
+            "score": 11,
+            "num_comments": 15,
             "subreddit": "btc",
             "selftext": "I have a BCH transaction that is stuck as 'pending' in the [bitcoin.com](https://bitcoin.com) wallet app for over 10 hours. When I try to view the transaction on the block explorer it says that it can't be found. Is this normal and do I just have to wait longer? I thought that I should be able to at least view the pending transaction on the block explorer? Any help would be appreciated.\n\n[https://explorer.bitcoin.com/bch/tx/23a813390b4a8aace5a1e5963508fa5d19887fa80c28fed46390ca255972a17a](https://explorer.bitcoin.com/bch/tx/23a813390b4a8aace5a1e5963508fa5d19887fa80c28fed46390ca255972a17a)",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i8r7dya",
                     "author": "LovelyDayHere",
-                    "score": 2,
+                    "score": 5,
                     "created_utc": 1652657384.0,
                     "response": "No, that's not normal.\n\nI checked on another block explorer and the transaction could also not been found. That means it hasn't reached the Bitcoin Cash network. Right now it seems only known to your wallet.\n\nIn previous similar cases, the Bitcoin.com wallet devs have posted instructions in this sub on what information they would need from a wallet user like yourself, in order to fix the problem.\n\nSee here:\n\nhttps://www.reddit.com/r/btc/comments/lier4e/bitcoincom_wallet_sharable_link_bug_unable_to/gn2s4ow/\n\nI suggest you contact Bitcoin.com wallet support and ask them to help you find out what went wrong with sending the transaction. They should be able to help you get the problem sorted out.\n\n> I thought that I should be able to at least view the pending transaction on the block explorer? \n\nThis only works for transactions that have been successfully broadcast to the network.",
                     "depth": 1,
@@ -31,7 +31,7 @@
                         {
                             "id": "i8r8k5s",
                             "author": "gabbabikeguy",
-                            "score": 1,
+                            "score": 3,
                             "created_utc": 1652657967.0,
                             "response": "Hey thanks for the reply! I'll reach out the wallet support team. FYI the transaction was actually a received transaction so it seems that it should be known to at least one other wallet? Also, the transaction was a prize by scanning a QR code on the Satoshi Angels livestream yesterday (which I assume is a shareable link?).",
                             "depth": 2,
@@ -39,11 +39,40 @@
                                 {
                                     "id": "i8rnpe5",
                                     "author": "LovelyDayHere",
-                                    "score": 1,
+                                    "score": 4,
                                     "created_utc": 1652665176.0,
                                     "response": "> the transaction was a prize by scanning a QR code on the Satoshi Angels livestream\n\nI don't know what those QR were but I guess you're probably right, they could have been shareable links.\n\n> the transaction was actually a received transaction \n\nNormally transactions go through the network, but in this case it looks like that was not the case, so it was between bitcoin.com and your wallet only.\n\nSince those QR code links were probably scanned by lots of people, maybe that link was claimed first by someone else? Or something like that. I guess their Support staff would be able to know.",
                                     "depth": 3,
-                                    "comments": []
+                                    "comments": [
+                                        {
+                                            "id": "i8u856o",
+                                            "author": "Alex-Crypto",
+                                            "score": 2,
+                                            "created_utc": 1652719859.0,
+                                            "response": "QR codes were *not* links. They were sweepable wallets",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i8t2onu",
+                                    "author": "Collaborationeur",
+                                    "score": 5,
+                                    "created_utc": 1652700474.0,
+                                    "response": "> the transaction was a prize by scanning a QR code on the Satoshi Angels livestream yesterday\n\nThe network rejects double-spends (multiple transactions that try to spend the same coin).\n\nIn the case of this prize scanning contest many other people were trying to spend the prize coin along with you. Only one of these transactions succeeded, the rest all got rejected by the network. Furthermore each rejection generated a double-spend notification that got propagated through the entire network.\n\nI guess your wallet should have detected the rejection of your transaction instead of reporting it as pending...",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8u8f1r",
+                                            "author": "Alex-Crypto",
+                                            "score": 3,
+                                            "created_utc": 1652719968.0,
+                                            "response": "Exactly this. I gave him a tip to refresh the wallet - scan for missing transactions. That should update the tx to show it as invalid/remove it.\n\nThis is a great example showing double spends are prevented as intended! 100 people spending the same funds at the same time and only one goes through!  Fantastic demo that we **totally** were thinking of at the time .-. Lol",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
                                 }
                             ]
                         }
