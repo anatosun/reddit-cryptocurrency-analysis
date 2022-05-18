@@ -14,16 +14,55 @@
             "url": "https://www.reddit.com/r/ethereum/comments/urc3gk/front_running_bot/",
             "author": "iammagnanimous",
             "created_utc": 1652753609.0,
-            "score": 2,
-            "num_comments": 15,
+            "score": 3,
+            "num_comments": 33,
             "subreddit": "ethereum",
             "selftext": "There is a video on YouTube of how to make a front running bot and make a lot of profit a day. Feels scamish. the explanation on how it works is not clear. Scans the mempool for pending transactions and sandwiches a transaction and takes profit. Can someone perhaps explain how this works or if it is BS?",
             "stickied": false,
             "comments": [
                 {
+                    "id": "i8x44xv",
+                    "author": "harpocryptes",
+                    "score": 5,
+                    "created_utc": 1652771355.0,
+                    "response": "Front running is a real thing, but I've seen videos pretending to demonstrate that and give you the code to run one as a smart contract yourself. Those were definitely scams aiming at stealing your eth. Be careful.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8x835l",
+                            "author": "iammagnanimous",
+                            "score": 2,
+                            "created_utc": 1652774900.0,
+                            "response": "This I think is what I am talking about.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8x88b5",
+                                    "author": "iammagnanimous",
+                                    "score": 1,
+                                    "created_utc": 1652775035.0,
+                                    "response": "https://www.youtube.com/watch?v=g4w8pP-Qch8&ab_channel=Web3Solidity",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8xmbh4",
+                                            "author": "harpocryptes",
+                                            "score": 3,
+                                            "created_utc": 1652786849.0,
+                                            "response": "Absolutely a scam. A smart contract is not a bot, it cannot run by itself. What this video shows is fake.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "i8wdy62",
                     "author": "olihowells",
-                    "score": 3,
+                    "score": 4,
                     "created_utc": 1652754154.0,
                     "response": "It is exploiting and only removes value from the network, however the network is decentralised so no one is stopping you from doing what you like.",
                     "depth": 1,
@@ -64,7 +103,7 @@
                                                 {
                                                     "id": "i8whurn",
                                                     "author": "olihowells",
-                                                    "score": 2,
+                                                    "score": 3,
                                                     "created_utc": 1652756195.0,
                                                     "response": "Yeah, front running bots can see they you\u2019ve placed a large order. They can then use a higher gas fee to buy some of the coin before you do, which in turn makes the price you pay for the coins higher.",
                                                     "depth": 5,
@@ -75,6 +114,15 @@
                                                             "score": 1,
                                                             "created_utc": 1652756486.0,
                                                             "response": "Then sell at the higher price and take profit",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        },
+                                                        {
+                                                            "id": "i908gkk",
+                                                            "author": "stealthtomatoe",
+                                                            "score": 1,
+                                                            "created_utc": 1652828265.0,
+                                                            "response": "With the transaction fees, they have to make orders with high amount in order to make some benefits\n\nOr am i missing something?",
                                                             "depth": 6,
                                                             "comments": []
                                                         }
@@ -100,11 +148,59 @@
                 {
                     "id": "i8wqq2j",
                     "author": "LateNightSupperrr",
-                    "score": 2,
+                    "score": 4,
                     "created_utc": 1652761375.0,
-                    "response": "You can see it happen on charting websites like DEXscreener and poocoin etc. \n\nExample:\n1. Person A wants to buy $10,000 of Luna at $1. \n2. Bot identifies the pending transaction, buys $20,000 of Luna before Person A\u2019s transaction goes through. \n3. Luna is now $1.03 instead due to bot\u2019s 20k buy. \n4. Person A buys $10,000 worth of Luna at $1.03 instead. \n5. Luna jumps to $1.05 due to Person A 10k buy. \n6. Bot sells the initial $20,000 LUNA it bought (probably worth 1-2% more now) \n\nThis usually happens within the same block.",
+                    "response": "You can see it happen on charting websites like DEXscreener and poocoin etc. \n\nExample:\n1. Person A wants to buy $10,000 of Luna at $1. \n2. Bot identifies the pending transaction, buys $20,000 of Luna before Person A\u2019s transaction goes through. \n3. Luna is now $1.03 instead due to bot\u2019s 20k buy. \n4. Person A buys $10,000 worth of Luna at $1.03 instead. \n5. Luna jumps to $1.05 due to Person A 10k buy. \n6. Bot sells the initial $20,000 LUNA it bought (probably worth 1-2% more now) \n\nThis usually happens within the same block.\n\nEdit: also known as a sandwich attack \ud83e\udd6a",
                     "depth": 1,
                     "comments": []
+                },
+                {
+                    "id": "i8y16w2",
+                    "author": "pschoffer",
+                    "score": 3,
+                    "created_utc": 1652794993.0,
+                    "response": "SCAM ALERT!\n\nI actually peaked into the [source code.](https://pastebin.com/raw/GgY5PfiJ)\n\nBoth \\`start\\` and \\`withdrawal\\` calls will only send the deposited eth to the attacker's wallet.\n\nWhich is this one - [https://etherscan.io/address/0xBe90D3D88ca52B16D822Ec62009Aa474BAA92b23#internaltx](https://etherscan.io/address/0xBe90D3D88ca52B16D822Ec62009Aa474BAA92b23#internaltx)\n\nSeems like only one poor fellow lost 0.2885 Ether to it so far. But yeah.. don't be the second.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i90v1lg",
+                            "author": "Normal_Cranberry_526",
+                            "score": 2,
+                            "created_utc": 1652838987.0,
+                            "response": "1.7 ETH and rising",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8wrae0",
+                    "author": "pschoffer",
+                    "score": 2,
+                    "created_utc": 1652761748.0,
+                    "response": "I tried to do a short video talking about bots on blockchain the other day. Covering few scenarios including sandwitching that you are talking about here.\n\nSome of them are actually net good for the protocols/users.\n\nhttps://youtu.be/oxeMOJfSBhU",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8xtgsh",
+                            "author": "UnderLagger",
+                            "score": 1,
+                            "created_utc": 1652791124.0,
+                            "response": "great video, it helps understand the technical situation. now can you tell us more from a mev searcher pov ? does a smart contract like the one shared on youtube, can extract mev, I mean is it legit or a scam ?\n\n>[https://www.youtube.com/watch?v=g4w8pP-Qch8&ab\\_channel=Web3Solidity](https://www.youtube.com/watch?v=g4w8pP-Qch8&ab_channel=Web3Solidity)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8y1iqf",
+                                    "author": "pschoffer",
+                                    "score": 1,
+                                    "created_utc": 1652795144.0,
+                                    "response": "The contract linked above can extract eth from your wallet only :) \n\n[https://www.reddit.com/r/ethereum/comments/urc3gk/comment/i8y16w2/?utm\\_source=share&utm\\_medium=web2x&context=3](https://www.reddit.com/r/ethereum/comments/urc3gk/comment/i8y16w2/?utm_source=share&utm_medium=web2x&context=3)\n\nHow the bots normally work is that there is a script that runs on your laptop or a server and that scripts does the scanning, not some on-chain contract that would magically do that. \n\nContracts don't run by themselves they need a transaction to trigger anything.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": "i8wpbgo",
@@ -125,9 +221,18 @@
                                 {
                                     "id": "i8x09kp",
                                     "author": "Perleflamme",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1652768146.0,
                                     "response": "The data you're looking for:\n\nhttps://paradigm.xyz/2020/08/ethereum-is-a-dark-forest\n\nIt will help you understand what it does and the extent of the ecosystem landscape. \n\nPreventing it means either using flashbots yourself to ensure only a few miners know about your transactions without sending it publicly to the dark forest (aka the public mempool readily available to bots on which to feed from public transactions) or privacy-friendly networks and exchanges (like the Aztec Protocol L2, though it's not yet completely live). \n\nSecretswap and Sienna also do this as privacy-friendly decentralized exchanges. Be careful, test them before really using them if you want to use them. You don't want to mess it up. \n\nFlashbots: https://github.com/flashbots/flashbots-docs/",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i8wtkqr",
+                                    "author": "wooktar",
+                                    "score": 1,
+                                    "created_utc": 1652763257.0,
+                                    "response": "They usually target low liquidity tokens, (for example: shitcoins on uniswap) where the price moves quickly. People set their slippage higher to get their transactions through, and the bots look for high slippage. That\u2019s where they execute. I haven\u2019t really encountered it anywhere else. Haven\u2019t heard of it being a problem on CEXs; just DEXs.\n\nAt the end of the day, best way to avoid it is never trade with high slippage.",
                                     "depth": 3,
                                     "comments": []
                                 }
@@ -136,20 +241,29 @@
                     ]
                 },
                 {
-                    "id": "i8wrae0",
-                    "author": "pschoffer",
+                    "id": "i8z5jgt",
+                    "author": "yrotsflar",
                     "score": 1,
-                    "created_utc": 1652761748.0,
-                    "response": "I tried to do a short video talking about bots on blockchain the other day. Covering few scenarios including sandwitching that you are talking about here.\n\nSome of them are actually net good for the protocols/users.\n\nhttps://youtu.be/oxeMOJfSBhU",
+                    "created_utc": 1652811725.0,
+                    "response": "There's even a warning about this scam on [https://remix.ethereum.org/](https://remix.ethereum.org/) ha\n\nThe concept itself is not a scam though. Basically it takes advantage of pending transactions and snipes opportunities that those transactions may incur. The scammers are peddling malicious software pretending to do the legit thing",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i8x44xv",
-                    "author": "harpocryptes",
+                    "id": "i8zfq0f",
+                    "author": "mooremo",
                     "score": 1,
-                    "created_utc": 1652771355.0,
-                    "response": "Front running is a real thing, but I've seen videos pretending to demonstrate that and give you the code to run one as a smart contract yourself. Those were definitely scams aiming at stealing your eth. Be careful.",
+                    "created_utc": 1652815884.0,
+                    "response": "What they are describing is a real thing, but what they are trying to do is scam you.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i90uv88",
+                    "author": "Normal_Cranberry_526",
+                    "score": 1,
+                    "created_utc": 1652838903.0,
+                    "response": "Recorded voice over from a fiverr hire to hide the Indian accent, nothing suspicious at all",
                     "depth": 1,
                     "comments": []
                 }

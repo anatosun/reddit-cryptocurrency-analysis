@@ -1,0 +1,73 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "us5t4e",
+            "title": "Where does Ethereum's protocol revenue go?",
+            "url": "https://www.reddit.com/r/ethereum/comments/us5t4e/where_does_ethereums_protocol_revenue_go/",
+            "author": "Texas_243",
+            "created_utc": 1652852279.0,
+            "score": 5,
+            "num_comments": 6,
+            "subreddit": "ethereum",
+            "selftext": "Hello!\n\nI was looking at token terminal's protocol revenue chart and Ethereum is #1 by a huge margin! ($8.5B in the last year)\n\n[https://tokenterminal.com/terminal/metrics/protocol\\_revenue](https://tokenterminal.com/terminal/metrics/protocol_revenue)\n\nI'm wondering where does all this ETH go? A DAO? ETH miners? Thanks!",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i91l97r",
+                    "author": "MinimalGravitas",
+                    "score": 4,
+                    "created_utc": 1652854390.0,
+                    "response": "Most of it gets burned due to.a mechanism introduced in EIP-1559. A small tip is given to miners currently, but will go to stakers after The Merge.\n\n\nBy burning the base transaction fees the value in effect is going to all ether holders through deflationary pressure.\n\n\nIt's also worth noting that 'burning' in this case doesn't mean sending it to a burn address, but rather it is completely removed from the network.\n\n\nYou can watch the burn at https://watchtheburn.com/.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91naz3",
+                            "author": "AESTHTK",
+                            "score": 5,
+                            "created_utc": 1652856045.0,
+                            "response": "Which means that \u201cit goes\u201d straight into the pockets of anybody holding Ethereum - as it directly reduces supply.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i91u3v1",
+                                    "author": "Key-Cucumber-1919",
+                                    "score": 1,
+                                    "created_utc": 1652862047.0,
+                                    "response": "It's offsetting some eth created by miners, but still more is being created than burned.\n\nSo it's not going straight into the pockets but it's leaving pockets at slower rate.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i91t8bv",
+                    "author": "Olmops",
+                    "score": 1,
+                    "created_utc": 1652861239.0,
+                    "response": "Did not do the deep dive, but the first question should be what exactly does your graph show?\n\n571m dollars in 30 days - that could just be the newly minted ETH from block rewards.\n\n2 ETH go to the miner who finds a block. That are 30\\*24\\*3600secs/13secs \\~200k ETH in 30 days with 13 seconds block time. Those go to the miners.\n\nMiners can also earn tips (part of the transaction fees). \n\nThis is all independent of the mentioned burned ETH which might positively impact the price.\n\nNote however that the supply will significantly decrease when Ethereum switches to Proof of Stake (estimate a 80%-90%reduction in newly minted ETH) due to a different reward scheme.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91webt",
+                    "author": "daxtaslapp",
+                    "score": 1,
+                    "created_utc": 1652864233.0,
+                    "response": "Its decentralised so the people who help run the network which are currently mostly miners, get most of the fees which we pay for called Gas. A portion also burned into oblivion",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

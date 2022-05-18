@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/ethereum/comments/uqxqb2/tracking_ethereum_developer_hours_andor_code/",
             "author": "JT_1976",
             "created_utc": 1652712700.0,
-            "score": 1,
-            "num_comments": 6,
+            "score": 0,
+            "num_comments": 8,
             "subreddit": "ethereum",
             "selftext": "Is there a way to track how much time Ethereum developers are actually spending on The Merge? Is there a way to track the material progress this \"team\" is making on a daily basis or do they get around to writing code when they \"feel\" like it?\n\nI've been in the software development industry since 2000. Far more complex systems and applications have been developed in a fraction of the time it is taking Ethereum developers to do whatever it is they are supposed to be doing.\n\nWhere is the accountability? If this  was a VC backed start-up in the normal capital markets, this bullshit would not be allowed to happen.",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i8u1630",
                     "author": "jpea",
-                    "score": 4,
+                    "score": 5,
                     "created_utc": 1652717073.0,
                     "response": "How have you been in the software world for 22 years being this much of an asshole?",
                     "depth": 1,
@@ -62,11 +62,30 @@
                 {
                     "id": "i8vc6gm",
                     "author": "Perleflamme",
-                    "score": 1,
+                    "score": 3,
                     "created_utc": 1652736057.0,
                     "response": "Most devs fail to realize coding an ecosystem in a trustless environment isn't relying only on development skills. It first and foremost relies on game theory principles. \n\nCreating the detailed specs themselves is extremely difficult, because you have to ensure it works without knowing who interacts with your system. And you have to implement self-regulated mechanisms that allow for the different users to have aligned incentives, notably in terms of profitability. At all times, being malevolent must be unprofitable. \n\nAnd all that without any bug, of course. Let's just say that it's quite rare to see actually good devs, ones who value the activity of testing and who know that coding architecture has nothing to do with an \"architect\" telling you which lib to use, devs who know how to follow the SOLID principles.",
                     "depth": 1,
                     "comments": []
+                },
+                {
+                    "id": "i8x2kfw",
+                    "author": "AESTHTK",
+                    "score": 3,
+                    "created_utc": 1652770022.0,
+                    "response": "There is no Ethereum \u201cteam\u201d or even codebase. It\u2019s just a specification for a consensus and an execution layer.\n\nThe consensus merge specs are locked and it\u2019s code complete. It\u2019s been done for a while.\n\nNow the clients are implementing those specs and testing pairwise client interoperability.\n\nLighthouse, nimbus, Besu, geth, Prysm, teku, erigon etc are some of the multiple teams doing this work.\n\nYou can follow their individual progress and updates, but there\u2019s no incentive to rush this and every incentive to make sure it\u2019s 100% safe to execute. Even then, most of their work is already done - we\u2019re just testing now.\n\nThere\u2019s a clear roadmap of public testnet merges. A lot of the timeline is about giving other big players like exchanges etc time to prepare as well and general coordination.\n\nIt\u2019s ok to be clueless to how Ethereum software development works, we all started somewhere and it\u2019s probably quite different to the models you\u2019re used to. But if you do want to learn, these are the main resources I use to keep up to speed:\n\nhttp://eth2.news\n\nhttps://github.com/ethereum/pm/blob/master/Merge/mainnet-readiness.md",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8zxj4e",
+                            "author": "JT_1976",
+                            "score": 1,
+                            "created_utc": 1652823321.0,
+                            "response": "I sincerely appreciate your detailed and thorough response.\n\nYes, this development methodology is bass ackwards, but what do I know?\n\nI'm a firm believer of Parkinson's Law - \"work expands so as to fill the time allotted for it's completion.\"\n\nI guess we'll know the merge is done when the merge is done, whenever that is right?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 }
             ]
         },
@@ -76,8 +95,8 @@
             "url": "https://www.reddit.com/r/ethereum/comments/uqxluf/cbdc_who_is_building_the_platform_for_the_us/",
             "author": "Sparrow7Trades",
             "created_utc": 1652712340.0,
-            "score": 1,
-            "num_comments": 11,
+            "score": 2,
+            "num_comments": 15,
             "subreddit": "ethereum",
             "selftext": "I am confident that huge gains are in store for whatever company has a contract with the federal government to build out its government-backed stablecoin network. But I can't figure out what company that is. Visa? Anchorage? Stellar? Square? Help me people.",
             "stickied": false,
@@ -85,7 +104,7 @@
                 {
                     "id": "i8txvnb",
                     "author": "patrioterection",
-                    "score": 4,
+                    "score": 5,
                     "created_utc": 1652715737.0,
                     "response": "Its Circle/USDC. I thought everyone already knew this.",
                     "depth": 1,
@@ -93,7 +112,7 @@
                         {
                             "id": "i8ub4nr",
                             "author": "Sparrow7Trades",
-                            "score": 2,
+                            "score": 3,
                             "created_utc": 1652721042.0,
                             "response": "From what I read, Circle has positioned itself to be the choice, but I don't see where that choice has been made. Seems Visa has done the same. What makes you so sure it's Circle?",
                             "depth": 2,
@@ -101,7 +120,7 @@
                                 {
                                     "id": "i8uy03v",
                                     "author": "patrioterection",
-                                    "score": 1,
+                                    "score": -1,
                                     "created_utc": 1652730240.0,
                                     "response": "They have Blackrock backing them. $7 trillion in assets under their control. That's almost 15% of all the wealth in the world.",
                                     "depth": 3,
@@ -112,18 +131,9 @@
                     ]
                 },
                 {
-                    "id": "i8uallw",
-                    "author": "No-Courage-1202",
-                    "score": 2,
-                    "created_utc": 1652720828.0,
-                    "response": "Probably one of the big banks",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i8vc8m0",
                     "author": "MoistConcert420",
-                    "score": 2,
+                    "score": 3,
                     "created_utc": 1652736083.0,
                     "response": "Probably the U.S. treasury. With the U.S. track record. They'll probably make some new government body to run/oversee it. I highly doubt it will be contracted out. \n\nFrom the small study they did (treasury/university) all the stats looked like direct stats from ETH network, such as theoretical limits. Wouldn't be surprised if they just running a geth clone. \n\nEither way going to be some big players such as the Treasury. Why print money when you can just modify a line of code? Hahahaha. \n\nWould a backed U.S. government stablecoin even logically make sense if they can unlimited print the backing? Of course it does... do what China and India did... release coin, than ban everything else. Easy profits.",
                     "depth": 1,
@@ -152,6 +162,35 @@
                                             "response": "I agree. Must get on defi. Thanks for your thoughts.",
                                             "depth": 4,
                                             "comments": []
+                                        },
+                                        {
+                                            "id": "i8z61ik",
+                                            "author": "olthickwrists",
+                                            "score": 1,
+                                            "created_utc": 1652811929.0,
+                                            "response": "You really think that would happen?  Hundreds of billions of American wealth stolen by our government?  There would be riots in the streets.  FDR compensated people for handing over their gold.. it wasn\u2019t stolen, it was strong armed though I guess",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8zb59j",
+                                                    "author": "MoistConcert420",
+                                                    "score": 1,
+                                                    "created_utc": 1652814015.0,
+                                                    "response": "Why not? \n\nYou think they'll care? People riot over everything these days. \n\nIf they honestly cared about people's wealth they would have initiated a FDIC type protection as soon as the first exchange opened in the states. \n\nThe other two big countries that established CBDCs; released their coin than immediately banned all other crypto. \n\nIf they did compensate, they could easily just mint enough CBDC to make it happen. But highly unlikely they would. \n\nFuture legislation could squash all fiat on ramps and off ramps and since crypto can't really buy food, pay your mortgage. Or whatever bills you have. Could be the death with something as simple of a stroke of a pen on an executive order.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i8zdfh8",
+                                                            "author": "olthickwrists",
+                                                            "score": 1,
+                                                            "created_utc": 1652814948.0,
+                                                            "response": "I think you\u2019re completely off on a few points, and are looking at others far too simply.  The fdic insurance will likely come once rules are established around stable coins.  Regulation is moving slow because that\u2019s how it works, our financial governing institutions don\u2019t just do shit Willy nilly.  In India crypto is not illegal, it\u2019s just not legal tender.  The United States isn\u2019t China\u2026 as long as people stand up for their rights in the streets, at the polls, and in court.  Sure, the pres could pull some shit and try and ban everything.  Good luck in court and at the next election with that.  Appreciate your viewpoints it\u2019s always interesting to hear from others",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -160,9 +199,18 @@
                     ]
                 },
                 {
+                    "id": "i8uallw",
+                    "author": "No-Courage-1202",
+                    "score": 2,
+                    "created_utc": 1652720828.0,
+                    "response": "Probably one of the big banks",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i8trjfj",
                     "author": "PapaChonson",
-                    "score": 1,
+                    "score": -1,
                     "created_utc": 1652713110.0,
                     "response": "Stellar has been my guess. Now we wait and see\u2026",
                     "depth": 1,

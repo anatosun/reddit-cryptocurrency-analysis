@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/Bitcoin/comments/ur068i/is_lightning_network_fully_operational/",
             "author": "mybed54",
             "created_utc": 1652719249.0,
-            "score": 16,
-            "num_comments": 29,
+            "score": 21,
+            "num_comments": 39,
             "subreddit": "Bitcoin",
             "selftext": "Is lightning network full operational now? If so what challenges are there for every exchange / merchant to just adopt it tomorrow / why hasn't it just been integrated?",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i8u7m7d",
                     "author": "MatthiasLee11",
-                    "score": 8,
+                    "score": 15,
                     "created_utc": 1652719654.0,
                     "response": "It is fully functional and adopted in some places. It hasn't been fully adopted yet for the same reasons bitcoin itself hasn't been adoped everywhere yet. There are not many other challenges to accept lightning BTC as opposed to normal BTC.",
                     "depth": 1,
@@ -31,7 +31,7 @@
                         {
                             "id": "i8uggi0",
                             "author": "bbultimate",
-                            "score": 9,
+                            "score": 12,
                             "created_utc": 1652723160.0,
                             "response": "Not really true about a lack of challenges to accepting Bitcoin via Lightning. It requires substantially more effort. \n\nTo accept onchain Bitcoin one has to simply share the address.\n\nTo accept Bitcoin via Lightning you have to have a Lightning node, have channels open and have inbound liquidity. Furthermore your node needs to be online at least once every two weeks, but really it's recommended to keep it online 24/7 as it has to be online the moment you want to receive.\n\nYou can kind of get around this by letting someone else manage your channels, or use watchtowers, or receive the payment and have that open a channel to you too. None of those really reduce the challenges, they just offload them to other people or use an onchain tx.",
                             "depth": 2,
@@ -39,7 +39,7 @@
                                 {
                                     "id": "i8utq30",
                                     "author": "RecommendationNo6041",
-                                    "score": 9,
+                                    "score": 8,
                                     "created_utc": 1652728495.0,
                                     "response": "This needs to be simplified or there won\u2018t be adaption. I hope the nerdy guys recognize this.\n\nIt needs to be VERY simple.",
                                     "depth": 3,
@@ -47,18 +47,47 @@
                                         {
                                             "id": "i8v40cm",
                                             "author": "halt_spell",
-                                            "score": 3,
+                                            "score": 7,
                                             "created_utc": 1652732695.0,
                                             "response": "> This needs to be simplified or there won\u2018t be adaption. I hope the nerdy guys recognize this.\n\nSpeaking as a \"nerdy guy\" plenty of people told me email and the internet were too complicated and therefore a fad. These things didn't get materially simpler, but people educated themselves and once the knowledge hit critical mass it became recognized as simple.\n\nThere was a time when deciding which wifi network to connect to or the difference between wifi or xG internet was considered too complicated. The same attitude came up with regard to user interfaces of PCs and mobile devices.\n\nThere's nothing unattainable about the knowledge for someone who wants to use the lighting network. There may be meager reductions in complexity but far more likely people will do what it takes to learn about it.",
                                             "depth": 4,
-                                            "comments": []
+                                            "comments": [
+                                                {
+                                                    "id": "i8wjqkt",
+                                                    "author": "OzzyBitcions",
+                                                    "score": 1,
+                                                    "created_utc": 1652757214.0,
+                                                    "response": "The way email got simpler is the same way that lightning will probably get simpler, people will get someone else to run the software for them and they'll just use an app that connects to someone else's computer that they'll have to trust to do the right thing.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i8wk9aa",
+                                            "author": "TheChoosey1",
+                                            "score": 0,
+                                            "created_utc": 1652757504.0,
+                                            "response": "Facebook just announced they're going to integrate Bitcoin using lighting. You'll have a Bitcoin \"account\" with your Facebook profile. \n\nEvery social media will follow. Every government will also follow. It's coming no matter what. There's too much incentive for it not to happen. It's inevitable.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8wwzzj",
+                                                    "author": "senfmeister",
+                                                    "score": 3,
+                                                    "created_utc": 1652765659.0,
+                                                    "response": ">Facebook just announced they're going to integrate Bitcoin using lighting.\n\nYou got some sauce for that claim, chief? Looking for Facebook directly announcing it, not some random site claiming it's happening.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
                                         }
                                     ]
                                 },
                                 {
                                     "id": "i8v4qxf",
                                     "author": "Br0kenRabbitTV",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1652733000.0,
                                     "response": "Agreed, I have to run a whole extra server to accept LN without using any third parties, while I can accept on chain BTC on shared hosting still without using any third parties.",
                                     "depth": 3,
@@ -71,7 +100,7 @@
                 {
                     "id": "i8u7oss",
                     "author": "iamthereal_jb",
-                    "score": 2,
+                    "score": 3,
                     "created_utc": 1652719683.0,
                     "response": "I dunno but Exodus now allows you to load up to 1000$ in lightening wallet, up from 100$ last month.",
                     "depth": 1,
@@ -79,7 +108,7 @@
                         {
                             "id": "i8uafio",
                             "author": "Nada_Lives",
-                            "score": -15,
+                            "score": -16,
                             "created_utc": 1652720761.0,
                             "response": "You cannot put $100 into a Lightning wallet. You cannot put $1000 into a Lightning wallet. Ain't picking on you for being a newb, but I am pointing out that USD will just not fit into Bitcoin in any way, period. When you say things like this, you are misinforming those who come after you about the function of Bitcoin.",
                             "depth": 2,
@@ -87,7 +116,7 @@
                                 {
                                     "id": "i8uauwt",
                                     "author": "Peter4real",
-                                    "score": 14,
+                                    "score": 15,
                                     "created_utc": 1652720933.0,
                                     "response": "Calm the fuck down, we all know he means X USD worth of BTC.",
                                     "depth": 3,
@@ -95,7 +124,7 @@
                                         {
                                             "id": "i8ufpws",
                                             "author": "Nada_Lives",
-                                            "score": -12,
+                                            "score": -13,
                                             "created_utc": 1652722870.0,
                                             "response": "No we all don't. And just because a wallet conveniently converts the units to USD for you does not mean that the wallet is pointing to those fiat units.",
                                             "depth": 4,
@@ -103,7 +132,7 @@
                                                 {
                                                     "id": "i8ujuow",
                                                     "author": "Peter4real",
-                                                    "score": 3,
+                                                    "score": 4,
                                                     "created_utc": 1652724488.0,
                                                     "response": "You must have a diagnosis if you have a hard time translating a semi-intellegible sentence to an accurate one that fit the intention of the sentence. Do you have a hard time with metaphors as well?",
                                                     "depth": 5,
@@ -111,7 +140,7 @@
                                                         {
                                                             "id": "i8w64ep",
                                                             "author": "Nada_Lives",
-                                                            "score": 1,
+                                                            "score": -1,
                                                             "created_utc": 1652750228.0,
                                                             "response": "You can vote me down all day, but you still won't be able to put USD into a Lightning wallet.",
                                                             "depth": 6,
@@ -137,6 +166,15 @@
                     ]
                 },
                 {
+                    "id": "i8ulzg6",
+                    "author": "mrmishmashmix",
+                    "score": 5,
+                    "created_utc": 1652725339.0,
+                    "response": "Lightning is one of those networks that works better, not worse, the more people who use it. Its design means that the more money you have on there, and the more you use lightning, the less trouble you have with routing as your node becomes more established and you have more inbound and outbound capacity. So there is a kind of chicken and egg problem, in the sense that most people might dip their toe in, so to speak, and not really experience what its like when you have serious node liquidity and everything works fine.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i8ufynm",
                     "author": "Jeeproe",
                     "score": 2,
@@ -146,18 +184,9 @@
                     "comments": []
                 },
                 {
-                    "id": "i8ulzg6",
-                    "author": "mrmishmashmix",
-                    "score": 2,
-                    "created_utc": 1652725339.0,
-                    "response": "Lightning is one of those networks that works better, not worse, the more people who use it. Its design means that the more money you have on there, and the more you use lightning, the less trouble you have with routing as your node becomes more established and you have more inbound and outbound capacity. So there is a kind of chicken and egg problem, in the sense that most people might dip their toe in, so to speak, and not really experience what its like when you have serious node liquidity and everything works fine.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i8upmku",
                     "author": "HodlOnToYourButts",
-                    "score": 2,
+                    "score": 4,
                     "created_utc": 1652726810.0,
                     "response": "Merchant How-To:\n\n1. Install Raspiblitz on a RPI4\n2. Install RTL, Lightning Terminal, and LNBits\n3. Transfer BTC to your node using RTL\n4. Rent channel(s) with inbound liquidity using Lightning Terminal (Pool)\n5. Create separate wallets for your services using LNBits.\n6. Start receiving Lightning payments.",
                     "depth": 1,
@@ -165,7 +194,7 @@
                         {
                             "id": "i8vhb0v",
                             "author": "jesusrambo",
-                            "score": 3,
+                            "score": 8,
                             "created_utc": 1652738273.0,
                             "response": "When step 1 for merchants is \u201cbuy and configure a Linux server\u201d, a simpler solution is needed",
                             "depth": 2,
@@ -173,9 +202,37 @@
                                 {
                                     "id": "i8vim8s",
                                     "author": "jackwhite411",
-                                    "score": 0,
+                                    "score": -3,
                                     "created_utc": 1652738849.0,
                                     "response": "If merchants are too lazy or incompetent to run their own server, they could just use a LSP (Lightning Service Provider) like opennode.com",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i8ylwkd",
+                                    "author": "HodlOnToYourButts",
+                                    "score": 1,
+                                    "created_utc": 1652803810.0,
+                                    "response": "I know like the whole purpose of Bitcoin is like decentralization, but can you like centralize it for me. Like right meow?\n\n* [LNBits](https://legend.lnbits.com/) (Free Demo Server)\n* [Voltage](https://voltage.cloud/) (Paid Full Nodes)",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i8x7l8l",
+                            "author": "Boe_Ning",
+                            "score": 1,
+                            "created_utc": 1652774447.0,
+                            "response": "Is the customer how-to:  \n\n\n1. Download LN wallet (like Muun).\n2. Fund LN wallet.\n3. Start making Lightning payments?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8ymgsi",
+                                    "author": "HodlOnToYourButts",
+                                    "score": 1,
+                                    "created_utc": 1652804043.0,
+                                    "response": "I haven't used Muun, but I'm assuming the process is similar to ACINQ's [Phoenix Wallet](https://phoenix.acinq.co/).\n\nThe act of \"funding\" a wallet also opens a channel on your behalf. So yes, as soon as the transaction is confirmed you are off to the races.",
                                     "depth": 3,
                                     "comments": []
                                 }
@@ -195,7 +252,7 @@
                 {
                     "id": "i8um572",
                     "author": "bert_and_earnie",
-                    "score": 1,
+                    "score": 2,
                     "created_utc": 1652725401.0,
                     "response": ">  merchant to just adopt it tomorrow / why hasn't it just been integrated?\n\nWhy would they? The people who hold bitcoin don't want to spend it.",
                     "depth": 1,
@@ -203,7 +260,7 @@
                         {
                             "id": "i8v6p7f",
                             "author": "Br0kenRabbitTV",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1652733798.0,
                             "response": "This is a culture that needs addressing TBH. All the people who came along in 2017 and again in 2021 are actually a hindrance to the peer to peer cash cause/use case in reality.\n\nThey only really care about how much the next person will buy their coin from them for.\n\nI've accepted BTC on webstores since 2011, and far less people spend it with me now days.\n\nI also have a LN payment option before anybody asks.\n\nIf people truly want it to become a payment system, then they need to do their bit as well.",
                             "depth": 2,
@@ -215,7 +272,27 @@
                                     "created_utc": 1652737879.0,
                                     "response": "Spending an asset doesn't make it a money. People spend an asset when it becomes money. Your theory of monetization is backwards.",
                                     "depth": 3,
-                                    "comments": []
+                                    "comments": [
+                                        {
+                                            "id": "i8w91vj",
+                                            "author": "0x1a3c3e7",
+                                            "score": 3,
+                                            "created_utc": 1652751697.0,
+                                            "response": ">Spending an asset doesn't make it a money.\n\nActually it does.  As soon as a consumer with a spendable asset meets a merchant willing to accept that asset for goods and services, the asset becomes money.\n\nIt doesn't NOT require the permission or approval of a monetary authority.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8wrtqt",
+                                                    "author": "ludwigvonmises",
+                                                    "score": 1,
+                                                    "created_utc": 1652762101.0,
+                                                    "response": "No, it doesn't. Money is the most salable good in society. It is the dominant medium of exchange. A merchant agreeing to accept my asset does not make that asset \"the dominant medium of exchange.\" If it did, then every act of barter would make the goods traded monies, which is absurd.\n\nOf course money doesn't require an authority to christen it. I didnt argue that it did. The way for an asset to become money, however, is not BY merchants accepting it. You are getting it backwards. Merchants accept goods BECAUSE it is money (or a quasi money). Merchant adoption is a symptom of Bitcoin's success, not a driver of it. Bitcoin will become money because it is held and demanded by billions of people to store value and escape inflation and surveillance. When it has saturated the globe, stabilized in price, and become the global unit of account, it will then naturally attract merchant adoption (because they can reliably price their goods in it) - but you don't get to hyperbitcoinization BY spending it; that actually has the opposite effect. You get to HBTC by hodling it.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -251,7 +328,7 @@
                 {
                     "id": "i8uawke",
                     "author": "Eyonizback",
-                    "score": -10,
+                    "score": -12,
                     "created_utc": 1652720952.0,
                     "response": "Too slow and expensive, cheaper and faster alternatives already exist sadly :/",
                     "depth": 1,
@@ -259,7 +336,7 @@
                         {
                             "id": "i8ubiv8",
                             "author": "caploves1019",
-                            "score": 7,
+                            "score": 6,
                             "created_utc": 1652721198.0,
                             "response": "You're joking right?\n\nEdit: nevermind, buttcoin wsb shill, opinion is worthless.",
                             "depth": 2,
@@ -267,7 +344,7 @@
                                 {
                                     "id": "i8ufkeh",
                                     "author": "Runner4567",
-                                    "score": -3,
+                                    "score": -5,
                                     "created_utc": 1652722812.0,
                                     "response": "So is it basically like a preloaded Visa card?",
                                     "depth": 3,
@@ -286,6 +363,15 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "id": "i8x5k9p",
+                    "author": "Bitcoin__Hodler",
+                    "score": 0,
+                    "created_utc": 1652772614.0,
+                    "response": "download Muun wallet and you are good to go.",
+                    "depth": 1,
+                    "comments": []
                 }
             ]
         }

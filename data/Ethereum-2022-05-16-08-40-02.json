@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/ethereum/comments/uqr8j0/ethereum_deflationary_or_inflationary/",
             "author": "Tangang97",
             "created_utc": 1652690413.0,
-            "score": 7,
-            "num_comments": 10,
+            "score": 9,
+            "num_comments": 14,
             "subreddit": "ethereum",
             "selftext": "I made some research about the inflation rate of Ethereum, but different rates have always been quoted. As far as I understand it, there is a basic 4% inflation rate, which is reduced by how much of the transaction costs are burned. There is also occasionally talk of deflationary rates, but that refers more to the transaction peak of isolated days or?\n\nCan anyone recommend me a source that reflects the inflation rate properly? \n\nIt is also often said that after the merge Ethereum should become deflationary, but I do not understand how that should be the case, since rather less is burned by the higher utilization possibility.",
             "stickied": false,
@@ -23,11 +23,31 @@
                 {
                     "id": "i8svcjv",
                     "author": "g_squidman",
-                    "score": 7,
+                    "score": 8,
                     "created_utc": 1652694826.0,
                     "response": "Yeah, it's complicated and it's scheduled to change probably later this summer after the merge.\n\nThe merge doesn't affect blocksizes. It won't reduce fees, so the burn rate will stay relatively the same. It just reduces issuance by a lot, and people expect the new issuance to come a lot closer to the average burn rate.\n\nIt's not exactly correct to call Ethereum deflationary though. Even if more coins are burned than are printed to miners, this would only reduce the supply temporarily. Issuance should hit a theoretical equilibrium point where the same amount are burned as are minted.\n\nwatchtheburn.com is a site that tracks these numbers in real time. But for after the merge, we only have some predictions.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i8vklb6",
+                            "author": "FreeFactoid",
+                            "score": 1,
+                            "created_utc": 1652739731.0,
+                            "response": "Post merge, anything over 20 gwei gas fees is deflationary.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8vv0bs",
+                                    "author": "g_squidman",
+                                    "score": 1,
+                                    "created_utc": 1652744666.0,
+                                    "response": "Only for a period of time. As scarcity increases for the coin, it takes more in fees to be deflationary, eventually hitting an equilibrium point.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": "i8t4b5p",
@@ -40,7 +60,7 @@
                         {
                             "id": "i8umd16",
                             "author": "AbbreviationsLevel73",
-                            "score": 0,
+                            "score": -1,
                             "created_utc": 1652725490.0,
                             "response": "it cannot be deflationary it can only reach an equilibrium, if its deflationary no one will use it, see deflation of currency, when deflation happens the velocity of money slows to a halt and the economy contracts because nobody wants to exchange currency... so no eth is not deflationary",
                             "depth": 2,
@@ -51,7 +71,7 @@
                 {
                     "id": "i8swaq7",
                     "author": "PinkPuppyBall",
-                    "score": 2,
+                    "score": 3,
                     "created_utc": 1652695644.0,
                     "response": "There are a few variables at play, you can play around over at https://ultrasound.money/ at the bottom to simulate how it will play out.",
                     "depth": 1,
@@ -67,7 +87,7 @@
                                 {
                                     "id": "i8uak6y",
                                     "author": "PinkPuppyBall",
-                                    "score": 2,
+                                    "score": 1,
                                     "created_utc": 1652720813.0,
                                     "response": "Its a tongue in cheek response to Bitcoiners calling btc sound money. Bitcoin is sound because it has little inflation and a max cap?\n\nThat obliviously makes Ether ultrasound, since its bound to be deflationary and has no min cap. \n\nBitcoin isnt sound money though, and neither is Ether. \n\n\n>[Definition of sound money](https://www.merriam-webster.com/dictionary/sound%20money)\n\n>*money not liable to sudden appreciation or depreciation in value : stable money*",
                                     "depth": 3,
@@ -76,6 +96,15 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "id": "i8ycr2q",
+                    "author": "Deep-Art3195",
+                    "score": 1,
+                    "created_utc": 1652800003.0,
+                    "response": "ETH\u2019s monetary policy is unknown so it cannot be determined if it is inflationary or deflationary. People claiming otherwise are just bullshitting here.",
+                    "depth": 1,
+                    "comments": []
                 }
             ]
         }

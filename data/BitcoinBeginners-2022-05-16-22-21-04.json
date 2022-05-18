@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ur7egl/tracking_unknown_addresses_figuring_who_they/",
             "author": "monsieurpommefrites",
             "created_utc": 1652738780.0,
-            "score": 2,
-            "num_comments": 6,
+            "score": 1,
+            "num_comments": 11,
             "subreddit": "BitcoinBeginners",
             "selftext": "Hello, I'm trying to see where my coins went.\n\nIf I have a crypto address, is there a way of ascertaining if it  belongs to a cryptocurrency exchange? \n\nI had sent my coins to an exchange a while ago and they were moved to an address that is unknown. \n\nI would like to know if said address belonged to an exchange I may have sent it to.\n\nThings to know:\n\nThe exchange in the form that I had sent it to doesn't exist; this is an issue I am dealing with separately, aid on that front is pending. \n\nIf anyone can help me that could be great.\n\n--",
             "stickied": false,
@@ -38,6 +38,24 @@
                             "comments": []
                         }
                     ]
+                },
+                {
+                    "id": "i8y1eex",
+                    "author": "Rannasha",
+                    "score": 1,
+                    "created_utc": 1652795089.0,
+                    "response": "Each exchange handles things differently, so there's no single tried and true method to say with certainty that funds ended up with a given exchange.\n\nIn general, an exchange will provide you with a deposit address that is linked to your account. Only you are given this particular address. Some exchanges will give you a new one with each deposit, others will only give you a new one when you explicitly request it. But your deposit address should only ever have incoming transactions that you have sent.\n\nOnce a transaction has been received at a deposit address, the exchange will typically move the funds to a different address. They throw coins from all clients onto a single pile and use that to pay out withdrawals. Exchanges will have a separate \"hot wallet\" and \"cold wallet\". The hot wallet is connected to the exchange systems and is used to pay out withdrawals. The cold wallet is akin to a bank vault and contains the bulk of the funds. If the hot wallet starts to run low, it is replenished from the cold wallet, often through highly secured procedures.\n\nFor most large exchanges, the address(es) of the cold wallet are known. They're relatively easy to determine because they contain a very large number of coins and most deposits eventually end up in the cold wallet (some exchanges transfer funds directly from deposit address to cold wallet, others first route them via the hot wallet).\n\nWhen multiple users of the same exchange see their deposits and withdrawals all interact with the same well funded address, it[s a foregone conclusion that this address belongs to the exchange.\n\nHowever, if you're just given a deposit address, there is no way to know if it belongs to an exchange or not. Even after depositing funds there, and the funds being moved away, it's hard to say with certainty. If you know that an exchange uses a specific address for its cold wallet and there's a relatively short path between a mystery address and the cold wallet address, then it's plausible that this mystery address was a deposit address, but not a given.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8zuxh4",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1652822209.0,
+                    "response": "A Bitcoin address does not reveal who owns it",
+                    "depth": 1,
+                    "comments": []
                 }
             ]
         }

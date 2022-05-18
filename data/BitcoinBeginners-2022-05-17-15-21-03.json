@@ -1,0 +1,53 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "urofra",
+            "title": "Why are the majority of miners located in the US and China ?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/urofra/why_are_the_majority_of_miners_located_in_the_us/",
+            "author": "crypton00bie42",
+            "created_utc": 1652799811.0,
+            "score": 10,
+            "num_comments": 6,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Why are the majority of nodes and miners located in the US where energy is presumably more expensive than in cheaper countries with a lower currency value ?\n\nHow come miners are shown on the map for China when China banned bitcoin mining ?\n\nCost of energy data: [https://www.globalpetrolprices.com/electricity\\_prices/](https://www.globalpetrolprices.com/electricity_prices/)\n\nMiners and nodes: [https://ccaf.io/cbeci/mining\\_map](https://ccaf.io/cbeci/mining_map)\n\nAlso, why are miners still mining since the monthly profit is so low ?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8yg0rt",
+                    "author": "bitusher",
+                    "score": 4,
+                    "created_utc": 1652801375.0,
+                    "response": ">Why are the majority of nodes and miners l\n\nDo not conflate full nodes with miners . Of the ~50k full nodes out there worldwide \n\nhttp://luke.dashjr.org/programs/bitcoin/files/charts/software.html\n\nhttps://luke.dashjr.org/programs/bitcoin/files/charts/services.html\n\nMost are not in control of miners , only a few hundred of these are used by miners \n\n>Why are the majority of nodes and miners located in the US where energy is presumably more expensive\n\nBitcoin mining is very competitive so seeks out very inexpensive sources of energy that often are using untapped hydro , waste natural gas flared gas , or sunk costs in green energy. The economics of Bitcoin mining actually encouraged building out green energy infrastructure and using waste energy. \n\nAfter China \"banned\" bitcoin mining a lot of those ASICs were shipped over to many companies in the USA which are mining bitcoin with various different strategies outlined below that are very efficient :\n\n1) Waste flare energy that is recaptured from natural gas mines \n\nhttps://www.youtube.com/watch?v=poj2UZ1mNbc\n\n2) Sunk costs in solar, wind and unused hydro energy \n\nOften this requires a large initial investment upfront to build out the green infrastructure but the costs are amortized at much lower rates over time for very inexpensive energy\n\nThis also allows a stronger more resilient grid because miners in Texas will shutdown their ASICs in a granular and responsive manner and sell the wider grid their energy if needed during an emergency like a cold snap as we saw last year \n\n>How come miners are shown on the map for China when China banned bitcoin mining ?\n\nThat is the principle reason bitcoin uses electricity in its PoW algo as it is available all over the world in many different forms and cannot be stopped easily with any regulation. Regulations like we saw in china only strengthened the bitcoin network as it shutdown some larger ASIC farms and spread those ASICs all over china and elsewhere in a much more distributed matter . A typical ASIC will use ~3-4k watts which is well within the variance of normal household usage so as long as a home is using 3 or less ASICs they won't be easily found by regulators looking at the power grid.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8ye4so",
+                    "author": "afternooncrypto",
+                    "score": 2,
+                    "created_utc": 1652800590.0,
+                    "response": "This might help explain.\n\nhttps://www.bloomberg.com/news/articles/2022-05-17/china-makes-a-comeback-in-bitcoin-mining-despite-government-ban",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8ycaq7",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652799812.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

@@ -32,42 +32,6 @@
             ]
         },
         {
-            "id": "uky06o",
-            "title": "Where do crypto exchanges buy BTC ?",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uky06o/where_do_crypto_exchanges_buy_btc/",
-            "author": "crypton00bie42",
-            "created_utc": 1652001673.0,
-            "score": 32,
-            "num_comments": 38,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "Where do exchanges like coinbase and kraken buy BTC ?\n\nDo they mine their own ?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7s6la8",
-                    "author": "ndgoLiberty",
-                    "score": 18,
-                    "created_utc": 1652005655.0,
-                    "response": "This is an ELI5 so super technical people don\u2019t need to freak out. \n\nFor the most part, they don\u2019t. If one person sells, very quickly thereafter someone is buying. And when one person buys, that transaction goes through when someone sold.\n\nObviously this is oversimplification. But on the most basic level exchanges are just matching up buyers and sellers.\n\nNow sure they\u2019ll buy when people are selling so that they can sell when people are buying. But for the most part it\u2019s them connecting buyers with sellers.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "ul1cmj",
-            "title": "What is the longest or shortest time between two Bitcoin blocks being made?",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ul1cmj/what_is_the_longest_or_shortest_time_between_two/",
-            "author": "SwurveMan",
-            "created_utc": 1652015303.0,
-            "score": 5,
-            "num_comments": 20,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "I know on average it takes around 10 minutes, but what has been the most extreme length of time?",
-            "stickied": false,
-            "comments": []
-        },
-        {
             "id": "ukwc48",
             "title": "What is a good Bitcoin related podcast or Youtube channel?",
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ukwc48/what_is_a_good_bitcoin_related_podcast_or_youtube/",
@@ -133,6 +97,291 @@
                             "comments": []
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "id": "ul1cmj",
+            "title": "What is the longest or shortest time between two Bitcoin blocks being made?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ul1cmj/what_is_the_longest_or_shortest_time_between_two/",
+            "author": "SwurveMan",
+            "created_utc": 1652015303.0,
+            "score": 8,
+            "num_comments": 27,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I know on average it takes around 10 minutes, but what has been the most extreme length of time?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7stlf0",
+                    "author": "bitusher",
+                    "score": 2,
+                    "created_utc": 1652020039.0,
+                    "response": "The block target is on average 10 minutes but due to the Poisson Process distribution blocks can take much longer or shorter to find.\n\n>\"Assume a hashrate and difficulty corresponding to 1 block per 10 minutes. If I uniformly randomly pick a point in time, what is the expected time between the previous block and the next block?\"\n\nAnswer is **20 minutes**\n\nProof - http://r6.ca/blog/20180225T160548Z.html\n\nMore info -\n\nhttps://arxiv.org/pdf/1801.07447.pdf\n\nSince Hashrate historically increases quicker per block retarget historically than the historical answer is more akin to 18-19min between blocks and ~10-14 minutes to wait for a conf at any random point in time \n\n\n---------------------------\n\nIt is extremely rare to need to wait for longer than 1 hour for a block to be found and since Bitcoin is scaling in layers with other layers like lightning having instant confirmations or liquid sidechain having 1 min confirmations it doesn't matter anymore because onchain is more of a settlement network. \n\nThe Longest I remember was a 5 day wait between the genesis block and block 1 which is typically believed to be a result of Satoshi waiting for other miners to participate rather than just mining himself",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7svkng",
+                    "author": "please_take_one",
+                    "score": 2,
+                    "created_utc": 1652020958.0,
+                    "response": "The practical answer is maybe like an hour or so but not really more than 2. the exceptions are from very early on when there were just a few people mining.\n\nSee here:\n\nhttps://www.reddit.com/r/Bitcoin/comments/1vkp1x/comment/cetdjwc/\n\nAlso it\u2019s very easy to model this (the probability distribution is basically the simplest probability distribution there is). So if you wanted you could plug in some numbers and query some things like\u2014 what is the expected number of years we will have to wait until a block takes 4 hours to mine. Etc.\n\nhttps://blog.lopp.net/bitcoin-block-time-variance/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7sl3mv",
+                    "author": "IRightReelGud",
+                    "score": 2,
+                    "created_utc": 1652015745.0,
+                    "response": "I've seen it take over an hour and I've also seen blocks within seconds.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7upim7",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1652050108.0,
+                    "response": "Exact times are not possible to know because the block timestamp is set by the winning miner. The timestamp is not required to be accurate. Some blocks have a timestamp earlier than the predecessor  \n\n/u/statoshi has written a very interesting article based on his analysis  \nhttps://blog.lopp.net/bitcoin-block-time-variance/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7w3l8r",
+                    "author": "ApplicationNo5082",
+                    "score": 1,
+                    "created_utc": 1652078381.0,
+                    "response": "I think longest is unlimited",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8c7k2h",
+                    "author": "IkeTrian",
+                    "score": 1,
+                    "created_utc": 1652374205.0,
+                    "response": "$FLURRY has a stable system. Meaning, users price will not fluctuate. FlurryFinance has extended it's hands to all to join the ever growing community.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7skaav",
+                    "author": "AutoModerator",
+                    "score": 0,
+                    "created_utc": 1652015304.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uky06o",
+            "title": "Where do crypto exchanges buy BTC ?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uky06o/where_do_crypto_exchanges_buy_btc/",
+            "author": "crypton00bie42",
+            "created_utc": 1652001673.0,
+            "score": 29,
+            "num_comments": 50,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Where do exchanges like coinbase and kraken buy BTC ?\n\nDo they mine their own ?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7s6la8",
+                    "author": "ndgoLiberty",
+                    "score": 19,
+                    "created_utc": 1652005655.0,
+                    "response": "This is an ELI5 so super technical people don\u2019t need to freak out. \n\nFor the most part, they don\u2019t. If one person sells, very quickly thereafter someone is buying. And when one person buys, that transaction goes through when someone sold.\n\nObviously this is oversimplification. But on the most basic level exchanges are just matching up buyers and sellers.\n\nNow sure they\u2019ll buy when people are selling so that they can sell when people are buying. But for the most part it\u2019s them connecting buyers with sellers.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7u1mqn",
+                            "author": "crypton00bie42",
+                            "score": 2,
+                            "created_utc": 1652039437.0,
+                            "response": "But what about when people \"move\" their coins off the exchange, so the exchange needs to have some BTC it doesn't \"hold\" or, a transaction is registered on the chain such that the account it belongs to is no longer a part of the exchange.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7u26ic",
+                                    "author": "ndgoLiberty",
+                                    "score": 3,
+                                    "created_utc": 1652039681.0,
+                                    "response": "Right. Perfect example. So the exchange does hold your bitcoin for you. Sometimes in a separate address from everyone else\u2019s coins but usually in a big stockpile of hundreds of thousands of coins.\n\nThey know it\u2019s yours you know it\u2019s yours. But it\u2019s joint ownership until you withdraw it. You withdraw, their stack goes down a little. Your stack goes up a little. Everyone is happy.\n\nNow if you withdraw $1B worth of coins all at the same time they\u2019re gonna ask you to talk to their custody department cause they probably don\u2019t have it on hand.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i7uanzf",
+                                    "author": "MrQ01",
+                                    "score": 2,
+                                    "created_utc": 1652043441.0,
+                                    "response": "When you transfer the Bitcoin out, the exchange either already has, or else has acquired BTC in order to then transfer to your wallet.\n\nBeyond that, it's hard to tell... and so its best to assume the BTC on your exchange account is an IOU, and accept the risk of fractional reserving being at play.\n\nThis is one of the reasons a BTC holder is generally advised NOT to keep their BTC on the exchange, and to instead immediately transfer their BTC to an external wallet.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i8499cy",
+                                    "author": "darkenvy",
+                                    "score": 1,
+                                    "created_utc": 1652226476.0,
+                                    "response": "There are 3 main exchange types employed:\n\n1. The 'buffer' method, like mentioned above, where a company maintains enough of a reserve to meet the demand of inbound and outbound requests. This is a lot like a bank, who  (up until March 26, 2020) had to maintain \\~10% cash reserves. fIf the buffer dries up, a \"run on the bank\" can occur.\n2. Order book. Which requires no reserves. Buy requests are matched to sell requests and the company skims off the top for facilitating this matching\n3. Pools. Used in decentralized exchanges. Using math, you can buy and sell from no-one at all! There doesn't need to be a buyer to sell your coins. It works like a scale. Where throwing your coins on one side will tip the scales. Someone will notice that the scales are unbalanced and will then buy the coins at a discount. Doing so will bring the scales into equilibrium. (DuckDuckGo: Automated Market Makers)",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i7xn24c",
+                            "author": "Zonderling81",
+                            "score": 0,
+                            "created_utc": 1652112277.0,
+                            "response": "Isn\u2019t that the definition of a Ponzi scheme? Paying the guys that are withdrawing with the money of the guys making deposits?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7y57qq",
+                                    "author": "ndgoLiberty",
+                                    "score": 1,
+                                    "created_utc": 1652119532.0,
+                                    "response": "No that\u2019s the definition of every single financial market that exists.\n\nWhen a farmer sells corn he sells it to someone who is buying.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i7y5qa2",
+                                            "author": "Zonderling81",
+                                            "score": 1,
+                                            "created_utc": 1652119748.0,
+                                            "response": "Yeah but aren\u2019t banks and exchange supposed to have a pool of \u201cbank money\u201d?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i7ymers",
+                                                    "author": "ndgoLiberty",
+                                                    "score": 2,
+                                                    "created_utc": 1652126551.0,
+                                                    "response": "Not anymore. Google fractional reserve banking",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7uc50u",
+                    "author": "Stonn",
+                    "score": 2,
+                    "created_utc": 1652044101.0,
+                    "response": "It's in the name - it's an exchange. It mostly serves as a platform for users to **exchange** their assets.\n\nYou can buy directly from the exchanges themselves at a much higher rate. They get it from OTC buys and perhaps buy on their own, and other exchanges too.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7w1np0",
+                    "author": "Mogadodo",
+                    "score": 2,
+                    "created_utc": 1652076833.0,
+                    "response": "Someone swaps their BTC for what you're offering (fiat, coin,token) by using the exhange as a transfer method. Just like Ebay doesnt own the products but are an outlet to exchange goods.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7sper7",
+                    "author": "cohonan",
+                    "score": 2,
+                    "created_utc": 1652017981.0,
+                    "response": "For the most part you answered your own question. It\u2019s an \u201cexchange\u201d they buy it from the people selling it. \n\nEveryone puts an order at what price they want to buy or sell it (or just agrees to what that mom ends price is) and the exchange matches those up and fills people willing to buy and sell at the same price. \n\nWhen there aren\u2019t enough sellers at the asking price to match the buyers, the price goes up to fill the orders. And vice versa. \n\nSounds like a zero sum game, so why do they do this. It\u2019s because they charge both a small percentage difference than the actual price, along with fees, to both make some profit and keep up with the ever changing price. \n\nEach exchange sets their own \u201cfloat\u201d but they all have to be in step with each other because there are people running bots that look for when one exchange is too far off from the other that will buy from one and sell to another and make money off the difference in arbitrage. \n\nNow for whales there are ways to do this in person at prices and contracts that are agreed upon by people. If you want to sell or buy 1,000 BTC you can\u2019t do that all at once at one price unless there are enough people who want to buy 1,000 BTC all at the same time. So doing that on the market will drive the price up or down in a way that eventually will make you earn less money (or cost more). \n\nSo you make an agreement in person with an exchange to do it at an agreed upon price and then it\u2019s up to the exchange to do it slowly and in a way that they make money in the difference between their cost and the changing price. So every off market sale affects the price but more slowly and not as much as if you did it like you or me. \n\nWhich leads us to the \u201cwhale games\u201d where a whale will intentionally do that big buy or sale on the market in order to drive the cost and then buy or sell more when the price drops or raises and make a profit on the whole affair.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7s3mzn",
+                    "author": "vitalyevodin",
+                    "score": 1,
+                    "created_utc": 1652003052.0,
+                    "response": "basically they don\u2019t need it because exchange is intermediate order list, it connects people with orders by buy/sell\n\nbut company finance can want to hold some BTC, so they can buy it from its own exchange it self for market price\nor find any btc provider like miners to buy it with discount \n\nthere are only next methods to buy bitcoin without exception:\n- mine it\n- p2p\n- exchanges (almost p2p)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7s5oiw",
+                    "author": "igadjeed",
+                    "score": 0,
+                    "created_utc": 1652004871.0,
+                    "response": "For every buyer there's a seller",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7voesh",
+                    "author": "ouyangnna",
+                    "score": 1,
+                    "created_utc": 1652067856.0,
+                    "response": "Depending on which country you are in, the exchanges to buy cryptocurrencies vary from country to country.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7w2424",
+                    "author": "88joeboi",
+                    "score": 1,
+                    "created_utc": 1652077194.0,
+                    "response": "I thought it happen between each other",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7w52uo",
+                    "author": "gokumarketofficial",
+                    "score": 1,
+                    "created_utc": 1652079605.0,
+                    "response": "go with GokuMarket one of the best exchange platform.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7w88ro",
+                    "author": "Thomill12",
+                    "score": 1,
+                    "created_utc": 1652082355.0,
+                    "response": "They don't. They have user deposits. An exchange is a market where when there is a buyer, there is a seller. meaning in order for someone to sell 1 BTC he has to deposit it first. The buyer deposits cash.   \n\n\n[https://glasschain.org/](https://glasschain.org/)  \n\n\nyou can see how much deposits some exchanges have in BTC. Binance has over 500k Bitcoins in custody.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8c70mj",
+                    "author": "IkeTrian",
+                    "score": 1,
+                    "created_utc": 1652373996.0,
+                    "response": "$FLURRY is more flexible and user oriented, as your fund won't be locked-up. Join the community today.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7s2514",
+                    "author": "AutoModerator",
+                    "score": -1,
+                    "created_utc": 1652001673.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7ssfxo",
+                    "author": "Circuit_Breaker_1",
+                    "score": 0,
+                    "created_utc": 1652019490.0,
+                    "response": "@mine_token",
+                    "depth": 1,
+                    "comments": []
                 }
             ]
         }

@@ -328,29 +328,6 @@
             ]
         },
         {
-            "id": "ulesh6",
-            "title": "coinbase api: how to sell a holding more precise than the base increment",
-            "url": "https://www.reddit.com/r/CoinBase/comments/ulesh6/coinbase_api_how_to_sell_a_holding_more_precise/",
-            "author": "TraptInaCommentFctry",
-            "created_utc": 1652055115.0,
-            "score": 7,
-            "num_comments": 23,
-            "subreddit": "CoinBase",
-            "selftext": "Using the API, I purchase product X with a base increment of 0.00001.  But the amount I received is 0.08691403, which is more precise than the base increment.  How should I create a limit sell order to clear out my holding - do I set the size as\n\n0.08691  (risk leaving a fractional bit in my account)\n\nor \n\n0.08692 (can i sell more than I own?)",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7vmqs2",
-                    "author": "zionmatrixx",
-                    "score": 3,
-                    "created_utc": 1652066886.0,
-                    "response": "You are unlikely to find any answer here for this kind of question. Coinbase support is about as helpful as a camel in Alaska. Better off asking at stackexchange or some other programming site that has some level of interest on trading. perhaps r/algotrading",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "ul74e1",
             "title": "Support needed - Why do I have to top Up with every \"Send\"",
             "url": "https://www.reddit.com/r/CoinBase/comments/ul74e1/support_needed_why_do_i_have_to_top_up_with_every/",
@@ -362,6 +339,66 @@
             "selftext": "Can someone tell me why I have to top up upon sending my MAx amount somewhere else?\n\nI had to top up 2x on one after and that was after I did a test send to ensure it.\n\nNow, it is asking me to do this again 2x for a different coin.   Why does this happen and is there a way to transfer MAX without topping up?  Thanks.",
             "stickied": false,
             "comments": []
+        },
+        {
+            "id": "ulesh6",
+            "title": "coinbase api: how to sell a holding more precise than the base increment",
+            "url": "https://www.reddit.com/r/CoinBase/comments/ulesh6/coinbase_api_how_to_sell_a_holding_more_precise/",
+            "author": "TraptInaCommentFctry",
+            "created_utc": 1652055115.0,
+            "score": 6,
+            "num_comments": 30,
+            "subreddit": "CoinBase",
+            "selftext": "Using the API, I purchase product X with a base increment of 0.00001.  But the amount I received is 0.08691403, which is more precise than the base increment.  How should I create a limit sell order to clear out my holding - do I set the size as\n\n0.08691  (risk leaving a fractional bit in my account)\n\nor \n\n0.08692 (can i sell more than I own?)",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7vmqs2",
+                    "author": "zionmatrixx",
+                    "score": 3,
+                    "created_utc": 1652066886.0,
+                    "response": "You are unlikely to find any answer here for this kind of question. Coinbase support is about as helpful as a camel in Alaska. Better off asking at stackexchange or some other programming site that has some level of interest on trading. perhaps r/algotrading",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7wszlj",
+                            "author": "TraptInaCommentFctry",
+                            "score": 1,
+                            "created_utc": 1652098843.0,
+                            "response": "haha I'm here because reaching out to support directly didn't work.  Thanks for the tip though, I'll try those.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7uzlm4",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652055116.0,
+                    "response": "This subreddit is a public forum. For your security, do not post personal information to a public forum, including your Coinbase account email. If you\u2019re experiencing an issue with your Coinbase account, please [contact us](https://help.coinbase.com/en/contact-us.html) directly. \n\nIf you have a case number for your support request please respond to this message with that case number.\n\nYou should only trust [verified Coinbase staff](https://help.coinbase.com/en/coinbase/other-topics/other/is-coinbase-present-on-social-media.html). Please report any individual impersonating Coinbase staff to the moderators.\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/CoinBase) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7vouab",
+                    "author": "iredditforthetacos",
+                    "score": 1,
+                    "created_utc": 1652068110.0,
+                    "response": "in my code i was using a field called a quote_increment to get more precise purchase prices for buys and sells of each crypto. although i ended up needing to add additional logic when the api returned errors saying the price was \"too precise\".\n\nwhen rounding the quantity being purchased i was using base_increment",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8sd1b5",
+                    "author": "BTAOO",
+                    "score": 1,
+                    "created_utc": 1652679316.0,
+                    "response": "@LilDragOfficial NFT Metaverse\ud83d\udc32\n\nPrivate Sell \"Participating Whitelist\" from Lil Dragon NFT Metaverse\ud83d\udd25\n\nSave the time and date\u2757\nJoin our whitelist competition, don't miss this golden opportunity!!\n\nSweepwidget Link\nhttps://sweepwidget.com/view/56210-3sbf5ad4\n\n#LDG #BSC #NFTs #Metaverse",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
         }
     ]
 }

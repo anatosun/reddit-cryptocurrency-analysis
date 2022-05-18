@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/CryptoTechnology/comments/ur00rh/im_looking_for_a_ssdcached_hdd_setup_for_hosting/",
             "author": "GuessWhat_InTheButt",
             "created_utc": 1652718848.0,
-            "score": 35,
-            "num_comments": 15,
+            "score": 40,
+            "num_comments": 20,
             "subreddit": "CryptoTechnology",
             "selftext": "Hi,\ncurrently I host several different blockchains on my main \"productivity\" system. I do this to preserve my privacy as good as I can and so I don't have to rely on remote nodes when interacting/transacting on these blockchains.\n\nHowever, I would like to move this data to a central server on my LAN, so I can access them from my other machines too (maybe even remotely via VPN). The data is rapidly growing though and I'm afraid I don't really want to afford several 4TB SSDs so I can expand this setup to even more blockchains and have it future proof.  \nSo what I'm looking at currently is how I could best utilize HDDs with an additional SSD cache.  \nWhat would be a good solution to use a SSD as a cache for blockchain access from wallets? I was thinking about ZFS, but they kinda separate read and write cache and I'm not sure which of both would make more sense for this setup or whether a cached system makes sense at all for this use case.\n\nDoes anyone of you have experience with these systems and give me some advice on how to best tackle this?  \nShould I simply go to a pure SSD-only solution?",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i8u8px6",
                     "author": "chadl2",
-                    "score": 8,
+                    "score": 9,
                     "created_utc": 1652720087.0,
                     "response": "I run a zCash, Litecoin and Bitcoin node in dockers on my Synology 1821+ and still use it as a media server. 64GB of ram, 8 x 16TB WD Gold\u2019s in a RAID 6 with BTFRS, 2 x Samsung Evo 970 Plus 2TB in a RAID 1 for read-write caching. Works like a champ!",
                     "depth": 1,
@@ -31,7 +31,7 @@
                         {
                             "id": "i8u8w86",
                             "author": "GuessWhat_InTheButt",
-                            "score": 3,
+                            "score": 4,
                             "created_utc": 1652720157.0,
                             "response": "How is Synology using this cache? LVM? mdadm? btrfs?  \nWould the benefit be the same with just a read cache and not read-write?",
                             "depth": 2,
@@ -39,7 +39,7 @@
                                 {
                                     "id": "i8urvfs",
                                     "author": "chadl2",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1652727724.0,
                                     "response": "They do pin all BTFRS metadata to the cache. But ultimately, it's a little bit of a black box; however, by the looks of its usage, I think virtually all the blockchains are on them to keep random IO off the HDDs and on the cache for the nodes, which is nice. It definitely keeps IO load on the HDDs down and usable as a media server even with BluRay 4k Remux's.",
                                     "depth": 3,
@@ -56,7 +56,7 @@
                                         {
                                             "id": "i8v4ajo",
                                             "author": "GuessWhat_InTheButt",
-                                            "score": 1,
+                                            "score": 2,
                                             "created_utc": 1652732811.0,
                                             "response": "Okay, but how does it do that? `bcache`? I don't want to get verndor-locked into Synology, plus I already have capable hardware laying around.",
                                             "depth": 4,
@@ -72,7 +72,7 @@
                                                         {
                                                             "id": "i8x84fz",
                                                             "author": "GuessWhat_InTheButt",
-                                                            "score": 1,
+                                                            "score": 2,
                                                             "created_utc": 1652774933.0,
                                                             "response": "> tiered storage spaces in server core \n\nWhat?",
                                                             "depth": 6,
@@ -91,9 +91,18 @@
                 {
                     "id": "i8xzca3",
                     "author": "segwhat",
-                    "score": 1,
+                    "score": 2,
                     "created_utc": 1652794109.0,
                     "response": "It sounds like you may be wanting \"bcache\" (block cache). It lets you use any number of SSDs to accelerate a block device (even a software raid array of HDDs).\n\nhttps://wiki.archlinux.org/title/Bcache",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8ys9s2",
+                    "author": "East_Demand_3094",
+                    "score": 1,
+                    "created_utc": 1652806383.0,
+                    "response": "I learned about Creating Cloned coins from different algo's and how to host Nodes from this website called NewTum. I don't work for them nor do I receive money for telling you this. I just learned a lot from the instructor. It's a lot of information and sometimes you have to google the missing info but all in all it maybe able to help you with your situation.\n\nGood Luck with your Venture!",
                     "depth": 1,
                     "comments": []
                 }

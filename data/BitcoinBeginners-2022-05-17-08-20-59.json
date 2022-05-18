@@ -15,11 +15,119 @@
             "author": "samMannyDesigns",
             "created_utc": 1652774674.0,
             "score": 1,
-            "num_comments": 6,
+            "num_comments": 30,
             "subreddit": "BitcoinBeginners",
             "selftext": "I am an absolute beginner in the cryptoverse and honestly it's quite overwhelming the various decisions one has to make. Anyway, my main concern at the moment is the varying prices of Bitcoin on different places such as Binance, Coinbase, Kraken, Coingecko etc. I'm trying to understand the rationale for this. Any help will be highly appreciated.",
             "stickied": false,
             "comments": [
+                {
+                    "id": "i8y34xz",
+                    "author": "Rannasha",
+                    "score": 6,
+                    "created_utc": 1652795884.0,
+                    "response": "There is no \"official Bitcoin price\".\n\nOn an exchange, buyers and sellers trade with each other, with the exchange being little more than a middleman to facilitate the transaction. Orders to buy or sell are either set with a price limit (a so-called \"limit order\") or to just get the best available price (\"market order\"). If a limit order can't be executed immediately, because there's no counter-order available that meets the price limit, then this order ends up on the order book waiting for counter-orders to match with it. This way, a list of buy and sell orders is populated and when a trader places a market order or a limit order with a price limit that allows it to be matched immediately, the order is executed against opposite orders on the order book.\n\nThe price quoted by an exchange is simply the most recent price at which such a trade occurred.\n\nIf someone places a large market order, it may be matched with a considerable number of counter-orders in the order book and in doing so move the price on that particular exchange by quite a bit.\n\nOther exchanges don't automatically follow this price movement, because they have their own order book and traders. However, if the price of Bitcoin is higher on one exchange than it is on the other, there's an opportunity for profit by buying Bitcoin on the cheaper one and selling it on the more expensive one. This is called \"arbitrage\". The effect of this is that the prices on both exchanges move closer together.\n\nOn all of the large exchanges, traders are actively looking for arbitrage opportunities. They have funds on each exchange and use trading software that automatically spots these price differences and performs the trades. So large price differences between exchanges tend to not last very long. Note that because exchanges charge a fee for trading and withdrawing and because moving funds (especially Dollars) around to rebalance accounts takes time, arbitrage will never fully erase price differences. They just keep them low enough that no easy profit can be made anymore.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8ydqfs",
+                            "author": "samMannyDesigns",
+                            "score": 2,
+                            "created_utc": 1652800421.0,
+                            "response": "The detail you have provided is amazing, thank you. So basically, there's no official Bitcoin price and there's different considerations at play. I have so much more to discover it seems.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8xu3so",
+                    "author": "bitusher",
+                    "score": 3,
+                    "created_utc": 1652791460.0,
+                    "response": "Every exchange has its own liquidity pool thus different market prices. Usually arbitrage reduces these differences to small amount but different regulatory restrictions , risk profiles, and other fees (binance having insanely high withdraw fees) can keep large market price differences.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8ycx9q",
+                            "author": "samMannyDesigns",
+                            "score": 1,
+                            "created_utc": 1652800075.0,
+                            "response": "Thanks for all this info, let me do some more research.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8yde04",
+                                    "author": "bitusher",
+                                    "score": 2,
+                                    "created_utc": 1652800273.0,
+                                    "response": "You need to consider the trade fee, market price, spread , and deposit and withdrawal fees when determining the true prices \n\nLook at the chart in the FAQ for most of these fees",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8yefzo",
+                                            "author": "samMannyDesigns",
+                                            "score": 1,
+                                            "created_utc": 1652800721.0,
+                                            "response": "I've gone through the FAQs but I'll need to do some more researc relative to true prices as they vary.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8yhbo8",
+                                                    "author": "bitusher",
+                                                    "score": 2,
+                                                    "created_utc": 1652801916.0,
+                                                    "response": "The market price difference between exchanges ussually is negligable because of arbitrage for most people \n\nExample - \n\ncoinbase - $30,038.70\n\nKraken - $29,966.40\n\nBinance USA - $29,937.70\n\nBitfinix - \t$29,982.00\n\nFTX  -  $29,962.00\n\nGemini - $30,038.70\t\n\nSo you can see a difference of ~100 usd window variance between exchanges per BTC , but what does this mean for the average person buying 500 usd of bitcoin ?\n\n~1.6 us dollars difference in price if you bought at one of the more expensive exchanges \n\nthus what is usually more important is the trade and withdrawal fees so exchanges like Binance will fool new users with low trade fees than have an absurd 0.0005 BTC withdraw fee making it one of the most expensive exchanges to buy from for most",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i8ysga5",
+                                                            "author": "samMannyDesigns",
+                                                            "score": 1,
+                                                            "created_utc": 1652806455.0,
+                                                            "response": "Wow \ud83d\ude32 I had no idea Binance had higher withdrawal fees. In my country it's the best options cause of mobile money options so that's some hurdle. It's the withdrawal fees I should be concerned about.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i8yslze",
+                                                                    "author": "bitusher",
+                                                                    "score": 1,
+                                                                    "created_utc": 1652806520.0,
+                                                                    "response": "What country?",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i8z7vgt",
+                                                                            "author": "samMannyDesigns",
+                                                                            "score": 1,
+                                                                            "created_utc": 1652812676.0,
+                                                                            "response": "Kenya",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i8z9xgh",
+                                                                                    "author": "bitusher",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1652813516.0,
+                                                                                    "response": "kraken.com has support in your country and has 0.16% trade fees , with free lightning withdrawals and much lower  \t0.00002 BTC onchain withdrawals",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
                 {
                     "id": "i8x7ufa",
                     "author": "AutoModerator",
@@ -30,29 +138,77 @@
                     "comments": []
                 },
                 {
+                    "id": "i8xv634",
+                    "author": "planet_hallows",
+                    "score": 2,
+                    "created_utc": 1652792019.0,
+                    "response": "The price an exchange lists is based on the lowest offer to sell on that exchange and the highest offer to buy on that exchange. When the lowest sell is lower than the highest buy, a trade happens and the price moves.\n\nDifferent investors will have offers on different exchanges, so they won't ever all have the same price. Traders look for these price differences and buy where it's lower and sell where it's higher. That's called arbitrage, and it causes the prices to converge to similar but not identical amounts.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8yd566",
+                            "author": "samMannyDesigns",
+                            "score": 1,
+                            "created_utc": 1652800170.0,
+                            "response": "Thanks for this explanation. I obviously have a lot more learning to do.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
                     "id": "i8xg0vv",
                     "author": "MuchTemperature6776",
-                    "score": 1,
+                    "score": 2,
                     "created_utc": 1652782108.0,
                     "response": "They probably don\u2019t get it in real time when you look at the current price and only updates it every N second,minute whatever. Bitcoin probably fluctuates enough that seconds apart will show differences.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i8ycql8",
+                            "author": "samMannyDesigns",
+                            "score": 1,
+                            "created_utc": 1652799996.0,
+                            "response": "Ok thanks.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
-                    "id": "i8xu3so",
-                    "author": "bitusher",
+                    "id": "i8z0v3v",
+                    "author": "davidkolesanov",
                     "score": 1,
-                    "created_utc": 1652791460.0,
-                    "response": "Every exchange has its own liquidity pool thus different market prices. Usually arbitrage reduces these differences to small amount but different regulatory restrictions , risk profiles, and other fees (binance having insanely high withdraw fees) can keep large market price differences.",
+                    "created_utc": 1652809818.0,
+                    "response": "price updates at different times, plus people on those exchanges trading with each other, opposing to trading with others on other exchange.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8z7z9a",
+                            "author": "samMannyDesigns",
+                            "score": 1,
+                            "created_utc": 1652812720.0,
+                            "response": "Thanks.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8zw3i5",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1652822701.0,
+                    "response": "Every trading exchange quotes the price of the most recent transaction. At any instant, these prices should be almost identical due to the existence of automatic arbitrage traders  \n\nThe list you provided are not all trading exchanges. One is a retail exchange. One is a blog",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i8xv634",
-                    "author": "planet_hallows",
+                    "id": "i90lrdn",
+                    "author": "Crypto_bro999",
                     "score": 1,
-                    "created_utc": 1652792019.0,
-                    "response": "The price an exchange lists is based on the lowest offer to sell on that exchange and the highest offer to buy on that exchange. When the lowest sell is lower than the highest buy, a trade happens and the price moves.\n\nDifferent investors will have offers on different exchanges, so they won't ever all have the same price. Traders look for these price differences and buy where it's lower and sell where it's higher. That's called arbitrage, and it causes the prices to converge to similar but not identical amounts.",
+                    "created_utc": 1652834622.0,
+                    "response": "I think it all depends on the supply and demand on the platform.",
                     "depth": 1,
                     "comments": []
                 }
@@ -64,16 +220,34 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/urhk4v/how_can_i_buy_bitcoin_underage/",
             "author": "Hard_Boss",
             "created_utc": 1652774911.0,
-            "score": 9,
-            "num_comments": 16,
+            "score": 20,
+            "num_comments": 51,
             "subreddit": "BitcoinBeginners",
             "selftext": "I am currently 15 and I want to buy Bitcoin. How can I do this or what apps/websites can I use that don\u2019t require an ID verification?",
             "stickied": false,
             "comments": [
                 {
+                    "id": "i8x83m8",
+                    "author": "AutoModerator",
+                    "score": 4,
+                    "created_utc": 1652774912.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8xnwv3",
+                    "author": "bitusher",
+                    "score": 17,
+                    "created_utc": 1652787882.0,
+                    "response": "Best option is to speak with a parent and let them help you. Its wise to tell them that you want to start saving for college or a future business and want to invest in stocks(index fund), Bitcoin , and a fiat savings in preparation. Most parents will have no problem helping you and even be proud when you invest this way.\n\nmany people visit atms that only require sms verification for smaller amounts in this list - https://coinatmradar.com/\n\nOther options are any way that doesn't require verification like this list -\n\nhttps://www.reddit.com/r/BitcoinBeginners/comments/d7s0ph/cryptocurrency_exchange_buysell_cash_wire_wwo/f13z7vb/\n\nhttps://github.com/cointastical/P2P-Trading-Exchanges",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i8x8f1t",
                     "author": "sos755",
-                    "score": 2,
+                    "score": 8,
                     "created_utc": 1652775214.0,
                     "response": "You could ask your parents to buy it for you. Also, you can buy it from friends or at a Bitcoin meetup, or from a Bitcoin ATM.\n\nBTW, there are no age restrictions on buying bitcoins in the U.S. Generally, the issue is that you must be 18 to open an account at a financial institution.",
                     "depth": 1,
@@ -81,7 +255,7 @@
                         {
                             "id": "i8x8ots",
                             "author": "Hard_Boss",
-                            "score": 1,
+                            "score": 3,
                             "created_utc": 1652775469.0,
                             "response": "Where can I find these Bitcoin meetups? And I\u2019m from Switzerland just for clarification",
                             "depth": 2,
@@ -89,7 +263,7 @@
                                 {
                                     "id": "i8xdi38",
                                     "author": "MuchTemperature6776",
-                                    "score": 1,
+                                    "score": 5,
                                     "created_utc": 1652779911.0,
                                     "response": "Switzerland has many ATMs for Bitcoin, so you could just use one of those if possible.",
                                     "depth": 3,
@@ -97,11 +271,78 @@
                                         {
                                             "id": "i8xdn23",
                                             "author": "Hard_Boss",
-                                            "score": 2,
+                                            "score": 3,
                                             "created_utc": 1652780038.0,
                                             "response": "Are there also online methods? Bc I live in a incredibly rural area and it\u2019s a long way into a city",
                                             "depth": 4,
-                                            "comments": []
+                                            "comments": [
+                                                {
+                                                    "id": "i8ybueg",
+                                                    "author": "Jetjones",
+                                                    "score": 3,
+                                                    "created_utc": 1652799623.0,
+                                                    "response": "Not sure if Bisq is 18+ but you might want to try that. It\u2019s contactless P2P, you usually pay by money orders thru the post office. It\u2019s cheaper than ATMs and KYC free.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i8y13cc",
+                            "author": "EJohanSolo",
+                            "score": 1,
+                            "created_utc": 1652794947.0,
+                            "response": "Wait you can just buy bitcoin at an atm?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8y7cay",
+                                    "author": "thebigshipper",
+                                    "score": 5,
+                                    "created_utc": 1652797727.0,
+                                    "response": "A Bitcoin ATM. Not just any old ATM.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8y7hqj",
+                                            "author": "EJohanSolo",
+                                            "score": 1,
+                                            "created_utc": 1652797790.0,
+                                            "response": "And that doesn\u2019t require ID or anything how do you actually receive the bitcoin?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8zfxc4",
+                                                    "author": "bitusher",
+                                                    "score": 2,
+                                                    "created_utc": 1652815969.0,
+                                                    "response": "For many atms with smaller transactions under a few hundred dollars they only require sms verification and there are free sms services all over the internet\n\nhttps://coinatmradar.com/",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "i8y88ec",
+                                                    "author": "thebigshipper",
+                                                    "score": 2,
+                                                    "created_utc": 1652798111.0,
+                                                    "response": "Same as any other BTC transaction - with an address to a wallet.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "i90lpgh",
+                                                    "author": "coingun",
+                                                    "score": 1,
+                                                    "created_utc": 1652834597.0,
+                                                    "response": "You basically walk up to the BTM and you select you want to buy bitcoin. Some ask for small KYC like a text confirmation. It then asks how much you want to buy. You put your money into the slot and it takes your $100 then it asks you for your wallet address and you go to your bitcoin wallet on your phone and hit receive and then hold up the QR code displayed from your phones wallet to the BTM unit it scans the wallet address and you confirm you want to send to that wallet then it does it and prints you your receipt.\n\nEz Peasy.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -110,56 +351,195 @@
                     ]
                 },
                 {
-                    "id": "i8xnwv3",
-                    "author": "bitusher",
-                    "score": 2,
-                    "created_utc": 1652787882.0,
-                    "response": "Best option is to speak with a parent and let them help you. Its wise to tell them that you want to start saving for college or a future business and want to invest in stocks(index fund), Bitcoin , and a fiat savings in preparation. Most parents will have no problem helping you and even be proud when you invest this way.\n\nmany people visit atms that only require sms verification for smaller amounts in this list - https://coinatmradar.com/\n\nOther options are any way that doesn't require verification like this list -\n\nhttps://www.reddit.com/r/BitcoinBeginners/comments/d7s0ph/cryptocurrency_exchange_buysell_cash_wire_wwo/f13z7vb/\n\nhttps://github.com/cointastical/P2P-Trading-Exchanges",
+                    "id": "i8xhz8l",
+                    "author": "Roguenad",
+                    "score": 3,
+                    "created_utc": 1652783720.0,
+                    "response": "Have someone of age buy and keep in their name till you're of age ,that's what I did.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8z1xby",
+                            "author": "manystorms",
+                            "score": 4,
+                            "created_utc": 1652810250.0,
+                            "response": "Reasonable advice and you got downvoted. This is how people lose their life savings, they didn\u2019t grow up financially literate.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8ztdul",
+                                    "author": "Roguenad",
+                                    "score": 2,
+                                    "created_utc": 1652821549.0,
+                                    "response": "It happens \ud83d\ude02 as long as the person who asked the question gets their solution I'm good",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8ye2ja",
+                    "author": "Particular_Relief154",
+                    "score": 1,
+                    "created_utc": 1652800563.0,
+                    "response": "Personally I\u2019d ask a parent/other trustworthy adult to sign up to a wallet on your behalf- trust wallet is good! Buy directly thru the wallet or on web based exchanges that only require the wallet to be linked.\nDepending on your country location, most countries have laws that require ID verification so there\u2019d be little to no way around that",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i8x83m8",
-                    "author": "AutoModerator",
+                    "id": "i8yj3e9",
+                    "author": "sher_khan_19",
                     "score": 1,
-                    "created_utc": 1652774912.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "created_utc": 1652802644.0,
+                    "response": "i dont think so",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8ykx61",
+                    "author": "Rozzz123",
+                    "score": 1,
+                    "created_utc": 1652803395.0,
+                    "response": "Buy it on exodus wallet,\nIt's a decentralised software wallet and because they just added fiat buying there is a limited time 0 fees and of course no KYC so you don't need to be 18\nWould recommend\nYou will need a debit card though",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8ywo4l",
+                    "author": "KallistiOW",
+                    "score": 1,
+                    "created_utc": 1652808151.0,
+                    "response": "Sell stuff in exchange for bitcoin",
                     "depth": 1,
                     "comments": []
                 },
                 {
                     "id": "i8x97iv",
                     "author": "Fernxtwo",
-                    "score": 1,
+                    "score": 0,
                     "created_utc": 1652775945.0,
                     "response": "Face to face, in a public place, a coffee shop or something. I'd post in some local FB groups.",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i8xhz8l",
-                    "author": "Roguenad",
+                    "id": "i8zc4g1",
+                    "author": "JSunshine11",
                     "score": 1,
-                    "created_utc": 1652783720.0,
-                    "response": "Have someone of age buy and keep in their name till you're of age ,that's what I did.",
+                    "created_utc": 1652814412.0,
+                    "response": " https://www.swanbitcoin.com/orangepill/\n\nWill still need a wallet to send it to.",
                     "depth": 1,
                     "comments": []
+                },
+                {
+                    "id": "i8zejql",
+                    "author": "OrangeFren",
+                    "score": 1,
+                    "created_utc": 1652815399.0,
+                    "response": "Wrote an [article](https://orangefren.com/guide/BitcoinUnder18) about this very process. Check it out and I hope it helps!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i90ljpl",
+                    "author": "Crypto_bro999",
+                    "score": 1,
+                    "created_utc": 1652834523.0,
+                    "response": "I think you can try bitfinex. They don't have KYC.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i912153",
+                    "author": "Noriane_TheGrate",
+                    "score": 1,
+                    "created_utc": 1652842360.0,
+                    "response": "I'm also 15 and my parents helped me buy some crypto through exchanges like binance. They did the verification and I just gave them my money to exchange for crypros like btc. Hope it gives you an idea!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i916t17",
+                    "author": "cobra1104",
+                    "score": 1,
+                    "created_utc": 1652844845.0,
+                    "response": "Coinbase let me do it like 5 years but I wouldn't count on it now. Best bet might just be to have someone do it for you",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8y75p5",
+                    "author": "afternooncrypto",
+                    "score": -7,
+                    "created_utc": 1652797648.0,
+                    "response": "You can buy \u20ac920 or 1,000 CHF using Relai w/o KYC. Fee can be reduced from 2.5% to 1%.\n\nhttps://relai.app/\n\nThink the daily limit is \u20ac920 w/o KYC.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8zalna",
+                            "author": "G33ONER",
+                            "score": 2,
+                            "created_utc": 1652813791.0,
+                            "response": "No.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i8zg874",
+                            "author": "bitusher",
+                            "score": 1,
+                            "created_utc": 1652816091.0,
+                            "response": "Do they allow you to withdraw bitcoin under 18?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i8xvesp",
                     "author": "unrottentomto",
-                    "score": 1,
+                    "score": -4,
                     "created_utc": 1652792148.0,
                     "response": "Basically what I did is set up a account based on a adults name, then you can trade and buy crypto yourself. You can also pay your friends or adults cash in turn of crypto to your wallet. \n\nIf your parents don't let you, you can make a account that doesn't require verification (ID etc.) and just phone number and email, and pay cash to adult or friend to send cyrpto to your wallet. Its just like Paypal... You can buy, but you can receive and send.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8zar1n",
+                            "author": "G33ONER",
+                            "score": 1,
+                            "created_utc": 1652813854.0,
+                            "response": "No.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i8zgmpi",
+                            "author": "bitusher",
+                            "score": 1,
+                            "created_utc": 1652816255.0,
+                            "response": "> Basically what I did is set up a account based on a adults name, \n\nThis gives the exchange an excuse to steal or freeze your money",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8yfm62",
+                    "author": "Tolenkanor",
+                    "score": -3,
+                    "created_utc": 1652801206.0,
+                    "response": "You can buy on r/cash4cash with no age limit or ID.",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i8xtox2",
-                    "author": "mrglubglub",
+                    "id": "i8z9mew",
+                    "author": "DBRespawned",
                     "score": 0,
-                    "created_utc": 1652791245.0,
-                    "response": "Please don't buy bitcoin at 15. The people here are peices of trash that have no concern for you and every concern for you buying in to their pyramid scheme.",
+                    "created_utc": 1652813389.0,
+                    "response": "Wait until you're a bitolder.",
                     "depth": 1,
                     "comments": []
                 }

@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uqb2s2/did_satoshi_mine_all_of_his_coins_if_so_does_this/",
             "author": "PeleMaradona",
             "created_utc": 1652636058.0,
-            "score": 42,
-            "num_comments": 20,
+            "score": 45,
+            "num_comments": 27,
             "subreddit": "BitcoinBeginners",
             "selftext": "Two part question. I guess part of is trying to get at what the meaning of 'premine' really is.",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i8q7die",
                     "author": "bitusher",
-                    "score": 37,
+                    "score": 45,
                     "created_utc": 1652641182.0,
                     "response": "Any one suggested that Satoshi Premined anything is being extremely dishonest because :\n\n1) We only know of 2 blocks satoshi mined , genesis and block 9 \n\n2) There were multiple early miners that started mining from the beginning like \n\nhttps://stephanlivera.com/episode/314/\n\nhttps://twitter.com/halfin/status/1110302988\n\n3) Satoshi encoded in the genesis block a title from the front page of the newspaper to prove it was created that day - \"The Times 03/Jan/2009 Chancellor on brink of second bailout for banks\"\n\n4) Satoshi announced Bitcoin and released the code before creating the genesis block\n\n5) Satoshi waited 5 days after the genesis block was created for other miners to start mining \n\n6) The 50 BTC in the genesis block is unspendable the way bitcoin is designed \n\n7) If we are to trust the pataoshi pattern the slope of the pattern only matches with 11 other blocks with block 9 that satoshi mined",
                     "depth": 1,
@@ -31,7 +31,7 @@
                         {
                             "id": "i8rnea2",
                             "author": "Plus_Professor_1923",
-                            "score": 8,
+                            "score": 12,
                             "created_utc": 1652665033.0,
                             "response": "How did you learn all this? Seriously looking for some good sources to read thru ok thisbstuff\n\nEdit: besides the two linked sources ofc. Just generally where would you point someone who knows a lot about btc but not about satoshi or the code specifically",
                             "depth": 2,
@@ -39,7 +39,7 @@
                                 {
                                     "id": "i8rw42g",
                                     "author": "bitusher",
-                                    "score": 10,
+                                    "score": 12,
                                     "created_utc": 1652669137.0,
                                     "response": "Some more details to elaborate\n\nSatoshi having 1 million BTC is a myth created by sergio which was quickly shown to be flawed and contradictory.\nHere is Sergio's original post - \n\nhttps://bitcointalk.org/index.php?topic=175996.msg1832533#msg1832533\n\nand followup\n\nhttps://bitcointalk.org/index.php?topic=178629.0\n\nWhere Greg and others point out flaws in his research and how some of it is self contradictory \n\nHere is Bitmex's follow up research on the matter - \n\nhttps://blog.bitmex.com/satoshis-1-million-bitcoin/\n\n>In conclusion, although there is strong evidence of a dominant miner in 2009, we think **the evidence is far less robust than many have assumed.** Although a picture is worth a thousand words, sometimes pictures can be a little misleading. Even if one is convinced, the evidence only supports the claim that the **dominant miner may have generated significantly less than a million bitcoin in our view. Perhaps 600,000 to 700,000 bitcoin** is a better estimate.\n\n>**None of the above says much about whether the dominant miner was Satoshi**, although we know Satoshi mined block 9, which we have allocated to the dominant miner in our analysis. **However this is in a slope of just 11 blocks, so it\u2019s certainly not conclusive**. Whoever the dominant miner was, it is of course **possible the keys have been lost or discarded by now**.\n\nThus block 9 and genesis block was created by Satoshi 100%, and the evidence reflects he might have mined 11 blocks at least in addition to the genesis under these assumptions .\n\nThis means the evidence suggests we definitely know satoshi mined 2 blocks , and likely mined 11 blocks, and that **perhaps** there was a dominant miner who mined between 600-700k bitcoin(not blocks). **There are other explanations for the extranonce pattern that do not point to a dominant miner. Simply a similar software setup can cause this.**\n\nSince there was over 5 days between the genesis block being mined and block 1 and difficulty was 1 it would be safer to assume satoshi waited for other miners to start mining before joining in .You can check this by looking up any block explorer between block 0 and block 1",
                                     "depth": 3,
@@ -61,7 +61,7 @@
                 {
                     "id": "i8pxmhd",
                     "author": "CoinCorner_Sam",
-                    "score": 23,
+                    "score": 24,
                     "created_utc": 1652636883.0,
                     "response": "Satoshi's coins is just another myth. People are just guessing what coins he mined and what coins were mined by many others.\n\nYes, Bitcoin had no premine. Even if Satoshi mined, he mined alongside other people who joined the network. Some people like Hal Finney, disconnected later because the fan got too noisy. But again, everyone was free to join and leave.\n\nPremine means unfair - the creator gives chance to nobody and creates the coins without paying for the energy like the rest of the miners. Similar what (for example) Vitalik did when he created 72 million coins for free and let the miners to work on the other 40 million over the years.",
                     "depth": 1,
@@ -100,6 +100,15 @@
                                     "response": "Satoshi sent 10 BTC to Hal Finney, and we have (or had) a record of the communication about that transaction\n\nSince those 10 BTC were from block #9, and since that was the first ever transaction (so the funds had never moved from another block), we therefore know that Satoshi must have mined block #9",
                                     "depth": 3,
                                     "comments": []
+                                },
+                                {
+                                    "id": "i8zk3b1",
+                                    "author": "igadjeed",
+                                    "score": 1,
+                                    "created_utc": 1652817682.0,
+                                    "response": "In this email collection from January 2009, Hal Finney says to Satoshi \"I see you sent me a payment\", referring to the first non-coinbase transaction in block #170  \nhttps://blockstream.info/block-height/170  \n\nThis transaction is spending the coinbase output from block #9",
+                                    "depth": 3,
+                                    "comments": []
                                 }
                             ]
                         }
@@ -108,7 +117,7 @@
                 {
                     "id": "i8pvpy4",
                     "author": "AutoModerator",
-                    "score": 3,
+                    "score": 2,
                     "created_utc": 1652636059.0,
                     "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
                     "depth": 1,
@@ -135,7 +144,7 @@
                 {
                     "id": "i8siufv",
                     "author": "MichaelFackrell4",
-                    "score": 0,
+                    "score": -2,
                     "created_utc": 1652683742.0,
                     "response": "Satoshi = Many\n\nFrom Many Came 1\n\nFrom 1 Came No One\n\n#NoOneButEveryone",
                     "depth": 1,

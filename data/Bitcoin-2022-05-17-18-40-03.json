@@ -1,0 +1,631 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "urswpx",
+            "title": "Adam Back, inventor of Proof-of-Work, on why Bitcoin can\u2019t fundamentally be improved",
+            "url": "https://youtu.be/QfLHB4bq_d4",
+            "author": "thefullmcnulty",
+            "created_utc": 1652812038.0,
+            "score": 24,
+            "num_comments": 30,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8zcv50",
+                    "author": "ScamJustice",
+                    "score": 7,
+                    "created_utc": 1652814717.0,
+                    "response": "Cynthia Dwork created proof of work. Saying Adam created PoW is like saying Al Gore invented the internet",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8zdds3",
+                            "author": "thefullmcnulty",
+                            "score": 1,
+                            "created_utc": 1652814927.0,
+                            "response": "Just went over this with the other commenter. Read those comments if you want to see me admit I\u2019m wrong and move on.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i90p41a",
+                            "author": "adam3us",
+                            "score": 1,
+                            "created_utc": 1652836198.0,
+                            "response": "well see cites on http://hashcash.org/papers/ i list a number of earlier papers including Merkle's original 1974 invention of public key cryptography with mild asymmetric advantage, which are a kind of interactive (non-transferable) proof of work.\n\nhashcash 2002 paper itself cites Dwork & Naor.\n\na few more things, I wasn't aware of Dwork & Naor's paper until a few months after posting about hashcash with code, in 1997, when Steve Schear pointed out the paper.  coincidentally 2 of 3 proofs in D&N would not work for mining (not poisson), and the remaining proof (square root modulo prime) results in big proofs that become larger as difficulty increases, and may not under intense algorithmic optimization incentive remain the best algorithm, leaving a risk it breaks down and becomes non-poisson.\n\ni think i was however the first to propose using hashcash (or PoW in general) for digitally scarce mined coins. so that's what 'invented mining' is about.\n\nthere's a bit of a non-overlap between mathematical academics and applied crypto guys (i'm a bit of both, but focus on applied results).  eg the academic guys mostly had not heard of hashcash - because i didnt publish it, just put a pdf on my web site.  and likewise i hadn't read dwork & naor's paper until after publishing hashcash code etc.\n\nalso I noticed talking with Chaum who is more academic math focus on a podcast with Laura Shinn, did not seem to know that bitcoin uses hashcash, assuming it used dwork & naor proof. but they don't really work in practice for the mining. again academics not knowing things most applied people know.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i90qkcv",
+                            "author": "danger89",
+                            "score": 1,
+                            "created_utc": 1652836891.0,
+                            "response": "Al gore did invent the the rise of the temperature.\n\n(hehe just kidding)",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8z71e2",
+                    "author": "shleebs",
+                    "score": 4,
+                    "created_utc": 1652812336.0,
+                    "response": "Proof of work was invented by Cynthia Dwork and Moni Naor in 1993\n\nYour title is misleading.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i90irs7",
+                            "author": "bitusher",
+                            "score": 5,
+                            "created_utc": 1652833225.0,
+                            "response": "Correct. Adam Back created the first form of Proof of Work without the need of a centralized authority which was a significant improvement from their work\n\n------------------------------\n\nRalph Merkle (1980) = Merkle trees\n\nDavid Chaum (1981) - Father of digital cash(digicash) with Digital Pseudonyms\n\nLeslie Lamport (1989) = Very early versions of fault-tolerant distributed computing\n\nStuart Haber and Scott Stornetta(1990 to 1997) = Linked timestamping and Merkle trees(with modern linked timestamping)\n\nMiguel Castro and Barbara Liskov (1999) - practical Byzantine fault tolerance (PBFT)\n\nCynthia Dwork and Moni Naor (1992) - Earliest version of proof of work that used a central authority (TTP)\n\n**Adam Back (1997) - More Modern version of Proof of work with working software without the need of a central authority**\n\nWei Dai ( 1998) - Developed B-Money a more mature version of Proof of work digital cash\n\nNick Szabo (1998) - Developed Bitgold a more mature version of Proof of work digital cash\n\nHal Finney ( 2007) - created a variant of Bitgold called RPOW (Reusable Proofs of Work)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i90q9p0",
+                                    "author": "danger89",
+                                    "score": 1,
+                                    "created_utc": 1652836750.0,
+                                    "response": "OK. I stored this reply. This is a nice historical list of valuable contributors over time.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i90qy1b",
+                                            "author": "bitusher",
+                                            "score": 1,
+                                            "created_utc": 1652837067.0,
+                                            "response": "More information of the origins of Bitcoin \n\nhttps://dl.acm.org/doi/fullHtml/10.1145/3132259#R43",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i90s1th",
+                                    "author": "HumanJenoM",
+                                    "score": 1,
+                                    "created_utc": 1652837580.0,
+                                    "response": "Very nice stroll down memory lane. Thank you!",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i8z7j2r",
+                            "author": "thefullmcnulty",
+                            "score": 1,
+                            "created_utc": 1652812534.0,
+                            "response": "I\u2019ve heard from multiple credible sources over the years that Adam Back was the inventor of Proof-of-Work so that\u2019s the information I\u2019m operating on. I\u2019m no computer science expert though.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8z91ii",
+                                    "author": "shleebs",
+                                    "score": 7,
+                                    "created_utc": 1652813152.0,
+                                    "response": "Clearly you are no computer science expert, yet you post things as fact in a subreddit full of Bitcoin experts. All you had to do was read the Wikipedia on proof of work. Adam Back invented Hashcash, among his other contributions.\n\nWhen someone tells you something, don't trust, verify. Verification of truth is the heart of Bitcoin.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8z9e1a",
+                                            "author": "thefullmcnulty",
+                                            "score": -11,
+                                            "created_utc": 1652813293.0,
+                                            "response": "Thanks for the trite advice. You have done wonders in the sub today you *bitcoin expert*.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8zabpo",
+                                                    "author": "shleebs",
+                                                    "score": 7,
+                                                    "created_utc": 1652813679.0,
+                                                    "response": "I didn't say I was an expert, I said this sub is full of experts, so do a little research first. It doesn't take an expert to use Google for 5 minutes. \n\nYou're welcome by the way",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i8zb8qj",
+                                                            "author": "thefullmcnulty",
+                                                            "score": -11,
+                                                            "created_utc": 1652814054.0,
+                                                            "response": "Blockstream ran an ad campaign where they made the claim Adam Back invented Proof-of-Work. I\u2019ve heard multiple actual bitcoin experts reiterate this as well. I held the information to be true and obviously I don\u2019t go spend time Googling information I believe to be true. \n\nIt was a simple mistake that was predicated on bad information. It happens to everyone occasionally. I\u2019m glad this moment of informational superiority gave you feelings of purpose and success though.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i90f6tk",
+                                                                    "author": "shleebs",
+                                                                    "score": 1,
+                                                                    "created_utc": 1652831486.0,
+                                                                    "response": "Don't trust, verify",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i90fu27",
+                                                                            "author": "thefullmcnulty",
+                                                                            "score": -1,
+                                                                            "created_utc": 1652831802.0,
+                                                                            "response": "I expect you to Google every element of every single thing you write and post on the internet from now on! You are the expert verifier and everything you have ever learned is out of the window now. All things you think and recall shall be verified on Google before transmitting! Verification expert. You are very smart. You are very trite. You are the verification expert.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i90ldv8",
+                                                                                    "author": "SunnyDayShadowboxer",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1652834446.0,
+                                                                                    "response": "Don't get mad about it. You admitted you were incorrect and even went ahead and explained yourself. Congrats, that's a hard thing which many people refuse to do. It's all good. No reason to lash out or get emotional about it.",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i90rmvr",
+                                                                                            "author": "thefullmcnulty",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1652837388.0,
+                                                                                            "response": "I\u2019m joking around making fun of this guy who is dead set on being an ass. Like I must Google everything I think to verify it. It\u2019s dumb. \n\nI was acting in good faith on bad information and I have no problem admitting I was wrong. He just wants to carry on with the trite unhelpful comments, I\u2019m going to make fun of him. Life goes on and nobody cares",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8zt85z",
+                    "author": "SmoothGoing",
+                    "score": 2,
+                    "created_utc": 1652821483.0,
+                    "response": "Bitcoin white paper sites Adam Back's work. The guy knows things and isn't dumb. But his defence of tether for financial gain discounts everything he says now.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i90jqvj",
+                            "author": "bitusher",
+                            "score": 2,
+                            "created_utc": 1652833668.0,
+                            "response": "No one is perfect. humans are innately flawed. Satoshi made many mistakes as well \n\nhttps://gist.github.com/harding/dabea3d83c695e6b937bf090eddf2bb3\n\nhttps://github.com/bitcoin/bips/blob/master/bip-0042.mediawiki\n\n>discounts everything he says now.\n\nIt only discounts anything he is wrong about. People can simultaneously be extremely well educated and hold false beliefs",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i90nxj0",
+                            "author": "adam3us",
+                            "score": 1,
+                            "created_utc": 1652835644.0,
+                            "response": "> But his defence of tether for financial gain discounts everything he says now.\n\nthe defense of tether is not so much that as rather debunking of falsehoods leveled at them. criticize things for rational reasons, and obviously you are centrally depending on tether the company for redemption.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ursxu7",
+            "title": "Do you guys ever wonder if you've got it wrong?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/ursxu7/do_you_guys_ever_wonder_if_youve_got_it_wrong/",
+            "author": "Hellohowru69",
+            "created_utc": 1652812125.0,
+            "score": 0,
+            "num_comments": 47,
+            "subreddit": "Bitcoin",
+            "selftext": "Firstly if you're wondering, I don't hold BTC.\n\nI just see so many people on here that seem 100% confident that BTC will do exactly what they say it will. All the inflation hedge stuff and currency takeover, and so on... \n\nSo don't you ever doubt your prediction? \n\nI see the same level of vehement on stock market forums for specific companies. I think we all know that it often times doesn't go well for a lot of companies in the long run, and yet there is always that group of people that can't get enough of talking about their investment and expressing their undying belief in it. \n\nI have a theory that a lot of these sorts of people are usually ones that haven't suffered a big hit on an investment before. Especially the guys that give the huge pep talks when the price swings down and are adamant that \"you'll never be able to pick up BTC at this price again\". \n\nAnyway...do you have a healthy scepticism of your investment in BTC, or are you all in and have got to a point where you can't see the negative points to be made?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8z8svz",
+                    "author": "NiceDoctorBeam",
+                    "score": 27,
+                    "created_utc": 1652813055.0,
+                    "response": "I was studying \"money\" and the banking system before Bitcoin came along.  To fully appreciate Bitcoin you really need at least a basic understanding of \"money\" and the kinds of problems inherent w/ its various forms.  \n\nWhen Bitcoin came along, I read the Bitcoin White Paper.  It sounded too good to be true, even though it was exactly the kind of thing I'd been looking for.  So, I re-read the whitepaper more carefully, looking for the \"catch,\" or serious flaw.  I was impressed but still not sure, so I went over the paper, sentence by sentence, making sure I fully understood.  I even looked into the Bitcoin source code to check the hashing functions, etc.\n\nAfter that, I had a much-better-than-average understanding of money and the problems inherent to the current banking system and I also had a good enough understanding of what Bitcoin actually IS and the basics of how it works.\n\nI started buying $500 per day of BTC, using up my down payment money for real estate.  You see, Bitcoin made other forms of long-term investing obsolete, even though most people haven't realized it yet: real estate, stocks, bonds, precious stones, precious metals (all are doomed, long term).\n\nFrom what you wrote, it appears that the only thing you know about Bitcoin is its recent price history.  You're really missing out on the best opportunity of your entire life.  You owe it to yourself (and any progeny) to learn the basics, and then to take appropriate long term action:  \n\nIntro: The Trust Machine (22 min):  \nhttps://www.youtube.com/watch?v=ZKwqNgG-Sv4  \n\nSaylor Explains:  \nhttps://www.reddit.com/r/Bitcoin/comments/s54g8x/send_this_to_your_contacts_interested_in_bitcoin/\n\nRead: \"The Bitcoin Standard,\" by S. Ammous",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8zaasw",
+                            "author": "ShabbaLaFlare",
+                            "score": 3,
+                            "created_utc": 1652813668.0,
+                            "response": "Im Bitcoin hodler myself, just curious to know why real estate, stocks, bonds, precious stones and metals are all doomed longterm? \n\nI don't hold any of those myself just curious.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8ze00m",
+                                    "author": "revanevan7",
+                                    "score": 6,
+                                    "created_utc": 1652815180.0,
+                                    "response": "I don\u2019t think he\u2019s saying they\u2019re doomed. He\u2019s just saying those assets have been used as a store of value because of fiat money being broken. The monetary value they hold won\u2019t be there anymore because they won\u2019t be needed. Instead that value will be held in bitcoin.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8zg64c",
+                                            "author": "Nada_Lives",
+                                            "score": 1,
+                                            "created_utc": 1652816067.0,
+                                            "response": "The haven in precious metals was stolen twenty years ago. They haven't found a way to steal from Bitcoin, and fortunately they won't.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i8zi4wm",
+                                    "author": "NiceDoctorBeam",
+                                    "score": 6,
+                                    "created_utc": 1652816877.0,
+                                    "response": "TLDR:  \n\nReal estate barely keeps up w/ inflation.  Stocks do a little better.  Gold is stagnated.  Precious gems are... well, you'd better know what you're doing.  Bitcoin's long term average ROI beats the pants off of all of them.  \n\nGory details:  \n\nPeople buy homes, for example, to avoid having savings eaten by inflation and also to hopefully have inflation also eat away at their loan balance.\n\nLess sophisticated real estate investors see the price of homes going up, and neglect to account for inflation.  For them, \"number go up\" is good enough.\n\nUltimately, the price of homes (and rent) is limited by incomes.  Incomes barely keep up with inflation (long term).  Bitcoin has no such limit to its price.  In fact, Bitcoin's price goes up way faster than inflation, and for lots of good reasons will continue to do so.\n\nMeanwhile, real estate has significant hold costs: taxes, maintenance, fees, insurance, and (in many cases) mortgage interest.  Bitcoin has no holding costs.\n\nAlso, there is a significant upfront costs to get into real estate - down payment, all sorts of fees, sometimes \"points\", moving costs, etc.  You can buy Bitcoin a few dollars at a time, for example.  You don't need a big wad of money up front.  \n\nReal estate is nailed down.  If you need to flee (war, economic collapse, social unrest, environmental disaster, etc.) you can't take a home with you.  My Bitcoin goes with me everywhere I go; nobody can take if from me or even know whether I have any.  Nailed down real estate is a sitting duck for higher taxes.\n\nSimilar things apply to stocks, though, they're still way better than real estate.  Bonds right now are completely insane, plus, bond trading requires expert knowledge.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8zoec8",
+                                            "author": "ShabbaLaFlare",
+                                            "score": 2,
+                                            "created_utc": 1652819474.0,
+                                            "response": "Thank you for this write up. Good info",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i8zlsrw",
+                            "author": "Nice2Cats",
+                            "score": 1,
+                            "created_utc": 1652818392.0,
+                            "response": "What about the argument that Bitcoin doesn't compound like stocks and bonds?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8zmh96",
+                                    "author": "iammasvidal",
+                                    "score": 1,
+                                    "created_utc": 1652818675.0,
+                                    "response": "Of course it compounds in fiat value dude. Think about it. \n\nIts averages 130 odd % a year for 13 years.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8znk9m",
+                                            "author": "NiceDoctorBeam",
+                                            "score": 1,
+                                            "created_utc": 1652819124.0,
+                                            "response": "This.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i907r3p",
+                            "author": "mzen1",
+                            "score": 1,
+                            "created_utc": 1652827928.0,
+                            "response": "Thank you for this post. It\u2019s very appreciated!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8z96w0",
+                    "author": "Squarebobspungelegs",
+                    "score": 5,
+                    "created_utc": 1652813214.0,
+                    "response": "I have a small chunk of BTC and others that I still hold. I don\u2019t put emotions into it because of the high risk and told myself that it\u2019s long term. \n\nMost will laugh and call me stupid but I feel stupid for not getting in earlier imo.\n\nAlso,\n\nI\u2019m a tech kinda person, love blockchain stuff and believe it would benefit people if it gained more adoption which it continues to do.\n\nNegative thinking is easy to do and not as powerful.\n\nPositive thinking takes work but it helps with clarity in difficult situations.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8zglgo",
+                            "author": "gooner-1969",
+                            "score": 1,
+                            "created_utc": 1652816241.0,
+                            "response": "This is exactly me also.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8zaqar",
+                    "author": "holonz_",
+                    "score": 5,
+                    "created_utc": 1652813846.0,
+                    "response": "Lol\n\n>I have a theory that a lot of these sorts of people are usually ones that haven't suffered a big hit on an investment before\n\nYou're a troll right? You can't be serious.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8zhe18",
+                            "author": "llewsor",
+                            "score": 2,
+                            "created_utc": 1652816567.0,
+                            "response": "class of 2016 reporting in \ud83e\udd72",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8zfe52",
+                    "author": "Zil82Leilt1O",
+                    "score": 5,
+                    "created_utc": 1652815749.0,
+                    "response": "I might be wrong about how successful Bitcoin will be, but I think it is my best chance at financial freedom. After years of holding I'd say my chances are higher than they've ever been.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8zi5ca",
+                    "author": "SubjectiveCompass",
+                    "score": 5,
+                    "created_utc": 1652816883.0,
+                    "response": "We were / are all skeptical to some degree.  I tried breaking bitcoin in every way I could think of and ask every question I can think of still, even as a long term investor.  \n\nIf there is any new viable information on why exactly bitcoin is a worse place to try and store my long-term wealth than another currency, asset, commodity, I'm all ears.  I'm not 100% in bitcoin, same as I'm not all in on the USD, shares of Wal-mart, or real estate.  \n\nThe more you research, the more you'll find out that what btc is doing is the first successful case of its kind.  Then you'll find that many of the minds supporting it are engineers and people who love things built strong, and to last.  \n\nI've tried to break it... \"Energy useage, what if governments tax it massively, what about quantum computing, it's too complicated, it's too simple...\" on and on and I've found pretty substantial answers for why btc is actually pretty low risk compared to many investments including stocks, bonds, gold, property.  It's also got the capability to change resource management for the better for the world in my opinion.  So, I store energy in it, at first because I couldn't break it, but now because I believe in it.  \n\nCareful, or you too will one day vehemently support a form of money that promotes long-term thinking, spending energy only on the things you have a passion or true need for, and has you wondering why you every thought a government full of career politicians knew the best way to create and regulate a monetary system long-term.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8z90gg",
+                    "author": "Nada_Lives",
+                    "score": 7,
+                    "created_utc": 1652813140.0,
+                    "response": "The term \"investment\" has at least two meanings when applied to Bitcoin. One is a societal gain in value, and the other is a personal gain. I'm all for the first, and will let someone else argue the second.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8zltyk",
+                            "author": "CulturedButtermilk86",
+                            "score": 1,
+                            "created_utc": 1652818406.0,
+                            "response": "Exactly",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i8zxe9f",
+                            "author": "Stunning_Novel9398",
+                            "score": 1,
+                            "created_utc": 1652823263.0,
+                            "response": "What is the main societal gain?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i908mh2",
+                                    "author": "Nada_Lives",
+                                    "score": 2,
+                                    "created_utc": 1652828342.0,
+                                    "response": "Honest money. The starting point for a healthy society.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8z9sop",
+                    "author": "Scooba_Steve21",
+                    "score": 2,
+                    "created_utc": 1652813460.0,
+                    "response": "Why are you here?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8z9ws4",
+                    "author": "WritingFun8769",
+                    "score": 2,
+                    "created_utc": 1652813508.0,
+                    "response": "the way i see it is the protocol that satoshi developed is a miracle invention, much like the lightbulb, the engine, the internet etc and even if bitcoin were to somehow \u201cdie\u201d, all the money i\u2019ve put into it would\u2019ve been money spent participating in the most fascinating and useful experiment ever. that being said, i don\u2019t expect bitcoin to fail, much like i don\u2019t expect mathematical and physical laws to change randomly.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8zaq1w",
+                    "author": "Ferdo306",
+                    "score": 2,
+                    "created_utc": 1652813842.0,
+                    "response": "I am aware of various risk but still see it as a great risk/reward asset\n\nI primarily invested cause of the idea and stayed for the price which is probably the opposite of what most people would say\n\nI am open to possibility of BTC being scrutinized for it's energy use especially with the whole sustainable movement which is gonna get a stronger push during this decade\n\nI also see a possibility of BTC being fractional reserved as it seems the whole 'not your keys, not your coins' idea is dying out and was overly ambitious. Crypto custody is gonna be a huge industry\n\nAnd there's always the fear that BTC is gonna be manipulated by insti players same as gold supposedly is\n\nLastly, I am still on the edge with lightning network and risk of centralisation \n\nHaving said that, I think it is too late to 'kill' BTC and that it will grow in value long term but will be heavily regulated and institutionalized and potentially more centralised",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8zdi3b",
+                    "author": "PacificK2A",
+                    "score": 2,
+                    "created_utc": 1652814977.0,
+                    "response": "I am 100% confident that fiat currency will fail. Every fiat currency in the history of civilization has failed before and will again. For me it is a fact. Just last year the USA devalued its currency yet again with massive dollar printing. As such I plan accordingly by purchasing assets.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8zf4hy",
+                    "author": "Mr_Eckert",
+                    "score": 2,
+                    "created_utc": 1652815637.0,
+                    "response": "Nope.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8zh44b",
+                    "author": "Festortheinvestor",
+                    "score": 2,
+                    "created_utc": 1652816452.0,
+                    "response": "Na I don\u2019t doubt bitcoin, I doubt investors, but that doesn\u2019t effect how well bitcoin works, just the price. \n\nI own multiple S19s and we are expanding even in this volatile times. The global hash rate continues to grow, the security has never been breached and bitcoin really is the greatest hope for humanity in the fight for a brighter greener future.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8zp40d",
+                    "author": "mouthwashabuser",
+                    "score": 2,
+                    "created_utc": 1652819775.0,
+                    "response": "Every day. I fucked up majorly, I'm stuck... I don't know if it'll ever get better.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8za1xb",
+                    "author": "ETAVEGAMING",
+                    "score": 1,
+                    "created_utc": 1652813568.0,
+                    "response": "I don\u2019t have 100% conviction on Bitcoin\u2019s success. I know what can bring it down and I\u2019m honest with myself that it could happen. \n\nI look at Bitcoin as a \u201cgood bet\u201d, but in the end of the day I\u2019m aware that it\u2019s a \u201cbet\u201d, like most other choices in life.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8zfyjo",
+                    "author": "Mooncake137",
+                    "score": 1,
+                    "created_utc": 1652815982.0,
+                    "response": "arent you sure that u will succeed in anything before u start doing it? i mean, you dont go out there and say, i will fail, but lets do it anyways. thats contractionary. yes i am convinced that it will succeed, but theres a probability that it can fail also. the fundamentals say it will succeed. but the probability to fail gets tinier everyday.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8zh01u",
+                    "author": "Nohoula",
+                    "score": 1,
+                    "created_utc": 1652816407.0,
+                    "response": "What currency is more accepted than bitcoin? Maybe the U.S. dollar but it\u2019s losing value every year.\nBitcoin is currency that is open source. What\u2019s better than that?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8zqudj",
+                    "author": "satayasat",
+                    "score": 1,
+                    "created_utc": 1652820492.0,
+                    "response": "Begging the question fallacy.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8zsaul",
+                    "author": "DoYouEvenBTC",
+                    "score": 1,
+                    "created_utc": 1652821098.0,
+                    "response": "BTC can definitely fail as an investment for a multitude of reasons. For me, it is however ideologically right to give it a shot as I truly believe a world with BTC as a world's reserve currency would be far better than the one we have now.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8zu93q",
+                    "author": "Individual_South9978",
+                    "score": 1,
+                    "created_utc": 1652821924.0,
+                    "response": "I didn\u2019t understand why Bitcoin until I understood money and what is wrong with the fiat money we use today.  Strongly recommend The Bitcoin Standard as an intro. Like Saylor says, show me someone who\u2019s put 1000 hours into understanding Bitcoin and can still make a case against it",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8zwvsx",
+                    "author": "AlternativeGazelle",
+                    "score": 1,
+                    "created_utc": 1652823040.0,
+                    "response": "Yes, and I think certainty is a dangerous thing.  I put more money into BTC than anything else, but most people here are insane.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8zxqhs",
+                    "author": "Nappingspider",
+                    "score": 1,
+                    "created_utc": 1652823409.0,
+                    "response": "I did get it wrong, back in 2009. And here we are.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8zzuid",
+                    "author": "Msim300",
+                    "score": 1,
+                    "created_utc": 1652824331.0,
+                    "response": "Your question isn't silly, but I think you are missing some of the realities of those who are 20 to 30 years old.  If you are 25 you probably see real estate out of your reach with today's prices so that avenue to build wealth is difficult.  You would also see inflation numbers that should make you a little uncomfortable about building a savings account.  The stock market and many of today's major corporations have been fueled by almost free money so those investments also appear shaky.  Retirement for a lot of people now looks like an impossibility.  So if a new asset class come around and you can get in on the ground floor for as little as $100 you would want to believe with all of your heart.  I do see it a little differently.  I know that something is worth only what someone else will pay you for it.  If the future generations want BTC to work it probably will so I hold BTC.  It is a little clunky at this point, but when enough people want something to work it can.  I like the libertarian aspect of BTC and I think it will become easy enough for the average person to use.  Hope that helps.  I feel like I know you were wanting the intrinsic value conversation, but BTC is a bit more complicated or maybe much much more simple.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i904wdr",
+                    "author": "SHA256dynasty",
+                    "score": 1,
+                    "created_utc": 1652826611.0,
+                    "response": ">do you have a healthy scepticism of your investment in BTC, or are you all in and have got to a point where you can't see the negative points to be made?\n\nwhere are the legitimate, educated & informed criticisms of bitcoin? please, show me the best argument you've ever seen against bitcoin.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i90jgsw",
+                            "author": "ShinTsuki08",
+                            "score": 1,
+                            "created_utc": 1652833542.0,
+                            "response": "* a 51% attack becoming plausible (ie if the value were to shrink enough that miners turned off or if transaction fees aren't lucrative enough as mining rewards decrease)\n* quantum computing breaking SHA-256 one way hash without a clear path to new scheme\n* that the community through consensus changes the protocol to have more than 21 M coins.  Breaking the golden promise.\n* Legal ban in US / Europe\n\nI'm sure there are others.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i90fu1x",
+                    "author": "ShinTsuki08",
+                    "score": 1,
+                    "created_utc": 1652831802.0,
+                    "response": "Bitcoin depends on a trifecta.  The users/holders, the developers, and the miners.\n\nWithout the users and holders the thing has no current value.  Without the developers it has no future.  And without the miners it has no security.\n\nSo you want to see a strong community with three strong pillars.  I don't see any reason to doubt that.  $30k isn't even a bad crash from a historical perspective with Bitcoin, but even if it was a much deeper crash the long term value to the core users comes not from the current price\\* but from the limited supply.  And as long as the developers and miners maintain the 21M supply cap I see no reason to have a dim view of the users pillar.\n\n\\*  (that's actually more important to the miners and developers)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i90gy8z",
+                    "author": "wkw3",
+                    "score": 1,
+                    "created_utc": 1652832346.0,
+                    "response": "I used to. I don't anymore.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i90mg4i",
+                    "author": "Far-Midnight-3304",
+                    "score": 1,
+                    "created_utc": 1652834943.0,
+                    "response": "Y u EvEn bOThEr tO pOSt.. hEAr",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i90tuxt",
+                    "author": "throwaway29801A",
+                    "score": 1,
+                    "created_utc": 1652838428.0,
+                    "response": "Great post.  \n1. I don\u2019t wonder if I got it wrong, I wonder If it will take longer than I expect. Literally, how dumb people have become is insane. I\u2019m American and half the country is morbidly obese, we\u2019ve got homeless populations skyrocketing, and people pretend there aren\u2019t issues. I wonder if people will delay the inevitable about what\u2019s going on with currency and also the future of bitcoin.  \n2. The big difference between bitcoin and a specific stock is exactly that: it\u2019s not a stock. It\u2019s a network that thrives on increased balance sheets of governments and that trend cannot be reversed. It can only have its rate of growth be slowed down, but still goes up.  \n3. I\u2019ve learned several lessons through investments: do not try to time markets, specically with leverage.   \nThe negative point that I do see is that many in bitcoin believe that there is nothing else besides bitcoin. Well I believe that bitcoin is special. I do not believe that every other crypto is valueless.  \nThe reason people are confident in bitcoin is that it cannot be bribed and it\u2019s based on math.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

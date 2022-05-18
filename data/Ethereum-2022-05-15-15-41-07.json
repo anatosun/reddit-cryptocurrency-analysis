@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/ethereum/comments/uq5b35/where_to_begin/",
             "author": "White__Walter",
             "created_utc": 1652618561.0,
-            "score": 35,
-            "num_comments": 15,
+            "score": 38,
+            "num_comments": 20,
             "subreddit": "ethereum",
             "selftext": "Hello Everyone. Complete crypto newby here. Invested some small amounts in bitcoin and Ethereum but completely unaware about the underlying technology (tried to learn some basics of bitcoin like POW and hash etc, but thats it).\n\nI would like to learn more about Ethereum and how it works but not sure where to start. I come from a non-CS background and completely lost in the terminology. The term \"layer\" keeps coming up and I have no idea what it means.\n\nMy main objective is to eventually learn solidity and smart contracts. Where should I start? Any good YouTube videos or courses you can suggest?\n\nThanks in advance!!",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i8ozvti",
                     "author": "PinkPuppyBall",
-                    "score": 12,
+                    "score": 14,
                     "created_utc": 1652621677.0,
                     "response": "https://www.reddit.com/r/ethfinance/comments/k098s1/hey_ethfinance_lets_make_a_list_of_links/?utm_medium=android_app&utm_source=share\n\nMaybe you can find what you're looking for here. You can also come and hang out in the ethfinance daily to get a feel for what's going on in the Ethereum world.",
                     "depth": 1,
@@ -31,7 +31,7 @@
                         {
                             "id": "i8p011r",
                             "author": "White__Walter",
-                            "score": 5,
+                            "score": 4,
                             "created_utc": 1652621754.0,
                             "response": "Thanks a lot. It looks interesting. Will check it out!!",
                             "depth": 2,
@@ -39,7 +39,7 @@
                                 {
                                     "id": "i8pd26h",
                                     "author": "AESTHTK",
-                                    "score": 4,
+                                    "score": 7,
                                     "created_utc": 1652627928.0,
                                     "response": "Agree, join:\n\nr/ethfinance and\n\nr/ethdev\n\nAs well.\n\nBankless is a great podcast to listen to:\n\nhttp://podcast.banklesshq.com/betting-the-fund-on-the-merge-hal-press-north-rock-digital",
                                     "depth": 3,
@@ -47,7 +47,7 @@
                                         {
                                             "id": "i8phgzv",
                                             "author": "TimelessTitor",
-                                            "score": 5,
+                                            "score": 7,
                                             "created_utc": 1652629905.0,
                                             "response": "The daily gwei is also great as well",
                                             "depth": 4,
@@ -62,7 +62,7 @@
                 {
                     "id": "i8qax2l",
                     "author": "PDXbp",
-                    "score": 5,
+                    "score": 6,
                     "created_utc": 1652642766.0,
                     "response": "I would offer a few things to get you started from a higher level to hopefully understand the Ethereum ecosystem better:\n\n1: The Bankless guys have some good info from a less in-the-weeds technical perspective. They focus more on what they call the Layer 0 - more about values, with a heavy emphasis on how to get involved as an end user. They have build a lot of great resources and guides. If you scroll to section 3 here you\u2019ll find an ETH section with lots of good stuff. Not programming/technical stuff but more economic philosophy and bigger picture stuff. https://newsletter.banklesshq.com/p/-guide-1-starting-with-bankless\n\nOnce you\u2019ve wrapped your head around that stuff I\u2019d definitely recommend The Daily Gwei pod. Still not in the weeds coding but definitely good content about the structure of the ecosystem. \n\nBoth have discord servers as well with great and helpful communities. \n\n2. Ethereum is evolving. It may be helpful to know ahead of time, that if you go back to 2016 and read all the materials it may seem out of date with todays understanding of what Ethereum can/should do.\n\nThe technical aspects are likely still quite relevant at the programming level (though I am not the best one to make that assumption) but Ethereum has evolved (see below about Layer 2) and with it the language has also changed a bit.\n\nOne confusing thing is ETH1 vs. ETH2. Many people/exchanges still use the term ETH 2 but from the Eth Foundation perspective that term is deprecated. That doesn\u2019t stop coinbase, for example, from still using ETH2 to describe their staking token, which simply represents Ether post-merge. I won\u2019t go into too much detail but ETH2 used to be a name for a package of updates to Ethereum that included things like sharding and state channels in addition to \u201cthe merge\u201d but the foundation elevated the merge to highest priority so is tackling that first (and the designs for sharding have also been evolving - see bankless recent panel on proto danksharding for the latest)\n\nThe Merge changes the consensus mechanism for Ethereum from Proof of Work to Proof of Stake. It does NOT lower gas fees on Layer 1, but does cut energy consumption by 99.95% which is a very positive thing. It also enables staking (as opposed to mining) where users can stake eth and generate rewards and the Beacon Chain (the new PoS chain) has been running along side Eth\u2019s original chain for something like a year and a half with great success. The Merge is Due this year, possibly as early as summer.\n\nThe best recent explanation of the high level roadmap from the Eth Foundation perspective is vitalik\u2019s Endgame post: https://vitalik.ca/general/2021/12/06/endgame.html\n\n\n3. Layer 2. From the early days Ethereum has been a storage/data platform AND execution layer, so the code would run on-chain (for a gas cost dependent on how complex the contract is). \n\nOver the past few years, as decentralized apps have become more sophisticated and the price of Ether has risen and the demand for blockspace has grown, users were faced with high gas fees and slow transaction speeds. It was becoming unusable for smaller transactions so Eth is well on its way to transitioning to more of a data storage and availability layer and leaving the execution layer to faster cheaper Layer 2 chains (which will package their own transactions and \u2018roll up\u2019 to the Ethereum chain on a frequency determined by their own security needs).\n\nYou can still execute on Ethereum\u2019s Layer 1 and people who need ultimate security still do but Ethereum based L2s like Optimism and Arbitrum now have most of the dapps that used to be exclusive to layer 1 running for a fraction of the cost, without sacrificing (much) security. Polygon is an Eth-aligned side chain which is slightly different than a roll-up but also a major force in this ecosystem. Other Ethereum based L2s are just launching or coming soon with a more efficient rollup called ZK-rollups (ZK-sync, StarkNet, and yes, Loopring) and some are shooting for EVM compatibility, so you can run exactly the same code on the L2 as you would on L1. I\u2019m probably oversimplifying this. \n\nThe best resource I can offer on Roll-ups and L2s is Polynya on twitter. They refer to this as Modular architecture where whatever is the best (most secure) L1 (currently Eth) gets all the relevant L2s to rollup to it. Polynya is on twitter and medium. Very important concepts. \n\nAnother slightly dated (this stuff evolves so fast!) good high level but comprehensive overview I\u2019ve found explaining layer 2 platforms is here: https://dcbuilder.mirror.xyz/QX_ELJBQBm1Iq45ktPsz8pWLZN1C52DmEtH09boZuo0 \n\nOk that\u2019s all I\u2019ve got for now. Maybe not exactly what you\u2019re looking for but some good high level stuff and I hope it\u2019s helpful. \n\nGood luck with Ethereum!\n\nAlso reminder of crypto rule #1: Trust No One. Validate everything someone tells you and be wary of every type of scam. Lots of great helpful people in this space but also lots of $ so be skeptical.",
                     "depth": 1,
@@ -96,15 +96,6 @@
                     "comments": []
                 },
                 {
-                    "id": "i8pfz90",
-                    "author": "ElBuenMayini",
-                    "score": 1,
-                    "created_utc": 1652629248.0,
-                    "response": "You could try speedrunning Ethereum: [https://speedrunethereum.com/](https://speedrunethereum.com/)",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i8rcmur",
                     "author": "Peracinobw",
                     "score": 1,
@@ -119,16 +110,35 @@
                             "created_utc": 1652675757.0,
                             "response": "Thanks for the great suggestion. Any links for their ambassador program?",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i90a1oy",
+                                    "author": "Peracinobw",
+                                    "score": 1,
+                                    "created_utc": 1652829017.0,
+                                    "response": "Why not happy to share the link with you buddy. Sorry for the delay was traveling so had internet issues, \nI have attached the link below buddy. Since you are interested they even give away POAP NFTs fir active participation in all their activities. Good luck on that mate on 18th they are having an AMA with BuyThe Broncos! \n\n\n\nhttps://blog.xdao.app/xdao-officially-announces-the-start-of-the-ambassador-season-29b3bc0f831c",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "id": "i8ovdlv",
                     "author": "JBV3737",
-                    "score": -14,
+                    "score": -12,
                     "created_utc": 1652619199.0,
                     "response": "You buy it, then wait for it to go up, then sell it to the next guy doin the same thing.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8pfz90",
+                    "author": "ElBuenMayini",
+                    "score": 0,
+                    "created_utc": 1652629248.0,
+                    "response": "You could try speedrunning Ethereum: [https://speedrunethereum.com/](https://speedrunethereum.com/)",
                     "depth": 1,
                     "comments": []
                 },
@@ -143,11 +153,21 @@
                         {
                             "id": "i8sbrty",
                             "author": "hanniabu",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1652678433.0,
                             "response": "thanks for the lawlz",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i8tp1dc",
+                                    "author": "OdoIcontradictmyself",
+                                    "score": 1,
+                                    "created_utc": 1652712051.0,
+                                    "response": "\ud83d\ude4f",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         }
                     ]
                 }

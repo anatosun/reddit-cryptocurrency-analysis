@@ -118,8 +118,8 @@
             "url": "https://www.reddit.com/r/Bitcoin/comments/urhj2s/payment_channels_on_lightning_network/",
             "author": "king_size_slim",
             "created_utc": 1652774770.0,
-            "score": 2,
-            "num_comments": 10,
+            "score": 3,
+            "num_comments": 14,
             "subreddit": "Bitcoin",
             "selftext": "So if I understand it correctly, to use the lightning network a payment channel has to be set up between to parties. This is set up on the L1 whilst the transactions within the payment channel occurs on L2. This makes lightning efficient when multiple transactions will occur between the two parties but still seems inefficient if only one transaction needs to be made. \n\nMy question: Can one party set up an \"open\" payment channel that allows anyone to join to send single transactions and then the party who created the channel choose to close this payment channel lets say every night.\n\nScenario: Coffee shop accepts BTC payments. Everyday they open up a payment channel where multiple customers can join to send satoshis. When the shop closes for the day the payment channel is finalised and verified on L1?",
             "stickied": false,
@@ -127,7 +127,7 @@
                 {
                     "id": "i8x8hnr",
                     "author": "pink_raya",
-                    "score": 3,
+                    "score": 6,
                     "created_utc": 1652775282.0,
                     "response": "a channel is just some bitcoin locked in 2/2 multisig, so by design it only can have 2 parties.\n\nBut LN nodes can have multiple channels open.\n\nA cafe in your scenario doesn't need to have a separate channel with each customer and doesn't need to close it every day. \n\nLN invoice is already open to everyone on LN, if your node can find a path to the destination via other ppls channels.",
                     "depth": 1,
@@ -143,9 +143,18 @@
                                 {
                                     "id": "i8xbbb6",
                                     "author": "pink_raya",
-                                    "score": 3,
+                                    "score": 5,
                                     "created_utc": 1652777900.0,
                                     "response": "receiving LN wallet provides a secret (LN invoice, contains the LN address and amount of sats to receive), and this is shared between the LN nodes on the network from the sending node until the receiving node.\n\nSo you don't need a direct channel to pay in a cafe, you scan the QR at the counter and your wallet will try to find the shortest way through other LN channels until the sats reach the wallet of the cafe.\n\nThis need to insert amount to receive bitcoin on LN is bypassed by modern LN wallets and it looks pretty much the same as regular btc transaction, but settles in few seconds and for few satoshis.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i8y939r",
+                                    "author": "Raphae1",
+                                    "score": 1,
+                                    "created_utc": 1652798473.0,
+                                    "response": "[https://youtu.be/yKdK-7AtAMQ](https://youtu.be/yKdK-7AtAMQ)",
                                     "depth": 3,
                                     "comments": []
                                 }
@@ -156,7 +165,7 @@
                 {
                     "id": "i8xes39",
                     "author": "sciencetaco",
-                    "score": 3,
+                    "score": 6,
                     "created_utc": 1652781049.0,
                     "response": "You\u2019re forgetting about the \u201cnetwork\u201d part of the Lightning Network. \n\nLightning transactions can route through other nodes in the network. So the coffee shop can open a large channel to any node in the network, and then receive payments from any other node/user in the network. (Liquidity is an issue here but I won\u2019t go into it for simplicity)\n\nEach customer can also open payment channels to any other node of their choosing and use it for all their payments to various stores. \n\nThere is no need to open a channel with each customer. And there is no need to settle balances at the end of each day. Channels can stay open for months or years. There\u2019s really no need to close a channel other than to settle disputes or if you require your money back on chain again.",
                     "depth": 1,
@@ -165,7 +174,7 @@
                 {
                     "id": "i8xbwcz",
                     "author": "Simple_Yam",
-                    "score": 1,
+                    "score": 0,
                     "created_utc": 1652778429.0,
                     "response": "No, what you're describing is not really possible. A channel opening requires known participants. A coffee shop can't pre-open a channel/s because they don't know which customers will come through their door that day. And even if they did, that channel could not be used by the customer because it would only have liquidity on one side. The customer needs to initiate the channel creation and put outbound liquidity in it.\n\nA customer could leave their channel open to be used continuously until its liquidity dries out, but then you have other issues, you fragment large amounts of liquidity and you're required to run and monitor your own node 24/7 to secure them unlike L1.",
                     "depth": 1,
@@ -189,7 +198,7 @@
                                         {
                                             "id": "i8xmdr9",
                                             "author": "Shroom_Boofer",
-                                            "score": 1,
+                                            "score": 2,
                                             "created_utc": 1652786892.0,
                                             "response": "Customers don't need to open a channel with the businesses. Lightning payments can be routed across other nodes to reach the node the business is running.\n\nBTCPay Server is easy for a business to use on their own to accept lightning payments and on-chain payments. BTCPay server is not a centralized service. It's a self-hosted and open source cryptocurrency payment processor.",
                                             "depth": 4,
@@ -200,6 +209,35 @@
                                                     "score": 1,
                                                     "created_utc": 1652787367.0,
                                                     "response": "Wether you open a channel to the business or other node is meaningless, it's the same process.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i8xz914",
+                                    "author": "dlq84",
+                                    "score": 1,
+                                    "created_utc": 1652794065.0,
+                                    "response": "You're missing an important point. You can route payments through other nodes. You don't need channels with every other node in the network. Just a path via other nodes.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8y55hw",
+                                            "author": "king_size_slim",
+                                            "score": 1,
+                                            "created_utc": 1652796777.0,
+                                            "response": "So essentially I just need my own node and then I can rout payments towards myself without and open channel?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8z0p5p",
+                                                    "author": "snakedying",
+                                                    "score": 1,
+                                                    "created_utc": 1652809753.0,
+                                                    "response": "No. You need a channel with a peer but that channel let's you contact every peer of your peer and their peer and so on.",
                                                     "depth": 5,
                                                     "comments": []
                                                 }

@@ -1,0 +1,73 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "urx7cp",
+            "title": "Issue with importing a breadwallet mnemonic into Fully Noded on iOS",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/urx7cp/issue_with_importing_a_breadwallet_mnemonic_into/",
+            "author": "putyograsseson",
+            "created_utc": 1652823805.0,
+            "score": 6,
+            "num_comments": 6,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Fully Noded is connected to my citadel node (umbrel fork) and the blockchain is 100% synced.\n\nWhatever I try to import, the balance always shows 0 funds.\n\nI've tried:\n\n- importing the 12 words\n\n- importing the native segwit descriptor wpkh([xfp/0']xpubxxxxx/0/*)\n\n- importing the legacy descriptor pkh([xfp/0']xpubxxxxx/0/*)\n\n\nAny tips?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8zyn9f",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652823806.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i908171",
+                    "author": "bitusher",
+                    "score": 1,
+                    "created_utc": 1652828062.0,
+                    "response": "The derivation path with BRD is m/0'\n\nhttps://walletsrecovery.org/\n\nthus you need to specify that derivation path. Importing into electrum with selecting that derivation path or a wallet like blue wallet worked for me when I tested it last",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i90gk4h",
+                            "author": "putyograsseson",
+                            "score": 1,
+                            "created_utc": 1652832158.0,
+                            "response": "Yes, I\u2019m aware of the derivation path.\n\nI would like to get the funds to show up on Fully Noded since the node management on it is very well done.\n\nAlso blue wallet wouldn\u2019t connect to my node and electrum isn\u2019t available on iOS.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i90hryx",
+                                    "author": "bitusher",
+                                    "score": 1,
+                                    "created_utc": 1652832747.0,
+                                    "response": "I haven't tested citadel yet . I have recently successfully imported brd wallet seed to blue wallet without any issues. Thus instead of importing you could try :\n\nimport to blue wallet in ios than send an onchain tx if brd is no longer allowing you to send btc to your new wallet",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i90wogo",
+                    "author": "blaze1234",
+                    "score": 1,
+                    "created_utc": 1652839766.0,
+                    "response": "Was the BRD version BIP39 /BIP32 compliant at the time?\n\nMaybe they adopted the prior Electrum seed protocol",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

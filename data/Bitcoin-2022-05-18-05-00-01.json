@@ -1,0 +1,394 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "us57cm",
+            "title": "Can Bitcoin scale to billions of users?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/us57cm/can_bitcoin_scale_to_billions_of_users/",
+            "author": "Centmo",
+            "created_utc": 1652849951.0,
+            "score": 5,
+            "num_comments": 30,
+            "subreddit": "Bitcoin",
+            "selftext": "Recently, something got me thinking about the end-game: how Bitcoin will scale to be globally adopted as the world\u2019s digital gold or currency or reserve asset, with billions of users?\n\nThe answer is always a layer 2 protocol like Lightning on top of the base layer. Small, frequent transactions will take place on L2. Fast and nearly free. Base layer transactions are slower and more expensive so will be used only for infrequent large transactions and for opening and closing L2 channels. \n\nThis all makes sense but there is a problem, which is the 1MB block size on the base layer. It can only accommodate about 5 transactions per second. If we assume only 1 transaction per user per month, the network can only support 13M users. If half of all transactions were a new user opening their first L2 channel, it would take about 50 years to bring 4B people onto L2. This is way too slow when you look at the steep part of tech adoption s-curves. \n\nI am aware of the history of the block size wars, and that there is always a trade off: when you improve one aspect of the network, something else suffers. The most often cited reason to keep 1MB blocks is to ensure the decentralization of full nodes by allowing them to run on low-cost hardware and low-bandwidth connections. BUT, storage keeps getting cheaper and internet speeds keep improving. Where I live you can get unlimited data for an extra $15/mo. Nodes download 20GB/mo and upload 200GB/mo. This is equivalent to 1hr of Netflix per day. Why can\u2019t block size increase as these technologies get cheaper and faster? We\u2019ve had 1MB basically since the beginning and it hasn\u2019t changed in 13 years (not counting SegWit). \n\nThe alternative is that the Bitcoin base layer ends up being something that only the top 1% can use, and the rest (whom Bitcoin was supposed to help the most) are relegated to completely off-chain, custodial solutions with many of the same drawbacks that the current system has. Centralization, censorship, seizure, etc. \n\nThe only way around this is to increase the capacity of the base layer and I see no appetite for that. \n\nAm I missing something?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i91fmxq",
+                    "author": "SmoothGoing",
+                    "score": 3,
+                    "created_utc": 1652850245.0,
+                    "response": "There's no 1MB block size limit anymore. Limit is 4 million weight units.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91frmn",
+                            "author": "Centmo",
+                            "score": 3,
+                            "created_utc": 1652850333.0,
+                            "response": "Right, but we\u2019re still talking around 5 transactions per second, no?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91n1p1",
+                    "author": "wwmore11",
+                    "score": 1,
+                    "created_utc": 1652855831.0,
+                    "response": "You make valid points. Back during the block wars the big blocker argument wasn\u2019t completely outlandish. At the time it was the simplest path to a scaling solution when the network became backed up and fees skyrocketed. Lightning was still very much a security risk with hardly a beta platform to test. Today, many improvements in lightning, but still much to see proven out. Meanwhile bcash is actually still functioning with low fees and fast txns, has developed quite a bit with smartbch, but still faces plausible long term security issues with limited hash rate compared to btc and a minuscule amount of functional nodes on the network. I always thought had the 2 sides found a way to work together that the outcome would have been strongest, and in hindsight that may have been true. Even scaling block size in a very small incremental fashion that sacrifices very little security considering hash has only risen, and meanwhile developing layer 2 lightning for micropayments at same time, would have resulted in an interesting hybrid. Bcash was hammered hard in image, but most those devs were OG bitcoiners too, people forget that. Makes you wonder if things would be better had they all landed in compromise. Wasn\u2019t possible, greed was blinding everyone way more than \u201cthe white paper\u201d and all that. But anyways, most crypto chatter in this sub and in general today simply revolves around speculative price and dreams of hyperbitcoinization. Meanwhile, the majority hanging here have never sent crypto anywhere, or ever bought a single thing with it. Far cry from back in early 2015 when I started getting into all of this. Thanks for posting an interesting topic of discussion. My hopes is that lightning proves out, and I\u2019m confident regardless that bitcoin will find a way.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91h7n5",
+                    "author": "under_dnuorg",
+                    "score": 2,
+                    "created_utc": 1652851348.0,
+                    "response": "Scalability is a never ending dynamic- it\u2019s a matter of substitutions- staying ahead of the curve. Grouping onchain txs is a concrete concept that\u2019s been evolving for some time.\n\nScaling is solved through innovation- one of my personal favorites right now is transactions using inherited ids. These txs support factory protocols that scale to an unbounded number of parties and channels, and allow all of the channels in the factory to be bought and sold by anyone, with a single on-chain transaction- one on chain transaction could replace thousands or millions of anyprev transactions.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91hs6p",
+                            "author": "Centmo",
+                            "score": 1,
+                            "created_utc": 1652851761.0,
+                            "response": "You may be right that this will be solved in other ways. Do you have any links so I can read more on inherited IDs?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i91hv7z",
+                                    "author": "under_dnuorg",
+                                    "score": 2,
+                                    "created_utc": 1652851825.0,
+                                    "response": "https://github.com/JohnLaw2/btc-iids cheers\n\nI also previously made a post on this https://www.reddit.com/r/Bitcoin/comments/t8h6ex/john_law_scaling_bitcoin_with_inherited_ids_an/?utm_source=share&utm_medium=ios_app&utm_name=iossmf",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i91imj3",
+                    "author": "nullama",
+                    "score": 2,
+                    "created_utc": 1652852384.0,
+                    "response": "It's only slow to enter or exit L2.\n\nYou're assuming that everyone is entering and exiting all the time, whereas in reality that's not the case.\n\nLightning can scale way better than the rough numbers you're putting here.\n\nAlso, lightning is supposed to be for small quantities. In a similar way, you don't have all your savings in your wallet inside your pocket.\n\nAnd on top of that, heaps of people will be using custodial wallets for lightning, because, again, it's just a few sats, so it shouldn't matter too much.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91iz0a",
+                            "author": "Centmo",
+                            "score": 1,
+                            "created_utc": 1652852639.0,
+                            "response": "This is what I used to think, until I actually ran the numbers. Let me know which of my numbers you think is off.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i91lbtn",
+                                    "author": "nullama",
+                                    "score": 2,
+                                    "created_utc": 1652854448.0,
+                                    "response": "> If half of all transactions were a new user opening their first L2 channel, it would take about 50 years to bring 4B people onto L2\n\nI think the vast majority of users of lightning will probably be using some kind of custodial solution, like Wallet of Satoshi, Blue Wallet, etc, or some non-custodial one like Muun where you don't have to setup your own lightning channels. Very few people will actually be opening and closing channels themselves.\n\nSimilar to how now even though millions of people are using Bitcoin on-chain, [there's only about 50 thousand Bitcoin nodes](https://luke.dashjr.org/programs/bitcoin/files/charts/historical.html)",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i91m4w1",
+                                            "author": "Centmo",
+                                            "score": 1,
+                                            "created_utc": 1652855085.0,
+                                            "response": "Right. This is how Strike works too right? I could see this for the vast majority of users.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i91mp3l",
+                                                    "author": "Centmo",
+                                                    "score": 1,
+                                                    "created_utc": 1652855543.0,
+                                                    "response": "They could still store their savings in custodial held Bitcoin and escape inflation. Also if the custodian is some company based in Switzerland, some dictatorship won\u2019t be able to confiscate.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i91l62o",
+                    "author": "Decapitated_Tomato",
+                    "score": 2,
+                    "created_utc": 1652854322.0,
+                    "response": "As long as a trusted or centralized party is needed to use Bitcoin normally (after base layer is too crowded), governments have a much easier job of morphing BTC in something they can control, just like the current financial system.\n\nYou talked about regular people using the base layer but I think they won't even have the chance to use it because of big corporations and institutions that don't mind paying a fee of $200(0 on their multi million transactions.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91lxf6",
+                            "author": "Centmo",
+                            "score": 1,
+                            "created_utc": 1652854916.0,
+                            "response": "I think you may be right.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91m5sd",
+                    "author": "Decapitated_Tomato",
+                    "score": 1,
+                    "created_utc": 1652855103.0,
+                    "response": "Even in the poorest of poor countries technology has improved. It's harder to find 2005-2008 computers than it is to find cheap 2015 / recent computers/chips capable of running a node.\n\nMining difficulty increases because of that fact. Blocksize has no reason not to do the same thing. Even if it grows at the rate of the slowest increasing country.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91gyrb",
+                    "author": "daveime",
+                    "score": -1,
+                    "created_utc": 1652851179.0,
+                    "response": "No.\n\nAs soon as someone suggests using Lightning or similar, it's no longer Bitcoin, it's something else to *avoid* using Bitcoin.\n\nThe best analogy I can use is asking \"can gold scale to billions of users?\". Obviously not, we can't have people passing lumps of gold around, which is why we use notes or other tokens in place of gold. So is it then still gold we are using?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91na89",
+                            "author": "Neutronst4r",
+                            "score": 1,
+                            "created_utc": 1652856028.0,
+                            "response": ">As soon as someone suggests using Lightning or similar, it's no longer Bitcoin, it's something else to avoid using Bitcoin.\n\nThat is wrong. Trading on the Lightning network IS trading bitcoin. And your analogy to gold is also bad, because you can create an arbitrary amount of paper money that represents gold, but you cannot create arbitrary amounts of Bitcoin. You always have to fund a Lightning wallet with existing Bitcoin.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i91noy0",
+                                    "author": "Decapitated_Tomato",
+                                    "score": 1,
+                                    "created_utc": 1652856364.0,
+                                    "response": ">You always have to fund a Lightning wallet with existing Bitcoin.\n\nCan you do this without centralized or trusted party without having to interact with the base layer?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i91pn5p",
+                                            "author": "Neutronst4r",
+                                            "score": 1,
+                                            "created_utc": 1652858008.0,
+                                            "response": ">Can you do this without centralized or trusted party\n\nYes, absolutely.\n\n>without having to interact with the base layer\n\nNo, because then you wouldn't be trading bitcoin anymore.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i91kh7n",
+                            "author": "Agarwel",
+                            "score": 1,
+                            "created_utc": 1652853781.0,
+                            "response": "Exactly this. We are making \"everybody using crypto\" by \"not making it crypto anymore\".\n\nWhen youare talking about mainstream users, they dont care about security (offer them a credit card that requires pyhsical contact with the reader and pin code or credit card that is wireless and dont require pin code for smaller transactions. How many users will pick up the less secure but more convenient?).\n\nSame is happening in the Crypto space. It is becoming just a buzzword. People want crypto, but they dont want to use crypto. Nice example is current NFT market. It become mainstream as a crypto assets. Yet most of the users trade them via binance and opensea. So in reality they dont own any of these assets. And they dont even look at the blockchain, but look at information provided by opensea. The whole \"decentalized\" crypto market is getting more and more centralized and ridiculous.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i91lnbr",
+                                    "author": "Centmo",
+                                    "score": 1,
+                                    "created_utc": 1652854700.0,
+                                    "response": "You\u2019re right. Maybe 99% of users don\u2019t care if they are operating completely off-chain from a custodial account as long as it\u2019s backed 1:1 by Bitcoin held in custodian reserves. At least this way they would be able to escape the worst property of the fiat system which is money debasement - effectively theft.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i91mtel",
+                            "author": "tekmol",
+                            "score": 1,
+                            "created_utc": 1652855641.0,
+                            "response": "Lightning is a stronger system than bank notes. A LN payment is more like passing over a key to a safe with gold. The Bitcoin network being the safe in this analogy. As long as Bitcoin works, you can access what was paid to you via the Lightning Network.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i91nywk",
+                                    "author": "Centmo",
+                                    "score": 1,
+                                    "created_utc": 1652856591.0,
+                                    "response": "This is a good analogy. But, it may cost you $200 to access the safe!",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i91g80i",
+                    "author": "Nada_Lives",
+                    "score": 1,
+                    "created_utc": 1652850650.0,
+                    "response": "What is the base layer of the fiat system called? What are the chances of you getting the sale of your new Toyota handled on that?\n\nI don't see a problem here at all.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91gj5q",
+                            "author": "Centmo",
+                            "score": 1,
+                            "created_utc": 1652850873.0,
+                            "response": "The whole point here is to improve upon the existing system.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i91j5i7",
+                                    "author": "Nada_Lives",
+                                    "score": 1,
+                                    "created_utc": 1652852777.0,
+                                    "response": "Doesn't BTC + LN solve the problem?\n\nHow is revisiting the blockwars an improvement?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i91jq6k",
+                                            "author": "Centmo",
+                                            "score": 1,
+                                            "created_utc": 1652853205.0,
+                                            "response": "I thought so too, but the math doesn\u2019t add up when you consider billions of users.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i91olxa",
+                    "author": "GoingDeezNuts",
+                    "score": 1,
+                    "created_utc": 1652857128.0,
+                    "response": "Generally speaking bitcoin will ultimately be used as a \"Store of Value\" and it will likely represent a small portion of each person/entities portfolio.   Like 5% for pensions, corporate treasuries, or high net worth individuals. \n\nAs those folks are unlikely to ever spend the last 5% of their portfolio it will not be used frequently for transactions imo.  It will be used for rebalancing purposes and perhaps for large acquisitions. \n\nThere will be some users saving for homes and larger purchases as well but IMO this will be less common than it is today once btc approaches it's terminal value.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91pafp",
+                            "author": "Crafty_Supermarket15",
+                            "score": 1,
+                            "created_utc": 1652857698.0,
+                            "response": "What\u2019s your estimate for final price discovery levels?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i91psfj",
+                                    "author": "GoingDeezNuts",
+                                    "score": 1,
+                                    "created_utc": 1652858141.0,
+                                    "response": "Hard to say in dollar terms because of the rapid devaluation.  \n\nBut generally I agree with the consensus estimate of $500k-$5 million by 2040 when new supply ceases.  \n\nIf btc is roughly $30k now that's about 17x - 170x.\n\n\nWhen I'm making decisions to save , invest, pay down debt,vacation etc I generally say \"ok if bitcoin is worth $1 million in 2040 (which is a relatively fair median outcome imo)  would I prefer to buy bitcoin today at this price or do that other thing.  \n\nIn other words say i get my hand on $1,000 check net of taxes and have no immediate need (rent, truck payment, etc) I tell myself if I invest in btc today I'm looking at roughly ~$33k expected return in 2040 when I reach 58 years old.  \n\nThat is today's opportunity cost of using that money to vacation in Florida, buy a new tv, buy an NFT, etc.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "us52cw",
+            "title": "Wasabi Wallet has become a surveillance instrument- here\u2019s how to use the wallet without blacklists/censorship/surveillance etc",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/us52cw/wasabi_wallet_has_become_a_surveillance/",
+            "author": "under_dnuorg",
+            "created_utc": 1652849413.0,
+            "score": 20,
+            "num_comments": 8,
+            "subreddit": "Bitcoin",
+            "selftext": "Earlier this year (March 3rd) Wasabi Wallet announced that \"the zkSnacks coordinator will start refusing certain utxos from registering to conjoins\". zkSnacks Ltd is the company running Wasabi Wallet. Meaning Wasabi Wallet will be analyzing its users bitcoin inputs and deciding- on undisclosed criteria/sanctions/blacklists- if they accept your bitcoin or not. This means that coinjoining with wasabiwallet has become like dealing with any other big Bitcoin company/exchange in the space complying with KYC/AML/sanctions- and everything that comes with blacklisting. This is the beginning of a slippery slop which can not be tolerated by any Bitcoiner who understands its consequences.\n\nChanging the following settings enables use of a different- and proper anonymous- coordinator. (SAKE) Making it possible to use Wasabi without any of the blacklists/censorship/surveillance etc.\n\n1- Open Wasabi + file-open-config file\n\n2- Change- *MainNetBackendUriV3: http://wasabiukrxmkdgveSkynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/*\n\nTo- *MainNetBackendUriv3: http://sakeazyzcx6gcmyv7ijduvogwpieewsk6mrjzgxciu2x2sfsyij6ogid.onion/*\n\n3- Change- *MainNetFallbackBackendUri: https://wasabiwallet.io/*\n\nTo- *MainNetFallbackBackendUri: http://sakeazyzex6gcmyv7ijduvogwpieewsk6mrjzgxciu2x2sfsyij6ogid.onion/*\n\n4- Restart Wasabi",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i91k385",
+                    "author": "steuer2teuer",
+                    "score": 5,
+                    "created_utc": 1652853488.0,
+                    "response": "How can we trust this other coordinator? Can you tell more about it?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91ks4p",
+                            "author": "under_dnuorg",
+                            "score": 2,
+                            "created_utc": 1652854016.0,
+                            "response": "Considering Wasabi is open source it\u2019s not Wasabi that\u2019s the problem its the zkSnacks run coordinator- which is compromised. SAKE is just a viable alternative anonymous coordinator- users can also spin up a coordinator.\n\nTo further answer your question- you should not trust them, nor anyone. In regards to Bitcoin operating inside an open source and trust-less system is imperative.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91hw7i",
+                    "author": "mrarjonny",
+                    "score": 5,
+                    "created_utc": 1652851846.0,
+                    "response": "Use Sparrow",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91nlud",
+                    "author": "5liveR",
+                    "score": 2,
+                    "created_utc": 1652856291.0,
+                    "response": "I don't use their Cj anymore. Do they also surveil the wallets too ? I use the Coldcard through their client, thats why",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91rxww",
+                            "author": "Quantris",
+                            "score": 1,
+                            "created_utc": 1652860051.0,
+                            "response": "No, this issue is only about the coordinator which they run for coinjoins. Normal wallet functionality isn't related to that.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91jlfa",
+                    "author": "Marcion_Sinope",
+                    "score": 2,
+                    "created_utc": 1652853105.0,
+                    "response": "Boycott.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91mhmq",
+                    "author": "HappyCommunication81",
+                    "score": 1,
+                    "created_utc": 1652855370.0,
+                    "response": "Why would I want to use this? Why would I want to coinjoin with UTXOs from addresses that are sanctioned by the US?\n\n>Wasabi Wallet has become a surveillance instrument\n\nHow can Wasabi Wallet be a surveillance instrument when Wasabi and the zkSnacks coordinator don't know which UTXOs belong to who?\n\n>This means that coinjoining with wasabiwallet has become like dealing with any other big Bitcoin company/exchange in the space complying with KYC/AML/sanctions\n\nWasabi Wallet doesn't do any KYC/AML. It doesn't ask for your name or personal information. I'm sure Wasabi complies with US sanctions.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91nba0",
+                            "author": "under_dnuorg",
+                            "score": 1,
+                            "created_utc": 1652856051.0,
+                            "response": "Wasabi Wallet codebase is open source- in this sense you\u2019re right it\u2019s not kyc- however the default coordinator is zkSnacks. They\u2019ve decided to start determining whether to accept or refuse certain utxos from registering to coinjoin. \n\nIt\u2019s not a matter of choosing to coinjoin with sanctioned addresses- it\u2019s the transparency to be able to- without a bad actor having the power to intervene.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

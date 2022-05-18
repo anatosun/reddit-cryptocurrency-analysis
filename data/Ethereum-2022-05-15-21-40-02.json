@@ -15997,128 +15997,6 @@
             ]
         },
         {
-            "id": "uqd6lo",
-            "title": "Data about how many ERC20 tokens are created in each EVM blockchain",
-            "url": "https://www.reddit.com/r/ethereum/comments/uqd6lo/data_about_how_many_erc20_tokens_are_created_in/",
-            "author": "trollkemada",
-            "created_utc": 1652641999.0,
-            "score": 0,
-            "num_comments": 8,
-            "subreddit": "ethereum",
-            "selftext": "I am working on a big data proyect involving ERC20 tokens, and statistics about their creations. I would like to know which EVM-like chain (Ethereum, BSC, AVAX, CRONOs...) get more ERC20 tokens created. \n\nI am looking for statistics about how many ERC20 tokens are created in each EVM blockchain. Any idea where I could find that?\n\nFor example, I could use number of ERC20 tokens created in the last 24 hours. I have looked at defillama, for example, but I don't think they have this information.",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8rusaj",
-                    "author": "boumagik",
-                    "score": 2,
-                    "created_utc": 1652668471.0,
-                    "response": "ERC20 stands for Ethereum Request for Comment, so it\u2019s specific to Ethereum.\n\nYou would have to find the analogous to ERC20 for each chain, first. Note that all chains don\u2019t originate from ETH necessarily.\n\nNow, to identify whether a contract is ERC20 or not, you usually retrieve the contract data and look for the first bytes of the hashes of the ERC20 standard methods.\n\nYou would have to do something analogous on other chains also.\n\nA first easier work can be to retrieve all contracts created on each block, on all chains. And to achieve that, either you run a node locally (for each blockchain, gonna be costly in memory and RAM), and interrogate the RPC API of that node, for each block, to make your index. Or you get the data from a remote node (run by someone else) and usually it\u2019s paying.\n\nI don\u2019t think you will find complete and thorough data which you are looking for, for free, and for every chain anywhere on the web.\n\nYou are in for some work.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8qfftq",
-                    "author": "lanatork",
-                    "score": 1,
-                    "created_utc": 1652644780.0,
-                    "response": "All the blockchain data is public. So you can extract a lot of information directly from there.\n\nThe compiled contracts, like any other transactions, are sent in a hexadecimal representation. But here comes the problem you can\u2019t decompile this data to know directly that a contract is an ERC20 or not.\n\nThe deployer of a contract can submit the source code to platforms like Etherscan, so it\u2019s possible to get the information from there. But the data will not be complete, as this is completely optional.\n\nTo get the complete data you would need to learn how to interact with the blockchain and test all created contracts in a given time period by hand.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8rhs5w",
-                            "author": "Perleflamme",
-                            "score": 1,
-                            "created_utc": 1652662473.0,
-                            "response": "That said, you could copy the compiled contract into a testnet and try to interact with it using all functions an ERC-20 contract is supposed to implement. If it works as expected, then it behaves like an ERC-20 contract, which is more than enough. If not, then it's not an ERC-20 contract.",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i8sea5f",
-                                    "author": "lanatork",
-                                    "score": 2,
-                                    "created_utc": 1652680214.0,
-                                    "response": "Maybe even more convenient would be to use a local network, like Ganache, to avoid having to obtain ETH for the testnet.",
-                                    "depth": 3,
-                                    "comments": [
-                                        {
-                                            "id": "i8segh7",
-                                            "author": "Perleflamme",
-                                            "score": 1,
-                                            "created_utc": 1652680345.0,
-                                            "response": "I agree. You'd just need to be careful about what other smart contracts are dependencies of the smart contract you test to ensure you're taking all dependencies with you.",
-                                            "depth": 4,
-                                            "comments": [
-                                                {
-                                                    "id": "i8sex1m",
-                                                    "author": "lanatork",
-                                                    "score": 1,
-                                                    "created_utc": 1652680692.0,
-                                                    "response": "You are right, I didn\u2019t think of that. That makes things more complicated. Ganache allows to create a local fork of a EVM chain. Like these you would have everything you need to test.",
-                                                    "depth": 5,
-                                                    "comments": []
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i8rlszo",
-                    "author": "Non_typical_me",
-                    "score": 1,
-                    "created_utc": 1652664316.0,
-                    "response": "Bit query has some powerful API's you could use, they may well allow you to access this data.\n\nEdit - they cover Ethereum and a lot of the EVM clones.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8s899q",
-                    "author": "edwardsnowden8494",
-                    "score": 1,
-                    "created_utc": 1652676154.0,
-                    "response": "The UNIswap contract emits \"PairCreated\" every time liquidity is added to a new pair. You could use that.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "uqbf6h",
-            "title": "Petition To Save Our Dear Testnet Rinkeby From Cold Hearted Deprecation",
-            "url": "https://mobile.twitter.com/not_pr0/status/1525894076238901249",
-            "author": "NOTPR0",
-            "created_utc": 1652637046.0,
-            "score": 1,
-            "num_comments": 3,
-            "subreddit": "ethereum",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8sff8o",
-                    "author": "abcoathup",
-                    "score": 2,
-                    "created_utc": 1652681059.0,
-                    "response": "There may be organizations who want to take over the maintenance of Rinkeby:  \n[https://twitter.com/TimBeiko/status/1520116769276366848](https://twitter.com/TimBeiko/status/1520116769276366848)\n\nGoerli and Sepolia testnets will be supported post merge.\n\nTestnets don't have to last forever.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8shmrp",
-                    "author": "KirbyAteMyCoins",
-                    "score": 2,
-                    "created_utc": 1652682779.0,
-                    "response": "But\u2026why?",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "uqb7gd",
             "title": "Layer 2 Season/ Summer",
             "url": "https://www.reddit.com/r/ethereum/comments/uqb7gd/layer_2_season_summer/",
@@ -17276,6 +17154,138 @@
                             ]
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "id": "uqd6lo",
+            "title": "Data about how many ERC20 tokens are created in each EVM blockchain",
+            "url": "https://www.reddit.com/r/ethereum/comments/uqd6lo/data_about_how_many_erc20_tokens_are_created_in/",
+            "author": "trollkemada",
+            "created_utc": 1652641999.0,
+            "score": 0,
+            "num_comments": 11,
+            "subreddit": "ethereum",
+            "selftext": "I am working on a big data proyect involving ERC20 tokens, and statistics about their creations. I would like to know which EVM-like chain (Ethereum, BSC, AVAX, CRONOs...) get more ERC20 tokens created. \n\nI am looking for statistics about how many ERC20 tokens are created in each EVM blockchain. Any idea where I could find that?\n\nFor example, I could use number of ERC20 tokens created in the last 24 hours. I have looked at defillama, for example, but I don't think they have this information.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8rusaj",
+                    "author": "boumagik",
+                    "score": 3,
+                    "created_utc": 1652668471.0,
+                    "response": "ERC20 stands for Ethereum Request for Comment, so it\u2019s specific to Ethereum.\n\nYou would have to find the analogous to ERC20 for each chain, first. Note that all chains don\u2019t originate from ETH necessarily.\n\nNow, to identify whether a contract is ERC20 or not, you usually retrieve the contract data and look for the first bytes of the hashes of the ERC20 standard methods.\n\nYou would have to do something analogous on other chains also.\n\nA first easier work can be to retrieve all contracts created on each block, on all chains. And to achieve that, either you run a node locally (for each blockchain, gonna be costly in memory and RAM), and interrogate the RPC API of that node, for each block, to make your index. Or you get the data from a remote node (run by someone else) and usually it\u2019s paying.\n\nI don\u2019t think you will find complete and thorough data which you are looking for, for free, and for every chain anywhere on the web.\n\nYou are in for some work.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8qfftq",
+                    "author": "lanatork",
+                    "score": 1,
+                    "created_utc": 1652644780.0,
+                    "response": "All the blockchain data is public. So you can extract a lot of information directly from there.\n\nThe compiled contracts, like any other transactions, are sent in a hexadecimal representation. But here comes the problem you can\u2019t decompile this data to know directly that a contract is an ERC20 or not.\n\nThe deployer of a contract can submit the source code to platforms like Etherscan, so it\u2019s possible to get the information from there. But the data will not be complete, as this is completely optional.\n\nTo get the complete data you would need to learn how to interact with the blockchain and test all created contracts in a given time period by hand.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8rhs5w",
+                            "author": "Perleflamme",
+                            "score": 2,
+                            "created_utc": 1652662473.0,
+                            "response": "That said, you could copy the compiled contract into a testnet and try to interact with it using all functions an ERC-20 contract is supposed to implement. If it works as expected, then it behaves like an ERC-20 contract, which is more than enough. If not, then it's not an ERC-20 contract.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8sea5f",
+                                    "author": "lanatork",
+                                    "score": 2,
+                                    "created_utc": 1652680214.0,
+                                    "response": "Maybe even more convenient would be to use a local network, like Ganache, to avoid having to obtain ETH for the testnet.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8segh7",
+                                            "author": "Perleflamme",
+                                            "score": 1,
+                                            "created_utc": 1652680345.0,
+                                            "response": "I agree. You'd just need to be careful about what other smart contracts are dependencies of the smart contract you test to ensure you're taking all dependencies with you.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8sex1m",
+                                                    "author": "lanatork",
+                                                    "score": 2,
+                                                    "created_utc": 1652680692.0,
+                                                    "response": "You are right, I didn\u2019t think of that. That makes things more complicated. Ganache allows to create a local fork of a EVM chain. Like these you would have everything you need to test.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i8sffcd",
+                                                            "author": "Perleflamme",
+                                                            "score": 1,
+                                                            "created_utc": 1652681061.0,
+                                                            "response": "Yep, that's probably the best solution.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8rlszo",
+                    "author": "Non_typical_me",
+                    "score": 1,
+                    "created_utc": 1652664316.0,
+                    "response": "Bit query has some powerful API's you could use, they may well allow you to access this data.\n\nEdit - they cover Ethereum and a lot of the EVM clones.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8s899q",
+                    "author": "edwardsnowden8494",
+                    "score": 1,
+                    "created_utc": 1652676154.0,
+                    "response": "The UNIswap contract emits \"PairCreated\" every time liquidity is added to a new pair. You could use that.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uqbf6h",
+            "title": "Petition To Save Our Dear Testnet Rinkeby From Cold Hearted Deprecation",
+            "url": "https://mobile.twitter.com/not_pr0/status/1525894076238901249",
+            "author": "NOTPR0",
+            "created_utc": 1652637046.0,
+            "score": 0,
+            "num_comments": 4,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8sff8o",
+                    "author": "abcoathup",
+                    "score": 2,
+                    "created_utc": 1652681059.0,
+                    "response": "There may be organizations who want to take over the maintenance of Rinkeby:  \n[https://twitter.com/TimBeiko/status/1520116769276366848](https://twitter.com/TimBeiko/status/1520116769276366848)\n\nGoerli and Sepolia testnets will be supported post merge.\n\nTestnets don't have to last forever.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8shmrp",
+                    "author": "KirbyAteMyCoins",
+                    "score": 2,
+                    "created_utc": 1652682779.0,
+                    "response": "But\u2026why?",
+                    "depth": 1,
+                    "comments": []
                 }
             ]
         }
