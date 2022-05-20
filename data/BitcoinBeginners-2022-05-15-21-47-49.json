@@ -9,329 +9,6 @@
     ],
     "posts": [
         {
-            "id": "um4qgx",
-            "title": "Trust Wallet does not show my last purchase. Its been 2 weeks now.",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/um4qgx/trust_wallet_does_not_show_my_last_purchase_its/",
-            "author": "SquatchyNW",
-            "created_utc": 1652139826.0,
-            "score": 2,
-            "num_comments": 32,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "I have been buying bitcoin at coinflip atm machines for over a year now an everything has been fine. But my last purchase did not show up in my wallet. I call customer support at coinflip and the said that the coin was sent. I received a text say it was so. But it still is not in my wallet.??",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7zkyxe",
-                    "author": "bitusher",
-                    "score": 3,
-                    "created_utc": 1652141699.0,
-                    "response": "You should stop using trust wallet because :\n\n1) large attack surface\n\n2) bad security practices\n\n3) missing important features\n\n4) closed source and not peer reviewed \n\nBinance openly lie about their wallet being open source - https://trustwallet.com/developer/ when it is not open source\n\nhttps://walletscrutiny.com/android/com.wallet.crypto.trustapp/\n\nhttps://walletscrutiny.com/iphone/com.sixdays.trust/\n\nas you cannot test and build the binaries from source. The lie is built upon the ignorance of many that are unaware that almost all software you use is dependent upon some open source repositories/libraries/dependencies but unless we can peer review 100% of the source code and build the binaries from the source we cannot verify if any intentional or unintentional exploits or backdoors exist in the software.\n\nThis means that at best you have a wallet that is slightly better than using a custodian because you have access to the private keys that you could restore your coins in a separate wallet if their full nodes that support this light client is offline but there might be privacy leaks or exploits and backdoors that allow them or outsiders to steal your coins.\n\nWhat is the point in using cryptocurrency if you ultimately need to have faith in a single company or developer ? This undermines many of the security assumptions of cryptocurrencies.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7zkri3",
-                    "author": "bitusher",
-                    "score": 2,
-                    "created_utc": 1652141608.0,
-                    "response": "Place the receive address in a Block explorer like \n\nhttps://blockchair.com/\n\nand see if there is a transaction associated with the address recently",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i84nzj1",
-                            "author": "SquatchyNW",
-                            "score": 1,
-                            "created_utc": 1652233160.0,
-                            "response": "Ok, I will try. Thank you.",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i7zuch3",
-                    "author": "dcryptoguy",
-                    "score": 2,
-                    "created_utc": 1652145925.0,
-                    "response": "Did you check the blockchain to confirm?",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i84o2o0",
-                            "author": "SquatchyNW",
-                            "score": 1,
-                            "created_utc": 1652233201.0,
-                            "response": "I do not know how to do that. Thank you for the help.",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i84o7gf",
-                                    "author": "dcryptoguy",
-                                    "score": 2,
-                                    "created_utc": 1652233258.0,
-                                    "response": "The address that was supposed to receive the coins, check the blockchain to see if it was confirmed.",
-                                    "depth": 3,
-                                    "comments": [
-                                        {
-                                            "id": "i84tu1q",
-                                            "author": "SquatchyNW",
-                                            "score": 1,
-                                            "created_utc": 1652235822.0,
-                                            "response": "I went to blockchain, used the explorer button. It shows the transaction did go thru. But my wallet does not have it in it?",
-                                            "depth": 4,
-                                            "comments": [
-                                                {
-                                                    "id": "i84wkj8",
-                                                    "author": "SquatchyNW",
-                                                    "score": 1,
-                                                    "created_utc": 1652237088.0,
-                                                    "response": "I there a way I can make it go to my wallet?",
-                                                    "depth": 5,
-                                                    "comments": [
-                                                        {
-                                                            "id": "i85cdbw",
-                                                            "author": "dcryptoguy",
-                                                            "score": 1,
-                                                            "created_utc": 1652245577.0,
-                                                            "response": "Transaction hash?",
-                                                            "depth": 6,
-                                                            "comments": [
-                                                                {
-                                                                    "id": "i87g1nx",
-                                                                    "author": "SquatchyNW",
-                                                                    "score": 1,
-                                                                    "created_utc": 1652288510.0,
-                                                                    "response": "cc6d8245d9bae9b9c3bf4b4c7044e7fb43203efd82422964b0db31ab0724464c",
-                                                                    "depth": 7,
-                                                                    "comments": [
-                                                                        {
-                                                                            "id": "i87gxt6",
-                                                                            "author": "dcryptoguy",
-                                                                            "score": 1,
-                                                                            "created_utc": 1652288856.0,
-                                                                            "response": "It's confirmed. Are you sure you sent it to the right address?",
-                                                                            "depth": 8,
-                                                                            "comments": [
-                                                                                {
-                                                                                    "id": "i87hixr",
-                                                                                    "author": "SquatchyNW",
-                                                                                    "score": 1,
-                                                                                    "created_utc": 1652289084.0,
-                                                                                    "response": "so to get this transaction hash i had to put in my wallet address. so how could it be wrong? somehow my trust wallet is not receiving my recent purchases. I do not know how to fix it.",
-                                                                                    "depth": 9,
-                                                                                    "comments": [
-                                                                                        {
-                                                                                            "id": "i87iy2p",
-                                                                                            "author": "dcryptoguy",
-                                                                                            "score": 1,
-                                                                                            "created_utc": 1652289633.0,
-                                                                                            "response": "What's the address? This seems odd.",
-                                                                                            "depth": 10,
-                                                                                            "comments": []
-                                                                                        }
-                                                                                    ]
-                                                                                }
-                                                                            ]
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i805qqu",
-                    "author": "igadjeed",
-                    "score": 2,
-                    "created_utc": 1652151133.0,
-                    "response": "Are you sure the address you entered at the ATM is an address which belongs to your Exodus wallet?",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i84o64t",
-                            "author": "SquatchyNW",
-                            "score": 1,
-                            "created_utc": 1652233242.0,
-                            "response": "I held up my phone with my QR code for the machine to read. It matched.",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i85s8y0",
-                                    "author": "igadjeed",
-                                    "score": 1,
-                                    "created_utc": 1652257786.0,
-                                    "response": "That doesn't prove the address is correct",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i7zgw2z",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652139827.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8c583v",
-                    "author": "IkeTrian",
-                    "score": 1,
-                    "created_utc": 1652373295.0,
-                    "response": "I am much obliged to introduce FlurryFinance to all who wants to earn on his or her deposited with flexibility and transparent system they have. Join $FLURRY Now.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "ulmp2s",
-            "title": "Just coming to the party now - please help!",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ulmp2s/just_coming_to_the_party_now_please_help/",
-            "author": "Expensive_Section_80",
-            "created_utc": 1652085650.0,
-            "score": 2,
-            "num_comments": 29,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "Hi everyone,\n\nI'm based in Australia and about to start investing in crypto, any recommendations of what wallet is best?  Ive been told Coinbase but want check out a few.  Thanks in advance",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7wfh6v",
-                    "author": "llrik11",
-                    "score": 3,
-                    "created_utc": 1652089017.0,
-                    "response": "electrum wallet.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i7wtgrz",
-                            "author": "Expensive_Section_80",
-                            "score": 1,
-                            "created_utc": 1652099116.0,
-                            "response": "Thank you i'll check it out",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i7x7srh",
-                    "author": "nutcase2019",
-                    "score": 2,
-                    "created_utc": 1652106047.0,
-                    "response": "Choose an open source wallet.\n\nOne very important thing:  Take the backup SERIOUSLY.   Backup your seed phrase or keys and store it in a SAFE place. When you take custody of bitcoin, you are responsible and loss of private keys at that point are permanent.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7yocql",
-                    "author": "Chineyo",
-                    "score": 2,
-                    "created_utc": 1652127354.0,
-                    "response": "For a beginner I\u2019ll recommend cryptoxpress, it will have all crypto features integrated to its app, and with 3 clicks you can make all transactions",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i80erji",
-                    "author": "cryptochill",
-                    "score": 2,
-                    "created_utc": 1652155769.0,
-                    "response": "Coinbase is the easiest for beginners, and is the easiest to transfer fiat money to cryptos. It's very user friendly. I've been at it for years and it's still my preferred exchange, but your mileage may vary.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7wbtfr",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652085651.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7wd5xs",
-                    "author": "Creativeboom69",
-                    "score": 1,
-                    "created_utc": 1652086909.0,
-                    "response": "Do not keep it on the exchange. Always have your own wallet and keys.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i7wd8g0",
-                            "author": "Expensive_Section_80",
-                            "score": 1,
-                            "created_utc": 1652086972.0,
-                            "response": "Thanks what exchange would you recommend? and what wallet",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i7wdmfq",
-                                    "author": "Creativeboom69",
-                                    "score": 1,
-                                    "created_utc": 1652087329.0,
-                                    "response": "Depends on the coins you invest in. I'll let the others with more experience guide you on your journey \ud83d\ude04 but anything you Do in the crypto space, the above always holds true. It's 101 basics. Have fun, only invest what you're ready to lose and take profits when you can. Good luck \ud83d\ude04\u270c\ufe0f",
-                                    "depth": 3,
-                                    "comments": []
-                                },
-                                {
-                                    "id": "i7wghjt",
-                                    "author": "igadjeed",
-                                    "score": 1,
-                                    "created_utc": 1652089918.0,
-                                    "response": "> what exchange\n\nhttps://outwittrade.com/australian-cryptocurrency-exchanges/\n\n> what wallet\n\nBitcoin wallet apps are free  \nhttps://bitcoin.org/en/choose-your-wallet  \nTry them all. Keep the one you like",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i7zp7gd",
-                    "author": "Odd_Philosopher_5602",
-                    "score": 1,
-                    "created_utc": 1652143604.0,
-                    "response": "You need a Ledger Nano S cold Wallet. Do not leave anything on an exchange",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8153sz",
-                            "author": "Expensive_Section_80",
-                            "score": 1,
-                            "created_utc": 1652175633.0,
-                            "response": "Thanks ive just ordered one \ud83d\udc4d",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i8c6l64",
-                    "author": "IkeTrian",
-                    "score": 1,
-                    "created_utc": 1652373830.0,
-                    "response": "\n$FLURRY do not require expert crypto traders to earn but rather, just a few steps and you are ready to go. FlurryFinance has made it possible through their platform. Join us.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "ulnimz",
             "title": "is paypal a good place to buy?",
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ulnimz/is_paypal_a_good_place_to_buy/",
@@ -19902,196 +19579,6 @@
             ]
         },
         {
-            "id": "uop0j8",
-            "title": "cannot find good LN wallet on ios",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uop0j8/cannot_find_good_ln_wallet_on_ios/",
-            "author": "vitalyevodin",
-            "created_utc": 1652439152.0,
-            "score": 1,
-            "num_comments": 17,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "I\u2019d like to try them all but it seems that is it not available \n\nI cannot download \n- strike\n- zap\n- breez\n\nthe only i found is \u201cwallet of satoshi\u201d but I don\u2019t like it much \nI want to try both custodial and non custodial and able to run and operate bitcoin node for this if needed\n\ncould someone share list of all available LN wallets",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8frf2c",
-                    "author": "covalent5",
-                    "score": 6,
-                    "created_utc": 1652440402.0,
-                    "response": "Did you try BlueWallet? It\u2019s not for managing your node yet.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8fs6zm",
-                            "author": "Kthulhuth",
-                            "score": 1,
-                            "created_utc": 1652440901.0,
-                            "response": "Second this",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i8fzah6",
-                    "author": "1entreprenewer",
-                    "score": 5,
-                    "created_utc": 1652445006.0,
-                    "response": "Bluewallet is good. Running your own node and using Tor/Zeus to spend from your own node is even better.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8ft1m4",
-                    "author": "NitronBot106",
-                    "score": 3,
-                    "created_utc": 1652441444.0,
-                    "response": "Muun, it allows lightning and on chain payments from the same wallet without having to manage channels. It's super easy to send funds on chain and start using lightning.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8ftuzr",
-                            "author": "vitalyevodin",
-                            "score": 2,
-                            "created_utc": 1652441948.0,
-                            "response": "downloading\nas new bitcoin expert I must to try them all and beyond)",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i8g12xb",
-                    "author": "MuchTemperature6776",
-                    "score": 3,
-                    "created_utc": 1652445924.0,
-                    "response": "Muun would be my suggestion. Been using it for who knows how long. Favorite wallet.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8p67u1",
-                            "author": "vitalyevodin",
-                            "score": 1,
-                            "created_utc": 1652624796.0,
-                            "response": "Downloaded will use it\nthanks for advise",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i8frj3h",
-                    "author": "bitusher",
-                    "score": 2,
-                    "created_utc": 1652440475.0,
-                    "response": "try phoenix in ios\n\nhttps://phoenix.acinq.co/\n\nhttps://www.youtube.com/watch?v=Cx5PK1H5OR0",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8fpm5q",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652439152.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "undnb7",
-            "title": "Asked to verify Eligible Contract Participant (ECP) for crypto margin trading on Kraken - workaround?",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/undnb7/asked_to_verify_eligible_contract_participant_ecp/",
-            "author": "moogedii",
-            "created_utc": 1652286099.0,
-            "score": 0,
-            "num_comments": 16,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "I had recently lost 50k+ margin trading during the recent crypto crash, and I am hoping to recover my funds as crypto markets recover, but I recently got an email from Kraken that I must verify ECP to continue margin trading. This seems kind of unfair as now I cannot recover my funds if I am locked out of margin trading.  I would greatly appreciate if I could receive some advice from more experienced investors.\n\n* Is there a workaround, such as trading on behalf of my employer, some sort of institution?\n* Is there a possibility of recovering my funds?\n* Are there other platforms that offer margin trading cryptocurrency to US customers?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i87bd94",
-                    "author": "bitusher",
-                    "score": 5,
-                    "created_utc": 1652286710.0,
-                    "response": ">I had recently lost 50k+ margin trading during the recent crypto crash,\n\nday trading is extremely dangerous where 97% of people lose money over time, and trading on margin or using leverage is a whole new level of danger \n\n> I cannot recover my funds if I am locked out of margin trading.\n\nThis is making the assumption that you can win back your money with margin trading when the probability is you would lose more money \n\n>Is there a workaround, such as trading on behalf of my employer, some sort of institution?\n\nNew accounts need ID associated with them , so unless you are going to deposit an extremely large amount of money under a corporate identity it isn't possible \n\n>Is there a possibility of recovering my funds?\n\nYou already lost the money . \n\n>Are there other platforms that offer margin trading cryptocurrency to US customers?\n\nI don't think its wise to repeat the same mistakes you already made",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i87srtl",
-                    "author": "DudeIncogneto",
-                    "score": 4,
-                    "created_utc": 1652293483.0,
-                    "response": "Probably a good thing you're locked out from it",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i879rsr",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652286100.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i879ruc",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652286100.0,
-                    "response": "For trading related topics, there is also /r/bitcointrading\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8axcij",
-                    "author": "saltwaterflyguy",
-                    "score": 1,
-                    "created_utc": 1652353430.0,
-                    "response": "All US platforms will require you to qualify as an ECP, Accredited Investor or Qualified Person, or some combination of the three in order to trade anything other than spot. There's no real way around that now that regulators are starting to dip their toes in the crypto markets. Over time the same rules and regs that hold true in the tradfi space will come to crypto.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "un307x",
-            "title": "SBW off fdroid is my goto",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/un307x/sbw_off_fdroid_is_my_goto/",
-            "author": "dtbwebsefvwervervfe",
-            "created_utc": 1652249328.0,
-            "score": 0,
-            "num_comments": 15,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "Hi all\n\nSo I have been using both my trezor and my SBW app with TOR, for the last six weeks, \n\nHave performed about a dozen exchanges between crypto.com and block chain to this SBW, \n\nOther than being limited to a single bitcoin wallet, I find that I actually prefer using SBW than using the trezor, \n\nI uninstalled it and reinstalled it, using the seeds, and everything came back as expected,\n\nI have it installed on an old oneplus 2 phone, running lineageOS without gapps or Sim card.\n\nMy next test is this weekend at the nearest btc vending machine, \n\nHonesty, anyone starting out new in this btc, this is a great wallet to run with.\n\nSince i am new to btc, I planned on a single cold wallet and purchasing btc only. I got caught up with trezor and purchased one, I realize its too much for my simple plan and needs, so after about 5 transactions, the trezor has been sitting in my desk drawer.\n\nI found that the perfect, lowcost setup, is my OP2 phone, running lineage, installed 3 apps from fdroid: SBW, orbot, and netguard.\n\nI setup netguard to firewall the whole phone and just punch 2 holes into the firewall, one for SBW and one for orbot.",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i86w6ms",
-                    "author": "DudeIncogneto",
-                    "score": 2,
-                    "created_utc": 1652280785.0,
-                    "response": "Just don't pretend you have the same thing as a hardware wallet. Your keys are hot, no matter how well you try and limit pitfalls.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i87e6kv",
-                            "author": "dtbwebsefvwervervfe",
-                            "score": 1,
-                            "created_utc": 1652287792.0,
-                            "response": "Thank you\n\nI will heed that warning\n\nRegards",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "id": "up8wq5",
             "title": "How do stop loss and take profit orders work for SELL orders",
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/up8wq5/how_do_stop_loss_and_take_profit_orders_work_for/",
@@ -20431,341 +19918,6 @@
             ]
         },
         {
-            "id": "uq0zto",
-            "title": "Is the a way to see the price of Bitcoin on all exchanges in a single live list?",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uq0zto/is_the_a_way_to_see_the_price_of_bitcoin_on_all/",
-            "author": "TwistedHelixis",
-            "created_utc": 1652600440.0,
-            "score": 0,
-            "num_comments": 14,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "The title says it all....\n\nIs the a way to see the price of Bitcoin on all exchanges in a single live list?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8o8p5w",
-                    "author": "MaxSan",
-                    "score": 4,
-                    "created_utc": 1652601678.0,
-                    "response": "[cryptowat.ch](https://cryptowat.ch) is quite nice.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8o9hy5",
-                    "author": "Kno010",
-                    "score": 5,
-                    "created_utc": 1652602354.0,
-                    "response": "CoinGecko",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8o78uh",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652600441.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8o7ro2",
-                    "author": "Noto987",
-                    "score": 1,
-                    "created_utc": 1652600890.0,
-                    "response": "Im guessing you can open up multiple windows on tradingview desktop software",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8rwf6p",
-                    "author": "Brettanomyces78",
-                    "score": 1,
-                    "created_utc": 1652669295.0,
-                    "response": "All?  No.  But you can see most on sites like CoinGecko or CoinMarketCap.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8odtca",
-                    "author": "reedroland600",
-                    "score": 0,
-                    "created_utc": 1652606061.0,
-                    "response": "That would probably be interesting. But I prefer to trade cryptocurrencies on Bitfinex because they have a user-friendly interface.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "up1hev",
-            "title": "confused noon question about wallet and addresses",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/up1hev/confused_noon_question_about_wallet_and_addresses/",
-            "author": "nom_nomenclature",
-            "created_utc": 1652476078.0,
-            "score": 1,
-            "num_comments": 23,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "So a wallet can have multiple addresses. Does each address have its own private key? Or is the private key per wallet? If its my wallet and there are 10 addresses in it, do I have access to all the btc in the 10 addresses?\n\nRelated: I watched a YouTube vid of a guy buying using the decentralised exchange Bisq. He had no funds so I transferred from a private wallet to his Bisq wallet. It appeared in the video that no fee was charged. How is this possible? (it may be that I misunderstood the vid)...",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8i322z",
-                    "author": "BitcoinWell",
-                    "score": 2,
-                    "created_utc": 1652476928.0,
-                    "response": "Every single public address has its own private key but your wallet has whats called a master private key which mathematically creates each private keys for each public address. So you can have BTC in every address and your master private key will be able to create the private key for the individual public addresses that have bitcoin on them so you can send.\n\nAs for your BISQ question, fees are charged on top of the amount being sent. So if I wanted to send you 1 BTC and paid 0.01 to send it, you will receive 1 BTC and not 0.99 BTC. Unless the video showed something else.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8js9by",
-                            "author": "nom_nomenclature",
-                            "score": 1,
-                            "created_utc": 1652509706.0,
-                            "response": "Thank you, great explanation, that's clear to me now.",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i8i167a",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652476079.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8i2rsu",
-                    "author": "DudeIncogneto",
-                    "score": 1,
-                    "created_utc": 1652476801.0,
-                    "response": "Multiple addresses are derived from the x/y/zpub depending on which derivation path you use. It is known as the extended public key and all receiving address in that wallet are associated with that extended public key.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8jud2x",
-                    "author": "igadjeed",
-                    "score": 1,
-                    "created_utc": 1652511396.0,
-                    "response": "> do I have access to all the btc in the 10 addresses?\n\nBitcoin is not in an address. An address is a property of a coin. A Bitcoin address is single-use. It is not an account, not for accumulating a balance",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8jvfmp",
-                            "author": "nom_nomenclature",
-                            "score": 1,
-                            "created_utc": 1652512274.0,
-                            "response": "What do you mean by single use? If I send to an address, that address is no longer usable?",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i8k51p0",
-                                    "author": "igadjeed",
-                                    "score": 1,
-                                    "created_utc": 1652520778.0,
-                                    "response": "https://en.bitcoin.it/wiki/Address_reuse",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        },
-                        {
-                            "id": "i8jvnld",
-                            "author": "nom_nomenclature",
-                            "score": 1,
-                            "created_utc": 1652512461.0,
-                            "response": "And what can be considered an account? The wallet?",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i8k56hb",
-                                    "author": "igadjeed",
-                                    "score": 1,
-                                    "created_utc": 1652520893.0,
-                                    "response": "Bitcoin has no accounts. The blockchain stores transactions. A transaction has one or more inputs and one or more outputs. A transaction output is a coin  \n\nBitcoin is like cash in your pocket, a set of coins, each with a different value, each with a different unlocking mechanism (address)",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i8k67hv",
-                    "author": "nom_nomenclature",
-                    "score": 1,
-                    "created_utc": 1652521814.0,
-                    "response": "The wallet holds the private keys for the public addresses these coins are associated with. So cant the wallet can be considered the account?",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8l3cxk",
-                    "author": "nom_nomenclature",
-                    "score": 1,
-                    "created_utc": 1652542036.0,
-                    "response": "If addresses are single use, what happens with donations? A company like Wikileaks has a public address you can donate to. Multiple people donate to this over time. How is this possible if addresses are single use?",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "uov3cd",
-            "title": "Margin Trading",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uov3cd/margin_trading/",
-            "author": "SirFinston",
-            "created_utc": 1652457966.0,
-            "score": 0,
-            "num_comments": 15,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "I just moved to Texas and it seems to be impossible to margin trade here. Does anyone have experience or any advice to give me so I can begin trading, I have been looking but can never actually access margin trading accounts or exchanges. Any advice would mean a lot!",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8guavd",
-                    "author": "bitusher",
-                    "score": 3,
-                    "created_utc": 1652458364.0,
-                    "response": ">or any advice to give me so I can begin trading,\n\nIf you are going to trade I would advice you to spend thousands of hours learning first , having at least 100k usd in capital to trade with , and swing trading instead of day trading. Than you might have a fighting chance\n\nMost people will lose money day trading due to these reasons\n\nhttps://www.reddit.com/r/BitcoinBeginners/comments/c4zpw9/what_are_the_steps_to_trading_bitcoin/erzkfmm/\n\nThis study shows that 97% of traders lose money\n\nhttps://papers.ssrn.com/sol3/papers.cfm?abstract_id=3423101\n\nWiser to invest long term , stack those sats , and use bitcoin to save money\n\nDay trading is very risky but margin trading is far more risky, its riskier than gambling in a casino , riskier than  investing in penny stocks .",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8gtbb5",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652457967.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8gtbbk",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652457967.0,
-                    "response": "For trading related topics, there is also /r/bitcointrading\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8lrlyt",
-                    "author": "Few_Cheetah_7807",
-                    "score": 1,
-                    "created_utc": 1652553007.0,
-                    "response": "Margin trading amplifies trading results so that traders are able to realize larger profits on successful trades.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "uoqjy7",
-            "title": "Low invest",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uoqjy7/low_invest/",
-            "author": "bogwosh69",
-            "created_utc": 1652444719.0,
-            "score": 0,
-            "num_comments": 16,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "Would it be okay if i was to invest say \u00a350 and leave it for a long term invest? i\u2019m new to this and don\u2019t know much so any advice would be awesome\u2764\ufe0f",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8fyw1s",
-                    "author": "bitusher",
-                    "score": 3,
-                    "created_utc": 1652444792.0,
-                    "response": "This is fine, the focus would be on keeping the backup seed words private and secure longterm \n\n\n**Step 1 Setup a wallet** , and backup your words to keep them secret and private.\n\nRead the FAQ - https://www.reddit.com/r/BitcoinBeginners/comments/g42ijd/faq_for_beginners/\n\nHere are some good wallets for beginners and video tutorials-\n\n**Blockstream Green Wallet** IOS and android wallet\n\nhttps://www.youtube.com/watch?v=uO3Zi9D5b0Y\n\nhttps://blockstream.com/green/\n\n**Step 2 Buy BTC and transfer it to your personal wallet**- If you are in the USA than the best way to buy BTC is with cash app - \n\nhttps://itunes.apple.com/us/app/square-cash/id711923939?mt=8\n\nhttps://play.google.com/store/apps/details?id=com.squareup.cash&referrer=utm_source%3Dcash-web-bitcoin%26utm_medium%3Dweb\n\nVerification either is instant or can take a couple days once you verify your phone, email and ID.\n\n\nIf you need BTC slightly quicker or need to pay in cash than https://coinatmradar.com but fees are at least 7% and higher\n\nIf you are out of the US or buying larger amounts of bitcoin than look into coinbase pro, gemini active trader , or kraken\n\nLet us know if you have any other questions",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8g164p",
-                    "author": "Desperate-Barnacle-4",
-                    "score": 3,
-                    "created_utc": 1652445969.0,
-                    "response": "Yes totally fine. Read the pinned beginners FAQ. (I'm in the UK) and personally I use coincorner which has an 'auto buy'. I send a monthly standing order and they buy Bitcoin. Once it crosses some threshold I withdraw to my own wallet. Simple.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8fyr5s",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652444720.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "uodihc",
-            "title": "Buying through Coinbase vs Trezor",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uodihc/buying_through_coinbase_vs_trezor/",
-            "author": "mnitmf",
-            "created_utc": 1652395910.0,
-            "score": 2,
-            "num_comments": 16,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "I purchased my first wallet earlier this year, a Trezor, and was curious if generally speaking it's advantageous to make BTC purchases directly through the Trezor Suite using the \"Trade\" functionality versus buying BTC through Coinbase and transferring to my Trezor wallet from there. \n\nIs the fee comparable either way, or is there a clear advantage to one vs the other?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8dsh2w",
-                    "author": "bitusher",
-                    "score": 2,
-                    "created_utc": 1652397362.0,
-                    "response": "Trezor is a great product but never buy within wallets as they all overcharge. Buy within a normal exchange listed in the pinned FAQ and withdraw to trezor suite",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8dp9tf",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652395911.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8dzno2",
-                    "author": "Brettanomyces78",
-                    "score": 1,
-                    "created_utc": 1652400684.0,
-                    "response": "Not sure which broker Trezor has you use when you do that, but they overcharge.  Just use the exchange yourself.  No need to pay a middleman.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8u5tu1",
-                    "author": "kaacaSL",
-                    "score": 1,
-                    "created_utc": 1652718950.0,
-                    "response": "Hi, it is possible to buy BTC directly in Trezor Suite. You can check the offers and you\u2019ll see if you decide to go for it.\n\nIf you buy BTC through Coinbase and then decide to move your crypto from to Trezor, this post we\u2019ve just made may come in handy: https://www.reddit.com/r/TREZOR/comments/uq6xf2/how_to_transfer_coins_from_an_exchange_to_trezor/?utm_source=share&utm_medium=ios_app&utm_name=iossmf",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8ei9vd",
-                    "author": "Sweet-Turnover-7368",
-                    "score": 0,
-                    "created_utc": 1652409321.0,
-                    "response": "Don't do this as it will incur more GAS charges that can be in your other wallets.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "uo1dhi",
             "title": "Dynamic vs. Static Wallet",
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uo1dhi/dynamic_vs_static_wallet/",
@@ -21071,431 +20223,6 @@
             ]
         },
         {
-            "id": "uqfwf4",
-            "title": "Can I transfer crypto to a friend in another country, who\u2019s unable to on-ramp himself?",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uqfwf4/can_i_transfer_crypto_to_a_friend_in_another/",
-            "author": "Apple_Short",
-            "created_utc": 1652649793.0,
-            "score": 0,
-            "num_comments": 23,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "So a friend of mine currently resides in a country where he is unable to link his US bank account to his cex (centralized exchange) and on-ramp fiat to purchase crypto. \n\nInstead, we are wondering if he can transfer the $USD from his bank account to mine, have me move it onto my cex and then transfer that amount to him (as a stable coin, to his cex / wallet).\n\nTechnically, this is possible of course - it\u2019s how I normally bring money from my bank onto my cex, the only difference is it\u2019s not my money this time, and it\u2019s final destination isn\u2019t my cex. I\u2019m wondering if there are any implications to this, tax related or otherwise.\n\nIs this something I have to report to the IRS ( fwiw, I expect the overall move to be a net loss as surely some money will be deducted in fees etc, and he won\u2019t receive exactly what i on-ramp). The dollar amount is more than $15k (which I believe is considered the cap on sending crypto \u201cgifts\u201d), so technically it can\u2019t be considered a gift either\u2026\n\nI appreciate any help and advice! Thank you in advance.\n\nEdit: there\u2019s no trust issues at all. This is someone I know at a personal level and I\u2019ve just generalized them as a \u201cfriend\u201d for easier reference.",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8qsage",
-                    "author": "Ai-dogecoin",
-                    "score": 3,
-                    "created_utc": 1652650383.0,
-                    "response": "Be carefull, a bank can reverse the transaction, but a crypto transfer cant be reversed so you could be out of your own money. Is he you friend in real life and are you sure you ate not catfished? What country is his origin maybe an alternative exists.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8qssjl",
-                            "author": "Apple_Short",
-                            "score": 2,
-                            "created_utc": 1652650600.0,
-                            "response": "Ah yeah I\u2019ll clarify in my parent post but there\u2019s no trust issues at all. I\u2019ve generalized it as \u201cfriend\u201d, but it\u2019s actually someone more personal so no worries on that end. \n\nWe\u2019ve gone through all possible alternatives as well, it\u2019s either this method or a > 10% fee to on-ramp. The latter is not preferred which is why I was inquiring about me transferring him money without any negative implications.",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i8qqxjc",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652649794.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8qtvfj",
-                    "author": "ashtonlaszlo",
-                    "score": 1,
-                    "created_utc": 1652651063.0,
-                    "response": "Yeah man. You can send coins wherever you want.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8r264e",
-                            "author": "Apple_Short",
-                            "score": 1,
-                            "created_utc": 1652654842.0,
-                            "response": "Thanks for your response, yes I realize I can technically send it to him. I\u2019m just wondering if it\u2019s taxable and whether I should report it or not.",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i8r6gag",
-                                    "author": "ashtonlaszlo",
-                                    "score": 1,
-                                    "created_utc": 1652656924.0,
-                                    "response": "I don\u2019t know much about taxes, truth be told. \n\nBut buying a gift, in my opinion, isn\u2019t usually taxed. I wouldn\u2019t report it.",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i8qu2lh",
-                    "author": "ndgoLiberty",
-                    "score": 1,
-                    "created_utc": 1652651147.0,
-                    "response": "The bitcoin will transfer to your friend just fine. The problem is your friend\u2019s fiat money is gonna have an interesting experience getting to you.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8r2ahw",
-                            "author": "Apple_Short",
-                            "score": 1,
-                            "created_utc": 1652654901.0,
-                            "response": "How so? The issue isn\u2019t me getting the money from him, it\u2019s more to do with me transferring it to him afterwards\u2026 Do I have to report it as a taxable event or anything along those lines?",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i8r33hm",
-                                    "author": "ndgoLiberty",
-                                    "score": 1,
-                                    "created_utc": 1652655290.0,
-                                    "response": "The long and short of it is that you will be buying bitcoin and then never selling it, because it isn\u2019t yours anymore, right? And because taxable events are only triggered when you sell nobody is ever gonna care where all that money went. \n\nIf you want to keep all the receipts and make sure you have paperwork in order for whenever big brother comes knocking here\u2019s a website that explains remittance payments. And even though you\u2019ll be receiving financial compensation it\u2019s pretty much the same thing. Although I\u2019m not a lawyer so don\u2019t assume I know every one of the many laws that exist which I could be forgetting about.\n\nhttps://www.compareremit.com/amphtml/money-transfer-guide/federal-remittance-transfer-rules/",
-                                    "depth": 3,
-                                    "comments": [
-                                        {
-                                            "id": "i8r34oa",
-                                            "author": "AmputatorBot",
-                                            "score": 1,
-                                            "created_utc": 1652655306.0,
-                                            "response": "It looks like you shared an AMP link. These should load faster, but AMP is controversial because of [concerns over privacy and the Open Web](https://www.reddit.com/r/AmputatorBot/comments/ehrq3z/why_did_i_build_amputatorbot).\n\nMaybe check out **the canonical page** instead: **[https://www.compareremit.com/money-transfer-guide/federal-remittance-transfer-rules/](https://www.compareremit.com/money-transfer-guide/federal-remittance-transfer-rules/)**\n\n*****\n\n ^(I'm a bot | )[^(Why & About)](https://www.reddit.com/r/AmputatorBot/comments/ehrq3z/why_did_i_build_amputatorbot)^( | )[^(Summon: u/AmputatorBot)](https://www.reddit.com/r/AmputatorBot/comments/cchly3/you_can_now_summon_amputatorbot/)",
-                                            "depth": 4,
-                                            "comments": []
-                                        },
-                                        {
-                                            "id": "i8r4alt",
-                                            "author": "Apple_Short",
-                                            "score": 1,
-                                            "created_utc": 1652655868.0,
-                                            "response": "Correct, I will not be selling it as it isn\u2019t mine to begin with. I\u2019m just acting as a medium of exchange between his bank account and his crypto wallet. Thanks for the clarification.\n\n\u201cWhenever bruh brother comes knocking\u201d is definitely something I should consider eh, haha. Didn\u2019t really think about the whole remittance thing. I suppose since I am kyc\u2019ed to my cex, and my bank account will see the money entering and leaving, I should weigh the potential consequences of that. Don\u2019t want to raise any eyebrows.",
-                                            "depth": 4,
-                                            "comments": []
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i8rn5yh",
-                    "author": "FuzzyPeaches19",
-                    "score": 1,
-                    "created_utc": 1652664931.0,
-                    "response": "If you are gifting crypto currency taking a look at this article below would definitely be a good move before going ahead with it. Also with the IRS the article mentions it is actually 16k that is the the cap, but the fee after that ranging from 18-40%\n\n[https://koinly.io/blog/tax-on-gifting-crypto/](https://koinly.io/blog/tax-on-gifting-crypto/)",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "upuc49",
-            "title": "Might not be relevant",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/upuc49/might_not_be_relevant/",
-            "author": "Cute-Priority-6904",
-            "created_utc": 1652575179.0,
-            "score": 1,
-            "num_comments": 14,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "But if a I\u2019d-verified bitcoin account gifted me bitcoins on Coinbase, can I cash those bitcoins out without a photo id on my account. Sorry if this is confusing",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8ncqnc",
-                    "author": "cheezball_",
-                    "score": 2,
-                    "created_utc": 1652580367.0,
-                    "response": "no",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8n2p86",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652575179.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8odzjd",
-                    "author": "igadjeed",
-                    "score": 1,
-                    "created_utc": 1652606214.0,
-                    "response": "No and yes  \n\nYou need to provide proof of ID to withdraw dollars from a Coinbase account  \nDepending on the amount, you might not need to provide proof of ID to withdraw BTC from a Coinbase account  \n\nYou could withdraw BTC into your own wallet, and then sell the BTC to a friend",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8n3oev",
-                    "author": "blaze1234",
-                    "score": 0,
-                    "created_utc": 1652575665.0,
-                    "response": "!RemindMe 10 days",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "upq26p",
-            "title": "In theory, what can cryptocurrency exchanges and atms do with phone number verification",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/upq26p/in_theory_what_can_cryptocurrency_exchanges_and/",
-            "author": "partoe5",
-            "created_utc": 1652561269.0,
-            "score": 1,
-            "num_comments": 15,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "Some crypto ATMs ask for only your phone number to send you a code to verify.\n\nWhy?\n\nIn what scenario(s) would this verification and them having your phone number on file, be used?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8ma2z6",
-                    "author": "bitusher",
-                    "score": 6,
-                    "created_utc": 1652561576.0,
-                    "response": "If the Bitcoin were used to hire an assassin with an onchain tx directly than cops could possible subpoena the atm operator for the phone number used.\n\nSo if you are doing something illegal than perhaps consider using a free sms service instead of your personal cell number",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8odolt",
-                    "author": "igadjeed",
-                    "score": 2,
-                    "created_utc": 1652605948.0,
-                    "response": "Th ATM operator is required to register as a money services business, and comply with money laundering laws. The one-time SMS code to your phone is a weak form of identity proof. Stronger ID proof is required for larger amounts  \n\nA money launderer might try to make multiple transactions under the ID limit. The common phone number alerts the ATM system to the multiple transactions, also tracks the customer's transaction amounts over a longer period",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8m9f45",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652561270.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8nfsb0",
-                    "author": "Crypto_bro999",
-                    "score": 1,
-                    "created_utc": 1652581981.0,
-                    "response": "I don't think it is dangerous. But if you care for your private information, you can choose bitfinex, it doesn't have a KYC system.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8nlqwn",
-                    "author": "tomemeornot2meme",
-                    "score": 1,
-                    "created_utc": 1652585289.0,
-                    "response": "To text you late night booty calls! Hahahaha.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8o6zzv",
-                    "author": "Since_1979",
-                    "score": 1,
-                    "created_utc": 1652600228.0,
-                    "response": "They can spam call you",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "upm5rv",
-            "title": "support and resistance",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/upm5rv/support_and_resistance/",
-            "author": "RizlyXD",
-            "created_utc": 1652549537.0,
-            "score": 0,
-            "num_comments": 16,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "Hi I'm fairly new to crypto and I have a question regarding support and resistance.\n\nIf a support or resistance level gets tested multiple times does it get weaker or stronger?\n\nAlso, another thing that I would like to know is how you know when the time is for a large candle up or down. Is staying right under resistance for a while a bullish sign or a bearish sign, also since it was kind of building up would it be a big candle?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8lk5ap",
-                    "author": "Moist-Excitement-845",
-                    "score": 4,
-                    "created_utc": 1652549612.0,
-                    "response": "Technical analysis is astrology for men.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8lkjte",
-                    "author": "Brettanomyces78",
-                    "score": 2,
-                    "created_utc": 1652549796.0,
-                    "response": "Sounds like you're setting yourself up for disappointment.\n\nBut, general wisdom holds that the more times support or resistance are tested, the weaker they get.  But if you think there are any firm rules in trading, you're going to lose money.  The best traders are the best risk managers, not the best future predictors.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8ljzgl",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652549538.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8lkem0",
-                    "author": "Moist-Excitement-845",
-                    "score": 1,
-                    "created_utc": 1652549730.0,
-                    "response": "That being said, staying under resistance for a long time is bearish and visversa. Every time support is tested it gets weaker, same with resistance. But trying to use T/A will get you wrecked 90% of the time. Buying at generally lower levels and selling at new highs is generally what has been successful for me. Everyone has their own strategy but trying to use T/A to trade is a losing game. Especially for beginners.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8m1idp",
-                            "author": "RizlyXD",
-                            "score": 1,
-                            "created_utc": 1652557619.0,
-                            "response": "Thanks for the explanation, was just wondering one more thing tho if you mind. If a support level is weaker since it's been hit multiple times does that also mean that the candle following after hitting that support level is more likely to be smaller?",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i8mc1b3",
-                    "author": "Squishy4168",
-                    "score": 1,
-                    "created_utc": 1652562474.0,
-                    "response": "gGJKA9K2mhgRA6FJPFBtkM4DXJrWPim1LSBCMWzzOcWXYzhTNTOa9xvxn4nUyqZB9UEfdQS9e33UbhrEXnl2UGqoUKzUP1XmjA1N",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "upfjhy",
-            "title": "Bitcoin transaction",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/upfjhy/bitcoin_transaction/",
-            "author": "Consistent_Issue9720",
-            "created_utc": 1652528730.0,
-            "score": 0,
-            "num_comments": 15,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "Hi, how long can I wait for my transaction? It's been like couple hours and I'm not sure how long can it take? Can I do something about it? ((9.5 sat/vB)\n\nAlso I use [blockchain.com](https://blockchain.com) wallet, but I heard it's not the best one. What are the better options?\n\nThanks",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8l86g8",
-                    "author": "bitusher",
-                    "score": 2,
-                    "created_utc": 1652544223.0,
-                    "response": "wallets like blockstream green , electrum, and blue wallet have better fee algos and they have RBF so you can low ball the fee and than bump it if needed \n\nAs you can see 18 sat a byte txs have next block inclusion :\n\nhttps://mempool.space/\n\nSo it might take a day or longer for that to confirm",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8kes4w",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652528730.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8kiptk",
-                    "author": "BTCMachineElf",
-                    "score": 1,
-                    "created_utc": 1652531343.0,
-                    "response": "Stay far away from blockchain .com. Use bluewalet or Blockstream Green. \n\nCheck mempool.space to see the current state of the mempool. You can view your transactuon there and it will give an estimated time.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8lv3ul",
-                    "author": "Upset-Fig-8292",
-                    "score": 1,
-                    "created_utc": 1652554612.0,
-                    "response": "The fee will have to be smaller tan other methods, or if larger, provide an advantage to overcome this fee differential.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8m2hgl",
-                    "author": "Lopsided_League2215",
-                    "score": 1,
-                    "created_utc": 1652558079.0,
-                    "response": "Bitcoin really is an amazingly deep topic.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "upcdma",
-            "title": "Lowest purchase fees - uk",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/upcdma/lowest_purchase_fees_uk/",
-            "author": "jpg86",
-            "created_utc": 1652514794.0,
-            "score": 1,
-            "num_comments": 16,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "Does anybody know what exchange has the lowest purchasing fees in the uk? I currently use coinbase pro but wondering if it can be cheaper.",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8k53qn",
-                    "author": "Zonecrew45",
-                    "score": 1,
-                    "created_utc": 1652520828.0,
-                    "response": "If your considering DCA there's a great YouTube clip on how to do it with minimal fees. \n\nhttps://youtu.be/h6r1h3am6kA",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8mu0ey",
-                            "author": "7yce",
-                            "score": 2,
-                            "created_utc": 1652570855.0,
-                            "response": "Here is the updated video. \nhttps://youtu.be/yTZYOgB4ejw\n\nThe fees have changed on Gemini",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i8jydlm",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652514795.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8kgbsk",
-                    "author": "bitusher",
-                    "score": 1,
-                    "created_utc": 1652529796.0,
-                    "response": "Kraken or gemini active trader will be slightly less",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "uob7hj",
             "title": "Digital sigs and Asym cryptography question",
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uob7hj/digital_sigs_and_asym_cryptography_question/",
@@ -21723,56 +20450,6 @@
                     "score": 1,
                     "created_utc": 1652303540.0,
                     "response": "I have not heard of this feature anywhere unless you use their API and make a custom script to execute this from your server \n\n>Also, do any of you not use a wallet and just keep your BTC on Gemini or another exchange?\n\nThis is definitely a very bad idea . Withdraw your bitcoin to your private wallet at least periodically",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "upjkzd",
-            "title": "where to buy crypto without verifying id",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/upjkzd/where_to_buy_crypto_without_verifying_id/",
-            "author": "Alapac0",
-            "created_utc": 1652542095.0,
-            "score": 1,
-            "num_comments": 15,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "where to buy crypto without verifying id, i dont want to give them a picture of my passport but i guess ill have to if there's no other place to buy thats safe and without verifying.\n\n&#x200B;\n\nThank you",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8l44jp",
-                    "author": "Narmotur",
-                    "score": 6,
-                    "created_utc": 1652542390.0,
-                    "response": "P2P exchanges like Bisq and AgoraDesk can connect you with sellers that do not verify for certain amounts; check out https://kycnot.me for more.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8l44kv",
-                    "author": "bitusher",
-                    "score": 3,
-                    "created_utc": 1652542390.0,
-                    "response": "many people visit atms that only require sms verification(free sms sites exist) for smaller amounts in this list - https://coinatmradar.com/\n\nOther options are any way that doesn't require verification like this list -\n\nhttps://github.com/cointastical/P2P-Trading-Exchanges\n\nAre you concerned with getting and spending bitcoin privately immediately or long term privacy?",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8l3hle",
-                    "author": "AutoModerator",
-                    "score": 2,
-                    "created_utc": 1652542096.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8oanp2",
-                    "author": "igadjeed",
-                    "score": 0,
-                    "created_utc": 1652603355.0,
-                    "response": "Buy Bitcoin from your friends, in person, for cash",
                     "depth": 1,
                     "comments": []
                 }
@@ -23213,6 +21890,1338 @@
                             "comments": []
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "id": "uq0zto",
+            "title": "Is the a way to see the price of Bitcoin on all exchanges in a single live list?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uq0zto/is_the_a_way_to_see_the_price_of_bitcoin_on_all/",
+            "author": "TwistedHelixis",
+            "created_utc": 1652600440.0,
+            "score": 0,
+            "num_comments": 19,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "The title says it all....\n\nIs the a way to see the price of Bitcoin on all exchanges in a single live list?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8o8p5w",
+                    "author": "MaxSan",
+                    "score": 4,
+                    "created_utc": 1652601678.0,
+                    "response": "[cryptowat.ch](https://cryptowat.ch) is quite nice.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8o9hy5",
+                    "author": "Kno010",
+                    "score": 5,
+                    "created_utc": 1652602354.0,
+                    "response": "CoinGecko",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8o78uh",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652600441.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8o7ro2",
+                    "author": "Noto987",
+                    "score": 1,
+                    "created_utc": 1652600890.0,
+                    "response": "Im guessing you can open up multiple windows on tradingview desktop software",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8rwf6p",
+                    "author": "Brettanomyces78",
+                    "score": 1,
+                    "created_utc": 1652669295.0,
+                    "response": "All?  No.  But you can see most on sites like CoinGecko or CoinMarketCap.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8odtca",
+                    "author": "reedroland600",
+                    "score": 0,
+                    "created_utc": 1652606061.0,
+                    "response": "That would probably be interesting. But I prefer to trade cryptocurrencies on Bitfinex because they have a user-friendly interface.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "upfjhy",
+            "title": "Bitcoin transaction",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/upfjhy/bitcoin_transaction/",
+            "author": "Consistent_Issue9720",
+            "created_utc": 1652528730.0,
+            "score": 0,
+            "num_comments": 20,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Hi, how long can I wait for my transaction? It's been like couple hours and I'm not sure how long can it take? Can I do something about it? ((9.5 sat/vB)\n\nAlso I use [blockchain.com](https://blockchain.com) wallet, but I heard it's not the best one. What are the better options?\n\nThanks",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8l86g8",
+                    "author": "bitusher",
+                    "score": 2,
+                    "created_utc": 1652544223.0,
+                    "response": "wallets like blockstream green , electrum, and blue wallet have better fee algos and they have RBF so you can low ball the fee and than bump it if needed \n\nAs you can see 18 sat a byte txs have next block inclusion :\n\nhttps://mempool.space/\n\nSo it might take a day or longer for that to confirm",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8xxor2",
+                    "author": "azraelle_178",
+                    "score": 2,
+                    "created_utc": 1652793303.0,
+                    "response": "Blockchain.com can sometimes have longer confirmations than expected. If you reside in Canada, try using [Netcoins](https://netcoins.ca/). They have low cost fees and has faster confirmation than other exchange.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8kes4w",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652528730.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8kiptk",
+                    "author": "BTCMachineElf",
+                    "score": 1,
+                    "created_utc": 1652531343.0,
+                    "response": "Stay far away from blockchain .com. Use bluewalet or Blockstream Green. \n\nCheck mempool.space to see the current state of the mempool. You can view your transactuon there and it will give an estimated time.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8lv3ul",
+                    "author": "Upset-Fig-8292",
+                    "score": 1,
+                    "created_utc": 1652554612.0,
+                    "response": "The fee will have to be smaller tan other methods, or if larger, provide an advantage to overcome this fee differential.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8m2hgl",
+                    "author": "Lopsided_League2215",
+                    "score": 1,
+                    "created_utc": 1652558079.0,
+                    "response": "Bitcoin really is an amazingly deep topic.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uov3cd",
+            "title": "Margin Trading",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uov3cd/margin_trading/",
+            "author": "SirFinston",
+            "created_utc": 1652457966.0,
+            "score": 0,
+            "num_comments": 20,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I just moved to Texas and it seems to be impossible to margin trade here. Does anyone have experience or any advice to give me so I can begin trading, I have been looking but can never actually access margin trading accounts or exchanges. Any advice would mean a lot!",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8guavd",
+                    "author": "bitusher",
+                    "score": 3,
+                    "created_utc": 1652458364.0,
+                    "response": ">or any advice to give me so I can begin trading,\n\nIf you are going to trade I would advice you to spend thousands of hours learning first , having at least 100k usd in capital to trade with , and swing trading instead of day trading. Than you might have a fighting chance\n\nMost people will lose money day trading due to these reasons\n\nhttps://www.reddit.com/r/BitcoinBeginners/comments/c4zpw9/what_are_the_steps_to_trading_bitcoin/erzkfmm/\n\nThis study shows that 97% of traders lose money\n\nhttps://papers.ssrn.com/sol3/papers.cfm?abstract_id=3423101\n\nWiser to invest long term , stack those sats , and use bitcoin to save money\n\nDay trading is very risky but margin trading is far more risky, its riskier than gambling in a casino , riskier than  investing in penny stocks .",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8gtbb5",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652457967.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8gtbbk",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652457967.0,
+                    "response": "For trading related topics, there is also /r/bitcointrading\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8lrlyt",
+                    "author": "Few_Cheetah_7807",
+                    "score": 1,
+                    "created_utc": 1652553007.0,
+                    "response": "Margin trading amplifies trading results so that traders are able to realize larger profits on successful trades.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uop0j8",
+            "title": "cannot find good LN wallet on ios",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uop0j8/cannot_find_good_ln_wallet_on_ios/",
+            "author": "vitalyevodin",
+            "created_utc": 1652439152.0,
+            "score": 1,
+            "num_comments": 23,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I\u2019d like to try them all but it seems that is it not available \n\nI cannot download \n- strike\n- zap\n- breez\n\nthe only i found is \u201cwallet of satoshi\u201d but I don\u2019t like it much \nI want to try both custodial and non custodial and able to run and operate bitcoin node for this if needed\n\ncould someone share list of all available LN wallets",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8frf2c",
+                    "author": "covalent5",
+                    "score": 6,
+                    "created_utc": 1652440402.0,
+                    "response": "Did you try BlueWallet? It\u2019s not for managing your node yet.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8fs6zm",
+                            "author": "Kthulhuth",
+                            "score": 1,
+                            "created_utc": 1652440901.0,
+                            "response": "Second this",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8fzah6",
+                    "author": "1entreprenewer",
+                    "score": 3,
+                    "created_utc": 1652445006.0,
+                    "response": "Bluewallet is good. Running your own node and using Tor/Zeus to spend from your own node is even better.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8ft1m4",
+                    "author": "NitronBot106",
+                    "score": 3,
+                    "created_utc": 1652441444.0,
+                    "response": "Muun, it allows lightning and on chain payments from the same wallet without having to manage channels. It's super easy to send funds on chain and start using lightning.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8ftuzr",
+                            "author": "vitalyevodin",
+                            "score": 2,
+                            "created_utc": 1652441948.0,
+                            "response": "downloading\nas new bitcoin expert I must to try them all and beyond)",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8g12xb",
+                    "author": "MuchTemperature6776",
+                    "score": 3,
+                    "created_utc": 1652445924.0,
+                    "response": "Muun would be my suggestion. Been using it for who knows how long. Favorite wallet.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8p67u1",
+                            "author": "vitalyevodin",
+                            "score": 1,
+                            "created_utc": 1652624796.0,
+                            "response": "Downloaded will use it\nthanks for advise",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8frj3h",
+                    "author": "bitusher",
+                    "score": 2,
+                    "created_utc": 1652440475.0,
+                    "response": "try phoenix in ios\n\nhttps://phoenix.acinq.co/\n\nhttps://www.youtube.com/watch?v=Cx5PK1H5OR0",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8fpm5q",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652439152.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "undnb7",
+            "title": "Asked to verify Eligible Contract Participant (ECP) for crypto margin trading on Kraken - workaround?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/undnb7/asked_to_verify_eligible_contract_participant_ecp/",
+            "author": "moogedii",
+            "created_utc": 1652286099.0,
+            "score": 0,
+            "num_comments": 21,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I had recently lost 50k+ margin trading during the recent crypto crash, and I am hoping to recover my funds as crypto markets recover, but I recently got an email from Kraken that I must verify ECP to continue margin trading. This seems kind of unfair as now I cannot recover my funds if I am locked out of margin trading.  I would greatly appreciate if I could receive some advice from more experienced investors.\n\n* Is there a workaround, such as trading on behalf of my employer, some sort of institution?\n* Is there a possibility of recovering my funds?\n* Are there other platforms that offer margin trading cryptocurrency to US customers?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i87bd94",
+                    "author": "bitusher",
+                    "score": 5,
+                    "created_utc": 1652286710.0,
+                    "response": ">I had recently lost 50k+ margin trading during the recent crypto crash,\n\nday trading is extremely dangerous where 97% of people lose money over time, and trading on margin or using leverage is a whole new level of danger \n\n> I cannot recover my funds if I am locked out of margin trading.\n\nThis is making the assumption that you can win back your money with margin trading when the probability is you would lose more money \n\n>Is there a workaround, such as trading on behalf of my employer, some sort of institution?\n\nNew accounts need ID associated with them , so unless you are going to deposit an extremely large amount of money under a corporate identity it isn't possible \n\n>Is there a possibility of recovering my funds?\n\nYou already lost the money . \n\n>Are there other platforms that offer margin trading cryptocurrency to US customers?\n\nI don't think its wise to repeat the same mistakes you already made",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i87srtl",
+                    "author": "DudeIncogneto",
+                    "score": 5,
+                    "created_utc": 1652293483.0,
+                    "response": "Probably a good thing you're locked out from it",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i879rsr",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652286100.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i879ruc",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652286100.0,
+                    "response": "For trading related topics, there is also /r/bitcointrading\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8axcij",
+                    "author": "saltwaterflyguy",
+                    "score": 1,
+                    "created_utc": 1652353430.0,
+                    "response": "All US platforms will require you to qualify as an ECP, Accredited Investor or Qualified Person, or some combination of the three in order to trade anything other than spot. There's no real way around that now that regulators are starting to dip their toes in the crypto markets. Over time the same rules and regs that hold true in the tradfi space will come to crypto.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "un307x",
+            "title": "SBW off fdroid is my goto",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/un307x/sbw_off_fdroid_is_my_goto/",
+            "author": "dtbwebsefvwervervfe",
+            "created_utc": 1652249328.0,
+            "score": 0,
+            "num_comments": 20,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Hi all\n\nSo I have been using both my trezor and my SBW app with TOR, for the last six weeks, \n\nHave performed about a dozen exchanges between crypto.com and block chain to this SBW, \n\nOther than being limited to a single bitcoin wallet, I find that I actually prefer using SBW than using the trezor, \n\nI uninstalled it and reinstalled it, using the seeds, and everything came back as expected,\n\nI have it installed on an old oneplus 2 phone, running lineageOS without gapps or Sim card.\n\nMy next test is this weekend at the nearest btc vending machine, \n\nHonesty, anyone starting out new in this btc, this is a great wallet to run with.\n\nSince i am new to btc, I planned on a single cold wallet and purchasing btc only. I got caught up with trezor and purchased one, I realize its too much for my simple plan and needs, so after about 5 transactions, the trezor has been sitting in my desk drawer.\n\nI found that the perfect, lowcost setup, is my OP2 phone, running lineage, installed 3 apps from fdroid: SBW, orbot, and netguard.\n\nI setup netguard to firewall the whole phone and just punch 2 holes into the firewall, one for SBW and one for orbot.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i86w6ms",
+                    "author": "DudeIncogneto",
+                    "score": 2,
+                    "created_utc": 1652280785.0,
+                    "response": "Just don't pretend you have the same thing as a hardware wallet. Your keys are hot, no matter how well you try and limit pitfalls.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i87e6kv",
+                            "author": "dtbwebsefvwervervfe",
+                            "score": 1,
+                            "created_utc": 1652287792.0,
+                            "response": "Thank you\n\nI will heed that warning\n\nRegards",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcdma",
+            "title": "Lowest purchase fees - uk",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/upcdma/lowest_purchase_fees_uk/",
+            "author": "jpg86",
+            "created_utc": 1652514794.0,
+            "score": 1,
+            "num_comments": 21,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Does anybody know what exchange has the lowest purchasing fees in the uk? I currently use coinbase pro but wondering if it can be cheaper.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8k53qn",
+                    "author": "Zonecrew45",
+                    "score": 1,
+                    "created_utc": 1652520828.0,
+                    "response": "If your considering DCA there's a great YouTube clip on how to do it with minimal fees. \n\nhttps://youtu.be/h6r1h3am6kA",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8mu0ey",
+                            "author": "7yce",
+                            "score": 2,
+                            "created_utc": 1652570855.0,
+                            "response": "Here is the updated video. \nhttps://youtu.be/yTZYOgB4ejw\n\nThe fees have changed on Gemini",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8jydlm",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652514795.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8kgbsk",
+                    "author": "bitusher",
+                    "score": 1,
+                    "created_utc": 1652529796.0,
+                    "response": "Kraken or gemini active trader will be slightly less",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uoqjy7",
+            "title": "Low invest",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uoqjy7/low_invest/",
+            "author": "bogwosh69",
+            "created_utc": 1652444719.0,
+            "score": 0,
+            "num_comments": 21,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Would it be okay if i was to invest say \u00a350 and leave it for a long term invest? i\u2019m new to this and don\u2019t know much so any advice would be awesome\u2764\ufe0f",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8fyw1s",
+                    "author": "bitusher",
+                    "score": 3,
+                    "created_utc": 1652444792.0,
+                    "response": "This is fine, the focus would be on keeping the backup seed words private and secure longterm \n\n\n**Step 1 Setup a wallet** , and backup your words to keep them secret and private.\n\nRead the FAQ - https://www.reddit.com/r/BitcoinBeginners/comments/g42ijd/faq_for_beginners/\n\nHere are some good wallets for beginners and video tutorials-\n\n**Blockstream Green Wallet** IOS and android wallet\n\nhttps://www.youtube.com/watch?v=uO3Zi9D5b0Y\n\nhttps://blockstream.com/green/\n\n**Step 2 Buy BTC and transfer it to your personal wallet**- If you are in the USA than the best way to buy BTC is with cash app - \n\nhttps://itunes.apple.com/us/app/square-cash/id711923939?mt=8\n\nhttps://play.google.com/store/apps/details?id=com.squareup.cash&referrer=utm_source%3Dcash-web-bitcoin%26utm_medium%3Dweb\n\nVerification either is instant or can take a couple days once you verify your phone, email and ID.\n\n\nIf you need BTC slightly quicker or need to pay in cash than https://coinatmradar.com but fees are at least 7% and higher\n\nIf you are out of the US or buying larger amounts of bitcoin than look into coinbase pro, gemini active trader , or kraken\n\nLet us know if you have any other questions",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8g164p",
+                    "author": "Desperate-Barnacle-4",
+                    "score": 3,
+                    "created_utc": 1652445969.0,
+                    "response": "Yes totally fine. Read the pinned beginners FAQ. (I'm in the UK) and personally I use coincorner which has an 'auto buy'. I send a monthly standing order and they buy Bitcoin. Once it crosses some threshold I withdraw to my own wallet. Simple.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8fyr5s",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652444720.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uqfwf4",
+            "title": "Can I transfer crypto to a friend in another country, who\u2019s unable to on-ramp himself?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uqfwf4/can_i_transfer_crypto_to_a_friend_in_another/",
+            "author": "Apple_Short",
+            "created_utc": 1652649793.0,
+            "score": 0,
+            "num_comments": 30,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "So a friend of mine currently resides in a country where he is unable to link his US bank account to his cex (centralized exchange) and on-ramp fiat to purchase crypto. \n\nInstead, we are wondering if he can transfer the $USD from his bank account to mine, have me move it onto my cex and then transfer that amount to him (as a stable coin, to his cex / wallet).\n\nTechnically, this is possible of course - it\u2019s how I normally bring money from my bank onto my cex, the only difference is it\u2019s not my money this time, and it\u2019s final destination isn\u2019t my cex. I\u2019m wondering if there are any implications to this, tax related or otherwise.\n\nIs this something I have to report to the IRS ( fwiw, I expect the overall move to be a net loss as surely some money will be deducted in fees etc, and he won\u2019t receive exactly what i on-ramp). The dollar amount is more than $15k (which I believe is considered the cap on sending crypto \u201cgifts\u201d), so technically it can\u2019t be considered a gift either\u2026\n\nI appreciate any help and advice! Thank you in advance.\n\nEdit: there\u2019s no trust issues at all. This is someone I know at a personal level and I\u2019ve just generalized them as a \u201cfriend\u201d for easier reference.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8qsage",
+                    "author": "Ai-dogecoin",
+                    "score": 4,
+                    "created_utc": 1652650383.0,
+                    "response": "Be carefull, a bank can reverse the transaction, but a crypto transfer cant be reversed so you could be out of your own money. Is he you friend in real life and are you sure you ate not catfished? What country is his origin maybe an alternative exists.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8qssjl",
+                            "author": "Apple_Short",
+                            "score": 2,
+                            "created_utc": 1652650600.0,
+                            "response": "Ah yeah I\u2019ll clarify in my parent post but there\u2019s no trust issues at all. I\u2019ve generalized it as \u201cfriend\u201d, but it\u2019s actually someone more personal so no worries on that end. \n\nWe\u2019ve gone through all possible alternatives as well, it\u2019s either this method or a > 10% fee to on-ramp. The latter is not preferred which is why I was inquiring about me transferring him money without any negative implications.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8qqxjc",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652649794.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8qtvfj",
+                    "author": "ashtonlaszlo",
+                    "score": 1,
+                    "created_utc": 1652651063.0,
+                    "response": "Yeah man. You can send coins wherever you want.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8r264e",
+                            "author": "Apple_Short",
+                            "score": 1,
+                            "created_utc": 1652654842.0,
+                            "response": "Thanks for your response, yes I realize I can technically send it to him. I\u2019m just wondering if it\u2019s taxable and whether I should report it or not.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8r6gag",
+                                    "author": "ashtonlaszlo",
+                                    "score": 1,
+                                    "created_utc": 1652656924.0,
+                                    "response": "I don\u2019t know much about taxes, truth be told. \n\nBut buying a gift, in my opinion, isn\u2019t usually taxed. I wouldn\u2019t report it.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8qu2lh",
+                    "author": "ndgoLiberty",
+                    "score": 1,
+                    "created_utc": 1652651147.0,
+                    "response": "The bitcoin will transfer to your friend just fine. The problem is your friend\u2019s fiat money is gonna have an interesting experience getting to you.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8r2ahw",
+                            "author": "Apple_Short",
+                            "score": 1,
+                            "created_utc": 1652654901.0,
+                            "response": "How so? The issue isn\u2019t me getting the money from him, it\u2019s more to do with me transferring it to him afterwards\u2026 Do I have to report it as a taxable event or anything along those lines?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8r33hm",
+                                    "author": "ndgoLiberty",
+                                    "score": 0,
+                                    "created_utc": 1652655290.0,
+                                    "response": "The long and short of it is that you will be buying bitcoin and then never selling it, because it isn\u2019t yours anymore, right? And because taxable events are only triggered when you sell nobody is ever gonna care where all that money went. \n\nIf you want to keep all the receipts and make sure you have paperwork in order for whenever big brother comes knocking here\u2019s a website that explains remittance payments. And even though you\u2019ll be receiving financial compensation it\u2019s pretty much the same thing. Although I\u2019m not a lawyer so don\u2019t assume I know every one of the many laws that exist which I could be forgetting about.\n\nhttps://www.compareremit.com/amphtml/money-transfer-guide/federal-remittance-transfer-rules/",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8r34oa",
+                                            "author": "AmputatorBot",
+                                            "score": 1,
+                                            "created_utc": 1652655306.0,
+                                            "response": "It looks like you shared an AMP link. These should load faster, but AMP is controversial because of [concerns over privacy and the Open Web](https://www.reddit.com/r/AmputatorBot/comments/ehrq3z/why_did_i_build_amputatorbot).\n\nMaybe check out **the canonical page** instead: **[https://www.compareremit.com/money-transfer-guide/federal-remittance-transfer-rules/](https://www.compareremit.com/money-transfer-guide/federal-remittance-transfer-rules/)**\n\n*****\n\n ^(I'm a bot | )[^(Why & About)](https://www.reddit.com/r/AmputatorBot/comments/ehrq3z/why_did_i_build_amputatorbot)^( | )[^(Summon: u/AmputatorBot)](https://www.reddit.com/r/AmputatorBot/comments/cchly3/you_can_now_summon_amputatorbot/)",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i8r4alt",
+                                            "author": "Apple_Short",
+                                            "score": 1,
+                                            "created_utc": 1652655868.0,
+                                            "response": "Correct, I will not be selling it as it isn\u2019t mine to begin with. I\u2019m just acting as a medium of exchange between his bank account and his crypto wallet. Thanks for the clarification.\n\n\u201cWhenever bruh brother comes knocking\u201d is definitely something I should consider eh, haha. Didn\u2019t really think about the whole remittance thing. I suppose since I am kyc\u2019ed to my cex, and my bank account will see the money entering and leaving, I should weigh the potential consequences of that. Don\u2019t want to raise any eyebrows.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8rn5yh",
+                    "author": "FuzzyPeaches19",
+                    "score": 1,
+                    "created_utc": 1652664931.0,
+                    "response": "If you are gifting crypto currency taking a look at this article below would definitely be a good move before going ahead with it. Also with the IRS the article mentions it is actually 16k that is the the cap, but the fee after that ranging from 18-40%\n\n[https://koinly.io/blog/tax-on-gifting-crypto/](https://koinly.io/blog/tax-on-gifting-crypto/)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8zm7c8",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1652818559.0,
+                    "response": "Why ask this here?",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "upuc49",
+            "title": "Might not be relevant",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/upuc49/might_not_be_relevant/",
+            "author": "Cute-Priority-6904",
+            "created_utc": 1652575179.0,
+            "score": 1,
+            "num_comments": 19,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "But if a I\u2019d-verified bitcoin account gifted me bitcoins on Coinbase, can I cash those bitcoins out without a photo id on my account. Sorry if this is confusing",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8ncqnc",
+                    "author": "cheezball_",
+                    "score": 2,
+                    "created_utc": 1652580367.0,
+                    "response": "no",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8n2p86",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652575179.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8odzjd",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1652606214.0,
+                    "response": "No and yes  \n\nYou need to provide proof of ID to withdraw dollars from a Coinbase account  \nDepending on the amount, you might not need to provide proof of ID to withdraw BTC from a Coinbase account  \n\nYou could withdraw BTC into your own wallet, and then sell the BTC to a friend",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8n3oev",
+                    "author": "blaze1234",
+                    "score": 0,
+                    "created_utc": 1652575665.0,
+                    "response": "!RemindMe 10 days",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "upq26p",
+            "title": "In theory, what can cryptocurrency exchanges and atms do with phone number verification",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/upq26p/in_theory_what_can_cryptocurrency_exchanges_and/",
+            "author": "partoe5",
+            "created_utc": 1652561269.0,
+            "score": 1,
+            "num_comments": 20,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Some crypto ATMs ask for only your phone number to send you a code to verify.\n\nWhy?\n\nIn what scenario(s) would this verification and them having your phone number on file, be used?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8ma2z6",
+                    "author": "bitusher",
+                    "score": 5,
+                    "created_utc": 1652561576.0,
+                    "response": "If the Bitcoin were used to hire an assassin with an onchain tx directly than cops could possible subpoena the atm operator for the phone number used.\n\nSo if you are doing something illegal than perhaps consider using a free sms service instead of your personal cell number",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8odolt",
+                    "author": "igadjeed",
+                    "score": 2,
+                    "created_utc": 1652605948.0,
+                    "response": "Th ATM operator is required to register as a money services business, and comply with money laundering laws. The one-time SMS code to your phone is a weak form of identity proof. Stronger ID proof is required for larger amounts  \n\nA money launderer might try to make multiple transactions under the ID limit. The common phone number alerts the ATM system to the multiple transactions, also tracks the customer's transaction amounts over a longer period",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8m9f45",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652561270.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8nfsb0",
+                    "author": "Crypto_bro999",
+                    "score": 1,
+                    "created_utc": 1652581981.0,
+                    "response": "I don't think it is dangerous. But if you care for your private information, you can choose bitfinex, it doesn't have a KYC system.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8nlqwn",
+                    "author": "tomemeornot2meme",
+                    "score": 1,
+                    "created_utc": 1652585289.0,
+                    "response": "To text you late night booty calls! Hahahaha.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8o6zzv",
+                    "author": "Since_1979",
+                    "score": 1,
+                    "created_utc": 1652600228.0,
+                    "response": "They can spam call you",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "upm5rv",
+            "title": "support and resistance",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/upm5rv/support_and_resistance/",
+            "author": "RizlyXD",
+            "created_utc": 1652549537.0,
+            "score": 0,
+            "num_comments": 21,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Hi I'm fairly new to crypto and I have a question regarding support and resistance.\n\nIf a support or resistance level gets tested multiple times does it get weaker or stronger?\n\nAlso, another thing that I would like to know is how you know when the time is for a large candle up or down. Is staying right under resistance for a while a bullish sign or a bearish sign, also since it was kind of building up would it be a big candle?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8lk5ap",
+                    "author": "Moist-Excitement-845",
+                    "score": 4,
+                    "created_utc": 1652549612.0,
+                    "response": "Technical analysis is astrology for men.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8lkjte",
+                    "author": "Brettanomyces78",
+                    "score": 2,
+                    "created_utc": 1652549796.0,
+                    "response": "Sounds like you're setting yourself up for disappointment.\n\nBut, general wisdom holds that the more times support or resistance are tested, the weaker they get.  But if you think there are any firm rules in trading, you're going to lose money.  The best traders are the best risk managers, not the best future predictors.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8ljzgl",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652549538.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8lkem0",
+                    "author": "Moist-Excitement-845",
+                    "score": 1,
+                    "created_utc": 1652549730.0,
+                    "response": "That being said, staying under resistance for a long time is bearish and visversa. Every time support is tested it gets weaker, same with resistance. But trying to use T/A will get you wrecked 90% of the time. Buying at generally lower levels and selling at new highs is generally what has been successful for me. Everyone has their own strategy but trying to use T/A to trade is a losing game. Especially for beginners.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8m1idp",
+                            "author": "RizlyXD",
+                            "score": 1,
+                            "created_utc": 1652557619.0,
+                            "response": "Thanks for the explanation, was just wondering one more thing tho if you mind. If a support level is weaker since it's been hit multiple times does that also mean that the candle following after hitting that support level is more likely to be smaller?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upjkzd",
+            "title": "where to buy crypto without verifying id",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/upjkzd/where_to_buy_crypto_without_verifying_id/",
+            "author": "Alapac0",
+            "created_utc": 1652542095.0,
+            "score": 1,
+            "num_comments": 20,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "where to buy crypto without verifying id, i dont want to give them a picture of my passport but i guess ill have to if there's no other place to buy thats safe and without verifying.\n\n&#x200B;\n\nThank you",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8l44jp",
+                    "author": "Narmotur",
+                    "score": 5,
+                    "created_utc": 1652542390.0,
+                    "response": "P2P exchanges like Bisq and AgoraDesk can connect you with sellers that do not verify for certain amounts; check out https://kycnot.me for more.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8l44kv",
+                    "author": "bitusher",
+                    "score": 3,
+                    "created_utc": 1652542390.0,
+                    "response": "many people visit atms that only require sms verification(free sms sites exist) for smaller amounts in this list - https://coinatmradar.com/\n\nOther options are any way that doesn't require verification like this list -\n\nhttps://github.com/cointastical/P2P-Trading-Exchanges\n\nAre you concerned with getting and spending bitcoin privately immediately or long term privacy?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8l3hle",
+                    "author": "AutoModerator",
+                    "score": 2,
+                    "created_utc": 1652542096.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8oanp2",
+                    "author": "igadjeed",
+                    "score": 0,
+                    "created_utc": 1652603355.0,
+                    "response": "Buy Bitcoin from your friends, in person, for cash",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "up1hev",
+            "title": "confused noon question about wallet and addresses",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/up1hev/confused_noon_question_about_wallet_and_addresses/",
+            "author": "nom_nomenclature",
+            "created_utc": 1652476078.0,
+            "score": 1,
+            "num_comments": 30,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "So a wallet can have multiple addresses. Does each address have its own private key? Or is the private key per wallet? If its my wallet and there are 10 addresses in it, do I have access to all the btc in the 10 addresses?\n\nRelated: I watched a YouTube vid of a guy buying using the decentralised exchange Bisq. He had no funds so I transferred from a private wallet to his Bisq wallet. It appeared in the video that no fee was charged. How is this possible? (it may be that I misunderstood the vid)...",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8i322z",
+                    "author": "BitcoinWell",
+                    "score": 2,
+                    "created_utc": 1652476928.0,
+                    "response": "Every single public address has its own private key but your wallet has whats called a master private key which mathematically creates each private keys for each public address. So you can have BTC in every address and your master private key will be able to create the private key for the individual public addresses that have bitcoin on them so you can send.\n\nAs for your BISQ question, fees are charged on top of the amount being sent. So if I wanted to send you 1 BTC and paid 0.01 to send it, you will receive 1 BTC and not 0.99 BTC. Unless the video showed something else.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8js9by",
+                            "author": "nom_nomenclature",
+                            "score": 1,
+                            "created_utc": 1652509706.0,
+                            "response": "Thank you, great explanation, that's clear to me now.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8i167a",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652476079.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8i2rsu",
+                    "author": "DudeIncogneto",
+                    "score": 1,
+                    "created_utc": 1652476801.0,
+                    "response": "Multiple addresses are derived from the x/y/zpub depending on which derivation path you use. It is known as the extended public key and all receiving address in that wallet are associated with that extended public key.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8jud2x",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1652511396.0,
+                    "response": "> do I have access to all the btc in the 10 addresses?\n\nBitcoin is not in an address. An address is a property of a coin. A Bitcoin address is single-use. It is not an account, not for accumulating a balance",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8jvfmp",
+                            "author": "nom_nomenclature",
+                            "score": 1,
+                            "created_utc": 1652512274.0,
+                            "response": "What do you mean by single use? If I send to an address, that address is no longer usable?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8k51p0",
+                                    "author": "igadjeed",
+                                    "score": 1,
+                                    "created_utc": 1652520778.0,
+                                    "response": "https://en.bitcoin.it/wiki/Address_reuse",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i8jvnld",
+                            "author": "nom_nomenclature",
+                            "score": 1,
+                            "created_utc": 1652512461.0,
+                            "response": "And what can be considered an account? The wallet?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8k56hb",
+                                    "author": "igadjeed",
+                                    "score": 1,
+                                    "created_utc": 1652520893.0,
+                                    "response": "Bitcoin has no accounts. The blockchain stores transactions. A transaction has one or more inputs and one or more outputs. A transaction output is a coin  \n\nBitcoin is like cash in your pocket, a set of coins, each with a different value, each with a different unlocking mechanism (address)",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8k67hv",
+                    "author": "nom_nomenclature",
+                    "score": 1,
+                    "created_utc": 1652521814.0,
+                    "response": "The wallet holds the private keys for the public addresses these coins are associated with. So cant the wallet can be considered the account?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8l3cxk",
+                    "author": "nom_nomenclature",
+                    "score": 1,
+                    "created_utc": 1652542036.0,
+                    "response": "If addresses are single use, what happens with donations? A company like Wikileaks has a public address you can donate to. Multiple people donate to this over time. How is this possible if addresses are single use?",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uodihc",
+            "title": "Buying through Coinbase vs Trezor",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uodihc/buying_through_coinbase_vs_trezor/",
+            "author": "mnitmf",
+            "created_utc": 1652395910.0,
+            "score": 2,
+            "num_comments": 21,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I purchased my first wallet earlier this year, a Trezor, and was curious if generally speaking it's advantageous to make BTC purchases directly through the Trezor Suite using the \"Trade\" functionality versus buying BTC through Coinbase and transferring to my Trezor wallet from there. \n\nIs the fee comparable either way, or is there a clear advantage to one vs the other?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8dsh2w",
+                    "author": "bitusher",
+                    "score": 2,
+                    "created_utc": 1652397362.0,
+                    "response": "Trezor is a great product but never buy within wallets as they all overcharge. Buy within a normal exchange listed in the pinned FAQ and withdraw to trezor suite",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8dp9tf",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652395911.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8dzno2",
+                    "author": "Brettanomyces78",
+                    "score": 1,
+                    "created_utc": 1652400684.0,
+                    "response": "Not sure which broker Trezor has you use when you do that, but they overcharge.  Just use the exchange yourself.  No need to pay a middleman.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8u5tu1",
+                    "author": "kaacaSL",
+                    "score": 1,
+                    "created_utc": 1652718950.0,
+                    "response": "Hi, it is possible to buy BTC directly in Trezor Suite. You can check the offers and you\u2019ll see if you decide to go for it.\n\nIf you buy BTC through Coinbase and then decide to move your crypto from to Trezor, this post we\u2019ve just made may come in handy: https://www.reddit.com/r/TREZOR/comments/uq6xf2/how_to_transfer_coins_from_an_exchange_to_trezor/?utm_source=share&utm_medium=ios_app&utm_name=iossmf",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8ei9vd",
+                    "author": "Sweet-Turnover-7368",
+                    "score": 0,
+                    "created_utc": 1652409321.0,
+                    "response": "Don't do this as it will incur more GAS charges that can be in your other wallets.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "um4qgx",
+            "title": "Trust Wallet does not show my last purchase. Its been 2 weeks now.",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/um4qgx/trust_wallet_does_not_show_my_last_purchase_its/",
+            "author": "SquatchyNW",
+            "created_utc": 1652139826.0,
+            "score": 2,
+            "num_comments": 42,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I have been buying bitcoin at coinflip atm machines for over a year now an everything has been fine. But my last purchase did not show up in my wallet. I call customer support at coinflip and the said that the coin was sent. I received a text say it was so. But it still is not in my wallet.??",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7zkyxe",
+                    "author": "bitusher",
+                    "score": 3,
+                    "created_utc": 1652141699.0,
+                    "response": "You should stop using trust wallet because :\n\n1) large attack surface\n\n2) bad security practices\n\n3) missing important features\n\n4) closed source and not peer reviewed \n\nBinance openly lie about their wallet being open source - https://trustwallet.com/developer/ when it is not open source\n\nhttps://walletscrutiny.com/android/com.wallet.crypto.trustapp/\n\nhttps://walletscrutiny.com/iphone/com.sixdays.trust/\n\nas you cannot test and build the binaries from source. The lie is built upon the ignorance of many that are unaware that almost all software you use is dependent upon some open source repositories/libraries/dependencies but unless we can peer review 100% of the source code and build the binaries from the source we cannot verify if any intentional or unintentional exploits or backdoors exist in the software.\n\nThis means that at best you have a wallet that is slightly better than using a custodian because you have access to the private keys that you could restore your coins in a separate wallet if their full nodes that support this light client is offline but there might be privacy leaks or exploits and backdoors that allow them or outsiders to steal your coins.\n\nWhat is the point in using cryptocurrency if you ultimately need to have faith in a single company or developer ? This undermines many of the security assumptions of cryptocurrencies.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7zkri3",
+                    "author": "bitusher",
+                    "score": 2,
+                    "created_utc": 1652141608.0,
+                    "response": "Place the receive address in a Block explorer like \n\nhttps://blockchair.com/\n\nand see if there is a transaction associated with the address recently",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i84nzj1",
+                            "author": "SquatchyNW",
+                            "score": 1,
+                            "created_utc": 1652233160.0,
+                            "response": "Ok, I will try. Thank you.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7zuch3",
+                    "author": "dcryptoguy",
+                    "score": 2,
+                    "created_utc": 1652145925.0,
+                    "response": "Did you check the blockchain to confirm?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i84o2o0",
+                            "author": "SquatchyNW",
+                            "score": 1,
+                            "created_utc": 1652233201.0,
+                            "response": "I do not know how to do that. Thank you for the help.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i84o7gf",
+                                    "author": "dcryptoguy",
+                                    "score": 2,
+                                    "created_utc": 1652233258.0,
+                                    "response": "The address that was supposed to receive the coins, check the blockchain to see if it was confirmed.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i84tu1q",
+                                            "author": "SquatchyNW",
+                                            "score": 1,
+                                            "created_utc": 1652235822.0,
+                                            "response": "I went to blockchain, used the explorer button. It shows the transaction did go thru. But my wallet does not have it in it?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i84wkj8",
+                                                    "author": "SquatchyNW",
+                                                    "score": 1,
+                                                    "created_utc": 1652237088.0,
+                                                    "response": "I there a way I can make it go to my wallet?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i85cdbw",
+                                                            "author": "dcryptoguy",
+                                                            "score": 1,
+                                                            "created_utc": 1652245577.0,
+                                                            "response": "Transaction hash?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i87g1nx",
+                                                                    "author": "SquatchyNW",
+                                                                    "score": 1,
+                                                                    "created_utc": 1652288510.0,
+                                                                    "response": "cc6d8245d9bae9b9c3bf4b4c7044e7fb43203efd82422964b0db31ab0724464c",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i87gxt6",
+                                                                            "author": "dcryptoguy",
+                                                                            "score": 1,
+                                                                            "created_utc": 1652288856.0,
+                                                                            "response": "It's confirmed. Are you sure you sent it to the right address?",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i87hixr",
+                                                                                    "author": "SquatchyNW",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1652289084.0,
+                                                                                    "response": "so to get this transaction hash i had to put in my wallet address. so how could it be wrong? somehow my trust wallet is not receiving my recent purchases. I do not know how to fix it.",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i87iy2p",
+                                                                                            "author": "dcryptoguy",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1652289633.0,
+                                                                                            "response": "What's the address? This seems odd.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i805qqu",
+                    "author": "igadjeed",
+                    "score": 2,
+                    "created_utc": 1652151133.0,
+                    "response": "Are you sure the address you entered at the ATM is an address which belongs to your Exodus wallet?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i84o64t",
+                            "author": "SquatchyNW",
+                            "score": 1,
+                            "created_utc": 1652233242.0,
+                            "response": "I held up my phone with my QR code for the machine to read. It matched.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i85s8y0",
+                                    "author": "igadjeed",
+                                    "score": 1,
+                                    "created_utc": 1652257786.0,
+                                    "response": "That doesn't prove the address is correct",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7zgw2z",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652139827.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8c583v",
+                    "author": "IkeTrian",
+                    "score": 1,
+                    "created_utc": 1652373295.0,
+                    "response": "I am much obliged to introduce FlurryFinance to all who wants to earn on his or her deposited with flexibility and transparent system they have. Join $FLURRY Now.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ulmp2s",
+            "title": "Just coming to the party now - please help!",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ulmp2s/just_coming_to_the_party_now_please_help/",
+            "author": "Expensive_Section_80",
+            "created_utc": 1652085650.0,
+            "score": 2,
+            "num_comments": 38,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Hi everyone,\n\nI'm based in Australia and about to start investing in crypto, any recommendations of what wallet is best?  Ive been told Coinbase but want check out a few.  Thanks in advance",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7wfh6v",
+                    "author": "llrik11",
+                    "score": 3,
+                    "created_utc": 1652089017.0,
+                    "response": "electrum wallet.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7wtgrz",
+                            "author": "Expensive_Section_80",
+                            "score": 1,
+                            "created_utc": 1652099116.0,
+                            "response": "Thank you i'll check it out",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7x7srh",
+                    "author": "nutcase2019",
+                    "score": 2,
+                    "created_utc": 1652106047.0,
+                    "response": "Choose an open source wallet.\n\nOne very important thing:  Take the backup SERIOUSLY.   Backup your seed phrase or keys and store it in a SAFE place. When you take custody of bitcoin, you are responsible and loss of private keys at that point are permanent.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7yocql",
+                    "author": "Chineyo",
+                    "score": 2,
+                    "created_utc": 1652127354.0,
+                    "response": "For a beginner I\u2019ll recommend cryptoxpress, it will have all crypto features integrated to its app, and with 3 clicks you can make all transactions",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i80erji",
+                    "author": "cryptochill",
+                    "score": 2,
+                    "created_utc": 1652155769.0,
+                    "response": "Coinbase is the easiest for beginners, and is the easiest to transfer fiat money to cryptos. It's very user friendly. I've been at it for years and it's still my preferred exchange, but your mileage may vary.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7wbtfr",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652085651.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7wd5xs",
+                    "author": "Creativeboom69",
+                    "score": 1,
+                    "created_utc": 1652086909.0,
+                    "response": "Do not keep it on the exchange. Always have your own wallet and keys.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7wd8g0",
+                            "author": "Expensive_Section_80",
+                            "score": 1,
+                            "created_utc": 1652086972.0,
+                            "response": "Thanks what exchange would you recommend? and what wallet",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7wdmfq",
+                                    "author": "Creativeboom69",
+                                    "score": 1,
+                                    "created_utc": 1652087329.0,
+                                    "response": "Depends on the coins you invest in. I'll let the others with more experience guide you on your journey \ud83d\ude04 but anything you Do in the crypto space, the above always holds true. It's 101 basics. Have fun, only invest what you're ready to lose and take profits when you can. Good luck \ud83d\ude04\u270c\ufe0f",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i7wghjt",
+                                    "author": "igadjeed",
+                                    "score": 1,
+                                    "created_utc": 1652089918.0,
+                                    "response": "> what exchange\n\nhttps://outwittrade.com/australian-cryptocurrency-exchanges/\n\n> what wallet\n\nBitcoin wallet apps are free  \nhttps://bitcoin.org/en/choose-your-wallet  \nTry them all. Keep the one you like",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7zp7gd",
+                    "author": "Odd_Philosopher_5602",
+                    "score": 1,
+                    "created_utc": 1652143604.0,
+                    "response": "You need a Ledger Nano S cold Wallet. Do not leave anything on an exchange",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8153sz",
+                            "author": "Expensive_Section_80",
+                            "score": 1,
+                            "created_utc": 1652175633.0,
+                            "response": "Thanks ive just ordered one \ud83d\udc4d",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8c6l64",
+                    "author": "IkeTrian",
+                    "score": 1,
+                    "created_utc": 1652373830.0,
+                    "response": "\n$FLURRY do not require expert crypto traders to earn but rather, just a few steps and you are ready to go. FlurryFinance has made it possible through their platform. Join us.",
+                    "depth": 1,
+                    "comments": []
                 }
             ]
         }

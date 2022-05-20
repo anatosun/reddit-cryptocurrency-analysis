@@ -1,0 +1,257 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "usz5yc",
+            "title": "How many Bitcoin miner nodes are there?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/usz5yc/how_many_bitcoin_miner_nodes_are_there/",
+            "author": "FlandersFlannigan",
+            "created_utc": 1652950734.0,
+            "score": 3,
+            "num_comments": 13,
+            "subreddit": "Bitcoin",
+            "selftext": "I tried googling, but couldn't find how many miner nodes there are currently. I would have thought this would be really easy to see. Can anyone help me out?\n\nThanks",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i96oshl",
+                    "author": "summonsterism",
+                    "score": 2,
+                    "created_utc": 1652955805.0,
+                    "response": "three fiddy",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96j4ax",
+                    "author": "dlq84",
+                    "score": 1,
+                    "created_utc": 1652950818.0,
+                    "response": "I think you mean miner pools: [https://en.bitcoin.it/wiki/Comparison\\_of\\_mining\\_pools](https://en.bitcoin.it/wiki/Comparison_of_mining_pools)\n\nHow many individual miners exists is impossible to know.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96kj1q",
+                            "author": "priapic_green_dildo",
+                            "score": 2,
+                            "created_utc": 1652952105.0,
+                            "response": "you could estimate the number of machines by dividing the hashrate by some estimation of the mean of the hashrate of a currently used ASIC. Now estimating the number of individuals or entities mining is an other problem.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i97oqgh",
+                                    "author": "igadjeed",
+                                    "score": 1,
+                                    "created_utc": 1652974483.0,
+                                    "response": "> you could estimate the number of machines by dividing the hashrate by some estimation of the mean of the hashrate of a currently used ASIC\n\nThat would be 207 Exa / 100 Tera, or 2.07 million  \nBut there are only 50,000 nodes, which means almost none of those 2 million would be running their own nodes",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i96snqa",
+                            "author": "FlandersFlannigan",
+                            "score": 1,
+                            "created_utc": 1652958684.0,
+                            "response": ">[https://en.bitcoin.it/wiki/Comparison\\_of\\_mining\\_pools](https://en.bitcoin.it/wiki/Comparison_of_mining_pools)\n\nYa, I guess this is the best way to look at it, but does this mean the Bitcoin network is only secured by essentially 14 pools? I understand that pools use their collective computational resources to win rewards, but does anyone know if these pools require resource participants to run on the same block and/or protocol version?\n\nFor example, pool A has 30 resource contributors. Does the pool control what version of the protocol to use? Basically, I'm wondering what if a pool decides to run on a forked version and/or new blockchain?\n\nIf the pool controls what version of the protocol to run and which blocks to recognize, then only have 14 mining pools seems kinda dangerous and pretty centralized.\n\n**The reason I asked this question is because I want to see how the number of miners has increased/decreased over time. I would expect the number to decrease steadily over time as it becomes more difficult to get the rewards. If this is true, it would seem like Bitcoin is headed towards complete centralization at some point, no?**",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i96yh2k",
+                                    "author": "ipcoffeepot",
+                                    "score": 1,
+                                    "created_utc": 1652962328.0,
+                                    "response": "The current protocol that miners use to communicate with pools means that pools pick the blocks that those miners work on. Today, the way miners keep pool operators honest is that it is very easy to just point your hardware at a new pool. So a pool operator engaging in shenanigans will quickly lose hashrate and revenue. So while it\u2019s not a great situation, it\u2019s not a huge deal in practice. \n\nRight now there are upgraded versions of these pool protocols under development that put block selection into miners hands, instead of pool operators. This will make block selection bunch more decentralized. \n\nYou\u2019re not going to find an accurate number around how many mining nodes are active. If i think there\u2019s 100 TH online somewhere, that could be one node, or two nodes each running at 50 TH, or 4 nodes, or \u2026 there is no central registry of mining nodes and there can\u2019t be, and thats by design. You want anyone to be able to start or stop whenever to make control of the network hard. \n\nI think the metric you\u2019re actually trying to track is network hashrate. This isn\u2019t knowable in an absolute sense, but can be estimated based on difficulty and average block times. LOTS of websites publish metrics around total network hashrate. If you see that number going up, it means more (and/or better) mining hardware is coming online. If you see it go down, it means mining hardware is being taken offline.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9700dn",
+                                            "author": "FlandersFlannigan",
+                                            "score": 1,
+                                            "created_utc": 1652963209.0,
+                                            "response": "u/ipcoffeepot thanks so much for taking the time to answer my questions! It helped my understanding. I truly appreciate it!\n\n[I read this article to understand Bitcoins network hash rate better for anyone who is interested.](https://www.sofi.com/learn/content/bitcoin-hash-rate/)\n\nWhile I think the network hash rate is the best metric that I've seen so far, it doesn't really help explain how centralized/decentralized Bitcoin is. From what I've been able to gather (so far), Bitcoin still seems pretty centralized to me and that the natural course would be for it to become more centralized over time.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9708hl",
+                                                    "author": "ipcoffeepot",
+                                                    "score": 1,
+                                                    "created_utc": 1652963333.0,
+                                                    "response": "What makes you think its centralized?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i973mkp",
+                                                            "author": "FlandersFlannigan",
+                                                            "score": 1,
+                                                            "created_utc": 1652965150.0,
+                                                            "response": "A few things:\n\n* There appear to be only 14 operational mining pools - granted we don't know what other major players there are, but I think it's fair to say that it would be no small feat for any entity to be a viable competitor to any of these 14 pools\n* 14 mining pools are now defunct - assumption here is these pools failed due to profitability/competition... what I'd like to see is a timeline of pools when they start and close\n* Hash power is steadily increasing, which means it will take more sophisticated rigs as time goes on. \n* Assuming running a pool isn't a commodity service, then I imagine innovation to attract miners or resource contributors is something pools spend a lot of effort on. If this is the case then I could see pools consolidating over time, but this is definitely speculation. \n\nThe one thing that you mentioned that makes me hopeful is putting block selection into the miners hands. If this becomes the norm among pools, then I think that would indeed help make Bitcoin much more decentralized. \n\nI'd like to look more into your point of \"keeping the pools honest\", because is it really that easy for a resource contributor to switch between pools? How quickly could they recognize wrongdoing by pools? How quickly could they act, i.e., how much damage could they do before corrective action could take place?  \n\nI obviously have a lot to learn, but it seems like this could be the achilles heel of Bitcoin and I don't hear anyone talking about it. I know you can find articles that say \"Bitcoin is centralized\", but the ones I've read don't provide nearly enough evidence to back up their claims.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i97imy1",
+                                                                    "author": "ipcoffeepot",
+                                                                    "score": 1,
+                                                                    "created_utc": 1652971952.0,
+                                                                    "response": "Some additional notes to help with your research:  \n\n\n\\- Most (I'd say \"all\", but I don't want to make that claim) pools use a protocol called \"stratum\" to communicate between miners and the pool. It's an industry-standard protocol, so moving your hashrate from one pool to another is usually something like: set up an account at the other pool (if they have an account system, not all do), and then change a setting in your mining software to point at the new pools stratum server, and you're done. So if you have a LOT of miners and don't have good automation, it can take some time to push out that configuration change, but it's not a huge engineering effort to move hashrate.  \n\n\n\\-One example of a next-gen protocol for this is Stratum v2, which is being sponsored by Braiins (the company that runs Slush Pool): [https://braiins.com/stratum-v2](https://braiins.com/stratum-v2) one of the many things that stratum v2 improves on is having individual miners do transaction selection. \n\nHave fun digging in and doing more research!",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i97pfsv",
+                                            "author": "igadjeed",
+                                            "score": 1,
+                                            "created_utc": 1652974773.0,
+                                            "response": "> Right now there are upgraded versions of these pool protocols under development that put block selection into miners hands, instead of pool operators. This will make block selection bunch more decentralized\n\nThis feature is optional for pools. How many are implementing it? More importantly, it is optional for miners. The hash rate indicates there are more than one million miners. There are published statistics indicating the node count is 50,000. Are those one million miners going to operate their own nodes? We can only hope",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i97p24j",
+                                    "author": "igadjeed",
+                                    "score": 1,
+                                    "created_utc": 1652974616.0,
+                                    "response": "> does this mean the Bitcoin network is only secured by essentially 14 pools?\n\nNo  \n\nBitcoin is not secured by miners. Bitcoin is secured by the node network\n\n> centralization\n\nBitcoin is decentralized in its node network. Nodes do not trust miners",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i96oy2d",
+                    "author": "krisycoll",
+                    "score": 1,
+                    "created_utc": 1652955932.0,
+                    "response": "It is not that easy to know. \n\nBitcoin miners are observing the transaction mempool, catching up a batch of transactions and putting them together to find a valid block. Until they find a valid block, no one can know they are working on it, because the mempool is open for anyone so you can mine at home with a paper and a pencil (not recommended because it is an ultra-low hashrate system :P). No one can know you are mining at home with your pencil. The day you find a valid block you will be rewarded and people will know you find a valid block, but nobody will not even know if you did it in your first attempt or in your 1.022.929 attempt. Or if you did it alone or with a lot of friends (mining pool) with papers and pencils.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "usz24p",
+            "title": "How does Bitcoin protect against an attack where a node distributes blocks with missing transactions?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/usz24p/how_does_bitcoin_protect_against_an_attack_where/",
+            "author": "XiPingTing",
+            "created_utc": 1652950219.0,
+            "score": 2,
+            "num_comments": 10,
+            "subreddit": "Bitcoin",
+            "selftext": "Blocks contain a merkel tree of transaction hashes. When inputs are spent, the branches of the tree are hashed together to save space on old blocks.\n\nAs a new node connecting to the network, what prevents the peer you obtain blocks from removing unspent inputs?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i96j7ie",
+                    "author": "magneticman245",
+                    "score": 5,
+                    "created_utc": 1652950893.0,
+                    "response": "If you change the contents of a block, that will change the hash of the block which invalidates the proof of work. Your node would easily see that the proof of work supplied with that block was not valid for the block's contents and reject it.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96lcvx",
+                    "author": "Quantris",
+                    "score": 1,
+                    "created_utc": 1652952866.0,
+                    "response": "Blocks do not contain a merkle tree. Blocks contain the transactions.\n\nA program that wants a merkle tree reads those transactions, hashes them, and builds the tree itself.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96ymxe",
+                            "author": "ipcoffeepot",
+                            "score": 1,
+                            "created_utc": 1652962424.0,
+                            "response": "The block header contains a merkle root of the transactions in the block.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i96ld36",
+                    "author": "po00on",
+                    "score": 1,
+                    "created_utc": 1652952871.0,
+                    "response": "it's the entirety of the block contents that are computed together to determin the block hash. if somethings missing from a block, this will result in a different hash. if the hash of the current block doesn't match the hash referenced in the next block, the node will understand that there is treachery afoot.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97qfzm",
+                            "author": "igadjeed",
+                            "score": 1,
+                            "created_utc": 1652975175.0,
+                            "response": "> the entirety of the block contents that are computed together to determin the block hash\n\nNo",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i96le8d",
+                    "author": "Halo22B",
+                    "score": 1,
+                    "created_utc": 1652952900.0,
+                    "response": "A new node must download the entire history ie the whole block chain from the genesis block to now before it can start validating new blocks.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96ppdh",
+                            "author": "krisycoll",
+                            "score": 2,
+                            "created_utc": 1652956538.0,
+                            "response": "And receive blocks not from one peer but 10-15 peers minimizing the possibility of cheating",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i97us6j",
+                            "author": "igadjeed",
+                            "score": 1,
+                            "created_utc": 1652976926.0,
+                            "response": "A new node validates blocks as it downloads them, not after downloading them all",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i96z0xb",
+                    "author": "ipcoffeepot",
+                    "score": 1,
+                    "created_utc": 1652962648.0,
+                    "response": "You are not getting the utxo set from a peer. When you start a fresh node, it connects to a bunch of peers (I think 10 is the default number?) and it pulls down every block from the genesis block until now from its peers. Each block your node downloads gets validated and your node builds up its own UTXO set. If you have block pruning turned on, it deletes old blocks after they\u2019ve been processed.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i97qcj5",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1652975137.0,
+                    "response": "> When inputs are spent, the branches of the tree are hashed together to save space on old blocks\n\nTragically, this transaction pruning proposal (Satoshi white paper section 7) was never implemented  \n\nBut if it had been implemented ...  \nThere's no such object as an unspent input  \nPerhaps you meant to ask something else",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

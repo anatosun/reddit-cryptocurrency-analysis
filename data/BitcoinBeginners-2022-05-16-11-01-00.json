@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uqt1x7/what_is_the_significance_of_21m/",
             "author": "SwurveMan",
             "created_utc": 1652698081.0,
-            "score": 31,
-            "num_comments": 33,
+            "score": 33,
+            "num_comments": 44,
             "subreddit": "BitcoinBeginners",
             "selftext": "Why did Satoshi Nakamoto pick 21,000,000?",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i8t42dm",
                     "author": "bitusher",
-                    "score": 39,
+                    "score": 42,
                     "created_utc": 1652701369.0,
                     "response": "Ultimately the number doesn't matter too much as the market will price in the supply and demand. What matters is the fact that there is a limit, there is scarcity that is open , predictable , and agreed upon beforehand and not manipulated by corrupt Central planners like fiat or some altcoins (even popular ones) do.\n\nSince Bitcoin is extremely divisible (13 decimal places i a payment channel) the total amount doesn't matter because even if Bitcoin is worth 100 million a coin you can still have enough divisibility to buy a cup of coffee. \n\n**There is plenty of parts to go around** \n\nDivisibility is not the same thing as increased inflation either as 1 usd = 4 quarters = 10 dimes = 100 pennies with purchasing power and inflation only occurs when another dollar is printed to drive down the spending power of each dollar.\n\nNow onto why \"21 million\" and more importantly the controlled disinflationary monetary policy exists\n\nhttps://en.bitcoin.it/wiki/Controlled_supply\n\n1) Bitcoin was designed to mimic gold where a limited amount was available and could not be arbitrarily adjusted by corrupt central planners \n\nhttps://fee.org/articles/the-cantillon-effect-because-of-inflation-we-re-financing-the-financiers/\n\n2) It was designed where you can opt in to a economic policy voluntarily that would not change at whim against your will \n\n\nSome educated guesses why satoshi chose 21 million-\n\n1) One theory is that at the time of Satoshi\u2019s decision to use 21 million as the finite number of Bitcoin, the global M1 money supply stood at approximately $21 trillion. In economics, this is the global money supply that includes physical currency and coins, demand deposits, traveler's checks, other checkable deposits\n\n2) \u201cI wanted to pick something that would make prices similar to existing currencies, but without knowing the future, that\u2019s very hard. I ended up picking something in the middle,\u201d Nakamoto said. \u201cIf Bitcoin remains a small niche,\u201d he added, \u201cit\u2019ll be worth less per unit than existing currencies. If you imagine it being used for some fraction of world commerce, then there\u2019s only going to be 21 million coins for the whole world, so it would be worth much more per unit.\u201d\n\n3) Some believe that Bitcoin\u2018s 21 million limit was arbitrarily set by Nakamoto when he made two key decisions. That Bitcoin should add new blocks to its blockchain every 10 minutes (on average) and that the reward paid to miners halves every 210,000 blocks \u2013 roughly every 4 years.\n\n4) \"A total of 174,100 tonnes of gold have been mined in human history, according to GFMS as of 2012.2 This is roughly equivalent to 5.6 billion troy ounces or, in terms of volume, about 9261 m3, or a cube 21.0 m on a side.\"\n\n5) 50x210,000(1+1/2+1/4+1/8+1/16....) or\n\n50*210,000(2) = 21,000,000 is a nice clean equation to code and mathematically concise\n\n6) It helps avoid errors on most computer systems, and, is likely sufficient for all possible transactions everywhere.\n\nhttps://medium.com/@cseberino/why-21-million-bitcoins-was-a-great-idea-bd2533af0f63\n\n7) The meaning of life is 42 and bitcoin is half this",
                     "depth": 1,
@@ -79,7 +79,7 @@
                 {
                     "id": "i8t1kwo",
                     "author": "swgo1",
-                    "score": 7,
+                    "score": 6,
                     "created_utc": 1652699737.0,
                     "response": "It's a blackjack.",
                     "depth": 1,
@@ -132,11 +132,21 @@
                         {
                             "id": "i8vhg69",
                             "author": "_merryberrie",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1652738335.0,
                             "response": "What? 1970? What?",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i8zf5co",
+                                    "author": "BlyG",
+                                    "score": 1,
+                                    "created_utc": 1652815647.0,
+                                    "response": ">Unix time 21,000,000\n\nhttps://www.unixtimestamp.com/",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         }
                     ]
                 },
@@ -186,15 +196,6 @@
                     "comments": []
                 },
                 {
-                    "id": "i8xglrl",
-                    "author": "Tight_Philosophy_519",
-                    "score": 1,
-                    "created_utc": 1652782604.0,
-                    "response": "Satoshi put a hard cap or maximum limit of 21 million on the bitcoin supply, regulating it through an algorithm in its source code. The limited supply makes it a scarce commodity and can help increase its price in the future. A new bitcoin is added to the supply at a fixed rate of one block every 10 minutes.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i8xgmq3",
                     "author": "Severe_Bluebird_184",
                     "score": 1,
@@ -209,6 +210,15 @@
                     "score": 1,
                     "created_utc": 1652784175.0,
                     "response": "The maximum total supply of Bitcoin is 21 million. The number of Bitcoins issued will likely never reach 21 million due to the use of rounding operators in the Bitcoin codebase.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8zrqth",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1652820866.0,
+                    "response": "> Why did Satoshi Nakamoto pick 21,000,000?\n\nHe didn't. He picked 210,000 blocks as the block reward halving interval and 50 BTC as the initial block reward  \n\n21 million just happens to be the arithmetic consequence of these 2 parameters. The first reward era ...  \n\n    210000 * 50 = 10.5 million\n\nThe sum of the infinite geometric series of halves is 1, therefore the sum of the Bitcoin rewards for all the other reward eras is also ...  \n\n    210000 * 50 = 10.5 million\n\nSatoshi never explained why he chose 50 and 210000. The first shared version of his source code had the initial reward as 100 and halving interval as 100,000. This was changed to 50 and 210000 before version 0.1.0",
                     "depth": 1,
                     "comments": []
                 }

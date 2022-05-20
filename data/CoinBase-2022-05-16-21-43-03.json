@@ -15,7 +15,7 @@
             "author": "JonahStaab",
             "created_utc": 1652737368.0,
             "score": 0,
-            "num_comments": 29,
+            "num_comments": 38,
             "subreddit": "CoinBase",
             "selftext": "May 14th I wake around 9:30am to find that my coinbase balance is at $0.00 and my gmail is being bombarded with spam. I manage to find emails from coinbase at 8:07am stating the first bit of my portfolio was sold and converted to cash and wired off. I signed into coinbase and found a Chime and Sable bank account that were randomly added to my account. \n\nI had google authenticator enabled, I received no 2 fa text, no new device sign in email, no anything. Somehow everything was breached. \n\nThe account sign-in log doesn't even show anyone was on my account at the time of the transfers. \n\nI contacted support and asked them to stop/reverse these transfers and they say they can't. I even contacted Chime and Sable explained stolen funds are on the way to the account numbers. No luck.\n\nDoes anyone have any ideas or has been in this situation? I really hate to believe that coinbase is going to just sit back and make me watch my $20,000 be sent off into the sunset on a pending wire transfer to some thief when their security failed in every way. \n\nEspecially when they had the account information and time on their side.\n\nCASE#  11845720",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i8vxtt1",
                     "author": "Tall_Run_2814",
-                    "score": 10,
+                    "score": 12,
                     "created_utc": 1652746069.0,
                     "response": "You're bullshitting.  You don't receive text if you're using Google authenticator.  \n\nEither you use an authenticator app or SMS text for 2FA, not both on the same account.  This leads me to believe you weren't using either which therefore explains perfectly how and why this happened.  \n\nSorry for your loss but this space is a place for us to learn from each others successes and failures and that can only take place with honesty.  Best of luck",
                     "depth": 1,
@@ -50,9 +50,58 @@
                     ]
                 },
                 {
+                    "id": "i8vqobe",
+                    "author": "y90210",
+                    "score": 3,
+                    "created_utc": 1652742553.0,
+                    "response": "You used text for 2fa?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8vsm9k",
+                            "author": "JonahStaab",
+                            "score": -4,
+                            "created_utc": 1652743493.0,
+                            "response": "I had google authenticator and text 2fa yes",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8w02g1",
+                                    "author": "y90210",
+                                    "score": 6,
+                                    "created_utc": 1652747196.0,
+                                    "response": "It's one or the other, and sms is how people take over your account, they clone your sim and get your verification texts.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8w0jxb",
+                                            "author": "JonahStaab",
+                                            "score": 0,
+                                            "created_utc": 1652747441.0,
+                                            "response": "Thank you. \n\nYes it was sms verification as I'm guessing google authentication was disabled once I finished the identity verification process to regain access to Coinbase after my old phone with authenticator was destroyed. \n\nAny idea why it would not show a device login or new device connection?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8x3sxd",
+                                                    "author": "Distinct-Vanilla-788",
+                                                    "score": 4,
+                                                    "created_utc": 1652771073.0,
+                                                    "response": "You got sim swapped. Contact you SIM card provider. That\u2019s how to handle it.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "i8vqlh8",
                     "author": "Turbulent-Ad-6845",
-                    "score": 2,
+                    "score": 3,
                     "created_utc": 1652742514.0,
                     "response": "For sure on regular coinbase need Yubikey for 2FA ...Hope you get some help",
                     "depth": 1,
@@ -69,58 +118,9 @@
                     ]
                 },
                 {
-                    "id": "i8vqobe",
-                    "author": "y90210",
-                    "score": 2,
-                    "created_utc": 1652742553.0,
-                    "response": "You used text for 2fa?",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8vsm9k",
-                            "author": "JonahStaab",
-                            "score": -3,
-                            "created_utc": 1652743493.0,
-                            "response": "I had google authenticator and text 2fa yes",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i8w02g1",
-                                    "author": "y90210",
-                                    "score": 4,
-                                    "created_utc": 1652747196.0,
-                                    "response": "It's one or the other, and sms is how people take over your account, they clone your sim and get your verification texts.",
-                                    "depth": 3,
-                                    "comments": [
-                                        {
-                                            "id": "i8w0jxb",
-                                            "author": "JonahStaab",
-                                            "score": 0,
-                                            "created_utc": 1652747441.0,
-                                            "response": "Thank you. \n\nYes it was sms verification as I'm guessing google authentication was disabled once I finished the identity verification process to regain access to Coinbase after my old phone with authenticator was destroyed. \n\nAny idea why it would not show a device login or new device connection?",
-                                            "depth": 4,
-                                            "comments": [
-                                                {
-                                                    "id": "i8x3sxd",
-                                                    "author": "Distinct-Vanilla-788",
-                                                    "score": 2,
-                                                    "created_utc": 1652771073.0,
-                                                    "response": "You got sim swapped. Contact you SIM card provider. That\u2019s how to handle it.",
-                                                    "depth": 5,
-                                                    "comments": []
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "i8wchnz",
                     "author": "Brbz0rz",
-                    "score": 2,
+                    "score": 3,
                     "created_utc": 1652753419.0,
                     "response": "Should been holding ETH 2. You'd still have that!",
                     "depth": 1,
@@ -166,7 +166,7 @@
                         {
                             "id": "i8w1dkv",
                             "author": "JonahStaab",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1652747854.0,
                             "response": "I don't believe so. I may have done that when I started but whoever got into my account added multiple bank accounts to it",
                             "depth": 2,
@@ -174,7 +174,7 @@
                                 {
                                     "id": "i8w2vr2",
                                     "author": "atomicreload",
-                                    "score": 2,
+                                    "score": 3,
                                     "created_utc": 1652748601.0,
                                     "response": "Don't take this the wrong way I'm just going to tell you straight. Considering your other comments and your original, I don't think you understand crypto, CB's account security tools, or general cyber security practice very well. I'm sorry dude it really sucks and I hope you have a miracle come your way. But you don't seem to understand the security you had in place well enough to explain it for strangers on reddit help you.\n\nI truly hope you get somewhere with CB's customer service though. They are almost criminally ignorant, and when they do reply they just gaslight you with your own ignorance of how their whole platform works.",
                                     "depth": 3,
@@ -190,7 +190,7 @@
                                                 {
                                                     "id": "i8xsrc3",
                                                     "author": "QAnonRetard",
-                                                    "score": 1,
+                                                    "score": 2,
                                                     "created_utc": 1652790741.0,
                                                     "response": "There is no such thing as \u201cthe point of coinbase\u201d. Stop trying to blame others, you are 100% at fault",
                                                     "depth": 5,
@@ -199,7 +199,7 @@
                                                 {
                                                     "id": "i8xsv5l",
                                                     "author": "QAnonRetard",
-                                                    "score": 1,
+                                                    "score": 2,
                                                     "created_utc": 1652790801.0,
                                                     "response": "Also there is no such thing as \u201cwhat Coinbase does for people\u201d.",
                                                     "depth": 5,
@@ -216,7 +216,7 @@
                 {
                     "id": "i8vussj",
                     "author": "Accomplished-Way7608",
-                    "score": -3,
+                    "score": -5,
                     "created_utc": 1652744561.0,
                     "response": "Your money is gone. This is most likely an inside job by a Coinbase employee offshore. They have all your info and are outside US law. Happened to literally thousands of customers. Scams and fraud are rampant in unregulated cryptoland.\n\nBest thing to do is call your congressman and news media. Tell them your story.",
                     "depth": 1,
@@ -232,15 +232,54 @@
                                 {
                                     "id": "i8w74l8",
                                     "author": "cmdrshepherd1993",
-                                    "score": 2,
+                                    "score": 3,
                                     "created_utc": 1652750727.0,
                                     "response": "You need to do the following: Stop using Google anything. Change to protonmail and no gmail; get a yubikey or Authy for 2FA; enable Whitelisting. Get a cold wallet or at least a hot wallet but write your seed phrase down, put it in a safe. Don\u2019t share it with anyone or any business or any site for any reason. Ever. And NEVER have $20,000 in an exchange. You put it in your private wallet.",
                                     "depth": 3,
                                     "comments": [
                                         {
+                                            "id": "i8zw0hs",
+                                            "author": "Accomplished-Way7608",
+                                            "score": 2,
+                                            "created_utc": 1652822666.0,
+                                            "response": "How do you sell and cash out without an exchange??",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8zwwnl",
+                                                    "author": "cmdrshepherd1993",
+                                                    "score": 1,
+                                                    "created_utc": 1652823050.0,
+                                                    "response": "When you wanna pull some out, send from your wallet to the exchange & either spend on the card associated with your exchange or send to your bank. \n\nExample: $50,000 in BTC in private wallet, *walks down the street* \u201cI want to buy Ice-Cream, I\u2019ll need $5\u201d *sends $10 of the $50,000 to exchange & cashes out to bank or spends on Coinbase card to get 4% back. But rest of the money is safe in private wallet.* easy peasy, lemon squeezy, pumpkin cheesy my guy.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i934kfl",
+                                                            "author": "Accomplished-Way7608",
+                                                            "score": 1,
+                                                            "created_utc": 1652889154.0,
+                                                            "response": "Sounds too complex for a layman like me. That's why I don't ever see mass adoption happening.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i93az2p",
+                                                                    "author": "cmdrshepherd1993",
+                                                                    "score": 1,
+                                                                    "created_utc": 1652891760.0,
+                                                                    "response": "Okay it\u2019s not. If you had $200 cash and wanted to spend it on your bank card, you have to send that money from your wallet to your card to spend it which you could use an atm to deposit.  So money in wallet to exchange (bank) to spend. But keep in your wallet lol simple",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
                                             "id": "i8wlhsm",
                                             "author": "Kiwip0rn",
-                                            "score": 1,
+                                            "score": 2,
                                             "created_utc": 1652758201.0,
                                             "response": "Looking down this post, they either have absolutely no idea what they are doing, or just plain lying.",
                                             "depth": 4,
@@ -253,11 +292,11 @@
                     ]
                 },
                 {
-                    "id": "i8wo9jw",
-                    "author": "Specific_Till_2569",
-                    "score": -3,
-                    "created_utc": 1652759838.0,
-                    "response": "Sorry for your predicament . It 's very ridiculous indeed, I was also a victim though I achieved recovery as I was referred to a cyber specialist who helped me. It took 48hours to achieve it but I was amazed the recovery was successful. Contact recoverlostcoin @ cyberservices. com Very reliable, I just got all my coins back.",
+                    "id": "i961gsn",
+                    "author": "HqrkatMatt",
+                    "score": 1,
+                    "created_utc": 1652936434.0,
+                    "response": "\ud83d\udd25 DINOSTEP.APP \ud83d\udd25\n\n\ud83e\udd96 The First Move To Earn App With Virtual Dinosaurs\n\ud83d\udc5f Earn while building healthy habits with the Dino\n\u2728 Varied NFTs\n\ud83d\udcb5 Passive Income Features\n\ud83d\udc8e App Activation Code & NFT Drop For Fair Launch Contributors\n\n\ud83d\ude80 Fair Launch Starts On May 9th",
                     "depth": 1,
                     "comments": []
                 }
@@ -270,7 +309,7 @@
             "author": "jsp1073",
             "created_utc": 1652737278.0,
             "score": 0,
-            "num_comments": 11,
+            "num_comments": 15,
             "subreddit": "CoinBase",
             "selftext": "Can I post here??",
             "stickied": false,
@@ -299,6 +338,24 @@
                     "score": 1,
                     "created_utc": 1652758455.0,
                     "response": "And a 100 new friends in your DM for making a Post. \n\nDO NOT DO ANYTHING they say to do.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i961fv1",
+                    "author": "HqrkatMatt",
+                    "score": 1,
+                    "created_utc": 1652936417.0,
+                    "response": "\ud83d\udd25 DINOSTEP.APP \ud83d\udd25\n\n\ud83e\udd96 The First Move To Earn App With Virtual Dinosaurs\n\ud83d\udc5f Earn while building healthy habits with the Dino\n\u2728 Varied NFTs\n\ud83d\udcb5 Passive Income Features\n\ud83d\udc8e App Activation Code & NFT Drop For Fair Launch Contributors\n\n\ud83d\ude80 Fair Launch Starts On May 9th",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i98gbxf",
+                    "author": "balamthanedar",
+                    "score": 1,
+                    "created_utc": 1652985624.0,
+                    "response": "@cumversetoken\n PRESALE IS LIVE!\n\n \ud83d\ude0d Metaverse dating\n \ud83d\udc64Play in your avatar\n \ud83c\udfae Compatible with all major VR devices\n \ud83d\udd25 Tinder for the metaverse\ud83d\udc40 \n \ud83e\udd0f\ud83c\udffc Swipe right\n \u2764\ufe0f fall in-love or\n \ud83d\udca6 have sexual experiences \ud83e\udee6\n \ud83d\udccdVirtual land drops to the 1st holders. \n #BSC\n t.me/cumversecrypto",
                     "depth": 1,
                     "comments": []
                 }

@@ -41,104 +41,13 @@
             ]
         },
         {
-            "id": "urx5fh",
-            "title": "Issue with importing a breadwallet mnemonic into Fully Noded on iOS",
-            "url": "https://www.reddit.com/r/Bitcoin/comments/urx5fh/issue_with_importing_a_breadwallet_mnemonic_into/",
-            "author": "putyograsseson",
-            "created_utc": 1652823656.0,
-            "score": 3,
-            "num_comments": 1,
-            "subreddit": "Bitcoin",
-            "selftext": "Fully Noded is connected to my citadel node (umbrel fork) and the blockchain is 100% synced.\n\nWhatever I try to import, the balance always shows 0 funds.\n\nI've tried:\n\n- importing the 12 words\n\n- importing the native segwit descriptor wpkh([xfp/0']xpubxxxxx/0/*)\n\n- importing the legacy descriptor pkh([xfp/0']xpubxxxxx/0/*)\n\n\nAny tips?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i90nqay",
-                    "author": "Deminero30",
-                    "score": 1,
-                    "created_utc": 1652835550.0,
-                    "response": "Resolved?",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "urx5vi",
-            "title": "Help with an old Armory wallet",
-            "url": "https://www.reddit.com/r/Bitcoin/comments/urx5vi/help_with_an_old_armory_wallet/",
-            "author": "bobadome",
-            "created_utc": 1652823690.0,
-            "score": 4,
-            "num_comments": 6,
-            "subreddit": "Bitcoin",
-            "selftext": "I no longer have my paper backup or private keys. Is there a way I can recover my wallet.dat file? I can see the old wallet files that were left behind in the Armory folder that end with .\"lmdb\" but the \".dat\" files are no longer there. I must have deleted them at some point in time and without my paper backup/private keys I am stuck. I do have the original laptop where the file was created/deleted but have not had any luck recovering it. Any help would be appreciated!\"",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i90351g",
-                    "author": "FiatDiaper6000",
-                    "score": 2,
-                    "created_utc": 1652825804.0,
-                    "response": "Rip inbox",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i904li0",
-                    "author": "EE214_Verilog",
-                    "score": 1,
-                    "created_utc": 1652826476.0,
-                    "response": "Oooof",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i90alr5",
-                    "author": "Nada_Lives",
-                    "score": 1,
-                    "created_utc": 1652829282.0,
-                    "response": "You can recover some deleted files. Check with [https://www.cgsecurity.org/](https://www.cgsecurity.org/). Christophe personally helped me to recover from a nearly impossible crash.\n\nDon't trust me or anyone else on this. Go to the website and use your own discretion.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i90kieg",
-                    "author": "RogerWilco357",
-                    "score": 1,
-                    "created_utc": 1652834033.0,
-                    "response": "Armory has a sub on BitcoinTalk, not sure if it is still active there or not, but maybe the dev Goatpig or something still lurks.\n\nI used Armory before I got Nano S in 2017.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i90q3f1",
-                    "author": "TaleRecursion",
-                    "score": 1,
-                    "created_utc": 1652836669.0,
-                    "response": "The file or some of its content might still be there somewhere waiting to be recovered but in the meantime you can't let the operating system overwrite the location where it was stored so make one or several binary copies of the laptop's harddrive ASAP so you have at least one clean, readonly snapshot of the laptop data to work with.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i915dxr",
-                    "author": "Inevitable-0246",
-                    "score": 1,
-                    "created_utc": 1652844079.0,
-                    "response": "My memory of Armory is vague now.  But just a side comment you are looking for a armory_xxx.wallet file.\n\nwallet.dat is a Qt / Core construct and not relevant for Armory wallets.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "urx7im",
             "title": "dOn'T hOdL yOuR kEyS, yOuR BiTcOiN iS sAfU hErE \ud83e\udd21",
             "url": "https://v.redd.it/3sf7ra99w3091",
             "author": "Amber_Sam",
             "created_utc": 1652823817.0,
-            "score": 96,
-            "num_comments": 101,
+            "score": 170,
+            "num_comments": 228,
             "subreddit": "Bitcoin",
             "selftext": "",
             "stickied": false,
@@ -146,7 +55,7 @@
                 {
                     "id": "i90871i",
                     "author": "I_Plumber",
-                    "score": 30,
+                    "score": 60,
                     "created_utc": 1652828140.0,
                     "response": "Mt. Gox entered the chat",
                     "depth": 1,
@@ -154,7 +63,7 @@
                         {
                             "id": "i90d91q",
                             "author": "E-renter",
-                            "score": 12,
+                            "score": 16,
                             "created_utc": 1652830546.0,
                             "response": "Gerald Cotten entered the chat",
                             "depth": 2,
@@ -162,7 +71,7 @@
                                 {
                                     "id": "i90giow",
                                     "author": "thats_just_right",
-                                    "score": 7,
+                                    "score": 10,
                                     "created_utc": 1652832139.0,
                                     "response": "Jennifer Robrrtson entered the chat",
                                     "depth": 3,
@@ -171,9 +80,37 @@
                             ]
                         },
                         {
+                            "id": "i90ogkm",
+                            "author": "danger89",
+                            "score": 15,
+                            "created_utc": 1652835892.0,
+                            "response": "Luna entered the chat",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i91uewc",
+                                    "author": "Argyrus777",
+                                    "score": 13,
+                                    "created_utc": 1652862336.0,
+                                    "response": "The Kwon Artist",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i91w1ma",
+                                    "author": "conordurkin",
+                                    "score": 2,
+                                    "created_utc": 1652863891.0,
+                                    "response": "Hope they survive and just make that out soon though!\n\nLet's just make moves wisely and be sure to survive at this hard and crucial times. That would be rather indeed good!",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
                             "id": "i90kqcp",
                             "author": "Ralph_Naders_Ghost",
-                            "score": 5,
+                            "score": 8,
                             "created_utc": 1652834137.0,
                             "response": "Cryptopia has entered the chat",
                             "depth": 2,
@@ -186,96 +123,21 @@
                                     "response": "Taken down by the cartel-\n\nReplaced by Easycrypto - established by Westpac Banks Corporate Strategy Manager.\n\nThe fiat debt slavery cartels strategy of market capture and control.",
                                     "depth": 3,
                                     "comments": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i90e3wn",
-                    "author": "Days_of_Static",
-                    "score": 21,
-                    "created_utc": 1652830959.0,
-                    "response": "If I recall, 30% is the rough percentage of BTC that hasn\u2019t moved out of a wallet in 5+ years. Some people use that as some kind of evidence that all that BTC is lost, but there is evidence every day of those old wallets \u201cactivating\u201d and moving their coins. \n\nTo say that all that BTC is lost is disingenuous.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i900ubb",
-                    "author": "stonksfernothin",
-                    "score": 37,
-                    "created_utc": 1652824774.0,
-                    "response": "6 million btc gone. Nah that\u2019s not right",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i90yvga",
-                            "author": "thondera",
-                            "score": 2,
-                            "created_utc": 1652840807.0,
-                            "response": "Yeah, we'll hold your bitcoin for you. And then evacuate half a billion of our customers' funds from ANCHOR last minute before the Lune collapse.\n\nJust a reminder, Celsius' custodian refused to work with them because they were rehypothecating their customers' funds into infinity. \n\nAlex Mashinsky is gambling with borrowed money.",
-                            "depth": 2,
-                            "comments": []
-                        },
-                        {
-                            "id": "i914m9v",
-                            "author": "tatsumakisempukyaku",
-                            "score": 0,
-                            "created_utc": 1652843684.0,
-                            "response": "well you can chalk up 1200btc to that number which I bought in 2010 on a laptop that I happened to  throw out in 2013, 2 weeks before I remembered that I bought them due to headlines of Bitcoin hitting a new ATH of 300 bucks. Pain.",
-                            "depth": 2,
-                            "comments": []
-                        },
-                        {
-                            "id": "i91e7nq",
-                            "author": "AndyZuggle",
-                            "score": 1,
-                            "created_utc": 1652849286.0,
-                            "response": "People who talk like that sure do love that number.  Regular people don't question it.",
-                            "depth": 2,
-                            "comments": []
-                        },
-                        {
-                            "id": "i91lj2a",
-                            "author": "jasonpushee1979",
-                            "score": 1,
-                            "created_utc": 1652854608.0,
-                            "response": "They aren't going anywhere, people just holding them.",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i90490o",
-                    "author": "ShareblockHolmes",
-                    "score": 8,
-                    "created_utc": 1652826312.0,
-                    "response": "In order to teach people about key management I\u2019m creating \u2018crypto puzzle hunts\u2019 where I post my keys on twitter as a puzzle. First one to solve it can have it.\nPlanning to share guides, tools etc going forward. Any suggestions?",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i904td1",
-                            "author": "HighSolstice",
-                            "score": 6,
-                            "created_utc": 1652826575.0,
-                            "response": "This would make geocaching 10X more fun.",
-                            "depth": 2,
-                            "comments": [
+                                },
                                 {
-                                    "id": "i9070xz",
-                                    "author": "ShareblockHolmes",
-                                    "score": 2,
-                                    "created_utc": 1652827591.0,
-                                    "response": "Right? I\u2019ve posted one already, took 2 weeks to get solved. Will create more soon. You can see them on twitter under the same name: ShareblockHolmz\nAny suggestions are welcome",
+                                    "id": "i931b9u",
+                                    "author": "Dannymax333",
+                                    "score": 1,
+                                    "created_utc": 1652887818.0,
+                                    "response": "Cryptopia was a dope name. I miss that exchange \ud83d\ude14",
                                     "depth": 3,
                                     "comments": [
                                         {
-                                            "id": "i91lag0",
-                                            "author": "yarikmuzira",
+                                            "id": "i938kjj",
+                                            "author": "Ralph_Naders_Ghost",
                                             "score": 1,
-                                            "created_utc": 1652854417.0,
-                                            "response": "Thanks for the username, i will certainly checkout that.",
+                                            "created_utc": 1652890793.0,
+                                            "response": "Me too.  And my coins.",
                                             "depth": 4,
                                             "comments": []
                                         }
@@ -284,11 +146,254 @@
                             ]
                         },
                         {
-                            "id": "i91ezoy",
-                            "author": "Adamsd5",
+                            "id": "i922zje",
+                            "author": "Yattiel",
+                            "score": 3,
+                            "created_utc": 1652870057.0,
+                            "response": "2/3 of crypto exchanges today enters the chat while not letting you sell after a huge run up or during a huge drop off lol",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i92ex6v",
+                            "author": "diydude2",
                             "score": 2,
-                            "created_utc": 1652849810.0,
-                            "response": "The people who need to learn will not get there first.  You will pay experts.  Maybe do some kind of crypto drawing instead?",
+                            "created_utc": 1652877702.0,
+                            "response": "Bitconnect entered the chat.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i93j9a6",
+                            "author": "alias464618",
+                            "score": 1,
+                            "created_utc": 1652895078.0,
+                            "response": "Feels like we need more and more people now in the chat.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91fsl5",
+                    "author": "Adamsd5",
+                    "score": 17,
+                    "created_utc": 1652850351.0,
+                    "response": "Exaggerations here are unfortunate...he doesn't need to say that.  He should say something like:\n\n\"If you have not learned enough, or won't put the work in to keep your own keys safe, custodial services might be better for you.\"\n\nBut why even that?  Lending is a legit business.  It is akin to buying bonds.  The message should be, \"You can make money by lending it out.  There are some risks, as with bonds, so consider carefully.\"  It isn't for everyone, and anyone using it should indeed be aware they could lose if enough borrowers (Celsius included) go bankrupt.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92811z",
+                            "author": "Trifusi0n",
+                            "score": 3,
+                            "created_utc": 1652873661.0,
+                            "response": "He wasn\u2019t just hitting on Bitcoin maxi\u2019s either. If you want the rest of this video beyond where OP has clipped it, he goes on to say that the Bitcoin maxi\u2019s and CeFi shouldn\u2019t be fighting each other, they\u2019re both targeting different audiences. \n\nThere are people that just don\u2019t have the time, ability or frankly couldn\u2019t care to secure their Bitcoin in their own wallets. Celsius is there for those people. For the people who do care about the security of their Bitcoin then they can self custody, and both of these solutions are ok. \n\nHis main point was that we should all be working together to grow the whole crypto space and introduce as many new people to it as possible.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i93jx0s",
+                            "author": "Pockethulk750",
+                            "score": 1,
+                            "created_utc": 1652895346.0,
+                            "response": "Totally agree. Couldn\u2019t have said it better\u2026and he couldn\u2019t either.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i90e3wn",
+                    "author": "Days_of_Static",
+                    "score": 44,
+                    "created_utc": 1652830959.0,
+                    "response": "If I recall, 30% is the rough percentage of BTC that hasn\u2019t moved out of a wallet in 5+ years. Some people use that as some kind of evidence that all that BTC is lost, but there is evidence every day of those old wallets \u201cactivating\u201d and moving their coins. \n\nTo say that all that BTC is lost is disingenuous.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91rx91",
+                            "author": "MuchTemperature6776",
+                            "score": 11,
+                            "created_utc": 1652860033.0,
+                            "response": "I haven\u2019t moved mine out for 5+ years. I have only transferred to my wallet. I think last time I moved any BTC out of a wallet was in 2016.\n\nI guess I\u2019ve lost my BTC lol",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i924r53",
+                                    "author": "DenisDolgih",
+                                    "score": 1,
+                                    "created_utc": 1652871407.0,
+                                    "response": "Good to just hold and keep that for future purposes the time we haven't seen good days are indeed ahead.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i928ebc",
+                            "author": "litetrading",
+                            "score": 3,
+                            "created_utc": 1652873903.0,
+                            "response": "They thought if bitcoin is not moving from a wallet for a long time, they are dead or lost.\n\nMen this is the damn reason they are moved in the wallet for the first place too hold them.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i90xzks",
+                    "author": "walloon5",
+                    "score": 11,
+                    "created_utc": 1652840383.0,
+                    "response": "There's no way Celcius has your bitcoin.\n\nThey sold it to short it\n\nIf the shorts work out for them, they make fiat, their depositors get a little\n\nBut if bitcoin price goes against them, then they blow up and go bankrupt. Depositors lose their bitcoin. And he says he's so sorry",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91soba",
+                            "author": "Jaseur",
+                            "score": 2,
+                            "created_utc": 1652860729.0,
+                            "response": ">They sold it to short it\n\nIt sounds like they're gambling on sketchy defi nonsense and quite possibly pumping their own shitcoin as well (and failing).",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i926n8a",
+                            "author": "Mostofyouareidiots",
+                            "score": 2,
+                            "created_utc": 1652872739.0,
+                            "response": "If that's true, then if more people start taking their bitcoin off celcius then they'll have to start covering soon, leading to higher prices and a downward spiral for them as they get squeezed.  They may be closer to implosion than most people think.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i93bk9f",
+                            "author": "msinelnik1990",
+                            "score": 1,
+                            "created_utc": 1652891997.0,
+                            "response": "Exchange make more money from out bitcoin by doing the trading with our asset and this why they are saying like that.\n\nBitcoin will hit the 100k mark if we all move out bitcoin from the exchange to the wallet.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91m8vr",
+                    "author": "Ima_Wreckyou",
+                    "score": 9,
+                    "created_utc": 1652855174.0,
+                    "response": "This sounds super sketchy. He is obviously scared shitless of a bank run. Who knows what investments they make with your Bitcoin. I would get my coins out there as long as it's still possible if I had any there.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i900ubb",
+                    "author": "stonksfernothin",
+                    "score": 44,
+                    "created_utc": 1652824774.0,
+                    "response": "6 million btc gone. Nah that\u2019s not right",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91e7nq",
+                            "author": "AndyZuggle",
+                            "score": 5,
+                            "created_utc": 1652849286.0,
+                            "response": "People who talk like that sure do love that number.  Regular people don't question it.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i90yvga",
+                            "author": "thondera",
+                            "score": 9,
+                            "created_utc": 1652840807.0,
+                            "response": "Yeah, we'll hold your bitcoin for you. And then evacuate half a billion of our customers' funds from ANCHOR last minute before the Lune collapse.\n\nJust a reminder, Celsius' custodian refused to work with them because they were rehypothecating their customers' funds into infinity. \n\nAlex Mashinsky is gambling with borrowed money.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i914m9v",
+                            "author": "tatsumakisempukyaku",
+                            "score": 1,
+                            "created_utc": 1652843684.0,
+                            "response": "well you can chalk up 1200btc to that number which I bought in 2010 on a laptop that I happened to  throw out in 2013, 2 weeks before I remembered that I bought them due to headlines of Bitcoin hitting a new ATH of 300 bucks. Pain.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i91uhu2",
+                                    "author": "Argyrus777",
+                                    "score": 1,
+                                    "created_utc": 1652862414.0,
+                                    "response": "Throw out like sent to recycler?",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i93siqd",
+                                    "author": "Karapatian",
+                                    "score": 1,
+                                    "created_utc": 1652898801.0,
+                                    "response": "Don't worry mate you are not the one here who sell too early.\n\nWe all heard the story of the people buying 2 pizza with the 10000 BTC in the past, think about those guys.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i91lj2a",
+                            "author": "jasonpushee1979",
+                            "score": 1,
+                            "created_utc": 1652854608.0,
+                            "response": "They aren't going anywhere, people just holding them.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92rs8b",
+                                    "author": "kinglcj",
+                                    "score": 3,
+                                    "created_utc": 1652883837.0,
+                                    "response": "Thats is what I feel the same and people think that 6 millions BTC is indeed gone.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i913czw",
+                    "author": "dadlif3",
+                    "score": 18,
+                    "created_utc": 1652843034.0,
+                    "response": "Holding your own keys isn't for everyone. If you frequently lose your phone while talking on it or can't find the sunglasses on top of your head you would probably be better off using a custody service like Celsius. For everyone else, self custody is the way.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91p60s",
+                            "author": "atlpatl",
+                            "score": 4,
+                            "created_utc": 1652857589.0,
+                            "response": "It's a responsibility and taking responsibility is not the cup of tea for the everyone.\n\nSo if you are moving to the wallet you need to prepare youself as a more careful person in the future.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i924384",
+                                    "author": "NoShip7475",
+                                    "score": 1,
+                                    "created_utc": 1652870915.0,
+                                    "response": "This is a good comment. There are not a lot of real adults that can handle responsibility.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i925vq9",
+                            "author": "PerformanceVarious45",
+                            "score": 1,
+                            "created_utc": 1652872207.0,
+                            "response": "Why are you using Bitcoin?",
                             "depth": 2,
                             "comments": []
                         }
@@ -297,7 +402,7 @@
                 {
                     "id": "i90g5ql",
                     "author": "heplg",
-                    "score": 17,
+                    "score": 19,
                     "created_utc": 1652831964.0,
                     "response": "If Celsius goes bankrupt and you keep your Btc there you wouldn't get back your BTc \n\nThey will use your btc to payback their creditors",
                     "depth": 1,
@@ -305,18 +410,142 @@
                         {
                             "id": "i90gq44",
                             "author": "solomonsatoshi",
-                            "score": 6,
+                            "score": 9,
                             "created_utc": 1652832237.0,
                             "response": "This could be another brutal lesson for the community - those who have given others custody for those other to take risk and promise gain may soon learn a very hard lesson- NOT YOUR KEYS NOT YOUR COIN",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i93r2nd",
+                                    "author": "adhgsw",
+                                    "score": 1,
+                                    "created_utc": 1652898213.0,
+                                    "response": "Keeping you bitcoin or any other other crypto on the exchange  is like depositing on the the bank.\n\nAnd this is the damn reason i came here into place to set my self free from the banking system.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i92cyck",
+                            "author": "gesztenye62",
+                            "score": 2,
+                            "created_utc": 1652876626.0,
+                            "response": "I think or i just hope they have some backup plan instead of using the customer bitcoin to overcome the crisis. \n\nAlthough i am not holding on Celsius but some other people definitely holding there.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i93jgxe",
+                                    "author": "heplg",
+                                    "score": 1,
+                                    "created_utc": 1652895164.0,
+                                    "response": "Do you really think these people care about our money? \n\nAs long as they got theirs and bills are paid they don't care",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9045kq",
+                    "author": "haakon",
+                    "score": 19,
+                    "created_utc": 1652826268.0,
+                    "response": "\"Everybody lost their keys\", ouch. This sounds incredibly catastrophic. RIP every single bitcoin private key ever. ;-(\n\nThanks a LOT, maxis. You gone and done it this time.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i93dhxt",
+                            "author": "richiecox1",
+                            "score": 1,
+                            "created_utc": 1652892762.0,
+                            "response": "Not everyone has lost their keys, some just forget that they have the bitcoin while some are just holding them for a long run.\n\nYes some also lost the key but that is due to their irresponsibility.",
                             "depth": 2,
                             "comments": []
                         }
                     ]
                 },
                 {
+                    "id": "i913wt7",
+                    "author": "upfrombelow88",
+                    "score": 4,
+                    "created_utc": 1652843316.0,
+                    "response": "Def sold more btc than what they have",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91ltsm",
+                            "author": "notalusr",
+                            "score": 3,
+                            "created_utc": 1652854836.0,
+                            "response": "This is why they are saying keep your bitcoin with us.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92exmy",
+                                    "author": "wwbhst",
+                                    "score": 1,
+                                    "created_utc": 1652877709.0,
+                                    "response": "And people still tend not to believe this and somewhat come up with some kind of crucial argument.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i91byc2",
+                    "author": "Al_Gorand",
+                    "score": 4,
+                    "created_utc": 1652847839.0,
+                    "response": "'not your keys not your bitcoin [...]\nbecause of the bitcoin maxis, because they told you to hold your own keys... then everybody lost their keys'\n\nMaybe I am just to retarded to understand this rocket scientist but I thought when you lost your keys it's not 'your keys' anymore and I thought when 'bitcoin maxis' telling you to 'hold your own keys' they mean to hold and not to lost your keys.\n\nwho is this guy?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91uwpz",
+                            "author": "Regular_Chapter_788",
+                            "score": 2,
+                            "created_utc": 1652862808.0,
+                            "response": ">who is this guy?\n\nCelsius CEO",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91cbd9",
+                    "author": "Verallendingen",
+                    "score": 4,
+                    "created_utc": 1652848064.0,
+                    "response": "what a clown lmao",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i93r2v3",
+                            "author": "Cronos919",
+                            "score": 1,
+                            "created_utc": 1652898216.0,
+                            "response": "And trust me bro, they are still some clown who is believing in this circus.\n\nNo matter how hard we try to convince them they will still fall for the guys like this on the exchange.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91pj5e",
+                    "author": "NYKNYb",
+                    "score": 4,
+                    "created_utc": 1652857909.0,
+                    "response": "I can't wait for all of these guys to get rekt, even if it means a 50% drawdown and insane FUD.\n\nPeople need to learn their lesson again.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i900g1c",
                     "author": "tradone",
-                    "score": 18,
+                    "score": 16,
                     "created_utc": 1652824598.0,
                     "response": "Is this clown even right? 30%? Gone?",
                     "depth": 1,
@@ -324,16 +553,44 @@
                         {
                             "id": "i9092kg",
                             "author": "tuxedo_moon",
-                            "score": 13,
+                            "score": 15,
                             "created_utc": 1652828553.0,
                             "response": "Doesn't matter, Bitcoin is working as intended. If anyone could recover those \"lost\" coins, then Bitcoin would not be useful.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i91vuk0",
+                                    "author": "p4di",
+                                    "score": 4,
+                                    "created_utc": 1652863703.0,
+                                    "response": "losing BTC is also kinda like a  donation to everyone else holding BTC as scarcity rises.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i92aquc",
+                                    "author": "c0l0ssis",
+                                    "score": 1,
+                                    "created_utc": 1652875349.0,
+                                    "response": "But i will still take my chances on the wallet rather than the exchanges.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i91knql",
+                            "author": "Wsemenske",
+                            "score": 2,
+                            "created_utc": 1652853920.0,
+                            "response": "Even if it's true, the vast majority were lost a long time ago before things like seed phrases. And while it seems like a lot, those people often lost large amounts of Bitcoin when it was worth less than a dollar.\n\nYeah, you can think of it as 30%, but in reality the cost of those lost coins were not as much as today.\n\nNot trying to downplay the tragedy of losing your coins, just saying that Alex is purposely being misleading.\n\nToday, with hardware wallets and seed phrases, it's not as easy to lose your Bitcoin.\n\nThe risk of being on Celisus is higher",
                             "depth": 2,
                             "comments": []
                         },
                         {
                             "id": "i90dwbf",
                             "author": "King_Esot3ric",
-                            "score": 2,
+                            "score": 4,
                             "created_utc": 1652830859.0,
                             "response": "Not sure if its 30%, maybe closer to 15-20%? But again, Alex would probably know better than 99% of people on Reddit.",
                             "depth": 2,
@@ -341,7 +598,7 @@
                                 {
                                     "id": "i90hjqg",
                                     "author": "MiguelLancaster",
-                                    "score": 8,
+                                    "score": 11,
                                     "created_utc": 1652832637.0,
                                     "response": "nobody knows because it's unknowable, only able to be estimated",
                                     "depth": 3,
@@ -349,7 +606,7 @@
                                         {
                                             "id": "i90lojz",
                                             "author": "Jezzes",
-                                            "score": 8,
+                                            "score": 12,
                                             "created_utc": 1652834586.0,
                                             "response": "The best HODLers make you think their Bitcoin is gone.",
                                             "depth": 4,
@@ -372,6 +629,15 @@
                                                             "comments": []
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    "id": "i93auv1",
+                                                    "author": "frencheric",
+                                                    "score": 1,
+                                                    "created_utc": 1652891713.0,
+                                                    "response": "True, i know many people who is not thinking about to touch the bitcoin as they have no plan of doing any kind of the trading for that.\n\nBut some think if they aren't moving they are just dead coin.",
+                                                    "depth": 5,
+                                                    "comments": []
                                                 }
                                             ]
                                         },
@@ -394,15 +660,52 @@
                                             "comments": []
                                         }
                                     ]
+                                },
+                                {
+                                    "id": "i92ws8y",
+                                    "author": "weendee",
+                                    "score": 1,
+                                    "created_utc": 1652885959.0,
+                                    "response": "Men he needs to understand that some of them actually hold them for the long.\n\nThis is damn reason they are moving their assets from the exchange so they can hold them without panic.",
+                                    "depth": 3,
+                                    "comments": []
                                 }
                             ]
                         },
                         {
-                            "id": "i91knql",
-                            "author": "Wsemenske",
+                            "id": "i91w8do",
+                            "author": "SaneLad",
                             "score": 1,
-                            "created_utc": 1652853920.0,
-                            "response": "Even if it's true, the vast majority were lost a long time ago before things like seed phrases. And while it seems like a lot, those people often lost large amounts of Bitcoin when it was worth less than a dollar.\n\nYeah, you can think of it as 30%, but in reality the cost of those lost coins were not as much as today.\n\nNot trying to downplay the tragedy of losing your coins, just saying that Alex is purposely being misleading.\n\nToday, with hardware wallets and seed phrases, it's not as easy to lose your Bitcoin.\n\nThe risk of being on Celisus is higher",
+                            "created_utc": 1652864076.0,
+                            "response": "No. He casually tallied up all the Bitcoin that hasn't moved in a few years, including Satoshi's stash. Even if some large fraction of that is indeed lost, it is disingenuous to compare the situation of Bitcoin from 10 years ago with today. Nobody today would store thousands of Bitcoin on a laptop with no backup and throw it away. And a lot of storage solutions from today simply did not exist back then.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i91wj52",
+                                    "author": "BastiatF",
+                                    "score": 2,
+                                    "created_utc": 1652864359.0,
+                                    "response": "There is still the problem of sudden death leading to lost keys",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i925ynh",
+                            "author": "m-nightwalker",
+                            "score": 1,
+                            "created_utc": 1652872264.0,
+                            "response": "Yes, it is possible. Invest answers did some hypothetical calculations and he says it's possible by the time all btc is mined something like 6-7 million might be lost due to people loosing access to their wallets. We probably all heard about the guy who threw away his drives with a lot of btc on them, those coins are gone forever. People not checking the address properly and sending stuff to wrong address, gone. What Alex said, 30%, is probably exaggeration, but the truth is some portion of btc is forever non accessible. So there won't be 21 million of it in the end, but less.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i93gqsy",
+                            "author": "maximumcoin",
+                            "score": 1,
+                            "created_utc": 1652894062.0,
+                            "response": "I don't think he thinking straight here, just telling the number of bitcoin that hasn't moved from the wallet,\n\nSo according to him if bitcoin is not moved from the wallet they are dead or gone?",
                             "depth": 2,
                             "comments": []
                         }
@@ -411,7 +714,7 @@
                 {
                     "id": "i901021",
                     "author": "CombatWombat476",
-                    "score": 10,
+                    "score": 11,
                     "created_utc": 1652824844.0,
                     "response": "It's one thing when an individual loses their coins due personal irresponsibility, but another when someone else loses them and the coins are not in your custody. Conflating the two represents a grave misunderstanding of the fundamental tenets of bitcoin. Also doesn't that 30% number include large amounts that are not confirmed gone?",
                     "depth": 1,
@@ -423,60 +726,637 @@
                             "created_utc": 1652841082.0,
                             "response": "Yep. The 30% thing is about wallets sitting idle.",
                             "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i93cj4s",
+                                    "author": "lfynt01",
+                                    "score": 1,
+                                    "created_utc": 1652892378.0,
+                                    "response": "Their is a difference between the lost and the holding thing.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i91vnhn",
+                            "author": "gildanecroquini",
+                            "score": 1,
+                            "created_utc": 1652863515.0,
+                            "response": "True, it's our job to keep the key safe, and if we are failed to do that we are not the responsible ones.\n\nWe all know the risk before going into the wallet thing, nothing that it was hidden at first step.",
+                            "depth": 2,
                             "comments": []
                         }
                     ]
                 },
                 {
-                    "id": "i9045kq",
-                    "author": "haakon",
-                    "score": 10,
-                    "created_utc": 1652826268.0,
-                    "response": "\"Everybody lost their keys\", ouch. This sounds incredibly catastrophic. RIP every single bitcoin private key ever. ;-(\n\nThanks a LOT, maxis. You gone and done it this time.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i90w299",
-                    "author": "MillenniaDigAssets",
-                    "score": 3,
-                    "created_utc": 1652839474.0,
-                    "response": "Are we shaming people for taking personal finance into their own hands? Is this what exchanges have come to?",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i910yoj",
-                    "author": "cloudarmy",
-                    "score": 3,
-                    "created_utc": 1652841824.0,
-                    "response": "I dont trust myself with my keys, but after seeing this I am getting a ledger...",
+                    "id": "i90490o",
+                    "author": "ShareblockHolmes",
+                    "score": 7,
+                    "created_utc": 1652826312.0,
+                    "response": "In order to teach people about key management I\u2019m creating \u2018crypto puzzle hunts\u2019 where I post my keys on twitter as a puzzle. First one to solve it can have it.\nPlanning to share guides, tools etc going forward. Any suggestions?",
                     "depth": 1,
                     "comments": [
                         {
-                            "id": "i91f60u",
-                            "author": "Adamsd5",
-                            "score": 1,
-                            "created_utc": 1652849930.0,
-                            "response": "You still hold your own keys with ledger.  It is easier, but you still have to protect the backups.  Give it a try!",
+                            "id": "i904td1",
+                            "author": "HighSolstice",
+                            "score": 7,
+                            "created_utc": 1652826575.0,
+                            "response": "This would make geocaching 10X more fun.",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i928s7d",
+                                    "author": "14BAA135ow",
+                                    "score": 3,
+                                    "created_utc": 1652874150.0,
+                                    "response": "Mysteries are meant to be solved and someone out there would actually make a move to solve that though.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9070xz",
+                                    "author": "ShareblockHolmes",
+                                    "score": 2,
+                                    "created_utc": 1652827591.0,
+                                    "response": "Right? I\u2019ve posted one already, took 2 weeks to get solved. Will create more soon. You can see them on twitter under the same name: ShareblockHolmz\nAny suggestions are welcome",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i91lag0",
+                                            "author": "yarikmuzira",
+                                            "score": 2,
+                                            "created_utc": 1652854417.0,
+                                            "response": "Thanks for the username, i will certainly checkout that.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
-                            "id": "i91jxze",
-                            "author": "dentistko",
+                            "id": "i91ezoy",
+                            "author": "Adamsd5",
+                            "score": 2,
+                            "created_utc": 1652849810.0,
+                            "response": "The people who need to learn will not get there first.  You will pay experts.  Maybe do some kind of crypto drawing instead?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i91sc5v",
+                                    "author": "ShareblockHolmes",
+                                    "score": 2,
+                                    "created_utc": 1652860414.0,
+                                    "response": "Well the idea is to make it \u2018proof of work\u2019, by making people work for it;) maybe I could add elements that are equally difficult for the expert and the layman",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i92thk0",
+                                            "author": "Adamsd5",
+                                            "score": 1,
+                                            "created_utc": 1652884571.0,
+                                            "response": "Maybe have people digitally sign a message?  Forces them to get and use a key and the software.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i937jny",
+                                                    "author": "ShareblockHolmes",
+                                                    "score": 2,
+                                                    "created_utc": 1652890375.0,
+                                                    "response": "Could work that in yes. My concern with that is that it\u2019s likely that someone would just create loads of addresses and drain the funds",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i93rwcy",
+                                            "author": "Hemtt1",
+                                            "score": 1,
+                                            "created_utc": 1652898550.0,
+                                            "response": "Much better though if you could do that it would indeed help us to understand a bit more clearly!",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i90b80u",
+                    "author": "TheArabianNights",
+                    "score": 3,
+                    "created_utc": 1652829576.0,
+                    "response": "r/facepalm",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i93103v",
+                            "author": "zhanghaoinf",
                             "score": 1,
-                            "created_utc": 1652853373.0,
-                            "response": "If you in the sub for the long, you will see that people are here very knowledgeable.\n\nI have seen many post here like how can we keep the key safe for the long term, by using metal method.",
+                            "created_utc": 1652887694.0,
+                            "response": "What is this sub all about? never been there such sub before.",
                             "depth": 2,
                             "comments": []
                         }
                     ]
+                },
+                {
+                    "id": "i90gz4s",
+                    "author": "BBQ-Batman",
+                    "score": 3,
+                    "created_utc": 1652832358.0,
+                    "response": "What marketing lead thought that t-shirt was a good idea. Yuck.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i93a0xs",
+                            "author": "qwertz57",
+                            "score": 1,
+                            "created_utc": 1652891376.0,
+                            "response": "He is just giving the newbies that hold there instead of the wallet.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i90hw6b",
+                    "author": "KMan471",
+                    "score": 3,
+                    "created_utc": 1652832804.0,
+                    "response": "Yeah, so what?\n\nHow many people lost their gold coins when money was in the form of actual valuable, precious metal? You can\u2019t have security, and freedom. They are mutually exclusive.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i93ba4x",
+                            "author": "oron12",
+                            "score": 3,
+                            "created_utc": 1652891884.0,
+                            "response": "You can lose the physical thing, like cash, gold or any key of your valuable thing is well.\n\nIt's our responsibility to keep that thing safe, if we are holding that for the long term.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i90ia21",
+                    "author": "KMan471",
+                    "score": 3,
+                    "created_utc": 1652832993.0,
+                    "response": "Fear porn FUDD.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9273sh",
+                            "author": "jaga212",
+                            "score": 1,
+                            "created_utc": 1652873049.0,
+                            "response": "I can bet this guy also holding the bitcoin in the wallet rather than the exchange, if he is in the bitcoin.\n\nBecause even he knows that those exchanges are not safe, even if it's own.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91jjmi",
+                    "author": "reclamerommelenzo",
+                    "score": 3,
+                    "created_utc": 1652853068.0,
+                    "response": "In the progress of moving my BTC away from Celsius as we speak... What a clown",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91n34d",
+                    "author": "Smobert1",
+                    "score": 3,
+                    "created_utc": 1652855866.0,
+                    "response": "being realistic he is right to some degree. there has to be a better easier way store your money than having to remember a seed phrase. as i wouldnt trust my parents to mind a seed phrase properly, and without that we cant have hyperadoption. i dont know what that is, can a real identity be tied to a wallet on chain without giving away personal info on chain. how would one enforce that. no idea. but it is holding the space back",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9234i1",
+                            "author": "volotyle",
+                            "score": 4,
+                            "created_utc": 1652870165.0,
+                            "response": "I see what holding actually tends to matter the most though and the fact that this would indeed help people a lot.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i937atd",
+                                    "author": "MD14620",
+                                    "score": 5,
+                                    "created_utc": 1652890273.0,
+                                    "response": "Yeah they have been holding it back but it generally depends on what we can do\n\nThey have been holding it back and they have to keep on doing that as well to be honest.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i923gdy",
+                    "author": "ThunderPuffin",
+                    "score": 3,
+                    "created_utc": 1652870429.0,
+                    "response": "The \"Welcome to Fabulous Las Vegas\" style sign in the bottom left corner does not inspire confidence.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i925kz5",
+                            "author": "Mostofyouareidiots",
+                            "score": 3,
+                            "created_utc": 1652871996.0,
+                            "response": "It's even better that it's their customer service center logo... holy shit.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9260vm",
+                    "author": "Mostofyouareidiots",
+                    "score": 3,
+                    "created_utc": 1652872307.0,
+                    "response": "I've never lost coins in my own control... the only coins I ever lost were when someone else had they keys.\n\nAlso these numbers are totally made up.  How do we know when coins are lost?  For all we know someone has the key and just hasn't moved the money.  Lots of coins haven't moved in years just by choice and how does the true number of confirmed losses compare to the amount lost or stolen by custodial services?\n\nSorry, but he doesn't seem sincere and I don't trust people who look like they are attempting to manipulate me.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9285ah",
+                    "author": "BlankEris",
+                    "score": 3,
+                    "created_utc": 1652873737.0,
+                    "response": "My dude lets off major car salesman scammer vibes",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i90rx9x",
+                    "author": "BeansBakerNumber5",
+                    "score": 5,
+                    "created_utc": 1652837521.0,
+                    "response": "Hurrr Durrr, let us hold your keys, funds are safuuuu\n\nmeanwhile...we've have Mt. Gox, Silk road, btc-e, QuadrigaCX, bitfinex, and on and on...\n\nOh yeah, tell me again how your service is better than self custody.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92nt2l",
+                            "author": "JohnPaulPigeon",
+                            "score": 1,
+                            "created_utc": 1652882049.0,
+                            "response": "There customer support is one the worst one, and what if they server gets hacked and someone just wipe out my bitcoin from my account?\n\nThen who will be the responsible and who will compensate that.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i90ihrf",
+                    "author": "JerryLeeDog",
+                    "score": 2,
+                    "created_utc": 1652833097.0,
+                    "response": "30% .... because I have no evidence of this. \n\nAnd good, let's make it 50% for scarcity sake",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i923ddt",
+                            "author": "operationatlanta",
+                            "score": 1,
+                            "created_utc": 1652870365.0,
+                            "response": "All of these 30% are not lost, some of them are just holding.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i90j55r",
+                    "author": "ShittingOutPosts",
+                    "score": 2,
+                    "created_utc": 1652833391.0,
+                    "response": "I lost my keys in a boating accident.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92fow9",
+                            "author": "meir1992",
+                            "score": 1,
+                            "created_utc": 1652878113.0,
+                            "response": "I hope you made a backup for that, or call to the FBI.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i90k54q",
+                    "author": "redundantfinish",
+                    "score": 2,
+                    "created_utc": 1652833856.0,
+                    "response": "The lost BTC just helps make it even more deflationary. I don\u2019t see the issue lol.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91p66h",
+                            "author": "trewchains",
+                            "score": 2,
+                            "created_utc": 1652857593.0,
+                            "response": "They aren't lost completely, people just holding them.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92sbya",
+                                    "author": "jsbhatia",
+                                    "score": 1,
+                                    "created_utc": 1652884075.0,
+                                    "response": "People are concerned more about holding than on looking forward to just sell or panic.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i914956",
+                    "author": "afallucco",
+                    "score": 2,
+                    "created_utc": 1652843493.0,
+                    "response": "Thank you to those who lost their keys for their donation to bitcoin.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92mkkn",
+                            "author": "miniCartoon91",
+                            "score": 1,
+                            "created_utc": 1652881484.0,
+                            "response": "I think most of them lost in the early stage of the bitcoin.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i919kps",
+                    "author": "Superuzer",
+                    "score": 2,
+                    "created_utc": 1652846421.0,
+                    "response": "This past week I removed all my usdc and btc from Celsius earn! This type of clown ass posting by this guy!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i923ia1",
+                            "author": "13486053020",
+                            "score": 1,
+                            "created_utc": 1652870469.0,
+                            "response": "This is the reason why people are moving from the Celsius.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91a5dx",
+                    "author": "mr_sew",
+                    "score": 2,
+                    "created_utc": 1652846753.0,
+                    "response": "While watching this, I *literally* did the Capt. Picard double face-palm sigh and head drop.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i932xln",
+                            "author": "kinolog74",
+                            "score": 1,
+                            "created_utc": 1652888485.0,
+                            "response": "HAHA, i wish we had the tech that we did that for in real from sitting in house.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91bq1z",
+                    "author": "Nordle_420D",
+                    "score": 2,
+                    "created_utc": 1652847696.0,
+                    "response": "Uninstalled",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92c20d",
+                            "author": "DanXXIV",
+                            "score": 2,
+                            "created_utc": 1652876120.0,
+                            "response": "This is the instant decision taking i have seen from a guy here.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91fixn",
+                    "author": "Natseaart",
+                    "score": 2,
+                    "created_utc": 1652850171.0,
+                    "response": "Self custody! \n\nI feel bad for folks who are still stuck.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92erxw",
+                            "author": "afzahailmie",
+                            "score": 1,
+                            "created_utc": 1652877627.0,
+                            "response": "True though I hope they make it out soon feels bad when people indeed gets stuck.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91liwm",
+                    "author": "cashman04",
+                    "score": 2,
+                    "created_utc": 1652854604.0,
+                    "response": "i though he is good guy, now he want your keys",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91vekq",
+                            "author": "scwosh21",
+                            "score": 1,
+                            "created_utc": 1652863277.0,
+                            "response": "I see a good guy asking for keys looks like I need to think about this matter a bit more deeply though.\n\nThat would thus help me but the fact what he would do with the keys :/",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91p6j9",
+                    "author": "MrDopple68",
+                    "score": 2,
+                    "created_utc": 1652857602.0,
+                    "response": "\"Hi I'm Alex, founder of a unregulated company. That gold bar you have. Give it to me to keep safe and I will give you 5% a year interest. Deal?\"\n\nMe: \"Er....no\"\n\nAlex: \"In that case can I have your Bitcoin instead?\".",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91q8vh",
+                    "author": "Popular_District9072",
+                    "score": 2,
+                    "created_utc": 1652858536.0,
+                    "response": "noted, doing the opposite",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91qmfj",
+                    "author": "Liquids0ul",
+                    "score": 2,
+                    "created_utc": 1652858867.0,
+                    "response": "I prefer losing my keys than having exchanges fucking up with my coins and lend them and shit",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91sxqi",
+                    "author": "Jaseur",
+                    "score": 2,
+                    "created_utc": 1652860961.0,
+                    "response": "He can't deny his company is up to no good, only deflect and attack honest maxi-bros.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91t4yc",
+                    "author": "MrDopple68",
+                    "score": 2,
+                    "created_utc": 1652861147.0,
+                    "response": "This is such an obvious ponzi.\n\nToday they are offering $50 of BTC if you transfer $2500 of unstablecoins \n to them with...wait for it.. \n\nA 6 month lock up period before they give you the btc bonus.\n\nPeople have got to be insane.\nSend them $2500 to be held prisoner for 6 months!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i925urs",
+                            "author": "Mostofyouareidiots",
+                            "score": 1,
+                            "created_utc": 1652872188.0,
+                            "response": "Yeah but $50 bro!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91v5sh",
+                    "author": "AbbreviationsLevel73",
+                    "score": 2,
+                    "created_utc": 1652863044.0,
+                    "response": "cefi rehypothecates bros, so if there is a bank run you re fucked, if celsius files chapter 11 you re fucked, basically all in all, you re fucked",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91vu41",
+                    "author": "SaneLad",
+                    "score": 2,
+                    "created_utc": 1652863691.0,
+                    "response": "My keys, certainly not your Bitcoin, Celsius.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92h9k8",
+                            "author": "leoslam",
+                            "score": 4,
+                            "created_utc": 1652878922.0,
+                            "response": "Bitcoin is best as we had also in the past to be honest.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91wfcc",
+                    "author": "Bitcoin__Hodler",
+                    "score": 2,
+                    "created_utc": 1652864260.0,
+                    "response": "makes sense for a shitcoin promoter to tell this",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91wls3",
+                    "author": "ktliversen",
+                    "score": 2,
+                    "created_utc": 1652864426.0,
+                    "response": "what a clown",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91yedh",
+                    "author": "tomkim1965",
+                    "score": 2,
+                    "created_utc": 1652866092.0,
+                    "response": "Yes send all your bitcoin to Celsius and wait for the crash to happen. Then comes the news sorry we lost/misplaced your money. And your broke,desolate, without money.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91zq4g",
+                    "author": "blopblipbloup",
+                    "score": 2,
+                    "created_utc": 1652867294.0,
+                    "response": "70% of statistics are wrong",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i920p86",
+                            "author": "Amber_Sam",
+                            "score": 1,
+                            "created_utc": 1652868152.0,
+                            "response": "This message is 30% correct",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i935cbe",
+                                    "author": "mnjamm",
+                                    "score": 1,
+                                    "created_utc": 1652889469.0,
+                                    "response": "Indeed but how can you say that as I can see only 50% of it.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i938t9j",
+                            "author": "titeufdragon",
+                            "score": 1,
+                            "created_utc": 1652890889.0,
+                            "response": "Lmao you are right; I wonder where do they get this type of data.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92b3l0",
+                    "author": "Experienced_AP",
+                    "score": 2,
+                    "created_utc": 1652875558.0,
+                    "response": "Is that an accurate estimate? 30% of all BTC is gone to lost keys?\n\nWhere he get that number from?",
+                    "depth": 1,
+                    "comments": []
                 },
                 {
                     "id": "i908cm0",
                     "author": "NiceDoctorBeam",
-                    "score": 6,
+                    "score": 5,
                     "created_utc": 1652828213.0,
                     "response": "He's being deceptive.  \n\nSatoshi chose to take his many millions with him - he did not accidentally lose them.  This idiot counts it as \"accidentally lost\".  \n\nAlso, most of the truly lost Bitcoin happened long ago, before Bitcoin had a price or when Bitcoin was less than one dollar.  \n\nAlso, he never compares the amount of Bitcoin lost by accident to the amount of Bitcoin stolen from/by exchanges.  The stolen Bitcoin is not lost, strictly speaking - it transferred to new owners.",
                     "depth": 1,
@@ -484,7 +1364,7 @@
                         {
                             "id": "i90hyfz",
                             "author": "jvvmh",
-                            "score": 5,
+                            "score": 4,
                             "created_utc": 1652832836.0,
                             "response": "Yeh, at least 600,000 BTC lost is due to Mt.Gox (not inc. the approx 200k stuck in the civil rehab). It shows how dishonest he is.\n\nAnd look at his Twitter profile pic, it\u2019s literally a Romanesque bust of himself. And he talks about that bitcoin like it\u2019s his, very reminiscent of sociopaths I\u2019ve met, they always drops direct things in their language like that.",
                             "depth": 2,
@@ -500,15 +1380,61 @@
                                         {
                                             "id": "i90s2qf",
                                             "author": "BeansBakerNumber5",
-                                            "score": 2,
+                                            "score": 1,
                                             "created_utc": 1652837592.0,
                                             "response": "Super absorbent!",
                                             "depth": 4,
                                             "comments": []
+                                        },
+                                        {
+                                            "id": "i92sm70",
+                                            "author": "jchow80",
+                                            "score": 1,
+                                            "created_utc": 1652884197.0,
+                                            "response": "Yes we are maxi if we look around how many people holding the bitcoin.",
+                                            "depth": 4,
+                                            "comments": []
                                         }
                                     ]
+                                },
+                                {
+                                    "id": "i925u0k",
+                                    "author": "blslb",
+                                    "score": 1,
+                                    "created_utc": 1652872174.0,
+                                    "response": "He thought if someone is not doing the trading they have lost their coin.\n\nI don't know why people giving him that much of the attention here, he is a clown.",
+                                    "depth": 3,
+                                    "comments": []
                                 }
                             ]
+                        },
+                        {
+                            "id": "i91sjgw",
+                            "author": "Chaimo1",
+                            "score": 1,
+                            "created_utc": 1652860603.0,
+                            "response": "The number he is talking about most of them are from the past, when people was not truly aware with the bitcoin.\n\nSo they were bit careless in handing the coin, but ever since they know about the the number change drastically.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i90a1ku",
+                    "author": "Ok_Aerie3546",
+                    "score": 6,
+                    "created_utc": 1652829015.0,
+                    "response": "I always knew mashinsky was a clown in disguise. Nice to the real \ud83e\udd21 come out.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91ok5o",
+                            "author": "jeriasbitcoin",
+                            "score": 2,
+                            "created_utc": 1652857087.0,
+                            "response": "How confidentially he is saying that 30% bitcoin is lose, lol men.",
+                            "depth": 2,
+                            "comments": []
                         }
                     ]
                 },
@@ -521,9 +1447,18 @@
                     "depth": 1,
                     "comments": [
                         {
+                            "id": "i938beo",
+                            "author": "LiteStig",
+                            "score": 5,
+                            "created_utc": 1652890690.0,
+                            "response": "How the hell we are even listing to this guy, complete clown.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
                             "id": "i909bom",
                             "author": "NiceDoctorBeam",
-                            "score": 7,
+                            "score": 5,
                             "created_utc": 1652828673.0,
                             "response": "Let's consider his likely motivation for creating this video.\n\nHe's not holding all the Bitcoin he's supposed to be holding.  He's lent a bunch of it out (or maybe he lost it), for example.  \n\nWhen enough people attempt to take custody, he will run out and be exposed as a criminal/fraud.  Like an old fashioned bank run, there won't be enough reserves -- it will be first-come-first-served and those who delayed will get none; they will realize they've been robbed; they will realize the hard way, \"Not your keys, not your Bitcoin.\"",
                             "depth": 2,
@@ -531,7 +1466,7 @@
                                 {
                                     "id": "i90i7vf",
                                     "author": "KMan471",
-                                    "score": 5,
+                                    "score": 3,
                                     "created_utc": 1652832963.0,
                                     "response": "You can abbreviate everything you just said by using the term \u201cfractional reserve\u201d.",
                                     "depth": 3,
@@ -539,7 +1474,7 @@
                                         {
                                             "id": "i90sbdl",
                                             "author": "BeansBakerNumber5",
-                                            "score": 2,
+                                            "score": 1,
                                             "created_utc": 1652837705.0,
                                             "response": "\"Scam\" for short.",
                                             "depth": 4,
@@ -547,103 +1482,47 @@
                                                 {
                                                     "id": "i90uzrz",
                                                     "author": "KMan471",
-                                                    "score": 3,
+                                                    "score": 2,
                                                     "created_utc": 1652838963.0,
                                                     "response": "Lol\u2026.true",
                                                     "depth": 5,
                                                     "comments": []
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "id": "i91s4hf",
+                                            "author": "rgtjnykyue",
+                                            "score": 1,
+                                            "created_utc": 1652860218.0,
+                                            "response": "This is one of the best summarize i have seen on a paragraph.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i91viif",
+                                    "author": "13dca",
+                                    "score": 1,
+                                    "created_utc": 1652863380.0,
+                                    "response": "For exchange their biggest competitor are the wallet and the more people use that the less profit they will get.\n\nAnd if you are really in here for the long term for the bitcoin, then you should take the take your keys.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i92hc5q",
+                                            "author": "Fayez22",
+                                            "score": 1,
+                                            "created_utc": 1652878959.0,
+                                            "response": "I think this is the reason why you should keep your keys private \n\nAnd always keep your keys on a good place and please don't share it with anyone like that.",
+                                            "depth": 4,
+                                            "comments": []
                                         }
                                     ]
                                 }
                             ]
                         }
                     ]
-                },
-                {
-                    "id": "i90a1ku",
-                    "author": "Ok_Aerie3546",
-                    "score": 4,
-                    "created_utc": 1652829015.0,
-                    "response": "I always knew mashinsky was a clown in disguise. Nice to the real \ud83e\udd21 come out.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i91ok5o",
-                            "author": "jeriasbitcoin",
-                            "score": 1,
-                            "created_utc": 1652857087.0,
-                            "response": "How confidentially he is saying that 30% bitcoin is lose, lol men.",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i90hw6b",
-                    "author": "KMan471",
-                    "score": 2,
-                    "created_utc": 1652832804.0,
-                    "response": "Yeah, so what?\n\nHow many people lost their gold coins when money was in the form of actual valuable, precious metal? You can\u2019t have security, and freedom. They are mutually exclusive.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i90rx9x",
-                    "author": "BeansBakerNumber5",
-                    "score": 2,
-                    "created_utc": 1652837521.0,
-                    "response": "Hurrr Durrr, let us hold your keys, funds are safuuuu\n\nmeanwhile...we've have Mt. Gox, Silk road, btc-e, QuadrigaCX, bitfinex, and on and on...\n\nOh yeah, tell me again how your service is better than self custody.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i913czw",
-                    "author": "dadlif3",
-                    "score": 2,
-                    "created_utc": 1652843034.0,
-                    "response": "Holding your own keys isn't for everyone. If you frequently lose your phone while talking on it or can't find the sunglasses on top of your head you would probably be better off using a custody service like Celsius. For everyone else, self custody is the way.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i91p60s",
-                            "author": "atlpatl",
-                            "score": 1,
-                            "created_utc": 1652857589.0,
-                            "response": "It's a responsibility and taking responsibility is not the cup of tea for the everyone.\n\nSo if you are moving to the wallet you need to prepare youself as a more careful person in the future.",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i913wt7",
-                    "author": "upfrombelow88",
-                    "score": 2,
-                    "created_utc": 1652843316.0,
-                    "response": "Def sold more btc than what they have",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i91ltsm",
-                            "author": "notalusr",
-                            "score": 1,
-                            "created_utc": 1652854836.0,
-                            "response": "This is why they are saying keep your bitcoin with us.",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i91fsl5",
-                    "author": "Adamsd5",
-                    "score": 2,
-                    "created_utc": 1652850351.0,
-                    "response": "Exaggerations here are unfortunate...he doesn't need to say that.  He should say something like:\n\n\"If you have not learned enough, or won't put the work in to keep your own keys safe, custodial services might be better for you.\"\n\nBut why even that?  Lending is a legit business.  It is akin to buying bonds.  The message should be, \"You can make money by lending it out.  There are some risks, as with bonds, so consider carefully.\"  It isn't for everyone, and anyone using it should indeed be aware they could lose if enough borrowers (Celsius included) go bankrupt.",
-                    "depth": 1,
-                    "comments": []
                 },
                 {
                     "id": "i90bq2c",
@@ -654,15 +1533,119 @@
                     "depth": 1,
                     "comments": [
                         {
+                            "id": "i91ufsw",
+                            "author": "ankaa1118",
+                            "score": 3,
+                            "created_utc": 1652862360.0,
+                            "response": "By that way someone will also lost their car or any gold they holding is well.\n\nIt's people responsibility to held on thing that is very precious, but i still think out of 30% some are still holding.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
                             "id": "i90jx4d",
                             "author": "NiceDoctorBeam",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1652833749.0,
                             "response": "Yes, it's kind of hard to have a classic Boating Accident when some criminal is holding your Bitcoin and ready to hand it to some government without hesitation.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i937yfw",
+                                    "author": "9bc9f1c557616",
+                                    "score": 1,
+                                    "created_utc": 1652890544.0,
+                                    "response": "What if they go bankruptcy, they will use over money to overcome that.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i93idn7",
+                                            "author": "NiceDoctorBeam",
+                                            "score": 1,
+                                            "created_utc": 1652894720.0,
+                                            "response": "There are no *good* reasons to:  \n* store Bitcoin on any exchange  \n* lend Bitcoin for interest  \n* buy alt coins (scams)  \n* try to time the market",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i90w299",
+                    "author": "MillenniaDigAssets",
+                    "score": 3,
+                    "created_utc": 1652839474.0,
+                    "response": "Are we shaming people for taking personal finance into their own hands? Is this what exchanges have come to?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92fyxw",
+                            "author": "mrminium77",
+                            "score": 1,
+                            "created_utc": 1652878257.0,
+                            "response": "They are playing smartly here and not telling the actual truth here.\n\nSome will think now wallet will kill you bitcoin and you will never gonna recover that in the future.",
                             "depth": 2,
                             "comments": []
                         }
                     ]
+                },
+                {
+                    "id": "i910yoj",
+                    "author": "cloudarmy",
+                    "score": 3,
+                    "created_utc": 1652841824.0,
+                    "response": "I dont trust myself with my keys, but after seeing this I am getting a ledger...",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91f60u",
+                            "author": "Adamsd5",
+                            "score": 3,
+                            "created_utc": 1652849930.0,
+                            "response": "You still hold your own keys with ledger.  It is easier, but you still have to protect the backups.  Give it a try!",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i91jxze",
+                            "author": "dentistko",
+                            "score": 2,
+                            "created_utc": 1652853373.0,
+                            "response": "If you in the sub for the long, you will see that people are here very knowledgeable.\n\nI have seen many post here like how can we keep the key safe for the long term, by using metal method.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92e479",
+                                    "author": "glavmedia",
+                                    "score": 1,
+                                    "created_utc": 1652877265.0,
+                                    "response": "Exactly! This is what I am saying as keeping it on point is important.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i91ynie",
+                            "author": "Amber_Sam",
+                            "score": 1,
+                            "created_utc": 1652866330.0,
+                            "response": "ColdCard or Trezor might be a better idea",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91gzne",
+                    "author": "Deep-Art3195",
+                    "score": 3,
+                    "created_utc": 1652851196.0,
+                    "response": "What a douchebag! Get your coins off the exchanges and lending platforms",
+                    "depth": 1,
+                    "comments": []
                 },
                 {
                     "id": "i904i94",
@@ -671,16 +1654,17 @@
                     "created_utc": 1652826434.0,
                     "response": "lol",
                     "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i91gzne",
-                    "author": "Deep-Art3195",
-                    "score": 1,
-                    "created_utc": 1652851196.0,
-                    "response": "What a douchebag! Get your coins off the exchanges and lending platforms",
-                    "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i93h9vy",
+                            "author": "lilliewillie31",
+                            "score": 2,
+                            "created_utc": 1652894279.0,
+                            "response": "They thought that it will be really easy to make these decisions now.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i90h1o7",
@@ -693,16 +1677,26 @@
                         {
                             "id": "i91lep3",
                             "author": "duan269",
-                            "score": 4,
+                            "score": 5,
                             "created_utc": 1652854511.0,
                             "response": "If i am holding something precious and if i know that those keys are the only one that gonna recover them, i will keep them more safe than my life.\n\nYou can make some copies is well and share with your wife and mother is well.",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i93ojyx",
+                                    "author": "GGZii",
+                                    "score": 1,
+                                    "created_utc": 1652897196.0,
+                                    "response": "You will, most know they wont so they dont enter into the system. Also yeah share the keys to millions with your wife and mother who could transfer them to another wallet and there is literally no way of ever getting it back",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         },
                         {
                             "id": "i90hrs4",
                             "author": "solomonsatoshi",
-                            "score": 2,
+                            "score": 3,
                             "created_utc": 1652832744.0,
                             "response": "Yeah right and slavery is good for the economy?",
                             "depth": 2,
@@ -711,13 +1705,23 @@
                     ]
                 },
                 {
-                    "id": "i90b80u",
-                    "author": "TheArabianNights",
-                    "score": 1,
-                    "created_utc": 1652829576.0,
-                    "response": "r/facepalm",
+                    "id": "i90n8k9",
+                    "author": "Crpto_fanatic",
+                    "score": 0,
+                    "created_utc": 1652835320.0,
+                    "response": "This guy is real fucking stupid. A gem of misinformation, the best idiot ever conceived. He is so good, that my head just remembered my keys.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i928xqx",
+                            "author": "huynhdhsp",
+                            "score": 1,
+                            "created_utc": 1652874246.0,
+                            "response": "He thinks, people will believe him about the nonsense he is saying there,\n\nBut guess some will still believe him and thinks that exchanges are better than the wallet for the bitcoin.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i90ghy7",
@@ -730,11 +1734,49 @@
                         {
                             "id": "i90jzym",
                             "author": "NiceDoctorBeam",
-                            "score": 5,
+                            "score": 6,
                             "created_utc": 1652833788.0,
                             "response": "Nah. I wouldn't be selling.  I'd be buying.",
                             "depth": 2,
                             "comments": []
+                        },
+                        {
+                            "id": "i91sryc",
+                            "author": "Jaseur",
+                            "score": 2,
+                            "created_utc": 1652860819.0,
+                            "response": "There's no death spiral as long as the blocks keep coming, which they will.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i91uxct",
+                                    "author": "solomonsatoshi",
+                                    "score": 2,
+                                    "created_utc": 1652862824.0,
+                                    "response": "Hopium springs eternal",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i92bbtk",
+                                            "author": "yanlevin",
+                                            "score": 5,
+                                            "created_utc": 1652875696.0,
+                                            "response": "I don't know to be honest, I think we have to see all the findings for that matter\n\nWe also have to see if that video will be easy to find or soenthing like that now.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i93oit5",
+                                    "author": "83iuenckwe",
+                                    "score": 1,
+                                    "created_utc": 1652897183.0,
+                                    "response": "It was like few years ago but not now to be honest.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         }
                     ]
                 },
@@ -749,49 +1791,13 @@
                         {
                             "id": "i91jult",
                             "author": "BhaveshN",
-                            "score": 2,
+                            "score": 3,
                             "created_utc": 1652853299.0,
                             "response": "Atleast i will be the one to blame who lost his asset due to his careless approach. \n\nI have seen people gets scam on the daily basis on the CEX and this is giving me more belief.",
                             "depth": 2,
                             "comments": []
                         }
                     ]
-                },
-                {
-                    "id": "i90gz4s",
-                    "author": "BBQ-Batman",
-                    "score": 1,
-                    "created_utc": 1652832358.0,
-                    "response": "What marketing lead thought that t-shirt was a good idea. Yuck.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i90ia21",
-                    "author": "KMan471",
-                    "score": 1,
-                    "created_utc": 1652832993.0,
-                    "response": "Fear porn FUDD.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i90ihrf",
-                    "author": "JerryLeeDog",
-                    "score": 1,
-                    "created_utc": 1652833097.0,
-                    "response": "30% .... because I have no evidence of this. \n\nAnd good, let's make it 50% for scarcity sake",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i90j55r",
-                    "author": "ShittingOutPosts",
-                    "score": 1,
-                    "created_utc": 1652833391.0,
-                    "response": "I lost my keys in a boating accident.",
-                    "depth": 1,
-                    "comments": []
                 },
                 {
                     "id": "i90j5zd",
@@ -804,7 +1810,7 @@
                         {
                             "id": "i90kbhr",
                             "author": "NiceDoctorBeam",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1652833940.0,
                             "response": "If it's the video I saw, it was fake.",
                             "depth": 2,
@@ -832,11 +1838,77 @@
                                                     "created_utc": 1652841697.0,
                                                     "response": "Oh, this is what I have watched too. So the newer wallets have no exploits like this anymore? I was actually planning to get one because my coins are in a hot wallet for now but I am hesitating a bit.",
                                                     "depth": 5,
-                                                    "comments": []
+                                                    "comments": [
+                                                        {
+                                                            "id": "i922tg0",
+                                                            "author": "noxGOX_45",
+                                                            "score": 1,
+                                                            "created_utc": 1652869922.0,
+                                                            "response": "You can watch many videos on the Youtube before doing any of the transaction or how to keep the key safe.\n\nJust one thing, try with a small amount if you are doing for the first time.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i923hkl",
+                                                                    "author": "gods_loop_hole",
+                                                                    "score": 1,
+                                                                    "created_utc": 1652870454.0,
+                                                                    "response": "Yeah, I'll try.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "i92etyr",
+                                                            "author": "perky2012",
+                                                            "score": 1,
+                                                            "created_utc": 1652877656.0,
+                                                            "response": "Hardware wallets nowadays tend to be based on crytographic processors specifically designed to withstand these kind of glitching and other attacks, the Trezor One is an older generation open source STM32 based design. You need physical access to do these attacks. IMO hardware wallets are even more secure than paper wallets because they never expose the secret keys, if you ever want to transfer out of a paper wallet you'd need to input your secret key into some software like a hot wallet and doing that immediately compromises security. So I personally wouldn't hesitate to get a cold wallet (I've got a Ledger Nano S) as its far more secure than a hot wallet.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "i91yph9",
+                                                    "author": "gluaygluays",
+                                                    "score": 1,
+                                                    "created_utc": 1652866381.0,
+                                                    "response": "Thanks for the the valuable info, and yes that link is the nice.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i92c4rb",
+                                                            "author": "liyingfei",
+                                                            "score": 1,
+                                                            "created_utc": 1652876163.0,
+                                                            "response": "No doubt about it since it will be really nice to start with as well\n\nMore than that we needed that type of understanding as well so that we can take good decisions over the time.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "id": "i921laf",
+                                            "author": "Pentar25",
+                                            "score": 1,
+                                            "created_utc": 1652868921.0,
+                                            "response": "I think he is talking about the this one video,  anyone have the link?",
+                                            "depth": 4,
+                                            "comments": []
                                         }
                                     ]
+                                },
+                                {
+                                    "id": "i93ktex",
+                                    "author": "kite10304",
+                                    "score": 1,
+                                    "created_utc": 1652895710.0,
+                                    "response": "He is just talking about the number of coin that is not moved.",
+                                    "depth": 3,
+                                    "comments": []
                                 }
                             ]
                         },
@@ -859,7 +1931,7 @@
                                         {
                                             "id": "i9187vz",
                                             "author": "gorilla--",
-                                            "score": 2,
+                                            "score": 3,
                                             "created_utc": 1652845637.0,
                                             "response": "For current wallets, potentially, but we could quantum proof them.",
                                             "depth": 4,
@@ -875,7 +1947,7 @@
                                                         {
                                                             "id": "i918h9t",
                                                             "author": "gorilla--",
-                                                            "score": 1,
+                                                            "score": 2,
                                                             "created_utc": 1652845783.0,
                                                             "response": "Generally: https://en.m.wikipedia.org/wiki/Post-quantum_cryptography",
                                                             "depth": 6,
@@ -883,38 +1955,55 @@
                                                                 {
                                                                     "id": "i918ih0",
                                                                     "author": "WikiSummarizerBot",
-                                                                    "score": 3,
+                                                                    "score": 4,
                                                                     "created_utc": 1652845802.0,
                                                                     "response": "**[Post-quantum cryptography](https://en.m.wikipedia.org/wiki/Post-quantum_cryptography)** \n \n >In cryptography, post-quantum cryptography (sometimes referred to as quantum-proof, quantum-safe or quantum-resistant) refers to cryptographic algorithms (usually public-key algorithms) that are thought to be secure against a cryptanalytic attack by a quantum computer. The problem with currently popular algorithms is that their security relies on one of three hard mathematical problems:  the integer factorization problem, the discrete logarithm problem or the elliptic-curve discrete logarithm problem. All of these problems can be easily solved on a sufficiently powerful quantum computer running Shor's algorithm.\n \n^([ )[^(F.A.Q)](https://www.reddit.com/r/WikiSummarizer/wiki/index#wiki_f.a.q)^( | )[^(Opt Out)](https://reddit.com/message/compose?to=WikiSummarizerBot&message=OptOut&subject=OptOut)^( | )[^(Opt Out Of Subreddit)](https://np.reddit.com/r/Bitcoin/about/banned)^( | )[^(GitHub)](https://github.com/Sujal-7/WikiSummarizerBot)^( ] Downvote to remove | v1.5)",
                                                                     "depth": 7,
                                                                     "comments": []
                                                                 }
                                                             ]
+                                                        },
+                                                        {
+                                                            "id": "i92odof",
+                                                            "author": "binkbaxter",
+                                                            "score": 1,
+                                                            "created_utc": 1652882313.0,
+                                                            "response": "Me also, this sub just giving me more and more knowledge everyday.",
+                                                            "depth": 6,
+                                                            "comments": []
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    "id": "i91tjee",
+                                                    "author": "garidrade",
+                                                    "score": 1,
+                                                    "created_utc": 1652861524.0,
+                                                    "response": "I thought that was not possible, time for me to look into this.",
+                                                    "depth": 5,
+                                                    "comments": []
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "id": "i93fn3i",
+                                            "author": "kybep",
+                                            "score": 1,
+                                            "created_utc": 1652893615.0,
+                                            "response": "All these utilities should work and go on like that.",
+                                            "depth": 4,
+                                            "comments": []
                                         }
                                     ]
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i90k54q",
-                    "author": "redundantfinish",
-                    "score": 1,
-                    "created_utc": 1652833856.0,
-                    "response": "The lost BTC just helps make it even more deflationary. I don\u2019t see the issue lol.",
-                    "depth": 1,
-                    "comments": [
+                        },
                         {
-                            "id": "i91p66h",
-                            "author": "trewchains",
+                            "id": "i92k5ae",
+                            "author": "pei_lsc",
                             "score": 1,
-                            "created_utc": 1652857593.0,
-                            "response": "They aren't lost completely, people just holding them.",
+                            "created_utc": 1652880331.0,
+                            "response": "These are not the right idea, that how much bitcoin is actually lost.",
                             "depth": 2,
                             "comments": []
                         }
@@ -927,70 +2016,17 @@
                     "created_utc": 1652835677.0,
                     "response": "Riight, but lets all \"hodl\" on Celsius lol",
                     "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i90xzks",
-                    "author": "walloon5",
-                    "score": 1,
-                    "created_utc": 1652840383.0,
-                    "response": "There's no way Celcius has your bitcoin.\n\nThey sold it to short it\n\nIf the shorts work out for them, they make fiat, their depositors get a little\n\nBut if bitcoin price goes against them, then they blow up and go bankrupt. Depositors lose their bitcoin. And he says he's so sorry",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i914956",
-                    "author": "afallucco",
-                    "score": 1,
-                    "created_utc": 1652843493.0,
-                    "response": "Thank you to those who lost their keys for their donation to bitcoin.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i919kps",
-                    "author": "Superuzer",
-                    "score": 1,
-                    "created_utc": 1652846421.0,
-                    "response": "This past week I removed all my usdc and btc from Celsius earn! This type of clown ass posting by this guy!",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i91a5dx",
-                    "author": "mr_sew",
-                    "score": 1,
-                    "created_utc": 1652846753.0,
-                    "response": "While watching this, I *literally* did the Capt. Picard double face-palm sigh and head drop.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i91bq1z",
-                    "author": "Nordle_420D",
-                    "score": 1,
-                    "created_utc": 1652847696.0,
-                    "response": "Uninstalled",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i91byc2",
-                    "author": "Al_Gorand",
-                    "score": 1,
-                    "created_utc": 1652847839.0,
-                    "response": "'not your keys not your bitcoin [...]\nbecause of the bitcoin maxis, because they told you to hold your own keys... then everybody lost their keys'\n\nMaybe I am just to retarded to understand this rocket scientist but I thought when you lost your keys it's not 'your keys' anymore and I thought when 'bitcoin maxis' telling you to 'hold your own keys' they mean to hold and not to lost your keys.\n\nwho is this guy?",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i91cbd9",
-                    "author": "Verallendingen",
-                    "score": 1,
-                    "created_utc": 1652848064.0,
-                    "response": "what a clown lmao",
-                    "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i92qqjr",
+                            "author": "chinkong83",
+                            "score": 1,
+                            "created_utc": 1652883378.0,
+                            "response": "Even if i have too choose some exchanges, Celsius will not be the one.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i91fg5k",
@@ -999,79 +2035,266 @@
                     "created_utc": 1652850116.0,
                     "response": "Does this number of 30% include satoshi's? I mean I don't find 30% to be too far off. I think if you spread out through a few reputable exchanges that your fine. Then hold some in a wallet. I spread mine all out a bit bc I just think it's better, but to each their own.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9396yi",
+                            "author": "yeskelar",
+                            "score": 1,
+                            "created_utc": 1652891042.0,
+                            "response": "Matters though but the fact that let's just make a hold we don't what the future would indeed be.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
-                    "id": "i91fixn",
-                    "author": "Natseaart",
+                    "id": "i91vpxv",
+                    "author": "p4di",
                     "score": 1,
-                    "created_utc": 1652850171.0,
-                    "response": "Self custody! \n\nI feel bad for folks who are still stuck.",
+                    "created_utc": 1652863580.0,
+                    "response": "your keys are your responsibility. it's not to hard to keep them safe somewhere and do it on multiple levels. for example have two paper wallets at two locations. or on top of your paper wallet, learn your 24 words by heart (which is not that difficult tbh)\n\nmost people that lost their BTC, lost them because at the time they were worth a few dollars and didn't care too much about their keys and got sloppy. nowadays the chance of that happening is much lower simply because people are more invested (financially and emotionally). also technology like hard wallets and techniques make it much easier compared to 2011.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i92w0oe",
+                            "author": "htbrdd4",
+                            "score": 1,
+                            "created_utc": 1652885639.0,
+                            "response": "Yeah you are right since it will be really easy to start with.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
-                    "id": "i91jjmi",
-                    "author": "reclamerommelenzo",
+                    "id": "i91wtgj",
+                    "author": "BerryMas0n",
                     "score": 1,
-                    "created_utc": 1652853068.0,
-                    "response": "In the progress of moving my BTC away from Celsius as we speak... What a clown",
+                    "created_utc": 1652864615.0,
+                    "response": "yeah risk free money!",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i91liwm",
-                    "author": "cashman04",
+                    "id": "i92fnng",
+                    "author": "apilcherx1989",
                     "score": 1,
-                    "created_utc": 1652854604.0,
-                    "response": "i though he is good guy, now he want your keys",
+                    "created_utc": 1652878096.0,
+                    "response": "No, they are gone because SOME people lost their keys, MOST people know the value of HODL.",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i91m8vr",
-                    "author": "Ima_Wreckyou",
+                    "id": "i92hb68",
+                    "author": "BigPlayCrypto",
                     "score": 1,
-                    "created_utc": 1652855174.0,
-                    "response": "This sounds super sketchy. He is obviously scared shitless of a bank run. Who knows what investments they make with your Bitcoin. I would get my coins out there as long as it's still possible if I had any there.",
+                    "created_utc": 1652878945.0,
+                    "response": "I like this guy FrFr",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i91n34d",
-                    "author": "Smobert1",
+                    "id": "i92sitm",
+                    "author": "Good_Equipment_1998",
                     "score": 1,
-                    "created_utc": 1652855866.0,
-                    "response": "being realistic he is right to some degree. there has to be a better easier way store your money than having to remember a seed phrase. as i wouldnt trust my parents to mind a seed phrase properly, and without that we cant have hyperadoption. i dont know what that is, can a real identity be tied to a wallet on chain without giving away personal info on chain. how would one enforce that. no idea. but it is holding the space back",
+                    "created_utc": 1652884158.0,
+                    "response": "Who maxim to brtCoin???",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i91p6j9",
-                    "author": "MrDopple68",
+                    "id": "i92w74l",
+                    "author": "odonnellnoel",
                     "score": 1,
-                    "created_utc": 1652857602.0,
-                    "response": "\"Hi I'm Alex, founder of a unregulated company. That gold bar you have. Give it to me to keep safe and I will give you 5% a year interest. Deal?\"\n\nMe: \"Er....no\"\n\nAlex: \"In that case can I have your Bitcoin instead?\".",
+                    "created_utc": 1652885714.0,
+                    "response": "So much misinformation in just 23 seconds",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i91pj5e",
-                    "author": "NYKNYb",
+                    "id": "i934x0c",
+                    "author": "Sprunklefunzel",
                     "score": 1,
-                    "created_utc": 1652857909.0,
-                    "response": "I can't wait for all of these guys to get rekt, even if it means a 50% drawdown and insane FUD.\n\nPeople need to learn their lesson again.",
+                    "created_utc": 1652889296.0,
+                    "response": "Not sure of the 30% number...but he is not that far off i guess.",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i90n8k9",
-                    "author": "Crpto_fanatic",
-                    "score": -1,
-                    "created_utc": 1652835320.0,
-                    "response": "This guy is real fucking stupid. A gem of misinformation, the best idiot ever conceived. He is so good, that my head just remembered my keys.",
+                    "id": "i9363w0",
+                    "author": "HodlOnToYourButts",
+                    "score": 1,
+                    "created_utc": 1652889779.0,
+                    "response": "1. You can't prove a Bitcoin is lost.\n2. If a Bitcoin is lost, then all other Bitcoins become more valuable.",
                     "depth": 1,
                     "comments": []
+                },
+                {
+                    "id": "i93eqfe",
+                    "author": "ApprehensiveSmoke915",
+                    "score": 1,
+                    "created_utc": 1652893253.0,
+                    "response": "I love it when people\nLose their keys free burn baby",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i93tb6b",
+                    "author": "Strict_Grocery_918",
+                    "score": 1,
+                    "created_utc": 1652899129.0,
+                    "response": "LMAOS",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i925c1j",
+                    "author": "JollySno",
+                    "score": 0,
+                    "created_utc": 1652871823.0,
+                    "response": "It\u2019s better to be paid 5% for having someone else hold your keys than to pay  an etf 2% for them to hold it!!!",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "urx5vi",
+            "title": "Help with an old Armory wallet",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/urx5vi/help_with_an_old_armory_wallet/",
+            "author": "bobadome",
+            "created_utc": 1652823690.0,
+            "score": 4,
+            "num_comments": 8,
+            "subreddit": "Bitcoin",
+            "selftext": "I no longer have my paper backup or private keys. Is there a way I can recover my wallet.dat file? I can see the old wallet files that were left behind in the Armory folder that end with .\"lmdb\" but the \".dat\" files are no longer there. I must have deleted them at some point in time and without my paper backup/private keys I am stuck. I do have the original laptop where the file was created/deleted but have not had any luck recovering it. Any help would be appreciated!\"",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i90351g",
+                    "author": "FiatDiaper6000",
+                    "score": 3,
+                    "created_utc": 1652825804.0,
+                    "response": "Rip inbox",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i93onia",
+                            "author": "bobadome",
+                            "score": 1,
+                            "created_utc": 1652897234.0,
+                            "response": "I already figured on just ignoring any messages I get in my inbox. They will just be all scams.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i90kieg",
+                    "author": "RogerWilco357",
+                    "score": 2,
+                    "created_utc": 1652834033.0,
+                    "response": "Armory has a sub on BitcoinTalk, not sure if it is still active there or not, but maybe the dev Goatpig or something still lurks.\n\nI used Armory before I got Nano S in 2017.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i90q3f1",
+                    "author": "TaleRecursion",
+                    "score": 2,
+                    "created_utc": 1652836669.0,
+                    "response": "The file or some of its content might still be there somewhere waiting to be recovered but in the meantime you can't let the operating system overwrite the location where it was stored so make one or several binary copies of the laptop's harddrive ASAP so you have at least one clean, readonly snapshot of the laptop data to work with.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i915dxr",
+                    "author": "Inevitable-0246",
+                    "score": 2,
+                    "created_utc": 1652844079.0,
+                    "response": "My memory of Armory is vague now.  But just a side comment you are looking for a armory_xxx.wallet file.\n\nwallet.dat is a Qt / Core construct and not relevant for Armory wallets.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i904li0",
+                    "author": "EE214_Verilog",
+                    "score": 1,
+                    "created_utc": 1652826476.0,
+                    "response": "Oooof",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i90alr5",
+                    "author": "Nada_Lives",
+                    "score": 1,
+                    "created_utc": 1652829282.0,
+                    "response": "You can recover some deleted files. Check with [https://www.cgsecurity.org/](https://www.cgsecurity.org/). Christophe personally helped me to recover from a nearly impossible crash.\n\nDon't trust me or anyone else on this. Go to the website and use your own discretion.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "urx5fh",
+            "title": "Issue with importing a breadwallet mnemonic into Fully Noded on iOS",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/urx5fh/issue_with_importing_a_breadwallet_mnemonic_into/",
+            "author": "putyograsseson",
+            "created_utc": 1652823656.0,
+            "score": 3,
+            "num_comments": 6,
+            "subreddit": "Bitcoin",
+            "selftext": "Fully Noded is connected to my citadel node (umbrel fork) and the blockchain is 100% synced.\n\nWhatever I try to import, the balance always shows 0 funds.\n\nI've tried:\n\n- importing the 12 words\n\n- importing the native segwit descriptor wpkh([xfp/0']xpubxxxxx/0/*)\n\n- importing the legacy descriptor pkh([xfp/0']xpubxxxxx/0/*)\n\n\nAny tips?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i90nqay",
+                    "author": "Deminero30",
+                    "score": 1,
+                    "created_utc": 1652835550.0,
+                    "response": "Resolved?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9212xj",
+                            "author": "putyograsseson",
+                            "score": 1,
+                            "created_utc": 1652868481.0,
+                            "response": "nope",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91x6lg",
+                    "author": "Amoci",
+                    "score": 1,
+                    "created_utc": 1652864957.0,
+                    "response": "I did some searching and looks like some users had success importing to BlueWallet. \n\nhttps://www.reddit.com/r/Bitcoin/comments/tw2got/brd_wallet_is_a_mess_any_help_how_to_restore/\n\nPerhaps this can help as a step towards what you\u2019re trying to accomplish.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i929kwz",
+                            "author": "putyograsseson",
+                            "score": 2,
+                            "created_utc": 1652874643.0,
+                            "response": "Yeah if nothing comes up I\u2019ll have to go this route as a last resort, thanks.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92alvv",
+                                    "author": "Amoci",
+                                    "score": 1,
+                                    "created_utc": 1652875266.0,
+                                    "response": "best of luck",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

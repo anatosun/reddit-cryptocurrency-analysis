@@ -1,0 +1,68 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "ut6uek",
+            "title": "Scarce Regulators - The Daily Gwei #485",
+            "url": "https://thedailygwei.substack.com/p/scarce-regulators-the-daily-gwei",
+            "author": "DailyGweiBot",
+            "created_utc": 1652976669.0,
+            "score": 1,
+            "num_comments": 2,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "ut6xel",
+            "title": "Launch of version 2.0: Gas Fees Calculator (Multi Currency, Network & Txn Types)",
+            "url": "https://www.cryptoneur.xyz/gas-fees-calculator",
+            "author": "feliche93",
+            "created_utc": 1652976896.0,
+            "score": 3,
+            "num_comments": 3,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i98s18g",
+                    "author": "frozengrandmatetris",
+                    "score": 3,
+                    "created_utc": 1652990407.0,
+                    "response": "this is wonderful. I tried making one of these things to help teach myself flask but I am nowhere near finished. here's a [screenshot](https://i.imgur.com/bscosYU.jpg) in case you are curious.\n\n\n\nI do have some suggestions.\n\n* you are misidentifying some of the networks as sidechains\n* add a radio button to let me choose some different types of transactions, in case I don't know the gas amount. this might be challenging if the gas fee varies on each network\n* take snapshots from your APIs at hourly intervals and store them in a database. determine what is typically the best day of the week and the worst day of the week to do transactions in terms of fees\n* some analytics showing the relationship between transaction fees and other things going on with the asset or network might be interesting but it may go way beyond the scope of a simple fee calculator",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i98w2ds",
+                            "author": "feliche93",
+                            "score": 1,
+                            "created_utc": 1652992625.0,
+                            "response": "Great feedback! I think there\u2019s a drop down to pick a few txn types from and custom input ? Is it not working for you ? \n\nOh and love the idea with the stats \ud83d\ude01 maybe even some notification would be cool!\n\nOh and let me know what labels are wrong I guess Avax etc are not a side chain but alt 1 ?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i98x44u",
+                                    "author": "frozengrandmatetris",
+                                    "score": 2,
+                                    "created_utc": 1652993150.0,
+                                    "response": "oh sorry. the drop down is there, but in the web browser embedded in baconreader for android it doesn't do anything so I thought it wasn't interactive. it works in firefox for android.\n\nnow that I mention it, the table isn't showing good on mobile. I have to scroll left and right too much. maybe squish it or change the layout on mobile. there is also a ton of whitespace on desktop and I have to scroll down to see what I need. maybe some of the stuff you have on there should go underneath instead of at the top. what I was going for with my own fee calculator was to make sure everything I need fits in a small space.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

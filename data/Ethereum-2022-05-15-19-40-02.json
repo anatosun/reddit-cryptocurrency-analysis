@@ -9,88 +9,6 @@
     ],
     "posts": [
         {
-            "id": "uq8vt3",
-            "title": "zkEVM - ELI5?",
-            "url": "https://www.reddit.com/r/ethereum/comments/uq8vt3/zkevm_eli5/",
-            "author": "celticwarrior72",
-            "created_utc": 1652629774.0,
-            "score": 1,
-            "num_comments": 8,
-            "subreddit": "ethereum",
-            "selftext": "I have been following the developments in the L2 rollup space and using Arbitrum and Optimism.  I'm very interested in the zk rollup tech and could use a concise explanation as to why zkEVM is such an important development and how it works (in layman's terms).  Anyone care to write a short ELI5 on the topic?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8pjjjj",
-                    "author": "babossa77",
-                    "score": 5,
-                    "created_utc": 1652630805.0,
-                    "response": "The main idea behind zkEVM is to use zk proofs to prove that any EVM compatible smart contract call has been executed. \n\nThis means that you must be able to generate zkProofs for any possible EVM opcode (opcodes are basically the low level programming commands that the ethereum virtual machine executes when you call a smart contract).\n\nIf you are able to achieve that, you can do all of the execution and computation of smart contracts off chain (on layer 2) and only post the proofs that this execution happened on layer 1, which is way cheaper than doing everything on layer 1.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8ru6rh",
-                            "author": "lorenzomofo",
-                            "score": 1,
-                            "created_utc": 1652668175.0,
-                            "response": "But I heard that computing zkProofs is more expensive than the alternative, right? The only advantage it has that because it is zero knowledge, it is more anonymous?",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i8sq1hn",
-                                    "author": "babossa77",
-                                    "score": 1,
-                                    "created_utc": 1652689977.0,
-                                    "response": "zk Rollups are way more scalable than Optimistic Rollups  and are more secure, as every state transition has to be verifiable, so they inherit the security of Layer 1. \n\nThe computation of zk proofs is expensive, but it does not happen on chain. Only the computed proof is published to the chain and can be easily verified.",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i8phgxz",
-                    "author": "jinjiii",
-                    "score": 1,
-                    "created_utc": 1652629904.0,
-                    "response": "I\u2018m curious what it means to \u201ezk everything\u201c as Vitalik has out it (I think in his roadmap post)",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8phtf6",
-                            "author": "Scarcity-Pretend",
-                            "score": 2,
-                            "created_utc": 1652630057.0,
-                            "response": "Its based on Zero Knowledge therefore the \u201czk\u201d. Loopring has a good explanation for it on their website. They\u2019ve developed L2 zkRollups for the eth chain. Vitalik seems to think highly of it.",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i8pijli",
-                                    "author": "jinjiii",
-                                    "score": 3,
-                                    "created_utc": 1652630379.0,
-                                    "response": "I know what zero knowledge proofs are on a high level and what rollups are. I was asking with regard to zk-ing every part of Ethereum. With regards to the question I guess the EVM itself? But what does it mean to zk the EVM?",
-                                    "depth": 3,
-                                    "comments": [
-                                        {
-                                            "id": "i8rqxy4",
-                                            "author": "domotheus",
-                                            "score": 2,
-                                            "created_utc": 1652666663.0,
-                                            "response": "If we zk everything then the whole chain becomes much easier to verify. Right now, the only way to verify that a block is valid is by running the transactions in it and check everything yourself. But you also have to check that the block before that was valid... So this goes all the way back to the very first genesis block which is always treated as valid.\n\nIf you zk everything, you get to create blocks that contain a proof that all the transactions in it are valid and their results affected the blockchain's state properly, as well as a proof that the previous block was valid as well. It's gonna be proofs within proofs within proofs, and the result is a light client doesn't have to store any data to nearly-instantly check for itself that the block that just got proposed is 100% valid.\n\nBut that's a \"nice to have\" on the roadmap, on the long long term. In reality this recursive zk stuff is still being researched and is gonna roll out on various Layer 2s way before Layer 1 gets close to getting zkified",
-                                            "depth": 4,
-                                            "comments": []
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "id": "uqayhg",
             "title": "How to sell ethereum without proof of address?",
             "url": "https://www.reddit.com/r/ethereum/comments/uqayhg/how_to_sell_ethereum_without_proof_of_address/",
@@ -303,6 +221,98 @@
                                     "response": "What? The OP is asking to get around KYC. This is a public forum where everything is logged man.",
                                     "depth": 3,
                                     "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "uq8vt3",
+            "title": "zkEVM - ELI5?",
+            "url": "https://www.reddit.com/r/ethereum/comments/uq8vt3/zkevm_eli5/",
+            "author": "celticwarrior72",
+            "created_utc": 1652629774.0,
+            "score": 3,
+            "num_comments": 11,
+            "subreddit": "ethereum",
+            "selftext": "I have been following the developments in the L2 rollup space and using Arbitrum and Optimism.  I'm very interested in the zk rollup tech and could use a concise explanation as to why zkEVM is such an important development and how it works (in layman's terms).  Anyone care to write a short ELI5 on the topic?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8pjjjj",
+                    "author": "babossa77",
+                    "score": 6,
+                    "created_utc": 1652630805.0,
+                    "response": "The main idea behind zkEVM is to use zk proofs to prove that any EVM compatible smart contract call has been executed. \n\nThis means that you must be able to generate zkProofs for any possible EVM opcode (opcodes are basically the low level programming commands that the ethereum virtual machine executes when you call a smart contract).\n\nIf you are able to achieve that, you can do all of the execution and computation of smart contracts off chain (on layer 2) and only post the proofs that this execution happened on layer 1, which is way cheaper than doing everything on layer 1.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8ru6rh",
+                            "author": "lorenzomofo",
+                            "score": 1,
+                            "created_utc": 1652668175.0,
+                            "response": "But I heard that computing zkProofs is more expensive than the alternative, right? The only advantage it has that because it is zero knowledge, it is more anonymous?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8sq1hn",
+                                    "author": "babossa77",
+                                    "score": 1,
+                                    "created_utc": 1652689977.0,
+                                    "response": "zk Rollups are way more scalable than Optimistic Rollups  and are more secure, as every state transition has to be verifiable, so they inherit the security of Layer 1. \n\nThe computation of zk proofs is expensive, but it does not happen on chain. Only the computed proof is published to the chain and can be easily verified.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8phgxz",
+                    "author": "jinjiii",
+                    "score": 1,
+                    "created_utc": 1652629904.0,
+                    "response": "I\u2018m curious what it means to \u201ezk everything\u201c as Vitalik has out it (I think in his roadmap post)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8phtf6",
+                            "author": "Scarcity-Pretend",
+                            "score": 2,
+                            "created_utc": 1652630057.0,
+                            "response": "Its based on Zero Knowledge therefore the \u201czk\u201d. Loopring has a good explanation for it on their website. They\u2019ve developed L2 zkRollups for the eth chain. Vitalik seems to think highly of it.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8pijli",
+                                    "author": "jinjiii",
+                                    "score": 3,
+                                    "created_utc": 1652630379.0,
+                                    "response": "I know what zero knowledge proofs are on a high level and what rollups are. I was asking with regard to zk-ing every part of Ethereum. With regards to the question I guess the EVM itself? But what does it mean to zk the EVM?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8rqxy4",
+                                            "author": "domotheus",
+                                            "score": 2,
+                                            "created_utc": 1652666663.0,
+                                            "response": "If we zk everything then the whole chain becomes much easier to verify. Right now, the only way to verify that a block is valid is by running the transactions in it and check everything yourself. But you also have to check that the block before that was valid... So this goes all the way back to the very first genesis block which is always treated as valid.\n\nIf you zk everything, you get to create blocks that contain a proof that all the transactions in it are valid and their results affected the blockchain's state properly, as well as a proof that the previous block was valid as well. It's gonna be proofs within proofs within proofs, and the result is a light client doesn't have to store any data to nearly-instantly check for itself that the block that just got proposed is 100% valid.\n\nBut that's a \"nice to have\" on the roadmap, on the long long term. In reality this recursive zk stuff is still being researched and is gonna roll out on various Layer 2s way before Layer 1 gets close to getting zkified",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8t3wcd",
+                                                    "author": "jinjiii",
+                                                    "score": 1,
+                                                    "created_utc": 1652701262.0,
+                                                    "response": "Thats a great explanation! Thank you!",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             ]
                         }

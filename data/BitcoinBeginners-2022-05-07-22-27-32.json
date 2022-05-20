@@ -225,74 +225,6 @@
             "comments": []
         },
         {
-            "id": "uk7fnc",
-            "title": "Is there any way for someone to have access to your BTC wallet without your private key or seed?",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uk7fnc/is_there_any_way_for_someone_to_have_access_to/",
-            "author": "redhattime",
-            "created_utc": 1651905720.0,
-            "score": 2,
-            "num_comments": 24,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "I know there\u2019s tons of ways hackers can get your private key or seed but is it the only way they can get access to your wallet?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7nhuyl",
-                    "author": "sciencetaco",
-                    "score": 3,
-                    "created_utc": 1651907708.0,
-                    "response": "No. They need the private key. The key is used to create a digital signature for a transaction. The signature provides mathematical proof that you have the key for the address/transaction without revealing the key itself. Without a valid digital signature the network will reject the transaction.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7ng0ui",
-                    "author": "Desperate-Barnacle-4",
-                    "score": 1,
-                    "created_utc": 1651906157.0,
-                    "response": "No\u2026 and yes. Every single Bitcoin private key is public and there are websites to show them https://keys.lol/ and there are challenges to brute force partial keys https://privatekeys.pw/puzzles/bitcoin-puzzle-tx \n\nSo we rely on the enormous number of available keys. The seed phrase is useful here because it uses some good cryptographic techniques to get very good distribution of private keys.\n\nCheckout this video for the scale of 256bit security https://youtube.com/watch?v=S9JGmA5_unY",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7nfgzp",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1651905720.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7o2evj",
-                    "author": "igadjeed",
-                    "score": 1,
-                    "created_utc": 1651924887.0,
-                    "response": "A wallet has thousands of private keys. They are stored in your wallet file. An intruder who has access to your wallet file has access to all your keys",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7oe32b",
-                    "author": "blaze1234",
-                    "score": 1,
-                    "created_utc": 1651931479.0,
-                    "response": "Define what you mean by wallet.\n\nThere are dozens of different meanings.\n\nYour private keys and recovery seed are required to spend your coins.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7s0xd8",
-                    "author": "Left_Iron3305",
-                    "score": 1,
-                    "created_utc": 1652000582.0,
-                    "response": "To get access, they need the private keys",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "ukhm6v",
             "title": "What is Satoshi Nakamoto\u2019s Bitcoin address?",
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ukhm6v/what_is_satoshi_nakamotos_bitcoin_address/",
@@ -786,6 +718,74 @@
                     "score": 1,
                     "created_utc": 1652042115.0,
                     "response": "It lives only in wasabi wallet, it's just a note to help you identify the UTXO",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uk7fnc",
+            "title": "Is there any way for someone to have access to your BTC wallet without your private key or seed?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uk7fnc/is_there_any_way_for_someone_to_have_access_to/",
+            "author": "redhattime",
+            "created_utc": 1651905720.0,
+            "score": 2,
+            "num_comments": 32,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I know there\u2019s tons of ways hackers can get your private key or seed but is it the only way they can get access to your wallet?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7nhuyl",
+                    "author": "sciencetaco",
+                    "score": 3,
+                    "created_utc": 1651907708.0,
+                    "response": "No. They need the private key. The key is used to create a digital signature for a transaction. The signature provides mathematical proof that you have the key for the address/transaction without revealing the key itself. Without a valid digital signature the network will reject the transaction.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7ng0ui",
+                    "author": "Desperate-Barnacle-4",
+                    "score": 1,
+                    "created_utc": 1651906157.0,
+                    "response": "No\u2026 and yes. Every single Bitcoin private key is public and there are websites to show them https://keys.lol/ and there are challenges to brute force partial keys https://privatekeys.pw/puzzles/bitcoin-puzzle-tx \n\nSo we rely on the enormous number of available keys. The seed phrase is useful here because it uses some good cryptographic techniques to get very good distribution of private keys.\n\nCheckout this video for the scale of 256bit security https://youtube.com/watch?v=S9JGmA5_unY",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7nfgzp",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1651905720.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7o2evj",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1651924887.0,
+                    "response": "A wallet has thousands of private keys. They are stored in your wallet file. An intruder who has access to your wallet file has access to all your keys",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7oe32b",
+                    "author": "blaze1234",
+                    "score": 1,
+                    "created_utc": 1651931479.0,
+                    "response": "Define what you mean by wallet.\n\nThere are dozens of different meanings.\n\nYour private keys and recovery seed are required to spend your coins.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7s0xd8",
+                    "author": "Left_Iron3305",
+                    "score": 1,
+                    "created_utc": 1652000582.0,
+                    "response": "To get access, they need the private keys",
                     "depth": 1,
                     "comments": []
                 }

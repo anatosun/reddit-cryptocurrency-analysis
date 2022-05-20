@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/ethereum/comments/urq3uf/testnet_vs_mainnet_value_question/",
             "author": "rafedanos",
             "created_utc": 1652804427.0,
-            "score": 2,
-            "num_comments": 4,
+            "score": 1,
+            "num_comments": 12,
             "subreddit": "ethereum",
             "selftext": "Hello, I have been fooling around with smart contracts, and web 3 development and I have had this question for a couple weeks, if anyone could help that would be great. \nSo, what gives the ETH on the Mainnet value while ETH on a testnet does not have value?",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i8zffvt",
                     "author": "mooremo",
-                    "score": 5,
+                    "score": 6,
                     "created_utc": 1652815769.0,
                     "response": "The testnet ETH and tokens can have some value, but the test nets aren't intended to last forever. For example, one is being sunset soon, so attaching real long term value to anything on that chain is not a good plan.",
                     "depth": 1,
@@ -32,7 +32,7 @@
                 {
                     "id": "i8yoodm",
                     "author": "Maswasnos",
-                    "score": 5,
+                    "score": 3,
                     "created_utc": 1652804941.0,
                     "response": "Same thing that gives anything value: people decide it is valuable. \n\nFor example, USDC and USDT may have tokens on testnets, but you can't go to Circle or Tether and redeem them for $1 like you can with mainnet tokens.",
                     "depth": 1,
@@ -41,20 +41,50 @@
                 {
                     "id": "i8zr0un",
                     "author": "Complex_Bread_6068",
-                    "score": 1,
+                    "score": 2,
                     "created_utc": 1652820565.0,
                     "response": "The testnets run on proof of authority. This is a small group of nodes. This means that the network is not really decentralized and can be easily turned off, the blocks can be rearranged, etc. Also, the coins are just free, so no artificial scarcity either",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i933zuc",
+                            "author": "rafedanos",
+                            "score": 1,
+                            "created_utc": 1652888919.0,
+                            "response": "Thank you, only actually helpful comment.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i912ebv",
                     "author": "PorchBear816",
-                    "score": 1,
+                    "score": 0,
                     "created_utc": 1652842547.0,
                     "response": "the security on mainnet gives it its value",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9341he",
+                            "author": "rafedanos",
+                            "score": 1,
+                            "created_utc": 1652888937.0,
+                            "response": "Could you elaborate further?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i94cr44",
+                                    "author": "PorchBear816",
+                                    "score": 1,
+                                    "created_utc": 1652907063.0,
+                                    "response": "Sure.  Ethereum L1's primary value longterm is as a secure settlement layer.  The code can be copied and pasted anywhere, but that doesn't make the copy equally valuable because it doesn't have the inherent security of Ethereum's L1.  \n\nEventually, the myriad of different use cases for blockchain will fan out into a variety of L2's, each with differing properties tailored to the needs of the specific dapp ecosystems they support, but it is the security layer beneath them that is the foundation of the overall ecosystem value.  No one is going to put a significant amount of time into building a house on quicksand, which is why crappy alternative L1's rarely gain traction without essentially giving away money through marketing gimmicks.  None of them have anywhere near ETH's level of foundational security.\n\nYour initial question was why do testnet tokens not have the same value as mainnet tokens.  The answer is because testnet is comparatively easier to hack / exploit / centralize, etc.  The overall security of Ethereum L1 (which factors in decentralization) is what gives it value over testnet.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

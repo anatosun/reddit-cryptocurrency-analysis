@@ -1,0 +1,44 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "ut2bx5",
+            "title": "Using an old laptop as node/wallet",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ut2bx5/using_an_old_laptop_as_nodewallet/",
+            "author": "krisycoll",
+            "created_utc": 1652963323.0,
+            "score": 2,
+            "num_comments": 3,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I have an old laptop with no use right now. I wan't to use it as a full node to connect my hardware wallet (Trezor One) and have coin control, privacy and security. But there are a lot of ways to do so, so I'm very lost. I have some questions: \n\n1.- Should I format hard drive and install linux (I have zero experience with linux, but I'm willing  to learn) or it is ok with Windows 10?\n\n2.- Should I use it just like a full node or use it also as wallet? For convenience, I prefer to use my desktop computer as wallet, connected to the laptop full node, but I'm receptive for your considerations)\n\n3.- What software should I use for the full node? Bitcoin core? Electrum personal server? Ronin Dojo? Umbrel? Are those software for windows or linux?\n\nWhat I'm looking for is just a full node so I don't spread my Xpubs to third-parties and a wallet with coin control feature (for using in my main computer) so I do not mix the UTXOs I have in my trezor one. But I want to feel confident about security while using it.\n\nThank you in advance.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9707wp",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652963324.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9bkfe7",
+                    "author": "btcmindset",
+                    "score": 1,
+                    "created_utc": 1653049933.0,
+                    "response": "I'm sure I will be in the minority, but I think using an old laptop just to run a node is a waste, especially if you're thinking about installing Linux but have no experience with it.\n\nIMO your best bet is to run Bitcoin Core on your main computer and probably use something like Specter wallet to easily connect your Trezor One to it. You don't need to run Core all the time, after the initial sync, just open it every couple of days to keep it up to date and synced (or whenever you need to make a transaction, obviously).\n\nI think running a node on a machine you don't pay attention to is worse than running it on one that you pay attention to daily, we need to practice good security and habits anyway. But only syncing when you need to and keeping your keys offline (on Trezor) does a lot to help that.\n\nComplexity is the enemy of security.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

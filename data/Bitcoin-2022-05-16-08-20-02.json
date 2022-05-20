@@ -9,29 +9,6 @@
     ],
     "posts": [
         {
-            "id": "uqqs82",
-            "title": "How accessible are bitcoin applications?",
-            "url": "https://www.reddit.com/r/Bitcoin/comments/uqqs82/how_accessible_are_bitcoin_applications/",
-            "author": "knueffelbund",
-            "created_utc": 1652688350.0,
-            "score": 5,
-            "num_comments": 1,
-            "subreddit": "Bitcoin",
-            "selftext": "I am looking to learn what the current state of accessibility in bitcoin is, the biggest pain points, and how people overcome them (in the context of open-source and self-custody). Goal is to identify some best practices and make them available via the [Bitcoin Design Guide](https://bitcoin.design/guide/).\n\nFrom some initial testing, it seems like many mobile apps fail at basic practices, like properly labelling interactive elements so screen readers can understand them. I would also assume that QR codes, addresses, and security (specifically backup of recovery phrases) are problematic. What else?\n\nWould appreciate it if anyone had insight or experience with this. Anonymous sharing is fine, too (although not sure how to best do that here on Reddit - maybe via throw-away accounts?).",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8v6wxt",
-                    "author": "cpt_charisma",
-                    "score": 1,
-                    "created_utc": 1652733884.0,
-                    "response": "There is a general lack of educational content in Bitcoin apps, especially around transaction status, processing times, fee estimation/calculations and everything related to Lightning channels.  We need to do way better at setting expectations and helping people understand what's going on.  More general info would be nice too.  Basic stuff about how Bitcoin works, keys, security, etc.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "uqqvhc",
             "title": "Software vs hardware wallets.",
             "url": "https://www.reddit.com/r/Bitcoin/comments/uqqvhc/software_vs_hardware_wallets/",
@@ -144,6 +121,29 @@
                             "comments": []
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "id": "uqqs82",
+            "title": "How accessible are bitcoin applications?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uqqs82/how_accessible_are_bitcoin_applications/",
+            "author": "knueffelbund",
+            "created_utc": 1652688350.0,
+            "score": 7,
+            "num_comments": 2,
+            "subreddit": "Bitcoin",
+            "selftext": "I am looking to learn what the current state of accessibility in bitcoin is, the biggest pain points, and how people overcome them (in the context of open-source and self-custody). Goal is to identify some best practices and make them available via the [Bitcoin Design Guide](https://bitcoin.design/guide/).\n\nFrom some initial testing, it seems like many mobile apps fail at basic practices, like properly labelling interactive elements so screen readers can understand them. I would also assume that QR codes, addresses, and security (specifically backup of recovery phrases) are problematic. What else?\n\nWould appreciate it if anyone had insight or experience with this. Anonymous sharing is fine, too (although not sure how to best do that here on Reddit - maybe via throw-away accounts?).",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8v6wxt",
+                    "author": "cpt_charisma",
+                    "score": 1,
+                    "created_utc": 1652733884.0,
+                    "response": "There is a general lack of educational content in Bitcoin apps, especially around transaction status, processing times, fee estimation/calculations and everything related to Lightning channels.  We need to do way better at setting expectations and helping people understand what's going on.  More general info would be nice too.  Basic stuff about how Bitcoin works, keys, security, etc.",
+                    "depth": 1,
+                    "comments": []
                 }
             ]
         }

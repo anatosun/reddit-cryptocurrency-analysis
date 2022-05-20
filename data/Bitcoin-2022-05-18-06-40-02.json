@@ -14,8 +14,8 @@
             "url": "https://twitter.com/CoinCornerDanny/status/1526573313962680321",
             "author": "Ima_Wreckyou",
             "created_utc": 1652855914.0,
-            "score": 4,
-            "num_comments": 2,
+            "score": 58,
+            "num_comments": 20,
             "subreddit": "Bitcoin",
             "selftext": "",
             "stickied": false,
@@ -23,18 +23,170 @@
                 {
                     "id": "i91pg0x",
                     "author": "nullama",
-                    "score": 1,
+                    "score": 17,
                     "created_utc": 1652857830.0,
                     "response": "This is great, and you can DIY as well.\n\nYou'll need:\n\n- A blank NFC card\n\n- A phone with NFC\n\n- Either your own lightning node or an external service like https://ln.cash\n\n- An app to write NFC like NFC Tools.\n\n[Here's a video that shows how to set up a card with ln.cash](https://www.youtube.com/watch?v=XxpzW4KTtjY)\n\nYou can of course also use their own exchange and that way you will be able to use it as a debit card funded with the funds in that account. They have free withdrawals and deposits with lightning.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97we2w",
+                            "author": "bigdaddyjeff69",
+                            "score": 1,
+                            "created_utc": 1652977568.0,
+                            "response": "Just looked through that video.\n\nSo the card ends up just being a medium to transfer sats to other devices?\n\nOnce the card is set up is continually sending funds to the card easy or do you have to go fund it with [in.cash](https://in.cash) or something? As i'm writing this you could probably just send to the LNURL that you pasted on the card huh. Sorry this is still a bit new to me.  \n\n\nEdit:\n\nI'm also assuming setting up you're own node would be more private and you wouldn't need to load the card since it would be connected to you're node and thus funds already?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i99ggu4",
+                                    "author": "nullama",
+                                    "score": 1,
+                                    "created_utc": 1653002230.0,
+                                    "response": "The card loads a special lightning URL, which is the one that does all the magic.\n\nIt's basically a LNURL-Widthrawal link encoded into the NFC of the card.\n\n> I'm also assuming setting up you're own node would be more private and you wouldn't need to load the card since it would be connected to you're node and thus funds already?\n\nThat's the idea. You need to setup a server to receive the LNURL-Widthrawal request and set it up with your node. Basically replicating what CoinCorner or ln.cash and other services offer to you.\n\nHere's some more reading material:\n\nhttps://github.com/chill117/lnurl-node\n\nhttps://developers.opennode.com/docs/generate-lnurl-withdrawal\n\nhttps://docs.lnpay.co/api/lnurl-withdraw/disposable-lnurl-withdraw\n\nHere's some discussion in BTCPayServer about how to implement this:\nhttps://github.com/btcpayserver/btcpayserver/discussions/1692\n\nAnd here's specification:\nhttps://github.com/fiatjaf/lnurl-rfc\n\nThere's a lot of activity in this area at the moment.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i92b87d",
+                    "author": "Savik519",
+                    "score": 15,
+                    "created_utc": 1652875636.0,
+                    "response": "Be your own bank\n\nBe your own payment processor\n\nBe your own sovereign nation",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i93io27",
+                    "author": "Ima_Wreckyou",
+                    "score": 4,
+                    "created_utc": 1652894837.0,
+                    "response": "/r/cc just banned the post. Typical, invalidates too much shitcoins",
                     "depth": 1,
                     "comments": []
                 },
                 {
                     "id": "i91qy5h",
                     "author": "RedditTooAddictive",
-                    "score": 1,
+                    "score": 3,
                     "created_utc": 1652859156.0,
                     "response": "Can I pay anywhere with that?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96jllz",
+                            "author": "Danny1878",
+                            "score": 2,
+                            "created_utc": 1652951255.0,
+                            "response": "I think the store needs to be running BTCpayserver.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92um14",
+                    "author": "fiercygoat",
+                    "score": 2,
+                    "created_utc": 1652885050.0,
+                    "response": "This is very promising",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92vkfj",
+                    "author": "BigDeezerrr",
+                    "score": 2,
+                    "created_utc": 1652885451.0,
+                    "response": "Woah. I was just commenting the other day about how we need something to carry around and make LN payments easy that isn't a smartphone.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92hg1j",
+                    "author": "CeramicDrip",
+                    "score": 1,
+                    "created_utc": 1652879013.0,
+                    "response": "Its cool and all. But what stops a person that steals the card from using it? Do you have to verify the transaction or something?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92lm4p",
+                            "author": "Mallardshead",
+                            "score": 9,
+                            "created_utc": 1652881032.0,
+                            "response": "It's for transacting. Same thing that happens if your wallet with cash gets stolen\u2014meaning it shouldn't have your net worth. Maybe a couple hundred bucks. Then when you need more, send more from a secure software wallet, exchange, or hard wallet.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92pm3n",
+                                    "author": "CeramicDrip",
+                                    "score": 2,
+                                    "created_utc": 1652882869.0,
+                                    "response": "Hmm interesting. It would be cool if there was a feature that made it so you have to confirm the transaction on your phone or something. Just for that extra layer of security. But nonetheless, still cool",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i93bmjy",
+                                            "author": "Ima_Wreckyou",
+                                            "score": 3,
+                                            "created_utc": 1652892023.0,
+                                            "response": "I mean this is for situations when you don't want to use yor phone. Otherwise you could directly scan the QR code of the LN invoice.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9327su",
+                            "author": "duckofdeath87",
+                            "score": 5,
+                            "created_utc": 1652888193.0,
+                            "response": "It would be good to have a killswitch for the card",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i97p9zs",
+                                    "author": "coincorner",
+                                    "score": 2,
+                                    "created_utc": 1652974706.0,
+                                    "response": "There is an option to enable/disable [The Bolt Card](https://www.coincorner.com/TheBoltCard) on the CoinCorner app.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i92zoby",
+                    "author": "BitcoinIsSimple",
+                    "score": 1,
+                    "created_utc": 1652887160.0,
+                    "response": "What makes this different from all the other cards where you fund an exchange and use the card as payment.\n\nIs this like strike?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i93bv81",
+                            "author": "Ima_Wreckyou",
+                            "score": 2,
+                            "created_utc": 1652892116.0,
+                            "response": "Apparently you can use this with your own lightning node",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i93pcph",
+                    "author": "nomanic",
+                    "score": 1,
+                    "created_utc": 1652897518.0,
+                    "response": "Can I use this in the states?",
                     "depth": 1,
                     "comments": []
                 }

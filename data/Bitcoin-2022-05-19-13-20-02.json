@@ -1,0 +1,358 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "ut31en",
+            "title": "Is there a detailed explication of how coins determine their price?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/ut31en/is_there_a_detailed_explication_of_how_coins/",
+            "author": "VAIAGames",
+            "created_utc": 1652965620.0,
+            "score": 3,
+            "num_comments": 31,
+            "subreddit": "Bitcoin",
+            "selftext": " \n\nI have heard all about the supply and demand and when people buy goes up sell goes down but that doesn't satisfy me.\n\nIs  there some sort of algorithm that determines the price based on  actions? For example if a person buys x of coin increase the coin value  by y?\n\nIf all that the price is  currently, is what people are willing to offer for it, what stops people  from collectively agreeing to only sell their coins at a price that  they want? What would stop that group from selling btc for example for  100k? If no lower offers existed people would have no choice but to buy  at 100k.\n\nIn other words, how was  the current price of any coin determined? Why it changes automagically?  There must be some algorithm that determines those things.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i978yf1",
+                    "author": "ProfRomeoVonSexhaver",
+                    "score": 8,
+                    "created_utc": 1652967724.0,
+                    "response": "I'd recommend at looking at the concept of an [Order Book](https://www.investopedia.com/terms/o/order-book.asp)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i979x1j",
+                            "author": "The-Francois8",
+                            "score": 1,
+                            "created_utc": 1652968166.0,
+                            "response": "Plus 1 to this. \n\nIn the order book, people post prices that they\u2019re willing to buy or sell at. When these numbers match, a trade occurs. \n\nWhen someone enters a market buy or sell order, the system matches it with best currently available opposing order.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i974wmz",
+                    "author": "dlq84",
+                    "score": 2,
+                    "created_utc": 1652965788.0,
+                    "response": "Coins doesn't determine price. The market does. Why don't you \"buy\" the supply and demand argument?\n\n> what stops people from collectively agreeing to only sell their coins at a price that they want\n\nHow do you get millions of people to agree on that?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97543x",
+                            "author": "VAIAGames",
+                            "score": -2,
+                            "created_utc": 1652965891.0,
+                            "response": "Ok, then how does the market determine the price? What algorithm do exchanges use? How does it know by how much adjust the price whenever someone buys or sells?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9757l2",
+                                    "author": "dlq84",
+                                    "score": 3,
+                                    "created_utc": 1652965938.0,
+                                    "response": "There is no algorithm.\n\nA buyer decides to buy, and a seller decides to sell. The price you see on exchanges is the last price a transaction was made at.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i976gd6",
+                                            "author": "devenjames",
+                                            "score": 1,
+                                            "created_utc": 1652966539.0,
+                                            "response": "So with a small float on exchanges, and most people hodling, would it be possible, with a large capital investment, to buy a bunch of Bitcoin at market price, flood the market with sell orders below market price and buy them yourself, drive down the market price, cause panic to drive it down further as others sell in reaction, then buy back lower and increase your position? Then just do it repeatedly selling local tops, driving down price, buying bottoms, and on and on? That would be price manipulation, but what\u2019s to stop that? Or is my thinking flawed? I don\u2019t know jack.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i97828h",
+                                                    "author": "dlq84",
+                                                    "score": 1,
+                                                    "created_utc": 1652967304.0,
+                                                    "response": "Is it possible to manipulate a marketplace? Yes.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "i97an11",
+                                                    "author": "Cryptocaller",
+                                                    "score": 1,
+                                                    "created_utc": 1652968490.0,
+                                                    "response": "You must never have heard of trading bots. If you were to set sell orders below market price those orders would all be bought up in the blink of an eye by trading bots. You would never even get the chance to repurchase your own sell orders. You can\u2019t move as fast as a bot can.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "i97f3pc",
+                                                    "author": "igadjeed",
+                                                    "score": 1,
+                                                    "created_utc": 1652970451.0,
+                                                    "response": "> That would be price manipulation, but what\u2019s to stop that?\n\nIf you're staking a huge amount of Bitcoin on a price manipulation strategy, you're vulnerable to another wealthy player seeking to profit by countering your manipulation\n\n> is my thinking flawed?\n\nIt's very shallow\n\n> I don\u2019t know jack\n\nTrue",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "i97gctz",
+                                                    "author": "allt3r",
+                                                    "score": 1,
+                                                    "created_utc": 1652970992.0,
+                                                    "response": "Back in the day large whales alone could manipulate the market in a similar fashion (sell a ton, drive the price down, buy back cheaper) to what you describe. The larger the market cap the harder it is to pull it off, because there are now bigger whales and bots.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "i97temg",
+                                                    "author": "MasterDebater100",
+                                                    "score": 1,
+                                                    "created_utc": 1652976366.0,
+                                                    "response": "You can... but what if it doesn't go as planned and people buy the dip before it meets your target price?  Or if you buy a bunch and pump the price but people decide to sell into the pump and take profit?  You can't control what others do.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "i984q08",
+                                                    "author": "98gffg7728993d87",
+                                                    "score": 1,
+                                                    "created_utc": 1652980903.0,
+                                                    "response": "So if you were to sell bitcoin below market price, thats when people do \"arbitrage\" they would buy your bitcoin below market value then send it to another exchange and sell it for more money, take the profit and go back to your exchange, buy more below market value, then bring it back to the other exchange, sell for profit. and this would continue until prices matched on both exchanges. and the same would apply if you raised the price on an exchange, people would again exploit the difference in value.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i983zhp",
+                                    "author": "98gffg7728993d87",
+                                    "score": 1,
+                                    "created_utc": 1652980615.0,
+                                    "response": "What you refer to as the price, that number is the number at which the most recent trade completed at on a given exchange. That is the price on that exchange.\n\n&#x200B;\n\nThe order book has a list of buy orders. This list acts as a line. The line  goes in order of whoever is willing to pay the most, or sell for the least, and then in chronological order.\n\nAt any given moment if a market sell order is placed, it will be matched with the highest current limit buy order, and if more than one person placed a limit buy order at that value, then their orders will be filled in chronological order.\n\nand at any given moment if a market buy order is placed, it will will be matched with the lowest current limit sell order, and again, if there's multiple limit sell orders at that value then it will go in order of who placed their order first. This is sort of why people place orders for buy orders at funny numbers like 100.01, or sell orders at funny numbers like 99.99, because they are sort of \"skipping the line\" of all the orders that may be placed at 100.00",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i97ef5j",
+                    "author": "igadjeed",
+                    "score": 2,
+                    "created_utc": 1652970155.0,
+                    "response": "Why are you overthinking this? There are no algorithms  \n\nA seller posts an order on a trading exchange. A buyer posts an order on a trading exchange. If the prices of those orders overlap, the exchange matches the orders and records a transaction. At the moment of that transaction, the price of that transaction is the price of Bitcoin on that exchange. The price changes when the next transaction occurs",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i97fl2q",
+                    "author": "senfmeister",
+                    "score": 2,
+                    "created_utc": 1652970661.0,
+                    "response": ">I have heard all about the supply and demand and when people buy goes up sell goes down but that doesn't satisfy me.\n\nWell, it's the answer. It doesn't matter if that satisfies you.\n\n&#x200B;\n\n>Is there some sort of algorithm that determines the price based on actions? For example if a person buys x of coin increase the coin value by y?\n\nNo.\n\n&#x200B;\n\n>If all that the price is currently, is what people are willing to offer for it, what stops people from collectively agreeing to only sell their coins at a price that they want? What would stop that group from selling btc for example for 100k? If no lower offers existed people would have no choice but to buy at 100k.\n\nNothing stops people from trying that. Good luck organizing every person who owns bitcoin to do the same thing you want them to do rather than what they want to do. Someone can decide that $75k is enough for them, and they'd sell before the buyers get to $100k. Maybe someone else sees that and decides that's fine for them too, etc.\n\n&#x200B;\n\n>In other words, how was the current price of any coin determined? Why it changes automagically? There must be some algorithm that determines those things.\n\nSupply and demand. The summed up feelings of the market change constantly, so the price does also. There is no algorithm that determines those things, unless you consider the voluntary actions of buyers and sellers as an algorithm running on a distributed analog computer.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9771pv",
+                    "author": "marsupiality",
+                    "score": 0,
+                    "created_utc": 1652966820.0,
+                    "response": "Very good question. \nIf you want a serious answer start with MV = PY, check out this [explanation](https://youtu.be/Ye5hH6ku1L8)\n\nPeople often don\u2019t know about the concept of money velocity, it\u2019s crucial in determining the market cap of a currency.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97qyh9",
+                            "author": "yndkings",
+                            "score": 1,
+                            "created_utc": 1652975378.0,
+                            "response": "That\u2019s not really an answer to o.p.s question, although he seems happy enough that it sufficiently complex as an answer! Bitcoin does not have a gdp rage video Content and formula listed doesn\u2019t apply. The answer to o.p.s question, is the order book, supply and demand. Much simpler",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i97uok7",
+                                    "author": "marsupiality",
+                                    "score": 1,
+                                    "created_utc": 1652976885.0,
+                                    "response": "Order book, supply and demand, etc. explain short term price dynamics but not fundamentals, if you're looking to get a sense of a token's long term value then you need to look at its uses in the broader economy. Obviously BTC doesn't have a GDP but it does have a market cap, same concept. [Maybe this helps](https://medium.com/newtown-partners/velocity-of-tokens-26b313303b77)",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i98uitc",
+                                            "author": "yndkings",
+                                            "score": 1,
+                                            "created_utc": 1652991430.0,
+                                            "response": "It\u2019s nonsense. Sorry man if you can\u2019t see that I don\u2019t have time to explain. There\u2019s a prominent name listed throughout the article that gives a strong hint!",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i979c3u",
+                            "author": "VAIAGames",
+                            "score": 0,
+                            "created_utc": 1652967899.0,
+                            "response": "Thanks! It was bugging me for a while but didn't know how to search for it and it seems that most average traders don't know it.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i97rf8a",
+                                    "author": "konokonohamaru",
+                                    "score": 2,
+                                    "created_utc": 1652975565.0,
+                                    "response": "No, this guy is wrong. At least, in answer to your question. No exchange uses MV=PY to \"set the price\"\n\nThe order book guy got it right. The \"price\" is very simple - it's just the last traded price and the traded price is determined by what buyers put in as their bids and what sellers put in as their asks.\n\nAs to what stops collective price manipulation - there are just too many traders out there for that",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i976fn3",
+                    "author": "Rtbrosk",
+                    "score": 1,
+                    "created_utc": 1652966528.0,
+                    "response": "supply and manipulation",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9792xp",
+                    "author": "M4nch1",
+                    "score": 1,
+                    "created_utc": 1652967782.0,
+                    "response": "Have you tried registering to a market and operate? All your questions will be answered just by watching what the market does",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i97ft7x",
+                    "author": "NotGonnaPayYou",
+                    "score": 1,
+                    "created_utc": 1652970760.0,
+                    "response": "I mean, at least for the charts, I assume the exchanges use some sort of smoothing algorithm, right?\nOtherwise I could cause huge spikes by selling single satoshis for a dollar each to myself and thereby drive the price up momentarily",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i985u3o",
+                            "author": "98gffg7728993d87",
+                            "score": 2,
+                            "created_utc": 1652981351.0,
+                            "response": "You do not decide who you sell the coins to. The exchange matches buyers and sellers.\n\n&#x200B;\n\nThere's two types of orders, market orders and limit orders.\n\n&#x200B;\n\nLimit orders are orders in which a value is specified which is the limit that the order placer is willing to do the order at.\n\n&#x200B;\n\nMarket orders do 1 thing. They get matched with limit orders. Thats all.\n\n&#x200B;\n\nThe limit orders will be filled in order of who is willing to pay the most, or sell for the least, and then in chronological order.\n\n&#x200B;\n\nSo you cannot do that to the price. Your order to sell 1 satoshi for 100,000 per coin is in the back of the line, so to speak, behind all the limit sell orders who are willing to settle for less. Your order can only go through if and when those are orders are filled.\n\n&#x200B;\n\nBut you are on to something. The same cannot be said for NFTS. you could easily do what you describe with NFTs. Because NFTs are \"not fungible.\" Which means each nft has its own separate market place, and extremely low volume, it really could just be you trading back and forth with yourself.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i98f70i",
+                                    "author": "NotGonnaPayYou",
+                                    "score": 1,
+                                    "created_utc": 1652985157.0,
+                                    "response": "Very interesting. Thanks for the response! That does make sense, especially in light of NFTs. I recall there are some bitcoin markets where users buy from one another (that is, you can choose an offer that suits your needs regarding payment options etc), such as bitcoin.de. But I guess these transactions do not contribute to the market value that these markets list.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i98p23q",
+                                            "author": "98gffg7728993d87",
+                                            "score": 1,
+                                            "created_utc": 1652989183.0,
+                                            "response": "Fair point. On bisq you could do this, and choose to fill your own high order and it would show up on the bisq chart. But I think everyone would just ignore it and keep filling the more reasonably priced orders.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i983g4z",
+                    "author": "cstrand31",
+                    "score": 1,
+                    "created_utc": 1652980397.0,
+                    "response": "Supply and demand. Usually. There is no algorithm. This isn\u2019t Costco where some entity is stamping \u201cprices\u201d on coins. A buyer decides the price they\u2019d like to buy at and a seller agrees to a price they\u2019d like to sell at. It\u2019s that simple.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i98l0u6",
+                    "author": "King-Donkey-Kong",
+                    "score": 1,
+                    "created_utc": 1652987534.0,
+                    "response": "Supply and demand unless it\u2019s a \u201cstable coin\u201d",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i98sfga",
+                    "author": "swgo1",
+                    "score": 1,
+                    "created_utc": 1652990567.0,
+                    "response": "It is a free market. Buyers and sellers communicate what price they want. The buyers try to find a seller who will take a lower price than the other sellers. The sellers try to find a buyer who will pay more than the other buyers. All the buyers and sellers watch the others as they agree to sell. They each make decisions to buy and sell based on what price the recent sale was made at, how much the want the product, and how much product there is up for sale.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ut34bg",
+            "title": "Lightning Network payment from a NFC card on a website thanks to BTCpay's LNURL NFC Support plugin",
+            "url": "https://v.redd.it/f9khixrlmf091",
+            "author": "simplelifestyle",
+            "created_utc": 1652965867.0,
+            "score": 44,
+            "num_comments": 4,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i97ka0r",
+                    "author": "OkArtichoke6853",
+                    "score": 3,
+                    "created_utc": 1652972640.0,
+                    "response": "Woah thats super cool! Would be even better if the price was in SATs not fi*t",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i97jze9",
+                    "author": "handheldbbc",
+                    "score": 2,
+                    "created_utc": 1652972515.0,
+                    "response": "That\u2019s awesome",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i97lmw1",
+                    "author": "simplelifestyle",
+                    "score": 1,
+                    "created_utc": 1652973205.0,
+                    "response": "Source:\n\nhttps://www.youtube.com/c/DavidcoenItImmagine/videos",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i994tfu",
+                    "author": "Danny1878",
+                    "score": 1,
+                    "created_utc": 1652996659.0,
+                    "response": "What if you are on a desktop computer though?",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

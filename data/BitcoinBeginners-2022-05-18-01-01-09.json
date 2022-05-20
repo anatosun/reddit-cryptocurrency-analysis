@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/us0sgj/whats_the_difference_between_playing_small_amount/",
             "author": "Top-Butterscotch8892",
             "created_utc": 1652834705.0,
-            "score": 0,
-            "num_comments": 9,
+            "score": 1,
+            "num_comments": 21,
             "subreddit": "BitcoinBeginners",
             "selftext": "Like whats the difference between putting 100$ on 10x and puting 1000$ on 1x?",
             "stickied": false,
@@ -23,11 +23,39 @@
                 {
                     "id": "i90mg7h",
                     "author": "bitusher",
-                    "score": 3,
+                    "score": 6,
                     "created_utc": 1652834944.0,
                     "response": "If you use leverage it makes it very easy for either a whale or the exchange itself to create a margin call where you lose all your money. \n\nDay trading itself is very dangerous and 97% lose money . Day trading on leverage is far more dangerous than gambling at a sketchy casino or trading penny stocks",
                     "depth": 1,
                     "comments": []
+                },
+                {
+                    "id": "i91o1o1",
+                    "author": "igadjeed",
+                    "score": 3,
+                    "created_utc": 1652856653.0,
+                    "response": "With 10x leverage, your stake gets wiped out 10 times faster",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91pr60",
+                    "author": "Rannasha",
+                    "score": 3,
+                    "created_utc": 1652858110.0,
+                    "response": "As others have said, using leverage runs the risk of getting your position liquidated. Note that this isn't necessarily worse than simply having a larger non-leveraged position.\n\nFor example: Person A buys $1000 worth of Bitcoin with 10x leverage (so $100 collateral) while person B buys $1000 worth of Bitcoin directly (no leverage). The price of Bitcoin drops by 10%. Person A loses their collateral and ends up with a $100 loss. Person B still has Bitcoin, but with a value of $900, so they're facing a $100 (unrealized) loss as well. The losses are equal.\n\nNow, if Bitcoin continues to decline, person A won't incur any further losses since their position was closed through liquidation. Person B, on the other hand, sees the value of their holdings decline. On the other hand, if the price bounces back, person B benefits, but A does not because the position was closed.\n\nSo in periods where you're not actively trading with your hands on the buttons, a leveraged position can act as a stop-loss, limiting the potential downside of a trade, but also potentially preventing you from profiting from a rebound.\n\nAnother potential use case of leveraged trading is to limit your counterparty risk. We all know the saying \"Not your keys, not your coins\". And ideally you'd want to keep as much of your coins in your own wallet, not on the exchange. By using leverage, you only need a fraction of the total size of the position actually on the exchange. For example, if you use 5x leverage and you want to open a position worth 1 BTC, you only need to send 0.2 BTC to the exchange and you can keep the rest in your wallet. If the exchange goes under or refuses to honor withdrawals, this limits your risk.\n\nNote that using leverage isn't free. You need to borrow funds to open a leveraged position and for that you pay interest. How much will depend on the exchange, but it's something to keep in mind.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i924cap",
+                            "author": "TaxViking",
+                            "score": 1,
+                            "created_utc": 1652871100.0,
+                            "response": "Thank you. That was a really helpful explanation.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i90r04e",
@@ -54,16 +82,27 @@
                     "created_utc": 1652844897.0,
                     "response": "The greater the leverage. The greater the profit will be",
                     "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i91o1o1",
-                    "author": "igadjeed",
-                    "score": 1,
-                    "created_utc": 1652856653.0,
-                    "response": "With 10x leverage, your stake gets wiped out 10 times faster",
-                    "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i92acgd",
+                            "author": "OneStepAheadApp",
+                            "score": 1,
+                            "created_utc": 1652875110.0,
+                            "response": "Also, the greater the leverage the quicker you get wrecked.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92x98o",
+                                    "author": "Kianna_hd",
+                                    "score": 1,
+                                    "created_utc": 1652886153.0,
+                                    "response": "Yes. Risk and profit are proportional",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": "i91ocde",
@@ -71,6 +110,42 @@
                     "score": 1,
                     "created_utc": 1652856901.0,
                     "response": "When the asset you're trading changes price, leverage amplifies your gain/loss % by whatever \"x\" you are leveraging with.\n\nUsing BTC as an example, if you're using 10x leverage, your trade's value will move 10% for every 1% BTC's value changes.\n\nSo with this in mind you should be able to answer your own question. 1x leverage is virtually pointless: youd be borrowing $1000 and using your own $1000 as collateral. This would be worse than simply not using leverage, due to the broker fees and liquidation points.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i925op3",
+                    "author": "Alive-Wind-4192",
+                    "score": 1,
+                    "created_utc": 1652872070.0,
+                    "response": "Not much, you lose money either way.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i929lkt",
+                    "author": "OneStepAheadApp",
+                    "score": 1,
+                    "created_utc": 1652874654.0,
+                    "response": "One of the main problem with leverage trading is human psychology. If you win trade you will always think, why didn't I put more. Then you put more and you win again. You think you are the best trader in the world and then you get wrecked.\n\nAs a general rule, I would not recommend leverage trading.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92gv19",
+                    "author": "DuvalHMFIC",
+                    "score": 1,
+                    "created_utc": 1652878720.0,
+                    "response": "You should try it and report back to us.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i94xn1r",
+                    "author": "DefiUser0101",
+                    "score": 1,
+                    "created_utc": 1652916245.0,
+                    "response": "Do not use leverage unless your mindset is ready (and your knowledge :) )",
                     "depth": 1,
                     "comments": []
                 },

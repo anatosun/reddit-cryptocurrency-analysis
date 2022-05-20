@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/Bitcoin/comments/urh5af/question_about_bitcoin_transactions_composition/",
             "author": "aidfarh",
             "created_utc": 1652773038.0,
-            "score": 1,
-            "num_comments": 3,
+            "score": 3,
+            "num_comments": 9,
             "subreddit": "Bitcoin",
             "selftext": "I have a couple of questions regarding the composition of bitcoin transaction. For illustration I'm including random transactions that I picked from the blockchain.\n\n1. Refer to this transaction: [https://www.blockchain.com/btc/tx/5d3d06a5f9c9578d19c3e33547bf035160f1b35ca363edb724cd9442349bd375](https://www.blockchain.com/btc/tx/5d3d06a5f9c9578d19c3e33547bf035160f1b35ca363edb724cd9442349bd375)\n\nIn this transaction, you can see that there is one input address that is repeated 5 times with varying input values. My question is, why wasn't the input just written once with the input values from the 5 entries totaled up into just one value? Isn't it a waste of valuable blockchain space to have the transaction written this way? Was the 5 input entries an idiosyncrasy of the client, or is this something that is enforced by the bitcoin protocol?\n\n2. Refer to this transaction:\n\n[https://www.blockchain.com/btc/tx/3822303032c6ae4ac4a5142229e32fead2ecb17493f576b18f6742f5d708b4e2](https://www.blockchain.com/btc/tx/3822303032c6ae4ac4a5142229e32fead2ecb17493f576b18f6742f5d708b4e2)\n\nIn this transaction, some BTC is sent from one address to another address, and some change is returned to the sender address. Basically, it is composed like this:\n\nInput: 0.00004616 BTC to  18vJLcxptV8MQszPSHwbGPahzJ9H7YQbBE\n\nOutput: 1) 0.00003374 BTC to 386VeDEKqYTjm6fzjGFgCw2c2BQvb6XeKv2) 0.00001016 BTC to 18vJLcxptV8MQszPSHwbGPahzJ9H7YQbBE\n\nFee: 0.00000226 BTC\n\nMy question is, couldn't it have been composed like this instead?\n\nInput: 0.00003600 BTC to  18vJLcxptV8MQszPSHwbGPahzJ9H7YQbBE\n\nOutput: 0.00003374 BTC to 386VeDEKqYTjm6fzjGFgCw2c2BQvb6XeKv",
             "stickied": false,
@@ -23,29 +23,78 @@
                 {
                     "id": "i8xcfoo",
                     "author": "coinjaf",
-                    "score": 3,
+                    "score": 4,
                     "created_utc": 1652778930.0,
                     "response": "Bitcoin doesn't have balances, it has unspent transaction outputs. Inputs are not addresses, this block explorer (a shitty one BTW) is confusing you by pretending they are.\n\nEach input you see is a unique output of an earlier transaction.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i96els6",
+                            "author": "aidfarh",
+                            "score": 1,
+                            "created_utc": 1652946693.0,
+                            "response": "Got it, thanks!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i8xkkfp",
                     "author": "tokyo_aces",
-                    "score": 1,
+                    "score": 2,
                     "created_utc": 1652785659.0,
                     "response": "As u/coinjaf said, you are missing the bit about UTXOs (and [blockchain.com](https://blockchain.com) doesn't make this easy to see).\n\n**#1**\n\nIf you click the address, you see 5 transactions prior to the outbound send.  4 of them transfer a single input of \\~0.0016 from somewhere to a single output of \\~0.0016 to this address.  The 5th is a bunch of small inputs totaling \\~0.019 to this address.  Therefore this address has **5 UTXOs** that are unspent.  Think of these as *5 coins*.\n\nWhen this address wants to send BTC (0.02538), just like you at a vending machine, it needs to pull enough coins out to fully cover the amount.  It's OK to go over, as Bitcoin has the concept of *change* just like a vending machine.\n\nSo the user needed to pull out all 5 of his \"coins\" to hit that value and use them as inputs to the transaction.  We do not technically know who those 3 outbound addresses belong to, though we can surmise that 1 of those is the user himself and it's one of his change addresses.  The other 2 are possibly him (another wallet), someone he's paying, an exchange, etc.\n\n**#2**\n\nIn this transaction, the user did not have a UTXO that totaled exactly 0.00036 or else he would have done what you suggest.  Instead he took a UTXO that was > 0.00036 as input (just like putting $1 into a vending machine for a $0.75 coke) and then directed the change back to his original sending address.\n\nNote that what he did here is a privacy no-no.  Address re-use assists COIH and deanonymization of transactions.  As well, change addresses should be kept separate from non-change addresses, which if you're using e.g. BIP-32 for address derivation is a trivial thing.  Most wallets do this for you automatically.  We can surmise this user is not using a good wallet, or does not care about privacy because they are not semi-anonymous to begin with, like an exchange.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i96emni",
+                            "author": "aidfarh",
+                            "score": 1,
+                            "created_utc": 1652946715.0,
+                            "response": "Thanks for the explanation!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i8xkz18",
                     "author": "information-zone",
-                    "score": 1,
+                    "score": 2,
                     "created_utc": 1652785936.0,
                     "response": "When you send BTC you fully consume the input.\n\nThe input is defined as a numbered output from a previous transaction. This is usually called a UTXO, or unspent transaction output. Breaking that down:\n- Unspent: a UTXO is always FULLY consumed when used in a later transaction.\n- Transaction Output: The coins are specific as \u201coutput number X from transaction Y\u201d\n\nWith this understanding, the two tx you asked about should become understandable.\n\nThe first:\n- the sender has received several payments to the same address and is spending some of those UTXO. If you looked up the address on a block explorer it would have given you a total balance for that address. However it does this by adding up all the balances of the UTXO that use that address.\n\nThe second:\n- the change can go to any address, but in the case you\u2019re referring to, the sender chose their input address. Hopefully the fact that UTXO is always completely consumed explains why change output is required.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i96eny2",
+                            "author": "aidfarh",
+                            "score": 1,
+                            "created_utc": 1652946747.0,
+                            "response": "Thanks for explanation!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9411jo",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1652902294.0,
+                    "response": "A Bitcoin address is not an account with a balance. Bitcoin does not have accounts. Bitcoin does not have balances  \n\nA Bitcoin transaction has inputs and outputs. A Bitcoin transaction output (TXO) is a coin. A Bitcoin transaction input spends exactly one coin from an older transaction. A coin can only be spent once. A coin can only be spent completely. Bitcoin has no partial spends  \n\nSee this display of your first transaction  \nhttps://www.blockstream.info/tx/5d3d06a5f9c9578d19c3e33547bf035160f1b35ca363edb724cd9442349bd375  \n\nIt does not have input addresses. The 5 inputs point to the TXOs (coins) from older transactions which are being spent. For example, input #0 is 16c899d5e8e1439ca52e2436ea4aef761ef46d31ed5ec4278b366b1d07c2f553:0  \nThis means it is the number 0 output of transaction 16c899d5e8e1439ca52e2436ea4aef761ef46d31ed5ec4278b366b1d07c2f553  \nYou can click on it to see its context as a coin from an older transaction  \n\nBoth of these transactions indicate address reuse. The five input coins in the first transactions all reuse the same address. The change output in the second transaction reuses the address of the coin being spent  \n\nA Bitcoin address is single-use. The users who sent both of those transactions are breaking this rule  \n\nThe second transaction  \nhttps://www.blockstream.info/tx/3822303032c6ae4ac4a5142229e32fead2ecb17493f576b18f6742f5d708b4e2  \n\nIt is spending a single coin worth 0.00004616 BTC and sending 0.00003374 BTC to somebody. The 0.00004616 must be completely spent. This is why there is a 0.00001016 change output",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96eppq",
+                            "author": "aidfarh",
+                            "score": 1,
+                            "created_utc": 1652946790.0,
+                            "response": "Got it, thanks!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 }
             ]
         }

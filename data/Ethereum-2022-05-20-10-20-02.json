@@ -1,0 +1,44 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "utqsn9",
+            "title": "How to store contract address as variable?",
+            "url": "https://www.reddit.com/r/ethereum/comments/utqsn9/how_to_store_contract_address_as_variable/",
+            "author": "BoganLord2169",
+            "created_utc": 1653040936.0,
+            "score": 2,
+            "num_comments": 3,
+            "subreddit": "ethereum",
+            "selftext": "I need someway to store mapping of uint256 => contract address. Can I just use the address type?\n\nI need a functions that calls transfer method of the contract address stored.\n\nmapping(uint256=>address)public contractAddress;\n\nfunction transfer(address _contractAddress, uint256 _amount, address _from, address _to)\n{\n    // Somehow call transfer of contract at address contractAddress\n}\n\ntransfer(contractAddress[1], 1000000, 0xa53...., 0x37...);",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9bfpbp",
+                    "author": "Ivo_ChainNET",
+                    "score": 1,
+                    "created_utc": 1653047472.0,
+                    "response": "Your mapping will work fine. If you're working with just a few contract addresses you can use constants / immutables instead to save some gas.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9bixtv",
+                    "author": "discreetlog",
+                    "score": 1,
+                    "created_utc": 1653049186.0,
+                    "response": "Declare the contract or interface above the contract you're creating, then explicitly cast your address as that contract/interface type name. This will allow you to call one of the functions in that contract/interface using the \".\" operator. [Here's an example](https://pastebin.com/8w0VPyam).",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

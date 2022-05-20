@@ -1,0 +1,35 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "ut99l5",
+            "title": "Etherium derivation path question",
+            "url": "https://www.reddit.com/r/ethereum/comments/ut99l5/etherium_derivation_path_question/",
+            "author": "shayen7",
+            "created_utc": 1652983379.0,
+            "score": 1,
+            "num_comments": 1,
+            "subreddit": "ethereum",
+            "selftext": "I'm going to generate my HD wallet on an offline raspberry Pi. I'm a little confused on the derivation paths.\n\nSpecifically, https://iancoleman.io/bip39/ will generate valid ETH addresses in some cases, but not others.\n\nValid:    \n\n`m/0` for eth:  \n> 0x9D4C68703fA6638B6B5f061999F7c5bD3f58F64e\n  \n`m/44'/60'/0'/0`:  \n> 0xaFeC42a19b08483e641d245960a80879620Ae966\n\nInvalid:  \n\n`m/49'/60'/0'/0`:  \n> 3E5TKWX434EQQAkqEFhvAFirjCWGARB8Sg\n  \n`m/84'/60'/0'/0`:  \n> bc1qfn22xjd66jzdty78nggzlrwtrxyckfmu7lvgam\n\nIs the site missing something for ETH in the second two, or is there just no valid ETH address for those standards? \n\nIf I use the same mnemonic phrase and the same \"purpose\" for all my coins, does that mean I'm stuck with bip-44 for my btc and others?\n\nWikipedia said the address needs to start 0x and is a specific hash of the public key. Would I be able to do that to turn the invalid addresses Into valid ones, or will that result in a random address that my private key doesn't access?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i98ffa9",
+                    "author": "hashzzz",
+                    "score": 1,
+                    "created_utc": 1652985250.0,
+                    "response": "Ask this question on r/ethdev or r/solidity, you'll probably get much more help there",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

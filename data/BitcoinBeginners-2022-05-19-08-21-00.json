@@ -1,0 +1,170 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "usyo37",
+            "title": "Does anyone know how to close a muun wallet?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/usyo37/does_anyone_know_how_to_close_a_muun_wallet/",
+            "author": "MsStarstruck",
+            "created_utc": 1652948384.0,
+            "score": 0,
+            "num_comments": 6,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I\u2018ve download and set up a Muun wallet on my phone. I\u2019ve not transacted any BTC because I didn\u2019t like it that much. Now i want to delete my account. Not just delete it from my phone but also from Muun\u2018s servers as well. Is there a possibility? I couldn\u2019t find any.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i96ggyj",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652948385.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96oakq",
+                    "author": "krisycoll",
+                    "score": 1,
+                    "created_utc": 1652955402.0,
+                    "response": "Can you define what is an \"account\" for you? You don't have to give them any data unless you want they to manage the recovery of your wallet by giving them your email.\n\nAccounts in bitcoin are just a big random number (private key) so all the accounts exist but they have no owner until someone choose an specific number.\n\nIf what you wan't is muun wallet to erase your email in their database, you should ask them (probably by a direct message in twitter).\n\nBut you dont have a \"bitcoin account\" unless you use it. Bitcoin proves ownership by control. No control, no ownership.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96qvz0",
+                    "author": "Proof-Construction93",
+                    "score": 1,
+                    "created_utc": 1652957425.0,
+                    "response": "Text their support, they can help with it",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "usyfln",
+            "title": "How are transaction fees paid? I did not paid any on my test transactions",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/usyfln/how_are_transaction_fees_paid_i_did_not_paid_any/",
+            "author": "Guuus",
+            "created_utc": 1652947299.0,
+            "score": 3,
+            "num_comments": 16,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Hello, I want to build a small BTC position and I am carefully trying every step of the process.\nBut one thing is troubling me...  when I tried to transfer my coins to the wallet, the tx indicated like 11$ fees but the amount received was the same and nothing was debited. I thought it was using the lightning network but it's a different process to request the funds with a special code and I did not do that.\n\nSo how are fees paid? \n\nHere are the steps I did:\n\n- create Kraken account\n\n- create BlockStream wallet\n\n- buy 15$ crypto on kraken\n\n- transfer 0.0005 BTC to the BlockStream address (0.00001btc fee deducted)\n\n- 0.00049 BTC received, no tx fees paid \ud83e\udd37\ud83c\udffc\u200d\u2642\ufe0f\n\nI tried with a slightly bigger amount and still only the Kraken withdrawal fee was paid.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i96goeg",
+                    "author": "vitalyevodin",
+                    "score": 2,
+                    "created_utc": 1652948567.0,
+                    "response": "but you said that you send 0.0005 but receive 0.00049 so you paid 0.00001, isn\u2019t ? also you can check in bitcoin explorer your transaction and see real fee price you paid for it\n\nmaybe Kraken provides free transaction for new clients",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96h0q5",
+                            "author": "Guuus",
+                            "score": 1,
+                            "created_utc": 1652948888.0,
+                            "response": "Yes the 0.000001 btc paid is the standard withdrawal fee on Kraken, but on top of that I did not pay anything which I don't understand.\nEven seeing the tx on blockchain.com shows the fee supposedly paid but I still have all my money lol\n\nEdit: or is the fee applicable for the tx split proportionally to the different transfers inside the tx? Like I see many other transfers in my tx with much larger amounts, they paid most of the fee whereas I paid nothing because my amount is peanuts.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i96llia",
+                                    "author": "Rannasha",
+                                    "score": 5,
+                                    "created_utc": 1652953082.0,
+                                    "response": "The sending party always pays the network fee. In this case, that's Kraken.\n\nWhen the sending party is an exchange or similar business, they can decide to push that fee to the customer. In this case, Kraken charged you 0.00001 BTC. Some exchanges charge no fees to the customer to withdraw and pay the network fees out of their own pocket. Other exchanges charge a fee that is far higher than the network fee and profit from the difference (Binance is notorious for this).\n\nNote that some exchanges will group withdrawals from many customers into a single transaction. This reduces the size of the transaction compared to what it would be if each withdrawal had been a separate transaction. And that reduces the network fee per withdrawal, although the network fee paid for the entire combined transaction is relatively high.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i96xqzx",
+                                    "author": "bitusher",
+                                    "score": 1,
+                                    "created_utc": 1652961908.0,
+                                    "response": "In Bitcoin the sender always pays the network fee. In this case the exchange payed the fee, **not you**, what you are looking at is the public blockchain to find out how much exchange payed, not you. \n\n\nSome exchanges charge a withdrawal fee, others do not. This is different than the miner tx fee. Some exchanges will overcharge clients as a backdoor tax(binance, bitstamp). Exchanges like cash app , swan and Gemini Active trader will charge 0 **withdraw** fee, and exchanges like coinbase will recoup the network fee they pay with a withdraw fee. Coinbase does transaction **batching**, where they pay a single larger fee for many **outputs** or withdrawals. This allows them to pay a high priority fee to get a quick confirmation to reduce support tickets and also reduce the withdraw per customer down to 1  to 4 usd per withdrawal that they than pass onto their clients.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i99cw4j",
+                                    "author": "bitcoin_barry",
+                                    "score": 1,
+                                    "created_utc": 1653000444.0,
+                                    "response": "Kraken covered the tx fee and probably used your 0,000001BTC to do it while still making a profit.\n\nYou should note that exchanges don't really give you Bitcoin, they give you IOU's; if they go bankrupt, they will liquidate your assets to cover their losses before they compensate you. They have the right to do so because it is in their posession.\n\nYou can actually take posession of your Bitcoin, learn about self custody and make it a goal to get your coins off the exchanges. (don't rush, but also don't stall).",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i96hpfe",
+                    "author": "kraken-orange",
+                    "score": 2,
+                    "created_utc": 1652949507.0,
+                    "response": "Hi u/Guuus,\n\nThank you for choosing us.\n\nAt Kraken, there is a minimum requirement for each withdrawal, along with *a flat fee* to cover the transaction costs of moving the cryptocurrency out of your Kraken account.\n\nIt seems that the tx fee you mean is the on-chain tx fee, which is covered by us with the internal process. That being said, we only charge the exact amount shown at the confirmation page when you make a withdrawal.\n\nHope this helps to clarify, please don't hesitate to [contact us](https://support.kraken.com) for any questions.\n\nCheers,\n\nOrange from Kraken",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96ifqc",
+                            "author": "Guuus",
+                            "score": 1,
+                            "created_utc": 1652950183.0,
+                            "response": "Hi! I'm really pleased to see you here so quickly!\nOk so the only fee is the kraken withdrawal fee, once the withdrawal is initiated from kraken the net amount sent is the amount received.\nAmazing, thanks!",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i96iss0",
+                                    "author": "kraken-orange",
+                                    "score": 2,
+                                    "created_utc": 1652950521.0,
+                                    "response": "I'm glad that it helps  \ud83e\udd1c\ud83e\udd1b so don't mention it, I'm here anytime you need mate!\n\nWish you a happy trading & investing with \ud83d\udc19\\~",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i96osxv",
+                    "author": "BTCMachineElf",
+                    "score": 2,
+                    "created_utc": 1652955816.0,
+                    "response": "Fees are paid by the sender. When you withdraw from an exchange, the exchange is the sender. They pay the transaction fees. They may or may not charge you a withdrawal fee, but that is a separate thing.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96otjv",
+                    "author": "igadjeed",
+                    "score": 2,
+                    "created_utc": 1652955830.0,
+                    "response": "The transaction sender pays the fee. Kraken pays the fee when you withdraw from your Kraken account",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96fa26",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652947300.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

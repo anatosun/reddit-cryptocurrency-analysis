@@ -202,8 +202,8 @@
             "url": "https://i.imgur.com/ylUa1Xp.jpg",
             "author": "khaffner91",
             "created_utc": 1652730696.0,
-            "score": 97,
-            "num_comments": 11,
+            "score": 136,
+            "num_comments": 15,
             "subreddit": "Bitcoin",
             "selftext": "",
             "stickied": false,
@@ -211,7 +211,7 @@
                 {
                     "id": "i8uzcia",
                     "author": "509BandwidthLimit",
-                    "score": 3,
+                    "score": 9,
                     "created_utc": 1652730786.0,
                     "response": "lol, can you give us the TLDR version?",
                     "depth": 1,
@@ -219,7 +219,7 @@
                         {
                             "id": "i8v1cve",
                             "author": "khaffner91",
-                            "score": 12,
+                            "score": 30,
                             "created_utc": 1652731608.0,
                             "response": "\"trust no one, bro\"",
                             "depth": 2,
@@ -227,7 +227,7 @@
                                 {
                                     "id": "i8v38n0",
                                     "author": "509BandwidthLimit",
-                                    "score": 3,
+                                    "score": 4,
                                     "created_utc": 1652732381.0,
                                     "response": "Wasn't expecting a X Files reference !",
                                     "depth": 3,
@@ -240,43 +240,72 @@
                 {
                     "id": "i8w7b9k",
                     "author": "DivineRusher",
-                    "score": 2,
+                    "score": 5,
                     "created_utc": 1652750819.0,
                     "response": "Please let us know if this is a good read, I'm looking for solid info on node networks",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i8ycrrl",
+                            "author": "wayside_iguana",
+                            "score": 4,
+                            "created_utc": 1652800011.0,
+                            "response": "I read it a few months ago. Its very in depth. A good read. You'll definitely get a good understanding of the Lightning Network and all the pieces underlying it.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8ylkv7",
+                                    "author": "DivineRusher",
+                                    "score": 1,
+                                    "created_utc": 1652803673.0,
+                                    "response": "Thank you!",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": "i8ws4y3",
                     "author": "Verallendingen",
-                    "score": 2,
+                    "score": 3,
                     "created_utc": 1652762305.0,
                     "response": "same...but i already got my basic noob questions answered with the book.",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i8wtg8c",
-                    "author": "cowboy_dan55",
-                    "score": 1,
-                    "created_utc": 1652763172.0,
-                    "response": "Do you have any specific questions about mastering Bitcoin? I wouldn\u2019t mind testing my own understanding by trying to help",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i8x6cga",
                     "author": "johnathondeaux",
-                    "score": 1,
+                    "score": 3,
                     "created_utc": 1652773308.0,
                     "response": "Looks like a good read, I'll add it to my list cheers",
                     "depth": 1,
                     "comments": []
                 },
                 {
+                    "id": "i8yb54j",
+                    "author": "machri1699",
+                    "score": 3,
+                    "created_utc": 1652799329.0,
+                    "response": "You can read the book for free at https://github.com/lnbook/lnbook",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8wtg8c",
+                    "author": "cowboy_dan55",
+                    "score": 2,
+                    "created_utc": 1652763172.0,
+                    "response": "Do you have any specific questions about mastering Bitcoin? I wouldn\u2019t mind testing my own understanding by trying to help",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i8vldps",
                     "author": "Ok_Aerie3546",
-                    "score": -4,
+                    "score": -1,
                     "created_utc": 1652740089.0,
                     "response": "I still dont understand or use lightning network!",
                     "depth": 1,
@@ -284,7 +313,7 @@
                         {
                             "id": "i8wyxal",
                             "author": "generateduser29128",
-                            "score": 2,
+                            "score": 7,
                             "created_utc": 1652767097.0,
                             "response": "TL;DR: it's a hot wallet with very low transaction fees that can scale extremely well because it does not need to store (global) history. A channel requires two on-chain transactions for open and closing, everything else is hidden.\n\n1. you first create one or more direct connections (= \"channel\") with peers. This moves Bitcoin to a multisig wallet in an on-chain transaction.\n2. assuming that at least one of your connections is connected has further outgoing connections, you can now \"route\" payments anywhere in the \"lightning network\", e.g., you \\[A\\] -> your peer \\[B\\] -> someone else \\[C\\] -> someone else \\[D\\] -> destination \\[E\\].\n3. payments change the internal balance of your connection. (Routing through multiple hops is done via lending, e.g., A pays B, B pays C, C pays D. You get no information about what else B and C have done, so it's much more private.)\n4. Closing the channel moves the appropriate remaining balance in an on-chain transaction to the two participants. No information gets released about any of the L2 transactions.",
                             "depth": 2,

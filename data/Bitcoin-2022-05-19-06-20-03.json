@@ -1,0 +1,402 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uswuxa",
+            "title": "\u26a1 Lightning Thursday! May 19, 2022: Explore the Lightning Network!\u26a1",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uswuxa/lightning_thursday_may_19_2022_explore_the/",
+            "author": "rBitcoinMod",
+            "created_utc": 1652940618.0,
+            "score": 30,
+            "num_comments": 40,
+            "subreddit": "Bitcoin",
+            "selftext": "The lightning network is a second-layer solution on top of the Bitcoin blockchain that enables quick, cheap and scalable Bitcoin payments.\n\nHere is the place to discuss and learn more about lightning!\n\nAsk your questions about lightning\n\nProvide reviews, feedback, comparisons of LN apps, services, websites etc\n\nLearn about new LN features, development, apps\n\nLink to good quality resources (articles, wikis etc)\n\nResources:\n\n* Here is an awesome list of resources compiled by Jameson Lopp: https://www.lopp.net/lightning-information.html\n\n* Want to test out your lightning fire power? tip the Bitcoin devs! https://bitcoindevlist.com/\n\n* Previous threads: [Search](https://www.reddit.com/r/Bitcoin/search?q=Lightning+Thursday&restrict_sr=on&include_over_18=on&sort=new&t=all)\n\n* Lnbook getting closer towards being finished and can already be seen at: https://github.com/lnbook/lnbook\n\n* Lightning Dedicated YouTube Channel: https://youtube.com/renepickhardt\n\n* Also there is the playlist by chaincode labs: https://youtube.com/playlist?list=PLpLH33TRghT17_U3as2P3vHfAGL8pSOOY\n\n* Lightning stores: https://www.lightningnetworkstores.com/\n\n* Learn more and talk about lightning right here in r/Bitcoin, r/bitcoinbeginners, r/thelightningnetwork, and [the r/Bitcoin chat](https://discord.gg/qE3rWBRNqh)",
+            "stickied": true,
+            "comments": [
+                {
+                    "id": "i96bg6s",
+                    "author": "sciencetaco",
+                    "score": 5,
+                    "created_utc": 1652943945.0,
+                    "response": "Is there any way to get \u201conboarded\u201d to the Lightning Network in a non-custodial way that doesn\u2019t require an onchain transaction?\n\nI\u2019m just curious about what mechanisms could allow for such a thing and how they\u2019d work. I read about channel factories but I\u2019m not sure if they can do this.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96va4y",
+                            "author": "statoshi",
+                            "score": 1,
+                            "created_utc": 1652960411.0,
+                            "response": "Not as of today. To be sovereign on lightning network you need to run your own node which manages the state of your channels and listens to make sure none of your channel counterparties act maliciously.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i96wapw",
+                    "author": "bullett007",
+                    "score": 4,
+                    "created_utc": 1652961037.0,
+                    "response": "I understand Muun wallet gets a lot of negative press as it uses submarine swaps to go from native to lightning networks but it takes a lot of hassle out of managing your own channels. \n\nThe amount of times bluewallet hooked up to Umbrel has failed for me just made me give up trying to custody my own lightning channels in the end.\n\nWhich iOS wallet would you recommend with your own node for lightning transactions, my current process more or less is below:\n\n1.\tBuy Bitcoin from Kraken.\n2.\tWithdraw via lighting at 0 cost.\n3.\tSend to cold storage at 1sat/vB (via Muun)\n4.\tMaybe on the rare occasion use Bitrefill.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i98f0yu",
+                            "author": "Wilynesslessness",
+                            "score": 1,
+                            "created_utc": 1652985087.0,
+                            "response": "I use zap. It's been working for me so far. I also want to test Zeus, but haven't gotten around to it yet",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i98fb1p",
+                                    "author": "bullett007",
+                                    "score": 1,
+                                    "created_utc": 1652985202.0,
+                                    "response": "I tried Zap, but it always crashed for some reason, I wonder if it\u2019s been updated since? \ud83e\udd14",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i98gj8e",
+                                            "author": "Wilynesslessness",
+                                            "score": 1,
+                                            "created_utc": 1652985708.0,
+                                            "response": "When did you last use it? I use mine with an umbrel node, followed the guide for connecting zap and made sure tor was enabled and it's been working ever since.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i98hvyx",
+                                                    "author": "bullett007",
+                                                    "score": 1,
+                                                    "created_utc": 1652986257.0,
+                                                    "response": "Maybe a year ago now? Zap seemed really buggy, for example it I switched to another app, then back again, it would freeze and the only way out of that was to force quit and reopen.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i98i92t",
+                                                            "author": "Wilynesslessness",
+                                                            "score": 1,
+                                                            "created_utc": 1652986407.0,
+                                                            "response": "I've been using it about 6 months, haven't experienced anything like you described. Maybe try giving it another shot to see if it's improved?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i98ks9m",
+                                                                    "author": "bullett007",
+                                                                    "score": 1,
+                                                                    "created_utc": 1652987438.0,
+                                                                    "response": "I\u2019ll give it a go and see, thanks mate.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i96bwef",
+                    "author": "nullama",
+                    "score": 3,
+                    "created_utc": 1652944325.0,
+                    "response": "You can now use any NFC card to pay using lightning by just tapping your card, in the same way that you use a credit card, only that you're using Bitcoin all the way, no banks, no exchanges, no visa, no mastercard.\n\n[How to use those awesome new Bolt Cards without a CoinCorner account](https://stacker.news/items/29647)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96hk8d",
+                    "author": "TheGreatMuffin",
+                    "score": 6,
+                    "created_utc": 1652949372.0,
+                    "response": "Here someone does create a penalty transaction on their Lightning node on purpose (just to see if it works and to spend the remaining channel balance as it'd otherwise be too small for closing the channel properly anyway), written in a lighthearted way: https://fiatjaf.com/73095980.html",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96t85r",
+                    "author": "Evilgrade",
+                    "score": 1,
+                    "created_utc": 1652959077.0,
+                    "response": "Am i able to receive a payment trhough LN if im on a watch only electrum wallet? Or it only works if im online on a not watch only?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96v05m",
+                            "author": "statoshi",
+                            "score": 4,
+                            "created_utc": 1652960237.0,
+                            "response": "No, receiving payments requires having a key available to sign for them.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i96ztfw",
+                                    "author": "Evilgrade",
+                                    "score": 2,
+                                    "created_utc": 1652963099.0,
+                                    "response": "thanks",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i983ozd",
+                    "author": "FamousPussyGrabber",
+                    "score": 1,
+                    "created_utc": 1652980496.0,
+                    "response": "Is there a guide to integrating Lightning Network for business?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9879qi",
+                            "author": "statoshi",
+                            "score": 1,
+                            "created_utc": 1652981931.0,
+                            "response": "It will really depend on your business' payments infrastructure. There are many different merchant tools available that have a variety of trade-offs: https://www.lopp.net/lightning-information.html#merchant_tools",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i96ir8w",
+                    "author": "alexmios30",
+                    "score": 0,
+                    "created_utc": 1652950481.0,
+                    "response": "Very important question\n\nIs lighting network BITCOIN or it's a separate network?\n\nThe only thing that makes me trust bitcoin more than anything in the world is my whole access to it\n\nIs lighting this way too?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96j5ng",
+                            "author": "TheGreatMuffin",
+                            "score": 6,
+                            "created_utc": 1652950850.0,
+                            "response": "> Is lighting network BITCOIN or it's a separate network?\n\nIt is a separate network but it still bitcoin, just in another form. Perhaps think of it like water and ice: both are the same underlying stuff, just in different forms.  \n\nLightning transactions are basically unbroadcasted bitcoin transactions, which you can broadcast at any time you like, so they become finalized. They're still bitcoin.  \n\nKeep in mind, that in order to get on the Lightning network, every satoshi needs to be confirmed on-chain (and same when going back from Lightning), that's where the networks \"touch\", but they're still separate.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i96jire",
+                                    "author": "alexmios30",
+                                    "score": 2,
+                                    "created_utc": 1652951180.0,
+                                    "response": "So I hold my Bitcoin\n\nIt's just not finalised in the block chain?\n\nMeanwhile unconfirmed where it's at? Is it between me and the receiver or there's a 3rd person in middle?\n\nAre the nodes or wallets that process lighting network custodial?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i96n2wi",
+                                            "author": "sciencetaco",
+                                            "score": 3,
+                                            "created_utc": 1652954374.0,
+                                            "response": "Very rough explanation:\n\nYou \u201clock\u201d your desired amount of bitcoin into the Lightning Network with a special multisig transaction, and it gets confirmed on the blockchain. \n\nYou are then free to send that bitcoin back and forth through the Lightning Network to other users of the network. You can send it as frequently as you want, with payments not needing confirmations so they take just seconds to process.\n\nIf anybody in the network tries to cheat, it is detected and settled back using on-chain transactions. \n\nAll of this can be done in a non-custodial way. You can run your own Lightning wallet and node if you want.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i96rndl",
+                                                    "author": "Simple_Yam",
+                                                    "score": 0,
+                                                    "created_utc": 1652957979.0,
+                                                    "response": "\"Cheating\" is not really detected because the consensus mechanism only works with 2 participants.\n\nOn Bitcoin any node trying to cheat is detected because everyone maintains the same state on 20k nodes.\n\nOn lightning if you don't have access to your node or the node hosting you for 7 days then the other party can literally steal all your money.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i98fgs6",
+                                                            "author": "Wilynesslessness",
+                                                            "score": 1,
+                                                            "created_utc": 1652985268.0,
+                                                            "response": "That's why you use watchtowers.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i96jte1",
+                                            "author": "TheGreatMuffin",
+                                            "score": 2,
+                                            "created_utc": 1652951453.0,
+                                            "response": "> So I hold my Bitcoin\n> \n> It's just not finalised in the block chain?\n\nI guess that's a way to describe it too, yeah  \n\n> Meanwhile unconfirmed where it's at? Is it between me and the receiver or there's a 3rd person in middle?  \n\nIt depends on what wallet you are using, if it's custodial or non-custodial etc. If you are using a non-custodial wallet (even perhaps with your own Lightning node), the satoshis are in your full ownership, there is no 3rd person involved.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i96jxeb",
+                                                    "author": "alexmios30",
+                                                    "score": 4,
+                                                    "created_utc": 1652951558.0,
+                                                    "response": "So I can setup my own lighting node too \ud83d\ude0a\n\nThat's a great system then\n\nWill study it",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i96tyuq",
+                                                            "author": "Pietro1203",
+                                                            "score": 4,
+                                                            "created_utc": 1652959564.0,
+                                                            "response": "I highly recommend you to read at least Part 1 of [Mastering the Lightning Network](https://github.com/lnbook/lnbook). It's a not too much technical explanation of the LN and I think it could answer all your questions.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i96s0am",
+                            "author": "bitcoin_barry",
+                            "score": 2,
+                            "created_utc": 1652958230.0,
+                            "response": "It's a different network, but it's open just like bitcoin and many people run lightning network on their bitcoin nodes.\n\nThere's a push in the public narrative (Twitter, YouTube, blogs) to consider lightning to be part of bitcoin, and that's really like saying HTTP is part of the internet, and it's not the only interface, you can use sockets, FTP, SSH, all over the internet too. With bitcoin, we have coin swaps, coin joins, multisig vaults, but lighting seems to have the best guarantees and least centralisation of them all.\n\nHttp can also be used within an intranet, just like lightning can be used on top of other shit coins.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i96toxu",
+                            "author": "sendmespamNOW",
+                            "score": 0,
+                            "created_utc": 1652959383.0,
+                            "response": "Layer 2",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "uswx3a",
+            "title": "New to this crypto stuff",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uswx3a/new_to_this_crypto_stuff/",
+            "author": "TheCompleteSagaLord",
+            "created_utc": 1652940882.0,
+            "score": 0,
+            "num_comments": 11,
+            "subreddit": "Bitcoin",
+            "selftext": "Anybody have any advice on when to look out for when it\u2019s a good time to buy bitcoin? I have a little bit invested in bitcoin and now that it has crashed I was wondering if I should invest more???",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i967ne0",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652940883.0,
+                    "response": "Reddit is a poor source for seeking financial advice. Bitcoin is a risky investment. [Don't invest recklessly.](https://www.reddit.com/r/Bitcoin/comments/7gi55s/dont_invest_recklessly/) Don't invest anything you can't afford to lose. If you are looking to get rich quick, you came to the wrong place. Nobody has a crystal ball. Nobody can see the future. Please do your own research and make your own financial decisions.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/Bitcoin) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96e2ot",
+                    "author": "Verallendingen",
+                    "score": 1,
+                    "created_utc": 1652946218.0,
+                    "response": "just spread ur buys over time.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96f9ox",
+                    "author": "Cryptomaniacuk",
+                    "score": 1,
+                    "created_utc": 1652947290.0,
+                    "response": "I'd wait till at least Monday, weekends are not good for crypto and btc just crossed the dearh Cross so I'd be wary to come in now",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96hnoj",
+                            "author": "Regular_Chapter_788",
+                            "score": 1,
+                            "created_utc": 1652949461.0,
+                            "response": ">I'd wait till at least Monday, weekends are not good for crypto\n\nSo you would rather buy for more when it recovers after a low volume weekend dip? \n\nThe best time to buy is when it's cheaper.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i96vwbh",
+                                    "author": "Cryptomaniacuk",
+                                    "score": 1,
+                                    "created_utc": 1652960796.0,
+                                    "response": "I'd buy sunday",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i971y0s",
+                                    "author": "Cryptomaniacuk",
+                                    "score": 1,
+                                    "created_utc": 1652964267.0,
+                                    "response": "Or Monday cos of the death cross",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i98u05d",
+                            "author": "TheCompleteSagaLord",
+                            "score": 1,
+                            "created_utc": 1652991216.0,
+                            "response": "yeah i\u2019m not going to invest all my savings into it i was just wondering when does it typically shoot back up. i don\u2019t want to miss out.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9700we",
+                    "author": "weedium",
+                    "score": 1,
+                    "created_utc": 1652963216.0,
+                    "response": "Now is the time to buy bitcoin",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9818wk",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1652979512.0,
+                    "response": "> I was wondering if I should invest more?\n\nNo. Sell now or lose everything",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9686om",
+                    "author": "BigfootDynamite",
+                    "score": -2,
+                    "created_utc": 1652941302.0,
+                    "response": "GET OUT",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96d1re",
+                            "author": "Yes_Daddy_Bezos",
+                            "score": 1,
+                            "created_utc": 1652945311.0,
+                            "response": "\ud83e\udd21",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

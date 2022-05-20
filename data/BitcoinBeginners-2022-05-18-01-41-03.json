@@ -15,11 +15,49 @@
             "author": "McCOY_123",
             "created_utc": 1652837854.0,
             "score": 1,
-            "num_comments": 4,
+            "num_comments": 11,
             "subreddit": "BitcoinBeginners",
             "selftext": "Reading about safely downloading Electrum wallet by verifying signatures. Most guidance mentions Thomas V signature but not theses signatures:\n\nhttps://download.electrum.org/4.2.1/electrum-4.2.1.dmg.asc\n\nIs this a problem?",
             "stickied": false,
             "comments": [
+                {
+                    "id": "i90v2iq",
+                    "author": "bitusher",
+                    "score": 2,
+                    "created_utc": 1652839000.0,
+                    "response": "Did you follow these instructions on your apple mac ?\n\nhttps://bitzuma.com/posts/how-to-verify-an-electrum-download-on-mac/",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i927u5w",
+                            "author": "McCOY_123",
+                            "score": 1,
+                            "created_utc": 1652873539.0,
+                            "response": "Yes, but my problem is that this .asc file does not have ThomasV signature, it seems to have other developers. I\u2019m assuming that I can verify their signatures in the same way one  would verify ThomsV signature.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9368xh",
+                                    "author": "d3vrandom",
+                                    "score": 1,
+                                    "created_utc": 1652889837.0,
+                                    "response": "try this file instead:\n\nhttps://download.electrum.org/4.2.1/electrum-4.2.1.dmg.ThomasV.asc",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i99hrct",
+                            "author": "McCOY_123",
+                            "score": 1,
+                            "created_utc": 1653002884.0,
+                            "response": "Stephan Oeste (Emzy) is verifiable as an Electrum developer.\n\nhttps://github.com/bitcoin/bitcoin/pull/18624\n\nPGP Fingerprint on his Twitter profile: @emzy",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
                 {
                     "id": "i90smo5",
                     "author": "AutoModerator",
@@ -30,11 +68,11 @@
                     "comments": []
                 },
                 {
-                    "id": "i90v2iq",
-                    "author": "bitusher",
+                    "id": "i99i2b6",
+                    "author": "McCOY_123",
                     "score": 1,
-                    "created_utc": 1652839000.0,
-                    "response": "Did you follow these instructions on your apple mac ?\n\nhttps://bitzuma.com/posts/how-to-verify-an-electrum-download-on-mac/",
+                    "created_utc": 1653003036.0,
+                    "response": "Stephan Oeste (Emzy) is verifiable as an Electrum developer.\n\nhttps://github.com/bitcoin/bitcoin/pull/18624\n\nPGP Fingerprint on his Twitter profile: @emzy",
                     "depth": 1,
                     "comments": []
                 }

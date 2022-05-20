@@ -1,0 +1,82 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "usyzao",
+            "title": "Wallets that support passphrase",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/usyzao/wallets_that_support_passphrase/",
+            "author": "sumofighter666",
+            "created_utc": 1652949847.0,
+            "score": 1,
+            "num_comments": 10,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I want to know which wallets support passphrase and whether or not a wallet with passphrase can be recovered in a different wallet that also supports passphrase.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i96okfg",
+                    "author": "BTCMachineElf",
+                    "score": 3,
+                    "created_utc": 1652955626.0,
+                    "response": "Pretty much all hardware wallets do (coldcard, trezor, ledger), and use the BIP39 standard, of which the passphrases are a part, making them interchangeable in that regard.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96p4li",
+                    "author": "Desperate-Barnacle-4",
+                    "score": 2,
+                    "created_utc": 1652956081.0,
+                    "response": "Most wallets offer a BIP39 seed phrase. BIP39 includes the possibility for a passphrase. Since that passphrase is on top of the seed phrase everyone in the world can use the same passphrase with no problem (as both needed to recover).\n\nYou can use as many different passphrases as you want with your BIP39 seed. Each one will lead to a different wallet/set of accounts that are totally separate from the rest. You could keep a small amount of Bitcoin behind an easy passphrase and large amounts behind other passphrases, for example.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96pjg8",
+                            "author": "sumofighter666",
+                            "score": 1,
+                            "created_utc": 1652956411.0,
+                            "response": "Thanks for reply. Very insightful.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i96q5zj",
+                            "author": "sumofighter666",
+                            "score": 1,
+                            "created_utc": 1652956888.0,
+                            "response": "Why do hardware wallets have passphrase implemented, but you don't see it in hot wallets, I wonder?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i96wehg",
+                                    "author": "Desperate-Barnacle-4",
+                                    "score": 2,
+                                    "created_utc": 1652961100.0,
+                                    "response": "Since the passphrase relates to the seed and gives a different set of accounts I think most hot wallets only ask for passphrase at setup time so the user does not confuse it with the every-day password to unlock their wallet file.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i96i2qi",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652949847.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

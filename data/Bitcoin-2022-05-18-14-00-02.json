@@ -1,0 +1,235 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "usdmc1",
+            "title": "Fiat, crypto and Proof-of-Stake (POS) eventually return to their intrinsic value. Zero. The forcing function is the IMF and their gangster bankster allies. No other proof-of-value is sufficiently decentralized. Bitcoin.",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/usdmc1/fiat_crypto_and_proofofstake_pos_eventually/",
+            "author": "BryanBSolstin",
+            "created_utc": 1652882427.0,
+            "score": 2,
+            "num_comments": 7,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i92pb9o",
+                    "author": "collapitalist",
+                    "score": 5,
+                    "created_utc": 1652882733.0,
+                    "response": "Proof of stake and governance allows for large corporate entities to control the direction and value of crypto assets. Expect lots of bitcoin bashing in the future as it cannot be controlled and is therefore a threat to the status quo",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i930f44",
+                    "author": "solomonsatoshi",
+                    "score": 1,
+                    "created_utc": 1652887460.0,
+                    "response": "Correct",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9313f4",
+                    "author": "BlueBirdDolphin",
+                    "score": 1,
+                    "created_utc": 1652887730.0,
+                    "response": "We all know who will win at the end anyway.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92pac3",
+                    "author": "Nemesis916",
+                    "score": 0,
+                    "created_utc": 1652882722.0,
+                    "response": "Bold claims with zero evidence yuh",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92sfa1",
+                            "author": "BryanBSolstin",
+                            "score": 2,
+                            "created_utc": 1652884116.0,
+                            "response": "Decentralized resilience is self-evident.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92tsop",
+                                    "author": "Nemesis916",
+                                    "score": -1,
+                                    "created_utc": 1652884702.0,
+                                    "response": "That\u2019s not an argument",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i92xd4l",
+                                            "author": "BryanBSolstin",
+                                            "score": 1,
+                                            "created_utc": 1652886197.0,
+                                            "response": "Decentralized ants are the biggest biomass on earth.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "usdfvt",
+            "title": "Ensuring Your Second Life with Bitcoin - Thoughts on Cryonics + BTC",
+            "url": "https://blog.lopp.net/ensuring-your-second-life-with-bitcoin/",
+            "author": "statoshi",
+            "created_utc": 1652881919.0,
+            "score": 3,
+            "num_comments": 2,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i92okwl",
+                    "author": "coinfeeds-bot",
+                    "score": 0,
+                    "created_utc": 1652882404.0,
+                    "response": "tldr; If you choose to \"take your bitcoin with you\" then you must make several assumptions: Bitcoin will continue to exist and be valuable for generations. The Bitcoin protocol will continue making forwards-compatible changes that won't break your ability to spend funds. You can architect a robust key management solution that can withstand a thousand years of attacks.\n\n*This summary is auto generated by a bot and not meant to replace reading the original article. As always, DYOR.*",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "usdgad",
+            "title": "Attack Vector: \"Block Time Attack\" Miner Collusion",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/usdgad/attack_vector_block_time_attack_miner_collusion/",
+            "author": "Ape1108",
+            "created_utc": 1652881952.0,
+            "score": 1,
+            "num_comments": 6,
+            "subreddit": "Bitcoin",
+            "selftext": "Hey guys,\n\nI was wondering if a viable attack vector on BTC would be a miner collusion to alter the POW difficulty. As far as I understand it, the puzzle difficulty is adjusted roughly every 2 weeks, while \"the upper limit for each difficulty epoch is a +300% change, while the lower is a -75% alteration. This rule is put in place to eliminate any abrupt changes in mining difficulty.\"\n\nWhile mining is to some extent distributed we can all assume that because of economics of scale a majority of the hash power is concentrated among a few large miners (see below). Suppose, these mining pools collude to shut down their mining right on time for a difficulty adjustment. The hash power will drop significantly but not more -75% every two weeks. Say the miners shut down for 1 month and difficulty will fall by a cumulative 94%.\n\nWhen miners then resume the hash power will increase very fast and far exceed the current difficulty level. Block time will be much faster than 10 minutes, hence more block and more block rewards. If difficulty increases by 300% in the subsequent 2 adjustment periods difficulty will still only be 50% of the initial difficulty after 2 adjustments.\n\nThe back of the envelope math goes as follows:\n\n**Week 0: Difficulty level: 100 --> miners collude and shut down --> hash rate drops significantly**\n\n**Week 2: Difficulty level drops at max. -75% --> 100 x 0.25 = 25**\n\n**Week 4 Difficulty level again drops at max. -75% --> 25 x 0.25 = 6.25 (down from 100) --> Miners ramp up and start mining far below a 10 minute block time as the hash rate far exceeds current difficulty**\n\n**Week 6: Difficulty level adjusts upward at max. + 300% --> 6.25 x 3 = 18.75 --> block time still far below 10 minutes**\n\n**Week 8: Difficulty level adjusts upward at max. + 300% --> 18.75 \\* 3 = 56.25 (still down from 100)**\n\n**Week 10: Difficulty adjustment catches up.**\n\nMiners could exploit weeks 2 to 10 and mine many more blocks than just one every 10 minutes, thereby stealing profits from the future supply schedule.\n\nCan someone please debunk this?!\n\n*Annotation: Obviously this attack comes with the opportunity cost of not mining blocks for lets say 4 weeks but the back of the envelope math suggests mining this way would be more profitable as blocks rewards from the future could be stolen by decreasing the block time far below the 10 minute goal. Secondly, this wouldn't \"break\" Bitcoin as the total supply is still capped at 21 million but it would corrupt the supply schedule.*\n\n[Hashpower by mining pool \\(https:\\/\\/www.coindesk.com\\/layer2\\/miningweek\\/2022\\/03\\/26\\/is-miner-concentration-once-again-jeopardizing-bitcoin-not-exactly\\/\\)](https://preview.redd.it/2zdrbo1ll8091.png?width=552&format=png&auto=webp&s=02af597467833a70224233a145ea03cb22d9e08b)",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i92piwp",
+                    "author": "Rannasha",
+                    "score": 5,
+                    "created_utc": 1652882829.0,
+                    "response": "The interval between difficulty adjustments is measured in blocks, not in actual time. When there's a block every 10 minutes (on average), this 2016 block interval will be exactly 2 weeks.\n\nIn your scheme, once the colluding miners stop their hardware, the rate of new blocks being found will decrease and the time until the next difficulty adjustment will increase. Suppose 75% of the miners (measured by hash power) collude. That means the difficulty adjustment interval will be 8 weeks instead of 2. During these 8 weeks, non-colluding miners will continue to earn income at the normal rate, while colluding miners earn nothing.\n\nWhen the difficulty has dropped and the colluding miners rejoin the network, the next difficulty adjustment will come much sooner than 2 weeks. It'll come once 2016 blocks have been mined.\n\nNote that in your calculation, you've only counted a 200% maximum increase. A +300% change is a factor 4 as a multiplier. This is symmetric with the maximum decrease in difficulty (factor of 1/4).\n\nSo if colluding miners spend 1 difficulty adjustment interval not mining and 1 interval catching up, by the end of those 2 difficulty intervals, the difficulty is back to where it was. But with the numbers I used above (75% hashrate controlled by colluding miners), that means this period lasts for 8.5 weeks. During this, non-colluding miners mined 2016 + 0.25 * 2016 = 2520 blocks while colluding miners mined 0.75 * 2016 = 1512 blocks.\n\nWithout the attack, over the same period of 8.5 weeks (so 8.5 / 2 adjustment intervals) non-colluding miners would've mined 8.5 / 2 * 2016 = 2142 blocks while colluding miners would mine 6426 blocks.\n\nThis is for the shortened scenario where colluding miners only turn off their equipment for 1 adjustment cycle. They can repeat it for multiple cycles like in your example and the numbers will change, but the conclusion remains the same.\n\nSo the proposed attack would negatively impact the miners who participate in it while it would benefit the miners who keep mining. Once again demonstrating that Bitcoin financially incentivizes players to play by the rules.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92rvnr",
+                            "author": "Ape1108",
+                            "score": 3,
+                            "created_utc": 1652883879.0,
+                            "response": "Aaaaaah great answer ! Thank you! I completely forgot that time is measured in block height not time (newbie). Thank you very much!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92opy2",
+                    "author": "Deacon86",
+                    "score": 1,
+                    "created_utc": 1652882465.0,
+                    "response": "It's not like the protocol takes a snapshot of the hashrate and adjusts based on that.  It figures out which block the network should be on, based on the current time and the assumption of 10 minutes per block.  To reduce the mining difficulty that drastically, it would require a huge percentage of mining power to be offline for months or years.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92r1g7",
+                    "author": "dlq84",
+                    "score": 1,
+                    "created_utc": 1652883513.0,
+                    "response": "No, they will gain nothing by turning off their miners. They lose potential gain during downtime. And they won't make it up just because difficulty is a little lower for a couple of weeks later.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92zvpr",
+                    "author": "ndgoLiberty",
+                    "score": 1,
+                    "created_utc": 1652887242.0,
+                    "response": "It is so magnificently expensive to add hashpower and magnificently expensive to own depreciating miners while they aren\u2019t doing anything. That making a couple more bucks for 2 weeks wouldn\u2019t be worth it.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "usdhis",
+            "title": "Pop quiz... \ud83d\ude42",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/usdhis/pop_quiz/",
+            "author": "swgo1",
+            "created_utc": 1652882046.0,
+            "score": 0,
+            "num_comments": 7,
+            "subreddit": "Bitcoin",
+            "selftext": "For the edification of us all, please explain why comparing the Bitcoin of today to the Tulips of the 1630's is not helpful.\n\nFYI... Not trolling.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i92q0o5",
+                    "author": "NiceDoctorBeam",
+                    "score": 5,
+                    "created_utc": 1652883051.0,
+                    "response": "Tulips are a commodity.  \n\nBitcoin is a form money, the best money ever used.  \n\nBitcoin is durable, portable, recognizable, fungible, divisible, and **scarce**.  \n\nTulips rot (eventually), are not fungible, nor are they divisible.  Tulips take up space and have costs associated with their secure storage and/or secure transport.  \n\nBitcoin has very low storage/transport costs.\n\nThe tulip bubble lasted a very short time.  Bitcoin has been around for 12+ years and is still just getting started.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92q6uq",
+                            "author": "swgo1",
+                            "score": 1,
+                            "created_utc": 1652883129.0,
+                            "response": "Correct. \ud83d\ude42",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92r8wc",
+                    "author": "dlq84",
+                    "score": 2,
+                    "created_utc": 1652883602.0,
+                    "response": "Because comparing apples to oranges aren't helpful",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92tkug",
+                    "author": "solomonsatoshi",
+                    "score": 2,
+                    "created_utc": 1652884608.0,
+                    "response": "The Tulip Mania lasted about 60 days.\n\nBitcoin has been operational now over 12 years.\n\nEveryday BTC survives BTC proves its resilience.\n\nBTC also solves a real world problem as opposed to being a speculative novelty like Black Tulips and shitcoins.\n\nTulip mania is more an analogy though for all the shitcoins who have followed BTC so BEWARE shitcoins and shitcoin touts!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92sg1n",
+                    "author": "HlIlM",
+                    "score": 1,
+                    "created_utc": 1652884124.0,
+                    "response": "Tulips were commodity money.  Almost brilliant in that they would adjust quantity produced to the quality of an agrarian growing season.  The fact they would replace food crops was fatal.\n\nBTC is decentralized fiat money.  Brilliant in that it's value is derived from the reach of the internet beyond the reach of government into people's daily lives.  We do not yet know if bitcoin can clear the hurdles challenging widely transacted currencies.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

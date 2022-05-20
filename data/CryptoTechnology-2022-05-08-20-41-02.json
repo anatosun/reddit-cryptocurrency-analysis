@@ -9,49 +9,6 @@
     ],
     "posts": [
         {
-            "id": "ukvhvw",
-            "title": "ZK Rollups are the missing piece to complete the blockchain scaling solution puzzle",
-            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ukvhvw/zk_rollups_are_the_missing_piece_to_complete_the/",
-            "author": "J-59",
-            "created_utc": 1651990132.0,
-            "score": 13,
-            "num_comments": 7,
-            "subreddit": "CryptoTechnology",
-            "selftext": "One of the main issues that\u2019s still holding blockchain from being adopted worldwide is scalability, whether its transaction speed related or high gas fees that users are currently suffering from. \n\n\nZK Rollups are playing a major role in blockchain scalability, since Rollups vastly reduce the computing and storage resources required to validate blocks, by decreasing the amount of data in a transaction. \n\n\nOne of the industry\u2019s leading ZK powerhouses is Polygon, that committed $1 billion aiming to acquire world-class ZK projects and teams, building ZK-based solutions, hiring premium talent, adoption of ZK solutions, research funding\u2026 \n\n\nMATIC has introduced zk based solutions like Hermez, Nightfall, Miden, Zero\u2026 and even the the first ever zk cryptography powered digital identity platform, Polygon ID.",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7rxswd",
-                    "author": "Simple_Yam",
-                    "score": 3,
-                    "created_utc": 1651997849.0,
-                    "response": "One misconception I keep seeing is that further development of ZK tech is only gonna help improve L2 Rollups. This is not true, a wide variety of L1s will benefit as well:\n\n - Sharded blockchains like Near will have much shorter intra-shard transaction finality and therefore higher security, it might become possible to not have to rely on fishermen. In the case of Near (which can support dynamic and infinite sharding) this means that it'll never need L2s to scale to 1 billion people (although some people consider shards to be Rollups).\n\n - Big block networks like Solana will become incredibly more secure and flip the trillema as well since users will be able to run trustless light nodes on dirt cheap hardware that just receive compressed batches of blocks with zk proofs - this is called a \"rolldown\". The common issue with blockchains that scale on L1 is that it's too expensive for a regular user to verify by running their own node.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i7rylnw",
-                            "author": "elithewalkingcripple",
-                            "score": 5,
-                            "created_utc": 1651998554.0,
-                            "response": "Doesnt help if it cant stay online lmfao",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i7s324g",
-                                    "author": "Simple_Yam",
-                                    "score": 5,
-                                    "created_utc": 1652002521.0,
-                                    "response": "Bugs are unfortunate but a short lived issue. Bitcoin has suffered a lot in its first few years. It has gone down twice (going down in Nakamoto consensus is different than BFT consensus but it's the same for the end-user), been forked and even double spent. The worst you can do in this space is be short-sighted. \n\nWe all want resilient systems but always remember that resilient systems are only born from fragile young systems, otherwise how do you identify the flaws that need to be fixed?",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "id": "ukwuca",
             "title": "Top Blockchain Programming Languages",
             "url": "https://www.reddit.com/r/CryptoTechnology/comments/ukwuca/top_blockchain_programming_languages/",
@@ -218,6 +175,77 @@
             "selftext": "Decred is a project conceived by ex-Bitcoin devs,  the same devs who wrote the btcd node that is used by Lightning Labs.   The fundamental difference between Bitcoin and Decred is that the latter uses a hybrid PoW/PoS consensus.   Currently, 60% of rewards go to proof-of-work miners, 30% to proof-of-stake, and 10% to a Treasury (Decred stakeholders then vote on how the Treasury is spent, which development projects to fund, etc.)\n\nThe consensus will change on 4 points.  The most popular one is that the subsidy to PoS will increase to 80%, while the subsidy to PoW decreases to 10%.  This will give DCR stakers a 10% APY, which is very high, and DCR staking doesn't require custody, so there's no counterparty risk.  Prima facie this may sound like the stakeholders trying to enrich themselves, but it's not the case; the reasoning behind it is provided [here, in the original proposal for](https://proposals.decred.org/record/427e1d4) the change (that was voted upon by the DCR coin holders/stakeholders).  Keep in mind that reducing PoW subsidy does not reduce Decred's security, as [Decred is, apples to apples, 20x harder to 51% attack than Bitcoin](https://medium.com/@0xmzz/apples-to-apples-decred-is-20x-more-expensive-to-attack-than-bitcoin-68bafeb4546f)\n\n[This website](https://voting.decred.org/) contains updates about the consensus change, the timing, and the details about each of the 4 consensus changes.",
             "stickied": false,
             "comments": []
+        },
+        {
+            "id": "ukvhvw",
+            "title": "ZK Rollups are the missing piece to complete the blockchain scaling solution puzzle",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ukvhvw/zk_rollups_are_the_missing_piece_to_complete_the/",
+            "author": "J-59",
+            "created_utc": 1651990132.0,
+            "score": 14,
+            "num_comments": 11,
+            "subreddit": "CryptoTechnology",
+            "selftext": "One of the main issues that\u2019s still holding blockchain from being adopted worldwide is scalability, whether its transaction speed related or high gas fees that users are currently suffering from. \n\n\nZK Rollups are playing a major role in blockchain scalability, since Rollups vastly reduce the computing and storage resources required to validate blocks, by decreasing the amount of data in a transaction. \n\n\nOne of the industry\u2019s leading ZK powerhouses is Polygon, that committed $1 billion aiming to acquire world-class ZK projects and teams, building ZK-based solutions, hiring premium talent, adoption of ZK solutions, research funding\u2026 \n\n\nMATIC has introduced zk based solutions like Hermez, Nightfall, Miden, Zero\u2026 and even the the first ever zk cryptography powered digital identity platform, Polygon ID.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7rxswd",
+                    "author": "Simple_Yam",
+                    "score": 4,
+                    "created_utc": 1651997849.0,
+                    "response": "One misconception I keep seeing is that further development of ZK tech is only gonna help improve L2 Rollups. This is not true, a wide variety of L1s will benefit as well:\n\n - Sharded blockchains like Near will have much shorter intra-shard transaction finality and therefore higher security, it might become possible to not have to rely on fishermen. In the case of Near (which can support dynamic and infinite sharding) this means that it'll never need L2s to scale to 1 billion people (although some people consider shards to be Rollups).\n\n - Big block networks like Solana will become incredibly more secure and flip the trillema as well since users will be able to run trustless light nodes on dirt cheap hardware that just receive compressed batches of blocks with zk proofs - this is called a \"rolldown\". The common issue with blockchains that scale on L1 is that it's too expensive for a regular user to verify by running their own node.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7rylnw",
+                            "author": "elithewalkingcripple",
+                            "score": 6,
+                            "created_utc": 1651998554.0,
+                            "response": "Doesnt help if it cant stay online lmfao",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7s324g",
+                                    "author": "Simple_Yam",
+                                    "score": 5,
+                                    "created_utc": 1652002521.0,
+                                    "response": "Bugs are unfortunate but a short lived issue. Bitcoin has suffered a lot in its first few years. It has gone down twice (going down in Nakamoto consensus is different than BFT consensus but it's the same for the end-user), been forked and even double spent. The worst you can do in this space is be short-sighted. \n\nWe all want resilient systems but always remember that resilient systems are only born from fragile young systems, otherwise how do you identify the flaws that need to be fixed?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i7sgxhb",
+                                            "author": "Agonze",
+                                            "score": 1,
+                                            "created_utc": 1652013327.0,
+                                            "response": "I always enjoy how btc maxis never think about or acknowledge that even btc was centralized in it's early days when there were few miners.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9aq92j",
+                                    "author": "gumbangww",
+                                    "score": 1,
+                                    "created_utc": 1653027783.0,
+                                    "response": "It might be very true that Polygon has attracted a good number of Zk projects. However, there is still a concern about security. I'm sure that is one of the reasons Railgun decided to build its protocol on Ethereum for a start due to the native security that comes with L1s.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9aqhk4",
+                    "author": "Jacobsendy",
+                    "score": 1,
+                    "created_utc": 1653027968.0,
+                    "response": "Well, I guess it's a very good thing that emerging projects are being built to be composable with ZK rollups with an added potential for DeFi apps integration. Railgun exhibits that perfectly with its on-chain privacy utility built on L1 protocols. I guess we'll see more of that approach as the space develops",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
         }
     ]
 }

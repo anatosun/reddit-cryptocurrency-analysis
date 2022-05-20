@@ -27,8 +27,8 @@
             "url": "https://www.reddit.com/r/Bitcoin/comments/urc8b0/full_node_bitcoin230_ubuntu/",
             "author": "Affectionate_Ad5353",
             "created_utc": 1652754050.0,
-            "score": 13,
-            "num_comments": 14,
+            "score": 18,
+            "num_comments": 19,
             "subreddit": "Bitcoin",
             "selftext": "Hi,\nI want to run a full node on Ubuntu.\nI check up the signature, all fine. But when I tried : $ /usr/local/bin/bitcoin-qt /usr/local/bin/bitcoin-qt: error while loading shared libraries: libfontconfig.so.1: cannot open shared object file: No such file or directory.\nI tried some older full node version but always the same.\nMaybe someone can help?\nThanks all",
             "stickied": false,
@@ -36,17 +36,17 @@
                 {
                     "id": "i8wjaps",
                     "author": "pwuille",
-                    "score": 6,
+                    "score": 11,
                     "created_utc": 1652756967.0,
                     "response": "`sudo apt install libfontconfig1` to install it, but it's very surprising you don't have it.\n\nWhat version of Ubuntu is this?",
                     "depth": 1,
                     "comments": [
                         {
-                            "id": "i8xfebg",
-                            "author": "abras4",
+                            "id": "i8zz09u",
+                            "author": "Affectionate_Ad5353",
                             "score": 1,
-                            "created_utc": 1652781584.0,
-                            "response": "He either has a very old Ubuntu, or has downloaded a compromised \"bitcoin-core\" from a different website.",
+                            "created_utc": 1652823962.0,
+                            "response": "Focal fossa",
                             "depth": 2,
                             "comments": []
                         }
@@ -55,7 +55,7 @@
                 {
                     "id": "i8wfzwy",
                     "author": "SnooBunnies3560",
-                    "score": 3,
+                    "score": 2,
                     "created_utc": 1652755208.0,
                     "response": "Ask on bitcoin stackexchange",
                     "depth": 1,
@@ -63,7 +63,7 @@
                         {
                             "id": "i8wills",
                             "author": "ourcelium",
-                            "score": 0,
+                            "score": -4,
                             "created_utc": 1652756589.0,
                             "response": "Ignore this dick.",
                             "depth": 2,
@@ -71,7 +71,7 @@
                                 {
                                     "id": "i8xc8f3",
                                     "author": "AlexKrois",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1652778742.0,
                                     "response": "wtf why is he a dick? lmao, directing him to a forum that probably has more info on this issue is not a dick move?",
                                     "depth": 3,
@@ -84,26 +84,17 @@
                 {
                     "id": "i8wjb7y",
                     "author": "ourcelium",
-                    "score": 3,
+                    "score": 1,
                     "created_utc": 1652756975.0,
                     "response": "I don't know why you have bitcoin-qt, but it's been re-branded quite a while ago as Bitcoin-core. You may want to consider running that instead as what you are setting up may be considerably out-of-date, although I will say, as long as concensus.h is the same or compatible, your node should still work perfectly, just missing key innovations like Schnorr.\n\nThat said, I haven't personally vetted this particular instruction set, but it seems to have all the steps: https://linuxhint.com/install-bitcoin-core-ubuntu/",
                     "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8wf5hd",
-                    "author": "ndgoLiberty",
-                    "score": 1,
-                    "created_utc": 1652754771.0,
-                    "response": "I don\u2019t know much about Linux but is it not working cause you don\u2019t have the right font installed? cause that would be hilarious.",
-                    "depth": 1,
                     "comments": [
                         {
-                            "id": "i8x4yrc",
-                            "author": "dlq84",
-                            "score": 1,
-                            "created_utc": 1652772080.0,
-                            "response": "No, they lack a library, not fonts itself.",
+                            "id": "i8ytbak",
+                            "author": "pwuille",
+                            "score": 2,
+                            "created_utc": 1652806800.0,
+                            "response": "bitcoin-qt is the name of the Bitcoin Core GUI binary, even in the latest version 23.0.",
                             "depth": 2,
                             "comments": []
                         }
@@ -120,48 +111,48 @@
                         {
                             "id": "i8xa151",
                             "author": "sinbad-633",
-                            "score": 1,
+                            "score": 4,
                             "created_utc": 1652776721.0,
                             "response": "The hardware is as much as you want to spend on it. A raspberry pi 4 and a 1TB Ssd is the minimum, but an old laptop will work too. The software is free. \n\nThe advantages are that you support the network and make bitcoin stronger. You broadcast your own transactions locally on your own node without trusting a third party and it\u2019s more private as no one will know that\u2019s it\u2019s you that generated the transaction. You can interrogate the blockchain locally so an explorer site won\u2019t get your ip and guess it\u2019s your wallet you looked up. \n\nPlus you can run a lightning node which is quite fun if you\u2019re into that sort of thing.",
                             "depth": 2,
                             "comments": [
                                 {
-                                    "id": "i8xai2z",
-                                    "author": "CJ1418",
+                                    "id": "i8xj8xz",
+                                    "author": "Independent-Snow-129",
                                     "score": 1,
-                                    "created_utc": 1652777154.0,
-                                    "response": "Cool, thanks for the info. I have put my money into a project that runs nodes and I make 8% a month on that. \n\nWhat kinds of returns do you get running a node?\nIf the software for the node is free and you can do it on an old laptop how come everyone isn\u2019t doing it!?!",
+                                    "created_utc": 1652784703.0,
+                                    "response": "I would like to add to your awesome comment,  You can also run an SPV node which *\"verifies transactions by reference to their depth in the blockchain instead of height.\" -Mastering Bitcoin*",
                                     "depth": 3,
-                                    "comments": [
-                                        {
-                                            "id": "i8xd79s",
-                                            "author": "Captainchow",
-                                            "score": 1,
-                                            "created_utc": 1652779636.0,
-                                            "response": "There are no monetary rewards for running a BTC node. Only mining. Perhaps you are thinking of validator nodes for proof of stake tokens.",
-                                            "depth": 4,
-                                            "comments": []
-                                        },
-                                        {
-                                            "id": "i8xegqr",
-                                            "author": "coinjaf",
-                                            "score": 1,
-                                            "created_utc": 1652780778.0,
-                                            "response": "You got yourself scammed. There is no such thing as getting paid to run nodes other than from scam projects.\n\n> how come everyone isn\u2019t doing it!?!\n\nYou answered your own question.\n\nShitcoins are also scams and off topic here.",
-                                            "depth": 4,
-                                            "comments": [
-                                                {
-                                                    "id": "i8xeq25",
-                                                    "author": "CJ1418",
-                                                    "score": 1,
-                                                    "created_utc": 1652781000.0,
-                                                    "response": "Like mentioned above validator nodes pay out. I run my own nodes and invested in a company that invest for you and I have been getting paid out every month for just over 6 months. \n\nhttps://members.yieldnodes.com/c/?a=3LYeqQl9wpoMd46&redirect=signup\n\nYou won\u2019t find anything bad about these guys anywhere. They are on trust pilot 4.8/5",
-                                                    "depth": 5,
-                                                    "comments": []
-                                                }
-                                            ]
-                                        }
-                                    ]
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8wf5hd",
+                    "author": "ndgoLiberty",
+                    "score": 0,
+                    "created_utc": 1652754771.0,
+                    "response": "I don\u2019t know much about Linux but is it not working cause you don\u2019t have the right font installed? cause that would be hilarious.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8x4yrc",
+                            "author": "dlq84",
+                            "score": 1,
+                            "created_utc": 1652772080.0,
+                            "response": "No, they lack a library, not fonts itself.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i932m0o",
+                                    "author": "Affectionate_Ad5353",
+                                    "score": 1,
+                                    "created_utc": 1652888355.0,
+                                    "response": "But why the lib is incomplete?",
+                                    "depth": 3,
+                                    "comments": []
                                 }
                             ]
                         }

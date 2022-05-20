@@ -1,0 +1,197 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "usluyr",
+            "title": "What's the missing ingredient for more L2 adoption? Many Dapps are still only present on L1",
+            "url": "https://www.reddit.com/r/ethereum/comments/usluyr/whats_the_missing_ingredient_for_more_l2_adoption/",
+            "author": "LinusThiccTips",
+            "created_utc": 1652905342.0,
+            "score": 14,
+            "num_comments": 19,
+            "subreddit": "ethereum",
+            "selftext": "L2 adoption is increasing at a good pace, but it still has mountains to climb. Many of the major centralized exchanges still only support L1 transfers, forcing users to pay expensive bridge fees to on/off ramp, or just not participate in rollups at all. Beyond that, Optimistic L2 fees are still magnitudes higher than competing EVM compatible L1s and sidechains such as Polygon, Fantom and Avalanche.\n\nI mentioned Optimistic Rollups because ZK Rollups with EVM compatibility aren't ready for production yet. I actively use Arbitrum and Optimism and love the the experience, don't mind the fees although I live in a 1st world country, I can see how they can still be a barrier of entry for people living in less financially fortunate countries.\n\nAll things considered, the issue that bothers me the most is that still, so many large dapps I want to use are  either only available on L1, or very limited on L2. One example of this is Abracadabra. What's holding dapps back from integrating rollups?\n\nThere's so much innovation out there on other L1s and sidechains, I want to see that innovation in Ethereum L2s as well. I used dapps on Terra daily, sadly Terra is in the gutter now but it had an awesome DeFi ecosystem with a ton of TVL (excluding Anchor). Solana also has many promising projects that only deployed on Solana, yet it's often congested to almost a halt. Yes, Terra and Solana contracts are written in Rust, but Solidity is still the mainstream smart contract language, there must be other reasons why L2s aren't developer's first pick, specially as there's a ton of innovation on Ethereum as well but that doesn't fall back to L2s.\n\nFinally, can we the community do anything to help increase L2 adoption?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i94izs2",
+                    "author": "Maswasnos",
+                    "score": 6,
+                    "created_utc": 1652909710.0,
+                    "response": "Most of the big dapps have already made their way over, the glaring exception being MakerDAO which is still working on a way to mint DAI on rollups and other chains. Being able to mint one token on multiple chains is a very tricky problem to solve.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97gbkk",
+                            "author": "Raikaru",
+                            "score": 1,
+                            "created_utc": 1652970977.0,
+                            "response": "Dapps have moved over however there are still functions that are mainnet exclusive like veCRV from Curve",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i94ev6i",
+                    "author": "Perleflamme",
+                    "score": 5,
+                    "created_utc": 1652907941.0,
+                    "response": "I think there's a problem of liquidity transfer.\n\nLet's say you have a DApp on the L1. And you want to offer the same service on the L2. Many people have their liquidity on the L1 Dapp. They're earning money or anything else from it (various services) and removing their funds would mean a loss. Without already other people on the L2, they'd presumably not earn as much.\n\nAs such, there's a *coordination* problem.\n\nSo, to me, what is lacking is a DAO for users to show their *commitment* to have their funds transfered to the L2 DApp if a given *threshold* of other funds get transfered too. \n\nIt's just the same problem as any crowd funding use case. You want to fund, but only if it means the project will then have enough funds to have any realistic possibility of becoming successful.\n\nSo, that's what these Dapps should do.\n\nThe only other alternative I'd see would be to only offer upgrades on the L2 and stop any upgrade on the L1. At some point, people would prefer the L2 to the L1, notably new users and any older user who would find the upgrades really helpful or much needed. But even then, you can't really prevent anyone who wants to to offer an L1 DApp upgrade or competition and postpone this kind of resolution.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9554gy",
+                            "author": "LinusThiccTips",
+                            "score": 3,
+                            "created_utc": 1652919790.0,
+                            "response": "This actually makes a lot of sense and I hadn\u2019t considered this scenario. I like the DAO idea, but I feel like more new money will move to L2 than old money already using L1. Having no cheap/easy way to on ramp to L2 sucks, Coinbase, Kraken, Gemini all still don\u2019t support any L2.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i959t1k",
+                                    "author": "Perleflamme",
+                                    "score": 2,
+                                    "created_utc": 1652921996.0,
+                                    "response": "Ah, yes, CeFi exchanges are still a bit late to the party. I feel that they're apparently trying to have their own L2 (or side-chain, sadly) and code in it to benefit from low fees and then let people from there access to any L2 they'd want. But it takes a lot of time implementing this.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i960sqs",
+                                    "author": "bandoonparade",
+                                    "score": 1,
+                                    "created_utc": 1652935983.0,
+                                    "response": "Crypto.com offers direct withdrawal to Arbitrum -- that's how I got my eth over there. Not to be a shill or anything.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i948tl8",
+                    "author": "superboget",
+                    "score": 4,
+                    "created_utc": 1652905459.0,
+                    "response": "Make it user-friendly.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i969y7u",
+                    "author": "milvus",
+                    "score": 4,
+                    "created_utc": 1652942715.0,
+                    "response": "Speaking from the zkRollups side the rate of innovation and building is huge. We're seeing more and more projects being built on the likes of zkSync and StarkNet all the time.\n\nYou should be aware that not all of these are L1 migrating to L2, many fantastic projects are building as L2 native. This means you might need to use dapps that are unfamiliar so always dyor.\n\nIf you want to see what's out there I run a project called the [zkRollup Directory](https://zkrollups.xyz) that tracks all the projects building on zk platforms.\n\nPlease excuse the site in it's current state - we're not updating projects on the website while we undergo a big rebuild and redesign. That said you can still see the extent of projects being built on zkRollups and we are still tracking them.\n\nHere is a teaser of the redesign.\n\n[zkrollup directory redesign](https://i.imgur.com/kPmxZBH.png)\n\nIf you want to keep up with all the updates to zkRollup projects you can find us on Twitter: https://twitter.com/zkRollupsXYZ",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i968qj4",
+                    "author": "Jacobsendy",
+                    "score": 2,
+                    "created_utc": 1652941753.0,
+                    "response": "Security is a major issue for consideration for emerging projects. And as I have noted over the last couple of weeks, this is one of the major reasons why dapps opt to be built on L1. A good example is Railgun which built itz zksnarks smart contract on ethereum with 'its native L1 security, as stated on its official pages. Another consideration is the scalability and composablility with ZK roll ups. It will take time before L2 matches up",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i953f4v",
+                    "author": "jamesvanessa",
+                    "score": 1,
+                    "created_utc": 1652918984.0,
+                    "response": "Most of the people complaining about fees don't trade or spend money anyway really. None sees an incentive to switch. If fees were as big as they say people would switch.. \nThe people complaining on the internet aren't really trading. Just talking. With 3 digit accounts. \nIf eth treats devs good why switch? \nIf it's not broke why fix. That's why no adoption. \nAs for users. Lots make plenty of money on eth. And aren't worried about fees. It's truth. \nThe loudest complainers of fees don't even trade. Or hold 1 coin.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96dhfu",
+                    "author": "AmunTokens",
+                    "score": 1,
+                    "created_utc": 1652945695.0,
+                    "response": "The problem I argue when it comes to L2's is difficulty. I am the \"degen\" amongst eveyone that I know across a few continents and let me tell you, I don't know a ton. That being said, even regular CeFi stuff is sometimes hard for people to conceptualize. Coinbase has a wonderful UI but horrible offerings outside the U.S. Everyone else tends to use their local exchanges or Binance which makes it hard to do anything more than just buy or sell. L2's need better educational tools and interfaces.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96gpd3",
+                    "author": "Memjong",
+                    "score": 1,
+                    "created_utc": 1652948593.0,
+                    "response": "Large entry barriers for now.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96l1fc",
+                    "author": "whatup1111",
+                    "score": 1,
+                    "created_utc": 1652952579.0,
+                    "response": "Needs to be a lot more user friendly. The space is too confusing for people who arent very technical.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96q55q",
+                    "author": "Boxman212",
+                    "score": 1,
+                    "created_utc": 1652956870.0,
+                    "response": "Is anyone here keeping up with current news?  Just wondering.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i94w2nk",
+                    "author": "Rtbrosk",
+                    "score": -3,
+                    "created_utc": 1652915516.0,
+                    "response": "layer 2 suck.....u spend more getting there than its worth",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i954hlg",
+                            "author": "LinusThiccTips",
+                            "score": 5,
+                            "created_utc": 1652919489.0,
+                            "response": "> u spend more getting there than its worth\n\nIt\u2019s less than you\u2019d spend on most dapps on L1, and if you got funds on L1 and never move them, you\u2019re not really doing anything with it. It cost me $5 to bridge to Arbitrum last Sunday when gas was cheap.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "uslzkp",
+            "title": "GameFi: Online gaming payouts rival \"real\" jobs in developing nations",
+            "url": "https://www.web3creativecollective.com/blog/gamefi-online-gaming-payouts-rival-real-jobs-in-developing-nations",
+            "author": "horner",
+            "created_utc": 1652905705.0,
+            "score": 8,
+            "num_comments": 2,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9anu39",
+                    "author": "NoPie8947",
+                    "score": 1,
+                    "created_utc": 1653025957.0,
+                    "response": "More and more jobs are being posted even if we are in bear market, the space is still super active.\n\nNo doubts about the future of web 3 it's bright, layers 1 like Kadena, Ethereum, Near etc gonna be major players for the web 3 industry.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

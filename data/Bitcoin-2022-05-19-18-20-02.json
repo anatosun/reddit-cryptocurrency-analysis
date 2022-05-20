@@ -1,0 +1,107 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "ut9dnm",
+            "title": "Paying with LN NFC in Europe",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/ut9dnm/paying_with_ln_nfc_in_europe/",
+            "author": "TenshiS",
+            "created_utc": 1652983692.0,
+            "score": 4,
+            "num_comments": 4,
+            "subreddit": "Bitcoin",
+            "selftext": "I live in Germany and I have an LN wallet. Is there a way to use my phone's NFC capabilities to pay at stores by on-the-fly converting BTC to Euros at the point of sale?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i98qsh8",
+                    "author": "gotamm",
+                    "score": 1,
+                    "created_utc": 1652989895.0,
+                    "response": "Sure, any Apple Pay compatible exchange debit card, like Nexo\u2019s for example.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i995ukz",
+                            "author": "TenshiS",
+                            "score": 1,
+                            "created_utc": 1652997122.0,
+                            "response": "Anything for android?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9bapsi",
+                                    "author": "hentaikid",
+                                    "score": 1,
+                                    "created_utc": 1653044525.0,
+                                    "response": "google pay. \n\nHe's not really talking about lighning, Nexo stores your crypto and gives you a credit line",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9bbcqq",
+                                            "author": "TenshiS",
+                                            "score": 1,
+                                            "created_utc": 1653044932.0,
+                                            "response": "Oh ok. That kinda defeats the purpose for me. I want to hold my own keys, have an NFC capable wallet, and use it to pay at stores. Pretty straight forward use case, or so I thought",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ut9e87",
+            "title": "Lightning question",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/ut9e87/lightning_question/",
+            "author": "foz_fozool",
+            "created_utc": 1652983736.0,
+            "score": 2,
+            "num_comments": 3,
+            "subreddit": "Bitcoin",
+            "selftext": "Running an LND node, have 2 channels open, when I \"lncli getinfo\" it tells me that the 2 channels are 'inactive', yet '[1ml.com](https://1ml.com)' shows them as active. I never closed the channels. My funds are inaccessible, can't send or receive ( there is both incoming and outgoing capacities) . What to do? Thanks in advance.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i98d23g",
+                    "author": "dlq84",
+                    "score": 2,
+                    "created_utc": 1652984280.0,
+                    "response": "Your peers might be offline. Wait for them to come online again.\n\n\"Active\" on 1ml merely means the channel is open. As in not pending open/close or closed.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i98es04",
+                    "author": "caploves1019",
+                    "score": 1,
+                    "created_utc": 1652984986.0,
+                    "response": "Check Thunderhub or ride the lightning to see if your channel peers have gone offline",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9bc4uc",
+                            "author": "foz_fozool",
+                            "score": 1,
+                            "created_utc": 1653045418.0,
+                            "response": "Thanks for the reply, I noticed that Thunderhub being a feature of 'Voltage'.. which is a paid service... I guess I am too used to open source (free stuff). But no the node that I have 2 channels with is not offline! So? I'll keep digging. Thanks.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

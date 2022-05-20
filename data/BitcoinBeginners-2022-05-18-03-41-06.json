@@ -14,12 +14,39 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/us3ykn/downloading_the_chain/",
             "author": "realsds",
             "created_utc": 1652845270.0,
-            "score": 1,
-            "num_comments": 4,
+            "score": 3,
+            "num_comments": 12,
             "subreddit": "BitcoinBeginners",
             "selftext": "I'm about 85% through the downloading and finally getting consistent speed to a ssd. The problem is, task manager says my download speed is at 100% of my isp dl limit while btc core is consistently downloading at 10% of that. There is nothing else downloading so what causes this 10% speed cap?",
             "stickied": false,
             "comments": [
+                {
+                    "id": "i91hcwl",
+                    "author": "Nessaiy",
+                    "score": 4,
+                    "created_utc": 1652851453.0,
+                    "response": "Your computer has to validate all blocks. This takes time.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92c2ys",
+                    "author": "GibbsSamplePlatter",
+                    "score": 4,
+                    "created_utc": 1652876135.0,
+                    "response": "If you have reasonable internet the next bottleneck is CPU usage for validation of blocks",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91ppok",
+                    "author": "igadjeed",
+                    "score": 3,
+                    "created_utc": 1652858072.0,
+                    "response": "> what causes this 10% speed cap?\n\nValidation of all the blocks and building the UTXO database is much slower than downloading the blocks. If you have enough RAM, you can speed up the UTXO build by reducing disk I/O by using RAM as dbcache  \nhttps://np.reddit.com/r/Bitcoin/comments/qrghbd/bitcoin_core_setting_dbcache/hk6mp2g/",
+                    "depth": 1,
+                    "comments": []
+                },
                 {
                     "id": "i917kek",
                     "author": "AutoModerator",
@@ -30,11 +57,11 @@
                     "comments": []
                 },
                 {
-                    "id": "i91hcwl",
-                    "author": "Nessaiy",
+                    "id": "i99dcx3",
+                    "author": "bitcoin_barry",
                     "score": 1,
-                    "created_utc": 1652851453.0,
-                    "response": "Your computer has to validate all blocks. This takes time.",
+                    "created_utc": 1653000669.0,
+                    "response": "It's usually the HDD. Even with an SSD, if it isn't configured properly (very common when paired with a raspberry pi and sometimes it is because of incompatible hardware and can't be fixed) -- then it will severely underperform.",
                     "depth": 1,
                     "comments": []
                 }

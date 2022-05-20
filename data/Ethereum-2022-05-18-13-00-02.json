@@ -1,0 +1,970 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "rknvzy",
+            "title": "Will the staking amount of 32 eth ever be lowered?",
+            "url": "https://www.reddit.com/r/ethereum/comments/rknvzy/will_the_staking_amount_of_32_eth_ever_be_lowered/",
+            "author": "SirCamCam",
+            "created_utc": 1640008776.0,
+            "score": 141,
+            "num_comments": 118,
+            "subreddit": "ethereum",
+            "selftext": "Hey guys,\n\nSo from my understanding when 32 was determined this was worth about 10k. A pretty reasonable amount and is achievable by most given enough time. However today that is worth over 120k which most of the world will never achieve. \n\nI'd love to stake myself without joining a pool however it will take me upwards of 10 years at current price to have 32 eth. In lower income countries this is an unfathomable amount of money. With the intent of decentralization shouldn't this be lower? \n\nIs there a specific reason 32 was selected or is there the possibility that this will change in the future?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "hpb6l5t",
+                    "author": "trent_vanepps",
+                    "score": 1,
+                    "created_utc": 1640017810.0,
+                    "response": "Here's the rationale, related to the \"decentralization, time to finality, overhead tradeoff\"\n\n[https://notes.ethereum.org/@vbuterin/rkhCgQteN#Why-32-ETH-validator-sizes](https://notes.ethereum.org/@vbuterin/rkhCgQteN#Why-32-ETH-validator-sizes)  \n\n\nhttps://medium.com/@VitalikButerin/parametrizing-casper-the-decentralization-finality-time-overhead-tradeoff-3f2011672735\n\nas others have mentioned, there are trustless staking options available!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpasjjp",
+                    "author": "AESTHTK",
+                    "score": 32,
+                    "created_utc": 1640011642.0,
+                    "response": "I believe the number is based on the target number of validators the network should support, rather than the dollar amount.\n\nFor example, if it was 1 ETH then the networking gossip would likely be too high across a huge set of validators - so 32 ETH was chosen. \n\nThat\u2019s my understanding, let me find a source for that\u2026 maybe it was the Justin Drake episode of Bankless?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hpatm33",
+                            "author": "MrQot",
+                            "score": 8,
+                            "created_utc": 1640012140.0,
+                            "response": "[Another specs](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#gwei-values) is my usual goto\n\n>If the deposit size is higher, then fewer people can participate, risking centralization, but if the deposit size is lower, then the chain suffers a higher cost of verification (\"overhead\" in the post), risking sacrificing decentralization differently.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hpav6u7",
+                            "author": "hegedis",
+                            "score": 3,
+                            "created_utc": 1640012870.0,
+                            "response": "That's what I heard too. Also there was somewhere Vitalik mentioned that it could be lowered to 16 sometime in the future, but going much lower would bring up problems.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hpb53cg",
+                                    "author": "EagleNait",
+                                    "score": -6,
+                                    "created_utc": 1640017181.0,
+                                    "response": "There's no real reason to respect powers of 2. It could be lowered to 30 without problem",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hpb5ljd",
+                                            "author": "SirCamCam",
+                                            "score": 18,
+                                            "created_utc": 1640017391.0,
+                                            "response": "Powers of 2 makes my programmer brain happy",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "hpb6mlj",
+                                            "author": "FaceDeer",
+                                            "score": 9,
+                                            "created_utc": 1640017827.0,
+                                            "response": "It may be that upgrading the system is an issue. If you're going from 32 to 16 you could just split every existing stake into two stakes, whereas going from 32 to 30 would be a big mess.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hpb7ku6",
+                                                    "author": "EagleNait",
+                                                    "score": -7,
+                                                    "created_utc": 1640018223.0,
+                                                    "response": "You'd get 2 eth back. Not that messy imo",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hpdwxvz",
+                                                            "author": "somecoin",
+                                                            "score": 2,
+                                                            "created_utc": 1640060584.0,
+                                                            "response": "I think the problem is that you aren't currently able to withdraw staked ETH. So rather than being able to get those 2 ETH back, they would sit there locked but not earning any rewards until withdrawals become possible in the future.\n\nOn the other hand, if you have already staked 32 then you could be granted a second node with 16 ETH in each, with new people wishing to get involved only getting one for the lower price of 16 ETH.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hpasc8r",
+                    "author": "Rampager",
+                    "score": 29,
+                    "created_utc": 1640011544.0,
+                    "response": "I don't believe so, plus this is basically solved by Rocketpool already (swap your ETH -> rETH, you're now staking with < 32 ETH), so it's unlikely there's much incentive to drop the staking amount.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hpbao8m",
+                            "author": "ewoolsey",
+                            "score": -1,
+                            "created_utc": 1640019500.0,
+                            "response": "People have been saying this forever, but are they finally live on mainnet yet?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hpbe1zm",
+                                    "author": "frank__costello",
+                                    "score": 8,
+                                    "created_utc": 1640020891.0,
+                                    "response": "They've been live for like a month",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hpbe721",
+                                            "author": "ewoolsey",
+                                            "score": 8,
+                                            "created_utc": 1640020947.0,
+                                            "response": "OMG finally. I aware people have been losing their shit forever about this. Excited to try it out.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hpbhv70",
+                            "author": "MyCryptoFriend",
+                            "score": -2,
+                            "created_utc": 1640022429.0,
+                            "response": "A trustless system becomes a little (or a lot) less trustless.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hpceask",
+                                    "author": "Rampager",
+                                    "score": 7,
+                                    "created_utc": 1640035762.0,
+                                    "response": "Rocketpool is basically as trustless as Ethereum, it's all smart contract based.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hpg8o2i",
+                                            "author": "Mordan",
+                                            "score": 1,
+                                            "created_utc": 1640109557.0,
+                                            "response": "bullshit.\n\nsmart contract owner controls the contract and can call functions to self destruct or do other shady shit.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hphhavs",
+                                                    "author": "Rampager",
+                                                    "score": 1,
+                                                    "created_utc": 1640127562.0,
+                                                    "response": "Honestly I don't know enough about SC deployment to discuss the malicious actor angle I'm sure that's covered somewhere, but the SC functions of RPL are pretty simple to validate and are publicly viewable: https://etherscan.io/address/0x3019227b2b8493e45bf5d25302139c9a2713bf15#code\n\nNo shady calls in there! ... Yet :P I'm sure if that was to happen, someone would notice. Hopefully. Maybe. I should do more research on malicious SC updates and how easy that is to track",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hpjd8km",
+                                                            "author": "Mordan",
+                                                            "score": 1,
+                                                            "created_utc": 1640164421.0,
+                                                            "response": "using a SC is like using a website..\nYou have to trust the owner.\n\na SC can do redirections and \"updates\" hahaha\n\nupdates hahaha hahahahahah who the fucks want up updates on a supposedly trustless smart contract ?",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hpc4it5",
+                                    "author": "TXTCLA55",
+                                    "score": 1,
+                                    "created_utc": 1640031676.0,
+                                    "response": "Because mining pools are any different?",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hpb1w4r",
+                    "author": "PinkPuppyBall",
+                    "score": 18,
+                    "created_utc": 1640015820.0,
+                    "response": ">Will the amount of ETH required to run a validator ever be lowered from 32?\n\nShort answer, no.\n\nLong answer:\n\n>There are two choices here that need justification. First, why force validator slots to be a fixed amount of ETH at all, instead of allowing them to be any size? Second, why a fixed size of 32 ETH, and not 1 ETH or 1000 ETH?\n\n>The problem with allowing variable balances is that algorithms for a random selection (eg. of block proposers) and shuffling (for committees) become much more complicated. You would need an algorithm to select a block proposer such that the probability that the algorithm selects a particular proposer is proportional to the proposer's balance, in a context where balances are changing and validators are always entering and exiting. This could be done with fancy binary tree structures but would be complicated. In the case of committee selection, a wealthy validator cannot be assigned to one committee (as they would then dominate and be able to attack it); their weight would need to be split up among many committees. It's much easier to solve both problems by simply formally representing wealthy validators as being many separate validators of the same size.\n\n>The 32 ETH choice is based on this logic: https://medium.com/@VitalikButerin/parametrizing-casper-the-decentralization-finality-time-overhead-tradeoff-3f2011672735. If the deposit size is higher, then fewer people can participate, risking centralization, but if the deposit size is lower, then the chain suffers a higher cost of verification (\"overhead\" in the post), risking sacrificing decentralization differently.\n\n>Economic review suggests that at the current 32 ETH level the hardware costs of staking are enough to make a significant, though not fatal, dent on validator returns. This implies that if the deposit size were reduced to 16 ETH, then the overhead of the chain would double, and the rewards to each validator would halve, so staking with a single validator slot would be four-times more difficult, already a potentially unsafe level. Hence, 32 ETH is the most inclusive deposit size that does not become self-defeating due to increasing overhead.\n\nhttps://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#gwei-values",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpanqym",
+                    "author": "Churn",
+                    "score": 107,
+                    "created_utc": 1640009296.0,
+                    "response": "I can\u2019t give the definitive answer (someone knowledgeable will hopefully) but I can point out that what you\u2019re asking is to reduce the \u201cstake\u201d that\u2019s required in Proof of Stake.  \n\nAll of the nodes need to trust your node is financially invested in the network and won\u2019t work against it.  They trust you because you \u201cproved you have a stake\u201d in the network and therefore want it to function properly.  \n\nIf the minimum requirement for proof of stake nodes is reduced then it becomes cheaper to attack the network",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hpbcxpz",
+                            "author": "PostCoitalBliss",
+                            "score": 9,
+                            "created_utc": 1640020433.0,
+                            "response": "> If the minimum requirement for proof of stake nodes is reduced then it becomes cheaper to attack the network\n\nbut if it's cheaper to run a validator, wouldn't there be more nodes/validators, meaning an attacker would just have to run extra validators and effectively cost the same?\n\nI mean, there is an optimal balance; it can't be too low since there's only so many people that will stake regardless of how cheap it is to do so. But that optimal cost is *probably* lower than 32 ETH.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hpaq7y9",
+                            "author": "WildRacoons",
+                            "score": 52,
+                            "created_utc": 1640010534.0,
+                            "response": "That\u2019s right. This may not be what you want to hear, but the primary function of the mechanism is for network utility and security. Not wealth redistribution.\n\nThe tech and space is one gigantic experiment. If this number introduces enough diversity of nodes to secure the network, there\u2019s no real need to lower the bar.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hpaw1ka",
+                            "author": "majorpickle01",
+                            "score": 19,
+                            "created_utc": 1640013257.0,
+                            "response": "Correct me if i'm wrong, but surely more good actors will balance out the influx of bad actors?  \n\n\nEven if it doesn't, higher staking base = less decentralized. People are moving to crypto to get away from banks, not create new ones",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hpbae95",
+                                    "author": "Falk_csgo",
+                                    "score": 4,
+                                    "created_utc": 1640019385.0,
+                                    "response": "Sounds like ~~security through obscurity~~ pay to hack.\n\nState actors corperations and wealthy individuals are still a threat.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hpbduc3",
+                                            "author": "majorpickle01",
+                                            "score": 6,
+                                            "created_utc": 1640020805.0,
+                                            "response": "I've always wondered what would happen in a hypothetical event that a government printed basically infinite money of thier own fiat if they planned to switch to a cryptocurrency. IE print a quadrillion lira and buy as much bitcoin as possible. Sure, inflation would decrease lira purchasing price but surely not instantly",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hpcmsfv",
+                                                    "author": "wentwj",
+                                                    "score": 2,
+                                                    "created_utc": 1640039410.0,
+                                                    "response": "Isn\u2019t this basically tether? Make up currency and buy crypto with it? Obviously at a lesser scale than maybe a state would do (but a simpler path). For a large country the amount would have to be huge to have a big impact on the source currency",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hpcpf56",
+                                                            "author": "majorpickle01",
+                                                            "score": 3,
+                                                            "created_utc": 1640040538.0,
+                                                            "response": "Essentially yes. The reason people dislike tether is the suspicion that it is doing fractional reserve banking. Now when the Government does it, it does so in it's own currency so it has to control it unless it loses a ton of money. With Tether, they don't measure profit in TUSD, so there's no disincentive until the bank run.  \n\n\nThis is why so many people anti bitcoin, notably the r/Buttcoin crowd, are so hyper fixated on Tether. A Tether run could make a Mt Gox level catastrophe if it happened",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "hpbhpq8",
+                                                    "author": "filipesmedeiros",
+                                                    "score": 1,
+                                                    "created_utc": 1640022368.0,
+                                                    "response": "Nice theoretical experiment! Would love an analysis of how this could be real. Like video game theory",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hpbicyp",
+                                                            "author": "majorpickle01",
+                                                            "score": 5,
+                                                            "created_utc": 1640022631.0,
+                                                            "response": "I commonly see the above listed as a reason that PoS is inferior to PoW, but i'd think the opposite; You could buy the asset and the mining machines on PoW, while on PoS you'd have to directly hyperinflate the asset",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "hpburof",
+                                                                    "author": "dilmah23",
+                                                                    "score": 3,
+                                                                    "created_utc": 1640027642.0,
+                                                                    "response": "So as eth heads towards limited supply the money will centralise and only the rich will control validation. Sounds like today's system?",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "hpbxkoi",
+                                                                            "author": "filipesmedeiros",
+                                                                            "score": 1,
+                                                                            "created_utc": 1640028792.0,
+                                                                            "response": "Sounds like all systems with inflation. Inflation leads to centralization.\n\nRead senatus's post on this, it's good.\n\nYou have to accept this, and use Ethereum (and others) for what they are, not what they are not.\n\nEthereum is not communist, Ethereum is not organically distributive.\n\nEthereum is trustless, Ethereum is permissionless.\n\nIf you want real decentralization, go to fixed supply coins with traceable supplies (won't name them cuz shilling)",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "hpbyqzv",
+                                                                                    "author": "dilmah23",
+                                                                                    "score": 2,
+                                                                                    "created_utc": 1640029273.0,
+                                                                                    "response": "I will - Bitcoin",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "hpc4x56",
+                                                                                            "author": "filipesmedeiros",
+                                                                                            "score": 0,
+                                                                                            "created_utc": 1640031843.0,
+                                                                                            "response": "not the worst but still not the best ahah",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "id": "hpcd0j5",
+                                                                                    "author": "pazsurfingwd",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1640035224.0,
+                                                                                    "response": "Banks scares the shit out of me. You never rest even at your comfort, I have been able to use GOV to be free from debt with one of its features as been able to buy and sell automatically on ETH at your comfort. I just created my bank buddy",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "hpc5igc",
+                                                                            "author": "majorpickle01",
+                                                                            "score": 0,
+                                                                            "created_utc": 1640032091.0,
+                                                                            "response": "Eh, money centralizes because its power, and power begets power. No cryptocurrency can maintain decentralization forever imo",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "hpch31c",
+                                                                                    "author": "dilmah23",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1640036933.0,
+                                                                                    "response": "Bitcoin can and will",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "hpcq6zu",
+                                                                                            "author": "majorpickle01",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1640040873.0,
+                                                                                            "response": "Best of luck with that but I disagree. Why do you think so?",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hpclwoo",
+                                    "author": "Gotigers811",
+                                    "score": 1,
+                                    "created_utc": 1640039029.0,
+                                    "response": "> Even if it doesn't, higher staking base = less decentralized\n\nOnly if people are running their own nodes, and I doubt people are going to run their own nodes over small amounts.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hpcpwko",
+                                            "author": "majorpickle01",
+                                            "score": 2,
+                                            "created_utc": 1640040747.0,
+                                            "response": "I'll admit I'm completely ignorant to the difficulties of running a node!  \n\n\nHowever, when validation was set up 32 eth was <\u00a320,000, it's now over \u00a3120,000.  \n\n\nI'm sure maybe the initial value was low because it encouraged adoption, but it'd be nice if the community could code into ethereum a dynamic staking amount required based on a few factors including price",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hpauvod",
+                            "author": "Poghornleghorn2",
+                            "score": 5,
+                            "created_utc": 1640012729.0,
+                            "response": "Curious if you know. How does this differ in effectiveness compared to Cardano? I've staked 100 ADA without issue and it seems like there's a far lower barrier to entry with it. I'm guessing they just allow everyone to contribute to the stake creating an overall larger general pool size?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hpbdwl2",
+                                    "author": "frank__costello",
+                                    "score": 3,
+                                    "created_utc": 1640020830.0,
+                                    "response": "The difference is that when you stake ADA, you're not actually validating the chain, you're just delegating to someone else. This makes things much simpler, but also much more centralized.\n\nETH is full PoS, not DPoS, so the protocol doesn't have delegation built in.\n\nStaking ADA is more similar to staking ETH through RocketPool or Lido.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "hpbhsva",
+                                    "author": "filipesmedeiros",
+                                    "score": 1,
+                                    "created_utc": 1640022403.0,
+                                    "response": "Isn't that delegated pos? Ethereum is pure pos?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hpcbpki",
+                                            "author": "Poghornleghorn2",
+                                            "score": 1,
+                                            "created_utc": 1640034678.0,
+                                            "response": "To be honest I don't know. Just curious as to how the two differ.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hpb3bep",
+                            "author": "_ArtosisCurse_",
+                            "score": 2,
+                            "created_utc": 1640016432.0,
+                            "response": "100% it should not be lowered. If you dont have enough to stake on your own join a staking pool but allowing lower stakes sounds like a terrible idea.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hpasbde",
+                    "author": "studdmufin",
+                    "score": 6,
+                    "created_utc": 1640011533.0,
+                    "response": "I don't think so. If you want to stake less than 32 you can check out rocket pool. You can run a node with 16 eth. If you don't have 16 eth or don't want to run a node you can exchange your ETH for RETH. RETH appreciates in value against eth with the rewards earned from node operators and also is a liquid asset you hold in your wallet or are free to do what you will with.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpbgjeu",
+                    "author": "sammyhats",
+                    "score": 3,
+                    "created_utc": 1640021897.0,
+                    "response": "Rocket pool.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpbatpk",
+                    "author": "skydiveguy",
+                    "score": 6,
+                    "created_utc": 1640019562.0,
+                    "response": "32 ETH is my goal over the next few years exactly so I can stake my own.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpbi00x",
+                    "author": "settlersofcattown",
+                    "score": 2,
+                    "created_utc": 1640022485.0,
+                    "response": "How come you don\u2019t want to stake in a pool? outside possibly wanting to run a node by yourself from a hobbyist perspective, I don\u2019t see much difference.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpc73b7",
+                    "author": "Fair-Cod-2874",
+                    "score": 2,
+                    "created_utc": 1640032756.0,
+                    "response": "Heck I wish I had 3.2 let alone 32.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpcr0rr",
+                    "author": "fawnside",
+                    "score": 2,
+                    "created_utc": 1640041227.0,
+                    "response": "32ETH = 32ETH",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpcslpp",
+                    "author": "ThucydidesButthurt",
+                    "score": 2,
+                    "created_utc": 1640041921.0,
+                    "response": "Rocketpool is your answer my dude. Still decentralized ETH staking, for those with less than 32 ETH and for those that don\u2019t want to put in some massive centralized pools like Coinbase etc",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpb441z",
+                    "author": "SybrBlue",
+                    "score": 2,
+                    "created_utc": 1640016769.0,
+                    "response": "I believe that it is important to distinguish staking and running a validator node. My understanding is that in order to run a validator node you must have at least 32 eth \u201cstaked\u201d.  But in the future those nodes will be able to accept eth from others using smart contracts and distribute the rewards accordingly.  \n\nI think of Atom or Tezos as the model eth will likely follow, but I could be way off.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpb8xl9",
+                    "author": "akarub",
+                    "score": 3,
+                    "created_utc": 1640018788.0,
+                    "response": "After the number 32 was determined, there was a time when ETH price went to around $100. So that would be only $3200.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpapa1e",
+                    "author": "adequate_redditor",
+                    "score": 1,
+                    "created_utc": 1640010074.0,
+                    "response": "In the meantime, many sites like [crypto.com](https://crypto.com) allow you to stake directly on their platform, with no minimum. That's more risky as it involves leaving money on an exchange as opposed to in a wallet you control.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hpb8jg2",
+                            "author": "akarub",
+                            "score": 11,
+                            "created_utc": 1640018627.0,
+                            "response": "Don't think that's staking. That's simply lending ETH and receive interest in return. BlockFi, Celsius and Nexo for example, offer the same lending and borrow service.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hpbe3q4",
+                            "author": "frank__costello",
+                            "score": 9,
+                            "created_utc": 1640020910.0,
+                            "response": "Nope, that's not staking, that's lending. Same thing that a bank does.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hpatpat",
+                    "author": "eth-slum-lord",
+                    "score": 1,
+                    "created_utc": 1640012181.0,
+                    "response": "One day when i have the badge of honour of owning multiply staking nodes, i will be ruler of my favila",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpbhyk8",
+                    "author": "CoachSharkey",
+                    "score": 1,
+                    "created_utc": 1640022468.0,
+                    "response": "Stakewise is a solution you're looking for,  could do research at stakewise.io .. they do fractionalized independent eth staking if you couldn't afford full node",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpcrczq",
+                    "author": "EmperorTime187",
+                    "score": 1,
+                    "created_utc": 1640041374.0,
+                    "response": "No.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpd2pf6",
+                    "author": "qqAzo",
+                    "score": 1,
+                    "created_utc": 1640046499.0,
+                    "response": "Isn\u2019t Staking pools a thing?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpdz5in",
+                    "author": "RKfan",
+                    "score": 1,
+                    "created_utc": 1640061753.0,
+                    "response": "A couple years ago I had this same question. And guess who responded to me? Vitalik himself! I don\u2019t know if this still holds true today, but he basically said (at the time) that 32 ETH would be needed for you to run your own validator. He didn\u2019t  say that 32 was the set amount and could never change, but likely that it wouldn\u2019t change for the foreseeable future unless they had some reason to do otherwise that made sense to do so.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpeaqbm",
+                    "author": "grasponcrypto",
+                    "score": 1,
+                    "created_utc": 1640068884.0,
+                    "response": "I doubt it. However, in a way it already has. with rocketpool you can run a node with 17.6 eth, or you can stake any amount on another operators node.  This will likely be the rationale for not lowering it since staking pools will likely become more popular just as mining pools did.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpefmdy",
+                    "author": "Lordbogo",
+                    "score": 1,
+                    "created_utc": 1640072539.0,
+                    "response": "I\u2019m curious what the average yearly return is for someone staking 32 ETH. Is it very profitable?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpen1js",
+                    "author": "xxx-symbol",
+                    "score": 1,
+                    "created_utc": 1640078632.0,
+                    "response": "This is technology, things change on a yearly basis.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpg8ej0",
+                    "author": "Mordan",
+                    "score": 1,
+                    "created_utc": 1640109455.0,
+                    "response": "ask the stakers.. they will decide the new rules..",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpi40tz",
+                    "author": "-johoe",
+                    "score": 1,
+                    "created_utc": 1640137833.0,
+                    "response": "Probably not.  Remember this is the amount you need for solo staking.  If you have less, then it makes more sense to join a staking pool.  This will also make payouts more regular.\n\nEven with 32 ETH, if a third of the ether is staked, there will be more than a million validators.  That translates to a block every five months per validator. Also more validators means more signatures that need to be checked to follow the beacon chain.\n\nFinally, consider the costs of running a node (you need a full node after the merge).  If you have something like 1 ETH, it will currently make 0.05 ETH per year or 16 USD per month.  That will hardly pay for the server or running cost like better internet connection and electricity.  Heck, you may even need several months, just to recover the transaction fee you paid for staking.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpaqtm6",
+                    "author": "fourkeyingredients",
+                    "score": -3,
+                    "created_utc": 1640010826.0,
+                    "response": "No",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpasl53",
+                    "author": "Life_Newspaper_6184",
+                    "score": -6,
+                    "created_utc": 1640011663.0,
+                    "response": "The APR difference between validator nodes staking and pool staking is infinitesimal.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hpatdvn",
+                            "author": "MrQot",
+                            "score": 7,
+                            "created_utc": 1640012034.0,
+                            "response": "i wouldn't exactly call a 10-25% difference infinitesimal lol",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hpatq96",
+                                    "author": "Life_Newspaper_6184",
+                                    "score": 1,
+                                    "created_utc": 1640012194.0,
+                                    "response": "Last time I checked it was 6% for validator node staking and 5.7% for pool staking? Correct me if I am wrong!\n\nJust checked it right now in this site and its 5.2% for a validator node and 4.6% for pool staking.\n\nhttps://www.stakingrewards.com/earn/ethereum-2-0/",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hpev4ib",
+                                            "author": "Njaa",
+                                            "score": 1,
+                                            "created_utc": 1640085428.0,
+                                            "response": "So you have 4.6%, but could have had 0.6% more. This is a 13% difference in earning **before compounding.**",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hpav96l",
+                    "author": "zagesquire",
+                    "score": -4,
+                    "created_utc": 1640012900.0,
+                    "response": "You can convert it to ETHEREUM 2 on Coinbase to stake but you won\u2019t be able to sell or convert it to anything else.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpbvjo6",
+                    "author": "Passi-RVN",
+                    "score": 0,
+                    "created_utc": 1640027961.0,
+                    "response": "im staking my 0.35 eth on coinbase",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uscad5",
+            "title": "Ethereum: the investment opportunity of a lifetime?",
+            "url": "https://www.reddit.com/r/ethereum/comments/uscad5/ethereum_the_investment_opportunity_of_a_lifetime/",
+            "author": "TheAlbeOne",
+            "created_utc": 1652878621.0,
+            "score": 0,
+            "num_comments": 25,
+            "subreddit": "ethereum",
+            "selftext": "If you're looking for an investment opportunity that has the potential to change the world, Ethereum is it. This platform is the backbone of the new Internet of Things, and has the potential to revolutionize the way we interact with the digital world. From smart contracts to decentralized applications, Ethereum is going to change the way we do business, and there's no better time to get involved than now.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i92i8b7",
+                    "author": "bandoonparade",
+                    "score": 41,
+                    "created_utc": 1652879404.0,
+                    "response": "I'm pretty all in on ETH but this post reads more like an advertisement for a dev position",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92nc62",
+                    "author": "step21",
+                    "score": 15,
+                    "created_utc": 1652881837.0,
+                    "response": "What kind of shitpost is this?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i949yns",
+                            "author": "KlopKlop10293",
+                            "score": 1,
+                            "created_utc": 1652905926.0,
+                            "response": "Just normal shitposts due the dip that keep dipping",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92j7gd",
+                    "author": "GSPandas",
+                    "score": 17,
+                    "created_utc": 1652879883.0,
+                    "response": "This is some god-tier echo chamber",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92mmha",
+                            "author": "boomerang_act",
+                            "score": 9,
+                            "created_utc": 1652881509.0,
+                            "response": "It\u2019s like a fucking r/Bitcoin post. Only here we won\u2019t get banned for shitting on it.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92lfy1",
+                    "author": "Fv85",
+                    "score": 6,
+                    "created_utc": 1652880950.0,
+                    "response": "Another one who bought at the top\u2026",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i93hcuv",
+                    "author": "Dry-Hurry-7598",
+                    "score": 2,
+                    "created_utc": 1652894312.0,
+                    "response": "Yh can\u2019t wait to get paid with my algo stablecoin and exit my office with now a 10th of my wage, because it depegged, but that\u2019s ok im too tired to get mad, so I pay for my bus ticket for $2 + $14k gas fees, I can\u2019t afford it because my moon stable coin depegged so I know what, I\u2019ll take a defi loan to pay for my bus pass and gas fees, but suddenly the market crashes so now I\u2019ve lost my childrens college funds in collateral. What a perfect life \ud83d\ude0a\n.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92phwq",
+                    "author": "whyNadorp",
+                    "score": 2,
+                    "created_utc": 1652882817.0,
+                    "response": "op, go buy some luna, it is the backbone of the Internet of Ponzi and has the potential to revolutionise the way we interact with morons. there\u2019s no better time to get involved than now!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92hal5",
+                    "author": "phdbroscience350",
+                    "score": 0,
+                    "created_utc": 1652878937.0,
+                    "response": "fees say Hi, and fun fact ETH2.0 whenever it ships won't fix this. i'ill take my downvotes.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92j7l9",
+                            "author": "studdmufin",
+                            "score": 6,
+                            "created_utc": 1652879884.0,
+                            "response": "why downvote when you could just use L2?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9338jb",
+                                    "author": "flydoji",
+                                    "score": 1,
+                                    "created_utc": 1652888609.0,
+                                    "response": "I was just discussing this with a guy on Twitter and he told me if a chain needs L2 it is not worthed. What do I answer? lol",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i937277",
+                                            "author": "studdmufin",
+                                            "score": 2,
+                                            "created_utc": 1652890174.0,
+                                            "response": "I mean a guy on twitter might not be open to a discussion about it, but other chains are cheap because the demand for the block space is low. Once everyone migrates to the chain and demand goes up so do fees. Then what? spin up a new l1?",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i92js8h",
+                                    "author": "Aerocryptic",
+                                    "score": 0,
+                                    "created_utc": 1652880157.0,
+                                    "response": "Will it really be the case? I've read that different rollup technolgies could suffer from incompatibilities.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i92mdlv",
+                                            "author": "Mathje",
+                                            "score": 3,
+                                            "created_utc": 1652881393.0,
+                                            "response": "True, but L2's are much more compatible than all the different L1's will ever be.\n\nIt's even possible to share liquidity between zk L2's.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i92ku0k",
+                                            "author": "studdmufin",
+                                            "score": 2,
+                                            "created_utc": 1652880658.0,
+                                            "response": "https://l2fees.info/\n\nThere are pros and cons to different L2s generally, but they are the future of scalability",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i92mcia",
+                                                    "author": "Aerocryptic",
+                                                    "score": 0,
+                                                    "created_utc": 1652881379.0,
+                                                    "response": "I was not talking about fees but about data compatibility between L2s.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i92nbnc",
+                                                            "author": "NabyK8ta",
+                                                            "score": 3,
+                                                            "created_utc": 1652881831.0,
+                                                            "response": "There are now full EVMs on optimistic roll ups and a Zk EVM is live on a testnet right now. \n\nOnce you have a roll up EVM porting code to it is literally a 5 minute job.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i92xr4r",
+                                            "author": "PinkPuppyBall",
+                                            "score": 1,
+                                            "created_utc": 1652886358.0,
+                                            "response": "L1's are more incompatible with each-other than L2's are with each-other. One rollup can scale better than a centralized L1. The \"composability issue\" that people like to flaunt is at best a misunderstanding, but more often intellectual dishonesty.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i92kvjp",
+                    "author": "slotia92",
+                    "score": 0,
+                    "created_utc": 1652880679.0,
+                    "response": "Nice try, Vitalik.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92q97d",
+                    "author": "Diamondhandsdystopia",
+                    "score": 1,
+                    "created_utc": 1652883159.0,
+                    "response": "never heard of it",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i93izl7",
+                    "author": "Deep4Think",
+                    "score": 1,
+                    "created_utc": 1652894968.0,
+                    "response": "Which lifetime exactly?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i93k45s",
+                    "author": "ryana8",
+                    "score": 1,
+                    "created_utc": 1652895426.0,
+                    "response": "found the bot",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i94oage",
+                    "author": "FanNo62",
+                    "score": 1,
+                    "created_utc": 1652911972.0,
+                    "response": "I think so   \nETH is the good investment opportunity of a lifetime  \n\n\n\u201cEthereum has over 90% of the NFT market,\u201d said Arslanian. \u201cThis is going to be a very important year for Ethereum, a kind of a make-or-break year.\u201d  \n\n\nAnd everyone knows that NFT arear rapidly developing  \n\n\nI also bought more ETH for two reasons:  \n1. I expect its growth in value  \n2. I'm going to buy the best #NFT ever from AngelBlock collection\n\n  \nWith my ETH I'm ready for AngelsBlock's Mint Day where I'll be able to get unique, random #NFT",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92h9qa",
+                    "author": "iAabyss",
+                    "score": -1,
+                    "created_utc": 1652878924.0,
+                    "response": "Found the ether dev",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92pizz",
+                    "author": "Sorry_Attitude_",
+                    "score": 0,
+                    "created_utc": 1652882830.0,
+                    "response": "wahahah, i somehow doubt this\n\nIt was the opportunity a while ago now it is a platform to build on\n\nI think in this case, stuff like Angelblock where companies go to seek funding from people is much better for \"a lifetime opportunity\" than Ethereum itself, while it will most likely run as again a lot, startups can give much better returns",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

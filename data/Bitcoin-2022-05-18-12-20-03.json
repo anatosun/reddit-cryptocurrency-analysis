@@ -1,0 +1,3383 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "usb8ue",
+            "title": "Question about confirmations.",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/usb8ue/question_about_confirmations/",
+            "author": "officialpvp",
+            "created_utc": 1652875286.0,
+            "score": 3,
+            "num_comments": 11,
+            "subreddit": "Bitcoin",
+            "selftext": "Hi, I own a business and I'm not very crypto savvy. We are about to add BTCPay as an option. I'm digging for information and can't really find anything specifically about our situation.\n\nEssentially, we push what the client pays for immediately. Low time is important. We're already comfortable with the idea of accepting the transaction as true on 1 confirmation, but what is the actual risk of accepting the transaction as true the moment the invoice is fulfilled and the transaction is created?\n\nIs there some way that bad actors could abuse this system if we view the transaction as legitimate as soon as the invoice is accepted and the transaction is created? Basically, can someone really create a fake transaction, knowing it will obviously not be confirmed? If so, is there also some way it could be abused if we required 1 confirmation?\n\nThanks!",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i92ce66",
+                    "author": "ipcoffeepot",
+                    "score": 3,
+                    "created_utc": 1652876312.0,
+                    "response": "There\u2019s an option called Replace By Fee or RBF that most people have turned on in their bitcoin wallets when they send a payment. RBF means \u201ci might push another transaction spending these coins, but with a higher fee before this transaction gets confirmed\u201d. If a transaction has RBF turned on, its easy(ish) to replace before it gets confirmed (once it gets confirmed, it can\u2019t easily be replaced). \n\nDepending on the nature of your business, a reasonable policy might be \u201cwe require one confirmation for transactions with RBF enabled, zero confirmations for transactions without RBF. We encourage you to turn off RBF for faster checkout\u201d. \n\nAnother thing that might make sense (depending on your business) is turning on Lightning Payments in BTCPayServer. There is a bit more to manage compared to normal onchain payments (liquidity management is now a thing you need to deal with), but you\u2019ll get fast, cheap payments without confirmation times.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92emiv",
+                    "author": "Squigglywiggler",
+                    "score": 1,
+                    "created_utc": 1652877545.0,
+                    "response": "Are you basically asking if once a transaction is in the mempool, can it be reversed? I thought I read before that it can\u2019t. But I could be totally wrong. Would love to hear more about this.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92iz41",
+                            "author": "Previous-Pea6642",
+                            "score": 2,
+                            "created_utc": 1652879772.0,
+                            "response": "You don't actually need to dig deep into the mechanisms to understand why a mempool transaction *is* in fact reversible. If it *weren't* reversible, we wouldn't have a need for mining, or even a blockchain at all.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92jhwz",
+                                    "author": "Squigglywiggler",
+                                    "score": 1,
+                                    "created_utc": 1652880021.0,
+                                    "response": "Makes sense, thank you!",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i92jw8w",
+                                    "author": "Squigglywiggler",
+                                    "score": 1,
+                                    "created_utc": 1652880212.0,
+                                    "response": "Just to be clear. Once I send a UTXO to the mempool I can cancel that send?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i92nu2n",
+                                            "author": "Previous-Pea6642",
+                                            "score": 1,
+                                            "created_utc": 1652882062.0,
+                                            "response": "The only way to \"cancel\" it is by sending another transaction that spends the *same exact coins* as the one you initially sent, and using a higher fee. Then miners will (hopefully) include the higher fee transaction in the block instead. How to do this depends on which wallet you use, so I suggest you look up [replace-by-fee](https://duckduckgo.com/?t=ffab&q=replace-by-fee) and also \"\\[your wallet here\\] replace-by-fee\" to see if your wallet supports it.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i92qllg",
+                                                    "author": "Squigglywiggler",
+                                                    "score": 1,
+                                                    "created_utc": 1652883315.0,
+                                                    "response": "Ahh that makes sense. So is the original is canceled by the node? Or it is rejected by the network?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i93bxkz",
+                                                            "author": "Narmotur",
+                                                            "score": 1,
+                                                            "created_utc": 1652892143.0,
+                                                            "response": "Whichever transaction is included in a block invalidates the other one, as the UTXO has been spent. Because it is invalid it will likely be shuffled out of the mempool while verifying the new block.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i92itv2",
+                    "author": "Previous-Pea6642",
+                    "score": 1,
+                    "created_utc": 1652879701.0,
+                    "response": "Yes, it can be exploited:\n\n1. Customer creates transaction that pays you\n2. Customer creates transaction that uses the *same coins* to pay himself, with a higher fee\n3. Customer publishes first transaction and waits for you to provide good/service\n4. Customer then publishes the *second* transaction, which conflicts with the first one\n5. Only one of the transactions can make it into a block (due to them spending the same coins), and the higher fee transaction is more likely to be chosen by miners.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92nl18",
+                    "author": "MMinjin",
+                    "score": 1,
+                    "created_utc": 1652881949.0,
+                    "response": "What kind of business are we talking about? Do you know your customers or have their personal information? If so, then the answer is yes it is possible as some other commenters described but risk would be very low.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92spk4",
+                    "author": "coinarmy",
+                    "score": 1,
+                    "created_utc": 1652884238.0,
+                    "response": "Instead asking your clients to pay in Bitcoin isn't in your advantage for them to pay FIAT and you to return 2-5% of the sale cryptoback in Bitcoin?",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "usbfwi",
+            "title": "Was going through old e-mails and found one of my first BTC purchases. HODL!",
+            "url": "https://i.redd.it/o3717wq678091.png",
+            "author": "Cryptorich13",
+            "created_utc": 1652875914.0,
+            "score": 1446,
+            "num_comments": 397,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i92fdhs",
+                    "author": "dj_destroyer",
+                    "score": 228,
+                    "created_utc": 1652877947.0,
+                    "response": "I bought around the exact same time but I could only afford $500. My name also checks out as I have destroyed any chance of becoming crypto rich by trading alts. Now I stick to Bitcoin and it's a lot less stressful.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92gdub",
+                            "author": "irResist",
+                            "score": 144,
+                            "created_utc": 1652878472.0,
+                            "response": "daytrading alts destroyed my life",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92q59c",
+                                    "author": "DavLithium",
+                                    "score": 24,
+                                    "created_utc": 1652883109.0,
+                                    "response": "Is it daytrading if u buy alts today set a sell order and it sells during the night or the next day? Or is it reserved strictly for those that do multiple trades during the day?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i92qq8i",
+                                            "author": "Meyaz64",
+                                            "score": 83,
+                                            "created_utc": 1652883374.0,
+                                            "response": "It\u2019s where you buy an alt at its ath and then sell for a 30% loss four hours later as it\u2019s crashing",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i92wksm",
+                                                    "author": "JavariousProbincrux",
+                                                    "score": 61,
+                                                    "created_utc": 1652885871.0,
+                                                    "response": "\u201cDay\u201d is a relative term. On Earth, a day is 24 hours. On Jupiter, a day is about 10 hours. In crypto, a day is the amount of time between you buying a coin and that coin crashing.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i93n29z",
+                                                            "author": "sir_martindz",
+                                                            "score": 3,
+                                                            "created_utc": 1652896599.0,
+                                                            "response": "\ud83e\udd23\ud83d\udc4d",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        },
+                                                        {
+                                                            "id": "i96g42l",
+                                                            "author": "Martin48705",
+                                                            "score": 2,
+                                                            "created_utc": 1652948064.0,
+                                                            "response": "I love you.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        },
+                                                        {
+                                                            "id": "i94m626",
+                                                            "author": "InterPool_sbn",
+                                                            "score": 3,
+                                                            "created_utc": 1652911060.0,
+                                                            "response": "Wait wtf, why are the days so short on Jupiter?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i94p1qq",
+                                                                    "author": "JavariousProbincrux",
+                                                                    "score": 8,
+                                                                    "created_utc": 1652912308.0,
+                                                                    "response": "It rotates fast AF",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i94powp",
+                                                                            "author": "InterPool_sbn",
+                                                                            "score": 5,
+                                                                            "created_utc": 1652912590.0,
+                                                                            "response": "What about Uranus?",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i94vhlt",
+                                                                                    "author": "JavariousProbincrux",
+                                                                                    "score": 15,
+                                                                                    "created_utc": 1652915241.0,
+                                                                                    "response": "A day in Uranus is about $100",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i9562q9",
+                                                                                            "author": "InterPool_sbn",
+                                                                                            "score": 3,
+                                                                                            "created_utc": 1652920243.0,
+                                                                                            "response": "Time spent in Myanus is denominated exclusively in sats\n\n\\#BitcoinOnly",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "i991u6g",
+                                                                                            "author": "lenkaprius",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1652995297.0,
+                                                                                            "response": "Feels more like my monthly DCA plan for the bitcoin.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "id": "i96eu1q",
+                                                                                    "author": "tone_53",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1652946899.0,
+                                                                                    "response": "So now we are living with the earth, time to do some planet trading.",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "i97fl8n",
+                                                                            "author": "porkislav2",
+                                                                            "score": 1,
+                                                                            "created_utc": 1652970664.0,
+                                                                            "response": "Can someone please rotate the bitcoin fast to the 100k mark.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "i96l92o",
+                                                                    "author": "dima43rus",
+                                                                    "score": 2,
+                                                                    "created_utc": 1652952771.0,
+                                                                    "response": "This is more like a science sub now rater than the btc.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "i94gp5l",
+                                                            "author": "BitcoinFan1239",
+                                                            "score": 1,
+                                                            "created_utc": 1652908723.0,
+                                                            "response": "hahhahaha this is exactly why i stopped that crap real quick",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i96m1xi",
+                                                                    "author": "mpreitauer",
+                                                                    "score": 1,
+                                                                    "created_utc": 1652953475.0,
+                                                                    "response": "The sooner you get that it will be better you will cut your losses.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "i98ml1c",
+                                                            "author": "btceed",
+                                                            "score": 1,
+                                                            "created_utc": 1652988162.0,
+                                                            "response": "If this the things, then i was doing the day trading at the first on earth, and now i am done with that,\n\nNow i am doing the day trading on the Jupiter something called HODL on the earth.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "i942qqf",
+                                                    "author": "Alea_Iacta_Est21",
+                                                    "score": 2,
+                                                    "created_utc": 1652902982.0,
+                                                    "response": "\ud83d\ude02\ud83d\ude02",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "i96ufhf",
+                                                    "author": "Dosdi222",
+                                                    "score": 2,
+                                                    "created_utc": 1652959874.0,
+                                                    "response": "You never get the sense of relief while doing investment in the alts.\n\nWith bitcoin i am sure i will come out in the profit if i see myself from here to the 3-4 years.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i92seq4",
+                                            "author": "BottleNcanClapUrHand",
+                                            "score": 7,
+                                            "created_utc": 1652884109.0,
+                                            "response": "Day trading is buying and selling in the same day. Swing trading is buying and selling over a couple days/weeks.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i938103",
+                                                    "author": "danger89",
+                                                    "score": 2,
+                                                    "created_utc": 1652890572.0,
+                                                    "response": "I do consider it day trading if you are constantly selling and/or buying across several days. Buying and selling only 1 or more weeks or months I consider swing trading.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i976683",
+                                                            "author": "lining130965",
+                                                            "score": 1,
+                                                            "created_utc": 1652966406.0,
+                                                            "response": "For me is also, it will take some days some times for selling.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "i97kvz3",
+                                                    "author": "atlpatl",
+                                                    "score": 2,
+                                                    "created_utc": 1652972891.0,
+                                                    "response": "OH, so i was doing the day and swing trading in the past days without knowing that.\n\nBut those trading was very hectic compare to the one i am doing right now.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i92svo8",
+                                            "author": "irResist",
+                                            "score": 6,
+                                            "created_utc": 1652884313.0,
+                                            "response": "24 hours in a day, baby!",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i92wn27",
+                                                    "author": "JavariousProbincrux",
+                                                    "score": 16,
+                                                    "created_utc": 1652885898.0,
+                                                    "response": "Tell me you\u2019re from Earth without telling me you\u2019re from Earth.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i96qm58",
+                                                            "author": "MARIAS76",
+                                                            "score": 3,
+                                                            "created_utc": 1652957224.0,
+                                                            "response": "HAHA, but now we are in the Jupiter as in to holding gang.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        },
+                                                        {
+                                                            "id": "i938cyd",
+                                                            "author": "danger89",
+                                                            "score": 2,
+                                                            "created_utc": 1652890707.0,
+                                                            "response": "Technically not fully correct. We need sometimes remove full days to correct for our universe.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i93gujj",
+                                                                    "author": "danger89",
+                                                                    "score": 2,
+                                                                    "created_utc": 1652894105.0,
+                                                                    "response": "We also have leap seconds.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i97kef0",
+                                                                            "author": "perekhoda",
+                                                                            "score": 1,
+                                                                            "created_utc": 1652972691.0,
+                                                                            "response": "I never take that much of a science class in a single day.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "i93lmi5",
+                                                                    "author": "Sandmybags",
+                                                                    "score": 2,
+                                                                    "created_utc": 1652896030.0,
+                                                                    "response": "Not correct for the universe; correct for our ease of use of calendars for the masses\u2026. There are more accurate calendars that exist; we just don\u2019t use them as a form of measurement in society because it would be a little more complicated",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i94c36h",
+                                                                            "author": "Dont_Say_No_to_Panda",
+                                                                            "score": 2,
+                                                                            "created_utc": 1652906789.0,
+                                                                            "response": "\u201cYou'll get used to it... or you'll have a psychotic episode.\u201d",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i97fkgu",
+                                                                                    "author": "conordurkin",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1652970654.0,
+                                                                                    "response": "I am more used to the things of the dumping market now days.",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "i98i3k4",
+                                                                            "author": "Igorkokcuk",
+                                                                            "score": 1,
+                                                                            "created_utc": 1652986343.0,
+                                                                            "response": "People used to use the things that are not that much complicated.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "i93ezfh",
+                                                                    "author": "JavariousProbincrux",
+                                                                    "score": 1,
+                                                                    "created_utc": 1652893352.0,
+                                                                    "response": "That\u2019s what leap day is all about right?",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i93gy49",
+                                                                            "author": "danger89",
+                                                                            "score": 2,
+                                                                            "created_utc": 1652894146.0,
+                                                                            "response": "True. But there is more. There are also leap seconds to fix the mess. https://en.m.wikipedia.org/wiki/Leap_second",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "i96iao3",
+                                                                    "author": "fingusio",
+                                                                    "score": 1,
+                                                                    "created_utc": 1652950051.0,
+                                                                    "response": "I need some profit to change the universe for my house now.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "i97ao0w",
+                                                    "author": "NikkoSW",
+                                                    "score": 1,
+                                                    "created_utc": 1652968502.0,
+                                                    "response": "My investment change into the minus after the 24 hours.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i96t92b",
+                                            "author": "God_Hand_9764",
+                                            "score": 1,
+                                            "created_utc": 1652959093.0,
+                                            "response": "Obviously that's nighttrading bruh.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i982kxz",
+                                            "author": "gesztenye62",
+                                            "score": 1,
+                                            "created_utc": 1652980046.0,
+                                            "response": "For me it's a day trading or may be night trading in your case.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i92r479",
+                                    "author": "Hije5",
+                                    "score": 6,
+                                    "created_utc": 1652883546.0,
+                                    "response": "Day trading alts, or looking for pump and dumps/shitcoins and buying into the fomo?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i92sq1q",
+                                            "author": "irResist",
+                                            "score": 3,
+                                            "created_utc": 1652884244.0,
+                                            "response": "yes",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i975zw5",
+                                            "author": "tiagodand",
+                                            "score": 1,
+                                            "created_utc": 1652966323.0,
+                                            "response": "It's very hard to do the trading on the daily basis.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i97v4sz",
+                                    "author": "13dca",
+                                    "score": 3,
+                                    "created_utc": 1652977068.0,
+                                    "response": "Trust me mate, first when i came here i thought making 100$ per day on the day trading is very easy as it looks from the outside,\n\nBut when i came here i find the very difficult and lost hell of money with that.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i94hd9u",
+                                    "author": "Deathstaroperatorguy",
+                                    "score": 2,
+                                    "created_utc": 1652909006.0,
+                                    "response": "This needs to be made into a shirt",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i94jotc",
+                                            "author": "Fantastic-Yak-6387",
+                                            "score": 1,
+                                            "created_utc": 1652910007.0,
+                                            "response": "You mean something like 'Shjtcoin trader here! \ud83e\udd11'",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i96d7av",
+                                                    "author": "bitbangs",
+                                                    "score": 1,
+                                                    "created_utc": 1652945447.0,
+                                                    "response": "For me other than bitcoin, everything feels like the shit coins.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i98692x",
+                                            "author": "thinairent",
+                                            "score": 1,
+                                            "created_utc": 1652981520.0,
+                                            "response": "I am doing on the bed without wearing anything now.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i931lhn",
+                                    "author": "imnotabotareyou",
+                                    "score": 1,
+                                    "created_utc": 1652887936.0,
+                                    "response": "Lol",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i93l3ac",
+                                    "author": "Baron_NL",
+                                    "score": 1,
+                                    "created_utc": 1652895819.0,
+                                    "response": "In the essence its the same as a gambling addiction. Very scary stuff indeed",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i979d2k",
+                                            "author": "jpost23",
+                                            "score": 1,
+                                            "created_utc": 1652967911.0,
+                                            "response": "People trading in the UST just like doing the gambling.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i92vdf5",
+                            "author": "Thirdlegproduction",
+                            "score": 4,
+                            "created_utc": 1652885370.0,
+                            "response": "Also bought around the same time. 5 year anniversary soon whoop whoop.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92vt3u",
+                                    "author": "trimbandit",
+                                    "score": 5,
+                                    "created_utc": 1652885551.0,
+                                    "response": "Me too although it was 5k by time I got in. My gf and I were having a hell of a time getting accounts open /verified for a couple weeks, watching the price go up the whole time.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i938plc",
+                                            "author": "R50cent",
+                                            "score": 5,
+                                            "created_utc": 1652890848.0,
+                                            "response": "I bought .154 bitcoin for a dollar fifty in college.\n\nIn hindsight I suppose I should have gotten more.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i94o4kv",
+                                                    "author": "trimbandit",
+                                                    "score": 3,
+                                                    "created_utc": 1652911901.0,
+                                                    "response": "I watched it for years with mild curiosity and did nothing. When it hit $10, I assumed it was over lol",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i97x9fe",
+                                                            "author": "li2000bin",
+                                                            "score": 1,
+                                                            "created_utc": 1652977918.0,
+                                                            "response": "So, when did you do your actual first investment in the bitcoin?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i98agmp",
+                                                                    "author": "trimbandit",
+                                                                    "score": 1,
+                                                                    "created_utc": 1652983212.0,
+                                                                    "response": "not until the run-up in 2017 @$5k!!! I thought it must be over at $10, $100, $1000. Finally, I was like fuck it.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "i95ium9",
+                                                    "author": "Life_Airline_6767",
+                                                    "score": 2,
+                                                    "created_utc": 1652926188.0,
+                                                    "response": "Should be on your private island \ud83c\udfdd with a helicopter arriving at the Golden state game now",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i973rzm",
+                                                            "author": "Cronos919",
+                                                            "score": 2,
+                                                            "created_utc": 1652965225.0,
+                                                            "response": "I just want to buy a house nothing like island or helicopter.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "i98zgfi",
+                                                    "author": "aljalena",
+                                                    "score": 1,
+                                                    "created_utc": 1652994206.0,
+                                                    "response": "So you are still holding this or sell after some time?",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i96d28k",
+                                            "author": "akshaysri00",
+                                            "score": 1,
+                                            "created_utc": 1652945322.0,
+                                            "response": "So  things was not that easy in the past, we don't have the much apps like we are having now.\n\nHow you convinced you gf to goes into the bitcoin along with you?",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i97g9k7",
+                                    "author": "rifai12",
+                                    "score": 1,
+                                    "created_utc": 1652970953.0,
+                                    "response": "I wish i had that in back that time, but i am still happy now.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i94k7ku",
+                            "author": "Own_Management_5161",
+                            "score": 3,
+                            "created_utc": 1652910225.0,
+                            "response": "wow",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i98oo1g",
+                                    "author": "capauwels",
+                                    "score": 1,
+                                    "created_utc": 1652989020.0,
+                                    "response": "I wish we all reach at this stage any time of the life.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i957hgz",
+                            "author": "NegotiationNice9291",
+                            "score": 2,
+                            "created_utc": 1652920905.0,
+                            "response": "Gambling on shitcoins is fun until you look at total numbers",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i96yof2",
+                                    "author": "xxxsysn",
+                                    "score": 2,
+                                    "created_utc": 1652962448.0,
+                                    "response": "My whole life i am living on the gambling, now shifted to the bitcoin.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i972me7",
+                                            "author": "dj_destroyer",
+                                            "score": 1,
+                                            "created_utc": 1652964626.0,
+                                            "response": "This is the way.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i971jxm",
+                            "author": "SergeyBTCE",
+                            "score": 2,
+                            "created_utc": 1652964056.0,
+                            "response": "Investing in the bitcoin is feels like choosing a safe option,yes you might get some less return compare to the alts and shit coins,\n\nBut you also get the security that you money is safe with the bitcoin.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92j8zq",
+                    "author": "mr_crackboy",
+                    "score": 43,
+                    "created_utc": 1652879903.0,
+                    "response": "50$ Fee?!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92wlrm",
+                            "author": "temp_jits",
+                            "score": 12,
+                            "created_utc": 1652885882.0,
+                            "response": "Good catch...damn",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i938iwz",
+                                    "author": "danger89",
+                                    "score": -11,
+                                    "created_utc": 1652890775.0,
+                                    "response": "Fiat is worthless anyway.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i95075b",
+                                            "author": "huewutm8",
+                                            "score": 8,
+                                            "created_utc": 1652917452.0,
+                                            "response": "I'd be happy to take any you have off your hands",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i954p3o",
+                                                    "author": "danger89",
+                                                    "score": 1,
+                                                    "created_utc": 1652919588.0,
+                                                    "response": "Yea and convert it into bitcoin xd?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i96rm68",
+                                                            "author": "rusik72",
+                                                            "score": 1,
+                                                            "created_utc": 1652957956.0,
+                                                            "response": "This is the only way to convert your worthless fiat to worthy.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i974i94",
+                                            "author": "kirillt256y",
+                                            "score": 1,
+                                            "created_utc": 1652965590.0,
+                                            "response": "With everyday fiat is becoming more and more worthless now.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i98zde7",
+                                    "author": "imaxai",
+                                    "score": 1,
+                                    "created_utc": 1652994168.0,
+                                    "response": "Where is it mention that he paid the 50$ fee from that?",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i93df4x",
+                            "author": "Ok_Situation_3304",
+                            "score": 4,
+                            "created_utc": 1652892730.0,
+                            "response": "It\u2019s the easiest way to consistently make money off of crypto.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i95jg7n",
+                                    "author": "Life_Airline_6767",
+                                    "score": 4,
+                                    "created_utc": 1652926481.0,
+                                    "response": "Nobody but whales can make a real living trading crypto. Unless you have 20k to start off with. It\u2019s a up and down life, just like professional poker players. Have money 1 day and nothing the next day. Unstable life and hours. Your Family turns to shit while you sit home like a hermit crab all month. \nBut it\u2019s a fun hobby to make a few hundred here and there \ud83e\udd19",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i98merg",
+                                            "author": "xiaoxiaokuku",
+                                            "score": 1,
+                                            "created_utc": 1652988092.0,
+                                            "response": "I start with a small amount and investing small small amount with the time,\n\nI just want when we see the next bull run i have the money in hand to do some trading.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i97czfd",
+                                    "author": "was6ster",
+                                    "score": 1,
+                                    "created_utc": 1652969533.0,
+                                    "response": "Tell me that, i am still looking something like that for a while.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i938h5g",
+                            "author": "danger89",
+                            "score": 1,
+                            "created_utc": 1652890755.0,
+                            "response": "Not a coinbase pro for sure.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i96ynse",
+                                    "author": "pbenz1",
+                                    "score": 1,
+                                    "created_utc": 1652962437.0,
+                                    "response": "What are the major difference between the normal and the pro?",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i958ou2",
+                            "author": "SamwiseGamgee87",
+                            "score": 1,
+                            "created_utc": 1652921467.0,
+                            "response": "1.5% of fee LMAO",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i96jf2y",
+                                    "author": "j64462388",
+                                    "score": 1,
+                                    "created_utc": 1652951086.0,
+                                    "response": "I think that fee is now well covered with the current bitcoin price.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i959hjh",
+                            "author": "terabytetron",
+                            "score": 1,
+                            "created_utc": 1652921846.0,
+                            "response": "Was a bit intimidating to buy btc from Gdax (now Coinbase Pro) at that time. Regular Coinbase was very user friendly in 2017, hence the high fee.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i96jnpd",
+                                    "author": "cryptoripto123",
+                                    "score": 1,
+                                    "created_utc": 1652951307.0,
+                                    "response": "It's the same interface in 2017 as it was today.\n\nSource: Someone who traded back then.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i97b4k3",
+                                    "author": "t13018873738",
+                                    "score": 1,
+                                    "created_utc": 1652968709.0,
+                                    "response": "OH, i never tried the pro version. I am using kraken now.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i96jzlg",
+                            "author": "moonsilent22",
+                            "score": 1,
+                            "created_utc": 1652951614.0,
+                            "response": "Wait, i have notice that. I look at that after your comment.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92kfdb",
+                    "author": "Ten_Horn_Sign",
+                    "score": 36,
+                    "created_utc": 1652880463.0,
+                    "response": "Why did it take them a week to deliver your Bitcoin?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i94f2tk",
+                            "author": "fashion_hunger",
+                            "score": 8,
+                            "created_utc": 1652908030.0,
+                            "response": "They need time to print bitcoin (paper bitcoin) \ud83d\ude02\ud83d\ude02",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i985hyy",
+                                    "author": "bluevioletbuy",
+                                    "score": 1,
+                                    "created_utc": 1652981216.0,
+                                    "response": "HAHA, but on the serious note, like why it will take a week?",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i92oxef",
+                            "author": "frankiefrank1e",
+                            "score": 16,
+                            "created_utc": 1652882558.0,
+                            "response": "My question exactly. Why the huge delay?!",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92q6w8",
+                                    "author": "spid3rfly",
+                                    "score": 20,
+                                    "created_utc": 1652883129.0,
+                                    "response": "It used to be like that. Not sure why... probably something with making sure funds cleared, etc etc.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i96cdkq",
+                                            "author": "dingus5355",
+                                            "score": 3,
+                                            "created_utc": 1652944736.0,
+                                            "response": "So is it because you did a big buying or with any other buying is the well?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i96tanf",
+                                                    "author": "spid3rfly",
+                                                    "score": 1,
+                                                    "created_utc": 1652959122.0,
+                                                    "response": "Any buying... at that time, I was doing 20 bucks a week. It still had this wait.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i938oiw",
+                                            "author": "danger89",
+                                            "score": 8,
+                                            "created_utc": 1652890837.0,
+                                            "response": "Sounds to me that there was not enough liquidity",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i96hgvz",
+                                                    "author": "valentin109",
+                                                    "score": 1,
+                                                    "created_utc": 1652949288.0,
+                                                    "response": "Never trade back in 2017, may be resources and liquidity wasn't enough that time.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i958hpo",
+                                            "author": "WesbroBaptstBarNGril",
+                                            "score": 2,
+                                            "created_utc": 1652921376.0,
+                                            "response": "Funds clearing plus the mandatory confirmations on the Blockchain used to take a while. I think I once had a transaction take two days to fully confirm because I was being cheap and lowered the fee I was willing to pay to a Sat",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i96dfwh",
+                                                    "author": "noxGOX_45",
+                                                    "score": 1,
+                                                    "created_utc": 1652945658.0,
+                                                    "response": "But in nowdays we usually get the bitcoin in account instantly.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i98uvf4",
+                                    "author": "alextapang",
+                                    "score": 1,
+                                    "created_utc": 1652991576.0,
+                                    "response": "What about my day trading now? If they will take that much time.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i939jjj",
+                            "author": "Technologhee",
+                            "score": 4,
+                            "created_utc": 1652891183.0,
+                            "response": "Waiting for the shitty legacy financial rails to finalize.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i96mzc8",
+                                    "author": "nazeer1957",
+                                    "score": 1,
+                                    "created_utc": 1652954286.0,
+                                    "response": "That much delay could cost soo much if you a daily trader.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i93dyyk",
+                            "author": "phranco_phoney",
+                            "score": 1,
+                            "created_utc": 1652892950.0,
+                            "response": "Back then, it felt as-though purchasing BTC was not thoroughly discouraged, and all attempts to create hardship with the process was in place.  (It just felt that way for me, anyways.)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i970reh",
+                                    "author": "reginasp20146",
+                                    "score": 1,
+                                    "created_utc": 1652963624.0,
+                                    "response": "So buying bitcoin was not that easy back in the past?",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i98p4dk",
+                            "author": "abdubas",
+                            "score": 1,
+                            "created_utc": 1652989210.0,
+                            "response": "Men people are having notching way too much things here.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i98q2tv",
+                                    "author": "Ten_Horn_Sign",
+                                    "score": 1,
+                                    "created_utc": 1652989606.0,
+                                    "response": "Are you having a stroke?",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i92llki",
+                    "author": "VPNApe",
+                    "score": 42,
+                    "created_utc": 1652881024.0,
+                    "response": "I remember gambling with dozens of Bitcoin at a time.\n\nSigh",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i938tin",
+                            "author": "danger89",
+                            "score": 4,
+                            "created_utc": 1652890891.0,
+                            "response": "Oops",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i96wy2h",
+                                    "author": "nic1058",
+                                    "score": 1,
+                                    "created_utc": 1652961432.0,
+                                    "response": "I guess most of us have been through that time here lol.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i970njd",
+                            "author": "MD14620",
+                            "score": 2,
+                            "created_utc": 1652963565.0,
+                            "response": "That reminds me of my old 2014 days man, I wish to get back to that fucking time, I want to invest and hold so bad now but back in time I used to spend as much as possible.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92c6j0",
+                    "author": "UnluckyHuckleberry52",
+                    "score": 75,
+                    "created_utc": 1652876191.0,
+                    "response": "Name checks out.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97oktm",
+                            "author": "zrqmars",
+                            "score": 1,
+                            "created_utc": 1652974420.0,
+                            "response": "Your first name also checks out my trading experience so far in crypto.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92xwvl",
+                    "author": "Mark_Logan",
+                    "score": 25,
+                    "created_utc": 1652886424.0,
+                    "response": "Hah, I just sent a screenshot to my buddy of the first time I ever sold him coins. $1000.   \n\n\n$1000 for 31 Coins.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i93e0vo",
+                            "author": "phranco_phoney",
+                            "score": 5,
+                            "created_utc": 1652892970.0,
+                            "response": ">$1000 for 31 Coins.\n\nGee whiz.  Nice.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i970plj",
+                                    "author": "malibu11731",
+                                    "score": 1,
+                                    "created_utc": 1652963597.0,
+                                    "response": "His friend must be a rich men now , if he is holding them.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i96kp8u",
+                            "author": "awilo123",
+                            "score": 1,
+                            "created_utc": 1652952270.0,
+                            "response": "1000$ for the 31 bitcoin? or you are talking about some other coins?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9757z3",
+                                    "author": "Mark_Logan",
+                                    "score": 1,
+                                    "created_utc": 1652965944.0,
+                                    "response": "1000$ for 31 Bitcoin. I don't bother with other coins. Never have.  \n\n\nAnd while some people have called me an \"old man\" and a \"crypto dinosaur\" for not getting in on the latest craze, this strategy has served me well. So, I'm okay with that. hahaha",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i939doa",
+                    "author": "BannedAcctSpeedrun",
+                    "score": 11,
+                    "created_utc": 1652891117.0,
+                    "response": "That funny because I was going through my old coinbase transactions and saw a sell of 8 btc I made that was worth about $1200. Spent it on edc weekend passes and drugs.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i986ufw",
+                            "author": "kasock",
+                            "score": 1,
+                            "created_utc": 1652981759.0,
+                            "response": "That must be very hard for you too see that transaction.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92eokj",
+                    "author": "ShibaBoner",
+                    "score": 19,
+                    "created_utc": 1652877577.0,
+                    "response": "Nice!!!!! I hope I'll be able to own a whole coin as well",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92ezy9",
+                            "author": "Amber_Sam",
+                            "score": 72,
+                            "created_utc": 1652877744.0,
+                            "response": "Username does not check out.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92f7zt",
+                                    "author": "Cryptorich13",
+                                    "score": 20,
+                                    "created_utc": 1652877864.0,
+                                    "response": "Bahahaha",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i970mwn",
+                                    "author": "LiteStig",
+                                    "score": 1,
+                                    "created_utc": 1652963556.0,
+                                    "response": "HAHAHA, even your first name somehow checks out in the trail.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9583fg",
+                            "author": "JustSomeDudeStanding",
+                            "score": 2,
+                            "created_utc": 1652921192.0,
+                            "response": "The Shibaa",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i96on2c",
+                            "author": "lehafedorenko",
+                            "score": 2,
+                            "created_utc": 1652955683.0,
+                            "response": "Same here mate, my dream is also the same in the future.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92e4v3",
+                    "author": "ElephantsAreHeavy",
+                    "score": 9,
+                    "created_utc": 1652877275.0,
+                    "response": "I hope you bought more in the meantime.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9862rp",
+                            "author": "kipismart",
+                            "score": 3,
+                            "created_utc": 1652981449.0,
+                            "response": "The one who is buying in the 2017, must be doing some buying.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92v2k0",
+                    "author": "Badj83",
+                    "score": 3,
+                    "created_utc": 1652885244.0,
+                    "response": "Aged like good wine.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96dqd9",
+                            "author": "ghostofpablo",
+                            "score": 1,
+                            "created_utc": 1652945917.0,
+                            "response": "Like fine wine too",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i96gz4j",
+                            "author": "rodmonian",
+                            "score": 1,
+                            "created_utc": 1652948846.0,
+                            "response": "The more old you get that, the more it will taste better.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i930b19",
+                    "author": "notmyrealnam3",
+                    "score": 3,
+                    "created_utc": 1652887413.0,
+                    "response": "bitcoin is the future! \n\nok I want bitcoin!\n\nyou can have it in a week",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i983r3k",
+                            "author": "vicmich700",
+                            "score": 2,
+                            "created_utc": 1652980520.0,
+                            "response": "I wsn't aware that in the past, it will take a week to deliver.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i93ehlk",
+                            "author": "phranco_phoney",
+                            "score": 1,
+                            "created_utc": 1652893156.0,
+                            "response": "they didn't make it easy back then.  i remembah",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i97a4xf",
+                                    "author": "hossein512",
+                                    "score": 1,
+                                    "created_utc": 1652968264.0,
+                                    "response": "So holding and buying was not that easy in the past.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i94cibw",
+                    "author": "GleithCZ",
+                    "score": 3,
+                    "created_utc": 1652906963.0,
+                    "response": "Can't believe you bought that bitcorn something crypto for so much money, it's basically worthless.. /s",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i98ltxk",
+                            "author": "grthryjrgwe",
+                            "score": 1,
+                            "created_utc": 1652987863.0,
+                            "response": "LOL, one of my friend bought the bitcorn while buying the BTC.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i96gcbr",
+                    "author": "bitcoinscapital2",
+                    "score": 3,
+                    "created_utc": 1652948270.0,
+                    "response": "Sometimes I think back maybe 10 or 11 years ago being a smug kid who thought virtual currency was dumb. Big mistake.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i97anpx",
+                    "author": "Costyan",
+                    "score": 3,
+                    "created_utc": 1652968498.0,
+                    "response": "Makes me feel a bit better about losing half a bitcoin when it was only worth $2.50 at the time.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i97jcih",
+                    "author": "Magwenn",
+                    "score": 3,
+                    "created_utc": 1652972249.0,
+                    "response": "My buddy was trying to convince to buy a few at $780. I kept the email. Ahhh man.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i982t7y",
+                    "author": "bidber",
+                    "score": 3,
+                    "created_utc": 1652980138.0,
+                    "response": "heh, i remember when some website was giving 10 (per person) away for free .",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92ffxp",
+                    "author": "wozzwinkl",
+                    "score": 9,
+                    "created_utc": 1652877983.0,
+                    "response": "They charged you FIFTY DOLLARS for that transaction? Damn. My last buy the fee was $2...",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92olfz",
+                            "author": "Experienced_AP",
+                            "score": 23,
+                            "created_utc": 1652882410.0,
+                            "response": "It's scaled to the amount you buy.\n\nSo if your fee was only $2.... \ud83e\udd14",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i98fl95",
+                                    "author": "Elfim999",
+                                    "score": 1,
+                                    "created_utc": 1652985319.0,
+                                    "response": "I think it was depends on the amount you spend on the buying.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i93e659",
+                            "author": "phranco_phoney",
+                            "score": 2,
+                            "created_utc": 1652893029.0,
+                            "response": ">FIFTY DOLLARS\n\n...looking back now....worth it",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i97pftc",
+                                    "author": "majh777",
+                                    "score": 1,
+                                    "created_utc": 1652974774.0,
+                                    "response": "Totally, i will pay 100$ fee if i am getting at that price.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i938s2k",
+                            "author": "danger89",
+                            "score": 2,
+                            "created_utc": 1652890876.0,
+                            "response": "If you use coinbase. Use coinbase pro at least.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i97grt8",
+                                    "author": "swannisme",
+                                    "score": 4,
+                                    "created_utc": 1652971171.0,
+                                    "response": "What are the charges to switch from normal version to pro?",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i94caw5",
+                                    "author": "Dont_Say_No_to_Panda",
+                                    "score": 2,
+                                    "created_utc": 1652906877.0,
+                                    "response": "The fees are the same now for many users (eventually all.) CB pro is on its way out.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i96h3oz",
+                                            "author": "medianic2",
+                                            "score": 1,
+                                            "created_utc": 1652948966.0,
+                                            "response": "Never used the coinbase, but does it take that much time always?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i96ixr5",
+                                                    "author": "Dont_Say_No_to_Panda",
+                                                    "score": 1,
+                                                    "created_utc": 1652950650.0,
+                                                    "response": "This is from many years ago. These days, you can deposit to coinbase via ACH transfer and buy BTC immediately (and trade.) In order to transfer out or withdraw to bank you still have to wait until the original ACH funds clear.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i92gfdl",
+                            "author": "irResist",
+                            "score": 1,
+                            "created_utc": 1652878495.0,
+                            "response": "those feeeees",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i96sh41",
+                                    "author": "kate8106",
+                                    "score": 1,
+                                    "created_utc": 1652958555.0,
+                                    "response": "I think now it's feels like worth it, but yes 50$ was too much.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i96une8",
+                                            "author": "irResist",
+                                            "score": 1,
+                                            "created_utc": 1652960019.0,
+                                            "response": "just hodl until it does not hurt any more",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i92oiko",
+                    "author": "brendanschmindon",
+                    "score": 7,
+                    "created_utc": 1652882374.0,
+                    "response": "I think I bought a quarter of btc around this time and ended up selling lol. A big reason for this, however, is because I looked at btc the same way I looked at speculative stocks at that time ( a quick way to make some extra cash). I was so freaking ignorant, man.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97jfuu",
+                            "author": "VanBurenPL",
+                            "score": 1,
+                            "created_utc": 1652972289.0,
+                            "response": "Don't need to be harsh on your self mate, still many people here are looking bitcoin like this.\n\nThey came here to make some quick cash as it seems making money easy with the bitcoin.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92jnln",
+                    "author": "jeywgosjeb",
+                    "score": 3,
+                    "created_utc": 1652880095.0,
+                    "response": "Thx for the share dickhead :P",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97ry16",
+                            "author": "Flounder916",
+                            "score": 1,
+                            "created_utc": 1652975777.0,
+                            "response": "I never received that type of email while doing the purchasing on the Binance.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i931by4",
+                    "author": "LilCdubya",
+                    "score": 4,
+                    "created_utc": 1652887825.0,
+                    "response": "I would upvote, but you're on 420 upvotes.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i93s0zx",
+                            "author": "Cryptorich13",
+                            "score": 1,
+                            "created_utc": 1652898601.0,
+                            "response": "Have my upvote",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i96dm6j",
+                                    "author": "wallalons",
+                                    "score": 1,
+                                    "created_utc": 1652945813.0,
+                                    "response": "Atleast this time around we are doing to the something good.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i97wzer",
+                            "author": "stevebtce",
+                            "score": 1,
+                            "created_utc": 1652977805.0,
+                            "response": "That post is already up voted need to move that to 469.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92qaeh",
+                    "author": "hasnotbulla",
+                    "score": 2,
+                    "created_utc": 1652883174.0,
+                    "response": "Total fee\u2026 my gosh \ud83d\ude2e\u200d\ud83d\udca8",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i94acr8",
+                            "author": "keepYourMonkey",
+                            "score": 1,
+                            "created_utc": 1652906085.0,
+                            "response": "Made it back and then some",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i96cnvp",
+                                    "author": "mat1matik",
+                                    "score": 1,
+                                    "created_utc": 1652944975.0,
+                                    "response": "Not only the gas fee, look at the time of the delivery.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i971oaw",
+                            "author": "vorksholk1",
+                            "score": 1,
+                            "created_utc": 1652964120.0,
+                            "response": "This is like my monthly DCA plan in the current date.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92qcyj",
+                    "author": "Potatodemonx",
+                    "score": 2,
+                    "created_utc": 1652883207.0,
+                    "response": "If fee was 69.69, would have been more acceptable for the humor",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i986lcp",
+                            "author": "DackJaniels02",
+                            "score": 4,
+                            "created_utc": 1652981659.0,
+                            "response": "This sub is so much obsessed with the number 69. I am also one of them LOL.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9345ig",
+                    "author": "diadlep",
+                    "score": 2,
+                    "created_utc": 1652888983.0,
+                    "response": "lol you beat my first buy by two weeks, and my first sell by 4 weeks",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96yaz1",
+                            "author": "dzexod",
+                            "score": 1,
+                            "created_utc": 1652962229.0,
+                            "response": "I still haven't done that much of a buying in my total portfolio.\n\nI am a very small investor and putting money on month to month rather than buying in a single attempt.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i97gxpb",
+                                    "author": "diadlep",
+                                    "score": 1,
+                                    "created_utc": 1652971239.0,
+                                    "response": "yah, well, i can tell you almost all my single attempts failed, so u probably got that right",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i938k6u",
+                    "author": "cawexi",
+                    "score": 2,
+                    "created_utc": 1652890790.0,
+                    "response": "Very well done sir, congratulations.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i970n80",
+                            "author": "alekkiaro",
+                            "score": 2,
+                            "created_utc": 1652963561.0,
+                            "response": "I think this is the dream of the every single one of us here.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i980m7f",
+                                    "author": "cawexi",
+                                    "score": 1,
+                                    "created_utc": 1652979259.0,
+                                    "response": "Fax",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i93m71s",
+                    "author": "FDisk80",
+                    "score": 2,
+                    "created_utc": 1652896255.0,
+                    "response": "Type \"Bitcoin\" in GMAIL and look at the first date you got interested in Bitcoin. Shed a tear.\n\n`Nov 26, 2013`\n\n[`mining.bitcoin.cz`](https://mining.bitcoin.cz)\n\n`New account confirmation`",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i98uqbk",
+                            "author": "fatrix03",
+                            "score": 4,
+                            "created_utc": 1652991517.0,
+                            "response": "I haven't get any email so far from the binance, as per my buying.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i93vun3",
+                    "author": "mortymania",
+                    "score": 2,
+                    "created_utc": 1652900171.0,
+                    "response": "I'm aiming to get it for that price soon, hopefully in a few weeks \ud83e\udd23",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i971urq",
+                            "author": "CoziestPine",
+                            "score": 4,
+                            "created_utc": 1652964219.0,
+                            "response": "I am even ready to get that on the 10k, forget the 3k mark.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i940617",
+                    "author": "itesasecret",
+                    "score": 2,
+                    "created_utc": 1652901936.0,
+                    "response": "I'm sorry for your losses in this tragic bear market- or... wait... why the public media not talking about you 3k guys?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i970mys",
+                            "author": "huhehaote56",
+                            "score": 4,
+                            "created_utc": 1652963557.0,
+                            "response": "How he is in loss men, he is still around 10X profit from his buying.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i97298j",
+                                    "author": "itesasecret",
+                                    "score": 1,
+                                    "created_utc": 1652964434.0,
+                                    "response": "I was being sarcastic",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i940skx",
+                            "author": "Cryptorich13",
+                            "score": 1,
+                            "created_utc": 1652902191.0,
+                            "response": "Very good point, even with this recent dip, I am still up 2000% overall. (I did trade a little) Not bad for 4.5 years work.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i97kyxh",
+                                    "author": "ArtiusVens",
+                                    "score": 3,
+                                    "created_utc": 1652972925.0,
+                                    "response": "You are up 2000% in the bear market, think about the bull market what will happen.\n\nThe more you hold the more that number goes on, so just keep it simple that way.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i971a65",
+                    "author": "579555rty",
+                    "score": 2,
+                    "created_utc": 1652963913.0,
+                    "response": "I bought my first BTC in person from someone who had mined them.\n\n Sadly, that was when they were like 2k or 3k a pop and I only bought a little.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92lufs",
+                    "author": "tinyswan450",
+                    "score": 4,
+                    "created_utc": 1652881142.0,
+                    "response": "It\u2019s the Fee for the purchase that kills me \ud83d\udc80\n\nBut hey we both started around the same price \ud83d\udcaa\ud83c\udffd",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i99179b",
+                            "author": "shantae4u",
+                            "score": 1,
+                            "created_utc": 1652995010.0,
+                            "response": "Atleast the 69 after the 49 giving me some sense of relief.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92gyx5",
+                    "author": "Noudini",
+                    "score": 3,
+                    "created_utc": 1652878775.0,
+                    "response": "Hope you eventually got off of Coinbase with it",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92qv68",
+                            "author": "0utbox",
+                            "score": 0,
+                            "created_utc": 1652883435.0,
+                            "response": "What do you recommend within the US?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92r45v",
+                                    "author": "sayknee",
+                                    "score": 1,
+                                    "created_utc": 1652883546.0,
+                                    "response": "A cold wallet",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i93e908",
+                                            "author": "phranco_phoney",
+                                            "score": 1,
+                                            "created_utc": 1652893060.0,
+                                            "response": "The colder, the better.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i94osfq",
+                                            "author": "0utbox",
+                                            "score": 0,
+                                            "created_utc": 1652912192.0,
+                                            "response": "Asking for an exchange not a wallet. Already have one",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i92hkqk",
+                    "author": "GetRichOrDieTryinnn",
+                    "score": 3,
+                    "created_utc": 1652879077.0,
+                    "response": "Wow. Now a days I hear credit unions threaten to close your account if you deal in crypto.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92vczr",
+                            "author": "AngryAudacity",
+                            "score": 1,
+                            "created_utc": 1652885365.0,
+                            "response": "My credit union is the only CC I have that even allows buys on exchanges. All major banks decline the transaction.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92vyqu",
+                                    "author": "GetRichOrDieTryinnn",
+                                    "score": 4,
+                                    "created_utc": 1652885617.0,
+                                    "response": "That\u2019s crazy! I\u2019ve heard stories of credit unions threatening to seize all assets.\nCongrats bro!\nIt\u2019s sad the way the banking i dust ty is terrified of crypto and threaten people that use it.\nKinda goes to show they have stuff to hide.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i92wpv2",
+                                            "author": "AngryAudacity",
+                                            "score": 3,
+                                            "created_utc": 1652885930.0,
+                                            "response": "Crypto inherently threatens their monopoly of the financial system.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i93eu69",
+                                                    "author": "phranco_phoney",
+                                                    "score": 3,
+                                                    "created_utc": 1652893294.0,
+                                                    "response": "Understatement of the year.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i97sfuw",
+                                                            "author": "waxminer",
+                                                            "score": 1,
+                                                            "created_utc": 1652975978.0,
+                                                            "response": "Even some government are afraid of that thing about the btc.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i93eqez",
+                                    "author": "phranco_phoney",
+                                    "score": 2,
+                                    "created_utc": 1652893253.0,
+                                    "response": ">My credit union is the only CC I have that even allows buys on exchanges.\n\nSame for me in Northern Maine.  Thank you, Old-Timey credit union.  Good folks.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i93tq5d",
+                            "author": "Charlie-boy1",
+                            "score": 1,
+                            "created_utc": 1652899302.0,
+                            "response": "I have a federal credit union. They do block me from time to time due to security concerns. But one quick phone call telling them it was me. They let it through. \n\nOnce you have established a pattern for depositing money at an specific exchange or third party fiat-to-crypto entity, they don\u2019t block those.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i98qwet",
+                                    "author": "jmahonin",
+                                    "score": 1,
+                                    "created_utc": 1652989940.0,
+                                    "response": "I never get through their customer support but will try again",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i92zy3t",
+                    "author": "ThatDirtyTrucker556",
+                    "score": 4,
+                    "created_utc": 1652887267.0,
+                    "response": "Judging by NFCU, I\u2019m guessing than what happened next is in 2018 you married the stripper off base and she dumped all of your accounts when she left you?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97n0ha",
+                            "author": "_Cepera_",
+                            "score": 1,
+                            "created_utc": 1652973778.0,
+                            "response": "This is why you stay away from the women and stay happy.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i93cj6k",
+                    "author": "D1sCoL3moNaD3",
+                    "score": 2,
+                    "created_utc": 1652892379.0,
+                    "response": "Heyyyyy, shot out to Navy Fed who NEVER blocked crypto purchases.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96wznd",
+                            "author": "fromthebark777",
+                            "score": 2,
+                            "created_utc": 1652961460.0,
+                            "response": "They are the actual heros, and we need more like them.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i97u1kw",
+                                    "author": "D1sCoL3moNaD3",
+                                    "score": 1,
+                                    "created_utc": 1652976625.0,
+                                    "response": "Seriously, I was with my bank for years but also impacted by the 2008 crash. My own bank would not help me rebuild my credit and on top of that started charging fees for checking. Went to Navy and got a free checking account, car loan, and credit card in less than an hour. They literally changed my life from that day on.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i93f8s7",
+                            "author": "Cryptorich13",
+                            "score": 3,
+                            "created_utc": 1652893456.0,
+                            "response": "Still going strong. Thats why im still with them.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i94lxzb",
+                                    "author": "txmade29",
+                                    "score": 1,
+                                    "created_utc": 1652910967.0,
+                                    "response": "Navy fed here too since 98. Semper fi",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i97l45w",
+                                    "author": "Alextag83",
+                                    "score": 1,
+                                    "created_utc": 1652972988.0,
+                                    "response": "Hard to get someone like them, but atleast some one is doing good.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i92c6om",
+                    "author": "CoinControversy",
+                    "score": 5,
+                    "created_utc": 1652876194.0,
+                    "response": "So you decide to screenshot it with all the details and post it on Reddit?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92cd0z",
+                            "author": "Cryptorich13",
+                            "score": 52,
+                            "created_utc": 1652876294.0,
+                            "response": "For upvotes, of course.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92cm6h",
+                                    "author": "wakaflocks145",
+                                    "score": 2,
+                                    "created_utc": 1652876437.0,
+                                    "response": "NFCU, thank you to you and/or your family!",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i92dea5",
+                                            "author": "Cryptorich13",
+                                            "score": 11,
+                                            "created_utc": 1652876871.0,
+                                            "response": "Thank you for your support.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i96wmpz",
+                                                    "author": "saisazet",
+                                                    "score": 1,
+                                                    "created_utc": 1652961241.0,
+                                                    "response": "We need some support in the bitcoin is well at certain price.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i92gcpu",
+                                    "author": "CoinControversy",
+                                    "score": 1,
+                                    "created_utc": 1652878456.0,
+                                    "response": "You're about to be the most attractive redditor to bots and scammers",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i92gm2e",
+                                            "author": "Cryptorich13",
+                                            "score": 10,
+                                            "created_utc": 1652878591.0,
+                                            "response": "Theyve been trying for years.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i96p2yx",
+                                                    "author": "2269683",
+                                                    "score": 3,
+                                                    "created_utc": 1652956044.0,
+                                                    "response": "Just like me, trying for years to get my hand on the one bitcoin.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i98502n",
+                                            "author": "suinegisgenius",
+                                            "score": 1,
+                                            "created_utc": 1652981017.0,
+                                            "response": "People doing such kind of things just to get the up votes?",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i97u87x",
+                                    "author": "btce24",
+                                    "score": 1,
+                                    "created_utc": 1652976701.0,
+                                    "response": "If he get the 469 votes, that will be nice for him.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i92wp8d",
+                                    "author": "teppischfresser",
+                                    "score": -1,
+                                    "created_utc": 1652885923.0,
+                                    "response": "Fellow NFCU member here!",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i92doq0",
+                                    "author": "Responsible_Emu3601",
+                                    "score": 0,
+                                    "created_utc": 1652877030.0,
+                                    "response": "Lol no up doots recd",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i96ttq3",
+                            "author": "btc14",
+                            "score": 1,
+                            "created_utc": 1652959472.0,
+                            "response": "He was looking for the upvotes in this sub to get that.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92l20v",
+                    "author": "ChrisOfTheReddit",
+                    "score": 2,
+                    "created_utc": 1652880766.0,
+                    "response": "This made me check my [old records...](https://i.imgur.com/LiHy9rn.png) I have no BTC currently (sad)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i98lvq3",
+                            "author": "Scituate7105",
+                            "score": 2,
+                            "created_utc": 1652987883.0,
+                            "response": "I am holding the bitcoin but sadly at very high price.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i92x19q",
+                            "author": "temp_jits",
+                            "score": 1,
+                            "created_utc": 1652886061.0,
+                            "response": "I used to buy coin on circle.com. Decided not to search for the old records because that would just depress me.. I doubled my money when I sold it all at 600",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i96xzwm",
+                                    "author": "MrJerioLC",
+                                    "score": 1,
+                                    "created_utc": 1652962050.0,
+                                    "response": "Men so you all guys are the real old ones in the crypto.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i92otjp",
+                    "author": "radioactivesubspace",
+                    "score": 1,
+                    "created_utc": 1652882509.0,
+                    "response": "I just block all these stupid posts.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i98oygd",
+                            "author": "ailovebtc",
+                            "score": 1,
+                            "created_utc": 1652989141.0,
+                            "response": "Well yeah they are kind of annoying but still we should appreciate these things in this subreddit, we should have some motivation through these posts my man, good luck.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92h154",
+                    "author": "ItsJesseeBoi",
+                    "score": -2,
+                    "created_utc": 1652878806.0,
+                    "response": "Served in navy? Thank you for ur service.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i92jayd",
+                            "author": "iworkisleep",
+                            "score": 11,
+                            "created_utc": 1652879929.0,
+                            "response": "Served with gravy? Thank you for your service.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92mc2c",
+                                    "author": "majorpickle01",
+                                    "score": 5,
+                                    "created_utc": 1652881373.0,
+                                    "response": "Book your MOT? Car needs a service.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i92q6e4",
+                                            "author": "sbdallas",
+                                            "score": 2,
+                                            "created_utc": 1652883123.0,
+                                            "response": "We've been trying to reach you about your car's extended warranty...",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i96e3ei",
+                                                    "author": "sardegnala1963",
+                                                    "score": 3,
+                                                    "created_utc": 1652946236.0,
+                                                    "response": "I don't own a car mate, may be you get the wrong details.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i97kfb7",
+                                            "author": "Pemonides",
+                                            "score": 1,
+                                            "created_utc": 1652972701.0,
+                                            "response": "Which car you are having ?? For crypto guys it's only lamboo.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i98dla3",
+                                    "author": "janick999",
+                                    "score": 1,
+                                    "created_utc": 1652984498.0,
+                                    "response": "HAHA, one of the best rhyme i have seen in a while.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i93a7wi",
+                            "author": "cmp1",
+                            "score": 1,
+                            "created_utc": 1652891456.0,
+                            "response": "Prob not",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i96y1vp",
+                            "author": "youkiya",
+                            "score": 1,
+                            "created_utc": 1652962081.0,
+                            "response": "It was my dream to go in the NAVy but i never clear the test.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92yhp5",
+                    "author": "Nemozoli",
+                    "score": 1,
+                    "created_utc": 1652886665.0,
+                    "response": "Nice one!\nI also began stacking at that time, I have found a Trezor e-mail:\n\n\n\"2017.07.22 12:18\nFrom: no-reply@trezor.io\n\nGreat choice!\n\nOrder Summary\n=============\n\n1\u00d7 Shipping by DHL\n1\u00d7 TREZOR Grey (backorder)\n\nShipping: EUR 26\nTotal price: EUR 115\n\nVAT 21%: EUR 24.15\nTotal price including VAT: EUR 139.15\"",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97r12j",
+                            "author": "jlw2387",
+                            "score": 1,
+                            "created_utc": 1652975407.0,
+                            "response": "Men you paid shipping charge of the 26 EUR for that?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i92xlyz",
+                    "author": "Roccock1606",
+                    "score": -1,
+                    "created_utc": 1652886298.0,
+                    "response": "Yvan eht nioJ.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i93ax51",
+                            "author": "Cryptorich13",
+                            "score": 2,
+                            "created_utc": 1652891739.0,
+                            "response": "Underrated comment",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i97dopd",
+                                    "author": "craigslitecoin",
+                                    "score": 1,
+                                    "created_utc": 1652969841.0,
+                                    "response": "Hey mate, can you explain me the real meaning of the comment?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i97e76o",
+                                            "author": "Cryptorich13",
+                                            "score": 1,
+                                            "created_utc": 1652970058.0,
+                                            "response": "Simpsons episode, subliminal message to join the navy",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i980nlz",
+                            "author": "rjmalolot",
+                            "score": 2,
+                            "created_utc": 1652979275.0,
+                            "response": "WOaahh, it took me a while to read that but still can't figure out.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i980xc3",
+                                    "author": "Roccock1606",
+                                    "score": 1,
+                                    "created_utc": 1652979383.0,
+                                    "response": "Had to be watching tv back in the 90s lol",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i92vn5c",
+                    "author": "learntofoo",
+                    "score": 1,
+                    "created_utc": 1652885482.0,
+                    "response": "I did the same in March 19, it was more like $4k though.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i970dwn",
+                            "author": "megawhizz",
+                            "score": 1,
+                            "created_utc": 1652963417.0,
+                            "response": "Still you are doing good, i start doing after btc cross the 50k",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i937hk7",
+                    "author": "danger89",
+                    "score": 1,
+                    "created_utc": 1652890351.0,
+                    "response": "Nice",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i98u3hc",
+                            "author": "hantageo",
+                            "score": 3,
+                            "created_utc": 1652991255.0,
+                            "response": "I am still living a dream of that someday i will have half bitcoin.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i93awj2",
+                    "author": "Lezonidas",
+                    "score": 1,
+                    "created_utc": 1652891732.0,
+                    "response": "My first purchase was 7 weeks after yours at around 4k, amazing time to invest",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i990ycg",
+                            "author": "kommaanda",
+                            "score": 1,
+                            "created_utc": 1652994896.0,
+                            "response": "Sounds like that was the time when most of you guys here come into the bitcoin.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i93b7i8",
+                    "author": "Weber3445",
+                    "score": 1,
+                    "created_utc": 1652891855.0,
+                    "response": "Amazing!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97k50h",
+                            "author": "zhb17817",
+                            "score": 1,
+                            "created_utc": 1652972582.0,
+                            "response": "Believing in bitcoin in 2017 indeed was a amazing move.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i93cwqy",
+                    "author": "After-Treat2384",
+                    "score": 1,
+                    "created_utc": 1652892527.0,
+                    "response": "Nine",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97zha4",
+                            "author": "nguyentam0711",
+                            "score": 1,
+                            "created_utc": 1652978806.0,
+                            "response": "Nice* I am holding and I hope most of us are holding for now",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i93d87p",
+                    "author": "Argyrus777",
+                    "score": 1,
+                    "created_utc": 1652892654.0,
+                    "response": "Good timing too",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i98qz5k",
+                            "author": "shuramd",
+                            "score": 1,
+                            "created_utc": 1652989971.0,
+                            "response": "I wish he still holding that bitcoin or sell this in bull run.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i93i9mn",
+                    "author": "blu_mOOn_2020",
+                    "score": 1,
+                    "created_utc": 1652894675.0,
+                    "response": "I almost thought it was a 1,000 btc order!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96en63",
+                            "author": "mrparzyk",
+                            "score": 1,
+                            "created_utc": 1652946728.0,
+                            "response": "True, i also read that fast that i forget to read the decimal in here.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i93m75t",
+                    "author": "Shibarmy4life",
+                    "score": 1,
+                    "created_utc": 1652896257.0,
+                    "response": "If it don\u2019t make sats, it don\u2019t make sense",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96u8fa",
+                            "author": "dianeryi",
+                            "score": 1,
+                            "created_utc": 1652959742.0,
+                            "response": "It will make sats and even more sats with the more time of holding.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i93ocn7",
+                    "author": "vickvinegar_",
+                    "score": 1,
+                    "created_utc": 1652897115.0,
+                    "response": "Better investment than the navy huh?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i93r8rj",
+                    "author": "Slapshot382",
+                    "score": 1,
+                    "created_utc": 1652898284.0,
+                    "response": "Cringe",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97x3vr",
+                            "author": "cra11da",
+                            "score": 1,
+                            "created_utc": 1652977855.0,
+                            "response": "Why mate, i find that post is completely fine in every sense.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i93v80m",
+                    "author": "caron3979",
+                    "score": 1,
+                    "created_utc": 1652899916.0,
+                    "response": "I think that everyone who has been holding BTC for several years is legendary people. Sometimes it's very difficult for me not to panic.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96nc3x",
+                            "author": "itismeme1",
+                            "score": 2,
+                            "created_utc": 1652954588.0,
+                            "response": "True holding for that long certainly not a easy thing to do, specially after all the fuds, ups and down.\n\nEven after watching the ups hard to control the urge of booking the profit.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i941pdu",
+                    "author": "GurkenZorro",
+                    "score": 1,
+                    "created_utc": 1652902562.0,
+                    "response": "Get it off the exchange!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9924wy",
+                            "author": "TimTkin",
+                            "score": 1,
+                            "created_utc": 1652995433.0,
+                            "response": "I think if he is holding for that long, must be holding the wallet.\n\nI was also keeping my holding on the exchanges before i make into this sub, but now my key my coin.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i941q2o",
+                    "author": "Gloveyha",
+                    "score": 1,
+                    "created_utc": 1652902570.0,
+                    "response": "I have one of those prints. 0.1 btc for 50 euro",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i944q5c",
+                    "author": "european_hodler",
+                    "score": 1,
+                    "created_utc": 1652903783.0,
+                    "response": "I ll buy it for 2x what you paid!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96ire6",
+                            "author": "8enjamin10",
+                            "score": 1,
+                            "created_utc": 1652950485.0,
+                            "response": "HAHA, he is still getting the 10x from his buying point.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i96q81m",
+                                    "author": "european_hodler",
+                                    "score": 1,
+                                    "created_utc": 1652956932.0,
+                                    "response": "That was my point",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i948cqm",
+                    "author": "_trustno_1",
+                    "score": 1,
+                    "created_utc": 1652905269.0,
+                    "response": "Did you hold?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96rnvc",
+                            "author": "BITHIGHCOIN",
+                            "score": 2,
+                            "created_utc": 1652957989.0,
+                            "response": "This is the one question, we need to ask. Holding is very difficult.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i97wivb",
+                                    "author": "_trustno_1",
+                                    "score": 1,
+                                    "created_utc": 1652977622.0,
+                                    "response": "Anyone can buy. Few can hold or end up with more BTC trading alts",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9494ku",
+                    "author": "PumaMayhem",
+                    "score": 1,
+                    "created_utc": 1652905583.0,
+                    "response": "Did they snail mail your BTC?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i98ere7",
+                            "author": "lijie2005914",
+                            "score": 1,
+                            "created_utc": 1652984978.0,
+                            "response": "I wasn't aware with this kind of process back in the days.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i94fla4",
+                    "author": "RogueR1",
+                    "score": 1,
+                    "created_utc": 1652908250.0,
+                    "response": "I didn't even know they had coin base in 2017.\nMy only regret is I never bought enough bitcoin nor had invested before smh. And now all bitocin does is shit itself every other day",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i94lgw0",
+                    "author": "drakereen",
+                    "score": 1,
+                    "created_utc": 1652910765.0,
+                    "response": "Wow",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96lc7i",
+                            "author": "rjt12501",
+                            "score": 1,
+                            "created_utc": 1652952849.0,
+                            "response": "That will be the reaction of my gf when i will tell her about my bitcoin.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i94m1md",
+                    "author": "jbatsz81",
+                    "score": 1,
+                    "created_utc": 1652911008.0,
+                    "response": "hoo yah navy fed",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96n77m",
+                            "author": "kenbambola",
+                            "score": 1,
+                            "created_utc": 1652954473.0,
+                            "response": "This fed is making money with bitcoin, while some fed dumping the price.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i94n988",
+                    "author": "kidsseeghost1987",
+                    "score": 1,
+                    "created_utc": 1652911518.0,
+                    "response": "Lucky",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97ieg7",
+                            "author": "Phantomtrader1",
+                            "score": 1,
+                            "created_utc": 1652971855.0,
+                            "response": "IF he is still holding then i would say, he is really lucky.\n\nI know many who bought in 2012 is well, but spent that whole on the drug and the party with some profit.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i94ncxo",
+                    "author": "obervant1",
+                    "score": 1,
+                    "created_utc": 1652911562.0,
+                    "response": "At least good news for you. Now, leave it alone for another 5+ years. Good for you :)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97tdqh",
+                            "author": "kinolog74",
+                            "score": 1,
+                            "created_utc": 1652976356.0,
+                            "response": "Just keep that thing going like this way for another 5 year, then after that another 5 year.\n\nThe more time you do that the more its value gonna increase in the future.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i94w5ke",
+                    "author": "Dreboomboom",
+                    "score": 1,
+                    "created_utc": 1652915554.0,
+                    "response": "That is a sight of beauty!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96g6ot",
+                            "author": "wizyin",
+                            "score": 1,
+                            "created_utc": 1652948127.0,
+                            "response": "When i see someone buying btc, i feel relief for him somehow.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i94yd4u",
+                    "author": "legally22",
+                    "score": 1,
+                    "created_utc": 1652916584.0,
+                    "response": "Wow, that's rich. Good rich",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i98o85n",
+                            "author": "jeriasbitcoin",
+                            "score": 1,
+                            "created_utc": 1652988838.0,
+                            "response": "He is sitting on the 9x profit even in the this peak bear market.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i94yevq",
+                    "author": "plxyboyy",
+                    "score": 1,
+                    "created_utc": 1652916608.0,
+                    "response": "This made me look back in my email, I was buying it at $200 a piece. I also found 2 wallets with close to 2 coins each one I don\u2019t have the recovery phrase for and the second the exchange disappeared in 2019.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97r7kz",
+                            "author": "james3douglas",
+                            "score": 1,
+                            "created_utc": 1652975479.0,
+                            "response": "I had no such email as i came very late in this market, and ever since try to buy some for me.\n\nMY only concern is what if someday i lost my key of the wallets, just giving me nightmare.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i952ugu",
+                    "author": "wesblog",
+                    "score": 1,
+                    "created_utc": 1652918712.0,
+                    "response": "Used to store my shit on Coinbase back in 2013. Most of this was weekly mining earnings with a Butterfly Labs Jalapeno ASIC. It was around $150.   \nhttps://i.imgur.com/oA4vfes.png",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97n4fw",
+                            "author": "Rostik1450",
+                            "score": 3,
+                            "created_utc": 1652973823.0,
+                            "response": "I hope you are not doing the same in the year 2022 now.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i95jl5c",
+                    "author": "meme_dika",
+                    "score": 1,
+                    "created_utc": 1652926547.0,
+                    "response": "after that, move your BTC to hard wallet",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9849cu",
+                            "author": "JamovSyiggEk",
+                            "score": 1,
+                            "created_utc": 1652980724.0,
+                            "response": "It's amazing to see how many people here are actually believes in the hardware wallet rather than the exchange.\n\nI also starting to use the wallet after coming into this sub place.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i95jw61",
+                    "author": "AussieCryptoCurrency",
+                    "score": 1,
+                    "created_utc": 1652926693.0,
+                    "response": "$50 Coinbase fee to get you 1 BTC within 7 working days. SMH",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i98wqyd",
+                            "author": "valeevvv",
+                            "score": 1,
+                            "created_utc": 1652992978.0,
+                            "response": "How exciting for you lol - fingers crossed there\u2019s like 20 BTC in there!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i95k9q0",
+                    "author": "Zack_attack801",
+                    "score": 1,
+                    "created_utc": 1652926872.0,
+                    "response": "I like looking at my Coinbase transaction when I sold around 6BTC for 1200$ or so in 2015",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9871jf",
+                            "author": "alexdebrave",
+                            "score": 1,
+                            "created_utc": 1652981838.0,
+                            "response": "Sorry about that's about as braindead way to go about it as imaginable.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i98c5tg",
+                                    "author": "Zack_attack801",
+                                    "score": 1,
+                                    "created_utc": 1652983910.0,
+                                    "response": "Are you being mean?",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i95oxma",
+                    "author": "Gill03",
+                    "score": 1,
+                    "created_utc": 1652929189.0,
+                    "response": "man I should have never gotten rid of navy federal.  Great bank.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i98mh3t",
+                            "author": "luna1939",
+                            "score": 5,
+                            "created_utc": 1652988118.0,
+                            "response": "That's nice man, we all wanted to start at early age bro.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i95ozon",
+                    "author": "Johndrc",
+                    "score": 1,
+                    "created_utc": 1652929217.0,
+                    "response": "Fight your demon",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i981byk",
+                            "author": "gtrhetfew",
+                            "score": 1,
+                            "created_utc": 1652979546.0,
+                            "response": "This is what I want from younger generation, keep it up.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i95r1x0",
+                    "author": "Crypto_bro999",
+                    "score": 1,
+                    "created_utc": 1652930276.0,
+                    "response": "Congrats dude! I wish I spend my usdt on bitcoin while it was only 3k.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96d56g",
+                            "author": "stawros74",
+                            "score": 3,
+                            "created_utc": 1652945395.0,
+                            "response": "Did people already have hard and/or soft wallets back then?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i95tfw7",
+                    "author": "ididntsaygoyet",
+                    "score": 1,
+                    "created_utc": 1652931540.0,
+                    "response": "I bought 1 at $330... Then sold it at $2,300 LOL",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97v1e1",
+                            "author": "jgibson00",
+                            "score": 4,
+                            "created_utc": 1652977030.0,
+                            "response": "My first BTC bought from eBay in 2011. I still have 2 pcs Cassicus BTC with 1 BTC each. Verified.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i95u96m",
+                    "author": "Lagavulin",
+                    "score": 1,
+                    "created_utc": 1652931989.0,
+                    "response": "Good on ya!\n\nFuck Coinbase.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96io0t",
+                            "author": "jsbhatia",
+                            "score": 1,
+                            "created_utc": 1652950398.0,
+                            "response": "Check out youtube. Some old school videos showing people how to buy btc back in like 2010 .\n\nYou could just tell someone to give you some and since they were worthless they'd send you some.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i95v73m",
+                    "author": "Gmoneymoney7",
+                    "score": 1,
+                    "created_utc": 1652932526.0,
+                    "response": "dad?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96wu99",
+                            "author": "nhennuoc01",
+                            "score": 1,
+                            "created_utc": 1652961368.0,
+                            "response": "I met people online, found them locally and met up at a Starbucks, haha .",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i961gvu",
+                    "author": "5K1PP3R2",
+                    "score": 1,
+                    "created_utc": 1652936435.0,
+                    "response": "bitcope",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96go6v",
+                            "author": "MOVB5",
+                            "score": 0,
+                            "created_utc": 1652948562.0,
+                            "response": "Had I gotten them back then I almost suredly would've spent them once they were 1000x, or I'd have lost them.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i988jm3",
+                                    "author": "5K1PP3R2",
+                                    "score": 1,
+                                    "created_utc": 1652982437.0,
+                                    "response": "find a job, do something good for the society you pitiful dork",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i96fun0",
+                    "author": "Vatson7979",
+                    "score": 1,
+                    "created_utc": 1652947819.0,
+                    "response": "You bought 60 cents worth of bitcoin? How much were the fees lol ?\n\nanybody remember that site that was giving away like .05 bitcoin back in the day?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96fz7o",
+                    "author": "MRKLCJr77",
+                    "score": 1,
+                    "created_utc": 1652947938.0,
+                    "response": "I used to be in Crypto. No longer. Buying with Fiat, worthless Fiat only to cash-out in worthless Fiat is Foolish. Nothing is backed by Gold or Silver and won't be in our lifetime. If you don't have Gold or Silver, you don't have anything. No Gold or Silver makes you a Pauper. Just my thoughts. Everyone else can have their own opinions - it's Freedom of Speech and Thought I hope.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96i9uy",
+                    "author": "audimers",
+                    "score": 1,
+                    "created_utc": 1652950029.0,
+                    "response": "There is no point beating yourself up over not being able to predict the future.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96iu4u",
+                    "author": "alexmios30",
+                    "score": 1,
+                    "created_utc": 1652950555.0,
+                    "response": "Ray of hope in life injected to me now",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96jehc",
+                    "author": "stifterl85",
+                    "score": 1,
+                    "created_utc": 1652951070.0,
+                    "response": "Sounds like you got it at a good time, relatively speaking.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96nayx",
+                    "author": "SerP211978",
+                    "score": 1,
+                    "created_utc": 1652954561.0,
+                    "response": "Best lesson I\u2019ve learned in my 10+ years investing .\n\nAnd it\u2019s taken me 10 years to learn it is remove your emotions.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96pkpa",
+                    "author": "CryptoCure-ious",
+                    "score": 1,
+                    "created_utc": 1652956438.0,
+                    "response": "That should be framed and up on the wall!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96qak7",
+                            "author": "Cryptorich13",
+                            "score": 1,
+                            "created_utc": 1652956983.0,
+                            "response": "Very good idea, my friend",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i96q2mp",
+                    "author": "rgergsdbr",
+                    "score": 1,
+                    "created_utc": 1652956819.0,
+                    "response": "Good Luck Bro. You are now one of the chosen few. Cheers .",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96xl3i",
+                    "author": "HomeWreckBetch",
+                    "score": 1,
+                    "created_utc": 1652961814.0,
+                    "response": "Love this",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96y34j",
+                    "author": "alexon1985",
+                    "score": 1,
+                    "created_utc": 1652962102.0,
+                    "response": "Don\u2019t beat yourself up. This was a crapshoot for most of its existence .",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96yq2r",
+                    "author": "elftantra69",
+                    "score": 1,
+                    "created_utc": 1652962473.0,
+                    "response": "It\u2019s going to change around! The strong hands will rewarded.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i979xje",
+                    "author": "Jenglr",
+                    "score": 1,
+                    "created_utc": 1652968172.0,
+                    "response": "When I was in high school there was a sketchy cell phone store in town that actually had a Bitcoin ATM.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i97ewsx",
+                    "author": "ravik30",
+                    "score": 1,
+                    "created_utc": 1652970368.0,
+                    "response": "If it goes down from here it\u2019s not because Bitcoin is bad it\u2019s because you bought in FOMO. \n\nI first bought btc in 2013 for ~$120 on coinbase, sold a few months later for 3x that. Never regretted it.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i97i8de",
+                    "author": "kk_md",
+                    "score": 1,
+                    "created_utc": 1652971786.0,
+                    "response": "It's just so important to hold man, I am late in this market but I can sense the importance of holding right now, I am glad that I am focusing on holding as much as I can do these days.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i97xpi9",
+                    "author": "yhfgdf",
+                    "score": 1,
+                    "created_utc": 1652978097.0,
+                    "response": "I bought it from individuals facilitated by a website that i cannot remember.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i98qr8q",
+                    "author": "Wilhonator",
+                    "score": 1,
+                    "created_utc": 1652989881.0,
+                    "response": "Personally, I like Coinbase. Heard good things about Kraken too .",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i98uo1a",
+                    "author": "dguhl",
+                    "score": 1,
+                    "created_utc": 1652991490.0,
+                    "response": "This is my dream now, to buy an whole bitcoin in my life.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i98ymky",
+                    "author": "jncurtis21",
+                    "score": 1,
+                    "created_utc": 1652993831.0,
+                    "response": "Holy shit, I have 18 bitcoins from way back, how do I turn it into money?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9941ik",
+                            "author": "Cryptorich13",
+                            "score": 1,
+                            "created_utc": 1652996306.0,
+                            "response": "Send them to me and I'll turn them into USD for you",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i990e4f",
+                    "author": "askme2222",
+                    "score": 1,
+                    "created_utc": 1652994636.0,
+                    "response": "Every day. I thought it was a scam. I wish I just threw $20 at it lol.\n\nI had no money back then though.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9913b7",
+                    "author": "foxxzee",
+                    "score": 1,
+                    "created_utc": 1652994960.0,
+                    "response": "Why? Are you building a time machine in your garage?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92q30w",
+                    "author": "glcknmrari",
+                    "score": -2,
+                    "created_utc": 1652883081.0,
+                    "response": "Navy federal is awesome! Do you have their credit cards?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i92zsyz",
+                    "author": "Hardinee",
+                    "score": -3,
+                    "created_utc": 1652887212.0,
+                    "response": "Go Navy!!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9506xj",
+                    "author": "HearMeOutThough",
+                    "score": 0,
+                    "created_utc": 1652917449.0,
+                    "response": "6564",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i95561m",
+                            "author": "Cryptorich13",
+                            "score": 0,
+                            "created_utc": 1652919811.0,
+                            "response": "Who cares?",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i97sawa",
+                            "author": "lecter78",
+                            "score": 1,
+                            "created_utc": 1652975923.0,
+                            "response": "Is this is your buying price? if yes then you are doing good.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

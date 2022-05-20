@@ -9,48 +9,6 @@
     ],
     "posts": [
         {
-            "id": "urw5q0",
-            "title": "Bitcoin Full Node - High Upload",
-            "url": "https://www.reddit.com/r/Bitcoin/comments/urw5q0/bitcoin_full_node_high_upload/",
-            "author": "Marluff",
-            "created_utc": 1652820959.0,
-            "score": 3,
-            "num_comments": 3,
-            "subreddit": "Bitcoin",
-            "selftext": "Hello everybody!\n\nAlthough I'm in the market for quite a while, I just recently joined the bitcoin network with my own full node (bitcoind, v22.0.0, full sync). I really enjoyed setting it up and the whole process was pretty straight forward. I'm currently not using tor (yet) but I'm committed to improve my setup over time.  \n\n\nRegarding the title.. for the first few days network traffic seemed pretty normal, I had about 1GB down/upload in total which was fine, since all guides talked about traffic of up to 200GB a month (which would still be fine, since I dont have data limits).\n\n  \nFor the last 8h however the upload traffic increased by a huge amount. I looked into my peers and two of them are sitting at 20GB of upload traffic. So I'm wondering what is going on there and if this is normal or a point of concern. Are they just syncing their nodes with the blockchain and drawing data from my node? Or should I be worried about their activity?\n\nSince bitnodes.io  is currently down for me I also can't check if these nodes have been created recently.\n\nIf any seasoned node operators could share their experience with network traffic I would be grateful. Just to be clear, I do not want to complain about the traffic, I just want to make sure this is a normal behaviour.\n\nThank you all!",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8zss8b",
-                    "author": "SmoothGoing",
-                    "score": 1,
-                    "created_utc": 1652821298.0,
-                    "response": "Why outdated version?\n\nSee maxuploadtarget option in config.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8ztks7",
-                            "author": "Marluff",
-                            "score": 1,
-                            "created_utc": 1652821633.0,
-                            "response": "Good question, I know theres a v23 release but bitcoin.org currently lists v22 as latest and I set it up with their guide, I guess they are always trailing a bit till the latest version has proven itself?",
-                            "depth": 2,
-                            "comments": []
-                        },
-                        {
-                            "id": "i8zubuf",
-                            "author": "Marluff",
-                            "score": 1,
-                            "created_utc": 1652821957.0,
-                            "response": "Thanks for the config hint, I guess I could set this option if the traffic gets out of hand.\n\nBut would you say the numbers I stated are in a normal range?",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "id": "urw99a",
             "title": "Find security, aim to own at least 0.0005 btc",
             "url": "https://www.reddit.com/r/Bitcoin/comments/urw99a/find_security_aim_to_own_at_least_00005_btc/",
@@ -161,6 +119,48 @@
                                     "comments": []
                                 }
                             ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "urw5q0",
+            "title": "Bitcoin Full Node - High Upload",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/urw5q0/bitcoin_full_node_high_upload/",
+            "author": "Marluff",
+            "created_utc": 1652820959.0,
+            "score": 4,
+            "num_comments": 4,
+            "subreddit": "Bitcoin",
+            "selftext": "Hello everybody!\n\nAlthough I'm in the market for quite a while, I just recently joined the bitcoin network with my own full node (bitcoind, v22.0.0, full sync). I really enjoyed setting it up and the whole process was pretty straight forward. I'm currently not using tor (yet) but I'm committed to improve my setup over time.  \n\n\nRegarding the title.. for the first few days network traffic seemed pretty normal, I had about 1GB down/upload in total which was fine, since all guides talked about traffic of up to 200GB a month (which would still be fine, since I dont have data limits).\n\n  \nFor the last 8h however the upload traffic increased by a huge amount. I looked into my peers and two of them are sitting at 20GB of upload traffic. So I'm wondering what is going on there and if this is normal or a point of concern. Are they just syncing their nodes with the blockchain and drawing data from my node? Or should I be worried about their activity?\n\nSince bitnodes.io  is currently down for me I also can't check if these nodes have been created recently.\n\nIf any seasoned node operators could share their experience with network traffic I would be grateful. Just to be clear, I do not want to complain about the traffic, I just want to make sure this is a normal behaviour.\n\nThank you all!",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8zss8b",
+                    "author": "SmoothGoing",
+                    "score": 2,
+                    "created_utc": 1652821298.0,
+                    "response": "Why outdated version?\n\nSee maxuploadtarget option in config.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8ztks7",
+                            "author": "Marluff",
+                            "score": 1,
+                            "created_utc": 1652821633.0,
+                            "response": "Good question, I know theres a v23 release but bitcoin.org currently lists v22 as latest and I set it up with their guide, I guess they are always trailing a bit till the latest version has proven itself?",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i8zubuf",
+                            "author": "Marluff",
+                            "score": 1,
+                            "created_utc": 1652821957.0,
+                            "response": "Thanks for the config hint, I guess I could set this option if the traffic gets out of hand.\n\nBut would you say the numbers I stated are in a normal range?",
+                            "depth": 2,
+                            "comments": []
                         }
                     ]
                 }

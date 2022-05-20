@@ -9,58 +9,6 @@
     ],
     "posts": [
         {
-            "id": "un2wd7",
-            "title": "Questions about Avalanche Consensus and Staking",
-            "url": "https://www.reddit.com/r/CryptoTechnology/comments/un2wd7/questions_about_avalanche_consensus_and_staking/",
-            "author": "Interested-Investor",
-            "created_utc": 1652248892.0,
-            "score": 1,
-            "num_comments": 6,
-            "subreddit": "CryptoTechnology",
-            "selftext": "I was doing some research and I had a few questions after reading over AVAX whitepapers and other dicussion boards.\n\n1. Why is the required minimum stake 2,000 AVAX? What is the harm in allowing everyone to stake?\n2. Why don't AVAX validators need to store the whole chains history like PoW chains do?\n3. Why is Avalanche Consensus technically probabilistic? What event could cause the chain to overturn itself? (I understand the \"longest chain\" in PoW, but how could a transaction be rolled back in avalanche?)\n\nFurthermore, is this understanding of the consensus protocol and its terminology correct?\n\n1. a transaction is broadcasted to the entire network\n2. the network randomly picks X amount of validators to determine if a transaction is valid \n3. These validators then choose K amount of validators to ask if they think the transaction is valid (subsampled voting?)\n4. This process repeats for a few rounds (network gossip?) until all validators have agreed and the original \"X\" amount of validators have reached a super majority\n5. Once agreed on, the transaction is finalized\n\nThanks everyone for taking a look at this. It means a lot to me!\n\nBONUS QUESTION: Since AVAX has a hard cap, what happens when the staking rewards run out? How will validators be incentivized to continue staking?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i85iglw",
-                    "author": "Stamipower",
-                    "score": 5,
-                    "created_utc": 1652249770.0,
-                    "response": "You picked the right time to ask about AVAX as it is mixed in the UST situation.\n\nYou should also check the guy behind AVAX. His past is shady.\n\nAs for your questions unfortunately I have not delved deep into AVAX. For your bonus question, I would assume that they hope the transaction fees are enough of an incentive.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i85pk7d",
-                    "author": "Dormage",
-                    "score": 4,
-                    "created_utc": 1652255415.0,
-                    "response": "Didnt we talk about the consensus layer a few days ago? You got it right, except, we know which transactions are valid, so validators dont ask for transaction validity but inclusion.\n\nYou can vew the system so that each transaction is a state change, the system was in state A, and with the new TX its now in state B.\nThe consensus is theee to make sure all nodes agree the system should go from A->B.\nWe all know B is a valid state, but do we transition to it?\n\n\nThe amount of staked coins depends on the design of the protocol. In general, the stake is what allows the protocol to make some game theory assumptions and enforce good behaviour by penalties for bad, and rewards for good.\nThe exact amount is a product of many variables such as:\n- Desired number of validating nodes\n- Decentralization\n- Sybil resistance\n- Rewards / coin issuance\n- Operating costs of running a node\n- etc..\n\nIf theres a fixed supply of AVAX, the protocol must sustain its validators with transaction fees alone. Dont see another way.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i85q1tu",
-                            "author": "Interested-Investor",
-                            "score": 2,
-                            "created_utc": 1652255846.0,
-                            "response": "We did speak a few days ago! Nice to hear from you again. For some reason I feel like I struggle with understanding new concepts more than the average person. I\u2019ve spent the last few hours glazing over the AVAX whitepaper and a ton of different YouTube videos. \n\nI was posting again because it helps me to clarify things more than anything, and to also throw on a few new questions I had. Thanks for replying again, it\u2019s much appreciated",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i85r570",
-                                    "author": "Dormage",
-                                    "score": 2,
-                                    "created_utc": 1652256809.0,
-                                    "response": "Thats great, I'm not against posting at all, just wondered if you are the same person ;)\n\nAnyways, if you still have any qustions do post, Im giving a lecture in 2 hours but after that I can answer.",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "id": "ulpd4f",
             "title": "Will crypto go green before 2030?",
             "url": "https://www.reddit.com/r/CryptoTechnology/comments/ulpd4f/will_crypto_go_green_before_2030/",
@@ -5705,6 +5653,77 @@
                     "response": "Why would you be sorry if you were wrong?\n\nBlockchain can help when it comes to governance and betting peer to peer. I don't know enough about the issues that there are in football to give you an answer.",
                     "depth": 1,
                     "comments": []
+                }
+            ]
+        },
+        {
+            "id": "un2wd7",
+            "title": "Questions about Avalanche Consensus and Staking",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/un2wd7/questions_about_avalanche_consensus_and_staking/",
+            "author": "Interested-Investor",
+            "created_utc": 1652248892.0,
+            "score": 2,
+            "num_comments": 8,
+            "subreddit": "CryptoTechnology",
+            "selftext": "I was doing some research and I had a few questions after reading over AVAX whitepapers and other dicussion boards.\n\n1. Why is the required minimum stake 2,000 AVAX? What is the harm in allowing everyone to stake?\n2. Why don't AVAX validators need to store the whole chains history like PoW chains do?\n3. Why is Avalanche Consensus technically probabilistic? What event could cause the chain to overturn itself? (I understand the \"longest chain\" in PoW, but how could a transaction be rolled back in avalanche?)\n\nFurthermore, is this understanding of the consensus protocol and its terminology correct?\n\n1. a transaction is broadcasted to the entire network\n2. the network randomly picks X amount of validators to determine if a transaction is valid \n3. These validators then choose K amount of validators to ask if they think the transaction is valid (subsampled voting?)\n4. This process repeats for a few rounds (network gossip?) until all validators have agreed and the original \"X\" amount of validators have reached a super majority\n5. Once agreed on, the transaction is finalized\n\nThanks everyone for taking a look at this. It means a lot to me!\n\nBONUS QUESTION: Since AVAX has a hard cap, what happens when the staking rewards run out? How will validators be incentivized to continue staking?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i85pk7d",
+                    "author": "Dormage",
+                    "score": 6,
+                    "created_utc": 1652255415.0,
+                    "response": "Didnt we talk about the consensus layer a few days ago? You got it right, except, we know which transactions are valid, so validators dont ask for transaction validity but inclusion.\n\nYou can vew the system so that each transaction is a state change, the system was in state A, and with the new TX its now in state B.\nThe consensus is theee to make sure all nodes agree the system should go from A->B.\nWe all know B is a valid state, but do we transition to it?\n\n\nThe amount of staked coins depends on the design of the protocol. In general, the stake is what allows the protocol to make some game theory assumptions and enforce good behaviour by penalties for bad, and rewards for good.\nThe exact amount is a product of many variables such as:\n- Desired number of validating nodes\n- Decentralization\n- Sybil resistance\n- Rewards / coin issuance\n- Operating costs of running a node\n- etc..\n\nIf theres a fixed supply of AVAX, the protocol must sustain its validators with transaction fees alone. Dont see another way.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i85q1tu",
+                            "author": "Interested-Investor",
+                            "score": 2,
+                            "created_utc": 1652255846.0,
+                            "response": "We did speak a few days ago! Nice to hear from you again. For some reason I feel like I struggle with understanding new concepts more than the average person. I\u2019ve spent the last few hours glazing over the AVAX whitepaper and a ton of different YouTube videos. \n\nI was posting again because it helps me to clarify things more than anything, and to also throw on a few new questions I had. Thanks for replying again, it\u2019s much appreciated",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i85r570",
+                                    "author": "Dormage",
+                                    "score": 2,
+                                    "created_utc": 1652256809.0,
+                                    "response": "Thats great, I'm not against posting at all, just wondered if you are the same person ;)\n\nAnyways, if you still have any qustions do post, Im giving a lecture in 2 hours but after that I can answer.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i85iglw",
+                    "author": "Stamipower",
+                    "score": 4,
+                    "created_utc": 1652249770.0,
+                    "response": "You picked the right time to ask about AVAX as it is mixed in the UST situation.\n\nYou should also check the guy behind AVAX. His past is shady.\n\nAs for your questions unfortunately I have not delved deep into AVAX. For your bonus question, I would assume that they hope the transaction fees are enough of an incentive.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9564dl",
+                    "author": "Maleficent_Plankton",
+                    "score": 1,
+                    "created_utc": 1652920264.0,
+                    "response": "I would be careful calling Avalanche \"probabilistic\" since that term almost always refers to finality and the probability of reversing the canonical chain. I know in Avalanche's documentation, they use it to refer to each cycle of voting within a single block production, but that's just their poor choice of terms. Each of Avalanche's 3 main chains takes 2s to finality based on adjustable parameters, so in terms of finality, it's deterministic, not probabilistic.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i957xfu",
+                            "author": "Interested-Investor",
+                            "score": 1,
+                            "created_utc": 1652921114.0,
+                            "response": "Could you explain probabilistic vs deterministic meaning? I\u2019m interested to hear more",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 }
             ]
         }

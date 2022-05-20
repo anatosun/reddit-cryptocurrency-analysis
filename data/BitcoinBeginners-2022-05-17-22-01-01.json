@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/urx7cp/issue_with_importing_a_breadwallet_mnemonic_into/",
             "author": "putyograsseson",
             "created_utc": 1652823805.0,
-            "score": 6,
-            "num_comments": 6,
+            "score": 11,
+            "num_comments": 19,
             "subreddit": "BitcoinBeginners",
             "selftext": "Fully Noded is connected to my citadel node (umbrel fork) and the blockchain is 100% synced.\n\nWhatever I try to import, the balance always shows 0 funds.\n\nI've tried:\n\n- importing the 12 words\n\n- importing the native segwit descriptor wpkh([xfp/0']xpubxxxxx/0/*)\n\n- importing the legacy descriptor pkh([xfp/0']xpubxxxxx/0/*)\n\n\nAny tips?",
             "stickied": false,
@@ -64,6 +64,25 @@
                     "score": 1,
                     "created_utc": 1652839766.0,
                     "response": "Was the BRD version BIP39 /BIP32 compliant at the time?\n\nMaybe they adopted the prior Electrum seed protocol",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i921fpw",
+                            "author": "putyograsseson",
+                            "score": 1,
+                            "created_utc": 1652868791.0,
+                            "response": "Yes we are talking about a plain old bip39 seed",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i926d18",
+                    "author": "blaze1234",
+                    "score": 1,
+                    "created_utc": 1652872541.0,
+                    "response": "!RemindMe 10 days",
                     "depth": 1,
                     "comments": []
                 }

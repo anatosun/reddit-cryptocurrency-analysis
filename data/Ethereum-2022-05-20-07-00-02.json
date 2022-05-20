@@ -1,0 +1,48 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "utnaav",
+            "title": "Oxya Origin is officially backed up by Ubisoft.",
+            "url": "https://news.ubisoft.com/en-us/article/16FgujgZhQImb6GsTdGK1W/ubisoft-entrepreneurs-lab-kicks-off-its-seventh-season",
+            "author": "Icy_Cut_5572",
+            "created_utc": 1653029031.0,
+            "score": 0,
+            "num_comments": 0,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "utncpv",
+            "title": "How to estimate the price of Gas prior to submitting a transaction on ethers?",
+            "url": "https://www.reddit.com/r/ethereum/comments/utncpv/how_to_estimate_the_price_of_gas_prior_to/",
+            "author": "pepeman931",
+            "created_utc": 1653029337.0,
+            "score": 0,
+            "num_comments": 2,
+            "subreddit": "ethereum",
+            "selftext": "I am trying to estimate gas using ethers. I have tred using await this.signer.getGasPrice() but this doesn't take into account my contract's function and my address.I saw that on ethers's documentation they have a function\n\nawait provider.estimateGas({   // Wrapped ETH address\n\nto: \"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2\",    // \\`function deposit() payable\\`\n\ndata: \"0xd0e30db0\",    // 1 ether\n\nvalue: parseEther(\"1.0\") });\n\nbut this takes transaction data as an input?\n\nHow am I supposed to get tranaction data prior to submitting a transaction?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9atqwj",
+                    "author": "Nonocoiner",
+                    "score": 2,
+                    "created_utc": 1653030607.0,
+                    "response": "I think you'll have more chance to get answers to questions like these on r/ethdev",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

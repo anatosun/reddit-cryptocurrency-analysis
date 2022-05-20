@@ -1,0 +1,158 @@
+{
+    "subreddit": "btc",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uswk8m",
+            "title": "Why do we need \"Wrapped BCH\" on SmartBCH? I understand why ETH needs wETH but wBCH does not seem to serve the same purpose.",
+            "url": "https://www.reddit.com/r/btc/comments/uswk8m/why_do_we_need_wrapped_bch_on_smartbch_i/",
+            "author": "ImRichBCH",
+            "created_utc": 1652939414.0,
+            "score": 11,
+            "num_comments": 15,
+            "subreddit": "btc",
+            "selftext": "I've been reading about wrapped ETH and that makes sense (basically ETH is not an ERC20 token itself but wETH is) but BCH on SmartBCH is already a token no different than wBCH, right? \n\n&#x200B;\n\nOr is \"Smart BCH\" the token, \"SBCH\" (or whatever we are calling it) is like ETH?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i96enfp",
+                    "author": "AD1AD",
+                    "score": 5,
+                    "created_utc": 1652946734.0,
+                    "response": "Apparently it's just like ETH. The native token isn't the smartBCH version of ERC20 (SEP20?), so it's wrapped in one for use with smart contracts that were already written for that token standard. I assume this is because smartBCH is EVM compatible, but maybe they just didn't bother to change the design.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i96evlg",
+                            "author": "chainxor",
+                            "score": 2,
+                            "created_utc": 1652946938.0,
+                            "response": "I think you're right.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9699u7",
+                    "author": "The_Jibbity",
+                    "score": 3,
+                    "created_utc": 1652942173.0,
+                    "response": "I\u2019m not the most knowledgeable on the subject, but isn\u2019t wBCH and sBCH just different nomenclature?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9692pt",
+                    "author": "mk112ning",
+                    "score": 2,
+                    "created_utc": 1652942021.0,
+                    "response": "I have the same question.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i975ioo",
+                    "author": "xjunda",
+                    "score": 1,
+                    "created_utc": 1652966090.0,
+                    "response": "As I understand it is 1:1 swap and it enables smart contract capabilities for BCH.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9794r6",
+                            "author": "lightswarm124",
+                            "score": 1,
+                            "created_utc": 1652967806.0,
+                            "response": "1:1 swap when smartBCH is burning BCH for the transaction fees? ya.....I don't think so",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i97b3ac",
+                                    "author": "xjunda",
+                                    "score": 1,
+                                    "created_utc": 1652968693.0,
+                                    "response": "You pay small fee for conversion from main chain to smart chain or vice versa, yes. What are you moaning about mate, lol?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i97bnig",
+                                            "author": "lightswarm124",
+                                            "score": 1,
+                                            "created_utc": 1652968944.0,
+                                            "response": "buddy, do some basic math. if the supply of bch keeps going down as they are burnt, how does the 1:1 peg get maintained?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i97ch1o",
+                                                    "author": "xjunda",
+                                                    "score": 1,
+                                                    "created_utc": 1652969307.0,
+                                                    "response": "Nice one :)",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "i99x5si",
+                                                    "author": "Sugarbird676",
+                                                    "score": 1,
+                                                    "created_utc": 1653010609.0,
+                                                    "response": "It gets maintained because if a coin gets burned on SmartBCH, it cannot be redeemed back on the BCH side.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i97w0uc",
+                    "author": "RowanSkie",
+                    "score": 1,
+                    "created_utc": 1652977423.0,
+                    "response": "Wrapped BCH/WBCH exists because the DEX devs didn't realize SEP-206 (basically setting BCH as a SEP-20 equivalent) and would've taken a complete rewrite if they noticed immediately.\n\nBasically, wBCH is a DEX-specific SEP20 token. Then BCH (informally and well-known as SBCH) is the ETH of SmartBCH.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i992ei1",
+                    "author": "Potted_Cactus_is_me",
+                    "score": 1,
+                    "created_utc": 1652995553.0,
+                    "response": "Anybody seen this yet? Special event thing for eth/btc...sharing for others [https://elonsx2.com](https://elonsx2.com)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i97924t",
+                    "author": "lightswarm124",
+                    "score": 0,
+                    "created_utc": 1652967772.0,
+                    "response": "Because its the hip and popular thing to do, and will help boost whatever random marketing efforts to attract people to smartBCH. Whether it should be done is almost never asked",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97sngz",
+                            "author": "ImRichBCH",
+                            "score": 1,
+                            "created_utc": 1652976061.0,
+                            "response": "LOL, are you stupid or something. The actual answer makes sense you just had to read. \n\nThe current design is basically what Vitalik planned from the start for Ethereum becuase it makes more sense to have a complicated layer 2 and a simple and cheap layer 1",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

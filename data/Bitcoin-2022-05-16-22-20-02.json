@@ -9,123 +9,6 @@
     ],
     "posts": [
         {
-            "id": "ur7ijw",
-            "title": "Why does the network need a consensus algorithm?",
-            "url": "https://www.reddit.com/r/Bitcoin/comments/ur7ijw/why_does_the_network_need_a_consensus_algorithm/",
-            "author": "Leading-Fail-7263",
-            "created_utc": 1652739102.0,
-            "score": 4,
-            "num_comments": 11,
-            "subreddit": "Bitcoin",
-            "selftext": "I apologise for the basic question (obviously not suggesting there shouldn\u2019t be a consensus algrothim). \n\nBut if every node checks whether a broadcasted transaction is legitimate, why do you need a consensus mechanism (PoW) to determine if someone can update the public database? \n\nIf a transaction has been approved by everyone, isn\u2019t that enough to add it to the ledger?\n\nThank you.",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8vlkwe",
-                    "author": "nullc",
-                    "score": 16,
-                    "created_utc": 1652740180.0,
-                    "response": "Because if you make two versions of a transaction, one that pays all your coins to Alice and the other that pays them all to Bob,  the network needs some way to decide which of these two is accepted.  If both were accepted you'd create more coins out of thin air.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8vs2w6",
-                            "author": "satoshishash",
-                            "score": 3,
-                            "created_utc": 1652743232.0,
-                            "response": "Ahh the old double spend problem? Am I mistaken?",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i8x0j8d",
-                                    "author": "never_safe_for_life",
-                                    "score": 1,
-                                    "created_utc": 1652768360.0,
-                                    "response": "Correct",
-                                    "depth": 3,
-                                    "comments": [
-                                        {
-                                            "id": "i8x0llu",
-                                            "author": "satoshishash",
-                                            "score": 1,
-                                            "created_utc": 1652768412.0,
-                                            "response": "Thank you.",
-                                            "depth": 4,
-                                            "comments": []
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i8vl5px",
-                    "author": "SHA256dynasty",
-                    "score": 7,
-                    "created_utc": 1652739988.0,
-                    "response": "you need a mechanism to keep the blocks to be slow to achieve consensus, otherwise you'd keep having different versions of the blockchain appear simultaneously (orphan blocks). if everyone doesn't agree A-> B happened before B->C happened, then B->C isn't necessarily a valid tx  \nyou also need to limit the size of the blockchain and bandwidth required to maintain decentralization so everyone who wants to can run a node",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8vs4l9",
-                    "author": "satoshishash",
-                    "score": 6,
-                    "created_utc": 1652743253.0,
-                    "response": "Is to fix the double spend problem?",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8w6yi6",
-                            "author": "LeagueReplays2",
-                            "score": 4,
-                            "created_utc": 1652750640.0,
-                            "response": "yes",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i8vjhzj",
-                    "author": "NiceDoctorBeam",
-                    "score": 5,
-                    "created_utc": 1652739247.0,
-                    "response": "Make it too expensive to cheat.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8vx31z",
-                    "author": "savinelli_smoker",
-                    "score": 4,
-                    "created_utc": 1652745697.0,
-                    "response": "Because you can have two legit transactions spending the same money at the same time. Without a central authority to decide who to get the money, PoW is needed to sort out the truth. The decision was made that we always trust the longest chain. And this is the ingenious part and the actual breakthrough of bitcoin.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8w68k8",
-                    "author": "Suspicious-Cry-6756",
-                    "score": 1,
-                    "created_utc": 1652750285.0,
-                    "response": "Because it needs the algorithm consent per se.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8wtszm",
-                    "author": "Independent-Snow-129",
-                    "score": 1,
-                    "created_utc": 1652763416.0,
-                    "response": "A transaction doesn't need to be approved by everyone(p2p).  It just need to be confirm in the blockchain.  Your node *or someone else node* verify your transaction and it follows the way you want to interact with the blockchain.\n\nTo have consensus you need more than 51% of the hashrate, bitcoin is backward compatible , therefor It means you can avoid consensus upgrade If you don't trust it.\n\nIn a case where this upgrade have draconian measure and affect your node , they can hardfork if they have less hashrate, *or* you can hardfork   .    *Consensus determine the validity of transactions .*\n\n***The Byzantine Formula(don't trust, verify)***",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "ur7h5c",
             "title": "Is there a bitcoin custodian for private holders?",
             "url": "https://www.reddit.com/r/Bitcoin/comments/ur7h5c/is_there_a_bitcoin_custodian_for_private_holders/",
@@ -668,6 +551,151 @@
                     "score": 1,
                     "created_utc": 1652806573.0,
                     "response": "dammit, stop telling others what im doing!!",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ur7ijw",
+            "title": "Why does the network need a consensus algorithm?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/ur7ijw/why_does_the_network_need_a_consensus_algorithm/",
+            "author": "Leading-Fail-7263",
+            "created_utc": 1652739102.0,
+            "score": 4,
+            "num_comments": 15,
+            "subreddit": "Bitcoin",
+            "selftext": "I apologise for the basic question (obviously not suggesting there shouldn\u2019t be a consensus algrothim). \n\nBut if every node checks whether a broadcasted transaction is legitimate, why do you need a consensus mechanism (PoW) to determine if someone can update the public database? \n\nIf a transaction has been approved by everyone, isn\u2019t that enough to add it to the ledger?\n\nThank you.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8vlkwe",
+                    "author": "nullc",
+                    "score": 22,
+                    "created_utc": 1652740180.0,
+                    "response": "Because if you make two versions of a transaction, one that pays all your coins to Alice and the other that pays them all to Bob,  the network needs some way to decide which of these two is accepted.  If both were accepted you'd create more coins out of thin air.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8vs2w6",
+                            "author": "satoshishash",
+                            "score": 3,
+                            "created_utc": 1652743232.0,
+                            "response": "Ahh the old double spend problem? Am I mistaken?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8x0j8d",
+                                    "author": "never_safe_for_life",
+                                    "score": 3,
+                                    "created_utc": 1652768360.0,
+                                    "response": "Correct",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8x0llu",
+                                            "author": "satoshishash",
+                                            "score": 1,
+                                            "created_utc": 1652768412.0,
+                                            "response": "Thank you.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i8x0oqz",
+                            "author": "Leading-Fail-7263",
+                            "score": 1,
+                            "created_utc": 1652768478.0,
+                            "response": "And what is that way? Whatever is mined first?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8x2rz9",
+                                    "author": "nullc",
+                                    "score": 5,
+                                    "created_utc": 1652770198.0,
+                                    "response": "Yes, or to be more precise whichever one eventually ends up in the most work chain.\n\nIn a particular chain of blocks only one could be mined as a chain containing both would be invalid.\n\nTechnically the other one could be mined first (from whatever perspective you choose) but that chain could be overtaken by a chain mining the other instead.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i8zpl45",
+                            "author": "herzmeister",
+                            "score": 1,
+                            "created_utc": 1652819974.0,
+                            "response": "also OP falls for one or more of the [Fallacies of Distributed Computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing), arguably\n\nin a pure stateless p2p design, how would you even know what \"everyone\" means",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8vl5px",
+                    "author": "SHA256dynasty",
+                    "score": 9,
+                    "created_utc": 1652739988.0,
+                    "response": "you need a mechanism to keep the blocks to be slow to achieve consensus, otherwise you'd keep having different versions of the blockchain appear simultaneously (orphan blocks). if everyone doesn't agree A-> B happened before B->C happened, then B->C isn't necessarily a valid tx  \nyou also need to limit the size of the blockchain and bandwidth required to maintain decentralization so everyone who wants to can run a node",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8vs4l9",
+                    "author": "satoshishash",
+                    "score": 5,
+                    "created_utc": 1652743253.0,
+                    "response": "Is to fix the double spend problem?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8w6yi6",
+                            "author": "LeagueReplays2",
+                            "score": 4,
+                            "created_utc": 1652750640.0,
+                            "response": "yes",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8vx31z",
+                    "author": "savinelli_smoker",
+                    "score": 5,
+                    "created_utc": 1652745697.0,
+                    "response": "Because you can have two legit transactions spending the same money at the same time. Without a central authority to decide who to get the money, PoW is needed to sort out the truth. The decision was made that we always trust the longest chain. And this is the ingenious part and the actual breakthrough of bitcoin.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8vjhzj",
+                    "author": "NiceDoctorBeam",
+                    "score": 3,
+                    "created_utc": 1652739247.0,
+                    "response": "Make it too expensive to cheat.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8w68k8",
+                    "author": "Suspicious-Cry-6756",
+                    "score": 1,
+                    "created_utc": 1652750285.0,
+                    "response": "Because it needs the algorithm consent per se.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8wtszm",
+                    "author": "Independent-Snow-129",
+                    "score": 1,
+                    "created_utc": 1652763416.0,
+                    "response": "A transaction doesn't need to be approved by everyone(p2p).  It just need to be confirm in the blockchain.  Your node *or someone else node* verify your transaction and it follows the way you want to interact with the blockchain.\n\nTo have consensus you need more than 51% of the hashrate, bitcoin is backward compatible , therefor It means you can avoid consensus upgrade If you don't trust it.\n\nIn a case where this upgrade have draconian measure and affect your node , they can hardfork if they have less hashrate, *or* you can hardfork   .    *Consensus determine the validity of transactions .*\n\n***The Byzantine Formula(don't trust, verify)***",
                     "depth": 1,
                     "comments": []
                 }

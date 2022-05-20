@@ -37,8 +37,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ursvoz/is_there_anyway_to_purchase_bitcoin_truly/",
             "author": "Pots454",
             "created_utc": 1652811960.0,
-            "score": 3,
-            "num_comments": 19,
+            "score": 12,
+            "num_comments": 56,
             "subreddit": "BitcoinBeginners",
             "selftext": "Noob still picking it up. In the process of opening a couple of accounts and I do have a hardware wallet. Not planning any illegal activities or depositing millions of dollars, just trying to completely understand how things work.   \nPurchasing from an exchange they have all your info and you need to link a bank account so your bank also has everything. Every penny in and out is documented.\n\nHaven\u2019t tried one yet but using an ATM is mentioned a lot. From what I have seen even these require some ID. One I just looked at requires a registered account for over $250. Under that amount you still need a phone number. Easily traced back to you. Of course I guess you could use a burner phone but for small amounts that makes no sense.\n\nOther than person to person and handing over cash is there really any way to do it?\n\nOf course you would then have to eliminate that person because they know what you just received.\n\n(that was a joke)",
             "stickied": false,
@@ -46,7 +46,7 @@
                 {
                     "id": "i8z9gtl",
                     "author": "bitusher",
-                    "score": 10,
+                    "score": 19,
                     "created_utc": 1652813325.0,
                     "response": ">truly anonymously?\n\nNothing in life is 100% anonymous . Privacy is a spectrum. Even if you are dealing with gold and physical cash \n\n>Not planning any illegal activities or depositing millions of dollars, just trying to completely understand how things work.\n\nIf you are merely concerned about longterm privacy than you are likely overthinking things and the solution is rather simple. \n\n1)\tWithdraw your btc from exchange to wallet A(mobile wallet) , than send to wallet  wallet B(example - HW wallet) within a few hours and never in reverse you create more plausible deniability which is good for privacy and tax reasons. Make sure you send the entire amount each time as well. \n\n2)\tWhen you are ready to spend your bitcoin in your hardware wallet there are many ways to sell or spend the bitcoin very privately like loading the bitcoin up in a lightning wallet where chain analysis cannot track those UTXOs offchain. \n\nWith Chainanalytics exchanges and regulators are using probabilistic guess work in tracking transactions onchain. They merely assume your withdraw address likely belongs to you. By sending the bitcoin from wallet A to wallet B within a few hours you are creating plausible deniability and adding in significant doubt those UTXOs(bitcoin) belong to you and doing so in such a small window that the price change is moot to avoid creating a taxable event. At any time in the future you can privately spend the bitcoin or sell it for fiat in a private manner. \n\n>you need to link a bank account so your bank also has everything. \n\nYour bank knows how much fiat was deposited and withdrawn . That is it. not what you bought or if you bought any bitcoin or when you withdrew it or for how much \n\n>Haven\u2019t tried one yet but using an ATM is mentioned a lot. From what I have seen even these require some ID\n\nDepends \n\nmany people visit atms that only require sms verification for smaller amounts in this list - https://coinatmradar.com/\n\n> Under that amount you still need a phone number. Easily traced back to you. \n\nthere are many free sms services online \n\n>Other than person to person and handing over cash is there really any way to do it?\n\nmany ways to achieve privacy (you understand the blackmarket mainly uses bitcoin even to this day... ask yourself why is this ):\n\n1) mine bitcoin \n\n2) accept bitcoin for a good or service \n\n3) buy bitcoin p2p \n\n4) Use many DEXs or escrow exchanges \n\nhttps://github.com/cointastical/P2P-Trading-Exchanges\n\n5) use an atm with a mask and free sms service \n\n6) Buy bitcoin with a CEX and coinjoin it \n\n7) Buy bitcoin with a CEX and spend it with a lightning wallet , payjoin, liquid sidechain , etc ..\n\n8) buy bitcoin with a cex and mix it with 2 lightning wallets instead of coinjoining",
                     "depth": 1,
@@ -54,7 +54,7 @@
                         {
                             "id": "i8znr9r",
                             "author": "Pots454",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1652819205.0,
                             "response": "Thanks for the responses. I am not necessarily over thinking the whole thing, trying to understand exactly how it works. I believe the exchanges send you a 1099?\n\nOnce that occurs it\u2019s pretty much over with. Everybody knows. What you do with it from then on doesn\u2019t really matter.\n\nLooked into the Lightning network you mentioned but I think I\u2019m getting ahead of myself.",
                             "depth": 2,
@@ -89,8 +89,56 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "id": "i922qzn",
+                            "author": "BallBustingSam",
+                            "score": 1,
+                            "created_utc": 1652869868.0,
+                            "response": "can p2p transactions (selling the crypto and getting money deposited in my bank from a random buyer's account) be traced by the government and create a taxable event?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92hf4h",
+                                    "author": "bitusher",
+                                    "score": 1,
+                                    "created_utc": 1652879001.0,
+                                    "response": "A US bank will not normally report anything to your government unless it meets the FINCEN criteria, or if there is a warrant/subpoena for records, or if there is an IRS audit\n\nIf you receive a deposit into your bank account from an unknown source and the above occurs than there would be an open question of where those funds came from they could make a guess with or ask you. \n\nThus it of course would be wiser to sell for cash or spend the bitcoin directly , but there is also no guarantee they would even begin to know where the fiat came from from a bank deposit in your name either \n\nPrivacy is a complicated topic and a spectrum. There are varying degrees of privacy based upon your efforts",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i933vns",
+                                            "author": "BallBustingSam",
+                                            "score": 1,
+                                            "created_utc": 1652888872.0,
+                                            "response": "Dealing with Indian Bank and government here, but thanks for the info!",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i934u4t",
+                                                    "author": "bitusher",
+                                                    "score": 1,
+                                                    "created_utc": 1652889265.0,
+                                                    "response": "India is much more aggressive with fighting money laundering and capital flight therefore I would suggest selling bitcoin p2p for cash or spending it directly instead",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
+                },
+                {
+                    "id": "i91ond8",
+                    "author": "igadjeed",
+                    "score": 3,
+                    "created_utc": 1652857162.0,
+                    "response": "> you would then have to eliminate that person\n\nWear masks and gloves for in-person anonymity  \n\n.  \n\nBitcoin privacy is nuanced. Read the privacy page for all the details  \nhttps://en.bitcoin.it/wiki/Privacy",
+                    "depth": 1,
+                    "comments": []
                 },
                 {
                     "id": "i8z9boe",
@@ -98,6 +146,33 @@
                     "score": 2,
                     "created_utc": 1652813266.0,
                     "response": "Buy it from a friend in person",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i909e1r",
+                    "author": "Jetjones",
+                    "score": 2,
+                    "created_utc": 1652828703.0,
+                    "response": "Bisq is a good way. You can pay with cash and it\u2019s non KYC. You pay extra, tho.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91oxcm",
+                    "author": "Coco_Ardo",
+                    "score": 2,
+                    "created_utc": 1652857387.0,
+                    "response": "www.kycnot.me",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i920f8a",
+                    "author": "azraelle_178",
+                    "score": 1,
+                    "created_utc": 1652867913.0,
+                    "response": "I guess you really can't buy a coin anonymously. I mean personal identification is very important in the world of crypto. In my opinion, it is used to prevent uncertainties as well.",
                     "depth": 1,
                     "comments": []
                 },
@@ -129,15 +204,6 @@
                     "comments": []
                 },
                 {
-                    "id": "i909e1r",
-                    "author": "Jetjones",
-                    "score": 1,
-                    "created_utc": 1652828703.0,
-                    "response": "Bisq is a good way. You can pay with cash and it\u2019s non KYC. You pay extra, tho.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i90iw32",
                     "author": "Inner-Assignment-601",
                     "score": 1,
@@ -156,20 +222,38 @@
                     "comments": []
                 },
                 {
-                    "id": "i91029q",
-                    "author": "ouyangnna",
-                    "score": 1,
-                    "created_utc": 1652841388.0,
-                    "response": "There is no way to be anonymous at all, and ID verification is required to withdraw and buy cryptocurrencies.\r  \nThere is no way to buy more cryptocurrencies without ID verification on the account.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i91d6ja",
                     "author": "JazzyHandzzz",
                     "score": 1,
                     "created_utc": 1652848616.0,
                     "response": "You could buy it from a Bitcoin ATM down side would be the fees and the spreads",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i929o19",
+                    "author": "Sea-Process-9554",
+                    "score": 1,
+                    "created_utc": 1652874696.0,
+                    "response": "When I buy in a non kyc'd exchange like kucoin or bybit , how does that work ser ?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i93jiim",
+                    "author": "Akwardpaws",
+                    "score": 1,
+                    "created_utc": 1652895182.0,
+                    "response": "Sell some of your stuff for crypto. But if/when you want to change it green, you\u2019ll need a perfect friend who\u2019ll charge a premium or a registered exchange.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91o9t0",
+                    "author": "OneStepAheadApp",
+                    "score": 0,
+                    "created_utc": 1652856843.0,
+                    "response": ">anonymously\n\nYou will never be able to do it, also there was no way in past to purchase anonymously. The reason is simple - bitcoin pseudonymous, means it can be tracked. I believe you meant to buy without KYC. And without KYC may be very hard nowadays, unless you buy over the counter in  transaction between 2 private people",
                     "depth": 1,
                     "comments": []
                 }

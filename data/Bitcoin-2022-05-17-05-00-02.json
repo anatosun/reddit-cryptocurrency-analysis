@@ -15,7 +15,7 @@
             "author": "OdoIcontradictmyself",
             "created_utc": 1652762926.0,
             "score": 3,
-            "num_comments": 8,
+            "num_comments": 11,
             "subreddit": "Bitcoin",
             "selftext": "I\u2019m non-technical. Currently hold my BTC on a trezor and interested in setting up a node to learn more about Bitcoin and help secure the network. I\u2019m capable of learning but literally wouldn\u2019t even know where to go to download Bitcoin core. What\u2019s the best node hardware for someone like me and what are the steps to set it up? Once it\u2019s up and running, can I direct my trezor wallet to it or should I switch to a node based wallet. Sorry if this sounds rookie, just trying to learn.",
             "stickied": false,
@@ -37,9 +37,28 @@
                             "depth": 2,
                             "comments": [
                                 {
+                                    "id": "i8x2fpk",
+                                    "author": "tinycorperation",
+                                    "score": 3,
+                                    "created_utc": 1652769907.0,
+                                    "response": "It\u2019s a bitcoin and lightning node. It is easy to set up with a very well designed UX/UI.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8y9zwt",
+                                            "author": "OdoIcontradictmyself",
+                                            "score": 1,
+                                            "created_utc": 1652798855.0,
+                                            "response": "\ud83d\ude4f",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
                                     "id": "i8wzmii",
                                     "author": "lightbulb-7",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1652767632.0,
                                     "response": "Super straightforward setup and optimized for UX/UI\n\nYes, you can direct your Trezor to it, but AFAIK you need to do it through Electrum\n\nEdit: I am also no programmer and came across bitcoin 2 years ago. I also have an Umbrel node",
                                     "depth": 3,
@@ -47,22 +66,23 @@
                                         {
                                             "id": "i8xhrxx",
                                             "author": "FreakyPriest",
-                                            "score": 1,
+                                            "score": 2,
                                             "created_utc": 1652783565.0,
                                             "response": "Umbrel runs Electrum automatically. After the blockchain is fully synchronized you need to wait some hours or a day for Electrum to sync. This is not shown in the UI. But no knowledge is needed to seit it up. It does automatically.\n\nThe wallet software needs support for the Tor network though. Umbrel only supports connection via Tor. I don't know if the Trezor wallet software can do this. And you need to run a Tor proxy on the PC that runs the wallet software. You can just run Tor Browser while using the wallet.",
                                             "depth": 4,
-                                            "comments": []
+                                            "comments": [
+                                                {
+                                                    "id": "i8xowwa",
+                                                    "author": "NitronBot106",
+                                                    "score": 2,
+                                                    "created_utc": 1652788508.0,
+                                                    "response": "Just make a watching wallet on your PC using electrum which makes it easy to connect to your node over tor. It took me like 2 minutes to connect my wallet following the instructions from umbrel.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
                                         }
                                     ]
-                                },
-                                {
-                                    "id": "i8x2fpk",
-                                    "author": "tinycorperation",
-                                    "score": 1,
-                                    "created_utc": 1652769907.0,
-                                    "response": "It\u2019s a bitcoin and lightning node. It is easy to set up with a very well designed UX/UI.",
-                                    "depth": 3,
-                                    "comments": []
                                 }
                             ]
                         },
@@ -77,7 +97,7 @@
                                 {
                                     "id": "i8x81h5",
                                     "author": "dlq84",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1652774855.0,
                                     "response": "Yes, it's running Bitcoin Core.",
                                     "depth": 3,
