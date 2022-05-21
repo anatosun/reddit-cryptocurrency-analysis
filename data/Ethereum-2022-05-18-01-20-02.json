@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/ethereum/comments/us1c5x/forking_optimism_l2_having_several_l2_forks_to/",
             "author": "LinusThiccTips",
             "created_utc": 1652836464.0,
-            "score": 6,
-            "num_comments": 8,
+            "score": 8,
+            "num_comments": 11,
             "subreddit": "ethereum",
             "selftext": "I noticed Metis Network is just a fork of Optimism L2. Looked at Optimism\u2019s Github and glanced at the instructions, deploying your own L2 fork seems simple enough.\n\nSome brainstorming later, it seems like having a wallet that would make bridging assets between L2 networks would be a major milestone. When dapps start deploying their own L2 forks (Ape and all those NFT projects come to mind) and users can seamlessly jump between networks, it would add a ton of capacity to the overall ecosystem. I think the biggest issue would be TVL fragmentation. \n\nHow far from this scenario do you think we are?\n\nI noticed there are some new wallets popping up like xDeFi Wallet that could pick up on this, Metamask hasn\u2019t changed much in a while. \n\nOne other approach would be having a master L1 contract where L2s could integrate and combine liquidity to facilitate transfers between L2s, to also take care of the fragmentation issue. I haven\u2019t looked a lot into danksharding or sharding yet, but it sounds similar.",
             "stickied": false,
@@ -23,11 +23,30 @@
                 {
                     "id": "i90sd73",
                     "author": "Perleflamme",
-                    "score": 6,
+                    "score": 9,
                     "created_utc": 1652837729.0,
                     "response": "We're not there yet, since L1 gas is still mostly untouched by L2s in terms of gas consumption (~1%, with rarely an upward to 2%), but we'll see at some point that L2s have to compete against each others for L1 gas.\n\nSo, copy-pasting the L2s in itself doesn't save any gas. What saves gas is ensuring L2s are as efficient as possible and as many end user transactions as possible happen on L2s rather than on the L1.\n\nWhat copy-pasting L2s brings is competition between L2s, which is good to explore several different possibilities at once among the huge sea of possibilities available to us, so that we can pick up better and better solutions over time.\n\nThough, what different L2s could offer as increases in efficiency is specialization: an L2 specialized to technically compute and store specific data can become very efficient. Notably, data compression can be tweaked to the specificities of the use cases it covers (geo data for one chain, financial micro transactions for another and such).\n\nEdit: as such, we could even get to a point where each smart contract resides in its own L2, specifically tailored for it and governed by the DAO managing the smart contract. This way, there's no need to repeat each time what this or that transaction entailed exactly, since it's just the result of the same smart contract each time: there's much space to save this way.\n\nAnd then, you could have some kind of L2 hub(s) where there would be no smart contract except for bridges between L2s, so that most of the traffic comes from and goes to such hub and efficiently saves gas by handling bridge transfers as bundles, in the same way rollups handle their L2 transactions as bundles.",
                     "depth": 1,
                     "comments": [
+                        {
+                            "id": "i943ebf",
+                            "author": "LinusThiccTips",
+                            "score": 2,
+                            "created_utc": 1652903246.0,
+                            "response": "Thank you very much for taking the time to write this, much appreciated!",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i94ao1b",
+                                    "author": "Perleflamme",
+                                    "score": 1,
+                                    "created_utc": 1652906210.0,
+                                    "response": "You welcome.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
                         {
                             "id": "i91nesr",
                             "author": "AESTHTK",
@@ -39,22 +58,13 @@
                                 {
                                     "id": "i91ogr6",
                                     "author": "Perleflamme",
-                                    "score": 2,
+                                    "score": 3,
                                     "created_utc": 1652857004.0,
                                     "response": "Yes, it would be great to have many application specific networks.",
                                     "depth": 3,
                                     "comments": []
                                 }
                             ]
-                        },
-                        {
-                            "id": "i943ebf",
-                            "author": "LinusThiccTips",
-                            "score": 1,
-                            "created_utc": 1652903246.0,
-                            "response": "Thank you very much for taking the time to write this, much appreciated!",
-                            "depth": 2,
-                            "comments": []
                         }
                     ]
                 },

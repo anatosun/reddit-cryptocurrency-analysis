@@ -1,0 +1,247 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uuc80n",
+            "title": "Once you send btc to a broker is the origin traceable if you send the same out?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uuc80n/once_you_send_btc_to_a_broker_is_the_origin/",
+            "author": "Pure_Astronomer_1645",
+            "created_utc": 1653095005.0,
+            "score": 9,
+            "num_comments": 15,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I'm sure it's not like they're btc mixers etc. but is it easy to find the origin of btc from where I acquired them and after I send them out of my broker? \n\nNothing nefarious, just an honest question.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9ecwhj",
+                    "author": "MrTrocket",
+                    "score": 0,
+                    "created_utc": 1653095069.0,
+                    "response": "Traceable to your broker and traceable to you",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9edcim",
+                            "author": "Pure_Astronomer_1645",
+                            "score": 1,
+                            "created_utc": 1653095310.0,
+                            "response": "Can they also see where they originated?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ejw9i",
+                                    "author": "Brettanomyces78",
+                                    "score": 1,
+                                    "created_utc": 1653098714.0,
+                                    "response": "Depends what you mean.  When customers deposit, the deposits generally get thrown into one pot together.  Withdrawals come from that one common pot.  Only the exchange knows to whom the withdrawal goes, and even then there's some educated guesswork.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9eervd",
+                                    "author": "MrTrocket",
+                                    "score": 0,
+                                    "created_utc": 1653096076.0,
+                                    "response": "The Blockchain is immutable. That\u2019s the whole point .",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9f92hw",
+                                    "author": "theoretical_hipster",
+                                    "score": 1,
+                                    "created_utc": 1653114775.0,
+                                    "response": "Bitcoin doesn\u2019t move anywhere, the keys that are capable of spending do. If the broker you purchased from is KYC then yes the receive address is a known entity by broker. \n\nBuy/sell on Bisq, Mine, or earn Peer to Peer for kyc sats. \n\nLightning Network is private over tor in channels back and forth but the open and close on chain is traceable assuming kyc origin. \n\nMixers can break deterministic links on spends, but the inputs are obvious assuming kyc.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9eeals",
+                    "author": "bitusher",
+                    "score": 0,
+                    "created_utc": 1653095824.0,
+                    "response": "Depends upon the exchange. Most people would not be aware that the bitcoin came from an exchange and after it leaves an exchange it becomes an issue of probabilistic guesswork who might have the bitcoin because addresses aren't tied to identities by default. \n\nDo you need privacy immediately to spend privately or are you thinking longterm ?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9eifvm",
+                            "author": "Pure_Astronomer_1645",
+                            "score": 1,
+                            "created_utc": 1653097966.0,
+                            "response": "I just don't want one receiver knowing that I got it from such and such party/institution. Just a private kinda person with a little hint of paranoid androidism.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9fgnvr",
+                                    "author": "bobderbobs",
+                                    "score": 1,
+                                    "created_utc": 1653121461.0,
+                                    "response": "So you got the btc from someone who cases about privacy? Is the person a friend? Do the person know about mixing?\n\nIf the person doesn't want you to send this utxo to a broker then offer to send it back on exchange for a mixed utxo (utxo = unspent transaction output).\n\nGovernment/police can probably ask a broker who send btc from what address and received to what address. Therefore the link from the old address to the new one us very clear.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ex9e6",
+                    "author": "blaze1234",
+                    "score": 1,
+                    "created_utc": 1653106187.0,
+                    "response": "what is a \"broker\"?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9f24rz",
+                            "author": "Pure_Astronomer_1645",
+                            "score": 1,
+                            "created_utc": 1653109456.0,
+                            "response": "They call themselves \"EXCHANGES\" and technically that's not the truth. They're just a liquidity pool and there's really no matching of a buyer and seller. They ARE your counterparty, them and their liquidity providers. \n\nThey're actually brokers. It's the same business model as off-shore and some on-shore fx brokers. That's why you have brokers dealing currencies and ugh...crypto. \n\nVery few know this, really cuz they don't care to and kinda don't want to know. They want to believe in crypto so hard. \n\nDoesn't really matter, but now you know! Cheers",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9f4eo1",
+                                    "author": "Brettanomyces78",
+                                    "score": 1,
+                                    "created_utc": 1653111071.0,
+                                    "response": "Which brokers call themselves exchanges?  Most that I've seen are fairly transparent about what they are.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9fgxn6",
+                                    "author": "bobderbobs",
+                                    "score": 1,
+                                    "created_utc": 1653121709.0,
+                                    "response": "Maybe you use a very different definition but I think of a broker as a service provider who buys / sells on your behalf on an exchange. A exchange has orderbooks for buying/selling and brings together buyers and sellers",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9f0xpx",
+                    "author": "BlockChainR3volution",
+                    "score": 1,
+                    "created_utc": 1653108616.0,
+                    "response": "Its alll traceable\u2026 that bitcoin history from it being mined to u getting it and after is traceable",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ecs57",
+                    "author": "AutoModerator",
+                    "score": 0,
+                    "created_utc": 1653095006.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uuc72w",
+            "title": "Help with DCA for beginners",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uuc72w/help_with_dca_for_beginners/",
+            "author": "__musk8",
+            "created_utc": 1653094921.0,
+            "score": 3,
+            "num_comments": 11,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Hi everyone, I\u2019m kinda new to crypto and since we are basically in a bear market I want to start DCAing slowly in the crypto with the little savings that I have to invest in the long term. Therefore, I was wondering what is the best way to do so since I don\u2019t think I should be doing it through the exchange, but maybe prove me wrong if anything. Just looking for some advice from more experienced people. Would really appreciate the help.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9eef3n",
+                    "author": "bitusher",
+                    "score": 5,
+                    "created_utc": 1653095891.0,
+                    "response": "If you get paid twice a month than what you should do is buy some Bitcoin immediately twice a month and also in addition set buy limit orders on an exchange for 5-10% below spot price. If those orders do not get filled by  the following paycheck than buy your set amount and reset the buy limit orders for 5-10% below spot price from the current market price.\nThe reason for this is 2 fold:\n\n1)\tyou can auto pickup savings with BTC volatility on the dips which is psychologically rewarding\n\n2)\tIf a large amount of people create large amounts of Buy limit support than BTC becomes more stable unit of account and more liquid leading to more investor confidence and making BTC more of a currency(less volatility = better unit of account) and thus increases the likelihood your investment will continue appreciating in value.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9eijt6",
+                            "author": "__musk8",
+                            "score": 1,
+                            "created_utc": 1653098022.0,
+                            "response": "Damn that\u2019s interesting, thank you. Any chance you can evaluate more on what buy limit orders are, and are they a thing on KuCoin exchange, cause that\u2019s what I\u2019m planning on using if that\u2019s ok.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9fseza",
+                                    "author": "BTCMachineElf",
+                                    "score": 1,
+                                    "created_utc": 1653132018.0,
+                                    "response": "It's when you place an order (a bid) to buy below the current price. The order waits until the price falls, at which point you automatically buy it.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ego5l",
+                    "author": "daBiggaFigga",
+                    "score": 2,
+                    "created_utc": 1653097076.0,
+                    "response": "I just buy with cash weekly on an exchange like Coinbase, then let it stack. \n\nOnce the stack is significant, I transfer it to a cold wallet. This cuts down on transfer costs.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9fk3h4",
+                            "author": "Angustony",
+                            "score": 1,
+                            "created_utc": 1653124674.0,
+                            "response": "This.\n\nMost exchanges are reasonably safe as short term solutions when accumulating but shouldn't be relied on for long term storage.\n\nYou never truly own your coins if you have them on an exchange.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ecmfq",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653094921.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9f6ze0",
+                    "author": "AngryZoomer",
+                    "score": 1,
+                    "created_utc": 1653113043.0,
+                    "response": "I\u2019ve been using the strike app and buying .50 cents an hour",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9fkaxp",
+                    "author": "Ok_Board_7717",
+                    "score": 1,
+                    "created_utc": 1653124865.0,
+                    "response": "DCAing into coins in this moment is so valid that I choose kucoin to choose my gems because it is the house of good gems. Recently copped some like PNT, DIA and CTSI over there as they are still below 100m market cap which has potential to do at least x10.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

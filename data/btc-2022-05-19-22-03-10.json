@@ -95,8 +95,8 @@
             "url": "https://twitter.com/odell/status/1527277101413548032",
             "author": "btcxio",
             "created_utc": 1652997525.0,
-            "score": 30,
-            "num_comments": 27,
+            "score": 37,
+            "num_comments": 47,
             "subreddit": "btc",
             "selftext": "",
             "stickied": false,
@@ -104,7 +104,7 @@
                 {
                     "id": "i99by3h",
                     "author": "Remora_101",
-                    "score": 9,
+                    "score": 16,
                     "created_utc": 1652999985.0,
                     "response": "Nice find, Blue wallet was still a question mark on my list of (mostly) custodial LN wallets.",
                     "depth": 1,
@@ -120,7 +120,7 @@
                                 {
                                     "id": "i99nmv4",
                                     "author": "hero462",
-                                    "score": 5,
+                                    "score": 6,
                                     "created_utc": 1653005883.0,
                                     "response": "MUUM defaults to custodial as well.  The first option to backup a wallet is with an email address.",
                                     "depth": 3,
@@ -146,7 +146,7 @@
                                                             "author": "YeOldDoc",
                                                             "score": 0,
                                                             "created_utc": 1653032011.0,
-                                                            "response": "In order for you to receive funds via a LN channel, the other channel party needs to have funds on **their** side of the channel, not **you on your side**.\n\nThis is called inbound liquidity. There are couple options to get it.\n\n1. You open a channel with equal balance on each side (thus both parties benefit from inbound and outbound liquidity).\n2. You open a channel with higher balance on your side (providing inbound liquidity for the other party and outbound liquidity for you) and start spending on the LN via the other party (thus moving the balance and creating inbound liquidity).\n3. You open a channel with higher balance on the other side (providing inbound liquidity to you). Some provide such inbound-heavy channels for free (likely smaller channels) although you will likely pay a fee for larger ones (~0.5% of total balance). Another option is the LN wallet provider will cover the LN channel costs upfront and use a fee/portion of later transactions to be reimbursed (*Edit: I assume this is what muun uses for faster on-boarding, but u/dariosne should know*).",
+                                                            "response": "In order for you to receive funds via a LN channel, the other channel party needs to have funds on **their** side of the channel, not **you on your side**.\n\nThis is called inbound liquidity. There are couple options to get it.\n\n1. You open a channel with equal balance on each side (thus both parties benefit from inbound and outbound liquidity).\n2. You open a channel with higher balance on your side (providing inbound liquidity for the other party and outbound liquidity for you) and start spending on the LN via the other party (thus moving the balance and creating inbound liquidity).\n3. You open a channel with higher balance on the other side (providing inbound liquidity to you). Some provide such inbound-heavy channels for free (likely smaller channels) although you will likely pay a fee for larger ones (~0.5% of total balance).\n\nAnother option is the LN wallet provider will cover the costs upfront and use a fee/portion of later transactions to be reimbursed (*Edit: I assume this is what muun uses for faster on-boarding, but u/dariosne should know*).",
                                                             "depth": 6,
                                                             "comments": [
                                                                 {
@@ -172,6 +172,25 @@
                                                                                     "created_utc": 1653039926.0,
                                                                                     "response": "It had never really occurred to me that on LN *both the sender and the receiver* of the funds can require a fee.",
                                                                                     "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i9daf5k",
+                                                                                            "author": "galagar12",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1653076323.0,
+                                                                                            "response": "Yep, they require the fee, a very little set of people think about it man, and that's not good thing to think about dude.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "id": "i9dg9r3",
+                                                                                    "author": "evirik",
+                                                                                    "score": 0,
+                                                                                    "created_utc": 1653078963.0,
+                                                                                    "response": "Yep, it's good for the people who are looking to accept the payments.\n\nFor general people it doesn't seem like a good idea to me. It just seems like a bad idea to me man. I don't know about it.",
+                                                                                    "depth": 9,
                                                                                     "comments": []
                                                                                 }
                                                                             ]
@@ -193,6 +212,15 @@
                                                                                     "depth": 9,
                                                                                     "comments": [
                                                                                         {
+                                                                                            "id": "i9bqsh1",
+                                                                                            "author": "_risho_",
+                                                                                            "score": 2,
+                                                                                            "created_utc": 1653052935.0,
+                                                                                            "response": "They have this thing called turbo channels which is an opt in convenience feature which makes them temporarily very trusted but only until the transaction confirms on chain.  Aside from that it has all of the potential risks and drawbacks that you would get from any other ln wallet.  If they are your source of truth for the state of your channels then it would probably be trivial for them to broadcast an old state. That said that isn\u2019t a muun problem that\u2019s just an ln problem. As far as lightning wallets go, assuming you are willing to take on the inherent risks of using ln in the first place, muun is probably one of the wallets that makes the best series of tradeoffs between trustlessness ux and convenience",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        },
+                                                                                        {
                                                                                             "id": "i9bqeei",
                                                                                             "author": "YeOldDoc",
                                                                                             "score": 1,
@@ -200,19 +228,19 @@
                                                                                             "response": "Either by integrating the node inside the wallet and/or using trustless submarine swaps as a bridge between on-chain and LN funds.",
                                                                                             "depth": 10,
                                                                                             "comments": []
-                                                                                        },
-                                                                                        {
-                                                                                            "id": "i9bqsh1",
-                                                                                            "author": "_risho_",
-                                                                                            "score": 1,
-                                                                                            "created_utc": 1653052935.0,
-                                                                                            "response": "They have this thing called turbo channels which is an opt in convenience feature which makes them temporarily very trusted but only until the transaction confirms on chain.  Aside from that it has all of the potential risks and drawbacks that you would get from any other ln wallet.  If they are your source of truth for the state of your channels then it would probably be trivial for them to broadcast an old state. That said that isn\u2019t a muun problem that\u2019s just an ln problem. As far as lightning wallets go, assuming you are willing to take on the inherent risks of using ln in the first place, muun is probably one of the wallets that makes the best series of tradeoffs between trustlessness ux and convenience",
-                                                                                            "depth": 10,
-                                                                                            "comments": []
                                                                                         }
                                                                                     ]
                                                                                 }
                                                                             ]
+                                                                        },
+                                                                        {
+                                                                            "id": "i9cieg2",
+                                                                            "author": "pet_2g",
+                                                                            "score": 0,
+                                                                            "created_utc": 1653064153.0,
+                                                                            "response": "I mean don't have any idea about it as of now, this is going to be good.",
+                                                                            "depth": 8,
+                                                                            "comments": []
                                                                         }
                                                                     ]
                                                                 },
@@ -226,6 +254,15 @@
                                                                     "comments": []
                                                                 }
                                                             ]
+                                                        },
+                                                        {
+                                                            "id": "i9df0y8",
+                                                            "author": "Katrotat",
+                                                            "score": 0,
+                                                            "created_utc": 1653078396.0,
+                                                            "response": "Yeah You've got a point here, this is a really good point here dude.",
+                                                            "depth": 6,
+                                                            "comments": []
                                                         }
                                                     ]
                                                 },
@@ -235,6 +272,15 @@
                                                     "score": 2,
                                                     "created_utc": 1653046278.0,
                                                     "response": "The citation is my own experience.\n\nHow can a hierachically deterministic wallet can be retrieved with an email address?  It cannot.  Which means Muun would have to access your wallet for you.  Custodial.  \n\nThe default/first option is for email backup.  I did not say there were no other options.  Learn to read.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "i9eaj4g",
+                                                    "author": "borotev",
+                                                    "score": 1,
+                                                    "created_utc": 1653093793.0,
+                                                    "response": "They're all custodian and they're all against the ethos of btc.",
                                                     "depth": 5,
                                                     "comments": []
                                                 }
@@ -267,6 +313,63 @@
                                                     "comments": []
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "id": "i9d6l2o",
+                                            "author": "bosscui",
+                                            "score": 0,
+                                            "created_utc": 1653074613.0,
+                                            "response": "Yeah, that's the first option that You're going to get. And a good option.\n\nBut the problem is it's a custodial wallet and how long that's  going to last?",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9base3",
+                                    "author": "Shibinator",
+                                    "score": 4,
+                                    "created_utc": 1653044569.0,
+                                    "response": "Breez is [\"\"\"non-custodial\"\"\"***](https://twitter.com/TheBCHPodcast/status/1517116405824507904).\n\nIf you're willing to stretch the definition of non-custodial a long way.\n\nIt requires:\n\n- Constant internet access, or backups will go out of date\n- Backup to either Google Drive, or your own remote server.  If your own server, obviously you need to be responsible for configuring and running that yourself\n- Has a proprietary \"seed phrase\" type of thing, which can only be restored in Breez, hence you also need copies of their repositories and the technical skill to manage one of those restores yourself\n- You gotta be able to figure this out with minimal or no help, because their documentation is out of date / incorrect",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9d3ubi",
+                                            "author": "Remora_101",
+                                            "score": 2,
+                                            "created_utc": 1653073334.0,
+                                            "response": "\ud83d\udc4d",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i9bstz5",
+                                            "author": "YeOldDoc",
+                                            "score": 1,
+                                            "created_utc": 1653053831.0,
+                                            "response": "Those are valid annoyances (in particular when there are other LN wallets that do better), but they don't give them custody over your funds.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9bxuwi",
+                                                    "author": "Shibinator",
+                                                    "score": 3,
+                                                    "created_utc": 1653055973.0,
+                                                    "response": "*** Provided you follow all those steps.  If you don't follow those steps, it is custodial, and the majority of users will fall into that category.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9bzjau",
+                                                            "author": "YeOldDoc",
+                                                            "score": 1,
+                                                            "created_utc": 1653056661.0,
+                                                            "response": "How can they be custodial if they don't have your keys?",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
                                         }
                                     ]
                                 },
@@ -277,12 +380,22 @@
                                     "created_utc": 1653016733.0,
                                     "response": "I would love a BCH Mycelium wallet.",
                                     "depth": 3,
-                                    "comments": []
+                                    "comments": [
+                                        {
+                                            "id": "i9dfgs0",
+                                            "author": "janooms",
+                                            "score": 3,
+                                            "created_utc": 1653078596.0,
+                                            "response": "Does that support the LN? I mean if it does I'd like to use that man.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
                                 },
                                 {
                                     "id": "i9aviv3",
                                     "author": "YeOldDoc",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1653032152.0,
                                     "response": "https://walletscrutiny.com is a useful list/overview of wallets with regard to security/custody parameters.",
                                     "depth": 3,
@@ -299,45 +412,54 @@
                                     ]
                                 },
                                 {
-                                    "id": "i9base3",
-                                    "author": "Shibinator",
+                                    "id": "i9ddmdm",
+                                    "author": "bitsanctuary",
                                     "score": 1,
-                                    "created_utc": 1653044569.0,
-                                    "response": "Breez is [\"\"\"non-custodial\"\"\"***](https://twitter.com/TheBCHPodcast/status/1517116405824507904).\n\nIf you're willing to stretch the definition of non-custodial a long way.\n\nIt requires:\n\n- Constant internet access, or backups will go out of date\n- Backup to either Google Drive, or your own remote server.  If your own server, obviously you need to be responsible for configuring and running that yourself\n- Has a proprietary \"seed phrase\" type of thing, which can only be restored in Breez, hence you also need copies of their repositories and the technical skill to manage one of those restores yourself\n- You gotta be able to figure this out with minimal or no help, because their documentation is out of date / incorrect",
+                                    "created_utc": 1653077763.0,
+                                    "response": "Thanks for this, I'm sure this will be helpful to many people.",
                                     "depth": 3,
-                                    "comments": [
-                                        {
-                                            "id": "i9bstz5",
-                                            "author": "YeOldDoc",
-                                            "score": 1,
-                                            "created_utc": 1653053831.0,
-                                            "response": "Those are valid annoyances (in particular when there are other LN wallets that do better), but they don't give them custody over your funds.",
-                                            "depth": 4,
-                                            "comments": []
-                                        }
-                                    ]
+                                    "comments": []
                                 }
                             ]
                         },
                         {
                             "id": "i9atpvz",
                             "author": "YeOldDoc",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1653030583.0,
                             "response": "BlueWallet is indeed not very transparent on this issue:\n\n- On-chain is non-custodial\n- Lightning Network is custodial by default (channels are maintained by their servers) but you can connect to your own server (non-custodial)\n\nhttps://walletscrutiny.com/ gives a good overview if you like to compare your own findings.",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i9d3xko",
+                                    "author": "Remora_101",
+                                    "score": 1,
+                                    "created_utc": 1653073376.0,
+                                    "response": "\ud83d\udc4d",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         },
                         {
                             "id": "i9bqdbd",
                             "author": "4a01e43fa4e98",
-                            "score": 1,
+                            "score": 0,
                             "created_utc": 1653052749.0,
                             "response": "And now it's not, it should just be out of the list fir you.",
                             "depth": 2,
                             "comments": []
                         }
                     ]
+                },
+                {
+                    "id": "i9bwzv7",
+                    "author": "ZaDrOnT",
+                    "score": 2,
+                    "created_utc": 1653055613.0,
+                    "response": "That's not a good thing, it's against the one thing that bitcoiners preach.",
+                    "depth": 1,
+                    "comments": []
                 }
             ]
         }

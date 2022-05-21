@@ -1,0 +1,1153 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "q07s2t",
+            "title": "Amazon confirm that \"25% of all Ethereum workloads in the world run on AWS\".",
+            "url": "https://aws.amazon.com/blockchain/",
+            "author": "jam-hay",
+            "created_utc": 1633224059.0,
+            "score": 1143,
+            "num_comments": 381,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "hf7akfo",
+                    "author": "jmorfeus",
+                    "score": 49,
+                    "created_utc": 1633249195.0,
+                    "response": "This doesn't mean absolutely anything and the amount of people in this thread not understanding how neither AWS not Ethereum works is honestly scary.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hf7h4nl",
+                            "author": "Zakarovski",
+                            "score": 10,
+                            "created_utc": 1633254254.0,
+                            "response": "Why? I'd like to know",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hf7w3je",
+                                    "author": "epic_trader",
+                                    "score": 11,
+                                    "created_utc": 1633264443.0,
+                                    "response": "Ethereum doesn't work faster nor has a higher throughput nor do the gas fees change depending on the number of nodes, it's got nothing to do with the network's performance.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hf9uw1s",
+                                            "author": "Zakarovski",
+                                            "score": 3,
+                                            "created_utc": 1633295327.0,
+                                            "response": "Why do those nodes exist and and what's the decentralized alternative? How does __this__ or __that__ affect things?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hf9zbs6",
+                                                    "author": "epic_trader",
+                                                    "score": 4,
+                                                    "created_utc": 1633297228.0,
+                                                    "response": "A 'node' is just a program that keeps track of Ethereum's history, storing every single block that was mined with all their transactions. In the very early days of Ethereum all users had to run their own node in order to send ETH or interact with smart contracts, but then services came along that would run a node on behalf of the users, like MyEtherWallet or Metamask. Running a node yourself is annoying because it must be kept up-to-date and it takes a large amount of disk space and is only really suited for people with SSD. \n\nMiners for instance must always know when a new block was found and which is the canonical chain, so they are required to run a node in order to find new blocks (although I don't know if miners in pools are actually required to do so or just delegate their hash power, but the pool operators are running the node then). Companies that provide services or data for dapps will also be running nodes.\n\nBy running a node yourself as a user, you're personally verifying the correctness of the state of the blockchain, but by using services like Metamask or MyEtherWallet, you're trusting that those companies provide you with the correct history.\n\nPersonally I think the biggest issue with hosting nodes on AWS is that it could freeze some dapps if they are relying on getting info from a node hosted on AWS and AWS goes down or if Amazon decides to censor them. Say for instance Metamask was hosting their node on AWS and Amazon blocked them, then you'd basically be unable to send/receive or interact with a smart contract via Metamask which would have a huge impact on many users and in turn would make a lot of dapps a lot less convenient to use. \n\nSo the decentralized alternative is basically that all dapp operators or service providers run their own node, at least as a backup.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hfabhhr",
+                                                            "author": "asdafari",
+                                                            "score": 2,
+                                                            "created_utc": 1633302583.0,
+                                                            "response": "> although I don't know if miners in pools are actually required to do so\n\nThey aren't. I mine without a node.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hf8cuot",
+                            "author": "Snoo_42276",
+                            "score": 8,
+                            "created_utc": 1633272930.0,
+                            "response": "These crypto subreddits are mostly non-programmers I think. It\u2019s quite rare to see really substantive or knowledgeable discussions being held. It\u2019s mostly just low resolution speculation.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hf9fsyr",
+                            "author": "IDGAFSIGH",
+                            "score": 0,
+                            "created_utc": 1633289281.0,
+                            "response": "Sure it does. It means Ethereum has 25% of its workload on AWS. That to me means Amazon has an interest in the growth of Ethereum - they both win.\n\nI think your POV is just negative and \u201cabsolutely nothing\u201d is absolutely false. Lol",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hf9pzb2",
+                                    "author": "jmorfeus",
+                                    "score": 0,
+                                    "created_utc": 1633293315.0,
+                                    "response": "My POV is not negative :) I was mainly reacting to those who screamed it means \"CENTRALISATION\". People acting like it means 25% of Ethereum runs on Bezos's backyard lol. \n\n25% being on AWS doesn't mean anything. It's not particularly big number, given how huge AWS is, it's not particularly small number either.\n\nAlso AWS don't care much what is running on their infrastructure. They're just renting it as a service. They run 100% of several businesses I know, doesn't mean they have interest in their growth.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hf9r0pi",
+                                            "author": "IDGAFSIGH",
+                                            "score": 1,
+                                            "created_utc": 1633293742.0,
+                                            "response": "Of course they care. If Ethereum stops using their service, they lose revenue. This ones pretty black and white. They have an interest in ensuring the proper tools to run a blockchain node is available on AWS.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hf65ldi",
+                    "author": "BlaiseGlory",
+                    "score": 126,
+                    "created_utc": 1633224452.0,
+                    "response": "That\u2019s actually a lot less than I expected",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hf68bh3",
+                            "author": "00_nothing",
+                            "score": 84,
+                            "created_utc": 1633225758.0,
+                            "response": "Still too much.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hf6p8lj",
+                                    "author": "cryptOwOcurrency",
+                                    "score": 28,
+                                    "created_utc": 1633234478.0,
+                                    "response": "Why? Staking nodes likely aren't hosted there due to the anti-correlation penalties.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hf6t0tc",
+                                            "author": "Koibitoaa",
+                                            "score": 22,
+                                            "created_utc": 1633236645.0,
+                                            "response": "That only kicks in if 1/3 of network is down. Even if 50% of validators were run on AWS they will not be run from the same availability zone and it's next to impossible for 1/3 total to go offline due to AWS outage. If that happens we have bigger problems than being slashed.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hf6u3ik",
+                                                    "author": "Zaitton",
+                                                    "score": 9,
+                                                    "created_utc": 1633237282.0,
+                                                    "response": "Unless I'm mistaken, aws hasn't had a catastrophic all zone outage in 10 years, right?\n\nCan confirm, a certain huge bank would have serious problems if AWS ever experiences said outage...",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hf726vv",
+                                                            "author": "fireduck",
+                                                            "score": 25,
+                                                            "created_utc": 1633242715.0,
+                                                            "response": "As a former AWS engineer, the regions were really separate.  Bringing regions up was a big pain because things had to come in at a certain order because you could only depend on things in the same region and at the start that was nothing.\n\nWhere as Google, everything is one big weird network.  Sure, the cells are in theory independent but it was super easy to use other services in other places and be barely aware of it.  It worked, and still does but scares me a little.  On the flip side, Google does yearly dirt testing where they break shit on purpose to see what happens.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "hf9q45w",
+                                                                    "author": "mWo12",
+                                                                    "score": 1,
+                                                                    "created_utc": 1633293371.0,
+                                                                    "response": "How come? IAM is only in useast1. So all regions depend on this one region for iam. So how are regions really separate?",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "hf9yfh3",
+                                                                            "author": "fireduck",
+                                                                            "score": 1,
+                                                                            "created_utc": 1633296841.0,
+                                                                            "response": "Good question. I suspect the iam data is shipped as read only replicas to the other regions.  So I think they could all run without us-east-1 but maybe not update iam.\n\nThat is just speculation, I don't know.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "hf731q7",
+                                                    "author": "CryptoN00b34",
+                                                    "score": 5,
+                                                    "created_utc": 1633243337.0,
+                                                    "response": "The problem here is not AWS infrastructure and reliability. What I see is that 25% of Ethereum nodes can be shutdown with by US government (or any government where the data center is) with a pen and piece of paper from a judge or politician.\n\nBut for other side is unreasonable expect that dApps that needs their own node run them in premises, not counting on staking pools of eth2 that needs high availability.\n\nI think in the end is a necessary evil, let's just hope that this AWS % don't grow too much and gets spreads across multiple clouds and individuals around the world.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hf7hqyn",
+                                                            "author": "jcol26",
+                                                            "score": 6,
+                                                            "created_utc": 1633254735.0,
+                                                            "response": "This is why the EU is currently working on building their own direct competitor to AWS/azure/gcp\n\nAn EU cloud run by EU companies for EU businesses and governments. It\u2019s too risky now for them that EU member states have so many workloads running on clouds that can be interfered with or shut down by a US court or government.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "hf7qxfd",
+                                                                    "author": "TheNuogat",
+                                                                    "score": 1,
+                                                                    "created_utc": 1633261294.0,
+                                                                    "response": "Wait what? Do you have a link for this where we can read more?",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "hf7rkgm",
+                                                                            "author": "jcol26",
+                                                                            "score": 1,
+                                                                            "created_utc": 1633261704.0,
+                                                                            "response": "[https://searchcloudcomputing.techtarget.com/definition/European-Cloud-Computing-Strategy](https://searchcloudcomputing.techtarget.com/definition/European-Cloud-Computing-Strategy) but more importantly [https://ec.europa.eu/competition-policy/state-aid/legislation/modernisation/ipcei\\_en](https://searchcloudcomputing.techtarget.com/definition/European-Cloud-Computing-Strategy)\n\nThis is the overall scheme that it's being run on. But you won't get a lot of specific details anywhere yet as currently vendors like OVH and SAP are applying for various parts. It's a huge initiative funded by the EU. We're talking 3-5 year long project timescales here though and it's fairly early days.\n\nI guess it's similar to GAIA-X, but gaia goes much more into standardisation whereas these projects are about building the actual thing. The hope is that by 2025 EU nation states will be able to start using the basic IaaS services and soon after mandates can come through that specify what kinds of workloads or data can run on AWS/Azure and what must be run on EU sponsored infrastructure. \n\nIt's a really exciting project to work on, although it's a bit awkward being a Brit myself.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "hf8cm2c",
+                                                    "author": "user-42",
+                                                    "score": 1,
+                                                    "created_utc": 1633272822.0,
+                                                    "response": "A thunderstorm knocked out all east coast availability zones a few years back. Their east coast zones, at the time, were also their cheapest.\n\nhttps://en.m.wikipedia.org/wiki/June_2012_North_American_derecho\n\nSee impacts in Virginia.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hf8cnp2",
+                                                            "author": "WikiSummarizerBot",
+                                                            "score": 1,
+                                                            "created_utc": 1633272842.0,
+                                                            "response": "**[June 2012 North American derecho](https://en.m.wikipedia.org/wiki/June_2012_North_American_derecho)** \n \n >The June 2012 Mid-Atlantic and Midwest derecho was one of the deadliest and most destructive fast-moving severe thunderstorm complexes in North American history. The progressive derecho tracked across a large section of the Midwestern United States and across the central Appalachians into the mid-Atlantic states on the afternoon and evening of June 29, 2012, and into the early morning of June 30, 2012. It resulted in a total of 22 deaths, millions of power outages across the entire affected region, and a damage total of US$2. 9 billion which exceeded that of all but the August 2020 Midwest derecho (estimated US$11 billion) and the top 45 Atlantic tropical cyclones.\n \n^([ )[^(F.A.Q)](https://www.reddit.com/r/WikiSummarizer/wiki/index#wiki_f.a.q)^( | )[^(Opt Out)](https://reddit.com/message/compose?to=WikiSummarizerBot&message=OptOut&subject=OptOut)^( | )[^(Opt Out Of Subreddit)](https://np.reddit.com/r/ethereum/about/banned)^( | )[^(GitHub)](https://github.com/Sujal-7/WikiSummarizerBot)^( ] Downvote to remove | v1.5)",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "hf8dxwo",
+                                            "author": "user-42",
+                                            "score": 1,
+                                            "created_utc": 1633273428.0,
+                                            "response": "My concern is people who are staking thru crypto exchanges. A lot of folks may have a really bad time if an exchange has an issue. I guess they aren't exposing themselves to that much more risk if they are going to leave their coins there anyway.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hf89k0i",
+                                    "author": "Reptile212",
+                                    "score": 1,
+                                    "created_utc": 1633271420.0,
+                                    "response": "Yeah, I wonder about if they tried to host on [Flux](http://runonflux.io). They have the ability to run DOT, KSM, and KDA nodes on their platform.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hf8nfka",
+                                            "author": "Jabr0nie23",
+                                            "score": 2,
+                                            "created_utc": 1633277666.0,
+                                            "response": "Flux is the way",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hf65vgq",
+                    "author": "Remote_Stage",
+                    "score": 276,
+                    "created_utc": 1633224588.0,
+                    "response": "Sounds bearish",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hf6kpw8",
+                            "author": "jvdizzle",
+                            "score": 81,
+                            "created_utc": 1633231981.0,
+                            "response": "Need to point out that this doesn't mean mining or validator nodes, as neither would be profitable on AWS.\n\nWhat AWS probably refers to when they say \"Ethereum workloads\" are full nodes, probably used to query and index the Blockchain and its state data. These nodes are used to power the analytics dashboards you see when you visit dapp websites.\n\nSo no, this does not mean 25% of hash power or 25% of validator nodes run on AWS.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hf6obxl",
+                                    "author": "funk-it-all",
+                                    "score": 34,
+                                    "created_utc": 1633233982.0,
+                                    "response": "there's always misleading crap like this in the headline- confusing 25% of total hash power for 25% of number of running nodes",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hf6qcqs",
+                                            "author": "jvdizzle",
+                                            "score": 11,
+                                            "created_utc": 1633235102.0,
+                                            "response": "Yeah it's also just a lack of understanding / education in the community as well. There's a lot more computation \"work\" happening in the crypto space than just running the network. Most of the \"work\" that would be happening in the cloud would be analysis and data indexing, as mining would be \\*extremely\\* unprofitable in the cloud, and validating would be negligible computationally to be considered a big % of this \"work\".",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hf8g23i",
+                                                    "author": "fallfastasleep",
+                                                    "score": 1,
+                                                    "created_utc": 1633274384.0,
+                                                    "response": "I'm pretty sure we call it FUD",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hf827dn",
+                                    "author": "TheHansinator255",
+                                    "score": 2,
+                                    "created_utc": 1633267815.0,
+                                    "response": "I'm also pretty sure that AWS doesn't allow miners, or at least tries to prevent them from getting in and taking all the capacity. Back in 2017, when I had to get a GPU compute node for a college class in order to run machine learning models, I had to fill out a note explaining what I wanted to do and have it approved by a human. IIRC I had to do this twice for different capacity levels.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hf8b26a",
+                                            "author": "user-42",
+                                            "score": 1,
+                                            "created_utc": 1633272111.0,
+                                            "response": "Amazon allows mining as long as you pay the bill. If you want to rent an entire data center, yeah, there will be some special negotiations for that / probably cash upfront.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hf71yn6",
+                                    "author": "Kenjeev",
+                                    "score": 3,
+                                    "created_utc": 1633242545.0,
+                                    "response": "FWIW, I\u2019m running a validator on AWS and it\u2019s profitable so far",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hf74vba",
+                                            "author": "Spacesider",
+                                            "score": 1,
+                                            "created_utc": 1633244733.0,
+                                            "response": "I guess it depends on how many validators you are running. Are you also running both a concensus and execution node? If you're using something like Infura I would image it would drop your running costs quite a bit.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hf8c4q3",
+                                                    "author": "Kenjeev",
+                                                    "score": 1,
+                                                    "created_utc": 1633272606.0,
+                                                    "response": "Just one (32 ETH) and I\u2019m embarrassed to admit I don\u2019t know what \u201cboth a consensus and an execution mode\u201d means.  I\u2019m using Blox Staking, does that help?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hf8ewbe",
+                                                            "author": "Spacesider",
+                                                            "score": 2,
+                                                            "created_utc": 1633273862.0,
+                                                            "response": "Don't stress - People are slowly moving to refering to the ETH1 and ETH2 clients using those terms. I've only seen a few do it, and have only recently started doing it myself.\n\nThe reasoning behind it is: After the merge there won't be an ETH1 and ETH2 anymore, just Ethereum. So the terms \"ETH1\" and ETH2\" will more or less be depreciated and replaced with \"Execution\" and \"Concensus\". So what we know today as ETH1 clients will be the execution clients (Geth, Nethermind, Parity) and what we know today as ETH2 clients will be the concensus clients (Prysm, Lighthouse, Teku, etc). \n\nI am not too familiarise with Blox staking but have done some reading up on it just now. From what I understand, it seems that Blox themselves host the nodes which the end users accesses via a service called Blox Infura, while the end user only runs the validator. If this is the case, then you will have no storage requirements, and your CPU, RAM and bandwidth requirements would be very minimal.\n\nThe trade-off here is you are relying on them to do the right thing. If you ran the nodes yourself you would be storing and verifying full copies of the database yourself, this would ensure extra decentralisation and extra security.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "hfbuvif",
+                                                                    "author": "Kenjeev",
+                                                                    "score": 1,
+                                                                    "created_utc": 1633335784.0,
+                                                                    "response": "Oh.  I did t realize this. I thought it was just their software, but running on my machine, with me in possession of the keys.  I clearly still have a lot to learn!",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "hf78u9e",
+                                            "author": "shim__",
+                                            "score": 1,
+                                            "created_utc": 1633247872.0,
+                                            "response": "Just curious, why aws and not any other hosting provider, considering how expensive aws is on a month to month basis.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hf7b11m",
+                                                    "author": "1s44c",
+                                                    "score": 3,
+                                                    "created_utc": 1633249545.0,
+                                                    "response": "I've used linode, digital ocean, rackspace, hetzner, azure, google as well. If I had to trust one cloud with money it would be aws without question.\n\nBanks run on aws. Big well known banks.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "hf8b1w4",
+                                                    "author": "Kenjeev",
+                                                    "score": 2,
+                                                    "created_utc": 1633272107.0,
+                                                    "response": "It\u2019s actually free, for the first 12 months at least, and I think it\u2019ll be $5 or so per month after that.  I\u2019m using Blox Staking software which integrates nicely with AWS.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hf9972c",
+                                                            "author": "Scipio_Americana",
+                                                            "score": 1,
+                                                            "created_utc": 1633286626.0,
+                                                            "response": "How hard is it to set up?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "hfbv28v",
+                                                                    "author": "Kenjeev",
+                                                                    "score": 1,
+                                                                    "created_utc": 1633335957.0,
+                                                                    "response": "Easy, I had never used AWS before and they give you a step by step guide",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "hf8c9ti",
+                                            "author": "jvdizzle",
+                                            "score": 1,
+                                            "created_utc": 1633272668.0,
+                                            "response": "My mistake. It wasn't when beaconchain launched, haha. But regardless when referring to \"workload\", validator computational power wouldn't even register in that % compared to other workloads involving the blockchain.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hf6y4bu",
+                            "author": "MycroFeline",
+                            "score": 2,
+                            "created_utc": 1633239839.0,
+                            "response": "Yeah, I would have shut my trap if I was them. Instantly makes me want to find alternatives. AWS goes down, what else goes down?",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hf6st9u",
+                            "author": "IWantToBeweve",
+                            "score": 6,
+                            "created_utc": 1633236528.0,
+                            "response": "If this sounds bearish to you, then you know nothing about ethereum.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hf6fce5",
+                            "author": "Futuristiccrypto",
+                            "score": 1,
+                            "created_utc": 1633229236.0,
+                            "response": "Right? Better than 100%, but still not great. Lol",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hf6t98u",
+                            "author": "ImpossibleSwing1290",
+                            "score": -27,
+                            "created_utc": 1633236779.0,
+                            "response": "I agree its bearish. Amazon is far left. Far lefts hate crypto. When the powers to be put enough pressure on Amazon they'll comply and shut it down.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hf6xtq6",
+                                    "author": "Taykeshi",
+                                    "score": 11,
+                                    "created_utc": 1633239632.0,
+                                    "response": "Lol super capitalist entity is far left. Riiiggghhht.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hf95yfs",
+                                            "author": "ImpossibleSwing1290",
+                                            "score": 0,
+                                            "created_utc": 1633285285.0,
+                                            "response": "It's cute you don't understand things.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hfbrp0e",
+                                                    "author": "Taykeshi",
+                                                    "score": 1,
+                                                    "created_utc": 1633332820.0,
+                                                    "response": "What are you, 12?",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hf6v3g0",
+                                    "author": "pingusuperfan",
+                                    "score": 16,
+                                    "created_utc": 1633237878.0,
+                                    "response": "Amazon isn\u2019t far left. The far left loathes corporations, and capitalism in general. Source: am radical leftist. Side note every leftist I know has crypto, we love it here...",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hf6xv0b",
+                                            "author": "Taykeshi",
+                                            "score": 0,
+                                            "created_utc": 1633239659.0,
+                                            "response": "r/cryptoleftists",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hf6xw2g",
+                                                    "author": "sneakpeekbot",
+                                                    "score": 1,
+                                                    "created_utc": 1633239679.0,
+                                                    "response": "Here's a sneak peek of /r/cryptoleftists using the [top posts](https://np.reddit.com/r/cryptoleftists/top/?sort=top&t=year) of the year!\n\n\\#1: [Reminder that this is first and foremost a leftist (i.e., anti-capitalist) community](https://np.reddit.com/r/cryptoleftists/comments/np81c9/reminder_that_this_is_first_and_foremost_a/)  \n\\#2: [While I doubt he\u2019s a full on comrade - I absolutely love this sentiment. Cut out the pimps and let workers go directly to market.](https://i.redd.it/bctnnpvjbu171.jpg) | [31 comments](https://np.reddit.com/r/cryptoleftists/comments/nmypp3/while_i_doubt_hes_a_full_on_comrade_i_absolutely/)  \n\\#3: [The enticement of crypto is a reflection of people\u2019s desire to find security in a neoliberal world that can barely provide a social safety net](https://i.redd.it/aqs3f8d2gbg61.jpg) | [16 comments](https://np.reddit.com/r/cryptoleftists/comments/lflees/the_enticement_of_crypto_is_a_reflection_of/)\n\n----\n^^I'm ^^a ^^bot, ^^beep ^^boop ^^| ^^Downvote ^^to ^^remove ^^| [^^Contact ^^me](https://www.reddit.com/message/compose/?to=sneakpeekbot) ^^| [^^Info](https://np.reddit.com/r/sneakpeekbot/) ^^| [^^Opt-out](https://np.reddit.com/r/sneakpeekbot/comments/o8wk1r/blacklist_ix/)",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "hf84plf",
+                                                    "author": "j4_jjjj",
+                                                    "score": 1,
+                                                    "created_utc": 1633269091.0,
+                                                    "response": "What is this? A sub for ants? There's like 10 people there.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hfbrsdp",
+                                                            "author": "Taykeshi",
+                                                            "score": 1,
+                                                            "created_utc": 1633332907.0,
+                                                            "response": "Just letting you know not everyone in crypto are edgelordy anarcho-capitalists.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "hf9ab0z",
+                                            "author": "ImpossibleSwing1290",
+                                            "score": 1,
+                                            "created_utc": 1633287079.0,
+                                            "response": "You realize crypto is just going to improve capitalism by introducing more transparency, decentralization, and accountability right? Its not meant to abolish it. Giving the power to individuals instead of government (or centralized entities) is a conservative ideology not a leftist one. To the left individuals are too stupid to be responsible for their own destiny. You need state intervention. \nIf Amazon isn't leftist why did 77% of all political donations from Amazon go to democratic runners in the presidential election? \nSeems odd.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hfa316r",
+                                                    "author": "pingusuperfan",
+                                                    "score": 1,
+                                                    "created_utc": 1633298824.0,
+                                                    "response": "You do realize the libertarian right doesn\u2019t have a monopoly on antiauthoritarianism, right? There\u2019s a lot to unpack in your comment but that\u2019s a doozy. The word communism typically refers to a post-socialist state that is decentralized and horizontally organized and relies on mutual aid and resource transparency among other things. The details are up for debate, as the left is a huge fan of infighting, so there is an entire sub movement amongst communists that holds authoritarianism to be the enemy of the communist movement and fully rejects the likes of Stalin and Mao as dictators, as those on the right would agree.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hf7b9lc",
+                                    "author": "1s44c",
+                                    "score": 4,
+                                    "created_utc": 1633249727.0,
+                                    "response": "Far left? They are a publicly traded company.\n\nJust because trump ranted at Amazon doesn't make them far-left. Trump ranted at everyone and everything.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hf95rid",
+                                            "author": "ImpossibleSwing1290",
+                                            "score": 0,
+                                            "created_utc": 1633285207.0,
+                                            "response": "Hey I might be wrong. (I'm not)",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hfc9aau",
+                                                    "author": "1s44c",
+                                                    "score": 1,
+                                                    "created_utc": 1633347972.0,
+                                                    "response": "If Amazon are far-left how come they are so successful? It looks to me like they are 100% free market and simply more efficient than the competition.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hf69zu4",
+                    "author": "zenzealot",
+                    "score": 20,
+                    "created_utc": 1633226567.0,
+                    "response": "How is this even remotely cost effective?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hf6pcfo",
+                            "author": "cryptOwOcurrency",
+                            "score": 38,
+                            "created_utc": 1633234538.0,
+                            "response": "Cost effective for what? These aren't mining workloads if that's what you're alluding to.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hf74a0y",
+                                    "author": "Burbank309",
+                                    "score": 11,
+                                    "created_utc": 1633244271.0,
+                                    "response": "The issue is the bandwidth use, which is crazy expensive on aws",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hf6kerx",
+                            "author": "NimChimspky",
+                            "score": 15,
+                            "created_utc": 1633231814.0,
+                            "response": "How is it cost effective to use AWS instead of your own hosted server?\n\nIts a benefit when your needs are elastic, I assume this 25% comes from infura and alchemy",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hf6y24p",
+                            "author": "techmagenta",
+                            "score": 9,
+                            "created_utc": 1633239797.0,
+                            "response": "AWS is almost always more cost effective than buying your own hardware until your needs get massive.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hf7a0p7",
+                                    "author": "blackout24",
+                                    "score": 9,
+                                    "created_utc": 1633248770.0,
+                                    "response": "Not really. Spec out a staking VM with 16 GB RAM, 4 cores a TB of SSD space and 100 GB of network  traffic and compare that. You'll be surprised. Cloud is expensive.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hf7c3am",
+                                            "author": "1s44c",
+                                            "score": 11,
+                                            "created_utc": 1633250369.0,
+                                            "response": "Factor in the cost of maintaining that server and the cost of downtime when the hardware fails, or something around it fails.\n\nMany VMs are hopelessly overcommitted and the security is questionable. See what happened to slush on linode a few years back.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "hf7qbu7",
+                                            "author": "Noujiin",
+                                            "score": 3,
+                                            "created_utc": 1633260906.0,
+                                            "response": "Cloud just puts a price tag to all the intransparent costs that come with running your own blade.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hf82f5b",
+                                                    "author": "MysticRyuujin",
+                                                    "score": 1,
+                                                    "created_utc": 1633267929.0,
+                                                    "response": "Yes, if you ignore the fact that AWS as a company is INSANELY profitable",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hf8kca9",
+                                                            "author": "Noujiin",
+                                                            "score": 1,
+                                                            "created_utc": 1633276324.0,
+                                                            "response": "How does that add to the discussion? Do you imply it cannot be cheaper to run your architecture in the cloud, because the provider doesn't pay that much?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "hf8mtti",
+                                                                    "author": "MysticRyuujin",
+                                                                    "score": 1,
+                                                                    "created_utc": 1633277408.0,
+                                                                    "response": "I think it's pretty obvious that the answer is \"yes, it's possible\" - however automatic assumptions that \"cloud is cheaper\" are ridiculous. You're absolutely paying someone else to do all the things you don't have to do, and it's profitable at scale, duh.\n\nUse case matters and AWS bandwidth costs are absolutely monstrous, for example.\n\nJust because AWS puts a price tag on something doesn't mean that's actually how much that thing costs.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hf827sm",
+                            "author": "MysticRyuujin",
+                            "score": 0,
+                            "created_utc": 1633267821.0,
+                            "response": "It's not, but it's cloud! CLOUD ser!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hf6i7uc",
+                    "author": "Vegetable-Hat",
+                    "score": 6,
+                    "created_utc": 1633230678.0,
+                    "response": "Are people mining on AWS servers or just operating public nodes?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hf6kxs1",
+                            "author": "aSchizophrenicCat",
+                            "score": 13,
+                            "created_utc": 1633232101.0,
+                            "response": "I mean, a mining pool\u2019s site could be hosted with AWS. But those sites are really just used to configure workers and setup payout wallet. That\u2019s basically it though. Mining from there just involves your hardware and an internet connection.\n\nEdit: when it come to PoW: mining blocks != running a full node.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hf6pe4j",
+                            "author": "cryptOwOcurrency",
+                            "score": 5,
+                            "created_utc": 1633234564.0,
+                            "response": "Operating nodes, querying those nodes, etc.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hf6xxq5",
+                    "author": "Taykeshi",
+                    "score": 2,
+                    "created_utc": 1633239711.0,
+                    "response": "No suprise. How much on azure?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hf7cabg",
+                            "author": "1s44c",
+                            "score": 1,
+                            "created_utc": 1633250520.0,
+                            "response": "There was one but it kept going down.\n\nAzure is a joke.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hf7ae87",
+                    "author": "_scampy",
+                    "score": 2,
+                    "created_utc": 1633249063.0,
+                    "response": "Can anybody break down what \"workload\" means in this context?\n\nDoes it refer to the percentage of archival nodes? Or something else?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf7be1c",
+                    "author": "edmundedgar",
+                    "score": 2,
+                    "created_utc": 1633249825.0,
+                    "response": "What is a workload.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf6tew8",
+                    "author": "Xazax310",
+                    "score": 7,
+                    "created_utc": 1633236872.0,
+                    "response": "This sounds like a centralized problem\u2026 I don\u2019t see how this is good?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hf8cpar",
+                            "author": "user260421",
+                            "score": 2,
+                            "created_utc": 1633272863.0,
+                            "response": "It isn't",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hf6xlr5",
+                            "author": "xcalibre",
+                            "score": -8,
+                            "created_utc": 1633239473.0,
+                            "response": "individual clients paying for the service, still decentralized even though Jeffrey owns the hardware",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hf6xy4e",
+                                    "author": "Xazax310",
+                                    "score": 1,
+                                    "created_utc": 1633239720.0,
+                                    "response": "And if they do Parler again? I mean they literally shut down an entire platform because they felt like it \u201cit violated there ToS\u201d",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hf7hyke",
+                                            "author": "jcol26",
+                                            "score": 3,
+                                            "created_utc": 1633254893.0,
+                                            "response": "Not just if Amazon decide to - the US government and courts could order them to shut down a service hosted in Frankfurt if they wanted to",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hf66h3b",
+                    "author": "Harleychillin93",
+                    "score": 2,
+                    "created_utc": 1633224872.0,
+                    "response": "GUH",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf739pr",
+                    "author": "h14n2",
+                    "score": 1,
+                    "created_utc": 1633243502.0,
+                    "response": "The mining happening in china for btc was well above that...",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf6kc4j",
+                    "author": "Tietzy88",
+                    "score": 0,
+                    "created_utc": 1633231775.0,
+                    "response": "Yuck",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf6g6g7",
+                    "author": "King_Wizard420",
+                    "score": -2,
+                    "created_utc": 1633229650.0,
+                    "response": "That\u2019s too much.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf6e7j5",
+                    "author": "Christophorus",
+                    "score": -3,
+                    "created_utc": 1633228672.0,
+                    "response": "Lol, it has been this way for years. \n\n[https://finance.yahoo.com/news/quarter-ethereum-nodes-run-amazon-164044333.html](https://finance.yahoo.com/news/quarter-ethereum-nodes-run-amazon-164044333.html)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf7sg6t",
+                    "author": "pyr0phelia",
+                    "score": 1,
+                    "created_utc": 1633262241.0,
+                    "response": "That\u2019s way too much and needs to be addressed. Amazon is under increasing scrutiny to breakup. AWS is only profitable right now because the company is so big they can offset the overhead. If Amazon is forced to break up all workloads will be in jeopardy.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hf8xmvu",
+                            "author": "syntheticcdo",
+                            "score": 1,
+                            "created_utc": 1633281978.0,
+                            "response": "I think you have that backwards. For a long time Amazon was only profitable because AWS was profitable.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hf7xkac",
+                    "author": "RionFerren",
+                    "score": 1,
+                    "created_utc": 1633265292.0,
+                    "response": "Defeats the purpose of it being decentralized now is it.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf6med4",
+                    "author": "lucas63",
+                    "score": -3,
+                    "created_utc": 1633232906.0,
+                    "response": "Awesome for decentralization \ud83e\udd17 FUCK AMAZON",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hf76ut3",
+                            "author": "sssspecial",
+                            "score": -3,
+                            "created_utc": 1633246314.0,
+                            "response": "This is absolutely NOT decentralization. A single, monopolistic, American company owns the infrastructure for 25% of all Ethereum ~~nodes~~. If company policy / ToS changes, or the US passes some new piece of legislation, it could affect or wipe out a whole quarter of ~~the network~~\u2026 that\u2019s a big step towards centralization.\n\nEDIT: not nodes, but Ethereum workloads, which is a lot more general, including things built on Ethereum such as apps. The AWS page doesn\u2019t mention nodes specifically",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hf76why",
+                                    "author": "lucas63",
+                                    "score": 0,
+                                    "created_utc": 1633246350.0,
+                                    "response": "That\u2019s why I said fuck Amazon",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hf79ith",
+                                            "author": "sssspecial",
+                                            "score": 1,
+                                            "created_utc": 1633248400.0,
+                                            "response": "ohhh. /s",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hf6f7mm",
+                    "author": "Futuristiccrypto",
+                    "score": -6,
+                    "created_utc": 1633229169.0,
+                    "response": "Wow. Scary",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf6hlnv",
+                    "author": "misterflerfy",
+                    "score": -2,
+                    "created_utc": 1633230365.0,
+                    "response": "So now that China and Musk have shot their loads we can count on Bezos for at least one bear market; good news for hodlers.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf72b68",
+                    "author": "DreadSeverin",
+                    "score": -4,
+                    "created_utc": 1633242804.0,
+                    "response": "That's a nice centralized attack vector you have there",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf7cvuv",
+                    "author": "M-Tyson",
+                    "score": -1,
+                    "created_utc": 1633250990.0,
+                    "response": "Look at this low effort post, cringe.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf76g1q",
+                    "author": "samuraisam",
+                    "score": 1,
+                    "created_utc": 1633245989.0,
+                    "response": "Not ours",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf78b54",
+                    "author": "houdini_1775",
+                    "score": 1,
+                    "created_utc": 1633247453.0,
+                    "response": "I\u2019d be curious to know which percentage of those 25% represents Infura or Alchemy ?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf82iqv",
+                    "author": "MysticRyuujin",
+                    "score": 1,
+                    "created_utc": 1633267980.0,
+                    "response": "I wouldn't be surprised if Hetzner wasn't another 25% or more",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf8pyca",
+                    "author": "Backitup30",
+                    "score": 1,
+                    "created_utc": 1633278751.0,
+                    "response": "Does anyone have a good write up on running ETH nodes? I\u2019m about to do this myself and want to verify I\u2019m headed in the right direction with someone else who has ran their own on AWS. \n\nThanks fellas!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf8u4yo",
+                    "author": "Environmental_Area29",
+                    "score": 1,
+                    "created_utc": 1633280559.0,
+                    "response": "25% might be a slight exaggeration imo. How did it reach exactly a quarter?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf909hx",
+                    "author": "PositiveUse",
+                    "score": 1,
+                    "created_utc": 1633283014.0,
+                    "response": "Most of the internet is on AWS \ud83d\ude02",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf93z2e",
+                    "author": "shiroyashadanna",
+                    "score": 1,
+                    "created_utc": 1633284496.0,
+                    "response": "wait a few more years, it will go up.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf99otu",
+                    "author": "hodlXtc",
+                    "score": 1,
+                    "created_utc": 1633286828.0,
+                    "response": "That\u2019s quite under the % that was being claimed. \nHowever, running an eth node is a task, a costly one.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf9x1hp",
+                    "author": "StackOwOFlow",
+                    "score": 1,
+                    "created_utc": 1633296239.0,
+                    "response": "too much power for amazon",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hfazucs",
+                    "author": "Drumitar",
+                    "score": 1,
+                    "created_utc": 1633314546.0,
+                    "response": "Gotta get that number down",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hfb2g61",
+                    "author": "BeyondExistenz",
+                    "score": 1,
+                    "created_utc": 1633315860.0,
+                    "response": "My geth running on my network. Hope it helps.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf6f0hl",
+                    "author": "Ihavequestionsabt",
+                    "score": -11,
+                    "created_utc": 1633229071.0,
+                    "response": "Decentralized",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf7bovl",
+                    "author": "VinnieSmit",
+                    "score": -2,
+                    "created_utc": 1633250056.0,
+                    "response": "Have a look at [STORE](https://storecloud.org/), it's a layer 1 crypto that will offer decentralized compute by having data center's become miners in the network with a pretty elaborate governance system around it preventing such centralization.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf6vb4o",
+                    "author": "DatBoiTerry",
+                    "score": -5,
+                    "created_utc": 1633238009.0,
+                    "response": "Akash network fix\u2019s this",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf7cky2",
+                    "author": "beats_time",
+                    "score": -1,
+                    "created_utc": 1633250751.0,
+                    "response": "FUCK AMAZON!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf7q336",
+                    "author": "Vignaroli",
+                    "score": 0,
+                    "created_utc": 1633260742.0,
+                    "response": "Yet another way pos leads to centralization. Gotta stay away from slashing.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hf8jid6",
+                    "author": "sh2409",
+                    "score": 0,
+                    "created_utc": 1633275948.0,
+                    "response": "Hm.. \"decentralized\"?",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

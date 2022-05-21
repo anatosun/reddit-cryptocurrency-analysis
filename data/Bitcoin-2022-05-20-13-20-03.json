@@ -15,7 +15,7 @@
             "author": "Mysterious-Emu-4503",
             "created_utc": 1653052382.0,
             "score": 1,
-            "num_comments": 7,
+            "num_comments": 10,
             "subreddit": "Bitcoin",
             "selftext": "Goood morning,\n\nI was hoping someone could refer me to resources on bitcoins network integrity as it pertains to its supply and code. As demand rises there is a larger incentive for individuals to \"create more bitcoin\". I recently had a debate with a boomer and my arguement about game theory and incentives for the rest of the network to weed out the individual was not sticking. I need more research in this area.\n\n1). If a percentage of the network alters the code, does this create a fork and how? Has this ever happened? \n\n2) why would it never reach consesus to increase the supply. If 60% of the network was bribed what would happen?\n\n3.) I tried to argue that all assets have this problem but unlike all other assets the people who get to make that decision is far larger then any other asset class. What is a better way to explain that?",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i9br7zg",
                     "author": "Squezeplay",
-                    "score": 1,
+                    "score": 2,
                     "created_utc": 1653053123.0,
                     "response": "1. Bitcoin has no code, its a protocol. You can write your own node code if you wanted. As long as you operate within the protocol its fine. But if violate the protocol, like giving yourself coins or making unauthorized transfers, other nodes will just ignore you. If a percentage of the network does this, yes its a fork, its just a different protocol.\n2. That would a be a hard fork. Users can decide which fork they want to use. Since bitcoin's scarcity is a pretty core reason why most people use bitcoin, its unlikely a fork that alters the supply would become more popular than the original.\n3. Probably to just explain it like gold, its a digital asset but has scarcity. Why it has scarcity is a technical explanation that they should probably need to do their own research on.",
                     "depth": 1,
@@ -39,7 +39,7 @@
                                 {
                                     "id": "i9bu1us",
                                     "author": "Squezeplay",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1653054360.0,
                                     "response": "Try just searching on youtube, I'm sure there are ton of high level overviews of bitcoin specifically. Bitcoin itself is relatively simple once you get by initial misconceptions. You can go down the rabit hole on different consensus mechanisms, game theory, cryptography, etc. especially relating to other cryptocurrencies. So maybe just focus on bitcoin and proof of work first, public-key cryptography as well if you aren't familiar.",
                                     "depth": 3,
@@ -56,13 +56,22 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "id": "i9c60sk",
+                            "author": "boiledpangolin",
+                            "score": 1,
+                            "created_utc": 1653059267.0,
+                            "response": ">Bitcoin has no code, its a protocol. You can write your own node code if you wanted. As long as you operate within the protocol its fine. But if violate the protocol, like giving yourself coins or making unauthorized transfers, other nodes will just ignore you. If a percentage of the network does this, yes its a fork, its just a different protocol.\n\nThe implementation is the spec, not the other way around with Bitcoin. This is why legacy multisig redeem scripts have to start with a null byte: a faulty implementation of the Script interpreter in Satoshi's client erroneously pops the first entry on the stack. This bug has to be carried along to this day as the actual standard way to redeem multisig scripts.",
+                            "depth": 2,
+                            "comments": []
                         }
                     ]
                 },
                 {
                     "id": "i9brs7w",
                     "author": "codingwithcoffee",
-                    "score": 1,
+                    "score": 2,
                     "created_utc": 1653053373.0,
                     "response": "Bitcoin has a market cap of over $500 BILLION dollars. \n\nI think it is fair to say that this already presents enough of an incentive for nefarious actors to find ways to \u201ccreate more bitcoin\u201d.\n\nAnd yet bitcoin remains the most secure network on the planet by virtue of the decentralized ledger protected by all of the combined mining power. \n\nAnd it will remain secure - unless - those nefarious actors could somehow gain control of more than 50% of all of the mining hash power of the network. \n\nThe genius behind bitcoins design means that this is both financially ruinous to attempt - AND - if successful, the network (and therefore bitcoin itself) would be rendered worthless. Removing the incentive to attempt such an attack. \n\nNot sure it will help convince a boomer - as Satoshi famously said \u201cIf you don't believe me or don't get it, I don't have time to try to convince you, sorry.\u201d",
                     "depth": 1,
@@ -75,8 +84,26 @@
                             "response": "Thank you. This is a great way to explain it. Its unfortunete they seemed to have little interest in learning anything but rather act as if they know something i do not, immediately creating a standoffish conversation instead of an enlightening back and forth. I feel bad for the boomers, the time where they were the knowledgeable ones was very brief.",
                             "depth": 2,
                             "comments": []
+                        },
+                        {
+                            "id": "i9c670h",
+                            "author": "boiledpangolin",
+                            "score": 1,
+                            "created_utc": 1653059336.0,
+                            "response": ">And it will remain secure - unless - those nefarious actors could somehow gain control of more than 50% of all of the mining hash power of the network.\n\n51% attack doesn't allow you to create new coins, only to double spend.",
+                            "depth": 2,
+                            "comments": []
                         }
                     ]
+                },
+                {
+                    "id": "i9c5fws",
+                    "author": "boiledpangolin",
+                    "score": 1,
+                    "created_utc": 1653059035.0,
+                    "response": "1) It has happened before, look at bcash and its many forks. The cost to fork is low, you could create a fork with as little as a single character changed in the Core source code. That doesn't mean the network will adopt it. That's the hard part.\n\n2) It doesn't matter what portion of the industry you get behind you, what you need is economic actors. Look at the UASF episode: 80% of the industry wanted to double the block size. The users refused to run their code. The rest is history.\n\n3) I can't stop you from forking the network, but you can't force me onto your fork. Therefor what matters isn't forking, but which fork will attract the asset holders. \n\nIf it goes directly against my interest to join a fork that increases the 21M cap (diluting the value of my holdings), and there's no central body backed by force to push that change down my throat, why would I do it? Why expect any other holder would act against their own interest?",
+                    "depth": 1,
+                    "comments": []
                 }
             ]
         }

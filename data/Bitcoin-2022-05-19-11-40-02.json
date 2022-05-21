@@ -82,13 +82,64 @@
             ]
         },
         {
+            "id": "ut16si",
+            "title": "Miners and Full Nodes Security",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/ut16si/miners_and_full_nodes_security/",
+            "author": "A117Z",
+            "created_utc": 1652959361.0,
+            "score": 5,
+            "num_comments": 4,
+            "subreddit": "Bitcoin",
+            "selftext": "I am trying to understand the difference between the security a miner and a full node offers. \n\nAm I right in thinking the hash power from the mining operations represents the security of the network, helping prevent Sybil threats such as a double spend attack. Therefore, making Bitcoin unviable to attack because of the upfront cost in mining equipment and energy use. \n\nThen the full nodes act as a security against the miners to verify the transactions they produce follow the Bitcoin rules? \n\nSo Bitcoin has two security layer properties? \n\nAlso is there any vulnerability risks present from full nodes, and how are these managed to prevent them being malicious?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i97ispn",
+                    "author": "igadjeed",
+                    "score": 5,
+                    "created_utc": 1652972019.0,
+                    "response": "> how are these managed\n\nThey're not. Every node is operated independently. There is no \"Bitcoin\" except your own copy of the Bitcoin blockchain on your own Bitcoin node. This is the true security in the node network. You can trust your own node, and you can only trust your own node  \n\nBitcoin is secure because the node network converges on a single transaction history in spite of every node being independent. A supermajority of nodes discovers the same truth. This supermajority is not numeric, not countable. It exists or not, depending on each participant's frame of reference. If I spend Bitcoin to buy something, the transaction can only succeed if the merchant has the same transaction history on his node as I have on my node. In the context of that transaction, success is a supermajority of our two nodes  \n\nOn the other side, Bitcoin is a networked system with the propagation latency that is present in any networked system. The purpose of mining is to create a delay between blocks (average 10 minutes), so that nodes have enough time to stay synchronized  \n\nOccasionally, two miners win the mining race at the same time, creating a chain tip fork. The fork is resolved node by node when the next block arrives. If my node receives a block which doesn't link to my previous block, then my previous block becomes a stale fork tip block and gets replaced. This happens automatically - every node follows the longest chain  \n\nA so-called \"51% attack\" occurs when a miner or conspiracy of miners controls enough hash power to create a deliberate chain tip fork. The nodes follow the longest chain. The attacker's chain is the valid chain. This is not an attack on Bitcoin. If it is an attack - because of a double spend fraud - the victim is the recipient of the coin which exists in a stale tip block, if that recipient provided valuable goods or services before losing the coin in the replacement chain tip  \n\nA 51% attack is not a catastrophe",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96unok",
+                    "author": "ipcoffeepot",
+                    "score": 1,
+                    "created_utc": 1652960024.0,
+                    "response": "Nailed it on the miner front: PoW isn\u2019t something you can spoof (you have to spend the electricity to make more hashes), so high difficulty target makes it very expensive to double-spend.\n\nA node validates all the transactions in each block it receives (and relays, but thats less important for security). So if I receive a payment, and I see it confirmed in a block on my node, then I know that payment and all the payments in its ancestry \u2014 going back to when those coins were mined \u2014 are valid based on the rules my node is enforcing. So if a miner mines a block with \u201cinvalid\u201d transactions (as defined by my node), and then tries to send me coins in that block or with coined mined in that block, then my node will reject them. The miner will say \u201chey, I sent you money\u201d and I\u2019ll say \u201cno you didn\u2019t\u201d. Running a node protects the nodes owner from receiving invalid coins. \n\nThis is why when people talk about user consensus, they talk about \u201cthe majority of economic nodes\u201d. Nodes don\u2019t vote, the validate. So the thing that prevents a miner from mining invalid blocks is that if most of the network won\u2019t accept it, then there are fewer people willing to buy those coins, and they are worth less.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i97fc1b",
+                            "author": "A117Z",
+                            "score": 1,
+                            "created_utc": 1652970552.0,
+                            "response": "Right makes sense! Thank you for explaining\ud83d\udc4d.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9bbj7u",
+                    "author": "InfiniteCarrot2674",
+                    "score": 1,
+                    "created_utc": 1653045049.0,
+                    "response": "Mining gives security by spreading out the generation of new blocks.\n\nIf I can make blocks faster than everybody else combined then I can dictate all transactions because my block stack is bigger so it's recognized as the true stack.\n\nIn fact I can send a block that you start mining off, you mine and spend your reward, then I send out a 3 block chain bigger than both of those and you lose your reward.  And god help whoever paid you fiat for it they have nothing now.\n\nRunning a full node validates the ledger. \n\nFirst nodes check all previous blocks up the chain, making sure they are all proper and correct hashes.  Also logging and adding in every transaction to make a database.\n\nAfter that it waits for new blocks to do the same.  A block with a correct hash is added onto the chain.  In the background if it's not correct you are probably blacklisting that IP to not waste your time anymore.\n\nIt's also broadcasting the blocks and transactions to other nodes, and communicating to get the same.\n\nThis is the extra security you personally get as a node.  \n\nYou can post your transactions with others your node is communicating, obfuscating it's origin.\n\nAlso validating blocks yourself so you cannot be defrauded.\n\nIn the Satoshi times BTC Core did all of this.  It mined, it was a node, and your wallet.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
             "id": "ut1bj9",
             "title": "Singing motivational songs to my coins.",
             "url": "https://v.redd.it/gj9h0wgr4f091",
             "author": "mfilatius",
             "created_utc": 1652959850.0,
-            "score": 1168,
-            "num_comments": 102,
+            "score": 1209,
+            "num_comments": 133,
             "subreddit": "Bitcoin",
             "selftext": "",
             "stickied": false,
@@ -96,7 +147,7 @@
                 {
                     "id": "i96wtx9",
                     "author": "essessential",
-                    "score": 135,
+                    "score": 141,
                     "created_utc": 1652961363.0,
                     "response": "Marc Rebillet is a fun, talented individual",
                     "depth": 1,
@@ -108,21 +159,22 @@
                             "created_utc": 1652966764.0,
                             "response": "Yes, he is!",
                             "depth": 2,
-                            "comments": []
-                        },
-                        {
-                            "id": "i98pqte",
-                            "author": "Onsyde",
-                            "score": 16,
-                            "created_utc": 1652989469.0,
-                            "response": "Can't stand those fitbit commercials every 30 seconds tho",
-                            "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i9bf1mi",
+                                    "author": "ekorstad",
+                                    "score": 1,
+                                    "created_utc": 1653047112.0,
+                                    "response": "Time for me to give some more time to this work here.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         },
                         {
                             "id": "i986met",
                             "author": "lolaras",
-                            "score": 5,
+                            "score": 7,
                             "created_utc": 1652981671.0,
                             "response": " got to see him live a few years back, fun night!",
                             "depth": 2,
@@ -139,9 +191,38 @@
                             ]
                         },
                         {
+                            "id": "i98pqte",
+                            "author": "Onsyde",
+                            "score": 16,
+                            "created_utc": 1652989469.0,
+                            "response": "Can't stand those fitbit commercials every 30 seconds tho",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9bqph0",
+                                    "author": "Few-Business-9514",
+                                    "score": 1,
+                                    "created_utc": 1653052897.0,
+                                    "response": "Idk I\u2019ve seen much much worse commercials",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9brm0r",
+                                            "author": "Onsyde",
+                                            "score": 1,
+                                            "created_utc": 1653053298.0,
+                                            "response": "It's the frequency for me. It's like Fitbit got a list of tier 1 prospects and decided if these people see this commercial 32 times an hour, they will buy a Fitbit...and let me tell ya, I'm on that list.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
                             "id": "i98tekw",
                             "author": "Go-Full-Retard",
-                            "score": 5,
+                            "score": 4,
                             "created_utc": 1652990967.0,
                             "response": "That's not even his real name but he is VERY talented.",
                             "depth": 2,
@@ -226,7 +307,7 @@
                 {
                     "id": "i974kmv",
                     "author": "writersandfilmmakers",
-                    "score": 57,
+                    "score": 56,
                     "created_utc": 1652965622.0,
                     "response": "Marc rebillets best song is \"girls club\". You wont be disappointed! [girls club](https://youtu.be/MGJZfmYMltM)",
                     "depth": 1,
@@ -234,7 +315,7 @@
                         {
                             "id": "i97mahk",
                             "author": "Meowseeks",
-                            "score": 22,
+                            "score": 26,
                             "created_utc": 1652973483.0,
                             "response": "Let me in I\u2019m tryna fuck!",
                             "depth": 2,
@@ -243,7 +324,7 @@
                         {
                             "id": "i98qqm1",
                             "author": "CheesingmyBrainsOut",
-                            "score": 3,
+                            "score": 4,
                             "created_utc": 1652989874.0,
                             "response": "Very close would be *Im a Flamingo*\n\n> Time for grandma\nTime for grandma, it's time for grandma\nI'm gonna eat your grandmother, time for grandma\nGive me your grandmother\nGive me her vagina\nI'm eating your grandmother's vagina\nI don't give a fuck\nI'm flamingo, bitch\nNo rules here\nNo rules here, I eat vagina then I fly away\nFlamingo, goddamnit, I don't care",
                             "depth": 2,
@@ -259,6 +340,15 @@
                             "comments": []
                         },
                         {
+                            "id": "i9bwu80",
+                            "author": "roodwm",
+                            "score": 4,
+                            "created_utc": 1653055547.0,
+                            "response": "Thanks for the link mate, will definitely listen that is well.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
                             "id": "i97w9eu",
                             "author": "chriskzoo",
                             "score": 5,
@@ -270,7 +360,7 @@
                         {
                             "id": "i987tkd",
                             "author": "azsxdcfvg",
-                            "score": -4,
+                            "score": -5,
                             "created_utc": 1652982149.0,
                             "response": "wow... what's his worse song sound like?",
                             "depth": 2,
@@ -300,7 +390,7 @@
                 {
                     "id": "i97n6lq",
                     "author": "rgmg",
-                    "score": 29,
+                    "score": 32,
                     "created_utc": 1652973848.0,
                     "response": "Fun fact: there was a lady who wanted to buy a load of the first iPhones when they were released and sell them on eBay. So she paid someone $800 to take their first in line spot for the first iPhone at an AT&T store, only to be told it\u2019s 1 per customer.\n\nThat someone was Marc Rebillet\n\nhttps://youtu.be/NnbL-Hm-xws",
                     "depth": 1,
@@ -308,7 +398,7 @@
                         {
                             "id": "i98i2rg",
                             "author": "roy_1996",
-                            "score": 8,
+                            "score": 10,
                             "created_utc": 1652986334.0,
                             "response": "Haha this is brilliant, turns out he\u2019s been winning at life for a long time now",
                             "depth": 2,
@@ -316,7 +406,7 @@
                                 {
                                     "id": "i9at3yv",
                                     "author": "markosnoul",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1653030079.0,
                                     "response": "This is the first time i am listening and already fell in love.",
                                     "depth": 3,
@@ -332,13 +422,31 @@
                             "response": "Haha, that lady is a dummy.",
                             "depth": 2,
                             "comments": []
+                        },
+                        {
+                            "id": "i9bb6hp",
+                            "author": "Ecstatic_Contact_110",
+                            "score": 1,
+                            "created_utc": 1653044813.0,
+                            "response": "Awsome",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9c4l8e",
+                            "author": "cherinichenko77",
+                            "score": 1,
+                            "created_utc": 1653058692.0,
+                            "response": "Feels like i have to do lot of the catching for this guy past.",
+                            "depth": 2,
+                            "comments": []
                         }
                     ]
                 },
                 {
                     "id": "i97ip98",
                     "author": "Chait_Anya",
-                    "score": 24,
+                    "score": 26,
                     "created_utc": 1652971978.0,
                     "response": "Been using this for a while as my wake up alarm tone. Never failed to wake me up.",
                     "depth": 1,
@@ -350,7 +458,17 @@
                             "created_utc": 1652983336.0,
                             "response": "Yeee best one",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i9b7l4a",
+                                    "author": "vaspopov",
+                                    "score": 2,
+                                    "created_utc": 1653042302.0,
+                                    "response": "I will not do that as i hate my alarm when they try to wake up in morning.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         },
                         {
                             "id": "i989a9p",
@@ -363,11 +481,21 @@
                                 {
                                     "id": "i98frvr",
                                     "author": "Chait_Anya",
-                                    "score": 4,
+                                    "score": 3,
                                     "created_utc": 1652985395.0,
                                     "response": "[Found one](https://www.zedge.net/ringtone/b3ef775c-3480-4b0c-a5df-4a7bd684b6f5).",
                                     "depth": 3,
-                                    "comments": []
+                                    "comments": [
+                                        {
+                                            "id": "i9bjyrf",
+                                            "author": "tsegadora",
+                                            "score": 4,
+                                            "created_utc": 1653049698.0,
+                                            "response": "Thanks mate, you are doing the god work right here.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -376,7 +504,7 @@
                 {
                     "id": "i973g9c",
                     "author": "Common-Breakfast-245",
-                    "score": 9,
+                    "score": 8,
                     "created_utc": 1652965060.0,
                     "response": "I had tickets to see him in Australia... before the lockdown \ud83d\ude14",
                     "depth": 1,
@@ -384,7 +512,7 @@
                         {
                             "id": "i97bf73",
                             "author": "TrailGuideSteve",
-                            "score": 8,
+                            "score": 7,
                             "created_utc": 1652968842.0,
                             "response": "I had tickets to see him after the pandemic in Miami, but he broke his ass on a unicycle two days before.",
                             "depth": 2,
@@ -403,7 +531,7 @@
                         {
                             "id": "i98km6u",
                             "author": "nagevyag",
-                            "score": 3,
+                            "score": 5,
                             "created_utc": 1652987368.0,
                             "response": "> lockdown\n\nI believe it's called lockup in Australia.",
                             "depth": 2,
@@ -446,13 +574,22 @@
                                     "comments": []
                                 }
                             ]
+                        },
+                        {
+                            "id": "i9c02v2",
+                            "author": "gundbtc",
+                            "score": 1,
+                            "created_utc": 1653056883.0,
+                            "response": "So, what happen? Feels like you miss the chance of seeing him.",
+                            "depth": 2,
+                            "comments": []
                         }
                     ]
                 },
                 {
                     "id": "i9744cr",
                     "author": "jibberdidee",
-                    "score": 5,
+                    "score": 7,
                     "created_utc": 1652965397.0,
                     "response": "Things are gonna change for the better soon.",
                     "depth": 1,
@@ -465,16 +602,36 @@
                     "created_utc": 1652962527.0,
                     "response": "I hope it will work. Probably gonna do the same for my coins on bitfinex.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9bfhyw",
+                            "author": "swarfhell",
+                            "score": 1,
+                            "created_utc": 1653047362.0,
+                            "response": "WE all can just hope, but definitely a motivation for the weekends.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i96vjpf",
                     "author": "a2468b",
-                    "score": 11,
+                    "score": 10,
                     "created_utc": 1652960576.0,
                     "response": "Love the energy haha! Good stuff bro!",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9bunhj",
+                            "author": "13dca",
+                            "score": 1,
+                            "created_utc": 1653054619.0,
+                            "response": "This guy is signing from his heart and the energy is just unreal.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i977na9",
@@ -483,7 +640,17 @@
                     "created_utc": 1652967106.0,
                     "response": "For those wondering about the [exact source](https://youtu.be/enYdAxVcNZA)",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9b8nwc",
+                            "author": "gator6304",
+                            "score": 1,
+                            "created_utc": 1653043137.0,
+                            "response": "This is the reason that why i love this sub soo much in life.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i97qh1b",
@@ -510,7 +677,17 @@
                     "created_utc": 1652966975.0,
                     "response": "Not before Bitcoin dominance goes over at the very least 50% or more. I say bring 20k so the shitcoins reset to cero and Bitcoin proves, once more, who is the king.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9c8gdt",
+                            "author": "nic1058",
+                            "score": 1,
+                            "created_utc": 1653060235.0,
+                            "response": "We all know, infact even the hater also know the fact that bitcoin is the real king in the crypto market.\n\nWe all know he is the that makes the market moves but his price variation.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i978sv0",
@@ -519,7 +696,17 @@
                     "created_utc": 1652967652.0,
                     "response": "LISTEN TO YOUR BODY! FEEL YOUR POWER!",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9ba7ol",
+                            "author": "nipten",
+                            "score": 1,
+                            "created_utc": 1653044227.0,
+                            "response": "I am feeling the power, just for having the btc in my wallet.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i97r9w4",
@@ -528,7 +715,17 @@
                     "created_utc": 1652975506.0,
                     "response": "Did Amber Heard submit this clip as evidence as well?",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9brwdv",
+                            "author": "thongmuan",
+                            "score": 1,
+                            "created_utc": 1653053424.0,
+                            "response": "I need a whole documentary on the trial of the heard and Johny.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i97h6iq",
@@ -546,7 +743,17 @@
                     "created_utc": 1652975607.0,
                     "response": "Might as well try this because it's not like anything else is working right now",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9bzsvx",
+                            "author": "DolfinTrade",
+                            "score": 1,
+                            "created_utc": 1653056770.0,
+                            "response": "I will try the holding, just as the starting of the song.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i973d4e",
@@ -555,7 +762,27 @@
                     "created_utc": 1652965015.0,
                     "response": "i love his flamingo live song. its absurd. \ud83d\ude02",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9b80vu",
+                            "author": "coinsen10",
+                            "score": 5,
+                            "created_utc": 1653042648.0,
+                            "response": "I just love his whole vibe. from outfit to his hairs and all.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9bd8xr",
+                                    "author": "fluxprdx",
+                                    "score": 1,
+                                    "created_utc": 1653046081.0,
+                                    "response": "yeah for sure hahah",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": "i978u79",
@@ -564,7 +791,17 @@
                     "created_utc": 1652967668.0,
                     "response": "Japaleno pepper business",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9bjp6a",
+                            "author": "poloishak",
+                            "score": 1,
+                            "created_utc": 1653049566.0,
+                            "response": "I am watching this song while having the japaleno pepper dip now.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i97c5jq",
@@ -586,7 +823,7 @@
                         {
                             "id": "i9b3oep",
                             "author": "al77862",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1653039187.0,
                             "response": "A guy in the upper comment just saved my life by giving the sauce.",
                             "depth": 2,
@@ -626,9 +863,28 @@
                                     "created_utc": 1653041290.0,
                                     "response": "Can you tell me the name of the track, i am neither a hater nor a lover of Trump.",
                                     "depth": 3,
-                                    "comments": []
+                                    "comments": [
+                                        {
+                                            "id": "i9c0iy7",
+                                            "author": "skawarrior",
+                                            "score": 1,
+                                            "created_utc": 1653057066.0,
+                                            "response": "Fuck Donald Trump \n\nhttps://youtu.be/61pMtsWxQrs\n\nWonderful Bassline though",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
                                 }
                             ]
+                        },
+                        {
+                            "id": "i9be8l1",
+                            "author": "bblah1",
+                            "score": 1,
+                            "created_utc": 1653046658.0,
+                            "response": "I am also listening him the first time, and damn he is good.",
+                            "depth": 2,
+                            "comments": []
                         }
                     ]
                 },
@@ -639,16 +895,17 @@
                     "created_utc": 1652971482.0,
                     "response": "This is a historic post",
                     "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i97jyh3",
-                    "author": "Short-Ninja5762",
-                    "score": 1,
-                    "created_utc": 1652972505.0,
-                    "response": "Classic!  I gotta borrow this.  Well done!",
-                    "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9by3q6",
+                            "author": "niagaralex",
+                            "score": 1,
+                            "created_utc": 1653056075.0,
+                            "response": "Finally a post which is definitely need some up votes here.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i97rlj3",
@@ -694,7 +951,27 @@
                     "created_utc": 1652980228.0,
                     "response": "Top of the bottom signal",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9brstw",
+                            "author": "bdtome",
+                            "score": 4,
+                            "created_utc": 1653053381.0,
+                            "response": "We are getting more and more signal, just don't have the money.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9byk10",
+                                    "author": "FeelTheFish",
+                                    "score": 1,
+                                    "created_utc": 1653056261.0,
+                                    "response": "Said we gonna drop further \"top of the bottom signal\"",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": "i98aqko",
@@ -703,7 +980,27 @@
                     "created_utc": 1652983323.0,
                     "response": "This track is RED hot",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9bc1ke",
+                            "author": "al_shayda",
+                            "score": 1,
+                            "created_utc": 1653045363.0,
+                            "response": "That single track is so good compare to some other albums.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9c7dd6",
+                                    "author": "BTC_proxy",
+                                    "score": 1,
+                                    "created_utc": 1653059809.0,
+                                    "response": "What\u2019s the track",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": "i98kt7o",
@@ -725,7 +1022,7 @@
                         {
                             "id": "i9b2z8b",
                             "author": "zq000523",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1653038644.0,
                             "response": "What a beautiful day you are having on the daily basis.",
                             "depth": 2,
@@ -759,7 +1056,17 @@
                     "created_utc": 1652996454.0,
                     "response": "from 40 to 48 it seems like someone was doing him from his back end.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9bn699",
+                            "author": "li2000bin",
+                            "score": 2,
+                            "created_utc": 1653051271.0,
+                            "response": "Wait, i didn't notice that, lemme try to watch that again.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i994lgu",
@@ -815,7 +1122,17 @@
                     "created_utc": 1652998043.0,
                     "response": "Love this guy,an absolute rare talent.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9caa33",
+                            "author": "FailedApocalypse",
+                            "score": 1,
+                            "created_utc": 1653060959.0,
+                            "response": "Hard to find now days a guy with that good of the talent.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i99a4xw",
@@ -824,7 +1141,17 @@
                     "created_utc": 1652999115.0,
                     "response": "After the beat dropped, I forgot about the price and started vibing to the beat.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9b801k",
+                            "author": "nmccutcheon",
+                            "score": 1,
+                            "created_utc": 1653042630.0,
+                            "response": "These are my one of my best few minutes of my life.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i99jsqj",
@@ -916,55 +1243,31 @@
                     "response": "This is now my alarm sound",
                     "depth": 1,
                     "comments": []
-                }
-            ]
-        },
-        {
-            "id": "ut16si",
-            "title": "Miners and Full Nodes Security",
-            "url": "https://www.reddit.com/r/Bitcoin/comments/ut16si/miners_and_full_nodes_security/",
-            "author": "A117Z",
-            "created_utc": 1652959361.0,
-            "score": 5,
-            "num_comments": 4,
-            "subreddit": "Bitcoin",
-            "selftext": "I am trying to understand the difference between the security a miner and a full node offers. \n\nAm I right in thinking the hash power from the mining operations represents the security of the network, helping prevent Sybil threats such as a double spend attack. Therefore, making Bitcoin unviable to attack because of the upfront cost in mining equipment and energy use. \n\nThen the full nodes act as a security against the miners to verify the transactions they produce follow the Bitcoin rules? \n\nSo Bitcoin has two security layer properties? \n\nAlso is there any vulnerability risks present from full nodes, and how are these managed to prevent them being malicious?",
-            "stickied": false,
-            "comments": [
+                },
                 {
-                    "id": "i97ispn",
-                    "author": "igadjeed",
-                    "score": 5,
-                    "created_utc": 1652972019.0,
-                    "response": "> how are these managed\n\nThey're not. Every node is operated independently. There is no \"Bitcoin\" except your own copy of the Bitcoin blockchain on your own Bitcoin node. This is the true security in the node network. You can trust your own node, and you can only trust your own node  \n\nBitcoin is secure because the node network converges on a single transaction history in spite of every node being independent. A supermajority of nodes discovers the same truth. This supermajority is not numeric, not countable. It exists or not, depending on each participant's frame of reference. If I spend Bitcoin to buy something, the transaction can only succeed if the merchant has the same transaction history on his node as I have on my node. In the context of that transaction, success is a supermajority of our two nodes  \n\nOn the other side, Bitcoin is a networked system with the propagation latency that is present in any networked system. The purpose of mining is to create a delay between blocks (average 10 minutes), so that nodes have enough time to stay synchronized  \n\nOccasionally, two miners win the mining race at the same time, creating a chain tip fork. The fork is resolved node by node when the next block arrives. If my node receives a block which doesn't link to my previous block, then my previous block becomes a stale fork tip block and gets replaced. This happens automatically - every node follows the longest chain  \n\nA so-called \"51% attack\" occurs when a miner or conspiracy of miners controls enough hash power to create a deliberate chain tip fork. The nodes follow the longest chain. The attacker's chain is the valid chain. This is not an attack on Bitcoin. If it is an attack - because of a double spend fraud - the victim is the recipient of the coin which exists in a stale tip block, if that recipient provided valuable goods or services before losing the coin in the replacement chain tip  \n\nA 51% attack is not a catastrophe",
+                    "id": "i9b8e5l",
+                    "author": "Think_Cat7703",
+                    "score": 1,
+                    "created_utc": 1653042929.0,
+                    "response": "I need a naiveclub remix of [https://youtu.be/2FMfgNmXjJI](https://www.youtube.com/watch?v=2FMfgNmXjJI) with the guy in orange as El Salvador",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i96unok",
-                    "author": "ipcoffeepot",
+                    "id": "i9bey2u",
+                    "author": "Crypto_girl123",
                     "score": 1,
-                    "created_utc": 1652960024.0,
-                    "response": "Nailed it on the miner front: PoW isn\u2019t something you can spoof (you have to spend the electricity to make more hashes), so high difficulty target makes it very expensive to double-spend.\n\nA node validates all the transactions in each block it receives (and relays, but thats less important for security). So if I receive a payment, and I see it confirmed in a block on my node, then I know that payment and all the payments in its ancestry \u2014 going back to when those coins were mined \u2014 are valid based on the rules my node is enforcing. So if a miner mines a block with \u201cinvalid\u201d transactions (as defined by my node), and then tries to send me coins in that block or with coined mined in that block, then my node will reject them. The miner will say \u201chey, I sent you money\u201d and I\u2019ll say \u201cno you didn\u2019t\u201d. Running a node protects the nodes owner from receiving invalid coins. \n\nThis is why when people talk about user consensus, they talk about \u201cthe majority of economic nodes\u201d. Nodes don\u2019t vote, the validate. So the thing that prevents a miner from mining invalid blocks is that if most of the network won\u2019t accept it, then there are fewer people willing to buy those coins, and they are worth less.",
+                    "created_utc": 1653047057.0,
+                    "response": "Only if it helped.",
                     "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i97fc1b",
-                            "author": "A117Z",
-                            "score": 1,
-                            "created_utc": 1652970552.0,
-                            "response": "Right makes sense! Thank you for explaining\ud83d\udc4d.",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
+                    "comments": []
                 },
                 {
-                    "id": "i9bbj7u",
-                    "author": "InfiniteCarrot2674",
-                    "score": 1,
-                    "created_utc": 1653045049.0,
-                    "response": "Mining gives security by spreading out the generation of new blocks.\n\nIf I can make blocks faster than everybody else combined then I can dictate all transactions because my block stack is bigger so it's recognized as the true stack.\n\nIn fact I can send a block that you start mining off, you mine and spend your reward, then I send out a 3 block chain bigger than both of those and you lose your reward.  And god help whoever paid you fiat for it they have nothing now.\n\nRunning a full node validates the ledger. \n\nFirst nodes check all previous blocks up the chain, making sure they are all proper and correct hashes.  Also logging and adding in every transaction to make a database.\n\nAfter that it waits for new blocks to do the same.  A block with a correct hash is added onto the chain.  In the background if it's not correct you are probably blacklisting that IP to not waste your time anymore.\n\nIt's also broadcasting the blocks and transactions to other nodes, and communicating to get the same.\n\nThis is the extra security you personally get as a node.  \n\nYou can post your transactions with others your node is communicating, obfuscating it's origin.\n\nAlso validating blocks yourself so you cannot be defrauded.\n\nIn the Satoshi times BTC Core did all of this.  It mined, it was a node, and your wallet.",
+                    "id": "i97jyh3",
+                    "author": "Short-Ninja5762",
+                    "score": 0,
+                    "created_utc": 1652972505.0,
+                    "response": "Classic!  I gotta borrow this.  Well done!",
                     "depth": 1,
                     "comments": []
                 }

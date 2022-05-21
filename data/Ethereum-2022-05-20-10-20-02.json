@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/ethereum/comments/utqsn9/how_to_store_contract_address_as_variable/",
             "author": "BoganLord2169",
             "created_utc": 1653040936.0,
-            "score": 2,
-            "num_comments": 3,
+            "score": 1,
+            "num_comments": 8,
             "subreddit": "ethereum",
             "selftext": "I need someway to store mapping of uint256 => contract address. Can I just use the address type?\n\nI need a functions that calls transfer method of the contract address stored.\n\nmapping(uint256=>address)public contractAddress;\n\nfunction transfer(address _contractAddress, uint256 _amount, address _from, address _to)\n{\n    // Somehow call transfer of contract at address contractAddress\n}\n\ntransfer(contractAddress[1], 1000000, 0xa53...., 0x37...);",
             "stickied": false,
@@ -34,9 +34,29 @@
                     "author": "discreetlog",
                     "score": 1,
                     "created_utc": 1653049186.0,
-                    "response": "Declare the contract or interface above the contract you're creating, then explicitly cast your address as that contract/interface type name. This will allow you to call one of the functions in that contract/interface using the \".\" operator. [Here's an example](https://pastebin.com/8w0VPyam).",
+                    "response": "Declare the contract or interface above the contract you're creating, then create a variable of that type and assign it an address using \"typeName(address)\". Then you can call the functions of that contract/interface object using the \".\" operator. [Here's an example](https://pastebin.com/8w0VPyam).",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9dg3sk",
+                            "author": "BoganLord2169",
+                            "score": 1,
+                            "created_utc": 1653078889.0,
+                            "response": "Is an interface similar to a class in other languages?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9dq9z2",
+                                    "author": "discreetlog",
+                                    "score": 1,
+                                    "created_utc": 1653083573.0,
+                                    "response": "[This site](https://docs.soliditylang.org/en/v0.8.14/) has all the info you need. Look under the Contracts section to find Interfaces.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

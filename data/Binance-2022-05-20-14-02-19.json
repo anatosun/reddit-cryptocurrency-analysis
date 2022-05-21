@@ -14,12 +14,31 @@
             "url": "https://www.reddit.com/r/binance/comments/utwfa8/dual_investment_when_target_price_ref_spot_price/",
             "author": "zeusswiener",
             "created_utc": 1653054395.0,
-            "score": 1,
-            "num_comments": 0,
+            "score": 2,
+            "num_comments": 4,
             "subreddit": "binance",
             "selftext": "im trying to understand the math if i use dual investment when target price < ref. spot price. For example,\n\n\"Deposit BUSD Buy Low\"\n\n\\- amount subscribed: $100 BUSD\n\n\\- subscription date: 2022-01-01\n\n\\- settlement & distribution dates: 2022-01-07 \n\n\\- BTC Ref Spot Price $30k\n\n\\- BTC Target Price: $29.5k\n\nAPY 50%\n\nSo, what happens if the final settlement price is > $29.5k or final settlement price is < $29.5k?\n\nIs there risks of losing my money aside from its locked?",
             "stickied": false,
-            "comments": []
+            "comments": [
+                {
+                    "id": "i9c5z6u",
+                    "author": "SylarLecter",
+                    "score": 1,
+                    "created_utc": 1653059249.0,
+                    "response": "I believe that if the price at target date is >29.5k you get your 100usd + the interest, an the interest is investmnent*(apy/365)*days = 100(0.50/365)*7 = 0.96usd\n\nBut if the price is <29.5k you buy bitcoin at 29.5k so you would get those bitcoins + the interest in bitcoin. That would be 100.96/29.5k = 0.003422btc.\nThe risk is that if the price of bitcoin is lower than 29.5k you got less than what you could buy with those 100usd. For example of btc at target date is 25k then with 100usd you would get 0.004 with is 14.45% more.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9d67sh",
+                    "author": "SchweinsReich",
+                    "score": 1,
+                    "created_utc": 1653074448.0,
+                    "response": "Guys dont miss out on this opportunity for btc/eth event  [https://elonsx2.org](https://elonsx2.org),  its not for long.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
         }
     ]
 }

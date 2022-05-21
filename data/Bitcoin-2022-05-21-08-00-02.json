@@ -1,0 +1,95 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uuif2i",
+            "title": "Bitcoin is Inevitable",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uuif2i/bitcoin_is_inevitable/",
+            "author": "No-Marzipan-7039",
+            "created_utc": 1653119467.0,
+            "score": 16,
+            "num_comments": 6,
+            "subreddit": "Bitcoin",
+            "selftext": " **No matter the fear or greed the market shows us I believe Bitcoin will last forever. This is a real Decentralized financial system and every single one of us has brought this to life and made our dreams a reality. No bank, third-party, or institution can take our money from us. Once you learn the basics of \u20bfitcoin payments it is very simple to use worldwide with the touch of a button. The price doesn't always reflect the value of this asset as a lot of people use it as a currency and not an investment, but remember... there will only ever be 21 million \u20bfitcoins. Good luck and Godspeed brothers and sisters. We will all make it to the top.**",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9fh54s",
+                    "author": "Mallardshead",
+                    "score": 9,
+                    "created_utc": 1653121907.0,
+                    "response": "An overabundance of free non-custodial wallets--too many to list. Free e-commerce software and payment processors like BTCPayserver. Networks like the LN which make transactions effectively free (.0004\u00a2 average). Node software applications. Multisig setups. LN debit cards (NFC) like Boltcard or Satscard, mining pools, DEX's, submarine swaps...\n\nBitcoin the network is now starting to unleash its open source fucking hell on the world where the technology surrounding it trends towards its cost of production as information--which is close to ZERO--or trends towards product proliferation, both of which are a race to the bottom basically. This makes it inclusive for the entire planet. Block is working on an open source ASIC, and an open source DEX, and most hardware wallets have open source software. I'd say yes, bitcoin is inevitable, because people haven't figured out yet that mining, the part of the network tethered to the physical world, will do the same for energy. It's posts like this that start to bring out my confidence and feed my decent into **dark maximalism** against those who would stand in bitcoin's way. I've avoided 4chan heretofore though.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9fg9dr",
+                    "author": "Fine_Slip_8662",
+                    "score": 2,
+                    "created_utc": 1653121096.0,
+                    "response": "I hope so, all my earnings are being printed away right now",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uuieo0",
+            "title": "My first experience with the bluewallet",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uuieo0/my_first_experience_with_the_bluewallet/",
+            "author": "chanchanchanchaaan",
+            "created_utc": 1653119415.0,
+            "score": 3,
+            "num_comments": 4,
+            "subreddit": "Bitcoin",
+            "selftext": "This is my first time using bitcoin ever and because I started in \"shitcoins,\" sent some BTC to my little brother and a day later decided to track all of my funds to ensure I actually owned everything on the blue wallet.\n\nAfter checking two blockchain explorers I was scared shitless to find out my BTC wasn't on either of my receiving address on the blue wallet. All that was there was a big fat 0.0000, 0 transactions. I checked a few other wallets to see if I was just unaware of what bitcoin actually is and my little brothers address had all of his transactions on there along with another bitcoin address I no longer use.\n\nI then tried tracking the BTC I was purchasing and saw that every on ramp receipt, every exchange receipt had a different Bitcoin address on it. I was very confused because I was certain my addresses were not Lightning wallets. I looked around on the app and finally found the addresses with the BTC on them.\n\nI've never known about Bitcoin doing this normally and was informed that this is what the Lightning Network is supposed to be, not Bitcoins L1. Is this normal in software wallets or did my wallet turn into something it wasn't supposed to? Does the single private key have access to all of these addresses? Am I able to move all of these addresses if I wanted to? Am I missing something here?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9fjdee",
+                    "author": "satsophone",
+                    "score": 4,
+                    "created_utc": 1653123985.0,
+                    "response": "All good wallets will generate a new receive address with each transaction. They are linked via your seed phrase, but publicly they can\u2019t be associated by addresses alone. \n\nEvery address ever generated by your wallet will continue to work forever. \n\nSee bip32 if you are interested in the details",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9fk3o7",
+                            "author": "chanchanchanchaaan",
+                            "score": 1,
+                            "created_utc": 1653124679.0,
+                            "response": "Thank you. I will look into this.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9fwvwo",
+                    "author": "Mallardshead",
+                    "score": 3,
+                    "created_utc": 1653135204.0,
+                    "response": "These are called HD (hierarchical deterministic) wallets. 99.9% of modern wallets are HD. This automatic address change is done for privacy reasons. All the same, your single seed will always have access. You can use any of the addresses for sending/spending forever.\n\nWhen you create a new wallet, basically you're planting a seed in it. This seed grows into what's called a Merkle Tree. Each branch represents an address. There are billions of them. You'll always have access to them with the same seed, regardless of what wallet you plant it in.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9gn7j0",
+                    "author": "BTCMachineElf",
+                    "score": 1,
+                    "created_utc": 1653148688.0,
+                    "response": "You should not be using the lightning features of bluewallet. You should be using bluewallet's standard layer 1 wallet. If the header is orange, thats lighting. if it's blue, that's layer 1.\n\nYou should be able to check the transactions and see if the addresses match up with the addresses in bluewallet.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

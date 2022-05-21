@@ -1,0 +1,428 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uui29q",
+            "title": "Aren't cold wallets pointless?",
+            "url": "https://www.reddit.com/r/ethereum/comments/uui29q/arent_cold_wallets_pointless/",
+            "author": "Trixteri",
+            "created_utc": 1653117803.0,
+            "score": 4,
+            "num_comments": 49,
+            "subreddit": "ethereum",
+            "selftext": "# I am incredibly confused.\n\nIf it's a seed phrase that's accessible across all of Ethereum, couldn't I just use the 24 words from a Ledger on Metamask, and vice versa? Wouldn't this just make the security aspect pointless? Or is this not what the security aspect is at all?\n\nCan anyone explain?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9fesn5",
+                    "author": "jvsephii",
+                    "score": 16,
+                    "created_utc": 1653119768.0,
+                    "response": "That's the very point. The seedphrase generated on a Hardware/Cold wallet is offline, never ever have been in an online environment. You keep it that way \u2014 save it offline, written on a paper, engraved on steel etc etc. The moment you take that seedphrase and input into an internet enabled device, it ceases to be \"cold\".\n\nFor me, in my own humble opinion, if you're in this for the long term, one should have 2 wallets:\n\n+ a hardware wallet (strictly for storage/building your bags for the extreme long term. never connect this to any site/dapp. preferably only send in crypto to your addresses there).\n\n+ a software wallet (for all the connections you may want to do)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9fufun",
+                            "author": "_JohnWisdom",
+                            "score": 0,
+                            "created_utc": 1653133527.0,
+                            "response": "I would never ever suggest a software wallet. Hardware and cold wallet.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9fv63b",
+                                    "author": "Im-a_dinosaur",
+                                    "score": 2,
+                                    "created_utc": 1653134047.0,
+                                    "response": "Loopring has an L2 non-costodial software wallet that is dope.\n\nMy ledger and metamask(also non-costodial) are my guardians so i can lock my phone wallet if its stolen or easily recover if lost.\n\nBest part, no seed phrases.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9fh087",
+                            "author": "wood8",
+                            "score": -18,
+                            "created_utc": 1653121775.0,
+                            "response": "But when you need to send your cryptos from that wallet, there will be a moment where your seed phrase is on a machine that is connected to the internet. Maybe just in a text field, or just somewhere in the ram, but your seed phrase would be with internet. So I also don't see the point.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9fmdrl",
+                                    "author": "Tormian283",
+                                    "score": 13,
+                                    "created_utc": 1653126828.0,
+                                    "response": "only the signed transaction leaves the hardware wallet, not the seed phrase",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9fhk9m",
+                                    "author": "BassArgain",
+                                    "score": 10,
+                                    "created_utc": 1653122293.0,
+                                    "response": "If you can find a way to retrieve a seed phrase from a Ledger which is connected to PC via USB cable please do show me. So far nobody has been able to do that.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9fidld",
+                                    "author": "yogofubi",
+                                    "score": 8,
+                                    "created_utc": 1653123050.0,
+                                    "response": "Again, that's exactly the point, the seed phrase never leaves the hardware wallet",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9fd4z1",
+                    "author": "acathla0614",
+                    "score": 7,
+                    "created_utc": 1653118270.0,
+                    "response": "Hardware wallet never exposes your seed (keys) to the internet. A software wallet would store your keys on the device. If you device is infected with malware, your keys would be exposed.\n\nEven if it's not a virus, there was a case where iCloud was backing up the victim's MetaMask cache and a hacker got into the iCloud account and stole everything associated with the MetaMask wallets.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9fevb4",
+                    "author": "DingWrong",
+                    "score": 27,
+                    "created_utc": 1653119835.0,
+                    "response": "Using ledger is pointless if you are going to expose your seed in metamask. You use ledger to sign transactions and it can only do that while connected.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9g2rzg",
+                            "author": "Trixteri",
+                            "score": 2,
+                            "created_utc": 1653138785.0,
+                            "response": "so it's basically like a two-step verification for transactions?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9g6wss",
+                                    "author": "filipesmedeiros",
+                                    "score": 5,
+                                    "created_utc": 1653141017.0,
+                                    "response": "Yes!",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9g7la2",
+                                            "author": "Trixteri",
+                                            "score": 2,
+                                            "created_utc": 1653141365.0,
+                                            "response": "ty for letting me know",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9gglcg",
+                                    "author": "-spooky_ghost",
+                                    "score": 1,
+                                    "created_utc": 1653145637.0,
+                                    "response": "No it's noting like 2fa. Dunno why this other guy said it is.\n\nAn example of cold storage is having a private and public key written down on paper. You can then send crypto to your public key and only ever need to type the private key into something like metamask when you want to send crypto. It's kinda like an air gap that keeps your crypto safe (untill you type the private key into some software to send money)\n\nThen you have hardware wallets like ledger that sign transactions on the device it's self. It is 1 way communication so even if your device is compromy you can still sign transactions and a hacker cannot get your keys.\n\nIt's a just safer way to sign transactions. metamask stores your keys on your computer protected by noting but a password. If someone can gain access to your computer either directly or via remote access it is pretty easy to steal those keys.\n\nAnd yes you can use the same key in meta mask, ledger, trezor or any sort of hardware / software that implements the BIP32 protocol",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9fcu4d",
+                    "author": "Dilan57169",
+                    "score": 3,
+                    "created_utc": 1653118002.0,
+                    "response": "Hence why you keep your seedphrase safe and never reuse it.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9fd7bl",
+                    "author": "Perleflamme",
+                    "score": 2,
+                    "created_utc": 1653118329.0,
+                    "response": "When a wallet isn't a cold wallet, it's a hot wallet, aka a wallet where your seed phrase or private key are available on an electronic device that is connected to a network that is accessible from outside of such electronic device. \n\nCold wallets are to ensure your seed phrase and private key aren't accessible from the Internet by anyone who'd find a vulnerability allowing them to discover and exploit an access you wouldn't have spotted. The security is enforced by reducing to nearly zero the vector of attack space.\n\nIf you use the seed phrase on a hot wallet, then you're indeed losing most of the benefits of a cold wallet. But then, it's not the cold wallet that is pointless in itself. Rather, it's the fact of switching from cold to hot and then back to cold for the same wallet.\n\nA better way to handle a cold wallet, if you want to use a hot wallet, is to have a secondary wallet being your hot wallet, while you keep your cold wallet secure.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9fhmq7",
+                    "author": "thetastycookie",
+                    "score": 1,
+                    "created_utc": 1653122357.0,
+                    "response": "It is pointless if you are using the same seed phrase everywhere. Cold Wallets are only useful when you use a separate seed phrase thats only on the cold wallet.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9frr4z",
+                    "author": "CryptoAnarchyst",
+                    "score": -9,
+                    "created_utc": 1653131497.0,
+                    "response": "Cold wallets are pointless. You have about as much chance of losing the wallet, having it malfunction, or generally having shit happen on it than you have by holding money on an exchange. Biggest security flaw in the system is you, so if you do the right things your money is safe and sound. \n\nHere's a kicker, all Samsung phones have a dedicated hardware wallet... But does anyone use it? Noooo",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9fu6aj",
+                            "author": "Locko_O",
+                            "score": 4,
+                            "created_utc": 1653133336.0,
+                            "response": "Absolutely wrong, misinformation",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9fu8ag",
+                                    "author": "CryptoAnarchyst",
+                                    "score": -7,
+                                    "created_utc": 1653133375.0,
+                                    "response": "Lmao... Wanna bet?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9fuacc",
+                                            "author": "Locko_O",
+                                            "score": 3,
+                                            "created_utc": 1653133416.0,
+                                            "response": "I bet my life savings on cold storage, so sure",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9fuf3c",
+                                                    "author": "CryptoAnarchyst",
+                                                    "score": -5,
+                                                    "created_utc": 1653133512.0,
+                                                    "response": "Wow, that's so... Irrelevant...",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9fugbk",
+                                                            "author": "Locko_O",
+                                                            "score": 3,
+                                                            "created_utc": 1653133536.0,
+                                                            "response": "I agree, but at least it's not harmful misinformation",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9funjo",
+                                                                    "author": "CryptoAnarchyst",
+                                                                    "score": -1,
+                                                                    "created_utc": 1653133681.0,
+                                                                    "response": "Prove me wrong... I dare you",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9fuxuf",
+                                                                            "author": "Locko_O",
+                                                                            "score": 3,
+                                                                            "created_utc": 1653133884.0,
+                                                                            "response": "You saying the wallet to 'malfunction' alone shows you have zero clue how the concept even works. As long as you got your mnemonic in your head there is nothing that might result in loss of funds. Contrary to leaving it on a CEX, where it happened in the past and will happen in the future",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9fv2bf",
+                                                                                    "author": "CryptoAnarchyst",
+                                                                                    "score": -2,
+                                                                                    "created_utc": 1653133974.0,
+                                                                                    "response": "Prove me wrong. It's that simple",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i9fv370",
+                                                                                            "author": "Locko_O",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1653133991.0,
+                                                                                            "response": "I just did, bye",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "i9g350q",
+                                                                            "author": "Trixteri",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653138992.0,
+                                                                            "response": "aaand you lost all credibility. nice work.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9glu75",
+                                                                                    "author": "CryptoAnarchyst",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653148071.0,
+                                                                                    "response": "Lmao, dude, you really are a joke",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9fxqtv",
+                    "author": "ConceptualWeeb",
+                    "score": 1,
+                    "created_utc": 1653135766.0,
+                    "response": "It stops being a cold wallet the second you connect it to a hot wallet lol",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9g4w2a",
+                            "author": "MacroHard_0",
+                            "score": 1,
+                            "created_utc": 1653139956.0,
+                            "response": "Not really. I connected my hardware wallet to a hot wallet (imported hardware wallet in metamask), I believe my hardware wallet is still cold because I have to sign each transaction on hardware wallet.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9fzjby",
+                    "author": "deepoak40965",
+                    "score": 1,
+                    "created_utc": 1653136903.0,
+                    "response": "I have to hook my ledger up to my computer to turn it on and activate it to be able to send BTC to it from my exchange.  Is this bad? (I know this sounds incredibly dumb but reading above people\ngeneral said don\u2019t connect it to any device).",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9g32yo",
+                            "author": "Trixteri",
+                            "score": 1,
+                            "created_utc": 1653138959.0,
+                            "response": "I know for sure that you do have to plug it in to receive/send crypto.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9g97zi",
+                                    "author": "mooremo",
+                                    "score": 1,
+                                    "created_utc": 1653142182.0,
+                                    "response": "This isn't right. You only have to use the ledger to sign transactions. Anyone can send you stuff without you needing to do anything.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9gbpml",
+                                            "author": "Trixteri",
+                                            "score": 1,
+                                            "created_utc": 1653143373.0,
+                                            "response": "yes, but to access/view it don't you have to plug it in?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9gclok",
+                                                    "author": "Locko_O",
+                                                    "score": 1,
+                                                    "created_utc": 1653143794.0,
+                                                    "response": "No you don't, because to view no transaction is required. When it comes to access is depends on what you actually mean by that",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9gh28p",
+                                                            "author": "Trixteri",
+                                                            "score": 1,
+                                                            "created_utc": 1653145857.0,
+                                                            "response": "ah ok ty",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "i9gfzgp",
+                                                    "author": "mooremo",
+                                                    "score": 1,
+                                                    "created_utc": 1653145360.0,
+                                                    "response": "No, you can look at everything without plugging it in. The ledger just holds the keys, everything else is on chain.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9gd1po",
+                                    "author": "deepoak40965",
+                                    "score": 1,
+                                    "created_utc": 1653144007.0,
+                                    "response": "I plug mine in to computer to turn it on and access it every time I got to transfer a larger bundle of coin from exchange to ledger.\n\nIs this bad?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9ghaeb",
+                                            "author": "Trixteri",
+                                            "score": 1,
+                                            "created_utc": 1653145957.0,
+                                            "response": "no?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9gn1hp",
+                                                    "author": "deepoak40965",
+                                                    "score": 1,
+                                                    "created_utc": 1653148613.0,
+                                                    "response": "I\u2019m thinking I can get on my ledger app on the computer and get the link (address) to send BTC to my ledger without connecting it.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9gi07s",
+                    "author": "Sorry_Attitude_",
+                    "score": 1,
+                    "created_utc": 1653146289.0,
+                    "response": "A cold wallet is basically a card that is not connected to anything, a safe storage, vault of sorts for your money, impenetrable ONLY IF YOU DO NOT CONNECT IT TO ANY WALLET\n\nIf you connect the passphrase to a service it become kinda useless since you connected it to the internet and service like a Dex and then can be hacked or drained if your not careful of what goes into your computer\n\nThis is why if you're going to Hodl, buy anything you wanna hodl, you gotta use a cold wallet and send everything in there, even NFT's\n\nThat's what i plan to do with my Angelblock NFT's when they mint in 3 days, that shit has to be kept safe no matter what",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9gmltx",
+                    "author": "3141666",
+                    "score": 1,
+                    "created_utc": 1653148418.0,
+                    "response": "The point of the hardware wallet is to protect the key. You could keep just the key/seed on paper or in your brain (let's assume perfect memory for the sake of this argument). You could receive transactions that way, but how would you make transactions? Not possible, that's where Ledger/Trezor comes in, to sign transactions while keeping the seed as safe as possible.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

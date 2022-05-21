@@ -1,0 +1,250 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uukg5r",
+            "title": "How to transfer BTC from my Coinbase Wallet to Electrum Wallet?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uukg5r/how_to_transfer_btc_from_my_coinbase_wallet_to/",
+            "author": "_-psyduck-_",
+            "created_utc": 1653129297.0,
+            "score": 6,
+            "num_comments": 24,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Okay, so after lurking a bit I realised I did a big oopsie by using Coinbase Wallet to store my BTC. I just installed Electrum but I'm confused, do I have to make a new wallet and then transfer my Coinbase funds to this wallet or is there a way to link them? \n\nThanks",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9fp9hk",
+                    "author": "bitusher",
+                    "score": 3,
+                    "created_utc": 1653129433.0,
+                    "response": "electrum wallet in android or which OS?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9fplvg",
+                            "author": "_-psyduck-_",
+                            "score": 2,
+                            "created_utc": 1653129732.0,
+                            "response": "Android. Is it good for Android?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9fqczc",
+                                    "author": "bitusher",
+                                    "score": 8,
+                                    "created_utc": 1653130367.0,
+                                    "response": "Yes, Its very important to only use a wallet in ios or android for most people if you lack a hardware wallet . \n\nMake sure you use native segwit address starting with bc1 , keep the 12 seed words private and secure and never enter them in anything electronic or online . Make you label your electrum seed as \"electrum\" as well \n\nYou will make a single transaction to send your bitcoin from coinbase wallet to your electrum wallet . The mempool is clear so you can set a very low fee like 1-2 sats a byte too",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9fvlsw",
+                                            "author": "Block0922",
+                                            "score": 2,
+                                            "created_utc": 1653134353.0,
+                                            "response": "Great instructions, just wanted to add, ignore all the DMs you most likely have received.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9fwpqn",
+                                                    "author": "_-psyduck-_",
+                                                    "score": 2,
+                                                    "created_utc": 1653135091.0,
+                                                    "response": "8 as of rn \ud83d\udc80",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i9fw3iz",
+                                            "author": "_-psyduck-_",
+                                            "score": 1,
+                                            "created_utc": 1653134682.0,
+                                            "response": "Do I have to press \"I already have a seed\" and then enter the recovery phrase that Coinbase provides after making the wallet?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9fwryc",
+                                                    "author": "bitusher",
+                                                    "score": 2,
+                                                    "created_utc": 1653135132.0,
+                                                    "response": "coinbase seed is not compatible with electrum. This is the reason I suggested you :\n\n1)send an onchain tx \n\n2) write down the word electrum next to your new 12 words when setting up electcum \n\nWatch this video -\n\nhttps://www.youtube.com/watch?v=E4EhZg5QslI\n\nAnother solution you can do is either use :\n\nhttps://blockstream.com/green/\n\nhttps://www.youtube.com/watch?v=uO3Zi9D5b0Y\n\nor bluewallet.io \n\nand than import the seed directly instead of using electrum. Both are also excellent wallets that are open source and actually have better UX than electrum",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9fx7vi",
+                                                            "author": "Block0922",
+                                                            "score": 2,
+                                                            "created_utc": 1653135423.0,
+                                                            "response": "So true, electrum UX reminds me of the early days of DOS.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9fxpb3",
+                                                                    "author": "bitusher",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653135738.0,
+                                                                    "response": "The ugliness of electrums and bitcoin core's UX is a consequence of not depending upon many outside libraries to make the wallet look prettier which does add a slight security benefit . So it is not without reason , which is why many hardcore users use wallets like these. on the otherhand Since the android wallet is a more feature neutered version of electrum though it often doesn't make sense to use electrum within a phone however especially on a screen where UX is really important",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9fxxh1",
+                                                                            "author": "Block0922",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653135887.0,
+                                                                            "response": "Yeah I like LL layout, and I use electrum and coin.bin when I have need or urge to add to BTC bloat with OP_return Txs. Otherwise I stick to L.L.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "i9g1izq",
+                                                            "author": "_-psyduck-_",
+                                                            "score": 1,
+                                                            "created_utc": 1653138076.0,
+                                                            "response": "I think I'm going to use Blockstream Green, though I'm a bit scared as it doesn't have much reviews on Google Play Store but I'll trust you. \n\nMy only concern is - can I store other coins on this wallet as well? Like in the Coinbase one I used to have Luna, can I add other coins?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9g1xvn",
+                                                                    "author": "bitusher",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653138311.0,
+                                                                    "response": "app or play reviews aren't good places to trust for bitcoin wallets regardless. \n\nReviews that come from intelligent reviewers like \n\nhttps://www.youtube.com/watch?v=uO3Zi9D5b0Y\n\nor \n\nhttps://walletscrutiny.com/android/com.greenaddress.greenbits_android_wallet/\n\n>can I store other coins on this wallet as well?\n\nNo\n\nDo not use multicoin wallets as most of them are closed source, not peer reviewed and have very wide attack surfaces\n\nIf you absolutely need to combine various scams like luna with bitcoin than just buy a 60 dollar trezor one instead that can support most of these alts",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9g2pug",
+                                                                            "author": "_-psyduck-_",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653138751.0,
+                                                                            "response": "Was Luna a scam? My friend said he almost doubled his money because of investing in it.\n\nAlso I'm sorry if I come out as ignorant but isn't it true like millions of people invest in those coins?",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9g4jes",
+                                                                                    "author": "bitusher",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653139765.0,
+                                                                                    "response": "Luna absolutely was a scam that was an unsecured ponzi and illegal security. \n\n>My friend said he almost doubled his money because of investing in it.\n\nWhether something is a scam or not has nothing to do with whether you can profit by pump and dumping it. \n\n> true like millions of people invest in those coins?\n\nThe popularity of a scam does not legitamize it either. Onecoin was far more popular than this , does that make it not a scam ?\n\nnot every altcoin is a scam. Scams are when a project is promoted by the developer or company that created it , or a majority of the influential people in the community with false claims or lies.",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i9g4y6l",
+                                                                                            "author": "_-psyduck-_",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1653139988.0,
+                                                                                            "response": "Hmm I understand what you're saying. I mean I've heard a lot of people ended up killing themselves so yeah that's sad and shouldn't have happened. \n\nThanks for your help btw, I'm going to set up my wallet now and see how it goes.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9fp3x3",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653129298.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9g19or",
+                    "author": "MadMaxwell92",
+                    "score": 1,
+                    "created_utc": 1653137931.0,
+                    "response": "Electrum is great. They have a watch only wallet you can set up for a cold storage so none of your private keys are stored on a device that connects to the internet. You can build transactions and receive transactions with your public keys but in order to sign an outgoing transaction you have to sign it using the cold storage device which holds your private signing key.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9g1qb5",
+                            "author": "_-psyduck-_",
+                            "score": 1,
+                            "created_utc": 1653138191.0,
+                            "response": "I have decided to go with Blockstream Green as the other guys suggested. It looks better, what do you think?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9g22g1",
+                                    "author": "bitusher",
+                                    "score": 1,
+                                    "created_utc": 1653138382.0,
+                                    "response": "I really like electrum when combined with a hardware wallets because the amounts of features and focus on security . Something to upgrade to in the future",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9g2u2q",
+                                            "author": "_-psyduck-_",
+                                            "score": 1,
+                                            "created_utc": 1653138817.0,
+                                            "response": "I will use it when I get a pc then :) in mobile it doesn't look good and as a beginner looks kinda confusing to me.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9g40yh",
+                                                    "author": "bitusher",
+                                                    "score": 1,
+                                                    "created_utc": 1653139481.0,
+                                                    "response": "Do not use any wallets in windows or osx without a hardware wallet",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9g44y6",
+                                                            "author": "_-psyduck-_",
+                                                            "score": 1,
+                                                            "created_utc": 1653139544.0,
+                                                            "response": "Got it brother",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i9g865u",
+                                            "author": "MadMaxwell92",
+                                            "score": 1,
+                                            "created_utc": 1653141658.0,
+                                            "response": "Protect that seed phrase. Don\u2019t lose it, never share it. Do not keep a digital copy or a picture of it. Anyone that sees those words has access to all of your bitcoin.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

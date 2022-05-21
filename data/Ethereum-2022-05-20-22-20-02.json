@@ -1,0 +1,72 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uu93oq",
+            "title": "Help with a beginner question",
+            "url": "https://www.reddit.com/r/ethereum/comments/uu93oq/help_with_a_beginner_question/",
+            "author": "Beginning_Analysis61",
+            "created_utc": 1653084774.0,
+            "score": 1,
+            "num_comments": 8,
+            "subreddit": "ethereum",
+            "selftext": "I have had my ETH on an exchange for quite a while. I\u2019ve transferred all of my BTC to my trezor wallet. If I do the same with my ethereum will I need to pay these high gas fees that I keep hearing about? If not, can someone explain to me under what circumstances I would pay these high fees. And if so, can someone tell me how I can monitor and wait for the fees to be historically low. Maybe gas fees are just for developers ? I just don\u2019t know",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9dwdll",
+                    "author": "stev0lutionlol",
+                    "score": 3,
+                    "created_utc": 1653086499.0,
+                    "response": "Blockchains have their name because transactions are bundled into blocks. Once there is consensus among the network participants which block follows the previous one (through proof of work or proof of stake for example), every (full) node will process and store the block.\n\nSince this gets more expensive (both in computational cost and storage requirements) as blocks include more and more transactions, essentially all prominent blockchains have a fee mechanism to help decide which transactions to include in a block. If demand to be included in a block is high, the gas price will increase and thus the fee you need to pay to continue participating also increases.\n\nThere are multiple websites you can use to track current and historical gas prices. https://etherscan.io/gastracker is a reputable example. I think you can just use your favorite search engine to find alternatives.\n\nAs a point of reference, at a typical 20 gwei gas price, a simple ETH transfer will cost about 1 USD currently. More complex interactions might be more expensive. Most wallets will show an estimate of the gas cost before you accept a transaction.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9e8e9c",
+                    "author": "mooremo",
+                    "score": 2,
+                    "created_utc": 1653092653.0,
+                    "response": "Transferring ETH is pretty cheap even on L1. A few dollars or less.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9el7sm",
+                            "author": "domotheus",
+                            "score": 1,
+                            "created_utc": 1653099423.0,
+                            "response": "except if you're binance and charge a flat fee 10x higher than what they're actually paying to send ETH to your wallet, and then pass it off as \"network fees\"",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9e3tce",
+                    "author": "AESTHTK",
+                    "score": 1,
+                    "created_utc": 1653090243.0,
+                    "response": "Binance and many others now support Layer 2 withdrawals directly.\n\nTransfer it directly to your Optimism address and avoid the high gas fees. \ud83d\udc4d\n\nhttp://l2fees.info",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9e7lya",
+                    "author": "CrimsonFox99",
+                    "score": 1,
+                    "created_utc": 1653092232.0,
+                    "response": "Also depends on the exchange.  Gemini will cover your crazy gas fees for the first 10 transfers every month.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

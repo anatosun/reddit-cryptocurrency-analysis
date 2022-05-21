@@ -1,0 +1,206 @@
+{
+    "subreddit": "btc",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "utzuu6",
+            "title": "[Original Research] 65 Percent of Pre-Fork BCH Has Been Spent",
+            "url": "https://www.reddit.com/r/btc/comments/utzuu6/original_research_65_percent_of_prefork_bch_has/",
+            "author": "Rucknium",
+            "created_utc": 1653061340.0,
+            "score": 43,
+            "num_comments": 21,
+            "subreddit": "btc",
+            "selftext": "On August 1, 2017, the Bitcoin Cash (BCH) hard fork occurred, raising the permitted bitcoin block size above 1MB and creating a separate history of transactions from that point forward. At the moment of the hard fork, all self-custody owners of BTC were endowed with an equal amount of BCH that they could spend with their private cryptographic keys. Owners of BTC on exchanges were at the mercy of the exchanges' decisions to allow trading or withdraw of BCH.\n\nOwners of pre-fork BTC could choose to spend only their pre-fork BTC, only their pre-fork BCH, spend both, or do nothing at all. When I use \"spend\" in this post I mean transact with the coins on the blockchain. Coin owners could be sending to themselves, spending it on a good or service, sending it to an exchange to withdraw, or performing \"wallet maintenance\" if the owner is an exchange. Therefore, the blockchain data cannot tell us definitively whether certain pre-fork coins have changed ownership due to possible self-spending behavior. However, we can conclude that any self-custody coins that have not been spent on the blockchain have not been sold. Of course, it is widely believed that a large share of early bitcoins are now unspendable due to their corresponding private keys being lost.\n\nWith those caveats out of the way, let's go to the analysis, which was [generously funded](https://www.reddit.com/r/btc/comments/tt2giy/comment/i2wza86/) by u/moleccc.\n\n# Analysis\n\nThe research process was fairly simple. From BTC and BCH full nodes I extracted data on all transaction outputs, their corresponding bitcoin value, and the time (block height) they were created.\n\nI checked all pre-fork outputs for whether they had been spent prior to the fork. The outputs that remained unspent at the time of the fork constituted all BTC and BCH in existence at that point in time. Then I simply checked if and when each of these pre-fork outputs had been spent in a transaction on the post-fork BTC and BCH blockchains.\n\nHere are the main results for the spent status of pre-fork bitcoin by bitcoin value (i.e. what appears on the blockchain rather than its fiat valuation) as of March 31, 2022:\n\n|BTC|BCH|Bitcoin Value|Percent|\n|:-|:-|:-|:-|\n|Unspent|Unspent|4,356,697|26.4%|\n|Spent|Unspent|1,342,945|8.1%|\n|Unspent|Spent|264,379|1.6%|\n|Spent|Spent|10,515,129|63.8%|\n\nAlmost two-thirds of the value of pre-fork bitcoin has been spent on both the BTC and BCH blockchains. About one-quarter has not been spent on either blockchain; the private keys to many of those coins are probably lost forever, rendering the coins unspendable. By a 5-to-1 ratio more pre-fork bitcoin by value has been spent on the BTC blockchain but remained unspent on the BCH blockchain than bitcoin spent on BCH but unspent on BTC.\n\nA stacked area chart of the trend over time with some key events is below:\n\n&#x200B;\n\n[Spent Status of Pre-fork BTC and BCH by Bitcoin Value](https://preview.redd.it/lwxbr5xvgn091.png?width=800&format=png&auto=webp&s=dbebebbc6e7368d7611c2a9c7f650638dd1ee4c8)\n\nA large share of pre-fork bitcoin was rapidly spent in the first few months after the fork. After that, the rate of spending flattens out. In the early months there is almost an equal share of coins that are orange (BTC spent & BCH unspent) and green (BTC unspent & BCH spent), but over time the green share shrinks. There is a sudden jump in spending a few weeks after the BSV/BCH hard fork.\n\nInstead of by value, we can also analyze spending behavior by number of outputs. This gives each output equal weight regardless of how large or small the bitcoin value of those outputs are, possibly giving better insight into the behavior of typical users rather than the few users and institutions that owned a large amount of bitcoin. On the other hand, very small amounts that are not worth transacting -- dust -- are also given equal weight in such an analysis.\n\nThe main results for the spent status of pre-fork bitcoin by number of outputs as of March 31, 2022:\n\n|BTC|BCH|Number of outputs|Percent|\n|:-|:-|:-|:-|\n|Unspent|Unspent|24,296,821|45.3%|\n|Spent|Unspent|7,934,988|14.8%|\n|Unspent|Spent|808,870|1.5%|\n|Spent|Spent|20,617,669|38.4%|\n\nCompared to the results by bitcoin value, a much greater proportion of outputs have been left unspent. In particular, the percentage of outputs that have remained \"orange\" (BTC spent & BCH unspent) rather than \"green\" (BTC unspent & BCH spent) is much larger. This may be a consequence of the lower fiat-denominated value of BCH compared to BTC. It may be worth it to move a small quantity of BTC, but not an equivalent quantity of BCH.\n\nA stacked area chart of the trend over time is below:\n\n&#x200B;\n\n[Spent Status of Pre-fork BTC and BCH by Number of Outputs](https://preview.redd.it/2baytc9zgn091.png?width=800&format=png&auto=webp&s=5dc4535bec7fbdefab718f79e176992c78f063c1)\n\nIn this chart we can more clearly see the phenomenon of the green area (BTC unspent & BCH spent) rising substantially near the point of maximum USD/BCH exchange rate in December 2017. This may indicate that owners of pre-fork bitcoin may have been moving their BCH -- but not their BTC -- to take advantage of the high exchange rate and sell BCH for fiat currency. Over the following 12 months, the green area shrinks, indicating that those users who moved their BCH eventually also moved their BTC as well. Another notable feature of the chart is the depletion of the orange area (BTC spent & BCH unspent) over the second half of 2020, indicating that those users who had previously spent their BTC eventually spent their BCH as the cryptocurrency exchange rate was recovering after the early-COVID crash.\n\n# Conclusion\n\nAs expected, the highest volume of spending of pre-fork BTC and BCH occurred in the first few days after the fork. There was also a spike in spending of low-value outputs on the BCH chain around the time of maximum USD/BCH exchange rate. The great majority of pre-fork BCH has already been spent (along with BTC), so it is unlikely that a large amount of BCH is waiting to be put back into circulation.\n\n*An extended version of this post with analysis of the transition of outputs between states of spent status is* [*available at my website*](https://rucknium.me/posts/pre-fork-btc-bch-spending/) *and read dot cash slash @Rucknium*\n\n*Code to reproduce this analysis is available* [*here*](https://github.com/Rucknium/misc-research/tree/main/Pre-fork-BCH-BTC-Spending)*. The data files are available* [*here*](https://rucknium.me/data)*.*",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9cs7wg",
+                    "author": "big--if-true",
+                    "score": 16,
+                    "created_utc": 1653068061.0,
+                    "response": "I wonder how much of that 36% of the supply is lost forever. It actually means your coins are much more scarce than you realize.\n\nEdit: Great analysis. Its good to hear Bitcoin maximalists no longer benefit from BCH and if it rises, it wont be crushed by people converting their BCH to BTC. We may finally depeg from the BCH/Bitcoin peg.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9cuw0b",
+                            "author": "Knorssman",
+                            "score": 5,
+                            "created_utc": 1653069183.0,
+                            "response": "Depends on how much of that is sleeping whale like Satoshi's coins that may or may not come back. But I think a good chunk is lost forever from early users trying it out and losing access to thousands of bitcoins but at the time all those bitcoins were only worth a dollar or less",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9dhlwp",
+                            "author": "skanderbeg7",
+                            "score": 4,
+                            "created_utc": 1653079570.0,
+                            "response": "Make it even more scare by pulling your BCH out of exchanges!!!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9cxoh0",
+                    "author": "Twoehy",
+                    "score": 10,
+                    "created_utc": 1653070447.0,
+                    "response": "Very cool post. Thank you for taking the time to do the research and write this up. It's something I have personally been very curious about for a long time, so it's nice to see hard data.\n\nIt tends to gel with my instincts, but I put a lot less faith in those :) Thanks again.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9d9u1k",
+                    "author": "bitmeister",
+                    "score": 7,
+                    "created_utc": 1653076065.0,
+                    "response": "If a little over 4M coins haven't moved are we going to rename the *21 Million Club* to the *17 Million Club*?\n\nI know this change might upset a few people because the number 21 is a much cooler sounding number than 17. But as a matter of fact 17 is a prime number and it does make the club more exclusive; about 26.4% more exclusive. Let's face it, it's bound to come up.\n\nOn a serious note, thanks for your efforts and sharing.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9clury",
+                    "author": "YllFigureItOut",
+                    "score": 1,
+                    "created_utc": 1653065497.0,
+                    "response": "The price chart looks abysmal. The price just dipped to the same level as in the end of 2017.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9cri35",
+                            "author": "mpkomara",
+                            "score": 11,
+                            "created_utc": 1653067768.0,
+                            "response": "Buying opportunity!",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9cs1fl",
+                                    "author": "YllFigureItOut",
+                                    "score": -2,
+                                    "created_utc": 1653067987.0,
+                                    "response": "Can you find any TA guy who would tell you that?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9csh3k",
+                                            "author": "mpkomara",
+                                            "score": 9,
+                                            "created_utc": 1653068164.0,
+                                            "response": "I don't listen to technical analysts!",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i9d768n",
+                                            "author": "chainxor",
+                                            "score": 8,
+                                            "created_utc": 1653074884.0,
+                                            "response": "TA is only half a step from reading bones and astrology.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9df98t",
+                                                    "author": "YllFigureItOut",
+                                                    "score": -1,
+                                                    "created_utc": 1653078501.0,
+                                                    "response": "Take for example the SP500 log chart and zoom out. It revolves around a flat line. SP500 trends up. BCH trends down.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9czcm5",
+                            "author": "big--if-true",
+                            "score": 9,
+                            "created_utc": 1653071219.0,
+                            "response": "Well this data shows Bitcoin maximalists sold up to 10.5 Million BCH for Bitcoins. Thats some crazy selling pressure for 5 years straight. If it really is over BCH can rise and independently of Bitcoin.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9de62a",
+                                    "author": "skipperJoey",
+                                    "score": 1,
+                                    "created_utc": 1653078015.0,
+                                    "response": ">Bitcoin maximalists sold up to 10.5 Million BCH for Bitcoins\n\nHow?\n\nIt shows 10.5 million were split.\n\nYou're assuming literally 0 people went the other way, and sold Bitcoin for bch?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9do44a",
+                                            "author": "big--if-true",
+                                            "score": 1,
+                                            "created_utc": 1653082570.0,
+                                            "response": "I said **\"up to\"**.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9dpgqf",
+                                                    "author": "skipperJoey",
+                                                    "score": 1,
+                                                    "created_utc": 1653083197.0,
+                                                    "response": "What if it's the exact opposite",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9d6xw9",
+                                    "author": "YllFigureItOut",
+                                    "score": -1,
+                                    "created_utc": 1653074778.0,
+                                    "response": "I don't believe that's possible. That's almost all of the supply. Some exchanges didn't allow withdrawals. Some users never moved their coins even once. Some don't know what a fork is.That selling pressure would have crashed the price to zero and then it would have recovered very fast by new speculators.  In any who, BCH maxis who didn't sell or diversify and held for so long made *zero* gains in *crypto*. *Zero*. It would take a miracle for the price to recover.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9d7t3a",
+                                            "author": "big--if-true",
+                                            "score": 3,
+                                            "created_utc": 1653075172.0,
+                                            "response": "> BCH maxis who didn't sell\n\nDepends on their original cost basis. But yes after 5 years of non stop sell pressure by Bitcoin holders it makes sense that the price is this far down. Depending on the new owners, they can either let it rise or sell every leg up killing price rallies.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9epnx8",
+                    "author": "mad_privacy",
+                    "score": 1,
+                    "created_utc": 1653101846.0,
+                    "response": "There is a sudden jump in spending a few weeks after the BSV/BCH hard fork.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9fcycp",
+                    "author": "moleccc",
+                    "score": 1,
+                    "created_utc": 1653118108.0,
+                    "response": "Awesome, man. Thanks a lot for delivering.\n\nCan you link again your page where you offer your ideas for funding? I think this was funded through that, right?",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

@@ -9,29 +9,6 @@
     ],
     "posts": [
         {
-            "id": "uladiy",
-            "title": "Can someone ELI5 what EVM (Ethereum Virtual Machine) means for a Layer 1 Ecosystem?",
-            "url": "https://www.reddit.com/r/ethereum/comments/uladiy/can_someone_eli5_what_evm_ethereum_virtual/",
-            "author": "thenotoriousbull",
-            "created_utc": 1652041577.0,
-            "score": 12,
-            "num_comments": 10,
-            "subreddit": "ethereum",
-            "selftext": "Curious what exactly EVM entails? For instance, if an L1 wants to build towards an EVM, are they doing it in solidity? What if it\u2019s a purpose specific chain say for instance, gaming and NFTs like Ronin/Flow? If someone were to launch a native token off that EVM chain - but with their own token standard (so not ERC20) how does that work? What about custom consensus mechanisms? \n\nDoes EVM essentially mean:\n1. Build own chain with custom scalability, consensus, etc\n2. \u201cTurn on\u201d EVM - where developers of Ethereum apps like Curve and ENS, etc can import those apps onto this custom chain? \n3. Equals = Reap the rewards of Ethereum apps but on a faster, custom built chain? \n\nI\u2019m gonna need the ELI5 because I\u2019m not a dev but curious about this topic as Ethereum is labeled \u201cthe world computer\u201d \n\nThanks! FYI: Will be cross posting this around a couple threads",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7u7kcg",
-                    "author": "amemulo",
-                    "score": 8,
-                    "created_utc": 1652042067.0,
-                    "response": "EVM is the part of ethereum that understands code. When you send a transaction to a contract the EVM is in charge of executing whatever that contract is meant to do.\n\nFor a blockchain to be EVM compatible just means that every contract written for Ethereum will work for that other blockchain, as the part that understands contracts is equivalent (many times not exactly equal, for example gas costs may differ)",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "uluqvq",
             "title": "Max Pain - The Daily Gwei #477",
             "url": "https://thedailygwei.substack.com/p/max-pain-the-daily-gwei-477",
@@ -43,29 +20,6 @@
             "selftext": "",
             "stickied": false,
             "comments": []
-        },
-        {
-            "id": "ul3ks2",
-            "title": "Restoring My MetaMask Wallet with Seedphrase",
-            "url": "https://www.reddit.com/r/ethereum/comments/ul3ks2/restoring_my_metamask_wallet_with_seedphrase/",
-            "author": "Electrical_Yam5077",
-            "created_utc": 1652022098.0,
-            "score": 4,
-            "num_comments": 9,
-            "subreddit": "ethereum",
-            "selftext": "Last week I did a clean install on my Firefox browser without thinking about it. It uninstalled my MetaMask extension. I have the seed phrase but I\u2019m REALLY paranoid about entering it in my PC to restore my meta mask wallet. As the saying goes, anything connected to the internet isn\u2019t 100% safe. Currently there\u2019s nothing in there so I have nothing to lose technically. Is it safe to restore my wallet access by using the seed phrase? Or am I better off just making a new wallet?\n\nOh yeah, obligatory scammers fuck off. I\u2019m not answering any DMs",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7sz7n9",
-                    "author": "Rey_Mezcalero",
-                    "score": 5,
-                    "created_utc": 1652022616.0,
-                    "response": "Yes safe to restore your wallet with seed phrase. \n\nI had to do the same. Just make sure you not have anything else running like websites or apps and security scans been running ok. \n\nUnless you going to piracy sites and clicking links and doing things that might get malware dropped on you, should be fine. \n\nJust my 2 cents",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
         },
         {
             "id": "ujuvy1",
@@ -179,19 +133,6 @@
                     "comments": []
                 }
             ]
-        },
-        {
-            "id": "ultbgo",
-            "title": "ethsign down?",
-            "url": "https://www.reddit.com/r/ethereum/comments/ultbgo/ethsign_down/",
-            "author": "pheonix10yson",
-            "created_utc": 1652108796.0,
-            "score": 3,
-            "num_comments": 7,
-            "subreddit": "ethereum",
-            "selftext": "Maybe not the right place to ask this, but is [ethsign.xyz](https://ethsign.xyz) website down? It doesn't open up for me? Any idea what happened?",
-            "stickied": false,
-            "comments": []
         },
         {
             "id": "ule0wd",
@@ -345,19 +286,6 @@
                     "comments": []
                 }
             ]
-        },
-        {
-            "id": "ulji6u",
-            "title": "I did a video on MEV, frontrunning, and other blockchain bots. What do you think?",
-            "url": "https://youtu.be/oxeMOJfSBhU",
-            "author": "pschoffer",
-            "created_utc": 1652071763.0,
-            "score": 3,
-            "num_comments": 2,
-            "subreddit": "ethereum",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
         },
         {
             "id": "ul49ai",
@@ -575,6 +503,265 @@
                             ]
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "id": "ultbgo",
+            "title": "ethsign down?",
+            "url": "https://www.reddit.com/r/ethereum/comments/ultbgo/ethsign_down/",
+            "author": "pheonix10yson",
+            "created_utc": 1652108796.0,
+            "score": 4,
+            "num_comments": 10,
+            "subreddit": "ethereum",
+            "selftext": "Maybe not the right place to ask this, but is [ethsign.xyz](https://ethsign.xyz) website down? It doesn't open up for me? Any idea what happened?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7xysyc",
+                    "author": "Nonocoiner",
+                    "score": 2,
+                    "created_utc": 1652116951.0,
+                    "response": "Not sure what I'm supposed to see, but I get a blank page.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7xwj2z",
+                    "author": "PinkPuppyBall",
+                    "score": 1,
+                    "created_utc": 1652116046.0,
+                    "response": "https://downforeveryoneorjustme.com/\n\n>It's just you. ethsign.xyz is up.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7xyymz",
+                            "author": "pheonix10yson",
+                            "score": 1,
+                            "created_utc": 1652117013.0,
+                            "response": "Yeah, but only a blank page can be seen",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i7xz0au",
+                            "author": "pheonix10yson",
+                            "score": 1,
+                            "created_utc": 1652117030.0,
+                            "response": "I am hoping a dns issue",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7y2342",
+                    "author": "bolharr2250",
+                    "score": 1,
+                    "created_utc": 1652118266.0,
+                    "response": "I do not think it is a DNS issue. It appears to be a server issue (or possibly intentional). The domain still correctly points, there are just things failing to load.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ulji6u",
+            "title": "I did a video on MEV, frontrunning, and other blockchain bots. What do you think?",
+            "url": "https://youtu.be/oxeMOJfSBhU",
+            "author": "pschoffer",
+            "created_utc": 1652071763.0,
+            "score": 4,
+            "num_comments": 3,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "uladiy",
+            "title": "Can someone ELI5 what EVM (Ethereum Virtual Machine) means for a Layer 1 Ecosystem?",
+            "url": "https://www.reddit.com/r/ethereum/comments/uladiy/can_someone_eli5_what_evm_ethereum_virtual/",
+            "author": "thenotoriousbull",
+            "created_utc": 1652041577.0,
+            "score": 12,
+            "num_comments": 14,
+            "subreddit": "ethereum",
+            "selftext": "Curious what exactly EVM entails? For instance, if an L1 wants to build towards an EVM, are they doing it in solidity? What if it\u2019s a purpose specific chain say for instance, gaming and NFTs like Ronin/Flow? If someone were to launch a native token off that EVM chain - but with their own token standard (so not ERC20) how does that work? What about custom consensus mechanisms? \n\nDoes EVM essentially mean:\n1. Build own chain with custom scalability, consensus, etc\n2. \u201cTurn on\u201d EVM - where developers of Ethereum apps like Curve and ENS, etc can import those apps onto this custom chain? \n3. Equals = Reap the rewards of Ethereum apps but on a faster, custom built chain? \n\nI\u2019m gonna need the ELI5 because I\u2019m not a dev but curious about this topic as Ethereum is labeled \u201cthe world computer\u201d \n\nThanks! FYI: Will be cross posting this around a couple threads",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7u7kcg",
+                    "author": "amemulo",
+                    "score": 8,
+                    "created_utc": 1652042067.0,
+                    "response": "EVM is the part of ethereum that understands code. When you send a transaction to a contract the EVM is in charge of executing whatever that contract is meant to do.\n\nFor a blockchain to be EVM compatible just means that every contract written for Ethereum will work for that other blockchain, as the part that understands contracts is equivalent (many times not exactly equal, for example gas costs may differ)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7uag0g",
+                            "author": "thenotoriousbull",
+                            "score": 2,
+                            "created_utc": 1652043341.0,
+                            "response": "So for instance, I could run an instance of ENS (Ethereum Name Service) on my custom blockchain and gas would be paid not in Ether, but my own native tokens gas?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7ue1mv",
+                                    "author": "FeelTheFish",
+                                    "score": 3,
+                                    "created_utc": 1652044908.0,
+                                    "response": "Yep, just fork get and you are set basically.\n\nUnderstanding how the EVM works, and how many instances of it happen during a transaction is key to understanding how ethereum works as a whole.\n\nBring innovation to the table to stay.\n\nOr get VCs to fill your chain with incentives and die after a few months",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i7uffd4",
+                                            "author": "thenotoriousbull",
+                                            "score": 1,
+                                            "created_utc": 1652045498.0,
+                                            "response": "Thanks, super helpful. Any docs / threads or blogs you suggest reading (from a non dev pov)",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7ubbtn",
+                    "author": "Sorry_Attitude_",
+                    "score": 2,
+                    "created_utc": 1652043739.0,
+                    "response": "It is basically the equivalent of a Kernel on your PC.\n\nIt understand the commands, it reads, translates and applies them\n\nYou wanna make a dApp? you will have to use the EVM to run your smart contracts\n\nAngelblock wants to mint their NFTs? The tokens representing those need to be minted and that works by a command through the EVM.\n\nIf it goes through an EVM it will be more expensive than the transfer gas as you gotta pay to use the computational power and all that shazz\n\nObviously not a 1:1 technical explanation but in big wide nice terms it runs the commands online giving it a standard",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7ubqvw",
+                            "author": "thenotoriousbull",
+                            "score": 1,
+                            "created_utc": 1652043922.0,
+                            "response": "Additional question: what would incentivize a developer to build on an EVM chain opposed to Ethereum?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7ueeyk",
+                                    "author": "FeelTheFish",
+                                    "score": 2,
+                                    "created_utc": 1652045062.0,
+                                    "response": "Ethereum is a EVM chain, they created the Ethereum Virtual Machine.\n\nWhen you code solidity, for example adding two numbers, you just have to code:\n\nc = a+b\n\nHowever, this gets compiled to evm-compatible code, which has op codes ([https://ethereum.org/en/developers/docs/evm/opcodes/](https://ethereum.org/en/developers/docs/evm/opcodes/))\n\nYour c = a+b gets translated to \n\nStore A in a stack\n\nStore B in a stack\n\nAdd A and B, while popping them from the stack, now the top part of the stack is C.\n\nEach OPCODE has different gas costs.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i818qo7",
+                                    "author": "Sorry_Attitude_",
+                                    "score": 1,
+                                    "created_utc": 1652178607.0,
+                                    "response": "Uh, EVM is the machine that runs the \"smart\" part of Ethereum, contracts, minting, updates etc\n\nSo if you wanna mint a nft as i said above, an angeblock maybe, you have to send your command to the EVM that makes the mint on the Ethereum chain\n\nOther chains use the EVM too, because it makes them compatible to Ethereum chain and can leech of it kinda\n\nAlgorand uses AVM, Algorand virtual machine which is kinda like EVM but in another form that allows it to do those things in another way\n\nI'd probably get lynched if i say it does those things better so imma abstain myself :p",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7uijav",
+                    "author": "LivingFlow",
+                    "score": 1,
+                    "created_utc": 1652046863.0,
+                    "response": "It\u2019s a great feature. It\u2019s also why I don\u2019t understand ETH maxis. There are going to be many viable Layer 1s while the pie is the pie.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7whd2h",
+                    "author": "punto-",
+                    "score": 1,
+                    "created_utc": 1652090682.0,
+                    "response": "EVM is just the virtual machine, as long as you have something that can give you ordered events, you can interpret those events as interaction with that visual machine, and you have EVM apps",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ul3ks2",
+            "title": "Restoring My MetaMask Wallet with Seedphrase",
+            "url": "https://www.reddit.com/r/ethereum/comments/ul3ks2/restoring_my_metamask_wallet_with_seedphrase/",
+            "author": "Electrical_Yam5077",
+            "created_utc": 1652022098.0,
+            "score": 5,
+            "num_comments": 12,
+            "subreddit": "ethereum",
+            "selftext": "Last week I did a clean install on my Firefox browser without thinking about it. It uninstalled my MetaMask extension. I have the seed phrase but I\u2019m REALLY paranoid about entering it in my PC to restore my meta mask wallet. As the saying goes, anything connected to the internet isn\u2019t 100% safe. Currently there\u2019s nothing in there so I have nothing to lose technically. Is it safe to restore my wallet access by using the seed phrase? Or am I better off just making a new wallet?\n\nOh yeah, obligatory scammers fuck off. I\u2019m not answering any DMs",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7sz7n9",
+                    "author": "Rey_Mezcalero",
+                    "score": 4,
+                    "created_utc": 1652022616.0,
+                    "response": "Yes safe to restore your wallet with seed phrase. \n\nI had to do the same. Just make sure you not have anything else running like websites or apps and security scans been running ok. \n\nUnless you going to piracy sites and clicking links and doing things that might get malware dropped on you, should be fine. \n\nJust my 2 cents",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7t2078",
+                    "author": "tahoetoys",
+                    "score": 1,
+                    "created_utc": 1652023860.0,
+                    "response": "If you had no crypto in there I would just create a new wallet. Also, if you're that worried, go get yourself a hardware wallet.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7t2i8q",
+                    "author": "Raisingaquestion",
+                    "score": 1,
+                    "created_utc": 1652024081.0,
+                    "response": "Unsafe to start off with. Get yourself a hardware wallet and move your assets \"there\".",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7thpnd",
+                    "author": "pvhbk",
+                    "score": 1,
+                    "created_utc": 1652030685.0,
+                    "response": "I mean if it'll give you peace of mind it takes seconds to make a new one",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7u4j0l",
+                    "author": "TomOkihara",
+                    "score": 1,
+                    "created_utc": 1652040722.0,
+                    "response": "Your seed phrase is your wallet you can think of MM as an instance of the wallet so you\u2019re fine to restore \n\nI\u2019ve done it a few times",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7v7xcz",
+                    "author": "LateNightSupperrr",
+                    "score": 1,
+                    "created_utc": 1652059257.0,
+                    "response": "A lot of MetaMask phishing websites out there. I usually enter my seed phrase \u201cwrongly\u201d, and see if it detects that it\u2019s wrong. Then I\u2019ll correct it with the right one.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7wxq16",
+                    "author": "skytte_dk",
+                    "score": 1,
+                    "created_utc": 1652101387.0,
+                    "response": "First create a new wallet, then restore your wallet from your seed phrase, Then quickly transfer your funds from the restored wallet to the new wallet you just created.",
+                    "depth": 1,
+                    "comments": []
                 }
             ]
         }

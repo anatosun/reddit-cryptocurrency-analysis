@@ -1,0 +1,100 @@
+{
+    "subreddit": "btc",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uu8mj8",
+            "title": "I want to do my payroll in BCH. How do I go about setting that up?",
+            "url": "https://www.reddit.com/r/btc/comments/uu8mj8/i_want_to_do_my_payroll_in_bch_how_do_i_go_about/",
+            "author": "bushy_eyebrows_100",
+            "created_utc": 1653083394.0,
+            "score": 22,
+            "num_comments": 8,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9fdi16",
+                    "author": "MemoryDealers",
+                    "score": 6,
+                    "created_utc": 1653118595.0,
+                    "response": "I recommend using a 2 of 3 multi signature wallet. \n\nThe CFO has 1 key.  The owner has 2 keys.\n\nEach employee is paid in BCH the fiat value they are owed for the pay period. \n\nIf the fiat value of the BCH dips within 48 hours of when they were paid, additional BCH is sent to make up the difference.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9fiwy2",
+                            "author": "LovelyDayHere",
+                            "score": 1,
+                            "created_utc": 1653123566.0,
+                            "response": "I don't know how you do it in your business, but I suppose for this to scale well to really big sizes, it would need the owner+CFO to pay to some contract that distributes the payroll automatically in the right proportion per employee.\n\nSomething like what the token dividends scheme did even though that didn't use smart contracts.\n\nIt could be done somewhat reasonably in a pay-to-many transaction which owner+CFO review before signing, but with current limits (*) on transaction size, that would not scale enough for really big business, they'd need to break it up into several payments, which is of course also possible...\n\n(*) maximum standard transaction byte-length (A.K.A. MAX_STANDARD_TX_SIZE \u2013 100,000 bytes) and consensus-maximum transaction byte-length (A.K.A. MAX_TX_SIZE \u2013 1,000,000 bytes). These limits may of course also be lifted more in future, and doing so could probably accommodate even the biggest enterprises right now.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9fp9ch",
+                            "author": "bushy_eyebrows_100",
+                            "score": 1,
+                            "created_utc": 1653129429.0,
+                            "response": "Then just pay workers comp, taxes etc separately?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ee4tu",
+                    "author": "SoulMechanic",
+                    "score": 5,
+                    "created_utc": 1653095738.0,
+                    "response": "I would love to learn this as well. I'll do some digging and let you know if I find any useful information.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9f4rbf",
+                    "author": "JonathanSilverblood",
+                    "score": 3,
+                    "created_utc": 1653111328.0,
+                    "response": "What scale is you operation? 5man? 50man? 5000man?\n\nI wish I had good answers, but from experience I can say you probably need to do a lot more work manually, as I haven't found any dedicated services to simplify that task yet :/",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9fozkx",
+                            "author": "bushy_eyebrows_100",
+                            "score": 1,
+                            "created_utc": 1653129191.0,
+                            "response": "It's a tiny two man operation. The problem is that the bank has started charging  me 1% on all deposits. So my coat for payroll has gone up just by needing to deposit the money. So payroll costs me an extra 20 dollars every two weeks. 40 a month. 480 a year. Annoying",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ehh3f",
+                    "author": "phillipsjk",
+                    "score": 2,
+                    "created_utc": 1653097489.0,
+                    "response": "I suggest doing most of the accounting in local currency: since the price of BCH is quite volatile.\n\nYou would then do a conversion when moving money,",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9f2qbs",
+                    "author": "RowanSkie",
+                    "score": 0,
+                    "created_utc": 1653109884.0,
+                    "response": "I heard you just go and ask your employer.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

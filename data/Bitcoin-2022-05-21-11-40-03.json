@@ -1,0 +1,327 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uul99u",
+            "title": "Bitcoin nodes question.",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uul99u/bitcoin_nodes_question/",
+            "author": "supertree",
+            "created_utc": 1653132844.0,
+            "score": 6,
+            "num_comments": 14,
+            "subreddit": "Bitcoin",
+            "selftext": "This is a question I have been trying to find an answer to but unable to so far. \n\nWhat is to stop the government (or anyone with the capability)from turning on 51% of the nodes tomorrow and then altering the consensus?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9ftwgr",
+                    "author": "TheGreatMuffin",
+                    "score": 4,
+                    "created_utc": 1653133140.0,
+                    "response": "Having the majority of nodes doesn't achieve anything (much less in regards to consensus critical things) because bitcoin not a democratic system, and consensus changes don't depend on a particular amount of nodes.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ftwyr",
+                    "author": "Block0922",
+                    "score": 2,
+                    "created_utc": 1653133150.0,
+                    "response": "The money it takes to get 51% consensus, plus the power/energy to maintain that new consensus per hour. It's just not cost effective.\n\nAlso the other nodes that didn't join or that got orphaned off could technically fork and continue the true original chain.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9fyfpo",
+                            "author": "22-Squealer",
+                            "score": 1,
+                            "created_utc": 1653136216.0,
+                            "response": "There's also the practical issue of getting hold of enough miners to run that much hash rate. I doubt anyone could do that on the quiet, and that's before considering things like chip shortages.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9fu0nm",
+                    "author": "DryTechnology5224",
+                    "score": 1,
+                    "created_utc": 1653133222.0,
+                    "response": "They would need 51% of hashpower i think, not nodes.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9fu7fj",
+                            "author": "TheGreatMuffin",
+                            "score": 1,
+                            "created_utc": 1653133359.0,
+                            "response": "51% of hashpower can't simply change consensus critical things, not even 80% or 90%, because it's not a democratic system. Miners are not the (only one) authority on the network.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9fuutf",
+                                    "author": "magneticman245",
+                                    "score": 1,
+                                    "created_utc": 1653133825.0,
+                                    "response": "Yep, I think the only thing a 51% hashpower attack could achieve would be a double spend. If the majority hashpower tried to mine a chain which broke the protocol rules (e.g. increasing the block reward), those blocks would be rejected by nodes and couldn't propagate through the network.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9fv039",
+                                            "author": "TheGreatMuffin",
+                                            "score": 1,
+                                            "created_utc": 1653133930.0,
+                                            "response": "Yep, correct (small addition though: 51% if hashpower can also censor transactions, not only doublespend their own transactions)",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9fv9fz",
+                                                    "author": "magneticman245",
+                                                    "score": 1,
+                                                    "created_utc": 1653134111.0,
+                                                    "response": "Ah of course, I forgot about that. Luckily censoring transactions isn't a huge problem, because it would require the bad actor to control 51% of the hashrate indefinitely. Once the honest miners have majority, they will include the censored transactions. \n\nI think this differs to a double spend which only requires you to have 51% hashrate for a short time, until the recipient is confident they've received the payment, and then you don't need to mine the false chain anymore.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9fvd1c",
+                                    "author": "DryTechnology5224",
+                                    "score": 1,
+                                    "created_utc": 1653134181.0,
+                                    "response": "But having 51% of hashpower could let you control certain things, couldn't it? Not changing the rules of bitcoin per say but something to do with the actual mining of transactions and blocks.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9fw80x",
+                            "author": "Szabadsagharcos",
+                            "score": 1,
+                            "created_utc": 1653134763.0,
+                            "response": "They need both(!). In addition they need the exchanges to follow their longer, but invalid chain.  \nSo basically anyone trying to do this needs 51+% of nodes, 51+% of hash power and big chunk/all of the market participants (exchanges, payment providers) too.  \nAll at once at the very second of the chain split and after.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9fvw7q",
+                    "author": "SamWizza",
+                    "score": 1,
+                    "created_utc": 1653134548.0,
+                    "response": "I\u2019m sure there\u2019s a mathematical answer here. BTC\u2019s Total Hash Rate is at ATH and so is difficulty. Someone please deduce the cost of trying to run a 51% attack.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9fyhzh",
+                    "author": "sonicode",
+                    "score": 1,
+                    "created_utc": 1653136257.0,
+                    "response": "https://www.youtube.com/watch?v=KUd8ZGgm6Qo",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9fz48m",
+                    "author": "Glugstar",
+                    "score": 1,
+                    "created_utc": 1653136643.0,
+                    "response": "You can't alter other people's protocol rules, you can only alter your own.\n\nEven if they had 99.99% of nodes under their control, the other 00.01% can still freely decide to ignore them entirely.\n\nAssuming that there is substantial hashing power that also supports the new nodes, they still can't force anything. At most, they end up in a hard fork situation, two coins with two different rules. Next it's up to the market to choose the price for each, according to their utility for the buyer.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uul8o3",
+            "title": "Regulation: two birds, one stone. My dark maximalism.",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uul8o3/regulation_two_birds_one_stone_my_dark_maximalism/",
+            "author": "Mallardshead",
+            "created_utc": 1653132776.0,
+            "score": 80,
+            "num_comments": 28,
+            "subreddit": "Bitcoin",
+            "selftext": "Regulation is coming for altcoins. Most of the 17,000 will disappear. This is the s-curve adoption shakeout we as bitcoiners have been warning about for years. SEC Chair Gary Gensler met with the FTC on Wednesday, and again reiterated that bitcoin is NOT a security, but that \"*Many, I'd say most of the others are securities*.\" \n\n[https://twitter.com/hodlerforlife/status/1527705100059258880?s=20&t=BVRnn-2FkOVJ37GwM7CtAw](https://twitter.com/hodlerforlife/status/1527705100059258880?s=20&t=BVRnn-2FkOVJ37GwM7CtAw)\n\nSome folks have suggested that getting designated a security won't affect their coin or protocol. They are terribly mistaken. This designation means you have to follow the established legal framework for securities:\n\n* You can't transfer a security to someone that is not registered to receive securities. If you do, in order to redeem it they must register. Otherwise you can transfer them freely as they are a property, but only to persons or institutions registered. International sales have their own sets of rules.\n* You cannot issue coins or tokens. This requires form S-3. \n* Insiders/Devs/DAO's cannot sell their securities without a form S-4. More importantly, they can no longer trade on material action before the public knows, which is an enormous problem currently, especially amongst exchanges. This is a crime if you are trading securities.\n\nAnd so on. There is no effort to rewrite American securities laws to accommodate the unique properties of crypto, which instead will meet the burden by complying with the rigor and legal framework everything else does.\n\nhttps://preview.redd.it/jvu60wzyct091.jpg?width=1074&format=pjpg&auto=webp&s=1e38929d5113fe526747b1a7c054527a3c402d0f\n\nThe coins-tokens-protocols that get designated securities don't have to comply of course. If they don't want to change their protocol, register their brass, and create a hierarchical chain of command for reporting, then:\n\n* They'll be delisted by every centralized exchange within 90 days\n* All their wallets/apps will be deleted from Apple and Google Play\n* No taxpaying company will accept them as payment\n* Promoting the ticker or coin in any way will be a crime\n* All major stablecoins will cease to operate within their protocols--and this might be the most insurmountable obstacle, because 85% of ALL altcoin volume is from stablecoins. That means nothing inside an alt protocol has established itself as money--except for stablecoins\n\n&#x200B;\n\n[Web3](https://preview.redd.it/36jdgpibdt091.jpg?width=1125&format=pjpg&auto=webp&s=3b3b04861391c022dd8c7af932637cbdd4d7d8ea)\n\nIf these projects were decentralized and impairment resistant to begin with, none of this would be happening. They just couldn't avoid those pre-mines for money though. Their founders loved the spotlight too. If they at least had fixed issuance, they could mitigate some of their problems. But besides BTC, few projects come to mind that can circumvent all these travails; the leading privacy coin certainly can; but even the coin beginning with *Lite* and the one represented by a dog symbol could be in danger of getting this black securities label. If delisted, the only real way to acquire these zombified things would be to take something that isn't a security (like BTC), transfer it to a DEX, then swap into it. Point is, getting designated a security is effectively a date with gravity from the 50th floor, because you are now in the sandbox with the same rules real public companies, real bonds, and real products must adhere to. Can your vaporware compete? Because if you're not money, what are you exactly? Nothing. You're an orgy of swaps, wraps, burns, mints, and stakes run by centralized dapps that do nothing but optimize token interactions to keep the orgy going. Here's a better way to say this: If your dapp is a centralized registered security with full KYC, why does it need a blockchain exactly? To shill its speculative token. There's no real business or service there. \n\nExchanges don't have profitable business models without a robust (expletive)coin market. Bitcoin isn't something they can control and the open source tech around it is a race to zero. Add in the fact that BTC has established itself as money, and you'll see a nascent circular economy already growing around BTC. When it gets big enough (goods services sold in BTC), then exchanges are really no longer necessary. So maybe they'll spin-off the bitcoin business, miners might acquire them, exchanges might consolidate, who knows. I do know the days of easy money are gone. \n\n&#x200B;\n\nhttps://preview.redd.it/ycsy7yblct091.jpg?width=1884&format=pjpg&auto=webp&s=6a30d46068016095e2677e693d4243158fd43a88\n\nI think Gary Gensler is a bit naive on what these security designations will do to these protocols that heretofore have been hiding behind the word *decentralization* and acting like they're going to do something of value someday. He also doesn't understand fully what impact it will have on exchanges either. Bitcoiners are smiling of course, because two birds are getting hit with one stone. Centralized bitcoin-only exchanges (and apps) like Block's CashApp, Strike, Swan, etcetera won't be burdened with any of this extra paperwork, insurance costs, lawsuits, lawyers, or blockchain forensic add-ons. \n\nMy dark maximalism really starts sweating through my shirt thinking about the bloody mess of red ink  we'll be mopping up though.\n\n&#x200B;\n\nhttps://preview.redd.it/bqs5urelet091.jpg?width=311&format=pjpg&auto=webp&s=669278e4ef4aaaf8d40995792a3cf227efa66d14",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9fuc7c",
+                    "author": "jackrabid40",
+                    "score": 22,
+                    "created_utc": 1653133452.0,
+                    "response": "Thanks for the effort that you put into this.  I will have to read several times to digest it",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9g84v4",
+                            "author": "Lazy_Reflection_590",
+                            "score": 3,
+                            "created_utc": 1653141642.0,
+                            "response": "I second the motion. \ud83d\ude05",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ggzv4",
+                    "author": "recessiontime",
+                    "score": 1,
+                    "created_utc": 1653145827.0,
+                    "response": "This is the ugliest side of bitcoin maximalism. It's fine if you think bitcoin is the best and will win on its own merits, it's another thing to be cheering on government and banking regulations on the competition because it helps your bottom line. I wish you would look at yourself in the mirror and ask yourself whether this is in the spirit of libertarianism or cyberpunk?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9gmq5o",
+                            "author": "Natethegreat13",
+                            "score": 1,
+                            "created_utc": 1653148471.0,
+                            "response": "\u201cCrypto\u201d has besmirched the Bitcoin name and I\u2019m sick of it. They are not the same and I\u2019m tired of people acting like they are",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9gknzz",
+                            "author": "phdbroscience350",
+                            "score": 1,
+                            "created_utc": 1653147527.0,
+                            "response": "Yeah no, shitcoins remain shitcoins.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9gmtnk",
+                            "author": "Remarkable-Hall-9478",
+                            "score": 1,
+                            "created_utc": 1653148514.0,
+                            "response": "Technically, yes it is in the spirit of cypherpunk. The entire point of the cryptography and cloak-and-dagger nature of the \u201ccypher\u201d part is to avoid providing critical information to powerful groups such as govts. The \u201cpunk\u201d is explicitly fighting back against those groups. The word pretty much *literally* means \u201cfight the system with cryptography and code\u201d.\n\nThe cryptocurrency space has had a bit of a head start for a while here but has squandered its lead by getting fat, lazy, and greedy. People with no understanding or even remote interest or support for cypherpunk ideology have flooded in en masse because they think buying crypto more than a decade too late is a free ride to lambos and cocaine orgies. \n\nThe average \u201ccryptards\u201d these days can\u2019t contribute even a modicum of development and do not understand the implications or correct context in which to view the technology. The space is dragged down by this whole \u201cmass adoption\u201d bullshit which really just turns into shilling scams to people who have never and never will have a legitimate use case for decentralized currency. The vast majority of the market is either a scam, a speculative trading vehicle, or both as an inverse of \u201cbuild it and they will come\u201d. Dumb money is here, many years too late btw, trying to make fortunes and so there are a thousand thousand dev teams meeting the demand for vaporware moonshot lottery tickets.\n\nIt\u2019s not \u201ccypherpunk\u201d to just cross your fingers and hope the govt plays nice and lets you do whatever you want and ignore any law on the books because of \u201cmagic internet\u201d faerie dust.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9g21fz",
+                    "author": "Savik519",
+                    "score": 8,
+                    "created_utc": 1653138366.0,
+                    "response": "I love this hellfire and brimstone Old Testament shit.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9g1emq",
+                    "author": "wkw3",
+                    "score": 6,
+                    "created_utc": 1653138009.0,
+                    "response": "Agreed. Gensler has been saying as much for quite some time, but people keep whistling past the graveyard, or counting on the practical limitations of enforcement.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9g3n0f",
+                    "author": "1entreprenewer",
+                    "score": 4,
+                    "created_utc": 1653139268.0,
+                    "response": "Wow. This is brilliant thinking, and I hadn\u2019t even considered it. I knew all shitcoins would eventually go to 0, I just didn\u2019t realize how quickly.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9geejw",
+                    "author": "horsecyack",
+                    "score": 2,
+                    "created_utc": 1653144633.0,
+                    "response": "Meh not sure I buy this bs",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9gefhx",
+                    "author": "_scampy",
+                    "score": 3,
+                    "created_utc": 1653144645.0,
+                    "response": "Based toxic maxi duck. Inject the hopium directly into my veins.\n\nHere's a question: If your thesis plays out, what happens with all the tokens locked up in staking contracts? You know the shitcoin I'm talking about.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9g5vcv",
+                    "author": "Fair-Pool-5155",
+                    "score": 2,
+                    "created_utc": 1653140472.0,
+                    "response": "Thank you for sharing your knowledge and thoughts \ud83d\ude4f\ud83d\ude4f\ud83d\ude4f",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ga9kc",
+                    "author": "Doge-SAE",
+                    "score": -1,
+                    "created_utc": 1653142694.0,
+                    "response": "Ohhhh,  uuuuw\u2026 scary.  Should I sell all my assets now?  Hell NO!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9garm0",
+                            "author": "Mallardshead",
+                            "score": 3,
+                            "created_utc": 1653142926.0,
+                            "response": "\"Assets\"?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ggvmc",
+                    "author": "Scrapin-Nee",
+                    "score": 1,
+                    "created_utc": 1653145771.0,
+                    "response": "Sounds about right. Hopefully they follow through and don\u2019t just try and backstab BTC with the ESG narrative. BiTcOiN ShOuLd bE pRoOf oF sTaKe. Duuuuuuurr.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9glzjf",
+                    "author": "Technical_Emu_8567",
+                    "score": 1,
+                    "created_utc": 1653148139.0,
+                    "response": "Go figure...\n\nA bitcoiner enthused about government regulation.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9gmt93",
+                    "author": "MythicMango",
+                    "score": 1,
+                    "created_utc": 1653148509.0,
+                    "response": "How would the SEC go about enforcing regulation on thousands of tokens?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9fuxxr",
+                    "author": "StockAd229",
+                    "score": -9,
+                    "created_utc": 1653133886.0,
+                    "response": "Sounds like fud",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

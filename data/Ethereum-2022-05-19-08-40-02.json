@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/ethereum/comments/usyqsb/huge_testing_milestone_for_ethereum_ropsten/",
             "author": "C4-PO",
             "created_utc": 1652948735.0,
-            "score": 39,
-            "num_comments": 8,
+            "score": 75,
+            "num_comments": 11,
             "subreddit": "ethereum",
             "selftext": "Merging Ropsten is a huge testing milestone towards Ethereum\u2019s mainnet merge later this year,\u201d said Preston Van Loon, an Ethereum core developer at Prysmatic Labs.\n\nThe Ethereum ecosystem is set for a \u201chuge testing milestone\u201d with the Ropsten testnet Merge set to be conducted on June 8.\n\nAccording to the Merge testnets page on Github, Ethereum DevOps engineer Parathi Jayanathi submitted a pull request for the Ropsten testnet Merge\u00a0configuration code on Monday, suggesting the implementation is ready to go.\n\nRopsten is\u00a0one of several testnets\u00a0created by the Ethereum Foundation in 2017 and which is currently maintained by the Geth developer team.\n\nThis specific testnet is seen as the best replication of the Ethereum Mainnet as it follows a similar network structure. This enables devs to conduct\u00a0realistic deployment testing\u00a0before making updates to the actual mainnet.\n\nThe Ropsten testnet Merge will see the proof-of-work network combined with a new proof-of-stake (PoS) consensus layer testnet, with its genesis set for May 30. It will simulate what will happen once the actual Merge between Ethereum and the Beacon Chain finally takes place and it\u00a0becomes a PoS network.\n\nDevs in the community have been posting their bullishness about the testnet news online. Preston Van Loon, an Ethereum core developer at Prysmatic Labs said that..\n\nRead full Article  [https://techyno.com/huge-testing-milestone-for-ethereum-ropsten-testnet-merge-set-for-june-8/](https://techyno.com/huge-testing-milestone-for-ethereum-ropsten-testnet-merge-set-for-june-8/)",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i96wnci",
                     "author": "AusIV",
-                    "score": 2,
+                    "score": 7,
                     "created_utc": 1652961251.0,
                     "response": "Just so we're clear, the June 8th date is very fuzzy. Since they announced the TTD of the fork, I've seen the projected merge date move between 6/3 through 6/18.\n\nBecause of the way the merge works, this fork is not based on a block number, rather it's based on the total difficulty of the chain. Normally, when forks happen on a given block number, the time is fairly easy to pin down because increases in hashing power are compensated by adjustments to the difficulty required per block, and the time between blocks stays pretty stable.\n\nBut just basing it on the total difficulty means that time adjustment doesn't happen. If hashing power increases or decreases, the merge time gets closer or further away. And Ropsten has incredibly variable hashing power. It's often just got a handful of CPU miners, and a single GPU miner can increase the hashing power by an order of magnitude.",
                     "depth": 1,
@@ -31,7 +31,7 @@
                         {
                             "id": "i970g2s",
                             "author": "ninja_batman",
-                            "score": 4,
+                            "score": 9,
                             "created_utc": 1652963450.0,
                             "response": "So what you're saying is I should start mining on ropsten to speed up the merge..",
                             "depth": 2,
@@ -39,7 +39,7 @@
                                 {
                                     "id": "i972mk5",
                                     "author": "FreeFactoid",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1652964628.0,
                                     "response": "Yes we all should help the merge get here faster",
                                     "depth": 3,
@@ -48,7 +48,7 @@
                                 {
                                     "id": "i974k0c",
                                     "author": "AusIV",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1652965613.0,
                                     "response": "Well...\n\nIf the hashing power gets high enough that the TTD is reached before the beacon chain is up and ready for the merge, they'll probably have to reset the parameters for the Ropsten merge and that would delay things. So maybe don't start until the Ropsten beacon chain is up?",
                                     "depth": 3,
@@ -56,7 +56,7 @@
                                         {
                                             "id": "i9765jd",
                                             "author": "ninja_batman",
-                                            "score": 1,
+                                            "score": 2,
                                             "created_utc": 1652966398.0,
                                             "response": "Haha, I was wondering about that bit. I can definitely wait until after the beacon nodes are up.\n\nAnd I also suppose we don't want the difficulty to jump around too much since realistically they want some time on PoW, and want it to realistically simulate mainnet.",
                                             "depth": 4,

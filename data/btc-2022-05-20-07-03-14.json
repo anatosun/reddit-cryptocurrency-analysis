@@ -15,7 +15,7 @@
             "author": "ImRichBCH",
             "created_utc": 1653029535.0,
             "score": 0,
-            "num_comments": 15,
+            "num_comments": 20,
             "subreddit": "btc",
             "selftext": "For the life of me I can't see why people think this is an issue of not having a decentralized \"bridge\" which is really just an \"exchange\".\n\nWith a centralized service worst case one of them shuts down but anyone else can still redeem SmartBCH for BCH. If there is no one that wants to do that then the SmartBCH project will die but that means it would die from lack of interest anyway. \n\nAlso, I'm not sure why this RATHER IMPORTANT point is being ignored, but its NOT ACTUALLY POSSIBLE. As far as I know, the impossible hurdle is that you need to run an Ethereum node within a Bitcoin transaction. Maybe someday but again, not anytime soon. I've even seen dudes here say they are going to wait to use SmartBCH until there is a DEX bridge, dude is going to be waiting a long time, lol. \n\nI feel this idea of a decentralized exchange keeps coming up from people that have NO CONCEPT of how Bitcoin works, let alone Ethereum and cross chain swamps. Bottom line, ITS NOT GONNA HAPPEN, at least not anytime soon.",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i9at7z9",
                     "author": "BewareOfShills",
-                    "score": 10,
+                    "score": 13,
                     "created_utc": 1653030170.0,
                     "response": "\ud83e\udd37\u200d\u2642\ufe0f  The bridge got only delayed once so far, that is pretty good for a software project. I think they will deliver. They did an outstanding job so far.",
                     "depth": 1,
@@ -52,16 +52,36 @@
                                     "created_utc": 1653032354.0,
                                     "response": "> you need to be able to send an Ethereum transaction from a Bitcoin transaction\n\nWhy would I want to do this? \ud83e\udd37\u200d\u2642\ufe0f",
                                     "depth": 3,
-                                    "comments": []
+                                    "comments": [
+                                        {
+                                            "id": "i9d0zjg",
+                                            "author": "ImRichBCH",
+                                            "score": 1,
+                                            "created_utc": 1653071984.0,
+                                            "response": "LOL, how else do you send an ETH transaction from BCH. Please, THINK.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
                                 },
                                 {
                                     "id": "i9avjvr",
                                     "author": "BewareOfShills",
-                                    "score": 6,
+                                    "score": 5,
                                     "created_utc": 1653032178.0,
                                     "response": "Maybe you know more than me, afaik they said they already know how to do it but are waiting for the May 15 upgrade. \n\nIt is ok to be skeptical. Than don't put your money in it until they deliver.",
                                     "depth": 3,
-                                    "comments": []
+                                    "comments": [
+                                        {
+                                            "id": "i9d13te",
+                                            "author": "ImRichBCH",
+                                            "score": 1,
+                                            "created_utc": 1653072038.0,
+                                            "response": "LOL, I have over $50k on SmartBCH. My WHOLE POINT is that a decentralized bridge is not going to happen and thats ok.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -70,7 +90,7 @@
                 {
                     "id": "i9b0peg",
                     "author": "doramas89",
-                    "score": 3,
+                    "score": 4,
                     "created_utc": 1653036826.0,
                     "response": "If Thorchain was possible, which observes multiple vaults in multiple chains, a simple bridge/peg mechanism can be created in a decentralized way.",
                     "depth": 1,
@@ -79,7 +99,7 @@
                 {
                     "id": "i9b8z3t",
                     "author": "Bagmasterflash",
-                    "score": 5,
+                    "score": 4,
                     "created_utc": 1653043371.0,
                     "response": "My understanding is that Coinflex is in possession of all bch redeemable from sBCH. That is a single point of failure that can be attacked.  Given the history of P2P digital cash, it will eventually be attacked. That is why a decentralized bridge is deemed necessary.",
                     "depth": 1,
@@ -87,7 +107,7 @@
                         {
                             "id": "i9bcfzy",
                             "author": "jldqt",
-                            "score": 4,
+                            "score": 5,
                             "created_utc": 1653045600.0,
                             "response": "Yes. OP is rather confused about the mechanics of side-chains.\n\nSHA-Gate is about moving the BCH funds that backs all sBCH coins to a covenant that is only possible to be spent by miner voting. I don't think \"normal\" users will utilize it since the withdrawal duration will be long(*) and there will continue to be a plethora of bridges for quickly going to/from sBCH from other currencies, just like today.\n\n(*) Longer is more secure. For reference the BIP-300  proposal on BTC recommend 6 months for processing a similar withdrawal.",
                             "depth": 2,
@@ -124,6 +144,15 @@
                                                             "response": "Fair point. One (out of a yet to be announced number) operator needs to be included in the collusion.",
                                                             "depth": 6,
                                                             "comments": []
+                                                        },
+                                                        {
+                                                            "id": "i9d1y6v",
+                                                            "author": "ImRichBCH",
+                                                            "score": 1,
+                                                            "created_utc": 1653072436.0,
+                                                            "response": "LOL, so we are switching one single point of failure to like 2 or 3? \n\nThrochain has like 20. \n\nAgain, This is not going to happen, please why do people keep saying it?",
+                                                            "depth": 6,
+                                                            "comments": []
                                                         }
                                                     ]
                                                 }
@@ -145,20 +174,30 @@
                     ]
                 },
                 {
+                    "id": "i9bitcr",
+                    "author": "Mr-Zwets",
+                    "score": 5,
+                    "created_utc": 1653049122.0,
+                    "response": "Sorry but you don't understand what you're talking about. SHA-gate is just a BCH contract holding BCH and requiring miner voting for withdrawals. It does bot need to check the ETH blockchain.\n\n1 Smart BCH would be issued for each BCH locked in the mainchain contract so SBCH nodes also need to run BCH full nodes. Miners need to run Smart BCH nodes if they want to correctly vote on the withdrawals from the covenant. These withdrawals represent SBCH being burned on the sidechain and being released back on the mainchain.\n\nI already upgraded the SHA-gate smart contact, you should read up on the Bitcoin Cash Research forum\nhttps://bitcoincashresearch.org/t/will-sha-gate-be-ready-for-the-may-15th-upgrade/735",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9d238a",
+                            "author": "ImRichBCH",
+                            "score": 1,
+                            "created_utc": 1653072504.0,
+                            "response": "Thank you!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
                     "id": "i9b4m77",
                     "author": "Pablo_Picasho",
                     "score": 2,
                     "created_utc": 1653039910.0,
                     "response": "> As far as I know, the impossible hurdle is that you need to run an Ethereum node within a Bitcoin transaction.\n\nWhat??",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i9bitcr",
-                    "author": "Mr-Zwets",
-                    "score": 1,
-                    "created_utc": 1653049122.0,
-                    "response": "Sorry but you don't understand what you're talking about. SHA-gate is just a BCH contract holding BCH and requiring miner voting for withdrawals. It does bot need to check the ETH blockchain.\n\n1 Smart BCH would be issued for each BCH locked in the mainchain contract so SBCH nodes also need to run BCH full nodes. Miners need to run Smart BCH nodes if they want to correctly vote on the withdrawals from the covenant. These withdrawals represent SBCH being burned on the sidechain and being released back on the mainchain.\n\nI already upgraded the SHA-gate smart contact, you should read up on the Bitcoin Cash Research forum\nhttps://bitcoincashresearch.org/t/will-sha-gate-be-ready-for-the-may-15th-upgrade/735",
                     "depth": 1,
                     "comments": []
                 }

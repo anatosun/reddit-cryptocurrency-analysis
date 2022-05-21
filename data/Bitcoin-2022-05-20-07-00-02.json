@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/Bitcoin/comments/utnfdz/question_about_privacy/",
             "author": "Tipyapha",
             "created_utc": 1653029689.0,
-            "score": 7,
-            "num_comments": 12,
+            "score": 11,
+            "num_comments": 16,
             "subreddit": "Bitcoin",
             "selftext": "If i withdraw btc from kraken to muun wallet via lightning network and then send It from muun to my hardware wallet via on chain transaction, Is this enought for make my btc noKYC?",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i9ay00h",
                     "author": "Mallardshead",
-                    "score": 6,
+                    "score": 10,
                     "created_utc": 1653034382.0,
                     "response": "Yes it is. Don't listen to what others tell you. The burden of proof (legally) to prove those utxo's belong to you is impossible without access to an xpub on a device you own, or direct access to the wallet itself. This is why it usually takes years to find and charge hackers, even after they've \\[foolishly\\] used a KYC exchange; but most didn't have the LN at the time which is incredibly private. When we live in a Taproot world, blockchain forensics won't be nearly as effective as all the L1 stuff they're used to.",
                     "depth": 1,
@@ -47,7 +47,7 @@
                                         {
                                             "id": "i9b8ij0",
                                             "author": "Tipyapha",
-                                            "score": 1,
+                                            "score": 2,
                                             "created_utc": 1653043022.0,
                                             "response": "I Just want the Freedom of send my (clean) btc to anyone i want without exchanges track my steps",
                                             "depth": 4,
@@ -55,13 +55,41 @@
                                                 {
                                                     "id": "i9be40m",
                                                     "author": "Mallardshead",
-                                                    "score": 1,
+                                                    "score": 2,
                                                     "created_utc": 1653046583.0,
                                                     "response": "Then you're good.",
                                                     "depth": 5,
                                                     "comments": []
                                                 }
                                             ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9cfpfj",
+                                    "author": "Slaaavo",
+                                    "score": 0,
+                                    "created_utc": 1653063097.0,
+                                    "response": "Just FYI, AFAIK Muun wallet is not a real lightning wallet (such as Phoenix or Breez). Muun is actually an on-chain wallet that does instant submarine swaps to do LN transactions. So your coins in Muun are already on-chain, not in a LN channel.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9clekj",
+                                            "author": "bitcoin_barry",
+                                            "score": 1,
+                                            "created_utc": 1653065321.0,
+                                            "response": "Source? I thought it was the other way around, they use submarine swaps to do on chain transactions.\n\nAre you just talking about turbo channels?\n\n1. You can turn that off,\n2. It only applies when you don't have enough inbound liquidity (i.e the first payment)\n\nAfter that, your phone is running a lightning node and funds are there.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i9cprvw",
+                                            "author": "Tipyapha",
+                                            "score": 1,
+                                            "created_utc": 1653067066.0,
+                                            "response": "No, when you do a lightning transaction, muun move btc from on chain to lightning.",
+                                            "depth": 4,
+                                            "comments": []
                                         }
                                     ]
                                 }
@@ -78,9 +106,18 @@
                                 {
                                     "id": "i9bgtl7",
                                     "author": "Mallardshead",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1653048073.0,
                                     "response": "You can generate multiple wallets and seeds on a single HW. For what you're suggesting no it wouldn't be effective because we don't have Taproot addresses yet. Taproot addresses make L1 and L2 transactions indistinguishable from one another. This is way more powerful than people think, and Schnorr signatures are linear.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9boko5",
+                                    "author": "Tipyapha",
+                                    "score": 1,
+                                    "created_utc": 1653051932.0,
+                                    "response": "You must do: hw wallet -> muun -> wallet of satoshi -> hw wallet.",
                                     "depth": 3,
                                     "comments": []
                                 }
@@ -89,18 +126,9 @@
                     ]
                 },
                 {
-                    "id": "i9axphq",
-                    "author": "Independent-Snow-129",
-                    "score": 1,
-                    "created_utc": 1653034118.0,
-                    "response": "If you don't want to tip your toes in the more advance stuff , you can try liquid sidechain !",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i9awi31",
                     "author": "5liveR",
-                    "score": -1,
+                    "score": -5,
                     "created_utc": 1653033027.0,
                     "response": "Its all traceable back to origin. Lightning isn't great for privacy.\n\nI'd say, for good privacy: you need to coinjoin a couple of rounds ( don't use the Wasabi )",
                     "depth": 1,
@@ -108,7 +136,7 @@
                         {
                             "id": "i9axiw5",
                             "author": "Mallardshead",
-                            "score": 7,
+                            "score": 10,
                             "created_utc": 1653033949.0,
                             "response": "False, Lightning is ridiculously private. It's so private that Coinbase doesn't want to integrate it because their blockchain forensics can't untangle inbound transactions after Taproot addresses are commonplace. Bitcoin L2 is effectively the opposite of bitcoin L1 in terms of speed(faster), cost(cheaper), privacy(more private), security(not as secure), etcetera. With Taproot, submarine swaps, and scripting, L2 is going to be extremely private.",
                             "depth": 2,
@@ -124,7 +152,7 @@
                                         {
                                             "id": "i9b7ddl",
                                             "author": "Mallardshead",
-                                            "score": 3,
+                                            "score": 4,
                                             "created_utc": 1653042131.0,
                                             "response": "No, Taproot addresses make transactions on L1 and L2 indistinguishable, which is not the case currently. When it is, you can see how ridiculously hard things get because now you have two layers exploiting one another's strengths to work through, more volume, and who knows what type of submarine swaps, coinjoins, DLC's, and utxo sharing that increase the data set exponentially. Then the more people that use the LN and channels, the more difficult and expensive it gets for blockchain forensics. The cost of blockchain forensics (required by insurance as much as governments) on exchanges will become quite expensive, less effective, and the more exchanges try to encroach, the more robust the open source machine becomes, spitting out better non-custodial solutions. Point is, in a circular economy where enough goods and services are sold in bitcoin so exchanges are no longer necessary, the vector of attack for blockchain forensics (exchange KYC), combined with billions joining the network, and the LN, hardens the privacy considerably.",
                                             "depth": 4,
@@ -135,6 +163,15 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "id": "i9axphq",
+                    "author": "Independent-Snow-129",
+                    "score": 0,
+                    "created_utc": 1653034118.0,
+                    "response": "If you don't want to tip your toes in the more advance stuff , you can try liquid sidechain !",
+                    "depth": 1,
+                    "comments": []
                 }
             ]
         }
