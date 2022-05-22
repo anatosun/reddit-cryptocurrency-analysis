@@ -12,6 +12,8 @@
 \usepackage{textcomp}
 \usepackage{tikz}
 \usetikzlibrary{shapes, arrows}
+\usepackage{biblatex}
+\addbibresource{references.bib}
 
 
 % Some optional stuff you might like/need.
@@ -163,13 +165,13 @@
 \section{Conclusion}
 \input{conclusion.tex}
 
-\newpage
-\bibliographystyle{SIGCHI-Reference-Format}
-\small
-\bibliography{references}
 \nocite{*}
 \newpage
-% \printbibliography
+%\bibliographystyle{SIGCHI-Reference-Format}
+\small
+%\bibliography{references}
+\newpage
+\printbibliography
 
 \end{document}
 
