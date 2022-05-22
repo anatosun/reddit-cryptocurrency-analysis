@@ -1,0 +1,19 @@
+In this section, we discuss the two homemade implementations of the algorithm used in this project: PageRank and Louvain community detection.
+
+PageRank is an iterative process that can potentially last forever. As a stopping condition we put a number of iterations as well as an error threshold. If the error does not exceed a certain threshold over one iteration, then the algorithm stops if it does not then it runs over a fixed number of iteration. This strategy is very common in the various implementations and can be seen in \citetitle{hagbergExploringNetworkStructure2008}. This made it quite convenient to compare and benchmark our implementation. As a result, we discovered that our own implementation yields the same result but is much less optimised in terms of performance. Indeed, \citetitle{hagbergExploringNetworkStructure2008}'s implementation is more than 100 times faster and takes more than 400 times less RAM as it can be seen on the following table. This result is clearly surprising but only because the in-house implementation uses a dense matrix instead of a sparse matrix. This has the effect of using less RAM and significantly speeding up the calculations. With the use of a sparse matrix in our implementation, the computation takes 5s with a RAM consumption of about 0.2G. Other optimisations could then be made but the density of the matrix is really the core issue here.
+
+
+\begin{table}[ht!]
+\centering
+\begin{tabular}{|l|l|l|l|l|} 
+\hline
+implementation & nodes & edges & time  & RAM     \\ 
+\hline
+\citetitle{hagbergExploringNetworkStructure2008}       & 15537 & 58150 & 0.78s & 0.128G  \\ 
+\hline
+homemade (dense)       & 15537 & 58150 & 91.21s   & 5.81G   \\
+\hline
+homemade (sparse)      & 15537 & 58150 & 2.18s   & 0.215G   \\
+\hline
+\end{tabular}
+\end{table}
