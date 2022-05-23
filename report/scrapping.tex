@@ -1,0 +1,7 @@
+We used to the official Reddit API for the scraping part of our project. To facilitate our work, we used the PRAW (Python Reddit API Wrapper) library.
+
+Our bot runs on a linux server and checks all 20 minutes for new posts on specific subreddits. For this project, we used the following list of subreddits: Bitcoin, Ethereum, Dogecoin, BitcoinBeginners, CryptoCurrencies, CryptoTechnology, CryptoMarkets, Binance, CoinBase, btc.
+Using the multiprocessing package of python, we spawn a process for each subreddit. So the scraping hapens in parallel.
+Also, since we care about actual and real time data, we consider the following sorting options the Reddit API provides: hot posts, top posts and new posts. We don't set a limit on posts, since we store the timestamps of the post and filter from there. This works really well and we didnt encounter any API limitations.
+
+Everytime a new scraping is started, we create a new JSON file with the timestsamp of the start of the scraping. All new posts that will be found will be stored inside the newly created JSON files. If a previously crawled post has an increase in comments of more than 30\%, we also refetch that post and update the JSON file it was originally stored in.
