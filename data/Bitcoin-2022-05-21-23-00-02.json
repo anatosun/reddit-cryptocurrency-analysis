@@ -1,0 +1,180 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uuy253",
+            "title": "Does Zap Wallet still work?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uuy253/does_zap_wallet_still_work/",
+            "author": "vaporizedtomato",
+            "created_utc": 1653173714.0,
+            "score": 2,
+            "num_comments": 16,
+            "subreddit": "Bitcoin",
+            "selftext": "I downloaded the windows version and created a wallet. While it was downloading info from the chain I sent money to the wallet onn the welcome screen. I realized that it will not proceed past 100%. its stuck on Fetching from the block chain or something similar to that. I read online that they stopped development of the wallet?. How can i get my money back?. I was just given a 24 word passcode when i made the wallet thats all. any help is appreciated. thanks",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9i6b4p",
+                    "author": "RIPEMD-160",
+                    "score": 3,
+                    "created_utc": 1653175642.0,
+                    "response": "Zap uses [neutrino](https://suredbits.com/neutrino-what-is-it-and-why-we-need-it/) and requires a \"brief\" sync upon start to function. That sync can sometimes get stuck. I would suggest either letting it run for a bit to get unstuck or restart it and leave it be for a while. It'll sync eventually. As long as you have those 24 words your funds are safe.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9jl2ps",
+                            "author": "KMan471",
+                            "score": 1,
+                            "created_utc": 1653209193.0,
+                            "response": "This.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9jms9p",
+                            "author": "vaporizedtomato",
+                            "score": 1,
+                            "created_utc": 1653210787.0,
+                            "response": "It didnt do a thing. I left it onn overnight. Still stuck at 100% fetching. Google has no answers on how to get back accesss to the account via zap or another LN wallet. Other wallets i tried to recover with only let me add 24 word code nothing else.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9i3f8d",
+                    "author": "KMan471",
+                    "score": 0,
+                    "created_utc": 1653174100.0,
+                    "response": "I hope you didn\u2019t blow your whole wad on that transfer. I thought using Zap required setting up a node. Did you have to do KYC? When I tried to work with the app, they required KYC, so I emailed them, and asked them why. They told me that they randomly require KYC, and that I had drawn the short straw. I said \u201cno thanks\u201d.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9i3lgd",
+                            "author": "vaporizedtomato",
+                            "score": 0,
+                            "created_utc": 1653174193.0,
+                            "response": "thats crazy. It didnt ask me for kyc. I sent coins to the wallet after setting it up. it fucking baited me into taking my money. its a scam!",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9i70xc",
+                                    "author": "KMan471",
+                                    "score": 1,
+                                    "created_utc": 1653176030.0,
+                                    "response": "https://www.blockchain.com/explorer?view=btc",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9i6dwk",
+                                    "author": "KMan471",
+                                    "score": 0,
+                                    "created_utc": 1653175683.0,
+                                    "response": "You didn\u2019t send a lot, did you? Do you know the receiving address? Have you checked the Blockchain? Every cryptocurrency has its own Blockchain that can be examined. If you know the receiving address, then simply look it up on the BTC Blockchain tracker.\n\nThis might not be the only one, or maybe it is. Search for the sending address, and also do a search for the receiving address. It takes a little practice to get a custom to deciphering exactly what you\u2019re looking at, but you should be able to make sense of it.\n\nhttps://live.blockcypher.com/btc/",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9jmo78",
+                                            "author": "vaporizedtomato",
+                                            "score": 1,
+                                            "created_utc": 1653210682.0,
+                                            "response": "I know that I can view the transaction but how do i actually access the wallet with the funds?. The windows apps i downloaded dont work when i provide the 24 word code.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9jrjeq",
+                                                    "author": "KMan471",
+                                                    "score": 1,
+                                                    "created_utc": 1653215111.0,
+                                                    "response": "Do you have your 24 word pneumonic phrase for your wallet?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9jwhus",
+                                                            "author": "vaporizedtomato",
+                                                            "score": 1,
+                                                            "created_utc": 1653219179.0,
+                                                            "response": "I do have that. I tried electrum by adding the code but i couldnt view the balance. How would you recover it?",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        },
+                                                        {
+                                                            "id": "i9k3ltp",
+                                                            "author": "vaporizedtomato",
+                                                            "score": 1,
+                                                            "created_utc": 1653223933.0,
+                                                            "response": "do you know a better lightning networking wallet for windows?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9k8x2g",
+                                                                    "author": "KMan471",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653226857.0,
+                                                                    "response": "Have you tried Strike?",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9kf05l",
+                                                                            "author": "vaporizedtomato",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653229844.0,
+                                                                            "response": "They only accept USA Ips. i signed up anyway and there isnt an option to recover a wallet. its like a cashapp replica. i think i lost this money. that zap app is shit",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9kgfqh",
+                                                                                    "author": "KMan471",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653230504.0,
+                                                                                    "response": "Have you checked explorer, to make sure the receiving wallet address received the funds? I think that would be the first step. If the coins are in the receiving wallet address, then you\u2019re safe, and all you have to do is reinstall the app, or get the app to work, then you will have your coins. It may take a while, and a lot of tries, but at least you know it\u2019s where it\u2019s supposed to be",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i9kivug",
+                                                                                            "author": "vaporizedtomato",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1653231611.0,
+                                                                                            "response": "for some reason the receiving address is different than the one I pasted. The address is unfamiliar to me. Im overall confused about why it doesnt show the zap wallet. I think im fuckeeddd",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9i6rm5",
+                                    "author": "KMan471",
+                                    "score": 0,
+                                    "created_utc": 1653175888.0,
+                                    "response": "https://www.ledger.com/academy/how-to-read-a-blockchains-transaction-history",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

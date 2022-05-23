@@ -1,0 +1,89 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uvcc5z",
+            "title": "If an attacker could generate arbitrary SHA-256 collisions, what would happen to Bitcoin?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uvcc5z/if_an_attacker_could_generate_arbitrary_sha256/",
+            "author": "JohnTravolski",
+            "created_utc": 1653230492.0,
+            "score": 4,
+            "num_comments": 7,
+            "subreddit": "Bitcoin",
+            "selftext": "If an attacker could generate arbitrary SHA-256 collisions, what would happen to Bitcoin? Would that not instantly render all the mining equipment useless? What would be done if such an exploit were found?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9khs8j",
+                    "author": "tokyo_aces",
+                    "score": 8,
+                    "created_utc": 1653231115.0,
+                    "response": "I imagine the attacker would instantly use it in all the other myriad ways it would impact the security of the computing systems in general.  The probability that a random attacker would know the security exploits of the internet and servers vs Bitcoin is high, considering one has 35 years in existence and everyone knows/uses it and it's a huge target for those 4ish decades (of common knowledge) while the other is still niche.\n\nAlso one has less opportunity to make money off it - Bitcoin has both less money in the system in general, but also the attacker would instantly be noticed and his gain limited with a   \n fork to e.g. not use SHA anymore anywhere (or rolled back, even, if he can't sell it all before being noticed).\n\nIn contrast, you could milk general server exploits on millions of sites, products, servers, services, etc for a decade, and if one shuts down or fixes itself you move on to the next.\n\nBasically you are better using an exploit where (a) it won't attract attention, and (b) even if 1 person fixes it, you can still use it on others.  Putting all your eggs in \"Bitcoin\" violates both of those and therefore is the worst choice.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9kim2u",
+                    "author": "NiceDoctorBeam",
+                    "score": 8,
+                    "created_utc": 1653231489.0,
+                    "response": "Let us know when you can generate arbitrary SHA-256 collisions.  \n\nUntil then, I'll sleep like a log at night, knowing nobody can confiscate my Bitcoin stash.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9kll76",
+                    "author": "halt_spell",
+                    "score": 2,
+                    "created_utc": 1653232827.0,
+                    "response": "A shortcut like that would mean I could compete with some of the largest mining operations using a home computer. That's what I would do.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9kh7g0",
+                    "author": "DownRodeo404",
+                    "score": 1,
+                    "created_utc": 1653230857.0,
+                    "response": "I'm positive that is beyond possible now.  This could have been an issue when bitcoin had 10 or less nodes.  Any changes to the code must be approved and votes yes by 95% of the miners and nodes out there now.   And if it is voted upon, there would be some clause or way to translate the old SHA to the new SHA so the ecosystem would stay enact. \n\nMy understanding is your claim is possible, but very unlikely to happen.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9kx4io",
+                    "author": "Independent-Snow-129",
+                    "score": 1,
+                    "created_utc": 1653237767.0,
+                    "response": "If you can break Sha256 , Sha384 and Sha512 will eventually break !  Mix it with a different hashing function, who knows if it doesn't create more problem than reward  .\n\nLets say its possible to break it, how many mind could do it ?  You wouldn't be able to abuse it without being spotted and your intellect has rightfully deserve the reward .\n\nIf I find a strategy that win 100 % of the time White/Black in chess, does this mean I cheat or I have a new strategy that you can't compete against?   Now here's the important question .  Should we change the rules of chess because I win 100 % of the time or the other players need to get better ?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9kkp0h",
+                    "author": "PrincePaperGuy",
+                    "score": 0,
+                    "created_utc": 1653232425.0,
+                    "response": "If you can create collisions at will, it means you can replace any block, present and past, creating double spending events, or making people pay multiple times (?), or total chaos. However, you should promote your modified blockchain over the others, which I believe it\u2019s hard to do.\n\nGenerally speaking, you can compromise most of the authentication/authorization systems since you basically are able to break certain electronic signatures (i.e. jwt tokens), so it\u2019s better to log in to exchanges and steal stuff imho",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9kl5px",
+                    "author": "igadjeed",
+                    "score": 0,
+                    "created_utc": 1653232637.0,
+                    "response": "> What would be done\n\nInternet engineers and financial systems engineers would choose one or more of the hashing algorithms which isn't vulnerable to the newly discovered SHA2 weakness  \n\nBitcoin would follow\n\n> render all the mining equipment useless?\n\nUnlucky",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

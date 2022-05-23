@@ -299,56 +299,6 @@
             ]
         },
         {
-            "id": "uhvgqb",
-            "title": "Does every bitcoin transaction get logged to the blockchain?",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uhvgqb/does_every_bitcoin_transaction_get_logged_to_the/",
-            "author": "csmart01",
-            "created_utc": 1651628174.0,
-            "score": 14,
-            "num_comments": 55,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "I know it\u2019s a stupid question but I can\u2019t wrap my head around how big the blockchain could get if every cup of coffee purchased is logged. Wouldn\u2019t it become just too large. Also - another dumb one - what if you are without an internet connection, is the transaction logged temporarily and then registered once you are in line? And if you have a desktop hard wallet and make a phone transaction how does it link to the hard wallet if that is off line?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i792tta",
-                    "author": "igadjeed",
-                    "score": 11,
-                    "created_utc": 1651637102.0,
-                    "response": "> Wouldn\u2019t it become just too large\n\nThe Bitcoin block size is limited to about 1.7MB and the Bitcoin block count is limited to 144 blocks per day. This means that a reasonably priced storage device ($200) can store more than 150 years of Bitcoin transactions\n\n> is the transaction logged temporarily\n\nTransactions are stored on the Bitcoin blockchain. Money isn't sent to your wallet. A transaction is included in a block on the blockchain. One of the outputs of that transaction has an address which makes it your coin, even though the transaction is not in your wallet  \n\nBitcoin is a decentralized system of network nodes. Each node is operated independently. Each node stores the Bitcoin blockchain. If your node goes off-line for a few days, all the other nodes store all the transactions on their copies of the Bitcoin blockchain. When your node comes back on-line, it spends an hour or two catching up  \n\nYour wallet can be off-line forever. When it connects to the Internet, it asks your node (or some stranger's node if you don't have your own) for a list of transactions which match the wallet's list of addresses  \n\nA wallet needs to connect to a node to update its transaction history, or to broadcast a transaction",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i78nh5j",
-                    "author": "lightninghero-node",
-                    "score": 15,
-                    "created_utc": 1651629740.0,
-                    "response": "Yes it does. Every transaction is saved in the blockchain forever. I agree it\u2019s pretty stupid to have every small transaction take up space on the blockchain, but this is why lightning is being developed. \n\nLightning is a second layer protocol, that allows you to use Bitcoin similar to using a bank account and cash. You can make one transaction on chain to load up your lightning wallet with \u201ccash\u201d and then use it to make small purchases on the lighting network without having to record it on the blockchain until you run out of funds.\n\nThis way, the blockchain is similar to your bank statement, where you only record one transaction when you take out money from an ATM and daily spendings are done off-chain.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i79e40p",
-                    "author": "bitusher",
-                    "score": 3,
-                    "created_utc": 1651644130.0,
-                    "response": "Most Bitcoin transactions occur offchain or on other layers today. think of onchain transactions more as a settlement network",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7a7n2p",
-                    "author": "harryvl",
-                    "score": 3,
-                    "created_utc": 1651666861.0,
-                    "response": "Check out ligtning network .",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "u9c9nu",
             "title": "Why does Bitcoin correlate to the stock markets? What are the drivers for this behaviour of Bitcoin?",
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/u9c9nu/why_does_bitcoin_correlate_to_the_stock_markets/",
@@ -386,6 +336,327 @@
                     "response": "The question is based upon a false premise. Bitcoin and Stocks are uncorrelated in price. This by definition means that sometimes their is neutral correlation , other times positive correlation, and other times negative correlation.",
                     "depth": 1,
                     "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uhvgqb",
+            "title": "Does every bitcoin transaction get logged to the blockchain?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uhvgqb/does_every_bitcoin_transaction_get_logged_to_the/",
+            "author": "csmart01",
+            "created_utc": 1651628174.0,
+            "score": 16,
+            "num_comments": 72,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I know it\u2019s a stupid question but I can\u2019t wrap my head around how big the blockchain could get if every cup of coffee purchased is logged. Wouldn\u2019t it become just too large. Also - another dumb one - what if you are without an internet connection, is the transaction logged temporarily and then registered once you are in line? And if you have a desktop hard wallet and make a phone transaction how does it link to the hard wallet if that is off line?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i792tta",
+                    "author": "igadjeed",
+                    "score": 11,
+                    "created_utc": 1651637102.0,
+                    "response": "> Wouldn\u2019t it become just too large\n\nThe Bitcoin block size is limited to about 1.7MB and the Bitcoin block count is limited to 144 blocks per day. This means that a reasonably priced storage device ($200) can store more than 150 years of Bitcoin transactions\n\n> is the transaction logged temporarily\n\nTransactions are stored on the Bitcoin blockchain. Money isn't sent to your wallet. A transaction is included in a block on the blockchain. One of the outputs of that transaction has an address which makes it your coin, even though the transaction is not in your wallet  \n\nBitcoin is a decentralized system of network nodes. Each node is operated independently. Each node stores the Bitcoin blockchain. If your node goes off-line for a few days, all the other nodes store all the transactions on their copies of the Bitcoin blockchain. When your node comes back on-line, it spends an hour or two catching up  \n\nYour wallet can be off-line forever. When it connects to the Internet, it asks your node (or some stranger's node if you don't have your own) for a list of transactions which match the wallet's list of addresses  \n\nA wallet needs to connect to a node to update its transaction history, or to broadcast a transaction",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i79zgjk",
+                            "author": "csmart01",
+                            "score": 0,
+                            "created_utc": 1651661833.0,
+                            "response": "The blockchain is currently over 300 gigabytes and let\u2019s face it - few use BTC as a daily currency. I\u2019m hypothesizing maybe 20% of the global population are on board - wouldn\u2019t it be terabytes?  I also see a reply that if your wallet is off line it can take a hour or 2 to register your transactions. With a 500 TB block chain that could be days - no?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7cny40",
+                                    "author": "igadjeed",
+                                    "score": 1,
+                                    "created_utc": 1651702924.0,
+                                    "response": "Obviously you failed elementary school arithmetic. When you take the time to relearn those things, ask this question again. Until then, you're not competent to understand",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i7coi8t",
+                                            "author": "csmart01",
+                                            "score": 1,
+                                            "created_utc": 1651703159.0,
+                                            "response": "That\u2019s a helpful reply in a beginner specific sub. Would you take the time to reply? You spent a lot of typing insulting me.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i7cqyhr",
+                                                    "author": "igadjeed",
+                                                    "score": 1,
+                                                    "created_utc": 1651704210.0,
+                                                    "response": "I responded to your question, you ignored my comment and made a stupid 500TB claim. Post again when you've learned elementary school arithmetic",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i7cv2lb",
+                                                            "author": "csmart01",
+                                                            "score": 1,
+                                                            "created_utc": 1651706040.0,
+                                                            "response": "I\u2019m really sorry - but I don\u2019t understand. The chain is now over 300GB. I just googled it and see this from 2021 that is will be 1TB in 2030 And again - as I stated - basically nobody uses BTC (El Salvador tried and failed) so let\u2019s assume \u201cthe world\u201d starts using BTC - why is 500TB so stupid? You really don\u2019t belong here if you are u willing to help without insulting people. Does this bring you satisfaction? Pretty sad. \n\nFrom Google, 2021: In the last two years, the bitcoin blockchain ledger size has grown from 150 GB to 250 GB. That's almost 50 GB per year. By 2030, we can see the blockchain ledger size cross more than 1 TB",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i7cvynr",
+                                                                    "author": "igadjeed",
+                                                                    "score": 1,
+                                                                    "created_utc": 1651706452.0,
+                                                                    "response": "All this was answered in my first comment:  \n\n> The Bitcoin block size is limited to about 1.7MB and the Bitcoin block count is limited to 144 blocks per day\n\nNow that you've read this twice, please do the arithmetic\n\n> By 2030, we can see the blockchain ledger size cross more than 1 TB\n\nA 1TB HDD costs about $40 in 2022. It will be cheaper in 2030",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i7jdl9z",
+                                                                            "author": "csmart01",
+                                                                            "score": 1,
+                                                                            "created_utc": 1651833219.0,
+                                                                            "response": "So phones will have 1TB hard drives?",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i7nyq3r",
+                                                                                    "author": "igadjeed",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1651922319.0,
+                                                                                    "response": "Some phones already have 1TB storage  \nNot that it's relevant to Bitcoin  \n\nYour assumptions were incorrect. Let go of your ego. Stop clinging to your false beliefs. Learn something new",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i7nzy6h",
+                                                                                            "author": "csmart01",
+                                                                                            "score": 0,
+                                                                                            "created_utc": 1651923213.0,
+                                                                                            "response": "How can I let go\u2026 you keep coming back for more \ud83e\udd23\ud83d\ude02\ud83e\udd23\ud83d\ude02\nI\u2019ll stop. Thanks for your help - I learned a lot from other folks posting. It\u2019s a fascinating concept.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i78nh5j",
+                    "author": "lightninghero-node",
+                    "score": 14,
+                    "created_utc": 1651629740.0,
+                    "response": "Yes it does. Every transaction is saved in the blockchain forever. I agree it\u2019s pretty stupid to have every small transaction take up space on the blockchain, but this is why lightning is being developed. \n\nLightning is a second layer protocol, that allows you to use Bitcoin similar to using a bank account and cash. You can make one transaction on chain to load up your lightning wallet with \u201ccash\u201d and then use it to make small purchases on the lighting network without having to record it on the blockchain until you run out of funds.\n\nThis way, the blockchain is similar to your bank statement, where you only record one transaction when you take out money from an ATM and daily spendings are done off-chain.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7alyyb",
+                            "author": "csmart01",
+                            "score": 0,
+                            "created_utc": 1651673642.0,
+                            "response": "I just looked into lightning and their site is informative. As I read it though it seems not \u201cevery\u201d transaction is logged to the BC but a final \u201csettling up\u201d transaction. Or am I misunderstanding this?\n\nBidirectional Payment Channels. Two participants create a ledger entry on the blockchain which requires both participants to sign off on any spending of funds. Both parties create transactions which refund the ledger entry to their individual allocation, but do not broadcast them to the blockchain. They can update their individual allocations for the ledger entry by creating many transactions spending from the current ledger entry output. Only the most recent version is valid, which is enforced by blockchain-parsable smart-contract scripting. This entry can be closed out at any time by either party without any trust or custodianship by broadcasting the most recent version to the blockchain.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7igrkd",
+                                    "author": "lightninghero-node",
+                                    "score": 1,
+                                    "created_utc": 1651808254.0,
+                                    "response": "You got it right. Traditionally, every transaction is written to the blockchain. Lightning avoids that and only logs the opening and the closing transaction of a payment channel. All the intermediate transactions are not written to the blockchain.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i7je2z7",
+                                            "author": "csmart01",
+                                            "score": 1,
+                                            "created_utc": 1651833594.0,
+                                            "response": "Thanks - so your first response was basically wrong? I\u2019m not trying to be a dick (but in know it comes across that way) I\u2019m just so confused about crypto and every time I post to this \u201cbeginners\u201d sub I get a slew of contradictory responses which leads me to believe very few people really understand crypto. I want to get into it but could never unless I really understand it and that process is taking forever :( \nBut I\u2019m getting there",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i7jus4p",
+                                                    "author": "lightninghero-node",
+                                                    "score": 1,
+                                                    "created_utc": 1651843237.0,
+                                                    "response": "Seems like you\u2019re confused by my answer. There\u2019s two parts there:\n\nFirst, not considering lightning, because it\u2019s new and not very common yet. When you don\u2019t use lightning, then every transaction is done on-chain. That means, it\u2019s registered on the blockchain forever, no matter how small. \n\nSecond: there\u2019s a new development called lightning which avoids that, by adding a second layer to Bitcoin that allows a different way of making transactions. This is what avoids recording every transaction on the blockchain. But only if both the sender and the receiver do actually use lighting. It\u2019s not as easy as doing transactions on-chain, and both parties need to use a lightning node to transact. This is a special software that has to be running and connected to the lightning network as the same time so they can perform the transaction. \n\nLightning is quite new and experimental. It works pretty well, but it\u2019s still not widespread enough. So when you ask about the blockchain and every transaction being recorded on it, the standard answer is yes assuming that lightning is not used.\n\nEdit: it\u2019s like when someone asks: \u201cDo you have to use the clutch to change gears when you drive a car?\u201d The answer is \u201cYes, unless you drive automatic\u201d.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i7lodul",
+                                                            "author": "csmart01",
+                                                            "score": 2,
+                                                            "created_utc": 1651871544.0,
+                                                            "response": "Hugely helpful! Thanks",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i79e40p",
+                    "author": "bitusher",
+                    "score": 3,
+                    "created_utc": 1651644130.0,
+                    "response": "Most Bitcoin transactions occur offchain or on other layers today. think of onchain transactions more as a settlement network",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i78s918",
+                    "author": "0xArmin",
+                    "score": 1,
+                    "created_utc": 1651631878.0,
+                    "response": "Re your second question: You have to be online for the transaction to work- at least so that the merchant can check that sufficient number of nodes have confirmed this transaction.\n\nRe your third question: Hard wallets have to be connected to something online for it to receive and authorise transactions. E.g. USB to computers and Bluetooth to phone.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7a7n2p",
+                    "author": "harryvl",
+                    "score": 3,
+                    "created_utc": 1651666861.0,
+                    "response": "Check out ligtning network .",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i78jvh0",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1651628175.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i79y0yz",
+                    "author": "AbuddyFL",
+                    "score": 1,
+                    "created_utc": 1651660780.0,
+                    "response": "Yep",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i79zvlu",
+                    "author": "irene74569",
+                    "score": 1,
+                    "created_utc": 1651662122.0,
+                    "response": "not compulsory.\n\nminers can mine block with tx that will not be visible on blockchain",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7algoi",
+                    "author": "GibbsSamplePlatter",
+                    "score": 1,
+                    "created_utc": 1651673426.0,
+                    "response": "Probably over 99% of all transactions are done \"off-chain\":  \n1) Exchange buying and selling to customers. Not chain enforceable so censorship/theft can occur.  \n2) Smart contract based like Lightning Network, Statechains, where if the service becomes unreliable, you can take your funds on-chain after a timeout. They resist censorship/theft to varying degrees, depending on the security model chosen.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7ampqz",
+                            "author": "csmart01",
+                            "score": 1,
+                            "created_utc": 1651673952.0,
+                            "response": "Thanks. I swear - I will never understand this crypto thing :(\nSo most replies say \u201cyes - every transaction is recorded\u201d but you seem to contradict this. I looked into lightning and it is helping me understand and is in alignment with your reply. So to be specific - when \u201coff chain\u201d transactions are \u201csettled up\u201d onto the blockchain do they include a record of every coffee purchased or only the final exchange of BTC which could have 100 small transactions behind it but who cares?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7an4qx",
+                                    "author": "GibbsSamplePlatter",
+                                    "score": 1,
+                                    "created_utc": 1651674124.0,
+                                    "response": "this is kind of a \"one hand clapping\" situation.\n\nI have made hundreds of Lightning Network payments, none of which have \"gone to chain\". If I \"go to chain\", it'll end up being a single transaction, quite small. Think \"batch settlement\" in a trust-minimized manner.\n\nYou might \"go to chain\" to pay someone on chain who asked for it, or to send to cold storage, or to increase capacity of your LN node, etc. Lots of reasons.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i7cnfh6",
+                                            "author": "csmart01",
+                                            "score": 1,
+                                            "created_utc": 1651702714.0,
+                                            "response": "So what you are saying - I think - is all the folks that answered yes to my question were wrong. Not EVERY transaction goes to the chain. Correct?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i7cucqq",
+                                                    "author": "GibbsSamplePlatter",
+                                                    "score": 2,
+                                                    "created_utc": 1651705715.0,
+                                                    "response": "Yes with caveats",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7bq6b8",
+                    "author": "IntelligentAuthor626",
+                    "score": 1,
+                    "created_utc": 1651689677.0,
+                    "response": "The mechanics of a bitcoin transaction block chain, which is a construct that is generated by bitcoin miners and functions as a global ledger for recording and validating bitcoins.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7g9yz3",
+                    "author": "Beginning_Drive_9521",
+                    "score": 1,
+                    "created_utc": 1651772660.0,
+                    "response": "You could theoretically encounter strange situations like this if not all nodes could communicate with each other. However, once there are two \"different\" chains out there, bitcoin mining nodes will start building on top of the one with the most work put into it.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7nmq2r",
+                    "author": "Hot-Dealer-2184",
+                    "score": 1,
+                    "created_utc": 1651911930.0,
+                    "response": "Of course it is. It hase some rules",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8bcy1e",
+                    "author": "AskEmberAnything",
+                    "score": 1,
+                    "created_utc": 1652361934.0,
+                    "response": "The question is not stupid! The blockchain definitely gets big over time. And to briefly answer your second question, most wallets don't let you submit transactions without an Internet connection. [Here's a more detailed explanation](https://ember.help/questions/332). Please feel free to reply there if you have follow-up questions!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8btti5",
+                            "author": "csmart01",
+                            "score": 1,
+                            "created_utc": 1652368845.0,
+                            "response": "Solid info - thanks!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 }
             ]
         }

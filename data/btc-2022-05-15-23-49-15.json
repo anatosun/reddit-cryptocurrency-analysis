@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/btc/comments/uqi6zf/pending_transaction_in_bitcoincom_wallet/",
             "author": "gabbabikeguy",
             "created_utc": 1652656742.0,
-            "score": 11,
-            "num_comments": 15,
+            "score": 12,
+            "num_comments": 20,
             "subreddit": "btc",
             "selftext": "I have a BCH transaction that is stuck as 'pending' in the [bitcoin.com](https://bitcoin.com) wallet app for over 10 hours. When I try to view the transaction on the block explorer it says that it can't be found. Is this normal and do I just have to wait longer? I thought that I should be able to at least view the pending transaction on the block explorer? Any help would be appreciated.\n\n[https://explorer.bitcoin.com/bch/tx/23a813390b4a8aace5a1e5963508fa5d19887fa80c28fed46390ca255972a17a](https://explorer.bitcoin.com/bch/tx/23a813390b4a8aace5a1e5963508fa5d19887fa80c28fed46390ca255972a17a)",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i8r7dya",
                     "author": "LovelyDayHere",
-                    "score": 5,
+                    "score": 6,
                     "created_utc": 1652657384.0,
                     "response": "No, that's not normal.\n\nI checked on another block explorer and the transaction could also not been found. That means it hasn't reached the Bitcoin Cash network. Right now it seems only known to your wallet.\n\nIn previous similar cases, the Bitcoin.com wallet devs have posted instructions in this sub on what information they would need from a wallet user like yourself, in order to fix the problem.\n\nSee here:\n\nhttps://www.reddit.com/r/btc/comments/lier4e/bitcoincom_wallet_sharable_link_bug_unable_to/gn2s4ow/\n\nI suggest you contact Bitcoin.com wallet support and ask them to help you find out what went wrong with sending the transaction. They should be able to help you get the problem sorted out.\n\n> I thought that I should be able to at least view the pending transaction on the block explorer? \n\nThis only works for transactions that have been successfully broadcast to the network.",
                     "depth": 1,
@@ -58,7 +58,7 @@
                                 {
                                     "id": "i8t2onu",
                                     "author": "Collaborationeur",
-                                    "score": 5,
+                                    "score": 4,
                                     "created_utc": 1652700474.0,
                                     "response": "> the transaction was a prize by scanning a QR code on the Satoshi Angels livestream yesterday\n\nThe network rejects double-spends (multiple transactions that try to spend the same coin).\n\nIn the case of this prize scanning contest many other people were trying to spend the prize coin along with you. Only one of these transactions succeeded, the rest all got rejected by the network. Furthermore each rejection generated a double-spend notification that got propagated through the entire network.\n\nI guess your wallet should have detected the rejection of your transaction instead of reporting it as pending...",
                                     "depth": 3,

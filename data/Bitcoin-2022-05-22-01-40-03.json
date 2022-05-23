@@ -1,0 +1,529 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uv0oap",
+            "title": "Forgive my ignorance, but if there are only 15000 active Bitcoin nodes and if it costs only $100 to run a node, what prevents a government or company that wants to see Bitcoin die from spending 1,5 millions dollars to buy 15001 nodes in order to have a voting majority and change the protocol?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uv0oap/forgive_my_ignorance_but_if_there_are_only_15000/",
+            "author": "Cris_P_Rice",
+            "created_utc": 1653182812.0,
+            "score": 87,
+            "num_comments": 57,
+            "subreddit": "Bitcoin",
+            "selftext": "Or would it just create another hard fork that most people wouldn't use?  \nAlso, how much power does Blockstream really have? What would it take for them to be able to increase the supply for example?  \nHow does the voting mechanism work? Can every owner of a Bitcoin address vote or only people who run a node?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9imldl",
+                    "author": "SomeBrokeChump",
+                    "score": 128,
+                    "created_utc": 1653184498.0,
+                    "response": "That's not how Bitcoin works. [Watch this 16 minute video to learn why hostile nodes don't pose a threat to Bitcoin.](https://www.youtube.com/watch?v=o5mi4IVrOoM)\n\n>How does the voting mechanism work? Can every owner of a Bitcoin address vote or only people who run a node?\n\nThere is no voting mechanism. Nodes just get to decide which version of software they want to run. \n\n>Or would it just create another hard fork that most people wouldn't use?\n\nIt would create a hard fork if there was actually any miners willing to mine it.\n\n>how much power does Blockstream really have? What would it take for them to be able to increase the supply for example?\n\nBlockstream can't increase the maximum supply of BTC. Blockstream can't change any of the Bitcoin protocol rules.\n\n>there are only 15000 active Bitcoin nodes\n\nJust FYI - You're only counting listening nodes (full nodes that have port 8333 open). There are closer to 50,000 fully validating Bitcoin nodes operating right now: https://luke.dashjr.org/programs/bitcoin/files/charts/software.html",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9imwsl",
+                            "author": "Cris_P_Rice",
+                            "score": 46,
+                            "created_utc": 1653184670.0,
+                            "response": "Thank you for the best answer so far. I'll watch the video.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9j730u",
+                            "author": "BigTimeButNotReally",
+                            "score": 9,
+                            "created_utc": 1653197165.0,
+                            "response": "I wondered if you posted the TraderU video.  You did.\n\nGood channel.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9jcum9",
+                            "author": "never_safe_for_life",
+                            "score": 3,
+                            "created_utc": 1653201849.0,
+                            "response": "In the video I like his analogy of donkey basketball. It makes sense that it is simply a different game, no threat to the NBA. \n\nHowever he doesn\u2019t explain something. The attack scenario is as if one day, suddenly, 51% of all basketball games were donkey basketball. Maybe ESPN was in on it and half their shows were showing it now. The average person doesn\u2019t know much about basketball, they just sort of accept whatever and what they see most is the donkey variant. \n\nSo how does the original basketball defend itself?\n\nHe says that regular nodes won\u2019t talk to nodes with a changed rule set. Does that mean they immediately blacklist any node proposing an altered block? That would make it make sense; you can enforce your new consensus but it\u2019s completely isolated.\n\nAnd at that point you would need 51% hashpower as well, otherwise nobody would ever append a new block to your chain.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9il9er",
+                    "author": "pezdal",
+                    "score": 15,
+                    "created_utc": 1653183777.0,
+                    "response": "The network nodes aren't doing the mining.  They are just relays in the network that move the messages around.\n\nUsually voting is done via new blocks being added to the blockchain, and the chance of influencing that depends on  hashrate, not number of  nodes.\n\nAn attack would cost a lot more than $1.5M.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9im512",
+                            "author": "ymgve",
+                            "score": 1,
+                            "created_utc": 1653184254.0,
+                            "response": "Nodes decide if blocks are valid, though. It doesn\u2019t help with changing rules to have all the mining power if none of the people running the ecosystem accept your blocks as valid.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9iocus",
+                                    "author": "halt_spell",
+                                    "score": 3,
+                                    "created_utc": 1653185455.0,
+                                    "response": "You mean they validate transactions. And miners do this too. They don't just blindly trust nodes.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9ipg2f",
+                                            "author": "pezdal",
+                                            "score": 1,
+                                            "created_utc": 1653186044.0,
+                                            "response": "Yes.  Nodes validate transactions **and** blocks.\n\nIn fact, you can't do one without the other.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9ish35",
+                                                    "author": "halt_spell",
+                                                    "score": 2,
+                                                    "created_utc": 1653187731.0,
+                                                    "response": "Maybe we mean different things by validating a transaction? You can verify the inputs haven't been spent and the signature is valid without a block.\n\nIsn't the Coinbase transaction generated exclusively by the miners? How can they validate a block without the Coinbase transaction? Or the nonce?",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9inhvc",
+                                    "author": "pezdal",
+                                    "score": 1,
+                                    "created_utc": 1653184985.0,
+                                    "response": "It is trivial to preferentially connect to nodes you trust.  \n\nThe majority of transactions go through wallets whose developers have an incentive to make their wallets work. It would not be an effective attack.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9iun23",
+                            "author": "meatismoydelicious",
+                            "score": 1,
+                            "created_utc": 1653188922.0,
+                            "response": "Though more nodes owned by genuine bitcoiners does essentially mean it is less vulnerable to attack. RUN NODES PEOPLE.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9iws0f",
+                    "author": "Crypto_Cadet",
+                    "score": 6,
+                    "created_utc": 1653190155.0,
+                    "response": "Number does not include (tens?) thousands more of us running on Tor. Come visit r/getumbrel to learn more!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ix477",
+                    "author": "ipcoffeepot",
+                    "score": 3,
+                    "created_utc": 1653190362.0,
+                    "response": "Nodes don\u2019t vote. When people talk about a fork having network consensus, they\u2019re talking about economic consensus. If you run 100,000,000,000 nodes with some weird new consensus rule, but nobody wants to trade bitcoin with you (exchanges, merchants, investors, users) then it doesn\u2019t matter. Where chainsplits get messy is if there are actual economic actors on both forks and they can\u2019t do commerce.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9j45ey",
+                            "author": "WritingFun8769",
+                            "score": 1,
+                            "created_utc": 1653195006.0,
+                            "response": "but what happens to my wallet / private key / bitcoin if there is a hard fork? that\u2019s the part that confuses me. will my wallet automatically show me with a new kind of coin? how do i gain access to this new coin or use it?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9j7fr9",
+                                    "author": "JaviLM",
+                                    "score": 4,
+                                    "created_utc": 1653197443.0,
+                                    "response": "If there\u2019s a hard fork you will end up with the exact amount of currency in both blockchains: the original one and the forked one.\n\nSay you have 1 BTC, and someone forks the blockchain to create their new currency called ScamCoin (STC). Now you have 1 BTC and 1 STC, each in its own blockchain, under the same wallet address.\n\nYou may still need to install additional software to be able to operate in the STC blockchain, but the currency is there under your wallet address.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ilxzy",
+                    "author": "llewsor",
+                    "score": 14,
+                    "created_utc": 1653184147.0,
+                    "response": "obligatory: https://youtu.be/ncPyMUfNyVM\n\nkeep in mind this answer was from 6 years ago. it\u2019s impossible to launch a 51% attack now.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9imfot",
+                            "author": "Cris_P_Rice",
+                            "score": 6,
+                            "created_utc": 1653184415.0,
+                            "response": "Thanks",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9jd3to",
+                            "author": "berylaite",
+                            "score": 1,
+                            "created_utc": 1653202073.0,
+                            "response": "Thanks\n\nDo you have a link with the full interview? I love his confidence\ud83d\ude42",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ji45a",
+                                    "author": "llewsor",
+                                    "score": 1,
+                                    "created_utc": 1653206481.0,
+                                    "response": "i think this is it:\nhttps://youtu.be/9npQ5f74Nr4\n\nhonestly watch every speech he\u2019s done. doesn\u2019t matter how old they are because the content is still very relevant today. he\u2019s been instrumental to my early understanding of bitcoin and why my conviction is so solid. his lectures are great because the q&a sessions at the end involve people asking him very tough/basic questions that he answers very eloquently yet very straight forward.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9jii80",
+                                            "author": "berylaite",
+                                            "score": 1,
+                                            "created_utc": 1653206830.0,
+                                            "response": "Ma men \ud83d\udc4d\ud83c\udffd\n\nThanks",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ilrml",
+                    "author": "ymgve",
+                    "score": 9,
+                    "created_utc": 1653184050.0,
+                    "response": "There is no general voting mechanism, the only way for a node to \u00abvote\u00bb for protocol changes is to stay on a fork. People would definitely notice a fork with 15000 nodes where *none* of the new nodes were run by well known people/companies.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9im9pi",
+                            "author": "Cris_P_Rice",
+                            "score": 5,
+                            "created_utc": 1653184325.0,
+                            "response": "Thanks. I think that makes sense.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9imw1p",
+                                    "author": "ymgve",
+                                    "score": 6,
+                                    "created_utc": 1653184659.0,
+                                    "response": "That being said, someone with 15000 nodes could do *some* bad things that don\u2019t require protocol changes, like refusing to forward certain transactions or blocks, or keeping connection slots of other nodes busy while not actually giving them any new data",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ivdn5",
+                    "author": "d3vrandom",
+                    "score": 6,
+                    "created_utc": 1653189338.0,
+                    "response": "there is no voting. the nodes that run bitcoin core will stick to the rules defined in the software. they are not going to be bothered about the rogue nodes even if the rogue nodes outnumber them.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9imwx6",
+                    "author": "satoshisfeverdream",
+                    "score": 5,
+                    "created_utc": 1653184672.0,
+                    "response": "Cue..that\u2019s not how any of this works meme.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ilocr",
+                    "author": "SmoothGoing",
+                    "score": 3,
+                    "created_utc": 1653183999.0,
+                    "response": "Nodes don't vote. Bitcoin holders don't vote either.\n\nCompanies don't have any power. They can create their own little centralized sandboxes like Liquid.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9jcazz",
+                            "author": "spirit-receiver",
+                            "score": 1,
+                            "created_utc": 1653201383.0,
+                            "response": "Nodes do vote. They decide which transactions/blocks they consider valid and are forwarded to their peers. That's how UASF works.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9iovl7",
+                    "author": "CosaInvestments",
+                    "score": 2,
+                    "created_utc": 1653185729.0,
+                    "response": "I forgive you",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9j2w2e",
+                    "author": "Skouaire",
+                    "score": 1,
+                    "created_utc": 1653194131.0,
+                    "response": "We only forgive your ignorance if you become a BTC maximalist. Every other crypto is trash.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ipdee",
+                    "author": "Nada_Lives",
+                    "score": 1,
+                    "created_utc": 1653186005.0,
+                    "response": "Hey government! I'm for sale. Convenient terms!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9iu87h",
+                    "author": "fasulo_",
+                    "score": -4,
+                    "created_utc": 1653188697.0,
+                    "response": "Ah so you don\u2019t know shit. Very interesting.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ism3a",
+                    "author": "arbalest_22",
+                    "score": 1,
+                    "created_utc": 1653187810.0,
+                    "response": "The blockchain mostly.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9jeowf",
+                    "author": "Yoghurt114",
+                    "score": 1,
+                    "created_utc": 1653203453.0,
+                    "response": "Lmao",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ji2s6",
+                    "author": "Grouchy_Artichoke_90",
+                    "score": 1,
+                    "created_utc": 1653206450.0,
+                    "response": "Costs more than that to set up a node",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ikjjs",
+                    "author": "BackInTheDay23",
+                    "score": -8,
+                    "created_utc": 1653183386.0,
+                    "response": "The nodes with the most work put in are given advantage in picking what happens with the network",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9ilakk",
+                            "author": "Cris_P_Rice",
+                            "score": 1,
+                            "created_utc": 1653183794.0,
+                            "response": "How does a node put more work in? Doesn't the software run the same on every node?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ilenc",
+                                    "author": "BackInTheDay23",
+                                    "score": -7,
+                                    "created_utc": 1653183854.0,
+                                    "response": "The network knows which nodes were there longer",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9im4wd",
+                                            "author": "SmoothGoing",
+                                            "score": 2,
+                                            "created_utc": 1653184252.0,
+                                            "response": "Age of nodes has no effect.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9im8kv",
+                                                    "author": "BackInTheDay23",
+                                                    "score": -2,
+                                                    "created_utc": 1653184306.0,
+                                                    "response": "Not age, amount of work put in the mining",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9imjk7",
+                                                            "author": "SmoothGoing",
+                                                            "score": 3,
+                                                            "created_utc": 1653184472.0,
+                                                            "response": "Nodes don't mine. Miners mine. An older miner has no more value than a new one. Now if it was a big miner that's different.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9imssv",
+                                                                    "author": "BackInTheDay23",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653184608.0,
+                                                                    "response": "So what makes it impossible for the network to be hijacked by 15001 computers then?",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9inu6q",
+                                                                            "author": "SmoothGoing",
+                                                                            "score": 3,
+                                                                            "created_utc": 1653185168.0,
+                                                                            "response": "What exactly do these nodes do? Take my coins? No. Prevent my transactions? No. Waste money for whoever is running them? Yes. Where's the hijacking in your scenario?",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        },
+                                                                        {
+                                                                            "id": "i9jdfpp",
+                                                                            "author": "never_safe_for_life",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653202359.0,
+                                                                            "response": "Jesus man, read this thread instead of posting on it.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ik298",
+                    "author": "DryTechnology5224",
+                    "score": -5,
+                    "created_utc": 1653183127.0,
+                    "response": "Why would it cost $100 to run a node? I run my node for $0 on my pc.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9ikj9s",
+                            "author": "Cris_P_Rice",
+                            "score": 3,
+                            "created_utc": 1653183382.0,
+                            "response": "Because you need to buy a PC or a Raspberry Pi or whetever.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9iknrw",
+                                    "author": "DryTechnology5224",
+                                    "score": -6,
+                                    "created_utc": 1653183450.0,
+                                    "response": "Im using the PC I've had for 10 years.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9il4pm",
+                                            "author": "Cris_P_Rice",
+                                            "score": 3,
+                                            "created_utc": 1653183707.0,
+                                            "response": "Ok, let me rephrase my question then. What prevents a government that has 15001 PCs lying around to run 15001 nodes for free and take control of the network?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9ilzpa",
+                                                    "author": "SmoothGoing",
+                                                    "score": 3,
+                                                    "created_utc": 1653184172.0,
+                                                    "response": "The fact that such action grants no control.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "i9io3ir",
+                                                    "author": "DryTechnology5224",
+                                                    "score": 1,
+                                                    "created_utc": 1653185311.0,
+                                                    "response": "Doing so does not grant you control of anything. ALL nodes and potentially even miners would have to provide consensus.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9ioj67",
+                                                            "author": "Cris_P_Rice",
+                                                            "score": 1,
+                                                            "created_utc": 1653185547.0,
+                                                            "response": "Consensus is reached when 50% + 1 of the voters agree.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9iopz4",
+                                                                    "author": "DryTechnology5224",
+                                                                    "score": 0,
+                                                                    "created_utc": 1653185648.0,
+                                                                    "response": "But this includes the miners too, not just nodes.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9in4j9",
+                    "author": "PerformanceVarious45",
+                    "score": -3,
+                    "created_utc": 1653184788.0,
+                    "response": "It isn't just nodes either, they would need that many networks also.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ipf2f",
+                    "author": "Blades_61",
+                    "score": 0,
+                    "created_utc": 1653186030.0,
+                    "response": "The beauty of bitcoin protocol is that it's designed to prevent the byzantine general problem so what you describe shouldn't happen.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

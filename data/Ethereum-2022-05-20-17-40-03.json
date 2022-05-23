@@ -28,7 +28,7 @@
             "author": "jacksontoledo",
             "created_utc": 1653068077.0,
             "score": 3,
-            "num_comments": 11,
+            "num_comments": 15,
             "subreddit": "ethereum",
             "selftext": "Hi Guys, \n\nAs the tittle states I need a little assistance to see if i can \u201crecovering\u201d some old Ether wallet. \n\nI do have some old files from (26-05-2016) on my Macbook Pro with show as follow: Library/Ethereum. \n\nI can see that i do have 12.01 GB of data and inside the Ethereum folder i do have the following: chaindata-testnet-nodes-dapp-keystore-nodedy, please note that this are folders. Inside the (chaindata) i can see 11.72 GB in which contain: (log and a lot of files ending as follows 292900.ldb etc. \n\nAlso there is a folder name (testnet) in which is 282.4 MB and inside that folder i can see other folder as follow: chaindata-nodes-dapp-nodekey.\n\nMy question is: \n\nwhat's the easiest way to access this ether or try to recover any ether from there. I honestly don\u2019t know if there is anything there but i do remember back on those days try to mining ether/bitcoin with my MacBook pro and experimenting a bit with Ethereum.  \n\nI don\u2019t even remember the name of the software that i did install. I did notice the file right now because i was cleaning the MacBook Pro and notice 12.01 GB of data and i could see the files contain this information. \n\nAny idea how can i find out if there is anything there? - The close thing i remember was playing with https://www.myetherwallet.com/ \n\nThank you so much for your time. \n\nPS: Honestly, i don\u2019t know what to expect from this. Thanks guys.",
             "stickied": false,
@@ -36,7 +36,7 @@
                 {
                     "id": "i9cuuif",
                     "author": "caploves1019",
-                    "score": 5,
+                    "score": 8,
                     "created_utc": 1653069164.0,
                     "response": "Ignore all direct messages.\n\nDisregard that website or any others.\n\nLook for a wallet.dat file or similar in not the file folders.\n\nIf you enabled encryption, you'll want to remember the password as well. Otherwise nearly all that data is just blockchain info from years ago and not an indicator of any eth stored anywhere. You need your wallet dat file or a recovery seed if you have one (doubtful).",
                     "depth": 1,
@@ -68,7 +68,7 @@
                                                 {
                                                     "id": "i9dfxi4",
                                                     "author": "AdvocatusDiabo",
-                                                    "score": 3,
+                                                    "score": 4,
                                                     "created_utc": 1653078810.0,
                                                     "response": "do you remember the what wallet was it? mist? Any .json files?",
                                                     "depth": 5,
@@ -83,18 +83,9 @@
                     ]
                 },
                 {
-                    "id": "i9dcvhp",
-                    "author": "hteselekecnirp",
-                    "score": 2,
-                    "created_utc": 1653077418.0,
-                    "response": "If there's a file in the keystore folder and you know the password you can access it with MEW under Access My Wallet -> Software -> Keystore.\n\nGood luck \ud83e\udd1e",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i9e4zzv",
                     "author": "GSPandas",
-                    "score": 2,
+                    "score": 4,
                     "created_utc": 1653090856.0,
                     "response": "Here comes the \u201cEthereum Tech Support\u201d vigorously DMing OP lmao.\n\nJokes aside, ignore all DMs. Those that actually want to help you will do it here in public. Otherwise, all scammers.",
                     "depth": 1,
@@ -107,6 +98,45 @@
                             "response": "Thank you so much, i already lost track the amount of DM I am getting... Thanks.",
                             "depth": 2,
                             "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9dcvhp",
+                    "author": "hteselekecnirp",
+                    "score": 3,
+                    "created_utc": 1653077418.0,
+                    "response": "If there's a file in the keystore folder and you know the password you can access it with MEW under Access My Wallet -> Software -> Keystore.\n\nGood luck \ud83e\udd1e",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9fjg41",
+                            "author": "jacksontoledo",
+                            "score": 2,
+                            "created_utc": 1653124053.0,
+                            "response": "Hi, thank you so much for the information. Now i need to remember the password. I don't have any idea. Any way, i can find a password crack o something like that. Thanks.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9fq39j",
+                                    "author": "hteselekecnirp",
+                                    "score": 2,
+                                    "created_utc": 1653130142.0,
+                                    "response": "There's a chance to crack it with hashcat, but at first make a backup of the keystore file, open it with any text editor and check the address part with etherscan to see if there are any ETH on it at all.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9khuo9",
+                                            "author": "jacksontoledo",
+                                            "score": 1,
+                                            "created_utc": 1653231146.0,
+                                            "response": "Hi, thank you so much for your help. Unfortunately, no ETH on the wallet.  I did open the Keystore file and I manage to get the ETH, and it is empty. I do remember now the app and everything now. To be honest, I was a bit existing jajaja, but there is nothing there. I would like to take this opportunity to say thank you so much for your help. 658eeeb9742015ad48757dc30466999346cbe889",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }

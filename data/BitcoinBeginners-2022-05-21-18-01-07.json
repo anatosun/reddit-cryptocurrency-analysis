@@ -1,0 +1,121 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uusfdr",
+            "title": "Question about centralized exchanges and leveraged trading",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uusfdr/question_about_centralized_exchanges_and/",
+            "author": "ciscosista",
+            "created_utc": 1653155973.0,
+            "score": 0,
+            "num_comments": 20,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "When  a trader uses leverage, say 20x, to trade on a centralized  exchange,  like Binance, does the exchange actually place a live 20x  trade? or does  the 1x trade amount go to market and the 20x amount  purely  administrative that other users don't see?  Does the centralized exchange have a finite capacity to provide leverage to traders based on the exchange's own available treasury funds?\n\nA trader who places a $100MM trade at 20x leverage ($2B total) would require Binance to front the leveraged amount? \n\nIf  the trader closes the trade in a profit and the counterparty was  another trader of Binance who was using leverage, does Binance's treasury  become the source of the paid out profits? So there's an incentive for the centralized exchange to scam wick to prevent paying out to customers?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9h720d",
+                    "author": "igadjeed",
+                    "score": 2,
+                    "created_utc": 1653157824.0,
+                    "response": "> A trader who places a $100MM trade at 20x leverage ($2B total) would require Binance to front the leveraged amount?\n\nHe deposits $100 million, then his contract is closed when the price moves 5% against him. His $100 million is paid to the traders on the other side of the bet",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9ic3va",
+                            "author": "Brettanomyces78",
+                            "score": 1,
+                            "created_utc": 1653178829.0,
+                            "response": "You only need around $5 million in margin to open this trade, not $100 million.  That's how leverage works.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9h35od",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653155973.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9h35p4",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653155974.0,
+                    "response": "For trading related topics, there is also /r/bitcointrading\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9h3vun",
+                    "author": "bitusher",
+                    "score": 1,
+                    "created_utc": 1653156307.0,
+                    "response": "> Does the centralized exchange have a finite capacity to provide leverage to traders based on the exchange's own available treasury funds?\n\nNo \n\n>A trader who places a $100MM trade at 20x leverage ($2B total) would require Binance to front the leveraged amount? \n\nNo, Binance is never at risk because a margin call occurs forcing the trader to secure their trade long before \n\n>does Binance's treasury become the source of the paid out profits?\n\nNo , the other trader making the short is \n\n>So there's an incentive for the centralized exchange to scam wick to prevent paying out to customers?\n\nThere are strong incentives for the exchange and large whales to \"artificially\" create volatility to force margin calls on you which forces you to lose money they can profit from. \n\nMost people will lose money day trading due to these reasons\n\nhttps://www.reddit.com/r/BitcoinBeginners/comments/c4zpw9/what_are_the_steps_to_trading_bitcoin/erzkfmm/\n\nThis study shows that 97% of traders lose money\n\nhttps://papers.ssrn.com/sol3/papers.cfm?abstract_id=3423101\n\nTrading on margin is worse than gambling at a casino or treading penny stocks and a whole new level of danger",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ibuqd",
+                    "author": "Brettanomyces78",
+                    "score": 1,
+                    "created_utc": 1653178693.0,
+                    "response": "You've got it backwards.\n\nA trader who places a $100 million trade at 20x leverage only puts up $5 million of their own money.  The *trade itself* is $100 million, long or short.  Traders trade against each other, so someone, or multiple people, must take the opposite side of that trade.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9ikkts",
+                            "author": "ciscosista",
+                            "score": 1,
+                            "created_utc": 1653183405.0,
+                            "response": "Trader A buys BTC deposits $1K and trades 100x leverage so buys $100K worth of BTC\n\nBTC goes up, so Trader A sells his position for $120K \n\nTrader A sells, Trader B buys $120K worth of BTC using his own 100x. Trader B only has $1200 in his account and is using 100x leverage. \n\nIn this scenario, both buyer and seller on the cex are using leverage.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9in5pw",
+                                    "author": "Brettanomyces78",
+                                    "score": 1,
+                                    "created_utc": 1653184806.0,
+                                    "response": "\\>so buys\n\nThis is still kinda missing the point.  I can deposit $1k and trade with 100x leverage, but open any position size I want up to $100k.  I could open a $10k trade with 100x isolated leverage, if I wanted.  Then if that trade gets liquidated, I only lose my margin, or $100.  I then have $900 to trade with, if I please.\n\nThe rest of what you stated makes sense, but you're implying that you \\*must\\* use your full account balance as margin.  That's not the case, unless you're using cross leverage (which uses your full balance by definition).  If you're using isolated leverage, your margin is just your trade size divided by your leverage selection.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9isbhh",
+                                            "author": "ciscosista",
+                                            "score": 1,
+                                            "created_utc": 1653187646.0,
+                                            "response": "My question, with the above example assumes both traders use full leverage of their entire account, is whether the cex is losing funds from their treasury to pay Trader A their profit.  Trader B certainly did not have the $120K in their account.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9isx87",
+                                                    "author": "Brettanomyces78",
+                                                    "score": 1,
+                                                    "created_utc": 1653187983.0,
+                                                    "response": "No, the exchange just shuffles money between parties.  It does not assume the opposing side of anyone's trade.  Generally speaking.  There are exceptions, such as BitFinex.  But that's the exception, not the rule.\n\nTrader B had sufficient margin to open the trade.  So there's no problem there.  If the market moves against Trader B's position, then Trader B's position may be liquidated before he goes into debt to the exchange.  But the market may allow Trader B to book a profit, too.  We don't know yet, given the way you detailed your example.\n\nTrader A was paid from whoever lost money shorting from A's entry to exit.  We don't know who that was, in your example.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

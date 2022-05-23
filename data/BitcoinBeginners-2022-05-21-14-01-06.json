@@ -14,12 +14,70 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uunmm3/doubts_regarding_sending_all_my_btc_from_coinbase/",
             "author": "_-psyduck-_",
             "created_utc": 1653141345.0,
-            "score": 2,
-            "num_comments": 4,
+            "score": 3,
+            "num_comments": 17,
             "subreddit": "BitcoinBeginners",
             "selftext": "\n**NO I WON'T GIVE YOU MY MONEY SO DON'T MSG ME.**\n\nOk, So... I think I accidentally told one of my friends my recovery code (I know I'm stupid) and now I'm very paranoid. \n\nI want to switch from Coinbase to Blockstream Green wallet and I'm thinking just to be on the safe side I'll make a new wallet as well while I'm at it.\n\nSo my question is - Will there be any fees when sending BTC from one wallet to another? If yes, how much approx? \n\nIs there any other way I can sort this out?\n\nThanks.",
             "stickied": false,
             "comments": [
+                {
+                    "id": "i9g8g0t",
+                    "author": "bitusher",
+                    "score": 3,
+                    "created_utc": 1653141795.0,
+                    "response": ">I think I accidentally told one of my friends my recovery code (I know I'm stupid) and now I'm very paranoid. \n\nyour 12 word seed phrase? If this is the case those private keys are compromised and you need to setup a new wallet with new backup words and than send the btc to a new wallet with an onchain transaction and stop using the old wallet \n\n>Will there be any fees when sending BTC from one wallet to another? If yes, how much approx? \n\nYes, the mempool is clear now so set the lowest priority fee (1-2 sat a byte is fine \n\n1 sat a byte would mean a fee of 4-10 cents to send the bitcoin \n\nhttps://twitter.com/CoreFeeHelper\n\nThis a a fee scraper that shows the average fees per fee rate",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9gc02y",
+                            "author": "_-psyduck-_",
+                            "score": 3,
+                            "created_utc": 1653143514.0,
+                            "response": "Thanks again Bitusher :)",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9jzv6n",
+                            "author": "MsStarstruck",
+                            "score": 1,
+                            "created_utc": 1653221567.0,
+                            "response": "Where can i check the mempool?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9k2zk9",
+                                    "author": "bitusher",
+                                    "score": 1,
+                                    "created_utc": 1653223565.0,
+                                    "response": "\n\nhttps://mempool.space/",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9k467c",
+                                            "author": "MsStarstruck",
+                                            "score": 1,
+                                            "created_utc": 1653224270.0,
+                                            "response": "Thanks, that\u2019s interesting. Pleas help me out though, what do i need to look out for?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9k4afd",
+                                                    "author": "bitusher",
+                                                    "score": 1,
+                                                    "created_utc": 1653224341.0,
+                                                    "response": "Look here\n\nhttps://twitter.com/CoreFeeHelper\n\nthis is a real time scrapper that shows the average fees at any given moment based upon your fee rate",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
                 {
                     "id": "i9g7jwx",
                     "author": "AutoModerator",
@@ -30,23 +88,13 @@
                     "comments": []
                 },
                 {
-                    "id": "i9g8g0t",
-                    "author": "bitusher",
-                    "score": 1,
-                    "created_utc": 1653141795.0,
-                    "response": ">I think I accidentally told one of my friends my recovery code (I know I'm stupid) and now I'm very paranoid. \n\nyour 12 word seed phrase? If this is the case those private keys are compromised and you need to setup a new wallet with new backup words and than send the btc to a new wallet with an onchain transaction and stop using the old wallet \n\n>Will there be any fees when sending BTC from one wallet to another? If yes, how much approx? \n\nYes, the mempool is clear now so set the lowest priority fee (1-2 sat a byte is fine \n\n1 sat a byte would mean a fee of 4-10 cents to send the bitcoin \n\nhttps://twitter.com/CoreFeeHelper\n\nThis a a fee scraper that shows the average fees per fee rate",
+                    "id": "i9hd4sf",
+                    "author": "Kim19941115",
+                    "score": -2,
+                    "created_utc": 1653160772.0,
+                    "response": "**You can try it out with Binance, the world's largest exchange**",
                     "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i9gc02y",
-                            "author": "_-psyduck-_",
-                            "score": 2,
-                            "created_utc": 1653143514.0,
-                            "response": "Thanks again Bitusher :)",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
+                    "comments": []
                 }
             ]
         }

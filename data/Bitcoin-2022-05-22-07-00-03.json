@@ -1,0 +1,210 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uv5dc1",
+            "title": "Hey guys play me in poker if you are in lightning network",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uv5dc1/hey_guys_play_me_in_poker_if_you_are_in_lightning/",
+            "author": "AdviceImpressive219",
+            "created_utc": 1653201864.0,
+            "score": 4,
+            "num_comments": 8,
+            "subreddit": "Bitcoin",
+            "selftext": "https://lightning-poker.com/luanda\n\n200 sat game \ud83d\udc4f\ud83c\udffd\ud83d\udc4d\ud83c\udffb",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9jd8lp",
+                    "author": "gkush3",
+                    "score": 3,
+                    "created_utc": 1653202187.0,
+                    "response": "Hey, this looks good. I like it.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9jd9kj",
+                            "author": "AdviceImpressive219",
+                            "score": 1,
+                            "created_utc": 1653202211.0,
+                            "response": "Play me I\u2019m waiting on the table",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9jddrn",
+                                    "author": "gkush3",
+                                    "score": 3,
+                                    "created_utc": 1653202312.0,
+                                    "response": "Joining...",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9jdxff",
+                    "author": "arbalest_22",
+                    "score": 3,
+                    "created_utc": 1653202799.0,
+                    "response": "If I wasn\u2019t drunk I\u2019d do it. Maybe another time. lol",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9jdzmz",
+                            "author": "AdviceImpressive219",
+                            "score": 2,
+                            "created_utc": 1653202846.0,
+                            "response": "Come on it\u2019s only a 200 sat game, I am friendly!! We can have a chat too!! Will be fin",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9je75k",
+                                    "author": "arbalest_22",
+                                    "score": 1,
+                                    "created_utc": 1653203024.0,
+                                    "response": "Unfortunately, I don\u2019t have a lightning wallet set up either. I\u2019m totally game, just horribly unprepared.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9jp48w",
+                    "author": "NYKNYb",
+                    "score": 1,
+                    "created_utc": 1653212944.0,
+                    "response": "Oh that's cool I've been looking for players for aged and there's never anyone there.\n\nI'll message you OP and we'll play a game.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9jsptm",
+                    "author": "MCHappster1",
+                    "score": 1,
+                    "created_utc": 1653216132.0,
+                    "response": "I know a lot about some things but admittedly not very good with lightning. I don\u2019t know enough about how it works. How can I move my bitcoin into a lightning wallet to use?",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uv5i21",
+            "title": "Re-broadcasting a signed transaction",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uv5i21/rebroadcasting_a_signed_transaction/",
+            "author": "Capable_Low_621",
+            "created_utc": 1653202468.0,
+            "score": 2,
+            "num_comments": 10,
+            "subreddit": "Bitcoin",
+            "selftext": "Suppose Alice signs a transaction that says \u201cAlice sends Bob 1000 sats\u201d and broadcasts it to the blockchain. \n\nWhat stops Bob from taking that signed transaction and broadcast it again?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9jousx",
+                    "author": "ST-Fish",
+                    "score": 2,
+                    "created_utc": 1653212699.0,
+                    "response": "The transaction doesn't actually say \"Alice sends Bob 1000 sats\", it says \"Alice's UTXO containing 3000 sats is sending 1000 sats to Bob's wallet, and sending 2000 sats to a new UTXO (which Alice controls)\"\n\nIf afterwards, Bob comes around and tries to broadcast it again, the nodes will look at this:\n\n>Alice's UTXO containing 3000\n\nAnd rightfully see that this is not the case, since the hash in the initial UTXO has already been spent, thus, it is not an \"Unspent\" transaction output (UTXO).\n\nThe transaction cannot be repeated because the source of the funds is no longer there, the UTXO in the signed tranasction has been spent, and the signed transaction is not valid anymore. Nodes will see this, and automatically deny further propagation throughout the network.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9je2hc",
+                    "author": "Caponcapoffstillon",
+                    "score": 1,
+                    "created_utc": 1653202913.0,
+                    "response": "If you actually looked up an into video to bitcoin you\u2019d have your answer",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9jet9v",
+                    "author": "opreturn_net",
+                    "score": 1,
+                    "created_utc": 1653203560.0,
+                    "response": "Bob could broadcast it again. Isn't that what each node does anyway? They receive Alice's transaction and broadcast it along to the other nodes they're connected to.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9jfddr",
+                            "author": "Capable_Low_621",
+                            "score": 0,
+                            "created_utc": 1653204040.0,
+                            "response": "Won\u2019t he be able to take all her btc if he broadcasts it a million times?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9jfi6b",
+                                    "author": "opreturn_net",
+                                    "score": 2,
+                                    "created_utc": 1653204154.0,
+                                    "response": "No, because the transaction contains the specific output that Alice is spending to Bob's address. That output can only be spent once. If Bob tries to change the transaction, the signature wouldn't be valid.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9jg989",
+                                            "author": "Capable_Low_621",
+                                            "score": -1,
+                                            "created_utc": 1653204814.0,
+                                            "response": "But Bob isn\u2019t changing anything.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9jghhc",
+                                                    "author": "opreturn_net",
+                                                    "score": 3,
+                                                    "created_utc": 1653205014.0,
+                                                    "response": "You didn't read the first part of my reply. Outputs can only be spent once. Nodes and miners will see that Alice already spend the output to Bob and they will just disregard the million other transactions. They'd probably block Bob's node after he sent the same transaction so many times.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9jfoqe",
+                    "author": "d3vrandom",
+                    "score": 1,
+                    "created_utc": 1653204317.0,
+                    "response": "unspent outputs can only be spent once. if a full node knows about the original transaction it'll reject the replayed one.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9jn1gh",
+                    "author": "sciencetaco",
+                    "score": 1,
+                    "created_utc": 1653211027.0,
+                    "response": "When Alice sends Bob the 1000 sats, the rest of her balance is sent to a new output. So the same transaction being broadcast again is useless.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ju5u8",
+                    "author": "SmoothGoing",
+                    "score": 1,
+                    "created_utc": 1653217344.0,
+                    "response": "Only one of them will confirm. So maybe futility is one of the things stopping Bob.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

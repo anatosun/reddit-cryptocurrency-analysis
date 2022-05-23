@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/CryptoTechnology/comments/uuld5e/auditing_state_on_a_finite_ledger/",
             "author": "Matt-ayo",
             "created_utc": 1653133304.0,
-            "score": 13,
-            "num_comments": 11,
+            "score": 29,
+            "num_comments": 15,
             "subreddit": "CryptoTechnology",
             "selftext": "This scenario considers a special setup: a finite, data only blockchain (no scripts or computations are done on the main chain), with nodes reading on chain data and putting data intended for them into their state machine. \n\nIn this scenario a finite ledger means that the ledger is always *X* blocks long; every time a new block is added the oldest block is removed (and consensus charges fees for UTXO's to be renewed). An important assumption here is that state machine data has no guarantee of being renewed and will often be pruned.\n\nWith that in mind:\n\nIs it possible to run a trusttless state machine on this setup?\n\nIt's surely possible to have nodes which keep the state up to date; they do not need historical state data on chain to keep updating. The issue is how do new nodes or users audit the state? If old data falls off the chain what keeps the nodes managing the current state from changing that old data to their advantage? \n\nAre there any technologies which allow someone entering the network for the first time to look at a node's state and say \"this is correct/incorrect,\" without, of course, looking back on the entire blockchain (which they won't have easy/cheap access to in this scenario)?\n\nMaybe there could be some sort of check-pointing performed on the finite ledger? Every *X* blocks a hash is posted to the chain representing the state and by archiving these hashes (rather than the entire block history) and running  some verification users can determine if the current state they are being presented with accurately stems from historical states? I'm open to ideas.",
             "stickied": false,
@@ -48,11 +48,21 @@
                                 {
                                     "id": "i9ge06m",
                                     "author": "segwhat",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1653144453.0,
                                     "response": "I imagine that it is a lookup tree. Sort of like a \"binary search tree\", but with far greater \"fan out\" than two (maybe 100?), and each node would have a small \"staging area\" for data that is yet to be pushed deeper. It would save space because new tree roots would aggressively reuse nodes from the previous tree (a checked constraint of accepting a next state, that at most log(N) new nodes could be introduced per step [the depth of the tree], which would mostly orphan the nodes they replace).\n\nIn my case, I had in mind to store UUIDs or hash values (of content and public keys) into the tree for lookup, but it might help to imagine the structure as being a pivot of the bitcoin blockchain.... instead of storing the transactions (which grow linearly) to derive an account balance, you store the accounts/balance (which is not finite, but grows much slower) and old transactions get garbage-collected.",
                                     "depth": 3,
-                                    "comments": []
+                                    "comments": [
+                                        {
+                                            "id": "i9gj5nx",
+                                            "author": "segwhat",
+                                            "score": 1,
+                                            "created_utc": 1653146827.0,
+                                            "response": "I suppose this could be made truly finite if the \"number of accounts\" (in the bitcoin analog) were capped/finite.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -113,6 +123,15 @@
                     "score": 1,
                     "created_utc": 1653144951.0,
                     "response": "I think this sounds something similar to Algorand's state proof, making Algorand itself a finite blockchain but for the security it snap shots previous blocks that are older than the intended chain into groupings of 100 blocks or something of the sorts\n\nIdk tho, i'd much rather use the slower but more secure PoW, the only thing is that Ethereum is left behind while other chains just do it so much better. Kadena even has gas free trading which you can try on Kaddex, while Ethereum's gas is infernal and the blocks are way too slow\n\nPeople expect the merge to solve this but i doubt, the sharding will be the thing that improves it but as far as i understood sharding will not be implemented with the PoS updated",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9hssp7",
+                    "author": "coranos2",
+                    "score": 1,
+                    "created_utc": 1653168583.0,
+                    "response": "Rather than using a utxo model like Bitcoin, how about a account based model like nano?\n\nEach account stores how much it has, and how many times it has sent or received funds.\n\nEach transaction says it is the X+1 sent, or X+1 recieved transaction.\n\nIf you split an account into two, then the smallest account/accounts goes to zero.\n\nThe state changes would be the send/recieve.\n\nWith this model, yes, you could have a verifiable state machine.",
                     "depth": 1,
                     "comments": []
                 }

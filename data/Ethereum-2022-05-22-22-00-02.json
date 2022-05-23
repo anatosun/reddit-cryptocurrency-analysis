@@ -1,0 +1,291 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "bmiiuo",
+            "title": "Is it possible to send a message to a certain ETH public address?",
+            "url": "https://www.reddit.com/r/ethereum/comments/bmiiuo/is_it_possible_to_send_a_message_to_a_certain_eth/",
+            "author": "blockc_student",
+            "created_utc": 1557400752.0,
+            "score": 16,
+            "num_comments": 31,
+            "subreddit": "ethereum",
+            "selftext": "Hello guys,\n\nI'm wondering if it is possible to \"send a message\" to a particular address on the ethereum blockchain (or on a ERC20 token smart contract).\n\n\nI know you can't send e-mail and I know that the message would be public, but I'm wondering if there's a way to send a memo or a message that the individual controlling the particular public address might notice and infer it's addressed to him.\n\n**It must be something decentralized, purely on the blockchain, without any third party.**\n\nIf anyone could show me what it would look like, that'd be amazing.\n\nMany thanks for your help!\n\nFollow-up question: is it possible to broadcast a certain memo on the ETH blockchain, without sending any unit (without doing a transaction)?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "emwv676",
+                    "author": "3esmit",
+                    "score": 12,
+                    "created_utc": 1557403050.0,
+                    "response": "You can send a zero value transaction to the address and use at data to type your message in plain text. This is really bad way to do it but might work.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "emwvxgz",
+                            "author": "3esmit",
+                            "score": 9,
+                            "created_utc": 1557403606.0,
+                            "response": "Example:  [https://ropsten.etherscan.io/tx/0x19e4921d572e7f513954c9dada66d7e4fb01d91b5c09be840b235c9fae73401e](https://ropsten.etherscan.io/tx/0x19e4921d572e7f513954c9dada66d7e4fb01d91b5c09be840b235c9fae73401e)    \nSee Input Data and View as UTF-8.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "emxyvar",
+                            "author": "DeviateFish_",
+                            "score": 5,
+                            "created_utc": 1557427205.0,
+                            "response": "This is the correct answer.  None of the others are even remotely close lol",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "emwvmgz",
+                            "author": "blockc_student",
+                            "score": 2,
+                            "created_utc": 1557403376.0,
+                            "response": "> You can send a zero value transaction to the address and use at data to type your message in plain text. This is really bad way to do it but might work.\n\n-----\n\n> use at data\n\nMany thanks. Could you elaborate on that?\n\nWhy do you think it's a bad way? The message won't be anonymous, sure, but it doesn't need any thiry party to be transferred, right?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "emxzf3g",
+                                    "author": "DeviateFish_",
+                                    "score": 5,
+                                    "created_utc": 1557427522.0,
+                                    "response": "See: [web3.eth.sendTransaction](https://web3js.readthedocs.io/en/1.0/web3-eth.html#sendtransaction).  `data` can actually be any arbitrary byte string.\n\nIf you want to get really fancy, you could encrypt the data with their public key.  This requires that the target address has [signed a transaction](https://ethereum.stackexchange.com/questions/13778/get-public-key-of-any-ethereum-account/13892) at some point, but with their public key (not the same as the address), you could use [ECIES](https://en.wikipedia.org/wiki/Integrated_Encryption_Scheme) to encrypt the message.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "en2dyrl",
+                                            "author": "3esmit",
+                                            "score": 1,
+                                            "created_utc": 1557530649.0,
+                                            "response": "Good points, but if you encrypt the message than it would be harder for it to be recognzied, as not like everyone is trying to decrypt the data input with their private key.\n\nAlso, it would be theorically possible to use values fields to place a limited size message, such as in gas limit, value, and gas price. The message could be in very low significant bits, so it would not make many difference.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "en2fmfw",
+                                                    "author": "DeviateFish_",
+                                                    "score": 3,
+                                                    "created_utc": 1557531646.0,
+                                                    "response": "You could probably prefix the encrypted message with a plaintext one. Data size can be pretty large (but you pay for each byte), so you could fit pretty detailed instructions in there. You could even borrow from PGP signatures for the syntax, or something.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "ensr1m9",
+                                                    "author": "DeviateFish_",
+                                                    "score": 1,
+                                                    "created_utc": 1558032394.0,
+                                                    "response": "I also realized that encrypting the message runs the risk that the end user actually *cannot* decrypt the message.  For example, what if that address is a hardware wallet?  Generally, hardware wallets only provide a very narrow api for interacting with the secure enclave where the private key is stored.  I don't think any of them provide a way to decrypt an arbitrary message with the private key.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "emwvcvj",
+                    "author": "pa7x1",
+                    "score": 5,
+                    "created_utc": 1557403182.0,
+                    "response": "Something like this?\nhttps://medium.com/melonprotocol/introducing-melon-mail-a-secure-messaging-service-between-managers-investors-6e410e22a353\nhttps://github.com/melonproject/melon-mail\n\nBut this requires the recipient to be aware that you intend to use that Dapp.\n\nAn alternative is to send the recipient a transfer to his account and use the data field to write whatever you want (hex-encoded). Like shown here: https://ethereum.stackexchange.com/questions/2466/how-do-i-send-an-arbitary-message-to-an-ethereum-address\n\nThe recipient will not get notified, so he has to check his address with certain periodicity. Or he can use a block-explorer (e.g. etherscan) that checks his address and sends him an email when he receives a transaction. \n\nThe message sent this way will be publicly recorded on the blockchain and everyone can see its contents. If you want it to be private you can encrypt using his public address which is essentially a public key for which he holds the private key (not sure if this is possible, as the public address derivation form the private key is not straightforward). You would need to communicate this to the recipient some way, otherwise he would be left scratching his head not knowing what to do with the message he received. You could use a non-encrypted message to his address as explained above that details the instructions for decryption and then send the encrypted messages.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "emwwvni",
+                    "author": "adamnmcc",
+                    "score": 5,
+                    "created_utc": 1557404319.0,
+                    "response": "you could try this:   \n\n\n [https://ipfs.io/ipns/messagetransport.turmsanonymous.io/#](https://ipfs.io/ipns/messagetransport.turmsanonymous.io/#)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "emwx0qj",
+                            "author": "blockc_student",
+                            "score": 3,
+                            "created_utc": 1557404419.0,
+                            "response": "that's a third party.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "emx7xk3",
+                                    "author": "adamnmcc",
+                                    "score": 4,
+                                    "created_utc": 1557411747.0,
+                                    "response": "the interface is hosted on IPFS, so decentralised. the link i sent simply send it to your browser. you can run the IPFS Software on your computer and get the website code and it will work just the same locally. the entire DNS system could go down and this would still work.\n\n&#x200B;\n\nall it does is interact with a contract on the Blockchain..\n\n&#x200B;\n\nThere's nothing else out there that comes close to your specifications.\n\n&#x200B;\n\nedit:   Contract is here: [https://etherscan.io/address/0x6a973275f5bccfe0c7309c9934d7f945c3138dfd#code](https://etherscan.io/address/0x6a973275f5bccfe0c7309c9934d7f945c3138dfd#code)\n\nedit2: github code is here:  [https://github.com/AlejandroDiaz666/message-transport](https://github.com/AlejandroDiaz666/message-transport)",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "emy10pf",
+                                            "author": "DeviateFish_",
+                                            "score": 1,
+                                            "created_utc": 1557428369.0,
+                                            "response": "> There's nothing else out there that comes close to your specifications.\n\n[web3.eth.sendTransaction](https://web3js.readthedocs.io/en/1.0/web3-eth.html#sendtransaction)",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "emy4yfj",
+                                                    "author": "adamnmcc",
+                                                    "score": 1,
+                                                    "created_utc": 1557430419.0,
+                                                    "response": "\ud83e\udd14\ud83d\ude44",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "emx57d2",
+                    "author": "TulsiBlabbard",
+                    "score": 5,
+                    "created_utc": 1557410051.0,
+                    "response": "Check out the [Whisper 2.0 protocol](https://github.com/w3f/messaging/blob/master/README.md):\n\n**Protocol Requirements:**\n\n>\tMetadata protection:\n\n>\t1.\tSender Anonymity (who sent a message?)\n\n>\t2.\tReceiver Anonymity (who read a message?)\n\n>\t3.\tSender-Receiver Unlinkability (who is talking to whom?)\n\n>\tConvenience, Usability:\n\n>\t4.\tReasonable Latency (<5s, to allow for IM [XXX])\n\n>\t5.\tReasonable Bandwidth (not specified, mobile data plan in undeveloped countries)\n\n>\t6.\tAdaptable Anonymity (adjustable resource consumption)\n\n>\tDecentralization:\n\n>\t7.\tScalable (up to, say, ~1M active nodes)\n\n>\t8.\tNo Specialized Services (pure p2p)\n\n>\tIncentives to achieve mass adoption:\n\n>\t9.\tIncentivisation for relayers (not necessarily economical)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "emwuh58",
+                    "author": "blockc_student",
+                    "score": 2,
+                    "created_utc": 1557402601.0,
+                    "response": "Is it not possible to broadcast a transaction to said address and insert a memo \"into\" the transaction?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "emwu416",
+                    "author": "AusIV",
+                    "score": 3,
+                    "created_utc": 1557402340.0,
+                    "response": "There's [ethmail.cc](https://ethmail.cc). It's basically a conventional (centralized) email service that maps ethereum addresses to email addresses. Not quite what you're looking for, but worth mentioning.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "emwufs9",
+                            "author": "blockc_student",
+                            "score": 3,
+                            "created_utc": 1557402577.0,
+                            "response": "Looking for something decentralized, but thank you!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "emwu5i6",
+                    "author": "laobuggier",
+                    "score": 1,
+                    "created_utc": 1557402372.0,
+                    "response": "Interested to know as well",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "emwyweu",
+                    "author": "piratedc",
+                    "score": 1,
+                    "created_utc": 1557405899.0,
+                    "response": "Some one make alphabet erc tokens that you can send someone so they can recover a readable few tokens and get back to you",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "emwt7r4",
+                    "author": "babatrader",
+                    "score": 2,
+                    "created_utc": 1557401632.0,
+                    "response": "It\u2019s not possible but it would be really easy to create a smart contract that achieves this. The issue would be the anonymity of the message.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "emx1p5x",
+                            "author": "idiotsecant",
+                            "score": 7,
+                            "created_utc": 1557407787.0,
+                            "response": "If only we had some kind of public/private key cryptography in place that would make it simple to do this. Oh well.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "emyfcd3",
+                                    "author": "babatrader",
+                                    "score": 0,
+                                    "created_utc": 1557435673.0,
+                                    "response": "What do you mean exactly? I meant that the data stored on the blockchain is public",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "en4hopd",
+                                            "author": "idiotsecant",
+                                            "score": 1,
+                                            "created_utc": 1557587475.0,
+                                            "response": "Yes, data stored on the blockchain is definitely public. Information stored on the blockchain is not necessarily so. Your ethereum wallet has an associated public and private keys. I could encode a message with a public key such that you could decode it with a private key.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "emwuqr3",
+                    "author": "uvizhe",
+                    "score": 1,
+                    "created_utc": 1557402766.0,
+                    "response": "Try status.im maybe.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "emwv9td",
+                            "author": "3esmit",
+                            "score": 3,
+                            "created_utc": 1557403120.0,
+                            "response": "You need the public key to send a message in Status, not the address. My address is reverse registered to my Status ENS Username that resolves my public key, but thats not common.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "emxmp3q",
+                    "author": "hongedit",
+                    "score": 1,
+                    "created_utc": 1557420456.0,
+                    "response": "I think there was an approach (I have no idea what state it is in now - I have seen a demo 2 years ago)\n\n [https://melon.email/](https://melon.email/)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i3e2egs",
+                    "author": "graphicaldot",
+                    "score": 1,
+                    "created_utc": 1649099969.0,
+                    "response": "use site like [ama.fans](https://ama.fans)",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

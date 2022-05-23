@@ -9,45 +9,13 @@
     ],
     "posts": [
         {
-            "id": "uuif2i",
-            "title": "Bitcoin is Inevitable",
-            "url": "https://www.reddit.com/r/Bitcoin/comments/uuif2i/bitcoin_is_inevitable/",
-            "author": "No-Marzipan-7039",
-            "created_utc": 1653119467.0,
-            "score": 16,
-            "num_comments": 6,
-            "subreddit": "Bitcoin",
-            "selftext": " **No matter the fear or greed the market shows us I believe Bitcoin will last forever. This is a real Decentralized financial system and every single one of us has brought this to life and made our dreams a reality. No bank, third-party, or institution can take our money from us. Once you learn the basics of \u20bfitcoin payments it is very simple to use worldwide with the touch of a button. The price doesn't always reflect the value of this asset as a lot of people use it as a currency and not an investment, but remember... there will only ever be 21 million \u20bfitcoins. Good luck and Godspeed brothers and sisters. We will all make it to the top.**",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i9fh54s",
-                    "author": "Mallardshead",
-                    "score": 9,
-                    "created_utc": 1653121907.0,
-                    "response": "An overabundance of free non-custodial wallets--too many to list. Free e-commerce software and payment processors like BTCPayserver. Networks like the LN which make transactions effectively free (.0004\u00a2 average). Node software applications. Multisig setups. LN debit cards (NFC) like Boltcard or Satscard, mining pools, DEX's, submarine swaps...\n\nBitcoin the network is now starting to unleash its open source fucking hell on the world where the technology surrounding it trends towards its cost of production as information--which is close to ZERO--or trends towards product proliferation, both of which are a race to the bottom basically. This makes it inclusive for the entire planet. Block is working on an open source ASIC, and an open source DEX, and most hardware wallets have open source software. I'd say yes, bitcoin is inevitable, because people haven't figured out yet that mining, the part of the network tethered to the physical world, will do the same for energy. It's posts like this that start to bring out my confidence and feed my decent into **dark maximalism** against those who would stand in bitcoin's way. I've avoided 4chan heretofore though.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i9fg9dr",
-                    "author": "Fine_Slip_8662",
-                    "score": 2,
-                    "created_utc": 1653121096.0,
-                    "response": "I hope so, all my earnings are being printed away right now",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "uuieo0",
             "title": "My first experience with the bluewallet",
             "url": "https://www.reddit.com/r/Bitcoin/comments/uuieo0/my_first_experience_with_the_bluewallet/",
             "author": "chanchanchanchaaan",
             "created_utc": 1653119415.0,
             "score": 3,
-            "num_comments": 4,
+            "num_comments": 6,
             "subreddit": "Bitcoin",
             "selftext": "This is my first time using bitcoin ever and because I started in \"shitcoins,\" sent some BTC to my little brother and a day later decided to track all of my funds to ensure I actually owned everything on the blue wallet.\n\nAfter checking two blockchain explorers I was scared shitless to find out my BTC wasn't on either of my receiving address on the blue wallet. All that was there was a big fat 0.0000, 0 transactions. I checked a few other wallets to see if I was just unaware of what bitcoin actually is and my little brothers address had all of his transactions on there along with another bitcoin address I no longer use.\n\nI then tried tracking the BTC I was purchasing and saw that every on ramp receipt, every exchange receipt had a different Bitcoin address on it. I was very confused because I was certain my addresses were not Lightning wallets. I looked around on the app and finally found the addresses with the BTC on them.\n\nI've never known about Bitcoin doing this normally and was informed that this is what the Lightning Network is supposed to be, not Bitcoins L1. Is this normal in software wallets or did my wallet turn into something it wasn't supposed to? Does the single private key have access to all of these addresses? Am I able to move all of these addresses if I wanted to? Am I missing something here?",
             "stickied": false,
@@ -74,7 +42,7 @@
                 {
                     "id": "i9fwvwo",
                     "author": "Mallardshead",
-                    "score": 3,
+                    "score": 4,
                     "created_utc": 1653135204.0,
                     "response": "These are called HD (hierarchical deterministic) wallets. 99.9% of modern wallets are HD. This automatic address change is done for privacy reasons. All the same, your single seed will always have access. You can use any of the addresses for sending/spending forever.\n\nWhen you create a new wallet, basically you're planting a seed in it. This seed grows into what's called a Merkle Tree. Each branch represents an address. There are billions of them. You'll always have access to them with the same seed, regardless of what wallet you plant it in.",
                     "depth": 1,
@@ -85,7 +53,261 @@
                     "author": "BTCMachineElf",
                     "score": 1,
                     "created_utc": 1653148688.0,
-                    "response": "You should not be using the lightning features of bluewallet. You should be using bluewallet's standard layer 1 wallet. If the header is orange, thats lighting. if it's blue, that's layer 1.\n\nYou should be able to check the transactions and see if the addresses match up with the addresses in bluewallet.",
+                    "response": "You should not be using the lightning features of bluewallet. You should be using bluewallet's standard layer 1 wallet. If the header is orange, thats lighting. if it's blue, that's layer 1.\n\nYou should be able to check the transactions and see if the addresses match up with the addresses in bluewallet.\n\n>Does the single private key have access to all of these addresses? \n\nYes.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9go58z",
+                            "author": "chanchanchanchaaan",
+                            "score": 1,
+                            "created_utc": 1653149118.0,
+                            "response": "Looked at all of my transactions and addresses and yes they do all match up. It was just hard to track at the beginning.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9grmgb",
+                                    "author": "BTCMachineElf",
+                                    "score": 1,
+                                    "created_utc": 1653150720.0,
+                                    "response": "Do you see the bitcoin in the wallet? \n\nIt may help to close and restart the bluewallet app.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "uuif2i",
+            "title": "Bitcoin is Inevitable",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uuif2i/bitcoin_is_inevitable/",
+            "author": "No-Marzipan-7039",
+            "created_utc": 1653119467.0,
+            "score": 38,
+            "num_comments": 28,
+            "subreddit": "Bitcoin",
+            "selftext": " **No matter the fear or greed the market shows us I believe Bitcoin will last forever. This is a real Decentralized financial system and every single one of us has brought this to life and made our dreams a reality. No bank, third-party, or institution can take our money from us. Once you learn the basics of \u20bfitcoin payments it is very simple to use worldwide with the touch of a button. The price doesn't always reflect the value of this asset as a lot of people use it as a currency and not an investment, but remember... there will only ever be 21 million \u20bfitcoins. Good luck and Godspeed brothers and sisters. We will all make it to the top.**",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9fh54s",
+                    "author": "Mallardshead",
+                    "score": 14,
+                    "created_utc": 1653121907.0,
+                    "response": "An overabundance of free non-custodial wallets--too many to list. Free e-commerce software and payment processors like BTCPayserver. Networks like the LN which make transactions effectively free (.0004\u00a2 average). Node software applications. Multisig setups. LN debit cards (NFC) like Boltcard or Satscard, mining pools, DEX's, submarine swaps...\n\nBitcoin the network is now starting to unleash its open source fucking hell on the world where the technology surrounding it trends towards its cost of production as information--which is close to ZERO--or trends towards product proliferation, both of which are a race to the bottom basically. This makes it inclusive for the entire planet. Block is working on an open source ASIC, and an open source DEX, and most hardware wallets have open source software. I'd say yes, bitcoin is inevitable, because people haven't figured out yet that mining, the part of the network tethered to the physical world, will do the same for energy. It's posts like this that start to bring out my confidence and feed my decent into **dark maximalism** against those who would stand in bitcoin's way. I've avoided 4chan heretofore though.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9fg9dr",
+                    "author": "Fine_Slip_8662",
+                    "score": 3,
+                    "created_utc": 1653121096.0,
+                    "response": "I hope so, all my earnings are being printed away right now",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9h1h1w",
+                    "author": "Spl00ky",
+                    "score": 3,
+                    "created_utc": 1653155198.0,
+                    "response": "Bitcoin will most likely replace gold. Bitcoin will never become a mainstream currency.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9jr46l",
+                            "author": "kinglcj",
+                            "score": 1,
+                            "created_utc": 1653214746.0,
+                            "response": "People are still treating Bitcoin in investment class only, mainstream currency is still far",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9hgjtv",
+                    "author": "automated123",
+                    "score": 2,
+                    "created_utc": 1653162450.0,
+                    "response": "I'm becoming a maxi, the more I know - class of Matt Kratter and Mallarshead lol.  Especially in times like these decentralization is the key.  Add simplicity, reliability, transparency, max supply limit, and beauty of mathematics.  Months moving forward will validate what's truly decentralized or DINO.  Btc unlike crypto (which was made for some to profit) seems out of this world.  Thank you Satoshi/Hal",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9g5iwp",
+                    "author": "TonightSame",
+                    "score": 2,
+                    "created_utc": 1653140296.0,
+                    "response": "Inevitably going to be worth not a damn thing.  It's the only money that gets more expensive to use as more people use it.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9h83y5",
+                            "author": "waxminer",
+                            "score": 6,
+                            "created_utc": 1653158333.0,
+                            "response": "Adoption is always in the pipeline for Bitcoin and recently 44 countries met for Bitcoin adoption, and it's really beneficial if they follow the path of EL Salvador, let's hope Bitcoin goes high further",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9iwaoc",
+                                    "author": "evertonhs1",
+                                    "score": 1,
+                                    "created_utc": 1653189864.0,
+                                    "response": "Yeah but EL Salvador is facing a tough crisis in this dip, president is still having chill",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9hkbcc",
+                                    "author": "TonightSame",
+                                    "score": 0,
+                                    "created_utc": 1653164317.0,
+                                    "response": "If everyone on Earth wanted to adopt Bitcoin right now, it would take several years for the Blockchain to record it.  El Salvador is facing an economic crisis because of it's bet on Bitcoin, wtf are you talking about?  If you're a person, you're failing the Turing test.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9hyz86",
+                                            "author": "Alfador8",
+                                            "score": 2,
+                                            "created_utc": 1653171782.0,
+                                            "response": "Lightning will be able to speed up adoption. I believe when mass adoption comes the majority of normies will use custodial options on a second layer and will never interact with L1. \n\nAnd to blame El Salvador's economic problems on Bitcoin is laughable. BTC only represents about 2% of their total reserves. If a 45% drop in an asset that represents 2% of your reserves causes an economic crisis then you have bigger problems than that asset",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9i3z7t",
+                                                    "author": "TonightSame",
+                                                    "score": 1,
+                                                    "created_utc": 1653174392.0,
+                                                    "response": "They do have bigger problems than that asset, their president is an idiot, and his bet on BTC was a symptom and made things worse.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9i8kp6",
+                                                            "author": "Alfador8",
+                                                            "score": 2,
+                                                            "created_utc": 1653176885.0,
+                                                            "response": "Bitcoin is a long term bet. It's extremely volatile in the short term, and I'm sure Bukele understood this. No one who has held Bitcoin for more than 3 years lost money. Most people who held that long multiplied their money exponentially",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i9i3eui",
+                                            "author": "casprove",
+                                            "score": 1,
+                                            "created_utc": 1653174094.0,
+                                            "response": "Yeah that's true and it's tough for evey one to adopt Bitcoin in world",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9hebtz",
+                    "author": "fancho324",
+                    "score": 1,
+                    "created_utc": 1653161359.0,
+                    "response": "Nothing can exist forever, but I believe that Bitcoin is with us for a long time.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9j25m4",
+                            "author": "guo7725365",
+                            "score": 1,
+                            "created_utc": 1653193631.0,
+                            "response": "Yeah Bitcoin has already shown it's potential and we are going to stay with Bitcoin",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9hepww",
+                    "author": "skeeskers",
+                    "score": 1,
+                    "created_utc": 1653161552.0,
+                    "response": "How does it support the energy use long term? Keeping a record of everything that\u2019s ever done will eventually be wasting energy to keep old records and be inefficient.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9hpm9o",
+                            "author": "DatBuridansAss",
+                            "score": 3,
+                            "created_utc": 1653166954.0,
+                            "response": "That's not at all how it works.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9hxc2u",
+                                    "author": "skeeskers",
+                                    "score": 1,
+                                    "created_utc": 1653170928.0,
+                                    "response": "Then please explain. Could you explain how the blockchain stores all the transactions and the more transactions it does, the more transactions it needs to store.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9hzacz",
+                                            "author": "Alfador8",
+                                            "score": 1,
+                                            "created_utc": 1653171941.0,
+                                            "response": "The energy is used to validate new blocks. The relevant variable for storing old transactions is hard drive space, not energy.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9i1jej",
+                                                    "author": "skeeskers",
+                                                    "score": 1,
+                                                    "created_utc": 1653173114.0,
+                                                    "response": "So it\u2019s just energy running hard drives to store all the info from past transactions then? Wouldn\u2019t that be an endless amount of data that needs to be stored over time?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9i2g35",
+                                                            "author": "Alfador8",
+                                                            "score": 2,
+                                                            "created_utc": 1653173586.0,
+                                                            "response": "Theoretically, sure. After 13 years the blockchain takes up about 400 gigabytes of space. It's actually a fundamental design principal of Bitcoin to minimize the amount of space needed per transaction, to make storing a copy of the blockchain cheap and easy. The amount of space necessary will grow with time, but the goal is to grow slowly enough that hard drives will get bigger at a faster rate than the blockchain",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9i8tpw",
+                                                                    "author": "skeeskers",
+                                                                    "score": 3,
+                                                                    "created_utc": 1653177023.0,
+                                                                    "response": "Ohhh okay that makes some sense. I appreciate you explaining that out for me. Cheers",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ho5uk",
+                    "author": "stevebtce",
+                    "score": 1,
+                    "created_utc": 1653166230.0,
+                    "response": "We all are here for Bitcoin and for long term Bitcoin is going to stay here for long and we will invest in DCA till our retirement then take out the funds and have a peaceful live in a country side",
                     "depth": 1,
                     "comments": []
                 }

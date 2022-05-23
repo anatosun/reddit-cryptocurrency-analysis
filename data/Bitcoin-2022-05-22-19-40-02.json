@@ -1,0 +1,151 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uvidzd",
+            "title": "can someone help me by explaining this bitcoin transactions? why does it shows 2.34BTC? and what does all these \"spent\" & \"unspent\" transactions means? how much should I have in my balance according to the transaction in the pic? this pic is very confusing to me please help",
+            "url": "https://i.redd.it/xn2rwbk9y2191.jpg",
+            "author": "kamelmekme",
+            "created_utc": 1653248230.0,
+            "score": 3,
+            "num_comments": 13,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9lp9q7",
+                    "author": "hyperinflationUSA",
+                    "score": 1,
+                    "created_utc": 1653250188.0,
+                    "response": "its a batched transaction. I assume you made a withdrawal from a exchange. They group your withdrawal with 100 other people making withdrawals to save one fees.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9lpl0l",
+                            "author": "kamelmekme",
+                            "score": 1,
+                            "created_utc": 1653250332.0,
+                            "response": "I haven't withdrawn anything, I just received BTC once. That's it",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9lqb1o",
+                                    "author": "Future_PeterSchiff",
+                                    "score": 1,
+                                    "created_utc": 1653250667.0,
+                                    "response": "Same difference. It was a batch transaction for depositing your btc into the account to save you on fees. It\u2019s better than when I started and paid about 40 bucks per transaction fees for my single send. Those 40 bucks fees are worth about $20k each today",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9lnd53",
+                    "author": "MikeMiller8888",
+                    "score": 1,
+                    "created_utc": 1653249321.0,
+                    "response": "The block shows transactions bundled with yours. Spent means the BTC in the recipient wallet has moved, unspent means it hasn\u2019t.  You have what you received individually, not the entire transaction block.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9lo0m5",
+                            "author": "kamelmekme",
+                            "score": 1,
+                            "created_utc": 1653249622.0,
+                            "response": "But as you can see my wallet has only one transaction ( see pic above) why does it shows all these blocks of spent and unspent...? I havent received any of these!",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9lomwi",
+                                    "author": "Knurlinger",
+                                    "score": 1,
+                                    "created_utc": 1653249898.0,
+                                    "response": "https://www.investopedia.com/terms/u/utxo.asp",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9losgv",
+                                            "author": "kamelmekme",
+                                            "score": 1,
+                                            "created_utc": 1653249968.0,
+                                            "response": "Dude I read the article and I didn't really understand!",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9lp76s",
+                                                    "author": "Knurlinger",
+                                                    "score": 1,
+                                                    "created_utc": 1653250155.0,
+                                                    "response": "Try a little bit harder or google utxo and read until you understand. Otherwise ignore it but you won\u2019t find the answer to your question then.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9lpg4x",
+                                                            "author": "kamelmekme",
+                                                            "score": 1,
+                                                            "created_utc": 1653250271.0,
+                                                            "response": "I just want to understand why I have all those blocks at the right of the pic while I only have one transaction, I received BTC only once in this address!",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9lpixb",
+                                                                    "author": "Knurlinger",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653250305.0,
+                                                                    "response": "That\u2019s what\u2019s explained in the links\u2026",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9lq6ol",
+                                    "author": "igadjeed",
+                                    "score": 1,
+                                    "created_utc": 1653250611.0,
+                                    "response": "A Bitcoin transaction can have many outputs. When you withdraw Bitcoin from an exchange account, the exchange creates a single transaction to fulfill withdrawal requests for about 40 different customers. This is sometimes called \"batching\". It is more efficient than sending 40 separate transactions",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9lpixm",
+                    "author": "SmoothGoing",
+                    "score": 1,
+                    "created_utc": 1653250306.0,
+                    "response": "Address is not a wallet. What you have assigned to your address is what you have.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9lqe6n",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1653250706.0,
+                    "response": "Why bother with all the whiteovers in the screenshot? It's trivial to find this transaction using 3 of the output amounts and the transaction date",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

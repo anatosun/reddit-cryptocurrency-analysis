@@ -1,0 +1,62 @@
+{
+    "subreddit": "CryptoTechnology",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uuswmu",
+            "title": "How are blocks validated on a private chain?",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/uuswmu/how_are_blocks_validated_on_a_private_chain/",
+            "author": "HoooooWHO",
+            "created_utc": 1653157414.0,
+            "score": 15,
+            "num_comments": 6,
+            "subreddit": "CryptoTechnology",
+            "selftext": "If on a public chain PoW is performed, since this is not required on a private chain, what is the validation process?\n\nIf I have a block with transactions, the previous hash, and the timestamp, alongside the key signature from the owner of the block, how do I validate that the transaction is valid and confirm it?\n\nDo I validate that the previous hash is correct and that the signature can be validated by the public key? or is there more to it?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9hm6nl",
+                    "author": "Dormage",
+                    "score": 6,
+                    "created_utc": 1653165253.0,
+                    "response": "To answer this in any detail one would need more info. Is this a UTXO model, is it a state based model, what is the consensus mechanism, etc..\n\nThe most generic answer would be the same way on a public chain. A transaction is valid if the amount being sent is not greater then the wallet/account total, and the transaction is signed with the private key belonging to the public key of the account/wallet.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9i480e",
+                    "author": "wbruec",
+                    "score": 1,
+                    "created_utc": 1653174523.0,
+                    "response": "In case your question is about who are the validators in a private chain?\n-> There are private chains where validators just go round-robin to \"validate\" = put tx in blocks (or however it is implemented). Those validators can be pre-authorized, because in private networks you can assume some trust.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9jtfn0",
+                    "author": "Plastic_Feedback_417",
+                    "score": 1,
+                    "created_utc": 1653216735.0,
+                    "response": "On a private chain you have to trust the organization running it. No different than like a private bank. Only a very few coins are verified open and public where trust is decentralized.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9kr2yk",
+                    "author": "CumInABag",
+                    "score": 1,
+                    "created_utc": 1653235224.0,
+                    "response": "If it's private, every node on that blockchain is trusted.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

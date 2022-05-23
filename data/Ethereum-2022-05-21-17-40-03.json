@@ -1,0 +1,243 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uurx2w",
+            "title": "Reese Witherspoon NFT wallet | Famous Wallets",
+            "url": "https://famouswallets.com/reesewitherspoon.html",
+            "author": "BlazingHotFireFox",
+            "created_utc": 1653154420.0,
+            "score": 0,
+            "num_comments": 5,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9h6qtj",
+                    "author": "notakebab",
+                    "score": 3,
+                    "created_utc": 1653157671.0,
+                    "response": "Why?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9hg98a",
+                            "author": "BlazingHotFireFox",
+                            "score": 1,
+                            "created_utc": 1653162302.0,
+                            "response": "What do you mean?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9hl2yn",
+                                    "author": "notakebab",
+                                    "score": 1,
+                                    "created_utc": 1653164696.0,
+                                    "response": "Why did you share this woman's wallet? It didn't look particularly special",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9hlw7e",
+                                            "author": "BlazingHotFireFox",
+                                            "score": 2,
+                                            "created_utc": 1653165109.0,
+                                            "response": "She is a famous actor who is involved in the NFT space. She was just added to [famouswallets.com](https://famouswallets.com) so I thought I would share so others could see.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9hmkg6",
+                                                    "author": "notakebab",
+                                                    "score": 1,
+                                                    "created_utc": 1653165442.0,
+                                                    "response": "Aight, brother",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "uury49",
+            "title": "Viability of Tornado Cash?",
+            "url": "https://www.reddit.com/r/ethereum/comments/uury49/viability_of_tornado_cash/",
+            "author": "EmilyLovs",
+            "created_utc": 1653154505.0,
+            "score": 18,
+            "num_comments": 19,
+            "subreddit": "ethereum",
+            "selftext": "A few questions for Tornado Cash users:\n\nA)  Is it even viable?  Does it really have enough of an anonymity set to beat forensics?\n\nB) How much does it cost after all is said and done?\n\nC) What kind of amounts are viable to mix?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9hmdfv",
+                    "author": "Razaberry",
+                    "score": 2,
+                    "created_utc": 1653165346.0,
+                    "response": "Look into Monero XMR. \n\nIf you desire near faultless anonymity you will need to make use of Zero Knowledge Proofs. This is deep wizard math that allows you to prove something occurred without proving anything else. \n\nIn Monero\u2019s case (there\u2019s a few ZK coins out there)\u2026\n-\tthe sender of a tx can see both addresses, the value of XMR transferred, and the timestamp\n-\tthe recipient of a tx can see their own address, XMR value, and timestamp but not the sender\u2019s address\n-\tanyone else not involved in the tx can *only* see the timestamp. They don\u2019t know who transferred how much to who, only that a transfer did indeed occur at a given time. \n\nSo likely what a person seeking absolute anonymity of funds would do is process the asset through a mixer like Tornado Cash, trade this asset on a non-KYC DEX for Monero XMR, transfer said Monero to another Monero wallet, then return to the DEX, repurchase the initial desired asset, and finally put that too through a mixer.\n\nFor extra security, do this all through a VPN and the Tor browser.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9j4f60",
+                            "author": "EmilyLovs",
+                            "score": 1,
+                            "created_utc": 1653195199.0,
+                            "response": "What XMR/ETH markets are there that don't require KYC?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9hozj8",
+                    "author": "TheCherryShrimp",
+                    "score": 3,
+                    "created_utc": 1653166642.0,
+                    "response": "A) I haven\u2019t seen any court case or public document citing it as having been tracable, but if you\u2019re going to do illicit activities I would heavily suggest using a stronger protocol such as /r/Monero \n\nB) No clue, if you link a wallet I think you should be able to hypothetically set up a transaction and see how much it would cost. \n\nC) Standard tornado cash has set amounts, while the second generation allows variable. I\u2019d suggest using the standard as of now, because there\u2019s probably more people using them. \n\nBut like I said in A, I would suggest trading your ETH for Monero if you\u2019re going to do anything you want bulletproof privacy on.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9iv51w",
+                            "author": "Perleflamme",
+                            "score": 1,
+                            "created_utc": 1653189202.0,
+                            "response": ">A) I haven\u2019t seen any court case or public document citing it as having been tracable, but if you\u2019re going to do illicit activities I would heavily suggest using a stronger protocol such as /r/Monero\n\nEven if not for illicit activities and only for your financial privacy, actually. \n\nThough Monero isn't the only network. On Ethereum, you also have the L2 called Aztek protocol. There also are other tools you can use. Compare them and choose the one fitting your purposes the best.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9j0q2j",
+                                    "author": "EmilyLovs",
+                                    "score": 1,
+                                    "created_utc": 1653192664.0,
+                                    "response": "Is Tornado the only L1 privacy option?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9j3a4g",
+                                            "author": "Perleflamme",
+                                            "score": 1,
+                                            "created_utc": 1653194398.0,
+                                            "response": "It is, at the best of my knowledge. Though it's not a network. And it's been years it's been announced that the L1 isn't for end users anyway.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9hj14q",
+                    "author": "hungryf0rcrypto",
+                    "score": 0,
+                    "created_utc": 1653163678.0,
+                    "response": "These questions arent sketch at all. Just asking for a friend am i right?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9isqol",
+                            "author": "EmilyLovs",
+                            "score": 7,
+                            "created_utc": 1653187881.0,
+                            "response": "You seem to imply that privacy is \"sketchy\"...Oh your master would be so proud of you, good little slave.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9k2z8k",
+                                    "author": "hungryf0rcrypto",
+                                    "score": 0,
+                                    "created_utc": 1653223560.0,
+                                    "response": "Wtf are you talking about? Can't take a joke? People are so soft nowadays. Reported also for calling ppl slaves. Take that L plz.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9iulog",
+                            "author": "Perleflamme",
+                            "score": 1,
+                            "created_utc": 1653188900.0,
+                            "response": "Why would you be asking for a friend instead of asking for yourself? \n\nData privacy, even more so financial data, is a need in nowadays world. Otherwise, it's pretty easy for any hacker to commit identity theft and ruin your life.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9jfh6f",
+                    "author": "NimChimspky",
+                    "score": 1,
+                    "created_utc": 1653204129.0,
+                    "response": "The only way to trace is matching time of transactions and amounts. Personally I think that is ridiculous, and makes it untraceable people saying otherwise I just don't understand.   \n\nIf I wanted privacy I would have no issue using it.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9jiz4i",
+                            "author": "EmilyLovs",
+                            "score": 1,
+                            "created_utc": 1653207269.0,
+                            "response": "Matching time and amounts isn't that hard to do.  The question is how big is the randomization set?  It would have to be pretty big to prevent that matching.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9jk82t",
+                                    "author": "NimChimspky",
+                                    "score": 1,
+                                    "created_utc": 1653208411.0,
+                                    "response": "I disagree.\n\nJust finding a correlation of time and date isn't proof at all.\n\n Correlated how anyway? Withdrawal Performed a short time after, or withdrawal Performed the same day and time six months in the future?\n\nThere is just no way to prove ownership without further wallet information.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9jn1pa",
+                                            "author": "EmilyLovs",
+                                            "score": 1,
+                                            "created_utc": 1653211034.0,
+                                            "response": "We'll if you can match ZEC T->Z->T then I think you could match this.  That is a larger data set, yet its still done.\n\nPerhaps in smaller amounts it might have enough of a pool.  In larger amounts?  What kind of amounts are really viable?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9jn5ta",
+                                                    "author": "NimChimspky",
+                                                    "score": 1,
+                                                    "created_utc": 1653211142.0,
+                                                    "response": "Just go and look at the transactions.\n\nIts regularly doing 100e per withdrawal.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9k77z8",
+                                    "author": "thomas_m_k",
+                                    "score": 1,
+                                    "created_utc": 1653225959.0,
+                                    "response": ">The question is how big is the randomization set?\n\nYes, I think that is the right question. Can you not check on past Tornado Cash rounds how many participants there were? Though I guess you don't know how many participants are secretly law enforcement trying to decrease the size of the randomization set.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

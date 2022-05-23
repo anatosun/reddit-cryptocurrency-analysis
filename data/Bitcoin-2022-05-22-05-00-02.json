@@ -1,0 +1,179 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uv3oe7",
+            "title": "BlueWallet claims that I sold more BTC than I actually did - how to approach?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uv3oe7/bluewallet_claims_that_i_sold_more_btc_than_i/",
+            "author": "CntDstryr93",
+            "created_utc": 1653194473.0,
+            "score": 2,
+            "num_comments": 16,
+            "subreddit": "Bitcoin",
+            "selftext": "Hello,\n\nI recently restored my funds I had in a BRD wallet with BlueWallet. It did everything just fine, but when I wanted to transfer my restored funds to an exchange, I realized that while all my purchases were correct, my sells were not. For example, according to BlueWallet, I once sold 0.033xxxxx, when I actually sold 0.027xxxxx BTC. Which can't be true, because not only do I remember calculating exactly how much I wanted to sell, I ALSO have confirmation available from the exchange to which I sold my BTC.\n\nNow, before I assume that BlueWallet is fishy, I wanted to know if there is something I have not considered yet.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9j4r8q",
+                    "author": "Nada_Lives",
+                    "score": 2,
+                    "created_utc": 1653195442.0,
+                    "response": "Bitcoin understands nothing of your \"sell\" nor of the websites that you visit. All it knows is what you are sending from hither to yon.\n\nMaybe your problem is not with Bitcoin?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9j53wi",
+                    "author": "SomeBrokeChump",
+                    "score": 2,
+                    "created_utc": 1653195696.0,
+                    "response": "BlueWallet is a wallet, not an exchange. BlueWallet doesn't know anything about you selling. The wallet only knows about you sending and receiving bitcoin. \n\nThis is just a guess, but I'm guessing that you don't understand how bitcoin transactions work. Each unspent transaction output must be spent in full. When you send a transaction, you will receive the remainder back to one of your change addresses. So if you have a UTXO of 0.03300000 BTC and you want to send 0.02700000 BTC, then you will spend the full 0.03300000 BTC UTXO and 0.02700000 will will be sent to the address that you send it to and whatever is leftover after the transaction fee will be sent to a change address that's controlled by the same wallet that you sent the transaction from.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9j5o47",
+                            "author": "CntDstryr93",
+                            "score": 1,
+                            "created_utc": 1653196102.0,
+                            "response": "Thank you for your explanation.\n\nI am aware that BlueWallet is not an exchange. Let me put it the following way:\n\nI once sold 0.287xxx BTC to an online exchange. When I restored my wallet with BlueWallet, it told me that I spent 0.033xxx BTC. Even with the transaction fee, it doesn't add up.\n\nWhen I look at the blockchain, it tells me that there was a 2nd output/addressee. Adding up the BTC I spent, the BTC that went to that 2nd address and the transaction fee gives the result BlueWallet tells me, but what is that 2nd address?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9j5z0j",
+                                    "author": "SomeBrokeChump",
+                                    "score": 3,
+                                    "created_utc": 1653196326.0,
+                                    "response": "Your wallet doesn't know anything about you selling. It only knows about inputs and outputs. It knows about you sending and receiving bitcoin. I attempted to explain it to you. You cannot send a transaction of exactly 0.28700000 BTC unless you have a UTXO of exactly 0.28700000 (plus the transaction fee). All UTXOs must be spent in full. So if you have a UTXO of 0.03300000 BTC and you want to send 0.02700000 BTC, then you will spend the full 0.03300000 BTC UTXO and 0.02700000 will will be sent to the address that you send it to and whatever is leftover after the transaction fee will be sent to a change address that's controlled by the same wallet that you sent the transaction from.\n\n>When I look at the blockchain, it tells me that there was a 2nd output/addressee. but what is that 2nd address?\n\nThat's one of your change addresses and it's controlled by the same wallet that you send the transaction from.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9j6hww",
+                                            "author": "CntDstryr93",
+                                            "score": 1,
+                                            "created_utc": 1653196723.0,
+                                            "response": "Thank you again, I didn't know that the \"change\" goes to another address which is part of my Wallet.\n\nBut how do I access it now? BlueWallet tells me that I have no funds left over, but there is still change left unspent which I somehow should have access to, right?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9j6vzz",
+                                                    "author": "SomeBrokeChump",
+                                                    "score": 1,
+                                                    "created_utc": 1653197015.0,
+                                                    "response": "It should just be available in your wallet that you send the transaction from. \n\nWhy don't you copy & paste the transaction ID here so we can see it? Or send me a private message with the transaction ID if you don't want everyone to see it. I want to see if the funds have been spent from the change address.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9j7asq",
+                                                            "author": "CntDstryr93",
+                                                            "score": 1,
+                                                            "created_utc": 1653197333.0,
+                                                            "response": "> It should just be available in your wallet that you send the transaction from.\n\nMy BRD Wallet (from which I performed this transaction originally) shows me that funds are available, but because it doesn't work properly anymore since overtaken by Coinbase, I restored it in BlueWallet.\n\nThere is the transaction ID: f8f0831783bd29810b697eb840b5d54ab53cad054534a267b16ff68376d97978",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9j7mj9",
+                                                                    "author": "CntDstryr93",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653197593.0,
+                                                                    "response": "I was uncertain which one to choose, so I let BlueWallet do it by itself. Should I try to restore it again with a given derivation path?",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9j7tfo",
+                                                                            "author": "dktunzldk",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653197736.0,
+                                                                            "response": "Try m/0'",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9j9bqz",
+                                                                                    "author": "CntDstryr93",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653198933.0,
+                                                                                    "response": "I just tried, but it still tells me that I have no BTC left over.",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i9jc7br",
+                                                                                            "author": "dktunzldk",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1653201298.0,
+                                                                                            "response": "Did you specify the wallet type, hd segwit bip84 bech32 native?",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "i9j7zaq",
+                                                                    "author": "SomeBrokeChump",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653197862.0,
+                                                                    "response": "Oh you used different wallet software when sending the transaction... Now your problem is making sense.\n\nYour \u200e0.00535175 BTC is still in your change address bc1qx9rrh8trnagq2egt5mjj852a3wamfl8lj2uhsj untouched.\n\nDifferent software wallets work differently and use different derivation paths. BRD uses the derivation path m/0\u2019 \n\nI reccomend you try using [Electrum.](https://electrum.org/#home) Enter your seed phrase in Electrum and choose m/0\u2019 as the derivation path.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9jatuv",
+                    "author": "Deminero30",
+                    "score": 1,
+                    "created_utc": 1653200167.0,
+                    "response": "It's definitely a change address issue, BRD probably generated a segwit address for the change address. I have helped some people on the BRD subreddit with similar issues.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9j4rjy",
+                    "author": "HashMeOutside_",
+                    "score": 1,
+                    "created_utc": 1653195448.0,
+                    "response": "Transaction fees,\nConsolidated transactions coming back to new address on same wallet.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9j7j3t",
+                    "author": "dktunzldk",
+                    "score": 1,
+                    "created_utc": 1653197517.0,
+                    "response": "What derivation path did you use to restore the brd wallet into bluewallet? It's possible bluewallet did not restore the change addresses from brd wallet.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9jddwc",
+                    "author": "d3vrandom",
+                    "score": 1,
+                    "created_utc": 1653202315.0,
+                    "response": "Restore from seed using electrum by following this guide:\nhttps://bitcoinelectrum.com/restoring-your-multibithd-wallet-in-electrum/",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

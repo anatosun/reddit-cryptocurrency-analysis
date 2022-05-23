@@ -15,7 +15,7 @@
             "author": "nobodyisasking",
             "created_utc": 1653142792.0,
             "score": 0,
-            "num_comments": 4,
+            "num_comments": 16,
             "subreddit": "ethereum",
             "selftext": "Some ETH miners are recently spreading a news that ETH 2.0 is going to be Centralized. They are referring to the following tweet made by Vitalik Buterin in 2017.\n\nIf  it's really going to be centralized, then do you think that the investors will still have the same interest in ETH that they are having now?\n\nhttps://preview.redd.it/c9j0uc618u091.jpg?width=652&format=pjpg&auto=webp&s=64fd734ce44d1045dedc777461521664ca582c86",
             "stickied": false,
@@ -23,25 +23,26 @@
                 {
                     "id": "i9gbe86",
                     "author": "Bigsuge88",
-                    "score": 4,
+                    "score": 11,
                     "created_utc": 1653143221.0,
                     "response": "He's describing slashing I'm pretty sure.",
                     "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i9gdtbg",
-                    "author": "KaiN_SC",
-                    "score": 1,
-                    "created_utc": 1653144363.0,
-                    "response": "There is always a danger in PoS and centralization in the long run",
-                    "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9i2cjv",
+                            "author": "edmundedgar",
+                            "score": 2,
+                            "created_utc": 1653173535.0,
+                            "response": "Technically no, he's describing a hard fork after the chain is 51% attacked. Slashing is something that routinely happens as part of the protocol if you cast contradictory votes.\n\nIn both PoW and PoS, someone could control 51% of the stake/hashrate and cause trouble. In both cases the community would try to do something about it, by coordinating to make a hard fork which punishes the attackers. This coordination in this process could involve centralization (eg Vitalik or Pieter who controls Bitcoin Core Github repo) might say \"everyone download this version\" and everyone might reply \"yes boss\") or it could be a broader social process with no single power centre. \n\nThe difference is that if you have to do this, in PoS it can be targetted at the misbehaving stakers, whereas in PoW the best you can do is change the PoW algorithm, which hurts all miners.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i9geojl",
                     "author": "DPTrumann",
-                    "score": 1,
+                    "score": 3,
                     "created_utc": 1653144761.0,
                     "response": "If I recall correctly, the deposits being lost is controlled by nodes with enough staked ETH voting to blacklist an individual wallet. So not really any more centralised than the staking process.",
                     "depth": 1,
@@ -50,9 +51,111 @@
                 {
                     "id": "i9gn8al",
                     "author": "LegitimateCopy7",
-                    "score": 1,
+                    "score": 3,
                     "created_utc": 1653148698.0,
-                    "response": "Quite the opposite in fact.\n\nEven if malicious actor(s) managed to launch an attack, the wrongdoings would be public for everyone to see. The other validators, despite being the minority, says fxxk those guys according to the Casper protocol and slashed their deposits.\n\nNow you have a fraudulent chain created by the attacker and another chain maintained by the honest validators. The idea is that community would choose the honest chain and the attackers lose all their stakes.\n\nIMO Casper is like a consensus on what to do in case of an attack. What Vitalik meant by \"we\" is probably the community as a whole and not some eth devs.",
+                    "response": "Quite the opposite in fact.\n\nEven if malicious actors managed to launch an attack, the wrongdoings would be public for everyone to see. The other validators, despite being the minority, says fxxk those guys according to the Casper protocol and slash their deposits.\n\nNow you have a fraudulent chain created by the attacker and another chain maintained by the honest validators. The idea is that community would choose the honest chain and the attackers lose all their stakes.\n\nIMO Casper is like a consensus and SOP on what to do in case of an attack. What Vitalik meant by \"we\" is probably the community as a whole and not some eth devs.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9gogj6",
+                    "author": "lorenzomofo",
+                    "score": 3,
+                    "created_utc": 1653149262.0,
+                    "response": "I think he means if 51% of the community can agree that a particular transaction is bad, they can reverse the blockchain and jump back to an earlier state as if the transaction never happened. This is no different than Proof of Work where 51% agreement is needed for a transaction to be included in the blockchain.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9goikv",
+                    "author": "thestevenbeauty",
+                    "score": 3,
+                    "created_utc": 1653149286.0,
+                    "response": "\ud83d\ude44",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9gqchg",
+                    "author": "rqnyc",
+                    "score": 8,
+                    "created_utc": 1653150129.0,
+                    "response": "Miners are spreading hate on ETH PoS. Fine. Dinosaurs die for a reason",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9hb4bx",
+                    "author": "domotheus",
+                    "score": 2,
+                    "created_utc": 1653159792.0,
+                    "response": "There aren't that many centralization concerns about PoS that don't also apply more to PoW. And the people worth talking about those concerns with are the people participating in trying to mitigate them, rather than the ones who can't get past their \"but it feels icky\" gut feeling",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9gz8ex",
+                    "author": "TribalHunter33",
+                    "score": 1,
+                    "created_utc": 1653154169.0,
+                    "response": "really you can just delete someones entire stack of eth.. because you want to",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9gdtbg",
+                    "author": "KaiN_SC",
+                    "score": -6,
+                    "created_utc": 1653144363.0,
+                    "response": "There is always a danger in PoS and centralization in the long run",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9gpqe2",
+                            "author": "IamAFlaw",
+                            "score": 6,
+                            "created_utc": 1653149852.0,
+                            "response": "Garbage!\n\nNo different than mining, except, it will always be open to anyone to stake, where as mining you need expensive equipment, and the more difficult it gets, the more expensive the equipment you need cutting out the little guys.\n\nAnyone and their dog can stake even if they had 0.1 Eth.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9gzegy",
+                                    "author": "TribalHunter33",
+                                    "score": -1,
+                                    "created_utc": 1653154246.0,
+                                    "response": "i thought i read .. it will require 11 eth to stake.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9im8sz",
+                                            "author": "Perleflamme",
+                                            "score": 2,
+                                            "created_utc": 1653184311.0,
+                                            "response": "No, it doesn't. You need 32 ETH if you want to run an entire validator on your own. But you can stake with way less, because there are decentralized pools.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9gq0d1",
+                    "author": "KarateKid84Fan",
+                    "score": -5,
+                    "created_utc": 1653149978.0,
+                    "response": "What do you mean \u201cgoing to be\u201d centralized?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9gpqst",
+                    "author": "bandoonparade",
+                    "score": -2,
+                    "created_utc": 1653149858.0,
+                    "response": "Username checks out.",
                     "depth": 1,
                     "comments": []
                 }

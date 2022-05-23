@@ -28,7 +28,7 @@
             "author": "VloooolV",
             "created_utc": 1653105665.0,
             "score": 0,
-            "num_comments": 10,
+            "num_comments": 14,
             "subreddit": "dogecoin",
             "selftext": "I sent some doge from my Coinbase to my wallet last week and it worked, so today I had to transfer again into my wallet. \n\nWhen entering the recipient, it showed me the address which I had sent to last week. I assumed it was the correct one. But now when I checked, it is not my receiving address. \n\nWhat should I do? Is my doge lost?",
             "stickied": false,
@@ -45,7 +45,7 @@
                 {
                     "id": "i9ex05d",
                     "author": "opreturn_net",
-                    "score": 2,
+                    "score": 1,
                     "created_utc": 1653106025.0,
                     "response": "Most wallets change the receiving address for every transaction. Is that what you're confused about?",
                     "depth": 1,
@@ -85,7 +85,47 @@
                             "created_utc": 1653144460.0,
                             "response": "That\u2019s not actually true.\n\nOnly HD wallets change addresses. Which is a great reason not to use them. Because if things go sour, you have zero chance of recovery. Just ask all the people who got screwed over by Dough.",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i9gk4vu",
+                                    "author": "opreturn_net",
+                                    "score": 1,
+                                    "created_utc": 1653147281.0,
+                                    "response": "How can you know that most wallets don't change their addresses? Do you have a list? Are you certain less than 50% are HD?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9goe71",
+                                            "author": "Fulvio55",
+                                            "score": 1,
+                                            "created_utc": 1653149233.0,
+                                            "response": "A wallet is a key. And every one of the 256-bit possible numbers is a key and a wallet. You need to have the key in order to have the wallet and the coins it contains.\n\nHD extends this, by having each of the parent keys generate a set of child keys on a derivation path. Literally billions of them. And because they are derived, then possession of the master is enough to recover all of them.\n\nThe problem is though, that unlike normal wallets, there really is no way to peek inside the magic black box. So if there is an error in the code, as happened with Dough, then the actual derivation path may not be what you thought it was. And that makes all the wallets impossible to recover. People have tried to brute force it, and checked billions of candidates, without success. You can read about it over on /r/dogecoindev if you like.\n\nWhen \u2018normal\u2019 clients use additional wallets, such as the change wallets when UTXOs are partially spent, they are not random at all. They are chosen from a pre-generated list of wallets which were generated the first time the client was run. Core for example, generates a set of a hundred wallets, and you can see this for yourself by running DUMPWALLET on a brand new installation. There will be a single named wallet and 99 reserves in the output file.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9gqu0y",
+                                                    "author": "opreturn_net",
+                                                    "score": 1,
+                                                    "created_utc": 1653150353.0,
+                                                    "response": "Yes I know all this. My question was how you can know most wallets are not HD? Millions of people out there are using HD wallets, and really very few people use text wallets. So how can you possibly know that most are not HD?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9hdsgh",
+                                                            "author": "Fulvio55",
+                                                            "score": 1,
+                                                            "created_utc": 1653161093.0,
+                                                            "response": "You can\u2019t know what clients people use, obviously.\n\nBut the major clients are not HD. And anyway,mid argue most people leave their coins on exchanges, against all advice not to.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 },

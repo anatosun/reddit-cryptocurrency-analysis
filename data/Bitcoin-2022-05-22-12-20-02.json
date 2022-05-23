@@ -1,0 +1,183 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uv9jqp",
+            "title": "Good Bitcoin Worker with Snapchat.",
+            "url": "https://i.redd.it/oewsn2hyo0191.jpg",
+            "author": "alceche",
+            "created_utc": 1653220883.0,
+            "score": 1,
+            "num_comments": 1,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9jzolq",
+                    "author": "ribd4yourpleasure",
+                    "score": 1,
+                    "created_utc": 1653221445.0,
+                    "response": "r/suddenlygay",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uv9og1",
+            "title": "The Mystery of 21,000,000",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uv9og1/the_mystery_of_21000000/",
+            "author": "Yoo_Tu",
+            "created_utc": 1653221358.0,
+            "score": 0,
+            "num_comments": 11,
+            "subreddit": "Bitcoin",
+            "selftext": "Why exactly 21 million bitcoins?\n\n&#x200B;\n\nhttps://preview.redd.it/ic5t774cq0191.jpg?width=649&format=pjpg&auto=webp&s=3027f843d1a6dde8410a5bff254cff5d5c2f297a",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9k0sqk",
+                    "author": "apppppppbcppppppa-dc",
+                    "score": 7,
+                    "created_utc": 1653222184.0,
+                    "response": "the fuck is this image?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9k1j34",
+                            "author": "wkw3",
+                            "score": 5,
+                            "created_utc": 1653222665.0,
+                            "response": "The product of a seriously disordered mind.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9kaz9f",
+                                    "author": "Adventurous_Garlic58",
+                                    "score": 2,
+                                    "created_utc": 1653227893.0,
+                                    "response": "Technical anal cyst",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9l79ey",
+                                    "author": "dont_you_love_me",
+                                    "score": 1,
+                                    "created_utc": 1653242055.0,
+                                    "response": "It\u2019s just ordered differently than your bias generated ideal state.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9kj0pr",
+                            "author": "Puzzled_Bread_6412",
+                            "score": 2,
+                            "created_utc": 1653231670.0,
+                            "response": "Daddy chill",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9kabm2",
+                    "author": "oliveandj",
+                    "score": 4,
+                    "created_utc": 1653227558.0,
+                    "response": "Schizo post alert",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9k1p7c",
+                    "author": "RocketFeathers",
+                    "score": 1,
+                    "created_utc": 1653222770.0,
+                    "response": "Will dang, I always thought to myself, its so the number of Satoshi's was slightly less than 2^(31), so you could perform integer math to do calculations on the number of Satoshis. Nope. \n\n21\\*10^(6) x 1\\*10^(8) = 2.1\\*10^(15), assuming that is right, and assuming I used the Excel function IMLOG2 right, the number of Satoshi's is slightly less than 2^(51). So you could use 64-bit scaled integer math.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9knoca",
+                            "author": "igadjeed",
+                            "score": 1,
+                            "created_utc": 1653233754.0,
+                            "response": "> So you could use 64-bit scaled integer math\n\nThat's on the right track. The coins (UTXO) model of Bitcoin spending means that there is only one place where a money amount is stored - the amount field in a transaction output (TXO). This is an *int64* which stores an integer count of Satoshis  \nhttps://developer.bitcoin.org/reference/transactions.html#txout-a-transaction-output\n\n> 2^51\n\nWhich leaves 12 bits of headroom for future divisibility, if required",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9k7z08",
+                    "author": "marshyr3d1and",
+                    "score": 1,
+                    "created_utc": 1653226360.0,
+                    "response": "Because 2,100,000 x 10 is 21,000,000 of course!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9k8il4",
+                    "author": "NitronBot106",
+                    "score": 1,
+                    "created_utc": 1653226647.0,
+                    "response": "The reality is that the protocol only recognizes the \"satoshi\" as a unit of account, and there is no bitcoin. Saying there is only 21 million was just a nice way to represent 21 quadrillion sats and make them seem more scarce.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9k8jdt",
+                    "author": "CHA05-R31GN5",
+                    "score": 1,
+                    "created_utc": 1653226658.0,
+                    "response": "The number 23 can be found everywhere...\n\n&#x200B;\n\nExcept in this image.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uv9t3c",
+            "title": "Should You Incorporate Your Cryptocurrency Activity? 6 Crypto Taxation FAQs",
+            "url": "https://www.mcinnescooper.com/publications/should-you-incorporate-your-cryptocurrency-activity-6-crypto-taxation-faqs/",
+            "author": "partialfriction",
+            "created_utc": 1653221847.0,
+            "score": 4,
+            "num_comments": 2,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9kkt24",
+                    "author": "trufin2038",
+                    "score": 1,
+                    "created_utc": 1653232477.0,
+                    "response": "Why use lot paper when no paper do job",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9lo6hl",
+                    "author": "Successful-Driver722",
+                    "score": 1,
+                    "created_utc": 1653249694.0,
+                    "response": "Decent article.  \n\nIf you need a more comprehensive guide to [Canadian Crypto Taxes](https://koinly.io/guides/crypto-tax-canada/) this one from Koinly compliments the above article quite well. Just my thoughts and always Do Your Own Research.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

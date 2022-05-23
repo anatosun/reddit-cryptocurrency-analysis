@@ -1,0 +1,186 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uv4z8u",
+            "title": "How does Bitcoin network exactly work?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uv4z8u/how_does_bitcoin_network_exactly_work/",
+            "author": "d_101",
+            "created_utc": 1653200095.0,
+            "score": 4,
+            "num_comments": 17,
+            "subreddit": "Bitcoin",
+            "selftext": "Im interested in how bitcoin users actually communicate with each other. I get the part with generating private key, signing a transaction, but where to is this transaction broadcasted exactly? There are trillions of devices online, no way my PC checks if everyone of them \"listens\" to my transaction. Is there a centralised agreed-upon server that tracks all the nodes and all the miners? \n\nThanks in advance!",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9jnf0e",
+                    "author": "Dormage",
+                    "score": 5,
+                    "created_utc": 1653211376.0,
+                    "response": "Theres two things to note. \nThe P2P network is created by nodes connecting with eachother via a peer discovery protocol. In its simplest form, a node joining the network connects to one or more booatrap nodes and asks for other peers. Once it gets a list of other peers it then connects to those and does the same, asks for new peers and builts new connections until a healthy number of connections is reached.\n\nIn this network, nodes are equal. When you publish a transaction you can connect to any of these nodes(assuming ports are open) and send your transaction. By the protocol, the node will gossip your transaction to its peers, and they will do the same. With gossiping transactions accross the network the nodes effectively build a distributed store of transactions that need to be processed refered to as the mem pool.\n\nMiners then build blocks by including a subset of these transactions from the pool into the block data.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9jnrvr",
+                            "author": "d_101",
+                            "score": 1,
+                            "created_utc": 1653211716.0,
+                            "response": "Thanks! Great answer",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9joh0y",
+                                    "author": "Dormage",
+                                    "score": 3,
+                                    "created_utc": 1653212358.0,
+                                    "response": "You are very welcome. Let me just add that this is a very top level explanation that skips a tonne of details about the actual implementation. \n\nEven these have gone through many improvements over the years i.e. in early days, boostrap nodes( the list of public nodes one uses to make the first connection) were published on an IRC channel where as today, the node implementation comes precompiles with a list of domains, which are resolved to obtain the IP address of these nodes.\n\nFor those interested, the bitcoin protocol documentation wiki is a ~~gold~~ bitcoin mine of information.\n\nhttps://en.bitcoin.it/wiki/Protocol_documentation",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9jbn4l",
+                    "author": "FlipnHodl",
+                    "score": 2,
+                    "created_utc": 1653200832.0,
+                    "response": "All nodes are listening. They\u2019re out there. Listening.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9jchg9",
+                    "author": "ndgoLiberty",
+                    "score": 2,
+                    "created_utc": 1653201538.0,
+                    "response": "Your computer connects to 10 other nodes by default.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9jde31",
+                    "author": "Hipcatjack",
+                    "score": 2,
+                    "created_utc": 1653202320.0,
+                    "response": "No, quite literally by design, there is not centralised server. \nBasically think of the BtC network as a smaller internet inside the normal internet. In order for one \u201ccoin\u201d to be \u201cmoved\u201d to another, your computer(dex or cex) places the value of your wallet to zero and adds to the value of the wallet you are sending the coin to. Like on a ledger. Then literally every single \u201cminer\u201d in the world checks to see if this was correct. The first one to  prove that this transaction took place (by doing some math problems) gets to write(update) that transaction to the BIG ledger every computer on the mini internet has an exact copy of, and as a reward for being the first in the world on this mini internet to verify that transaction, THAT computer gets a few Bitcoins as a reward. This incentivising the whole mini-internet system to keep doing those math problems.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9jey1h",
+                            "author": "d_101",
+                            "score": 1,
+                            "created_utc": 1653203675.0,
+                            "response": "Thanks, I get the part about blockchain. Im still confused about whom am i sending the transaction? When i connect to google, i know their IP because of DNS. When i connect to P2P network who am i sending packets to? \n\nI see someone mentioning \"10 default nodes\". Am i correct that on intial setup my pc speaks to this 10 nodes (who are probably ran by blockstream or sonething like that). If this nodes go offline i guess i look for other nodes by googling",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9jh3u4",
+                                    "author": "Rannasha",
+                                    "score": 3,
+                                    "created_utc": 1653205570.0,
+                                    "response": "> Im still confused about whom am i sending the transaction? When i connect to google, i know their IP because of DNS. When i connect to P2P network who am i sending packets to?\n\nAssuming you run a full node (if you don't, more on that later), you're connected to a number of other nodes. When you send a transaction, you send it to all connected nodes. When a node receives a transaction, it will verify that it is correct and if it is, it will forward it to the nodes that it is connected to. This way, the transaction is propagated through the network. But it can take a fair number of hops before all nodes are reached.\n\nSo how do you find the nodes to connect to? This is called the bootstrapping process. The software comes with a number of hardcoded addresses for nodes that are supposed to be online all the time. A user can also provide the software with one or more addresses of nodes to connect to. Once connected to one or more nodes, the software will exchange lists of active nodes that it is aware of. This way, your own node can build a list of nodes it could connect to. The next time it starts up, it'll sort that list on the last time a node was seen online and add some randomization. From that, it'll pick the nodes to connect to that time. Note that once a node has its own list of nodes, it will no longer use the hardcoded node addresses. Those are only there as a last resort if no reachable nodes are known.\n\nIf you don't run a full node, but use a \"light wallet\", you're not actually a participant in the Bitcoin network in the same way. Light wallets typically connect to a central server operated by the developer of the wallet. Any transactions and balance queries are routed to this server. This server runs a Bitcoin node and handles interaction with the Bitcoin network.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9jhgal",
+                                            "author": "d_101",
+                                            "score": 1,
+                                            "created_utc": 1653205878.0,
+                                            "response": "Thanks, great answer. I got it.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9jh2dc",
+                                    "author": "Nuclearstarfishicide",
+                                    "score": 1,
+                                    "created_utc": 1653205532.0,
+                                    "response": "There are some default nodes that the software connects to, who is known to be up. These nodes also share information on how to reach other nodes, who also share information of their nodes.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9lij5i",
+                            "author": "Farrellfernandez",
+                            "score": 1,
+                            "created_utc": 1653247100.0,
+                            "response": "Hipcatjack great fantastic explanation   Thanks !!!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9je59c",
+                    "author": "Hipcatjack",
+                    "score": 2,
+                    "created_utc": 1653202978.0,
+                    "response": "Actually i thought of a better analogy\u2026\nYou have a google docs sheet shared with ten other people\u2026 each person can read the sheet, BUT only one person at a time can edit the sheet. This is decided by who gets the highest score in under a minuet from that hidden dinosaur jump game Chrome has when there is no internet. The person with the highest score after a minuet gets to make ONE edit. Then the newly edited sheet is perma saved by everyone who can read it. And then the next edit happens and everyone starts the dinosaur jump game all over again. And so on and so on\u2026 all the while every single edit is logged by everyone .",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9jnobk",
+                    "author": "BTCMachineElf",
+                    "score": 2,
+                    "created_utc": 1653211622.0,
+                    "response": "The nodes communicate together in a mesh network, much like bittorrent. One node may have ten or so peers. There are specific bitcoin DNS seed servers where a fresh node will start if it doesn't have any other address, but that bootstrap is as centralized as bitcoin gets, and is powerless at this point to affect the network.\n\nWhen you look at the contents of your wallet or send a transaction, your wallet is using node. That node broadcasts the transaction to it's peers and it propagates throughout the network. Voila.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9jnt0a",
+                            "author": "d_101",
+                            "score": 1,
+                            "created_utc": 1653211745.0,
+                            "response": "Thanks!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ksa2l",
+                    "author": "igadjeed",
+                    "score": 2,
+                    "created_utc": 1653235741.0,
+                    "response": "> Is there a centralised agreed-upon server\n\nNot really  \n\nMy node maintains a list of IP addresses of all the peers it has ever seen. There are 70,000 entries in that list. When a node connects to me, I share. When I connect to a node, it shares with me  \n\nThis promiscuous sharing of all known peers means that if a node finds a single peer, then soon after connecting to that peer it knows every available peer  \n\nA virgin node can be configured to connect to one known node. There are lists. The best-known list is at [Bitnodes](https://bitnodes.io/)  \n\nOr, anybody can ask friends or forums to please provide a current peers.dat file to initialize a virgin node  \n\nLazy people will rely on the list of volunteers' so-called \"seed nodes\" hard-coded into the Core software to discover a first peer. This fallback option is centralized  \nhttps://github.com/bitcoin/bitcoin/blob/master/src/chainparams.cpp#L118\n\n    // Note that of those which support the service bits prefix, most only support a subset of\n    // possible options.\n    // This is fine at runtime as we'll fall back to using them as an addrfetch if they don't support the\n    // service bits we want, but we should get them updated to support all service bits wanted by any\n    // release ASAP to avoid it where possible.\n    vSeeds.emplace_back(\"seed.bitcoin.sipa.be.\"); // Pieter Wuille, only supports x1, x5, x9, and xd\n    vSeeds.emplace_back(\"dnsseed.bluematt.me.\"); // Matt Corallo, only supports x9\n    vSeeds.emplace_back(\"dnsseed.bitcoin.dashjr.org.\"); // Luke Dashjr\n    vSeeds.emplace_back(\"seed.bitcoinstats.com.\"); // Christian Decker, supports x1 - xf\n    vSeeds.emplace_back(\"seed.bitcoin.jonasschnelli.ch.\"); // Jonas Schnelli, only supports x1, x5, x9, and xd\n    vSeeds.emplace_back(\"seed.btc.petertodd.org.\"); // Peter Todd, only supports x1, x5, x9, and xd\n    vSeeds.emplace_back(\"seed.bitcoin.sprovoost.nl.\"); // Sjors Provoost\n    vSeeds.emplace_back(\"dnsseed.emzy.de.\"); // Stephan Oeste\n    vSeeds.emplace_back(\"seed.bitcoin.wiz.biz.\"); // Jason Maurice",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9ku50u",
+                            "author": "d_101",
+                            "score": 1,
+                            "created_utc": 1653236541.0,
+                            "response": "Thx for an answer. Word of mouth basically, haha. This is literally a \"network\"",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9mdnaw",
+                    "author": "bitcoin_barry",
+                    "score": 1,
+                    "created_utc": 1653261928.0,
+                    "response": "Everything you/your computer needs to check for \"correctness\" is in the data itself. Therefore, YOUR node is the central node. My node is my central node.\n\nEvery transaction is signed by the sender, so you know as much as what is a transaction sent by the owner, vs what is a transaction pretending to be the owner.\n\nThe thing that was difficult to solve for was the double spend. This is where I send you a cheque for 1BTC, and then spend the same 1BTC elsewhere, both signed from me, and it turned out that computers are bad at verifying times because time records are easy to manipulate.\n\nBlockchain. The blockchain is a historical record of transactions, and just like transactions, they also have verification properties. \n\nEach block has an ID and that ID is a hash of its contents. That means if the contents of a block changes even a tiny bit, the ID changes. Then every block refers back to the previous one as part of its contents. This means that if you tweak something 10 blocks away, all the blocks ahead of it will need to be tweaked too, to make sure each one refers back to the previous block's ID which will have cascaded ID changes.\n\nFinally, Proof of Work. In order to make it difficult to change the data within the blocks without recourse, there needs to be a cost to producing a valid block. Miners have to expend energy to produce a valid Proof of Work. It turns out that tweaking anything within a block also requires a complete do-over of this process. If you tweak something 10 blocks back, you have to re-do the proof of work for all 10 blocks.\n\nYour node can check for everything, including for proof of work, but the proof of work thing is very interesting. It took the network around 100minutes (approx. 10m per block) to make 10 blocks. It will take YOU much longer to produce even one block alone. By the time you have made 10 blocks, there will be 20 more blocks to re-do.\n\nYou can think of your node being the central one. All the information is out there and your node is probing the network for conflicting data. When it finds it, it will evaluate the data, and pick the one with the most proof of work in total (typically the longest chain) and continue.\n\nThere is also the difficulty adjustment in Bitcoin, it is a rule that once again, can be verified independently without any input from other sources. Your node can tell what the difficulty is supposed to be set to by looking at the data it has on its own blockchain so far. If a block is produced with too little proof of work, it will reject it.\n\nDifficulty adjustment allows Bitcoin to continue working at a constant 10m per block average, even when China stops mining, or when the CIA comes in and helps out with 100 supercomputers. The difficulty adjustment rule assigns a target number for proof of work based on the data within the blocks before it. We all do the same maths, so we all have the same target number, and a miner knows what their target is too.\n\nI know it is a bit to sink in, but maybe read this a couple of times, read others a couple of times too, I think you'll get it. It just takes time.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

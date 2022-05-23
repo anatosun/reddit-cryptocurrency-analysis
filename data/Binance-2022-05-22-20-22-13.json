@@ -1,0 +1,87 @@
+{
+    "subreddit": "Binance",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "lmkvcr",
+            "title": "When querying open orders, what is the difference between \"time\" and \"updateTime\" ?",
+            "url": "https://www.reddit.com/r/binance/comments/lmkvcr/when_querying_open_orders_what_is_the_difference/",
+            "author": "TisaneMaster",
+            "created_utc": 1613648426.0,
+            "score": 2,
+            "num_comments": 4,
+            "subreddit": "binance",
+            "selftext": "Basically the title. I am trtrying to write a script that will cancel open orders after a given time but I dont know the difference between those two keys in the response from the API. \n\nhttps://preview.redd.it/9bqnjezf38i61.png?width=794&format=png&auto=webp&s=55cc041541e8df87b7aa2843552f14067f40da57",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "gpfgj5r",
+                    "author": "PrinceOfWestWorld",
+                    "score": 1,
+                    "created_utc": 1614702421.0,
+                    "response": "I've been trying to figure this out\n\nAccording to my testing, it looks like 'time' is when the order was created and 'updateTime' is when the order status was changed.  The order status may have been changed to anything, like from 'NEW' to 'FILLED' or to 'CANCELED'  or something like that\n\n&#x200B;\n\nI say this because I notice when the order is in 'NEW' status, the 'time' and 'updateTime' are the same, but if the status is something else, the two are different and 'updateTime' is higher than 'time'\n\n&#x200B;\n\nlet me know if this fits what you have noticed too",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gy3qz6a",
+                            "author": "TisaneMaster",
+                            "score": 1,
+                            "created_utc": 1621002771.0,
+                            "response": "Sorry for the late reply but yeah you were right !\n\nThanks nonnetheless",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "gy3r6mo",
+                                    "author": "PrinceOfWestWorld",
+                                    "score": 1,
+                                    "created_utc": 1621002861.0,
+                                    "response": "Cool",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9lqmlo",
+                            "author": "aninda08",
+                            "score": 1,
+                            "created_utc": 1653250812.0,
+                            "response": "I had the same question. Thanks a lot!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "uvj7hs",
+            "title": "Coinut",
+            "url": "https://www.reddit.com/r/binance/comments/uvj7hs/coinut/",
+            "author": "Narrow-Damage-9537",
+            "created_utc": 1653250613.0,
+            "score": 1,
+            "num_comments": 1,
+            "subreddit": "binance",
+            "selftext": " Coinut is a Singapore and Canada based secure crypto exchange platform that makes it easy to buy, sell, and trade Bitcoin, Ethereum, Litecoin with SGD or CAD.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9lqyxn",
+                    "author": "useemrlymad",
+                    "score": 1,
+                    "created_utc": 1653250967.0,
+                    "response": "But are the funds safu?",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

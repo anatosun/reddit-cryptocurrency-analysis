@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/ethereum/comments/uui29q/arent_cold_wallets_pointless/",
             "author": "Trixteri",
             "created_utc": 1653117803.0,
-            "score": 4,
-            "num_comments": 49,
+            "score": 1,
+            "num_comments": 64,
             "subreddit": "ethereum",
             "selftext": "# I am incredibly confused.\n\nIf it's a seed phrase that's accessible across all of Ethereum, couldn't I just use the 24 words from a Ledger on Metamask, and vice versa? Wouldn't this just make the security aspect pointless? Or is this not what the security aspect is at all?\n\nCan anyone explain?",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i9fesn5",
                     "author": "jvsephii",
-                    "score": 16,
+                    "score": 18,
                     "created_utc": 1653119768.0,
                     "response": "That's the very point. The seedphrase generated on a Hardware/Cold wallet is offline, never ever have been in an online environment. You keep it that way \u2014 save it offline, written on a paper, engraved on steel etc etc. The moment you take that seedphrase and input into an internet enabled device, it ceases to be \"cold\".\n\nFor me, in my own humble opinion, if you're in this for the long term, one should have 2 wallets:\n\n+ a hardware wallet (strictly for storage/building your bags for the extreme long term. never connect this to any site/dapp. preferably only send in crypto to your addresses there).\n\n+ a software wallet (for all the connections you may want to do)",
                     "depth": 1,
@@ -31,7 +31,7 @@
                         {
                             "id": "i9fufun",
                             "author": "_JohnWisdom",
-                            "score": 0,
+                            "score": -1,
                             "created_utc": 1653133527.0,
                             "response": "I would never ever suggest a software wallet. Hardware and cold wallet.",
                             "depth": 2,
@@ -39,7 +39,7 @@
                                 {
                                     "id": "i9fv63b",
                                     "author": "Im-a_dinosaur",
-                                    "score": 2,
+                                    "score": 4,
                                     "created_utc": 1653134047.0,
                                     "response": "Loopring has an L2 non-costodial software wallet that is dope.\n\nMy ledger and metamask(also non-costodial) are my guardians so i can lock my phone wallet if its stolen or easily recover if lost.\n\nBest part, no seed phrases.",
                                     "depth": 3,
@@ -50,7 +50,7 @@
                         {
                             "id": "i9fh087",
                             "author": "wood8",
-                            "score": -18,
+                            "score": -22,
                             "created_utc": 1653121775.0,
                             "response": "But when you need to send your cryptos from that wallet, there will be a moment where your seed phrase is on a machine that is connected to the internet. Maybe just in a text field, or just somewhere in the ram, but your seed phrase would be with internet. So I also don't see the point.",
                             "depth": 2,
@@ -58,7 +58,7 @@
                                 {
                                     "id": "i9fmdrl",
                                     "author": "Tormian283",
-                                    "score": 13,
+                                    "score": 16,
                                     "created_utc": 1653126828.0,
                                     "response": "only the signed transaction leaves the hardware wallet, not the seed phrase",
                                     "depth": 3,
@@ -81,24 +81,24 @@
                                     "response": "Again, that's exactly the point, the seed phrase never leaves the hardware wallet",
                                     "depth": 3,
                                     "comments": []
+                                },
+                                {
+                                    "id": "i9gpw4p",
+                                    "author": "No_Travel6306",
+                                    "score": 1,
+                                    "created_utc": 1653149923.0,
+                                    "response": "Do some research please .",
+                                    "depth": 3,
+                                    "comments": []
                                 }
                             ]
                         }
                     ]
                 },
                 {
-                    "id": "i9fd4z1",
-                    "author": "acathla0614",
-                    "score": 7,
-                    "created_utc": 1653118270.0,
-                    "response": "Hardware wallet never exposes your seed (keys) to the internet. A software wallet would store your keys on the device. If you device is infected with malware, your keys would be exposed.\n\nEven if it's not a virus, there was a case where iCloud was backing up the victim's MetaMask cache and a hacker got into the iCloud account and stole everything associated with the MetaMask wallets.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i9fevb4",
                     "author": "DingWrong",
-                    "score": 27,
+                    "score": 34,
                     "created_utc": 1653119835.0,
                     "response": "Using ledger is pointless if you are going to expose your seed in metamask. You use ledger to sign transactions and it can only do that while connected.",
                     "depth": 1,
@@ -112,17 +112,54 @@
                             "depth": 2,
                             "comments": [
                                 {
+                                    "id": "i9gglcg",
+                                    "author": "-spooky_ghost",
+                                    "score": 10,
+                                    "created_utc": 1653145637.0,
+                                    "response": "No it's noting like 2fa. Dunno why this other guy said it is.\n\nAn example of cold storage is having a private and public key written down on paper. You can then send crypto to your public key and only ever need to type the private key into something like metamask when you want to send crypto. It's kinda like an air gap that keeps your crypto safe (untill you type the private key into some software to send money)\n\nThen you have hardware wallets like ledger that sign transactions on the device it's self. It is 1 way communication so even if your device is compromy you can still sign transactions and a hacker cannot get your keys.\n\nIt's a just safer way to sign transactions. metamask stores your keys on your computer protected by noting but a password. If someone can gain access to your computer either directly or via remote access it is pretty easy to steal those keys.\n\nAnd yes you can use the same key in meta mask, ledger, trezor or any sort of hardware / software that implements the BIP32 protocol",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9grj59",
+                                    "author": "DingWrong",
+                                    "score": 3,
+                                    "created_utc": 1653150677.0,
+                                    "response": "More like encrypted storage devide for your keys.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
                                     "id": "i9g6wss",
                                     "author": "filipesmedeiros",
-                                    "score": 5,
+                                    "score": 2,
                                     "created_utc": 1653141017.0,
                                     "response": "Yes!",
                                     "depth": 3,
                                     "comments": [
                                         {
+                                            "id": "i9gt4qc",
+                                            "author": "solled",
+                                            "score": 6,
+                                            "created_utc": 1653151405.0,
+                                            "response": "Huh? It\u2019s not at all like 2fa. Not technically, theoretically, nor practically.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9gtocw",
+                                                    "author": "filipesmedeiros",
+                                                    "score": -1,
+                                                    "created_utc": 1653151658.0,
+                                                    "response": "From a UX point of view.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
                                             "id": "i9g7la2",
                                             "author": "Trixteri",
-                                            "score": 2,
+                                            "score": 1,
                                             "created_utc": 1653141365.0,
                                             "response": "ty for letting me know",
                                             "depth": 4,
@@ -131,17 +168,26 @@
                                     ]
                                 },
                                 {
-                                    "id": "i9gglcg",
-                                    "author": "-spooky_ghost",
+                                    "id": "i9gpzbc",
+                                    "author": "jackob50",
                                     "score": 1,
-                                    "created_utc": 1653145637.0,
-                                    "response": "No it's noting like 2fa. Dunno why this other guy said it is.\n\nAn example of cold storage is having a private and public key written down on paper. You can then send crypto to your public key and only ever need to type the private key into something like metamask when you want to send crypto. It's kinda like an air gap that keeps your crypto safe (untill you type the private key into some software to send money)\n\nThen you have hardware wallets like ledger that sign transactions on the device it's self. It is 1 way communication so even if your device is compromy you can still sign transactions and a hacker cannot get your keys.\n\nIt's a just safer way to sign transactions. metamask stores your keys on your computer protected by noting but a password. If someone can gain access to your computer either directly or via remote access it is pretty easy to steal those keys.\n\nAnd yes you can use the same key in meta mask, ledger, trezor or any sort of hardware / software that implements the BIP32 protocol",
+                                    "created_utc": 1653149964.0,
+                                    "response": "That's not accurate but it's a good example and metaphore.\n\n\nYou are giving order or permission for a transaction through the ui software that is metamask. But the hardwallet has to give the ultimate permission.\n\n\nWhen you connect your hardwallet to metamask you don't share your seed.",
                                     "depth": 3,
                                     "comments": []
                                 }
                             ]
                         }
                     ]
+                },
+                {
+                    "id": "i9fd4z1",
+                    "author": "acathla0614",
+                    "score": 7,
+                    "created_utc": 1653118270.0,
+                    "response": "Hardware wallet never exposes your seed (keys) to the internet. A software wallet would store your keys on the device. If you device is infected with malware, your keys would be exposed.\n\nEven if it's not a virus, there was a case where iCloud was backing up the victim's MetaMask cache and a hacker got into the iCloud account and stole everything associated with the MetaMask wallets.",
+                    "depth": 1,
+                    "comments": []
                 },
                 {
                     "id": "i9fcu4d",
@@ -173,7 +219,7 @@
                 {
                     "id": "i9frr4z",
                     "author": "CryptoAnarchyst",
-                    "score": -9,
+                    "score": -8,
                     "created_utc": 1653131497.0,
                     "response": "Cold wallets are pointless. You have about as much chance of losing the wallet, having it malfunction, or generally having shit happen on it than you have by holding money on an exchange. Biggest security flaw in the system is you, so if you do the right things your money is safe and sound. \n\nHere's a kicker, all Samsung phones have a dedicated hardware wallet... But does anyone use it? Noooo",
                     "depth": 1,
@@ -181,7 +227,7 @@
                         {
                             "id": "i9fu6aj",
                             "author": "Locko_O",
-                            "score": 4,
+                            "score": 5,
                             "created_utc": 1653133336.0,
                             "response": "Absolutely wrong, misinformation",
                             "depth": 2,
@@ -189,7 +235,7 @@
                                 {
                                     "id": "i9fu8ag",
                                     "author": "CryptoAnarchyst",
-                                    "score": -7,
+                                    "score": -5,
                                     "created_utc": 1653133375.0,
                                     "response": "Lmao... Wanna bet?",
                                     "depth": 3,
@@ -205,7 +251,7 @@
                                                 {
                                                     "id": "i9fuf3c",
                                                     "author": "CryptoAnarchyst",
-                                                    "score": -5,
+                                                    "score": -4,
                                                     "created_utc": 1653133512.0,
                                                     "response": "Wow, that's so... Irrelevant...",
                                                     "depth": 5,
@@ -221,7 +267,7 @@
                                                                 {
                                                                     "id": "i9funjo",
                                                                     "author": "CryptoAnarchyst",
-                                                                    "score": -1,
+                                                                    "score": -4,
                                                                     "created_utc": 1653133681.0,
                                                                     "response": "Prove me wrong... I dare you",
                                                                     "depth": 7,
@@ -299,11 +345,21 @@
                         {
                             "id": "i9g4w2a",
                             "author": "MacroHard_0",
-                            "score": 1,
+                            "score": -1,
                             "created_utc": 1653139956.0,
-                            "response": "Not really. I connected my hardware wallet to a hot wallet (imported hardware wallet in metamask), I believe my hardware wallet is still cold because I have to sign each transaction on hardware wallet.",
+                            "response": "Not really. I connected my hardware wallet to a hot wallet (imported hardware wallet in metamask), I believe my hardware wallet is still cold because I have to sign each transaction on hardware wallet.\n\nEdit: Anyone, please correct me if I am wrong. Would love to learn.",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i9hlsbf",
+                                    "author": "ConceptualWeeb",
+                                    "score": 1,
+                                    "created_utc": 1653165053.0,
+                                    "response": "You\u2019re wrong, read the other comments for why.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         }
                     ]
                 },
@@ -365,7 +421,37 @@
                                                     "created_utc": 1653145360.0,
                                                     "response": "No, you can look at everything without plugging it in. The ledger just holds the keys, everything else is on chain.",
                                                     "depth": 5,
-                                                    "comments": []
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9gprx1",
+                                                            "author": "deepoak40965",
+                                                            "score": 1,
+                                                            "created_utc": 1653149870.0,
+                                                            "response": "Can I generate my BTC address on ledger live without plugging my device in? \n\nSecondly, does my BTC wallet on ledger live generate a different address every time I click on it to receive funds? \n\nThanks so much for helping !",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9gxjep",
+                                                                    "author": "mooremo",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653153413.0,
+                                                                    "response": ">Can I generate my BTC address on ledger live without plugging my device in? \n\nNo.\n\n>Secondly, does my BTC wallet on ledger live generate a different address every time I click on it to receive funds? \n\nLedger Live automatically generates a fresh change address for every new transaction that does not fully spend its inputs.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9gzpoj",
+                                                                            "author": "deepoak40965",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653154391.0,
+                                                                            "response": "Sincerely appreciated !",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }
@@ -405,15 +491,6 @@
                     ]
                 },
                 {
-                    "id": "i9gi07s",
-                    "author": "Sorry_Attitude_",
-                    "score": 1,
-                    "created_utc": 1653146289.0,
-                    "response": "A cold wallet is basically a card that is not connected to anything, a safe storage, vault of sorts for your money, impenetrable ONLY IF YOU DO NOT CONNECT IT TO ANY WALLET\n\nIf you connect the passphrase to a service it become kinda useless since you connected it to the internet and service like a Dex and then can be hacked or drained if your not careful of what goes into your computer\n\nThis is why if you're going to Hodl, buy anything you wanna hodl, you gotta use a cold wallet and send everything in there, even NFT's\n\nThat's what i plan to do with my Angelblock NFT's when they mint in 3 days, that shit has to be kept safe no matter what",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i9gmltx",
                     "author": "3141666",
                     "score": 1,
@@ -421,6 +498,53 @@
                     "response": "The point of the hardware wallet is to protect the key. You could keep just the key/seed on paper or in your brain (let's assume perfect memory for the sake of this argument). You could receive transactions that way, but how would you make transactions? Not possible, that's where Ledger/Trezor comes in, to sign transactions while keeping the seed as safe as possible.",
                     "depth": 1,
                     "comments": []
+                },
+                {
+                    "id": "i9gr0pv",
+                    "author": "Frogmangy",
+                    "score": 1,
+                    "created_utc": 1653150440.0,
+                    "response": "The electric fees for all the refrigerant gets expensive",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9gi07s",
+                    "author": "Sorry_Attitude_",
+                    "score": 0,
+                    "created_utc": 1653146289.0,
+                    "response": "A cold wallet is basically a card that is not connected to anything, a safe storage, vault of sorts for your money, impenetrable ONLY IF YOU DO NOT CONNECT IT TO ANY WALLET\n\nIf you connect the passphrase to a service it become kinda useless since you connected it to the internet and service like a Dex and then can be hacked or drained if your not careful of what goes into your computer\n\nThis is why if you're going to Hodl, buy anything you wanna hodl, you gotta use a cold wallet and send everything in there, even NFT's\n\nThat's what i plan to do with my Angelblock NFT's when they mint in 3 days, that shit has to be kept safe no matter what",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9h47r8",
+                            "author": "Trixteri",
+                            "score": 2,
+                            "created_utc": 1653156467.0,
+                            "response": "\"That's what i plan to do with my Angelblock NFT's when they mint in 3 days\"\n\n&#x200B;\n\nnice promo scam, idgaf",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9god1d",
+                    "author": "randomWIGHT9000",
+                    "score": 0,
+                    "created_utc": 1653149217.0,
+                    "response": "If it's pointless then type it in here for us",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9h3uku",
+                            "author": "Trixteri",
+                            "score": 1,
+                            "created_utc": 1653156291.0,
+                            "response": "i never said my seed was pointless..\n\nlearn to read bro",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 }
             ]
         }

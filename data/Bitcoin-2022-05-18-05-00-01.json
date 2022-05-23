@@ -9,221 +9,6 @@
     ],
     "posts": [
         {
-            "id": "us52cw",
-            "title": "Wasabi Wallet has become a surveillance instrument- here\u2019s how to use the wallet without blacklists/censorship/surveillance etc",
-            "url": "https://www.reddit.com/r/Bitcoin/comments/us52cw/wasabi_wallet_has_become_a_surveillance/",
-            "author": "under_dnuorg",
-            "created_utc": 1652849413.0,
-            "score": 47,
-            "num_comments": 21,
-            "subreddit": "Bitcoin",
-            "selftext": "Earlier this year (March 3rd) Wasabi Wallet announced that \"the zkSnacks coordinator will start refusing certain utxos from registering to conjoins\". zkSnacks Ltd is the company running Wasabi Wallet. Meaning Wasabi Wallet will be analyzing its users bitcoin inputs and deciding- on undisclosed criteria/sanctions/blacklists- if they accept your bitcoin or not. This means that coinjoining with wasabiwallet has become like dealing with any other big Bitcoin company/exchange in the space complying with KYC/AML/sanctions- and everything that comes with blacklisting. This is the beginning of a slippery slope which can not be tolerated by any Bitcoiner who understands its consequences.\n\nChanging the following settings enables use of a different- and proper anonymous- coordinator. (SAKE) Making it possible to use Wasabi without any of the blacklists/censorship/surveillance etc.\n\n1- Open Wasabi + file-open-config file\n\n2- Change- *MainNetBackendUriV3: http://wasabiukrxmkdgveSkynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/*\n\nTo- *MainNetBackendUriv3: http://sakeazyzcx6gcmyv7ijduvogwpieewsk6mrjzgxciu2x2sfsyij6ogid.onion/*\n\n3- Change- *MainNetFallbackBackendUri: https://wasabiwallet.io/*\n\nTo- *MainNetFallbackBackendUri: http://sakeazyzex6gcmyv7ijduvogwpieewsk6mrjzgxciu2x2sfsyij6ogid.onion/*\n\n4- Restart Wasabi",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i91k385",
-                    "author": "steuer2teuer",
-                    "score": 9,
-                    "created_utc": 1652853488.0,
-                    "response": "How can we trust this other coordinator? Can you tell more about it?",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i91ks4p",
-                            "author": "under_dnuorg",
-                            "score": 4,
-                            "created_utc": 1652854016.0,
-                            "response": "Considering Wasabi is open source it\u2019s not Wasabi that\u2019s the problem its the zkSnacks run coordinator- which is compromised. SAKE is just a viable alternative anonymous coordinator- users can also spin up a coordinator.\n\nTo further answer your question- you should not trust them, nor anyone. In regards to Bitcoin operating inside an open source and trust-less system is imperative.",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i92wc8d",
-                                    "author": "steuer2teuer",
-                                    "score": 1,
-                                    "created_utc": 1652885773.0,
-                                    "response": "Thanks for further explaining, and you're right about the trust aspect of things.\n\nAre there any downsides to using SAKE instead of zkSnack's coordinator? Does it only coordinate with other SAKE users? Sorry, i'm very unfamiliar with how coordinators work.",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i91nlud",
-                    "author": "5liveR",
-                    "score": 5,
-                    "created_utc": 1652856291.0,
-                    "response": "I don't use their Cj anymore. Do they also surveil the wallets too ? I use the Coldcard through their client, thats why",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i91rxww",
-                            "author": "Quantris",
-                            "score": 7,
-                            "created_utc": 1652860051.0,
-                            "response": "No, this issue is only about the coordinator which they run for coinjoins. Normal wallet functionality isn't related to that.",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i92cg2p",
-                                    "author": "5liveR",
-                                    "score": 3,
-                                    "created_utc": 1652876342.0,
-                                    "response": "thanks",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i91hw7i",
-                    "author": "mrarjonny",
-                    "score": 7,
-                    "created_utc": 1652851846.0,
-                    "response": "Use Sparrow",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i91yvl0",
-                            "author": "k0b13",
-                            "score": 3,
-                            "created_utc": 1652866533.0,
-                            "response": "How is it different from Samurai when it comes to whirlpool?",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i92dsaq",
-                                    "author": "Squigglywiggler",
-                                    "score": 2,
-                                    "created_utc": 1652877085.0,
-                                    "response": "It uses samurai\u2019s whirlpool I believe",
-                                    "depth": 3,
-                                    "comments": [
-                                        {
-                                            "id": "i92wvg8",
-                                            "author": "mrarjonny",
-                                            "score": 1,
-                                            "created_utc": 1652885996.0,
-                                            "response": "Ya exactly you use Sparrow to connect with Samourai Whirlpool.\n\nWasabi can be demixed it reuses addresses.  This is only one of the reasons to not to use it at all.\n\nhttps://youtu.be/alcLdBsoDDg",
-                                            "depth": 4,
-                                            "comments": []
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i91wrn8",
-                    "author": "davidcwilliams",
-                    "score": 3,
-                    "created_utc": 1652864569.0,
-                    "response": "> slippery slop\n\nLike an Eminem lyric.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i91wufb",
-                            "author": "under_dnuorg",
-                            "score": 1,
-                            "created_utc": 1652864638.0,
-                            "response": "Ha ha oops",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i91jlfa",
-                    "author": "Marcion_Sinope",
-                    "score": 1,
-                    "created_utc": 1652853105.0,
-                    "response": "Boycott.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i91mhmq",
-                    "author": "HappyCommunication81",
-                    "score": 1,
-                    "created_utc": 1652855370.0,
-                    "response": "Why would I want to use this? Why would I want to coinjoin with UTXOs from addresses that are sanctioned by the US?\n\n>Wasabi Wallet has become a surveillance instrument\n\nHow can Wasabi Wallet be a surveillance instrument when Wasabi and the zkSnacks coordinator don't know which UTXOs belong to who?\n\n>This means that coinjoining with wasabiwallet has become like dealing with any other big Bitcoin company/exchange in the space complying with KYC/AML/sanctions\n\nWasabi Wallet doesn't do any KYC/AML. It doesn't ask for your name or personal information. I'm sure Wasabi complies with US sanctions.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i91nba0",
-                            "author": "under_dnuorg",
-                            "score": 2,
-                            "created_utc": 1652856051.0,
-                            "response": "Wasabi Wallet codebase is open source- in this sense you\u2019re right it\u2019s not kyc- however the default coordinator is zkSnacks. They\u2019ve decided to start determining whether to accept or refuse certain utxos from registering to coinjoin. \n\nIt\u2019s not a matter of choosing to coinjoin with sanctioned addresses- it\u2019s the transparency to be able to- without a bad actor having the power to intervene.",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i9213ni",
-                                    "author": "neonzzzzz",
-                                    "score": 1,
-                                    "created_utc": 1652868500.0,
-                                    "response": "> without a bad actor having the power to intervene\n\nAny coordinator you use with Wasabi has the power to block certain UTXOs.",
-                                    "depth": 3,
-                                    "comments": [
-                                        {
-                                            "id": "i924x20",
-                                            "author": "under_dnuorg",
-                                            "score": 1,
-                                            "created_utc": 1652871531.0,
-                                            "response": "You\u2019re right any coordinator has this power- the difference is the bad actor has proper motive/benefit to doing surveillance/blacklisting. An anonymous actor has none.",
-                                            "depth": 4,
-                                            "comments": []
-                                        },
-                                        {
-                                            "id": "i92so0z",
-                                            "author": "ElephantsAreHeavy",
-                                            "score": 1,
-                                            "created_utc": 1652884219.0,
-                                            "response": "You, being able to chose the coordinator, have the ultimate power.",
-                                            "depth": 4,
-                                            "comments": []
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i91wi3e",
-                    "author": "Bitcoin__Hodler",
-                    "score": 1,
-                    "created_utc": 1652864330.0,
-                    "response": "thx for the info",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i91wfhz",
-                    "author": "segersh",
-                    "score": -1,
-                    "created_utc": 1652864264.0,
-                    "response": "Mercury Wallet is the best in the business.\nwww.mercurywallet.com[Mercury Wallet](https://www.mercurywallet.com)",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i920af5",
-                            "author": "MuchTemperature6776",
-                            "score": 1,
-                            "created_utc": 1652867794.0,
-                            "response": "I like Muun better and seems like a better choice too since you actually have the private key yourself and in your recovery kit you have all your keys yourself.\n\nhttps://blog.muun.com/muuns-multisig-model/\n\nhttps://muun.com",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "id": "us57cm",
             "title": "Can Bitcoin scale to billions of users?",
             "url": "https://www.reddit.com/r/Bitcoin/comments/us57cm/can_bitcoin_scale_to_billions_of_users/",
@@ -945,6 +730,269 @@
                     "response": "Could billion of users focus their attention on Bitcoin? - YES\n\nPromoting second layers of bitcoin is alchemy, at some point they will understand the difference between less pure bitcoin and the original one that satoshi left.",
                     "depth": 1,
                     "comments": []
+                }
+            ]
+        },
+        {
+            "id": "us52cw",
+            "title": "Wasabi Wallet has become a surveillance instrument- here\u2019s how to use the wallet without blacklists/censorship/surveillance etc",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/us52cw/wasabi_wallet_has_become_a_surveillance/",
+            "author": "under_dnuorg",
+            "created_utc": 1652849413.0,
+            "score": 50,
+            "num_comments": 28,
+            "subreddit": "Bitcoin",
+            "selftext": "Earlier this year (March 3rd) Wasabi Wallet announced that \"the zkSnacks coordinator will start refusing certain utxos from registering to conjoins\". zkSnacks Ltd is the company running Wasabi Wallet. Meaning Wasabi Wallet will be analyzing its users bitcoin inputs and deciding- on undisclosed criteria/sanctions/blacklists- if they accept your bitcoin or not. This means that coinjoining with wasabiwallet has become like dealing with any other big Bitcoin company/exchange in the space complying with KYC/AML/sanctions- and everything that comes with blacklisting. This is the beginning of a slippery slope which can not be tolerated by any Bitcoiner who understands its consequences.\n\nChanging the following settings enables use of a different- and proper anonymous- coordinator. (SAKE) Making it possible to use Wasabi without any of the blacklists/censorship/surveillance etc.\n\n1- Open Wasabi + file-open-config file\n\n2- Change- *MainNetBackendUriV3: http://wasabiukrxmkdgveSkynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/*\n\nTo- *MainNetBackendUriv3: http://sakeazyzcx6gcmyv7ijduvogwpieewsk6mrjzgxciu2x2sfsyij6ogid.onion/*\n\n3- Change- *MainNetFallbackBackendUri: https://wasabiwallet.io/*\n\nTo- *MainNetFallbackBackendUri: http://sakeazyzex6gcmyv7ijduvogwpieewsk6mrjzgxciu2x2sfsyij6ogid.onion/*\n\n4- Restart Wasabi",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i91k385",
+                    "author": "steuer2teuer",
+                    "score": 13,
+                    "created_utc": 1652853488.0,
+                    "response": "How can we trust this other coordinator? Can you tell more about it?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91ks4p",
+                            "author": "under_dnuorg",
+                            "score": 9,
+                            "created_utc": 1652854016.0,
+                            "response": "Considering Wasabi is open source it\u2019s not Wasabi that\u2019s the problem its the zkSnacks run coordinator- which is compromised. SAKE is just a viable alternative anonymous coordinator- users can also spin up a coordinator.\n\nTo further answer your question- you should not trust them, nor anyone. In regards to Bitcoin operating inside an open source and trust-less system is imperative.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92wc8d",
+                                    "author": "steuer2teuer",
+                                    "score": 3,
+                                    "created_utc": 1652885773.0,
+                                    "response": "Thanks for further explaining, and you're right about the trust aspect of things.\n\nAre there any downsides to using SAKE instead of zkSnack's coordinator? Does it only coordinate with other SAKE users? Sorry, i'm very unfamiliar with how coordinators work.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i91nlud",
+                    "author": "5liveR",
+                    "score": 7,
+                    "created_utc": 1652856291.0,
+                    "response": "I don't use their Cj anymore. Do they also surveil the wallets too ? I use the Coldcard through their client, thats why",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91rxww",
+                            "author": "Quantris",
+                            "score": 13,
+                            "created_utc": 1652860051.0,
+                            "response": "No, this issue is only about the coordinator which they run for coinjoins. Normal wallet functionality isn't related to that.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92cg2p",
+                                    "author": "5liveR",
+                                    "score": 4,
+                                    "created_utc": 1652876342.0,
+                                    "response": "thanks",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i93zo03",
+                    "author": "whitslack",
+                    "score": 3,
+                    "created_utc": 1652901730.0,
+                    "response": "Use JoinMarket. It has no central coordinator.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i945apo",
+                            "author": "yearnlearning115",
+                            "score": 1,
+                            "created_utc": 1652904016.0,
+                            "response": "How does that work, a network of coordinators? Does it survive DDosing?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i951a76",
+                                    "author": "whitslack",
+                                    "score": 1,
+                                    "created_utc": 1652917970.0,
+                                    "response": "Whoever wants to perform a CoinJoin *right now* is the \"taker\" and coordinator, and they obtain UTxOs and signatures from JoinMarket makers. The taker pays the makers for their liquidity. If no one is desperate to join their coins at any given time, then no joins occur. Effectively, participants with high time preference pay join fees to participants with low time preference.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9ied1i",
+                                            "author": "yearnlearning115",
+                                            "score": 1,
+                                            "created_utc": 1653180060.0,
+                                            "response": "is it a centralized source or is it a distributed market place?",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i91hw7i",
+                    "author": "mrarjonny",
+                    "score": 8,
+                    "created_utc": 1652851846.0,
+                    "response": "Use Sparrow",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91yvl0",
+                            "author": "k0b13",
+                            "score": 3,
+                            "created_utc": 1652866533.0,
+                            "response": "How is it different from Samurai when it comes to whirlpool?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i92dsaq",
+                                    "author": "Squigglywiggler",
+                                    "score": 3,
+                                    "created_utc": 1652877085.0,
+                                    "response": "It uses samurai\u2019s whirlpool I believe",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i92wvg8",
+                                            "author": "mrarjonny",
+                                            "score": 0,
+                                            "created_utc": 1652885996.0,
+                                            "response": "Ya exactly you use Sparrow to connect with Samourai Whirlpool.\n\nWasabi can be demixed it reuses addresses.  This is only one of the reasons to not to use it at all.\n\nhttps://youtu.be/alcLdBsoDDg",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i91wrn8",
+                    "author": "davidcwilliams",
+                    "score": 2,
+                    "created_utc": 1652864569.0,
+                    "response": "> slippery slop\n\nLike an Eminem lyric.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91wufb",
+                            "author": "under_dnuorg",
+                            "score": 1,
+                            "created_utc": 1652864638.0,
+                            "response": "Ha ha oops",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i91jlfa",
+                    "author": "Marcion_Sinope",
+                    "score": 2,
+                    "created_utc": 1652853105.0,
+                    "response": "Boycott.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91mhmq",
+                    "author": "HappyCommunication81",
+                    "score": 2,
+                    "created_utc": 1652855370.0,
+                    "response": "Why would I want to use this? Why would I want to coinjoin with UTXOs from addresses that are sanctioned by the US?\n\n>Wasabi Wallet has become a surveillance instrument\n\nHow can Wasabi Wallet be a surveillance instrument when Wasabi and the zkSnacks coordinator don't know which UTXOs belong to who?\n\n>This means that coinjoining with wasabiwallet has become like dealing with any other big Bitcoin company/exchange in the space complying with KYC/AML/sanctions\n\nWasabi Wallet doesn't do any KYC/AML. It doesn't ask for your name or personal information. I'm sure Wasabi complies with US sanctions.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i91nba0",
+                            "author": "under_dnuorg",
+                            "score": 5,
+                            "created_utc": 1652856051.0,
+                            "response": "Wasabi Wallet codebase is open source- in this sense you\u2019re right it\u2019s not kyc- however the default coordinator is zkSnacks. They\u2019ve decided to start determining whether to accept or refuse certain utxos from registering to coinjoin. \n\nIt\u2019s not a matter of choosing to coinjoin with sanctioned addresses- it\u2019s the transparency to be able to- without a bad actor having the power to intervene.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9213ni",
+                                    "author": "neonzzzzz",
+                                    "score": 1,
+                                    "created_utc": 1652868500.0,
+                                    "response": "> without a bad actor having the power to intervene\n\nAny coordinator you use with Wasabi has the power to block certain UTXOs.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i924x20",
+                                            "author": "under_dnuorg",
+                                            "score": 3,
+                                            "created_utc": 1652871531.0,
+                                            "response": "You\u2019re right any coordinator has this power- the difference is the bad actor has proper motive/benefit to doing surveillance/blacklisting. An anonymous actor has none.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i92so0z",
+                                            "author": "ElephantsAreHeavy",
+                                            "score": 1,
+                                            "created_utc": 1652884219.0,
+                                            "response": "You, being able to chose the coordinator, have the ultimate power.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i91wi3e",
+                    "author": "Bitcoin__Hodler",
+                    "score": 2,
+                    "created_utc": 1652864330.0,
+                    "response": "thx for the info",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i95w48e",
+                    "author": "Lagavulin",
+                    "score": 1,
+                    "created_utc": 1652933052.0,
+                    "response": "Wasabi has jumped the shark. No need for it, don\u2019t negotiate with it.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i91wfhz",
+                    "author": "segersh",
+                    "score": -2,
+                    "created_utc": 1652864264.0,
+                    "response": "Mercury Wallet is the best in the business.\nwww.mercurywallet.com[Mercury Wallet](https://www.mercurywallet.com)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i920af5",
+                            "author": "MuchTemperature6776",
+                            "score": 0,
+                            "created_utc": 1652867794.0,
+                            "response": "I like Muun better and seems like a better choice too since you actually have the private key yourself and in your recovery kit you have all your keys yourself.\n\nhttps://blog.muun.com/muuns-multisig-model/\n\nhttps://muun.com",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 }
             ]
         }
