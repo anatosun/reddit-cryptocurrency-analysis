@@ -38,7 +38,7 @@ class CurrentPriceFetcher():
         for i in range(0,days):
             s = start+i*24*60*60
             
-            print(s, time.time())
+            #print(s, time.time())
             if s > time.time():
                 #l.append(self.fetch_daily_data(symbol, s))
                 break
