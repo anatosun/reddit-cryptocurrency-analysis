@@ -37,9 +37,15 @@ class CurrentPriceFetcher():
         l = []
         for i in range(0,days):
             s = start+i*24*60*60
-            time.sleep(1)
+            
+            print(s, time.time())
+            if s > time.time():
+                #l.append(self.fetch_daily_data(symbol, s))
+                break
+
             print(f'fetching: day {i} for {symbol}')
             l.append(self.fetch_daily_data(symbol, s))
+            time.sleep(1)
 
         return pd.concat(l)
     
@@ -58,4 +64,4 @@ if __name__ == "__main__":
     fetcher = CurrentPriceFetcher()
 
     start = 1648771200 #1.4.22 00:00
-    fetcher.dump_symbols(['BTC/USD', 'ETH/USD', 'DOGE/USD'], start, 5, './data/price/')    
+    fetcher.dump_symbols(['BTC/USD', 'ETH/USD', 'DOGE/USD'], start, 100, './data/price/')    
