@@ -1,4 +1,6 @@
-In this section we pursue with the analysis of data scrapped on several cryptocurrency subreddits. More precisely, we use social media analytics on the network that we built in the previous section. Firstly, we investigate if our network follows a power law distribution as it should. Secondly, we discuss the results of the PageRank algorithm on the network. Thirdly, we run Louvain community detection algorithm and compare the results with the existing subreddits.
+In this section we pursue with the analysis of data scrapped on several cryptocurrency subreddits. More precisely, we use social media analytics on the network that we built in the previous section. Firstly, we investigate if our network follows a power law distribution as it should. Secondly, we discuss the results of the PageRank algorithm on the network. Thirdly, we run Louvain community detection algorithm and compare the results with the existing subreddits. And finally we analyse the price development of the Bitcoin and try to find a correlation with our data.
+
+\subsection{Power Law Distribution}
 
 The power law distribution in a network can be understood as ``a few users are very popular and a lot of users are mildly or not popular at all''. Intuitively, this relation holds in our network composed of vertices as users and edges representing the comment relation. Indeed, when browsing Reddit in general, we may notice that a few comments (users) are very popular (have a very high score) as others are not. This intuition reveals itself true when plotting the node degree distribution (see fig. \ref{fig:degdist}). This is encouraging in relation to our network model and further analysis.
 \begin{figure}[Hb!]
@@ -9,6 +11,8 @@ The power law distribution in a network can be understood as ``a few users are v
 \end{figure}
 
 
+
+\subsection{Page Rank}
 
 Regarding PageRank (PR), it can be interpreted as the amount of random walks in the network that end up on a particular vertex. For our network, it means that the higher the rank of one user is, the higher the probability is of commenting one post of that particular user. We decide here to investigate the steadiness of PR over 15 days. We might observe unsteadiness on figure \ref{fig:rankdays} but this is not entirely true with respect to the PageRank. First, this is true that the graph evolves quite rapidly over the days. The same users will not necessarily be active twice on the same comment over multiple days. This observation has been done by computing the set of users over the days and devising the similarity for each successive day. Let $U_i$ be the set of users for day $i$, then $s\left(i,j\right)$ is the similarity between day $i$ and $j$ such that $$s\left(i,j\right)=\frac{U_i\cap U_{j}}{U_i\cup U_{j}}.$$ We get the graph at figure \ref{fig:simdays}. However, the PR itself seems to be pretty consistent over the days when we compute the sum of the squared error between the intersected PR values as shown in graph \ref{fig:errordays} where the error only spikes to a value of $0.005$. We can conclude from these two observations that, although there are few overlapping users over the days, the ones that overlap tend to be very popular for a long period. This also means that in the cryptocurrency subreddits, posts tend to have a lasting interest for the users.
 \begin{figure}[hb!]
@@ -29,3 +33,30 @@ Regarding PageRank (PR), it can be interpreted as the amount of random walks in 
     \caption{Sum of the squared error of PageRank values over intersected user sets between the 1st and the 15th May.}
     \label{fig:errordays}
 \end{figure}
+
+
+\subsection{Louvain}
+
+
+\subsection{Correlation to price development}
+
+We wanted to capture the activity of our data. To do so, we group our data by some time window; we chose 1 hour. We create a graph G[0] from the first time window. Then we create a second graph G[1] from the first union second time window. We continue until we have an inclusion sequence such that 
+$$ G[0] \subset G[1] \subset  ... \subset G[n-1].$$
+
+Then, we use the degree centrality to compare each graph with its subsequent graph. This results into a table where we have for each user (node) the development of its activity (degree). With this huge dataset, it is now possible to track users and also identify the most active users. However, since this requires lots of computation power and much more work to get something meaningful from this, we opted for the option to sum each time frame (e.g. 1 hour in our case). 
+
+We're now at that stage where one could run some correlation method on our summed activity dataset against the price data. However, this will not yield good results as both datasets are very volatile. Therefor we needed to smoothen our data somehow. We opted for the moving window average method. We took both datasets and computed moving window averages with step 2, 3, 4, ..., 30.
+
+% figure activity_x_price.pdf 
+% figure acvitity_sums_ma.pdf
+
+
+Then we compared each activity moving window average for each price moving window average using two of pandas built-in correlation methods, namely Pearson, Spearman and we also tried the The Hilbert–Schmidt independence criterion (HSIC). The first two methods deliver strong correlation coefficients (up to 0.87), while the HISC does not. Also, we notcied that the correlation differs depending on how much days (from when to when) we try to correlate. We've found that more than 10 days usually yields better results.
+
+% figures:
+% pearson.pdf
+% spearman.pdf
+% hisc.pdf
+
+
+
