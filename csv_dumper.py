@@ -1,6 +1,9 @@
 import json
 import os
 import pandas as pd
+import sys
+
+enable_ucartesian = False
 
 class CSVDumper():
     def __init__(self):
@@ -21,7 +24,8 @@ class CSVDumper():
                 self.parse_comments_deep_link(post['comments'], [(post['author'], 1)], subreddit['subreddit'])
                 self.parse_comments_deep_link_no_merge(post['comments'], [(post['author'], 1)], subreddit['subreddit'])
                 self.parse_comments_next_link(post['comments'], [(post['author'], 1)], subreddit['subreddit'])
-                self.parse_comments_ucartesian_link(post['comments'], post['author'], subreddit['subreddit'])
+                if enable_ucartesian:
+                    self.parse_comments_ucartesian_link(post['comments'], post['author'], subreddit['subreddit'])
 
     def parse_comments_pd(self, post, sub):
         self.data.append((post['id'], post['author'], post['score'], post['created_utc'], 1, sub))
@@ -112,8 +116,15 @@ class CSVDumper():
                 self.parse_comments_deep_link_no_merge(comment['comments'], context + [(comment['author'], comment['depth'])], sub)
     
     def parse_folder(self, folder):
-        for file in os.listdir(os.path.join(folder)):
+        l = os.listdir(os.path.join(folder))
+        l_len = len(l)
+
+        i = 0
+        for file in l:
             if file.endswith(".json"):
+                i += 1
+                print("\r", end='')
+                print(f'Progress: {(i/l_len)*100}', end='', flush=True)
                 self.parse_json_file(os.path.join(folder, file))
 
     def prep_df(self):
@@ -143,7 +154,8 @@ class CSVDumper():
             pd.DataFrame(columns = ["source", "target", "weight"],data=d).to_csv(file, index=False)
 
         #dump ucartesian
-        self.parse_comments_ucartesian_link_dump(folder)
+        if enable_ucartesian:
+            self.parse_comments_ucartesian_link_dump(folder)
 
         #dump nomerge
         file = f"{folder}/edges_deep_link_no_merge.csv"
@@ -157,7 +169,7 @@ class CSVDumper():
 
 if __name__ == "__main__":
     dp = CSVDumper()
-    dp.parse_folder('test_data')
-    dp.dump_scores('test_data/csv/scores.csv')
-    dp.dump_active_subs('test_data/csv/subs.csv')
-    dp.dump_edges('test_data/csv')
+    dp.parse_folder('data')
+    dp.dump_scores('data/csv/scores.csv')
+    dp.dump_active_subs('data/csv/subs.csv')
+    dp.dump_edges('data/csv')
