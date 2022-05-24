@@ -9,19 +9,6 @@
     ],
     "posts": [
         {
-            "id": "uv7kpv",
-            "title": "The true costs of using the Lightning Network? How BTC scales.",
-            "url": "https://www.reddit.com/r/Bitcoin/comments/uv7kpv/the_true_costs_of_using_the_lightning_network_how/",
-            "author": "Into_The_Wilderness1",
-            "created_utc": 1653212275.0,
-            "score": 2,
-            "num_comments": 0,
-            "subreddit": "Bitcoin",
-            "selftext": "So I've used Lightning Network before, and it was relatively cheap. Having said that, on another S/Reddit, it was pointed out that in high usage times, it can cost up to $50 to open a channel.\n\nI have read a few articles that suggest it can be around 20k Sats at the moment.\n\nMy question is, if LN is meant to allow BTC to scale as a P2P network, is setting up a channel going to be cost prohibitive for most people. I mean, if I have to spend $5-50 each time to set up a new channel, does that defeat the objective of it being a fee-less/cheap payment system? This could go contrary to the narrative that it will be much better to use than the 3% fees you get on Visa?\n\nWondering if anyone can explain this well, as there seems to be a lack of well written articles/information on this.",
-            "stickied": false,
-            "comments": []
-        },
-        {
             "id": "uv7jy8",
             "title": "Toxic Bitcoiner",
             "url": "https://i.redd.it/idparrx1zz091.jpg",
@@ -69,6 +56,329 @@
                     "response": "Metal \ud83e\udd18",
                     "depth": 1,
                     "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uv7kpv",
+            "title": "The true costs of using the Lightning Network? How BTC scales.",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uv7kpv/the_true_costs_of_using_the_lightning_network_how/",
+            "author": "Into_The_Wilderness1",
+            "created_utc": 1653212275.0,
+            "score": 3,
+            "num_comments": 32,
+            "subreddit": "Bitcoin",
+            "selftext": "So I've used Lightning Network before, and it was relatively cheap. Having said that, on another S/Reddit, it was pointed out that in high usage times, it can cost up to $50 to open a channel.\n\nI have read a few articles that suggest it can be around 20k Sats at the moment.\n\nMy question is, if LN is meant to allow BTC to scale as a P2P network, is setting up a channel going to be cost prohibitive for most people. I mean, if I have to spend $5-50 each time to set up a new channel, does that defeat the objective of it being a fee-less/cheap payment system? This could go contrary to the narrative that it will be much better to use than the 3% fees you get on Visa?\n\nWondering if anyone can explain this well, as there seems to be a lack of well written articles/information on this.\n\n[Coin Telegraph Article - Trans. on BTC $60 at peak](https://cointelegraph.com/news/bitcoin-average-transaction-fees-lowest-in-two-years-at-1-04)\n\n[Chart showing Avg Trans at $40 on BTC](https://preview.redd.it/zjmqgsine2u61.png?width=1906&format=png&auto=webp&s=e2272736820305a62c178844fc27363e80c67cac)",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9jpixd",
+                    "author": "pink_raya",
+                    "score": 6,
+                    "created_utc": 1653213319.0,
+                    "response": "noobs in r/btc like to use the number 50$ per tx, which didn't happen since 2017, before the Segwit adoption and during the spam attack by the same ppl.\n\nI haven't paid more than 2$ in years and it's usually below $0.3 for next block fee.\n\nAlso you can buy bitcoin on LN already and you don't need an onchain tx.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9jq2li",
+                            "author": "Into_The_Wilderness1",
+                            "score": 1,
+                            "created_utc": 1653213816.0,
+                            "response": "Worst case scenario though, if demand were to rapidly increase, could we see that type of fee occurring again for the average person? Or has Segwit changed a lot of that.\n\nI need to find some good places to learn more about LN :)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9jqufc",
+                                    "author": "pink_raya",
+                                    "score": 4,
+                                    "created_utc": 1653214507.0,
+                                    "response": "i'd say 3 things changed since '17.\n\n1. gradual adoption of segwit took few years (now 80% of txs) - including exchanges using batching (probably the biggest impact)\n\n2. spam attacks became too expensive and useless - malicious ones but also there were many apps that used blockspace for goofy stuff and became unusable and died as fees increased.\n\n3. fee estimation: wallets sucked at estimating next block fee, if you needed 50sats/byte to get to next block, your wallet would suggest 100sats/byte to be on the safe side, and user will up it to 150sats/byte just in case... and wallets saw it and suggested 200sats/byte for a next one. This changed a lot in 2018.\n\nbest way to learn is to use it, I can suggest Phoenix mobile wallet. When you make a couple transactions, get a copy of Mastering Lightning.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9nwjv9",
+                                            "author": "Into_The_Wilderness1",
+                                            "score": 2,
+                                            "created_utc": 1653296950.0,
+                                            "response": "Thanks for yor thoughts. So with the spamming, was that just something that drove artificial demand for on chain transactions?\n\nThis is why I was confused, I have used Lightning and came no where near to anything like the above graphs/data, so wasn't sure if it's because we're now in a time of low demand and when it runs up again we'd see huge LN fees for setting up a channel and price everyone out of using it.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9nxcc2",
+                                                    "author": "pink_raya",
+                                                    "score": 1,
+                                                    "created_utc": 1653297694.0,
+                                                    "response": "yes, part of it was malicious spamming from bcash crowd to make a case for their shitcoin, but there were apps like roulettes, rolling dice and other silly gambling games, plus other apps used blockspace for timestamping some useless crap that doesn't belong on L1.\n\nI think that regular users will always be able to price out spam, be it malicious or not, but I also expect at some point the regular main chain TX will get expensive.\n\nThe point of LN is you need one L1 tx to make infinite LN txs, so this won't be prohibitive for people that already have btc on main chain - you can top up your channels once a year, and you don't need it to be confirmed next block. But if 1 Satoshi = $1, the minimum tx is ~250bytes, we'll be paying north of ~$250 for a tx.\n\nFor ppl that do not have a stack in cold wallet, they will be onboarded directly to LN, and only move to L1 cold storage once it is economically viable.\n\nAlso, bitcoin L1 scales with a principle troughput>blockspace, so devs are finding ways to fit more transactions into 1mb blocks before even thinking about increasing block space, but at some point that may be inevitable too.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "i9nypr9",
+                                                    "author": "SomeBrokeChump",
+                                                    "score": 1,
+                                                    "created_utc": 1653298980.0,
+                                                    "response": "The people behind the creation of the BCH shitcoin were heavily spamming the Bitcoin network with high fee transactions back in 2017. They were doing it to raise the Bitcoin transaction fees very high in an attempt to get Bitcoin users to switch over to using their shitcoin stead. It didn't work and they wasted a small fortune doing that.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9o0sqi",
+                                                            "author": "Into_The_Wilderness1",
+                                                            "score": 1,
+                                                            "created_utc": 1653300799.0,
+                                                            "response": "Got it, thank you.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9jq96y",
+                    "author": "SomeBrokeChump",
+                    "score": 6,
+                    "created_utc": 1653213973.0,
+                    "response": "That chart you linked to is showing the average of what Bitcoin users have chosen to pay for transaction fees. That chart is not showing the transaction fees that were required to send a bitcoin transaction. Many Bitcoin users and Bitcoin service providers choose to grossly overpay for transaction fees.\n\nThe time it takes for a bitcoin transaction to get included in a block depends on how many bitcoin transactions are currently in the mempool and how large their transaction fees are relative to their weight.\n\nYou can view the transactions that are currently in the mempool and see what an adequate transaction fee for a slow, medium, and fast bitcoin transaction is on this website: https://mempool.space\n\nThe mempool is currently getting cleared after every block. So you can currently send a bitcoin transaction with a transaction fee of just 1 sat/vB and it will get included in the next block. A fee of 1 sat/vB is less than 10 cents worth of sats for a typical small weight transaction.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9npgfb",
+                            "author": "caploves1019",
+                            "score": 1,
+                            "created_utc": 1653290374.0,
+                            "response": "Not to mention the fact most central exchanges are also in bed with miners or are themselves mining on the side. Thus they are all collectively incentivised to set a higher than average miner fee on withdrawal transactions for three reasons:\n\nUsers are likely to withdraw less often,\n\nUsers who do submit a withdraw request are unlikely to be waiting long (helps cut down customer service inquiries),\n\nAnd since the exchanges are also mining or in bed with mining companies, some of the fees end up back in their pockets in a roundabout way.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9nwr2x",
+                            "author": "Into_The_Wilderness1",
+                            "score": 1,
+                            "created_utc": 1653297139.0,
+                            "response": "Thanks for the info. Assuming I wanted to open up a channel quickly, because I was in a shop and wanted to make a quick purchase, would my requirement to expedite the channel opening mean I might actually sometimes be competing with those higher fees that others are willing to pay?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9nye49",
+                                    "author": "SomeBrokeChump",
+                                    "score": 1,
+                                    "created_utc": 1653298686.0,
+                                    "response": "You don't need to open a channel with the shop in the first place. You can have prior channels open with other nodes. The lightning bitcoin payment will automatically be routed across lightning nodes to reach the shop's node. The lightning bitcoin payment will automatically hop across several nodes before reaching the shop's node if needed.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9o0os3",
+                                            "author": "Into_The_Wilderness1",
+                                            "score": 1,
+                                            "created_utc": 1653300702.0,
+                                            "response": "I see, so the cost of setting up the channel is really the cost of me setting up the channel with the rest of the network, in which magic then happens and my payment ends up where I intend it to? :)",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9jx6f1",
+                    "author": "coinjaf",
+                    "score": 3,
+                    "created_utc": 1653219678.0,
+                    "response": "Best just stop visiting moron subs. They bet on the wrong horse because they're scammers and technically illiterate sheep.\n\nThe Blocksize War by Jonathon Bier is a good read.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9nwfja",
+                            "author": "Into_The_Wilderness1",
+                            "score": 2,
+                            "created_utc": 1653296834.0,
+                            "response": "LOL I think I visit them because I want my views challenged, either so I can refine my view so it's better, or to admit I'm completely wrong as I hadn't considered some information they had presented. This feels like it falls into the latter, but there's a good explanation behind it, and not something to worry about :)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9nxhe5",
+                                    "author": "coinjaf",
+                                    "score": 1,
+                                    "created_utc": 1653297827.0,
+                                    "response": "Just be very careful. Scammers stop at nothing when money is involved, which it by definition is when talking about Bitcoin.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9joxyj",
+                    "author": "gotamm",
+                    "score": 2,
+                    "created_utc": 1653212782.0,
+                    "response": "Opening a channel only requires a standard on chain transaction, so it usually costs few cents",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9jp9h3",
+                            "author": "Into_The_Wilderness1",
+                            "score": 2,
+                            "created_utc": 1653213075.0,
+                            "response": "[BTC Transaction Cost](https://preview.redd.it/zjmqgsine2u61.png?width=1906&format=png&auto=webp&s=e2272736820305a62c178844fc27363e80c67cac)\n\nI found this that suggests the average transaction size on BTC was $40ish?",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9jp3sy",
+                            "author": "crazyjoker96",
+                            "score": 1,
+                            "created_utc": 1653212932.0,
+                            "response": "usually cost the actual fee estimate on chain!",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9jp7lo",
+                                    "author": "gotamm",
+                                    "score": 2,
+                                    "created_utc": 1653213028.0,
+                                    "response": "You can always lower the fee to the minimum 1sat/vb",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9jpj5n",
+                                            "author": "Into_The_Wilderness1",
+                                            "score": 1,
+                                            "created_utc": 1653213325.0,
+                                            "response": "But then wouldn't it potentially not go through for a long time as you're less competitive on fees, especially if we move to a fee only (or fee dominant) world in the future?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9jqg4w",
+                                                    "author": "gotamm",
+                                                    "score": 1,
+                                                    "created_utc": 1653214146.0,
+                                                    "response": "Everything\u2019s possible, that\u2019s why we have LN.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9jqdlt",
+                    "author": "goodies4uall",
+                    "score": 2,
+                    "created_utc": 1653214082.0,
+                    "response": "The lightning network is an off-chain layer 2 solution built on top of bitcoin's blockchain. The channels are used to make off-chain transactions between two parties. Either party can close the channel and closing the channel would broadcast the transactions onto the blockchain. To open a channel it costs the same as a single bitcoin transaction on the blockchain. On the lightning network you don't need a direct channel to everybody you are making transactions with but it works like network routing does in routing IP packets across ISPs. You only need to be connected to the lightning network as long as there is a path to the entity or person you are trying to transact with. The lightning network has near instant transactions, reduces congestion on the blockchain, and results in cheaper fees. It can also be used for atomic swaps between two different crypto currencies. However, with that said businesses with lots of channels can become hubs or centralized nodes in the network.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9nwnrh",
+                            "author": "Into_The_Wilderness1",
+                            "score": 1,
+                            "created_utc": 1653297053.0,
+                            "response": "Ah I see, so it's like ethe 6 degrees of separation? If people keep their channels open, then those channels can be used to route payments indirectly from me to a vendor based on the channels that are open between me, people that I know, people that I don't know but indirectly use as a channel, and the vendor?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9o6gz8",
+                                    "author": "goodies4uall",
+                                    "score": 1,
+                                    "created_utc": 1653305193.0,
+                                    "response": "Yes that is possible as well but mostly in practice the hot wallet you use that supports lightning network has channel(s) open and the merchant you want to use also has channel(s) open through a \"payment processor\". Important to note anybody can open channels (you could be a payment processor) and either side of channels can at anytime process the micro transactions made across their channel by broadcasting them on the blockchain.   \nYou can visualize all the channels open on an explorer like so:  \nhttps://explorer.acinq.co/",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9nrwnv",
+                    "author": "swgo1",
+                    "score": 2,
+                    "created_utc": 1653292601.0,
+                    "response": "Interesting",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9jpgkt",
+                    "author": "crazyjoker96",
+                    "score": 1,
+                    "created_utc": 1653213258.0,
+                    "response": "I like this analogy when you need to use your bank account or your credit card, you should put money inside it before. In some counties this \"put inside\" costs a fee like 1/2 up to 5$ usually. So you can see your lightning network node like your bank account that has the money inside and you make a small payment with it. This operation usually is very cheap.\n\nHowever if you go to pay for coffee and to pay it you need to open a new channel, this is not convenient at all, and it is better uses on chain transactions directly",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9jq70q",
+                            "author": "Into_The_Wilderness1",
+                            "score": 1,
+                            "created_utc": 1653213922.0,
+                            "response": ">\nHowever if you go to pay for coffee and to pay it you need to open a new channel, this is not convenient at all, and it is better uses on chain transactions directly\n\nI think this is where I'm getting confused. I thought LN was to enable this type of transaction, so you could use BTC in the real world. If it doesn't scale like I thought it would, and cost become prohibitive, wouldn't on-chain transactions also fail due to cost and also lack of speed required?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9k0fnj",
+                                    "author": "crazyjoker96",
+                                    "score": 2,
+                                    "created_utc": 1653221956.0,
+                                    "response": "I think the first point of my answer is to solve this question? you can open a big channel with x bitcoin, and pay for all the coffee that you want.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9nwc9j",
+                                            "author": "Into_The_Wilderness1",
+                                            "score": 1,
+                                            "created_utc": 1653296746.0,
+                                            "response": "I think I might have replied to something similar below....but does that assume you go to the same place for coffee each time, and that channel is reused?",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9npu7d",
+                                    "author": "caploves1019",
+                                    "score": 2,
+                                    "created_utc": 1653290704.0,
+                                    "response": "That's like saying every time you go to buy coffee, you open a new checking account right before the txn, or you go to another store and buy a reloadable gift card for just one coffee and nothing else. When in reality, you would have already created a checking account for all future coffee purchases or had a large reloadable gift card ready for many coffees rather than just one.\n\nPoint being you don't open a channel for one txn and then close it. You have a system set in place well in advance and can business it up with whatever retailers are also connected to LN. Not on a per transaction basis.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9nvn01",
+                                            "author": "Into_The_Wilderness1",
+                                            "score": 1,
+                                            "created_utc": 1653296115.0,
+                                            "response": "Is that assuming I go back to the same place for coffee though where the channel was opened?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9ol88h",
+                                                    "author": "caploves1019",
+                                                    "score": 1,
+                                                    "created_utc": 1653313610.0,
+                                                    "response": "No. You may save routing fees by connecting directly to the retailer you most frequent, but in my example, you would just have opened enough channels to a few big nodes that are connected enough to get your SATs where they need to go.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

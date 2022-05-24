@@ -28,7 +28,7 @@
             "author": "pepeman931",
             "created_utc": 1653029337.0,
             "score": 2,
-            "num_comments": 6,
+            "num_comments": 8,
             "subreddit": "ethereum",
             "selftext": "I am trying to estimate gas using ethers. I have tred using await this.signer.getGasPrice() but this doesn't take into account my contract's function and my address.I saw that on ethers's documentation they have a function\n\nawait provider.estimateGas({   // Wrapped ETH address\n\nto: \"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2\",    // \\`function deposit() payable\\`\n\ndata: \"0xd0e30db0\",    // 1 ether\n\nvalue: parseEther(\"1.0\") });\n\nbut this takes transaction data as an input?\n\nHow am I supposed to get tranaction data prior to submitting a transaction?",
             "stickied": false,

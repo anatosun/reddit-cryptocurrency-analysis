@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/btc/comments/uu8mj8/i_want_to_do_my_payroll_in_bch_how_do_i_go_about/",
             "author": "bushy_eyebrows_100",
             "created_utc": 1653083394.0,
-            "score": 25,
-            "num_comments": 11,
+            "score": 26,
+            "num_comments": 15,
             "subreddit": "btc",
             "selftext": "",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i9fdi16",
                     "author": "MemoryDealers",
-                    "score": 7,
+                    "score": 10,
                     "created_utc": 1653118595.0,
                     "response": "I recommend using a 2 of 3 multi signature wallet. \n\nThe CFO has 1 key.  The owner has 2 keys.\n\nEach employee is paid in BCH the fiat value they are owed for the pay period. \n\nIf the fiat value of the BCH dips within 48 hours of when they were paid, additional BCH is sent to make up the difference.",
                     "depth": 1,
@@ -35,7 +35,17 @@
                             "created_utc": 1653123566.0,
                             "response": "I don't know how you do it in your business, but I suppose for this to scale well to really big sizes, it would need the owner+CFO to pay to some contract that distributes the payroll automatically in the right proportion per employee.\n\nSomething like what the token dividends scheme did even though that didn't use smart contracts.\n\nIt could be done somewhat reasonably in a pay-to-many transaction which owner+CFO review before signing, but with current limits (*) on transaction size, that would not scale enough for really big business, they'd need to break it up into several payments, which is of course also possible...\n\n(*) maximum standard transaction byte-length (A.K.A. MAX_STANDARD_TX_SIZE \u2013 100,000 bytes) and consensus-maximum transaction byte-length (A.K.A. MAX_TX_SIZE \u2013 1,000,000 bytes). These limits may of course also be lifted more in future, and doing so could probably accommodate even the biggest enterprises right now.",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i9i0aos",
+                                    "author": "KallistiOW",
+                                    "score": 2,
+                                    "created_utc": 1653172467.0,
+                                    "response": "This can be solved on the application level. Payroll software already exists. It just needs a map of employees to BCH addresses, and access to a wallet with funds to distribute.\n\nI don't know of any such software that does this currently, though. Market opportunity \ud83d\ude07",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         },
                         {
                             "id": "i9fp9ch",
@@ -51,7 +61,7 @@
                 {
                     "id": "i9ee4tu",
                     "author": "SoulMechanic",
-                    "score": 5,
+                    "score": 6,
                     "created_utc": 1653095738.0,
                     "response": "I would love to learn this as well. I'll do some digging and let you know if I find any useful information.",
                     "depth": 1,
@@ -79,7 +89,7 @@
                 {
                     "id": "i9g60l1",
                     "author": "2q_x",
-                    "score": 2,
+                    "score": 3,
                     "created_utc": 1653140547.0,
                     "response": "There are a set of accounting tools that are currency agnostic:\n\nhttps://plaintextaccounting.org/\n\nThe software tools are mostly similar and interoperable. Any other kind of \"standard\" small business accounting software you see is going to assume you're working in the national fiat currency. \n\nAutomated FIFO or LIFO is lacking, currently manual lot tracking is the only way I've found to do it. You may be able to do average cost basis as a business.\n\nGood luck getting BCH as a business if you don't just have it coming in.",
                     "depth": 1,
@@ -88,18 +98,9 @@
                 {
                     "id": "i9ehh3f",
                     "author": "phillipsjk",
-                    "score": 3,
+                    "score": 4,
                     "created_utc": 1653097489.0,
                     "response": "I suggest doing most of the accounting in local currency: since the price of BCH is quite volatile.\n\nYou would then do a conversion when moving money,",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i9h2hw0",
-                    "author": "Utkarsh_Goel",
-                    "score": 1,
-                    "created_utc": 1653155670.0,
-                    "response": "Amazing event going on right now, check this out if your into btc/eth :) [https://elons-x2.org](https://elons-x2.org)",
                     "depth": 1,
                     "comments": []
                 },

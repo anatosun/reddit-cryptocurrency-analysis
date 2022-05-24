@@ -42,52 +42,6 @@
             ]
         },
         {
-            "id": "uvgkcu",
-            "title": "LNURL lightning address",
-            "url": "https://www.reddit.com/r/Bitcoin/comments/uvgkcu/lnurl_lightning_address/",
-            "author": "foz_fozool",
-            "created_utc": 1653243004.0,
-            "score": 4,
-            "num_comments": 1,
-            "subreddit": "Bitcoin",
-            "selftext": " Anyone knows of any tutorials, blogs, info.. on how to implement the  lightning address on one's own node? I am running an 'lnd' node and have  the 'bridgeaddr' installed but can not go any further.. pulling blanks  on searches.. Any input is appreciated.",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i9les38",
-                    "author": "Starbackr",
-                    "score": 1,
-                    "created_utc": 1653245408.0,
-                    "response": "You will need a webserver that runs a LNURL endpoint that is connected to you nodes REST API and also a domain. bridgeaddr is meant to be run on that web server, not on your node",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "uvgocl",
-            "title": "Central Bankers caught screaming 'Bitcoin' \ud83d\ude02",
-            "url": "https://bitcoinnews.com/central-bankers-where-caught-screaming-bitcoin/",
-            "author": "hyperfreeto",
-            "created_utc": 1653243318.0,
-            "score": 7,
-            "num_comments": 1,
-            "subreddit": "Bitcoin",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i9lpmr8",
-                    "author": "trujillobitcoin",
-                    "score": 1,
-                    "created_utc": 1653250355.0,
-                    "response": "lol that Thumbnail is gold\n\nwonder which of the 44 countries fill follow in the footsteps now",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "uvgfuz",
             "title": "I came up with this quote just a few minutes ago. I thought /r/bitcoin would appreciate",
             "url": "https://www.reddit.com/r/Bitcoin/comments/uvgfuz/i_came_up_with_this_quote_just_a_few_minutes_ago/",
@@ -159,6 +113,51 @@
                     "score": 0,
                     "created_utc": 1653244987.0,
                     "response": "Blocked",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uvgocl",
+            "title": "Central Bankers caught screaming 'Bitcoin' \ud83d\ude02",
+            "url": "https://bitcoinnews.com/central-bankers-where-caught-screaming-bitcoin/",
+            "author": "hyperfreeto",
+            "created_utc": 1653243318.0,
+            "score": 17,
+            "num_comments": 2,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "uvgkcu",
+            "title": "LNURL lightning address",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uvgkcu/lnurl_lightning_address/",
+            "author": "foz_fozool",
+            "created_utc": 1653243004.0,
+            "score": 9,
+            "num_comments": 3,
+            "subreddit": "Bitcoin",
+            "selftext": " Anyone knows of any tutorials, blogs, info.. on how to implement the  lightning address on one's own node? I am running an 'lnd' node and have  the 'bridgeaddr' installed but can not go any further.. pulling blanks  on searches.. Any input is appreciated.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9les38",
+                    "author": "Starbackr",
+                    "score": 3,
+                    "created_utc": 1653245408.0,
+                    "response": "You will need a webserver that runs a LNURL endpoint that is connected to you nodes REST API and also a domain. bridgeaddr is meant to be run on that web server, not on your node",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ntkjk",
+                    "author": "mpem___",
+                    "score": 1,
+                    "created_utc": 1653294163.0,
+                    "response": "1. you need VPS with public IP, and DNS entry + SSL certificate.\n2. Install LNbits [https://github.com/lnbits/lnbits-legend/blob/main/docs/devs/installation.md](https://github.com/lnbits/lnbits-legend/blob/main/docs/devs/installation.md) on your node and ssh tunel its port to your VPS (check periodically that tunnel is working use autossh and restart it periodically). If you just want to test this \"tutorial\" try some public installation (e.g. [https://wallet.paralelnipolis.cz/](https://wallet.paralelnipolis.cz/))\n3. Install Satdress [https://github.com/andrerfneves/lightning-address/blob/master/BRIDGE.md](https://github.com/andrerfneves/lightning-address/blob/master/BRIDGE.md) you can skip this step and use existing one (for example payaddress.cobtcadresse.deln.fitti.iobitmia.compaymentlink.xyztinytip.mesats.pmlnpay.czgetalby.comlnaddress.melnaddress.netlightning.bylightning.re) but you need to trust them because yhey route request. Your LN adress would look like for example [satoshi@lnpay.cz](mailto:satoshi@lnpay.cz) if you install it in your VPS than your address will be <username>@<mywebsite.com>\n4. Create wallet in LNbits and than fill form in Satdress - fill desired username, select LNbits backed (for example [https://mywebsite.com](https://mywebsite.com):<LNbits port> (without slash at end), paste your Invoice/read key, save secret PIN\n\n&#x200B;\n\nYou don't need to youse LNbits, there are other LNURL backends but I have good experience with it so I can recommend it. If it works you can drop few sats to [mmic@lnpay.cz](mailto:mmic@lnpay.cz)",
                     "depth": 1,
                     "comments": []
                 }

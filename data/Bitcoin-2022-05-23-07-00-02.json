@@ -1,0 +1,83 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uvu96f",
+            "title": "Why is it considered unsafe to reuse ecdsa addresses?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uvu96f/why_is_it_considered_unsafe_to_reuse_ecdsa/",
+            "author": "northstream12",
+            "created_utc": 1653288646.0,
+            "score": 3,
+            "num_comments": 6,
+            "subreddit": "Bitcoin",
+            "selftext": "Why is it considered unsafe to reuse ecdsa addresses?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9nrorf",
+                    "author": "WittyStick",
+                    "score": 2,
+                    "created_utc": 1653292395.0,
+                    "response": "1. History of poor implementations of signing algorithms.\n\n  Signing a message with ECDSA requires generation of a random ephemeral key. If two different messages (transactions in bitcoin) are signed using the same random number, the private key can be determined. Some implementations have used or generated the same ephemeral key to sign different messages.\n\n  Proper implementations avoid this by generating a the ephemeral key using a HKDF, with the message hash as its input. This ensures that there is a vanishingly small possibility that the same random number could be used for two different messages.\n\n2. Potential quantum weakness\n\n  ECDSA relies on the discrete log problem being unsolvable, which is a reasonable assumption for classical computers. A sufficiently power quantum computer could in theory leverage Shor's algorithm to factorize the large integers used in ECDSA if the public key is known. However, there exists no known quantum algorithm capable of determining the input to a secure hash function like SHA256/RIPEMD160 which are used in bitcoin addresses. This means a quantum computer could not crack a private key if only the public key hash is known, but if the bitcoin in a UTXO are ever spent, the public key is revealed in the spending transaction. The quantum computer could then be put to work to crack the private key and then spend any other bitcoin associated with the same address.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9nslpa",
+                            "author": "TheGreatMuffin",
+                            "score": 2,
+                            "created_utc": 1653293248.0,
+                            "response": "> but if the bitcoin in a UTXO are ever spent, the public key is revealed in the spending transaction.\n\nFrom what I understand, Taproot addresses reveal the public key without spending from that address, so it seems that bitcoin devs are not too worried about such attacks.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9nsu5t",
+                            "author": "Mallardshead",
+                            "score": 1,
+                            "created_utc": 1653293474.0,
+                            "response": "On point #2, bitcoin uses 2xSHA256 (runs an input through SHA256 twice) for hashing, so would Shor's algo work here?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9nuhz2",
+                                    "author": "Quantris",
+                                    "score": 2,
+                                    "created_utc": 1653295048.0,
+                                    "response": "I think you didn't quite understand what u/WittyStick was saying in point #2.\n\nShor's algorithm is applicable to breaking ECDSA. To use it you need to know the ECDSA public key that you're trying to attack.\n\nOne property of typical Bitcoin addresses is that they don't reveal the ECDSA public key, but only a hash of it. So in that case you're not even worried about Shor's algorithm until you try to spend from the address (which does reveal the public key). IOW point #2 was saying that this hashing is why using an address once could be argued to have a security benefit in the face of quantum computing (technically, you only need \"spend-from-once\" to realize the benefit).\n\nWhether the hash is SHA256x2 or not isn't quite relevant to the point. Also in addresses it is usually SHA256 followed by RIPEMD160. SHA256x2 is involved in mining and some other places that hashing is happening.\n\nAlso worth noting that while Shor's algorithm isn't relevant to hashing, there is a general quantum algorithm called Grover's algorithm that is applicable to that. IIUC this basically means you get half the bits of quantum security compared to classical security (which is maybe just fine for Bitcoin hashes? I'm not well-versed enough to evaluate that).\n\nAll that said, as u/TheGreatMuffin pointed out said hashing is not an essential property of addresses and in particular Taproot addresses have dropped that complication (and this is why I wrote \"typical Bitcoin addresses\" above). It's hard (for me) to say for sure all the reasons such hashing was introduced in the first place but I think a main one was simply encoding length, and \"compressed\" representation reduces that benefit substantially.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9nzkhn",
+                                            "author": "Mallardshead",
+                                            "score": 1,
+                                            "created_utc": 1653299724.0,
+                                            "response": "Thanks for the lesson. Well explained.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9nokjo",
+                    "author": "CoinCorner_Sam",
+                    "score": 1,
+                    "created_utc": 1653289620.0,
+                    "response": "Reusing Bitcoin addresses reduces privacy - whoever know the address can open a [block explorer and see your balance](https://bitinfocharts.com/bitcoin/address/1P5ZEDWTKTFGxQjZphgWPQUpe554WKDfHQ) as well as identify patterns of your behaviour.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

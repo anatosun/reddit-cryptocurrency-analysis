@@ -1,0 +1,363 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uvz5si",
+            "title": "What's the best way to store BTC in cold storage?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uvz5si/whats_the_best_way_to_store_btc_in_cold_storage/",
+            "author": "ToughNefariousness23",
+            "created_utc": 1653309253.0,
+            "score": 15,
+            "num_comments": 41,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Also, how does one go about doing that?  Probably a stupid question, but inquiring minds want to know.  Thanks everyone.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9oo043",
+                    "author": "jmg000",
+                    "score": 13,
+                    "created_utc": 1653314922.0,
+                    "response": "Per Andreas Antonopoulos, the best balance between security and recoverability is just a single signature Hardware Wallet plus a Passphrase.  With 2x backups of your Mnemonic seed secured in separate locations, and a letter with recovery instructions for trusted family or executors (estate) if you die.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9pmoxa",
+                            "author": "expletives",
+                            "score": 3,
+                            "created_utc": 1653329760.0,
+                            "response": "My man. You too dude.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9odf35",
+                    "author": "bitusher",
+                    "score": 3,
+                    "created_utc": 1653309555.0,
+                    "response": "For most people a hardware wallet and following something like this \n\nhttps://www.reddit.com/r/BitcoinBeginners/comments/g42ijd/faq_for_beginners/fouo3kh/\n\nOnce you have a very large amount of bitcoin you might start to consider multisig as a solution",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9ofuq6",
+                            "author": "spiceylizard",
+                            "score": 1,
+                            "created_utc": 1653310889.0,
+                            "response": "By very large I would say anything over .5Btc\n\nThe value can very quickly be much more than anticipated",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ojwht",
+                    "author": "blockplate",
+                    "score": 3,
+                    "created_utc": 1653312959.0,
+                    "response": "Never a stupid question when it comes to security.\n\nTypically cold storage refers to utilizing hardware wallets to hold your keys in an offline environment.\n\nIf your interested in the exact steps to do that, see here: https://www.blockplate.com/blogs/blockplate/beginners-guide-to-bitcoin-wallet-set-up-security",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9omg2s",
+                    "author": "ImpressiveAd1276",
+                    "score": 3,
+                    "created_utc": 1653314194.0,
+                    "response": "I love electrum. Free as well. Just need an old pc offline to create your cold storage wallet. Very easy to do. Practice with a small amount to start with.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9pmoqf",
+                            "author": "unduly-noted",
+                            "score": 2,
+                            "created_utc": 1653329758.0,
+                            "response": "If going this route, don\u2019t forget to use full disk encryption and never connect to the internet! Alternatively, use Qubes and create the wallet in a qube with no network access.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9owdip",
+                    "author": "GibbsSamplePlatter",
+                    "score": 3,
+                    "created_utc": 1653318672.0,
+                    "response": "Another vote for keeping it simple.\n\nSingle key, hardware wallet, redundant backups of seed phrase.\n\nI would not add a passphrase, or caution that it should be *SIMPLE* so its never forgotten.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9pr5dq",
+                            "author": "jmg000",
+                            "score": 1,
+                            "created_utc": 1653331675.0,
+                            "response": "I agree with trying to keep it simple, but I think if you're going to do a single-signature wallet, you are going to want that passphrase.\n\nYou probably don't need/want the passphrase if you're using a 2 of 3 multi-sig wallet.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9py9w6",
+                                    "author": "GibbsSamplePlatter",
+                                    "score": 1,
+                                    "created_utc": 1653334719.0,
+                                    "response": "Lack of checksum really makes me uncomfortable with the passphrase solution.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9qipc2",
+                                            "author": "jmg000",
+                                            "score": 1,
+                                            "created_utc": 1653343773.0,
+                                            "response": "Would you mind explaining this further?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9qny7f",
+                                                    "author": "GibbsSamplePlatter",
+                                                    "score": 1,
+                                                    "created_utc": 1653346280.0,
+                                                    "response": "any passphrase you put in is \"valid\" and will generate a keychain/wallet.\n\nEven if there are typos",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9qo307",
+                                                            "author": "jmg000",
+                                                            "score": 1,
+                                                            "created_utc": 1653346345.0,
+                                                            "response": "Yes.  And?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9qpi5b",
+                                                                    "author": "GibbsSamplePlatter",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653347032.0,
+                                                                    "response": "It could cause loss of funds if the user becomes confused.\n\nAsk yourself why checksums are useful.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9qr2x6",
+                                                                            "author": "beowulfpt",
+                                                                            "score": 2,
+                                                                            "created_utc": 1653347813.0,
+                                                                            "response": "One of the reasons I like that Coldcard shows the \"Fingerprint\" of the loaded key, unlike, say, Trezor's UI. You never really know which wallet you're on except by looking at balances. If you make a mistake mistyping two wrong passphrases, both wallets will have 0 balance.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9qrav2",
+                                                                                    "author": "jmg000",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653347922.0,
+                                                                                    "response": "Ok, that makes sense to me.  \ud83d\udc4d\n\nBut the Trezor always has you confirm the passphrase on the device to verify it was entered correctly, so that was never a problem in my experience",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i9qtgf9",
+                                                                                            "author": "beowulfpt",
+                                                                                            "score": 2,
+                                                                                            "created_utc": 1653348979.0,
+                                                                                            "response": "The point is that if you have two wallets with the exact same balance but two different passphrases, you can't easily tell which one is loaded on something like Trezor Suite.\n\nThat's that was mentioned before - all passphrases are correct. The fact that your wallet app cached a particular key in a particular machine doesn't change that.\n\nMore info is always more complication, but I think displaying key fingerprints should be standard in all wallets.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "i9qpz8c",
+                                                                            "author": "jmg000",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653347264.0,
+                                                                            "response": "I don\u2019t know the answer to that.  \n\nUsing a passphrase is very simple to me.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9or6jd",
+                    "author": "subduderecords",
+                    "score": 11,
+                    "created_utc": 1653316381.0,
+                    "response": "USB, in a freezer. Pretty straight forward.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9ovj7e",
+                            "author": "bitusher",
+                            "score": 13,
+                            "created_utc": 1653318300.0,
+                            "response": "LOL, for others that don't get the joke , please don't do this.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9oxiv5",
+                                    "author": "subduderecords",
+                                    "score": 7,
+                                    "created_utc": 1653319175.0,
+                                    "response": "I'm glad someone else got the joke \ud83d\ude06",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ppe4x",
+                    "author": "kaacaSL",
+                    "score": 2,
+                    "created_utc": 1653330915.0,
+                    "response": "Hi, the best is to store your coins with a hardware wallet. Follow our Trezor subreddit if you want to learn more about how this wallet works! [https://www.reddit.com/r/TREZOR/](https://www.reddit.com/r/TREZOR/)  \nWe are discussing different topics there, sharing manuals and security tips etc.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9on3wo",
+                    "author": "MadMaxwell92",
+                    "score": 4,
+                    "created_utc": 1653314507.0,
+                    "response": "The best thing you can do for yourself is learn how bitcoin works. How the distributes ledger works, proof of work, public vs private keys, seed phrase, hardware vs software wallet. It\u2019s important to educate yourself on what Bitcoin is and why and how it works so you can have conviction when you buy it and to push you through the price corrections.\n\nBitcoin owners have radical responsibility over their money. Transactions can\u2019t be reversed and there\u2019s no one to dispute charges to.\n\nStarting at episode 1 of bitcoin basics podcast is a great start, and reading the bitcoin whitepaper.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9qeb5a",
+                            "author": "Smok_eater",
+                            "score": 2,
+                            "created_utc": 1653341737.0,
+                            "response": "Not helpful",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9odmt0",
+                    "author": "never-give-up-every1",
+                    "score": 2,
+                    "created_utc": 1653309676.0,
+                    "response": "You can try using **Ledger Nano S**, I think most people know this but I still recommend it to you. because I've been using this in **Canada** to transfer my Coins on **Netcoins** to the ledger.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9onm7r",
+                            "author": "serOliver",
+                            "score": 1,
+                            "created_utc": 1653314743.0,
+                            "response": "I'm thinkering with idea of Nano S, Nano S+ or Nano X?\nNot much info can be found on this site, also do you recommend Capsule for secure recovery storage.\nAlso Trezor looks convinient... But as a beginner I'm puzzled with conflicting reviews. For me Ledger has slight advantage since local crypto exchange is offering it shipping ang import tax free... But I'm fine with bit higher price and international order with longer waiting. Any suggestion?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9or3bk",
+                                    "author": "bitusher",
+                                    "score": 5,
+                                    "created_utc": 1653316340.0,
+                                    "response": "I own all of trezors and ledgers and here is my 2 cents :\n\nledger nano x is a must if you need to use it with an ipad or iphone because bluetooth is the only way to pair it \n\nI prefer the trezor over ledgers because its open source , its company has better history and ethics and unlike ledger is more responsible with disclosures. I also think the UX of the trezor is superior",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9pb6jb",
+                                            "author": "serOliver",
+                                            "score": 1,
+                                            "created_utc": 1653324904.0,
+                                            "response": "Awesome info, I didn't know so much details...\nMeans a lot to me, I use Windows, Linux and MacOS, as well as Android and iOS, and interoperability is also important to me...\nThanks a lot!\n\nCheers \ud83e\udd42!",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9onlv0",
+                    "author": "Medium_Freedom913",
+                    "score": 0,
+                    "created_utc": 1653314739.0,
+                    "response": "Is bitcoin save to keep on let's say metamask or trustwallet?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9op20i",
+                            "author": "bitusher",
+                            "score": 6,
+                            "created_utc": 1653315416.0,
+                            "response": "Metamask is not a bitcoin wallet, also it is extremely centralized (which is why they were censoring certain people) with a very high attack surface .\n\nTrust is closed source, has a wide attack surface, not peer reviewed\n\nBinance openly lies about their wallet being open source - https://trustwallet.com/developer/ when it is not open source\n\nhttps://walletscrutiny.com/android/com.wallet.crypto.trustapp/\n\nhttps://walletscrutiny.com/iphone/com.sixdays.trust/\n\nas you cannot test and build the binaries from source. The lie is built upon the ignorance of many that are unaware that almost all software you use is dependent upon some open source repositories/libraries/dependencies but unless we can peer review 100% of the source code and build the binaries from the source we cannot verify if any intentional or unintentional exploits or backdoors exist in the software.\n\nThis means that at best you have a wallet that is slightly better than using a custodian because you have access to the private keys that you could restore your coins in a separate wallet if their full nodes that support this light client is offline but there might be privacy leaks or exploits and backdoors that allow them or outsiders to steal your coins.\n\nWhat is the point in using cryptocurrency if you ultimately need to have faith in a single company or developer ? This undermines many of the security assumptions of cryptocurrencies.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ort8z",
+                                    "author": "Medium_Freedom913",
+                                    "score": 0,
+                                    "created_utc": 1653316659.0,
+                                    "response": "So in other words don't store bitcoin on trustwallet? Thanx for your reply. I just struggle to fully understand what you wrote as I don't know much when it comes to computers",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9osv15",
+                                            "author": "bitusher",
+                                            "score": 4,
+                                            "created_utc": 1653317126.0,
+                                            "response": "Stay far away from trustwallet . Use one of the open source wallets recommended in the links \n\nhttps://walletscrutiny.com\n\nhttps://docs.google.com/spreadsheets/d/1aZ1zbaUEzCo9NCctN8-eL2VLIiSdY009tTJvRXDUWEw/edit#gid=0\n\nhttps://www.reddit.com/r/BitcoinBeginners/comments/g42ijd/faq_for_beginners/",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9ov8hv",
+                                                    "author": "Medium_Freedom913",
+                                                    "score": 1,
+                                                    "created_utc": 1653318169.0,
+                                                    "response": "Thankyou",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ocw7z",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653309253.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pwdzw",
+                    "author": "Coco_Ardo",
+                    "score": 0,
+                    "created_utc": 1653333916.0,
+                    "response": "Here my tier list:\n\n1) All by hand\n2) Seedsigner\n3) Coldcard Mk.4\n4) Bitbox2.0 Bitcoin only\n5) Ledger nano S\n6) Trezor",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

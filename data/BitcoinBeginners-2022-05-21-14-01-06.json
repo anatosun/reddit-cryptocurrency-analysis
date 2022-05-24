@@ -15,7 +15,7 @@
             "author": "_-psyduck-_",
             "created_utc": 1653141345.0,
             "score": 3,
-            "num_comments": 17,
+            "num_comments": 23,
             "subreddit": "BitcoinBeginners",
             "selftext": "\n**NO I WON'T GIVE YOU MY MONEY SO DON'T MSG ME.**\n\nOk, So... I think I accidentally told one of my friends my recovery code (I know I'm stupid) and now I'm very paranoid. \n\nI want to switch from Coinbase to Blockstream Green wallet and I'm thinking just to be on the safe side I'll make a new wallet as well while I'm at it.\n\nSo my question is - Will there be any fees when sending BTC from one wallet to another? If yes, how much approx? \n\nIs there any other way I can sort this out?\n\nThanks.",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i9g8g0t",
                     "author": "bitusher",
-                    "score": 3,
+                    "score": 4,
                     "created_utc": 1653141795.0,
                     "response": ">I think I accidentally told one of my friends my recovery code (I know I'm stupid) and now I'm very paranoid. \n\nyour 12 word seed phrase? If this is the case those private keys are compromised and you need to setup a new wallet with new backup words and than send the btc to a new wallet with an onchain transaction and stop using the old wallet \n\n>Will there be any fees when sending BTC from one wallet to another? If yes, how much approx? \n\nYes, the mempool is clear now so set the lowest priority fee (1-2 sat a byte is fine \n\n1 sat a byte would mean a fee of 4-10 cents to send the bitcoin \n\nhttps://twitter.com/CoreFeeHelper\n\nThis a a fee scraper that shows the average fees per fee rate",
                     "depth": 1,
@@ -31,7 +31,7 @@
                         {
                             "id": "i9gc02y",
                             "author": "_-psyduck-_",
-                            "score": 3,
+                            "score": 5,
                             "created_utc": 1653143514.0,
                             "response": "Thanks again Bitusher :)",
                             "depth": 2,
@@ -69,6 +69,15 @@
                                                     "response": "Look here\n\nhttps://twitter.com/CoreFeeHelper\n\nthis is a real time scrapper that shows the average fees at any given moment based upon your fee rate",
                                                     "depth": 5,
                                                     "comments": []
+                                                },
+                                                {
+                                                    "id": "i9nlodi",
+                                                    "author": "BTCMachineElf",
+                                                    "score": 1,
+                                                    "created_utc": 1653287244.0,
+                                                    "response": ">what do i need to look out for?\n\nThe blue blocks on the right are the blockchain. Confirmed transactions. \n\nThe mempool are the green blocks on the left side. Those are pending transactions. The centermost one is what will become the next block. If you look there, you can see the range of fees that are making it into that block, which tells you generally what fee you need to set for your time preference.\n\nOften there will only be one or two blocks on the left half, and you'll see half-blue blocks on the right half. That means the mempool is empty and you can send 1sat/vbyte transactions and have them clear quickly. It's open season.",
+                                                    "depth": 5,
+                                                    "comments": []
                                                 }
                                             ]
                                         }
@@ -84,6 +93,15 @@
                     "score": 1,
                     "created_utc": 1653141345.0,
                     "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9mx5gd",
+                    "author": "d3vrandom",
+                    "score": 1,
+                    "created_utc": 1653271978.0,
+                    "response": "fees depend on the market conditions and the size of the transaction. if your using a custodial wallet where you don't control the private keys then the fees depend on the wallet provider's fee schedule. so consult coinbase's fee schedule for the fees.",
                     "depth": 1,
                     "comments": []
                 },

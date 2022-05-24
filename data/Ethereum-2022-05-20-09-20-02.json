@@ -15,7 +15,7 @@
             "author": "ginpunch",
             "created_utc": 1653037991.0,
             "score": 24,
-            "num_comments": 11,
+            "num_comments": 15,
             "subreddit": "ethereum",
             "selftext": "We all know that it is not that easy for web3 developers(especially for front-end) to access and present Web3 data due to the infrastructure design of blockchains.\n\nTo resolve this issue, My friend [DIY](https://github.com/DIYgod) single-handedly came up with this human-friendly open-source project\u00a0[Unidata](https://unidata.app/) a few days ago. We believe this tool will make Web3 data much easier to access and display for developers.\n\nDocs:\u00a0[https://unidata.app/](https://unidata.app/)\n\nGitHub:\u00a0[https://github.com/NaturalSelectionLabs/Unidata](https://github.com/NaturalSelectionLabs/Unidata)\n\nLet's take the most commonly used web3 data ETH NFT as an example to elaborate on the issue.\n\n1. The EIP-721 standard ETH NFT used has a very \"flexible\" format. An NFT image may use various fields, such as\u00a0`image`\u00a0`image_url`\u00a0or\u00a0`animation_url.`\u00a0Depending on the publisher's preference, it might not even be an image at all; it could be a video, a 3D model, etc. The inconsistent formats cause a lot of problems for its front-end presentation.\n2. Getting all the Ethereum NFTs owned by a given address is also problematic. Ethereum's design requires you to read all the transaction records of that address to get all its Ethereum NFTs. This is an impossible task for the front-end, but can be partially solved by the various data indexing services currently available. However, the data returned by these services are in different formats, each having its own advantages and disadvantages, while each supports different chains. So how should we choose which one to use?\n\nTo address the first issue, Unidata has designed a series of user-friendly and uniform data specifications, divided into four sections - Profiles, Links, Assets, and Notes, and Ethereum NFTs fall under the Assets specification. With a fixed data format returned by Unidata, the front-end no longer has to do the troublesome work of adapting a confusing data format.\n\nUnidata currently supports Ethereum NFT and Solana NFT as well, and the data specifications for Ethereum NFT and Solana NFT are unified. In addition, Unidata will continue to support more Assets sources, all of which will also have unified specifications.\n\nOnce the first issue was solved, the second is easy: Unidata's approach is to unify and aggregate the data returned by the various services into the same format. For example, the OpenSea service supports the mainnet, the Alchemy service supports Polygon, the Moralis service supports BSC, Arbitrum, and fantom, and the POAP service supports POAP NFT for the Gnosis chain. With a single line of code from Unidata, you can use these services to get all the NFTs for mainnet, Polygon, BSC, Arbitrum, fantom, and POAP at the same time. An online demo can be seen [here](https://unidata.app/guide/assets/ethereum-nft/#live-demo).\n\nhttps://preview.redd.it/oz443og1ll091.png?width=1261&format=png&auto=webp&s=7eac64abb8261916c979077b8c93c82e511e8ef0\n\nUnidata currently supports not only Assets, but also Profiles, Links, and Notes sections. All the services and data sources currently supported can be seen in this [documentation](https://unidata.app/guide/#supported-sources).\n\n\\- [Assets](https://unidata.app/guide/assets/)\u00a0currently support Ethereum NFT(mainnet, Polygon, BSC, Arbitrum, Fantom, Gnosis, POAP), Solana NFT, Alchemy, Solscan, Moralis, and OpenSea.\n\n\\- [Notes](https://unidata.app/guide/notes/)\u00a0currently support Mirror Entry, Ethereum NFT Activity(mainnet, Polygon, BSC, Arbitrum, Fantom, Gnosis, POAP), RSS3.\n\n\\- [Profiles](https://unidata.app/guide/profiles/)\u00a0currently support ENS, Crossbell, Infura.\n\n\\- [Links](https://unidata.app/guide/links/)\u00a0currently support CyberConnect.\n\nMany more features are in progress and will be active very soon.\n\nPlease feel free to give my friend any feedback. He would like to welcome everyone to join Unidata's discord community and this opensource project.\n\nDiscord:\u00a0[https://discord.com/invite/ggrfhdS9Fe](https://discord.com/invite/ggrfhdS9Fe)\n\nTwitter:\u00a0[https://twitter.com/Unidata\\_](https://twitter.com/Unidata_)\n\n&#x200B;\n\nhttps://preview.redd.it/7t8e5goykl091.png?width=1800&format=png&auto=webp&s=a5cd05d6320f0199340f759244dd601e24afdb2f",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i9bcr5c",
                     "author": "wdrosa",
-                    "score": 4,
+                    "score": 6,
                     "created_utc": 1653045783.0,
                     "response": "So after digging through the code, for Solana at least, this is simply a wrapper on 3rd party API's. It's not getting the data directly from the blockchain. \n\n`axios.get(\"https://public-api.solscan.io/account/tokens\"`\n\nSolscan is using another API to get that data so you're going chain > RPC node > Solscan > Unidata. When you could just find a good RPC node and cutout two middelmen. \n\nThat said, Solana is primarily what I build on. For EVM chains I gladly use stuff like this so I don't have to learn a bunch of new stuff for a bit of data. So I could see myself using it for that purpose.",
                     "depth": 1,
@@ -34,6 +34,15 @@
                             "score": 2,
                             "created_utc": 1653102108.0,
                             "response": "Agreed it's a waste for Solana but the guy who made this probably doesn't work on Solana stuff and threw this together last minute. Solana makes this stuff pretty simple just by virtue of spl architecture.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9nrejh",
+                            "author": "ginpunch",
+                            "score": 1,
+                            "created_utc": 1653292127.0,
+                            "response": "I agree if you are doing solely on SOLchain then Unidata is not too useful. But if you are doing any cross-chain aggregated stuff then it should be pretty helpful.",
                             "depth": 2,
                             "comments": []
                         }

@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/ut7w15/what_do_i_do_after_i_buy_1_bitcoin_complete/",
             "author": "xeloz01",
             "created_utc": 1652979548.0,
-            "score": 52,
-            "num_comments": 56,
+            "score": 69,
+            "num_comments": 73,
             "subreddit": "BitcoinBeginners",
             "selftext": "Let's say I buy 1 whole bitcoin in Binance. What exactly happens?  \n\n\nWhere will the actual Bitcoin be? Where does it go? Will it be in my phone? If that's the case then if I lose my phone or it gets hacked then will I essentially technically lose the 1 Bitcoin I bought?  \n\n\nI see in the news that people lose their Bitcoin via losing their hard drive and stuff which gave me the impression that Bitcoins \"live\" inside the device you buy or store them in?  \n\n\nIf this is the case then if I buy 1 whole Bitcoin in Binance, how do I transfer it to a \"safe space\", should I put it in a hard drive? my iCloud? a thumb drive?  \n\n\nWhat does a Bitcoin even look like when you buy it and how do I know it is in a \"safe space\"?  \n\n\nI can't wrap my head around this concept of Bitcoin and how it actually looks, and I need your help to at least understand it at this level please. Thank you.",
             "stickied": false,
@@ -23,15 +23,24 @@
                 {
                     "id": "i9a0oyq",
                     "author": "nullama",
-                    "score": 34,
+                    "score": 57,
                     "created_utc": 1653012333.0,
                     "response": "> Let's say I buy 1 whole bitcoin in Binance. What exactly happens? \n\nBinance now has control of your money, and they write in their database that they owe you 1 bitcoin.\n\n> Where will the actual Bitcoin be?\n\nAt this point in the transaction there might not even be any Bitcoin for you, you're just trusting Binance (or whoever you bought it from) will give it to you.\n\n> Where does it go?\n\nEvery single Bitcoin in existence starts their journey by being mined. Once mined they are generated at the address of the miner. The public ledger is basically a list of addresses and how much bitcoin there is in them. That's what a Bitcoin node is, basically a copy of this ledger. There are about 50 thousands of those nodes around the world right now(you can run one too, even with an outdated computer). Whenever there's a transfer of ownership of Bitcoin, the ledger is updated, removing the coins from address 1 and adding them to address 2.\n\n> Will it be in my phone?\n\nAs I mentioned, Bitcoin lives in addresses, which are stored in the public ledger. To have access to the bitcoins you need to have a private key, which unlocks the ability to move bitcoins from your public addresses. This is what's called a wallet. A set of public addresses and private keys that you control. That can be in your phone, the wallet, which contains the private key. It's more secure to have wallets in cold storage, that means in devices that never have been or will be connected to the internet.\n\n> If that's the case then if I lose my phone or it gets hacked then will I essentially technically lose the 1 Bitcoin I bought? \n\nWith modern wallets you have what's called a Seed Phrase. An ordered list of words that you can memorize and write down. That's your backup. You can lose your phone or any device that holds your wallet, but if you have your Seed Phrase you can recover it in a new phone/device. If you lose your device and your seed phrase then it's all gone forever, with no possibility of access ever again.\n\n> I see in the news that people lose their Bitcoin via losing their hard drive and stuff which gave me the impression that Bitcoins \"live\" inside the device you buy or store them in? \n\nThey lose access to their private key, or their Seed Phrase, which is stored in the device. Those people didn't make proper backups of the seed phrase.\n\n> If this is the case then if I buy 1 whole Bitcoin in Binance, how do I transfer it to a \"safe space\", should I put it in a hard drive? my iCloud? a thumb drive? \n\nOK, so now back to the transaction. In the exchange (Binance, etc), you will have an option that says withdraw. That's what you have to do to actually have ownership of Bitcoin. Services like PayPal for example let you \"buy Bitcoin\" but they don't let you withdraw it, so in reality you're not buying Bitcoin from PayPal. OK, once you have your own wallet setup, you click on receive, and it will show you an address. You put that address in the withdrawal from the exchange and click send. That's it. It will be broadcast to the network, and in a few minutes your Bitcoins will be in your own wallet. Now, for security, this wallet should be in cold storage (you could have also an internet connected wallet for smaller amounts). It's not a good idea to store your private keys/wallet/Seed Phrase in your iCloud or anything connected to the Internet. Piece of paper, write down your Seed Phrase, keep multiple copies, nothing digital.\n\n> What does a Bitcoin even look like when you buy it and how do I know it is in a \"safe space\"? \n\nYou can see the balance of your public address anywhere. In your wallet, in public explorerer like mempool.space. Here's one of the public addresses of Satoshi Nakamoto, the one that received the Genesis block reward: https://mempool.space/address/1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa You can just put any public address there and you'll see the balance, and you can trace back any transaction.\n\n> I can't wrap my head around this concept of Bitcoin and how it actually looks, and I need your help to at least understand it at this level please. Thank you.\n\nHere are the original emails, source code, and posts from Satoshi Nakamoto himself:\n\nhttps://satoshi.nakamotoinstitute.org/",
                     "depth": 1,
                     "comments": [
                         {
+                            "id": "i9c6fjs",
+                            "author": "goodboyeoz",
+                            "score": 8,
+                            "created_utc": 1653059431.0,
+                            "response": "You are a hero for explaining this.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
                             "id": "i9arpci",
                             "author": "PrincePhilip3",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1653028928.0,
                             "response": "Hi, I see that you know bitcoins well. I just wanted to know can wallet have part of bitcoin? Am I able to send for example 0.01 btc to my wallet?",
                             "depth": 2,
@@ -39,7 +48,7 @@
                                 {
                                     "id": "i9asprk",
                                     "author": "nullama",
-                                    "score": 4,
+                                    "score": 9,
                                     "created_utc": 1653029752.0,
                                     "response": "Yes, a wallet can have any amount of Bitcoin, there are 8 decimal places: 0.00000001 BTC is one Satoshi, or sat, the smallest unit (like a cent to a dollar). So of course you can send 0.01 BTC to your own wallet, no problems.\n\nThere are some limits at how much you can send on-chain, but they're very low, like 294 sats, that's almost nothing, even less than transaction fees sometimes. At small levels you usually start using lightning, which allows you to transfer small amounts immediately and almost free.",
                                     "depth": 3,
@@ -55,13 +64,22 @@
                                     "comments": []
                                 }
                             ]
+                        },
+                        {
+                            "id": "i9crpdw",
+                            "author": "PabloInvMer",
+                            "score": 1,
+                            "created_utc": 1653067851.0,
+                            "response": "Very good and detailed explanation! Thanks.",
+                            "depth": 2,
+                            "comments": []
                         }
                     ]
                 },
                 {
                     "id": "i984e8e",
                     "author": "jubealube09",
-                    "score": 20,
+                    "score": 22,
                     "created_utc": 1652980778.0,
                     "response": "I know almost nothing. \n\nFrom my understanding and please, someone correct me if I\u2019m wrong, the reason people lose their bitcoin when they lose their hard drive is because it cause them to lose their keys. \n\nThe bitcoin does not live inside your device. It is stored always on the blockchain. You just use your phone or computer to access the blockchain address where your bitcoin is stored. \n\nThe safest place i believe is in a hardware wallet. I dont use one myself so someone else will have to fill you in on how exactly that works. \n\nThe next best place as far as i know is a \u201ccold wallet\u201d. This is where you use an app to create a wallet. It will generate 12 seed words and your device uses those seed words to create a wallet where your bitcoin keys are stored on the blockchain. \n\nBitcoin is nothing physical. When it comes down to it its just ones and zeros. But we perceive the bitcoin as letters and numbers organized on a ledger known as the bitcoin blockchain. \n\n\ud83e\udd37\u200d\u2642\ufe0f",
                     "depth": 1,
@@ -69,7 +87,7 @@
                         {
                             "id": "i98b38a",
                             "author": "mozilaip",
-                            "score": 28,
+                            "score": 31,
                             "created_utc": 1652983469.0,
                             "response": "Your first sentence is wrong... Because you described everything correctly",
                             "depth": 2,
@@ -77,7 +95,7 @@
                                 {
                                     "id": "i98hbny",
                                     "author": "DankCryptography",
-                                    "score": 7,
+                                    "score": 9,
                                     "created_utc": 1652986030.0,
                                     "response": "To expand on their first paragraph about losing keys...\n\nBack in the day seed phrases weren't a thing. You accessed your wallet on your pc using a dat file I believe. Basically this file is the key to access you bitcoins. These stories you see are from people who never backed up this file and therefore when they threw away their old pc, they lost access to their wallet.\n\nNowadays wallets generate seed phrases which is a sting of words which act as your key. Make sure this phrase is secured safely in multiple locations and not on an online device.",
                                     "depth": 3,
@@ -100,7 +118,7 @@
                 {
                     "id": "i98s0o9",
                     "author": "darwinlovestrees",
-                    "score": 7,
+                    "score": 6,
                     "created_utc": 1652990401.0,
                     "response": "There are some good responses to you in this thread. I will only contribute in one small way - try and detach yourself from thinking about \"one whole bitcoin.\" The only reason to ever have exactly 1.0 BTC or exactly 0.1 BTC or exactly 21.0 BTC is just pure vanity. Bitcoin is (almost) infinitely fractional. Think of it more like a fluid. I've been collecting bitcoin for over a year now, very gradually, and I've finally surpassed 0.1 BTC! Things like that.",
                     "depth": 1,
@@ -124,6 +142,25 @@
                             "comments": []
                         },
                         {
+                            "id": "i9c178x",
+                            "author": "amigo3900",
+                            "score": 1,
+                            "created_utc": 1653057338.0,
+                            "response": "Is 0.1BTC ,= to one tenth of a full coin?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9dm3dh",
+                                    "author": "darwinlovestrees",
+                                    "score": 1,
+                                    "created_utc": 1653081632.0,
+                                    "response": "Yes technically\n\nBut again a \"full coin\" is meaningless, it's just a symbolic milestone really",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
                             "id": "i9agv2s",
                             "author": "cryptochessman",
                             "score": 0,
@@ -137,7 +174,7 @@
                 {
                     "id": "i982qzf",
                     "author": "BTCMinerBoss",
-                    "score": 19,
+                    "score": 18,
                     "created_utc": 1652980114.0,
                     "response": "If you buy 1 BTC on Binance, Binance give you basically an IOU. That's because it is stored in their wallet (an address on the blockchain).\n\nYou need to find another wallet you want to use and transfer your BTC from Binance to your own wallet.\n\nOnce it's in your own wallet, all you need is the private key (aka seed phrase) to be written down. The BTC is still on the blockchain but now you have the password to access it. Doesn't matter if you lose your phone, hard drove, or whatever your wallets was \"stored\" on.\n\nEdit: if you lose your seed phrase, however,  you're SOL and will be FUBAR. Nobody will be able to help then.",
                     "depth": 1,
@@ -148,6 +185,15 @@
                             "score": 3,
                             "created_utc": 1653003311.0,
                             "response": "Also. You should hide the shit out of the seed phrase note. Stamp it on a metal plate in case of fire or have a copy hidden somewhere else you trust. Anybody with your phrase can access your coins.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9h8kex",
+                            "author": "ih8te123",
+                            "score": 1,
+                            "created_utc": 1653158553.0,
+                            "response": "So, which wallet(s) do you recommend?",
                             "depth": 2,
                             "comments": []
                         }
@@ -319,6 +365,15 @@
                     "comments": []
                 },
                 {
+                    "id": "i9db431",
+                    "author": "Psychological-Ad212",
+                    "score": 1,
+                    "created_utc": 1653076638.0,
+                    "response": "The bitcoin you bought on exchanges like Binance will go directly to your Bitcoin wallet in the exchange which is automatically provided to you once you set up an account for that particular exchange. Even if you lose your phone if you still have access to your credentials for the Binance exchange. What you heard in the news is referred to as Hardware wallets, these devices uses random number generator to generate your public and private keys, the funds stored inside these hardware wallets are not easily accessible so it is suitable for long term holdings. It is deemed as the most secure way to store crypto(not applicable if you lose the device itself) as the private keys never leave the device itself. Consider using hardware wallets if you want to hodl long term or you believe in the risk of online attacks that may cause to lose your assets.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i986gk4",
                     "author": "martinp82",
                     "score": -1,
@@ -370,6 +425,15 @@
                     "score": 0,
                     "created_utc": 1652982778.0,
                     "response": "All Bitcoin exists on the Blockchain.\n\nIf you buy Bitcoin on Binance or other exchange, they hold the keys to that Bitcoin until you move it to address that you control.\n\nDo yourself a favor and watch this video:\n\nBut how does Bitcoin actually work.\nhttps://youtu.be/bBC-nXj3Ng4",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9bxapf",
+                    "author": "davidkolesanov",
+                    "score": 0,
+                    "created_utc": 1653055740.0,
+                    "response": "Why do idiots go on Reddit to ask basic shit and not do research on their own",
                     "depth": 1,
                     "comments": []
                 }

@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uv5gq0/if_someone_loses_their_bitcoin_due_to_fraud_why/",
             "author": "Legitimate_Bison3756",
             "created_utc": 1653202290.0,
-            "score": 0,
-            "num_comments": 15,
+            "score": 2,
+            "num_comments": 29,
             "subreddit": "BitcoinBeginners",
             "selftext": "If someone loses their Bitcoin due to fraud, why can\u2019t the network simply say they don\u2019t treat that transaction as valid?\n\nWhy is it that if some hacker orders a company or government to pay millions of dollars in bitcoin due to ransomware, they can get away with it?\n\nWhy can\u2019t the company just tell the world they were defrauded, this is their wallet ID and the bad guy\u2019s Bitcoin wallet ID, please do not agree to the following transaction to their wallet to the bad guy\u2019s wallet and do not validate that blockchain?",
             "stickied": false,
@@ -23,11 +23,40 @@
                 {
                     "id": "i9jkcvp",
                     "author": "BTCMachineElf",
-                    "score": 13,
+                    "score": 17,
                     "created_utc": 1653208534.0,
                     "response": "Censoring transactions isn't feasible. You can't get 100% of miners to agree to censorship. hell, good luck getting 10%. one mining pool tried that and they got hit by a ton of backlash.\n\nAnd if it *were* , that would open our finances to being controlled by the government. They could just censor all our transactions on a whim. That is exactly what bitcoin seeks to avoid.\n\nBitcoin is uncensorable for a reason.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9mwswp",
+                            "author": "Legitimate_Bison3756",
+                            "score": 1,
+                            "created_utc": 1653271799.0,
+                            "response": "Why not create an immutable ID for every single Bitcoin (down to some finite percent of a Bitcoin) so that it can always be tracked? And render a Bitcoin invalid from any future use if it was involved with fraud or ransomware?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ndhmt",
+                                    "author": "theospatial",
+                                    "score": 1,
+                                    "created_utc": 1653281268.0,
+                                    "response": "Your proposal doesn't seem to solve the previous post's issue. If this were the case, governments or captured miners could declare any utxo as \"fraud\" and negate their future use. Whomever defines fraud or crime gets to dictate who gets to spend. Bitcoin is uncensorable.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9nf1cq",
+                                    "author": "BTCMachineElf",
+                                    "score": 1,
+                                    "created_utc": 1653282313.0,
+                                    "response": "There is no such thing as a 'single bitcoin'.\n\nLets say a bitcoin transaction has two inputs and three outputs. You cannot say which output came from which input. There is no difference. (this is how coin mixers work)\n\nBitcoins don't really exist beyond their amount, recorded on a ledger. When you have 0.232 bitcoin, you really just have a utxo with the number 0.232.\n\nThere are blockchain analytics firms that follow chains of transactions and they have managed to catch some criminals and recover some bitcoin that way.\n\nAnd regulated exchanges would certainly turn identifiably stolen funds over.\n\nBut you can't censor bitcoin. A smart thief will take it to coin mixers or unregulated exchanges.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": "i9jhsfl",
@@ -50,7 +79,7 @@
                 {
                     "id": "i9jzh9j",
                     "author": "putyograsseson",
-                    "score": 2,
+                    "score": 3,
                     "created_utc": 1653221306.0,
                     "response": "If I trick you out of your 5 bucks lemonade money in cash, then it\u2019s gone.\n\nThe same applies to bitcoin, it\u2019s electronic cash as stated in satoshi's whitepaper.",
                     "depth": 1,
@@ -80,6 +109,42 @@
                     "score": 1,
                     "created_utc": 1653252361.0,
                     "response": "Once you find out that the money is gone, the transaction is already in a block and it can not be reversed.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9mn2ua",
+                    "author": "Squirrel_Unfair",
+                    "score": 1,
+                    "created_utc": 1653266902.0,
+                    "response": "Who would decide its fraud or not? A central authority? No thanks.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9mwkjz",
+                    "author": "nullama",
+                    "score": 1,
+                    "created_utc": 1653271683.0,
+                    "response": "Think of it like cash.\n\nIf someone grabs your $100 bill you had in your hand and runs away, there's no way to get that back. That \"transaction\" is final, same with Bitcoin.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9mwo5k",
+                    "author": "d3vrandom",
+                    "score": 1,
+                    "created_utc": 1653271732.0,
+                    "response": "there's no one in charge on the network. it's decentralized. no one to turn to for justice.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9nmg92",
+                    "author": "ApplicationNo5082",
+                    "score": 1,
+                    "created_utc": 1653287867.0,
+                    "response": "Cause it do not work like that",
                     "depth": 1,
                     "comments": []
                 },

@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/ethereum/comments/uuge8k/which_private_blockchain_would_you_use_evmcomp/",
             "author": "michael98118",
             "created_utc": 1653110473.0,
-            "score": 5,
-            "num_comments": 24,
+            "score": 7,
+            "num_comments": 32,
             "subreddit": "ethereum",
             "selftext": "I've been hired by a company to \"add crypto\" to their current (successful) product, but they want to have it on a \"private blockchain\" \n\nThe team's initial thought was to fork geth (POW), though I see there being a high cost to maintain/run this.\n\nI was hoping that there was a good POS substitution available.\n\nI'd prefer an EVM protocol, though I could possibly be talked into a diff lang.\n\nWhat does Reddit think?\n\n_**What would Reddit do?**_",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i9f5xfh",
                     "author": "Perleflamme",
-                    "score": 5,
+                    "score": 7,
                     "created_utc": 1653112210.0,
                     "response": "If it's private and permissioned, there's no reason a PoW-based chain costs a lot, since you completely control mining difficulty. A permissioned chain can be essentially seen as PoA, even if based on PoW.\n\nThough you get nothing from decentralized blockchain resilience and such anymore.",
                     "depth": 1,
@@ -32,7 +32,7 @@
                 {
                     "id": "i9f6m38",
                     "author": "dips1994",
-                    "score": 5,
+                    "score": 4,
                     "created_utc": 1653112758.0,
                     "response": "If you don\u2019t mind me asking what are the company trying to achieve with the private blockchain?",
                     "depth": 1,
@@ -41,7 +41,7 @@
                 {
                     "id": "i9fbpmv",
                     "author": "AESTHTK",
-                    "score": 4,
+                    "score": 6,
                     "created_utc": 1653117018.0,
                     "response": "First of all...\n\nDo you mean private as in infrastructure hosting (ie. POA nodes) or private as in permissioned (ie. non public) or private as in data and transaction privacy (ie. off-chain and zk circuits)?\n\nDepending on your answer, I would look at Hyperledger Besu, Kaleido Firefly and Polygon Nightfall.",
                     "depth": 1,
@@ -50,7 +50,7 @@
                 {
                     "id": "i9fb4qq",
                     "author": "Kristkind",
-                    "score": 8,
+                    "score": 9,
                     "created_utc": 1653116526.0,
                     "response": "The reasonable option is offered by\n\nhttps://consensys.net/enterprise-ethereum/best-blockchain-for-business/busting-the-myth-of-private-blockchains/\n\nIf you don't plan to plug your private chain into the public one, you might as well use an SQL database.\n\nUnless it's about the marketing gimmick, then use whatever chain you like to toy around.",
                     "depth": 1,
@@ -66,7 +66,7 @@
                                 {
                                     "id": "i9h079s",
                                     "author": "atrizzle",
-                                    "score": 2,
+                                    "score": 3,
                                     "created_utc": 1653154619.0,
                                     "response": "Please, \u201cprivate blockchains\u201d aren\u2019t immutable either. Hell neither are public blockchains, when enough resources are put into breaking its immutability.",
                                     "depth": 3,
@@ -75,6 +75,24 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "id": "i9ftnzq",
+                    "author": "inadaze319",
+                    "score": 2,
+                    "created_utc": 1653132963.0,
+                    "response": "WWRD? This need to be like a t shirt or bracelet or something.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9g9qe8",
+                    "author": "mooremo",
+                    "score": 2,
+                    "created_utc": 1653142433.0,
+                    "response": "https://polygon.technology/solutions/polygon-nightfall/",
+                    "depth": 1,
+                    "comments": []
                 },
                 {
                     "id": "i9gcq4r",
@@ -141,24 +159,6 @@
                             "comments": []
                         }
                     ]
-                },
-                {
-                    "id": "i9ftnzq",
-                    "author": "inadaze319",
-                    "score": 1,
-                    "created_utc": 1653132963.0,
-                    "response": "WWRD? This need to be like a t shirt or bracelet or something.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i9g9qe8",
-                    "author": "mooremo",
-                    "score": 1,
-                    "created_utc": 1653142433.0,
-                    "response": "https://polygon.technology/solutions/polygon-nightfall/",
-                    "depth": 1,
-                    "comments": []
                 },
                 {
                     "id": "i9fef8u",

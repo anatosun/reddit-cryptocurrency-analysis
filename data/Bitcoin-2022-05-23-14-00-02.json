@@ -1,0 +1,1035 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uw0qlh",
+            "title": "Send lightning payments over discord",
+            "url": "https://discopay.cc/",
+            "author": "Odd_Truck8402",
+            "created_utc": 1653314053.0,
+            "score": 8,
+            "num_comments": 16,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9oqxu1",
+                    "author": "MrRGnome",
+                    "score": 2,
+                    "created_utc": 1653316270.0,
+                    "response": "Where is the git and how do I self host or audit this?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9oyypo",
+                            "author": "Odd_Truck8402",
+                            "score": 1,
+                            "created_utc": 1653319786.0,
+                            "response": ">how do I self host\n\nHi MrRGnome, you cannot self-host this/there is no public repo. I believe [lntxbot](https://github.com/fiatjaf/lntxbot) is configurable to use on discord if you seek a self-hosted option.\n\nPublishing the code for this bot provides only negatives for me I'm afraid. There is no way to prove to any of my users that the code they see on github is the code that I am running so what good does auditing the code do? If I didn't intend to host the bot and grow its audience I would publish the code so other people can host it as you suggest. However, I believe publishing the code only exposes me/my users to loss of funds by allowing malicious actors to hunt for vulnerabilities & bugs in the code. For example, someone [stole](https://twitter.com/lntxbot/status/1457054454251917314) 14 million sats from lntxbot at the end of last year. Having access to the lntxbot's source, I imagine would only assist in an attack like this.\n\nLet me be clear about this DiscoPay is fully custodial. Users should not keep more than a few thousand sats on the bot. Luckily lightning makes withdrawal and deposits basically free and instant so this is not a big burden for users. Lastly, to further encourage users to keep a minimal amount of funds on the bot I'm releasing a, feature hopefully by the end of the week, that enables auto withdrawals to lnurl pay & lightning addresses once your balance exceeds a user-specified threshold.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9oztsc",
+                                    "author": "MrRGnome",
+                                    "score": 1,
+                                    "created_utc": 1653320152.0,
+                                    "response": "This is a ridiculous response with absurd justifications which doesn't merit an actual rebuttal, just dismissal and disappointment. You're in a FOSS community of self hosting, auditing, verifying users. How many shitty lightning bots are we going to see come and go - many taking users funds with them - before shitty devs stop being shitty and users stop enabling them?\n\nOpen source code does not create vulnerabilities it reduces them. If you have so little faith in your code that you believe simply reading it makes theft possible then no one should be using your shitty bot.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9p11xe",
+                                            "author": "Odd_Truck8402",
+                                            "score": 1,
+                                            "created_utc": 1653320671.0,
+                                            "response": "This is an oddly charged response... This is a service, not a wallet where users are supposed to store any meaningful sum of money. Being an absolutist about open source in this context seems silly to me, but different strokes I suppose.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9p20be",
+                                                    "author": "MrRGnome",
+                                                    "score": 1,
+                                                    "created_utc": 1653321074.0,
+                                                    "response": "Is it oddly charged after watching you spam this in discords including ours for months now, this sub, lightning subs while you admit that this code is so full of security holes that literacy is the sole required capacity to steal funds? You push shitty monetized shovel ware on us, I'll shovel it right back at you.\n\nBeing an absolutist about verifying people asking me to trust them with my bitcoin is silly from the perspective of those looking to monetize my liquidity with an option to walk off with my money, sure.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ownrh",
+                    "author": "quickscope1337",
+                    "score": 1,
+                    "created_utc": 1653318797.0,
+                    "response": "Is it legit? Thats the question",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ovxh2",
+                    "author": "michelbarnich",
+                    "score": 1,
+                    "created_utc": 1653318475.0,
+                    "response": "Sounds like a scam",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9ozctu",
+                            "author": "Odd_Truck8402",
+                            "score": 1,
+                            "created_utc": 1653319952.0,
+                            "response": "How so?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ozqeb",
+                                    "author": "michelbarnich",
+                                    "score": 1,
+                                    "created_utc": 1653320112.0,
+                                    "response": "Tell me why the bot is better than just asking for someones BTC address, there is literally no usecase.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9p05sr",
+                                            "author": "Odd_Truck8402",
+                                            "score": 1,
+                                            "created_utc": 1653320293.0,
+                                            "response": "Because you can send micropayments to discord users & don't need to ask them for an address. The bot only supports lightning payments. Also you can react to a message with the \u26a1\ufe0f lightning emoji to instantly tip a user a tiny about of sats. The use case is supercharging your discord server with sats.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9p0g8v",
+                                                    "author": "michelbarnich",
+                                                    "score": 1,
+                                                    "created_utc": 1653320415.0,
+                                                    "response": "So i stead I send my BTC to the bot, and will probably exit scam, sounds convincing. \n\nAgain there is no reason for this Bot. If I own a server, I\u2018ll make a read only channel with my Address, and anyone can send BTC to it. No need for a Bot. The lightning emoji feature is cool but not really something I would use.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9p1nem",
+                                                            "author": "Odd_Truck8402",
+                                                            "score": 1,
+                                                            "created_utc": 1653320924.0,
+                                                            "response": "If a simple on-chain address meets your use case by all means stick with it, that's the power of bitcoin. In general this bot is mostly a way to easily introduce people to bitcoin like, \"here is a few pennies\". This could be enough to send a person down the rabbit hole. In fact the reddit lightning bot from a few years back were the first sats I ever owned.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9p1zxk",
+                                                                    "author": "michelbarnich",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653321070.0,
+                                                                    "response": "Thats cool and all, but I can promise no one is gonna seriously use this.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9p1b50",
+                    "author": "Dormage",
+                    "score": 1,
+                    "created_utc": 1653320779.0,
+                    "response": "This must be a joke right?",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uw0u9v",
+            "title": "Someone wants to send me bitcoin",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uw0u9v/someone_wants_to_send_me_bitcoin/",
+            "author": "defo731",
+            "created_utc": 1653314357.0,
+            "score": 25,
+            "num_comments": 81,
+            "subreddit": "Bitcoin",
+            "selftext": "Someone wants to send me bitcoin to pay me, no problem per se. But I have never used it.\n\nI created an account, he sent the money, but it didn't arrive. Now he tells me that it's because I have never traded with a forex broker account before and that I first have to \"activate\" my account. I supposedly just have to put some money in my wallet for the funds to reflect?   \n(Don't even know what that means tbh. Why does a wallet need to be activated?)\n\nHe says I need a minimum of 0.0052 BTC on my wallet for it to be unlocked and linking up fee of the wallet to the forex cloud company. \n\nWhat I'm trying to understand is what can go wrong? Because how I see it I'm just putting money into my wallet, if his money arrives all good, but what can go wrong? If not do I not just have money in my wallet? Could it be that he sends me negative bitcoin and makes my wallet go negative? \n\nI am literally new to this, any help could be appreciated :)",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9onwq6",
+                    "author": "motaconan",
+                    "score": 134,
+                    "created_utc": 1653314879.0,
+                    "response": "It's a common scam. They never sent you anything and they never will because you're talking to a scammer.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ooqwb",
+                    "author": "sebikun",
+                    "score": 68,
+                    "created_utc": 1653315272.0,
+                    "response": "Scam.\n\nHe will try to to convince you to send him first some BTC and you won't get anything back",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9on780",
+                    "author": "TheGreatMuffin",
+                    "score": 49,
+                    "created_utc": 1653314551.0,
+                    "response": "> He says I need a minimum of 0.0052 BTC on my wallet for it to be unlocked  \n\nThis is a well known scam scheme, stay away and obviously don't send any funds to them.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9oorss",
+                    "author": "NiceDoctorBeam",
+                    "score": 46,
+                    "created_utc": 1653315284.0,
+                    "response": "You are being scammed.  100%.  No doubt.  Do not send money to get money - ever.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9otw3m",
+                    "author": "LoGanJaaaames",
+                    "score": 46,
+                    "created_utc": 1653317576.0,
+                    "response": "Just incase you didn\u2019t read the other 24 comments \u2026\n\n\nThis is a scam",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9oqqso",
+                    "author": "human_steak",
+                    "score": 32,
+                    "created_utc": 1653316182.0,
+                    "response": "You don't activate wallets after you set them up.\n\nThis is a scam. \n\nIf you're interested in crypto, start reading up on common scams so that you can protect yourself.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9oqahj",
+                    "author": "Knurlinger",
+                    "score": 15,
+                    "created_utc": 1653315977.0,
+                    "response": "Common scam",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9onva1",
+                    "author": "Random_Person_246810",
+                    "score": 16,
+                    "created_utc": 1653314860.0,
+                    "response": "Unquestionable scam. Do not put any BTC in that wallet. You will not be able to withdraw it. In the real world, he should be able to send you BTC to a wallet/address of your choice.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9on60q",
+                    "author": "justinlongbranch",
+                    "score": 33,
+                    "created_utc": 1653314535.0,
+                    "response": "This sounds like a scam, if he truly wants to send Bitcoin to your wallet it's a simple process that should just involve you sending him your wallet address.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ou0jg",
+                    "author": "dima054",
+                    "score": 10,
+                    "created_utc": 1653317631.0,
+                    "response": "# SCAM",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9onrwx",
+                    "author": "WritingFun8769",
+                    "score": 8,
+                    "created_utc": 1653314816.0,
+                    "response": "\u201cactivating\u201d a wallet is a scam. don\u2019t do it. you won\u2019t actually own the keys to the wallet, they will, and they\u2019ll steal whatever bitcoin you put into that wallet",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ou0u0",
+                    "author": "ronchon",
+                    "score": 7,
+                    "created_utc": 1653317634.0,
+                    "response": "***THASSASCAM!*** \ud83d\udc48",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9oomy3",
+                    "author": "Tie-Flat",
+                    "score": 5,
+                    "created_utc": 1653315220.0,
+                    "response": "absolutely a scam",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9org23",
+                    "author": "zomgitsduke",
+                    "score": 5,
+                    "created_utc": 1653316498.0,
+                    "response": "This is a scam. 100%.\n\nIf someone wants to send you Bitcoin, create an account with an exchange like Coinbase.\n\nIt isn't the optimal situation but it'll keep your funds safe.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ootaz",
+                    "author": "never-give-up-every1",
+                    "score": 5,
+                    "created_utc": 1653315304.0,
+                    "response": "Be careful bro, especially this day where scammers are everywhere. learn from this mistake",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9oq0he",
+                    "author": "ETAVEGAMING",
+                    "score": 3,
+                    "created_utc": 1653315852.0,
+                    "response": "- Google which wallets are the best for Bitcoin. \n- Google how wallets work.\n- Send him the public key.\n- Wait for Bitcoin to show in your wallet.\n\nIf you do anything extra, you\u2019re wasting your time and risking your money.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9p2oub",
+                            "author": "thaigerking",
+                            "score": 7,
+                            "created_utc": 1653321359.0,
+                            "response": "Emphasis on PUBLIC and NOT the PRIVATE key!!!",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9pl6v3",
+                            "author": "SmoothGoing",
+                            "score": 1,
+                            "created_utc": 1653329114.0,
+                            "response": "Address is not a public key. You generally never even see public keys.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9oqcmo",
+                    "author": "joesus-christ",
+                    "score": 4,
+                    "created_utc": 1653316003.0,
+                    "response": "This is a scam. This person likely has access to \"your\" account / wallet and is just waiting for you to deposit money so they can take it - did they tell you to sign up somewhere in particular?\n\nIf they're legit, you could go and create a wallet in whatever environment you want (eg Muun) and send them your address to receive the bitcoin.\n\nThis scammer is using your lack of understanding, as is the case with most scams. Please do not do anything they. Do your own research steer clear of Bitcoin until you know what's what.\n\nOnce you do understand it... use it, of course!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9oojcj",
+                    "author": "drinkingkindasucks",
+                    "score": 6,
+                    "created_utc": 1653315173.0,
+                    "response": "This is clearly a scam.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9oz626",
+                    "author": "MudFlaky",
+                    "score": 3,
+                    "created_utc": 1653319873.0,
+                    "response": "Anything with \"FOREX\" is a scam guys.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9oojud",
+                    "author": "Sergeant_Scoob",
+                    "score": 6,
+                    "created_utc": 1653315179.0,
+                    "response": "Huge scam alert here .. say you can only accept cash at this time",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9onqjg",
+                    "author": "johndoeisback",
+                    "score": 4,
+                    "created_utc": 1653314798.0,
+                    "response": "It's most likely a scam. He probably controls your wallet, so if you deposit money it will be gone.\n\n>I created an account\n\nCan you explain exactly how you created the account?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9oqec3",
+                    "author": "fiveonethreefour",
+                    "score": 4,
+                    "created_utc": 1653316024.0,
+                    "response": "dont reply to private messages, they are scams too",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ov2y7",
+                    "author": "Lazy-Substance-5161",
+                    "score": 2,
+                    "created_utc": 1653318101.0,
+                    "response": "Scam",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ovgmy",
+                    "author": "Nada_Lives",
+                    "score": 2,
+                    "created_utc": 1653318269.0,
+                    "response": "Bitcoin does not have accounts, Bitcoin has wallets. They are NOT the same thing. Bitcoin is NOT a website, and Bitcoin has no brokers.\n\nA small amount of DuckDuckGo-ing will show that you are dealing with something that IS NOT BITCOIN.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ovwv5",
+                    "author": "BTCMachineElf",
+                    "score": 2,
+                    "created_utc": 1653318468.0,
+                    "response": "You are being scammed.\n\nIf you want to receive bitcoin, set up a layer 1 phone wallet using Blockstream Green or Bluewallet, give them an address, and they send you the bitcoin. It is free.\n\nIf someone tells you to sign up for a website to get paid, you are being scammed.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ovxjz",
+                    "author": "domotor2",
+                    "score": 2,
+                    "created_utc": 1653318476.0,
+                    "response": "Scam",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ovxyt",
+                    "author": "CryptoBubu",
+                    "score": 2,
+                    "created_utc": 1653318481.0,
+                    "response": "it seems like nobody said it until now, but this clearly sounds like a SCAM for me",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ow5k3",
+                    "author": "YOLOBABY4LIFE",
+                    "score": 2,
+                    "created_utc": 1653318575.0,
+                    "response": "I like the way people are becoming more aware, look at how many people are say SCAM, a few year ago there wouldn't have been half of you saying this,\n Stay vigilant, stay aware, stay rich!!!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9oy2vs",
+                    "author": "DrAgaricus",
+                    "score": 2,
+                    "created_utc": 1653319410.0,
+                    "response": "You don't need any account to receive BTC. That sounds like a scam.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9oz7cr",
+                    "author": "The_JoshGausden_Scam",
+                    "score": 2,
+                    "created_utc": 1653319888.0,
+                    "response": "This is a scam. Don\u2019t entertain this people just don\u2019t. I lost a lot of money from this scammers and they sent me non-spendable bitcoin. Had to look it up at Quora on what that means. Too late.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9p0xzu",
+                            "author": "Stardust8356",
+                            "score": 2,
+                            "created_utc": 1653320625.0,
+                            "response": "tf is non spendable bitcoin?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9p1ih4",
+                                    "author": "The_JoshGausden_Scam",
+                                    "score": 0,
+                                    "created_utc": 1653320865.0,
+                                    "response": "As per someone at Quora, \n\u201cThat is called a watch-only address in your wallet, meaning you can only watch it, but not spend the coins held by it. The only way to spend it would be to find the person who does own that private key, and ask them for it (but they probably won\u2019t give it to you). The scammer is likely trying to sell you the private key, or unlock it, or some other nonsense. That is the scam, so please beware.\u201d -Scott Pinckney",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ozpq2",
+                    "author": "Stardust8356",
+                    "score": 2,
+                    "created_utc": 1653320104.0,
+                    "response": "textbook scam",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9p0r4d",
+                    "author": "fuckerl",
+                    "score": 2,
+                    "created_utc": 1653320542.0,
+                    "response": "Need to Say ,its a SCAM",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9p2xy6",
+                    "author": "SaasSaas420",
+                    "score": 2,
+                    "created_utc": 1653321467.0,
+                    "response": "Classic scam",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9p4f1o",
+                    "author": "GJDMIULC",
+                    "score": 2,
+                    "created_utc": 1653322089.0,
+                    "response": "Holy shit, imagine a world where you can send \u201cnegative Bitcoin\u201d to someone.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9p5wia",
+                    "author": "comfyggs",
+                    "score": 2,
+                    "created_utc": 1653322715.0,
+                    "response": "Scam",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9p669x",
+                    "author": "FlTerpz",
+                    "score": 2,
+                    "created_utc": 1653322826.0,
+                    "response": "Scam",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9p9vtp",
+                    "author": "DudeIncogneto",
+                    "score": 2,
+                    "created_utc": 1653324364.0,
+                    "response": "You're being scammed",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pchpy",
+                    "author": "Patxi1_618",
+                    "score": 2,
+                    "created_utc": 1653325453.0,
+                    "response": "SCAM SCAM SCAM",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pdgdx",
+                    "author": "bikesrgood",
+                    "score": 2,
+                    "created_utc": 1653325861.0,
+                    "response": "Wow, like 52 comments saying this is a scam. I just wanted to point out that this is a scam. \ud83e\udd21",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pisgf",
+                    "author": "Miserable-Job-156",
+                    "score": 2,
+                    "created_utc": 1653328103.0,
+                    "response": "It's a scam dude, obviously. Send that money to me and I will activate your account. I can't believe these people dude",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ovnzh",
+                    "author": "ProfRomeoVonSexhaver",
+                    "score": 2,
+                    "created_utc": 1653318360.0,
+                    "response": "To receive bitcoin:\n\nStep 1: download BlueWallet (free for IoS and Android)\n\nStep 2: create a new wallet by tapping + and write down the 12-word backup it gives. Do not share this with anyone.\n\nStep 3: go in the newly created wallet and tap \"Receive\" and give that address (the long string of text starting with \"bc1q\") to the sender.\n\nThat's it. Anything other than this is a scam.\n\nAnyone DMing you mentioning \"wallet connect\" services are also scammers.\n\nHope this helps.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9oqbp5",
+                    "author": "ElephantsAreHeavy",
+                    "score": 2,
+                    "created_utc": 1653315992.0,
+                    "response": "Don't be stupid. He is trying to fuck you. A bitcoin wallet does not need to be activated before it can be used.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9or05e",
+                            "author": "MurdrWeaponRocketBra",
+                            "score": 7,
+                            "created_utc": 1653316300.0,
+                            "response": "Maybe don't be a jackass to newbies? If you call people stupid for trying to learn, new users will be reluctant to try crypto.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9oribs",
+                                    "author": "ElephantsAreHeavy",
+                                    "score": -1,
+                                    "created_utc": 1653316526.0,
+                                    "response": "Sorry that the truth hurts you. You can go back into your protective bubble, I will not expose you to the cruel world out there.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9on68e",
+                    "author": "Pup5432",
+                    "score": 1,
+                    "created_utc": 1653314538.0,
+                    "response": "That sound fishy honestly, anyone know if forex is a legitimate wallet?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9oqedy",
+                            "author": "ElephantsAreHeavy",
+                            "score": 7,
+                            "created_utc": 1653316025.0,
+                            "response": "Not fishy, just straightup scam.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9phmoa",
+                    "author": "Vere-D-Lee",
+                    "score": 1,
+                    "created_utc": 1653327618.0,
+                    "response": "Seems legit to me. Go for it.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9p139m",
+                    "author": "Foodog100",
+                    "score": 1,
+                    "created_utc": 1653320686.0,
+                    "response": "The bitcoin network doesn't care if you have a minimum amount, you don't even need to create an account as all the addresses already exist on the network.\n\nThe wallet he is linking you to would be his wallet and anything you will send him will be gone, a very old scam.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pcby8",
+                    "author": "_alwin",
+                    "score": 1,
+                    "created_utc": 1653325385.0,
+                    "response": "Assuming all 100 comments above, this is obviously a scam.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pe7fm",
+                    "author": "StiltonG",
+                    "score": 1,
+                    "created_utc": 1653326179.0,
+                    "response": "Definitely sounds like a scam, because you do ***not*** need to \"activate\" a bitcoin wallet by adding funds to it.  That's BS.\n\nYou can create a bitcoin (BTC) wallet address instantly and for free, and just giving him your public address he can send BTC to that address.  Easiest is just to use a mobile wallet app.\n\nAs another example (assuming you don't have an account at some exchange like Coinbase, Kraken, etc), you can generate a paper wallet on your computer and just provide him the public address.  If you do that, make sure you keep the private key completely hidden (\\*\\*\\* do not even store it on your computer, just save it to a removable drive you keep offline and/or print the hard copy & store it in a safe.  Do not ever expose the private key to anyone).  Once he sends funds to your public wallet address, you can see the funds by checking any blockchain explorer (eg. [blockchair.com](https://blockchair.com) or [blockchain.info](https://blockchain.info), etc), and whenever you want to send funds you can just use a mobile wallet app to scan/import the private key.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pewhs",
+                    "author": "nikosnelson",
+                    "score": 1,
+                    "created_utc": 1653326466.0,
+                    "response": "Scam. But, pay you for what exactly? Don't tell me you've replied to some random mail or message from someone you don't know. Don't tell me you are that kind of greedy person..",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pfkqs",
+                    "author": "RCE57",
+                    "score": 1,
+                    "created_utc": 1653326749.0,
+                    "response": "He should be able to show you proof he sent it",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pga6h",
+                    "author": "Affectionate_Ad5353",
+                    "score": 1,
+                    "created_utc": 1653327045.0,
+                    "response": "Scam",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pgtvn",
+                    "author": "actuallynotaredditor",
+                    "score": 1,
+                    "created_utc": 1653327277.0,
+                    "response": "SCAM!!!!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ph1ni",
+                    "author": "Toger",
+                    "score": 1,
+                    "created_utc": 1653327371.0,
+                    "response": "Whatever forex site he is pointing you at is fake, any money you put there will be gone. They might have it set up to look like you still have funds, maybe have gains, but there will be an unending set of fees / taxes / insurance / AML / diplomatic stamps  you need to pay to get the money they are \\*supposedly\\* sending.  They aren't.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ph66a",
+                    "author": "Etovia",
+                    "score": 1,
+                    "created_utc": 1653327424.0,
+                    "response": "Are you sure he is not scamming you?\n\nAnyway do not \"Created an account\", wtf?! Download and run the Bitcoin wallet, e.g. the one from bitcoin.org (org, NOT com!) after doublechecking this is the right program.\n\nThere you click to get a receiving address. make backups. if that was a scam, well, still you can just buy BTC and become rich one day (or at least defend from the inflation of fiat money)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pit2z",
+                    "author": "123Delbe",
+                    "score": 1,
+                    "created_utc": 1653328110.0,
+                    "response": "Hey mate!!!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pkfm8",
+                    "author": "shoopyvras",
+                    "score": 1,
+                    "created_utc": 1653328797.0,
+                    "response": "So by now I\u2019m sure you know it\u2019s a scam, but it\u2019s funny cause this happens with PayPal all the time too. I once got scammed through PayPal with this exact same schtick (I was foolish, I know). My point being, don\u2019t let this dissuade you from learning about Bitcoin, because it\u2019s funny how we all sort of fall into it in some way. Yes it is a scam, but it\u2019s not Bitcoin. Use this time to learn about what it is and how it works, and I\u2019m sure you\u2019ll fall in love like many of the people on this subreddit did!!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pl0rm",
+                    "author": "SmoothGoing",
+                    "score": 1,
+                    "created_utc": 1653329043.0,
+                    "response": "No accounts in bitcoin. No activation deposits either. It's a scam.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pl45f",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1653329082.0,
+                    "response": "Bitcoin does not have accounts  \nYour \"someone\" is attempting to scam you with an old advance-fee fraud  \nhttps://en.wikipedia.org/wiki/Advance-fee_scam",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pm11p",
+                    "author": "THALL_himself",
+                    "score": 1,
+                    "created_utc": 1653329473.0,
+                    "response": "After reading your post, along with everyone else\u2019s input here, I\u2019ve concluded that this is in fact a scam.  Do NOT continue speaking with this person and do not send them anything",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9psxdd",
+                    "author": "Vipu2",
+                    "score": 1,
+                    "created_utc": 1653332439.0,
+                    "response": "I read all the comments here, I think its as SCAM!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pv99j",
+                    "author": "soggypoopsock",
+                    "score": 1,
+                    "created_utc": 1653333440.0,
+                    "response": "yeah that\u2019s not really how it works. \n\nBe careful because if he linked you the site, which sounds like he did, it\u2019s just a scam to steal whatever you deposit \n\nA real payment is platform agnostic. They shouldn\u2019t give a shit where your wallet was created, they just need an address \n\nUse a reputable hardware wallet that you purchase direct from the manufacturer, like trezor or ledger, or a reputable exchange that you decided to use on your own volition. If they ask you for anything other than the public address to send funds to, it\u2019s a scam",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9q1kb6",
+                            "author": "Independent-Algae-12",
+                            "score": 1,
+                            "created_utc": 1653336121.0,
+                            "response": "Thanks for the detailed explanation, makes sense. Is the hardware wallet you mentioned essentially just the store of credentials (private key) ?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9q5qfn",
+                                    "author": "soggypoopsock",
+                                    "score": 1,
+                                    "created_utc": 1653337930.0,
+                                    "response": "No problem, and yes exactly, it\u2019s just a piece of hardware specifically meant for holding the private key and interacting with the blockchain \n\nIt\u2019s the most secure way to hold your bitcoin as it is not subject to any kind of external event like an exchange hack or anything like that. Just takes a little bit more responsibly since you have to save your own seed phrase for recovery. But so worth it in my opinion, for anyone with a significant amount or anyone who wants to hold for a very long time\n\nJust a side note make sure you are getting it directly from the manufacturing company themselves, scammers will try to sell you a device with a pre-made wallet in it that they have the key for, hope that newer people don\u2019t realize that they didn\u2019t generate the key phrase themselves, and deposit money to be stolen. But as long as it is from a reputable seller and you generate your own seed, you\u2019re good",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9pxiqz",
+                    "author": "rucrzy05",
+                    "score": 1,
+                    "created_utc": 1653334402.0,
+                    "response": "Sounds like a common Bitcoin scam.never send money .go to a exchange if you want crypto.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9q0bg7",
+                    "author": "hashzzz",
+                    "score": 1,
+                    "created_utc": 1653335590.0,
+                    "response": "Scam!!!! Don't interact further with him",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9q0q85",
+                    "author": "007thedude",
+                    "score": 1,
+                    "created_utc": 1653335765.0,
+                    "response": "Personally, I\u2019m kinda confused on your confusion\u2026",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9q3ijs",
+                    "author": "98gffg7728993d87",
+                    "score": 1,
+                    "created_utc": 1653336965.0,
+                    "response": "No one wants to send you anything. They're trying to get you to send them something to scam you.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9q5rft",
+                    "author": "whitefed0ra",
+                    "score": 1,
+                    "created_utc": 1653337942.0,
+                    "response": "Total scam bro\n\nBe careful it's a wild fire of scams out there much because crypto is like a stock market.\n\nBe careful bitcoin is NON refundable ever no crypto is once its sent that's it done.....\n\n\nCheck out bitcoin abuse database \n\nSearch there wallet address and you will mostly see people saying it is also a scam\n\nIf your new and are interested  please don't be scared off but also please DO NOT invest, research the tech behind it and most of all the tech that powers it the blockchain\n\nHope this helps op, stay safe",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9qam8t",
+                    "author": "AndyZuggle",
+                    "score": 1,
+                    "created_utc": 1653340064.0,
+                    "response": "Bitcoin itself is not a scam, but you are being scammed.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9qcz68",
+                    "author": "BigPlayCrypto",
+                    "score": 1,
+                    "created_utc": 1653341130.0,
+                    "response": "\ud83e\udd26\ud83c\udffc\u200d\u2642\ufe0f We all get got yo. Go and kick his ass if he\u2019s physical if he\u2019s digital you have been scammed and you won\u2019t get any satoshi\u2019s. Just take the L and remember it next time",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9qdrqh",
+                    "author": "BillMcCrearysStache",
+                    "score": 1,
+                    "created_utc": 1653341489.0,
+                    "response": "How do people fall for this shit man",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uw0slq",
+            "title": "How Bitcoin Can Unlock The Energy Of The Ocean For 1 Billion People",
+            "url": "https://bitcoinmagazine.com/business/bitcoin-unlocks-ocean-energy",
+            "author": "foxy-agent",
+            "created_utc": 1653314215.0,
+            "score": 19,
+            "num_comments": 16,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9omwkp",
+                    "author": "coinfeeds-bot",
+                    "score": 3,
+                    "created_utc": 1653314414.0,
+                    "response": "tldr; Bitcoin has the potential to unlock between 2-4 terawatts of clean, continuous and year-round baseload power for one billion people by harnessing the thermal energy of the oceans. The technology is Ocean Thermal Energy Conversion (OTEC), a 150-year-old idea stymied by economies of scale, that turns Earth\u2019s oceans into an enormous renewable solar battery. OTEC may very well be the most efficient and most ecological way to mine Bitcoin.\n\n*This summary is auto generated by a bot and not meant to replace reading the original article. As always, DYOR.*",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9oq5s1",
+                            "author": "manwhole",
+                            "score": -2,
+                            "created_utc": 1653315918.0,
+                            "response": "Crypto bros sure are starting to sound like charlatan.\n\nTake a complicated seemingly unfixable issue and pepper some crypto verbiage on it, boom! Magic! Problem solved.\n\nMy advice: dont try to catch a falling knife.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9pqb04",
+                                    "author": "dinglebarry9",
+                                    "score": 2,
+                                    "created_utc": 1653331309.0,
+                                    "response": "What is unfixable now?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9pt5lj",
+                                            "author": "manwhole",
+                                            "score": 0,
+                                            "created_utc": 1653332533.0,
+                                            "response": "Environmental collapse bro",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9qnzya",
+                                                    "author": "dinglebarry9",
+                                                    "score": 2,
+                                                    "created_utc": 1653346304.0,
+                                                    "response": "Well ya. But that doesn't mean we should stop trying",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9oxogj",
+                                    "author": "Nada_Lives",
+                                    "score": -1,
+                                    "created_utc": 1653319241.0,
+                                    "response": "Whatever sells the sponsor's product.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9owwxt",
+                    "author": "Nada_Lives",
+                    "score": -2,
+                    "created_utc": 1653318910.0,
+                    "response": "They haven't been able to produce this \"energy from the ocean\" economically yet. There are thousands of wonderful things that could be done with it if they could.\n\nSo adding that they will use this energy for mining Bitcoin is just blatant Bullshit.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9p7l8o",
+                            "author": "the-jade-rabbit",
+                            "score": 2,
+                            "created_utc": 1653323412.0,
+                            "response": "> Bitcoin doesn\u2019t care if OTEC works or not. If an OTEC pilot plant produces the energy that is promised, the team that built it will be rewarded. Proven on a public ledger, the plant will have a symbiotic co-located buyer for stranded energy and can secure the funding needed to scale up the operation. If not, the experiment fails with no reward. Bitcoin mining rigs plug right into any power source, in any remote location, ready to pay for its energy with digital gold. Bitcoin will be the final judge and jury as to whether or not OTEC scales or fails.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9p8fkz",
+                                    "author": "Nada_Lives",
+                                    "score": 2,
+                                    "created_utc": 1653323764.0,
+                                    "response": "Build it and they will come.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9pq9bo",
+                            "author": "dinglebarry9",
+                            "score": 2,
+                            "created_utc": 1653331290.0,
+                            "response": "The article says that Bitcoin is the only buyer for OTEC energy that can get it through the innovation valley of death. Optimizing OTEC for Bitcoin mining drastically cuts the capital expense of standing up a 10MW prototype while increasing the efficiency of both the energy generation and Bitcoin mining.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9pu8ub",
+                                    "author": "Nada_Lives",
+                                    "score": 1,
+                                    "created_utc": 1653333006.0,
+                                    "response": "Get real. This idea could be exploited commercially by anyone anywhere that has an ocean, if it were practical. But it's not.\n\nSo they're going for the Bitcoin angle. Go ahead and \"invest\". Nobody's stopping you from getting in early on this fabulous opportunity.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9qnxph",
+                                            "author": "dinglebarry9",
+                                            "score": 1,
+                                            "created_utc": 1653346274.0,
+                                            "response": "Not everywhere, did you even read the article?",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i9qztx8",
+                                            "author": "fellowpleb",
+                                            "score": 1,
+                                            "created_utc": 1653352161.0,
+                                            "response": "I don't know if know this but oceans are pretty far away and whenever you transport energy you end up losing a lot of it, which makes it uneconomical to transport it over long distances... Unless you want to cool the transmission lines to absolute zero, and spend trillions of dollars building them. \n\n\nThese OTEC generators would be in the deep ocean, meaning any energy they produced really couldn't be used on land.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9r2lmb",
+                                                    "author": "Nada_Lives",
+                                                    "score": 1,
+                                                    "created_utc": 1653353501.0,
+                                                    "response": "Much more practical to get stranded energy from volcanoes in El Salvador.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9qjuoo",
+                    "author": "DeskBotMt",
+                    "score": 1,
+                    "created_utc": 1653344322.0,
+                    "response": "'How bitcoin can use up renewable energy that is best applied elsewhere'.\n\nSure , geothermal energy is good, but what on earth does bitcoin have to do with it.\n\nI guess the people that buy this that bs that bitcoin will solve environmental issues, are the same who were convinced btc would be 250K by now.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}
