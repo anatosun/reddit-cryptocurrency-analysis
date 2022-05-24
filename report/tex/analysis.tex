@@ -54,6 +54,12 @@ We're now at that stage where one could run some correlation method on our summe
 
 Then, we compared each activity moving window average for each price moving window average using two of pandas built-in correlation methods, namely Pearson, Spearman and we also tried the The Hilbert–Schmidt independence criterion (HSIC). The first two methods deliver strong correlation coefficients (up to 0.87), while the HISC does not. Also, we notcied that the correlation differs depending on how much days (from when to when) we try to correlate. We've found that more than 10 days usually yields better results. Please refer to the interactive notebook for details.
 
+
+%% ADDED BY FX AFTER READING CITED PAPER
+
+However, it is important to remember that a correlation between two sets of data does not necessarily indicate a causal link. Here we rely on the results given by paper \citetitle{glenskiCharacterizingSpeedScale2019} and assume that there is a causal link. \citeauthor{glenskiCharacterizingSpeedScale2019} have indeed been able to prove a causal link between price movements and Reddit activity notably with bivariate Granger causality tests.
+
+
 % figures:
 % pearson.pdf
 % spearman.pdf
