@@ -3,7 +3,7 @@ In this section we pursue with the analysis of data scrapped on several cryptocu
 \subsection{Power Law Distribution}
 
 The power law distribution in a network can be understood as ``a few users are very popular and a lot of users are mildly or not popular at all''. Intuitively, this relation holds in our network composed of vertices as users and edges representing the comment relation. Indeed, when browsing Reddit in general, we may notice that a few comments (users) are very popular (have a very high score) as others are not. This intuition reveals itself true when plotting the node degree distribution (see fig. \ref{fig:degdist}). This is encouraging in relation to our network model and further analysis.
-\begin{figure}[Hb!]
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.3\textwidth]{figures/deg_dist.pdf}
     \caption{The network follows a power law distribution: a lot of users have few comments on their posts and a few users have a lot of comments on their posts.}
@@ -15,25 +15,25 @@ The power law distribution in a network can be understood as ``a few users are v
 \subsection{Page Rank}
 
 Regarding PageRank (PR), it can be interpreted as the amount of random walks in the network that end up on a particular vertex. For our network, it means that the higher the rank of one user is, the higher the probability is of commenting one post of that particular user. We decide here to investigate the steadiness of PR over 15 days. We might observe unsteadiness on figure \ref{fig:rankdays} but this is not entirely true with respect to the PageRank. First, this is true that the graph evolves quite rapidly over the days. The same users will not necessarily be active twice on the same comment over multiple days. This observation has been done by computing the set of users over the days and devising the similarity for each successive day. Let $U_i$ be the set of users for day $i$, then $s\left(i,j\right)$ is the similarity between day $i$ and $j$ such that $$s\left(i,j\right)=\frac{U_i\cap U_{j}}{U_i\cup U_{j}}.$$ We get the graph at figure \ref{fig:simdays}. However, the PR itself seems to be pretty consistent over the days when we compute the sum of the squared error between the intersected PR values as shown in graph \ref{fig:errordays} where the error only spikes to a value of $0.005$. We can conclude from these two observations that, although there are few overlapping users over the days, the ones that overlap tend to be very popular for a long period. This also means that in the cryptocurrency subreddits, posts tend to have a lasting interest for the users.
-\begin{figure}[hb!]
-    \centering
-    \includegraphics[width=0.5\textwidth]{figures/rank_days.pdf}
-    \caption{Networks between the 1st to the 15th May. The size of the nodes is relative to the PageRank values.}
-    \label{fig:rankdays}
-\end{figure}
-\begin{figure}[hb!]
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.3\textwidth]{figures/sim_days.pdf}
     \caption{Similarity between user sets over the 1st to the 15th May.}
     \label{fig:simdays}
 \end{figure}
-\begin{figure}[hb!]
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.3\textwidth]{figures/error_days.pdf}
     \caption{Sum of the squared error of PageRank values over intersected user sets between the 1st and the 15th May.}
     \label{fig:errordays}
 \end{figure}
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/rank_days.pdf}
+    \caption{Networks between the 1st to the 15th May. The size of the nodes is relative to the PageRank values.}
+    \label{fig:rankdays}
+\end{figure}
 
 \subsection{Louvain}
 
