@@ -46,24 +46,26 @@ $$ G_0 \subset G_1 \subset  ... \subset G_{n-1},$$
 where $n$ is the number of time windows, and $G_i$ a graph based on the \textit{Deep Link No Merge} data model.
 Then, we use the degree centrality to compare each graph with its subsequent graph. This results into a table where we have for each user (node) the development of its activity (degree). With this huge dataset, it is now possible to track users and also identify the most active users. However, since this requires lots of computation power and much more work to get something meaningful from this, we opted for the option to sum each time frame (e.g. 1 hour in our case). 
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/activity_x_price.pdf}
+    \caption{The Reddit activity and the BTC price, normalized, from 01.04 to 22.05.2022.}
+\end{figure}
+
+
 We're now at that stage where one could run some correlation method on our summed activity dataset against the price data. However, this will not yield good results as both datasets are very volatile. Therefore we needed to smoothen our data somehow. We opted for the moving window average method. We took both datasets and computed moving window averages with step 2, 3, 4, ..., 30. These steps represent the number of columns that will be averaged. 
 
-% figure activity_x_price.pdf 
-% figure acvitity_sums_ma.pdf
+Then, we compared each activity moving window average for each price moving window average using two of pandas built-in correlation methods, namely Pearson, Spearman and we also tried the The Hilbert–Schmidt independence criterion (HSIC). The first two methods deliver strong correlation coefficients (around -0.85), while the HISC does not. Also, we notcied that the correlation differs depending on how much days (from when to when) we try to correlate. We've found that more than 10 days usually yields better results. Please refer to the interactive notebook for details.
 
-
-Then, we compared each activity moving window average for each price moving window average using two of pandas built-in correlation methods, namely Pearson, Spearman and we also tried the The Hilbert–Schmidt independence criterion (HSIC). The first two methods deliver strong correlation coefficients (up to 0.87), while the HISC does not. Also, we notcied that the correlation differs depending on how much days (from when to when) we try to correlate. We've found that more than 10 days usually yields better results. Please refer to the interactive notebook for details.
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/corr_pearson_0.pdf}
+    \caption{Moving averages of the BTC price and the Reddit activity. Pearson Correlation yields a value of -0.889.}
+\end{figure}
 
 %% ADDED BY FX AFTER READING CITED PAPER
 
 However, it is important to remember that a correlation between two sets of data does not necessarily indicate a causal link. Here we rely on the results given by paper \citetitle{wooleyExtractingCryptocurrencyPrice2019} and assume that there is a causal link. \citeauthor{wooleyExtractingCryptocurrencyPrice2019} have indeed been able to prove a causal link between price movements and Reddit activity notably with bivariate Granger causality tests. Furthermore, the results shown above are consistent with \citetitle{iderCryptocurrencyReturnPrediction2022} where the authors are able to predict a future price changes with an accuracy significantly better than random guesses \cite{iderCryptocurrencyReturnPrediction2022}.
-
-
-% figures:
-% pearson.pdf
-% spearman.pdf
-% hisc.pdf
 
 
 
