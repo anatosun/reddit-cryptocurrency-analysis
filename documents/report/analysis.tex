@@ -36,7 +36,19 @@ Regarding PageRank (PR), it can be interpreted as the amount of random walks in 
 \end{figure}
 
 \subsection{Louvain}
+Louvain method is a technique that find communities from large networks. In our case, we were interested to see the communities of our network and observe the links with the different subreddits. To do this, we first create a list of communities corresponding to each subreddit. Each person is assigned to a single community, the one where he/she has interacted the most. Then, we create a second list of communities by applying the Louvain method on the graph based on the \textit{Deep Link No Merge} data model.
+After this, we get a list of 260 communities. Knowing that there are 10 subreddits, one subreddit can therefore have several inner communities. 
 
+It can also be interesting to know if some communities are formed by people from different subreddits. For this, we loop over the Louvain communities and compute the percentage of people coming from each subreddit. As a result matrix where rows are Louvain communities and columns are the percentage of people from each subreddit. To have a better understanding of the result, we can plot a histogram of the number of different subreddits that people in a Louvain community belong to (see figure \ref{fig:louvainrepartition}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{figures/inner_communities_repartition.pdf}
+    \caption{ Repartition of Louvain communities in the subreddits.}
+    \label{fig:louvainrepartition}
+\end{figure}
+
+With this histogram, we can observe that for the majority, the Louvain communities are formed by people from the same subreddit. However, there is also some Louvain communities that are not restricted to one subreddit but are even made up of people from all 10 subreddits.
 
 \subsection{Correlation to price development}
 
