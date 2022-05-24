@@ -1,5 +1,7 @@
 \documentclass{sigchi}
 
+\usepackage[utf8]{inputenc} % for a UTF8 editor only
+\usepackage{biblatex}
 % Load basic packages
 \usepackage{balance}       % to better equalize the last page
 \usepackage{graphics}      % for EPS, load graphicx instead 
@@ -9,10 +11,10 @@
 \usepackage[pdflang={en-US},pdftex]{hyperref}
 \usepackage{color}
 \usepackage{booktabs}
+\usepackage{float}
 \usepackage{textcomp}
 \usepackage{tikz}
 \usetikzlibrary{shapes, arrows}
-\usepackage{biblatex}
 \addbibresource{references.bib}
 
 
@@ -20,7 +22,6 @@
 \usepackage{microtype}        % Improved Tracking and Kerning
 % \usepackage[all]{hypcap}    % Fixes bug in hyperref caption linking
 \usepackage{ccicons}          % Cite your images correctly!
-\usepackage[utf8]{inputenc} % for a UTF8 editor only
 
 % If you want to use todo notes, marginpars etc. during creation of
 % your draft document, you have to enable the "chi_draft" option for
@@ -28,7 +29,7 @@
 % "\documentclass[chi_draft]{sigchi}". You can then place todo notes
 % by using the "\todo{...}"  command. Make sure to disable the draft
 % option again before submitting your final document.
-\usepackage{todonotes}
+%\usepackage{todonotes}
 
 % Paper metadata (use plain text, for PDF inclusion and later
 % re-using, if desired).  Use \emtpyauthor when submitting for review
@@ -150,6 +151,9 @@
 % Please use the 2012 Classifiers and see this link to embed them in the text: \url{https://dl.acm.org/ccs/ccs_flat.cfm}
 \section{Introduction}
 \input{introduction.tex}
+%\section{Overview}
+%\input{overview.tex}
+
 \section{Scraping methodology}
 \input{scrapping.tex}
 \section{Data Models}
@@ -160,8 +164,8 @@
 \input{implementation.tex}
 \section{Trials and Errors}
 \input{trials.tex}
-\section{Related works}
-\input{related_works}
+%\section{Related works}
+%\input{related_works}
 \section{Conclusion}
 \input{conclusion.tex}
 

@@ -8,11 +8,6 @@ This is probably the most natural way to create an undirected graph from our dat
 \subsection{Deep Link}
 In here, we connect each user to the original poster (OP) and to all users who replied to the user's comment. The edges get a weight depending on the depth of the comment and the achieved upvote score. If there is already an edge between the two users, the weight gets increased. This is a directed graph.
 
-
-%user0 (OP)
-% 	- user1 (d=1, score=10)
-% 		- user 2 (d=2, score=10)
-% 		- user 3 (d=2, score=2)
 % 	- user4 (d=1, score=5)
 % 	- user5 (d=1, score=3)
 % 		- user6 (d=2, score=2)
