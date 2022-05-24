@@ -1,0 +1,73 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uw4bp6",
+            "title": "Standard Transactions - IsStandard() test",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uw4bp6/standard_transactions_isstandard_test/",
+            "author": "PubKeyVin",
+            "created_utc": 1653323733.0,
+            "score": 3,
+            "num_comments": 6,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Hi Bitcoin community,  I hope you are enjoying your day ! :-) \n\nI've one question about Standard transaction located [right here](https://developer.bitcoin.org/devguide/transactions.html#standard-transactions) that says : \n\n\"*Non-standard transactions\u2014those that fail the test\u2014may be accepted by nodes not using the default Bitcoin Core settings. If they are included in blocks, they will also avoid the IsStandard test and be processed.* \"\n\nSo, what is the point of imposing a standard if the nodes have the possibility of not respecting it not using bitcoin core default settings ? \n\n   \nYou have any ideas ?  Thanks a lot for your help !",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9pi17g",
+                    "author": "igadjeed",
+                    "score": 3,
+                    "created_utc": 1653327784.0,
+                    "response": "An old discussion here  \nhttps://bitcointalk.org/index.php?topic=8924.0  \ncovers the question fairly well  \n\nThis is a subset of the question, \"Why are nodes' policy rules different to Bitcoin's consensus rules?\"  \n\nFor example, the minimum fee rule and the transaction replacement rules (BIP125, aka RBF) help to prevent flooding attacks on nodes. The old bitcointalk thread linked above doesn't give specific reasons for choosing which transactions are standard. The Luke-Jr comment is probably the most accurate ...  \n\n> \"Non-standard\" are just not liked by the developer team of the client with the biggest marketshare\n\nFrom a different perspective the limited choice of \"standard\" seems to be defined in terms of protecting users - transaction recipients - from receiving transactions with unusual unlocking scripts which could prevent them from spending their coins  \n\nIn consensus, there is more room for flexibility. If the transaction validly spends a coin (or some coins), or is a valid coinbase transaction, then the integrity of the blockchain is protected by the consensus rules. The blockchain cares not about whether a user can spend his coins  \n\n> what is the point of imposing a standard if the nodes have the possibility of not respecting it not using bitcoin core default settings\n\nThe question makes more sense the other way around: Why are some types of unconfirmed transactions blocked from being accepted by nodes if they are valid with respect to the consensus rules?  \n\nThere's a stackexchange thread somewhere, in which someone asks why non-standard transactions are valid in testnet but not mainnet  \n\nPart of the answer is that the non-standard test can be bypassed by using a pay-to-script-hash unlocking script, because that's a standard transaction. Then the script itself isn't blocked by the IsStandard() test  \n\nThe developer page you linked mentions \"the discovery of several dangerous bugs\". I guess these bugs are dangerous to the orderly operation of the node network, but not dangerous enough to be excluded from the blockchain",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9pkbbq",
+                            "author": "PubKeyVin",
+                            "score": 1,
+                            "created_utc": 1653328745.0,
+                            "response": "thank you for this complete answer, I see it more clearly now, I have to read again to fully understand these concepts, it will help me a lot ! Thanks ! :-)",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9p8cvv",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653323733.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pkiw4",
+                    "author": "bitusher",
+                    "score": 1,
+                    "created_utc": 1653328834.0,
+                    "response": "\n\n1) Bitcoin core is not the only implementation in Bitcoin and there are different implementations with their own code base outside of bitcoin core\n\n2) The Bitcoin consensus rules described here is what is needed to work in lockstep , but many other rules on the p2p layer, GUI layer, or transaction types that fall outside the consensus rules can be different\n\nhttps://en.bitcoin.it/wiki/Protocol_rules\n\nThink of the IsStandard() test as simply a preference of the rules full nodes typically prefer . The reason for this standardization is to simplify and standardize transaction types and prevent certain attacks on full nodes. \n\n\n3) Most nodes will not relay non standard types but if you can mine the transaction yourself or convince a miners node to accept it than it will be included in a block as long as it conforms to all the consensus rules discussed above",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9psvx7",
+                            "author": "PubKeyVin",
+                            "score": 2,
+                            "created_utc": 1653332422.0,
+                            "response": ">Most nodes will not relay non standard types but if you can mine the transaction yourself or convince a miners node to accept it than it will be included in a block as long as it conforms to all the consensus rules discussed above\n\nReally interesting, In reality, consensus is king and this is what makes it possible to impose a standard without it being imposed by the software. Thanks !",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

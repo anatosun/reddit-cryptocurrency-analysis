@@ -14,27 +14,170 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uvn6yi/why_is_it_often_advised_against_keeping_bitcoin/",
             "author": "Emergency_Error_9362",
             "created_utc": 1653262736.0,
-            "score": 6,
-            "num_comments": 3,
+            "score": 37,
+            "num_comments": 49,
             "subreddit": "BitcoinBeginners",
             "selftext": "",
             "stickied": false,
             "comments": [
                 {
+                    "id": "i9mmcod",
+                    "author": "spiceylizard",
+                    "score": 36,
+                    "created_utc": 1653266517.0,
+                    "response": "\u201cThey claim\u201d\n\nDon\u2019t trust. Verify",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9nowog",
+                            "author": "omerap06",
+                            "score": 1,
+                            "created_utc": 1653289908.0,
+                            "response": "Definitely true",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9mw3q3",
+                    "author": "nullama",
+                    "score": 17,
+                    "created_utc": 1653271446.0,
+                    "response": "You shouldn't even write your seed phrase on an internet connected device.\n\nThat's the first reason.\n\nThe second reason is that you have to trust a third party.\n\nWith Bitcoin you don't need to trust anyone. You can have a wallet in an offline device, and you will be the only person with access to it, and you don't have to trust anyone.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9mwcqv",
+                            "author": "d3vrandom",
+                            "score": -2,
+                            "created_utc": 1653271571.0,
+                            "response": "you only trust blockchain.info for the interface to the blockchain. you don't trust it with your private keys. they only have access to an encrypted version of your wallet.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9mwrzk",
+                                    "author": "nullama",
+                                    "score": 7,
+                                    "created_utc": 1653271786.0,
+                                    "response": "How can you prove that?\n\nThey generate your private key, so they can, in theory, have access to your wallet.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9mxe4e",
+                                            "author": "d3vrandom",
+                                            "score": 0,
+                                            "created_utc": 1653272105.0,
+                                            "response": "the keys are generated client side in your browser. blockchain.com does not know your keys.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9myo3i",
+                                                    "author": "nullama",
+                                                    "score": 1,
+                                                    "created_utc": 1653272768.0,
+                                                    "response": "In that case it's just a hot wallet then. Your wallet can still be compromised by key loggers, malware, etc.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9n6wfi",
+                                                            "author": "haight6716",
+                                                            "score": 1,
+                                                            "created_utc": 1653277162.0,
+                                                            "response": "Or a compromise at Blockchain.com. replace the ui with a malicious one so when you log in, the decrypted key is saved.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9ngs32",
+                                                                    "author": "d3vrandom",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653283538.0,
+                                                                    "response": "you can view the javascript code in your browser so if the UI were replaced it would be found out pretty soon.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9o6f0w",
+                                                                            "author": "PMyour_dirty_secrets",
+                                                                            "score": 3,
+                                                                            "created_utc": 1653305155.0,
+                                                                            "response": "I'm sure everyone does that",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        },
+                                                                        {
+                                                                            "id": "i9oomsn",
+                                                                            "author": "haight6716",
+                                                                            "score": 2,
+                                                                            "created_utc": 1653315218.0,
+                                                                            "response": "Professionals reviewing code can't find all bugs, let alone ones hidden on purpose. People would find out... After some time... When their wallets get drained.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "i9ngq65",
+                                                            "author": "d3vrandom",
+                                                            "score": 1,
+                                                            "created_utc": 1653283502.0,
+                                                            "response": "it is a hot wallet but it's a non-custodial one.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "i9mg4kp",
                     "author": "sos755",
-                    "score": 4,
+                    "score": 18,
                     "created_utc": 1653263222.0,
                     "response": "Web-based non-custodial wallets are better than custodial wallets, but there are still issues.\n\nInteracting with your wallet through a browser gives scammers and thieves many ways to take your coins.\n\nAlso, blockchain.com has had security problems in the past.",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i9mmcod",
-                    "author": "spiceylizard",
+                    "id": "i9ocujl",
+                    "author": "bitusher",
+                    "score": 3,
+                    "created_utc": 1653309227.0,
+                    "response": "Most web wallets are custodial but blockchain.com is indeed on of the exceptions. Generally web wallets , even non custodial ones are more susceptible to malware  and have a wider attack surface than a separate application though \n\nNo one should be using blockchain.com wallet/exchange because\n\n\n1)\tHistory of bugs and incompetence\n\nhttps://www.reddit.com/r/Bitcoin/comments/mcd99v/warning_stay_away_from_blockchaincom_wallet/\n\t\nhttps://github.com/blockchain/blockchain-wallet-v4-frontend/issues/3095\n\n\n2)\tmissing advanced features like RBF, lightning , or privacy features\n\n\n3) Is often used in insecure (osx/windows) desktop environments. IMHO you should only be using a wallet combined with a HW wallet in these environments. If you cant afford a 50  dollar HW wallet than just use a mobile wallet\n\n4) Is a popular wallet among scammers because of backdoor features and because it is easy to remotely setup\n\n5) Horrible bad security decisions like allowing users to setup wallets without forcing them first to copy and verify backup words\n\n6)History of privacy breaches from investors\n\nhttps://bitcointalk.org/index.php?topic=131608.0\n\n7)\tAttacked Bitcoins consensus with segwit2x fiasco and never apologized\n\nBetter wallets and exchanges listed here -\nhttps://reddit.com/r/BitcoinBeginners/comments/g42ijd/faq_for_beginners/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9n0fkv",
+                    "author": "garrulous_theory",
                     "score": 2,
-                    "created_utc": 1653266517.0,
-                    "response": "\u201cThey claim\u201d\n\nDon\u2019t trust. Verify",
+                    "created_utc": 1653273675.0,
+                    "response": "https://stacker.news/items/29151",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9oe3cw",
+                    "author": "postvolta",
+                    "score": 2,
+                    "created_utc": 1653309936.0,
+                    "response": "This episode of the podcast [Darknet Diaries - dirty comes](https://open.spotify.com/episode/5Snektk5Z2nUzM7DgoEBSx?si=EL-ZHqu7RamGF2Aa5hwvkA&utm_source=copy-link) explains it really well with a real life example.\n\nBasically, people will target those with high amounts in their crypto exchange and an entire team of people will work together to empty your exchange and disappear using a combination of database dumps, social engineering, exploits, and more.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9n9da7",
+                    "author": "BTCMachineElf",
+                    "score": 0,
+                    "created_utc": 1653278622.0,
+                    "response": "blockchain dot com is a notoriously scammy site. There are many stories of people losing funds there.\n\nAvoid them at all cost!",
                     "depth": 1,
                     "comments": []
                 },
@@ -44,6 +187,69 @@
                     "score": 1,
                     "created_utc": 1653262737.0,
                     "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9noldx",
+                    "author": "alanboomy",
+                    "score": 1,
+                    "created_utc": 1653289640.0,
+                    "response": "Keep it on blockchain.com and you may soon find out the answer for yourself. Good luck.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9notnm",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1653289835.0,
+                    "response": "The risk is that the encrypted wallet is stored on a publicly accessible Web server, if the passphrase is weak enough to be brute forced",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9osyar",
+                    "author": "growingfella",
+                    "score": 1,
+                    "created_utc": 1653317166.0,
+                    "response": "Well, if Coinbase (for example) goes bankrupt you would use your all money, that's what people were talking recently about possibility of such scenario that exchange could go bankrupt.  \n\n\nThis is the reason why people are advised to keep their money in cold wallets.  \n\n\n[https://youtu.be/Ae8eQtd5wuY](https://youtu.be/Ae8eQtd5wuY)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ozqk9",
+                    "author": "Cultural-Sector9807",
+                    "score": 1,
+                    "created_utc": 1653320114.0,
+                    "response": "Awesome",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9p9hp9",
+                    "author": "pgh_ski",
+                    "score": 1,
+                    "created_utc": 1653324201.0,
+                    "response": "Attack surface is the biggest reason. A web wallet has the highest amount of things that can go wrong: client-side attacks, JavaScript crypto vulnerabilities, server-side vulnerabilities, phishing attacks (like fake blockchain.info links that ask for credentials), malware, and more. \n\nDesktop wallets suffer from some of the same problems. Mobile wallets are a bit better due to the OS/app stores being a bit more locked down, but are provide more attack surface than offline (hardware) wallets since they are general purpose, networked devices. \n\nBut a dedicated hardware wallet provides the safest interface as the keys are generated and stored completely offline, and cannot be retrieved off the device when connected for signing transactions.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9nhd2l",
+                    "author": "arigoldenboy",
+                    "score": 0,
+                    "created_utc": 1653283965.0,
+                    "response": "When they go kaboom, whatever you left on them goes kaboom too.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9obczo",
+                    "author": "Classic_Wonder_5803",
+                    "score": 0,
+                    "created_utc": 1653308358.0,
+                    "response": "Every wallet contains a set of private keys without which the bitcoin owner cannot access the currency. The biggest danger in bitcoin security is the individual user perhaps losing the private key or having the private key stolen. Without the private key, the user will never see her bitcoins again",
                     "depth": 1,
                     "comments": []
                 }

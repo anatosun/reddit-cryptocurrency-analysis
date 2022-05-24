@@ -9,13 +9,45 @@
     ],
     "posts": [
         {
+            "id": "uqpm28",
+            "title": "Explanation of how USDT could burn $8 billion with $0 redemptions",
+            "url": "/r/CryptoCurrency/comments/uqp4we/explanation_of_how_usdt_could_burn_8_billion_with/",
+            "author": "Remora_101",
+            "created_utc": 1652683324.0,
+            "score": 16,
+            "num_comments": 8,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8smr68",
+                    "author": "joj1205",
+                    "score": 3,
+                    "created_utc": 1652687023.0,
+                    "response": "Gme over. Protect yourself. Shits about to fly",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8t2wlv",
+                    "author": "BewareOfShills",
+                    "score": 2,
+                    "created_utc": 1652700621.0,
+                    "response": "Sounds plausible, but as always there is little evidence for it?!?",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
             "id": "uqpkc2",
             "title": "Bitcoin has no future as a payments network, says FTX chief",
             "url": "https://www.ft.com/content/02cad9b8-e2eb-43d4-8c18-2e9d34b443fe",
             "author": "Egon_1",
             "created_utc": 1652683130.0,
-            "score": 34,
-            "num_comments": 21,
+            "score": 37,
+            "num_comments": 29,
             "subreddit": "btc",
             "selftext": "",
             "stickied": false,
@@ -31,7 +63,7 @@
                         {
                             "id": "i8srzgb",
                             "author": "Doublespeo",
-                            "score": 15,
+                            "score": 13,
                             "created_utc": 1652691753.0,
                             "response": ">\tHe doesn\u2019t have a friggin\u2019 clue what he is talking about (or the journalist interviewing him doesn\u2019t). Scaling has NOTHING to do with the consensus algorithm and hence whether it is POW or POS is completely irrelevant to the scaling issues.\n\nThis, I dont know how many time peoples say with PoS we can get 100k tps!\n\nPoS is not fundamentaly more scalable than PoW. \n\nThe bottleneck is verifying and transmitting tx, consensus mechanism either PoW or PoS is very \u201clight\u201d",
                             "depth": 2,
@@ -39,7 +71,7 @@
                                 {
                                     "id": "i8tmu0z",
                                     "author": "acinomrahg1",
-                                    "score": -4,
+                                    "score": -2,
                                     "created_utc": 1652711099.0,
                                     "response": "Database Sharding and rollups Delivers scale. The POS consensus approach removes the Hardware bottleneck (ASICS) and computation bottleneck of having to win the right to publish a block (hash function) imposed (by good initial design) by the proof of work approach. The \"bottleneck\" is not the validation of transactions, it's establishing trust and the security inferred by the ability to solve complex puzzles. POS buys the credibility through putting the validators digital assets at risk - POW derives this credibility through proving you have skin in the game by way of having the hardware chops (massive investment) to solve the puzzle. Remove the puzzle, and you democratize \"mining\" by \"scaling\" access to block publication down. This gives \"mining\" access to all who stake. Staking removes the \"economy of scale\" enjoyed today by miners, which some say leads to centralization, but most certainly MEV. (Miner extractible\nValue) - \n\nProbably room for, and a need for both POW and POS. MEV would be a great way to fund governments. We are going to need lots of processing power to render the graphics for the metaverse, so it's not like the miners will be suffering, even if they choose not to \"stake\".  \n\nI'm still learning, but why do some people view POS and POW as mutually exclusive? Are these not different paths to the same end?",
                                     "depth": 3,
@@ -62,6 +94,54 @@
                                                     "comments": []
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "id": "i9fu4vv",
+                                            "author": "Doublespeo",
+                                            "score": 1,
+                                            "created_utc": 1653133307.0,
+                                            "response": ">\tDatabase Sharding and rollups Delivers scale. The POS consensus approach removes the Hardware bottleneck (ASICS) and computation bottleneck of having to win the right to publish a block (hash function) imposed (by good initial design) by the proof of work approach. The \u201cbottleneck\u201d is not the validation of transactions, it\u2019s establishing trust and the security inferred by the ability to solve complex puzzles. \n\nin what way that is a bottleneck?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9gfji8",
+                                                    "author": "acinomrahg1",
+                                                    "score": 1,
+                                                    "created_utc": 1653145161.0,
+                                                    "response": "When the winner of the right to publish the block is predetermined, the exercise of solving the hash function is moot. I consider a bottleneck to be any kind of constraint existing between or within WIP (work in progress) and throughput. If we owned a pizzeria, the Pizza  oven's capacity would be a bottleneck. No matter how many pizzas you pre-assemble, and regardless of delivery capacity and order demand, that oven can only bake 10 pies an hour.(2 pizzas at a time, 12 minute cycles).\n\nThe entire process miners go through up to the point they actually validate a block and publish is sort of like a pizzerias oven constraint. Remove the contest, and replace it with a predetermined block producer  selection process and it stands to reason the system would operate more efficiently and block production (transaction speed) would increase. When miners don't have to spend time competing for the right to publish, they can redirect that time into publishing. (Scale)",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9h1o5p",
+                                                            "author": "Doublespeo",
+                                                            "score": 1,
+                                                            "created_utc": 1653155287.0,
+                                                            "response": ">\tThe entire process miners go through up to the point they actually validate a block and publish is sort of like a pizzerias oven constraint. Remove the contest, and replace it with a predetermined block producer  selection process and it stands to reason the system would operate more efficiently and block production (transaction speed) would increase. When miners don\u2019t have to spend time competing for the right to publish, they can redirect that time into publishing. (Scale)\n\nwhy faster block production would remove bottleneck?\n\ntps are not depend on block production and you loose the ability to inflation schedule and therefore controlled supply distribution.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9qftko",
+                                                                    "author": "acinomrahg1",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653342431.0,
+                                                                    "response": "Let me answer this later/ I'm in meeting but you got me thinking - I really should not be on Reddit now! Lol",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                },
+                                                                {
+                                                                    "id": "i9qgjt2",
+                                                                    "author": "acinomrahg1",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653342763.0,
+                                                                    "response": "The bottleneck, is the puzzle right? At least in my argument- Let's define bottleneck specific ally as Time and money.  If we add TIME to the denominator of the fraction (blocks/time) it makes the fraction smaller. So maybe not faster TPS, but more seconds, so more blocks in the same time period. Not faster, maybe wider? Not happy with this reply- let me chew on it- what is your thought?",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -70,7 +150,7 @@
                         {
                             "id": "i8sr7xa",
                             "author": "jessquit",
-                            "score": 14,
+                            "score": 13,
                             "created_utc": 1652691050.0,
                             "response": "I'm convinced that we could roll out an update that processes 10Mtps on cheap hardware and the public perception wouldn't budge a bit. We could demo it for 50M ppl during the super bowl and the announcer would probably talk right over the demo declaring it's been proven that blockchain can't scale.",
                             "depth": 2,
@@ -129,7 +209,7 @@
                 {
                     "id": "i8spkeu",
                     "author": "mtrycz",
-                    "score": 17,
+                    "score": 18,
                     "created_utc": 1652689543.0,
                     "response": "BTC doesn't, Bitcoin certainly does.",
                     "depth": 1,
@@ -138,7 +218,7 @@
                 {
                     "id": "i8si73g",
                     "author": "Egon_1",
-                    "score": 7,
+                    "score": 8,
                     "created_utc": 1652683230.0,
                     "response": "Full access https://archive.ph/zsJjb",
                     "depth": 1,
@@ -156,41 +236,9 @@
                 {
                     "id": "i8t7qf9",
                     "author": "TinosNitso",
-                    "score": -4,
+                    "score": -3,
                     "created_utc": 1652703616.0,
                     "response": "Coincidentally it works fine for payments over $400, since all such withdrawals from FTX are free (SBF pays all the BTC network fees for us). I guess he's hinting our **free withdrawals** are a limited time offer. :(\n\n(**Edit**: Even BTC txns under $400 are free, but only [one/day](https://help.ftx.com/hc/en-us/articles/360034865571-Blockchain-Deposits-and-Withdrawals). I never realized! That means paying for a cup of coffee out of an FTX custodial a/c is technically free!)",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "uqpm28",
-            "title": "Explanation of how USDT could burn $8 billion with $0 redemptions",
-            "url": "/r/CryptoCurrency/comments/uqp4we/explanation_of_how_usdt_could_burn_8_billion_with/",
-            "author": "Remora_101",
-            "created_utc": 1652683324.0,
-            "score": 16,
-            "num_comments": 8,
-            "subreddit": "btc",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8smr68",
-                    "author": "joj1205",
-                    "score": 3,
-                    "created_utc": 1652687023.0,
-                    "response": "Gme over. Protect yourself. Shits about to fly",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8t2wlv",
-                    "author": "BewareOfShills",
-                    "score": 2,
-                    "created_utc": 1652700621.0,
-                    "response": "Sounds plausible, but as always there is little evidence for it?!?",
                     "depth": 1,
                     "comments": []
                 }

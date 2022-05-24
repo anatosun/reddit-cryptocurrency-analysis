@@ -104,8 +104,8 @@
             "url": "https://www.reddit.com/r/Bitcoin/comments/uv5i21/rebroadcasting_a_signed_transaction/",
             "author": "Capable_Low_621",
             "created_utc": 1653202468.0,
-            "score": 2,
-            "num_comments": 10,
+            "score": 4,
+            "num_comments": 14,
             "subreddit": "Bitcoin",
             "selftext": "Suppose Alice signs a transaction that says \u201cAlice sends Bob 1000 sats\u201d and broadcasts it to the blockchain. \n\nWhat stops Bob from taking that signed transaction and broadcast it again?",
             "stickied": false,
@@ -113,18 +113,27 @@
                 {
                     "id": "i9jousx",
                     "author": "ST-Fish",
-                    "score": 2,
+                    "score": 6,
                     "created_utc": 1653212699.0,
                     "response": "The transaction doesn't actually say \"Alice sends Bob 1000 sats\", it says \"Alice's UTXO containing 3000 sats is sending 1000 sats to Bob's wallet, and sending 2000 sats to a new UTXO (which Alice controls)\"\n\nIf afterwards, Bob comes around and tries to broadcast it again, the nodes will look at this:\n\n>Alice's UTXO containing 3000\n\nAnd rightfully see that this is not the case, since the hash in the initial UTXO has already been spent, thus, it is not an \"Unspent\" transaction output (UTXO).\n\nThe transaction cannot be repeated because the source of the funds is no longer there, the UTXO in the signed tranasction has been spent, and the signed transaction is not valid anymore. Nodes will see this, and automatically deny further propagation throughout the network.",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i9je2hc",
-                    "author": "Caponcapoffstillon",
-                    "score": 1,
-                    "created_utc": 1653202913.0,
-                    "response": "If you actually looked up an into video to bitcoin you\u2019d have your answer",
+                    "id": "i9jn1gh",
+                    "author": "sciencetaco",
+                    "score": 2,
+                    "created_utc": 1653211027.0,
+                    "response": "When Alice sends Bob the 1000 sats, the rest of her balance is sent to a new output. So the same transaction being broadcast again is useless.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9k5enj",
+                    "author": "po00on",
+                    "score": 2,
+                    "created_utc": 1653224972.0,
+                    "response": "all nodes on the network store a copy of what is known as the UTXO set. think of this as the most up-to-date record of people who own bitcoin, and how much each of them hold. \\[This is an oversimplification, but it will suffice for now.\\]When Alice spends her 1000 sats, all of the nodes on the network are aware of this. They see Alice spending her 1000 sats, and they all update their internal databases accordingly.All nodes on the network are responsible for validating every transaction that occurs. If Alice (or Bob) attempt to spend the same funds twice, the nodes will check their internal database, they will see that Alice has already spent these 1000 sats, and they will unilaterally reject her second transaction.\n\nIn many ways this process works just the same as trying to spend more money on your debit card than you actually have in your account. The main diference being that the job of checking / validating your balance is being done by a large distributed network of nodes, as opposed to one centralised banking server.",
                     "depth": 1,
                     "comments": []
                 },
@@ -139,7 +148,7 @@
                         {
                             "id": "i9jfddr",
                             "author": "Capable_Low_621",
-                            "score": 0,
+                            "score": 1,
                             "created_utc": 1653204040.0,
                             "response": "Won\u2019t he be able to take all her btc if he broadcasts it a million times?",
                             "depth": 2,
@@ -147,7 +156,7 @@
                                 {
                                     "id": "i9jfi6b",
                                     "author": "opreturn_net",
-                                    "score": 2,
+                                    "score": 3,
                                     "created_utc": 1653204154.0,
                                     "response": "No, because the transaction contains the specific output that Alice is spending to Bob's address. That output can only be spent once. If Bob tries to change the transaction, the signature wouldn't be valid.",
                                     "depth": 3,
@@ -163,7 +172,7 @@
                                                 {
                                                     "id": "i9jghhc",
                                                     "author": "opreturn_net",
-                                                    "score": 3,
+                                                    "score": 6,
                                                     "created_utc": 1653205014.0,
                                                     "response": "You didn't read the first part of my reply. Outputs can only be spent once. Nodes and miners will see that Alice already spend the output to Bob and they will just disregard the million other transactions. They'd probably block Bob's node after he sent the same transaction so many times.",
                                                     "depth": 5,
@@ -187,15 +196,6 @@
                     "comments": []
                 },
                 {
-                    "id": "i9jn1gh",
-                    "author": "sciencetaco",
-                    "score": 1,
-                    "created_utc": 1653211027.0,
-                    "response": "When Alice sends Bob the 1000 sats, the rest of her balance is sent to a new output. So the same transaction being broadcast again is useless.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i9ju5u8",
                     "author": "SmoothGoing",
                     "score": 1,
@@ -203,6 +203,34 @@
                     "response": "Only one of them will confirm. So maybe futility is one of the things stopping Bob.",
                     "depth": 1,
                     "comments": []
+                },
+                {
+                    "id": "i9og7zo",
+                    "author": "beinardus",
+                    "score": 1,
+                    "created_utc": 1653311083.0,
+                    "response": "A bitcoin transaction can be included in the blockchain only once. Early transactions often reused the same address. The change address was promoted later for privacy and not to prevent broadcasts of confirmed transactions.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9je2hc",
+                    "author": "Caponcapoffstillon",
+                    "score": -3,
+                    "created_utc": 1653202913.0,
+                    "response": "If you actually looked up an intro video to bitcoin you\u2019d have your answer",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9k71g1",
+                            "author": "senfmeister",
+                            "score": 1,
+                            "created_utc": 1653225857.0,
+                            "response": "You could actually not be a dick about how you answer a noob's question.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 }
             ]
         }

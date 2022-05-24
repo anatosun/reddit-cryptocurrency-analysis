@@ -15,7 +15,7 @@
             "author": "Top-Butterscotch8892",
             "created_utc": 1652834705.0,
             "score": 1,
-            "num_comments": 21,
+            "num_comments": 28,
             "subreddit": "BitcoinBeginners",
             "selftext": "Like whats the difference between putting 100$ on 10x and puting 1000$ on 1x?",
             "stickied": false,
@@ -23,25 +23,16 @@
                 {
                     "id": "i90mg7h",
                     "author": "bitusher",
-                    "score": 6,
+                    "score": 7,
                     "created_utc": 1652834944.0,
                     "response": "If you use leverage it makes it very easy for either a whale or the exchange itself to create a margin call where you lose all your money. \n\nDay trading itself is very dangerous and 97% lose money . Day trading on leverage is far more dangerous than gambling at a sketchy casino or trading penny stocks",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i91o1o1",
-                    "author": "igadjeed",
-                    "score": 3,
-                    "created_utc": 1652856653.0,
-                    "response": "With 10x leverage, your stake gets wiped out 10 times faster",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i91pr60",
                     "author": "Rannasha",
-                    "score": 3,
+                    "score": 5,
                     "created_utc": 1652858110.0,
                     "response": "As others have said, using leverage runs the risk of getting your position liquidated. Note that this isn't necessarily worse than simply having a larger non-leveraged position.\n\nFor example: Person A buys $1000 worth of Bitcoin with 10x leverage (so $100 collateral) while person B buys $1000 worth of Bitcoin directly (no leverage). The price of Bitcoin drops by 10%. Person A loses their collateral and ends up with a $100 loss. Person B still has Bitcoin, but with a value of $900, so they're facing a $100 (unrealized) loss as well. The losses are equal.\n\nNow, if Bitcoin continues to decline, person A won't incur any further losses since their position was closed through liquidation. Person B, on the other hand, sees the value of their holdings decline. On the other hand, if the price bounces back, person B benefits, but A does not because the position was closed.\n\nSo in periods where you're not actively trading with your hands on the buttons, a leveraged position can act as a stop-loss, limiting the potential downside of a trade, but also potentially preventing you from profiting from a rebound.\n\nAnother potential use case of leveraged trading is to limit your counterparty risk. We all know the saying \"Not your keys, not your coins\". And ideally you'd want to keep as much of your coins in your own wallet, not on the exchange. By using leverage, you only need a fraction of the total size of the position actually on the exchange. For example, if you use 5x leverage and you want to open a position worth 1 BTC, you only need to send 0.2 BTC to the exchange and you can keep the rest in your wallet. If the exchange goes under or refuses to honor withdrawals, this limits your risk.\n\nNote that using leverage isn't free. You need to borrow funds to open a leveraged position and for that you pay interest. How much will depend on the exchange, but it's something to keep in mind.",
                     "depth": 1,
@@ -54,8 +45,26 @@
                             "response": "Thank you. That was a really helpful explanation.",
                             "depth": 2,
                             "comments": []
+                        },
+                        {
+                            "id": "i99ak3h",
+                            "author": "Brettanomyces78",
+                            "score": 1,
+                            "created_utc": 1652999318.0,
+                            "response": "A surprisingly accurate, balanced, and clear answer.\n\nIt's a refreshing take after the flood of \"hurr durr leverage always bad\" responses from people who clearly don't understand the topic.",
+                            "depth": 2,
+                            "comments": []
                         }
                     ]
+                },
+                {
+                    "id": "i91o1o1",
+                    "author": "igadjeed",
+                    "score": 3,
+                    "created_utc": 1652856653.0,
+                    "response": "With 10x leverage, your stake gets wiped out 10 times faster",
+                    "depth": 1,
+                    "comments": []
                 },
                 {
                     "id": "i90r04e",
@@ -146,6 +155,15 @@
                     "score": 1,
                     "created_utc": 1652916245.0,
                     "response": "Do not use leverage unless your mindset is ready (and your knowledge :) )",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9de0n2",
+                    "author": "Psychological-Ad212",
+                    "score": 1,
+                    "created_utc": 1653077946.0,
+                    "response": "When you leverage your position size you are taking a loan from the exchange which will be cut from your profits(if the market moves in your favor). And have to pay it back in the future, but still have extra profits for your leveraged position size for example if Coin A trades at $2 per coin and you only have the money for one coin, you took a loan from the exchange and leverage your position to 2 coins which is a total of$4, if the market moves in your favor and the coin trades at $3 you would make a total of $6 instead of $3, you will need to pay back a specific amount to the exchange and still have profits better than $1 which is your initial position size profit.",
                     "depth": 1,
                     "comments": []
                 },

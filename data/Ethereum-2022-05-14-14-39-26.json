@@ -1671,29 +1671,6 @@
             ]
         },
         {
-            "id": "uo270s",
-            "title": "How does PoS prevent validators from voting in two forks?",
-            "url": "https://www.reddit.com/r/ethereum/comments/uo270s/how_does_pos_prevent_validators_from_voting_in/",
-            "author": "InternetGal1",
-            "created_utc": 1652365239.0,
-            "score": 3,
-            "num_comments": 19,
-            "subreddit": "ethereum",
-            "selftext": "As far as I understand there are two opposing problems here:\n\n1. You need to prevent validators from mining both chains. If voters were allowed to in two chains then you could have two chains with supermajority and forks would proliferate.\n2. You need to give validators the ability to change chains. If I voted on a chain that looked correct, but eventually got abandoned, I should be able to correct my mistake and come back to the real chain (without being slashed or divested).\n\nSo how does the proposed PoS solution solve that conundrum?\n\nI understand that validators can't vote for two blocks at the same height. But, can they vote at different heights in different chains? Could the validator alternate its votes between the two chains? For example, when the height is even, it votes in fork A, when the height is odd, it votes for B. The the validator would be \"active\" in both chains.\n\nObviously, validators can't be active in two chains because forks would proliferate! How is this solved?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8c1arg",
-                    "author": "thomas_m_k",
-                    "score": 7,
-                    "created_utc": 1652371770.0,
-                    "response": "For every missed attestation you have to pay a penalty close to what you would have earned for a correct attestation. So, if you miss half your attestations on both chains, you would not earn any money on either chain. So no-one would do it.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "uncigc",
             "title": "Coindesk: UST creator Do Kwon was the creator of the failed Ethereum algo-stablecoin Basis Cash",
             "url": "https://www.coindesk.com/tech/2022/05/11/usts-do-kwon-was-behind-earlier-failed-stablecoin-ex-terra-colleagues-say/",
@@ -2675,38 +2652,6 @@
             ]
         },
         {
-            "id": "unwik4",
-            "title": "Stargate Profile: A fully composable cross-chain Bridge",
-            "url": "https://www.reddit.com/r/ethereum/comments/unwik4/stargate_profile_a_fully_composable_crosschain/",
-            "author": "Born_Slice_7809",
-            "created_utc": 1652344924.0,
-            "score": 3,
-            "num_comments": 8,
-            "subreddit": "ethereum",
-            "selftext": "Stargate: A fully composable cross-chain bridge: \n\n\\- Allows the transfer of native assets (stablecoins) between 7 blockchain networks \n\n\\- Any protocol can leverage Stargate to provide cross-chain capabilities.  \n\nhttps://coinavalon.io/blog/stargate-a-fully-composable-cross-chain-bridge/",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8ard3g",
-                    "author": "kruthikv9",
-                    "score": 5,
-                    "created_utc": 1652348791.0,
-                    "response": "Hack in 5\u20264\u2026.3\u20262\u2026.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8audl0",
-                    "author": "goldcakes",
-                    "score": 6,
-                    "created_utc": 1652351258.0,
-                    "response": "Nearly every bridge in existence today requires trusted parties (e.g. multisig) and is a vector for either hacks or rugpulls.\n\nWe do not need more bridges.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "updnsb",
             "title": "Dive into Danksharding - Bankless livestream from yesterday with Vitalik and Tim Beiko",
             "url": "https://youtu.be/N5p0TB77flM",
@@ -3091,88 +3036,6 @@
             "comments": []
         },
         {
-            "id": "uou25z",
-            "title": "Shipping EIP-4973's Soulbound tokens to test net",
-            "url": "https://timdaubenschuetz.substack.com/p/shipping-eip-4973s-soulbound-tokens?s=w",
-            "author": "TimDaub",
-            "created_utc": 1652455114.0,
-            "score": 6,
-            "num_comments": 12,
-            "subreddit": "ethereum",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8hhr53",
-                    "author": "Crypto_Economist42",
-                    "score": 1,
-                    "created_utc": 1652467767.0,
-                    "response": "Glen weyl, the same radical leftist who thinks Harberger taxes are good for society?\n\nNo thank you",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8ibd6w",
-                            "author": "hanniabu",
-                            "score": 3,
-                            "created_utc": 1652480707.0,
-                            "response": "What's wrong with Harberger taxes?",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i8jh9jy",
-                                    "author": "Perleflamme",
-                                    "score": 1,
-                                    "created_utc": 1652502086.0,
-                                    "response": "Do you know about the principle of consent? \n\nApply your harberger tax on whoever you want, as long as it's on people who consented to it.",
-                                    "depth": 3,
-                                    "comments": [
-                                        {
-                                            "id": "i8pb0uq",
-                                            "author": "hanniabu",
-                                            "score": 1,
-                                            "created_utc": 1652627000.0,
-                                            "response": "It's yearly, there's tons of things where prices change on a yearly basis",
-                                            "depth": 4,
-                                            "comments": [
-                                                {
-                                                    "id": "i8qacd5",
-                                                    "author": "Perleflamme",
-                                                    "score": 1,
-                                                    "created_utc": 1652642506.0,
-                                                    "response": "Wait, how is it relevant to the topic of consent?",
-                                                    "depth": 5,
-                                                    "comments": [
-                                                        {
-                                                            "id": "i8s8ikp",
-                                                            "author": "hanniabu",
-                                                            "score": 1,
-                                                            "created_utc": 1652676320.0,
-                                                            "response": "I thought you were referring to consent on the new tax based on the new valuation. What are you talking about in regards to consent?",
-                                                            "depth": 6,
-                                                            "comments": []
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i8gsles",
-                    "author": "coinfeeds-bot",
-                    "score": 1,
-                    "created_utc": 1652457681.0,
-                    "response": "tldr; EIP-4973 \u201cAccount-bound tokens\u201d, also known as \u201cSoulbound tokens,\u201d have been released on the Rinkeby Test Network. \u201cWe\u2019re releasing a \u2018Soul Otter\u2019 ACCOUNT BOUND TOKEN minter,\u2019 and the Otterspace team published a blog post over on mirror.com. Have fun minting, Tim\n\n*This summary is auto generated by a bot and not meant to replace reading the original article. As always, DYOR.*",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "uouw8l",
             "title": "\ud83d\udee0 Getting started with web3 dev? Speed Run Ethereum:",
             "url": "https://www.reddit.com/r/ethereum/comments/uouw8l/getting_started_with_web3_dev_speed_run_ethereum/",
@@ -3467,6 +3330,358 @@
                     "score": 1,
                     "created_utc": 1652338079.0,
                     "response": "RainCards is launching soon to off-ramp crypto treasury to pay for fiat expenses (Github, Laptops, S3, etc).\n\nhttps://www.raincards.xyz/",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uou25z",
+            "title": "Shipping EIP-4973's Soulbound tokens to test net",
+            "url": "https://timdaubenschuetz.substack.com/p/shipping-eip-4973s-soulbound-tokens?s=w",
+            "author": "TimDaub",
+            "created_utc": 1652455114.0,
+            "score": 7,
+            "num_comments": 16,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8hhr53",
+                    "author": "Crypto_Economist42",
+                    "score": 1,
+                    "created_utc": 1652467767.0,
+                    "response": "Glen weyl, the same radical leftist who thinks Harberger taxes are good for society?\n\nNo thank you",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8ibd6w",
+                            "author": "hanniabu",
+                            "score": 3,
+                            "created_utc": 1652480707.0,
+                            "response": "What's wrong with Harberger taxes?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8jh9jy",
+                                    "author": "Perleflamme",
+                                    "score": 1,
+                                    "created_utc": 1652502086.0,
+                                    "response": "Do you know about the principle of consent? \n\nApply your harberger tax on whoever you want, as long as it's on people who consented to it.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8pb0uq",
+                                            "author": "hanniabu",
+                                            "score": 1,
+                                            "created_utc": 1652627000.0,
+                                            "response": "It's yearly, there's tons of things where prices change on a yearly basis",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8qacd5",
+                                                    "author": "Perleflamme",
+                                                    "score": 1,
+                                                    "created_utc": 1652642506.0,
+                                                    "response": "Wait, how is it relevant to the topic of consent?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i8s8ikp",
+                                                            "author": "hanniabu",
+                                                            "score": 1,
+                                                            "created_utc": 1652676320.0,
+                                                            "response": "I thought you were referring to consent on the new tax based on the new valuation. What are you talking about in regards to consent?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i8sdv1d",
+                                                                    "author": "Perleflamme",
+                                                                    "score": 1,
+                                                                    "created_utc": 1652679909.0,
+                                                                    "response": "Why should people who disagree with being taxed in such a way should be forced to be taxed in such a way? Consent is about being subjected to such tax in the first place.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i8tc0v5",
+                                                                            "author": "hanniabu",
+                                                                            "score": 1,
+                                                                            "created_utc": 1652705961.0,
+                                                                            "response": "So what you're saying is you shouldn't be taxed at all",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i8uutni",
+                                                                                    "author": "Perleflamme",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1652728942.0,
+                                                                                    "response": "No. What I'm saying is that it should be consentful.\n\nIt's weird to claim it necessarily means I don't want to be taxed at all, as it supposes that whoever would have the choice wouldn't give anything at all, regardless of how taxes are made.",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8gsles",
+                    "author": "coinfeeds-bot",
+                    "score": 1,
+                    "created_utc": 1652457681.0,
+                    "response": "tldr; EIP-4973 \u201cAccount-bound tokens\u201d, also known as \u201cSoulbound tokens,\u201d have been released on the Rinkeby Test Network. \u201cWe\u2019re releasing a \u2018Soul Otter\u2019 ACCOUNT BOUND TOKEN minter,\u2019 and the Otterspace team published a blog post over on mirror.com. Have fun minting, Tim\n\n*This summary is auto generated by a bot and not meant to replace reading the original article. As always, DYOR.*",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uo270s",
+            "title": "How does PoS prevent validators from voting in two forks?",
+            "url": "https://www.reddit.com/r/ethereum/comments/uo270s/how_does_pos_prevent_validators_from_voting_in/",
+            "author": "InternetGal1",
+            "created_utc": 1652365239.0,
+            "score": 1,
+            "num_comments": 25,
+            "subreddit": "ethereum",
+            "selftext": "As far as I understand there are two opposing problems here:\n\n1. You need to prevent validators from mining both chains. If voters were allowed to in two chains then you could have two chains with supermajority and forks would proliferate.\n2. You need to give validators the ability to change chains. If I voted on a chain that looked correct, but eventually got abandoned, I should be able to correct my mistake and come back to the real chain (without being slashed or divested).\n\nSo how does the proposed PoS solution solve that conundrum?\n\nI understand that validators can't vote for two blocks at the same height. But, can they vote at different heights in different chains? Could the validator alternate its votes between the two chains? For example, when the height is even, it votes in fork A, when the height is odd, it votes for B. The the validator would be \"active\" in both chains.\n\nObviously, validators can't be active in two chains because forks would proliferate! How is this solved?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8c1arg",
+                    "author": "thomas_m_k",
+                    "score": 8,
+                    "created_utc": 1652371770.0,
+                    "response": "For every missed attestation you have to pay a penalty close to what you would have earned for a correct attestation. So, if you miss half your attestations on both chains, you would not earn any money on either chain. So no-one would do it.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8c3n2u",
+                            "author": "InternetGal1",
+                            "score": 4,
+                            "created_utc": 1652372678.0,
+                            "response": "Ah! That's the answer I was looking for. Thanks!\n\nSo, if your network connection drops, it could get very expensive!",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8dgg1q",
+                                    "author": "Perleflamme",
+                                    "score": 3,
+                                    "created_utc": 1652392035.0,
+                                    "response": "That's why you're supposed to ensure for your own good a decent level of redundancies of your staking capabilities at all times. \n\nAnd that's also why staking doesn't allow for economies of scale. Rather, concentration of staked funds mostly is concentration of risks (with associated costs) for a proportionately identical reward. \n\nIn short, it's driving decentralization. \n\nIt's just that, currently, many people don't take these risks into account. But it's going to bite them back at one point or another. Hard. \n\nRisk it once and win, it's your success. Risk it until you lose, it's on you.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8fvv5w",
+                                            "author": "InternetGal1",
+                                            "score": 3,
+                                            "created_utc": 1652443126.0,
+                                            "response": "That seem like a bad design. You are telling me that a DDOS attack will slash all you stake?\n\nDoesn't seem like something anyone would bet on. Is it possible there is something else going on?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8g3xsc",
+                                                    "author": "Perleflamme",
+                                                    "score": 1,
+                                                    "created_utc": 1652447323.0,
+                                                    "response": "A dDOS attack will prevent you from voting, for as long as you're dDOSed. Penalties aren't much for a few missed votes and you end up being pushed away from future votes at some point, for a period of time, after which you can actively decide to enter again. At least, that's how I remember it. \n\nIn the meantime, you can see you're dDOSed, stop voting with this particular validator and open another one to resume your voting before punishment is too harsh. \n\nYou're the one supposed to ensure you can access the network. Technically, a dDOSed miner is hurt way more: they're paying huge electricity bills to create many hashes and are prevented from earning anything because they can't publish the blocks they find.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i8fiwxw",
+                                    "author": "harpocryptes",
+                                    "score": 1,
+                                    "created_utc": 1652433717.0,
+                                    "response": "> if your network connection drops, it could get very expensive!\n\nYou only pay what you would have earned, i.e. on the order of 0.015% per day (double that to account for missed earnings). That's only expensive if you are offline for a very long time.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8fwbh1",
+                                            "author": "InternetGal1",
+                                            "score": 2,
+                                            "created_utc": 1652443382.0,
+                                            "response": "That seems worrying. Now if I DDOS attack a validator they not only lose on their earnings, but I could get them into debt?\n\nIt's normal for non-voting validators to be divested (i.e. their stacks released). But slashing seems unnecessarily harsh.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8gc6pu",
+                                                    "author": "harpocryptes",
+                                                    "score": 1,
+                                                    "created_utc": 1652451029.0,
+                                                    "response": "As I said the loss is pretty minimal per unit of time. If you found out your validator is DDOSed you'd have time to fix the security issue, or you can always decide to exit.\n\nI believe the reason for the necessity of the small loss is given by the original comment in this thread.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8f9o0r",
+                    "author": "nyzt17",
+                    "score": 2,
+                    "created_utc": 1652425766.0,
+                    "response": "No one has given an accurate answer to your question, so this is my attempt. You will get slashed if you perform a double vote ( vote for 2 different heads in an epoch) , or a surround vote ( vote for a previous epoch from a later justified checkpoint). What a validator can do is switch branches in the fork tree from the current epoch to the next one. This isn't slashable and is a property of forkchoice of the beacon chain.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8fw2bg",
+                            "author": "InternetGal1",
+                            "score": 1,
+                            "created_utc": 1652443239.0,
+                            "response": "Got it. \n\nWhat prevents me from switching back and forth every epoch? \nWouldn't that keep me active in both forks?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8fxwrk",
+                    "author": "nyzt17",
+                    "score": 1,
+                    "created_utc": 1652444272.0,
+                    "response": "You could do that, but continiously voting on a different non-finalized branch will lead to offline penalties. After a while you end up simply losing money.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8bxbb7",
+                    "author": "LankeeM9",
+                    "score": 0,
+                    "created_utc": 1652370222.0,
+                    "response": "If the fork is public the validator can be slashed using a hash of the block they created from the other chain.\n\nIf it\u2019s a private fork good luck.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8c3hr7",
+                            "author": "InternetGal1",
+                            "score": 1,
+                            "created_utc": 1652372619.0,
+                            "response": "If I'm a validator and I see two forks, I don't know which one to vote for. I pick one, say A, but after some time, it turns out the other one B has been voted by the super majority. \n\nCan I switch to B or will I get slashed?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8c4drt",
+                                    "author": "LankeeM9",
+                                    "score": 1,
+                                    "created_utc": 1652372964.0,
+                                    "response": "If you validated a block in A I\u2019m guessing you would probably get slashed.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8d1qya",
+                                            "author": "Perleflamme",
+                                            "score": 3,
+                                            "created_utc": 1652386088.0,
+                                            "response": "I'm not sure, but I think you're slashed only if you voted A and B for the same block. For different blocks, I think it's ok.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8d4w27",
+                                                    "author": "LankeeM9",
+                                                    "score": 1,
+                                                    "created_utc": 1652387319.0,
+                                                    "response": "Yeah I\u2019m pretty sure you\u2019re correct.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i8c8egb",
+                                            "author": "InternetGal1",
+                                            "score": 1,
+                                            "created_utc": 1652374536.0,
+                                            "response": "This has to be wrong. In the case of a partition I might not be able to see B, so I have to vote for A and assume that the rest of the network crashed... \n\nIf A emerges (turns out the rest of the network didn't crash), and it has the majority,  then there should be a way for me, an honest player, to return to the network.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i8cbpn4",
+                                                    "author": "LankeeM9",
+                                                    "score": 1,
+                                                    "created_utc": 1652375844.0,
+                                                    "response": "That\u2019s the issue in PoS it\u2019s hard to know what the correct chain is after a long partition.\n\nIn PoW it\u2019s easy, chain with most accumulated work (longest chain).",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i8daqe7",
+                                                            "author": "InternetGal1",
+                                                            "score": 2,
+                                                            "created_utc": 1652389674.0,
+                                                            "response": "Well, the correct chain is the one where the super majority is voting, no?\n\nBut yes, you don't know that until many of them have voted.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "unwik4",
+            "title": "Stargate Profile: A fully composable cross-chain Bridge",
+            "url": "https://www.reddit.com/r/ethereum/comments/unwik4/stargate_profile_a_fully_composable_crosschain/",
+            "author": "Born_Slice_7809",
+            "created_utc": 1652344924.0,
+            "score": 3,
+            "num_comments": 11,
+            "subreddit": "ethereum",
+            "selftext": "Stargate: A fully composable cross-chain bridge: \n\n\\- Allows the transfer of native assets (stablecoins) between 7 blockchain networks \n\n\\- Any protocol can leverage Stargate to provide cross-chain capabilities.  \n\nhttps://coinavalon.io/blog/stargate-a-fully-composable-cross-chain-bridge/",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8audl0",
+                    "author": "goldcakes",
+                    "score": 5,
+                    "created_utc": 1652351258.0,
+                    "response": "Nearly every bridge in existence today requires trusted parties (e.g. multisig) and is a vector for either hacks or rugpulls.\n\nWe do not need more bridges.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8c1bg4",
+                            "author": "pincheperroloco",
+                            "score": 2,
+                            "created_utc": 1652371777.0,
+                            "response": "Thats why rollups are the future of L2, according to what ive read.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8ard3g",
+                    "author": "kruthikv9",
+                    "score": 5,
+                    "created_utc": 1652348791.0,
+                    "response": "Hack in 5\u20264\u2026.3\u20262\u2026.",
                     "depth": 1,
                     "comments": []
                 }

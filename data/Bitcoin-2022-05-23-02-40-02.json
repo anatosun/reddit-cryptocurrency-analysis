@@ -1,0 +1,256 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uvqcjh",
+            "title": "A few useful/interesting projects",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uvqcjh/a_few_usefulinteresting_projects/",
+            "author": "nullama",
+            "created_utc": 1653273589.0,
+            "score": 50,
+            "num_comments": 6,
+            "subreddit": "Bitcoin",
+            "selftext": "- [The Bolt Card](https://blog.coincorner.com/the-bolt-card-d8510b4161b8). An NFC card that allows you to pay Bitcoin directly with your own lightning node(or using third party services).\n\n- [OpenDime](https://opendime.com). You have basically \"Bitcoin Sticks\" that control a certain amount of Bitcoin. You pass them around as cash basically.\n\n- [LNPoS](https://github.com/arcbtc/LNPoS). Make offline payments with lightning!\n\n- [Stacker News](https://stacker.news). Read news, and get some sats with lightning through votes, posts, comments, etc.\n\n- [SolDirac](https://soldirac.com/home). A Q/A website that pays you sats via lightning to answer the questions.\n\n- [Lightning Exchanges](https://github.com/theDavidCoen/LightningExchanges). List of exchanges that support withdrawals and sending bitcoin with lightning.\n\n- [21 Days of Bitcoin course from the Bitcoin Magazine](https://sparklp.co/940bf290). Earn 2,100 sats for free redeemable through lightning while learning more about Bitcoin with this course.\n\n- [BTC Pay Server](https://btcpayserver.org). Accept bitcoin with lightning at your store for free.\n\n- [Satsback](https://satsback.com/register/BxAb4PEvGNagR2EM). Earn sats back whenever you buy stuff. It's like cashback but with sats instead, and paid with lightning.\n\n- [Lightning Network Stores](https://www.lightningnetworkstores.com/). Directory of stores that support lightning.\n\n- Some great lightning wallets: If you just want the simplest non-custodial one, go with [Muun](https://muun.com/). If you want the simplest custodial one, go with [Wallet of Satoshi](https://www.walletofsatoshi.com/). If you want to be able to customize things a bit and maybe even use your own lightning node you can check out [Breeze](https://breez.technology/), [BlueWallet](https://bluewallet.io/), [Phoenix](https://phoenix.acinq.co/). If you want a wallet with all the latest state of the art stuff implemented into it, check out [Blixt](https://blixtwallet.github.io/). If you want to have full control of your lightning node, checkout [Zeus](https://zeusln.app/).\n\n- If you want to run a lightning node with 100% open source where you have full control of every aspect of the stack: [Open source stack to run your own Lightning node\u26a1](https://www.reddit.com/r/TheLightningNetwork/comments/pazhx5/open_source_stack_to_run_your_own_lightning_node/)\n\n- [Sphinx](https://sphinx.chat/). Decentralized chat/social media/etc, you can even sell your texts/photos/media out of the box. All using sats.\n\n- [Juggernaut](https://www.getjuggernaut.com/). Similar to sphinx. All using sats.\n\n- [impervious](https://www.impervious.ai/). P2P everything with payments built-in. All based on lightning.\n\n- [Login with your lightning wallet instead of user/pass](https://lightninglogin.live/)\n\n- [lightning address](https://lightningaddress.com/). Make your own lightning address for simpler payments in lightning.\n\n- [zebedee API](https://zebedee.io/developers/api). API to use sats as micro-payments in games.\n\n- If you ever need to send a fax, [you can do it with lightning](https://bitcoinfax.net/)\n\n- If you need to send an SMS instead, [here's how to send it with lightning](https://lnsms.world/)\n\n- [Alby](https://getalby.com/). Use lightning in the browser. You can authenticate (no more user/pass), and make lightning transactions right from your browser. No need to switch between apps or creating invoices. All works seamlessly.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9n1b8l",
+                    "author": "llewsor",
+                    "score": 7,
+                    "created_utc": 1653274135.0,
+                    "response": "wow thx for the compilation. can\u2019t keep up with all of the innovation \u26a1\ufe0f\u26a1\ufe0f\u26a1\ufe0f",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9nyqjk",
+                    "author": "CallingVoid",
+                    "score": 2,
+                    "created_utc": 1653299000.0,
+                    "response": "Oh nice, some fun little projects there!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pu3vy",
+                    "author": "Berrymellowjello",
+                    "score": 2,
+                    "created_utc": 1653332946.0,
+                    "response": "I'm a sphinx dev if you're interested in the project feel free to dm me :)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9qrbds",
+                            "author": "nullama",
+                            "score": 1,
+                            "created_utc": 1653347929.0,
+                            "response": "A couple of questions:\n\n- When you want to access sphinx, it asks you to choose from a [limited set of  lightning nodes](https://buy.sphinx.chat/). Why not a generic connection setting so that anyone with any lightning node can use it? Right now there's documentation only for: Greenlight, Umbrel, RaspiBlitz, MyNode.\n\n- Which brings me to this point. Based on what I've read I think the core functionality of sending messages through lightning is based on the keysend feature, which initially was found only on LND nodes. But [it's been a while since c-lightning offers keysend as well](https://medium.com/blockstream/new-release-c-lightning-0-8-2-1c84fe0c82fe). Are you guys supporting c-lighnting nodes as well?\n\nThanks!, projects looks nice.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9nzqhf",
+                    "author": "Mallardshead",
+                    "score": 1,
+                    "created_utc": 1653299873.0,
+                    "response": "Excellent information. \ud83d\ude4f Much appreciated.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uvqa0o",
+            "title": "Is Bitcoin Alive?",
+            "url": "https://www.youtube.com/watch?v=OGk3kfuOjQw",
+            "author": "Bsabres6288",
+            "created_utc": 1653273344.0,
+            "score": 6,
+            "num_comments": 20,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9nfsb1",
+                    "author": "llewsor",
+                    "score": 4,
+                    "created_utc": 1653282843.0,
+                    "response": "there is a life-like quality to the bitcoin network in it\u2019s resistance to attacks/entropy. there\u2019s a sort of \u201cintelligence\u201d in how it has managed to grow in such a hostile and volatile environment with no committee or direction from a centralized authority. \n\njust like a murmuration of birds flows in seemingly spontaneous yet choreographed movements, the bitcoin network adapts and overcomes any obstacle by the decisions of thousands of individuals like devs, miners, nodes and wallets.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9p3b54",
+                            "author": "Digital_Wampum",
+                            "score": 1,
+                            "created_utc": 1653321621.0,
+                            "response": "Fascinating\n\nI like the murmuration analogy",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9n0kgi",
+                    "author": "nullama",
+                    "score": 3,
+                    "created_utc": 1653273741.0,
+                    "response": "It doesn't reproduce, so I would say no.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9n1mdn",
+                            "author": "wood8",
+                            "score": 2,
+                            "created_utc": 1653274292.0,
+                            "response": "It does each time a full node start running",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9n1qbz",
+                                    "author": "nullama",
+                                    "score": 1,
+                                    "created_utc": 1653274352.0,
+                                    "response": "Right, the Bitcoin Network. I was thinking about the cap of 21M bitcoins.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9nzsxc",
+                            "author": "jvvmh",
+                            "score": 4,
+                            "created_utc": 1653299934.0,
+                            "response": "to be fair, nobody said this new life form was good with the ladies.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9r089d",
+                            "author": "dont_you_love_me",
+                            "score": 1,
+                            "created_utc": 1653352361.0,
+                            "response": "Living organisms shouldn\u2019t be reduced to just being copy machines. Also, humans as an organism are far larger than just a collection of individuals. Each individual is created by humanity itself, so it feeds into a cycle. Humanity as a whole is an undying entity, kind of like how we are made up of cells.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9n6yu8",
+                    "author": "pixelpoints",
+                    "score": 4,
+                    "created_utc": 1653277200.0,
+                    "response": "I think it is. It has DNA(code) it feeds off energy to grow and become more robust. It adjusts in real time to its environment with the difficulty adjustment and price.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9p0gha",
+                            "author": "Drugrere",
+                            "score": 0,
+                            "created_utc": 1653320418.0,
+                            "response": "Yes I agree with you but do you believe it\u2019s sentient. Does it understand itself and its function? Probably not",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9p9oao",
+                                    "author": "pixelpoints",
+                                    "score": 2,
+                                    "created_utc": 1653324276.0,
+                                    "response": "I dont think its sentient.  I think of it like a parasite that has a symbiotic relationship with humans.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9p04ll",
+                    "author": "Drugrere",
+                    "score": 2,
+                    "created_utc": 1653320278.0,
+                    "response": "Why are half these comments taking the question seriously. Of course bitcoins not a sentient AI but it is a system that takes care of its self. A continuously running program all it needs is computers, and life all it needs is food and water. You can even take this to cars all they need is oil and gas and they will run, continuously cycling.\n\nThings that run without having to constantly be pushed are seen as alive to an extent.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9p187l",
+                            "author": "Bsabres6288",
+                            "score": 2,
+                            "created_utc": 1653320744.0,
+                            "response": "Exactly. The value of the question is not in its literal answer but rather in its provocation of thought regarding the nature of autonomous systems.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9p3epv",
+                                    "author": "Digital_Wampum",
+                                    "score": 2,
+                                    "created_utc": 1653321662.0,
+                                    "response": "It also begs the question of the requirement (or expectation) for sentience.\n\nAlthough the motive power vehicle (trains and cars) need physical parts replaced and maintained for wear... (Bores, bearings, belts etc) \n\nBitcoin as they say is \"the house that needs no shingles or paint\", it's also \"the vehicle that needs no gas oil or brake jobs\" - it's also more than a program... It's a protocol, it could be calculated (hashed) with pen and paper as once could (would) do it in an excel spreadsheet. It's much more common to use asics and hardware wallets than brain wallets and performing the hashing calculations fully manually.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9n1ems",
+                    "author": "AmazingApollo1715",
+                    "score": 4,
+                    "created_utc": 1653274182.0,
+                    "response": "No",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9pvi86",
+                            "author": "Digital_Wampum",
+                            "score": 2,
+                            "created_utc": 1653333545.0,
+                            "response": "No because....",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9pdyej",
+                            "author": "thefullmcnulty",
+                            "score": -1,
+                            "created_utc": 1653326072.0,
+                            "response": "You\u2019re not more qualified than Ralph Merkle and your opinion doesn\u2019t matter. His does.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9p331z",
+                    "author": "Digital_Wampum",
+                    "score": 1,
+                    "created_utc": 1653321527.0,
+                    "response": "Outside of having sentient life thru technologies like a.i. (can nested \"if then else\" statements generate sentience?)\n\nWe have other interesting points, projects or milestones such as\n\nhttps://en.wikipedia.org/wiki/Conway%27s_Game_of_Life\n\nAnd\n\nOpenworm.org\n\nhttps://www.theatlantic.com/technology/archive/2013/05/is-this-virtual-worm-the-first-sign-of-the-singularity/275715/\n\n\nIt also begs the question of the expectation or requirement for sentience.\n\nBranden quittem likens it to a mycelium\n\nhttps://medium.com/@BrandonQuittem/bitcoin-is-a-decentralized-organism-mycelium-part-1-3-6ec58cdcfaa6\n\nIf code is law\n\nIs code \"life\" or \"alive\"\n\nI suppose its like beauty... \n\nEye of the beholder my brothers!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9o4wnc",
+                    "author": "taimapanda",
+                    "score": 0,
+                    "created_utc": 1653304073.0,
+                    "response": "No lol",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

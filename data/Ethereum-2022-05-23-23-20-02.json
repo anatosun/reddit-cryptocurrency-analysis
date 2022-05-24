@@ -1,0 +1,1618 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "po2uzk",
+            "title": "I created an Open-Source Ethereum Miner For Xbox One, Series S, and Series X. AMA",
+            "url": "https://www.reddit.com/r/ethereum/comments/po2uzk/i_created_an_opensource_ethereum_miner_for_xbox/",
+            "author": "ninja-kurtle",
+            "created_utc": 1631626365.0,
+            "score": 1157,
+            "num_comments": 227,
+            "subreddit": "ethereum",
+            "selftext": "Hi, I recently created an open-source Ethereum miner for Xbox. You can look at it here:\n\n[https://github.com/kgrossnickle/eth-box](https://github.com/kgrossnickle/eth-box)\n\nI know what you're thinking-- and yes, this is for real and --not a scam-- !! I have a background in software engineering and masters in statistics and used that knowledge in the fun world of open-source crypto and Etherum :P \n\nUnfortunately, it only gets around 3 MH/s on my Xbox Series S right now. BUT with the help of the open-source community, I think it is possible to reach around 15 MH/s on the series S (possibly higher) and 30 MH/s on the series X.  No idea on the Xbox One.\n\nAlso as of right now, I haven't made it available to mine without building from source (AKA doing super nerdy software stuff to run the miner). If people help me increase the MH/s to make this really usable as a miner, I'll create a downloadable, easy to install Xbox miner. \n\nI made this as a Proof of Concept to get around all the hardware (Xbox, PS5 etc.) that is not user-configurable and is actively anti-crypto. Since the POC is done, I don't have major plans on making the miner better and easy to use, but I did put my ether wallet up on the github page. If I get donations I'll spend some time making it better. I've already put \\~200 hours in this so I'm kinda done ATM so I would need some motivation to keep working on it lol. However, I will merge good PRs etc from open source community regardless <3\n\nIf you like this idea, please please give it a star on Github so we can increase visibility. And if you are a developer  (especially HLSL shader developers!!!), please take a look at the code, make a PR and make this miner feasible.\n\nAsk here for any questions!",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "hctmg5c",
+                    "author": "Affectionate-Talk708",
+                    "score": 451,
+                    "created_utc": 1631629089.0,
+                    "response": "If you can get the 30mh out of this, you will single handedly create the biggest used Xbox market of all time.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hctolj2",
+                            "author": "ninja-kurtle",
+                            "score": 138,
+                            "created_utc": 1631629998.0,
+                            "response": "It is a worry, but I think by the time this is feasible, proof of stake will be close enough that it's only useful for people who already have Xbox's, not for buying used/new",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hctq1l3",
+                                    "author": "Affectionate-Talk708",
+                                    "score": 111,
+                                    "created_utc": 1631630601.0,
+                                    "response": "More power to ya bud. Nothing says decentralized more than every home in America mining currency during gaming off time\n \nI love it. I wish I had the technical background to help make this a reality. I think someone will come along and take it the rest of the way with you.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "hcu84dj",
+                                    "author": "ShredableSending",
+                                    "score": 7,
+                                    "created_utc": 1631637925.0,
+                                    "response": "If it can run the algo needed to mine eth, what prevents it from being used to mine other coins that use the same algo?\n\nNote, I do mine, so I'm not trying to make any issues here.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hcu8yjh",
+                                            "author": "ninja-kurtle",
+                                            "score": 4,
+                                            "created_utc": 1631638261.0,
+                                            "response": "I dont know any other coins using ETHASH but if you pointed it to a pool that mined X coin with Ethash algo then  it would work. Also I (or other developers with shader knowledge) could port to RavenCoin etc. , although with a pretty big hassle",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hcu9y2o",
+                                                    "author": "ShredableSending",
+                                                    "score": 5,
+                                                    "created_utc": 1631638662.0,
+                                                    "response": "So according to whattomine, Metaverse, QuarkChain, Callisto, Expanse, Etho, EtherGem, Ellaism, EtherSocial all use Ethash. I just checked based off of one of the Eth mining Asics, there might be more. Very interesting, I'm going to save this and dig into it later.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hcuaqw4",
+                                                            "author": "ninja-kurtle",
+                                                            "score": 4,
+                                                            "created_utc": 1631638977.0,
+                                                            "response": "Cool! \\*Should\\* Work out the box then",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hcu7xfa",
+                                    "author": "nozbo8",
+                                    "score": 34,
+                                    "created_utc": 1631637849.0,
+                                    "response": "If you\u2019re feeling ambitious then look into Ergo mining. From what I understand the profitability of mining ERG is already competitive with ETH and once ETH goes PoS then ERG might become the most profitable coin to mine. I have an XBOX Series X and I would absolutely mine ERG with it if I knew how. Very cool project! Best of luck!!",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hcvstm5",
+                                            "author": "I_LOVE_MOM",
+                                            "score": 11,
+                                            "created_utc": 1631661239.0,
+                                            "response": "What happens when half the Ethereum hash rate moves to Ergo? Profitability will go to zero",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hcwadtq",
+                                                    "author": "SilkTouchm",
+                                                    "score": 8,
+                                                    "created_utc": 1631669333.0,
+                                                    "response": "Noobs just don't understand this. Ergo pays a pathetic amount of money, not nearly enough for all Ethereum miners.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hcx4r7e",
+                                                            "author": "Kirorus1",
+                                                            "score": 1,
+                                                            "created_utc": 1631686023.0,
+                                                            "response": "This is speculation but why I think ergo price will rise to keep it profitable. Mining market too big to be stopped by an upgrade. Too much money on the table, billions can be used to shill ergo and make it the next eth just cuz of mining alone.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "hcuzu2h",
+                                            "author": "Holiday_Brick_9550",
+                                            "score": 3,
+                                            "created_utc": 1631648947.0,
+                                            "response": "I second this, we need this.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "hcv4kdz",
+                                            "author": "AsusWindowEdge",
+                                            "score": 3,
+                                            "created_utc": 1631650811.0,
+                                            "response": "This!",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "hcvn3m2",
+                                            "author": "0023N02",
+                                            "score": 3,
+                                            "created_utc": 1631658601.0,
+                                            "response": "Unfortunately the Xbox GPU has Navi architecture, the limitations don't make it a great candidate for Ergo. The Vega arch is fantastic on Ergo though!",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hcwevzn",
+                                                    "author": "Erudite001",
+                                                    "score": 3,
+                                                    "created_utc": 1631671387.0,
+                                                    "response": ">has Navi architecture, the limitations don't make it a great candidate for Ergo. The Vega arch is fantastic on Ergo though!\n\nWould you explain why is that?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hcwkiq7",
+                                                            "author": "0023N02",
+                                                            "score": 9,
+                                                            "created_utc": 1631674086.0,
+                                                            "response": "ERGO algo accesses mem in 32 byte chunks. This means that RDNA generation gpus (Navi, Big Navi) will not perform well. Their 128 byte cacheline size means that 128 bytes are read for every 32 byte request, effectively halving the available memory bandwidth compared to GCN (which uses 64 byte cachelines). Same reason other algos like verthash and cn variants aren't great on Navi cards.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "hcwp3ku",
+                                                                    "author": "stickfisher",
+                                                                    "score": 3,
+                                                                    "created_utc": 1631676411.0,
+                                                                    "response": "Yeah, what he said.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "hcuhrxd",
+                                            "author": "TheArmoursmith",
+                                            "score": 7,
+                                            "created_utc": 1631641776.0,
+                                            "response": "This.  I've already redirected half my hashrate to ERG.  Would be interested in experimenting with XBox mining on my Series X",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hcv44hk",
+                                                    "author": "bigalienD",
+                                                    "score": 6,
+                                                    "created_utc": 1631650638.0,
+                                                    "response": "Same here. Moved everything after roi and some profit 4 months ago to ergo. Can't complain. I also loved how much easier is on the cards. It worked out perfectly during summer.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hcvzrtb",
+                                    "author": "AlphaBetablue",
+                                    "score": 3,
+                                    "created_utc": 1631664482.0,
+                                    "response": "Does it work for xbox360?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hcwojp9",
+                                            "author": "Apeshit-stylez",
+                                            "score": -1,
+                                            "created_utc": 1631676124.0,
+                                            "response": "Would u mine crypto on a computer from 10 years ago \u00bf",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hcxuc30",
+                                                    "author": "AlphaBetablue",
+                                                    "score": 2,
+                                                    "created_utc": 1631706852.0,
+                                                    "response": "Yes because all that matters is processing power.......",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hcyg1jm",
+                                    "author": "Cup-Impressive",
+                                    "score": 2,
+                                    "created_utc": 1631717507.0,
+                                    "response": "What about other PoWs? etchash, kawpow (RVN)?",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hcw8uwd",
+                            "author": "Wyrdwit",
+                            "score": 10,
+                            "created_utc": 1631668634.0,
+                            "response": "Gosh, if only there were a company that sells used Xbox's that I could invest my ether in...",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hcwcyn0",
+                            "author": "mk1817",
+                            "score": 1,
+                            "created_utc": 1631670511.0,
+                            "response": "Does this mean difficulty will go up?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hcwlfug",
+                                    "author": "Affectionate-Talk708",
+                                    "score": 2,
+                                    "created_utc": 1631674543.0,
+                                    "response": "I'm pretty novice in crypto, but my understanding is each device raises the difficulty slightly. Each 30mhs will make a very small change to the overall network.\n\nSomeone more advanced, please elaborate if needed",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hcu2qgw",
+                    "author": "Rybr00159",
+                    "score": 71,
+                    "created_utc": 1631635773.0,
+                    "response": "It surprises me that there hasn't been more brain-power put towards this considering the potential profits, especially if you could hardcode a 5% usage fee that mines straight to your wallet. Or maybe someone has already figured this out and has been mining ethereum in their warehouse full of 2nd hand x-boxes. Either way, I don't own an X-Box or have the technical knowledge to help but I find this so cool. Good luck!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcu4896",
+                            "author": "ninja-kurtle",
+                            "score": 55,
+                            "created_utc": 1631636369.0,
+                            "response": "Potential for Millions $$$, but outrageously difficult. I have a solid background in this, spent 200 hours, and it still isn't profitable, it just breaks even on energy cost.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hcu4gv8",
+                                    "author": "Rybr00159",
+                                    "score": 29,
+                                    "created_utc": 1631636464.0,
+                                    "response": "You might be able to find a mining company to hire you part time to keep working now that you've developed a working POC",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hcu9sfi",
+                                            "author": "emmytau",
+                                            "score": 8,
+                                            "created_utc": 1631638598.0,
+                                            "response": "Good idea, though it probably goes against the open-source part as they would wanna own the tech",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hcwt6er",
+                                    "author": "Rawtashk",
+                                    "score": 5,
+                                    "created_utc": 1631678610.0,
+                                    "response": "Even a 1% dev fee would make you a millionare very quickly. I think it's well worth the effort for you since there's no one else in this market space. 10s of thousands of xboxes would start mining right away if you could get it to 20MHs+",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "hjc2qdq",
+                                    "author": "meltbox",
+                                    "score": 1,
+                                    "created_utc": 1636061230.0,
+                                    "response": "This seems to be the fundamental problem. The older consoles are cheap but hardly competitive in terms of efficient processing and the new consoles are impossible to get.\n\nAlso you have to run them in dev mode meaning it's basically just a mining box.\n\nPlus all the special features built into them tend to be to maximize graphics and game specific performance. I'd like to think compute was focused on but realistically it looks like it's still a bit second class on this gen of consoles.\n\nI'm sure a monero miner would be somewhat profitable though. I'm sure the GPU could also be with enough tweaking, just not sure how profitable.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hl0buu7",
+                                            "author": "BeelinePie",
+                                            "score": 1,
+                                            "created_utc": 1637168996.0,
+                                            "response": ">Also you have to run them in dev mode meaning it's basically just a mining box.\n\nNot quite,\n\nWith a development account you can upload your own xbox apps/games to the microsoft whitelisted.\n\nF.x. i have kodi nightly on my xbox SX retail via this and i'd just leave the miner on when i go to bed as a retail game.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hl0ec0y",
+                                                    "author": "meltbox",
+                                                    "score": 1,
+                                                    "created_utc": 1637169961.0,
+                                                    "response": "Oh this is awesome. I did not know you can do this. Do you have to have an active dev account for it to keep working once compiled/whitelisted?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hl0f8mx",
+                                                            "author": "BeelinePie",
+                                                            "score": 1,
+                                                            "created_utc": 1637170311.0,
+                                                            "response": "I assume you only pay once for the dev account? Mine says expires in 2060 so i assume its a one time fee.\n\nBasically if you can throw your xbox into dev mode you can upload a whitelisted app.\n\n&#x200B;\n\nThe link to upload an app is: [https://partner.microsoft.com/en-us/dashboard/windows/overview](https://partner.microsoft.com/en-us/dashboard/windows/overview)\n\n&#x200B;\n\nYou do need to crop some images for the store listing, Set the Age rating to E3 and do the english description,\n\n&#x200B;\n\nI used the guide here: [https://github.com/Nun-z/XboxRetailModeAppGuide](https://github.com/Nun-z/XboxRetailModeAppGuide)\n\nGot me most of the way there.\n\n&#x200B;\n\n&#x200B;\n\nHowever i cannot write a 30Mh shader for eth, But i would love to use one.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "hl0k4jn",
+                                                                    "author": "meltbox",
+                                                                    "score": 2,
+                                                                    "created_utc": 1637172201.0,
+                                                                    "response": "Oh wow. I thought it was a monthly $20 fee. Thanks! I was going to look into improving the HLSL shader but I figured it wasn't worth it with the fee being monthly and all the limitations.  \n\n\nNo promises but I will be looking at it now haha.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hcts2s5",
+                    "author": "k3surfacer",
+                    "score": 34,
+                    "created_utc": 1631631446.0,
+                    "response": ">30 MH/s on the series X\n\nAre you sure about that? Too good.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hctt36y",
+                            "author": "ninja-kurtle",
+                            "score": 48,
+                            "created_utc": 1631631864.0,
+                            "response": "Look up the AMD card in the series X. 30 MH/s is on the very very low end of whats \\*possible\\*. Just depends on how much GPU level code you can get to work on the xbox hardware",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hcv4st8",
+                                    "author": "AsusWindowEdge",
+                                    "score": 10,
+                                    "created_utc": 1631650904.0,
+                                    "response": "This guy Xboxs!",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "hctvq3g",
+                                    "author": "k3surfacer",
+                                    "score": 13,
+                                    "created_utc": 1631632947.0,
+                                    "response": "Interesting. Very interesting.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "hcwji1z",
+                                    "author": "Erudite001",
+                                    "score": 3,
+                                    "created_utc": 1631673585.0,
+                                    "response": "Hi, it seems to me you are making rough estimation based on the equivalent GPU on PC. I looked up some comparisons, and XSX is roughly equivalent to a RX6600XT (30MHs). However, that's based on an memory overclocked 6600XT. As far as I know, there's no way to overclock XSX's memory?\n\nPlease correct me if I am wrong",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hcwnckw",
+                                            "author": "ninja-kurtle",
+                                            "score": 6,
+                                            "created_utc": 1631675514.0,
+                                            "response": "You're not wrong for gaming. The bottlenecks for ETHASH algo is different than gaming though. Although my estimates may be off, I would be surprised if they were off a lot without seeing a reason why (IE the bottleneck for XSX is memory bandwith or cuda cores and this limits to 30 MH/s). The math shows an XSX \\~ 60MH/s and XSS \\~20-30MH/S assuming perfect GPU usage",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hcwwjoh",
+                                                    "author": "Erudite001",
+                                                    "score": 3,
+                                                    "created_utc": 1631680574.0,
+                                                    "response": "Thanks, that would be awesome. Always hate to see hardware under-utilized. Thanks for your work.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hcu6fs0",
+                            "author": "Oderdigg",
+                            "score": 5,
+                            "created_utc": 1631637251.0,
+                            "response": "RX580 does 29MH/s",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hctx283",
+                    "author": "Aromatic-Ad-2497",
+                    "score": 15,
+                    "created_utc": 1631633493.0,
+                    "response": "*purchases 100 xbx*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hculwlm",
+                    "author": "YWGredditor",
+                    "score": 13,
+                    "created_utc": 1631643461.0,
+                    "response": "You had me at \u201cnot a scam\u201d",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcu4sia",
+                    "author": "Site-Staff",
+                    "score": 11,
+                    "created_utc": 1631636594.0,
+                    "response": "Dude\u2026 you\u2019ve just disrupted the entire universe.  It\u2019s awesome!  Here is an award.  Great work!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hctlxzi",
+                    "author": "Regular-Forever5876",
+                    "score": 10,
+                    "created_utc": 1631628872.0,
+                    "response": "That's awesome !! You're pretty good \ud83d\ude09",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hctomxv",
+                            "author": "ninja-kurtle",
+                            "score": 5,
+                            "created_utc": 1631630015.0,
+                            "response": "Thanks!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hctmgui",
+                    "author": "odinti",
+                    "score": 10,
+                    "created_utc": 1631629098.0,
+                    "response": "I find this amazing! But... How many hashes are required to make a profit (compared to GPU). If the numbers are good enough you may have worsened the supply for gamers :(",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hctnfvw",
+                            "author": "ninja-kurtle",
+                            "score": 7,
+                            "created_utc": 1631629509.0,
+                            "response": "Depending on the power, you need around 3-5 MH/s for profit. But for $5 profit a month it's still not \"worth it\". 10 MH/s (series S) brings the return on investment similar to GPU rigs (3-6 months return on price of Xbox)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hcwz676",
+                                    "author": "nukedmylastprofile",
+                                    "score": 3,
+                                    "created_utc": 1631682196.0,
+                                    "response": "I will gladly run my Xbox one in the garage if it does anything more than break even. That thing hasn\u2019t been used for easily 2 years otherwise",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hcttoi6",
+                    "author": "gstelettel",
+                    "score": 8,
+                    "created_utc": 1631632106.0,
+                    "response": "What would you change to get a higher hashrate out of it?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hctud2b",
+                            "author": "ninja-kurtle",
+                            "score": 23,
+                            "created_utc": 1631632388.0,
+                            "response": "Shader code (HLSL) is what runs on GPU. This code is \\*incredibly\\* hard to write and unique (very different from regular code) since GPUs do everything concurrently in 1000's of \"batches\". My shader code is pretty inefficient. Small one-line changes can increase speed 5x.  More important, if you could debug on the Xbox (someone with an Xbox ID dev account for example) you could then edit the shader code to be more efficient (by debugging you can see where the slowdown is) then fix it and increase from 3 MH/s",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hctuxqd",
+                                    "author": "gstelettel",
+                                    "score": 10,
+                                    "created_utc": 1631632624.0,
+                                    "response": "If everything cecks out I'll spread the word. Can u receive  matic on polygon mainnet?",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "hd0k1nh",
+                                    "author": "paul_tu",
+                                    "score": 1,
+                                    "created_utc": 1631749317.0,
+                                    "response": "We need Wolf9466 here.\nIf he has finished his Xilinx things though",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hcuubdq",
+                    "author": "Chicky_Nuggy",
+                    "score": 6,
+                    "created_utc": 1631646766.0,
+                    "response": "ETH BOX gives me Mike Tyson voice vibes.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcudysd",
+                    "author": "soquid_membrane",
+                    "score": 14,
+                    "created_utc": 1631640266.0,
+                    "response": "I'm down to help if I can. My Xbox one has been nothing but a shelf ornament for awhile. How I can I help?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcwam0q",
+                            "author": "macnachos",
+                            "score": 2,
+                            "created_utc": 1631669438.0,
+                            "response": "Ditto",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hcwily2",
+                            "author": "Usachampion",
+                            "score": 1,
+                            "created_utc": 1631673154.0,
+                            "response": "Xbox series X? I might be down to buy it off of you",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hcuast8",
+                    "author": "NotFunnyhah",
+                    "score": 26,
+                    "created_utc": 1631638998.0,
+                    "response": "My refrigerator plays Android games and its already always on. Plz give me a miner for it kthx",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcubawt",
+                            "author": "ninja-kurtle",
+                            "score": 40,
+                            "created_utc": 1631639201.0,
+                            "response": "Of course. Samsung fridges come with a RTX 3090 so you'll make $200 / month",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hcvgybc",
+                            "author": "Simbatheia",
+                            "score": 2,
+                            "created_utc": 1631655886.0,
+                            "response": "I\u2019ve seen some mining apps for android so you probably could.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hcwk566",
+                            "author": "Erudite001",
+                            "score": 1,
+                            "created_utc": 1631673900.0,
+                            "response": "on android, the best I know is to mine XMR. And most mining software performs terribly. The [best one](https://github.com/cornjosh/Aminer) I know needs some dig into. That say, you should probably not mine on something cost so much to fix, and most likely won't cover electricity cost.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hcuf7as",
+                    "author": "T1Pimp",
+                    "score": 4,
+                    "created_utc": 1631640756.0,
+                    "response": "Ugh don't release until I can get my hands on an X!!! Been trying non-stop for months.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hd58szk",
+                    "author": "Zeeblackbaron",
+                    "score": 5,
+                    "created_utc": 1631836775.0,
+                    "response": "Series X should be capable of 70 MH/s once the code is fully optimized. The Series X GPU is roughly on par (architecturally and performance-wise) with a Radeon RX 6800 OCed to 1582MHz core / 2188MHz mem. That card gets around 65 MH/s in Ethash with stock settings. The extra 5 MH/s for the Series X GPU comes from the extra 48 GB/s memory bandwidth it has over the stock RX 6800. \n\nSeries S should be able to pull off 28 MH/s once fully optimized. GPU in the Series S is about as powerful as a Radeon RX 5500XT, except RDNA2 instead of RDNA. Both have the same memory bandwidth of 224GB/s. 5500XT gets 28 MH/s in Ethash\n\nBasically hashrate for Ethash = memory bandwidth in GB/s div 8kb DAG memory fetched per hash. Ethash is memory hard to hashrate depends heavily on available memory bandwidth.\n\nOriginal Xbox One and One S will only do 8.5 MH/s, One X will do 40.75 MH/s",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hef7dhf",
+                            "author": "edgymemesalt",
+                            "score": 1,
+                            "created_utc": 1632706897.0,
+                            "response": "where's the xb1 figure from? I was thinking of selling mine for ~$100 but this sounds cool, although 8.5MH/s isn't worth it tbh",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hepmjl1",
+                                    "author": "Zeeblackbaron",
+                                    "score": 1,
+                                    "created_utc": 1632916122.0,
+                                    "response": "68 GB/s memory bandwidth div 8 kb DAG mem fetch = 8.5 MH/s",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hcufknd",
+                    "author": "rv79bams",
+                    "score": 11,
+                    "created_utc": 1631640903.0,
+                    "response": "Remember all those hats at defcon 10, 11 and 12 years ago that were daisy chaining the cpu/gpus of og xboxes and 360s to get them to match or even outperform custom super computers for specific algorithms?\n\nMost of them were building chess bots and scenario simulators...\n...but if you just change the function.\n\nI wonder what 10 chained overclocked and reprogrammed series Xs could do?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcug9vo",
+                            "author": "ninja-kurtle",
+                            "score": 8,
+                            "created_utc": 1631641179.0,
+                            "response": "Those were using CPUs though. This uses GPU. It could work though, especially for Xbox Ones because they have a better GPU -> Cost amount",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hcuhbp1",
+                                    "author": "rv79bams",
+                                    "score": 0,
+                                    "created_utc": 1631641597.0,
+                                    "response": "Still think this idea has potential.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hcubrzx",
+                    "author": "Linkstas",
+                    "score": 4,
+                    "created_utc": 1631639395.0,
+                    "response": "This is truly impressive.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcug02y",
+                    "author": "CanadianNic",
+                    "score": 3,
+                    "created_utc": 1631641071.0,
+                    "response": "This is neat. Noob question: does running a miner degrade the console in any way? Or does it act like it would be running a game except it\u2019s mining instead?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcug3l8",
+                            "author": "ninja-kurtle",
+                            "score": 7,
+                            "created_utc": 1631641110.0,
+                            "response": "Same as game. BUt its as if you run a game 24/7 so debatable",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hcug9i3",
+                                    "author": "CanadianNic",
+                                    "score": 6,
+                                    "created_utc": 1631641175.0,
+                                    "response": "That\u2019s cool! I am a software developer but dont know anything about mining. This could be a cool learning experience reviewing your code. Thanks for this!",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hcugwcg",
+                                            "author": "ninja-kurtle",
+                                            "score": 5,
+                                            "created_utc": 1631641427.0,
+                                            "response": "Read the high level overview and then good luck soldier. I wrote this really poorly and poorly commented. I spent all my time trying to get the HLSL shader code optimized > 3MH/s 0 time making code readable lol",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hcuheag",
+                                                    "author": "CanadianNic",
+                                                    "score": 2,
+                                                    "created_utc": 1631641626.0,
+                                                    "response": "Will do! And no worries. Better for me to learn when nothing makes sense lol",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hcv1tdn",
+                                    "author": "AmIHigh",
+                                    "score": 1,
+                                    "created_utc": 1631649726.0,
+                                    "response": "As long as you aren't over heating it and or killing the fan from going to fast, running a miner should be better for it than gaming.\n\nGaming would cause all sorts of thermal changes which would cause more wear and tear than consistent temperatures.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hf91x80",
+                    "author": "chiahomesteader",
+                    "score": 4,
+                    "created_utc": 1633283672.0,
+                    "response": "u/ninja-kurtle - is there any new progress made?  Or anywhere we can get some updates ? This is an exciting project .",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hfd2n3l",
+                            "author": "ninja-kurtle",
+                            "score": 3,
+                            "created_utc": 1633362709.0,
+                            "response": "No progress as of this second. Someone is testing on series X right now and will find out the MH/s soon. Any progress would be on GitHub since I don\u2019t plan on making any major updates (but will help merge PRs etc.)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hfp39pg",
+                                    "author": "spearhead121",
+                                    "score": 2,
+                                    "created_utc": 1633584180.0,
+                                    "response": "I'm a software developer but I haven't the slightest idea how a miner works or how I can optimize shader code. Do you have any reading materials to get started? Really want to help out and make this project a reality.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "hfd2skc",
+                                    "author": "chiahomesteader",
+                                    "score": 1,
+                                    "created_utc": 1633362771.0,
+                                    "response": "Ok thanks for the reply !",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hcu3zl9",
+                    "author": "patents-are-chill",
+                    "score": 3,
+                    "created_utc": 1631636274.0,
+                    "response": "This is awesome!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcu8lcg",
+                    "author": "met-al-hatolim",
+                    "score": 3,
+                    "created_utc": 1631638117.0,
+                    "response": "You are a god.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcubn6c",
+                    "author": "xmr_amateur",
+                    "score": 3,
+                    "created_utc": 1631639341.0,
+                    "response": " Awesome!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcv5xhp",
+                    "author": "__________________99",
+                    "score": 3,
+                    "created_utc": 1631651352.0,
+                    "response": "*sweetie, why do you have an Xbox now? I thought you only liked PC. Wait,  there's 2 of them. What?*\n\nme: *I can explain.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcvcx3h",
+                    "author": "unstopablex5",
+                    "score": 3,
+                    "created_utc": 1631654187.0,
+                    "response": "Someone contact geohotz id love to see a stream where he attempts to build on top of this",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcveloz",
+                    "author": "SnooRegrets5651",
+                    "score": 3,
+                    "created_utc": 1631654890.0,
+                    "response": "This is awesome, and surprised it\u2019s so \u201ceasy\u201d to run your own apps on your Xbox. Still wondering why Microsoft didn\u2019t allow the Xbox to dual-boot.\n\nAnywho.. thanks for the time you put into this. Watch that wallet of yours. :)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcvl7de",
+                            "author": "ninja-kurtle",
+                            "score": 4,
+                            "created_utc": 1631657751.0,
+                            "response": "It's not \"easy\" man. I could complain like an old-timer about yungins in his yard how ridiculously backwards I had to make this app work on the Xbox LOL. Became an old man vs the sea moment for me. I wasn't going to give up till the GPU did my bidding haha. Thanks!!! Maybe I'll finish this bad boy from POC -> everyone and their mother can run it",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hcxtte4",
+                                    "author": "SnooRegrets5651",
+                                    "score": 2,
+                                    "created_utc": 1631706535.0,
+                                    "response": "It\u2019s things like these that make the prospect of decentralization true - just like the time you could mine Bitcoin on your CPU. Everybody should be able and incentivized to join the mining/validation process. :)",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hcw92uy",
+                    "author": "DroopyDachi",
+                    "score": 3,
+                    "created_utc": 1631668735.0,
+                    "response": "Erase this before the xbox series x become the new nvidia graphics /s",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcwbe0s",
+                    "author": "Scooter928",
+                    "score": 3,
+                    "created_utc": 1631669791.0,
+                    "response": "If this truly takes off, you just ruined Christmas for a ton of people. And I love it! Best of luck with the project.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcyj7s8",
+                    "author": "Aggravating-Bag9200",
+                    "score": 3,
+                    "created_utc": 1631718851.0,
+                    "response": "Xbox one LHR coming soon.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcudyyj",
+                    "author": "NYKyle610",
+                    "score": 4,
+                    "created_utc": 1631640267.0,
+                    "response": "I have a series X. \n\nDo you have a tutorial for dumb people like myself to try and set this up?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcugg0t",
+                            "author": "ninja-kurtle",
+                            "score": 10,
+                            "created_utc": 1631641246.0,
+                            "response": "Not yet... It's a Proof of concept really. I can export the app but it mines worse than energy cost right now (5$ month)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hcwg2gj",
+                                    "author": "sketchymunter",
+                                    "score": 2,
+                                    "created_utc": 1631671936.0,
+                                    "response": "what if we only mine it during the day and have solar power? surely it would be profitable then? i have a series X that just sits there 90% of the day so would be very interested in this",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hcwh995",
+                                            "author": "ninja-kurtle",
+                                            "score": 2,
+                                            "created_utc": 1631672501.0,
+                                            "response": "3 MH/s = 6.46$ a month. My buggy code is more likely to brick your console than make you money as it currently stands. If I or open source helpers can improve the MH/s to what should be possible , 30MH/s and 64$ a month, I will make an easily downloaded version.\n\n&#x200B;\n\nAlthough you can follow the README from the link if you really want that $6... Its currently a PITA to build though but documented and doable!",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hcwptrv",
+                                                    "author": "sketchymunter",
+                                                    "score": 4,
+                                                    "created_utc": 1631676796.0,
+                                                    "response": "thanks for responding. $7 a month isn't really worth it atm, but will keep an eye on the project and see what improvements are made, because $64 is worth it. Would help if I had the know-how, but my programming knowledge doesn't extend to what this project uses",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hcv6hnn",
+                    "author": "DanZealNow",
+                    "score": 2,
+                    "created_utc": 1631651576.0,
+                    "response": "Any way to donate to help you have more time to work on this? This is incredible!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcvmiol",
+                            "author": "ninja-kurtle",
+                            "score": 3,
+                            "created_utc": 1631658336.0,
+                            "response": "[https://github.com/kgrossnickle/eth-box](https://github.com/kgrossnickle/eth-box) has my wallet. It's  \n\n\n0x53C58a76a9E702efC8298E7F29f322Cd2e59847E  \n\n\nWith enough people pushing for it I'll try and make it better and easily downloaded",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hcwnp6m",
+                    "author": "Frangiblepani",
+                    "score": 2,
+                    "created_utc": 1631675695.0,
+                    "response": "I have an Xbox one, will this kill my machine to run?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcwshmy",
+                            "author": "ninja-kurtle",
+                            "score": 3,
+                            "created_utc": 1631678222.0,
+                            "response": "It won\u2019t kill it but you will make $6.46 a month rn. I\u2019m hopeful to get it worthwhile in the future (10x is possible to 64$ a month )",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hd0yo4r",
+                                    "author": "Estbarul",
+                                    "score": 1,
+                                    "created_utc": 1631756236.0,
+                                    "response": "this is very awesome! can I ask what is the power consumption aprox of the device while mining? and if doing more MH/s, do you think power will go up too?",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hcxruz9",
+                    "author": "noplace_ioi",
+                    "score": 2,
+                    "created_utc": 1631705285.0,
+                    "response": "thanks looks great and runs nicely on my win10 laptop @ 0.3MHS lol\nI have been wanting to learn more about eth internally for a while and your miner code looks easier to digest than what I saw so far",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcxwo60",
+                            "author": "ninja-kurtle",
+                            "score": 1,
+                            "created_utc": 1631708254.0,
+                            "response": "Hey check bug #1 or #2 on the README. I think this current epoch is a broken epoch and runs @.3MHs . You can change a variable to a different epoch and get regular  performance",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hcy2xvb",
+                                    "author": "noplace_ioi",
+                                    "score": 1,
+                                    "created_utc": 1631711586.0,
+                                    "response": "ill play around with that when I get a chance, the laptop has intel UHD620 so I expected a very low hash rate, I'm not sure also if DAG is getting generated or there are other issues since I left it on for a while and didn't see any communication with pool besides the auth or something",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hcyf1om",
+                    "author": "elvient0",
+                    "score": 2,
+                    "created_utc": 1631717090.0,
+                    "response": "You should try doing this with different machines , old iPhones , tablets , etc.  Could be the best thing for used old machines",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcz8ux8",
+                    "author": "MooseBoys",
+                    "score": 2,
+                    "created_utc": 1631729363.0,
+                    "response": "Feel free to DM me if you have any specific questions on D3D12 or HLSL. I can't contribute directly or help with general \"how go faster\" questions, but I know the docs are notoriously opaque. Or at least they were a few years ago. If the question is of general interest you can also post it to Stack Overflow. I'm [fairly active over there](https://stackoverflow.com/users/2726892/mooseboys).",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hsfmiot",
+                    "author": "DangerDave4G63",
+                    "score": 2,
+                    "created_utc": 1642040276.0,
+                    "response": "Any updates on this at all?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hthqx9j",
+                            "author": "Tonydiediedie",
+                            "score": 1,
+                            "created_utc": 1642704204.0,
+                            "response": "where are the programmers, theyll get paid themselves if they make this app better, seriously.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i02nq6p",
+                            "author": "Woowoodyydoowoow",
+                            "score": 1,
+                            "created_utc": 1646890493.0,
+                            "response": "I asked the guy who made this post and he basically said he doesn\u2019t have the time and it\u2019s a lot of work. Actually this is his exact response:\n\n\u201cTbh it\u2019s not worth it rn. It makes ~$5 a month and costs 5-10$ depending on energy cost. I don\u2019t have time to work on it anymore, I was hoping to get people interested in fixing the bugs since it should be ~75$ a month\u201d\n\nSeems like a really nice dude and I\u2019m sure if you know any coders willing to take this task on he\u2019d be willing but idk",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i02o082",
+                            "author": "Woowoodyydoowoow",
+                            "score": 1,
+                            "created_utc": 1646890668.0,
+                            "response": "A message from the OP when I asked a few months back: \n\n\u201cTbh it\u2019s not worth it rn. It makes ~$5 a month and costs 5-10$ depending on energy cost. I don\u2019t have time to work on it anymore, I was hoping to get people interested in fixing the bugs since it should be ~75$ a month\u201d",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hctntwq",
+                    "author": "roox911",
+                    "score": 4,
+                    "created_utc": 1631629673.0,
+                    "response": "starred",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcto6wr",
+                            "author": "ninja-kurtle",
+                            "score": 3,
+                            "created_utc": 1631629826.0,
+                            "response": "\ud83d\udc4f\u2b50",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hcu9gw1",
+                    "author": "cainebourne",
+                    "score": 2,
+                    "created_utc": 1631638467.0,
+                    "response": "Make one for ps5",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcucjs9",
+                            "author": "ninja-kurtle",
+                            "score": 8,
+                            "created_utc": 1631639704.0,
+                            "response": "Proof of Stake (obsoleting mining) would come way before a PS5 miner version :(",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hcucorg",
+                                    "author": "cainebourne",
+                                    "score": 1,
+                                    "created_utc": 1631639761.0,
+                                    "response": "We\u2019ll see I sold 16 3070s in July and now Pos pushed to April at earliest 2021",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hcudhdf",
+                                            "author": "ninja-kurtle",
+                                            "score": 6,
+                                            "created_utc": 1631640079.0,
+                                            "response": "IMO POS wont be here till End of 2022 or start 2023. I still wont spend 100 hours on a PS5 miner by then lol",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hcugfe0",
+                                                    "author": "cainebourne",
+                                                    "score": 1,
+                                                    "created_utc": 1631641238.0,
+                                                    "response": "I hear yah",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hcub7is",
+                    "author": "HeavyFuckingMetalx",
+                    "score": 2,
+                    "created_utc": 1631639163.0,
+                    "response": "This is cool! Could someone explain what 'MH/s' stands or and means? How much is 3 'MH/s' a month in $?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcubucm",
+                            "author": "ninja-kurtle",
+                            "score": 6,
+                            "created_utc": 1631639422.0,
+                            "response": "\\~5-10$ Month. MH/s = Mega (million) Hashes a second. AKA how many hashes a computer can compute in a second, these hashes are math to prove work is done. If work is done, (and your lucky or working in a pool) you get paid ether",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hcuri2d",
+                    "author": "ErmahgerdYuzername",
+                    "score": 1,
+                    "created_utc": 1631645652.0,
+                    "response": "Great idea.  I have an xbox one lying around that isn't used anymore.  If I can get it to mine me even a few dollars a day that would be awesome. I'm useless at coding so if there was an easy installer I'd do this in a heart beat.  Vote given on github!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcvmn7c",
+                            "author": "ninja-kurtle",
+                            "score": 3,
+                            "created_utc": 1631658394.0,
+                            "response": "Thanks! I'm hopeful for some speed improvements, which makes the easy installer worth making too",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hcutshk",
+                    "author": "Dull_Demand_4341",
+                    "score": 1,
+                    "created_utc": 1631646556.0,
+                    "response": "OP how can I get started to make something like this. I am currently studying CS and would like to get into crypto programming. Any good books or resources to understand the underlying basics of crypto and programming?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcupxqw",
+                    "author": "Dapiex",
+                    "score": 1,
+                    "created_utc": 1631645046.0,
+                    "response": "this isn't possible on playstation right?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcusb4v",
+                            "author": "ninja-kurtle",
+                            "score": 1,
+                            "created_utc": 1631645970.0,
+                            "response": "It is, but not in the same way I made it for Xbox. So, mostly no :(",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hcv6uxn",
+                    "author": "Adventurous-Pay-8441",
+                    "score": 1,
+                    "created_utc": 1631651721.0,
+                    "response": "How do I get it on my xbox",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcv934c",
+                    "author": "Lostmindinla",
+                    "score": 1,
+                    "created_utc": 1631652617.0,
+                    "response": "Where do I sign up",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcvsacr",
+                    "author": "libertarianets",
+                    "score": 1,
+                    "created_utc": 1631660988.0,
+                    "response": "Oh awesome make it even harder to get your hands on one of these consoles why don\u2019t ya",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcvwtde",
+                    "author": "obsa1",
+                    "score": 1,
+                    "created_utc": 1631663092.0,
+                    "response": "Sorry but for someone not really aware of what 15 MH/S means, is that a lot? And does that mean one can mine with their xbox alone or would they need other equipment?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcvjb2o",
+                    "author": "timuch",
+                    "score": 0,
+                    "created_utc": 1631656904.0,
+                    "response": "Omg, this can help me financially recover from my xbox series x buy",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hctiflg",
+                    "author": "NotFunnyhah",
+                    "score": 1,
+                    "created_utc": 1631627338.0,
+                    "response": "\ud83e\udd14",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcur1h3",
+                    "author": "sbcr1",
+                    "score": 1,
+                    "created_utc": 1631645474.0,
+                    "response": "This is awesome. Hope some brainiacs see this and can contribute. Looks like bug 1 should be fixable (I say with my 1% coding knowledge versus your infinitely greater knowledge!)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcus5qh",
+                            "author": "ninja-kurtle",
+                            "score": 2,
+                            "created_utc": 1631645911.0,
+                            "response": "Both bugs are super fixable. I could fix them, it\u2019s just that I would want > 3 MH/s before I fixed them. It\u2019s like fixing a cars AC that won\u2019t start lol",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hcuvo6g",
+                                    "author": "sbcr1",
+                                    "score": 1,
+                                    "created_utc": 1631647306.0,
+                                    "response": "Good analogy lol\n\nfingers crossed a HLSL coder sees your work!",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hcvoamu",
+                    "author": "NePlusUltra89",
+                    "score": 1,
+                    "created_utc": 1631659147.0,
+                    "response": "This is eth grant worthy",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcvr5yo",
+                    "author": "jordan_belfortnite",
+                    "score": 1,
+                    "created_utc": 1631660467.0,
+                    "response": "This is awesome. Definitely intetested.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcvstu0",
+                    "author": "they_call_me_tripod",
+                    "score": 1,
+                    "created_utc": 1631661241.0,
+                    "response": "This is incredible",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcvwwic",
+                    "author": "oooeeeoooee",
+                    "score": 1,
+                    "created_utc": 1631663134.0,
+                    "response": "xbox series x (lhr edition)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcwiva0",
+                    "author": "betajunk",
+                    "score": 1,
+                    "created_utc": 1631673277.0,
+                    "response": "im holding out with ether mining on my gameboy",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcwrnuv",
+                    "author": "amtryingtoquit",
+                    "score": 1,
+                    "created_utc": 1631677771.0,
+                    "response": "wont this NOT work because eth switch from POW to POS ?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcwsk3a",
+                            "author": "ninja-kurtle",
+                            "score": 2,
+                            "created_utc": 1631678260.0,
+                            "response": "Yes. When the heavens open and POS happens obviously since all miners won\u2019t work, this particular miner won\u2019t work. POS won\u2019t happen till 2023 IMO",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hcx2fju",
+                    "author": "bookmarks47",
+                    "score": 1,
+                    "created_utc": 1631684338.0,
+                    "response": "Let me know OP. I\u2019ll pull the trigger and buy an xdust.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcx4dno",
+                    "author": "Confident-Car",
+                    "score": 1,
+                    "created_utc": 1631685747.0,
+                    "response": "Shit like this is what got linux mode removed off the ps3 back in the day",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcx4w2b",
+                    "author": "Metternich3721",
+                    "score": 1,
+                    "created_utc": 1631686123.0,
+                    "response": "Wew just wew",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcx8h5l",
+                    "author": "WallStreetElephant",
+                    "score": 1,
+                    "created_utc": 1631688936.0,
+                    "response": "Does it work on ps5?\n\nHow does one install it?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcxa81u",
+                    "author": "chill_darling",
+                    "score": 1,
+                    "created_utc": 1631690388.0,
+                    "response": "May I ask, why you choose the Xboxes? Considering PlayStations are cheaper and have vastly better specs? Also PlayStation systems are easier to enter. I remember that 10 years ago people were even making themes for the PlayStation UI you could download unto a flash and have it load unto the systems hard drive\n\nEdit: Nvm you stated it was only for research on the repo page \ud83d\ude05 \n\nPerhaps you'll find it easier making a miner for the PS, since Microsoft really dislikes people tinkering around in their products.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcxcm3d",
+                    "author": "MooseBoys",
+                    "score": 1,
+                    "created_utc": 1631692492.0,
+                    "response": "Where does your 5x performance estimate come from? Have you taken PIX traces and seen 80% idle time?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcxwxou",
+                            "author": "ninja-kurtle",
+                            "score": 1,
+                            "created_utc": 1631708406.0,
+                            "response": "It\u2019s from GPU estimates. Cant PIX trace Xbox.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hcyq0ch",
+                                    "author": "MooseBoys",
+                                    "score": 1,
+                                    "created_utc": 1631721650.0,
+                                    "response": "You can use PIX on Windows. Any recent AMD SOC should at least give you a high-level approximation for the performances on xbox.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hcyrj8y",
+                                            "author": "ninja-kurtle",
+                                            "score": 1,
+                                            "created_utc": 1631722275.0,
+                                            "response": "I have it heavily optimized using PIX + other profilers for my NVIDIA card. Maybe an AMD card would be different though\ud83e\uddd0\ud83e\uddd0 . I\u2019ve thought about this but didn\u2019t buy one just to try",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hcz2ezn",
+                                                    "author": "MooseBoys",
+                                                    "score": 1,
+                                                    "created_utc": 1631726722.0,
+                                                    "response": "Nvidia means you're running on a discrete GPU which will have significantly different performance characteristics due to non-UMA. You need to tune for UMA - if you're not, you're likely incurring unnecessary memory transfer penalties.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hcxcqkv",
+                    "author": "Gonna_Poo",
+                    "score": 1,
+                    "created_utc": 1631692605.0,
+                    "response": "How can I install this?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcytllo",
+                    "author": "AndDontCallMePammy",
+                    "score": 1,
+                    "created_utc": 1631723111.0,
+                    "response": "this is disturbing!\n\nmarketing execs should just start saying disturbing instead of disruptive",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hd0gou3",
+                    "author": "paul_tu",
+                    "score": 1,
+                    "created_utc": 1631747720.0,
+                    "response": "Btw, is it possible to replace the firmware with a Linux?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hll23tt",
+                    "author": "chollingsbollings",
+                    "score": 1,
+                    "created_utc": 1637544623.0,
+                    "response": "any update/progress so far man? project is so interesting",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hmmn022",
+                    "author": "georgealistair",
+                    "score": 1,
+                    "created_utc": 1638249248.0,
+                    "response": "I have dev mode already running on my xbox one x. I'd run this in a second. Good luck!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hq3d906",
+                    "author": "WeOutsideRightNow",
+                    "score": 1,
+                    "created_utc": 1640568760.0,
+                    "response": "So any updates for the series x?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hs68p1z",
+                    "author": "Woowoodyydoowoow",
+                    "score": 1,
+                    "created_utc": 1641880030.0,
+                    "response": "Hey so this is legit???? I just got an Xbox x and this sounds cool",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hwc4bhi",
+                    "author": "topkopf",
+                    "score": 1,
+                    "created_utc": 1644474635.0,
+                    "response": "Please make a download version m8",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hxm60oq",
+                    "author": "daemon7",
+                    "score": 1,
+                    "created_utc": 1645300140.0,
+                    "response": "Is this still the only way to mine on an Xbox series X?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcuk11x",
+                    "author": "1440pSupportPS5",
+                    "score": -8,
+                    "created_utc": 1631642700.0,
+                    "response": "Thankfully i have a series x but can you delete this bro? Getting a console was hard enough as it is (GPUs 100x harder imo) but if this catches on it could set a BAD precedent. Congrats on being a  smart fella btw and not a fart smella",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcuonp9",
+                    "author": "unstopablex5",
+                    "score": -1,
+                    "created_utc": 1631644560.0,
+                    "response": "since ethereum is phasing out mining, is there any chance this could be configured for btc mining?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcuras6",
+                            "author": "IllIlIIlIIllI",
+                            "score": 6,
+                            "created_utc": 1631645573.0,
+                            "response": "BTC needs specialized hardware (ASICs) to be at all profitable but it could probably be adopted for other [GPU minable coins](https://whattomine.com/).",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hcusgdf",
+                            "author": "ninja-kurtle",
+                            "score": 3,
+                            "created_utc": 1631646028.0,
+                            "response": "What they said. Aka no since Btc use CPU. However This could mine any GPU based algo coins tho with modifications",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hcv3hyi",
+                            "author": "NotsoSmokeytheBear",
+                            "score": 1,
+                            "created_utc": 1631650394.0,
+                            "response": "Man I remember 12 years ago my 80 year old neighbor mining BTC on a think pad and seven other systems. If he didn\u2019t die, he\u2019d be a billionaire.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hcvjvy3",
+                    "author": "generic_name95",
+                    "score": 0,
+                    "created_utc": 1631657160.0,
+                    "response": "What about the PS5? :)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcvkqze",
+                    "author": "WolframRuin",
+                    "score": 0,
+                    "created_utc": 1631657548.0,
+                    "response": "Wow! I was looking for this since other every ETH miner I tried keeps crashing my Radeon 5700XT. \nBut how do you install this on the closed xbox system??",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcvnec4",
+                    "author": "zneaking",
+                    "score": 0,
+                    "created_utc": 1631658737.0,
+                    "response": "Just in time for proof of stake! Excellent.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

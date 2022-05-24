@@ -1,0 +1,1532 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uvqmxw",
+            "title": "Did the LUNA crash reveal an inherent risk in Proof Of Stake networks?",
+            "url": "https://www.reddit.com/r/ethereum/comments/uvqmxw/did_the_luna_crash_reveal_an_inherent_risk_in/",
+            "author": "TroubadorialTendency",
+            "created_utc": 1653274613.0,
+            "score": 162,
+            "num_comments": 205,
+            "subreddit": "ethereum",
+            "selftext": "Most stories that you will read about the event will focus on the depegging of the mechanism of the algorithmic stablecoin which was tied to the supply and market value of the protocol token. This is interesting, of course, but I don't see too many people discussing the other side effect, the network became so vulnerable to attacks at the consensus level that the Luna Foundation was forced to turn it off. \\[[https://twitter.com/terra\\_money/status/1524935730308456448](https://twitter.com/terra_money/status/1524935730308456448)\\] Because the proof of stake network derived the security guarantees from the (Dollar) cost of staked Luna, its market price devaluation allowed malicious actors to buy Luna for cheap and attack the network at the consensus level. \n\nI must confess that I was aware of the concerns for the mechanism design of Luna, and knew there was a risk for a death spiral. However, I did not think the risks would play out so spectacularly and meteorically. I also assumed that in normal market conditions, the decisions of the Luna Foundation Guard (LFG) to use BTC as their forex reserve would allow the foundation to counteract the risks. It was a declaration of defeat of the algorithmic stable coin system, but I thought it would generally be able to recover from volatile - and natural market conditions. That is because I did not consider the coordinated malicious attack security vector. The fact that the attackers were able to short the market made it profitable to crash the market price of Luna, made me revisit previous assumptions I've had and am less confident in POS as a concept.\n\nOnce the price of Luna crashed the chain became vulnerable for a consensus level attack, which is why it was 'shut down'. This is often overlooked, but I find it to be the most significant revelation about the entire ordeal. To me this seems to indicate there is a systemic risk for a death spiral on EVERY proof of stake network. Yes, even Ethereum, the network that I use daily, and that I chose as the most secure infrastructure to build the platform that I am working on. The core concept of Proof Of Stake is that it is expensive to be a malicious actor. But the expense to attack a proof of stake network is not denominated in value exogenous to the network itself. You stake Ether to secure Ethereum, and thus make the Ether that you need to run computation on that network more valuable. That means that **if the value of Ether goes down, the security of the Ethereum network goes down**. There is a point in which you can effectively use market mechanics to bring the value of Ethtereum low enough to make an attack on the network\u2019s consensus viable, at which point the value of Ether would continue to fall in the same kind of feedback loop that we saw with Luna. Impractical, yes, unrealistic, I don't think so. **The network is valuable because it is expensive to attack it, and it\u2019s expensive to attack it because the unit price of Ether is valuable.** This logic is a bit more circular than I am comfortable with. \n\nHave people addressed this risk in PoS chains directly? I am not too interested in discussing the LUNA thing further, but rather in the consensus level attack that was leveraged once the price tanked. I'd love to hear the community's thoughts on this.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9nhtwn",
+                    "author": "jersey-city-park",
+                    "score": 42,
+                    "created_utc": 1653284298.0,
+                    "response": "Its not really comparable. Before the depegging, there was 350 million luna in existence. Within one or two days, 6.5 trillion luna was created. Of course it was easy to attack the network when the number of staked tokens out of total supply was so minuscule, and no good actors were staking more since the network was dead. This is not really an issue that would appear on Ethereum.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9odaof",
+                            "author": "MoneroArbo",
+                            "score": -5,
+                            "created_utc": 1653309485.0,
+                            "response": "What happens if there's a minting bug on Ethereum where someone figures out a way to mint a bunch of new coins?\n\nThis would be disastrous for any chain in terms of value and reputation, but in Proof of Stake the attacker could literally 51% the system forever.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9oe97h",
+                                    "author": "Maswasnos",
+                                    "score": 14,
+                                    "created_utc": 1653310027.0,
+                                    "response": "If it's actually a bug it would be forked away through social consensus, much like Bitcoin was forked when it had infinite minting bugs.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9ofort",
+                                            "author": "MoneroArbo",
+                                            "score": -7,
+                                            "created_utc": 1653310806.0,
+                                            "response": "> much like Bitcoin was forked when it had infinite minting bugs\n\nNone in BTC have been exploited. It's unlikely imo that the chain state would be rolled back to before the hack if one was. Bitcoin has *never* done anything like that. Only Ethereum has, after the DAO hack that led to the creation of Ethereum Classic. Very antithetical to the idea of blockchain and kinda proving the centralization of Etehreum at the time. To this day I consider that a huge black mark on Ethereum.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9ogab3",
+                                                    "author": "Maswasnos",
+                                                    "score": 14,
+                                                    "created_utc": 1653311116.0,
+                                                    "response": "Er, no. Bitcoin did have an infinite minting bug and it was exploited and then subsequently rolled back by a client fork:\n\nhttps://decrypt.co/39750/184-billion-bitcoin-anonymous-creator\n\nEthereum has never rolled back transactions, the DAO hack was rectified by a client update which transferred the DAO funds to a new contract allowing withdrawals. You can read about it here:\n\nhttps://eips.ethereum.org/EIPS/eip-779",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9ohlen",
+                                                            "author": "MoneroArbo",
+                                                            "score": 0,
+                                                            "created_utc": 1653311795.0,
+                                                            "response": "To be fair I had never heard of that, although it happened so extremely early that the bug was fixed by Satoshi himself and the Bitcoin price was 6 cents. Today, such a rollback would be much, *much* harder to accomplish to the point where I remain skeptical it could happen. Bitcoin was just some dudes on a forum back then.\n\n**edit:** Also the article says this was a soft fork which doesn't quite make sense to me, but nonetheless...\n\n>  the DAO hack was rectified by a client update which transferred the DAO funds to a new contract allowing withdrawals\n\nA technicality that still casts doubt on the immutability of the ledger imo. And Ethereum at the time was $500, representing a network of significant value. That to me makes it different. Also being a hard fork, apparently.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9oj1gg",
+                                                                    "author": "Maswasnos",
+                                                                    "score": 6,
+                                                                    "created_utc": 1653312526.0,
+                                                                    "response": "There have been much larger hacks since the DAO that haven't been rolled back; the Ethereum community learned a lot during that phase and is much less willing to do bailouts of that sort nowadays. There are of course things that would probably result in another \"bailout\", like perhaps the ETH2 deposit contract being hacked somehow. But realistically it's just a matter of becoming Lindy and letting time pass; the DAO hack at this point is mostly trivia brought out when people ask why ETC exists, and it will only become more obscure and less influential with age. \n\nFundamentally any chain would be open to this sort of \"layer 0\" bailout if the bug were severe enough. I guarantee the Bitcoin community would react with lightning speed if a new infinite minting bug were discovered and exploited. These aren't truly immutable systems we're working with, they're only as immutable as the community running the chain desires them to be.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9ojnqz",
+                                                                            "author": "MoneroArbo",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653312841.0,
+                                                                            "response": "I agree most people don't care anymore and will continue to care less over time.\n\nAs far as a minting bug on btc, at least that doesn't lead directly to a permanent 51% attack :/\n\nBut yeah, I can't say they *wouldn't* roll back in that circumstance. Hard to say. But at least the fork could still be done through traditional consensus, i.e. miners and node operators instead of purely social consensus because on-chain consensus got f'd.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "i9ojmda",
+                                                                    "author": "namtaru_x",
+                                                                    "score": 3,
+                                                                    "created_utc": 1653312821.0,
+                                                                    "response": "The DAO hack and ETH client update happened 9 months after launch. The BTC roll back happened 19 months after launch.\n\nIt's pretty clear that such an update on the Ethereum network would not be possible today.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9ok8bx",
+                                                                            "author": "MoneroArbo",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653313120.0,
+                                                                            "response": "Measuring time after launch ignores the fact that crypto as a whole was non-existent when Bitcoin launched. Ethereum 9 months after launch was ridiculously larger than BTC 9 months after launch.\n\nWe're talking about a market cap of 30B for ETH at the time of the fork while in 2010 the BTC market cap was like half a million",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9ols1r",
+                                                                                    "author": "namtaru_x",
+                                                                                    "score": 2,
+                                                                                    "created_utc": 1653313871.0,
+                                                                                    "response": "The bottom line is the exact same point you made applies to both at this point.\n\n>Today, such a rollback would be much, much harder to accomplish to the point where I remain skeptical it could happen.",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i9ovibk",
+                                                                                            "author": "MoneroArbo",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1653318289.0,
+                                                                                            "response": "my initial point was about minting bugs and how in PoW it doesn't affect consensus. there's a difference between a bug that lets people mint coins and a bug that breaks consensus. at least in PoW. in PoS minting bugs are consensus bugs.\n\nimo that's a big deal",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "i9onzt0",
+                                                                    "author": "AnisSeras",
+                                                                    "score": 3,
+                                                                    "created_utc": 1653314919.0,
+                                                                    "response": "> Ethereum at the time was $500\n\nThe DAO hack was in 2016, the price was nowhere near $500. It was in the low 10s for most of the year.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9otz5e",
+                                                                            "author": "MoneroArbo",
+                                                                            "score": -1,
+                                                                            "created_utc": 1653317614.0,
+                                                                            "response": "The EIP linked above is dated November 2017, which is what I went off",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "i9ogniu",
+                                                    "author": "PinkPuppyBall",
+                                                    "score": 3,
+                                                    "created_utc": 1653311308.0,
+                                                    "response": "Bitcoin has rolled back twice. One of the times because trillions of btc where minted.\n\nBitcoin immutability is a shared myth. \nhttps://cryptoticker.io/en/bitcoin-immutability-shared-myth/",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9ohpo9",
+                                                            "author": "MoneroArbo",
+                                                            "score": 1,
+                                                            "created_utc": 1653311856.0,
+                                                            "response": "Already replied to the other guy who mentioned that but ty",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9op15r",
+                                    "author": "jersey-city-park",
+                                    "score": 3,
+                                    "created_utc": 1653315405.0,
+                                    "response": "Lol if any blockchain has a infinite minting bug its basically dead, proof of stake or not",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9ots9n",
+                                            "author": "MoneroArbo",
+                                            "score": 1,
+                                            "created_utc": 1653317530.0,
+                                            "response": "of course it would be a disaster for any chain, but it wouldn't directly affect governance or consensus",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9p8fcj",
+                                                    "author": "jersey-city-park",
+                                                    "score": 1,
+                                                    "created_utc": 1653323761.0,
+                                                    "response": "Sure, but its like worrying about our government during nuclear war",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9oex15",
+                                    "author": "---Banshee--",
+                                    "score": 1,
+                                    "created_utc": 1653310386.0,
+                                    "response": "This type of collapse only works in coins like Luna/Titan where the share token can be minted in an effort to save the peg of the stablecoin. Hint, it never saves the peg and it always kills the share token.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9ofvic",
+                                            "author": "MoneroArbo",
+                                            "score": 1,
+                                            "created_utc": 1653310900.0,
+                                            "response": "I was talking about a bug that accidentally allows new ether to be minted when they shouldn't be.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9ok70n",
+                                                    "author": "Dragon_Fisting",
+                                                    "score": 1,
+                                                    "created_utc": 1653313102.0,
+                                                    "response": "You won't be able to mint ether. The point is that it only works when a blockchain allows you to mint the governing asset unlimitedly. \n\nOn most PoS chains, the L1 is emitted by the protocol automatically as a reward for staking. If there is a bug, it would still be distributed to everybody staking and earning emissions by proportion, so the overall ratios won't change.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9okc6p",
+                                                            "author": "MoneroArbo",
+                                                            "score": 1,
+                                                            "created_utc": 1653313174.0,
+                                                            "response": "That's impossible to know. They're called bugs for a reason.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9ombca",
+                                                                    "author": "Dragon_Fisting",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653314131.0,
+                                                                    "response": "You're being pedantic. It isn't part of the *economic* model of PoS Ethereum at all. For a bug to allow someone to generate millions of ether on demand, the entire mechanism would have to be actively maliciously put into the code and then not be caught pre-deployment by anybody. \n\nIf I was worried that Ethereum development was so incompetent they could ship a bug like that out, I would stay miles away.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9ou4u6",
+                                                                            "author": "MoneroArbo",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653317682.0,
+                                                                            "response": "it wouldn't have to be actively malicious. many chains including btc have had minting bugs.\n\nbut only on PoS does such a bug affect consensus",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9nqbss",
+                    "author": "lanatork",
+                    "score": 44,
+                    "created_utc": 1653291142.0,
+                    "response": "There are several points PoS mechanism that protect Ethereum:  \n\n\n* In Ethereum PoS 51% is not enough to attack the network, you need 67% to do it. Otherwise you can not finalize a block and after you stop the attack the attacker's blocks can just be discarded.\n* There is a queue to onboard and offboard validators. This queue exists to avoid a sudden change in validators. If I remember correctly it would take around two years to acquire 67% of the PoS validators with the current number of validators.\n* Ethereum introduces slashing. This means if anybody tries so propose an invalid block or tries to cheat in the voting process, it takes just one, I repeat, just ONE honest validator to report this and the attacker loses all there ETH.\n* If an attacker has more than 34% and refuses to vote to finalize blocks (more than 66% is required for this), their stake is slowly taken away by the protocol until they have less than the required 32 ETH and will be thrown out as a validator.\n* In an extreme case the core devs can decide to discard malicious blocks if all of the above would not be sufficient. This means that all the clients would release a new version that says that the attacker's blocks are not part of the chain anymore. This would only ever be used in the most extreme attacks, but it is something that is possible with PoS. With PoW you cannot do that, which means that it can not be protected from a hostile takeover, if the attacker has a nearly unlimited amount of capital (= a nation state).  \n\n\nMany people consider the PoS protocol in Ethereum outdated, because it requires locking your ETH and it can be slashed, but what they don't realize is that those are protections against attacks that other PoS protocol simply don't have.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9ohlp5",
+                            "author": "GuessWhat_InTheButt",
+                            "score": 3,
+                            "created_utc": 1653311799.0,
+                            "response": "> In an extreme case the core devs can decide to discard malicious blocks if all of the above would not be sufficient. This means that all the clients would release a new version that says that the attacker's blocks are not part of the chain anymore. This would only ever be used in the most extreme attacks, but it is something that is possible with PoS. With PoW you cannot do that\n\nWhy is this not possible on PoW? If the community agrees, they would simply switch their node software to one forking the chain at the last block before the attack and if miners want to mine coins that are acutally worth something they would have to switch, too.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9p6j3d",
+                                    "author": "domotheus",
+                                    "score": 2,
+                                    "created_utc": 1653322971.0,
+                                    "response": "it's definitely possible to recover from a 51% attack on PoW by adding weak subjectivity checkpoints where the chain has to include specific blocks to be considered valid by clients. The bitcoin client has a bunch of these checkpoints in the code already\n\nThe difference is that the attacker can continue 51%ing that checkpointed chain again, since his mining rig still exists. Any gains he made by double-spending on the whole fork is still his to keep too. \n\nThe way to fork him out would be to change the hashing algorithm to render his ASICs useless, but that takes a lot of coordination and also brick honest ASICs... With slashing you can surgically remove the ETH of every validator who participates in the attack and carry on as usual.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9nwkdz",
+                            "author": "KlopKlop10293",
+                            "score": 7,
+                            "created_utc": 1653296965.0,
+                            "response": "> In an extreme case the core devs can decide to discard malicious blocks if all of the above would not be sufficient.\n\nThis isn\u2019t a good features at all, actually just scary since in the same way devs could do something malicious as well, \n\nnot to mention a sort of team based attack happened already with the Dao, which clearly wasn\u2019t a peak decentralization example\u2026",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9o40ad",
+                                    "author": "Maswasnos",
+                                    "score": 17,
+                                    "created_utc": 1653303410.0,
+                                    "response": "It would have to be accepted by the community and an overwhelming majority of network stakeholders (both literal staking and in the other sense). The core devs can create client updates but you don't have to install them, especially after the Merge where there's no difficulty bomb. The devs probably wouldn't even create a fork like this without overwhelming community support for it.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9pjiw4",
+                                            "author": "KlopKlop10293",
+                                            "score": 1,
+                                            "created_utc": 1653328411.0,
+                                            "response": "Your reasoning doesn\u2019t make much sense, first you say x can go wrong and if x go wrong then dev can do y to fix it, then now are saying the opposite, if devs do y it doesn\u2019t matter because x wouldn\u2019t allow it.\n\nRegardless of what is the actual mechanism what you said makes no sense",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9o84n2",
+                                    "author": "Nyucio",
+                                    "score": 2,
+                                    "created_utc": 1653306306.0,
+                                    "response": "It is similar to nuclear MAD. Just the possibility of the devs of all clients (and the community) coming together to stop an attacker will work as a deterrent.\n\nSo not scary at all, because it will never happen.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9pk4df",
+                                    "author": "eastsideski",
+                                    "score": 1,
+                                    "created_utc": 1653328663.0,
+                                    "response": "It was phrased poorly: core devs have no power, other than the community's respect.\n\nIf the community decided to fork out an attacker's coins, the core devs could implement it, but it would ultimately be up to node operators to run the update.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9o1o7c",
+                            "author": "llort_lemmort",
+                            "score": 2,
+                            "created_utc": 1653301542.0,
+                            "response": "There are different PoS protocols and they have their pros and cons. The Cardano PoS protocol for example has no slashing and no locking. On the other hand they have an on-chain delegation mechanism (with a maximum pool size to avoid centralization). Because delegation is so easy and there is no minimum amount, more than 70% of all coins are staked/delegated. This means an attacker has to either own a large percentage of the total supply or somehow convince a lot of people to delegate to them (which requires social engineering). In case someone attacks the chain with delegated stake, the community could react by redelegating and therefore taking away the attacker's power.\n\nBoth systems have pros and cons. Ethereum PoS for example is currently struggling with Lido controlling a large percentage of validators, but on-chain delegation might come with its own risks.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9o43zs",
+                                    "author": "lanatork",
+                                    "score": 6,
+                                    "created_utc": 1653303488.0,
+                                    "response": "Yes, but Ethereums main goal is decentralisation. Delegated PoS is per definition less decentralised, so that\u2019s why it was not considered. That is a main difference here.\n\nOut of curiosity, is there any other punishment in Cardano for an attacker except for people unstaking from them? I\u2019m asking, because if that were all,  there wouldn\u2019t be any financial punishment for the attacker them self, except for missing out on staking rewards.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9oq0u9",
+                            "author": "TroubadorialTendency",
+                            "score": 1,
+                            "created_utc": 1653315856.0,
+                            "response": "Thank you for this answer. It clarifies the protections in place for staking.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9n2ths",
+                    "author": "Girafferage",
+                    "score": 240,
+                    "created_utc": 1653274932.0,
+                    "response": "the strength of PoW is also that people *want* to mine it for its value (Just like people want to stake for the profit). If its value decreases, so do the amount of miners who find it to be profitable enough. If you are worried about this situation its worth realizing that all cryptocurrencies pretty much have this flaw being PoW or PoS, and so do many things outside of the crypto space.\n\nLuna didnt fail because people decided its value was low, it failed because it created tokens until it became worthless, which had a circular effect on UST dropping more, which made Luna make more tokens, etc. Its not an inherit issue with all cryptos.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9nttjy",
+                            "author": "frank__costello",
+                            "score": 16,
+                            "created_utc": 1653294400.0,
+                            "response": "This isn't just theoretical\n\nYou can look at ETC, which has had multiple 51% attacks.\n\nThe network has a low hashrate, someone attacks the network, that makes people lose trust in the network, ETC drops, miners leave, and the cycle repeats.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ocuyd",
+                                    "author": "MoneroArbo",
+                                    "score": 3,
+                                    "created_utc": 1653309233.0,
+                                    "response": "PoW coins need to be the largest for their hardware. Being the second largest coin for an ASIC is a really bad position to be in. BCH has been attacked for the same reason. It's not a very good comparison to something like ETH, BTC, LTC, or XMR",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9oroph",
+                                            "author": "frank__costello",
+                                            "score": -2,
+                                            "created_utc": 1653316605.0,
+                                            "response": "That's only for ASIC-compatible PoW chains.\n\nETH and ETC are GPU-mined chains, so the hash power is much more commodified",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9otkbv",
+                                                    "author": "MoneroArbo",
+                                                    "score": 2,
+                                                    "created_utc": 1653317434.0,
+                                                    "response": "I'm like 90% sure there are Ethereum ASICs even though yes it is GPU minable (and I mine it with my GPUs!)\n\nMy understanding is this situation comes from Ethereum PoW being memory hard, thus limiting the effectiveness of ASICs",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9oiu7z",
+                                    "author": "Darius510",
+                                    "score": -2,
+                                    "created_utc": 1653312425.0,
+                                    "response": "But it didnt drop to effectively zero the way luna did. The cost to attack a PoW network has a floor (the cost of hardware and electricty). The cost to attack a PoS network does not. \n\nIn other words, both have negative feedback loops, but only one has a complete death spiral.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9ortu6",
+                                            "author": "frank__costello",
+                                            "score": 3,
+                                            "created_utc": 1653316666.0,
+                                            "response": "Luna dropped to 0 because the \"death spiral\" cause essentially infinite inflation of LUNA\n\nMost chains have predictable supply issuance, so that isn't an issue, regardless of whether they're PoW or PoS",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9oyfjk",
+                                                    "author": "Darius510",
+                                                    "score": -1,
+                                                    "created_utc": 1653319560.0,
+                                                    "response": "ETH doesn't and has never had predictable supply issuance. If the price of ETH drops like a rock and attacks become viable they're going to have to raise the validator rewards to keep it secure. While that's not as rapid a death spiral as LUNA, its still a death spiral. It's not self correcting without intervention the way PoW is.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9p51a4",
+                                                            "author": "frank__costello",
+                                                            "score": 3,
+                                                            "created_utc": 1653322347.0,
+                                                            "response": "> ETH doesn't and has never had predictable supply issuance\n\nI'm not sure what you mean, ETH has an issuance of 2 ETH per block\n\nThe only way that can change is a hard-fork\n\n> If the price of ETH drops like a rock and attacks become viable they're going to have to raise the validator rewards to keep it secure\n\nHow is this any different than Bitcoin?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9p6efx",
+                                                                    "author": "Darius510",
+                                                                    "score": 0,
+                                                                    "created_utc": 1653322918.0,
+                                                                    "response": "It used to have 5 ETH per block, then 3, then 2, soon what, 0.2? Sure, the only way to change it is a hard fork, which ETH does all the time. Who knows wtf itll be in 2 years. \n\nIt's different than bitcoin because there isn't this mechanism where a bunch of guys in a smoke filled zoom call decide the fate of things every few weeks. The current issuance on BTC still has a huge buffer before this becomes problematic. With the huge drop in issuance under PoS, it becomes more problematic much more quickly. At some point the world is going to see the ACD calls as the quasi-fed that it is, and this idea of ETH being sound money is finally thrown out the door.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9n3dmk",
+                            "author": "SpiralBlue2",
+                            "score": 9,
+                            "created_utc": 1653275234.0,
+                            "response": "This. It was the algorithm built in between UST and LUNA that caused the death spiral.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9ncuox",
+                            "author": "catesnake",
+                            "score": 38,
+                            "created_utc": 1653280837.0,
+                            "response": ">If its value decreases, so do the amount of miners who find it to be profitable enough. If you are worried about this situation its worth realizing that all cryptocurrencies pretty much have this flaw being PoW or PoS\n\nIf its value decreases and miners start pulling out, the difficulty automatically adjusts down, until it requires an amount of resources small enough that an equilibrium is reached and mining becomes profitable again. POW is a self balancing system.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ndn4d",
+                                    "author": "Intelligent_Steak",
+                                    "score": 69,
+                                    "created_utc": 1653281370.0,
+                                    "response": "You're proving the original point.  Miners pull out, the difficulty adjusts and is lower.  If the difficulty is low enough it becomes very very cheap to execute a 51% attack.\n\nCost is what's preventing pos takeovers (because token have value) and cost is what's preventing pow takeovers (computational power).  If people abandon a currency and it's value drops and miners pull out, it become very cheap to attack with either consensus mechanism.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9o4mmf",
+                                            "author": "flatfisher",
+                                            "score": 13,
+                                            "created_utc": 1653303871.0,
+                                            "response": ">If the difficulty is low enough it becomes very very cheap to execute a 51% attack.\n\nNewcomers may not remember but it happened a lot a few years ago when all we had were POW coins.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i9nf5ya",
+                                            "author": "catesnake",
+                                            "score": -1,
+                                            "created_utc": 1653282400.0,
+                                            "response": ">If the difficulty is low enough it becomes very very cheap to execute a 51% attack.\n\nOnly for a limited period of time, while if a POS coin falls in price and is bought by an ill-intended party, they keep that power forever (disregarding inflation).",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9nqtgz",
+                                                    "author": "Karyo_Ten",
+                                                    "score": 40,
+                                                    "created_utc": 1653291591.0,
+                                                    "response": "If you attack a POS coin, you get slashed and your coins are confiscated.\n\nYou can't confiscate hardware in a PoW network so they can keep attacking hence PoS networks are more resilient to 51% attacks.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9ntgwy",
+                                                            "author": "Zanena001",
+                                                            "score": 9,
+                                                            "created_utc": 1653294070.0,
+                                                            "response": "How can coins be slashed if the malicious party achieves 51%?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9nwb6d",
+                                                                    "author": "llort_lemmort",
+                                                                    "score": 39,
+                                                                    "created_utc": 1653296719.0,
+                                                                    "response": "There's a difference between 51% of the coins and 51% of the nodes (including non-validator nodes). On a PoS protocol with built-in slashing an attacker with 51% of the staked coins can perform a double spend but would then be slashed by the protocol. If they want to avoid the slashing they would have to change the protocol which would result in a hard-fork (they would have to change the software and convince the majority of nodes to update to their version). Assuming there's a single entity behind the attack, they most certainly wouldn't control the majority of nodes, so their hard-fork would not be successful.\n\nTL;DR: owning 51% of the staked coins lets you decide which transactions go into a block but it doesn't let you change the protocol.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9o5sv3",
+                                                                            "author": "Wisgood",
+                                                                            "score": 9,
+                                                                            "created_utc": 1653304726.0,
+                                                                            "response": "This legit separation of powers is what makes Ethereum undeniably more secure than Bitcoin. Idk if it's harder to get half the coins or half the nodes, but even if the Ethereum market cap fell another 80% it'd still be quite a technical feat to attempt creating majority of nodes without driving up the locked value/security, and thus nearly impossible to have enough supermajority for half the coins to double spend simultaneously. Anything less than a perfect kill shot attack would cause a fork from the attacking nodes and enough slashing from the whale to reduce their majority and reduce supply thus driving up price/security. It's nicely a balanced, self regulating mechanism, so you actually have to buy something greater than 70% of the network to actually attack it iirc (not my math but a protocol dev mentioned this supermajority threshold on a bankless interview, someone go check my number, I think it was prob from Justin Bons or Tom Beiko).\n\nThe economic policy of Ethereum is this much more thoughtfully developed than the PoW system (which does have a potential but unlikely death spiral from an offchain attack vector of a nation owning half the mining power, if a crash should wipe out much decentralization of miners).",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9o6wq5",
+                                                                                    "author": "llort_lemmort",
+                                                                                    "score": 2,
+                                                                                    "created_utc": 1653305498.0,
+                                                                                    "response": "How would you even \"get\" half of the nodes? Nodes are run by people, so you would have to somehow gain control over half of the people that run nodes. Slavery is nowadays illegal in most countries, so you would have to pay them or somehow trick them into a malicious update. This sounds like an almost impossible social engineering attack. If the community wants Ethereum to survive it will be almost impossible to kill.",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i9o7ytq",
+                                                                                            "author": "UncertainOutcome",
+                                                                                            "score": 5,
+                                                                                            "created_utc": 1653306199.0,
+                                                                                            "response": "You could \"get\" half the nodes by creating more - if there's 100 nodes normally, you can create an additional 101 and you then have 51%.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "i9o76ez",
+                                                                            "author": "FaceDeer",
+                                                                            "score": 3,
+                                                                            "created_utc": 1653305677.0,
+                                                                            "response": "Even controlling \"a majority of nodes\" doesn't really help, if those nodes are just a bunch of Amazon cloud instances spun up for this purpose then anyone who's actually *using* the network would simply ignore them and continue using their own non-forked nodes. So for example all the exchanges would ignore the attack fork.\n\nUnder PoS the power is really in the hands of the users, stakers are at their mercy.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9ocol7",
+                                                                                    "author": "MoneroArbo",
+                                                                                    "score": 3,
+                                                                                    "created_utc": 1653309131.0,
+                                                                                    "response": "> anyone who's actually using the network would simply ignore them and continue using their own non-forked nodes. So for example all the exchanges would ignore the attack fork.\n\nThat's a consensus failure. New participants MUST be able to figure out the correct history without relying on some authority.",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i9ogyn4",
+                                                                                            "author": "llort_lemmort",
+                                                                                            "score": 3,
+                                                                                            "created_utc": 1653311467.0,
+                                                                                            "response": "New participants decide which fork they follow by the version of the software they are using. It is a conscious choice the node operator has to make.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "i9olnyk",
+                                                                                            "author": "FaceDeer",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1653313818.0,
+                                                                                            "response": "An attack like this would cost tens of billions of dollars and several years of preparation to pull off. I think having the mitigation involve new users needing to pay attention to the news for a few days afterward is a modest price to pay.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "id": "i9o7uuz",
+                                                                                    "author": "llort_lemmort",
+                                                                                    "score": 0,
+                                                                                    "created_utc": 1653306125.0,
+                                                                                    "response": "That's what I meant by \"majority of nodes\". It's also not necessarily the majority of users since users might depend on centralized wallets or gateways to access the chain. Centralized exchanges, MetaMask, Infura, and the issuers of centralized stablecoins still hold a lot of power. If they all decide to support a particular hardfork, it will be difficult for the users to fight against that. They could probably destroy Ethereum if they wanted to.",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i9o91ou",
+                                                                                            "author": "FaceDeer",
+                                                                                            "score": 4,
+                                                                                            "created_utc": 1653306905.0,
+                                                                                            "response": "Just wanted to make sure readers didn't think you merely needed a *numerical* majority, since if you simply want a big node count that's quite trivial to spin up these days.\n\nOne nice thing about those centralized exchanges is that their primary desire on this Earth is just *money*. I recall back in the days of the Ethereum/Ethereum Classic fork there were a lot of anti-Classic people raging at the exchanges for listing ETC when they \"should\" be just letting that fork die, and blamed the exchanges for \"supporting\" ETC. Of course it's really the opposite, the only reason the exchanges listed ETC was because there was enough demand for it to make money by facilitating trades. It'd likely be the same for an attack fork on PoS, the exchanges will list whichever ones there's demand for from their users because that's what makes them money.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "i9p9bjj",
+                                                                            "author": "Intelligent_Steak",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653324132.0,
+                                                                            "response": "This is wrong, it does let you essentially \"change\" the protocol.  Slashing only happens if there's enough honest validators.  There's not some magic entity that governs POS chains, validators do.  If enough validators are dishonest, they can basically do anything they want",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9pjli5",
+                                                                                    "author": "llort_lemmort",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653328442.0,
+                                                                                    "response": "AFAIK you only need 1 honest validator to slash a dishonest validator.",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "i9p9iaw",
+                                                                            "author": "Intelligent_Steak",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653324208.0,
+                                                                            "response": "This is completely wrong.  Slashing only happens if there's enough honest validators.  There's not some magic entity that governs POS chains automatically, validators do.  If enough validators are dishonest, they can basically do anything they want",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "i9oidb6",
+                                                                    "author": "HearMeRoar69",
+                                                                    "score": 3,
+                                                                    "created_utc": 1653312187.0,
+                                                                    "response": "The beautiful thing about PoS is that even if somehow someone achieved 51% with no backlash/action from the community, it's still against human nature to attack yourself. Why would a 51% stakeholder of an ecosystem want to destroy their own wealth by attacking? wouldn't make any sense.\n\nOn the other hand, a 51% hardware holder of a Proof of Work system, have no such issues, the hardware can mine other coins, in fact vast majority of small PoW coins has been attacked to death for this very reason. This is why there's almost no small PoW coins. So PoW is really only viable for projects that are already very large or with very diligent centralized checkpointing. Not to mention PoW's environmental issue has been a major plague on crypto's image. A lot of non-crypto people I talk to are against crypto and refuse to engage it, because \"it's not good for the environment\". It's true, we are wasting energy equivalent of a small country, when there's a superior alternative (PoS) been running without issue for over 10 years.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9osbvd",
+                                                                            "author": "RealUglyKid",
+                                                                            "score": 4,
+                                                                            "created_utc": 1653316886.0,
+                                                                            "response": "If your talking about good for the environment then your duM please just leave, rich people do not care about the environment so please don\u2019t even bring that BS up, clowns do that, rich people ruined the environment, so keep the trash opinion of rich people about the environment to your television bc it\u2019s not real",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        },
+                                                                        {
+                                                                            "id": "i9okwkq",
+                                                                            "author": "Zanena001",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653313452.0,
+                                                                            "response": ">Why would a 51% stakeholder of an ecosystem want to destroy their own wealth by attacking?\n\nWell it depends on many things, which kind of attack do they want to perform? Something super unpopular like double spend or mint tokens to themselves or something more in a grey area? Removing funds from hackers, blocking addresses due to \"terrorism\" and other legal reasons? At that point controlling the narrative and public sentiment will be enough to prevent a fork.\n\nYou also have to consider the bigger something becomes the harder it gets to create an alternative, imagine if ETH became huge and used worldwide by a number of companies/countries how feasible would it be to perform an fork on such a scale if the reason weren't compelling enough?",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        },
+                                                                        {
+                                                                            "id": "i9paasz",
+                                                                            "author": "Intelligent_Steak",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653324537.0,
+                                                                            "response": "If the network's coin used for staking already has a crazy low market cap, there could be reasons to attack the protocol because other tokens on exist on the chain. You could double spend other tokens on the chain for example.  You could try and sell USDC tokens on an exchange, then once you've withdrawn to something else, rewrite history and double spend",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "i9o2qzy",
+                                                                    "author": "iwakan",
+                                                                    "score": 3,
+                                                                    "created_utc": 1653302433.0,
+                                                                    "response": "By forking them out",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                },
+                                                                {
+                                                                    "id": "i9ntnrg",
+                                                                    "author": "Karyo_Ten",
+                                                                    "score": 7,
+                                                                    "created_utc": 1653294249.0,
+                                                                    "response": "\"Social consensus, remove blocks with problematic transactions, use the attacker funds to reimburse people who had non-malicious transactions affected, put the rest in a Gitcoin quadratic funding round\" would be one nuclear way to do it.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "i9p8y3d",
+                                                            "author": "Intelligent_Steak",
+                                                            "score": 1,
+                                                            "created_utc": 1653323981.0,
+                                                            "response": "Not necessarily true.  You only get slashed if the some majority of other validators are honest (exact details depend on the POS consensus mechanism).  It's not a guarantee",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i9ojuiy",
+                                            "author": "jetro30087",
+                                            "score": 1,
+                                            "created_utc": 1653312932.0,
+                                            "response": "But it is easier to buy a few millions worth of digital currency from an exchange than it is to set up a few millions worth of mining equipment to do the same.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i9ot7u4",
+                                            "author": "Hudson96",
+                                            "score": -1,
+                                            "created_utc": 1653317283.0,
+                                            "response": "The cost to set up a 51% attack on POW chain is huge, first you need to set up with requires a bunch of logistic and technicalities to set up, assuming u have lots of billions. U invested in tons of mining equipment. Multiple Gigafactory isn't gonna cut it. You'll need hundreds and thousands of gigafactory set up and not to say chip shortage, and mining pools might cooperate to prevent a 51% attack. say u manage to hit a 51% attack, which is almost impossible and pointless, what else is there left with the giga mining farm and a whole bunch of wasted machine ? \nThe effort require for a POW chain 51% vs POS 51% attack is on a different scale.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9p7433",
+                                                    "author": "Intelligent_Steak",
+                                                    "score": 1,
+                                                    "created_utc": 1653323213.0,
+                                                    "response": "That's just not true.  51% attacks have happened often in the past.  If the difficulty is very high, like it is for Bitcoin right now, then yeah it becomes basically impossible like you said.  But if the difficulty is low enough, it becomes very easy",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9p3tbh",
+                                    "author": "BiggusDickus-",
+                                    "score": 3,
+                                    "created_utc": 1653321834.0,
+                                    "response": "Not necessarily. There still has to be underlying value attached to the coin being mined. Plenty of PoW platforms have fallen into the dustbin simply because nobody sees economic value in the project.\n\nLook at Vertcoin, for example. There are many others.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9n3std",
+                            "author": "TroubadorialTendency",
+                            "score": 2,
+                            "created_utc": 1653275462.0,
+                            "response": ">the strength of PoW is also that people want to mine it for its value (Just like people want to stake for the profit). If its value decreases, so do the amount of miners who find it to be profitable enough. If you are worried about this situation its worth realizing that all cryptocurrencies pretty much have this flaw being PoW or PoS, and so do many things outside of the crypto space.  \n>  \n>Luna didnt fail because people decided its value was low, it failed because it created tokens until it became worthless, which had a circular effect on UST dropping more, which made Luna make more tokens, etc. Its not an inherit issue with all cryptos.\n\nIn some level you are right, PoW coins' security - and therefore value - is tied to their price, but it seems to be much less so than a token whose security is derived exclusively by its market value. PoW attacks require energy, whose costs cannot be manipulated as much as the currency which is under attack. Especially when the market gives you a huge payday for coordinating a successful attack if you short it ahead of time.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9n6by1",
+                                    "author": "Girafferage",
+                                    "score": 11,
+                                    "created_utc": 1653276845.0,
+                                    "response": "I get what you are saying, but the difference is so minimal that the argument would either hold true or not for both PoW and PoS. \n\nThe groups that mainly attempt 51% type attacks are state actors, so energy isnt a concern for them either honestly.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9nqxb7",
+                                            "author": "Karyo_Ten",
+                                            "score": 8,
+                                            "created_utc": 1653291685.0,
+                                            "response": "If you can do a 51% attack on PoW, you can do it repeatedly since you have the hardware.\n\nWith PoS, your coins can be slashed and then you need to reacquire them",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9o7hnu",
+                                                    "author": "FaceDeer",
+                                                    "score": 6,
+                                                    "created_utc": 1653305886.0,
+                                                    "response": "Since there's an entry queue for staking that will limit the frequency with which an attacker can attack it even if they had infinite money to acquire new Ether, too. And if the market figures out that someone with infinite money is interested in buying their Ether the price is going to shoot up pretty quickly.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i9nfwb1",
+                                            "author": "Intelligent_Steak",
+                                            "score": 1,
+                                            "created_utc": 1653282918.0,
+                                            "response": "Energy is definitely a concern.  That's like saying cost isn't a concern",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9nggp5",
+                                                    "author": "Girafferage",
+                                                    "score": 3,
+                                                    "created_utc": 1653283310.0,
+                                                    "response": "Well when you control all the energy producing plants in a country, energy really is not so much a concern. If you arent making new plants, its more cost effective to just use those instead of spending money on things that you dont have yet.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9nfttt",
+                                    "author": "Intelligent_Steak",
+                                    "score": 3,
+                                    "created_utc": 1653282872.0,
+                                    "response": "The energy required to attack a pow network is a function of the difficulty level.  Miners leave it become way less difficult and requires less energy to attack.  That means less costly",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9n6xe2",
+                                    "author": "Rife29",
+                                    "score": 5,
+                                    "created_utc": 1653277178.0,
+                                    "response": "I think though the kind of attack you are describing isn't a 51% attack, but just a massive sell-off of the asset which causes people to abandon their stakes and sell, which further lowers the price etc. resulting in a spiral.   \n\nThe spiral you described could happen with fiat currency as well.  Bad actors could buy up a fiat currency, then initiate a massive sell-off, resulting in further selling to the point where it essentially collapses. \n\nWhat helps to protect fiat currency from this kind of spiral is the same thing that protects cryptocurrencies.  Demand for the currency, size of the \"market cap\"/value of money supply, utility of the currency (eg can you use it to buy oil without having to exchange it?).  When a currency isn't considered valuable or useful it can have very quick devaluation, as was seen with the ruble recently.  The same things help protect cryptocurrencies from collapsing.\n\nA smaller, weaker currency which is considered to have little utility is vulnerable to this kind of attack.  As long as Ethereum is big, valued and has utility relative to its price, any big sell-offs would be bought up imo just as they would with a country trying to sell tons of usd.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9ngzeb",
+                                            "author": "thetastycookie",
+                                            "score": -3,
+                                            "created_utc": 1653283686.0,
+                                            "response": "Isn't a POS network more vulnerable to a 51% attack after a death spiral?",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9n75ca",
+                                    "author": "Perleflamme",
+                                    "score": 5,
+                                    "created_utc": 1653277298.0,
+                                    "response": "Energy has nothing to do with PoW. I know, many PoW lovers believe it does, but it doesn't. Energy is just the resource we nowadays use to most efficiently produce the most hashes per second. Energy simply is a mean to a cost. It's the cost itself that secures the network, nothing else. It could be burning trees or consuming food into compost or changing any scarce resource into anything else that it wouldn't change a thing at all to the security it provides: attacking the network is expensive. It costs, whatever it costs, because this cost turns into a monetary cost, whatever it originally is. \n\nIt's the exact same thing with PoS: attacking the network is expensive. That's all that matters, because that's all that protects the network against attacks. \n\nWell, except that PoS is also protected by the layer 0, which PoW can't do. But that's another matter.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9o7tlg",
+                                            "author": "FaceDeer",
+                                            "score": 2,
+                                            "created_utc": 1653306102.0,
+                                            "response": "The hypothetical example I like to use as a thought experiment is a PoW chain whose algorithm somehow magically requires miners to create and then smash small porcelain figurines. If such an algorithm existed it would be a proof-of-work system just like any other, but whose main resource consumed would be clay instead of electricity.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9ngrfw",
+                                    "author": "thetastycookie",
+                                    "score": 1,
+                                    "created_utc": 1653283525.0,
+                                    "response": "When talking about attacks, I think energy cost is irrelevant. This is because the attacker does not need to maintain the hashrate for a prolonged period. A few hours should be enough to cause massive damage.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9osoth",
+                                    "author": "bandoonparade",
+                                    "score": 1,
+                                    "created_utc": 1653317048.0,
+                                    "response": "Wait wait wait. Your argument is that even if someone acquired mining rigs representing 51% of the hashrate on a PoW system, they wouldn't then execute a 51% attack because -- checks notes-- their electricity bill would be too high?!",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9php4l",
+                            "author": "wattumofficial",
+                            "score": 1,
+                            "created_utc": 1653327645.0,
+                            "response": "True.. the Algorithmic Stablecoin feature caused the rise and the fall",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9olhwd",
+                            "author": "Grammar_Natsee_",
+                            "score": -1,
+                            "created_utc": 1653313739.0,
+                            "response": "> Its not an inherit issue with all cryptos.\n\nwhat",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ouqjf",
+                                    "author": "Girafferage",
+                                    "score": 3,
+                                    "created_utc": 1653317952.0,
+                                    "response": "Very few cryptocurrencies are set up to do what Luna did by attempting to keep a stable coin pegged by minting new tokens for it's partner cryptocurrency. \n\nAlgorithmic stable coin issues are not something that effects all cryptocurrencies.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9n354a",
+                    "author": "mvalen122",
+                    "score": 54,
+                    "created_utc": 1653275105.0,
+                    "response": "Isn't PoW the same though? People only mine whats profitable, which is strongly correlated with coin price. Cheap PoW coins are cheap to attack. If a PoW eth crashed to a very low mcap, people would stop mining and the cost of a consensus attack would be reduced proportionally.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9ogrij",
+                            "author": "GuessWhat_InTheButt",
+                            "score": 3,
+                            "created_utc": 1653311366.0,
+                            "response": "Exactly, but the difficulty adjustment algorithm would probably stretch out the whole process, so attacks would most likely not be possible if there was only a flash crash of the market. Sustained miner absence though? That would (and has many times for altcoins) absolutely lead to the same exact problem.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9pjrt5",
+                                    "author": "eastsideski",
+                                    "score": 1,
+                                    "created_utc": 1653328515.0,
+                                    "response": "This seems similar to Ethereum's entry queue\n\nImagine ETH crashes to like $1, someone buys 32,000,000 ETH so they can run 1,000,000 validators.\n\nHowever, they can't just put them all online immediately and attack the network, they have to enter the queue and wait for them all to come online. This spreads the attack out, and gives other users the ability to buy ETH and become honest validators.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9n4az0",
+                            "author": "TroubadorialTendency",
+                            "score": 1,
+                            "created_utc": 1653275744.0,
+                            "response": "Yeah, in some sense, the security that the system can afford is the security rewarded by the system itself. So it would get cheaper to attack as the unit price becomes cheaper and makes it unprofitable to mine. \n\nIt somehow seems to me that PoW is still at a higher advantage because it anchors to energy expenditure, instead to just its own market valuation.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9nuwro",
+                                    "author": "cryptOwOcurrency",
+                                    "score": 16,
+                                    "created_utc": 1653295438.0,
+                                    "response": "> It somehow seems to me that PoW is still at a higher advantage because it anchors to energy expenditure, instead to just its own market valuation.\n\nI don't see how that conclusion logically follows.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9ot4ny",
+                                            "author": "bandoonparade",
+                                            "score": 1,
+                                            "created_utc": 1653317243.0,
+                                            "response": "Right?! Anyone who spent the time, money, and effort to gather rigs representing 51% of the hashrate of a PoW system isn't going to decide not to attack because \"muh electricity bill go up\"",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9n4s5b",
+                                    "author": "mvalen122",
+                                    "score": 3,
+                                    "created_utc": 1653275989.0,
+                                    "response": "Yeah dunno. I imagine there's some in depth research floating around somewhere on this",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9np1fl",
+                                    "author": "Simple_Yam",
+                                    "score": 7,
+                                    "created_utc": 1653290018.0,
+                                    "response": "It's not at all at a higher advantage. \n\nBitcoin SV, Bitcoin Gold, Ethereum classic have all been attacked. In many cases the cost was < $5000. At a marketcap of even $1 million this is an incredible incentive to attack a PoW network.\n\nIf they were PoS (depending on the implementation) owning 66% of the stake would make absolutely no sense to double spend it, just dump it.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9oidzb",
+                                            "author": "mvalen122",
+                                            "score": 2,
+                                            "created_utc": 1653312197.0,
+                                            "response": "You also would bid up the price a ton of you were trying to do this in a short amount of time. And if you crash a coin as the majority owner, it's you who lose. If you take over via mining power and wreck a coin, you can just switch to mining another coin",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9od6cj",
+                                    "author": "MoneroArbo",
+                                    "score": 1,
+                                    "created_utc": 1653309416.0,
+                                    "response": "Also, in addition to energy expenditure, miners have sunk real world infrastructure cost into supporting the coin. You don't just pull up a warehouse full of miners as soon as it becomes unprofitable. Miners will either temporarily shut off machines or just hodl the coins until the price rises.\n\nStakers will pull up and move to somewhere with better yields in a heartbeat. There's almost no cost to it.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9nf9uf",
+                    "author": "domotheus",
+                    "score": 21,
+                    "created_utc": 1653282479.0,
+                    "response": "The value of the coin secures the chain whether it's PoW or PoS. With Bitcoin there's strong precedent that [hashrate correlates with coin price](https://i.redd.it/pjfashii7ou41.png) and it's easy to see why: You can convert all the fiat expenses involved (hardware investment + energy spent mainly) and convert that to Bitcoin. If mining 1 bitcoin costs more than 1 bitcoin, you're effectively buying bitcoin at a higher price than what the market offers. If mining 1 bitcoin costs less than 1 bitcoin, then that's a vacuum attracting hashrates for anyone who doesn't care about bitcoin and just wants to mine and immediately sell. Of course it's more complicated than that and the costs involved are more composite/abstract/amortized/whatever, but that's the gist of it. As long as the cost of mining 1 BTC honestly it smaller than the cost of double-spending 1 BTC, the chain is secure. This might become a problem over time as Bitcoin's issuance drops to 0, you better hope fees catch up to cover it\n\nAll blockchains are susceptible to such a death spiral if they consistently issue more coins than they collect in fees. The exceptional thing with Luna is it basically happened overnight. I don't see this happening to other blockchains anywhere near this fast, in most cases they turn into ghost chains way faster, and then it doesn't matter if it's cheap to attack them if there's no gains to be made from it. And then big money won't want to flow into a chain that's insecure, so there's another catch22-type feedback loop there.\n\nBut yes, this concept is more directly visible with PoS, but can still be mitigated by aiming for economic sustainability, e.g. EIP1559 burning transaction fees and accruing values from the economic activity happening on the blockchain. Coupled with low PoS inflation, when fees > issuance, Ether-the-asset becomes deflationary and kickstarts a bunch of [cool feedback loops](https://i.imgur.com/3bPV35a.png) that lead to (among other things) more security for the chain. \n\nIt also helps that Ethereum stakers aren't force sellers (since staking nodes require very little costs), unlike PoW miners who are constantly adding selling pressure on the market, which lowers the price if that selling pressure can't be absorbed by buyers. In his interview on Bankless, Hal Press explains that this is why crypto prices swing the way they do: 2 ETH/block issuance means about 13,000 ETH going to miners, and if you conservatively assume they have to sell half to cover expenses, that's 6500 newly printed ETH every day who have to find buyers just for the price to stay the same. Issuance is denominated in ETH, but buying pressure is denominated in fiat: At $200 per ETH that's not so bad, the market can absorb 1.3 million dollars easily to prevent the price from going down. But if ETH jumps to $5k then suddenly that's $32.5M that needs to be absorbed by buyers every single day, until eventually the speculation dries up and that buying pressure disappears and there's a big crash down to a more sustainable price equilibrium where sales match buys. After the merge, all that selling pressure disappears, but the buying pressure doesn't and suddenly it's the buying pressure that needs to be absorbed by sellers to prevent the price from going up. Draw your own conclusions...\n\nAnd on a more technical level there are other safety nets for PoS Ethereum to protect itself: There's still a limit to how fast someone can deposit Ether to stake. At 12 million ETH staked, you'll need to stake more than 12 million of your own to have 51%. And there's only 1350 new validators that can become active every day. So even if ETH crashes to $1 and $12M to attack is chump change to you, you'll still have to wait 12M ETH \u00f7 32 ETH/validator \u00f7 1350 validators/day = over 9 months before finally having enough stake to attack. Not to mention it's not like there's 12 million ETH in liquidity on the open market waiting to be bought at exactly $1 each lol. And then you attack once and get slashed, and the total supply drops by 12 million ETH and you need another 9 months and another 12 million of now-much-scarcer ETH to do the attack again. Now run that same math for when in 2-3 years there's 30-40 million ETH staked. It'll go to a point where acquiring enough ETH to stake and attack is just not imaginable.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9oc977",
+                            "author": "Pepparkakan",
+                            "score": 6,
+                            "created_utc": 1653308883.0,
+                            "response": "This is a great summary, thank you for taking the time to write it!",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9oqj54",
+                            "author": "TroubadorialTendency",
+                            "score": 2,
+                            "created_utc": 1653316086.0,
+                            "response": "This is a really great summary! Thank you, I do suppose that if the network is sufficiently decentralized already, getting to the 51% is a time intensive process.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9orq50",
+                                    "author": "peterjoel",
+                                    "score": -2,
+                                    "created_utc": 1653316621.0,
+                                    "response": ">This is a really great summary! Thank you, I do suppose that if the network is sufficiently decentralized already, getting to the 51% is a time intensive process.\n\nYeah, it could take _hours!_",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ndtuc",
+                    "author": "Psukhe",
+                    "score": 13,
+                    "created_utc": 1653281492.0,
+                    "response": "There is a queue for PoS validators to get approved on the network, even if the floor fell out and eth is super cheap(also assuming bad actors can out buy the general public), so it's not just off to the races for them. I honestly don't think bad actors could buy enough ETH to take the network over, besides that, what's the incentive to take over a network only for it to then be valueless?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ne7wb",
+                    "author": "Intelligent_Steak",
+                    "score": 4,
+                    "created_utc": 1653281760.0,
+                    "response": "Proof of work and proof of stake both have an inherit risk of malicious actors taking over and the network losing it's promised security when an ecosystem collapses like this.\n\nBoth consensus mechanisms are protected by the extremely high cost a malicious attack on the network would be.  For proof of stake, the cost is accumulating enough tokens.  For proof of stake, the cost is accumulating enough compute power.\n\nIf a network's token crashes, miners will leave the network because it's no longer as lucrative to mine.  This leads to lower difficulty level.  Thus the cost to takeover and act maliciously is way less for POW consensus (difficulty is way lower) and is also way less for POS consensus (token value is way lower).\n\nIf a ecosystem crashes like LUNA did, there's no type of consensus mechanism is going to save it from malicious actors taking control if they want.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9oj5kz",
+                    "author": "mcgravier",
+                    "score": 4,
+                    "created_utc": 1653312583.0,
+                    "response": "> if the value of Ether goes down, the security of the Ethereum network goes down.\n\nThis is the exact same issue as with PoW. Low value causes miners to leave exposing network to 51% attack.\n\nHowever while PoW attack are permanent without hard forking to different mining algo, Ethereum PoS can be disrupted only temporarily, after single attack, slashing conditions are triggered, and attacker is left with no ETH to repeat it",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9nzk4v",
+                    "author": "Yodel_And_Hodl_Mode",
+                    "score": 12,
+                    "created_utc": 1653299716.0,
+                    "response": "The OP doesn't understand why Terra Luna failed.\n\n**Luna was a scam.**\n\nI feel bad for people who didn't do their homework and got sucked into it, but all you had to do to know it was a scam was answer this question: \"Where did the money to pay 20% interest come from?\"  The money came from bringing in more buyers to prop up the existing holders.  That's a ponzi scheme.\n\nThey were minting and burning coins to keep UST at $1 while boosting the price of Luna while paying out 20% interest, all at the same time, with nothing to back any of it up until it was already starting to collapse.  The idea was that if they could keep bringing in more people to buy more Luna and get them to trade it for UST, nobody would realize it wasn't sustainable since everybody was in profit.  That's a ponzi scheme.\n\nIn this case, it was a Do Kwonzi Scheme.\n\nAnd it collapsed, as all ponzi schemes do.  In two days, the supply of Luna went from 377 million to 6.5 trillion.  And now they're trying to lure in more suckers with a promise to save it?  To get Luna back to a price of just $1, it would have to have a market cap of 6.5 trillion dollars, and even then, it would still be down massively, from $116 last month.\n\nRight now, the market cap of ALL crypto, combined, is 1.3 trillion dollars, so the idea of getting Luna back to even just a dollar is silly.\n\nI love crypto, but I think this entire community has too many scammers and too few people willing to call them out.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9oi461",
+                            "author": "PinkPuppyBall",
+                            "score": 6,
+                            "created_utc": 1653312057.0,
+                            "response": "This cannot be stressed enough. It was always a scam. \n\nThere are no lessons to be learned for legitimate projects.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ocvbt",
+                    "author": "CraftyInvestigator25",
+                    "score": 3,
+                    "created_utc": 1653309239.0,
+                    "response": "No it's not lmao.\n\nThey turned it off, because it was dead.\n\nSimply dead. They tried to cut losses",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9od4mu",
+                    "author": "jps_",
+                    "score": 3,
+                    "created_utc": 1653309388.0,
+                    "response": "This is a variation of the statement that in all Proof of Stake networks, the value of what's at stake is guarded by the value of what's at stake. \n\nIf what's at stake is worth nothing, then there's nothing at stake, and no guarding.  And no value.  It's tautological. \n\nNow... the question arises whether it's possible to accumulate enough stake (at a non-negligible cost) to drive the value to negligible.  And it is extremely difficult to conjure up scenarios where spending this cost to effectuate zero value is wise in the first place.\n\nThe only way this can be profitable is if you can accumulate stake at a negligible value (e.g. by borrowing against collateral that is itself worthless), OR, engineer the consequences of a plunge to zero to be greater than the costs of causing it.  Either of these take a great deal of effort and capital, and the point of a robust staking protocol is to make it likely to the point of certainty that anyone with the intelligence and capital necessary to do so will be able to apply these for more gain, more easily, somewhere else.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9oen2x",
+                    "author": "StrangerDanger1225",
+                    "score": 3,
+                    "created_utc": 1653310237.0,
+                    "response": "No, it was a flaw in the design of Luna.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9n7piy",
+                    "author": "shaggy_shiba",
+                    "score": 6,
+                    "created_utc": 1653277623.0,
+                    "response": "Haven't done deep thought into it, but I do have some initial takes.\n\nValidators can only be introduced into the staking pool so quickly, this would prevent a quick purchase of the chain. 900 validators per day. 32 Eth per validator, which is 28,800 ether per day, or 0.024% of the current total supply.\n\nPoS is easier to decentralize. In the event of a rapid crash in Ether price, it is easier for many small players to begin validating than a single large player. Even with the 32 Ether requirement, there are protocols to allow you to create a validator with only 16 eth.\n\nNot all people jumping in to be validators will be malicious, and the larger the amount of validators, the harder it is to be malicious in the first place. Your validators' votes are compared to other validators, which can all reject your vote, if it violates the rules. The scope of attacks is limited, I believe, to censorship. They still wouldn't be able to \"give\" or \"delete\" ether from someone's account or contract.\n\nBlock producers are separate from validators. Anyone can be a block producer (I think?), validators check that it passes the rules, so the power doesn't inherently lie with the validators. (note I may be off on this assumption).\n\nOverall, the Ethereum PoS is vastly different from Terra's PoS. I don't know the specifics to their consensus, and if any of these were of concern to them, but there are some differences I can already find that don't apply to Ethereum.\n\nThe currency used to create validators in Terra was Luna. Luna was tightly (directly) coupled with UST. I know you question isn't about the unpegging and rapid inflation of Luna, but Ethereum isn't tied algorithmically like this. There can't be an explosive increase in supply like we saw in Terra. It had like 20,000% increase in just a few days, which by itself would be a massive decrease in the cost of a validator, along side the rapidly decrease of the underlying value as well, multiplying the effect.\n\nEther isn't tied to anything, and there's no case that I can think of that would cause Ether to increase in supply by 20,000% overnight. Because of this, a rapid deployment of cheap validators requires a massive influx of capitol, buying out massive supply of Ether, increasing the price, reassuring the security of the chain again.\n\nDepending on the liquidity of Ether, this could be prohibitively expensive. We're talking something on order of 10%-30% of the Total Supply of Ether needing to be purchase and introduced into staking. This is a *massive* cost, not to mention it would take a *long* time to get all of those validators active. At 900 validators per day, only 0.024% of the total supply can be added at a time. 20% of the Total supply would take 2.28 years.\n\nI also like to add, that the tweet saying they're taking the blockchain down for PoS consensus attacks, is just what they claimed was the reason they're haulting it. Who fucking knows the real reason.\n\nSo no, I don't see it as a risk really.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9obryq",
+                    "author": "fulento42",
+                    "score": 5,
+                    "created_utc": 1653308600.0,
+                    "response": "Luna wasn\u2019t decentralized. That is all. If it were actually decentralized it would have been more resilient to these attacks. Is it really a consensus attack when consensus is < 100? For billions of dollars?\n\nMaybe reframe the question your asking to \u201ccan small networks exist with consensus and provide security?\u201d That answer is probably the one you\u2019re answering.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9nvo9v",
+                    "author": "Kike328",
+                    "score": 4,
+                    "created_utc": 1653296147.0,
+                    "response": "Yeah, a network with a minting mechanism like Luna shouldn\u2019t had their governance ran by their token. The issue is mixing both things, POS and uncontrolled minting, but POS by itself is very secure",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9o6cmv",
+                    "author": "coranos2",
+                    "score": 2,
+                    "created_utc": 1653305110.0,
+                    "response": "I don\u2019t think any other chain worked that way.\n\nBut yes we learned that your governance token should have a fixed low (or zero) emission schedule.\n\nSo Luna should have had three tokens, for governance, stability, and volatility.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9nni8m",
+                    "author": "nootropicat",
+                    "score": 2,
+                    "created_utc": 1653288724.0,
+                    "response": "No fundamental difference to PoW, ETC was 51% attacked because its block rewards were too low. On a more detailed basis PoS is orders of magnitude more resistant than PoW because cost of attack is connected to the value of staked coins instead of much smaller block rewards.  \n\nAlso few other chains got attacked that I'm not sure I remember correctly (Verge? hmm)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9oi6xh",
+                    "author": "jackdskis",
+                    "score": 2,
+                    "created_utc": 1653312095.0,
+                    "response": "Wow this sub is full of awful takes recently",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9okh5s",
+                            "author": "namtaru_x",
+                            "score": 1,
+                            "created_utc": 1653313241.0,
+                            "response": "Maybe because its a <100 karma account that has literally never posted in Ethereum before, but decided to submit a hot take.\n\nDoesn't take a lot to see all the bad actors stirring the pot lately.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9n5cc3",
+                    "author": "IamAFlaw",
+                    "score": -1,
+                    "created_utc": 1653276283.0,
+                    "response": "Luna screwing up has nothing to do with any of this...\n\nOn a side note, my electric mower ran over my dogs toy and destroyed it. I feel like my electric toothbrush isn't safe anymore.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9nddep",
+                    "author": "abu_alkindi",
+                    "score": -2,
+                    "created_utc": 1653281185.0,
+                    "response": "Lmao what?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9nshj9",
+                    "author": "Pixeltoir",
+                    "score": 1,
+                    "created_utc": 1653293138.0,
+                    "response": "uuuhhh wut?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9nw706",
+                    "author": "Fheredin",
+                    "score": 1,
+                    "created_utc": 1653296617.0,
+                    "response": "The problem with Luna is that maintaining a peg via arbitrage is a good way to maintain a peg, but not sufficient to defend the peg during an attack (and IMO, it looks like Luna was deliberately attacked). \n\nThere are multiple ways to defend the peg, but the way I would do it is to split arbitrage and governance into several tokens, maintain a liquidity pool, and write the arbitrage smart contract to be aware of each token's market cap and have a different arbitrage point. This way the protocol can strategically abandon points of defense and fall back to another layer before it locks a token in a death spiral.\n\nFor example, at 1 dollar, you can 2 way arbitrage with Arbitrage Luna, and that stops if the Arbitrage coin's market cap drops below the stablecoin or if the stablecoin hits $0.50. At that point, the protocol starts to spend assets in it's liquidity pool to maintain $0.50. Once the liquidity pool is exhausted, the smart contract allows you to swap stablecoins for governance tokens, again as long as the governance token's market cap is above that of the stablecoin.\n\nYou could further stabilize this by adding an airdrop token in the middle. IIRC, Luna had signorage (sp?) fees which were mostly burned. If you gave that to a dedicated airdrop token instead and set it to defend $0.75 as long as it's market cap is above the stablecoin, then you have a pretty well layered protocol defense.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9o8sfg",
+                    "author": "iamjide91",
+                    "score": 1,
+                    "created_utc": 1653306735.0,
+                    "response": "Now that you brought it to my notice, I think it's risky. But PoW has its risks too.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9njg9h",
+                    "author": "n8dahwgg",
+                    "score": 0,
+                    "created_utc": 1653285510.0,
+                    "response": "This is why the cost of consensus cant be cost of capital. Our world has 2 players with 2 participants. 1: normal people with high cost of capital 2: people who have no or even worse zero cost of capital. This has perverted our economy in ways that have been obvious since the 70s. POS is an active mechanism in central banking today and collusion does happen. It had been offset by centralized oversight but that is the outcome of that game. A benevolent overlord looking out - not a good game to play.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ne9hw",
+                    "author": "MeanHash",
+                    "score": -7,
+                    "created_utc": 1653281790.0,
+                    "response": "Yes.\n\nPOS centralizes rewards by its very nature of increase holding of stakes.\n\nIn fact it does this at an exponential rate.\n\nIt is impossible to avoid on any POS network due to the simple fact the more coins = more rewards = more coins = more rewards\n\nThis eventually leading to the largest holders getting nearly 100% of the block rewards.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9nor6y",
+                            "author": "kingofclubstroy",
+                            "score": 7,
+                            "created_utc": 1653289776.0,
+                            "response": "Rewards are given linearly, and the apy is the same for all actors. If i were to own 10% of a pos network like eth and someone else owns 90%, after a year of rewards I would still own 10% and them 90%. Sure rewards compound, but as the number of validators increases the apy decreases, and the total issuance stays around the same.\n\nThe logic applies the same to a POW network, capital is used to either purchase tokens to stake or purchase equipment and energy to mine. An argument could be made that in proof of work networks there is a unfair advantage to more wealthy actors that are able to purchase equipment in bulk and run efficient facilities, giving more gains for reinvestment over time, whereas the economies of scale has no effect on staking. POW and POS are both directly related to capital.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9obta9",
+                                    "author": "MeanHash",
+                                    "score": 1,
+                                    "created_utc": 1653308623.0,
+                                    "response": "This only holds true if the person with 90% of the network doesn't stand up more nodes everytime they get to 32 ETH.\n\nThey will get there 9 times as fast as you, by the end of a year they'd be earning over 99% of the rewards.\n\nIt is not the same as pow, because you cannot instantly convert ETH rewards to hardware to mine more. And definitely not at any type of scale to impact the network. But nodes can be a spun up every time you get another 32 ETH in a few minutes.\n\nDo the math yourself if you want.\n\nStart with a network with 100 nodes just yo make the math easy.\n\nGive 1 person 32 of the node, 1 person 10 of them, 2 people 4 of them, and 50 people 1 node each.\n\nAgain to make math easy assume they all get 1 ETH every block they hit and that every time they hit 32 ETH they will stand up a new node and earn rewards on the next block.\n\n\nAfter around 1000 blocks the node operator that started with 32 nodes will have about 90% of the network rewards.\n\nNo way to avoid it.\n\nSeriously DO THE MATH YOURSELF. It's literally impossible for it to not happen no mater how you change the parameters. Unless you hope by the goodness of their soul that people with the most stake don't use any rewards to stand up more nodes.\n\nThe problem is compound by exchanges using user deposits to stand up nodes, because 3 exchanges combine for the majority of rewards right out of the gate then.\n\nBut of course the comment will get hidden because anyone in the know in ETH doesn't want everyone else to figure it out.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9olt3u",
+                                            "author": "kingofclubstroy",
+                                            "score": 1,
+                                            "created_utc": 1653313885.0,
+                                            "response": "People are able to stake less than 32 eth, depending on the service the rewards as slightly less than running a validator. The differences in reward are very minor, and in no way at all would someone recieve 99% of the rewards from 90% after a year. The exact same situation could be said for miners, and I'd argue to a higher degree since buying rigs in bulk can lower costs dramatically, and setting up in areas with cheap electricity has a large effect as well, application specific machines not available to the public adds another edge. Both these systems are vulnerable to being taken over by people or organizations with the means to do so, that is why it is important to make it as easy and rewarding as possible for anyone to take part, allowing for a decentralized consensus, and share of rewards.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9om7we",
+                                                    "author": "MeanHash",
+                                                    "score": 1,
+                                                    "created_utc": 1653314084.0,
+                                                    "response": "No the exact same cannot be said from miners. Read my post again, it is NOT possible to instantly deploy hashrate, or deploy it infinitely.\n\nThere are real world constraints to mining that do not exist in POS.\n\nAnd those staking platforms only exacerbate the centralization of rewards, because those platforms are taking a cut of the rewards and using those cuts to stand up their own nodes.\n\nPOS is fail logic. Will centralize the network and there is no way to prevent it.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9onfln",
+                                                            "author": "kingofclubstroy",
+                                                            "score": 1,
+                                                            "created_utc": 1653314659.0,
+                                                            "response": "Are you aware there is a queue when loading up a validator and for taking it offline. There are only a certain number that can be added/removed every epoch (think its around 30) and queue is always full. So one cannot instantly setup a validator, nor can someone infinitely stake as there is a limited amount of eth and the apy decreases as validators increase.\n\nThe issue with centralization via staking with exchanges is real, hopefully when these exchanges allow withdrawals of staked eth these funds will be moved to decentralized staking alternatives that offer higher rewards like rocketpool. This centralization problem is similar to mining pools, is it not? There are a few mining pools that have a large share of the hash rate, and take a percent fee of rewards, that they could theoretically use to increase their own hash rate.\n\nCan you not see the similarities here?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9oophb",
+                                                                    "author": "MeanHash",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653315254.0,
+                                                                    "response": "You don't have to be a validator node to stake ETH. I'm not talking about a 51% attack on consensus, which is possible but less likely for reasons you stated, I'm talking about centralizing the ETH supply into a small number of hands who will be able to control the market.\n\n2 completely different types of attacks.\n\nLunas attack was not an attack on consensus. (block validation), it was a supply attack.\n\nMining pools don't get to stand up new mining hardware everytime they earn 32 ETH. It doesn't scale like that. It's not possible in POW.\n\nIn POS pools will eventually get more rewards for themselves than what people supplying the collateral to them are getting, just by using their percentage of rewards to stand up more nodes.\n\nExchanges are even worse because they control the majority of the supply already. Same with other ETH built platforms that control huge amounts of ETH.\n\nAll lead to average ETH stakes getting less rewards every block as big centralized services keep more for themselves each block.\n\nThat momentum is mathematically exponential.\n\nIt will centralized the reward structure quickly, and give supply control to a few big projects, exchanges over a year or 2.\n\nBasically similar to what happened to Luna, but at a slower pace.\n\nThey will be able to short the market dump tons of coins, then buy them back even cheaper, to stand up even more nodes, to be able to short and dump even bigger the next time.\n\nNo CEX cares about ETH, the just want to make money. ETH should look at them as the enemy not their friend. I mean FTX and Binance directly compete with ETH with SOL and BNB, and eth is handing supply control over yo their competitors.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9oqge9",
+                                                                            "author": "kingofclubstroy",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653316050.0,
+                                                                            "response": "You point seems to have shifted. That is a concern if these centralized entities decide to use the eth they have been given to stake to instead manipulate the market. There should be transparency from centralized entities, showing the transactions of staking validators to be sure funds are used as they say they are being used.\n\nAs discussed a in other comments in this thread, a similar situation to what happened to luna is substantially less likely on eth because:\n\n1. Validators need to wait in a queue to leave or join, so of price drops dramatically, a single entity cannot immediately purchase enough eth then control the network, it would take a long time for that shift to occur.\n\n2. Eth isn't created based on any market or external conditions other than what is issued via the consensus mechanism. For luna as the price of luna decreased, the more would be inflated when cashing out ust, which meant the staked validators had less and less of the total supply/market cap, making controlling the network much cheaper.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9oukc3",
+                                                                                    "author": "MeanHash",
+                                                                                    "score": 0,
+                                                                                    "created_utc": 1653317875.0,
+                                                                                    "response": "Again you are focusing on validator nodes, not all nodes are validator, and not all nodes have to wait in the que. ETH2 has 2 node theirs, staking and validator.\n\nThis is not a consensus problem it is a supply side attack.\n\nNot sure why you don't understand the difference.",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i9p2nu7",
+                                                                                            "author": "kingofclubstroy",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1653321347.0,
+                                                                                            "response": "I run a node, validator nodes dont earn rewards, and dont have to wait in queue, staking nodes have to wait, but recieve rewards and is the main focus of your supply side attack issue, right? As described above the advantage in rewards for whales is minimal. Assuming no external factors, any edge can compound over time and trend to infinity. This is true for any form of capital, depending on how it is used, the more one has the more potential to grow it proportionally to the amount owned. This is true of pow and pos, and capitalism in general. In your extreme example, yes the 32 validator actors rewards trend to infinity/100%. Issue is that the example is extreme, as it assumes no reward for having under 32 eth, when in reality that could be earning rewards at roughly 85% the rate of a validator (depending on the service +-10%), and with an extreme apy that is many orders of magnitude higher than existing rates, with an assumption apy stays the same and issuance increases proportionally, it would take hundreds of years to have any meaningful divergence in the current apy, assuming there are no external actors/stakers coming in. \n\nIn your example for 1000 blocks, the 32 eth validator rewards diverges\n\nBut for 365 blocks (1 year if each block is a day) in this extreme case the percent of validators goes from 32% to 41.4% (i wrote a script). These 365 blocks equate to roughly 228 years of eth staking rewards, assuming a constant 5% and each block equates to a day. This divergence of network control is far less effective if the unvalidated eth rewards earn a 85% effective yield if they were staked using a decentralized staking service, which in reality is something people would do, not all but it would decrease the effect at least. Even without unstaked eth earning rewards, the percent change isn't dramatic even after 228 years.\n\nThe numbers you were previously suggestioning are not nearly as alarming as you were claiming. I did the math, but are more than happy to show my work.\n\nYou make a point of a supply side attack, which makes sense for exchanges that offer staking services if they dont actually stake, and instead use the accumulated supply to sell/manipulate the market, but this concern is always present in an ecosystem with whales and is not a concern unique to pos systems. In the case of stakers generating rewards and increasing their proportional supply, the issue is that they have to stake to maintain their increasing rate of returns which means it will take longer to pull the funds out to make an attack, as only a set rate of validators can be unstaked to be used in this attack.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9nezqs",
+                    "author": "Shadowys",
+                    "score": -6,
+                    "created_utc": 1653282283.0,
+                    "response": "You're right ofc, but that's not what the people want to hear. \n\nThe fact is that centralised systems are cheaper and more efficient is also something people don't want to hear. PoS basically centralises the whole system around select actors who has the monetary ability to do so, thus reducing gas fees due to increased efficiency. \n\nPoW, on the other hand, suffers from a similar fate unless one continuously changes the PoW algorithm to fight ASICs and high end GPUs, of which neither ETH or BTC is committed to doing.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9nhnla",
+                            "author": "gwynbleidd2511",
+                            "score": -1,
+                            "created_utc": 1653284170.0,
+                            "response": "Ironic, considering I was talking about exactly a version of this in r/cc, and getting flamed. PoW algos need to evolve to have economic utility/economically relevant math, than just solves a useless solution to justify the energy consumption, simply for the sake of security. PoS need to add more control mechanisms to make gaming the system prohibitively expensive & difficult to execute, whether it's native on-chain services or Defi. Third party risk effects need to be studied appropriately before investing in spring funneled, yield schemes, or even supporting them.\n\nIt's been 13 years, there are concepts of this out there, but it's vested interests who think evolution or forking will dilute the space (which is a justified concern).",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9oegfz",
+                                    "author": "javier123454321",
+                                    "score": 1,
+                                    "created_utc": 1653310135.0,
+                                    "response": "Problems that solve some real world issues don't tend to have the assymetry of computation that hash functions do. But yeah, seems to me that things will consolidate towards a single Pow network naturally.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9nx1y5",
+                    "author": "justswallowhard",
+                    "score": 1,
+                    "created_utc": 1653297426.0,
+                    "response": "You need a shitload eth, so buying more will push the price up and if your nodes start misbehaving you will get slush",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9o0kfk",
+                    "author": "g_squidman",
+                    "score": 1,
+                    "created_utc": 1653300597.0,
+                    "response": "The metric we need to be concerned with is the price of Eth relative to the total value on the chain. So if the price of eth drops, that's only a bad thing if the price of all the NFTs, governance tokens, Stablecoins, everything else stays high.\n\nIt probably is something we should talk about, but it's really not a concern compared to PoW. We get a lot of extra security for free with PoS.\n\nWe could talk about making DAI collateralized with more Eth than other assets. We could consider increasing the cost of gas in Eth terms. We could make sure L2s still use Eth to collect protocol fees.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ofpga",
+                    "author": "TripleReward",
+                    "score": 1,
+                    "created_utc": 1653310815.0,
+                    "response": "No, pow and pos are exactly the same, security wise.\n\nThe only difference is bootstrapping distribution: while in pow you get to generate coins out of thin air for spending money on hardware and electricity, in pos you have to buy some initial amount of coins from someone else, which sometimes gives pos a ponzi feel.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ofqan",
+                    "author": "TheGreatest34567",
+                    "score": 1,
+                    "created_utc": 1653310826.0,
+                    "response": "I think it's because their tokenomics were too unsustainable that it wouldn't survive a bear market. Pegging their UST to an unstable/volatile asset is not a pretty smart move.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ogk5q",
+                    "author": "Timely-Owl-8043",
+                    "score": 1,
+                    "created_utc": 1653311258.0,
+                    "response": "The problem with Luna is that can be minted almost ilimited. Thats not the case for the mayority of PoS protocols.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9oprvk",
+                    "author": "Thevsamovies",
+                    "score": 1,
+                    "created_utc": 1653315742.0,
+                    "response": "LUNA died because everyone realized that the entire system was a failure. What killed LUNA was the death of belief. If people believe in the system, then they don't sell their tokens. \n\nIt doesn't matter if the system crashes by 90%. The only thing that matters is how many tokens are actually up for sale. Would everyone sell their ETH if it crashes by 90% but the system is still fundamentally sound? No. So realistically what will happen is that eventually someone would buy up all the supply until the price would start skyrocketing because no one wants to sell anymore. \n\nI suppose theoretically a situation can occur where people do start mass selling - but theoretically anything in the world happen. The question isn't a matter of what is possible, but rather what is likely.\n\nOf course, a system where VC whales control the majority of the supply is more vulnerable to this issue cause they have no chain loyalty and will likely not buy into retail's HODL mentality.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ov2fb",
+                    "author": "shazow",
+                    "score": 1,
+                    "created_utc": 1653318095.0,
+                    "response": "This is missing one important part of the LUNA/Terra death spiral: It's bi-directional.\n\nThe reason LUNA experienced hyperinflation is because it's designed to maintain Terra's $1 USD peg by minting as much LUNA as necessary. This obviously devalued LUNA, and indirectly devalued Terra further, hence the death spiral.\n\nSo there are three elements at play here:\n\n1. LUNA automatically mints arbitrary amounts,\n2. Terra is minted/burned based on market forces,\n3. There is a peg that connects 1 and 2 bi-directionally, creating a feedback loop effect.\n\nTo compare to Proof of Stake systems: There is no arbitrary minting that can lead to hyperinflation, there is no mint/burn based on market forces (can argue that eip1559 is some burning based on market forces and staking rewards are somewhat variable based on participation, but it's still quite different), and there's no peg to create a feedback loop.\n\nTo be clear: I'm not claiming that anything is bullet proof, but I do feel that the comparison with Terra/LUNA is not apt.\n\nOne more trap that is easy to fall into: Staking for collateral, staking for vesting, and staking for validating are very different concepts that aren't interchangeable.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9p47bx",
+                    "author": "StatisticalMan",
+                    "score": 1,
+                    "created_utc": 1653321998.0,
+                    "response": "\"if the value of Ether goes down, the security of the Ethereum network goes down.\"\n\nThis is true of PoW as well it is just a bit slower to react due to limitations on changes in mining difficulty.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9p73i2",
+                    "author": "405NotAllowed",
+                    "score": 1,
+                    "created_utc": 1653323206.0,
+                    "response": "PoS will be the Death Nell of Eth.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pa606",
+                    "author": "i-cant-think-of-name",
+                    "score": 1,
+                    "created_utc": 1653324481.0,
+                    "response": "It was inflation that caused the vulnerability. Not the price.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pcu14",
+                    "author": "Either-Advantage",
+                    "score": 1,
+                    "created_utc": 1653325594.0,
+                    "response": "If anything PoS networks are more resilient than PoW. Ethereum and Polygon are prime examples of this. Correct me if I'm wrong I think in the long term PoS is just miles ahead of PoW.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9n52r6",
+                    "author": "Remarkable-Hall-9478",
+                    "score": -1,
+                    "created_utc": 1653276138.0,
+                    "response": "In short, yes. This is one of the biggest aspects of PoS that gets swept under the rug. PoS isn't proven to be as secure or more secure than PoW, it's just being pushed in part for political/marketability reasons and in part because of scaling issues. It's effectively a trade-off between the stringent security that requiring 51% physical compute hardware provides in PoW, and the scaling of PoS. \n\nPoW is already reasonably vulnerable at the very topmost levels as it requires the hardware to be intact, powered, and connected to the network and all 3 are attack surfaces that entities like govts can target. \n\nWith PoS, it's more \"ethereal\" (pun 51% intended) and game theoretic. In practice, staking security is significantly less resilient at the topmost levels because staking is almost completely detached from the physical world. In the real world, thermodynamics and resource supply chains and manufacturing capacity and human/technical/financial capital are all critical elements that much be maintained through significant coordination, usually by well-financed corporations and/or govts, in order to even attempt to compete. In PoS, almost none of that applies. At least, in equilibrium. Right after the transition, and for some time after, there will be the residual effects of ETH having been PoW.\n\nIf you want to take it up a notch, check out the equilibrium models for utility networks. You won't like the implications for PoS security.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9oe7fl",
+                            "author": "javier123454321",
+                            "score": 1,
+                            "created_utc": 1653309999.0,
+                            "response": "\n>check out the equilibrium models for utility networks.\n\nDo you have a link?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9p0hmf",
+                                    "author": "Remarkable-Hall-9478",
+                                    "score": 2,
+                                    "created_utc": 1653320431.0,
+                                    "response": "https://bfi.uchicago.edu/wp-content/uploads/Malani-Anup-Holden-The_ICO_Paradox-8-30-19.pdf\n\nIn short, the hyper-utility dream is in direct conflict with the economics of operating the network. \n\nLess friction, more utility = lower price. The token/system must be kept intentionally obtuse and inefficient in order to support a given price, and this isn\u2019t really the Ethereum vision. \n\nThe Ethereum vision is a benevolent system that\u2019s going to clean out the cobwebs of legacy systems and enable heavy decentralization of practically every aspect of the economy (\u2018\u2019member \u201cdecentralized Airbnb\u201d?) through hypercompetitive money that has an arbitrarily large amount of instant, zero cost, programmable transactions. \n\nBut the security model chosen to get there is dependent on circular logic and feedback loops that are negative in reality somehow turning positive. As it stands, this is going to turn into a rent-seeking arrangement and the consensus will only be able to be maintained if the profitability for stakers is there, which will necessitate either/both a constant Ponzi-esque drive for token price action, and/or impedance and \u201ctoll-taking\u201d on the network in order to extract value for the validates. \n\nIf some entity locks up $64k of eth to run a validated instead of any other use of that money, they are incentivized to keep the costs of the network high and the utility low so they can extract as much as possible in as little time as possible. If an entity locks up $64m, they are also incentivized even more so to spend money on things like marketing campaigns or photogenic development teams, etc. to drive price action but disincentivized to support lowering the impedance and increasing utility of the network. Any increases in perceived utility that get people to buy? Yes. Any increases in real utility that reduce costs and increase velocity? No.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9n7v8e",
+                    "author": "senditFrmU2M",
+                    "score": -2,
+                    "created_utc": 1653277717.0,
+                    "response": "No just dumb money, opposite of smart money \ud83d\ude0c",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9nn5ic",
+                    "author": "Y0rin",
+                    "score": -3,
+                    "created_utc": 1653288436.0,
+                    "response": "I'm sorry, but the Luna network is working fine (Blockchain). It's the mechanism that was supposed to keep UST at its peg that failed.\n\nThe L1 itself is fine, to this day.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9nuu0f",
+                    "author": "c3p0u812",
+                    "score": -2,
+                    "created_utc": 1653295365.0,
+                    "response": "Certainly didn't help morons in possession of possessions.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9o0s0e",
+                    "author": "AeFip",
+                    "score": 0,
+                    "created_utc": 1653300782.0,
+                    "response": ">Ethtereum",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

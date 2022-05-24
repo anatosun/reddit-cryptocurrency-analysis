@@ -1,0 +1,132 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uvyena",
+            "title": "The Bitcoin Awakening with John Vallis \u2014 What Bitcoin Did",
+            "url": "https://www.whatbitcoindid.com/podcast/the-bitcoin-awakening",
+            "author": "mccormack555",
+            "created_utc": 1653306650.0,
+            "score": 9,
+            "num_comments": 3,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9obito",
+                    "author": "priapic_green_dildo",
+                    "score": 1,
+                    "created_utc": 1653308450.0,
+                    "response": "Good luck against Faketoshi. May justice prevail.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uvyde4",
+            "title": "PoW Question",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uvyde4/pow_question/",
+            "author": "harmless_sven",
+            "created_utc": 1653306524.0,
+            "score": 2,
+            "num_comments": 11,
+            "subreddit": "Bitcoin",
+            "selftext": "Hello, just a hypothetical thought i dont understand:\n\nImagine I have 51% of the Bitcoin Hashing Power and decide to redo a block that is f.e. already the 5th youngest block in the chain. \n\nI would change the transaction in that block so somebody gives me 100 BTC. Then id have to mine this block and the 4 blocks following it to be up to date again and even create a new block to have the longest chain.\n\nIf I then share my version of the blockchain with the rest of the network, the rest of the network will check if my chain is correct. Even though I solved every hashcash correctly for every block, the transaction I created just is not valid. So even though I have 51%  the rest of the network will not accept my chain right ? \n\nDoes this mean the only thing that having the 51% of the network benefits me is that I can double spend by creating a new chain from the present that is longer than the public chain and does not include my transactions  ill ad to the public chain in the same time ? To sum it up: Is it true that I cant change the blocks that have already been added even though I have 51% ?\n\nThank you !",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9oaggp",
+                    "author": "na3than",
+                    "score": 3,
+                    "created_utc": 1653307800.0,
+                    "response": ">I would change the transaction in that block so somebody gives me 100 BTC.\n\nNope. That's not possible, even with 51% of the hashing power.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ob6yz",
+                    "author": "dlq84",
+                    "score": 2,
+                    "created_utc": 1653308256.0,
+                    "response": "> I would change the transaction in that block so somebody gives me 100 BTC.\n\nThat's impossible, it's not how it works.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9odzai",
+                    "author": "pink_raya",
+                    "score": 2,
+                    "created_utc": 1653309873.0,
+                    "response": "also keep in mind you are racing against the 49% of hashrate building on a chain that is 5blocks x ~10minutes ahead of you.\n\nyou have to redo those 5blocks faster than the rest of the  hashrate finds a single block, otherwise your chain is still not the longest one and will be discarded.\n\nif the receiver waits for 3-6 confirmations as they should, doublespending with only 51% is quite impractical.\n\nNot to mention that doing this successfully would mean bitcoin is not safe and may plummet in price, taking your btc, asics and lost future revenue in block rewards to the toilet with it.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9onfrv",
+                    "author": "DoYouEvenMonad",
+                    "score": 2,
+                    "created_utc": 1653314661.0,
+                    "response": "> I would change the transaction in that block so somebody gives me 100 BTC. \n\nHaving 51% hashrate doesn't mean you have access to other people's private keys. It means you have to possibility of censoring half the blocks. Thus, possibly performing a double spend.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9pnuvm",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1653330253.0,
+                    "response": "> Is it true that I cant change the blocks that have already been added even though I have 51% ?\n\nNot true. You can not make arbitrary transactions to spend a coin for which you don't have a key to make a signature, but ...  \n\nYou can spend Bitcoin in a regular miner's block, and then 51% mine your own block with a transaction which spends the same coins to yourself  \n\nIf the merchant sends you the goods in between when the transaction was confirmed and when the replacement block confirmed the send-to-self transaction, then you get to keep the Bitcoin and receive the goods  \n\nThe send-to-self transaction is valid because you're spending your own coins to yourself, using your key to sign the transaction\n\nIt's less work to mine your 51% attack chain tip in parallel with the regular miners. This avoids redoing the work of multiple blocks. You're just doing the work of your own blocks, and if your chain is longer you can release all the blocks at the same time to replace the regular miners' chain tip  \n\nSee this description of a successful attack on BTG  \nhttps://gist.github.com/metalicjames/71321570a105940529e709651d0a9765  \n\nThe attackers sold BTG to buy Bitcoin and spent 2 hours parallel mining. In their parallel blocks they spent their coins to themselves instead of the coin-to-coin exchange. After 2 hours, they submitted their 2 hours of blocks to replace the regular miners' most recent 2 hours of blocks. They kept their BTG and the exchange had already sent their Bitcoin",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9o93p9",
+                    "author": "Narmotur",
+                    "score": 4,
+                    "created_utc": 1653306942.0,
+                    "response": "If you have 51% of the hashing power you can double spend by rolling back your own transactions, or you can roll back other people's transactions (to cause chaos). You can also prevent anyone else from receiving mining rewards (by mining all blocks) and censor any or all transactions (by not including them in blocks).\n\nYou can change blocks that have already been added, but you cannot create invalid transactions, as those will be ignored by the rest of the network.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9oshyd",
+                            "author": "MadMaxwell92",
+                            "score": 1,
+                            "created_utc": 1653316963.0,
+                            "response": "This is a great answer. I\u2019ll add, the only way to send bitcoin from a wallet is to have access to the private keys that are associated with the bitcoin previously sent to that wallet. This is why transactions could only be reversed with a successful 51%.\n\nI mean this would be an absurd scenario.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9oghgs",
+                    "author": "johndoeisback",
+                    "score": 1,
+                    "created_utc": 1653311219.0,
+                    "response": "Having 51% of the hash rate means you can create blocks faster than all the rest combined.\n\nWhat can you do with this power? Well, you can \"rewrite\" history. For example, you can recreate the last block with all the same transactions that are included there ***minus one***, and then add a new block on top of it. Everyone will follow this new chain since it's longer (2 blocks in your chain vs 1 block in the old chain). If the transaction you removed was yours and you were paying someone, then those coins are back to you (you kind of \"charged back\" the payment).",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9po3s0",
+                            "author": "igadjeed",
+                            "score": 1,
+                            "created_utc": 1653330360.0,
+                            "response": "> then those coins are back to you\n\nYou have to actually make a transaction to send them to yourself. Otherwise the original transaction will be confirmed in the next block, because the tip reorg process returns it to the mempool",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
