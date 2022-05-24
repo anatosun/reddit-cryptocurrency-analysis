@@ -21,7 +21,7 @@ In here, we connect each user to the original poster (OP) and to all users who r
 
 
 \subsection{Next Link}
-Same as Deep Link, except that we only connect each user to the OP and the immediate users who commented directly on the user's comment. Also a directed graph.
+Same as Deep Link, except that we only connect each user to the OP and the immediate users who commented directly on the user's comment. Thus the blue links (figure above) are missing in this data model. Also a directed graph.
 
 \subsection{Deep Link No Merge}
 The same as Deep Link but here we don't merge the weights and allow multiple edges from one user to another. Thus, this is a directed multigraph. We found that this approach has still lots of information but is not too expensive to compute.
