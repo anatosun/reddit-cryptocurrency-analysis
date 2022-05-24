@@ -58,7 +58,7 @@ def page_rank(G: nx.digraph,
 def test_page_rank():
     import pandas as pd
     G = nx.from_pandas_edgelist(pd.read_csv(
-        './data/edgelist.csv'), create_using=nx.DiGraph())
+        './data/edges_deep_link_no_merge.csv'), create_using=nx.DiGraph())
     start = timeit.default_timer()
     nx_ranks = nx.pagerank(G)
     stop = timeit.default_timer()
