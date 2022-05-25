@@ -15,7 +15,7 @@
             "author": "Beginning_Analysis61",
             "created_utc": 1653084774.0,
             "score": 2,
-            "num_comments": 11,
+            "num_comments": 15,
             "subreddit": "ethereum",
             "selftext": "I have had my ETH on an exchange for quite a while. I\u2019ve transferred all of my BTC to my trezor wallet. If I do the same with my ethereum will I need to pay these high gas fees that I keep hearing about? If not, can someone explain to me under what circumstances I would pay these high fees. And if so, can someone tell me how I can monitor and wait for the fees to be historically low. Maybe gas fees are just for developers ? I just don\u2019t know",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i9dwdll",
                     "author": "stev0lutionlol",
-                    "score": 3,
+                    "score": 4,
                     "created_utc": 1653086499.0,
                     "response": "Blockchains have their name because transactions are bundled into blocks. Once there is consensus among the network participants which block follows the previous one (through proof of work or proof of stake for example), every (full) node will process and store the block.\n\nSince this gets more expensive (both in computational cost and storage requirements) as blocks include more and more transactions, essentially all prominent blockchains have a fee mechanism to help decide which transactions to include in a block. If demand to be included in a block is high, the gas price will increase and thus the fee you need to pay to continue participating also increases.\n\nThere are multiple websites you can use to track current and historical gas prices. https://etherscan.io/gastracker is a reputable example. I think you can just use your favorite search engine to find alternatives.\n\nAs a point of reference, at a typical 20 gwei gas price, a simple ETH transfer will cost about 1 USD currently. More complex interactions might be more expensive. Most wallets will show an estimate of the gas cost before you accept a transaction.",
                     "depth": 1,
@@ -65,6 +65,34 @@
                     "response": "Also depends on the exchange.  Gemini will cover your crazy gas fees for the first 10 transfers every month.",
                     "depth": 1,
                     "comments": []
+                },
+                {
+                    "id": "i9spp4v",
+                    "author": "pwrusr-com",
+                    "score": 1,
+                    "created_utc": 1653393750.0,
+                    "response": "If you want to pay the lowest Ethereum fees, you should perform transactions early in the morning, between 1 and 3 am UTC or late at night, between 9 and 11 pm UTC on a Saturday or Sunday",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9spr0u",
+                            "author": "pwrusr-com",
+                            "score": 1,
+                            "created_utc": 1653393782.0,
+                            "response": "Source: https://beincrypto.com/learn/ethereum-gas-fees-lowest/",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9teptq",
+                            "author": "Beginning_Analysis61",
+                            "score": 1,
+                            "created_utc": 1653405807.0,
+                            "response": "Thank you. This helps",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 }
             ]
         }

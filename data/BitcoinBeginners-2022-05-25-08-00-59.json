@@ -1,0 +1,71 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uxc9gd",
+            "title": "What is a transaction's fee if I send exactly one satoshi?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uxc9gd/what_is_a_transactions_fee_if_i_send_exactly_one/",
+            "author": "Adamn27",
+            "created_utc": 1653464839.0,
+            "score": 4,
+            "num_comments": 6,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "A satoshi is impartible, so what happens if I would like to send exactly one satoshi?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9ws8vi",
+                    "author": "information-zone",
+                    "score": 5,
+                    "created_utc": 1653465029.0,
+                    "response": "The fees are not based upon how many sats you\u2019re sending, but how big your transaction is (in terms of inputs & outputs).\n\nSo you\u2019d probably be paying a few hundred sats  for a 1 sat spend, but it could be the same for a multi-bitcoin spend as well.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9wse6c",
+                    "author": "bitusher",
+                    "score": 3,
+                    "created_utc": 1653465162.0,
+                    "response": "Bitcoin can be sent within a payment channel in one of ~30 lightning wallets for a fraction of a satoshi as Bitcoin is divisible by 1/1000 of a satoshi in a payment channel \n\nIf you wanted to send 1 satoshi of Bitcoin onchain this would not make much sense because you would be spending 200-300 sats to send 1 sat",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9wte4x",
+                    "author": "BTCMachineElf",
+                    "score": 2,
+                    "created_utc": 1653466060.0,
+                    "response": "You can't send 1 sat on layer 1 because it's under the dust limit. The resulting UXTO couldn't even pay for itself to be put into a transaction. It would be bitcoin lost forever.\n\nYou can send it on lightning, though. The fees could be next to nothing, or a few sats, depending on the payment route.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ws11w",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653464839.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9wua6p",
+                    "author": "Solana25",
+                    "score": 1,
+                    "created_utc": 1653466863.0,
+                    "response": "0.000000000000000000000000000000000000000000001btc \n\n\nLol",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

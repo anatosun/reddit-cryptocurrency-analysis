@@ -77,31 +77,12 @@
             "url": "https://www.reddit.com/r/ethereum/comments/uury49/viability_of_tornado_cash/",
             "author": "EmilyLovs",
             "created_utc": 1653154505.0,
-            "score": 18,
-            "num_comments": 19,
+            "score": 21,
+            "num_comments": 25,
             "subreddit": "ethereum",
             "selftext": "A few questions for Tornado Cash users:\n\nA)  Is it even viable?  Does it really have enough of an anonymity set to beat forensics?\n\nB) How much does it cost after all is said and done?\n\nC) What kind of amounts are viable to mix?",
             "stickied": false,
             "comments": [
-                {
-                    "id": "i9hmdfv",
-                    "author": "Razaberry",
-                    "score": 2,
-                    "created_utc": 1653165346.0,
-                    "response": "Look into Monero XMR. \n\nIf you desire near faultless anonymity you will need to make use of Zero Knowledge Proofs. This is deep wizard math that allows you to prove something occurred without proving anything else. \n\nIn Monero\u2019s case (there\u2019s a few ZK coins out there)\u2026\n-\tthe sender of a tx can see both addresses, the value of XMR transferred, and the timestamp\n-\tthe recipient of a tx can see their own address, XMR value, and timestamp but not the sender\u2019s address\n-\tanyone else not involved in the tx can *only* see the timestamp. They don\u2019t know who transferred how much to who, only that a transfer did indeed occur at a given time. \n\nSo likely what a person seeking absolute anonymity of funds would do is process the asset through a mixer like Tornado Cash, trade this asset on a non-KYC DEX for Monero XMR, transfer said Monero to another Monero wallet, then return to the DEX, repurchase the initial desired asset, and finally put that too through a mixer.\n\nFor extra security, do this all through a VPN and the Tor browser.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i9j4f60",
-                            "author": "EmilyLovs",
-                            "score": 1,
-                            "created_utc": 1653195199.0,
-                            "response": "What XMR/ETH markets are there that don't require KYC?",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
                 {
                     "id": "i9hozj8",
                     "author": "TheCherryShrimp",
@@ -136,6 +117,35 @@
                                             "comments": []
                                         }
                                     ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9hmdfv",
+                    "author": "Razaberry",
+                    "score": 2,
+                    "created_utc": 1653165346.0,
+                    "response": "Look into Monero XMR. \n\nIf you desire near faultless anonymity you will need to make use of Zero Knowledge Proofs. This is deep wizard math that allows you to prove something occurred without proving anything else. \n\nIn Monero\u2019s case (there\u2019s a few ZK coins out there)\u2026\n-\tthe sender of a tx can see both addresses, the value of XMR transferred, and the timestamp\n-\tthe recipient of a tx can see their own address, XMR value, and timestamp but not the sender\u2019s address\n-\tanyone else not involved in the tx can *only* see the timestamp. They don\u2019t know who transferred how much to who, only that a transfer did indeed occur at a given time. \n\nSo likely what a person seeking absolute anonymity of funds would do is process the asset through a mixer like Tornado Cash, trade this asset on a non-KYC DEX for Monero XMR, transfer said Monero to another Monero wallet, then return to the DEX, repurchase the initial desired asset, and finally put that too through a mixer.\n\nFor extra security, do this all through a VPN and the Tor browser.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9j4f60",
+                            "author": "EmilyLovs",
+                            "score": 1,
+                            "created_utc": 1653195199.0,
+                            "response": "What XMR/ETH markets are there that don't require KYC?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9lnfku",
+                                    "author": "Razaberry",
+                                    "score": 1,
+                                    "created_utc": 1653249353.0,
+                                    "response": "https://www.kycnot.me/",
+                                    "depth": 3,
+                                    "comments": []
                                 }
                             ]
                         }

@@ -1,0 +1,444 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uwpn3c",
+            "title": "How can we actually trust cold wallets?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uwpn3c/how_can_we_actually_trust_cold_wallets/",
+            "author": "Fit_Psychology_1536",
+            "created_utc": 1653395170.0,
+            "score": 31,
+            "num_comments": 49,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I'm trying to convince my dad to get his crypto off coinbase into cold storage but he doesn't trust the cold wallet companies any more than coinbase.\n\nLedger claims it doesn't store user's private keys, is there any way to actually confirm this? Or are we basically putting our faith in Ledger to be honest? \n\nHow can I convince him?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9sspm1",
+                    "author": "PorkAmbassador",
+                    "score": 21,
+                    "created_utc": 1653395525.0,
+                    "response": "Does he know what open source is and has he heard of Trezor?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9sxasy",
+                            "author": "Fit_Psychology_1536",
+                            "score": 12,
+                            "created_utc": 1653397985.0,
+                            "response": "Didn't know Trezor is open source! Sounds way more secure with people being able to independently verify",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9to1rr",
+                                    "author": "monxas",
+                                    "score": 8,
+                                    "created_utc": 1653409659.0,
+                                    "response": "100% go trezor. Great little devices.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9t8tkl",
+                            "author": "fucktheccp-NOW",
+                            "score": 2,
+                            "created_utc": 1653403316.0,
+                            "response": "I had a friend getting one himself and maybe he ordered his from a 3rd party website (which I dont believe) and was visited by strangers demanding the ledger. He was on phone with his dad as they made their way in so he called the cops for him. I do support them but please send them to a pickup station where you can collect mail and dont send it to your home adress.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9uwrap",
+                                    "author": "bobbensonbill",
+                                    "score": 2,
+                                    "created_utc": 1653428406.0,
+                                    "response": "Wild. https://trezor.io for others who don\u2019t know. Straight from the source.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9vcb9b",
+                                            "author": "axxtonn",
+                                            "score": 2,
+                                            "created_utc": 1653435479.0,
+                                            "response": "Straight from reddit comment",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9swj81",
+                    "author": "Jetjones",
+                    "score": 9,
+                    "created_utc": 1653397591.0,
+                    "response": "Get a Trezor and run a node.\nOr you know.. explain to him that cold storage is self custodial. Ledger and Trezor don\u2019t have access to your keys, only you do.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9syp6j",
+                            "author": "Fit_Psychology_1536",
+                            "score": 2,
+                            "created_utc": 1653398679.0,
+                            "response": "Does using a Trezor automatically start running my own node or is that a separate process I'll need to set up?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9sztfe",
+                                    "author": "bitusher",
+                                    "score": 10,
+                                    "created_utc": 1653399226.0,
+                                    "response": "separate but here are 2 easy methods :\n\n1) umbrel \n\nhttps://www.youtube.com/watch?v=-I53fAnQ6t8&ab_channel=BTCSessions\n\nhttps://getumbrel.com\n\n--------------------\n\n2) electrum personal server \n\n1) Setup electrum personal server(this is your full node) \n\nhttps://github.com/chris-belcher/electrum-personal-server \n\nhttps://curiosityoverflow.xyz/posts/bitcoin-electrum-wallet/\n\nhttps://www.youtube.com/watch?v=1JMP4NZCC5g\n\nhttps://www.youtube.com/watch?v=4H8gCFrjTYs\n\n2) Use electrum with your nano/trezor and configure electrum to use your personal server you setup above (Full node plus HW wallet) -\n\nhttps://support.ledger.com/hc/en-us/articles/115005161925-Set-up-and-use-Electrum\n\nhttps://wiki.trezor.io/Apps:Electrum\n\nledger nano S/trezor crash courses:\n\nhttps://www.youtube.com/watch?v=YI1OntWB7wc\n\nhttps://www.youtube.com/watch?v=pT1j_kbZBEo\n\nhttps://www.youtube.com/watch?v=i3BIo5Ac_n4\n\n\n\n3) Record your 24 words on paper + record your passphrase on a separate paper you keep private and secure and separate from your hardware wallet and each other. You will both memorize your passphrase and pin + keep it in writing but not with your 24 word backup. Never store passphrase or mnemonic backup digitally. \n\nhttps://support.ledger.com/hc/en-us/articles/115005214529-Advanced-passphrase-security\n\nhttps://wiki.trezor.io/Passphrase\n\nConsider upgrading to metal backup - \n\nhttps://jlopp.github.io/metal-bitcoin-storage-reviews/\n\n4) Withdraw a small test amount of BTC from your exchange to your receive address on your electrum + ledger/trezor wallet. You are going to send BTC to your hidden wallet with the passphrase.\n\n5) Confirm you got the BTC, reset your ledger/trezor , recover it with 24 words + passphrase . Now you have trained yourself how to recover a wallet with backup and 100% confident you did everything right once you see the BTc again in your hidden wallet. \n\n6)\tSend a small amount of BTC to your non hidden wallet(protected by pin) , and the rest to your hidden wallet(protected by passphrase). Done and send more BTC to hidden wallet account addresses.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9t10s2",
+                                            "author": "Fit_Psychology_1536",
+                                            "score": 4,
+                                            "created_utc": 1653399805.0,
+                                            "response": "Damn that's awesome, thanks for writing all that. It's hella complicated, I can see why most people just put their faith in Coinbase or another exchange. \n\nI consider myself tech-proficient but this whole topic kicks my ass haha it's very time consuming and difficult to research and understand -- Imagine a grandpa trying to figure all this stuff out!",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9t1c1e",
+                                                    "author": "bitusher",
+                                                    "score": 4,
+                                                    "created_utc": 1653399955.0,
+                                                    "response": "most people don't run full nodes , but self custody with a trezor is really simple and thats the first step",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9t2fp3",
+                                                            "author": "Fit_Psychology_1536",
+                                                            "score": 2,
+                                                            "created_utc": 1653400477.0,
+                                                            "response": "Definitely going to proceed with self custody on the Trezor and go from there",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9tuc0s",
+                                                                    "author": "sleepdrift3r",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653412214.0,
+                                                                    "response": "Look into ColdCard, Keystone Pro, and Foundation Passport as well. They\u2019re all more secure than Trezor and Ledger, but more complicated. You should definitely do more research before deciding on cold storage",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9t0x7y",
+                                    "author": "Jetjones",
+                                    "score": 2,
+                                    "created_utc": 1653399758.0,
+                                    "response": "You don't need your own node but if you want to contribute to the protocol, it'll also give you peace of mind if you're paranoid about wallet softwares as you can connect your cold wallet directly to your node.\n\nBasically, what Trezor and Ledger do is to hide your keys from your device so that even if it's compromised, there's no chance of getting hacked. You connect it to their wallet service or pair it with a compatible wallet of your choice. For exemple, I love the Exodus UI so I paired my Trezor to it. I can check my funds on my phone and have an Exodus wallet with less funds if I want to spend it, but it also shows me my Trezor protected funds. I can check my portfolio thru there and can get my key to receive coins but would need to go on my Trezor and PC to send some. Some Ledgers can connect to your phone instead of PC.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9t29kz",
+                                            "author": "Fit_Psychology_1536",
+                                            "score": 3,
+                                            "created_utc": 1653400396.0,
+                                            "response": "That's good to know. As usual, when I peel back a layer on the crypto-onion I discover a new complicated world to understand.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9t2lot",
+                                                    "author": "Jetjones",
+                                                    "score": 2,
+                                                    "created_utc": 1653400554.0,
+                                                    "response": "Started learning about crypto a year ago and I\u2019m just getting to the good stuff. Enjoy the ride!",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9tf199",
+                    "author": "pplmoose",
+                    "score": 4,
+                    "created_utc": 1653405940.0,
+                    "response": "I personally don\u2019t have one, but I\u2019ve been eyeing coinkite\u2019s coldcard as a hardware wallet when I get enough size to warrant it. It seems to me like that company is about as serious as it gets regarding reducing trust risk.\n\nNote: I think the coldcard is Bitcoin only, if I recall correctly, and has open source code too",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9tuscz",
+                            "author": "sleepdrift3r",
+                            "score": 2,
+                            "created_utc": 1653412401.0,
+                            "response": "Look into Foundation Passport and Keystone Pro as well. I have a hard time deciding between them and ColdCard honestly. ColdCard is BTC only by the way and is partially open source. It changed after a fiasco they had with Foundation using some of their source code (even though ColdCard did the same with Trezor I believe). BTC only is definitely best for security. ColdCard has some security elements that I really value for sure",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9u0wt1",
+                                    "author": "pplmoose",
+                                    "score": 2,
+                                    "created_utc": 1653414923.0,
+                                    "response": "Thanks for the heads up! Didn\u2019t know about those other options, or that the code is only partially open source. I\u2019ll def look into it",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9v3wn2",
+                                            "author": "sleepdrift3r",
+                                            "score": 2,
+                                            "created_utc": 1653431566.0,
+                                            "response": "Of course! I still haven\u2019t decided between the three, but it\u2019s probably down to Passport and ColdCard. I really like the extra security features of ColdCard (Passport has a good amount of them, but not all), the convenience features of Passport (namely QR scanning), and the UI of Keystone. Keystone can also be used as BTC only just so you\u2019re aware though, or you can use it with other coins (how it comes out of the box).",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9ur31k",
+                                    "author": "YamadaDesigns",
+                                    "score": 2,
+                                    "created_utc": 1653425942.0,
+                                    "response": "I\u2019m disappointed that Coldcard cares about other companies using their code.  That\u2019s the whole point of open source, so it can be audited and replicated and improved upon by the community.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9v3lma",
+                                            "author": "sleepdrift3r",
+                                            "score": 1,
+                                            "created_utc": 1653431425.0,
+                                            "response": "Couldn\u2019t agree more, it\u2019s pretty ridiculous really when they did the same thing with Trezor\u2019s source code",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9ulr1t",
+                                    "author": "rentzington",
+                                    "score": 1,
+                                    "created_utc": 1653423684.0,
+                                    "response": "that foundation device looks very nice and super user friendly.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9sumsi",
+                    "author": "bitusher",
+                    "score": 4,
+                    "created_utc": 1653396594.0,
+                    "response": "Ledger's require a little more trust than a HW wallet like a trezor because they use a closed source element so perhaps suggesting a trezor is wiser. \n\nHave you described all the risks with exchanges ?\n\nhttps://www.reddit.com/r/BitcoinBeginners/comments/uvbvkq/beginners_pro_advice/i9kdzok/",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9u2wi7",
+                            "author": "DavidKens",
+                            "score": 5,
+                            "created_utc": 1653415749.0,
+                            "response": "Worth noting that with any open source hardware wallet, unless you\u2019re able to examine and understand the device yourself, you\u2019re still trusting the supply chain, manufacturer, delivery/storage, and whatever auditors they use.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9u602s",
+                                    "author": "bitusher",
+                                    "score": 2,
+                                    "created_utc": 1653417052.0,
+                                    "response": "Absolutely, but at least with popular open source software/firmware/hardware you know that outside independent people like myself are peer reviewing it and Trezor certainly has been reviewed by many",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9u6szj",
+                    "author": "Enki906",
+                    "score": 2,
+                    "created_utc": 1653417390.0,
+                    "response": "You don\u2019t need a \u201ccold wallet company\u201d. A cold wallet can literally be written on paper and locked in a safe.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9u7qv8",
+                    "author": "Kno010",
+                    "score": 2,
+                    "created_utc": 1653417786.0,
+                    "response": "Get a Trezor, they are open source.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9v1tsv",
+                    "author": "laborans",
+                    "score": 2,
+                    "created_utc": 1653430633.0,
+                    "response": "You can't hack something that there's no way in to.\n\nBy depriving your wallet access to the web, you cut off an intruder's avenue to your data. \n\nI'm not sure what the advantage is of using Trezor or Ledger over Electrum on a USB. But perhaps someone can enlighten me.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9svflm",
+                    "author": "BTCMachineElf",
+                    "score": 1,
+                    "created_utc": 1653397021.0,
+                    "response": "Like others said, Trezor is open source peer reviewed code. If he understands that, he should be able to trust it. \n\nLedgers are cheaply made and I recommend avoiding them.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9sygps",
+                            "author": "Fit_Psychology_1536",
+                            "score": 0,
+                            "created_utc": 1653398564.0,
+                            "response": "Didn't know ledgers were cheaply made.  Is it the build material or the software that's cheap? Looks like I'll be getting a Trezor",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9u1s7u",
+                                    "author": "CSDude01",
+                                    "score": 2,
+                                    "created_utc": 1653415281.0,
+                                    "response": "Build material, there are reports of buttons not working, battery not charging etc. Not very often, but it happens. The software is pretty nice actually",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9tebl8",
+                    "author": "MrQ01",
+                    "score": 1,
+                    "created_utc": 1653405646.0,
+                    "response": "Someone answer me this about ledgers - are the seed phrase auto-generated at the point of initial setup (which was my assumption)?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9tpd35",
+                            "author": "Piocosta",
+                            "score": 1,
+                            "created_utc": 1653410187.0,
+                            "response": "Yes",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9tuky3",
+                            "author": "silvansalem",
+                            "score": 1,
+                            "created_utc": 1653412316.0,
+                            "response": "New bought Ledgers and Trezors have no \"preinstalled wallet\". NEVER. If you find already thebwprds filled in the piece of paper inside your Ledger/Trezor wallet or already a wallet updated and configured, RETURN IT.\nOnce you unseal the package you will need to update the wallet firmware and generate a random seed/wallet.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9th7cg",
+                    "author": "BedJazzlike8577",
+                    "score": 1,
+                    "created_utc": 1653406850.0,
+                    "response": "Lol, actually that might be the only safe place for saving your crypto!!!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9upg4l",
+                    "author": "nationshelf",
+                    "score": 1,
+                    "created_utc": 1653425245.0,
+                    "response": "If you\u2019re paranoid you can set up a multisig wallet using 2 different companies.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9uzcph",
+                    "author": "ImpressiveAd1276",
+                    "score": 1,
+                    "created_utc": 1653429538.0,
+                    "response": "Use electrum on a pc that never connects to the internet, use veracrypt as well.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9v87fk",
+                            "author": "Cramerleet",
+                            "score": 1,
+                            "created_utc": 1653433550.0,
+                            "response": "How to connect to the bitcoin network to use your wallet if the computer isn't connected to the internet???",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9v2uh2",
+                    "author": "DeadShot_76",
+                    "score": 1,
+                    "created_utc": 1653431084.0,
+                    "response": "When you buy, use non-real infomation.\nAddress will be more difficult",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9vacik",
+                    "author": "tek3k",
+                    "score": 1,
+                    "created_utc": 1653434561.0,
+                    "response": "One way is to not push him towards a company that has a history of security incidents. Check out BC Vault or some other company bedsides the two companies that get attacked the most often. Don't go cheap. He's protecting his assets.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9vlat7",
+                    "author": "Smok_eater",
+                    "score": 1,
+                    "created_utc": 1653439776.0,
+                    "response": "Yell em to check out the cold card Canadian company site it's a nice load of info",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ss3n6",
+                    "author": "AutoModerator",
+                    "score": 0,
+                    "created_utc": 1653395171.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9vb3z8",
+                    "author": "Crypto_bro999",
+                    "score": 0,
+                    "created_utc": 1653434921.0,
+                    "response": "I don't trust them. That's why I still hold crypto on finex.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

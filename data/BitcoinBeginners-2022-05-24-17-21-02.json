@@ -1,0 +1,64 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uwvxah",
+            "title": "P2SH transaction and redeem script",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uwvxah/p2sh_transaction_and_redeem_script/",
+            "author": "PubKeyVin",
+            "created_utc": 1653412687.0,
+            "score": 7,
+            "num_comments": 4,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Hi community, hope you are enjoying your day.\n\n&#x200B;\n\nAnother beginner's question! Thanks especially for your time.\n\nI am trying to understand this notion of P2SH transaction.\n\nFor the P2PKH it's perfect I understand.\n\nBut what I don't understand is when I'm told that a P2SH transaction can be composed in its redeem script of any standard pubkey script except P2SH itself.\n\nThis means that the redeem script of a P2SH transaction may contain a \"P2PKH pkscript\" composed of: OP\\_DUP, OP\\_HASH160, <hash160(pubkey)>, OP\\_EQUALVERIFY, OP\\_CHECKSIG?\n\nBut in this case, (and if I'm not mistaken), how does the redeem script get processed without having the <hash160(pubkey)> reserved for a BTC address?\n\nI don't know if I'm very clear,\n\nOK, I'm a bit confused, anyone have an idea?\n\n&#x200B;\n\nThanks for your help !",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9tvh9q",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653412687.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ujmwm",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1653422785.0,
+                    "response": "> how does the redeem script get processed without having the <hash160(pubkey)> reserved for a BTC address?\n\nIt's not an address. It's just a hash  \n\n---\n\nThe effect of embedding P2PKH in P2SH is that calculating the pubkey hash and checking the pubkey hash both occur in the input scriptsig. This means the redeem script will calculate the hash twice and compare the two results. The hashing is redundant. Test it on testnet. See if it works",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9unn70",
+                            "author": "PubKeyVin",
+                            "score": 1,
+                            "created_utc": 1653424479.0,
+                            "response": ">The effect of embedding P2PKH in P2SH is that calculating the pubkey hash and checking the pubkey hash now occur in the input scriptsig. This means the redeem script will calculate the hash twice and compare the two results. The hashing is redundant. Test it on testnet. See if it works\n\nThanks for the answer, so I guess using a p2sh transaction is not very useful if using a P2PKH scriptpubkey. It makes much more sense to use a pub key multisignature script instead in the redeem script, right?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9uonlt",
+                                    "author": "igadjeed",
+                                    "score": 1,
+                                    "created_utc": 1653424906.0,
+                                    "response": "Yes. I did a search for P2SH and nearly every result was discussing multisig. Also, P2SH was useful for non-native SegWit",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,401 @@
+{
+    "subreddit": "Dogecoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uwqlj8",
+            "title": "Dogecoin Core wallet help",
+            "url": "https://www.reddit.com/r/dogecoin/comments/uwqlj8/dogecoin_core_wallet_help/",
+            "author": "SirNezio",
+            "created_utc": 1653398183.0,
+            "score": 7,
+            "num_comments": 10,
+            "subreddit": "dogecoin",
+            "selftext": "I try to see my address, but it keeps changing. Is this normal? Screenshots show what I mean\n\nhttps://preview.redd.it/0r730wn4cf191.png?width=1920&format=png&auto=webp&s=d2b954c35557d2c7d99ecf1618a7b08bcdf70492\n\nhttps://preview.redd.it/zhcd4xn4cf191.png?width=1920&format=png&auto=webp&s=bedb58837154682f3ac590f24f264558872db645\n\nhttps://preview.redd.it/pjj6evn4cf191.png?width=1920&format=png&auto=webp&s=5549ce07245ae0cc5bee494cb3620a1fcbc6a65a",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9szb9e",
+                    "author": "AnorexicPlatypus",
+                    "score": 2,
+                    "created_utc": 1653398977.0,
+                    "response": "The wallet I have set up generates a new receive code for everything but eth afaik this is normal.  Not using core but I think that's the norm.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9szt0j",
+                            "author": "SirNezio",
+                            "score": 1,
+                            "created_utc": 1653399221.0,
+                            "response": "interesting, thanks",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9tzi2p",
+                            "author": "Fulvio55",
+                            "score": 1,
+                            "created_utc": 1653414344.0,
+                            "response": "Yes and no. See my comment above.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9szg0b",
+                    "author": "Ok_Necessary_7851",
+                    "score": 2,
+                    "created_utc": 1653399042.0,
+                    "response": "That's normal. I moved a bunch of doge in batches that way to make sure.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9szs2u",
+                            "author": "SirNezio",
+                            "score": 1,
+                            "created_utc": 1653399208.0,
+                            "response": "alright, thanks",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9tb5vq",
+                    "author": "opreturn_net",
+                    "score": 1,
+                    "created_utc": 1653404316.0,
+                    "response": "It's normal wallet behavior. You keep requesting new receiving addresses. In your last screenshot, you can see the 3 lines added are your Requested payment history. Click into those lines and you'll see the addresses.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9teaye",
+                    "author": "liquid_at",
+                    "score": 1,
+                    "created_utc": 1653405638.0,
+                    "response": "your software will create 100 wallets for you when you start it first and use them without really telling you when it switches.\n\nBut for storage, you do not need the software. You can just dump your wallet.dat to text and store that text-file.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9tzcs8",
+                            "author": "Fulvio55",
+                            "score": 1,
+                            "created_utc": 1653414283.0,
+                            "response": "\ud83d\udc4d\n\nBut you need more detail about how. See above. \ud83d\ude1c",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9u12tr",
+                                    "author": "liquid_at",
+                                    "score": 1,
+                                    "created_utc": 1653414993.0,
+                                    "response": "Didn't want to take your job. What are you supposed to do in here if people suddenly understand text-wallets? \ud83d\ude0b",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9tz8dc",
+                    "author": "Fulvio55",
+                    "score": 1,
+                    "created_utc": 1653414233.0,
+                    "response": "You don\u2019t actually need the client at all. It\u2019s costing you resources. It risks your coins because they\u2019re in hot wallets. You don\u2019t know your keys, or even what wallets you have. And unless you back up after every transaction, not all your coins would be recoverable in case of disaster.\n\nDo yourself a favour and get your keys out and turn them into text wallets. Then you can throw the client away.\n\nJust go into the console and use the DUMPWALLET command to create a text file with all your wallets in it. Put this file and a copy of the coinb.in website on multiple removable media and store them in safe places. Problem solved.\n\nThe file will contain at least 100 wallets, in three categories.\n\n* Named wallets are the ones you\u2019ve requested or imported.\n* Change wallets are where excess coins are sent when you move coins. And you\u2019re not told about them, which is a risk.\n* Reserve wallets are unused, spare wallets.\n\nNow, as for how to use wallets. Allocate one wallet for every entity or purpose you interact with, and never mix coins because this will permanently link them together in the blockchain. Thus compromising your privacy.\n\nJust add a comment to the end of each line saying what that wallet is for. So for example you might have wallets marked sodogetip, RobinHood, Coinbase or whatever. And then you would move coins to/from these wallets only for those services.\n\nThere is absolutely no need to generate new wallets for every transaction. That\u2019s a pretty screwed up idea that came from Bitcoin paranoia. Just don\u2019t lose your keys, don\u2019t let anyone else see them, and don\u2019t mix coins and you\u2019re good to go.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uwql74",
+            "title": "It\u2019s really crazy fam.",
+            "url": "https://i.redd.it/248wtiqzbf191.jpg",
+            "author": "Tradidest",
+            "created_utc": 1653398156.0,
+            "score": 198,
+            "num_comments": 12,
+            "subreddit": "dogecoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9t6ssl",
+                    "author": "Fine-Artichoke-7485",
+                    "score": 5,
+                    "created_utc": 1653402441.0,
+                    "response": "1 Doge= 1 Doge, 1 Bitcoin= 1 Bitcoin. Not looking at $ value, looking at how many coins are in my cold wallet. Adding more Satoshis and Doge-satoshis every month. And I'm definitely not listening to Guggenheim's super negative predictions for crypto.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9u43jh",
+                            "author": "BTBLAM",
+                            "score": 2,
+                            "created_utc": 1653416256.0,
+                            "response": "> Guggenheim\n\nBless you, please cover your mouth next time",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9us9cp",
+                                    "author": "Fine-Artichoke-7485",
+                                    "score": 1,
+                                    "created_utc": 1653426442.0,
+                                    "response": "Lol \ud83d\ude02\u2764\ufe0f",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9sz8d2",
+                    "author": "pandalocox",
+                    "score": 1,
+                    "created_utc": 1653398937.0,
+                    "response": "Is this the guy from tje 10k bitcoin and pizza ? Back then worth around $30-$40, so yeah its possible....",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9tq1to",
+                    "author": "Repulsive-Ad1330",
+                    "score": 1,
+                    "created_utc": 1653410464.0,
+                    "response": "![gif](giphy|MP1kygLQzjCve)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9tu11h",
+                    "author": "colarthur1",
+                    "score": 1,
+                    "created_utc": 1653412089.0,
+                    "response": "To the moon!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9uxyab",
+                    "author": "XVO668",
+                    "score": 1,
+                    "created_utc": 1653428933.0,
+                    "response": "Only 80? ...",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9uyonh",
+                    "author": "bawze1",
+                    "score": 1,
+                    "created_utc": 1653429249.0,
+                    "response": "That happened to me a few weeks ago with my Coinbase account, I decided to give up on crypto after that but I like the idea of it :D",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9v6e3t",
+                    "author": "omidus",
+                    "score": 1,
+                    "created_utc": 1653432709.0,
+                    "response": "is this a good time to sink a few hundred dollars? (yes I am prepared to lose them).",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uwqmmj",
+            "title": "My doge wallet is safe?",
+            "url": "https://www.reddit.com/r/dogecoin/comments/uwqmmj/my_doge_wallet_is_safe/",
+            "author": "justfittt",
+            "created_utc": 1653398275.0,
+            "score": 4,
+            "num_comments": 19,
+            "subreddit": "dogecoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9tefcd",
+                    "author": "liquid_at",
+                    "score": 3,
+                    "created_utc": 1653405688.0,
+                    "response": "As safe as you keep your phone.\n\nMake sure you keep a backup of your recovery-phrase so you can access your coins even if your phone is lost, stolen or broken.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9t07dn",
+                    "author": "Temporary-Muffin-756",
+                    "score": 3,
+                    "created_utc": 1653399413.0,
+                    "response": "Sure",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9tjzfr",
+                    "author": "ReasonedJet99",
+                    "score": 3,
+                    "created_utc": 1653407999.0,
+                    "response": "Yes mydoge is safest free option besides a text wallet . Still researching on how to do that one \u2026",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9tkjiv",
+                            "author": "OrangeHODLr",
+                            "score": 3,
+                            "created_utc": 1653408226.0,
+                            "response": "So the doge enthusiast who was running around posting about text wallets responded to me.  He says search in Reddit for \u201ctext wallet\u201d. That turned up a couple of interesting posts if you\u2019re curious. (I kept searching google)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9tmoxw",
+                                    "author": "ReasonedJet99",
+                                    "score": 2,
+                                    "created_utc": 1653409111.0,
+                                    "response": "Hmm I\u2019ll have to check it out , I was searching \u201ctext wallet\u201d on App Store \ud83e\udd23\ud83e\udd23",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9tx2dk",
+                                            "author": "Fulvio55",
+                                            "score": 1,
+                                            "created_utc": 1653413339.0,
+                                            "response": "Yeah, umm, no, that wouldn\u2019t work.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9twzm2",
+                                    "author": "Fulvio55",
+                                    "score": 2,
+                                    "created_utc": 1653413307.0,
+                                    "response": "Shhhhh \ud83d\ude1c",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9txrx1",
+                                            "author": "OrangeHODLr",
+                                            "score": 1,
+                                            "created_utc": 1653413631.0,
+                                            "response": "Hello friend! ![gif](emote|free_emotes_pack|smile)",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9tzjux",
+                                                    "author": "Fulvio55",
+                                                    "score": 1,
+                                                    "created_utc": 1653414364.0,
+                                                    "response": "Heya \ud83d\ude0e",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9xcrwg",
+                                    "author": "ReasonedJet99",
+                                    "score": 1,
+                                    "created_utc": 1653480968.0,
+                                    "response": "I can\u2019t message you for some reason , what kind of interesting, I can\u2019t find anything really just a bunch of spam and porn ads \ud83e\udd23",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9twxmh",
+                            "author": "Fulvio55",
+                            "score": 3,
+                            "created_utc": 1653413283.0,
+                            "response": "Pretty simple. Here\u2019s three I just rolled up (don\u2019t use them, obviously, since everyone knows the keys)\n\n^1,\"DPXNaaGSPZfr9EPRC1puHSCndHZvYR38DN\",\"6KQF9C4XBXzi9YAY1u3GQrALh74o1ongTEV5b1psgtL8KF9T9B5\"\n^2,\"DPZhiqArg12oYQMnY6TQUo8u4RtKh2tk9Z\",\"6KX5hGYjQCJNzvbDH4hUGSMxsJuHE7dSYuNCTzM2qL2ZQsZegFP\"\n^3,\"DDd6jgs6pDBp4DXRZh4SArLmmj3m7xDBnN\",\"6JE4aKXMthwyjmHVFytpYbrpXSrNpc9sy4U6PdrJp2xQVEFRWf2\"\n\nAll you do is stick them in a text file and you\u2019re done.\n\nThen add a copy of coinb.in. Put both files on multiple removable media and stash them in safe places (grandma\u2019s house, maybe?).\n\nTakes longer to describe than to do.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9tx7z4",
+                                    "author": "ReasonedJet99",
+                                    "score": 2,
+                                    "created_utc": 1653413404.0,
+                                    "response": "Seems more and more like a foreign language everytime you say this",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9tzx1m",
+                                            "author": "Fulvio55",
+                                            "score": 2,
+                                            "created_utc": 1653414517.0,
+                                            "response": "Dunno why. It\u2019s really simple.\n\nA wallet is a number, that\u2019s all. Just like 7 or 42, only bigger. 256-bits in fact, encoded into base-58 to make it easy to write down.\n\nEither you know the number (private key) or you don\u2019t. As long as you do, your coins are safe.\n\nHow much simpler would you like?",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9tklfl",
+                    "author": "OrangeHODLr",
+                    "score": 2,
+                    "created_utc": 1653408247.0,
+                    "response": "Funds are SAFU",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9tm16t",
+                    "author": "Primerebirth",
+                    "score": 1,
+                    "created_utc": 1653408842.0,
+                    "response": "Is it a cold wallet? That\u2019s the real question",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9txfs5",
+                            "author": "Fulvio55",
+                            "score": 1,
+                            "created_utc": 1653413492.0,
+                            "response": "\ud83d\udc4d",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9txdwf",
+                    "author": "Fulvio55",
+                    "score": 1,
+                    "created_utc": 1653413470.0,
+                    "response": "Depends.\n\nPlenty of people have lost coins, in more ways than you might think.\n\nThat\u2019s why I now only recommend text wallets stored offline. EVERY alternative has at some point cost someone their coins.\n\nSo be sure to do your research. Including reading up on text wallets here in this sub.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9v1gz2",
+                    "author": "Soft_Net6988",
+                    "score": 1,
+                    "created_utc": 1653430472.0,
+                    "response": "I use Robinhood wallet but\u2026 Maybe I need a new 1\u2026",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

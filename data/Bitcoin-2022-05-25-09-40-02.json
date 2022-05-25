@@ -1,0 +1,94 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uxdixz",
+            "title": "Infographic on Bitcoin",
+            "url": "https://i.redd.it/eto5zk63cl191.jpg",
+            "author": "OtherDetective",
+            "created_utc": 1653470800.0,
+            "score": 1,
+            "num_comments": 0,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "uxdgyr",
+            "title": "Disclaimer: Not a real video",
+            "url": "https://youtube.com/shorts/AbteCLyRJcU?feature=share",
+            "author": "Greedy_Constant_5144",
+            "created_utc": 1653470544.0,
+            "score": 1,
+            "num_comments": 0,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "swdk9b",
+            "title": "MWEB MimbleWimble for Bitcoin.",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/swdk9b/mweb_mimblewimble_for_bitcoin/",
+            "author": "xXButtcornXx",
+            "created_utc": 1645287370.0,
+            "score": 3,
+            "num_comments": 2,
+            "subreddit": "Bitcoin",
+            "selftext": "I have been following the developments of a certain coin used on the Lightning Network and noticed today they announced their MW code ready for test net. I have asked multiple times on that forum but not a single answer from anyone. My question revolves more around the philosophy of the code than the coin that is implementing it. I even noticed several BTC devs are helping with this project.\n\nHow is it that they can implement Mimble Wimble but remain able to Interact with the lightning network? It was my understanding that MW does not allow for the scripting that would normally be used to create payment channels. I find it fascinating they are attempting this as obviously it could be a monumental upgrade to Bitcoin if they figure it all out..",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "hxoafzo",
+                    "author": "nerdiestnerdballer",
+                    "score": 3,
+                    "created_utc": 1645337789.0,
+                    "response": "I too have followed (certain coin) MW upgrade and find it interesting.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uxdpn5",
+            "title": "Question about the SHA-1 Collision",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uxdpn5/question_about_the_sha1_collision/",
+            "author": "extrastone",
+            "created_utc": 1653471643.0,
+            "score": 3,
+            "num_comments": 2,
+            "subreddit": "Bitcoin",
+            "selftext": "Hi.  I'm using Jimmy Song's book and there is something I do not understand.  I am working through the SHA-1 collision in the end of chapter 6 on Script:\n\nHere is the ScriptPubKey:\n\n6E - 2DUP\n\n87 - EQUAL\n\n91 - NOT\n\n69 - VERIFY\n\nA7 - SHA1\n\n7C - SWAP\n\nA7 - SHA1\n\n87 - EQUAL\n\nI'll assume that there are two values there that we can call x and y.  The top of the stack is at the end of the list.\n\nx, y\n\n2DUP(x,y) = (x, y, y, y)\n\nEQUAL(x, y, y, y) = (x, y, 1)\n\nNOT(x, y, 1) = (x, y, 0)\n\nVERIFY(x, y, 0) -> FAIL!\n\nSHA1(x, y) = (x, SHA1\\[y\\])\n\nSWAP(x, SHA1\\[y\\]) = (SHA1\\[y\\], x)\n\nSHA1(SHA1\\[y\\], x) = (SHA1\\[y\\], SHA1\\[x\\])\n\nEQUAL(SHA1\\[y\\], SHA1\\[x\\]) -> Will be true if you find the collision.\n\nI do not understand what the four commands are doing at the beginning.\n\n&#x200B;\n\n&#x200B;\n\nEDIT: I made a mistake on 2DUP.\n\nx, y\n\n2DUP(x,y) = (x, y, x, y)\n\nEQUAL(x, y, y, y) = (x, y, 0) #Check that the two values are unequal\n\nNOT(x, y, 1) = (x, y, 1)\n\nVERIFY(x, y, 1) -> PASS!, will fail if they are equal.\n\nSHA1(x, y) = (x, SHA1\\[y\\])\n\nSWAP(x, SHA1\\[y\\]) = (SHA1\\[y\\], x)\n\nSHA1(SHA1\\[y\\], x) = (SHA1\\[y\\], SHA1\\[x\\])\n\nEQUAL(SHA1\\[y\\], SHA1\\[x\\]) -> Will be true if you find the collision.\n\n&#x200B;",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9wzqwz",
+                    "author": "dlq84",
+                    "score": 1,
+                    "created_utc": 1653471818.0,
+                    "response": "Wrong sub, sha1 har nothing to do with Bitcoin",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9x261l",
+                            "author": "mpem___",
+                            "score": 1,
+                            "created_utc": 1653473872.0,
+                            "response": "It is \u201cminigame\u201d in blockchain",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

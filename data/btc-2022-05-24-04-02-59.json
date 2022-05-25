@@ -1,0 +1,190 @@
+{
+    "subreddit": "btc",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uwi59k",
+            "title": "Datadir on HDFS : Software reason why 1MB Blocksize is fucking Stupid",
+            "url": "https://www.reddit.com/r/btc/comments/uwi59k/datadir_on_hdfs_software_reason_why_1mb_blocksize/",
+            "author": "1bch1musd",
+            "created_utc": 1653364711.0,
+            "score": 14,
+            "num_comments": 18,
+            "subreddit": "btc",
+            "selftext": "HDFS (Hadoop File System) is open source distributed fault tolerant filesystem. Its easily scalable by adding more HDFS nodes. Eg: your current HDFS capacity is 3TB. You can easily add 3 raspi of 1TB each to give total capacity of 6TB.\n\nIn marketing term this is effectively unlimited linearly scalable storage. The raspi hardware doesn't need to improve for you to increase your storage capacity.\n\nHDFS is proven tech. Its the open source equivalent of Google's GFS. Its free to use. It can be used by businesses big and small. Large enterprises can add massive servers to their HDFS storage. Enthusiasts can add Raspi to extend their HDFS storage.\n\nHow does this relate to Bitcoin?  When running a Bitcoin node your datadir is generally on the local filesystem.  If instead of specifying the local filesystem you specified HDFS, storage is no longer an issue. In fact, storage was never a technical area of concern. \n\n* [https://docs.cloudera.com/documentation/enterprise/latest/topics/cdh\\_ig\\_hdfs\\_mountable.html](https://docs.cloudera.com/documentation/enterprise/latest/topics/cdh_ig_hdfs_mountable.html)",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9ryk2u",
+                    "author": "1UazZNfbWi",
+                    "score": 8,
+                    "created_utc": 1653371329.0,
+                    "response": "The 1MB limit on blocks was never about technical limits. It was enforced by acolytes of the private company Blockstream, because to increase block size would have undermined their proprietary layer 2 solution 'Liquid'.\n\nBlockstream had/has control of BTC because (uniquely) BTC was defined by the codebase and Blockstream had a de facto monopoly over write access to the repo.\n\nOther coins published standards, which allowed more than one client to be developed, frustrating any attempts at a private monopoly.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9rv5io",
+                    "author": "LovelyDayHere",
+                    "score": 6,
+                    "created_utc": 1653368825.0,
+                    "response": "1MB was stupid, but not because of distributed file systems.\n\nThese do solve a problem, but you really don't want the network involved in block storage and lookup when block sizes get huge. If you can avoid it by using local storage.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9sxezf",
+                            "author": "jessquit",
+                            "score": 4,
+                            "created_utc": 1653398045.0,
+                            "response": "For large scale a full unpruned archive node can use local drives for the recent data and HDFS for unlimited linear scaling of archive data. It's a good model, OP has a point.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9s7xnj",
+                    "author": "bitcoiner_since_2013",
+                    "score": 2,
+                    "created_utc": 1653379248.0,
+                    "response": "The 1MB block size discussions had very little to do with storage. The storage problem [was solved in 2015](https://bitcoin.org/en/release/v0.11.0#block-file-pruning) with pruning, you don't need a lot of disk space so expensive disk space is not a problem. \n\nBTW, here is a recent block that is [1,7MB](https://blockstream.info/block/00000000000000000003179ec6943593cc5b6dd68f67324998de91b799a74bc5)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9s9beo",
+                            "author": "LovelyDayHere",
+                            "score": 3,
+                            "created_utc": 1653380523.0,
+                            "response": "> The storage problem was solved in 2015 with pruning\n\nNot completely.\n\nPruning on BTC and BCH today isn't well enough implemented.\n\nWhat is needed at scale is at least UTXO commitments so that getting a node up and running does not need download and validation of the _entire blockchain_ up to that time.\n\nAnd also, it would be great if pruned nodes would be able to still form a network which together keeps a record of all blocks, so that a full (archive) node could be synched from it. Like a Bittorrent swarm, but for blocks.\n\n> BTW, here is a recent block that is 1,7MB\n\nYeah, that's about the max it's going to get unless the block is filled with abnormal transactions.\n\nThat has been pointed out by on chain scaling proponents since the SegWit soft-fork debate.\n\n> [Assuming that all transactions in a block are spending SW outputs, a 1 MB block will be able transmit to 1.7\u20132X the number of transactions relative to the standard format.](https://medium.com/the-publius-letters/segregated-witness-a-fork-too-far-87d6e57a4179)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9saeg3",
+                                    "author": "bitcoiner_since_2013",
+                                    "score": 1,
+                                    "created_utc": 1653381559.0,
+                                    "response": "> What is needed at scale is at least UTXO commitments so that getting a node up and running does not need download and validation of the entire blockchain up to that time.\n\nThat is not a storage problem. My response was to the incompetent suggestion of /u/1bch1musd to add more HDFS nodes.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9sahos",
+                                            "author": "LovelyDayHere",
+                                            "score": 3,
+                                            "created_utc": 1653381640.0,
+                                            "response": "I agree with you that there isn't a storage problem, but not because anything was \"solved\" in 2015 with pruning.\n\nBut rather because storage is well enough affordable and it's not a big issue to grow the network while remaining decentralized enough and still taking advantage of immense increases in storage capacity offered by modern tech.\n\nAnyway, BTC blocks are wholly irrelevant to the discussion, since that network isn't planning to scale L1 capacity and most likely will not do so.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9sgfy8",
+                    "author": "tommi518",
+                    "score": 1,
+                    "created_utc": 1653387111.0,
+                    "response": "What was the cost? Do you have any CUDA capable GPUs?\n\nWhat is the max memory capacity?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9s9yym",
+                    "author": "avthmail",
+                    "score": -2,
+                    "created_utc": 1653381150.0,
+                    "response": "Everyone roll perception to check if anyone sees the notification.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9ssckg",
+                            "author": "LovelyDayHere",
+                            "score": 2,
+                            "created_utc": 1653395315.0,
+                            "response": "What do you mean?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9sx40s",
+                                    "author": "jessquit",
+                                    "score": 2,
+                                    "created_utc": 1653397888.0,
+                                    "response": "He's trying to tell us he's a bot.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9sza47",
+                                            "author": "LovelyDayHere",
+                                            "score": 2,
+                                            "created_utc": 1653398962.0,
+                                            "response": "I'm in the middle of conducting a Voight-Kampff test here...\n\n;)",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9t3xsy",
+                                                    "author": "jessquit",
+                                                    "score": 2,
+                                                    "created_utc": 1653401169.0,
+                                                    "response": "*what if we're the bots?!?*",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9t4zws",
+                                                            "author": "ErdoganTalk",
+                                                            "score": 1,
+                                                            "created_utc": 1653401652.0,
+                                                            "response": ":)",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9t5e8y",
+                                                                    "author": "jessquit",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653401830.0,
+                                                                    "response": "Good bot",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9t5fbe",
+                                                                            "author": "B0tRank",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653401843.0,
+                                                                            "response": "Thank you, jessquit, for voting on ErdoganTalk.\n\nThis bot wants to find the best and worst bots on Reddit. [You can view results here](https://botrank.pastimes.eu/).\n\n***\n\n^(Even if I don't reply to your comment, I'm still listening for votes. Check the webpage to see if your vote registered!)",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "i9t5pdb",
+                                                            "author": "LovelyDayHere",
+                                                            "score": 1,
+                                                            "created_utc": 1653401967.0,
+                                                            "response": "i'm not sufficiently programmed to accept that input",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

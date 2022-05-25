@@ -1,0 +1,119 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "ux2n9y",
+            "title": "What is Merkle Root?",
+            "url": "https://i.redd.it/wvalbt321i191.jpg",
+            "author": "Martinazzocaetano",
+            "created_utc": 1653430772.0,
+            "score": 38,
+            "num_comments": 10,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9vsn64",
+                    "author": "BonusCyberTelemetry",
+                    "score": 9,
+                    "created_utc": 1653443252.0,
+                    "response": "Love to see questions like this. Good question!\ud83e\udd18",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9vcopq",
+                    "author": "did-i-internet-good",
+                    "score": 15,
+                    "created_utc": 1653435657.0,
+                    "response": "The transaction data is hashed together. So transaction 1 is hashed and transaction 2 is hashed. Then the hashes are hashed together. Once all the transactions' hashes are hashed together into 1 hash, you have the merkle root which is a hash representing the transaction data.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9vd7kw",
+                            "author": "did-i-internet-good",
+                            "score": 6,
+                            "created_utc": 1653435903.0,
+                            "response": "And a hash is when you take any size of data and run it through an algorithm, you get back a fixed size of data. This new data is called a hash. You cannot reverse the hash but you can use it to verify the data. So if you are given a hash, you can verify if you have the correct data because if you run the data through the hashing algorithm it should equal that hash.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9wwgtz",
+                            "author": "fplfreakaaro",
+                            "score": 0,
+                            "created_utc": 1653468867.0,
+                            "response": "Hash of previous transactions data",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9vez2f",
+                    "author": "Btc300k",
+                    "score": 4,
+                    "created_utc": 1653436743.0,
+                    "response": "Its a way to represent a large set of data without taking up much space, easy lookup for inclusion and cryptographically secure.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9wnv2z",
+                    "author": "SethDusek5",
+                    "score": 3,
+                    "created_utc": 1653461343.0,
+                    "response": "Merkle Roots allow for efficient verification of transactions without storing every single transaction. A lite client can store the block headers alone. \n\nTo verify the transaction then, the person who wants to prove that transaction was included in the blockchain provides a \"proof\". The proof is pretty simple. All you need to provide is the transaction/transaction hash, and it's sibling node, so you can generate the parent node, you then provide the sibling of that parent, to go to the next level of the tree, and so on, until you reach the root. If the root hash matches the merkle root, then you know that payment was included in that block. Assume for example, a block has 128 transactions. To prove one transaction, you will only need around 8 hashes (only 256 bytes).\n\nMerkle Trees are also used in Git and Bittorrent. For Git it makes it efficient to synchronize your local branch with a remote, by comparing root hashes. If the hashes mismatch, then you traverse the tree and find the first mismatch and request that part from the remote.\n\nFor Bittorrent, my understanding may be a bit wrong, but all you need to get information about a torrent is the root hash, which is part of the magnet link usually. A peer that wants to provide you a certain chunk of that torrent can prove to you that that chunk is part of the torrent. It also makes it easy to verify a torrent. If you were to only store the hash of the entire file, and someone sends you the full torrent but it turns out to be invalid, you would have no idea what part of the torrent to re-download.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9vs0hf",
+                    "author": "Wilynesslessness",
+                    "score": 1,
+                    "created_utc": 1653442955.0,
+                    "response": "https://bitzuma.com/posts/how-bitcoin-works/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9wlf0t",
+                    "author": "GlubSki",
+                    "score": 0,
+                    "created_utc": 1653459443.0,
+                    "response": "She became famous for developing it.\n\nhttps://en.wikipedia.org/wiki/Angela\\_Merkel",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9wmxwj",
+                            "author": "turick",
+                            "score": 1,
+                            "created_utc": 1653460615.0,
+                            "response": "She has strong roots in Germany.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9xct1g",
+                                    "author": "Danny1878",
+                                    "score": 1,
+                                    "created_utc": 1653480986.0,
+                                    "response": "Some say she is the real Satoshi Nakamoto.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

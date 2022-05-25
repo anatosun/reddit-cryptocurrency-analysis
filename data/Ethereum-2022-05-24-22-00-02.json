@@ -1,0 +1,93 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "ux2444",
+            "title": "NFT trading indicators based off of social trends",
+            "url": "https://www.reddit.com/r/ethereum/comments/ux2444/nft_trading_indicators_based_off_of_social_trends/",
+            "author": "kiozorg",
+            "created_utc": 1653429277.0,
+            "score": 29,
+            "num_comments": 9,
+            "subreddit": "ethereum",
+            "selftext": "Hello! I am the co-founder of a new NFT trading tool that scrapes millions of discord messages a day to search for trends and to figure out which projects are on the rise. Before I get too deep into this, I would like to make it clear that the tool itself is not an NFT and we will not be launching an NFT to access it. Currently it is 100% free to use.\n\nThe tool is called Microscope App. What the tool does is analyze over 3 million messages from NFT Discord servers a day and searches for certain keywords that correspond to different Ethereum and Solana NFT project names. What this means is the tool can track how many real people are talking about different NFT projects, all the way from the start of the project through mint. This data is then displayed in a variety of ways. Hype is one of the biggest drivers in the NFT and crypto market which is why this information can be so valuable.\n\nAt the moment Microscope App is discord based, so all you need to access it is an internet connection and a discord account. The main thing we need right now is feedback. This includes feedback on the UI/UX, usefulness of the data, new features you would like to see, etc. As I said before, the tool is free so we invite everyone to test it out and let us know what you think. Below is a link to the discord server where the tool is hosted. Feel free to send me a message here or on my discord(henry89#9999) if you have any questions or ideas.\n\n[https://discord.gg/4MwAFSf5yK](https://discord.gg/4MwAFSf5yK)",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9vv3c3",
+                    "author": "bumbaclotdumptruck",
+                    "score": 2,
+                    "created_utc": 1653444395.0,
+                    "response": "Just joined! Question: can bots affect the output from this app? Is it just counting # of mentions, or is it giving more weight to certain reputable discord group, users, etc",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9w6u3y",
+                            "author": "kiozorg",
+                            "score": 2,
+                            "created_utc": 1653450158.0,
+                            "response": "So we have a couple elements of filtering that go into it. The first level is filtering out anything sent by a discord bot(mee6, dyno bot, etc). The second level is doing a small level of user verification/rate limiting. For this we check the account age(to make sure it wasnt just created), as well as rate limiting to filter out any spam.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9wlqmf",
+                                    "author": "bumbaclotdumptruck",
+                                    "score": 1,
+                                    "created_utc": 1653459684.0,
+                                    "response": "Nice, thanks for answering, can\u2019t wait to see how it does!",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9vycct",
+                    "author": "Perleflamme",
+                    "score": 1,
+                    "created_utc": 1653445930.0,
+                    "response": "Real humans or not isn't the problem: if you can implement your measures in such way that bots have to actually provide value in order to \"cheat\" the measure, then it's actually the measure that is \"cheating\" the bots and convincing them to provide what's asked by communities. \n\nDon't fight bots. Fight malevolent behaviors. No one cares if it's an actual human or a bot behind an activity. \n\nIt's also that, trustlessness. No one cares if your a human, a dog or a bot. You provide value, you're in. You're malevolent, you're punished.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9w86ak",
+                            "author": "kiozorg",
+                            "score": 2,
+                            "created_utc": 1653450897.0,
+                            "response": "That is a really good point, and for the most part it is almost impossible to ensure that we are only using data from real people. What we do try to filter out is anything that is obviously not from a real person/malicious. This is done mainly through rate limits and analyzing the content of messages. I probably should have used better wording than \"real people\", because when you dive into the data a good amount of messages sent in NFT discord servers come from bots and automated accounts. And like you were saying, whatever projects people(bot or not) talk about the most are the ones that take off.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9wfj9d",
+                                    "author": "Perleflamme",
+                                    "score": 1,
+                                    "created_utc": 1653455316.0,
+                                    "response": "No worries, it's all fine. I was just trying to bring some trustlessness spirit, so that people don't confuse bots with malevolence. Most bots are a pain, just like some humans are malevolent, but it's up to the ecosystem to try and drive them through well aligned incentives.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9wn5to",
+                    "author": "LEO_TROLLSTOY",
+                    "score": 1,
+                    "created_utc": 1653460787.0,
+                    "response": "Im sure this will never be used to pump and dump",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

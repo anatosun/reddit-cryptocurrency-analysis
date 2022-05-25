@@ -1,0 +1,1067 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uwppes",
+            "title": "Why trust cold wallet companies more than exchanges?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uwppes/why_trust_cold_wallet_companies_more_than/",
+            "author": "Fit_Psychology_1536",
+            "created_utc": 1653395380.0,
+            "score": 37,
+            "num_comments": 110,
+            "subreddit": "Bitcoin",
+            "selftext": "I don't trust exchanges like Coinbase, especially given their recent press statements.  But I'm also having trouble trusting one of these 3rd party cold wallet companies.\n\nFor example 'Ledger' claims on its website that it doesn't store user's private keys. Is there a way to actually confirm this? Or are we basically putting our faith in Ledger to be honest?  What prevents them from stealing keys/crypto if Ledger goes bankrupt?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9stjez",
+                    "author": "SomeBrokeChump",
+                    "score": 56,
+                    "created_utc": 1653395995.0,
+                    "response": "The hardware wallet manufacturers never have access to your private keys. Your private keys are stored on your hardware wallet device. There are several open source hardware wallets to choose from. You can also connect your hardware wallet to your own node.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9sud09",
+                            "author": "shymeeee",
+                            "score": 11,
+                            "created_utc": 1653396448.0,
+                            "response": "For us non-tekkies, what is \"my own node\"?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9suyw8",
+                                    "author": "SomeBrokeChump",
+                                    "score": 34,
+                                    "created_utc": 1653396772.0,
+                                    "response": "A fully validating Bitcoin node is what enables you to verify transactions and blocks on your own without relying on any third parties. In order to know which transactions have happened on the network, a wallet needs to have a source for this knowledge. A full node is such a source. If you don't use your own node, you (your wallet) are using someone else's node, with all the implications for your privacy and trust assumptions. Using your own full node also gives you more privacy because you're not leaking any information like your IP address, bitcoin addresses, and transaction history to third parties. The links below go into more detail and can provide you with more information.\n\nhttps://river.com/learn/why-should-i-run-a-bitcoin-node/\n\nhttps://bitcoinmagazine.com/culture/six-reasons-you-should-run-bitcoin-node",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9suust",
+                                    "author": "Kingofplenty",
+                                    "score": 14,
+                                    "created_utc": 1653396712.0,
+                                    "response": "A Bitcoin node is any computer that runs a Bitcoin implementation and stores the entire blockchain. Nodes validate each block and transaction before adding them to the blockchain.  \n\nYou can build your own node out of a Raspberry Pi for about $150.  Using your own node to broadcast transactions and validate the blockchain means you are trusting yourself and not someone else to verify and validate the transactions.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9tp468",
+                                            "author": "NevadaLancaster",
+                                            "score": 1,
+                                            "created_utc": 1653410087.0,
+                                            "response": "I was thinking about $60. What am I missing?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9tqt5j",
+                                                    "author": "Kingofplenty",
+                                                    "score": 6,
+                                                    "created_utc": 1653410774.0,
+                                                    "response": "Pricing can vary, I bought mine with CDN dollars so that would make it more costly compared to say USD.\n\nEverything I bought at Memory Express in my city.\n\n1. Raspberry Pi 4\n2. 1 Terabyte SSD (Solid State Drive)\n3. SSD Enclosure\n4. Micro SD (16Gb or greater)\n5. Raspberry Pi Case and Power\n6. 1GB Cat 6 Cable\n\nEdit: Solid State Drive not Solid State Hard Drive.   - thanks 3Xer69",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9tx7rb",
+                                                            "author": "3Xer69",
+                                                            "score": 2,
+                                                            "created_utc": 1653413401.0,
+                                                            "response": "They are not Hard.. they just Drive :)",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        },
+                                                        {
+                                                            "id": "i9w4mg8",
+                                                            "author": "shymeeee",
+                                                            "score": 1,
+                                                            "created_utc": 1653449023.0,
+                                                            "response": "Stupid question:  What happens if the Raspberry system melts down someday?  You lose everything?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9w6uji",
+                                                                    "author": "Kingofplenty",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653450165.0,
+                                                                    "response": "All the raspberry pi does is store a full copy of the blockchain. \n\nIf the device meltsdown or breaks its just the physical hardware that is lost. I would need to rebuild the setup again and let it resync the blockchain to have it operational again.  \n\n I can recover any BTC as long as I have my 12-24 seed phrase. There is a wallet on my node but that can be recovered with the seed phrase.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9w99rv",
+                                                                            "author": "shymeeee",
+                                                                            "score": 2,
+                                                                            "created_utc": 1653451506.0,
+                                                                            "response": "So you're saying that, so long as the \"seed\" is available, my BTC will always be retrievable ?",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9wcmb0",
+                                                                                    "author": "bottomfeeder52",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653453475.0,
+                                                                                    "response": "I think that\u2019s what they\u2019re saying, and how people can \u201crecover\u201d lost bitcoins",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i9wxxqt",
+                                                                                            "author": "shymeeee",
+                                                                                            "score": 2,
+                                                                                            "created_utc": 1653470209.0,
+                                                                                            "response": "Well I have to be sure when literally tens or hundreds of thousands of dollars could be on the line someday, and no one (responsible) wants to lose a fortune due to lack of knowledge.  Once solutions to safety concerns are easy to understand and apply, I'm sure, many more investors will enter the market.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9tsmrp",
+                            "author": "Phil_Drill",
+                            "score": 4,
+                            "created_utc": 1653411521.0,
+                            "response": "Who\u2019s to say a hardware wallet doesn\u2019t have a transmitter? I sure can\u2019t, I\u2019m not savvy enough to poke around the circuit board with a multimeter or decipher its entire code.  \n\nColdcard expects you to download firmware to a microSD card, and then put it in the device to update it. Who\u2019s to say the device isn\u2019t writing your private keys and recovery phrases back onto the SD card, ready to be uploaded to the web as soon as that SD card touches a computer again for the next \u201cfirmware update\u201d?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ujpu6",
+                                    "author": "Glugstar",
+                                    "score": 10,
+                                    "created_utc": 1653422820.0,
+                                    "response": ">Who\u2019s to say a hardware wallet doesn\u2019t have a transmitter?\n\nBitcoin is not a small market. There are a huge ton of people who are careful about these things with serious money on stake. Some will absolutely be able to detect if there were transmitters active and if *any* was found, ever, the whole planet would know within a few hours, or at least the people within the sector, and the manufacturer would be done. The fact that this never happened even once is pretty indicative.\n\nFact of the matter is, hardware wallets are the absolute maximum level of security unless you're willing to dedicate millions in budget for dedicated security practices. So if you're unsatisfied with this level of security, either pay those millions, or you're out of luck because nothing better is known on the planet.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9v01x4",
+                                            "author": "Avery17",
+                                            "score": -2,
+                                            "created_utc": 1653429843.0,
+                                            "response": "Brain wallet. Memorize your key and then shred the computer you generated it on.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9varew",
+                                                    "author": "confuzzledfather",
+                                                    "score": 2,
+                                                    "created_utc": 1653434754.0,
+                                                    "response": "Terrible advice if you have dependents you care about, or are like me and can forget your own name when asked sometimes.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9vbvp5",
+                                                            "author": "Avery17",
+                                                            "score": -1,
+                                                            "created_utc": 1653435279.0,
+                                                            "response": "I'm not saying its for everyone. I'm saying its more secure than a hardware wallet technically. Though crypto probably isn't the play if you have dependants and Alzheimer's.....",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "i9v1acc",
+                                                    "author": "Zelzaan",
+                                                    "score": 1,
+                                                    "created_utc": 1653430390.0,
+                                                    "response": "You'll have to do that anyway, a hardware wallet isn't going to remember it for you. But you'll need it to sign transactions, since your brain can't do that.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "i9vufrv",
+                                                    "author": "Deez1putz",
+                                                    "score": 1,
+                                                    "created_utc": 1653444093.0,
+                                                    "response": "An actual brain wallet is a specific term when you\u2019re talking about Bitcoin and was not a good idea.  However, I think you mean memorizing the seed phrase, which is fine, but you\u2019re going to have to put that seed phrase into some sort of wallet to transact.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9tyuxc",
+                                    "author": "ClassicRedSparkle",
+                                    "score": 4,
+                                    "created_utc": 1653414078.0,
+                                    "response": "I\u2019d assume that\u2019s why open source wallets are suggested. Open source means you can view and verify all the code yourself. I\u2019m sure someone has taken apart every type of cold wallet to see what\u2019s inside as well.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9tup68",
+                                    "author": "Fit_Psychology_1536",
+                                    "score": 2,
+                                    "created_utc": 1653412364.0,
+                                    "response": "Exactly, this question is the purpose of my post",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9tr36v",
+                            "author": "pierreman",
+                            "score": 0,
+                            "created_utc": 1653410887.0,
+                            "response": "Correct, even if they go bankrupt, nothing happens to your funds. Just hope you don't have hardware failure.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9trkc1",
+                                    "author": "ossikaka",
+                                    "score": 11,
+                                    "created_utc": 1653411082.0,
+                                    "response": "There is nothing to hope about. as long as you got access to your words you can restore your wallet, regardless the hardware",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9u31fa",
+                                            "author": "_lockesmith",
+                                            "score": 2,
+                                            "created_utc": 1653415807.0,
+                                            "response": "I think too many overlook this. No matter which wallet you choose, they all have a chance to die eventually. That's the beauty of holding your seed phrase on paper.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9uaisc",
+                                                    "author": "KarmaCollecting",
+                                                    "score": 2,
+                                                    "created_utc": 1653418955.0,
+                                                    "response": "Better yet, a titanium plate.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "i9ua3x4",
+                                                    "author": "bobbyv137",
+                                                    "score": 3,
+                                                    "created_utc": 1653418784.0,
+                                                    "response": "*steel",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "i9uc63g",
+                                                    "author": "pierreman",
+                                                    "score": 1,
+                                                    "created_utc": 1653419657.0,
+                                                    "response": "What if you misplace the hardware wallet?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9ue1wt",
+                                                            "author": "DamianMajor",
+                                                            "score": 2,
+                                                            "created_utc": 1653420445.0,
+                                                            "response": "If the hardware fails and/or the company that makes it ceases to exist, just use your seed phrase to recover your BTC. You can literally physically destroy your hardware wallet (I\u2019m NOT suggesting you do this, but you could) after you WRITE DOWN THE MNEMONIC PHRASE.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9urq7a",
+                                                                    "author": "pierreman",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653426215.0,
+                                                                    "response": "What's the difference between that and a cloud wallet provider then?",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9vn9sx",
+                                                                            "author": "DamianMajor",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653440707.0,
+                                                                            "response": "The difference is who has your private keys. You, or whoever is running the cloud service. Not your keys, not your coins.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9vnyof",
+                                                                                    "author": "DamianMajor",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653441037.0,
+                                                                                    "response": "I don't know which service you're referring to but, if you're using a service to custody your BTC, then you're not custodian of the private keys. You may get a \"recovery phrase\" from the company that holds the private keys, but you're not getting the BIP 39 mnemonic phrase that is associated with that specific wallet address on the blockchain. You'll be able to recover your access to the wallet provider's service via their recovery phrase, but not access the actual wallet holding your funds directly.   \n\n\nhttps://www.coindesk.com/learn/custodial-wallets-vs-non-custodial-crypto-wallets/",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "i9uzvb9",
+                                                                    "author": "mtpolasek",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653429761.0,
+                                                                    "response": "It's my understanding that the restore key for Ledger would work in any btc wallet. Do you know this? I have been researching to see if I want to go that route and it's not 100% clear to me",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9vn2kg",
+                                                                            "author": "DamianMajor",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653440613.0,
+                                                                            "response": "If by the \"restore key\", you mean a mnemonic phrase, then yes, you're (basically) correct. Most wallets (not all) will support recovery via this method, regardless of which brand of wallet was used originally. \n\nA BIP 39 mnemonic phrase is a way to recover your bitcoins that is built into the bitcoin network. It's not dependent upon one wallet developer or another. \n\nMore info here: [https://news.bitcoin.com/bitcoin-and-mnemonics-the-art-of-the-secret-phrase/](https://news.bitcoin.com/bitcoin-and-mnemonics-the-art-of-the-secret-phrase/)  \n\n\nOne last thing:\n\nNever never never never never give your seed phrase (mnemonic) to anyone. Also no digital copies. No photos, no text files, don't store online etc. Write it down ***carefully*** when you first create your wallet, then transfer it to a more durable medium like a steel plate in the near future to prevent against loss due to destruction (fire, water, decay, etc). There are lots of options available via quick google search . Did I mention to NEVER give your seed phrase to anyone?  Good luck and I hope this helps.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i9uc2za",
+                                            "author": "pierreman",
+                                            "score": -1,
+                                            "created_utc": 1653419620.0,
+                                            "response": "Hardware doesn't fail anymore?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9uck21",
+                                                    "author": "ossikaka",
+                                                    "score": 2,
+                                                    "created_utc": 1653419820.0,
+                                                    "response": "Sure it does but who cares?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9urhr8",
+                                                            "author": "pierreman",
+                                                            "score": 0,
+                                                            "created_utc": 1653426114.0,
+                                                            "response": "I care",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9t4l6h",
+                    "author": "RDMvb6",
+                    "score": 16,
+                    "created_utc": 1653401467.0,
+                    "response": "A good hardware wallet is open source, but 99.999% of people are not software engineers and are still relying on community consensus to tell us what is a safe wallet and what is not. You certainly could learn to code and read the Trezor source code but it is a good point that the average person does not have the time, energy, or knowledge to do this. After a couple years of hundreds of people on reddit recommending the Trezor, that's what I got. Trezor certainly could introduce a firmware update that snatches my funds and I would not know about it until it made the mainstream news or a reddit post. Unless you are a highly knowledgeable software engineer who can check the open source code yourself, you are correct that there will always be an element of trust, but the combined trust of many users of an established open source hardware wallet is about as trustworthy as possible.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9sub5h",
+                    "author": "anotherbrckinTH3Wall",
+                    "score": 9,
+                    "created_utc": 1653396420.0,
+                    "response": "The danger comes not from the hardware wallet, but from the person.\n\n1) only buy hardware wallets direct from manufacturers. Avoid third party sellers like Amazon, as the item you receive could have been opened and repackaged, the keys could already have been generated.\n\n2) never used a second hand/used/refurbished hardware wallet, as the keys will have been generated, and even if you really, really , really trust the friend that gave it to you, you may feel differently when they empty your wallet one day.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9tcx5j",
+                            "author": "Drugsrhugs",
+                            "score": 2,
+                            "created_utc": 1653405056.0,
+                            "response": "These are good tips, but you are able to reset your ledger device and get a new key phrase. If ledger live verifies it\u2019s authenticity and you reset it there should be no problems.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9sxwai",
+                    "author": "Sealobo",
+                    "score": 8,
+                    "created_utc": 1653398290.0,
+                    "response": "Open Source. \n\nAir Gap.\n\nDone.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9sy68s",
+                            "author": "Fit_Psychology_1536",
+                            "score": 1,
+                            "created_utc": 1653398425.0,
+                            "response": "I learned Trezor is open source but what's Air gap? Does that literally mean the cold wallet is never physically connected to anything? Like Bluetooth only?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9syedn",
+                                    "author": "Sealobo",
+                                    "score": 8,
+                                    "created_utc": 1653398533.0,
+                                    "response": "No cable. No wireless signal transmission of any kind. \n\n2-way QR code scanning is best imo for authentication.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9sykcb",
+                                            "author": "Fit_Psychology_1536",
+                                            "score": 1,
+                                            "created_utc": 1653398613.0,
+                                            "response": "Cool, I'll Google into that",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9t2xjw",
+                    "author": "MMinjin",
+                    "score": 21,
+                    "created_utc": 1653400708.0,
+                    "response": "It's a good point. People love to parrot that you should look at the code. How many people have done that? How many people even have the ability to do that? For all of its claims to be trustless, crypto really does rely on trusting quite a few people.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9t4kt9",
+                            "author": "ianyboo",
+                            "score": 13,
+                            "created_utc": 1653401463.0,
+                            "response": "You are not wrong. But all of ***life*** is that way. From the food you get at the store, to your car, to your house, to walking down the street. You are trusting the other humans around you with your life, did a contaminate get in your food? Were your brakes installed properly? Is your house built to code? Is that bus driver paying attention? \n\nPersonally I think most humans are generally decent and not trying to screw each other over every chance they get. Remember that crazy bombing at the Boston marathon a few years back? The dudes that did it were running away from the carnage, if that's all you looked at humanity would seem pretty messed up, but there were ***thousands*** of people running ***towards*** the scene trying to lend any help they could. The lesson there was not that humans all suck, it was that the vast majority of folks want to help.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9tbjvl",
+                                    "author": "0x1a3c3e7",
+                                    "score": 2,
+                                    "created_utc": 1653404478.0,
+                                    "response": "Trust is both a strength and a weakness.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9tfgji",
+                                            "author": "Sendmedoge",
+                                            "score": 1,
+                                            "created_utc": 1653406120.0,
+                                            "response": "https://www.youtube.com/watch?v=vgGEZ\\_uqt9M",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9t48oz",
+                            "author": "dlq84",
+                            "score": 4,
+                            "created_utc": 1653401307.0,
+                            "response": "The majority haven't done that. But at least you have the option to, that can't be said by closed source or custody services.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9tj5mg",
+                            "author": "wind_dude",
+                            "score": 2,
+                            "created_utc": 1653407658.0,
+                            "response": "Beyond looking at the code, you should really look at the circuit design on the chips and integrated circuits. However even US defence struggles with that. The brand selling the hardware wallet may not even be aware, it could have been a downstream factory, or state actor mandate.\n\n&#x200B;\n\nBitmain, had the antbleed backdoor in the firmware.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9tp127",
+                            "author": "coffee_for_dinner",
+                            "score": 1,
+                            "created_utc": 1653410053.0,
+                            "response": "I mean, I can't explain exactly how an airplane works, but I know there are a lot of people who do and their combined knowledge and understanding enables people like me to cross great distances by air. Every time I get on a plane I'm putting my life in the hands of others who know more than I do.\n\nSame with bitcoin. I understand the high level idea of how it works, but I know there are people who do understand it on a granular level and it's open to anyone to verify. It's been running for over a decade while being looked at by thousands of people and it's only going to get bigger and more secure as the network grows. As long as I do a test transaction, I'm comfortable moving my money around and saving it with bitcoin.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9t6fvw",
+                    "author": "bitsteiner",
+                    "score": 5,
+                    "created_utc": 1653402283.0,
+                    "response": "Keys are stored in the device, which can be set up offline. The company has never access to this.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9st5no",
+                    "author": "Savik519",
+                    "score": 19,
+                    "created_utc": 1653395779.0,
+                    "response": "Trezor is open source code. Don\u2019t trust, but verify",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9t7n2d",
+                            "author": "MMinjin",
+                            "score": 16,
+                            "created_utc": 1653402804.0,
+                            "response": "Have you? Have any of the people who have upvoted you? Does anyone even know someone who has looked at the source code and understands it? Or better yet, published a detailed audit of it? Do I think these guys are out to get you? I don't think so. But let's all be honest here. We are all trusting and not verifying.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9t9n5t",
+                                    "author": "DudeIncogneto",
+                                    "score": 8,
+                                    "created_utc": 1653403669.0,
+                                    "response": "https://walletscrutiny.com/\n\nThis is one place you can go to check it out",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9u3km5",
+                                    "author": "GarySteinfieldd",
+                                    "score": 2,
+                                    "created_utc": 1653416033.0,
+                                    "response": "He just states that trezor is open source. I for one, upvoted him because that is a true statement.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9td2mr",
+                                    "author": "Bitcoin__Hodler",
+                                    "score": 6,
+                                    "created_utc": 1653405121.0,
+                                    "response": "> Have you? Have any of the people who have upvoted you?\n\nMost people can\u00b4t do that but the important key is, that -enough- people have done it and would ring the alarm bell.\n\nTrezor has a better reputation than Ledger if you know the rough consensus in that question.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9tf316",
+                                            "author": "MMinjin",
+                                            "score": 3,
+                                            "created_utc": 1653405961.0,
+                                            "response": "This is classic Diffusion of Responsibility. Have enough people actually done it? Do we have any idea? \n\nFunny enough, if we look at the other poster's website ([https://walletscrutiny.com/](https://walletscrutiny.com/)) , it says this:\n\n*\"There is good reason to believe that security researchers as of today would not detect very blatant backdoors in the public source code before it gets exploited, much less if the attacker takes moderate efforts to hide it.\"*\n\nI'm not trying to throw hardware wallets under the bus or suggest that they are bad. I honestly don't know. Maybe they are fine. Maybe they are not. I'm just highlighting that this common mantra of crypto \"don't trust, verify' is a bit of a farce.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9ty640",
+                                                    "author": "DAngelo008",
+                                                    "score": 3,
+                                                    "created_utc": 1653413794.0,
+                                                    "response": "So why don\u2019t you do it??? Or have you? I\u2019m personally one of those that ain\u2019t capable of reading the code but I got a trezor recently and moved my funds over there (I feel very comfortable with this personally) and my next project will be running a node. Learning slowly and taking baby steps in the right direction. \nI fully understand your concerns on \u201ctrust me bro\u201d but what have you done besides throw shade at everyone else on this thread?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9u0qfj",
+                                                            "author": "MMinjin",
+                                                            "score": -4,
+                                                            "created_utc": 1653414851.0,
+                                                            "response": "I'm calling out the hypocrites who say that everyone should verify when nobody actually does. We need to acknowledge that crypto requires quite a bit of trust for the vast vast majority. It is just in different people than the conventional financial system. Trust is fine, if earned. Also, the black and white idea that exchanges can't be trusted and hardware wallets should be is nonsense.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9va2u4",
+                                                                    "author": "seraph321",
+                                                                    "score": 4,
+                                                                    "created_utc": 1653434435.0,
+                                                                    "response": "People do verify. You can find plenty of accounts of people digging into the guts of hardware wallets if you go looking, and sometimes they actually find concerning things that are subsequently addressed. \n\nThe very fact that so much crypto is stored on these devices means there are absolutely HUGE financial incentives for all kinds of hackers to explore every last attack vector. I take comfort in the fact that they have stood up to these attacks so far (like the bitcoin network itself), AND that if vulnerabilities *were* found, I would not be anywhere close to being considered a target valuable enough to use it on before it's made public.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9t9th1",
+                            "author": "Schwickity",
+                            "score": 3,
+                            "created_utc": 1653403745.0,
+                            "response": "Trezor can also be hacked to reveal private keys if the physical device is obtained, unless that\u2019s been fixed. I know an added passphrase is supposed to take care of this problem, but it\u2019s still concerning.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9vd9ld",
+                                    "author": "_Filip_",
+                                    "score": 2,
+                                    "created_utc": 1653435930.0,
+                                    "response": "That was fixed in firmware 1.8.0 which is over 3 years old (march of 2019).  If you did not upgrade by now, you do something very wrong \\^\\^;",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9tb07c",
+                    "author": "smartfbrankings",
+                    "score": 3,
+                    "created_utc": 1653404249.0,
+                    "response": "Use multisig with different manufacturers and generate your seed independently, and ideally use hw wallets that support anti-exifl.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9tmxmv",
+                    "author": "ryanq99",
+                    "score": 3,
+                    "created_utc": 1653409209.0,
+                    "response": "How they gonna access my keys when the device never touches the internet?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9vtz2e",
+                            "author": "RottenBlueCheese",
+                            "score": 0,
+                            "created_utc": 1653443876.0,
+                            "response": "It touches the internet anytime you deposit bitcoin into it",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9vubhq",
+                                    "author": "ryanq99",
+                                    "score": 2,
+                                    "created_utc": 1653444039.0,
+                                    "response": "It does not\u2026. A receive address cannot be used to crack a private key\u2026. That\u2019s any wallet. \n\nAlso my coldcard is airgapped. Private keys is encrypted in the device, and transactions are signed offline. So sending is also offline.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9su7i9",
+                    "author": "shymeeee",
+                    "score": 4,
+                    "created_utc": 1653396364.0,
+                    "response": "And what prevents their employees from creating backdoors?  Seriously!!!!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9tbt94",
+                    "author": "DesignerAccount",
+                    "score": 2,
+                    "created_utc": 1653404587.0,
+                    "response": "Cold wallets never touch the internet. How can the manufacturer steal your coins if you generate the keys yourself and the keys never touch the internet?\n\n&nbsp;\n\nOK, this needs to be refined a bit as some devices do get connected to internet connected machines. Here reputation comes in IMO. There have been absolutely non reports of stolen currency from any of the manufacturers of cold wallets. Zero. But plenty of reports of this or that exchange blocking funds for one reason or another. Pick your poison.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9tfhxs",
+                            "author": "MrQ01",
+                            "score": 1,
+                            "created_utc": 1653406136.0,
+                            "response": "To be fair, I do recall one story about a guy who lost his funds and insisted that he kept his keys safe and offline - and I believe he tried to unsuccessfully sue Ledger. But I do think we'd be hearing about a LOT more cases if the guy was correct (either that, or somebody got REALLY lucky in being able to guess a seed phrase).",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9vaexe",
+                                    "author": "seraph321",
+                                    "score": 1,
+                                    "created_utc": 1653434592.0,
+                                    "response": "Which is why no one should rely only on seed phrases. You need to use pin and passphrase as well, otherwise anyone getting hold of your seed backup could just clone your wallet and empty it.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9tdw66",
+                    "author": "joecool42069",
+                    "score": 2,
+                    "created_utc": 1653405467.0,
+                    "response": "If you don\u2019t want to put in the work to verify, then you can appeal to industry experts. Those are your two option.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9tgdft",
+                    "author": "ap1212312121",
+                    "score": 2,
+                    "created_utc": 1653406505.0,
+                    "response": "Those are valid concerns.\n\nIf you are a programmer or are tech savy enough, you could set up a \"true\" cold wallet. This eliminate the \"trust\" needed for a hardware wallet.\n\nSet up an air gap computer with no access to internet , \ncreate your own seed phrase with pen and paper,\nsetup your wallet on said computer with said seed phrase.\n\nBehold, \"true\" cold wallet.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9thyer",
+                    "author": "DudeIncogneto",
+                    "score": 2,
+                    "created_utc": 1653407163.0,
+                    "response": "You can use a wallet that allows you to roll your dice for entropy. You can add a 25th word which creates a totally new wallet separate from the 24 seed phrase.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9uftdi",
+                    "author": "ivgur",
+                    "score": 2,
+                    "created_utc": 1653421188.0,
+                    "response": "It does make sense to ask such a question. I\u2019m not a cryptography expert but as a ledger Waller owner what I can tell:\n- you key is generate after you receive your wallet ( you Always can generate a new one if you don\u2019t trust it) meaning that ledger does not have access to it.\n- the ledger is not connected to the internet (cannot send data back to ledger)\n\nMaybe there are other ways but I feel quite confident wit this view",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9vusy1",
+                    "author": "cocoabeachbrews",
+                    "score": 2,
+                    "created_utc": 1653444264.0,
+                    "response": "Because you are \u201ctrusting\u201d the HW manufacturer to not be intentionally, criminally orchestrating a plot to one day steal from their customers - while you have to trust the exchange not only isn\u2019t a scam, but won\u2019t get hacked, won\u2019t lose your Bitcoin, won\u2019t get sued or otherwise bankrupted, and won\u2019t get shut down by a government or ordered to give your Bitcoin to them.  That is a lot more likely than Ledger playing a long con which it would probably be obvious enough they would end up in jail for ultimately.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9w57mx",
+                            "author": "Fit_Psychology_1536",
+                            "score": 2,
+                            "created_utc": 1653449315.0,
+                            "response": "Great post, hit the nail on the head.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9t6oe8",
+                    "author": "Bitmiliionare24",
+                    "score": 3,
+                    "created_utc": 1653402386.0,
+                    "response": "You literally don\u2019t have keys on an exchange. One can argue that even a hot wallet like exodus/others can be used and they are FAR mor reliable than any other exchange. Cold wallets like Trezor arrive to you software less, you install it, and then generate your own keys AIR GAPPED (not connected to a device that has internet capabilities) so to sum it up. (Those are facts, not opinions) \n\n\n1:exchanges\u2014- the worst\u2014- you dont hold shit\n\n2: hot wallets\u2014- they are fine for beginners and small amounts\u2014- (still not ideal, you do get&store your keys in an unsafe manner) \n\n3\u2013buy a cold wallet, learn how to use it and how to upgrade your security level, ALL THE TIME (it gets complicated as it gets safer&better) \nHope i helped",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9t8mad",
+                    "author": "Sweetnowember4",
+                    "score": 1,
+                    "created_utc": 1653403231.0,
+                    "response": "Well, from all the exchanges I trust to bitfinex only.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9tv711",
+                            "author": "dragonitanair",
+                            "score": 1,
+                            "created_utc": 1653412570.0,
+                            "response": "Paolo is king?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9xcres",
+                                    "author": "Sweetnowember4",
+                                    "score": 1,
+                                    "created_utc": 1653480960.0,
+                                    "response": "I\u2019ve never said that\u2026",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9tquuh",
+                    "author": "pierreman",
+                    "score": 1,
+                    "created_utc": 1653410794.0,
+                    "response": "I trust Coinbase is telling me the truth about the possibility of what happens if it goes into bankruptcy while Binance is lying about it. The Chinese bankruptcy laws differ greatly from US. Trust American.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9suwhy",
+                    "author": "EnchantedToMe",
+                    "score": -3,
+                    "created_utc": 1653396737.0,
+                    "response": "You don\u2019t. Actually. \n\nUnless you compile your own code. Assemble your own hardware. \n\nBut if you\u2019re that paranoid. Is crypto even something you want to invest in?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9svnc9",
+                            "author": "kytheon",
+                            "score": 12,
+                            "created_utc": 1653397137.0,
+                            "response": "People invest in crypto *because* they are paranoid",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9swhdm",
+                                    "author": "Fit_Psychology_1536",
+                                    "score": 3,
+                                    "created_utc": 1653397566.0,
+                                    "response": "Facts",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9syllf",
+                                    "author": "EnchantedToMe",
+                                    "score": -8,
+                                    "created_utc": 1653398630.0,
+                                    "response": "Lol. A total transparent digital currency that is made by a person or group that is totally anonymous. \n\nIf you are really paranoid crypto isn\u2019t for you.\n\nIn fact the theory that Bitcoin was created by the CIA is a lot more plausible than one brilliant man or multiple brilliant people.\n\n\nI understand that there are multiple levels of paranoia. But if you are that paranoid about a hardware wallet that is possibly infected with backdoors (\ud83d\ude02) then crypto is definitely not your thing.\n\nLet\u2019s be real here. Bitcoin is a lot more traceable than dollars/cash, and possibly creates a lot more wealth inequality if it gets widely implemented. I believe the top 1% owns more than 90% of the BTC, but don\u2019t quote me on that",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9szq42",
+                                            "author": "Fit_Psychology_1536",
+                                            "score": -2,
+                                            "created_utc": 1653399181.0,
+                                            "response": "Hey look, a sheep !",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9t0hjw",
+                                                    "author": "EnchantedToMe",
+                                                    "score": -3,
+                                                    "created_utc": 1653399551.0,
+                                                    "response": "Lol. You couldn\u2019t be more wrong. I own a hell of a lot more coins than you do. But your conspiratory bullshittery is what keeps Bitcoin from becoming mainstream.\n\nAnd try to combat my points. Instead of trying to insult me. Because you are clearly incapable of forming a coherent argument.\n\nAnd again. Be real. The inequality of Bitcoin is real and a lot larger than the current fiat inequality. \n\nI believe in Bitcoin. But we have still a lot of large issues to tackle. Being ignorant of them and calling people \u201csheep\u201d (\ud83d\ude02 seriously are you 12 or something?) because they point out these issues is exactly why Bitcoin hasn\u2019t taken off yet.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9t19v1",
+                                                            "author": "Fit_Psychology_1536",
+                                                            "score": -1,
+                                                            "created_utc": 1653399926.0,
+                                                            "response": "I fundamentally disagree with your \"dont question, have faith\" argument.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9t2umb",
+                                                                    "author": "EnchantedToMe",
+                                                                    "score": -1,
+                                                                    "created_utc": 1653400668.0,
+                                                                    "response": "Damn. You should stop skipping school. You lack basic skills such as comprehensive reading.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9sypyu",
+                    "author": "VariousTransition795",
+                    "score": 1,
+                    "created_utc": 1653398689.0,
+                    "response": "Metal plates are also available at the hardware store.\n\nJust don't print your key before exiting the store and you should be fine.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9t5opv",
+                    "author": "Fine-Artichoke-7485",
+                    "score": 1,
+                    "created_utc": 1653401959.0,
+                    "response": "Jump in the waters fine",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9t7rdf",
+                    "author": "Thom5001",
+                    "score": 1,
+                    "created_utc": 1653402856.0,
+                    "response": "ColdCard",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9t9we7",
+                    "author": "DudeIncogneto",
+                    "score": 1,
+                    "created_utc": 1653403779.0,
+                    "response": "Use a passphrase (25th word) if you believe that they store you private key",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9tbcry",
+                    "author": "Happy_Arthur_Fleck",
+                    "score": 1,
+                    "created_utc": 1653404399.0,
+                    "response": "good question, I feel exactly the same.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9tclog",
+                    "author": "No_Tax_53",
+                    "score": 1,
+                    "created_utc": 1653404922.0,
+                    "response": "Mycelium wallet also says won\u2019t keep your keys, is it true?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9tlsqd",
+                            "author": "Godfreee",
+                            "score": 2,
+                            "created_utc": 1653408745.0,
+                            "response": "The keys are generated in your device. Mycelium is solid and been around forever. My second wallet was Mycelium in 2013. I still have it.\n\nhttps://wallets.com/mycelium-review/",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9tpjvg",
+                    "author": "Monetary-BTC-Nexo",
+                    "score": 1,
+                    "created_utc": 1653410262.0,
+                    "response": "If you have a big stack diversify bitcoin exposure. I also have Microstrategy stocks besides Trezor and Nexo. Some risks in cold wallet don\u2019t apply for MSTR in my opinion. \n\nCold wallet is not for every one the best solution.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9u6a39",
+                    "author": "MadMaxwell92",
+                    "score": 1,
+                    "created_utc": 1653417170.0,
+                    "response": "You can operate a cold wallet without EVER connecting it to the internet or a computer using nfc or a storage card. The hardware wallet creates and stores the private key for signing. You can build the transactions in something like electrum using a pc, then sign it using nfc or micro sd\u2026\nThe other advantage is that something like coldcard is open source so with millions of eyes on the code it\u2019s hard to slip things under the radar.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ubwvl",
+                    "author": "JerryLeeDog",
+                    "score": 1,
+                    "created_utc": 1653419547.0,
+                    "response": "I went with BitBox02 (BTC only) over Ledger and Trez . Has the best design of any BTC wallet imo",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9unobr",
+                    "author": "NoShip7475",
+                    "score": 1,
+                    "created_utc": 1653424492.0,
+                    "response": "You have a fundamental misunderstanding of crypto",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ur3kq",
+                    "author": "T-t-tommy",
+                    "score": 1,
+                    "created_utc": 1653425949.0,
+                    "response": "Why not split seed (1-16/1-8+16-24/16-24) on paper/metal?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9v9bvz",
+                    "author": "cyclingmania",
+                    "score": 1,
+                    "created_utc": 1653434078.0,
+                    "response": "Don't  trust, verify.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9vkd26",
+                    "author": "arbalest_22",
+                    "score": 1,
+                    "created_utc": 1653439331.0,
+                    "response": "The exchange can freeze your account, the cold wallet companies can\u2019t.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9vrg2b",
+                    "author": "Jazzlike-Lion2969",
+                    "score": 1,
+                    "created_utc": 1653442692.0,
+                    "response": "What is the best wallet?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9vvjf6",
+                    "author": "TheCrazedBackstabber",
+                    "score": 1,
+                    "created_utc": 1653444605.0,
+                    "response": "If you\u2019re really paranoid, you could set up Wireshark or something and see if you have any internet traffic going over to Ledger/addresses you\u2019re not expecting while you\u2019re setting things up or making transactions.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9w1t2r",
+                    "author": "FreedomIsNotFree777",
+                    "score": 1,
+                    "created_utc": 1653447609.0,
+                    "response": "Exchanges can lend your coins out to hedge fund, who short sell it and drive the price down.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9w9s5x",
+                    "author": "98gffg7728993d87",
+                    "score": 1,
+                    "created_utc": 1653451790.0,
+                    "response": "one option is to generate a key on a. device while you hold it inside a faraday cage. a faraday cage is a device which no signal can get through. So its like you can't be on the internet even if you wanted to, now you generate the seed, in theory no one can ever access it as long as the device stays in the faraday cage? Even if someone had some advanced hacking ability, the device simply cannot even access the internet even if you wanted it to.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9wez3x",
+                    "author": "Electrical-School-20",
+                    "score": 1,
+                    "created_utc": 1653454954.0,
+                    "response": "Do you see the irony? Bitcoin is supposed to be a trustless system, whereby you don\u2019t need a centralized entity of trust. But clearly it isn\u2019t working, is it?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9wrayu",
+                    "author": "intercop",
+                    "score": 1,
+                    "created_utc": 1653464193.0,
+                    "response": "No matter how good the exchange is, something can always happen to it that crosses out its entire existence. In the meantime, your cold wallet will always be your cold wallet.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9t4c4b",
+                    "author": "Dblstandard",
+                    "score": 0,
+                    "created_utc": 1653401352.0,
+                    "response": "BIP is not governed by wallets.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

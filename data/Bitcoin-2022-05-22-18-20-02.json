@@ -138,7 +138,7 @@
             "author": "foz_fozool",
             "created_utc": 1653243004.0,
             "score": 9,
-            "num_comments": 3,
+            "num_comments": 4,
             "subreddit": "Bitcoin",
             "selftext": " Anyone knows of any tutorials, blogs, info.. on how to implement the  lightning address on one's own node? I am running an 'lnd' node and have  the 'bridgeaddr' installed but can not go any further.. pulling blanks  on searches.. Any input is appreciated.",
             "stickied": false,
@@ -155,11 +155,21 @@
                 {
                     "id": "i9ntkjk",
                     "author": "mpem___",
-                    "score": 1,
+                    "score": 2,
                     "created_utc": 1653294163.0,
                     "response": "1. you need VPS with public IP, and DNS entry + SSL certificate.\n2. Install LNbits [https://github.com/lnbits/lnbits-legend/blob/main/docs/devs/installation.md](https://github.com/lnbits/lnbits-legend/blob/main/docs/devs/installation.md) on your node and ssh tunel its port to your VPS (check periodically that tunnel is working use autossh and restart it periodically). If you just want to test this \"tutorial\" try some public installation (e.g. [https://wallet.paralelnipolis.cz/](https://wallet.paralelnipolis.cz/))\n3. Install Satdress [https://github.com/andrerfneves/lightning-address/blob/master/BRIDGE.md](https://github.com/andrerfneves/lightning-address/blob/master/BRIDGE.md) you can skip this step and use existing one (for example payaddress.cobtcadresse.deln.fitti.iobitmia.compaymentlink.xyztinytip.mesats.pmlnpay.czgetalby.comlnaddress.melnaddress.netlightning.bylightning.re) but you need to trust them because yhey route request. Your LN adress would look like for example [satoshi@lnpay.cz](mailto:satoshi@lnpay.cz) if you install it in your VPS than your address will be <username>@<mywebsite.com>\n4. Create wallet in LNbits and than fill form in Satdress - fill desired username, select LNbits backed (for example [https://mywebsite.com](https://mywebsite.com):<LNbits port> (without slash at end), paste your Invoice/read key, save secret PIN\n\n&#x200B;\n\nYou don't need to youse LNbits, there are other LNURL backends but I have good experience with it so I can recommend it. If it works you can drop few sats to [mmic@lnpay.cz](mailto:mmic@lnpay.cz)",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9t25u8",
+                            "author": "foz_fozool",
+                            "score": 1,
+                            "created_utc": 1653400348.0,
+                            "response": "Hey thanks a lot for taking the time.. \n\nIt was very interesting to see your instructions.. I had done all that you mentioned, before my post!!! except that I had gone the route of \"bridgeaddr\".. instead of \"satdress\". When I was pointing my site to bridgaddr I'd get blank, and that's where I would get lost.. but when I pointed it to satdress I got the nice modal asking me the stuff, like taking me by the hand.. So I'd definitely recommend 'satdress' vs. 'bridgeaddr'. So once again found it very interesting that I had my 'lnbits' all set up before you mentioned it. By the way, I am using the free (albeit temporary) web hosting \"[noip.com](https://noip.com)\" and running 'caddy' in front of it to equip it with HTTPS. Thanks again. sent some sats.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 }
             ]
         }

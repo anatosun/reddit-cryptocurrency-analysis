@@ -1,0 +1,829 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "slzfsd",
+            "title": "Why wouldn't Proof of Stake drastically reduce block times vs. Proof of Work?",
+            "url": "https://www.reddit.com/r/ethereum/comments/slzfsd/why_wouldnt_proof_of_stake_drastically_reduce/",
+            "author": "JSavageOne",
+            "created_utc": 1644161634.0,
+            "score": 3015,
+            "num_comments": 217,
+            "subreddit": "ethereum",
+            "selftext": "I heard that [Proof of Stake will only reduce block time by \\~1 second to 12s](https://blog.ethereum.org/2021/11/29/how-the-merge-impacts-app-layer/). Why only 1 second?\n\nIntuitively, it would seem to me that Proof of Stake (PoS) should be able to drastically reduce block times vs. Proof of Work since it replaces the computationally expensive PoW piece and the arms race nature of everyone mining at the same time with random validator assignment. Thus the bottleneck under PoS would only be the network latency it takes to propagate the newly created block to the number of validators required for consensus (51%?) + time it takes for those validators to validate/attest that newly created block and propagate their attestation back to everyone else. I don't know what the block propagation latency on ethereum is to reach 51% of nodes, but I can't imagine that being more than a few seconds.\n\nI understand that reducing block times too low under Proof of Work would be offset by increased computational waste and forking (due to everyone mining concurrently and network latency). But wouldn't this problem be eliminated under Proof of Stake, thus enabling faster block times (and subsequently higher transactions/second)? **(EDIT: I elaborated on my reasoning in** [**this comment**](https://www.reddit.com/r/ethereum/comments/slzfsd/comment/hvtw4et/?utm_source=reddit&utm_medium=web2x&context=3)**)**\n\nIs there a detailed explanation/analysis somewhere comparing Proof of Stake vs. Proof of Work from a performance standpoint? Why is Proof of Stake only 1 second faster than Proof of Work?\n\n*PS: I don't pretend to deeply understand this stuff, so I'm looking forward to my misconceptions being torn apart.*",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "hvu9ekc",
+                    "author": "vbuterin",
+                    "score": 502,
+                    "created_utc": 1644171740.0,
+                    "response": "The limits on making block time faster have to do with safety and decentralization (specifically, avoiding scenarios where nodes with much better network connections have a large economic advantage, which risks leading to ethereum mining or staking centralizing on eg. AWS).\n\nIn **proof of work**, the core problem is that blocks come at random times; if the average block time is 13s, that means that there is a 1/13 chance that the next  two blocks will come within 1 second of each other. When two blocks appear that close together, the miner with a better network connection has an advantage in propagating their blocks first, and so could beat out the second. This effect is tolerable with 13s block times, especially with [uncle rewards](https://www.investopedia.com/terms/u/uncle-block-cryptocurrency.asp) reducing the economic penalty of having your block appear slightly too late. But it becomes a huge problem with eg. 3s block times.\n\nIn **proof of stake**, blocks arrive evenly once per 12 sec, so that problem does not exist. However, another problem appears. Our version of proof of stake attempts to give blocks a very high level of confirmation after even one slot, and this requires thousands of signatures (currently ~9100) per slot to get included in the next slot. This process incurs latency and takes time. The time is more like logarithmic than linear (so, cutting the slot time in half and doing ~4550 signatures per slot would not work, as each now-shorter slot would still take _almost_ as long), but aggregating that many signatures is still a big deal and requires multiple rounds of network communication. This process probably _could_ be done safely in 6s or even a bit less, but the problem is that at that point quite a few signatures would not get included on-chain on time, and the rewards would once again start to really favor highly centralized actors. The current ~12s is conservative and gives us a good buffer against such risks.\n\nI don't expect the per-slot time to be reduced much in the future. Though what is looking more and more likely is [single-slot finality](https://notes.ethereum.org/@vbuterin/single_slot_finality), which will mean that a single slot would actually finalize a transaction instead of just strongly confirming it as it does today. Applications that need really fast confirmations would have to rely on either channels or rollups with sequencers providing pre-confirmations. That said, we are also actively researching in-protocol mechanisms that could give users reasonably strong assurance after only a few seconds that some transaction will get included in either the next or another near-future block.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvvv0bk",
+                            "author": "JSavageOne",
+                            "score": 20,
+                            "created_utc": 1644195759.0,
+                            "response": "Thank you so much for the comprehensive answer (and what an honor from the legend himself).\n\nOk this makes things much clearer. It seems that it ultimately boils down to ensuring that validators with slower connections can still attest and receive rewards. And as others already mentioned, ensuring that nodes wouldn't need higher storage requirements.\n\nI'm still curious about the 12s figure because from a layman's perspective it seems kind of long given that blocks are only 80KB, and thus would sound like something that could be done closer to 6 seconds like you said (I'd guess a couple seconds to receive the block, a couple seconds to validate, a couple seconds to send it off). On another note, I wonder how long it takes to propagate a 80KB block to the 2/3 of validators required to validate a block.\n\nWe all know that there are other alt-l1s with significantly faster block times. When they talk about their faster transaction times and lower gas fees, the standard response is \"well they sacrifice decentralization\". Which is true, but it would be more constructive to be able to explain/quantify what exactly the tradeoffs are, and how 12s was determined to be the optimal block time.\n\nThe single-slot finality and fast strong assurance on block inclusion sound like huge improvements! Thanks again for all your hard work :)",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hvuykzp",
+                            "author": "iPeculiarly",
+                            "score": 11,
+                            "created_utc": 1644181854.0,
+                            "response": "Also I vaguely remember reading about sharding allowing for offsetting the time of block production of the individual shards to get blocks produced about 5 blocks a second with 64 shards (13 seconds / 64 shards)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvvmk3h",
+                                    "author": "vbuterin",
+                                    "score": 21,
+                                    "created_utc": 1644191944.0,
+                                    "response": "Unfortunately Danksharding doesn't support staggering. Hence research into alternatives.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "hvvbwzf",
+                                    "author": "frank__costello",
+                                    "score": 2,
+                                    "created_utc": 1644187332.0,
+                                    "response": "This probably isn't as important now that executable shards has been removed from the roadmap",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hvudd9v",
+                            "author": "TheTrueBlueTJ",
+                            "score": 20,
+                            "created_utc": 1644173331.0,
+                            "response": "I'm assuming Ethereum is going to choose to do this differently than other existing PoS chains. How well does it compare to I guess you could say \"competing\" solutions in addressing potential shortcomings?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvvmlo6",
+                                    "author": "vbuterin",
+                                    "score": 78,
+                                    "created_utc": 1644191963.0,
+                                    "response": "Most other chains that I see are giving up on having a high validator node count. Ethereum is not.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvvvv8v",
+                                            "author": "TheTrueBlueTJ",
+                                            "score": 13,
+                                            "created_utc": 1644196148.0,
+                                            "response": "I see. That's a major advantage for Ethereum's continued decentralization then, if I understand correctly. Solana validator hardware requirements come to mind.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hvwrupo",
+                                                    "author": "Spacesider",
+                                                    "score": 10,
+                                                    "created_utc": 1644211736.0,
+                                                    "response": "Any network that uses DPoS does this too, yes they are \"faster\" but also way more centralised.\n\nCardano, Tezos, Algo, EOS, to name a few.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hw0pdwe",
+                                                            "author": "Steynkaulo",
+                                                            "score": -1,
+                                                            "created_utc": 1644281323.0,
+                                                            "response": "More centralised....? Nono mate",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        },
+                                                        {
+                                                            "id": "hvzu80x",
+                                                            "author": "delaaxe",
+                                                            "score": 0,
+                                                            "created_utc": 1644268436.0,
+                                                            "response": "Can't you run a Cardano node on a respberry pi?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "hw0szxy",
+                                                                    "author": "AnarchistMetalhead",
+                                                                    "score": 2,
+                                                                    "created_utc": 1644282927.0,
+                                                                    "response": "this is not about end user nodes, but block creation",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "hw22q6t",
+                                                                            "author": "delaaxe",
+                                                                            "score": 1,
+                                                                            "created_utc": 1644306784.0,
+                                                                            "response": "So centralization of capital?",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "hw86qh7",
+                                                                                    "author": "AnarchistMetalhead",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1644416476.0,
+                                                                                    "response": "yes\n\nnot just through incentives resulting from technical considerations, delegated proof of stake is centralization forced from the protocol, as capital can\"t directly create blocks, but has to go through one of a limited number of delegates",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "hw2eef5",
+                                                                    "author": "meinkraft",
+                                                                    "score": 1,
+                                                                    "created_utc": 1644316320.0,
+                                                                    "response": "Probably not the best way to go\nhttps://cardano.stackexchange.com/questions/2544/hardware-requirements-for-node",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "hw38f2q",
+                                                                            "author": "delaaxe",
+                                                                            "score": 1,
+                                                                            "created_utc": 1644333005.0,
+                                                                            "response": "The second comment is literally \u201cI run PGWAD pool on raspberrypi 4. There is an alliance of pool operators running on raspberry pi.\u201d",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "hw5e533",
+                                                                                    "author": "meinkraft",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1644361894.0,
+                                                                                    "response": "and you can run an Eth validator on a pi as well\n\nDoesn't mean either is a good idea or future-proof.",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "hvxje5v",
+                                            "author": "fawkesss81",
+                                            "score": 2,
+                                            "created_utc": 1644231781.0,
+                                            "response": "Avalanche has permissionless and uncapped validator set and can run on an average laptop.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "hvzhiy4",
+                                            "author": "nishinoran",
+                                            "score": 1,
+                                            "created_utc": 1644263545.0,
+                                            "response": "How does a network like Nano manage to get sub second speeds? Is it actually largely centralized due to most users delegating their voting weight to only a few nodes?",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hvv2i7w",
+                                    "author": "T0Bii",
+                                    "score": 23,
+                                    "created_utc": 1644183449.0,
+                                    "response": "[deleted]",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "hvuk2ok",
+                                    "author": "cryptOwOcurrency",
+                                    "score": 10,
+                                    "created_utc": 1644176006.0,
+                                    "response": "Which specific comparisons/shortcomings are you interested in? There are so many ways to compare and contrast PoS algorithms that one could fill several pages doing so.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvvit04",
+                                            "author": "its_just_a_meme_bro",
+                                            "score": 3,
+                                            "created_utc": 1644190280.0,
+                                            "response": "I've seen you post in other subs so I guess I'll ask: how does Ethereum's sharding compare to Cardano's Hydra concept? I understand the difference between Accounting model and eUTXO but I don't really get anything beyond that.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hvx6pim",
+                                                    "author": "cryptOwOcurrency",
+                                                    "score": 16,
+                                                    "created_utc": 1644221560.0,
+                                                    "response": "[Ethereum's data sharding](https://hackmd.io/@vbuterin/sharding_proposal) basically splits up Ethereum blockchain data across many nodes, so that not every node needs to store every piece of data like they do right now. While this sharding provides ample storage space for Layer 2s like rollups to store data related to state, the main-chain validation of rollup execution is either done through a challenge period as in optimistic rollups, or through a zero knowledge validity proof as in zk rollups.\n\nCardano's Hydra is an evolution of the state channel design, and is more akin to a very fancy version of Bitcoin's Lightning Network. My understanding of it is that it has similar constraints in terms of every involved party needing to be online to prevent fraud during a challenge period, whereas Ethereum's RADS (Rollup And Data Shards) design requires only a single honest node in the whole rollup to construct a fraud proof during the challenge period in the case of optimistic rollups, and for zk rollups requires no fraud proofs or challenge period at all, as every step of the network's execution that is submitted to L1 is guaranteed to be valid due to the zk validity proof.\n\nThe end result is that while Hydra inherits some of the safety and liveness limitations inherent to state channels, because at its core it's a state channel system. Rollups, being mostly unrelated to state channel tech, can largely sidestep those limitations. Please ask me if there's anything I could have explained better about that, or anything I can clarify.\n\nThere's also this excellent write up by /u/Liberosist which I highly recommend reading, in fact it's probably better than the structureless rambling I've written here. Basically, Hydra is highly polished 2015 state channel tech, zk rollups are newly emerged 2021 tech that solve a lot of the issues inherent to state channels.\n\nhttps://np.reddit.com/r/cardano/comments/pf25jk/without_hydra_cardano_probably_wont_be_faster/hb1s8z6/",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hw0286r",
+                                                            "author": "its_just_a_meme_bro",
+                                                            "score": 1,
+                                                            "created_utc": 1644271556.0,
+                                                            "response": "Thanks for the write-up and link. It looks like Hydra solves very specific problems while sharding would be general purpose.\n\n> the main-chain validation of rollup execution is either done through a challenge period as in optimistic rollups, or through a zero knowledge validity proof as in zk rollups\n\nDoes this mean sharding will not come to Ethereum until zk rollups are live on the main chain?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "hw1s9n2",
+                                                                    "author": "cryptOwOcurrency",
+                                                                    "score": 2,
+                                                                    "created_utc": 1644299666.0,
+                                                                    "response": "Sharding won't really be useful until rollups (both zk and optimistic) are widely adopted on Ethereum, which we're making great progress on. Sharding doesn't depend on rollups, but rather rollups get supercharged by sharding.\n\nThe good news is that by the time sharding is implemented, imo in more than a year from now, rollups are going to be much more mature and they'll be able to really take advantage of sharding.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hvun3fz",
+                            "author": "mcgravier",
+                            "score": 5,
+                            "created_utc": 1644177218.0,
+                            "response": "> this requires thousands of signatures (currently ~9100) per slot to get included in the next slot. This process incurs latency and takes time.\n\nDoes the signature gathering gets slowed down with higher block gas limit? In other words, will higher gas limit be feasible after the PoS merge?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvvmicn",
+                                    "author": "vbuterin",
+                                    "score": 11,
+                                    "created_utc": 1644191922.0,
+                                    "response": "No, the cost of the signature gathering doesn't depend on what the block gas limit is.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hvvy7qp",
+                            "author": "johnfintech",
+                            "score": 12,
+                            "created_utc": 1644197230.0,
+                            "response": "Slightly off-topic, but a small correction nonetheless:\n\n> if the average block time is 13s, that means that there is a 1/13 chance that the next two blocks will come within 1 second of each other\n\nNot quite. It's 1-exp(-1/13) which is approximately 1/13 with about 4% error (Taylor, order 1). Arrival times are exponentially distributed. I'm sure you know all this but your statement might confuse others less knowledgeable to think times are uniformly distributed.\n\n> The time is more like logarithmic\n\nProbably still exponential if the process describes random arrival times (I didn't look at signature collection yet but it sounds like it)\n\nThumbs-up for single-slot finality and higher statistical reassurance on L1.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hw5x3gs",
+                                    "author": "vbuterin",
+                                    "score": 9,
+                                    "created_utc": 1644369894.0,
+                                    "response": "> Not quite. It's 1-exp(-1/13) which is approximately 1/13 with about 4% error (Taylor, order 1)\n\nAgree!\n\n> Probably still exponential if the process describes random arrival times (I didn't look at signature collection yet but it sounds like it)\n\nLogarithmic in the sense that aggregation is a tree-shaped process, and so the depth of the tree (and hence the time for the process to take place) is proportional to the logarithm of the number of nodes (in practice, Ethereum's depth is 2 and low-validator-count chains have depth 1)",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hwfja27",
+                                            "author": "bitcoin2121",
+                                            "score": 3,
+                                            "created_utc": 1644534185.0,
+                                            "response": "are u the real vitalik?",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "hw6i144",
+                                            "author": "johnfintech",
+                                            "score": 2,
+                                            "created_utc": 1644378881.0,
+                                            "response": "Got you, so it's not the time between arrivals that you were concerned about for sig collection, but their tree-based aggregation, and yeah you're dealing with O(log n) indeed",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hvudu22",
+                            "author": "Quick_Eye7890",
+                            "score": 2,
+                            "created_utc": 1644173509.0,
+                            "response": "Hybrid static/random node signature selection",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hvvw9fd",
+                            "author": "1aTa",
+                            "score": 1,
+                            "created_utc": 1644196330.0,
+                            "response": "Why not use the hashgraph consensus algo?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvxkv1p",
+                                    "author": "phoosball",
+                                    "score": 0,
+                                    "created_utc": 1644232890.0,
+                                    "response": "Use that new-fangled automobile that is technically superior in every way? I dont think so. It doesn't even have a spot for my saddle!\n\nFace it son, horses will *never* be replaced.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hvx80x5",
+                            "author": "thebadslime",
+                            "score": 0,
+                            "created_utc": 1644222566.0,
+                            "response": "Oh yeah? Just who are you??!!\n\n\n\n\n*sees username, slowly backs away",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hvwd7f1",
+                            "author": "BitsAndBobs304",
+                            "score": 1,
+                            "created_utc": 1644204237.0,
+                            "response": "So I know there's a reason why not, but if the problem is network latency and making it fair, then a reasonable block time could be paired with very large blocks in PoS, thus still increasingly massively the tps?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvz5fty",
+                                    "author": "bad-john",
+                                    "score": 1,
+                                    "created_utc": 1644258838.0,
+                                    "response": "I think it\u2019s because a larger block would make it harder to run nodes.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvz67yq",
+                                            "author": "BitsAndBobs304",
+                                            "score": 1,
+                                            "created_utc": 1644259142.0,
+                                            "response": "I mean I'm pretty sure that someone who has 32 eth can afford something  a bit better than a raspberry pi, no?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hvz78tb",
+                                                    "author": "bad-john",
+                                                    "score": 1,
+                                                    "created_utc": 1644259539.0,
+                                                    "response": "What if I had one ether and I had 31 friends with 1 ether. Im sure there could be a smart contract way for us to pool together to make a node. \n\nI get what your saying though and for the most part your probably right. I like the idea of keeping it as accessible as possible, especially if any advantages it may bring could be done in other ways without making the sacrifice of larger hardware expenses.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hvzcsoi",
+                                                            "author": "BitsAndBobs304",
+                                                            "score": 1,
+                                                            "created_utc": 1644261703.0,
+                                                            "response": "And what \"other ways\" are there to raise tps? Sharding is quite far away..",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "hvze1pd",
+                                                                    "author": "bad-john",
+                                                                    "score": 1,
+                                                                    "created_utc": 1644262194.0,
+                                                                    "response": "Layer 2 solutions seem to be the better option for increasing tps",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "hvzgy56",
+                                                                            "author": "BitsAndBobs304",
+                                                                            "score": 1,
+                                                                            "created_utc": 1644263322.0,
+                                                                            "response": "Yeah but with a slow expensive l1 it still sucks big time",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "hvzhdfi",
+                                                                                    "author": "bad-john",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1644263486.0,
+                                                                                    "response": "layer 1 might not be meant for the end user any more. On boarding straight to a layer 2 is now possible and hopefully we will see many more options on that front.",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hvwhzi3",
+                            "author": "tornato7",
+                            "score": 1,
+                            "created_utc": 1644206541.0,
+                            "response": "Any thoughts on what Bloxroute is doing to speed up propagation times across nodes? Maybe some of their tech could inspire improvements to Ethereum client networking.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hvu0v0r",
+                    "author": "Wide-Firefighter-226",
+                    "score": 14,
+                    "created_utc": 1644168387.0,
+                    "response": "Many people already gave the answer here. Consensus mechanism has nothing to do with speed. Consensus frequency can be adjusted, as well as block size. The switch to PoS is meant to address basically energy waste. If some people on Reddit are celebrating and upvoting the alleged 1s gain in the switch to PoS, they are missing the point in this case.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvu542i",
+                            "author": "JSavageOne",
+                            "score": 9,
+                            "created_utc": 1644170061.0,
+                            "response": "\\> Consensus mechanism has nothing to do with speed.\n\nIt seems that consensus mechanism influences the possible speed, but speed is ultimately set politically by the protocol which is being [increased to 12s](https://blog.ethereum.org/2021/11/29/how-the-merge-impacts-app-layer/). Every answer to a \"why don't we just reduce block times\" post I've seen always talks about \"orphan rates\", which are entirely eliminated by Proof of Stake. Thus it would seem to me that Proof of Stake enables faster block times than Proof of Work. But since ethereum decided that block times should be 12 seconds, we keep it at 12 seconds. Would like to see resources discussing the tradeoffs of faster block times under proof of stake.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvu867c",
+                                    "author": "Wide-Firefighter-226",
+                                    "score": 3,
+                                    "created_utc": 1644171253.0,
+                                    "response": "The trade off of faster block times is less decentralisation or security. It is the Blockchain trilemma. You can have only have two of the three (decentralisation, security, scalability (speed) ). But again,  this trilemma exists no matter the consensus mechanism. About the orphan blocks, sure, it could be that the random assignment protocol coordinates things in a PoS system such that there are no two identical timestamps on two blocks, thus increasing efficiency of the validation process. But I guess this is very fine tuning. This has almost no impact on the decision of 12 TPS or whatever they decide. It is more about bandwidth and storage.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "hvun0xw",
+                                    "author": "Trooper7281",
+                                    "score": 1,
+                                    "created_utc": 1644177190.0,
+                                    "response": "What are the advantages to move to a faster block time? \nBasically non that can't be achieved in a better way. I guess you want a higher throughput, this could be easily done by a higher gas limit and therefore more transactions per block.\n\nFaster block time only increases the number of messages between the validators, that is not something you want for no good reason.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvv2u7j",
+                                            "author": "mcilrain",
+                                            "score": 2,
+                                            "created_utc": 1644183584.0,
+                                            "response": "The good reason is transaction latency reduction.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hvv56e4",
+                                                    "author": "Trooper7281",
+                                                    "score": 2,
+                                                    "created_utc": 1644184529.0,
+                                                    "response": "True this might be one. Good point. Using zkSync the last months and I kinda forgot how slow mainnet can be. soz",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hvvoqdz",
+                                    "author": "potmo",
+                                    "score": 1,
+                                    "created_utc": 1644192924.0,
+                                    "response": "It really boils down to the fact that the \"political\" considerations are based on the fact that speed is not the only or even most important goal. So, just as speeds can be tweaked in POW with difficulty, speeds can be tweaked in ETH, but due to more important factors such as decentralization and security, the sweet spot, according to the devs is around 12s.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hvum6o4",
+                    "author": "Kike328",
+                    "score": 4,
+                    "created_utc": 1644176862.0,
+                    "response": "Block propagation and state growth are things to take into account",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hvtpce1",
+                    "author": "unsettledroell",
+                    "score": 32,
+                    "created_utc": 1644163789.0,
+                    "response": "Why would it be faster?\n\nAs yourself this. Why would we not just make the block time half as long with PoW?\n\nDecreasing the block time would mean all nodes around the world would have to work faster to keep up. If half the nodes cannot keep up, that will harm the protocol a lot.\n\nPoS does not change that. PoS only changes the consensus mechanism.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvtsb3m",
+                            "author": "nishinoran",
+                            "score": 21,
+                            "created_utc": 1644164990.0,
+                            "response": "To clarify a bit on this point, the current Proof of Work algorithm could easily be tweaked to cut block times in half. In fact it changes difficulty automatically to maintain the current Poisson distribution of about 13 seconds per block, based on the hash rate of the network.\n\nWe could also double block sizes and double throughput that way.\n\nThe issue is what is called \"state bloat\", every node has to keep each block, and if you double the amount of data that needs to be kept, it begins to reach a point that small node operators can't afford the hardware or bandwidth to handle it.\n\nThis increases the barrier to entry for node operators, and leads to a less decentralized, and thus less secure, network.\n\nThere are efforts to implement state pruning, or allowing nodes to discard historical data, and that will potentially allow larger blocks or more frequent blocks, although there are still bandwidth concerns there.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvtwpzs",
+                                    "author": "JSavageOne",
+                                    "score": 7,
+                                    "created_utc": 1644166760.0,
+                                    "response": "I understand that increasing block size would increase storage requirements and make mining less accessible.\n\nIt would just seem to me that under Proof of Stake, eliminating the \"mining difficulty\" piece (which under PoW determines the block time) should be able to dramatically reduce block times. I followed up my explanation to parent comment [here](https://www.reddit.com/r/ethereum/comments/slzfsd/comment/hvtw4et/?utm_source=reddit&utm_medium=web2x&context=3).\n\n**EDIT**: Ok just re-read the comment again. Ultimately it seems that block time is essentially politically decided. Reduce the block time, and you increase the amount of storage, network latency, and computational power that nodes need.\n\nI agree with this ethos of making it so that running a node is accessible to all, and clearly there must be some lower bound as to what block time is reasonable, I just don't see why it must be 12 seconds rather than say 2 seconds. And again, because Proof of Stake eliminates the \"orphan rate\" problem of wasteful block producing in forks that ends up being thrown away.\n\nAre there any resources discussing the tradeoffs of block times vs. computational requirements in more detail? It seems like there are articles discussing this under proof of work, but not proof of stake.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvtzo1g",
+                                            "author": "alpacadaver",
+                                            "score": 7,
+                                            "created_utc": 1644167922.0,
+                                            "response": "You missed the point of his post, he described what the issue with what you're asking is. You can also cut down the timing of pow blocks a lot. it's a design choice, faster blocks is not better in every regard.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hvu2rjj",
+                                                    "author": "JSavageOne",
+                                                    "score": 2,
+                                                    "created_utc": 1644169137.0,
+                                                    "response": "Ok I updated my [comment](https://www.reddit.com/r/ethereum/comments/slzfsd/comment/hvtwpzs/?utm_source=reddit&utm_medium=web2x&context=3).\n\nWould be nice to see a detailed quantitative analysis on the tradeoffs of reducing ethereum block time under proof of stake. Intuitively 12 seconds sounds unnecessarily slow.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hvu401d",
+                                                            "author": "nishinoran",
+                                                            "score": 3,
+                                                            "created_utc": 1644169624.0,
+                                                            "response": "Something that might interest you is because Layer 2s don't require as much decentralization, they often have much higher limits and lower \"block times\".\n\nI do think we could probably get it under 13 seconds, I think that time is somewhat arbitrary, although you do need time for information to propagate across the network.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "hvu5jkh",
+                                                                    "author": "JSavageOne",
+                                                                    "score": 2,
+                                                                    "created_utc": 1644170231.0,
+                                                                    "response": "I'm familiar with layer 2s, I'm just trying to understand how it all works, and the limits of what blockchains can and will be capable of.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "hvu8gii",
+                                                            "author": "Waddamagonnadooo",
+                                                            "score": 2,
+                                                            "created_utc": 1644171366.0,
+                                                            "response": "I\u2019m pretty sure it\u2019s less \u201carbitrary\u201d and more like they found in their testing, less than 12 would probably cause issues. Otherwise, they would have done less than 12 seconds.\n\nAlso, block time is not considered a high priority since the current strategy is to utilize L2s, which can have pretty much instant confirmation times for the end user.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hvtw4et",
+                            "author": "JSavageOne",
+                            "score": 1,
+                            "created_utc": 1644166519.0,
+                            "response": "Ok I'll elaborate more on my explanation:\n\nUnder Proof of Work, block time (correct me if I'm wrong) is basically just a function of the mining difficulty. Reduce the mining difficulty, and you've reduced the block times. The problem is that if you reduce the mining difficulty / block times too much, then eventually the network latency starts to result in more blocks simultaneously being mined before they can be fully propagated to the others. This means more forking and having to reconcile these forks (higher orphan rate), which is all wasted time since forks are just thrown away.\n\nHowever, Proof of State totally eliminates the \"mining difficulty\" part of the equation, replacing it with a simple random validator assignment. Instead of every validator simultaneously racing to solve the mining puzzle, only one validator creates a block at a time, and the rest validate the legitimacy of that block (attestation).\n\nIntuitively, it would follow that block times could be drastically reduced under Proof of Stake, since now the only lower bound is the network latency and there's no dealing with fork reconciliations. Validators don't have to waste time on hashing puzzles, they simply create a new block when told, and validate other blocks when not.\n\nI wasn't able to find any metrics on the time it takes an ethereum block to propagate to the rest of the network, but it's hard for me to imagine that being more than a few seconds for 50% of the network since block sizes are only \\~80kb. If this number were say 3 seconds, it would seem that Proof of Stake should be able to take block times closer to that.\n\nAgain I imagine my mental model of how this all works is totally incorrect. Would love for someone to point out the errors in my assumptions + reasoning (even better if accompanied with numbers)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvty9ie",
+                                    "author": "unsettledroell",
+                                    "score": 2,
+                                    "created_utc": 1644167370.0,
+                                    "response": "Maybe research the same thing but on Bitcoin, there may be more literature. \n\nThe question is I guess what the slowest node is in the network that should still handle it.\n\nFor instance, my BTC node runs on a raspi 4 with 100mb connection so it can download and verify the blocks fast enough, and the full chain is stored in a 1TB disk. That means a cheap connection and cheap hardware makes a perfectly suited node. And it runs over TOR too, so the speed is more like 5mbit/s.\n\nIn a couple years, you can run full nodes on your phone, maybe.\n\nThis would not be possible at all with ETH as a consequence of having fast block time. My disks would be too big and expensive and my Internet would need to be faster (sometimes blocks come in way faster too).\n\nEventually you need to make some assumption of what speeds 99% of the node operators reach reliably, and it could be easily just 1mbit/s.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hvtsflg",
+                            "author": "addition",
+                            "score": 1,
+                            "created_utc": 1644165040.0,
+                            "response": "This. Block times are directly related to decentralization.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hvuq9c9",
+                    "author": "AlexCoventry",
+                    "score": 3,
+                    "created_utc": 1644178498.0,
+                    "response": "You need time to establish consensus in the face of potential network delays.\n\n[Here's a recent paper](https://arxiv.org/pdf/2110.10086.pdf) which discusses attacks on the Ethereum 2.0 consensus mechanism, as it's currently conceived.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hvtvzc8",
+                    "author": "saddit42",
+                    "score": 7,
+                    "created_utc": 1644166462.0,
+                    "response": "There's actually a proposal for near-instant confirmations by using different block times for different shards: https://ethresear.ch/t/near-instant-transaction-confirmation-via-staggered-shard-block-production/5643",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvue15r",
+                            "author": "SilkTouchm",
+                            "score": 8,
+                            "created_utc": 1644173587.0,
+                            "response": "That's old af, lots has changed. Execution sharding isn't planned anymore, only data sharding.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hvxm8kv",
+                    "author": "Mallardshead",
+                    "score": 2,
+                    "created_utc": 1644233869.0,
+                    "response": "Proof of Stake is loved by exchanges and whales. It's a scam that's about enriching the Cantillionaires. Worse even than our current system.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hvtmtve",
+                    "author": "Impossible-Example91",
+                    "score": 1,
+                    "created_utc": 1644162756.0,
+                    "response": "I think sharding is supposed to increase the speed more so than just the PoS upgrade but the upgrade to PoS is needed for sharding",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hvtnr69",
+                            "author": "JSavageOne",
+                            "score": 3,
+                            "created_utc": 1644163144.0,
+                            "response": "I get that, I have just yet to see any explanation as to *why* PoS can't improve speed more than the 1s or so I saw referenced in a couple Reddit comments without any sources / explanation. Intuitively it doesn't make any sense to me. and I couldn't find a single resource discussing performance of PoS vs. PoW which I find odd.\n\nEDIT: Found the source of the 1 second claim: https://blog.ethereum.org/2021/11/29/how-the-merge-impacts-app-layer/",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hvtt240",
+                                    "author": "martyrbk",
+                                    "score": 4,
+                                    "created_utc": 1644165289.0,
+                                    "response": "The change in consensus is not related to the change in speed parameters. The parameters can be changed at any time if there is a match.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hvty5iy",
+                                            "author": "JSavageOne",
+                                            "score": 1,
+                                            "created_utc": 1644167326.0,
+                                            "response": "Ok, but my question is why does PoS not enable greater speed than PoW, with my reasoning outlined in the original post and this comment. It's not as if consensus has no relation on speed, I saw a couple top upvoted comments in this subreddit claiming that PoS would reduce block times by about 1s, though with no source or explanation.\n\nEDIT: Found the source of the 1 second claim: https://blog.ethereum.org/2021/11/29/how-the-merge-impacts-app-layer/",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hvtzytn",
+                                                    "author": "lanatork",
+                                                    "score": 2,
+                                                    "created_utc": 1644168039.0,
+                                                    "response": "Somebody else has answered it above, but maybe to make it more clear. Ethereum does NOT want to speed up block production. Doing so would hurt decentralisation, because the storage requirements for a node (not miners) would be too high. Ethereum favours decentralisation over transaction speeds.\nFaster and cheaper transactions are be possible by using one of the layer 2 solutions.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hvu49no",
+                                                            "author": "JSavageOne",
+                                                            "score": 1,
+                                                            "created_utc": 1644169730.0,
+                                                            "response": "Ok, but why exactly 12 seconds? Why not 6 seconds? Is there an explanation somewhere as to why 12 seconds was chosen as the magic number?\n\nThe confusion for me lies around the fact that every time I search this question, the answers talk about features of Proof of Work like \"orphan rate\" that Proof of Stake eliminates.\n\nSo it seems that Proof of Stake theoretically does enable drastically lower block times, but we're not going to do it due to not wanting to increase storage requirements of nodes.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "hvue3yv",
+                                                                    "author": "keanwood",
+                                                                    "score": 2,
+                                                                    "created_utc": 1644173618.0,
+                                                                    "response": "> why exactly 12 seconds? Is there an explanation somewhere as to why 12 seconds was chosen as the magic number?\n\n&nbsp;\n\nYou\u2019re not going find a satisfying answer. They could have picked 13s or 11s. There is nothing magical about 12s. They undoubtedly did a lot of research on block times, and they concluded that something around 12s would be safe. In the end, the exact choice is arbitrary. But the general choice is highly researched.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                },
+                                                                {
+                                                                    "id": "hvuqeck",
+                                                                    "author": "lanatork",
+                                                                    "score": 2,
+                                                                    "created_utc": 1644178554.0,
+                                                                    "response": "Here is an old blog post from Vitalik Buterin discussing the effect of decreasing the block time. It explains in detail how the block time influences decentralisation. The conclusion is that 12s is feasible without hurting decentralisation significantly, but lower than that would impact it too much.\n\nhttps://blog.ethereum.org/2014/07/11/toward-a-12-second-block-time/",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "hvvl9ak",
+                                                                            "author": "JSavageOne",
+                                                                            "score": 1,
+                                                                            "created_utc": 1644191364.0,
+                                                                            "response": "I'll have to read it more in-depth later, but in the last paragraph Vitalik says \"a 3-second target block time (and 5s actual block time) may be quite viable\"",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "hvumkng",
+                                                                    "author": "cryptOwOcurrency",
+                                                                    "score": 1,
+                                                                    "created_utc": 1644177015.0,
+                                                                    "response": "Within 12 seconds, you can pretty much guarantee that a message will propagate across the world to all Ethereum nodes. It includes a margin of safety.\n\nWith only 6 seconds, that guarantee is somewhat less strong. You might risk moving forward in block production before poorly connected nodes are able to receive the previous message. Like imagine a node running in a country with poor internet infrastructure, plus their ISP is having some transient issues. Let's say that normally, messages take 4 seconds for a round trip time (RTT) to nodes on that particular ISP, but it's plausible that with some network instability, a message could take more than 6 seconds for RTT and they would miss the cutoff.\n\nWith 1 second, it's very obvious that a message would not be able to propagate around the world within that amount of time. The network would quickly devolve into a degenerate state, with a small group of well-connected nodes being the only ones able to attempt to build on the chain.\n\nWhy *exactly* 12 seconds? Nobody knows. 3 seconds is very obviously too short, and 30 seconds is obviously too long, so the developers' choice of 12 seconds seems reasonable enough.\n\n> So it seems that Proof of Stake theoretically does enable drastically lower block times, but we're not going to do it due to not wanting to increase storage requirements of nodes.\n\nI've explained why PoS does not inherently enable drastically lower block times due to the nature of chain conditions under latency, but as a side note, block times are mostly independent of storage requirements. Processing 500 transactions into two smaller, more frequent blocks of 250 transactions each takes up roughly the same amount of storage space as processing one big 500 tx block.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "hvu1x9f",
+                                                    "author": "martyrbk",
+                                                    "score": 1,
+                                                    "created_utc": 1644168807.0,
+                                                    "response": "I don't know what you saw, but it all depends on setting parameters such as block size, block time, tx size and more. Consensus has almost nothing to do with it. There are certain block time limits for POW, but this is not very related to your question.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hvtlzre",
+                    "author": "DPTrumann",
+                    "score": 1,
+                    "created_utc": 1644162407.0,
+                    "response": "The block time isn't set where it is because of proof of work, it's set where it is because it takes around 15 seconds for new transactions to reach enough of the nodes on the network. Setting it lower means transactions reach fewer nodes when the next block gets mined and that increases the risk that the transaction won't make it into the next block.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hvtsvmn",
+                    "author": "thomas_m_k",
+                    "score": 1,
+                    "created_utc": 1644165217.0,
+                    "response": ">computationally expensive PoW piece and the arms race nature of everyone mining at the same time with random validator assignment\n\nThis is a misunderstanding. The block time is not determined by PoW difficulty. It's the other way round. You target a block time and then you adapt the PoW difficulty to hit that target. Even with PoW, Ethereum could have a much shorter block time, but there are good reasons not to do it. It has mainly to do with latency, I believe.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hvy7vdp",
+                    "author": "HeadMembership",
+                    "score": 1,
+                    "created_utc": 1644245475.0,
+                    "response": "I think the more important issue is why won't POS reduce fees more significantly that proposed (my understanding is the fees will hardly change at all).",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hw1wof2",
+                            "author": "ImNoRatAndYouKnowIt",
+                            "score": 1,
+                            "created_utc": 1644302448.0,
+                            "response": "High fees aren't a result of the consensus mechanism (POW vs POS). High fees are a result of a lot of demand for limited space in the blocks. \n\nIncreasing the space would increase centralization (how most other chains have \"scaled\"), so Ethereum is enabling more activity in the same block space via layer 2s (rollups).",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hw3sp9z",
+                                    "author": "HeadMembership",
+                                    "score": 1,
+                                    "created_utc": 1644340692.0,
+                                    "response": "Why wouldn't an increase in the number of validators be an opportunity to increase block size?",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hw9jg7m",
+                    "author": "Ovoko2020",
+                    "score": 1,
+                    "created_utc": 1644435043.0,
+                    "response": "Ethereum better make me proud in 2022",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uwgvjl",
+            "title": "Preventing brute force attacks",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uwgvjl/preventing_brute_force_attacks/",
+            "author": "ayushmw",
+            "created_utc": 1653360194.0,
+            "score": 0,
+            "num_comments": 11,
+            "subreddit": "Bitcoin",
+            "selftext": "I know that guessing the private key of an address is probabalistically next to impossible. But still, does bitcoin even allow multiple consecutive failed brute force attempts? If yes then why? Is it not feasible to implement exponentially growing blocking time windows with every failed attempt. Also, can I subscribe to alerts for brute force attempts on my address?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9rh4ri",
+                    "author": "Otherwise_Control_53",
+                    "score": 7,
+                    "created_utc": 1653360546.0,
+                    "response": "The Blockchain is public data that can be downloaded and attacked locally on your own computer. As such it's impossible to prevent or even know if someone is attempting to brute force it.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9rilay",
+                            "author": "klausofjava",
+                            "score": -2,
+                            "created_utc": 1653361282.0,
+                            "response": "This is also a valid pointer \nTo avoid repetition, put this in perspective too",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9s15oa",
+                    "author": "sciencetaco",
+                    "score": 1,
+                    "created_utc": 1653373371.0,
+                    "response": "The blockchain can be downloaded by anyone and processed offline. An equivalent might be downloading an encrypted file and trying to brute force the password. You cant protect against that, except with suitably complex passwords...which is what private keys are. \n\n>Is it not feasible to implement exponentially growing blocking time windows with every failed attempt.\n\nA private key isn't like a 4-8 digit PIN code where a computer could brute force the possibilities in seconds. Even with *all the computing power in an entire galaxy*, you need trillions of years.\n\nhttps://www.youtube.com/watch?v=S9JGmA5_unY",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9s3aie",
+                            "author": "Tor-ulf",
+                            "score": 1,
+                            "created_utc": 1653375128.0,
+                            "response": "That video is great for understanding the security of if. Hope OP takes a look.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9rk24e",
+                    "author": "SmoothGoing",
+                    "score": 2,
+                    "created_utc": 1653362047.0,
+                    "response": "Nonsense. You're just guessing numbers. Which is futile. But no, nothing knows anyone is doing it and there're no alerts.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9rqrbi",
+                    "author": "bitsteiner",
+                    "score": 2,
+                    "created_utc": 1653365942.0,
+                    "response": "> does bitcoin even allow multiple consecutive failed brute force attempts?\n\nIn theory it allows an infinite number of attempts.\n\n> If yes then why?\n\nBecause Bitcoin is permissionless. \n\n> Is it not feasible to implement exponentially growing blocking time windows with every failed attempt. \n\nThe improvement of security would be useless.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9rugls",
+                    "author": "savinelli_smoker",
+                    "score": 1,
+                    "created_utc": 1653368360.0,
+                    "response": "Every combination is a valid wallet. It\u2019s just a matter of which tiny fraction of a fraction of them contain any sats. So no there is nothing stopping you from guessing a number and consult the blockchain. It\u2019s all open.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9s41en",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1653375762.0,
+                    "response": "Your understanding of Bitcoin is trapped in a centralized mindset\n\n> Is it not feasible to implement exponentially growing blocking time windows with every failed attempt\n\nBitcoin is decentralized. If someone is stupid enough to attempt to brute force a private key, they can run their own Bitcoin node and brute force using their own copy of the Bitcoin blockchain. No, they're not going to send you an alert",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

@@ -164,12 +164,40 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uw9wsv/why_are_legacy_addresses_still_used/",
             "author": "FuelWild665",
             "created_utc": 1653338677.0,
-            "score": 1,
-            "num_comments": 3,
+            "score": 0,
+            "num_comments": 5,
             "subreddit": "BitcoinBeginners",
             "selftext": "For instance, why do some exchanges still use legacy addresses to receive and send bitcoin? Aren't all formats compatible or how shall I call it?",
             "stickied": false,
             "comments": [
+                {
+                    "id": "i9qxf0q",
+                    "author": "sciencetaco",
+                    "score": 3,
+                    "created_utc": 1653350942.0,
+                    "response": "Some wallets and exchanges use them just because they haven't bothered to update and add support for newer formats.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9q918v",
+                    "author": "bitusher",
+                    "score": 2,
+                    "created_utc": 1653339366.0,
+                    "response": "There really aren't good reasons to use legacy P2PKH addresses starting with 1, at minimum they should use SegWit-P2SH addresses starting with 3 . \n\nIf an exchange still uses that address type its a warning they could be a scam exchange or just very irresponsible to not update their wallets/code",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9s56wf",
+                            "author": "BTCMachineElf",
+                            "score": 1,
+                            "created_utc": 1653376771.0,
+                            "response": "Updating an exchange is no small task. For smaller local exchanges it can be monumental. My friend runs a smaller exchange in Vietnam and they've been planning an update from legacy addresses for years, hopefully to implement in Q4 this year. It's definitely an arduous process, rewriting the backend and updating thousands of accounts while keeping opsec. He'll also be integrating lightning, which I'm excited for.\n\nIt is necessary however and legacy addresses are an increasing red flag as time goes on.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
                 {
                     "id": "i9q7ga8",
                     "author": "AutoModerator",
@@ -180,20 +208,11 @@
                     "comments": []
                 },
                 {
-                    "id": "i9qxf0q",
-                    "author": "sciencetaco",
+                    "id": "i9s4qi9",
+                    "author": "BTCMachineElf",
                     "score": 1,
-                    "created_utc": 1653350942.0,
-                    "response": "Some wallets and exchanges use them just because they haven't bothered to update and add support for newer formats.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i9q918v",
-                    "author": "bitusher",
-                    "score": 0,
-                    "created_utc": 1653339366.0,
-                    "response": "There really aren't good reasons to use legacy P2PKH addresses starting with 1, at minimum they should use SegWit-P2SH addresses starting with 3 . \n\nIf an exchange still uses that address type its a warning they could be a scam exchange or just very irresponsible to not update their wallets/code",
+                    "created_utc": 1653376363.0,
+                    "response": "Outdated infrastructure. Simple as that. At this point it's a sign that an exchange isn't on the ball, so to speak.",
                     "depth": 1,
                     "comments": []
                 }

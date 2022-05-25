@@ -38,7 +38,7 @@
             "author": "frank01945",
             "created_utc": 1653344053.0,
             "score": 1,
-            "num_comments": 9,
+            "num_comments": 17,
             "subreddit": "Bitcoin",
             "selftext": "My node seems to have stalled 8 days ago.  Running v23.0.0, Ubuntu System 76, 412 GB free on disk, I get 26 Connections but almost no activity, last Block Height = 736460, last block Sun, May 15, 05:13:06. - hints?",
             "stickied": false,
@@ -54,7 +54,7 @@
                         {
                             "id": "i9qsj9y",
                             "author": "frank01945",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1653348523.0,
                             "response": "Sorry, I don't know what a watchtower is.",
                             "depth": 2,
@@ -70,7 +70,7 @@
                                         {
                                             "id": "i9qw3x9",
                                             "author": "Accomplished-Row5989",
-                                            "score": 1,
+                                            "score": 0,
                                             "created_utc": 1653350295.0,
                                             "response": "you have to ssh in your node and go to the config file and put a watchtower to connect to or your channels sometimes might not sink to the blockchain that\u2019s probably your issue",
                                             "depth": 4,
@@ -78,7 +78,7 @@
                                                 {
                                                     "id": "i9qx4zw",
                                                     "author": "frank01945",
-                                                    "score": 1,
+                                                    "score": 2,
                                                     "created_utc": 1653350801.0,
                                                     "response": "thanks, I'll try to figure out how to do that.",
                                                     "depth": 5,
@@ -86,13 +86,22 @@
                                                         {
                                                             "id": "i9qxfkv",
                                                             "author": "Accomplished-Row5989",
-                                                            "score": 1,
+                                                            "score": 0,
                                                             "created_utc": 1653350950.0,
                                                             "response": "https://youtu.be/tmgh18QE4eA",
                                                             "depth": 6,
                                                             "comments": []
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    "id": "i9snmyn",
+                                                    "author": "frank01945",
+                                                    "score": 1,
+                                                    "created_utc": 1653392458.0,
+                                                    "response": "does watchtower work with Bitcoin nodes or just Lightning?  thanks",
+                                                    "depth": 5,
+                                                    "comments": []
                                                 }
                                             ]
                                         }
@@ -113,7 +122,7 @@
                         {
                             "id": "i9qsg3b",
                             "author": "frank01945",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1653348479.0,
                             "response": "I used to be able to open the \"Debug log file\" but now, it does not open.  How do I find out about usb/sata?  There is no external drive, so probably not usb.  Internal hard drive only.  thanks",
                             "depth": 2,
@@ -121,9 +130,77 @@
                                 {
                                     "id": "i9qx82v",
                                     "author": "frank01945",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1653350843.0,
                                     "response": "I found the current debug file and did not see error msgs...",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9scsiw",
+                                            "author": "igadjeed",
+                                            "score": 1,
+                                            "created_utc": 1653383810.0,
+                                            "response": "What did you see, at the bottom? debug.log is continuously receiving messages, whenever a peer connects or disconnects, whenever a new block arrives. Every message has a timestamp. What's the timestamp of the last message?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9slh5z",
+                                                    "author": "frank01945",
+                                                    "score": 1,
+                                                    "created_utc": 1653391007.0,
+                                                    "response": "2022-05-24T11:03:13Z. - New outbound peer connected.  I currently have 31 connections, but they are not doing anything.  Since last night I have received 186 MB and sent 447 MB.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9snk43",
+                                                            "author": "igadjeed",
+                                                            "score": 1,
+                                                            "created_utc": 1653392409.0,
+                                                            "response": "The node's still running then. What's the last *UpdateTip: new best=* message in debug.log?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9so0er",
+                                                                    "author": "frank01945",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653392698.0,
+                                                                    "response": "at 10:55 Timeout downloading headers from peer 7572, disconnecting\n\nat 10:59 Potential stale tip detected, will try using extra outbound peer",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9sohwo",
+                                                                            "author": "igadjeed",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653393002.0,
+                                                                            "response": "What's the last *UpdateTip: new best=* message in debug.log?",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "i9sockz",
+                                                                    "author": "frank01945",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653392912.0,
+                                                                    "response": "Could my ISP be throttling me?  I am supposed to be getting 1 GIG but see 90 download and 93 upload.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9r1d49",
+                                    "author": "pink_raya",
+                                    "score": 1,
+                                    "created_utc": 1653352908.0,
+                                    "response": "nvm the connector, just asked because I used to have problems with a wobbly external hdd cable connection causing something similar.\n\nweird there's nothing in the logs, hopefully someone with more experience helps you.",
                                     "depth": 3,
                                     "comments": []
                                 }

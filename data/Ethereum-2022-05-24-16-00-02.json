@@ -1,0 +1,63 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uwu07g",
+            "title": "Thoughts on node decentralization",
+            "url": "https://www.reddit.com/r/ethereum/comments/uwu07g/thoughts_on_node_decentralization/",
+            "author": "iveysguest",
+            "created_utc": 1653407580.0,
+            "score": 1,
+            "num_comments": 8,
+            "subreddit": "ethereum",
+            "selftext": "Bit of a noob in the eth dev space but have been developing small projects here and there. I am fortunate enough to have the means to run a light Eth node at home (working on hardware for full sync) on a raspberry pi 4 but have noticed that most tutorials use Infura for access to mainnet and test networks. It seems like one of the biggest barriers to entry for most people is the up front cost associated with having a dedicated computer as a node, as well as the knowledge gap of installing ubuntu and that whole process of getting geth running. This seems like a fairly large issue going forward since AWS and Infura can/will control a large portion of the network. Has anyone thought about this issue and potential ways to combat this going forward? The company Avado sells \"ready to go\" eth nodes for $1000+ but that is not affordable enough for the average person at this time.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9tkbu2",
+                    "author": "MinimalGravitas",
+                    "score": 3,
+                    "created_utc": 1653408137.0,
+                    "response": "If you're looking for a cheaper option for hardware than a Raspberry Pi 4, I don't even know if that exists. The biggest cost is a 2TB SSD and I don't think there's amy way around that.\n\nWith regard to ease of use a Redditor here recently created NiceNode, which lets you run a full node without any Terminal or Docker shenanigans. You can use the search function to find the release thread.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9tx4nt",
+                            "author": "iveysguest",
+                            "score": 2,
+                            "created_utc": 1653413365.0,
+                            "response": "thanks for the quick response! that's an amazing project, linking the thread here for others to visit: https://www.reddit.com/r/ethereum/comments/udw6ht/running_a_node_should_be_easier_so_i_built/",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9v1p9o",
+                    "author": "Maswasnos",
+                    "score": 2,
+                    "created_utc": 1653430577.0,
+                    "response": "I'll 2nd the NiceNode shoutout. You can also toggle it to use the Geth light client, which drastically reduces the time it takes to sync. Then you can point Metamask to it and you'll be on your way without Infura :)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9tys26",
+                    "author": "No-Significance-1581",
+                    "score": 1,
+                    "created_utc": 1653414046.0,
+                    "response": "@ethereumonarm on twitter\n\nhttps://ethereum-on-arm-documentation.readthedocs.io/en/latest/\n\nI built my rig for node and validating like 2 years ago for like $500. The parts hold their value if anything, you can run with even cheaper pre-owned hardware.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}
