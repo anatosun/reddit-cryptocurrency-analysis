@@ -1,9 +1,7 @@
-% Modelo de slides para projetos de disciplinas do Abel
 \documentclass[aspectratio=169]{beamer}
 \hypersetup{pdfpagemode=FullScreen}
 \usetheme[progressbar=frametitle]{metropolis}
 \usepackage{appendixnumberbeamer}
-\usepackage[numbers,sort&compress]{natbib}
 \usepackage{listings}
 \bibliographystyle{plainnat}
 \usepackage{listings}
@@ -11,6 +9,8 @@
 \usepackage{booktabs}
 \usepackage{tikz}
 \usepackage{tikzpeople}
+\usepackage{biblatex}
+\addbibresource{references.bib}
 \usetikzlibrary{shapes,arrows}
 \usepackage[scale=1]{ccicons}
 % \usepackage{enumitem} % not compatible with enumerate in beamer class
@@ -20,7 +20,7 @@
 \title{Reddit Cryptocurrency Comments Analysis}
 % \subtitle{Subtítulo}
 % \date{\today}
-\date{March 31, 2022}
+\date{May 31, 2022}
 \author{Albin Aliu, François-Xavier Wicht \& Grégoire Rebstein}
 \institute{Social Media Analytics}
 % \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
@@ -42,8 +42,8 @@
             \item The main idea is to find a link between the activity in cryptocurrency subreddits and the price of \textbf{Bitcoin}.
             \item For that we modeled the data in an appropriate way and ran several algorithms seen in class.
         \end{itemize}
-%        \vspace{1.0cm}
-%        \includegraphics[width=0.8\textwidth]{figures/bitcoin_price.png}
+        %        \vspace{1.0cm}
+        %        \includegraphics[width=0.8\textwidth]{figures/bitcoin_price.png}
         \column{0.5\textwidth}
         \includegraphics[width=0.8\textwidth]{figures/subreddits_labelled.png}
     \end{columns}
@@ -51,8 +51,8 @@
 \section{Trials and Errors}
 \begin{frame}[t]
     \frametitle{Trials and Errors}
-            The original idea was to perform Sentimental Analysis (SA) on Tweets.
-                \vspace{2.0cm}
+    The original idea was to perform Sentimental Analysis (SA) on Tweets.
+    \vspace{2.0cm}
     \begin{columns}
         \column{0.5\textwidth}
         \begin{itemize}
@@ -121,10 +121,10 @@
     \vspace{1.0cm}
     \begin{columns}
         \column{0.6\textwidth}
-    \begin{itemize}
-        \item The graph data model follows a Power law distribution.
-        \item This most likely means that the data model is well thought out.
-    \end{itemize}
+        \begin{itemize}
+            \item The graph data model follows a Power law distribution.
+            \item This most likely means that the data model is well thought out.
+        \end{itemize}
         \column{0.4\textwidth}
         \includegraphics[width=\textwidth]{figures/deg_dist.pdf}
     \end{columns}
@@ -133,10 +133,10 @@
     \frametitle{PageRank}
     \begin{columns}
         \column{0.4\textwidth}
-    \begin{itemize}
-        \item The PageRank in the network can be interpreted as being the probability of commenting one user's post when browsing the given subreddits.
-        \item Yet, the PageRank alone does not yield very surprising results: users with the most upvoted and commented comments have the highest PageRank.
-    \end{itemize}
+        \begin{itemize}
+            \item The PageRank in the network can be interpreted as being the probability of commenting one user's post when browsing the given subreddits.
+            \item Yet, the PageRank alone does not yield very surprising results: users with the most upvoted and commented comments have the highest PageRank.
+        \end{itemize}
         \column{0.6\textwidth}
         \includegraphics[width=0.9\textwidth]{figures/rank_days.png}
     \end{columns}
@@ -145,15 +145,15 @@
     \frametitle{PageRank}
     \begin{columns}
         \column{0.6\textwidth}
-    \begin{itemize}
-        \item We therefore took interest in evaluating the \textbf{steadiness} of the PageRank along the days.
+        \begin{itemize}
+            \item We therefore took interest in evaluating the \textbf{steadiness} of the PageRank along the days.
             \item We concluded two things.
-        \begin{enumerate}
-            \item There is a tiny similarity between user bases along the days. Two days do not have a lot of users in common. 
-            \item There is a tiny error between PageRank intersections. Two days share about the same PageRank values for the same users.
-        \end{enumerate}
-    \item These two observations help us conclude that the topics and posts are lasting in time.
-    \end{itemize}
+                \begin{enumerate}
+                    \item There is a tiny similarity between user bases along the days. Two days do not have a lot of users in common. 
+                    \item There is a tiny error between PageRank intersections. Two days share about the same PageRank values for the same users.
+                \end{enumerate}
+            \item These two observations help us conclude that the topics and posts are lasting in time and this is consistent with other works \cite{glenskiCharacterizingSpeedScale2019, liMultiwindowBitcoinPrice2021}.
+        \end{itemize}
         \column{0.5\textwidth}
         \includegraphics[width=0.6\textwidth]{figures/sim_days.pdf}
         \includegraphics[width=0.6\textwidth]{figures/error_days.pdf}
@@ -161,40 +161,82 @@
 \end{frame}
 \begin{frame}[t]
     \frametitle{Correlation to price development}
+    \begin{columns}
+\column{0.5\textwidth}
+\begin{itemize}
+    \item We made an inclusion sequence of graph with a time window of 1h.
+        $$G_1\subset G_2\subset G_3\subset \ldots\subset G_n$$
+    \item We used degree centrality to compare each Graph $i$ with its subsequent graph $i+1$.
+    \item We match these data with the ones of the Bitcoin price rate.
+    \item We applied some smoothing with the window average method.
+\end{itemize}
+\column{0.5\textwidth}
+\includegraphis[width=0.5\textwidth]{figures/pearson}
+    \end{columns}
+\end{frame}
+\begin{frame}[t]
+    \frametitle{Causal link}
 \end{frame}
 \section{Homemade implementation}
 \begin{frame}[t]
     \frametitle{PageRank}
     \begin{columns}
-\column{0.4\textwidth}
-\begin{enumerate}
-    \item NetworkX and homemamde implementation yields the same results.
-    \item Yet, the benchmarks show a night and day difference.
-\end{enumerate}
-\column{0.8\textwidth}
-\begin{table}[ht!]
-\centering
-\begin{tabular}{|l|l|l|l|l|} 
-\hline
-implementation & nodes & edges & time  & RAM     \\ 
-\hline
-NetworkX      & 15537 & 58150 & 0.78s & 0.128G  \\ 
-\hline
-homemade (dense)       & 15537 & 58150 & 91.21s   & 5.81G   \\
-\hline
-homemade (sparse)      & 15537 & 58150 & 2.18s   & 0.215G   \\
-\hline
-\end{tabular}
-\caption{Benchmarks of PageRank algorithm on Fedora Linux 36 with Intel i7-8550U (8) @ 4.000GHz and 16GB of RAM}
-\end{table}
+        \column{0.4\textwidth}
+        \begin{enumerate}
+            \item \citetitle{hagbergExploringNetworkStructure2008} and homemade implementation yields the same results.
+            \item Yet, the benchmarks show a night and day difference.
+            \item Using a dense matrix is the main reason behind that.
+            \item It is a direct consequence of the Power Law distribution.
+        \end{enumerate}
+        \column{0.6\textwidth}
+        \begin{table}[ht!]
+            \centering
+            \begin{tabular}{|l|l|l|l|l|} 
+                \hline
+                \tiny implementation & nodes & edges & time  & RAM     \\ 
+                \hline
+                \tiny NetworkX      & 15537 & 58150 & 0.78s & 0.128G  \\ 
+                \hline
+                \tiny homemade (dense)       & 15537 & 58150 & 91.21s   & 5.81G   \\
+                \hline
+            \end{tabular}
+        \end{table}
     \end{columns}
-    
+
 \end{frame}
 \begin{frame}[t]
-    \frametitle{Homemade implementations}
-    \framesubtitle{Louvain}
-    
+    \frametitle{PageRank}
+    \vspace{2.0cm}
+    \begin{table}[ht!]
+        \centering
+        \begin{tabular}{|l|l|l|l|l|} 
+            \hline
+            implementation & nodes & edges & time  & RAM     \\ 
+            \hline
+            NetworkX      & 15537 & 58150 & 0.78s & 0.128G  \\ 
+            \hline
+            homemade (dense)       & 15537 & 58150 & 91.21s   & 5.81G   \\
+            \hline
+            homemade (sparse)      & 15537 & 58150 & 2.18s   & 0.215G   \\
+            \hline
+        \end{tabular}
+        \caption{Benchmarks of PageRank algorithm on Fedora Linux 36 with Intel i7-8550U (8) @ 4.000GHz and 16GB of RAM}
+    \end{table}
+\end{frame}
+\begin{frame}[t]
+    \frametitle{Louvain}
 \end{frame}
 \section{Discussion}
+\begin{frame}[t]
+    \frametitle{Questions}
+    \vspace{2.0cm}
+    \begin{center}
+        Any questions?
+    \end{center}
+\end{frame}
+\begin{frame}[t]
+    \frametitle{References}
+    \printbibliography
 
+\end{frame}
 \end{document}
