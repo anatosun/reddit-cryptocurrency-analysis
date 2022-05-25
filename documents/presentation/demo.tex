@@ -115,6 +115,20 @@
         \includegraphics[width=0.8\textwidth]{figures/graph_model.png}
     \end{columns}
 \end{frame}
+\begin{frame}[t]
+    \frametitle{Data Models}
+    \vspace{1.0cm}
+    \begin{columns}
+        \column{0.4\textwidth}
+        \begin{itemize}
+            \item Deep Link No merge model represented on the right.
+            \item Tree-like structure may be observed for large comments.
+            \item Most imposing subreddits are Bitcoin, Dogecoin and Ethereum.
+        \end{itemize}
+        \column{0.6\textwidth}
+        \includegraphics[width=0.7\textwidth]{figures/subreddits_labelled.png}
+    \end{columns}
+\end{frame}
 \section{Analysis}
 \begin{frame}[t]
     \frametitle{Power law distribution}
@@ -162,20 +176,35 @@
 \begin{frame}[t]
     \frametitle{Correlation to price development}
     \begin{columns}
-\column{0.5\textwidth}
-\begin{itemize}
-    \item We made an inclusion sequence of graph with a time window of 1h.
-        $$G_1\subset G_2\subset G_3\subset \ldots\subset G_n$$
-    \item We used degree centrality to compare each Graph $i$ with its subsequent graph $i+1$.
-    \item We match these data with the ones of the Bitcoin price rate.
-    \item We applied some smoothing with the window average method.
-\end{itemize}
-\column{0.5\textwidth}
-\includegraphis[width=0.5\textwidth]{figures/pearson}
+        \column{0.5\textwidth}
+        \begin{itemize}
+            \item We made an inclusion sequence of graph with a time window of 1h.
+                $$G_1\subset G_2\subset G_3\subset \ldots\subset G_n$$
+            \item We used degree centrality to compare each Graph $i$ with its subsequent graph $i+1$.
+            \item We match these data with the ones of the Bitcoin price rate.
+            \item We applied some smoothing with the window average method.
+        \end{itemize}
+        \column{0.5\textwidth}
+        \includegraphics[width=0.8\textwidth]{figures/activity_x_price.pdf}
+        \includegraphics[width=0.8\textwidth]{figures/pearson.pdf}
+        \begin{itemize}
+            \item The correlation we've found is of $-0.85$.
+        \end{itemize}
     \end{columns}
 \end{frame}
 \begin{frame}[t]
     \frametitle{Causal link}
+    \vspace{1.0cm}
+\begin{itemize}
+    \item Yet, correlation does not capture causal link.
+    \item Causal link is difficult to assess between activity in subreddits and price rate.
+    \item \citetitle{wooleyExtractingCryptocurrencyPrice2019} shows with Granger causality tests, that there exists indeed a causal link between the two.
+    \item Correlations have also been proven in \citetitle{iderCryptocurrencyReturnPrediction2022}.
+\end{itemize}
+\end{frame}
+\begin{frame}[t]
+    \frametitle{Louvain community detection method}
+    
 \end{frame}
 \section{Homemade implementation}
 \begin{frame}[t]
@@ -234,7 +263,7 @@
         Any questions?
     \end{center}
 \end{frame}
-\begin{frame}[t]
+\begin{frame}[plain,allowframebreaks]
     \frametitle{References}
     \printbibliography
 
