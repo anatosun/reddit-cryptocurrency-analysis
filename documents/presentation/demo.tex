@@ -84,26 +84,110 @@
     \end{columns}
 \end{frame}
 \section{Data Models}
+\newcounter{sauvegardeenumi}
+\newcommand{\asuivre}{\setcounter{sauvegardeenumi}{\theenumi}}
+\newcommand{\suite}{\setcounter{enumi}{\thesauvegardeenumi}}
 \begin{frame}[t]
     \frametitle{Data Models}
+    We have tried four types of data models.
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{enumerate}
+            \item Unique Cartesian Link: all commenters from a specific post are linked together with an undirected edge.
+            \item Deep Link: commenters are recursively linked together with a directed edge (i.e. capturing the relation ``has commented'') with a weight of relevance according to the depth of comments.
+                \asuivre
+        \end{enumerate}
+        \column{0.4\textwidth}
+        \includegraphics[width=0.8\textwidth]{figures/graph_model.png}
+    \end{columns}
+\end{frame}
+\begin{frame}[t]
+    \frametitle{Data Models}
+    \vspace{1.0cm}
+    \begin{columns}
+        \column{0.6\textwidth}
+        \begin{enumerate}
+            \suite
+            \item Next Link: only main commenters of the post are linked to the Original Poster (OP) with a directed edge.
+            \item Deep Link No merge: same as Deep Link without merging the different edges. This results in a directed multigraph.
+        \end{enumerate}
+        \column{0.4\textwidth}
+        \includegraphics[width=0.8\textwidth]{figures/graph_model.png}
+    \end{columns}
 \end{frame}
 \section{Analysis}
 \begin{frame}[t]
-    \frametitle{Analysis}
-    \framesubtitle{Power law distribution}
+    \frametitle{Power law distribution}
+    \vspace{1.0cm}
+    \begin{columns}
+        \column{0.6\textwidth}
+    \begin{itemize}
+        \item The graph data model follows a Power law distribution.
+        \item This most likely means that the data model is well thought out.
+    \end{itemize}
+        \column{0.4\textwidth}
+        \includegraphics[width=\textwidth]{figures/deg_dist.pdf}
+    \end{columns}
 \end{frame}
 \begin{frame}[t]
-    \frametitle{Analysis}
-    \framesubtitle{PageRank}
+    \frametitle{PageRank}
+    \begin{columns}
+        \column{0.4\textwidth}
+    \begin{itemize}
+        \item The PageRank in the network can be interpreted as being the probability of commenting one user's post when browsing the given subreddits.
+        \item Yet, the PageRank alone does not yield very surprising results: users with the most upvoted and commented comments have the highest PageRank.
+    \end{itemize}
+        \column{0.6\textwidth}
+        \includegraphics[width=0.9\textwidth]{figures/rank_days.png}
+    \end{columns}
 \end{frame}
 \begin{frame}[t]
-    \frametitle{Analysis}
-    \framesubtitle{Correlation to price development}
+    \frametitle{PageRank}
+    \begin{columns}
+        \column{0.6\textwidth}
+    \begin{itemize}
+        \item We therefore took interest in evaluating the \textbf{steadiness} of the PageRank along the days.
+            \item We concluded two things.
+        \begin{enumerate}
+            \item There is a tiny similarity between user bases along the days. Two days do not have a lot of users in common. 
+            \item There is a tiny error between PageRank intersections. Two days share about the same PageRank values for the same users.
+        \end{enumerate}
+    \item These two observations help us conclude that the topics and posts are lasting in time.
+    \end{itemize}
+        \column{0.5\textwidth}
+        \includegraphics[width=0.6\textwidth]{figures/sim_days.pdf}
+        \includegraphics[width=0.6\textwidth]{figures/error_days.pdf}
+    \end{columns}
+\end{frame}
+\begin{frame}[t]
+    \frametitle{Correlation to price development}
 \end{frame}
 \section{Homemade implementation}
 \begin{frame}[t]
-    \frametitle{Homemade implementations}
-    \framesubtitle{PageRank}
+    \frametitle{PageRank}
+    \begin{columns}
+\column{0.4\textwidth}
+\begin{enumerate}
+    \item NetworkX and homemamde implementation yields the same results.
+    \item Yet, the benchmarks show a night and day difference.
+\end{enumerate}
+\column{0.8\textwidth}
+\begin{table}[ht!]
+\centering
+\begin{tabular}{|l|l|l|l|l|} 
+\hline
+implementation & nodes & edges & time  & RAM     \\ 
+\hline
+NetworkX      & 15537 & 58150 & 0.78s & 0.128G  \\ 
+\hline
+homemade (dense)       & 15537 & 58150 & 91.21s   & 5.81G   \\
+\hline
+homemade (sparse)      & 15537 & 58150 & 2.18s   & 0.215G   \\
+\hline
+\end{tabular}
+\caption{Benchmarks of PageRank algorithm on Fedora Linux 36 with Intel i7-8550U (8) @ 4.000GHz and 16GB of RAM}
+\end{table}
+    \end{columns}
     
 \end{frame}
 \begin{frame}[t]
