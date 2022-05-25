@@ -1,0 +1,187 @@
+\documentclass{sigchi}
+
+\usepackage[utf8]{inputenc} % for a UTF8 editor only
+\usepackage{biblatex}
+% Load basic packages
+\usepackage{balance}       % to better equalize the last page
+\usepackage{graphics}      % for EPS, load graphicx instead 
+\usepackage[T1]{fontenc}   % for umlauts and other diaeresis
+\usepackage{txfonts}
+\usepackage{mathptmx}
+\usepackage[pdflang={en-US},pdftex]{hyperref}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows}
+\addbibresource{references.bib}
+
+
+% Some optional stuff you might like/need.
+\usepackage{microtype}        % Improved Tracking and Kerning
+% \usepackage[all]{hypcap}    % Fixes bug in hyperref caption linking
+\usepackage{ccicons}          % Cite your images correctly!
+
+% If you want to use todo notes, marginpars etc. during creation of
+% your draft document, you have to enable the "chi_draft" option for
+% the document class. To do this, change the very first line to:
+% "\documentclass[chi_draft]{sigchi}". You can then place todo notes
+% by using the "\todo{...}"  command. Make sure to disable the draft
+% option again before submitting your final document.
+%\usepackage{todonotes}
+
+% Paper metadata (use plain text, for PDF inclusion and later
+% re-using, if desired).  Use \emtpyauthor when submitting for review
+% so you remain anonymous.
+\def\plaintitle{Reddit cryptocurrency comments analysis}
+\def\plainauthor{First Author, Second Author, Third Author,
+  Fourth Author, Fifth Author, Sixth Author}
+\def\emptyauthor{}
+\def\plainkeywords{Reddit; Cryptocurrency.}
+% \def\plaingeneralterms{Documentation, Standardization}
+
+% llt: Define a global style for URLs, rather that the default one
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{
+    \def\UrlFont{\sf}
+  }{
+    \def\UrlFont{\small\bf\ttfamily}
+  }}
+\makeatother
+\urlstyle{leo}
+
+% To make various LaTeX processors do the right thing with page size.
+\def\pprw{8.5in}
+\def\pprh{11in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+
+% Make sure hyperref comes last of your loaded packages, to give it a
+% fighting chance of not being over-written, since its job is to
+% redefine many LaTeX commands.
+\definecolor{linkColor}{RGB}{6,125,233}
+\hypersetup{%
+  pdftitle={\plaintitle},
+% Use \plainauthor for final version.
+%  pdfauthor={\plainauthor},
+  pdfauthor={\emptyauthor},
+  pdfkeywords={\plainkeywords},
+  pdfdisplaydoctitle=true, % For Accessibility
+  bookmarksnumbered,
+  pdfstartview={FitH},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=linkColor,
+  breaklinks=true,
+  hypertexnames=false
+}
+
+\usepackage[inline]{enumitem}
+\usepackage{tasks}
+
+
+
+% create a shortcut to typeset table headings
+% \newcommand\tabhead[1]{\small\textbf{#1}}
+
+% End of preamble. Here it comes the document.
+\begin{document}
+
+\title{\plaintitle}
+
+\numberofauthors{3}
+\author{%
+  \alignauthor{Albin Aliu\\
+    % \affaddr{for Submission}\\
+    % \affaddr{University of Fribourg}\\
+    \email{\href{mailto:albin.aliu@unifr.ch}{\color{black}albin.aliu@unifr.ch}}}\\
+  \alignauthor{François-Xavier Wicht\\
+    % \affaddr{for Submission}\\
+    % \affaddr{University of Fribourg}\\
+    \email{\href{mailto:francois-xavier.wicht@unifr.ch}{\color{black}francois-xavier.wicht@unifr.ch}}}\\
+      \alignauthor{Grégoire Rebstein\\
+    % \affaddr{for Submission}\\
+    % \affaddr{University of Fribourg}\\
+    \email{\href{mailto:gregoire.rebstein@unifr.ch}{\color{black}gregoire.rebstein@unifr.ch}}}
+}
+
+\maketitle
+
+\begin{abstract}
+\input{abstract.tex}
+
+\end{abstract}
+
+
+% ACM Classfication
+
+% \begin{CCSXML}
+%   <ccs2012>
+%   <concept>
+%   <concept_id>10003120.10003121.10003122.10003334</concept_id>
+%   <concept_desc>Human-centered computing~User studies</concept_desc>
+%   <concept_significance>500</concept_significance>
+%   </concept>
+%   <concept>
+%   <concept_id>10003120.10003130</concept_id>
+%   <concept_desc>Human-centered computing~Collaborative and social computing</concept_desc>
+%   <concept_significance>300</concept_significance>
+%   </concept>
+%   </ccs2012>
+% \end{CCSXML}
+
+% \ccsdesc[500]{Human-centered computing~User studies}
+% \ccsdesc[300]{Human-centered computing~Collaborative and social computing}
+
+% \ccsdesc[500]{Human-centered computing~Human computer interaction (HCI)}
+% \ccsdesc[100]{Human-centered computing~User studies}
+
+% Author Keywords
+\keywords{\plainkeywords}
+
+% Print the classification codes
+% \printccsdesc
+% Please use the 2012 Classifiers and see this link to embed them in the text: \url{https://dl.acm.org/ccs/ccs_flat.cfm}
+\section{Introduction}
+\input{introduction.tex}
+%\section{Overview}
+%\input{overview.tex}
+
+\section{Scraping methodology}
+\input{scrapping.tex}
+\section{Data Models}
+\input{models.tex}
+\section{Analysis and Visualisation}
+\input{analysis.tex}
+\section{Own implementations}
+\input{implementation.tex}
+\section{Trials and Errors}
+\input{trials.tex}
+%\section{Related works}
+%\input{related_works}
+\section{Conclusion}
+\input{conclusion.tex}
+
+
+
+\nocite{*}
+\newpage
+%\bibliographystyle{SIGCHI-Reference-Format}
+\small
+%\bibliography{references}
+\newpage
+\printbibliography
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
