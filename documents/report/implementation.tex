@@ -20,7 +20,7 @@ homemade (sparse)      & 15537 & 58150 & 2.18s   & 0.215G   \\
 \end{table}
 
 Louvain is an iterative algorithm that works in series of 2 steps until convergence. The first one is to assign every node to a community based on the modularity gain. The second step consists in building a new graph by transforming the communities into hypernodes.
-When implementing Louvain method, we took a small graph to ensure that the implementation was correct. However, when we tried to apply it on the graph based on \textit{Deep Link No Merge}, our implementation was too slow and we stop the process after 10min without having a result.
+When implementing Louvain method, we took a small graph to ensure that the implementation was correct. However, when we tried to apply it on the graph based on \textit{Deep Link No Merge}, our implementation was too slow and we stopped the process after 10min without having a result.
 When comparing with the implementation of networkx, we see that it is much faster and ends in a few seconds with the graph \textit{Deep Link No Merge}. Indeed, they do some optimizations and in particular they precalculate the gain of modularity. The computation of modularity gain is the most called instruction in the algorithm and it seems that it is the main reason why our implementation is too slow. However, to save time, instead of optimizing our implementation, we decided to use the one from networkx.
 To compare the two implementation, we did benchmarking with a random graph.
 The compute is 50 times faster but the scaling with the number of edges is not linear.
