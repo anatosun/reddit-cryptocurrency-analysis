@@ -9,7 +9,7 @@
 \usepackage{booktabs}
 \usepackage{tikz}
 \usepackage{tikzpeople}
-\usepackage{biblatex}
+\usepackage[backend=biber]{biblatex}
 \addbibresource{references.bib}
 \usetikzlibrary{shapes,arrows}
 \usepackage[scale=1]{ccicons}
@@ -94,25 +94,68 @@
         \column{0.5\textwidth}
         \begin{enumerate}
             \item Unique Cartesian Link: all commenters from a specific post are linked together with an undirected edge.
-            \item Deep Link: commenters are recursively linked together with a directed edge (i.e. capturing the relation ``has commented'') with a weight of relevance according to the depth of comments.
+            \item Next Link: only main commenters of the post are linked to the Original Poster (OP) with a directed edge.
                 \asuivre
         \end{enumerate}
         \column{0.4\textwidth}
-        \includegraphics[width=0.8\textwidth]{figures/graph_model.png}
+        \resizebox{\textwidth}{!}{
+                \begin{tabular}{l}
+                    User 0 (OP, depth=1, score=30)  \\
+                    \hline
+                    \hspace{1cm} User 1 (d=1, s=10)              \\
+                    \hline
+                    \hspace{2cm} User 2 (d=2, s=10)            \\
+                    \hline
+                    \hspace{2cm} User 3 (d=2, s=2)             \\
+                    \hline
+                    \hspace{1cm} User 4 (d=1, s=5)             \\
+                    \hline
+                    \hspace{1cm} User 5 (d=1, s=3)             \\
+                    \hline
+                    \hspace{2cm} User 6 (d=2, s=2)             \\
+                    \hline
+                    \hspace{3cm} User 3 (d=3, s=1)             \\
+                    \hline
+                    \hspace{2cm} User  7 (d=2, s=1)            \\
+                    \hspace{6.5cm}
+                \end{tabular}
+        }
     \end{columns}
 \end{frame}
 \begin{frame}[t]
     \frametitle{Data Models}
-    \vspace{1.0cm}
     \begin{columns}
-        \column{0.6\textwidth}
+        \column{0.4\textwidth}
         \begin{enumerate}
             \suite
-            \item Next Link: only main commenters of the post are linked to the Original Poster (OP) with a directed edge.
+            \item Deep Link: commenters are recursively linked together with a directed edge (i.e. capturing the relation ``has commented'') with a weight of relevance according to the depth of comments.
             \item Deep Link No merge: same as Deep Link without merging the different edges. This results in a directed multigraph.
         \end{enumerate}
-        \column{0.4\textwidth}
-        \includegraphics[width=0.8\textwidth]{figures/graph_model.png}
+        \column{0.6\textwidth}
+        \hspace{1.0cm}
+        \resizebox{0.5\textwidth}{!}{
+                \begin{tabular}{l}
+                    User 0 (OP, depth=1, score=30)  \\
+                    \hline
+                    \hspace{1cm} User 1 (d=1, s=10)              \\
+                    \hline
+                    \hspace{2cm} User 2 (d=2, s=10)            \\
+                    \hline
+                    \hspace{2cm} User 3 (d=2, s=2)             \\
+                    \hline
+                    \hspace{1cm} User 4 (d=1, s=5)             \\
+                    \hline
+                    \hspace{1cm} User 5 (d=1, s=3)             \\
+                    \hline
+                    \hspace{2cm} User 6 (d=2, s=2)             \\
+                    \hline
+                    \hspace{3cm} User 3 (d=3, s=1)             \\
+                    \hline
+                    \hspace{2cm} User  7 (d=2, s=1)            \\
+                    \hspace{6.5cm}
+                \end{tabular}
+        }
+        \includegraphics[width=0.5\textwidth]{figures/graph_model.png}
     \end{columns}
 \end{frame}
 \begin{frame}[t]
@@ -204,7 +247,19 @@
 \end{frame}
 \begin{frame}[t]
     \frametitle{Louvain community detection method}
-    
+
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{itemize}
+            \item We observed that Louvain communities are formed from people belonging to the same subreddit.
+            \item Some communities spread over multiple subreddits.
+            \item The larger the community the more it spreads over different subreddits.
+            \item Communities have a foothold in one unique subreddit but also spread on the nine other subs.
+        \end{itemize}
+        \column{0.5\textwidth}
+        \includegraphics[width=0.7\textwidth]{figures/communities_size.pdf}
+        \includegraphics[width=0.7\textwidth]{figures/communities_repartition_by_size.pdf}
+    \end{columns}
 \end{frame}
 \section{Homemade implementation}
 \begin{frame}[t]
@@ -254,6 +309,29 @@
 \end{frame}
 \begin{frame}[t]
     \frametitle{Louvain}
+    \vspace{1.0cm}
+    \begin{itemize}
+        \item Our implementation was very slow but yielded the same result as the one from \citetitle{hagbergExploringNetworkStructure2008}.
+        \item Cause of that is the computation of modularity gain, which could have been optimised.
+        \item We only ran the benchmark on a subset of the total graph.
+    \end{itemize} 
+\end{frame}
+\begin{frame}[t]
+    \frametitle{Louvain}
+    \vspace{2.0cm}
+    \begin{table}[ht!]
+        \centering
+        \begin{tabular}{|l|l|l|l|l|} 
+            \hline
+            implementation & nodes & edges & time  & RAM     \\ 
+            \hline
+            \citetitle{hagbergExploringNetworkStructure2008}       & 1000 & 4852 & 0.37s & 3.478MB  \\ 
+            \hline
+            homemade      & 1000 & 4852 & 18.76s   & 3.235MB   \\
+            \hline
+        \end{tabular}
+        \caption{Benchmarks of Louvain algorithm on macOS Monterey with Apple M1 and 8Go of RAM}
+    \end{table}
 \end{frame}
 \section{Discussion}
 \begin{frame}[t]
