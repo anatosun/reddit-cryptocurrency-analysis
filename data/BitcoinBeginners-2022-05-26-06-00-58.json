@@ -1,0 +1,72 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uy0plh",
+            "title": "Hardware wallet arriving soon, help me get ready?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uy0plh/hardware_wallet_arriving_soon_help_me_get_ready/",
+            "author": "zooms",
+            "created_utc": 1653544142.0,
+            "score": 1,
+            "num_comments": 8,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Got a hardware wallet in the mail.  I'm wondering about the software support side of things.\n\nI understand it's advised to run bitcoin core as my own node for the highest privacy?\n\nI have only a Windows 10 desktop that I use everyday as my everything computer.  Is it OK to put bitcoin core on this computer?  I understand Tor comes with or is built in to bitcoin core?\n\nAlso, I'm reading that setting up an Electrum server paired with bitcoin core is the way to go.  Only Electrum servers can't run on Windows?  Only Electrum PERSONAL servers?  Is this OK?  \n\n\nAre these three things all I need to interact with my HW wallet?  \n\\-Bitcoin Core  \n\\-Tor  \n\\-Electrum Personal server?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia17ssq",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653544142.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia1b6jl",
+                    "author": "BTCMachineElf",
+                    "score": 1,
+                    "created_utc": 1653546781.0,
+                    "response": ">I understand it's advised to run bitcoin core as my own node for the highest privacy?\n\nThe privacy gained will be never sharing your wallet pubkey. It's important you set it up properly before wallet creation so it never uses your pubkey to query a public node.\n\nBitcoin core is a technical way to go around it. You then also need to set up electrum personal server, yes (Electrum Server is public; it serves *all* electrum users). Then point Electrum to that. Tor is optional but recommended. That is a good setup and I did use it for years. But then I switched to Umbrel.\n\nEverything node is far easier with the Umbrel package. A full bitcoin node with lightning and apps, its meant for a raspberry pi 4 or similarly powered pc. It has a slick interface that you access from any web browser on your local network, lots of add-on apps for management and functionality. I strongly recommend setting that up instead of bitcoin core.\n\nIt's super easy to point electrum, or many various wallet interfaces, to Umbrel. They have a walk-through menu for all kinds of wallets. And the best part, Umbrel is free. [https://getumbrel.com/](https://getumbrel.com/)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia21wko",
+                            "author": "putyograsseson",
+                            "score": 1,
+                            "created_utc": 1653567766.0,
+                            "response": "even better use [Citadel](https://runcitadel.space)\n\nit\u2019s Umbrel but FOSS",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia1vfb6",
+                    "author": "ElectricalEnd1066",
+                    "score": 1,
+                    "created_utc": 1653563769.0,
+                    "response": "I use Specter instead of an Electrum personnel server on a Windows 10 machine.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia1w0yi",
+                    "author": "bitusher",
+                    "score": 1,
+                    "created_utc": 1653564171.0,
+                    "response": "Here are easy ways to setup your hardware wallet with 2 different full nodes \n\nhttps://www.reddit.com/r/BitcoinBeginners/comments/uwpn3c/how_can_we_actually_trust_cold_wallets/i9sztfe/\n\n>I understand it's advised to run bitcoin core as my own node for the highest privacy?\n\nElectrum personal server runs a full node just like bitcoin core and yes it gives you better privacy and better security\n\n>I have only a Windows 10 desktop that I use everyday as my everything computer. Is it OK t\n\nYou can run software like electrum or umbrel in windows safely because you are using a hardware wallet",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

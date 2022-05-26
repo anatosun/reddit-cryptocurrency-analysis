@@ -15,7 +15,7 @@
             "author": "br4infreze",
             "created_utc": 1653357039.0,
             "score": 0,
-            "num_comments": 4,
+            "num_comments": 8,
             "subreddit": "ethereum",
             "selftext": "As far as I know there will be a merge of difficulty bomb gradually making it harder to mine new blocks.\nThis will happend before the PoS merge ?\nWhat is the strategy here ? \nWon't there be a point in time where no one will be able to sign blocks, or at least slow down transaction time ?\n\nBtw, Vitalik also tweeted something about removing transaction from chain, should this raise some brows..?\n\nThanks !",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i9s42mx",
                     "author": "edmundedgar",
-                    "score": 4,
+                    "score": 5,
                     "created_utc": 1653375791.0,
                     "response": "With the difficulty bomb, before blocks get seriously slow, one of the following will happen:\n\n   * The merge is here, so no need to change the difficulty bomb, just do the merge\n   * The merge is close enough to schedule, so do a new release which removes the difficulty bomb and just put the scheduled merge into the software\n   * The merge could be a while, make a little new release that just postpones the difficulty bomb to a new date.",
                     "depth": 1,
@@ -32,7 +32,7 @@
                 {
                     "id": "i9rkq7x",
                     "author": "Perleflamme",
-                    "score": 5,
+                    "score": 4,
                     "created_utc": 1653362412.0,
                     "response": ">Btw, Vitalik also tweeted something about removing transaction from chain, should this raise some brows..?\n\nAny consensus can remove anything that has not already hit finality. It's just that PoS allows for a definite finality, while PoW allows for indefinite finality tied to an ever-increasing cost (which means you can safely assume that, beyond a very expensive cost, it is expected to be a somewhat definite finality).",
                     "depth": 1,

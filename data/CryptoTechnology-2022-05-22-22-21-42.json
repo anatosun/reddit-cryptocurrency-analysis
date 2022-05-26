@@ -14,34 +14,34 @@
             "url": "https://www.reddit.com/r/CryptoTechnology/comments/uvlkuv/blockcahin_is_pseudonymous_not_anonymous_and/",
             "author": "AdhesivenessDue652",
             "created_utc": 1653257568.0,
-            "score": 99,
-            "num_comments": 21,
+            "score": 108,
+            "num_comments": 28,
             "subreddit": "CryptoTechnology",
             "selftext": "A lot of people, especially the newer crypto audience, are under the notion that crypto as a whole is anonymous and is that you can technically do whatever you want using crypto.\n\nI blame this on how Bitcoin was very popular back in the day with dr#g dealers and how it was basically the main currency used on Silk Road.\n\nBut the reality is, crypto is a VERY transparent market. In fact it\u2019s even more transparent than banking considering that a lot of bank have bank secrecy like in Switzerland.\n\nCrypto is in fact, pseudonymous. Meaning that every single transaction you make can be traced back to your wallet, however no one can technically know who that wallet is for unless you accidentally make it identifiable or unless you use a platform with KYC.\n\nCrypto was created to enable fully transparent transactions yet protect the identity of users. And with Zero-knowledge technology seemingly taking over now, this couldn\u2019t be closer than the truth.  \nZksync and Loopring have been focusing a lot of zero-knowledge and even new L1s like Concordium are focusing a lot on their users\u2019 privacy through integration zk proofs directly onto their chain.  \nHbar has been focusing a lot of protecting their users identity as well\n\nBlockchain technology can\u2019t be a thing if addresses are anonymous cause then consensus can\u2019t be achieved. You have to always keep track of all transactions or else there\u2019s no use for crypto.",
             "stickied": false,
             "comments": [
                 {
-                    "id": "i9mlpqx",
-                    "author": "yersinia_p3st1s",
-                    "score": 19,
-                    "created_utc": 1653266179.0,
-                    "response": "Correction, most blockchains are not anonymous. Definitely not all.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i9mad0r",
                     "author": "Gonbatfire",
-                    "score": 32,
+                    "score": 53,
                     "created_utc": 1653260220.0,
                     "response": ">Blockchain technology can\u2019t be a thing if addresses are anonymous cause then consensus can\u2019t be achieved. You have to always keep track of all transactions or else there\u2019s no use for crypto.\n\nSo wrong, Monero (XMR) is a completely opaque blockchain that's been around for 8 years, and it's the #1 currency on the dark net (so that gives you an idea of how private it really is hah!)\n\n[What is Monero? by Whiteboard Crypto](https://www.youtube.com/watch?v=B7sLnmlZ-kU&t=310s)",
                     "depth": 1,
                     "comments": []
                 },
                 {
+                    "id": "i9mlpqx",
+                    "author": "yersinia_p3st1s",
+                    "score": 27,
+                    "created_utc": 1653266179.0,
+                    "response": "Correction, most blockchains are not anonymous. Definitely not all.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i9m8ghv",
                     "author": "DragonSided-D",
-                    "score": 27,
+                    "score": 36,
                     "created_utc": 1653259250.0,
                     "response": "One word: **Monero**\n\nIt\u2019s anonymous, not pseudo.",
                     "depth": 1,
@@ -49,11 +49,50 @@
                         {
                             "id": "i9mkh2u",
                             "author": "holomntn",
-                            "score": 13,
+                            "score": 20,
                             "created_utc": 1653265520.0,
                             "response": "Technically it isn't.\n\nTechnically Monero is polypseudonymous. \n\nBasically Monero relies on not being able to link the polynyms. Making it anonymous for some purposes. \n\nTo see how such polypseudonymous behavior is different from anonymous, picture yourself standing in a shop, on camera, transacting with Monero. Doing that you are very clearly NOT anonymous.\n\nIt is a subtle distinction, but when it comes down to the very limit, that difference can make a difference.\n\nEdit: this is the same kind of distinction as TOR and other onion routing systems actually being group pseudonymous, rather than anonymous. The distinction matters, but only when it matters.",
                             "depth": 2,
                             "comments": [
+                                {
+                                    "id": "i9nisil",
+                                    "author": "Magick93",
+                                    "score": 5,
+                                    "created_utc": 1653285002.0,
+                                    "response": "> To see how such polypseudonymous behavior is different from anonymous, picture yourself standing in a shop, on camera, transacting with Monero. Doing that you are very clearly NOT anonymous.\n\n\nPerhaps a better analogy is the shop is full of people all wearing the same clothes and their faces are hidden behind masks.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9ntbec",
+                                            "author": "holomntn",
+                                            "score": 2,
+                                            "created_utc": 1653293934.0,
+                                            "response": "Not even close. You missed the entire point. \n\nThe point being that the transaction itself being done using an \"anonymous\" currency, but because you are doing the transaction literally on camera, you are clearly not anonymous. \n\nIt is just that the threshold to acquire the data is higher, requiring significantly more work and preknowledge in order to get the verification.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9ntw5l",
+                                                    "author": "Magick93",
+                                                    "score": 3,
+                                                    "created_utc": 1653294469.0,
+                                                    "response": "But you're literally not doing it on camera. You're doing it over an encrypted connection.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9nu2lf",
+                                                            "author": "holomntn",
+                                                            "score": 7,
+                                                            "created_utc": 1653294640.0,
+                                                            "response": "Hence the \"picture yourself\"\n\nWhen doing those transactions you are revealing quite a bit of information about the participants simply through the act of communicating, even over such a channel. \n\nTo help give you an understanding of exactly how this works. Have you ever seen two people talking to each other in a language you don't know? How did you know they are talking to each other. \n\nThe encrypted connection can only hide certain things.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
                                 {
                                     "id": "i9mq4br",
                                     "author": "Gonbatfire",
@@ -65,7 +104,7 @@
                                         {
                                             "id": "i9mr2re",
                                             "author": "holomntn",
-                                            "score": 5,
+                                            "score": 7,
                                             "created_utc": 1653268949.0,
                                             "response": "That's always a struggle because true anonymity may not be possible. \n\nTrue anonymity would mean that it could be truly any person. But if something is written then obviously it is someone that can write and that isn't everyone. \n\nThat's a continual problem. \n\nWe commonly think of anonymity in loose terms, so DB Cooper is \"anonymous\" but Wikipedia has a relatively short list of suspects. The zodiac killer is \"anonymous\", but there's a short list of potential people (although it could be argued pseudonymous since they gave their name in code).\n\nOn a more positive note the Federalist Papers were published \"anonymously\" but the authors are now known to be Hamilton, Madison, and Jay, in spite of an earlier effort to make them pseudonymous.\n\nIt's not until you get to things so old that the records have been lost to time that anonymity exists. So the first farmer is anonymous, but only because there is no way of tracking anything about them.\n\nTrue anonymity is really hard and may be impossible.",
                                             "depth": 4,
@@ -74,52 +113,52 @@
                                         {
                                             "id": "i9nmcgd",
                                             "author": "SterlingVapor",
-                                            "score": 3,
+                                            "score": 2,
                                             "created_utc": 1653287780.0,
                                             "response": "I can think of only two ways to guarantee anonymity, either every \"player\" submits encrypted transaction requests every \"turn\", meaning either transactions can only happen in certain windows and theoretically everyone would have an agent online every window, or you sacrifice transparency.  The latter could be something like making the transaction details unable to be audited   \n\nEither way you need to change all the wallet IDs each transaction so you can't track the balances to reverse engineer the transactions\n\nI would interpret true, mathematical anonymity mean no actor, no matter how godlike, would be able to collect data on any wallet they don't have the key to, meaning no one should be able to gain any additional info they didn't get directly.  No two pieces of information should be able to be attributed to one another, which means auditing of the system to ensure no one is cheating becomes impossible aside from trusting it's mathematically guaranteed.\n\nI don't think true anonymity is possible in practice, that requires that no action any actor takes could compromise them, which calls for spherical cows in the real world.  \n\nWhat we do have is obsification and encryption to make it as impractical as possible.  Like TOR, tor is obsification to the point we call it anonymity.  But tor is a great example, it can be (and presumably is) compromised by an actor gaining control over a certain percentage of the supernodes, which allows an actor to break into the routing process and unmask some users.  It's impractical enough that even then it's more practical to go through a side channel, like real world detective work or compromising a site and tricking a user (or their machine) into unmasking themselves",
                                             "depth": 4,
-                                            "comments": []
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "i9nisil",
-                                    "author": "Magick93",
-                                    "score": 2,
-                                    "created_utc": 1653285002.0,
-                                    "response": "> To see how such polypseudonymous behavior is different from anonymous, picture yourself standing in a shop, on camera, transacting with Monero. Doing that you are very clearly NOT anonymous.\n\n\nPerhaps a better analogy is the shop is full of people all wearing the same clothes and their faces are hidden behind masks.",
-                                    "depth": 3,
-                                    "comments": [
-                                        {
-                                            "id": "i9ntbec",
-                                            "author": "holomntn",
-                                            "score": 1,
-                                            "created_utc": 1653293934.0,
-                                            "response": "Not even close. You missed the entire point. \n\nThe point being that the transaction itself being done using an \"anonymous\" currency, but because you are doing the transaction literally on camera, you are clearly not anonymous. \n\nIt is just that the threshold to acquire the data is higher, requiring significantly more work and preknowledge in order to get the verification.",
-                                            "depth": 4,
                                             "comments": [
                                                 {
-                                                    "id": "i9ntw5l",
-                                                    "author": "Magick93",
+                                                    "id": "i9osyh3",
+                                                    "author": "Gonbatfire",
                                                     "score": 2,
-                                                    "created_utc": 1653294469.0,
-                                                    "response": "But you're literally not doing it on camera. You're doing it over an encrypted connection.",
+                                                    "created_utc": 1653317168.0,
+                                                    "response": ">every \"player\" submits encrypted transaction requests every \"turn\", meaning either transactions can only happen in certain windows and theoretically everyone would have an agent online every window\n\nYou mean Monero's [Ring Signatures](https://www.getmonero.org/resources/moneropedia/ringsignatures.html)?\n\n>you need to change all the wallet IDs each transaction so you can't track the balances to reverse engineer the transactions\n\nMonero's [Stealth Addresses](https://www.getmonero.org/resources/moneropedia/stealthaddress.html)\n\nAlong with [Ring CT](https://www.getmonero.org/resources/moneropedia/ringCT.html), a way to hide transactions amounts while still being able to audit the supply.",
                                                     "depth": 5,
-                                                    "comments": [
-                                                        {
-                                                            "id": "i9nu2lf",
-                                                            "author": "holomntn",
-                                                            "score": 3,
-                                                            "created_utc": 1653294640.0,
-                                                            "response": "Hence the \"picture yourself\"\n\nWhen doing those transactions you are revealing quite a bit of information about the participants simply through the act of communicating, even over such a channel. \n\nTo help give you an understanding of exactly how this works. Have you ever seen two people talking to each other in a language you don't know? How did you know they are talking to each other. \n\nThe encrypted connection can only hide certain things.",
-                                                            "depth": 6,
-                                                            "comments": []
-                                                        }
-                                                    ]
+                                                    "comments": []
                                                 }
                                             ]
                                         }
                                     ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9niwoc",
+                    "author": "Magick93",
+                    "score": 3,
+                    "created_utc": 1653285086.0,
+                    "response": "> new L1s like Concordium are focusing a lot on their users\u2019 privacy\n\nConcordium is probably the worst chain ever invented for privacy. You cant do anything on this chain without having gone through KYC, and every transaction is a reference to your ID. It is an Orwellian nightmare.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9nn7kq",
+                            "author": "ImmediateAnywhere8",
+                            "score": -1,
+                            "created_utc": 1653288485.0,
+                            "response": "Actually I looked more into it, and while it does seem like the way you just described on the outside, it's not completely accurate.\n\nOnce you've successfully interacted with the ID layer, then your transaction will be 100% be protected through zk proofs.  \n\n\nThis is actually very good cause it keeps the bad players out and the good players' identities protected.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ojxfq",
+                                    "author": "oscar_einstein",
+                                    "score": 8,
+                                    "created_utc": 1653312971.0,
+                                    "response": "Oh good, more centralised authorities deciding who is 'good' and 'bad' and who's allowed to transact. Just what crypto was made for  /s",
+                                    "depth": 3,
+                                    "comments": []
                                 }
                             ]
                         }
@@ -136,40 +175,11 @@
                         {
                             "id": "i9nf8us",
                             "author": "-TrustyDwarf-",
-                            "score": 6,
+                            "score": 9,
                             "created_utc": 1653282458.0,
                             "response": "Everyone here knows, no one over there cares.",
                             "depth": 2,
                             "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i9niwoc",
-                    "author": "Magick93",
-                    "score": 1,
-                    "created_utc": 1653285086.0,
-                    "response": "> new L1s like Concordium are focusing a lot on their users\u2019 privacy\n\nConcordium is probably the worst chain ever invented for privacy. You cant do anything on this chain without having gone through KYC, and every transaction is a reference to your ID. It is an Orwellian nightmare.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i9nn7kq",
-                            "author": "ImmediateAnywhere8",
-                            "score": 1,
-                            "created_utc": 1653288485.0,
-                            "response": "Actually I looked more into it, and while it does seem like the way you just described on the outside, it's not completely accurate.\n\nOnce you've successfully interacted with the ID layer, then your transaction will be 100% be protected through zk proofs.  \n\n\nThis is actually very good cause it keeps the bad players out and the good players' identities protected.",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i9ojxfq",
-                                    "author": "oscar_einstein",
-                                    "score": 1,
-                                    "created_utc": 1653312971.0,
-                                    "response": "Oh good, more centralised authorities deciding who is 'good' and 'bad' and who's allowed to transact. Just what crypto was made for  /s",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
                         }
                     ]
                 }

@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uushu9/need_to_understand_the_blockchain_technology/",
             "author": "Admirable_Run_6018",
             "created_utc": 1653156159.0,
-            "score": 10,
-            "num_comments": 36,
+            "score": 13,
+            "num_comments": 47,
             "subreddit": "BitcoinBeginners",
             "selftext": "Hi everyone,\n\nI am at the beginning of my learning journey into blockchain/Crypto. Can someone help me with understanding the stacks of the blockchain. Of course not the flow of the transactions. This i already got.",
             "stickied": false,
@@ -67,7 +67,17 @@
                                                             "created_utc": 1653276544.0,
                                                             "response": "Wait, can you elaborate a little bit? Thank you tremendously for your time. I also am wondering your thoughts on a government/pricate sanctioned shut down without access ti any type of internet access",
                                                             "depth": 6,
-                                                            "comments": []
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9od831",
+                                                                    "author": "bitusher",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653309443.0,
+                                                                    "response": "This has been tried before in war (ukraine) and by certain dictators in the past so is not hypothetical. At most is a temporary disconnection of 80-90 % of the internet in that country and than the internet quickly recovers . This is especially true of bitcoin because you can use bitcoin over satellite, mesh networks and devices like gotenna's",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 }
@@ -89,52 +99,31 @@
                     "comments": []
                 },
                 {
-                    "id": "i9h7f3g",
-                    "author": "igadjeed",
-                    "score": -2,
-                    "created_utc": 1653158003.0,
-                    "response": "> help me with understanding the stacks\n\nThere's no point asking general questions  \nStudy, then ask a specific question  \nhttps://github.com/bitcoinbook/bitcoinbook/blob/develop/book.asciidoc",
+                    "id": "i9nq3fg",
+                    "author": "Glum-Information-713",
+                    "score": 1,
+                    "created_utc": 1653290929.0,
+                    "response": "Blockchain technology is the brainchild of Satoshi Nakamoto, which enables digital information to be distributed. A network of computing nodes makes up the Blockchain. Durability, robustness, success rate, transparency, incorruptibility are some of the enticing characteristics of Blockchain.",
                     "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i9iv46j",
-                            "author": "1800smellya",
-                            "score": 3,
-                            "created_utc": 1653189188.0,
-                            "response": "My brotha, this is the Beginner sub. This is where you ask general questions. \n\nFrom there, our OP will be able to start to learn about the different areas of BTC and ask specific questions. \n\nGreat advice with the book tho. That\u2019s how I started learning and I encourage you to do the same OP",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i9jr49h",
-                                    "author": "igadjeed",
-                                    "score": 1,
-                                    "created_utc": 1653214748.0,
-                                    "response": "OP doesn't want to learn anything, is seeking buzzwords to add to his CV",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        },
-                        {
-                            "id": "i9hj3ar",
-                            "author": "Admirable_Run_6018",
-                            "score": 0,
-                            "created_utc": 1653163708.0,
-                            "response": "Thank You very much. Sure I am studying. But coming from a background with very little technology knowledge makes it harder to study without some sort of support/guidance, which I am seeking here.",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i9hlg56",
-                                    "author": "igadjeed",
-                                    "score": 2,
-                                    "created_utc": 1653164882.0,
-                                    "response": "No question. No answer",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        }
-                    ]
+                    "comments": []
+                },
+                {
+                    "id": "i9r1j8c",
+                    "author": "bitcoin_barry",
+                    "score": 1,
+                    "created_utc": 1653352990.0,
+                    "response": "If you want to understand blockchains, look up linked-lists.\n\nLinked lists are blocks that link to each other, and although a linked list CAN be circular, it doesn't have to be. Blockchains are not circular.\n\nThe ID of a block in a linked list is an arbitrary number. The ID of a block in a blockchain is the HASH of the contents of the block. A block in a linked list can be modified and the ID can remain the same, so the linked list does not break. In a blockchain, any change causes the ID of the changed block to change and that block is no longer referenced by its children. Changing a child block to point back to the new parent will cause that child to lose its children and so on, so you can see how a blockchain is cumbersome to change.\n\nBitcoin adds proof of work to the blockchain to ensure that any block requires a proof. You can think of the proof as a signature, but instead of it being a signature signed by the owner of a Bitcoin, it is a signature that can only be created by offering compute power to participate in a probabilistic game. It takes on average 10 minutes to produce this proof per block and this does two interesting things:\n\n1. It makes it timely and expensive to change the contents of a block as you need to do the proof of work for the block you change, AND all of its children.\n\n2. Even if you have two blockchains that are growing at the same pace, the one that is ahead will remain ahead as they are moving at the same speed.\n\nIt is in fact worse: If you think of mining as a dice game, and each game taking on average 10 minutes to complete, that 10 minutes is based on playing with a certain number of dice, eg. 100 dice. When you stop working with the rest of the network, you start mining with only your own dice and therefore you are playing with a fraction of the total dice and your blockchain will grow SLOWER than the current blockchain.\n\nAll of these parts come together to make a pretty robust and practically immutable record of transactions.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ylg95",
+                    "author": "never-give-up-every1",
+                    "score": 1,
+                    "created_utc": 1653500012.0,
+                    "response": "if you want to understand blockchain and crypto you can learn this at Crypto Academy lessons on Netcoins. they teach you from basics to basics about blockchain and crypto.",
+                    "depth": 1,
+                    "comments": []
                 }
             ]
         }

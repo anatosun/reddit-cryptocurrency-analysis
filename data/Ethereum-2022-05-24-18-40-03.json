@@ -37,24 +37,130 @@
             "url": "https://twitter.com/OpenEthereumOrg/status/1529147048758595585",
             "author": "sandakersmann",
             "created_utc": 1653416613.0,
-            "score": 94,
-            "num_comments": 27,
+            "score": 129,
+            "num_comments": 36,
             "subreddit": "ethereum",
             "selftext": "",
             "stickied": false,
             "comments": [
                 {
+                    "id": "i9vw4kp",
+                    "author": "CryptoSatoshi314",
+                    "score": 8,
+                    "created_utc": 1653444887.0,
+                    "response": "Could someone please explain this to me?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9vydrw",
+                            "author": "Treyzania",
+                            "score": 15,
+                            "created_utc": 1653445949.0,
+                            "response": "The main Rust implementation of the Ethereum protocol was discontinued.  There is a spiritual successor based on the Erigon model in development called Akula. \ud83e\udd88",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9w507c",
+                                    "author": "CryptoSatoshi314",
+                                    "score": 7,
+                                    "created_utc": 1653449217.0,
+                                    "response": "I gave you an award I had for explaining that part to me man, so thank you. Realistically though, The only \u201cRust\u201d I know of is on my first car. \nSeriously though, thanks again, I\u2019ll look up what you mentioned.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9wfipw",
+                                            "author": "nihalani",
+                                            "score": 6,
+                                            "created_utc": 1653455306.0,
+                                            "response": "Rust is a programming language focused on performance and safe concurrency. Similar to C++, it has be championed as the next language for low level programming. Recently there has been a push in the developer community for software written in Rust. Some examples include Alacrity - Rust Terminal Emulator and Lapce - A Rust Code Editor. I personally think it is kinda of overhyped.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9wgawr",
+                                                    "author": "espresso_chain",
+                                                    "score": 9,
+                                                    "created_utc": 1653455828.0,
+                                                    "response": "the memory efficiency and safety it guarantees is worth the hype imo. the way rust works kinda forces you to write safe code. it's brilliant. you will have to fight the compiler at times, but those fights are what make the code great in the end",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9whdmi",
+                                                            "author": "nihalani",
+                                                            "score": 5,
+                                                            "created_utc": 1653456548.0,
+                                                            "response": "No doubt. I just think you need to take into account the steep learning curve and the relative inflexibility of the language. I think its very good when trying to eack out that last bit of performance. However the idea that it should be used in everything is kinda of ridiculous. I see it all the time at work, where some new developer comes in saying that we should reimplement the entire project in Rust not realizing that \n\n1) The talent pool for Rust is fairly small when compared to more popular languages like Java, C or Python \n2) There are other more easy to reach bottlenecks that can be fixed to improve projects performance\n3) They themselves don\u2019t know Rust that well. Certainly not enough to become the main maintainer of the project.\n\nIt\u2019s why when I think of Rust, I mainly think of hobbyists projects and Linux Kernel development. I have yet to see a widely maintained popular project in Rust, I think Alacrity comes close. \n\nJust to clarify, I am not shitting on Rust. I daily drive Alacrity and have used Rust in the past. It\u2019s just the idea that it\u2019s going to replace everything I find kinda of ridiculous. Developers need to focus on improving existing projects rather than saying screw it lets reimplement it in Rust with half the feature set.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9wjf7g",
+                                                                    "author": "espresso_chain",
+                                                                    "score": 3,
+                                                                    "created_utc": 1653457956.0,
+                                                                    "response": "heh yeah. i have seen my fair share of rustify all the things! I work at a Go shop so I definitely understand the value of \"hit the ground running as fast as you can\". I was able to start contributing to my works codebase in week 1 as a Jr dev. \n\nif it was in rust? most likely would've taken me much longer lol",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "i9wft6n",
+                                                    "author": "CryptoSatoshi314",
+                                                    "score": 1,
+                                                    "created_utc": 1653455498.0,
+                                                    "response": "Thank you very much, I sincerely appreciate your help. What would you personally suggest if you had to pick a replacement instead of Rust?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9wgluc",
+                                                            "author": "nihalani",
+                                                            "score": 2,
+                                                            "created_utc": 1653456028.0,
+                                                            "response": "For a programming language or an Ethereum Execution Client? For a programming language, I just don\u2019t think it matters to much, use whatever you feel comfortable with. I think for the most part to much emphasis is placed on the programming language when in reality most speed improvements come from good software implementation. That being said some programming languages do help you right better code and Rust is one of them. I just think that people saying that it is going to replace everything or rewriting every application in Rust are hyping it up to much. For an Execution Client, I would probably use anything other Geth mainly to maintain client diversity",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        },
+                                                        {
+                                                            "id": "i9wge2c",
+                                                            "author": "espresso_chain",
+                                                            "score": 1,
+                                                            "created_utc": 1653455887.0,
+                                                            "response": "rust is very unique so it's pretty hard to say. honestly maybe Go is most similar? but Go is very different in terms of memory with it's garbage collector. maybe a better comparison is C.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "i9udsan",
                     "author": "International-Yam548",
-                    "score": 15,
+                    "score": 18,
                     "created_utc": 1653420331.0,
                     "response": "Shame that there's no other client written in Rust",
                     "depth": 1,
                     "comments": [
                         {
+                            "id": "i9ufejn",
+                            "author": "TovarishFin",
+                            "score": 3,
+                            "created_utc": 1653421014.0,
+                            "response": "Yeah same feelings. Really wish it was as easy as it is to use go with ethereum things\u2026. but that sort of stopped being a thing with open ethereum was on its way out.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
                             "id": "i9uquv6",
                             "author": "ElBuenMayini",
-                            "score": 12,
+                            "score": 10,
                             "created_utc": 1653425846.0,
                             "response": "Ah, this is not entirely true! https://github.com/sigp/lighthouse",
                             "depth": 2,
@@ -62,7 +168,7 @@
                                 {
                                     "id": "i9utros",
                                     "author": "International-Yam548",
-                                    "score": 16,
+                                    "score": 15,
                                     "created_utc": 1653427103.0,
                                     "response": "Ah, I had more of an execution client in mind.\n\nIts nice to see we have a consensus client in Rust though!",
                                     "depth": 3,
@@ -70,7 +176,7 @@
                                         {
                                             "id": "i9vd4lp",
                                             "author": "yorickdowne",
-                                            "score": 3,
+                                            "score": 6,
                                             "created_utc": 1653435863.0,
                                             "response": "Akula. Super early days, not even remotely production ready. And something to play with.",
                                             "depth": 4,
@@ -78,7 +184,7 @@
                                                 {
                                                     "id": "i9viwm8",
                                                     "author": "International-Yam548",
-                                                    "score": 1,
+                                                    "score": 2,
                                                     "created_utc": 1653438640.0,
                                                     "response": "That's awesome! Glad to see one being worked on.",
                                                     "depth": 5,
@@ -91,18 +197,9 @@
                             ]
                         },
                         {
-                            "id": "i9ufejn",
-                            "author": "TovarishFin",
-                            "score": 3,
-                            "created_utc": 1653421014.0,
-                            "response": "Yeah same feelings. Really wish it was as easy as it is to use go with ethereum things\u2026. but that sort of stopped being a thing with open ethereum was on its way out.",
-                            "depth": 2,
-                            "comments": []
-                        },
-                        {
                             "id": "i9vls1d",
                             "author": "hanniabu",
-                            "score": 2,
+                            "score": 6,
                             "created_utc": 1653440005.0,
                             "response": "https://github.com/akula-bft/akula",
                             "depth": 2,
@@ -121,100 +218,32 @@
                     ]
                 },
                 {
-                    "id": "i9vw4kp",
-                    "author": "CryptoSatoshi314",
-                    "score": 8,
-                    "created_utc": 1653444887.0,
-                    "response": "Could someone please explain this to me?",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i9vydrw",
-                            "author": "Treyzania",
-                            "score": 8,
-                            "created_utc": 1653445949.0,
-                            "response": "The main Rust implementation of the Ethereum protocol was discontinued.  There is a spiritual successor based on the Erigon model in development called Akula. \ud83e\udd88",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i9w507c",
-                                    "author": "CryptoSatoshi314",
-                                    "score": 4,
-                                    "created_utc": 1653449217.0,
-                                    "response": "I gave you an award I had for explaining that part to me man, so thank you. Realistically though, The only \u201cRust\u201d I know of is on my first car. \nSeriously though, thanks again, I\u2019ll look up what you mentioned.",
-                                    "depth": 3,
-                                    "comments": [
-                                        {
-                                            "id": "i9wfipw",
-                                            "author": "nihalani",
-                                            "score": 3,
-                                            "created_utc": 1653455306.0,
-                                            "response": "Rust is a programming language focused on performance and safe concurrency. Similar to C++, it has be championed as the next language for low level programming. Recently there has been a push in the developer community for software written in Rust. Some examples include Alacrity - Rust Terminal Emulator and Lapce - A Rust Code Editor. I personally think it is kinda of overhyped.",
-                                            "depth": 4,
-                                            "comments": [
-                                                {
-                                                    "id": "i9wgawr",
-                                                    "author": "espresso_chain",
-                                                    "score": 2,
-                                                    "created_utc": 1653455828.0,
-                                                    "response": "the memory efficiency and safety it guarantees is worth the hype imo. the way rust works kinda forces you to write safe code. it's brilliant. you will have to fight the compiler at times, but those fights are what make the code great in the end",
-                                                    "depth": 5,
-                                                    "comments": [
-                                                        {
-                                                            "id": "i9whdmi",
-                                                            "author": "nihalani",
-                                                            "score": 1,
-                                                            "created_utc": 1653456548.0,
-                                                            "response": "No doubt. I just think you need to take into account the steep learning curve and the relative inflexibility of the language. I think its very good when trying to eack out that last bit of performance. However the idea that it should be used in everything is kinda of ridiculous. I see it all the time at work, where some new developer comes in saying that we should reimplement the entire project in Rust not realizing that \n\n1) The talent pool for Rust is fairly small when compared to more popular languages like Java, C or Python \n2) There are other more easy to reach bottlenecks that can be fixed to improve projects performance\n3) They themselves don\u2019t know Rust that well. Certainly not enough to become the main maintainer of the project.\n\nIt\u2019s why when I think of Rust, I mainly think of hobbyists projects and Linux Kernel development. I have yet to see a widely maintained popular project in Rust, I think Alacrity comes close. \n\nJust to clarify, I am not shitting on Rust. I daily drive Alacrity and have used Rust in the past. It\u2019s just the idea that it\u2019s going to replace everything I find kinda of ridiculous. Developers need to focus on improving existing projects rather than saying screw it lets reimplement it in Rust with half the feature set.",
-                                                            "depth": 6,
-                                                            "comments": []
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "i9wft6n",
-                                                    "author": "CryptoSatoshi314",
-                                                    "score": 1,
-                                                    "created_utc": 1653455498.0,
-                                                    "response": "Thank you very much, I sincerely appreciate your help. What would you personally suggest if you had to pick a replacement instead of Rust?",
-                                                    "depth": 5,
-                                                    "comments": [
-                                                        {
-                                                            "id": "i9wge2c",
-                                                            "author": "espresso_chain",
-                                                            "score": 1,
-                                                            "created_utc": 1653455887.0,
-                                                            "response": "rust is very unique so it's pretty hard to say. honestly maybe Go is most similar? but Go is very different in terms of memory with it's garbage collector. maybe a better comparison is C.",
-                                                            "depth": 6,
-                                                            "comments": []
-                                                        },
-                                                        {
-                                                            "id": "i9wgluc",
-                                                            "author": "nihalani",
-                                                            "score": 1,
-                                                            "created_utc": 1653456028.0,
-                                                            "response": "For a programming language or an Ethereum Execution Client? For a programming language, I just don\u2019t think it matters to much, use whatever you feel comfortable with. I think for the most part to much emphasis is placed on the programming language when in reality most speed improvements come from good software implementation. That being said some programming languages do help you right better code and Rust is one of them. I just think that people saying that it is going to replace everything or rewriting every application in Rust are hyping it up to much. For an Execution Client, I would probably use anything other Geth mainly to maintain client diversity",
-                                                            "depth": 6,
-                                                            "comments": []
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "i9uez0j",
                     "author": "TovarishFin",
-                    "score": 5,
+                    "score": 4,
                     "created_utc": 1653420833.0,
                     "response": "RIP",
                     "depth": 1,
                     "comments": []
+                },
+                {
+                    "id": "i9w86jo",
+                    "author": "Digital-Exploration",
+                    "score": 2,
+                    "created_utc": 1653450902.0,
+                    "response": "Is this.. bad, good, or whatever?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9wn14x",
+                            "author": "GrixM",
+                            "score": 2,
+                            "created_utc": 1653460686.0,
+                            "response": "It's neutral. In one way it's sad to lose a client implementation, but in another way that is a completely normal thing in a healthy, diverse ecosystem. Not every software project can last forever, and alternatives are plentiful.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i9ufv0a",
@@ -228,18 +257,9 @@
                 {
                     "id": "i9v4vds",
                     "author": "yoyoJ",
-                    "score": 1,
+                    "score": 0,
                     "created_utc": 1653432008.0,
                     "response": "Mainstream media: Ethereum is deed!!",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i9w86jo",
-                    "author": "Digital-Exploration",
-                    "score": 1,
-                    "created_utc": 1653450902.0,
-                    "response": "Is this.. bad, good, or whatever?",
                     "depth": 1,
                     "comments": []
                 }

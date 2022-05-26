@@ -15,7 +15,7 @@
             "author": "GiantRobotAlien",
             "created_utc": 1652659148.0,
             "score": 4,
-            "num_comments": 20,
+            "num_comments": 27,
             "subreddit": "BitcoinBeginners",
             "selftext": "Just trying to reassure myself that im not missing anything from a security standpoint; (as the saying goes: you dont know what you dont know)\n\nIs there any risk in using watch-only wallets? Is there something I should be looking out for?\n\nUsing a Keystone Hardware wallet and their software \"watch-only\" companion app.\n\nSeems like when scanning the QR code for the hardware wallet to be added to the companion wallet to monitor, it could transmit the seedphrases / passphrases, etc. How crazy is it to expect some kind of attack like this? \n\nAny advice for things I should be looking out for?",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i8rfvew",
                     "author": "sciencetaco",
-                    "score": 6,
+                    "score": 7,
                     "created_utc": 1652661572.0,
                     "response": "You can scan the QR code with an app that shows you what\u2019s in it. \n\nWatch only wallets work by using something called your Extended Public Key (\u201cxpub\u201d for short). With this key a wallet can generate every address associated with the seed. But it cannot know the seed or the private keys. It\u2019s mathematically impossible. \n\nThis allows watch only wallets to well\u2026*watch* the addresses and the blockchain to show the wallet\u2019s balance and even receive new payments while the seed and private keys are safe elsewhere. \n\nA few things to consider:\n\n- Anyone with your xpub can see your addresses and all future transactions in and out. \n\n- The wallet app is likely connected to somebody else\u2019s node and that node could know your IP address and which addresses you are checking. You can fix this by running your own and ensuring your wallet only connects to your own node. It requires extra work and knowledge though.",
                     "depth": 1,

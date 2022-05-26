@@ -9,98 +9,6 @@
     ],
     "posts": [
         {
-            "id": "umqfpv",
-            "title": "A Good Smart Contract for Specifically Voting Purposes with DAO",
-            "url": "https://www.reddit.com/r/CryptoTechnology/comments/umqfpv/a_good_smart_contract_for_specifically_voting/",
-            "author": "johnmygod",
-            "created_utc": 1652210424.0,
-            "score": 17,
-            "num_comments": 11,
-            "subreddit": "CryptoTechnology",
-            "selftext": "**TLDR; Do you guys know a  A Good Smart Contract for Specifically Voting Purposes with DAO**\n\nGreetings to all,\n\nSo we wish to create a system where all private sports clubs in an organization will have their own respective DAOs and use their respective DAOs to vote on things (like where to hold events etc.)\n\nWe were planning on getting started with an Ethereum based smart contract template(it has to be Ethereum based, I believe all smart contracts are but just wanted to make that clear). I was wondering if you guys knew of a smart contract template that would be easy and efficient for this. Since we are just starting out we aren't exactly sure how we should proceed at this stage. [https://docs.openzeppelin.com/contracts/4.x/wizard](https://docs.openzeppelin.com/contracts/4.x/wizard) We've been checking the templates in this site.\n\nAlso if anyone has any extra tips on how to go forward with this please don't hesitate to tell me. I'm trying to learn everything at once and its been rather overwhelming.",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i83wwzl",
-                    "author": "lanatork",
-                    "score": 8,
-                    "created_utc": 1652220979.0,
-                    "response": "Are you sure you want to use a smart contract for this?\n\nIf you do, every person who votes will need to setup a wallet, buy ETH, transfer it to their wallet and pay for every single vote that they are casting. In my opinion that seems quite a hassle and maybe will decrease voter turnout.\n\nSmart contracts are useful if you are interacting with strangers and there is money involved. Then you need a more complex system which is fraud-proof and transparent.\n\nThe case that you are describing could be much easier solved by a simple website/app which interacts with a traditional backend.\n\nI am all for wider adoption of Blockchain technology, but we as a community have to be aware that it is not a good solution for every use case.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i83ptrh",
-                    "author": "_beeb",
-                    "score": 4,
-                    "created_utc": 1652217956.0,
-                    "response": "You're probably looking for this : https://docs.openzeppelin.com/contracts/4.x/governance",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "umoe0h",
-            "title": "So why isn't there an exchange offering a crypto coin directly linked to an individual persona?",
-            "url": "https://www.reddit.com/r/CryptoTechnology/comments/umoe0h/so_why_isnt_there_an_exchange_offering_a_crypto/",
-            "author": "Aeduh",
-            "created_utc": 1652204796.0,
-            "score": 8,
-            "num_comments": 19,
-            "subreddit": "CryptoTechnology",
-            "selftext": "So the point would be that anyone can create their own coin, and just as companies issue stock or central banks print money, an individual could have their own source of value. This can be done with Ethereum technology and through an exchange/social network, if i'm correct. I've been thinking of this idea since already 4 years and it's obvious to me that something along those lines should exist but wierdly (to me) enough no one has done it yet. Maybe someone can point out what this would be a bad idea on principle?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i82usnx",
-                    "author": "foutight",
-                    "score": 7,
-                    "created_utc": 1652205523.0,
-                    "response": "It exists: https://newsletter.banklesshq.com/p/how-to-tokenize-yourself-full?s=r",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i835tw8",
-                    "author": "selfawarepie",
-                    "score": 5,
-                    "created_utc": 1652209989.0,
-                    "response": "What would the \"value\" be?",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i83ce4d",
-                    "author": "rezKn",
-                    "score": 3,
-                    "created_utc": 1652212580.0,
-                    "response": "Sharing another one, which is focused on the professional/career side of things: https://www.talentprotocol.com",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i83f5w2",
-                            "author": "crydud",
-                            "score": 3,
-                            "created_utc": 1652213671.0,
-                            "response": "As a fellow member of the Celo Family, seeing Talent Protocol mentioned makes me extremely happy. Thanks!",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i845jqi",
-                    "author": "ulrichg0711",
-                    "score": 3,
-                    "created_utc": 1652224799.0,
-                    "response": "As people mentioned it does exist, but without knowing those very much, I want to point out the big issue: Oracles/ how do you get the real world data about one specific individual into the Blockchain - reliable?\n\nWant to capitalize on future income streams of this individual, because you funded education/ projects/ etc early? What do you do if this person is successful but misrepresents data?\n\nIn traditional companies, that is what we have reporting requirements for and you can take them to court. Blockchain technology, so far, is lacking on a connection to the real world to make such use cases feasible. There is no \"decentralized Blockchain court\" with Blockchain police you could go to, if you invest in a person, and this person rips you off (you could go to the regular legal system, but then we get pretty close to existing loans).",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "un55sq",
             "title": "Using the blockchain to create \"unhackable\" leaderboards for games?",
             "url": "https://www.reddit.com/r/CryptoTechnology/comments/un55sq/using_the_blockchain_to_create_unhackable/",
@@ -175,6 +83,247 @@
                     "score": 7,
                     "created_utc": 1652284037.0,
                     "response": "It\u2019s unnecessary, serious latency issues would probably occur waiting from validation from the blockchain, and the network has to be monitized someway to pay for the security of the network. It is very unnecessary to use a blockchain instead of a traditional game server. This is a perfect example of a solution looking for a problem that doesn\u2019t exist.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "umoe0h",
+            "title": "So why isn't there an exchange offering a crypto coin directly linked to an individual persona?",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/umoe0h/so_why_isnt_there_an_exchange_offering_a_crypto/",
+            "author": "Aeduh",
+            "created_utc": 1652204796.0,
+            "score": 7,
+            "num_comments": 25,
+            "subreddit": "CryptoTechnology",
+            "selftext": "So the point would be that anyone can create their own coin, and just as companies issue stock or central banks print money, an individual could have their own source of value. This can be done with Ethereum technology and through an exchange/social network, if i'm correct. I've been thinking of this idea since already 4 years and it's obvious to me that something along those lines should exist but wierdly (to me) enough no one has done it yet. Maybe someone can point out what this would be a bad idea on principle?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i82usnx",
+                    "author": "foutight",
+                    "score": 7,
+                    "created_utc": 1652205523.0,
+                    "response": "It exists: https://newsletter.banklesshq.com/p/how-to-tokenize-yourself-full?s=r",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i83o7b8",
+                            "author": "GameMusic",
+                            "score": 3,
+                            "created_utc": 1652217297.0,
+                            "response": "Where is the advantage for decentralization here?\n\nWhat does this offer over Upwork or similar?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i83p237",
+                                    "author": "UniverseCatalyzed",
+                                    "score": 2,
+                                    "created_utc": 1652217643.0,
+                                    "response": "I'm on the fence about personal tokenization but the idea is you're creating and selling shares in your future income, not offering service for payment like Upwork.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i83yrjf",
+                                            "author": "GameMusic",
+                                            "score": 2,
+                                            "created_utc": 1652221787.0,
+                                            "response": "And... how is this enforced?\n\nA crypto project should be decentralized for a reason",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i835tw8",
+                    "author": "selfawarepie",
+                    "score": 5,
+                    "created_utc": 1652209989.0,
+                    "response": "What would the \"value\" be?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i83ce4d",
+                    "author": "rezKn",
+                    "score": 4,
+                    "created_utc": 1652212580.0,
+                    "response": "Sharing another one, which is focused on the professional/career side of things: https://www.talentprotocol.com",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i83f5w2",
+                            "author": "crydud",
+                            "score": 3,
+                            "created_utc": 1652213671.0,
+                            "response": "As a fellow member of the Celo Family, seeing Talent Protocol mentioned makes me extremely happy. Thanks!",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i83nlb6",
+                            "author": "GameMusic",
+                            "score": 1,
+                            "created_utc": 1652217048.0,
+                            "response": "This looks like more complicated patreon",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i845jqi",
+                    "author": "ulrichg0711",
+                    "score": 4,
+                    "created_utc": 1652224799.0,
+                    "response": "As people mentioned it does exist, but without knowing those very much, I want to point out the big issue: Oracles/ how do you get the real world data about one specific individual into the Blockchain - reliable?\n\nWant to capitalize on future income streams of this individual, because you funded education/ projects/ etc early? What do you do if this person is successful but misrepresents data?\n\nIn traditional companies, that is what we have reporting requirements for and you can take them to court. Blockchain technology, so far, is lacking on a connection to the real world to make such use cases feasible. There is no \"decentralized Blockchain court\" with Blockchain police you could go to, if you invest in a person, and this person rips you off (you could go to the regular legal system, but then we get pretty close to existing loans).",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i830yu1",
+                    "author": "johannescryderman",
+                    "score": 2,
+                    "created_utc": 1652208031.0,
+                    "response": "DeSo allows you to do just that\n\nhttps://www.deso.org/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i84uwr1",
+                    "author": "hogjonny",
+                    "score": 1,
+                    "created_utc": 1652236313.0,
+                    "response": "Yes a personal chain and token to anchor is the future, it would be the most decentralized approach so you can fully own your data and transactions. We'd all need to run our own nodes, and this probably wouldn't scale well.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i866p5g",
+                    "author": "Sorry_Attitude_",
+                    "score": 1,
+                    "created_utc": 1652268948.0,
+                    "response": "FUSE network does that kinda, they have their own wallet builder and dex builder(?)\n\nThe only costs afaik are the gas fees you have to pay which i think for the start is ethereum but i am not sure lol\n\nThey're kinda rudimentary and not very... advanced, if you want something advanced you probably would like to make it on Kadena because it uses Pact programming language which is their own, probably kaddex would be a good example of what you can make with it, pretty advanced stuff\n\nThere is something for anyone you just have to find it you know.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i89c52v",
+                    "author": "sillysally09",
+                    "score": 1,
+                    "created_utc": 1652316803.0,
+                    "response": "Isn\u2019t this what BitClout was?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8cgee9",
+                    "author": "LoveRainbow2",
+                    "score": 1,
+                    "created_utc": 1652377717.0,
+                    "response": "Has anyone here invested in this?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia145mi",
+                    "author": "bdjilka",
+                    "score": 1,
+                    "created_utc": 1653541523.0,
+                    "response": "It's called tokenization and its already exists if I correctly understand you.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "umqfpv",
+            "title": "A Good Smart Contract for Specifically Voting Purposes with DAO",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/umqfpv/a_good_smart_contract_for_specifically_voting/",
+            "author": "johnmygod",
+            "created_utc": 1652210424.0,
+            "score": 19,
+            "num_comments": 15,
+            "subreddit": "CryptoTechnology",
+            "selftext": "**TLDR; Do you guys know a  A Good Smart Contract for Specifically Voting Purposes with DAO**\n\nGreetings to all,\n\nSo we wish to create a system where all private sports clubs in an organization will have their own respective DAOs and use their respective DAOs to vote on things (like where to hold events etc.)\n\nWe were planning on getting started with an Ethereum based smart contract template(it has to be Ethereum based, I believe all smart contracts are but just wanted to make that clear). I was wondering if you guys knew of a smart contract template that would be easy and efficient for this. Since we are just starting out we aren't exactly sure how we should proceed at this stage. [https://docs.openzeppelin.com/contracts/4.x/wizard](https://docs.openzeppelin.com/contracts/4.x/wizard) We've been checking the templates in this site.\n\nAlso if anyone has any extra tips on how to go forward with this please don't hesitate to tell me. I'm trying to learn everything at once and its been rather overwhelming.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i83wwzl",
+                    "author": "lanatork",
+                    "score": 8,
+                    "created_utc": 1652220979.0,
+                    "response": "Are you sure you want to use a smart contract for this?\n\nIf you do, every person who votes will need to setup a wallet, buy ETH, transfer it to their wallet and pay for every single vote that they are casting. In my opinion that seems quite a hassle and maybe will decrease voter turnout.\n\nSmart contracts are useful if you are interacting with strangers and there is money involved. Then you need a more complex system which is fraud-proof and transparent.\n\nThe case that you are describing could be much easier solved by a simple website/app which interacts with a traditional backend.\n\nI am all for wider adoption of Blockchain technology, but we as a community have to be aware that it is not a good solution for every use case.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i84i53k",
+                            "author": "Clapyourhandssayyeah",
+                            "score": 2,
+                            "created_utc": 1652230494.0,
+                            "response": "Thank you. Traditional governance with a sprinkling of tech (e.g. Airtable) would be so much more straightforward here",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i867lc5",
+                                    "author": "filipesmedeiros",
+                                    "score": 2,
+                                    "created_utc": 1652269481.0,
+                                    "response": "Or just do a poll on slack lol",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i83ptrh",
+                    "author": "_beeb",
+                    "score": 4,
+                    "created_utc": 1652217956.0,
+                    "response": "You're probably looking for this : https://docs.openzeppelin.com/contracts/4.x/governance",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i83qsmg",
+                    "author": "jackpopen",
+                    "score": 2,
+                    "created_utc": 1652218361.0,
+                    "response": "This is rent important and it's needed in real life not just online communities",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i84pvhu",
+                    "author": "Peracinobw",
+                    "score": 2,
+                    "created_utc": 1652234013.0,
+                    "response": "I would suggest you to look into xdao where you can create a DAO for free and no coding skills required. They are supporting like 15 t0 20 blockchains atm I guess if it suits you well you can go with it. Good luck buddy!\u270c\ufe0f\ud83d\ude09",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i86onaz",
+                    "author": "ryaxis1991",
+                    "score": 1,
+                    "created_utc": 1652277713.0,
+                    "response": "Anyone here would like to win cash prizes? KOLnet will have \"KOLnet Games Night\" today, May 11th at 9PM UTC. Saw the announcement on Twitter.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i87jcx7",
+                    "author": "Firetonado",
+                    "score": 1,
+                    "created_utc": 1652289793.0,
+                    "response": "Use dao dao on Juno. At least take a look. It's very easy to use.",
                     "depth": 1,
                     "comments": []
                 }

@@ -15,7 +15,7 @@
             "author": "BoganLord2169",
             "created_utc": 1653040936.0,
             "score": 1,
-            "num_comments": 11,
+            "num_comments": 15,
             "subreddit": "ethereum",
             "selftext": "I need someway to store mapping of uint256 => contract address. Can I just use the address type?\n\nI need a functions that calls transfer method of the contract address stored.\n\nmapping(uint256=>address)public contractAddress;\n\nfunction transfer(address _contractAddress, uint256 _amount, address _from, address _to)\n{\n    // Somehow call transfer of contract at address contractAddress\n}\n\ntransfer(contractAddress[1], 1000000, 0xa53...., 0x37...);",
             "stickied": false,

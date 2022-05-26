@@ -1,0 +1,163 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uxq7vb",
+            "title": "It was nice read to learn about Bitcoin logo history!!",
+            "url": "https://blog.logomyway.com/bitcoin-logo/#:~:text=The%20brainchild%20of%20Bitcoin%2C%20Satoshi,B%20on%20the%20orange%20frame.",
+            "author": "rohilaltro",
+            "created_utc": 1653510223.0,
+            "score": 7,
+            "num_comments": 1,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia0exs3",
+                    "author": "foamy295",
+                    "score": 1,
+                    "created_utc": 1653528127.0,
+                    "response": "Interesting read! Thanks for sharing with us.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uxqd2j",
+            "title": "I have a lot of transactions and need tax advice",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uxqd2j/i_have_a_lot_of_transactions_and_need_tax_advice/",
+            "author": "BoobsAndNoobs17",
+            "created_utc": 1653510643.0,
+            "score": 3,
+            "num_comments": 10,
+            "subreddit": "Bitcoin",
+            "selftext": "I have started mining bitcoin, which means that I have a lot of transactions to account for when doing my taxes. I have also invested in other exchanges, which has only increased my number of transactions. With that being said, when you have so many transactions, it takes way too much time to do everything manually. I used to use a good old fashioned excel sheet, but it would take me days to finish everything. I have also sought out advice from my accountant, but they aren't the most experienced with crypto. I've heard of crypto tax software and was wondering, is it worth it? And is it also safe? Any advice would be much appreciated.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9zcwoi",
+                    "author": "HulaDulaHouseRula",
+                    "score": 1,
+                    "created_utc": 1653510944.0,
+                    "response": "You are totally right when it comes to doing it manually. It literally takes way too much time out of your life. I have been using a crypto tax software and it has been a life saver for me, my favourite being Koinly. They are super safe, works with a large variety of exchanges, has great blogs that break everything down, is pretty accurate, and also has a great support team. All you have to do is follow their guides on how to import your data from the exchange, and it will do the rest of the work for you. Since you mentioned you invested in bitcoin, here is a blog on how to import transactions for that exchange specifically: https://koinly.io/integrations/btc/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9zj6in",
+                    "author": "Magnus_Effect_Kalsu",
+                    "score": 1,
+                    "created_utc": 1653513578.0,
+                    "response": "Koinly or Cointraking.io",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9zd4gc",
+                    "author": "PuscH311",
+                    "score": 1,
+                    "created_utc": 1653511032.0,
+                    "response": "Export all your csv and send it to a tax consultant. He takes around 4-5% ( in Germany) and wish him good luck :)\nOr Cointracking.info is maybe for you too.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9zpmc4",
+                    "author": "m1100010",
+                    "score": 1,
+                    "created_utc": 1653516356.0,
+                    "response": "dont sell until its legal tender and tax free",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9zxecc",
+                    "author": "canaldolulis",
+                    "score": 1,
+                    "created_utc": 1653519897.0,
+                    "response": "yeah definitely worth it imo - the software i'm using handles mining and defi stuff really well, they've got an article on it [here](https://cryptotaxcalculator.io/blog/what-is-mining/).",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia09hsv",
+                    "author": "rtublin",
+                    "score": 1,
+                    "created_utc": 1653525615.0,
+                    "response": "I wrote a computer program to do these calculations for me. I couldn't begin to figure out the FIFO if I did it by hand or even with Excel.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia0f3xt",
+                    "author": "Grunchie",
+                    "score": 1,
+                    "created_utc": 1653528205.0,
+                    "response": "I dont volunteer information about my trades to the IRS so cant help ya.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia10eig",
+                    "author": "tokyo_aces",
+                    "score": 1,
+                    "created_utc": 1653539039.0,
+                    "response": "(1) **Use web software** \\- there are recommendations in this thread already.  Don't rely on your accountant just yet (maybe in a couple years) unless they know what they are doing.  Many do not, or they do but they don't know about crypto tax software, and do not have the programming skill to automate the FIFO matching for thousands of trades (they are used to doing things by hand).\n\n(2) **Use** ***my*** **software** :) - I open-sourced a bog-simple Python script to do this for everyone.  If Code is not at all \"pythonic\" (this is me learning Python by porting the app from perl), but it works.  You copy/paste your transactions in a particular format, and copy/paste historical price data from a source (I include a ton of them already, but some most coins/many dates are of course missing).  Instructions read like a book, you can't get lost.\n\n[https://github.com/technobunny/crypto-tax](https://github.com/technobunny/crypto-tax)\n\n&#x200B;\n\nCan't help on the mining transactions per se.  I would imagine (ask your accountant) these are simply \"buy\" transactions with price $0 for FIFO purposes, so shuffle them into the transaction list that way and the script above \"just works\".  Since you use elec. and HW for mining, perhaps you get other tax writeoffs in another form.  Or maybe mining income is separate and not even on cap gains form.  Please check on that.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9zdgdm",
+                    "author": "New-Difference9684",
+                    "score": 0,
+                    "created_utc": 1653511169.0,
+                    "response": "1. Find a new accountant. Crypto is personal property for tax purposes so it should be easy for an accountant to handle if he wants to.\n\nOR\n\n2. Make a reasonable guestimate and take your chances.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uxqcvl",
+            "title": "Buy a Toothbrush with Bitcoin",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uxqcvl/buy_a_toothbrush_with_bitcoin/",
+            "author": "ShopinBit",
+            "created_utc": 1653510629.0,
+            "score": 5,
+            "num_comments": 2,
+            "subreddit": "Bitcoin",
+            "selftext": "Making everyday purchases with Bitcoin got a lot easier with our latest product update.\n\nLast week we added 21,000 new beauty and personal care products to our shop: [https://shopinbit.com/beauty-and-personal-care/](https://shopinbit.com/beauty-and-personal-care/)\n\nThis  category has everything you need for personal hygiene and beauty care,   no matter if you are a man or a woman. The product selection ranges  from toothpaste to make-up, shampoo, lotion, shaving gel and many more.\n\nAnything  missing? Feel free to contact us so we can add more products for you!   And don't forget, you get 3% off if you pay with Bitcoin. Free shipping is available for orders above 21\u20ac within  the EU.\n\n&#x200B;\n\nhttps://preview.redd.it/8j72ci0imo191.png?width=1142&format=png&auto=webp&s=12a3449cb6d77717e11205e50ef3a68cc3289204",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia1jp9o",
+                    "author": "OutrageousSir8047",
+                    "score": 1,
+                    "created_utc": 1653554115.0,
+                    "response": "Can you put the prices in satoshis or BTC?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia1k1rj",
+                            "author": "ShopinBit",
+                            "score": 1,
+                            "created_utc": 1653554429.0,
+                            "response": "Hi Outrageous,\n\nunfortunately not, we have to price everything in Euro. But we use the Kraken EUR/BTC Exchange rate with no markups.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

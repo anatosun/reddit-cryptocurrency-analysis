@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uwufjg/why_is_there_a_gbtc_premium/",
             "author": "PeleMaradona",
             "created_utc": 1653408707.0,
-            "score": 5,
-            "num_comments": 12,
+            "score": 2,
+            "num_comments": 21,
             "subreddit": "BitcoinBeginners",
             "selftext": "I understand that the GBTC premium refers to the difference in value of the assets held by the trust against the market price of those holdings.\n\nBy if GBTC holds bitcoin, then is there a difference in value between the assets the hold and the market price of their holdings?",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i9toxzv",
                     "author": "OpticallyMosache",
-                    "score": 5,
+                    "score": 4,
                     "created_utc": 1653410018.0,
                     "response": "An investor is buying GBTC as shares of a Trust that is holding BTC. The market cap of the Trust is different than the market cap of the BTC it owns. You're not buying a 1:1 stake of the BTC. So when the demand for shares decreases and GBTC doesn't sell the equivalent BTC out of the Trust, there is a disparity. Currently the disparity represents a discount. The BTC equivalent of the shares you own is higher. So you're getting more exposure to BTC for less.",
                     "depth": 1,
@@ -36,6 +36,15 @@
                             "response": "> So when the demand for shares decreases and GBTC doesn't sell the equivalent BTC out of the Trust, there is a disparity.\n\nThanks for the reply . A few questions:\n\n1. Why is the market cap of the Trust different than the market cap of the BTC it owns?\n2. Why would GBTC  sell BTC when the demand for GBTC shares decreases?",
                             "depth": 2,
                             "comments": [
+                                {
+                                    "id": "i9vw4dk",
+                                    "author": "sos755",
+                                    "score": 2,
+                                    "created_utc": 1653444884.0,
+                                    "response": ">Why is the market cap of the Trust different than the market cap of the BTC it owns?\n\nThe value of the shares depends supply and demand of the shares and is the result of trading in the market. The value of the BTC held by the trust is just the value of the BTC held by the trust.\n\n&#x200B;\n\n>Why would GBTC sell BTC when the demand for GBTC shares decreases?\n\nGBTC cannot trade the BTC held by the trust. They can only issue shares for BTC deposited into the trust.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
                                 {
                                     "id": "i9tt5cs",
                                     "author": "OpticallyMosache",
@@ -54,15 +63,6 @@
                                             "comments": []
                                         }
                                     ]
-                                },
-                                {
-                                    "id": "i9vw4dk",
-                                    "author": "sos755",
-                                    "score": 1,
-                                    "created_utc": 1653444884.0,
-                                    "response": ">Why is the market cap of the Trust different than the market cap of the BTC it owns?\n\nThe value of the shares depends supply and demand of the shares and is the result of trading in the market. The value of the BTC held by the trust is just the value of the BTC held by the trust.\n\n&#x200B;\n\n>Why would GBTC sell BTC when the demand for GBTC shares decreases?\n\nGBTC cannot trade the BTC held by the trust. They can only issue shares for BTC deposited into the trust.",
-                                    "depth": 3,
-                                    "comments": []
                                 }
                             ]
                         },
@@ -106,6 +106,35 @@
                     "comments": []
                 },
                 {
+                    "id": "i9vumm8",
+                    "author": "sos755",
+                    "score": 2,
+                    "created_utc": 1653444182.0,
+                    "response": "TL;DR: **GBTC has a one-way peg with BTC. This one-way peg makes it difficult to maintain a premium, but easy to maintain a discount.**\n\nThe peg works like this:\n\nOther than trading shares in the market, investors can also obtain shares directly by depositing bitcoins into the trust. This becomes an arbitrage opportunity when there is a premium. An investor can deposit bitcoins to obtain newly issued shares and then turn around and sell the shares for a premium.\n\nFor example, if the price of a bitcoin is $30k and the share premium is 10%, then an investor could deposit 1 BTC and receive shares in the trust that are worth $33k (because of the premium). The shares can be sold and the money used to buy 1.1 BTC.\n\nNote that the increasing supply of shares due to new shares being issued causes the premium to fall.\n\nNow, here is the important point -- the shares of the trust cannot be redeemed for the bitcoins in the trust. It is a one-way peg.\n\nIf the shares could be redeemed for bitcoins, then an investor could buy shares at a discount and redeem them for the full amount of bitcoins.\n\nFor example, if the price of a bitcoin is $30k and the share discount is 30%, and shares could be redeemed, then an investor could buy $21k worth of shares and redeem them for BTC worth $30k (because of the discount).\n\nThe reduced supply of shares due to the redemption would cause the discount to fall. However, because this redemption is not possible, the discount remains.\n\nTurning GBTC into an ETF would allow a two-way peg that would keep the premium or discount close to 0.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9w0cmv",
+                            "author": "PeleMaradona",
+                            "score": 1,
+                            "created_utc": 1653446895.0,
+                            "response": ">Turning GBTC into an ETF would allow a two-way peg that would keep the premium or discount close to 0.\n\nWhy is that?\n\nAlso, why is the GBTC premium/discount sometimes included as a metric for the greater bitcoin ecosystem. I understand how the mechanics work, but I don't see how it relates to the larger Bitcoin ecosystem.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9zpglc",
+                                    "author": "sos755",
+                                    "score": 1,
+                                    "created_utc": 1653516287.0,
+                                    "response": "An ETF can exchange assets for shares in both directions. Currently, GBTC can only issue shares for bitcoins.\n\nMaybe the discount/premium can be a measure of institutional vs. retail interest in BTC, since institutions tend to trade GBTC more than BTC.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "i9tlpji",
                     "author": "AutoModerator",
                     "score": 1,
@@ -120,15 +149,6 @@
                     "score": 1,
                     "created_utc": 1653443135.0,
                     "response": "If you like BTC now, you'd be a fool to buy anything OTHER than GBTC, unless you're trying to dodge the IRS, in which case GBTC is the exact wrong way to play it. Other reasons to dislike GBTC include distrust of the trust documentation and hacking potential (similar to what exists for metals ETFs).",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i9vumm8",
-                    "author": "sos755",
-                    "score": 1,
-                    "created_utc": 1653444182.0,
-                    "response": "TL;DR: **GBTC has a one-way peg with BTC. This one-way peg makes it difficult to maintain a premium, but easy to maintain a discount.**\n\nThe peg works like this:\n\nOther than trading shares in the market, investors can also obtain shares directly by depositing bitcoins into the trust. This becomes an arbitrage opportunity when there is a premium. An investor can deposit bitcoins to obtain newly issued shares and then turn around and sell the shares for a premium.\n\nFor example, if the price of a bitcoin is $30k and the share premium is 10%, then an investor could deposit 1 BTC and receive shares in the trust that are worth $33k (because of the premium). The shares can be sold and the money used to buy 1.1 BTC.\n\nNote that the increasing supply of shares due to new shares being issued causes the premium to fall.\n\nNow, here is the important point -- the shares of the trust cannot be redeemed for the bitcoins in the trust. It is a one-way peg.\n\nIf the shares could be redeemed for bitcoins, then an investor could buy shares at a discount and redeem them for the full amount of bitcoins.\n\nFor example, if the price of a bitcoin is $30k and the share discount is 30%, and shares could be redeemed, then an investor could buy $21k worth of shares and redeem them for BTC worth $30k (because of the discount).\n\nThe reduced supply of shares due to the redemption would cause the discount to fall. However, because this redemption is not possible, the discount remains.\n\nTurning GBTC into an ETF would allow a two-way peg that would keep the premium or discount close to 0.",
                     "depth": 1,
                     "comments": []
                 }

@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uxc9gd/what_is_a_transactions_fee_if_i_send_exactly_one/",
             "author": "Adamn27",
             "created_utc": 1653464839.0,
-            "score": 4,
-            "num_comments": 6,
+            "score": 17,
+            "num_comments": 17,
             "subreddit": "BitcoinBeginners",
             "selftext": "A satoshi is impartible, so what happens if I would like to send exactly one satoshi?",
             "stickied": false,
@@ -23,25 +23,43 @@
                 {
                     "id": "i9ws8vi",
                     "author": "information-zone",
-                    "score": 5,
+                    "score": 23,
                     "created_utc": 1653465029.0,
                     "response": "The fees are not based upon how many sats you\u2019re sending, but how big your transaction is (in terms of inputs & outputs).\n\nSo you\u2019d probably be paying a few hundred sats  for a 1 sat spend, but it could be the same for a multi-bitcoin spend as well.",
                     "depth": 1,
                     "comments": []
                 },
                 {
+                    "id": "i9y3bk5",
+                    "author": "igadjeed",
+                    "score": 7,
+                    "created_utc": 1653492950.0,
+                    "response": "The minimum fee rate enforced by most nodes is 1 Sat per vbyte. See this calculator for the vbyte size of a transaction  \nhttps://bitcoinops.org/en/tools/calc-size/  \n\nIf you wanted to send the smallest possible transaction, the transaction will be SegWit, and it will have one input and one output. Its vbyte size will be 110 vbytes. Your fee will be 110 Satoshis (at least)  \n\nThe fee in a Bitcoin transaction is not part of the transaction. It is calculated by subtracting the output amounts from the input amounts  \n\nTo send 1 Satoshi, your input would need to be a coin with a value of 111 Satoshis  \n\n###Dust Limit  \n\nNode policy rules will reject a transaction with an output amount less than the dust limit, which is 294 Satoshis  \nhttps://bitcoin.stackexchange.com/questions/10986/what-is-meant-by-bitcoin-dust/  \n\nTo send 294 Satoshis with a fee of 110 Satoshis, your transaction input needs to spend a coin with a value of 404 Satoshis",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i9wse6c",
                     "author": "bitusher",
-                    "score": 3,
+                    "score": 12,
                     "created_utc": 1653465162.0,
                     "response": "Bitcoin can be sent within a payment channel in one of ~30 lightning wallets for a fraction of a satoshi as Bitcoin is divisible by 1/1000 of a satoshi in a payment channel \n\nIf you wanted to send 1 satoshi of Bitcoin onchain this would not make much sense because you would be spending 200-300 sats to send 1 sat",
                     "depth": 1,
                     "comments": []
                 },
                 {
+                    "id": "i9ytqs9",
+                    "author": "turtle-wins",
+                    "score": 2,
+                    "created_utc": 1653503260.0,
+                    "response": "Close to nothing if you use the lightning network.  Maybe a few millisats or zero.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i9wte4x",
                     "author": "BTCMachineElf",
-                    "score": 2,
+                    "score": 4,
                     "created_utc": 1653466060.0,
                     "response": "You can't send 1 sat on layer 1 because it's under the dust limit. The resulting UXTO couldn't even pay for itself to be put into a transaction. It would be bitcoin lost forever.\n\nYou can send it on lightning, though. The fees could be next to nothing, or a few sats, depending on the payment route.",
                     "depth": 1,
@@ -57,11 +75,11 @@
                     "comments": []
                 },
                 {
-                    "id": "i9wua6p",
-                    "author": "Solana25",
-                    "score": 1,
-                    "created_utc": 1653466863.0,
-                    "response": "0.000000000000000000000000000000000000000000001btc \n\n\nLol",
+                    "id": "ia0730f",
+                    "author": "abrireddit",
+                    "score": 0,
+                    "created_utc": 1653524476.0,
+                    "response": "My ledger allows me to set transaction to the cheapest, which is 1 satoshi\n\nSo you can probably send 1 satoshi and pay 1 satoshi transfer fee if you want",
                     "depth": 1,
                     "comments": []
                 }

@@ -15,7 +15,7 @@
             "author": "personplaygames",
             "created_utc": 1653289558.0,
             "score": 3,
-            "num_comments": 11,
+            "num_comments": 15,
             "subreddit": "ethereum",
             "selftext": "Why is it free to read data? I understand writing data to the blockchain is not free because space is consumed and logic is computed or something.\n\nIs it free because its just it?",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i9nrgzx",
                     "author": "Perleflamme",
-                    "score": 17,
+                    "score": 19,
                     "created_utc": 1653292191.0,
                     "response": "What's scarce is writing, because there's only so much space in any block and only so many blocks per minute (notably ~15M gas per block for 30M gas max, with a block every ~13s). That's the blockspace, a pretty scarce resource. \n\nReading is just you reading the chain. You're already paying for your electricity and computer to read the chain. You can do that as much as you want without impacting anyone else. \n\nBut when you write, you need to ask for the consensus to add your content onto the chain and to be stored by everyone having a node. It means someone else may not be able to store their own content because you've out priced them. As I've already said, it's scarce space, so you need to prove to the network your content is worth being stored, by paying for it. \n\nOtherwise, that scarce resource that blockspace is could be spammed by malevolent actors for free. Gas costing something is a security measure, even though being cheap is a possibility brought by L2s.",
                     "depth": 1,
@@ -32,25 +32,16 @@
                 {
                     "id": "i9nrjsg",
                     "author": "never_safe_for_life",
-                    "score": 6,
+                    "score": 8,
                     "created_utc": 1653292264.0,
                     "response": "Reads only have to happen on one machine. Writes have to be duplicated across all ~50,000. \n\nRemember that bitcoin works by letting anyone and everyone download a full copy of the data. So if you\u2019ve got a PC lying around you can download a copy. From that point your reads are happening only on your hardware.",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i9nq019",
-                    "author": "Neophyte-",
-                    "score": 2,
-                    "created_utc": 1653290846.0,
-                    "response": "> Is it free because its just it?\n\nyeah exactly anyone can be a node you cann participate in writing by being a miner but you must agree to the consensus rules, that is unless you are trying to attack the blockchain.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i9ozjfj",
                     "author": "Kike328",
-                    "score": 1,
+                    "score": 2,
                     "created_utc": 1653320031.0,
                     "response": "most people here is not exactly right, reads also cost gas when those reads are in some transaction.\n\nWhat costs gas, is to have something included into the blockchain (a read, a write, even empty transactions which cost 21.000 gas and they don\u2019t do anything).\n\nWhen you\u2019re reading externally the blockchain, you\u2019re just reading the state of the chain without including anything on it.\n\nBasically using the EVM/transacting is what has a cost",
                     "depth": 1,
@@ -59,9 +50,18 @@
                 {
                     "id": "i9p3yty",
                     "author": "lorenzomofo",
-                    "score": 1,
+                    "score": 2,
                     "created_utc": 1653321898.0,
                     "response": "It\u2019s free because the spec says it\u2019s free. So it\u2019s basically subsidized by people writing to the blockchain.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9nq019",
+                    "author": "Neophyte-",
+                    "score": 4,
+                    "created_utc": 1653290846.0,
+                    "response": "> Is it free because its just it?\n\nyeah exactly anyone can be a node you cann participate in writing by being a miner but you must agree to the consensus rules, that is unless you are trying to attack the blockchain.",
                     "depth": 1,
                     "comments": []
                 }
@@ -74,7 +74,7 @@
             "author": "cc672012",
             "created_utc": 1653279508.0,
             "score": 6,
-            "num_comments": 8,
+            "num_comments": 11,
             "subreddit": "ethereum",
             "selftext": "Hi, I'm starting on reading about Blockhains and their applications.\n\nTwo papers I've read claimed that they used a private/permissioned blockchain that uses a proof of authority concensus mechanism. However, they also mention that they're using Ethereum smart contracts and as far as I know, Ethereum is a proof-of-work public blockchain.\n\nMy questions are:\n1) How is this possible? Did they fork Ethereum and modified the source?\n2) If Ethereum somehow supports this, is this possible with all blockchains that support Smart contracts, say Cardano?\n\nPapers I've read:\nG\u00fcrsoy, G., Brannon, C.M. & Gerstein, M. Using Ethereum blockchain to store and query pharmacogenomics data via smart contracts. BMC Med Genomics 13, 74 (2020). https://doi.org/10.1186/s12920-020-00732-x\n\nAicha Fatrah, Said El Kafhali, Abdelkrim Haqiq, and Khaled Salah. 2019. Proof of Concept Blockchain-based Voting System. In Proceedings of the 4th International Conference on Big Data and Internet of Things (BDIoT'19). Association for Computing Machinery, New York, NY, USA, Article 31, 1\u20135. https://doi.org/10.1145/3372938.3372969",
             "stickied": false,

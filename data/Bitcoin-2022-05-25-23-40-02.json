@@ -1,0 +1,140 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uxu2c6",
+            "title": "Ba Da Ba Ba Bah, I'm Lovin' It!",
+            "url": "https://i.redd.it/3by75713ip191.jpg",
+            "author": "grundh85",
+            "created_utc": 1653521244.0,
+            "score": 1,
+            "num_comments": 0,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "uxub0f",
+            "title": "How does miner select the block to mine in mempool?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uxub0f/how_does_miner_select_the_block_to_mine_in_mempool/",
+            "author": "rohilaltro",
+            "created_utc": 1653522011.0,
+            "score": 4,
+            "num_comments": 11,
+            "subreddit": "Bitcoin",
+            "selftext": "Hello everyone,\n\nYesterday one of my transaction got stuck and I was just following it with mempool space. \n\nI noticed that, the transaction were getting added and removed untill the last moment after which it was said it got mined. \n\nI am just wondering, if the final state of a mempool block keeps on changing how does miner take a block and starts computing on it to find the solution. What am I missing here? \n\nWould love to learn this.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia02bcw",
+                    "author": "guuuug",
+                    "score": 7,
+                    "created_utc": 1653522219.0,
+                    "response": "Any miner can select any transaction from the mempool to include in a block. Logically they will select transactions with the most fee. The mempool is not a block.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia02mli",
+                            "author": "rohilaltro",
+                            "score": 2,
+                            "created_utc": 1653522369.0,
+                            "response": "Okay, so a block in the mempool website is really not a block itself. I guess so the bitfeed representation is much accurate. \n\nThanks for the clarification.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia1ht1t",
+                                    "author": "mpem___",
+                                    "score": 3,
+                                    "created_utc": 1653552399.0,
+                                    "response": "it is just visualization of potencial block. final block is created by miner and could be different.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia02kcb",
+                    "author": "ndgoLiberty",
+                    "score": 3,
+                    "created_utc": 1653522338.0,
+                    "response": "Easy: The first block.\n\nMedium: The transactions with the highest fee relative to their size in bytes.\n\nHard: The hypothetical first mempool block which is constantly changing as new transactions come in and is only finalized in the couple milliseconds it takes to generate the block that was mined-for in the previous approximately 10 minutes.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia09oxp",
+                    "author": "SmoothGoing",
+                    "score": 3,
+                    "created_utc": 1653525705.0,
+                    "response": "There is no block until it's mined. A list of transactions is hashed together. Miners select transactions with highest fees first. They select their own transactions even with low fees because they can.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia0cwp2",
+                    "author": "pezdal",
+                    "score": 2,
+                    "created_utc": 1653527197.0,
+                    "response": "When a miner assembles a candidate block he can choose any, some, or even none transactions to go into it as long as the included transactions fit within the block size limit.\n\nTo maximize profitability miners usually  assemble transactions from the mempool with the highest transaction fees **per unit size** (e.g. satoshis per byte). \n\n\\----\n\nImagine you are filling up a backpack with returnable bottles.  You don't have to carry any back to the store, but that wouldn't be optimal.  You could take a few huge bottles, but that wouldn't be optimal unless the refund is high enough.  So you sort  by refund/size and try to optimize the packing.  If two bottles are the same size, you carry the one that pays more.  If two bottles have. the refund amount you  choose the smaller of the two because it leaves more room for other bottles.\n\nA miner does the same. He sorts the mempool and chooses the highest transaction fees per byte.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia0e52s",
+                    "author": "uncontrollableop",
+                    "score": 2,
+                    "created_utc": 1653527766.0,
+                    "response": "miners are offering blockspace to an open market. they take the highest bidder.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia19x8t",
+                    "author": "tohaz",
+                    "score": 2,
+                    "created_utc": 1653545780.0,
+                    "response": "i bet you haven't heard of zero length blocks. Interesting topic how, i would say, crowd consensus sometimes fails",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia044gn",
+                    "author": "CarbonCG",
+                    "score": 2,
+                    "created_utc": 1653523087.0,
+                    "response": "When the pool receives a share that is difficult enough to unlock a block, they will \u201cscoop\u201d the mempool for tx\u2019s and package them into a block. Then they submit block to network for reward. \n\nMax block size is little over 1MB so they\u2019ll do the high paying tx\u2019s first and if there is room leftover they will include anything else they can to maximize reward.\n\nEach pool can have slightly different ways of doing this, some will even mine empty blocks to speed up the process. Usually when they find blocks back to back, and don\u2019t want to wait for (their nodes) mempool to fill up.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia027yn",
+                    "author": "mradentz",
+                    "score": 1,
+                    "created_utc": 1653522175.0,
+                    "response": "+1",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia1u4fn",
+                    "author": "thondera",
+                    "score": 1,
+                    "created_utc": 1653562859.0,
+                    "response": "Space in every block is limited, so miners skim transactions with highest fees from the mempool to include them in their block in order to maximize profit. It's well visualised in Johoe's Bitcoin Mempool chart - https://jochen-hoenicke.de/queue/#BTC,24h,weight",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

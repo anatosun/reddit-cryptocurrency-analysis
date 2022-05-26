@@ -256,7 +256,7 @@
             "author": "MyAddidas",
             "created_utc": 1653416880.0,
             "score": 10,
-            "num_comments": 8,
+            "num_comments": 11,
             "subreddit": "Bitcoin",
             "selftext": "I've been doing some research on Bitcoin L2s, besides Lightning, and came across the Liquid Network. From what I can tell, Liquid is a side chain that's touted as the premier Bitcoin L2 as it allows for 1 minute block times, confidential transactions, issuance of pegged assets, supports tokens, stable-coins, atomic swaps, and a few other features. That's all great, but the backbone of the network is a federation of large crypto businesses (exchanges, trading desks, etc.) that control block creation/signing and pegging assets into/out of the network.   \n\n\nWhy does the Bitcoin community support such a L2 setup that has companies as the backbone of the side chain? (Honest question, I'm trying to learn and not troll.) Is it because Liquid is not meant for the average user and is mainly focused on facilitating high value transactions between big entities? If that's the case, then I guess it makes sense that only those large businesses can create blocks. I guess the Lightning Network is for everyone else and when decentralization and speed are important.",
             "stickied": false,
@@ -264,7 +264,7 @@
                 {
                     "id": "i9u6r0e",
                     "author": "dinglebarry9",
-                    "score": 3,
+                    "score": 6,
                     "created_utc": 1653417366.0,
                     "response": "I personally like Liquid. It is built on the open-source Elements Project, so you are free to spin up your own sidechain (I have). A failure of Liquid has no effect on the base chain while success enhances it by increasing functionality and requiring BTC for use without sacrificing security. As A. Antonopoulos says \"innovation at the edges\" and that is what Liquid is.",
                     "depth": 1,
@@ -272,7 +272,7 @@
                         {
                             "id": "i9u829p",
                             "author": "MyAddidas",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1653417920.0,
                             "response": "Why launch your own side chain? To run your own Dapp? And who validates your side chain?  \n\"Innovation at the edges\", I like that. Bitcoin does need to grow its sandbox type environments.",
                             "depth": 2,
@@ -280,32 +280,13 @@
                                 {
                                     "id": "i9uwbao",
                                     "author": "dinglebarry9",
-                                    "score": 1,
+                                    "score": 6,
                                     "created_utc": 1653428210.0,
                                     "response": "For whatever you want.\n\nSure why the hell not.\n\nYou or however you want.\n\nI think about them like a website for Bitcoin. A individual can peg their own Bitcoin in or more practically you can, then set up LN channels with capacity for atomic swaps between onchain Bitcoin and sidechain Bitcoin so that a user can come in do some stuff then go leave, just like a website.",
                                     "depth": 3,
                                     "comments": []
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i9udsga",
-                    "author": "sovrynMatt",
-                    "score": 4,
-                    "created_utc": 1653420333.0,
-                    "response": "RSK is much more decentralised and secured compared liquid. RSK has many cool dapps now like Sovryn for BTC lending, borrowing and trading services.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i9vtb0f",
-                            "author": "MyAddidas",
-                            "score": 1,
-                            "created_utc": 1653443561.0,
-                            "response": "How come RSK doesn't seem to get as much love as Liquid Network?",
-                            "depth": 2,
-                            "comments": []
                         }
                     ]
                 },
@@ -328,6 +309,15 @@
                     "comments": []
                 },
                 {
+                    "id": "i9w16v0",
+                    "author": "ipcoffeepot",
+                    "score": 3,
+                    "created_utc": 1653447304.0,
+                    "response": "It\u2019s all about tradeoffs. There is no free lunch in cryptocurrency. \n\nLiquid gives you deterministic block times and a bunch of additional features (assets, additional opcodes, confidential transactions) in exchange for being more centralized than L1. The centralization risk isn\u2019t quite as bad as it might seem because: \n\n1.\tUsers can run full nodes to validate all the transactions, and can reject blocks that break the rules if the block producers cheat\n2.\tconfidential transactions mean that its hard for the block producers to censor transactions - they can\u2019t see what the transactions are!\n3.\thaving coins custodied by a federation is better than a single company. A majority of the custodians (who have business interests in having bitcoin and liquid work) would have to collude to exit scam with the money\n\nIs liquid as safe/secure/trustless as L1? No. Absolutely not. Don\u2019t keep your life savings on liquid! Is it a reasonable set of tradeoffs for a settlement network that users can use to move assets between a bunch of companies that work together? I think so.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i9u8gf2",
                     "author": "AntonNonymous",
                     "score": 2,
@@ -335,6 +325,35 @@
                     "response": "L1s and L2s can have speed, security, and decentralization but they can only pick 2. \nBecause L1 chose security and decentralization, it created the need for L2. \nAs long as L1 is decentralized, it's okay for L2 to be a little less so, as long as people know the risks. \n\nI don't think the centralization jibes with a purist ethos, but I think the trade-off to get more usability is okay as long as using it is voluntary",
                     "depth": 1,
                     "comments": []
+                },
+                {
+                    "id": "i9udsga",
+                    "author": "sovrynMatt",
+                    "score": 3,
+                    "created_utc": 1653420333.0,
+                    "response": "RSK is much more decentralised and secured compared liquid. RSK has many cool dapps now like Sovryn for BTC lending, borrowing and trading services.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9vtb0f",
+                            "author": "MyAddidas",
+                            "score": 2,
+                            "created_utc": 1653443561.0,
+                            "response": "How come RSK doesn't seem to get as much love as Liquid Network?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9xvzo6",
+                                    "author": "sovrynMatt",
+                                    "score": 1,
+                                    "created_utc": 1653489987.0,
+                                    "response": "RSK began in 2017 and is based in South America, Its pretty well known in South/central Amercian. I think Liquid is much more popular because of Blockstream is behind it. Blockstream has huge influence in the English speaking countries because of Adam Back and its BTC involvement since 2014.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

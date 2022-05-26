@@ -63,16 +63,44 @@
             "url": "https://www.reddit.com/r/Bitcoin/comments/uxdpn5/question_about_the_sha1_collision/",
             "author": "extrastone",
             "created_utc": 1653471643.0,
-            "score": 3,
-            "num_comments": 2,
+            "score": 14,
+            "num_comments": 6,
             "subreddit": "Bitcoin",
-            "selftext": "Hi.  I'm using Jimmy Song's book and there is something I do not understand.  I am working through the SHA-1 collision in the end of chapter 6 on Script:\n\nHere is the ScriptPubKey:\n\n6E - 2DUP\n\n87 - EQUAL\n\n91 - NOT\n\n69 - VERIFY\n\nA7 - SHA1\n\n7C - SWAP\n\nA7 - SHA1\n\n87 - EQUAL\n\nI'll assume that there are two values there that we can call x and y.  The top of the stack is at the end of the list.\n\nx, y\n\n2DUP(x,y) = (x, y, y, y)\n\nEQUAL(x, y, y, y) = (x, y, 1)\n\nNOT(x, y, 1) = (x, y, 0)\n\nVERIFY(x, y, 0) -> FAIL!\n\nSHA1(x, y) = (x, SHA1\\[y\\])\n\nSWAP(x, SHA1\\[y\\]) = (SHA1\\[y\\], x)\n\nSHA1(SHA1\\[y\\], x) = (SHA1\\[y\\], SHA1\\[x\\])\n\nEQUAL(SHA1\\[y\\], SHA1\\[x\\]) -> Will be true if you find the collision.\n\nI do not understand what the four commands are doing at the beginning.\n\n&#x200B;\n\n&#x200B;\n\nEDIT: I made a mistake on 2DUP.\n\nx, y\n\n2DUP(x,y) = (x, y, x, y)\n\nEQUAL(x, y, y, y) = (x, y, 0) #Check that the two values are unequal\n\nNOT(x, y, 1) = (x, y, 1)\n\nVERIFY(x, y, 1) -> PASS!, will fail if they are equal.\n\nSHA1(x, y) = (x, SHA1\\[y\\])\n\nSWAP(x, SHA1\\[y\\]) = (SHA1\\[y\\], x)\n\nSHA1(SHA1\\[y\\], x) = (SHA1\\[y\\], SHA1\\[x\\])\n\nEQUAL(SHA1\\[y\\], SHA1\\[x\\]) -> Will be true if you find the collision.\n\n&#x200B;",
+            "selftext": "Hi.  I'm using Jimmy Song's book and there is something I do not understand.  I am working through the SHA-1 collision in the end of chapter 6 on Script:\n\nHere is the ScriptPubKey:\n\n6E - 2DUP\n\n87 - EQUAL\n\n91 - NOT\n\n69 - VERIFY\n\nA7 - SHA1\n\n7C - SWAP\n\nA7 - SHA1\n\n87 - EQUAL\n\nI'll assume that there are two values there that we can call x and y.  The top of the stack is at the end of the list.\n\nx, y\n\n2DUP(x,y) = (x, y, y, y)\n\nEQUAL(x, y, y, y) = (x, y, 1)\n\nNOT(x, y, 1) = (x, y, 0)\n\nVERIFY(x, y, 0) -> FAIL!\n\nSHA1(x, y) = (x, SHA1\\[y\\])\n\nSWAP(x, SHA1\\[y\\]) = (SHA1\\[y\\], x)\n\nSHA1(SHA1\\[y\\], x) = (SHA1\\[y\\], SHA1\\[x\\])\n\nEQUAL(SHA1\\[y\\], SHA1\\[x\\]) -> Will be true if you find the collision.\n\nI do not understand what the four commands are doing at the beginning.\n\n&#x200B;\n\n&#x200B;\n\nEDIT: I made a mistake on 2DUP.\n\nx, y\n\n2DUP(x,y) = (x, y, x, y)\n\nEQUAL(x, y, x, y) = (x, y, 0) #Check that the two values are unequal - was wrong before - now fixed\n\nNOT(x, y, 1) = (x, y, 1)\n\nVERIFY(x, y, 1) -> PASS!, will fail if they are equal.\n\nSHA1(x, y) = (x, SHA1\\[y\\])\n\nSWAP(x, SHA1\\[y\\]) = (SHA1\\[y\\], x)\n\nSHA1(SHA1\\[y\\], x) = (SHA1\\[y\\], SHA1\\[x\\])\n\nEQUAL(SHA1\\[y\\], SHA1\\[x\\]) -> Will be true if you find the collision.\n\n&#x200B;",
             "stickied": false,
             "comments": [
                 {
+                    "id": "i9xi486",
+                    "author": "pwuille",
+                    "score": 5,
+                    "created_utc": 1653483788.0,
+                    "response": "Your updated \"EDIT\" looks correct, apart from `EQUAL(x, y, y, y) = (x, y, 0)` which should be `EQUAL(x, y, x, y) = ...` instead.\n\nDo you still have a question?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9xs45n",
+                            "author": "extrastone",
+                            "score": 3,
+                            "created_utc": 1653488373.0,
+                            "response": "No.  I'm just leaving it up to see if anyone else gets caught up on it.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9y4i4a",
+                    "author": "Independent-Snow-129",
+                    "score": 1,
+                    "created_utc": 1653493416.0,
+                    "response": "I'm taking 1/2 of your post with a tongue in the cheek , but awesome post! \n\n Fun!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i9wzqwz",
                     "author": "dlq84",
-                    "score": 1,
+                    "score": -13,
                     "created_utc": 1653471818.0,
                     "response": "Wrong sub, sha1 har nothing to do with Bitcoin",
                     "depth": 1,
@@ -80,7 +108,7 @@
                         {
                             "id": "i9x261l",
                             "author": "mpem___",
-                            "score": 1,
+                            "score": 6,
                             "created_utc": 1653473872.0,
                             "response": "It is \u201cminigame\u201d in blockchain",
                             "depth": 2,

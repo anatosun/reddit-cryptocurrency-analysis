@@ -1293,25 +1293,16 @@
             "url": "https://www.reddit.com/r/ethereum/comments/uxa5hg/how_do_you_make_sure_that_smart_contract_working/",
             "author": "codingzombie72072",
             "created_utc": 1653455882.0,
-            "score": 8,
-            "num_comments": 12,
+            "score": 7,
+            "num_comments": 26,
             "subreddit": "ethereum",
             "selftext": "Hello Teams , \n\ni am working on a project which has more than 1000 lines of codes in single file . there are many logical operations going inside . writing tests to make sure that we are on track and everything is working fine but there are many functionality which i want to test and see the changes . \n\n&#x200B;\n\nwhat i am asking is that , like some other language JAVA , C and C++ . we get console to test the logic . i know that we do have console here as well , but it does requires to deploy and lots of such a stuff . which becomes very repetitious process . as working on logical parts mostly , need to change coding and see the effect very quickly . \n\nis there any better way to test the solidity smart contract other than test , CLI or writing front end ?",
             "stickied": false,
             "comments": [
                 {
-                    "id": "i9whom4",
-                    "author": "spaceleafxyz",
-                    "score": 4,
-                    "created_utc": 1653456759.0,
-                    "response": "remix.ethereum.org",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i9wkt35",
                     "author": "Perleflamme",
-                    "score": 3,
+                    "score": 5,
                     "created_utc": 1653458979.0,
                     "response": ">more than 1000 lines of codes in single file . there are many logical operations going inside\n\nFirst, you may want to cut that into several files, just as much as you may want to cut a function into several functions any time it contains too much complexity, even when it's just private functions. \n\nAs devs, we're writers, very expensive ones. Easy code maintainability is a key efficiency measure. Code is for human beings, so that it's readable. Machines don't read code anyway: it reads the compiled version. That's why code is comment itself and needs to be self explanatory and easy to read. \n\nhttp://blog.cleancoder.com/\n\nNotably, follow the SOLID principles as much as you can.",
                     "depth": 1,
@@ -1327,7 +1318,7 @@
                                 {
                                     "id": "i9ww7lz",
                                     "author": "Perleflamme",
-                                    "score": 1,
+                                    "score": 3,
                                     "created_utc": 1653468628.0,
                                     "response": "https://blog.cleancoder.com/uncle-bob/2020/10/18/Solid-Relevance.html",
                                     "depth": 3,
@@ -1338,9 +1329,18 @@
                     ]
                 },
                 {
+                    "id": "i9whom4",
+                    "author": "spaceleafxyz",
+                    "score": 3,
+                    "created_utc": 1653456759.0,
+                    "response": "remix.ethereum.org",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i9wnue1",
                     "author": "VRoid",
-                    "score": 5,
+                    "score": 4,
                     "created_utc": 1653461329.0,
                     "response": "That is why  Ether test net exists.  If you don't know this. Don't do... 1000 lines of smart contract does not make any sense to me. Most ERC 20 coins does not have that much code even DEX. \n\nYour knowledge of ether and smart contract seems not good enough to aware the seriousness of 1000 line solidity.",
                     "depth": 1,
@@ -1348,7 +1348,7 @@
                         {
                             "id": "i9xb8u4",
                             "author": "codingzombie72072",
-                            "score": 0,
+                            "score": -2,
                             "created_utc": 1653480090.0,
                             "response": "buddy it is not ERC20 or DEX . we are developing DAO , not a traditional u normally see on OpenZeppelin or YouTube . currently , it is taking me almost 4 test ether to deploy .",
                             "depth": 2,
@@ -1356,11 +1356,50 @@
                                 {
                                     "id": "i9xc83s",
                                     "author": "VRoid",
-                                    "score": 1,
+                                    "score": 0,
                                     "created_utc": 1653480654.0,
                                     "response": "DAO can not be an excuse to 3000 something lines of code for a file.\n\nThere's is something called OOP and S/W engineering. Don't buddy as I am no buddy of you.",
                                     "depth": 3,
-                                    "comments": []
+                                    "comments": [
+                                        {
+                                            "id": "i9xrfkh",
+                                            "author": "codingzombie72072",
+                                            "score": -1,
+                                            "created_utc": 1653488081.0,
+                                            "response": "look man , i am not here to take just some random advice . i do have good background with computer science and 4 years of web2 development experience . understood your concern about the file size .\n\nTry to look at from other perspective like struct are being tables and you have lots of other operations to perform . that is the thing with my case . \n\nbut any way thanks for the time",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9zso6r",
+                                                    "author": "mooremo",
+                                                    "score": 1,
+                                                    "created_utc": 1653517726.0,
+                                                    "response": "You are literally here asking for advice...",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "i9xsvfy",
+                                                    "author": "VRoid",
+                                                    "score": -2,
+                                                    "created_utc": 1653488690.0,
+                                                    "response": ">4 years of web2 development experience\n\ncomputer science and 4 years of web2 development experience?  Don't man me. I am not your man either. \n\nSomeone can have longer and better background than you. Reddit is the service for the whole world. \n\nSimply speaking you screwed up your platform project (didn't know that DAO is a platform) very bad.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9yamc7",
+                                                            "author": "AmericanDervish",
+                                                            "score": 2,
+                                                            "created_utc": 1653495808.0,
+                                                            "response": "Calm down bro!",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -1390,6 +1429,24 @@
                     "score": 1,
                     "created_utc": 1653478958.0,
                     "response": "You're doing it wrong. \n\nWhen you fiddle around in the console, what you're really doing is writing lots of little tests, then trying to write code that passes them. But with the \"fiddle around in the console\" method, the tests are only in your head, and they disappear after you run them. That wastes your time, confuses you, and loses your work, when it could be sticking around and alerting you if you accidentally break something later.\n\nThis is also true in Java or whatever, but it's particularly true with smart contract code because you should have only a little bit of code, with clearly defined APIs, and if the code is buggy then that's really, really bad because you can't usually patch it.\n\nWrite the basic tests first - I personally find python nicer than JavaScript or Solidity for writing tests in, but whatever works for you. Then write code that passes them, then fill out the tests for edge cases and things (or do that first too)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9xmdqh",
+                    "author": "Maleficent_Gas927",
+                    "score": 1,
+                    "created_utc": 1653485824.0,
+                    "response": "I prefer TRX to run, at least 9TRX makes my contract work well,",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9xt4ar",
+                    "author": "F0lks_",
+                    "score": 1,
+                    "created_utc": 1653488793.0,
+                    "response": "If you didn't do your due diligence in unit testing through chai/mocha, don't know about static analysis tool, or fuzzy analysis/dynamic analysis MythX-style, here is what I'd recommend:\n\nBurn everything.\nStart over, make a V2, and aim for 100% coverage.\nAnd even then, please don't even think about releasing your DAO before doing a 3rd party audit to double-check everything.\n\nAlso, a couple years of web2 experience won't make you a good smart-contract engineer, I'd even argue it is the contrary. It is hard to fill a cup that is already full",
                     "depth": 1,
                     "comments": []
                 }

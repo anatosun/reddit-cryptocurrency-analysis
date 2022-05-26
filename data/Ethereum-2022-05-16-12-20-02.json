@@ -9,13 +9,26 @@
     ],
     "posts": [
         {
+            "id": "uqudoa",
+            "title": "Avichal Garg of Electric Capital Explains How Ethereum Could Become a Third Digital Government (1.5-minute audio clip)",
+            "url": "https://podclips.com/c/f7uGOR?ss=r&ss2=ethereum&d=2022-05-16",
+            "author": "biohacker045",
+            "created_utc": 1652702707.0,
+            "score": 5,
+            "num_comments": 4,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
             "id": "uquer0",
             "title": "Transferring Wrapped Ethereum out of Coinbase Wallet",
             "url": "https://www.reddit.com/r/ethereum/comments/uquer0/transferring_wrapped_ethereum_out_of_coinbase/",
             "author": "Sonic992",
             "created_utc": 1652702808.0,
             "score": 3,
-            "num_comments": 23,
+            "num_comments": 30,
             "subreddit": "ethereum",
             "selftext": "Hi guys,\n\nI have some WETH (wrapped ETH) in my Coinbase Wallet. The WETH is on the Polygon blockchain. I want to sell the WETH and was hoping someone could provide guidance on how I can do this? \n\nIt doesn\u2019t seem possible to convert the WETH to ETH using Coinbase Wallet and I can\u2019t transfer the WETH to my Coinbase account as there is no option to deposit WETH to Coinbase. I also can\u2019t convert the WETH to any other coin such as USDT and then transfer the USDT to Coinbase - Coinbase Wallet says I needs for example $0.07 MATIC to proceed. I have some MATIC in my Coinbase account but the MATIC is on the Ethereum blockchain. \n\nIs there any way I can transfer the MATIC I have in my Coinbase account, which is on the Ethereum blockchain, to the Polygon blockchain to pay fees to convert the WETH to USDT? Or alternatively is there any other way that I can get the WETH out of Coinbase Wallet and sell it?\n\nAny advice would be much appreciated \ud83d\ude04",
             "stickied": false,
@@ -23,7 +36,7 @@
                 {
                     "id": "i8tsycb",
                     "author": "joan9568",
-                    "score": 2,
+                    "score": 3,
                     "created_utc": 1652713696.0,
                     "response": "Crypto.com Exchange supports WETH :)",
                     "depth": 1,
@@ -124,7 +137,7 @@
                                 {
                                     "id": "i8ti6ok",
                                     "author": "Maswasnos",
-                                    "score": 4,
+                                    "score": 6,
                                     "created_utc": 1652708999.0,
                                     "response": "NO! DO NOT DO THIS! YOU WILL LOSE YOUR WETH!\n\nYour WETH is on the Polygon blockchain and Coinbase does NOT support deposits on Polygon.\n\nEdit: Had to get that out fast, I really hope you saw it. \n\nYou have to withdraw your WETH from the Polygon Network to Ethereum mainnet, and then you can transfer it to Coinbase. You will need some MATIC to perform the withdrawal to mainnet.\n\nI recommend trying Hop Network to accomplish this, I've used them before and they're reputable. You can go from WETH on Polygon to ETH on mainnet: \n\nhttps://app.hop.exchange/#/send\n\nONLY once you have ETH on mainnet should you send it to your Coinbase deposit address.\n\nEdit2: In fact you might be able to send it directly to your Coinbase deposit address by using the custom recipient field in Hop, but I haven't personally tried this.",
                                     "depth": 3,
@@ -140,7 +153,7 @@
                                                 {
                                                     "id": "i8tkutf",
                                                     "author": "Maswasnos",
-                                                    "score": 1,
+                                                    "score": 2,
                                                     "created_utc": 1652710226.0,
                                                     "response": "The \"proper\" way would be to do this:\n\n1. Withdraw MATIC from Coinbase to Coinbase wallet on ETH mainnet\n2. Bridge MATIC to Polygon using Hop or the official Polygon bridge\n3. Use MATIC to bridge the WETH back to mainnet \n\nBut honestly it's probably easier to use something like MoonPay or Ramp.network to buy a little MATIC directly on Polygon. Then you can use that MATIC to transfer your WETH.",
                                                     "depth": 5,
@@ -204,7 +217,17 @@
                                                                                     "created_utc": 1652711386.0,
                                                                                     "response": "Thanks very much, I\u2019ll try and do this in a few hours after work \ud83d\ude04. I really appreciate you taking the time out to explain things and for your kind offer to assist if I have any questions during the process",
                                                                                     "depth": 9,
-                                                                                    "comments": []
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i8veqva",
+                                                                                            "author": "Sonic992",
+                                                                                            "score": 2,
+                                                                                            "created_utc": 1652737159.0,
+                                                                                            "response": "All sorted now \ud83d\ude04 big thanks to /u/Maswasnos for helping with this!",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
                                                                                 }
                                                                             ]
                                                                         }
@@ -242,19 +265,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "id": "uqudoa",
-            "title": "Avichal Garg of Electric Capital Explains How Ethereum Could Become a Third Digital Government (1.5-minute audio clip)",
-            "url": "https://podclips.com/c/f7uGOR?ss=r&ss2=ethereum&d=2022-05-16",
-            "author": "biohacker045",
-            "created_utc": 1652702707.0,
-            "score": 5,
-            "num_comments": 3,
-            "subreddit": "ethereum",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
         }
     ]
 }

@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uwpn3c/how_can_we_actually_trust_cold_wallets/",
             "author": "Fit_Psychology_1536",
             "created_utc": 1653395170.0,
-            "score": 31,
-            "num_comments": 49,
+            "score": 42,
+            "num_comments": 66,
             "subreddit": "BitcoinBeginners",
             "selftext": "I'm trying to convince my dad to get his crypto off coinbase into cold storage but he doesn't trust the cold wallet companies any more than coinbase.\n\nLedger claims it doesn't store user's private keys, is there any way to actually confirm this? Or are we basically putting our faith in Ledger to be honest? \n\nHow can I convince him?",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i9sspm1",
                     "author": "PorkAmbassador",
-                    "score": 21,
+                    "score": 27,
                     "created_utc": 1653395525.0,
                     "response": "Does he know what open source is and has he heard of Trezor?",
                     "depth": 1,
@@ -31,7 +31,7 @@
                         {
                             "id": "i9sxasy",
                             "author": "Fit_Psychology_1536",
-                            "score": 12,
+                            "score": 16,
                             "created_utc": 1653397985.0,
                             "response": "Didn't know Trezor is open source! Sounds way more secure with people being able to independently verify",
                             "depth": 2,
@@ -39,7 +39,7 @@
                                 {
                                     "id": "i9to1rr",
                                     "author": "monxas",
-                                    "score": 8,
+                                    "score": 7,
                                     "created_utc": 1653409659.0,
                                     "response": "100% go trezor. Great little devices.",
                                     "depth": 3,
@@ -66,7 +66,7 @@
                                         {
                                             "id": "i9vcb9b",
                                             "author": "axxtonn",
-                                            "score": 2,
+                                            "score": 6,
                                             "created_utc": 1653435479.0,
                                             "response": "Straight from reddit comment",
                                             "depth": 4,
@@ -81,7 +81,7 @@
                 {
                     "id": "i9swj81",
                     "author": "Jetjones",
-                    "score": 9,
+                    "score": 13,
                     "created_utc": 1653397591.0,
                     "response": "Get a Trezor and run a node.\nOr you know.. explain to him that cold storage is self custodial. Ledger and Trezor don\u2019t have access to your keys, only you do.",
                     "depth": 1,
@@ -97,7 +97,7 @@
                                 {
                                     "id": "i9sztfe",
                                     "author": "bitusher",
-                                    "score": 10,
+                                    "score": 12,
                                     "created_utc": 1653399226.0,
                                     "response": "separate but here are 2 easy methods :\n\n1) umbrel \n\nhttps://www.youtube.com/watch?v=-I53fAnQ6t8&ab_channel=BTCSessions\n\nhttps://getumbrel.com\n\n--------------------\n\n2) electrum personal server \n\n1) Setup electrum personal server(this is your full node) \n\nhttps://github.com/chris-belcher/electrum-personal-server \n\nhttps://curiosityoverflow.xyz/posts/bitcoin-electrum-wallet/\n\nhttps://www.youtube.com/watch?v=1JMP4NZCC5g\n\nhttps://www.youtube.com/watch?v=4H8gCFrjTYs\n\n2) Use electrum with your nano/trezor and configure electrum to use your personal server you setup above (Full node plus HW wallet) -\n\nhttps://support.ledger.com/hc/en-us/articles/115005161925-Set-up-and-use-Electrum\n\nhttps://wiki.trezor.io/Apps:Electrum\n\nledger nano S/trezor crash courses:\n\nhttps://www.youtube.com/watch?v=YI1OntWB7wc\n\nhttps://www.youtube.com/watch?v=pT1j_kbZBEo\n\nhttps://www.youtube.com/watch?v=i3BIo5Ac_n4\n\n\n\n3) Record your 24 words on paper + record your passphrase on a separate paper you keep private and secure and separate from your hardware wallet and each other. You will both memorize your passphrase and pin + keep it in writing but not with your 24 word backup. Never store passphrase or mnemonic backup digitally. \n\nhttps://support.ledger.com/hc/en-us/articles/115005214529-Advanced-passphrase-security\n\nhttps://wiki.trezor.io/Passphrase\n\nConsider upgrading to metal backup - \n\nhttps://jlopp.github.io/metal-bitcoin-storage-reviews/\n\n4) Withdraw a small test amount of BTC from your exchange to your receive address on your electrum + ledger/trezor wallet. You are going to send BTC to your hidden wallet with the passphrase.\n\n5) Confirm you got the BTC, reset your ledger/trezor , recover it with 24 words + passphrase . Now you have trained yourself how to recover a wallet with backup and 100% confident you did everything right once you see the BTc again in your hidden wallet. \n\n6)\tSend a small amount of BTC to your non hidden wallet(protected by pin) , and the rest to your hidden wallet(protected by passphrase). Done and send more BTC to hidden wallet account addresses.",
                                     "depth": 3,
@@ -113,7 +113,7 @@
                                                 {
                                                     "id": "i9t1c1e",
                                                     "author": "bitusher",
-                                                    "score": 4,
+                                                    "score": 3,
                                                     "created_utc": 1653399955.0,
                                                     "response": "most people don't run full nodes , but self custody with a trezor is really simple and thats the first step",
                                                     "depth": 5,
@@ -138,6 +138,25 @@
                                                             ]
                                                         }
                                                     ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i9vv3zb",
+                                            "author": "MyOtherAcctsAPorsche",
+                                            "score": 1,
+                                            "created_utc": 1653444404.0,
+                                            "response": "Hello!\n\nNot op, but what is the benefit of running your own node?\n\nI know +1 full node is a good thing for the network, but how does it benefit the individual?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9wojmj",
+                                                    "author": "bitusher",
+                                                    "score": 1,
+                                                    "created_utc": 1653461891.0,
+                                                    "response": "Better security and better privacy for the user , also you can accept your own lightning transactions as a merchant with services like btcpay instead of using merchant processor , and you can run your own block explorer and more",
+                                                    "depth": 5,
+                                                    "comments": []
                                                 }
                                             ]
                                         }
@@ -244,6 +263,15 @@
                     ]
                 },
                 {
+                    "id": "i9u6szj",
+                    "author": "Enki906",
+                    "score": 3,
+                    "created_utc": 1653417390.0,
+                    "response": "You don\u2019t need a \u201ccold wallet company\u201d. A cold wallet can literally be written on paper and locked in a safe.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i9sumsi",
                     "author": "bitusher",
                     "score": 4,
@@ -273,15 +301,6 @@
                     ]
                 },
                 {
-                    "id": "i9u6szj",
-                    "author": "Enki906",
-                    "score": 2,
-                    "created_utc": 1653417390.0,
-                    "response": "You don\u2019t need a \u201ccold wallet company\u201d. A cold wallet can literally be written on paper and locked in a safe.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i9u7qv8",
                     "author": "Kno010",
                     "score": 2,
@@ -296,6 +315,15 @@
                     "score": 2,
                     "created_utc": 1653430633.0,
                     "response": "You can't hack something that there's no way in to.\n\nBy depriving your wallet access to the web, you cut off an intruder's avenue to your data. \n\nI'm not sure what the advantage is of using Trezor or Ledger over Electrum on a USB. But perhaps someone can enlighten me.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9w9k6i",
+                    "author": "Chris19960520",
+                    "score": 2,
+                    "created_utc": 1653451665.0,
+                    "response": "Cold wallet helps you create your cryptocurrency account in a secure and offline environment. This consists of creating your private key and the public key. The public key is shared to the App and the private key will be kept securely within cold walle protected from any hackers.\n\nI am using Ellipal Titan, The QR code verify feature attract me,  if i want to move coins out . The Transactions are firstly created on the App. The App sends the transaction information to the ELLIPAL Titan via QR code. The ELLIPAL Titan then confirms the transaction within the software using private key and issues a confirmation QR code. The App scans the QR code, confirms the transaction and the crypto is sent.",
                     "depth": 1,
                     "comments": []
                 },
@@ -389,7 +417,27 @@
                             "created_utc": 1653433550.0,
                             "response": "How to connect to the bitcoin network to use your wallet if the computer isn't connected to the internet???",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i9wqbsm",
+                                    "author": "ImpressiveAd1276",
+                                    "score": 1,
+                                    "created_utc": 1653463355.0,
+                                    "response": "Here you go https://electrum.readthedocs.io/en/latest/coldstorage.html",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9x2bwh",
+                                            "author": "Cramerleet",
+                                            "score": 1,
+                                            "created_utc": 1653474001.0,
+                                            "response": "Thanks, that is interesting",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 },
@@ -417,6 +465,42 @@
                     "score": 1,
                     "created_utc": 1653439776.0,
                     "response": "Yell em to check out the cold card Canadian company site it's a nice load of info",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9vpu4i",
+                    "author": "Prior-Huckleberry-43",
+                    "score": 1,
+                    "created_utc": 1653441925.0,
+                    "response": "You don't have to trust anyone!!!  One can generate a cold (Paper Wallet) address with a totally offline computer and send your Bitcoin to that address!  Just keep your private key in a safe place.....or several places like a safe deposit box.   Then there is no online connection to get hacked!!!!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9wbdk0",
+                    "author": "afternooncrypto",
+                    "score": 1,
+                    "created_utc": 1653452710.0,
+                    "response": "Ledger is open source.\n\nhttps://walletscrutiny.com/hardware/ledgerNanoS/\n\nhttps://walletscrutiny.com/hardware/ledgerNanoX/\n\nhttps://walletscrutiny.com/hardware/ledger.nano.splus/\n\nThere are better options (better being open source, not propitiatory) such as Trezor and BitBox. But according to Wallet Scrutiny BitBox though open source is not reproducible but Trezor is. \n\nhttps://shiftcrypto.ch/\n\nhttps://trezor.io/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9wc5vd",
+                    "author": "FSpursy",
+                    "score": 1,
+                    "created_utc": 1653453194.0,
+                    "response": "I think older people can better be persuaded if you use air-gapped cold wallets as an example.\n\nFor example, I have an Ellipal Titan, the whole thing cannot be connected to any networks because there isn't a port anywhere on the device. It works using QR codes only so there isn't a need to connect to anything.\n\nYou can explain to your dad that for an air-gapped device, even if the company turns evil and wants to steal your private keys, the device simply doesn't let it because there isn't a way for the keys to leave the device and transmitted back to the company.\n\nYou can also use Trezor's opensource software to explain, but I think the concept of a device being completely offline, no matter what, is an easier concept to grasp. On the other hand, the Ledger is neither air-gapped nor opensource, you just got to trust them.\n\nIf he doesn't feel convinced, just explain that exchanges can do anything with your money, atleast on a wallet, you have the private keys. You can move your funds to another wallet anytime if anything happens.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9wiyfz",
+                    "author": "Kyle262638",
+                    "score": 1,
+                    "created_utc": 1653457625.0,
+                    "response": "Coinbase literally stated if they were to ever face bankruptcy, user holdings would be liquidated",
                     "depth": 1,
                     "comments": []
                 },

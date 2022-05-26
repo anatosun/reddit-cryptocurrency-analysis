@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uwa5jv/utxo_question/",
             "author": "kaioken1986",
             "created_utc": 1653339325.0,
-            "score": 1,
-            "num_comments": 14,
+            "score": 3,
+            "num_comments": 19,
             "subreddit": "BitcoinBeginners",
             "selftext": "Is unspent transaction output just the data of the wallets that have not initiated a transaction to another wallet? So like user A recieves x amount bitcoin or sats and just holds it in the wallet? Or am I completely wrong? Please let me know.",
             "stickied": false,
@@ -64,7 +64,7 @@
                                                 {
                                                     "id": "i9qe4h0",
                                                     "author": "bitusher",
-                                                    "score": 1,
+                                                    "score": 2,
                                                     "created_utc": 1653341653.0,
                                                     "response": "> So you can have more than one address in a wallet?\n\nMillions of addresses. So many you never need to worry about running out. \n\nMost wallets use hierarchical deterministic (HD) key derivation after bip32.\n\nThis means you have \n\n**Backup Seed words (BIP 39 or other)** consisting of 12-24 words that can than recover \n\n**Master extended private key (xpriv,ypriv,zpriv)** Which can generate many private keys \n\n**Master extended public key(xpub,ypub,zpub)** Which can generate many public keys \n\nAs of which from the public keys many Bitcoin addresses can be derived from. \n\n------------------\n\n>Do they switch to zero since you are sending the bitcoin to wallet D?\n\nYes.\n\nThe addresses no longer have UTXOs after spent because by definition they are spent instead of **U**nspent **T**(x)ransactions **O**utputs\n\nSingle addresses can have multiple UTXOs within them as well if you keep sending btc to the same address",
                                                     "depth": 5,
@@ -80,7 +80,7 @@
                                                                 {
                                                                     "id": "i9qge06",
                                                                     "author": "bitusher",
-                                                                    "score": 2,
+                                                                    "score": 3,
                                                                     "created_utc": 1653342690.0,
                                                                     "response": "**B**itcoin with the capital \"B\" usually refers to the network/protocol as a whole. \n\n**b**itcoins = UTXOs on a public ledger. These UTXOs do not exist in a wallet technically, they exist on the public ledger. Your wallet contains the keys to use those UTXOs . These UTXOs can be locked up in a lightning payment channel as well so you can spend them more efficiently, privately, and use bitcoin in smart contracts , but ultimately the Bitcoin(UTXOs) all exist on the public ledger",
                                                                     "depth": 7,
@@ -88,7 +88,7 @@
                                                                         {
                                                                             "id": "i9qoe0s",
                                                                             "author": "kaioken1986",
-                                                                            "score": 1,
+                                                                            "score": 3,
                                                                             "created_utc": 1653346493.0,
                                                                             "response": "THAT MAKES O MUCH SENSE NOW.  I had a realization last night that the whole thing was the ledger. Wow the mother fing thing is just data on a ledger that we give monetary value with just extra security and a little more complexity. The protocol is Bitcoin but the unit of value is the UTXO's wow.",
                                                                             "depth": 8,
@@ -113,7 +113,7 @@
                                                 {
                                                     "id": "i9qfu45",
                                                     "author": "bitusher",
-                                                    "score": 1,
+                                                    "score": 3,
                                                     "created_utc": 1653342438.0,
                                                     "response": "There are no \"accounts\" in Bitcoin. Its not an account model , but an UTXO model. \n\nThink of a wallet with a set of bills in it, and each bill represents a key to unlock spending power within an economy. You have 3 bills= a 20 , a 10 , and a 1 dollar bill(3 UTXOs) , you want to buy something worth 25 dollars so you open your wallet and take out the 20 and 10 and hand it to the merchant. The merchant gives you a 5 in change and now your wallet has 2 bills (2 UTXOs), a 1 and a 5 dollar bill. Only one of those UTXOs(bills) is old and now you have a new UTXO(new bill as change)\n\nAn account model would be like a Bank account where you have a balance of 31 dollars inside, you buy something for 25 dollars and that gets subtracted from the 31 and you are left with a balance of 6 dollars. \n\nWhy?\n\nAccount models of accounting are simpler to understand but the UTXO model allows for better efficiencies and scalability and certain privacy benefits.",
                                                     "depth": 5,
@@ -146,7 +146,7 @@
                                 {
                                     "id": "i9qap3v",
                                     "author": "bitusher",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1653340101.0,
                                     "response": "Correct.",
                                     "depth": 3,
@@ -155,6 +155,15 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "id": "i9s10lx",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1653373260.0,
+                    "response": "The Bitcoin blockchain only stores transactions, not wallets. A Bitcoin coin is not stored in a wallet. A coin is the output of a transaction. A UTXO is an unspent coin. A coin can only be spent once. A coin can only be spent completely. Bitcoin has no partial spends",
+                    "depth": 1,
+                    "comments": []
                 }
             ]
         },
@@ -165,7 +174,7 @@
             "author": "FuelWild665",
             "created_utc": 1653338677.0,
             "score": 0,
-            "num_comments": 5,
+            "num_comments": 10,
             "subreddit": "BitcoinBeginners",
             "selftext": "For instance, why do some exchanges still use legacy addresses to receive and send bitcoin? Aren't all formats compatible or how shall I call it?",
             "stickied": false,

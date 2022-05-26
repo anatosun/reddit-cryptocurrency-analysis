@@ -1,0 +1,254 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uy5ewa",
+            "title": "How hard is it to find out the correct seed phrase from a random ordered seed phrase?",
+            "url": "https://www.reddit.com/r/ethereum/comments/uy5ewa/how_hard_is_it_to_find_out_the_correct_seed/",
+            "author": "hegedis",
+            "created_utc": 1653564365.0,
+            "score": 6,
+            "num_comments": 27,
+            "subreddit": "ethereum",
+            "selftext": "I have two wallet, one with 12 words (hot wallet) and the other one has 24 words seed (ledger). I wrote the 36 words on a paper in a random order. And the correct ordering on a separate paper.\n\nHow hard would it be to someone to calculate the correct wallet from this randomized 36 words table?\n\nI plan to store the words in separete houses and the order numbering also in different places.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia23dyp",
+                    "author": "UbiquitousLedger",
+                    "score": 6,
+                    "created_utc": 1653568575.0,
+                    "response": "36!/( 12! * ( 36 - 12 )! )\n\n36!/( 24! * ( 36 - 24 )! )",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia26ji9",
+                    "author": "mooremo",
+                    "score": 3,
+                    "created_utc": 1653570209.0,
+                    "response": "This is unlikely to provide any additional security for you and it makes your back up and recovery process more complicated. I would not advise this.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia2hp7g",
+                            "author": "test_1111",
+                            "score": 1,
+                            "created_utc": 1653575211.0,
+                            "response": "Yeh it seems like a bad idea all round. One of the houses has the full answer, the other has a near useless version which could confuse the whole process, however many years or decades down the track they're needed. \n\nPlus if OP loses the full answer... Well, good luck with the useless/confusing/random one.\n\nIt's basically a system of 1 proper copy and 1 curve-ball useless one which is more of a problem than it's worth (it's worth being less than nothing)",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia2a2xd",
+                    "author": "revrund_H",
+                    "score": 2,
+                    "created_utc": 1653571903.0,
+                    "response": "If you are using a \"two location storage\" strategy to protect a seed phrase, I think there are more secure ways of dividing the phrase...although I haven't done the math!\n\n&#x200B;\n\nOne possibility is to divide the phrase in half, randomize the order, add a enough dummies to make it look like you are storing a complete seed.   So each location would have a seed that looks complete, and a decoder  for the other stored list.  Anyone finding the the scrambled seed would assume it is a complete seed...not knowing that you had really divided the seed into two seeds.\n\n&#x200B;\n\nA bit complicated....and that's perhaps the downfall...",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia2ituz",
+                            "author": "cryptolulz",
+                            "score": 1,
+                            "created_utc": 1653575686.0,
+                            "response": "Why not use shamir seed 3/5? Same effect but no need to memorize what the silly words are.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia2axx0",
+                    "author": "_JohnWisdom",
+                    "score": 2,
+                    "created_utc": 1653572297.0,
+                    "response": "The order would be of little to no importance for security. Separating chunks of seeds in different locations is where you add security. Having all the seed words in one location, in any order, would be trivial to brute force",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia2dizs",
+                            "author": "WadeWelles",
+                            "score": 2,
+                            "created_utc": 1653573437.0,
+                            "response": "ah, the Horcrux strategy",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia2fuik",
+                            "author": "ItsAConspiracy",
+                            "score": 1,
+                            "created_utc": 1653574435.0,
+                            "response": "80 bits of entropy for 24 words in scrambled order. That's marginal against a sophisticated and well-funded attacker, but it's not trivial.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia1zpvw",
+                    "author": "gcofilyvkqwgsgn",
+                    "score": 5,
+                    "created_utc": 1653566500.0,
+                    "response": "[https://www.hackmath.net/en/calculator/combinations-and-permutations?n=36&k=24&order=0&repeat=0](https://www.hackmath.net/en/calculator/combinations-and-permutations?n=36&k=24&order=0&repeat=0)\n\nNumber of combinations (for both 12 and 24): 1251677700\n\n(Not much)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia21pjj",
+                            "author": "hegedis",
+                            "score": 7,
+                            "created_utc": 1653567657.0,
+                            "response": "Shoudnt the order important be selected? Because the words need to be in the correct order to get the correct private key.\n\n \\_      \\_       \\_      \\_        \\_       \\_       \\_       \\_       \\_     \\_        \\_       \\_  (12 places for the words)\n\n36 x 35 x 34 x 33 x 32 x 31 x 30 x 29 x 28 x 27 x 26 x 25 = 599555620984320000",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia23e1v",
+                                    "author": "anythingapplicable",
+                                    "score": 0,
+                                    "created_utc": 1653568576.0,
+                                    "response": "Yes, the order is important. But take into account that there are CPU's and GPU's and ASIC's which are specialized in parallel processing which can generate trillions of guesses per second which will brute force their way into your wallet given enough time when they have a relatively small sample size to guess from.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia2468n",
+                                            "author": "hegedis",
+                                            "score": 3,
+                                            "created_utc": 1653568992.0,
+                                            "response": "They still have to check onchain whether the account has any balance or not, which would take more time (because i dont store the public addy with the word table)",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia27s4k",
+                                                    "author": "gcofilyvkqwgsgn",
+                                                    "score": 3,
+                                                    "created_utc": 1653570814.0,
+                                                    "response": "You're right, the order is important. However, they don't have to check on chain because the chain could be local and the necessary information cached.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "ia2b9on",
+                                                    "author": "ItsAConspiracy",
+                                                    "score": 2,
+                                                    "created_utc": 1653572443.0,
+                                                    "response": "Not much time. Load up all the addresses with balances in a local lookup table, with only enough bits each to distinguish them. Can probably fit it all in CPU cache, especially if you leave out the ones with small balances.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia2fbw9",
+                                                            "author": "hegedis",
+                                                            "score": 2,
+                                                            "created_utc": 1653574213.0,
+                                                            "response": "I hope the burgrals are not that sophisticated around here.   \nBut reading comments i def will try to change this set up later this year",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        },
+                                                        {
+                                                            "id": "ia2bu9q",
+                                                            "author": "hanniabu",
+                                                            "score": 1,
+                                                            "created_utc": 1653572699.0,
+                                                            "response": "How long would it take to generate every possible public address derived from that private key?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia2f7fm",
+                                                                    "author": "ItsAConspiracy",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653574160.0,
+                                                                    "response": "I don't really know how that works but I would think one hash per address. You'd probably only need to check the first few.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ia22rrh",
+                                    "author": "maximusIota",
+                                    "score": 1,
+                                    "created_utc": 1653568243.0,
+                                    "response": "Thanks, I would be curious at the math for 24 words in random order, and one of the word is a dummy one, that is, one word that is not part of the seed (1 word out of 23 need to be guessed in the Ledger dictionary)",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia23dna",
+                                            "author": "hegedis",
+                                            "score": 3,
+                                            "created_utc": 1653568571.0,
+                                            "response": "I think it should be calculated similarly:\n\n25 x 24 x 23 x 22 x 21 x 20 x 19 x ... x 2 = 15511210043330985984000000 (pretty big number)\n\nedit: i thought the question was 25 words with 1 dummy.   \nso the calculation above is not correct.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia2jd14",
+                                                    "author": "maximusIota",
+                                                    "score": 1,
+                                                    "created_utc": 1653575909.0,
+                                                    "response": "Great! thanks for the calculation.It is actually 24 with 1 dummy,  and one is missing (one of BIP 0039 possibility) So probably even bigger number!\n\nin other words, 24 permutations with a word that you have to guess (23 words already known, the dummy one can probably be ruled out easily since not bip-0039. but order is not known)  \nhttps://github.com/bitcoin/bips/blob/master/bip-0039/english.txt#L2048",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia21bvf",
+                            "author": "hegedis",
+                            "score": 1,
+                            "created_utc": 1653567447.0,
+                            "response": ">1251677700\n\nif 10 address can be checked per seconds it can check all the addresses in \\~1440 days?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia2gc6g",
+                                    "author": "Inkriegel",
+                                    "score": 1,
+                                    "created_utc": 1653574644.0,
+                                    "response": "More like 100.000 or 1.000.000 if done correctly",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia2hsyf",
+                    "author": "HeatSeekingPanther",
+                    "score": 1,
+                    "created_utc": 1653575256.0,
+                    "response": "24!. It would take a high end 4GHz gaming computer 4,915,017 years to crack the seed.\n\nSo with that said. Be careful splitting the seed phrase up. Lose part of it and you lose all of it. Multisig is the way.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia2im2n",
+                    "author": "NinjAsylum",
+                    "score": 1,
+                    "created_utc": 1653575596.0,
+                    "response": "I think you're going a little overboard for $20 lol",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

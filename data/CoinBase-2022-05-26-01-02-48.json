@@ -1,0 +1,608 @@
+{
+    "subreddit": "CoinBase",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "lk9o6q",
+            "title": "Coinbase Wallet - Scam!",
+            "url": "https://www.reddit.com/r/CoinBase/comments/lk9o6q/coinbase_wallet_scam/",
+            "author": "macbobs",
+            "created_utc": 1613379205.0,
+            "score": 23,
+            "num_comments": 68,
+            "subreddit": "CoinBase",
+            "selftext": "I transfered my BTC ETH LTC from Coinbase to Coinbase Wallet.\n\nThen I couldn't start sending BTC/LTC because of abtransaction cost calculation error.\n\nI tried to restore the wallet with my seed words after an app reinstall and now BTC and LTC are gone...the adresses show no transaction history anywhere on the internet.\n\nThe old adresses (before the restore) have no transaction activity. So the funds were not stolen.\n\n\nHowever ETH funds are available.\n\nThe same behaviour is true when importing into Trust Wallet...only ETH.\n\nI guess the wallet is either custodial with a fake seed or there is a bug in the address derivation algorithm.\n\nI lost very much mony. Thanks Coinbase!\n\nUpdate 18.02.20:\nThe support suggested to enter the address into the derived addresses settings search in the app.\nHowever, it's unlikely to bruteforce the correct address with a rate of 2 million addresses per 24h. \nETH funds are available because the addresses do not change like BTCs and forks.\n\nUpdate 19.02.20:\nThe support suggested to use another wallet software to scan the key derivation path. Coinbase Wallet currently uses the Segwit Native (p2wpkh) m/84'/0'/0' BIP84 path apparently.\n\nUpdate 24.02.20:\nI tried everything in my power. After multiple emails with the support I finally give up on my BTC. Guess I can inly hope for a miracle fix by Coinbase devs.\n\nTL;DR\nNever download Coinbase Wallet!\nDon't buy shares when they go IPO!",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "gniok7e",
+                    "author": "coinbasesupport",
+                    "score": 1,
+                    "created_utc": 1613379847.0,
+                    "response": "Hi u/macbobs \\- Thanks for letting us know about this and providing your support case number. We have flagged your case to the appropriate team for further review. Thank you for your patience.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gnio8mp",
+                    "author": "macbobs",
+                    "score": 3,
+                    "created_utc": 1613379547.0,
+                    "response": "This is happening to other redditors as well.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gniupat",
+                    "author": "macbobs",
+                    "score": 3,
+                    "created_utc": 1613385820.0,
+                    "response": "Also twitter users loosing their money!\nhttps://twitter.com/coinbasewallet/status/1357402226847715328?s=21",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gnklu6o",
+                    "author": "urbangamermod",
+                    "score": 2,
+                    "created_utc": 1613422017.0,
+                    "response": "That\u2019s odd when I re-enter my 12 seed it works just fine on Coinbase wallet. I was able to recover both Bitcoin and ETH",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gorg6g4",
+                            "author": "neklim_leahcim",
+                            "score": 1,
+                            "created_utc": 1614292115.0,
+                            "response": "Did you recently install CB Wallet and link it to your CB app?   \nThat's when issues started for at least five other users.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "gnx7fa2",
+                            "author": "macbobs",
+                            "score": 1,
+                            "created_utc": 1613677282.0,
+                            "response": "Then you are lucky. For some people it derives the addresses correctly and for some it doesn't. I'm one of the unlucky ones :(",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "go0abif",
+                                    "author": "urbangamermod",
+                                    "score": 2,
+                                    "created_utc": 1613744221.0,
+                                    "response": "How is that possible? It\u2019s a non custodial wallet",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "go45asa",
+                                            "author": "macbobs",
+                                            "score": 1,
+                                            "created_utc": 1613825230.0,
+                                            "response": "It's possible when the address generation algorithm is bugged and the first address is generated wrong. If the wallet doesn't generate the same address after the seed restore then the funds are gone.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "go45bab",
+                                                    "author": "agree-with-you",
+                                                    "score": 2,
+                                                    "created_utc": 1613825241.0,
+                                                    "response": "I agree, this does seem possible.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "go45sxj",
+                                                            "author": "macbobs",
+                                                            "score": 1,
+                                                            "created_utc": 1613825637.0,
+                                                            "response": "Thanks  u/agree-with-you",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "gorg9ry",
+                                            "author": "neklim_leahcim",
+                                            "score": 1,
+                                            "created_utc": 1614292158.0,
+                                            "response": "Read more here:   \n[https://www.reddit.com/r/CoinBase/comments/l9nzdu/coinbase\\_wallet\\_got\\_hacked/](https://www.reddit.com/r/CoinBase/comments/l9nzdu/coinbase_wallet_got_hacked/)",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "gxjmxsi",
+                    "author": "romanlux25",
+                    "score": 2,
+                    "created_utc": 1620599266.0,
+                    "response": "My is stuck on scanning as well. My XRP balance shows 0 but it still shows proof of my recent deposits in the transaction log. I have a feeling it\u2019s just not loading correctly.. doesn\u2019t anyone have an answer?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gyc4eqf",
+                            "author": "ExistingEconomics145",
+                            "score": 1,
+                            "created_utc": 1621180983.0,
+                            "response": "I have this problem to. Coinbase scaaaam!!! Give my money!!!",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hpa22fg",
+                                    "author": "NuQueenMidas",
+                                    "score": 1,
+                                    "created_utc": 1639994372.0,
+                                    "response": "Exactly what I said\u2026..I\u2019m pissed!",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hvf0zy1",
+                            "author": "Ebenanza",
+                            "score": 1,
+                            "created_utc": 1643895014.0,
+                            "response": "The solution is to log out and log back in, it worked for me.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8cdtxx",
+                                    "author": "Intense4Life",
+                                    "score": 1,
+                                    "created_utc": 1652376690.0,
+                                    "response": "same here, seems like you may need to relog in but that just shows how bad CB is. This is 2022...",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "gninvbs",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1613379205.0,
+                    "response": "This subreddit is a public forum. For your security, do not post personal information to a public forum, including your Coinbase account email. If you\u2019re experiencing an issue with your Coinbase account, please [contact us](https://help.coinbase.com/en/contact-us.html) directly. \n\nIf you have a case number for your support request please respond to this message with that case number.\n\nYou should only trust [verified Coinbase staff](https://help.coinbase.com/en/coinbase/other-topics/other/is-coinbase-present-on-social-media.html). Please report any individual impersonating Coinbase staff to the moderators.\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/CoinBase) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gniny35",
+                            "author": "macbobs",
+                            "score": 1,
+                            "created_utc": 1613379276.0,
+                            "response": "Case# 04707710",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "gniuz5p",
+                    "author": "TotesMessenger",
+                    "score": 1,
+                    "created_utc": 1613386089.0,
+                    "response": "I'm a bot, *bleep*, *bloop*. Someone has linked to this thread from another place on reddit:\n\n- [/r/bitcoin] [Xpost from r\\/coinbase](https://www.reddit.com/r/Bitcoin/comments/lkb8ah/xpost_from_rcoinbase/)\n\n&nbsp;*^(If you follow any of the above links, please respect the rules of reddit and don't vote in the other threads.) ^\\([Info](/r/TotesMessenger) ^/ ^[Contact](/message/compose?to=/r/TotesMessenger))*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "goeg5eg",
+                    "author": "ProdByTheAuthority",
+                    "score": 1,
+                    "created_utc": 1614038284.0,
+                    "response": "My Coinbase wallet won\u2019t allow me to send my xrp anywhere....",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gt6nnqt",
+                            "author": "aerona6",
+                            "score": 1,
+                            "created_utc": 1617400424.0,
+                            "response": "> it works just fine on Coinbase wallet. I was able to recover both Bitcoin and ETH\n\nhave you found the solution?",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hvf171p",
+                            "author": "Ebenanza",
+                            "score": 1,
+                            "created_utc": 1643895111.0,
+                            "response": "Log out and log back in, it will reset.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "gompg8v",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1614202180.0,
+                    "response": "This subreddit is a public forum. For your security, do not post personal information to a public forum, including your Coinbase account email. If you\u2019re experiencing an issue with your Coinbase account, please [contact us](https://help.coinbase.com/en/contact-us.html) directly. \n\nIf you have a case number for your support request please respond to this message with that case number.\n\nYou should only trust [verified Coinbase staff](https://help.coinbase.com/en/coinbase/other-topics/other/is-coinbase-present-on-social-media.html). Please report any individual impersonating Coinbase staff to the moderators.\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/CoinBase) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gqrwtus",
+                    "author": "Select_Banana8833",
+                    "score": 1,
+                    "created_utc": 1615615240.0,
+                    "response": "That sucks. How  much btc you lost?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gqvruce",
+                            "author": "macbobs",
+                            "score": 1,
+                            "created_utc": 1615709818.0,
+                            "response": "like 700$",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "gqvu07y",
+                                    "author": "Select_Banana8833",
+                                    "score": 1,
+                                    "created_utc": 1615712013.0,
+                                    "response": "sad",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "gqvuqnl",
+                                            "author": "macbobs",
+                                            "score": 1,
+                                            "created_utc": 1615712755.0,
+                                            "response": "yeah never trust coinbase!",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "gqvvgnp",
+                                                    "author": "Select_Banana8833",
+                                                    "score": 1,
+                                                    "created_utc": 1615713514.0,
+                                                    "response": "now i never trust any exchange",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "gysyu6o",
+                                                            "author": "macbobs",
+                                                            "score": 1,
+                                                            "created_utc": 1621504409.0,
+                                                            "response": "The wallet has a bug I didn't loose it in the exchange btw...",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "gnx6xmq",
+                    "author": "AutoModerator",
+                    "score": 0,
+                    "created_utc": 1613677078.0,
+                    "response": "This subreddit is a public forum. For your security, do not post personal information to a public forum, including your Coinbase account email. If you\u2019re experiencing an issue with your Coinbase account, please [contact us](https://help.coinbase.com/en/contact-us.html) directly. \n\nIf you have a case number for your support request please respond to this message with that case number.\n\nYou should only trust [verified Coinbase staff](https://help.coinbase.com/en/coinbase/other-topics/other/is-coinbase-present-on-social-media.html). Please report any individual impersonating Coinbase staff to the moderators.\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/CoinBase) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "grl59zy",
+                    "author": "Kriptonico88",
+                    "score": 1,
+                    "created_utc": 1616246789.0,
+                    "response": "Well another one who is experiencing this with the coinbase shit ... since November 23 with the account disabled (account that is more than 5 years old, a lot of transactions have been made, verified both phone, kyc identity and bank account) and after 4 months sending them emails now they deign to answer without giving a quick solution and the last straw is that they ask me for the recovery phrase from the same support .... I have an email in case wants it. It is first in any field that a professional will NEVER ask you for your phrase, password, or pin ... they will go to the bag if ... the garbage will be.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gysysnx",
+                            "author": "macbobs",
+                            "score": 1,
+                            "created_utc": 1621504368.0,
+                            "response": "The coinbase support never asked me for my phrase....I even offered my phrase to them to help debug the problem but they wouldn't let me give them my phrase.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "grmwq70",
+                    "author": "Kriptonico88",
+                    "score": 1,
+                    "created_utc": 1616277782.0,
+                    "response": "What is happening to me is crazy but I am clear that they are SCAMMERS, and I can tell them to their faces. Since November 23 of last year (yes, 4 months ago) THEY decided to suspend my account and I have not been able to enter since that day. I got in touch with support and they answered the first emails saying that they were passing my case to a specialist well, in these 4 months they answered me yesterday after sending I don't know how many unanswered emails. Your specialist ..... first of all he tells me to tell him the recovery phrase, which surprises me that someone in support asks you that, it is as if they asked you for the private keys but I did not give it to him since I He used coinbase from the web and that I remember there was no recovery phrase or anything well, he tells me that from there on his side there seems to be no problem for me to log in and I send him a screenshot showing him that he follows me putting that it is disabled. Send me the following message Telling me to download the app from the play store and try to link my account from there, weird also this, what is to have more downloads of the app and say that so many people are using it? sure .... no success, account disabled. After this, he answered me again that he just sent me a code and that I tell him what it is, but the mobile does not receive any code, I only receive an email with a link to change my password, I change it and then it arrives. An SMS to my cell phone telling me that my password has been changed. I mean, that my phone is fine because I get the notifications but what a coincidence that the code that says it has sent me does not arrive, weird, right? After this he tells me that without the recovery phrase or the sms code (which has not been sent and has been clear after the notifications arrive) I cannot recover my account, which advises me to either create another account or pay 20 euros for the annual pro subscription and so I can get it back .... sorry ???????? I tell him that what he says is very good but that my account contained a balance and if I create another, obviously that balance I lose it and he gives me the ticket as resolved and closes it. I have all the emails of this from the 23rd of last year until now and I plan to denounce you both individually with all these tests and in the joint lawsuit that we are putting together since we are a lot of people affected by these actions that coinbase uses. Anyone who wants tests before investing their money I can teach them without any problem. Look at [https://es.trustpilot.com/review/coinbase.com](https://es.trustpilot.com/review/coinbase.com) and there you will see what ilk they are.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gxdwb4q",
+                    "author": "Firm_Cash9241",
+                    "score": 1,
+                    "created_utc": 1620480771.0,
+                    "response": "I do have scanning on my Coinbase wallet. Is my wallet safe?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gxfmuid",
+                            "author": "macbobs",
+                            "score": 1,
+                            "created_utc": 1620512458.0,
+                            "response": "If you can send it somewhere it's safe.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "gynytf5",
+                    "author": "jockandthebeanstock",
+                    "score": 1,
+                    "created_utc": 1621404005.0,
+                    "response": "The app is a scam. I can't withdraw any crypto because it\u2019s saying there isn\u2019t enough to cover the mining fees and I have to deposit more. Minor fees in the hundreds of USD equivalent and, in some cases, more then the specific coin I\u2019m trying to transfer out.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hj2gi4e",
+                            "author": "opticald",
+                            "score": 1,
+                            "created_utc": 1635890421.0,
+                            "response": "I am experiencing this as well. Shouldn\u2019t I be able to move my 135.00 in usdc from my Coinbase wallet back to the platform without paying 85.00 in miner fees?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hj2gy7t",
+                                    "author": "jockandthebeanstock",
+                                    "score": 2,
+                                    "created_utc": 1635890598.0,
+                                    "response": "Only $85? Lucky. They want to charge me $500+.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "hl07lry",
+                                    "author": "ProofClean6458",
+                                    "score": 1,
+                                    "created_utc": 1637167339.0,
+                                    "response": "Having this exact problem.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hjcesta",
+                            "author": "ScorpLion",
+                            "score": 1,
+                            "created_utc": 1636066192.0,
+                            "response": "Same, I transferred some Shib to wallet in attempts to grab some LOOM, converting cost would have been over 800 bucks in eth, now I cant get the shib back to  coinbase without getting even more eth than I'm trying to move for fees. Absolutely ridiculous",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hl08zn9",
+                                    "author": "ProofClean6458",
+                                    "score": 1,
+                                    "created_utc": 1637167881.0,
+                                    "response": "I think I'm going to move my funds back to coinbase and just take the hit. I transferred USDC to the wallet but when I attempt to purchase cryptos that cannot be purchased on regular coinbase I'm told I don't have enough to cover the mining fees. I need at least $851 in Ethereum to cover the mining fees. So then I decided to just transfer my idc back to coinbase and it's going to cost me 81 bucks in \"mining fees\". So I'm a bit new to this, they actually have to mine my usdc that I transferred and I want to transfer back?",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hltateq",
+                            "author": "JustDucky74",
+                            "score": 1,
+                            "created_utc": 1637699974.0,
+                            "response": "Having the same problem. Trying to convert $785 USDT(Tether) to anything wants a mining fee of $803 in ETH. Trying to send it back to Coinbase wants roughly $50 give or take in ETH . But again to convert my USDT to ETH costs over $800. This is absurd. I'm about to go F'n ballistic. \n\nDidn't cost a thing to transfer TO coinbase wallet from coinbase",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hvf1eqa",
+                            "author": "Ebenanza",
+                            "score": 1,
+                            "created_utc": 1643895219.0,
+                            "response": "I\u2019ve been there. I was finally able to withdraw my money by logging out and logging back in but make sure you know your 12 word recovery phrase before logging out cause without it you cant log back in.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "gysqyul",
+                    "author": "ExistingEconomics145",
+                    "score": 1,
+                    "created_utc": 1621496907.0,
+                    "response": "Hello everyone I have a problem. Coinbase wallet does not allow to send my coins to another address, the support does nothing, and for more than a week I have not been able to send coins from their wallet. There are people who cannot access the coins in their wallet for more than a month! I trusted my money to coinbase thinking it was a reliable company but I was wrong. #Coinbasescam everyone who suffered, let's unite, we will write our problem everywhere, raise a fuss, spread the hashtag #coinbasescam  I hope they will solve our problems and keep their good reputation.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gysyo4v",
+                            "author": "macbobs",
+                            "score": 1,
+                            "created_utc": 1621504254.0,
+                            "response": "Try to restore your wallet and when everything is gone afterwards you have the same problem as me :)",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "h8h4aor",
+                    "author": "Few-Marionberry-5709",
+                    "score": 1,
+                    "created_utc": 1628640425.0,
+                    "response": "Yep i sent nu money over from coinbase to coinbase wallet and bad insta regret when I saw that you can't turn your crypto into cash from this shit app. I sent back 300 doge coin to the exact same adress I recieved them from according to coinbase wallet history and now their gone. I dont even understand crypto and These fcking scammers made my money dissapear. Stick to regulj\u00e4r coinbase These scammers try to bath in their glory.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hh8q87f",
+                    "author": "Aggressive_Cat5306",
+                    "score": 1,
+                    "created_utc": 1634656954.0,
+                    "response": "Investor beware. cant withdraw my Doge from my coinbase wallet at all.\nIt wont let me deposit my Eth into my coinbase wallet.\nCoinbase support offered no help, they said they are working to make coinbase better and to be patient its been over 6 months now.\nI cannot believe there is no high level investigation into coinbase and their practices. What they are doing is highly illegal stealing our money and offering no remedy for their errors. It wont be long before enough of us say enough is enough and litigate thier ass.  \nCoinbase is single-handed the worst crypto wallet experience i have ever had. Investor Beware.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hiuz141",
+                    "author": "Sun_ShineProject73",
+                    "score": 1,
+                    "created_utc": 1635751650.0,
+                    "response": "They took the money, now asking for pin, they never gave me,.now I uninstalled and reinstalled but now it's not taking my Google drive. Bec it's just a scam..they have something in it, now it's asking me 12 words recovery phrase which I didn't get chance to make...such a scam!!! I demand my money back you hackers!! @Coinbasewallet",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hizu5tl",
+                    "author": "AccessAnnual",
+                    "score": 1,
+                    "created_utc": 1635848913.0,
+                    "response": "Coinbase wallet is a scam I can not get my money out   It crazy don\u2019t use this",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hizubnv",
+                    "author": "AccessAnnual",
+                    "score": 1,
+                    "created_utc": 1635849044.0,
+                    "response": "It\u2019s a scam",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hizueug",
+                    "author": "AccessAnnual",
+                    "score": 1,
+                    "created_utc": 1635849117.0,
+                    "response": "Do not use coin base wallet it\u2019s a great big scam they take your money",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hkxsf1t",
+                            "author": "yolo24seven",
+                            "score": 1,
+                            "created_utc": 1637116574.0,
+                            "response": "Which wallet do you recommend?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hk0munu",
+                    "author": "emicks",
+                    "score": 1,
+                    "created_utc": 1636510457.0,
+                    "response": "Do not use coinbase wallet. Transferred my shib and now when I try to transfer or convert  it asks for a ridiculous amount of fees. DO NOT USE!!!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hnvf464",
+                            "author": "NotMiningBitcoin",
+                            "score": 1,
+                            "created_utc": 1639069492.0,
+                            "response": "That\u2019s an Ethereum problem, not a Coinbase problem. ETH gas fees are absurd right now. You\u2019d have the same problem with a Trezor or Ledger.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hkh0xl2",
+                    "author": "FlatEconomist6852",
+                    "score": 1,
+                    "created_utc": 1636821574.0,
+                    "response": "Same! The the ridiculous fees to transfer???? Coinbase needs to fix this! I may go to the bank and file for fraud for the transactions.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hnvf8mq",
+                            "author": "NotMiningBitcoin",
+                            "score": 1,
+                            "created_utc": 1639069540.0,
+                            "response": "It\u2019s not a bug, every custodial wallet has this problem right now. This is the state of ETH gas fees.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hlgsjei",
+                    "author": "eksine20",
+                    "score": 1,
+                    "created_utc": 1637464744.0,
+                    "response": "contact consumer financial protection bureau, look up that word with coinbase on reddit and you will see they take 15 days to get you help, it's an official part of the US government, the only time the govt will actually do something for you instead of take away",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpua9mo",
+                    "author": "AffectionatePin7645",
+                    "score": 1,
+                    "created_utc": 1640374628.0,
+                    "response": "I transferred money into my Coinbase wallet and now I can\u2019t transfer it out without eth. I can\u2019t buy eth without more eth. How can I transfer money out of the Coinbase wallet without paying miner fees to get eth and then more miner fees to transfer the money out?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hpyluuj",
+                    "author": "Dry_Satisfaction_755",
+                    "score": 1,
+                    "created_utc": 1640471473.0,
+                    "response": "I tried 6 time to move my USDC from Coinbase wallet to my Coinbase app to use. It took my ETH 6 times and kept saying could not transfer. Multiple emails to support. Keep telling me I need ETH. I put 100$ of ETH in and it\u2019s gone to miner fees? I can buy and sell on Coinbase all day for a tiny fee. Not Fking 18$ a try",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hrgsfa6",
+                    "author": "ArchieDoggie",
+                    "score": 1,
+                    "created_utc": 1641455914.0,
+                    "response": "I Have Two Unrecognised Coinbase Wallet Transactions Whereupon I Received GAMMA Tokens With The Loss Of ETH And Very High Gas Fees, Can Anything Be Done?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ht6ceo8",
+                    "author": "boitrubl",
+                    "score": 1,
+                    "created_utc": 1642513933.0,
+                    "response": "So I just signed up because I was interested in buying a coin that isn't on regular Coinbase yet. I sent over the $100 in USD Coin I had to purchase it with just to get my feet wet. $5+ fee. Ugh fine. Wanted to convert it to the new coin. $383 ETH fee... to buy $94 worth. Do I look like I know what a JPEG is?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hvf0szr",
+                    "author": "Ebenanza",
+                    "score": 1,
+                    "created_utc": 1643894918.0,
+                    "response": "There isn\u2019t much they\u2019ll do to help, I\u2019ve been there. I finally managed to withdraw my money by logging out and logged back in but make sure you know your 12 word recovery phrase before logging out cause without it you cant log back in.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

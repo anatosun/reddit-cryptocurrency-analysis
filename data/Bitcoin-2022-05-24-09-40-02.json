@@ -179,13 +179,65 @@
             ]
         },
         {
+            "id": "uwmsao",
+            "title": "Private Bitcoin Node over I2P and Tor only",
+            "url": "https://youtu.be/2kyt6O-T0nA",
+            "author": "didnt_die_a_hero",
+            "created_utc": 1653384348.0,
+            "score": 13,
+            "num_comments": 4,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9t4yxy",
+                    "author": "didnt_die_a_hero",
+                    "score": 2,
+                    "created_utc": 1653401641.0,
+                    "response": "(Not the creator I just always learn a ton from this dude so I like to share his stuff)\n\nSo\u2026\nIf you are asking about being always over tor even before you connect your I2P, he\u2019s pretty paranoid, that\u2019s all covered, you\u2019re never in the clear nor are you ever connected to any other node, (like some wallet\u2019s)\nIf you\u2019re asking how to do the Tor bit to begin with the Tor video link\u2019s in the description: \nhttps://youtu.be/57GW5Q2jdvw\n\nBeyond that I must crib an answer from the autistic software itself: \u201cTor cannot help you if you use it wrong\u201d.\nlol",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9tfc88",
+                            "author": "Independent-Snow-129",
+                            "score": 2,
+                            "created_utc": 1653406070.0,
+                            "response": "I see, you make sure to have trustworthy peers for it to be a successful private process .\n\nDo you think there's some easier path to achieve privacy  ?\n\nIf you can't connect to a different Tor peer which you control or give full trust, are you not opening more risk vector and making all this process irrelevant?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9sh1yz",
+                    "author": "Independent-Snow-129",
+                    "score": 1,
+                    "created_utc": 1653387614.0,
+                    "response": "Do you have to set something with Tor for it to be properly private?\n\nWhere's your first connection bouncing to with tor?\n\nCould the first bounce give room to a bad actor and create any vulnerability  ? (*edited format)*",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9ws5xg",
+                            "author": "didnt_die_a_hero",
+                            "score": 1,
+                            "created_utc": 1653464959.0,
+                            "response": "\nOkay so if I understand this correctly\u2026\n\nThe seed node is preset to like u/pwuille Pieter Wuille\u2019s node or someone equally reliable, (same as when you go regular clearnet), you then get more I2P and Tor nodes off of his peers, based on the algorithm, (length of time running and whatnot)\n(Once you\u2019re connected to multiple nodes randomness makes getting 100% FBI nodes or whatever mathematically impossible)\nIt automatically disconnects from the original seed node so you\u2019re not even connected to that clearnet one. \n\nTo avoid even that:\nDNSSEED=0 makes sure you don\u2019t connect to ANY seed node and you choose it manually. \n\nThere\u2019s a core dev which I used for I2P because he posted his in response to a question on Twitter, (sorry I\u2019m not where I can find it rn) and Tor nodes are so ubiquitous it\u2019s pretty easy to find someone you trust. \n\nBut yes, you\u2019re right. \nRegardless of how you do it, that first node needs to be one you trust, as your network spider webs out from it. \nBut that\u2019s the case for all Bitcoin nodes running on any network, TCP/IP, Tor, I2P, CJDNS",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "id": "uwmvqj",
             "title": "IMF \u201ccoin in Bitcoins name doesn\u2019t make it money\u201d. Bitcoin>gold>fiat currency.",
             "url": "https://i.redd.it/a7uxyexa8e191.jpg",
             "author": "Festortheinvestor",
             "created_utc": 1653384779.0,
-            "score": 419,
-            "num_comments": 167,
+            "score": 511,
+            "num_comments": 218,
             "subreddit": "Bitcoin",
             "selftext": "",
             "stickied": false,
@@ -193,7 +245,7 @@
                 {
                     "id": "i9sn0sg",
                     "author": "ElephantsAreHeavy",
-                    "score": 146,
+                    "score": 180,
                     "created_utc": 1653392053.0,
                     "response": "You're taking a very liberal interpretation of fungible here...",
                     "depth": 1,
@@ -201,7 +253,7 @@
                         {
                             "id": "i9sytcc",
                             "author": "UnamazingHero",
-                            "score": 71,
+                            "score": 87,
                             "created_utc": 1653398736.0,
                             "response": "Right? \"Fiat isn't fungible with other fiat\" doesn't make sense as a criticism when Bitcoin isn't fungible with other currencies either.",
                             "depth": 2,
@@ -209,7 +261,7 @@
                                 {
                                     "id": "i9t14tq",
                                     "author": "ButtBlock",
-                                    "score": 24,
+                                    "score": 29,
                                     "created_utc": 1653399859.0,
                                     "response": "Also Bitcoin isn\u2019t strictly speaking fungible. Coins from certain wallets aren\u2019t quite acceptable due to KYC. A dollar bill is a dollar bill no matter where you find it.  The yuan isn\u2019t fungible either. Yuan that exist in China trade at a different rate than yuan abroad, due to capital controls. \n\nMaybe I\u2019m splitting hairs though.",
                                     "depth": 3,
@@ -217,37 +269,27 @@
                                         {
                                             "id": "i9tu3gm",
                                             "author": "Schapsouille",
-                                            "score": 8,
+                                            "score": 10,
                                             "created_utc": 1653412116.0,
                                             "response": "You're right, regulator's attacks on Bitcoin's fungibility is a real issue.",
-                                            "depth": 4,
-                                            "comments": [
-                                                {
-                                                    "id": "i9ut23m",
-                                                    "author": "HenryMoor",
-                                                    "score": 1,
-                                                    "created_utc": 1653426789.0,
-                                                    "response": "how can we real structure this issue?",
-                                                    "depth": 5,
-                                                    "comments": []
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "i9uxphm",
-                                            "author": "Extension-Relation-3",
-                                            "score": 9,
-                                            "created_utc": 1653428825.0,
-                                            "response": ">A dollar bill is a dollar bill no matter where you find it.\n\nunless that serial number has been blacklisted",
                                             "depth": 4,
                                             "comments": []
                                         },
                                         {
                                             "id": "i9urovd",
                                             "author": "theslapzone",
-                                            "score": 3,
+                                            "score": 5,
                                             "created_utc": 1653426199.0,
                                             "response": "Maybe you're not splitting hairs. I suppose in certain circumstances one could blacklist the dollar by serial number. Much like exchanges blacklisting coins by transaction history. But Bitcoin's *practical* fungibility comes with some caveats that cash doesn't typically have. I guess it's down to how black and white our measurement of fungible is?",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i9uxphm",
+                                            "author": "Extension-Relation-3",
+                                            "score": 10,
+                                            "created_utc": 1653428825.0,
+                                            "response": ">A dollar bill is a dollar bill no matter where you find it.\n\nunless that serial number has been blacklisted",
                                             "depth": 4,
                                             "comments": []
                                         },
@@ -262,7 +304,7 @@
                                                 {
                                                     "id": "i9u7yb1",
                                                     "author": "XMR_LongBoi",
-                                                    "score": 4,
+                                                    "score": 3,
                                                     "created_utc": 1653417873.0,
                                                     "response": "Except Marathon has already mined at least one \u201ccompliant block\u201d which DID censor/exclude some transactions. Probably not a huge deal at this point, I\u2019m sure those txs made it into the next block, but still really shouldn\u2019t be something that\u2019s even possible on a protocol level.",
                                                     "depth": 5,
@@ -270,7 +312,7 @@
                                                         {
                                                             "id": "i9udg9l",
                                                             "author": "generateduser29128",
-                                                            "score": 3,
+                                                            "score": 4,
                                                             "created_utc": 1653420191.0,
                                                             "response": "On the protocol level miners can include our exclude whatever they want, and there is no way to force a highest fee order because every node may see different transactions.\n\nAs long as there are always some miners that don't discriminate the system is working as intended.",
                                                             "depth": 6,
@@ -290,7 +332,17 @@
                                                                             "created_utc": 1653423654.0,
                                                                             "response": "I don't think that there is a technical solution for forcing transactions to be included.\n\nLightning adds a whole lot more fungibility though.",
                                                                             "depth": 8,
-                                                                            "comments": []
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9wz2o9",
+                                                                                    "author": "ElephantsAreHeavy",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653471226.0,
+                                                                                    "response": "Miners are perfectly allowed to mine empty blocks, no problem with that. Game theory says they generally will include the transactions with the highest fees.",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
                                                                         }
                                                                     ]
                                                                 }
@@ -307,11 +359,30 @@
                                                                 {
                                                                     "id": "i9ugp32",
                                                                     "author": "XMR_LongBoi",
-                                                                    "score": 6,
+                                                                    "score": 5,
                                                                     "created_utc": 1653421557.0,
                                                                     "response": "So, despite what you said in your earlier comment, Bitcoin is not perfectly fungible on the protocol level. We\u2019re not talking about a CEX refusing a deposit, we\u2019re talking about miners censoring transactions based on which wallets they came from.",
                                                                     "depth": 7,
                                                                     "comments": [
+                                                                        {
+                                                                            "id": "i9wz5yg",
+                                                                            "author": "ElephantsAreHeavy",
+                                                                            "score": 2,
+                                                                            "created_utc": 1653471306.0,
+                                                                            "response": "You do realize that mining is also decentralized, and miners do not know who will mine the next block either. This really is not a problem, it just makes the censoring mining operations less profitable, gives them an economical disadvantage, and will phase them out.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9y43di",
+                                                                                    "author": "XMR_LongBoi",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653493255.0,
+                                                                                    "response": ">You do realize mining is also decentralized\n\nI do. Do *you* realize I\u2019m not talking about a 51% attack? If Alice controls 5% of hash rate and doesn\u2019t want Bob transacting, then over a long enough timeframe, Bob only has a 95% chance of getting his TX in the next block, regardless of what he pays in fees. And if lots of miners also have a problem with Bob, they don\u2019t have to collude, they can each independently decide to censor him. \n\n>This really is not a problem\n\nMaybe not yet, but there\u2019s nothing at the protocol level to stop it from becoming a problem. \n\n>it just makes the censoring mining operations less profitable\n\nTrue\n\n>gives them an economical disadvantage \n\nTrue\n\n>and will phase them out.\n\nMaybe, but you certainly can\u2019t bank on this. Nor should the permissionless nature of the system depend on it. The solution is to engineer the protocol so as to not put miners in that position to begin with.",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        },
                                                                         {
                                                                             "id": "i9uyujy",
                                                                             "author": "Edvardoh",
@@ -326,15 +397,6 @@
                                                             ]
                                                         }
                                                     ]
-                                                },
-                                                {
-                                                    "id": "i9v9f2w",
-                                                    "author": "cl3ft",
-                                                    "score": 1,
-                                                    "created_utc": 1653434121.0,
-                                                    "response": ">I have bitcoin in my private wallets, KYC or not, nobody can prevent me from spending them to buy cocaine, donating to the taliban, financing human traficking, donating to wikileaks or pay for my groceries. It is only up to me. \n\nSure it's only up to you, but if someone wanted to sell you Bitcoin that came directly from a Taliban's Bitcoin address would you pay market rates for it? If the answer is no, then it's non fungible to you. The protocol level means nothing if in practice it's not fungible.",
-                                                    "depth": 5,
-                                                    "comments": []
                                                 }
                                             ]
                                         },
@@ -352,7 +414,7 @@
                                 {
                                     "id": "i9tmjfu",
                                     "author": "xkulp8",
-                                    "score": 6,
+                                    "score": 5,
                                     "created_utc": 1653409049.0,
                                     "response": "And gold isn't fungible with other precious metals.\n\nI'd say USD is the *most* fungible medium of exchange around for now.",
                                     "depth": 3,
@@ -368,7 +430,7 @@
                                                 {
                                                     "id": "i9tsk77",
                                                     "author": "xkulp8",
-                                                    "score": 0,
+                                                    "score": -2,
                                                     "created_utc": 1653411493.0,
                                                     "response": "Doesn't matter. It's still gold.",
                                                     "depth": 5,
@@ -376,7 +438,7 @@
                                                         {
                                                             "id": "i9u3usx",
                                                             "author": "TimmyTaterTots",
-                                                            "score": 11,
+                                                            "score": 14,
                                                             "created_utc": 1653416153.0,
                                                             "response": "That\u2019s the point. Bro do you even know what fungible means?",
                                                             "depth": 6,
@@ -384,7 +446,7 @@
                                                                 {
                                                                     "id": "i9v5aty",
                                                                     "author": "SonOfShem",
-                                                                    "score": 0,
+                                                                    "score": -2,
                                                                     "created_utc": 1653432202.0,
                                                                     "response": "I'm thinking you don't.\n\nFungible means it's interchangeable.  That there is no difference between two instances.\n\nNFTs are called Non-fungible-tokens because, like Bitcoin, they are unique.  Only one person may own a specific NFT.\n\nIn contrast, Dollars, Gold, and Bitcoin are all fungible.  One dollar is equivalent to every other dollar.  One oz of gold is the same as every other Oz of gold.  And every Bitcoin is the same as every other Bitcoin.\n\nHousing is an example of a non-fungible good, because even if two houses were built identically, they are located in different places, and this can give different value.  And over the, they wear differently which can give them different value.\n\nIf you're defining fungibility based on your ability to track things, then BTC isn't fungible, because I can track every purchase in the history of that coin.  From the day it was minted until today.  I may not know who the wallets represent, but I do know which wallets it was in.",
                                                                     "depth": 7,
@@ -392,13 +454,62 @@
                                                                         {
                                                                             "id": "i9v9yu6",
                                                                             "author": "TimmyTaterTots",
-                                                                            "score": 1,
+                                                                            "score": 3,
                                                                             "created_utc": 1653434383.0,
-                                                                            "response": "Yes I would say the ability to trace where the coin has been means it\u2019s not fungible. Freshly minted coins with no history typically can be sold for more than the market value. Also coins suspected in a crime can be black listed. Exchanges won\u2019t take them meaning Bitcoin isn\u2019t fungible. \n\nDollars are not completely fungible either. Each bill has a unique serial number on it that can be traced. Typically ATMs record the serial numbers when bills are withdrawn and deposited.\n\nOnce gold is melted down it becomes 100% untraceable making it the most fungible of any currency",
+                                                                            "response": "Yes I would say the ability to trace where the coin has been means it\u2019s not fungible. Freshly minted coins with no history on the blockchain typically can be sold for more than the price of Bitcoin listed on exchanges. Also coins involved in a suspected crime can be black listed. Exchanges won\u2019t take them meaning Bitcoin isn\u2019t fungible. \n\nDollars are not completely fungible either. Each bill has a unique serial number on it that can be traced. Typically ATMs record the serial numbers when bills are withdrawn and deposited.\n\nOnce gold is melted down, it becomes 100% untraceable making it the most fungible currency",
                                                                             "depth": 8,
-                                                                            "comments": []
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9wi86p",
+                                                                                    "author": "SonOfShem",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653457126.0,
+                                                                                    "response": "That's not the definition of fungible though:\n\n> fun\u00b7gi\u00b7ble\n\n> /\u02c8f\u0259nj\u0259b\u0259l/\n\n> adjective\n\n> (of goods contracted for without an individual specimen being specified) able to replace or be replaced by another identical item; mutually interchangeable",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i9wkji7",
+                                                                                            "author": "TimmyTaterTots",
+                                                                                            "score": 5,
+                                                                                            "created_utc": 1653458779.0,
+                                                                                            "response": "That definition agrees with what I said. One ounce of gold is indistinguishable from another ounce of gold (it cannot be marked). One marked bill is not interchangeable with an unmarked bill. One marked bitcoin is not interchangeable with a freshly minted bitcoin. Therefore gold = fungible while bitcoin & cash = not fungible\n\nSo I am not sure where you think I am mistaken.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
                                                                         }
                                                                     ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "i9vxyod",
+                                                    "author": "kenlbear",
+                                                    "score": 1,
+                                                    "created_utc": 1653445752.0,
+                                                    "response": "Melt monetary metal and you no longer have monetary metal. You have dory bars. Not the same value.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9yau5n",
+                                                            "author": "TimmyTaterTots",
+                                                            "score": 1,
+                                                            "created_utc": 1653495894.0,
+                                                            "response": "Gold is valued by the Troy ounce in any form",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9z7pt5",
+                                                                    "author": "kenlbear",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653508842.0,
+                                                                    "response": "No it is not. Gold in various forms commands different prices. See the London Metals Exchange terms for bullion vs monetary metal.",
+                                                                    "depth": 7,
+                                                                    "comments": []
                                                                 }
                                                             ]
                                                         }
@@ -409,7 +520,7 @@
                                         {
                                             "id": "i9ttjif",
                                             "author": "ryanq99",
-                                            "score": -4,
+                                            "score": -5,
                                             "created_utc": 1653411888.0,
                                             "response": "I think the point its trying to make is that Fiat is different all over the world.\n\nGold in US is the same gold in China. Bitcoin in US is the same bitcoin in China. Fiat in US is not the same as in fiat in China.\n\nUSD is fungible with USD, but not so much with other Fiat.",
                                             "depth": 4,
@@ -420,9 +531,18 @@
                                 {
                                     "id": "i9u5cx9",
                                     "author": "bitsteiner",
-                                    "score": 0,
+                                    "score": 1,
                                     "created_utc": 1653416779.0,
                                     "response": "Think in global terms.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9wdxru",
+                                    "author": "fresheneesz",
+                                    "score": 1,
+                                    "created_utc": 1653454288.0,
+                                    "response": "I suppose maybe they're saying that bitcoin has a chance to be a world currency in a way fiat currencies don't, because there's no country that controls it. However, that's speculation and its not quite the same thing as fungibility. I'd say they're all pretty equally fungible. Even dollars can be confiscated if those dollars are \"suspected\" of being involved in a crime. (Not from the US: read about civil forfeiture).",
                                     "depth": 3,
                                     "comments": []
                                 }
@@ -440,7 +560,7 @@
                         {
                             "id": "i9u3j55",
                             "author": "jachymb",
-                            "score": 1,
+                            "score": 0,
                             "created_utc": 1653416015.0,
                             "response": "TIL $ is a NFT.",
                             "depth": 2,
@@ -449,36 +569,47 @@
                         {
                             "id": "i9v6gtv",
                             "author": "treerabbit23",
-                            "score": 1,
+                            "score": 0,
                             "created_utc": 1653432744.0,
                             "response": "Good use of icons, negative space, and color.\n\nNicely arranged dumb takes.",
                             "depth": 2,
                             "comments": []
+                        },
+                        {
+                            "id": "i9wrtiy",
+                            "author": "ZedZeroth",
+                            "score": 1,
+                            "created_utc": 1653464654.0,
+                            "response": ">very liberal interpretation\n\nIs this the polite way of saying \"absolutely incorrect\"?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9wvl20",
+                                    "author": "ElephantsAreHeavy",
+                                    "score": 2,
+                                    "created_utc": 1653468049.0,
+                                    "response": "Yes, it avoids confrontational and aggressive replies. It also shows that I know what fungible means and OP's context is not what most people would use it, or anyone should for that manner. I could just as well have called op an idiot or stupid, but what is the fun in that...",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9x1l9c",
+                                            "author": "ZedZeroth",
+                                            "score": 1,
+                                            "created_utc": 1653473392.0,
+                                            "response": "\ud83d\ude02",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 },
                 {
-                    "id": "i9ts61j",
-                    "author": "TimmyTaterTots",
-                    "score": 13,
-                    "created_utc": 1653411331.0,
-                    "response": "Bitcoin is not fungible",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i9swup2",
-                    "author": "ControversialTomato",
-                    "score": 12,
-                    "created_utc": 1653397756.0,
-                    "response": "Bitcoin is not fungible. Want proof? Try depositing coinjoined/tainted btc into a cex.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i9siaqf",
                     "author": "danktle",
-                    "score": 29,
+                    "score": 33,
                     "created_utc": 1653388626.0,
                     "response": "The one that requires a data connection and power is also something to consider. If you don't have internet access in a remote area, how much money do you have? What if your phone battery dies and you're in an emergency situation? How much do you have to pay in order to show someone that you have the money? If I pay $0 for $20 cash in the middle of nowhere, people will accept it.\n\nEither way, currency is something that THIS species likes to use. All the other living things on this planet have no idea what currency is. Doesn't matter if it's gold or crypto.",
                     "depth": 1,
@@ -486,11 +617,39 @@
                         {
                             "id": "i9ulsez",
                             "author": "MostBoringStan",
-                            "score": 3,
+                            "score": 4,
                             "created_utc": 1653423700.0,
                             "response": "\"Ease of use\" or something like it should be on that list. Purchasing with fiat is easy, with gold or BTC it is difficult.  Like you said, needing a connection matters.\n\nWhat's the point of these charts if they are just going to hide the legit cons of BTC.",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i9w2yhi",
+                                    "author": "HoxGM",
+                                    "score": 3,
+                                    "created_utc": 1653448183.0,
+                                    "response": "Well this is Reddit, and this guy is posting on r/bitcoin so it\u2019s either karma farming or circle jerking.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9vyorv",
+                                    "author": "kenlbear",
+                                    "score": 3,
+                                    "created_utc": 1653446092.0,
+                                    "response": "Depends on the size of the USD transaction. Obvious when you try to send large money via wire transfer or Western Union. It is no longer fungible. The KYC becomes an obstacle. No problem if you are buying coffee at Starbucks. Try buying a house for cash.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9wd5lc",
+                                    "author": "fellowpleb",
+                                    "score": 0,
+                                    "created_utc": 1653453799.0,
+                                    "response": "You had to learn how to use regular fiat money too. That's why people say that personal finance should be a class in highschool. You need to learn how to handle your money, what credit cards are, how to get a bank account, how to manage your credit score and look it up, how to get a car loan... There's a lot to learn, but we all just take it for granted because it's the society we live in\n\n\n\nYou also have to learn Bitcoin, and it isn't easy... But it's not much harder than learning the fiat world either. It's just different. I'm still learning. You have to learn how to buy it, how to store it in your own wallet, what seed phrases are, how to store a seed phrase, what multisig is, how to spend your Bitcoin, how to watch the mempool to determine what you should set the sats per vbyte fee for your transaction... But it's just a learning process same as with fiat money. Once you get it, you can use the knowledge from then on forward.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         },
                         {
                             "id": "i9sival",
@@ -503,7 +662,7 @@
                                 {
                                     "id": "i9sjbt6",
                                     "author": "stoicparallax",
-                                    "score": 6,
+                                    "score": 7,
                                     "created_utc": 1653389432.0,
                                     "response": "That\u2019s right. To follow on your analogy, areas without internet are essentially places you can never bring a wallet to.",
                                     "depth": 3,
@@ -511,7 +670,7 @@
                                         {
                                             "id": "i9sjes3",
                                             "author": "ThePronto8",
-                                            "score": 5,
+                                            "score": 7,
                                             "created_utc": 1653389495.0,
                                             "response": "Yes! Although with things like Project Kuiper and Starlink, soon those places won\u2019t exist except perhaps on other planets.",
                                             "depth": 4,
@@ -530,7 +689,7 @@
                                         {
                                             "id": "i9uy2xp",
                                             "author": "Extension-Relation-3",
-                                            "score": 4,
+                                            "score": 5,
                                             "created_utc": 1653428988.0,
                                             "response": "Unless you're China who solved this problem with a digital wallet design that's peer to peer and basically broadcasts pending transactions to every nearby device so when one of them reaches the internet the transaction can be submitted and settled.\n\nI'm not saying this is a good idea because it has a ton of security and privacy implications. But it's \\*possible\\*.\n\n(The only known source of this information, to me, is Richard Turrin's book Cashless about China's digital currency revolution. The design is valid, but I can't confirm its usage is actually widespread yet.)",
                                             "depth": 4,
@@ -571,9 +730,18 @@
                     ]
                 },
                 {
+                    "id": "i9ts61j",
+                    "author": "TimmyTaterTots",
+                    "score": 21,
+                    "created_utc": 1653411331.0,
+                    "response": "Bitcoin is not fungible",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i9sm1uj",
                     "author": "learner77",
-                    "score": 28,
+                    "score": 30,
                     "created_utc": 1653391394.0,
                     "response": "The chart leaves out \u201clegal tender\u201d - ie is it widely accepted when you want to buy goods/services. Seems like that should be at the top of the list (good luck trying to buy a pizza at pappa johns with bitcoin). Seems like a major omission.\n\nobviuously gold fails hard here too.",
                     "depth": 1,
@@ -590,7 +758,7 @@
                         {
                             "id": "i9twl80",
                             "author": "PRMan99",
-                            "score": -1,
+                            "score": 1,
                             "created_utc": 1653413141.0,
                             "response": "> good luck trying to buy a pizza at pappa johns with bitcoin\n\nWhat are you talking about? Laszlo bought 2 pizzas at Papa John's with bitcoin in 2010.",
                             "depth": 2,
@@ -637,7 +805,7 @@
                                 {
                                     "id": "i9tq0lg",
                                     "author": "learner77",
-                                    "score": 4,
+                                    "score": 5,
                                     "created_utc": 1653410450.0,
                                     "response": "I think volatility is a HUGE reason why Bitcoin isn\u2019t being used right now. Sadly, I know a few companies that started to accept bitcoin (Tesla, Steam), but no longer do.   \n\n\nalso, bitcoin IS legal tender in El Salvador, and seems like it\u2019s having problems getting traction as a payment method: [https://restofworld.org/2022/el-salvador-bitcoin/](https://restofworld.org/2022/el-salvador-bitcoin/)",
                                     "depth": 3,
@@ -755,7 +923,7 @@
                                                         {
                                                             "id": "i9vgsk4",
                                                             "author": "dragonitanair",
-                                                            "score": 1,
+                                                            "score": 2,
                                                             "created_utc": 1653437622.0,
                                                             "response": "It is, how much do you think it is?",
                                                             "depth": 6,
@@ -772,53 +940,44 @@
                     ]
                 },
                 {
-                    "id": "i9sgdw2",
-                    "author": "TBirdyTom",
-                    "score": 39,
-                    "created_utc": 1653387061.0,
-                    "response": "The fungible point is stupid. You\u2019re comparing Bitcoin to Fiat. It\u2019s either crypto to Fiat or Bitcoin to a specific Fiat. As we all know the dollar is fungible. As are any other Fiat currency.\n\nNot to mention the first two points are dumb af anyway. Durability is referring to physical durability and divisibility you have Fiat given a positive. Good luck dividing below 0.01.\n\nIn conclusion, a hastily thrown together graphic which isn\u2019t even accurate.",
+                    "id": "i9usmnb",
+                    "author": "theslapzone",
+                    "score": 5,
+                    "created_utc": 1653426602.0,
+                    "response": "There's a *lot* of problems with this info graphic.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9swup2",
+                    "author": "ControversialTomato",
+                    "score": 13,
+                    "created_utc": 1653397756.0,
+                    "response": "Bitcoin is not fungible. Want proof? Try depositing coinjoined/tainted btc into a cex.",
                     "depth": 1,
                     "comments": [
                         {
-                            "id": "i9sk8k3",
-                            "author": "Al_Zik1",
-                            "score": 6,
-                            "created_utc": 1653390113.0,
-                            "response": "True, fungiblity at cash is more efficient than bitcoin.",
-                            "depth": 2,
-                            "comments": []
-                        },
-                        {
-                            "id": "i9szzgp",
-                            "author": "davvblack",
+                            "id": "i9vz74i",
+                            "author": "littleannointedone",
                             "score": 2,
-                            "created_utc": 1653399307.0,
-                            "response": "i don't think increments less than a cent are useful tho.  i've never looked at a penny and been like \"Damn i wish someone could make change for this\". I'm hard-pressed not to give $ a + for divisibility.\n\nthe argument against fiat fungibility would surround serial numbers on bills and transparency in banking.   i'm not sure how realistic either of those are nowadays, but given that USD is still the primary choice for money laundering the world over, it's at least \"fungible enough\".",
+                            "created_utc": 1653446340.0,
+                            "response": "I think the goal is for bitcoin to be a peoples currency not a business/government currency. I'll take anyone's btc no matter how tainted. Cex are pretty irrelevant if you're a real bitcoiner. The point is to stack SATs not sell for trash cash.",
                             "depth": 2,
                             "comments": [
                                 {
-                                    "id": "i9t39vb",
-                                    "author": "TBirdyTom",
-                                    "score": 2,
-                                    "created_utc": 1653400862.0,
-                                    "response": "It\u2019s irrelevant how far it needs to be divided. Can gold easily be divided? Sure if I have 20 tonnes of it I can easily divide it into 20 one tonne lots. So now gold is also divisible.\n\nYou can literally swap any dollar bill in a shop for a different one (assuming the shopkeeper isn\u2019t suspicious it\u2019s a fake). Fungible. I don\u2019t think fungibility even relates to transparency in the systems.",
+                                    "id": "i9w4dos",
+                                    "author": "ControversialTomato",
+                                    "score": 1,
+                                    "created_utc": 1653448900.0,
+                                    "response": "Whether you like it or not, most people use centralized exchanges as an on/off ramp. Just because you will accept tainted coins doesn\u2019t mean everyone else will.",
                                     "depth": 3,
                                     "comments": [
                                         {
-                                            "id": "i9v5xar",
-                                            "author": "SonOfShem",
-                                            "score": 2,
-                                            "created_utc": 1653432494.0,
-                                            "response": "Eh, when the value of 1oz of gold is 50 USD, there's clear divisibility issues.\n\nMeanwhile 1 cent is such a small value that it's literally not worth anyone's time to pick one up off the street.\n\nIf you're staying \"can be divided\" then they all can.  If you're saying \"can be divided small enough to facilitate any purchase, then BTC and USD are good, but Gold is not.",
-                                            "depth": 4,
-                                            "comments": []
-                                        },
-                                        {
-                                            "id": "i9vqare",
-                                            "author": "Correct-Log5525",
-                                            "score": 1,
-                                            "created_utc": 1653442148.0,
-                                            "response": "This is a terrible argument.  Bitcoin is FAR more divisible than gold or fiat",
+                                            "id": "i9wbddj",
+                                            "author": "littleannointedone",
+                                            "score": 0,
+                                            "created_utc": 1653452707.0,
+                                            "response": "Again people that actually know what bitcoin is supposed to do wouldn't trade a valuable asset/money for another less valuable asset/money. The people you are talking about are just trading to try and get rich quick. So yes for the people that want to gamble and trade between the two currencies wouldnt want tainted coins. For the people that actually know what they're investing in won't care. Trading bitcoin for fiat is like trading a bar of gold for paper(fiat) its literally the most unproductive thing to do with your wealth. Bitcoin preserves wealth and can be used as a medium of exchange. Its completely leaving our corrupt economic system and entering into a people run economy. Trading back to fiat is just counterproductive to anyone that wants to obtain and preserve wealth. Might as well just trade stocks at that point.",
                                             "depth": 4,
                                             "comments": []
                                         }
@@ -831,7 +990,7 @@
                 {
                     "id": "i9slmb5",
                     "author": "catesnake",
-                    "score": 19,
+                    "score": 22,
                     "created_utc": 1653391106.0,
                     "response": "Bitcoin is NOT fungible, that's not what fungibility means. Also the chart needs a new column for digital Fiat and a row for privacy.",
                     "depth": 1,
@@ -839,7 +998,7 @@
                         {
                             "id": "i9souhn",
                             "author": "qwertyy94",
-                            "score": -5,
+                            "score": -4,
                             "created_utc": 1653393223.0,
                             "response": "How come BTC is not fungible? If you're talking about coin history, the network itself doesn't care which address a coin came from. Only people might care, and since a \"clean to dirty\" coin process is ireversible, soon or later all coins will be \"dirty\", that is, fungible to people subjectivities.",
                             "depth": 2,
@@ -847,7 +1006,7 @@
                                 {
                                     "id": "i9sz2ke",
                                     "author": "CapivaraMan",
-                                    "score": 5,
+                                    "score": 6,
                                     "created_utc": 1653398860.0,
                                     "response": "in BTC one coin is not equal do other, they can be diferentiated, traced, denied based on origin. Althoug it's not a problem to most people or the network itself it is enough to classify as not fungible",
                                     "depth": 3,
@@ -855,7 +1014,7 @@
                                         {
                                             "id": "i9tww03",
                                             "author": "PRMan99",
-                                            "score": 3,
+                                            "score": 2,
                                             "created_utc": 1653413265.0,
                                             "response": "Then cash isn't either, since certain dollar serial numbers will be seized.",
                                             "depth": 4,
@@ -903,7 +1062,7 @@
                                 {
                                     "id": "i9t07or",
                                     "author": "davvblack",
-                                    "score": 0,
+                                    "score": 1,
                                     "created_utc": 1653399417.0,
                                     "response": "the fact that this site can even exist: https://cryptodefendersalliance.com/blacklist",
                                     "depth": 3,
@@ -924,7 +1083,7 @@
                         {
                             "id": "i9tn8zy",
                             "author": "xkulp8",
-                            "score": 4,
+                            "score": 2,
                             "created_utc": 1653409335.0,
                             "response": "Probably more than crypto or fiat are. Websites can be faked, paper can be counterfeited. Fastest way to verify gold is to put it on a scale. Most metals with similar density to gold go for about the same price, defeating the purpose of trying to counterfeit it.",
                             "depth": 2,
@@ -952,7 +1111,7 @@
                         {
                             "id": "i9tptg3",
                             "author": "Environmental_Fan333",
-                            "score": 2,
+                            "score": 1,
                             "created_utc": 1653410371.0,
                             "response": "Most people don\u2019t hold their own gold and cannot verify it\u2019s purity.",
                             "depth": 2,
@@ -979,49 +1138,39 @@
                     "comments": []
                 },
                 {
-                    "id": "i9ugog7",
-                    "author": "production-values",
+                    "id": "i9uwngm",
+                    "author": "OgFinish",
                     "score": 3,
-                    "created_utc": 1653421550.0,
-                    "response": "is btc really fungible though? canadian government has blacklisted people who donated to truckers",
+                    "created_utc": 1653428359.0,
+                    "response": "Bitcoin more durable over fiat? Do you live in a third world country?",
                     "depth": 1,
                     "comments": [
                         {
-                            "id": "i9vqod8",
+                            "id": "i9vqvn2",
                             "author": "Correct-Log5525",
-                            "score": 1,
-                            "created_utc": 1653442332.0,
-                            "response": "They can't prevent me from sending Bitcoin to them.. they can just prevent them from turning it into Canadian dollars on a centralized exchange in Canada..",
+                            "score": 2,
+                            "created_utc": 1653442428.0,
+                            "response": "Bitcoin is certainly more durable than fiat...  That point isn't really a debate",
                             "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i9vt3po",
-                                    "author": "production-values",
-                                    "score": 1,
-                                    "created_utc": 1653443467.0,
-                                    "response": "wxactly ... they can tell one apart from another",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
+                            "comments": []
                         }
                     ]
                 },
                 {
-                    "id": "i9usmnb",
-                    "author": "theslapzone",
+                    "id": "i9vq7iv",
+                    "author": "OfWhomIAmChief",
                     "score": 3,
-                    "created_utc": 1653426602.0,
-                    "response": "There's a *lot* of problems with this info graphic.",
+                    "created_utc": 1653442104.0,
+                    "response": "Pretty nice infographic except for when it comes to fungibility, Bitcoin doesnt do that so well",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "i9uyofy",
-                    "author": "totalolage",
+                    "id": "i9whkpt",
+                    "author": "flyinghippodrago",
                     "score": 3,
-                    "created_utc": 1653429247.0,
-                    "response": "Where's the anonymity point? BTC is the only one where you cannot make a transfer without necessarily leaving an immortal record. To that point fiat should really be split into electronic and cash.",
+                    "created_utc": 1653456684.0,
+                    "response": "Looks like an eighth grade project or something...\n\nGold is absolutely divisible to 8 decimal points and is fairly easy to prove if it's genuine",
                     "depth": 1,
                     "comments": []
                 },
@@ -1056,7 +1205,27 @@
                                             "created_utc": 1653442756.0,
                                             "response": "I'm not sure what your point is (I agree gold isn't ideal for a lot of reasons), you'd need to get change.\n\nI'm just saying gold is divisible in the same way cash is - you need to make change in smaller denominations.",
                                             "depth": 4,
-                                            "comments": []
+                                            "comments": [
+                                                {
+                                                    "id": "i9xn3h2",
+                                                    "author": "Correct-Log5525",
+                                                    "score": 1,
+                                                    "created_utc": 1653486153.0,
+                                                    "response": "Right, but with gold it is impractical to make smaller denominations at a certain point.  Are you supposed to shave off a small sliver to pay for a candy bar?  Fiat divides down to a finer point than gold, allowing small transactions.  Bitcoin divides down to a MUCH smaller point than fiat, allowing for micro transaction that are small fractions of a penny.\n\nYou may ask why do we need such small denominations like a fraction of a penny and the reason is... Data.  Data transactions between machines in the future will sometimes be MUCH less than a penny and under the fiat or gold system that would be infeasible",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9ylq2r",
+                                                            "author": "perfect5-7-with-rice",
+                                                            "score": 1,
+                                                            "created_utc": 1653500119.0,
+                                                            "response": "Well you can't shave off a sliver of cash either.\n\nMy only point is that gold is at least as divisible as cash. If we did use gold (not that I'm advocating for it), businesses would likely have machine-cut slivers for change.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -1074,44 +1243,6 @@
                     "comments": []
                 },
                 {
-                    "id": "i9ulbqd",
-                    "author": "abhilodha",
-                    "score": 2,
-                    "created_utc": 1653423506.0,
-                    "response": "Gold has lasted for 10k years in my history book.\n\nBITCOIn will have no future once blockreward cannot pay electricity bills.\n\nI am a concerned bitcoin maxi feeling brainwashed",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i9vqt0e",
-                            "author": "Correct-Log5525",
-                            "score": 1,
-                            "created_utc": 1653442394.0,
-                            "response": "Your concerns are invalid",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i9uwngm",
-                    "author": "OgFinish",
-                    "score": 2,
-                    "created_utc": 1653428359.0,
-                    "response": "Bitcoin more durable over fiat? Do you live in a third world country?",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i9vqvn2",
-                            "author": "Correct-Log5525",
-                            "score": 1,
-                            "created_utc": 1653442428.0,
-                            "response": "Bitcoin is certainly more durable than fiat...  That point isn't really a debate",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
                     "id": "i9ucd0i",
                     "author": "StubbornGoldBug",
                     "score": 3,
@@ -1126,14 +1257,91 @@
                             "created_utc": 1653442509.0,
                             "response": "If your definition of portable is hauling around gold bars then we definitely have different definitions",
                             "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9wz7pi",
+                                    "author": "StubbornGoldBug",
+                                    "score": 1,
+                                    "created_utc": 1653471348.0,
+                                    "response": "Wdym?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9xm3yw",
+                                            "author": "Correct-Log5525",
+                                            "score": 1,
+                                            "created_utc": 1653485697.0,
+                                            "response": "Real portability in the modern age is being able to instantly move your asset, anywhere in the world at the speed of light.  Carrying around a piece of gold in your pocket is no more portable than gold was 500 years ago..  most people talk about how Bitcoin being intangible is a negative but in reality it is the biggest positive you can have",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ugog7",
+                    "author": "production-values",
+                    "score": 4,
+                    "created_utc": 1653421550.0,
+                    "response": "is btc really fungible though? canadian government has blacklisted people who donated to truckers",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9vqod8",
+                            "author": "Correct-Log5525",
+                            "score": 0,
+                            "created_utc": 1653442332.0,
+                            "response": "They can't prevent me from sending Bitcoin to them.. they can just prevent them from turning it into Canadian dollars on a centralized exchange in Canada..",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9vt3po",
+                                    "author": "production-values",
+                                    "score": 2,
+                                    "created_utc": 1653443467.0,
+                                    "response": "wxactly ... they can tell one apart from another",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9v45r9",
+                    "author": "Zealousideal_Leg_630",
+                    "score": 2,
+                    "created_utc": 1653431682.0,
+                    "response": "lol at the thought of Bitcoin \"maintaining purchasing power durability.\" Seriously, take an econ course or something. You bros are lost.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9visl9",
+                            "author": "Festortheinvestor",
+                            "score": 0,
+                            "created_utc": 1653438587.0,
+                            "response": "Modern Economics is flawed, as is fiat currency. Since Nixon moved the world off gold, bitcoins day has been coming. Maybe you should take an \u201cecon class\u201d, might help you see where we are headed\u2026..\n\nDo you think they can control the inflation this time?\n\nThose interest rate hikes doing a wonderful job so far\u2026.\n\nThe CPI index isn\u2019t fit for use\u2026.\n\nBitcoins laws are there to be seen by all, with a public ledger for transparency, Bitcoin will show you and you\u2019ll benefit even if you\u2019re not holding",
+                            "depth": 2,
                             "comments": []
                         }
                     ]
                 },
                 {
+                    "id": "i9vcy55",
+                    "author": "canadas",
+                    "score": 2,
+                    "created_utc": 1653435778.0,
+                    "response": "one nit pick is gold is far more divisible than BTC, at least technically",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i9sdyjv",
                     "author": "Festortheinvestor",
-                    "score": 2,
+                    "score": 3,
                     "created_utc": 1653384885.0,
                     "response": "Once bitcoin hits the 20 year mark and it\u2019s track record will still be 99.9% uptime, these arguments still may exist, but ignore the naysayers, they have their own reasons to attack bitcoin. \n\nBitcoin is inevitable",
                     "depth": 1,
@@ -1148,9 +1356,18 @@
                             "comments": []
                         },
                         {
+                            "id": "i9u6kdy",
+                            "author": "bitsteiner",
+                            "score": 1,
+                            "created_utc": 1653417290.0,
+                            "response": "When Bitcoin hits the 27 year mark, it exceeds the average life time of fiat currencies.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
                             "id": "i9tsqid",
                             "author": "muttley_magnificent",
-                            "score": 1,
+                            "score": 0,
                             "created_utc": 1653411564.0,
                             "response": "Inevitably shit",
                             "depth": 2,
@@ -1165,15 +1382,6 @@
                                     "comments": []
                                 }
                             ]
-                        },
-                        {
-                            "id": "i9u6kdy",
-                            "author": "bitsteiner",
-                            "score": 1,
-                            "created_utc": 1653417290.0,
-                            "response": "When Bitcoin hits the 27 year mark, it exceeds the average life time of fiat currencies.",
-                            "depth": 2,
-                            "comments": []
                         }
                     ]
                 },
@@ -1210,7 +1418,27 @@
                             "created_utc": 1653442633.0,
                             "response": "No chance it outperforms Bitcoin over the next decade",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i9wt583",
+                                    "author": "Burebista1981",
+                                    "score": 1,
+                                    "created_utc": 1653465833.0,
+                                    "response": "Once CBDC is in place BTC will go down and finished or illegal",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9xlar1",
+                                            "author": "Correct-Log5525",
+                                            "score": 2,
+                                            "created_utc": 1653485313.0,
+                                            "response": "Lol no it won't, no way Bitcoin will ever be made illegal in the US.  Way too many big players are involved now.  Also will the government be able to print more CBDC?  The answer is yes and so it is not a competitor to BTC",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 },
@@ -1244,6 +1472,15 @@
                     ]
                 },
                 {
+                    "id": "i9uyofy",
+                    "author": "totalolage",
+                    "score": 2,
+                    "created_utc": 1653429247.0,
+                    "response": "Where's the anonymity point? BTC is the only one where you cannot make a transfer without necessarily leaving an immortal record. To that point fiat should really be split into electronic and cash.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i9ttqqw",
                     "author": "sylsau",
                     "score": 1,
@@ -1253,6 +1490,25 @@
                     "comments": []
                 },
                 {
+                    "id": "i9ulbqd",
+                    "author": "abhilodha",
+                    "score": 1,
+                    "created_utc": 1653423506.0,
+                    "response": "Gold has lasted for 10k years in my history book.\n\nBITCOIn will have no future once blockreward cannot pay electricity bills.\n\nI am a concerned bitcoin maxi feeling brainwashed",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9vqt0e",
+                            "author": "Correct-Log5525",
+                            "score": 1,
+                            "created_utc": 1653442394.0,
+                            "response": "Your concerns are invalid",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
                     "id": "i9ts61c",
                     "author": "Nada_Lives",
                     "score": 0,
@@ -1260,6 +1516,25 @@
                     "response": "\"*coin in Bitcoins name doesn\u2019t make it money\"*\n\n\"Monetary\" in the International Monetary Fund's name does not make it money, either.",
                     "depth": 1,
                     "comments": []
+                },
+                {
+                    "id": "i9sixti",
+                    "author": "CutFabulous1178",
+                    "score": -2,
+                    "created_utc": 1653389134.0,
+                    "response": "FIAT = Money printer goes Brrr, BTC = Store of value, this alone makes BTC worth everything",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9ttszh",
+                            "author": "muttley_magnificent",
+                            "score": 1,
+                            "created_utc": 1653411997.0,
+                            "response": "What garbage",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i9tywlm",
@@ -1313,7 +1588,27 @@
                     "created_utc": 1653419904.0,
                     "response": "Looks like what humankind created recently (fiat) is just more practical but still shit compared to the good ol\u2019 gold.\n\nCould someone enlighten a man tho? By durable should I understand inflation related? Seems like good and btc are inflation resistant while fiat isn\u2019t",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9x1i7d",
+                            "author": "kos277",
+                            "score": 2,
+                            "created_utc": 1653473319.0,
+                            "response": "Yep. durable = resistant against losing purchasing power = maintaining value per unit = inflation resistant -/- unlike fiat. 1 million USD now is likely only worth max 500k in purchase power in 2030-2040",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9x1rct",
+                                    "author": "ivgur",
+                                    "score": 1,
+                                    "created_utc": 1653473534.0,
+                                    "response": "cheers mate ;)",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": "i9ufjy7",
@@ -1379,25 +1674,6 @@
                     "comments": []
                 },
                 {
-                    "id": "i9v45r9",
-                    "author": "Zealousideal_Leg_630",
-                    "score": 1,
-                    "created_utc": 1653431682.0,
-                    "response": "lol at the thought of Bitcoin \"maintaining purchasing power durability.\" Seriously, take an econ course or something. You bros are lost.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i9visl9",
-                            "author": "Festortheinvestor",
-                            "score": 1,
-                            "created_utc": 1653438587.0,
-                            "response": "Modern Economics is flawed, as is fiat currency. Since Nixon moved the world off gold, bitcoins day has been coming. Maybe you should take an \u201cecon class\u201d, might help you see where we are headed\u2026..\n\nDo you think they can control the inflation this time?\n\nThose interest rate hikes doing a wonderful job so far\u2026.\n\nThe CPI index isn\u2019t fit for use\u2026.\n\nBitcoins laws are there to be seen by all, with a public ledger for transparency, Bitcoin will show you and you\u2019ll benefit even if you\u2019re not holding",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
                     "id": "i9v57mk",
                     "author": "Life_Airline_6767",
                     "score": 1,
@@ -1408,7 +1684,7 @@
                         {
                             "id": "i9vj4b2",
                             "author": "Festortheinvestor",
-                            "score": 1,
+                            "score": 0,
                             "created_utc": 1653438744.0,
                             "response": "It\u2019s a comparison. \n\ntraits of money, gold vs bitcoin vs fiat currency \n\nLearn what those three are first. \n\nAbove is the monetary traits\n\nBitcoin appears to be the \u2018hardest\u2019 money (best)",
                             "depth": 2,
@@ -1424,7 +1700,7 @@
                                         {
                                             "id": "i9vjvco",
                                             "author": "Festortheinvestor",
-                                            "score": 2,
+                                            "score": 1,
                                             "created_utc": 1653439102.0,
                                             "response": "I would have the people of earth to have a place they can store their wealth safely, I would like to take the money back from government and have it belong to the people again. \n\nNixon robbed us, I want justice, I want equity, there\u2019s so much money hidden away, I want bitcoin to suck it out from the deep pockets of the world and into the wallets of the new.\n\nThings need to change in this world. Yeah",
                                             "depth": 4,
@@ -1483,15 +1759,6 @@
                     "comments": []
                 },
                 {
-                    "id": "i9vcy55",
-                    "author": "canadas",
-                    "score": 1,
-                    "created_utc": 1653435778.0,
-                    "response": "one nit pick is gold is far more divisible than BTC, at least technically",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i9vdwvm",
                     "author": "hyperparasitism",
                     "score": 1,
@@ -1510,7 +1777,7 @@
                                 {
                                     "id": "i9vjh8j",
                                     "author": "hyperparasitism",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1653438915.0,
                                     "response": "proving my point",
                                     "depth": 3,
@@ -1578,22 +1845,33 @@
                     "comments": []
                 },
                 {
-                    "id": "i9vq7iv",
-                    "author": "OfWhomIAmChief",
-                    "score": 1,
-                    "created_utc": 1653442104.0,
-                    "response": "Pretty nice infographic except for when it comes to fungibility, Bitcoin doesnt do that so well",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i9vtt9i",
                     "author": "MGTOW_and_Bitcoin",
                     "score": 1,
                     "created_utc": 1653443799.0,
                     "response": "This is the dumbest thing to continue to compare forms of money to what amounts to is commodity orbiting..\n\nWhere is all of the new characteristics of money like decentralisation? Fixed Supply? Baked in monetary policy?",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9yjfs1",
+                            "author": "NitrogenSot",
+                            "score": 2,
+                            "created_utc": 1653499234.0,
+                            "response": "Yeah both scenario are different and we should not compare a commodity to a fiat or assets, now we are just watching the tip, most of the people don't even know the basic difference between these three",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9yrz1r",
+                                    "author": "MGTOW_and_Bitcoin",
+                                    "score": 1,
+                                    "created_utc": 1653502572.0,
+                                    "response": "But it drives me crazy whenever I see these types of distinctions as though there's nobody who works in economics willing to distinguish metal properties from ideal money properties .\n\nWhy is divisibility even an issue when we're talking about 21st century money... gold couldn't even work for a 20th century economy or late 19th.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": "i9vu0f8",
@@ -1605,23 +1883,135 @@
                     "comments": []
                 },
                 {
-                    "id": "i9sixti",
-                    "author": "CutFabulous1178",
-                    "score": -3,
-                    "created_utc": 1653389134.0,
-                    "response": "FIAT = Money printer goes Brrr, BTC = Store of value, this alone makes BTC worth everything",
+                    "id": "i9w3wq4",
+                    "author": "ravenhawk10",
+                    "score": 1,
+                    "created_utc": 1653448668.0,
+                    "response": "Why is there a comparison with physical gold? It\u2019s just a dumb strawman if gold was used day to day i\u2019d be gold backed currency never the actually thing. Which fixes both portable and divisible issues. \nCounterfeit money sounds like a minor issue, more like 99% plus 1% minus thing. With more and more payments going digital the problem will only reduce. \nTrack record kinda overlaps with durable somehow in ur infographic. Not to mention bitcoins track record is terrible for money. Fiats value predictably decreases slowly, which is what most people actually want out of their currency. Bitcoins is all over the show, the volatility is nuts. It stores value as well as a NASDAQ ETF stores value.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9w4l6l",
+                    "author": "leisdrew",
+                    "score": 1,
+                    "created_utc": 1653449005.0,
+                    "response": "This might be the dumbest graphic I've ever seen in my life",
                     "depth": 1,
                     "comments": [
                         {
-                            "id": "i9ttszh",
-                            "author": "muttley_magnificent",
-                            "score": 1,
-                            "created_utc": 1653411997.0,
-                            "response": "What garbage",
+                            "id": "i9ww3sk",
+                            "author": "nmalajmi",
+                            "score": 2,
+                            "created_utc": 1653468534.0,
+                            "response": "It's not the dumb graphic but some points are hard to believe like fungible point which is not true for gold and money, we should see the other point as well, graphics and idea is good but poorly represented",
                             "depth": 2,
                             "comments": []
                         }
                     ]
+                },
+                {
+                    "id": "i9w8c79",
+                    "author": "Eshlay",
+                    "score": 1,
+                    "created_utc": 1653450989.0,
+                    "response": "Gold is easily verifiable nowadays an still profitable I'm pretty sure about 6 years ago it's was around $20 per g now it's $80 aus not as big of jump as some of the massive crypto jumps but a lot more stable in my opinion",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9y1iuq",
+                            "author": "rjmalolot",
+                            "score": 1,
+                            "created_utc": 1653492230.0,
+                            "response": "Yeah and it's value is stable as well, but gold is losing it's shine, if you see the last decade it was giving good profit, but now those days are gone, gold should kept as precious metal only not as an investment",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ylzv8",
+                                    "author": "Eshlay",
+                                    "score": 1,
+                                    "created_utc": 1653500225.0,
+                                    "response": "Yeah it is kinda but I feel it's more a fake stability like if shit went bad it could be worth noting in a matter of seconds it could also definitely go the other way to tho. I kinda think the opposite with the precious metals not being an investment I know this generations incredible different but precious metals have always been the main wealth for as far back as weve discovered an it mostly will be forever people are always gonna like shiny things an the fact it's actually rare it'll probably always be a valuable thing + there actual uses for it like in technology",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9wcnph",
+                    "author": "fellowpleb",
+                    "score": 1,
+                    "created_utc": 1653453499.0,
+                    "response": "Title:\n\n\nMe: Just because you say it's not money doesn't mean it's not",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9wekff",
+                    "author": "fresheneesz",
+                    "score": 1,
+                    "created_utc": 1653454697.0,
+                    "response": "My take:\n\nThe + - system does not allow for accuracy of ranking/scoring.\n\n* Durability is good for all of them\n* Divisibility is best for bitcoin and worst for gold\n* Fungibility is just as good for all of them (with gold maybe being the slight winner)\n* Bitcoin is way more portable than cold hard cash, and is rather more portable than digital fiat. Gold loses there obviously.\n* Verifiability: you got it. Tho gold might be better than fiat in that realm.\n* Scarce: agreed.\n* Track record: agreed.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9xzbtp",
+                            "author": "joentx",
+                            "score": 1,
+                            "created_utc": 1653491344.0,
+                            "response": "Curious of your fungibility statement. Bitcoin can be uniquely identified by address or am I misunderstanding the context of your statement?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9wqn1m",
+                    "author": "fingusio",
+                    "score": 1,
+                    "created_utc": 1653463623.0,
+                    "response": "Bitcoin is surely superior than gold and fiat, if you keep watching this chart till end, you will realize that Bitcoin is having a better value than these two, fiat value is deprecating every year with inflation not in control of our government",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9wr32u",
+                    "author": "CryingRipperTear",
+                    "score": 1,
+                    "created_utc": 1653464007.0,
+                    "response": "bitcoin is divisible to eight decimals, but that wont be enough if it goes crazy green number",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9wrvwr",
+                    "author": "The_2nd_Coming",
+                    "score": 1,
+                    "created_utc": 1653464714.0,
+                    "response": "The only problem I have here is with scarcity - can you can it scarce when it is possible to create another cryptocurrency with ease?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9x1xdz",
+                            "author": "Festortheinvestor",
+                            "score": 1,
+                            "created_utc": 1653473674.0,
+                            "response": "Other cryptos are not the same. Bitcoin is The only regulated as a commodity. Bitcoin has all the right traits to replace fiat currency and move civilisation forwards.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9trcj6",
+                    "author": "muttley_magnificent",
+                    "score": -1,
+                    "created_utc": 1653410993.0,
+                    "response": "Bitcoin is not currency\nNot encrypted",
+                    "depth": 1,
+                    "comments": []
                 },
                 {
                     "id": "i9smwtm",
@@ -1668,6 +2058,15 @@
                             "response": "why?",
                             "depth": 2,
                             "comments": []
+                        },
+                        {
+                            "id": "i9wddii",
+                            "author": "DigVic",
+                            "score": 1,
+                            "created_utc": 1653453937.0,
+                            "response": "I don't think your statement is correct, gold is durable and you should check the property of gold as well, then only you will understand the durability of gold in future, gold is deprecating day by day but it's still durable in market",
+                            "depth": 2,
+                            "comments": []
                         }
                     ]
                 },
@@ -1680,6 +2079,15 @@
                     "depth": 1,
                     "comments": [
                         {
+                            "id": "i9wcnl6",
+                            "author": "jamiewelsh1183",
+                            "score": 4,
+                            "created_utc": 1653453497.0,
+                            "response": "Yeah even that amount will be having high valuation in future, as compared to current value, In 2045 we will be having high value of Bitcoin, as the block chain will keep getting in use, we will understand the technology more in future",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
                             "id": "i9ttzg2",
                             "author": "muttley_magnificent",
                             "score": 3,
@@ -1691,70 +2099,19 @@
                     ]
                 },
                 {
-                    "id": "i9trcj6",
-                    "author": "muttley_magnificent",
-                    "score": 0,
-                    "created_utc": 1653410993.0,
-                    "response": "Bitcoin is not currency\nNot encrypted",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i9u2rg3",
                     "author": "ChrimsonChin988",
                     "score": 0,
                     "created_utc": 1653415688.0,
                     "response": "Fungibility argument is dumb... they're all fungible",
                     "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "uwmsao",
-            "title": "Private Bitcoin Node over I2P and Tor only",
-            "url": "https://youtu.be/2kyt6O-T0nA",
-            "author": "didnt_die_a_hero",
-            "created_utc": 1653384348.0,
-            "score": 13,
-            "num_comments": 4,
-            "subreddit": "Bitcoin",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i9t4yxy",
-                    "author": "didnt_die_a_hero",
-                    "score": 2,
-                    "created_utc": 1653401641.0,
-                    "response": "(Not the creator I just always learn a ton from this dude so I like to share his stuff)\n\nSo\u2026\nIf you are asking about being always over tor even before you connect your I2P, he\u2019s pretty paranoid, that\u2019s all covered, you\u2019re never in the clear nor are you ever connected to any other node, (like some wallet\u2019s)\nIf you\u2019re asking how to do the Tor bit to begin with the Tor video link\u2019s in the description: \nhttps://youtu.be/57GW5Q2jdvw\n\nBeyond that I must crib an answer from the autistic software itself: \u201cTor cannot help you if you use it wrong\u201d.\nlol",
-                    "depth": 1,
                     "comments": [
                         {
-                            "id": "i9tfc88",
-                            "author": "Independent-Snow-129",
-                            "score": 2,
-                            "created_utc": 1653406070.0,
-                            "response": "I see, you make sure to have trustworthy peers for it to be a successful private process .\n\nDo you think there's some easier path to achieve privacy  ?\n\nIf you can't connect to a different Tor peer which you control or give full trust, are you not opening more risk vector and making all this process irrelevant?",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i9sh1yz",
-                    "author": "Independent-Snow-129",
-                    "score": 1,
-                    "created_utc": 1653387614.0,
-                    "response": "Do you have to set something with Tor for it to be properly private?\n\nWhere's your first connection bouncing to with tor?\n\nCould the first bounce give room to a bad actor and create any vulnerability  ? (*edited format)*",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i9ws5xg",
-                            "author": "didnt_die_a_hero",
+                            "id": "i9x8hkp",
+                            "author": "icute78",
                             "score": 1,
-                            "created_utc": 1653464959.0,
-                            "response": "\nOkay so if I understand this correctly\u2026\n\nThe seed node is preset to like u/pwuille Pieter Wuille\u2019s node or someone equally reliable, (same as when you go regular clearnet), you then get more I2P and Tor nodes off of his peers, based on the algorithm, (length of time running and whatnot)\n(Once you\u2019re connected to multiple nodes randomness makes getting 100% FBI nodes or whatever mathematically impossible)\nIt automatically disconnects from the original seed node so you\u2019re not even connected to that clearnet one. \n\nTo avoid even that:\nDNSSEED=0 makes sure you don\u2019t connect to ANY seed node and you choose it manually. \n\nThere\u2019s a core dev which I used for I2P because he posted his in response to a question on Twitter, (sorry I\u2019m not where I can find it rn) and Tor nodes are so ubiquitous it\u2019s pretty easy to find someone you trust. \n\nBut yes, you\u2019re right. \nRegardless of how you do it, that first node needs to be one you trust, as your network spider webs out from it. \nBut that\u2019s the case for all Bitcoin nodes running on any network, TCP/IP, Tor, I2P, CJDNS",
+                            "created_utc": 1653478424.0,
+                            "response": "Yeah it should not be placed in this chart because gold and fiat are also fungible at some extent, but with rest of Point I agree strongly that Bitcoin is far better than these two assets, Bitcoin in future",
                             "depth": 2,
                             "comments": []
                         }

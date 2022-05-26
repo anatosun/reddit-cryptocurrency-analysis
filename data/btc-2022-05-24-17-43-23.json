@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/btc/comments/uww3nw/bitcoin_is_a_system_of_incentives_from_this/",
             "author": "mrtest001",
             "created_utc": 1653413166.0,
-            "score": 13,
-            "num_comments": 10,
+            "score": 23,
+            "num_comments": 25,
             "subreddit": "btc",
             "selftext": "Imagine 2 miners.  \n\nOne is \"ideologically pure\" \n\n> Every byte of every transaction that ever was needs to be on the blockchain forever.\n\nWell, just the fees alone make this a non-issue as far as maintenance.  but if we play devil's advocate and say \"we might run out of space someday...\" , ok.  \n\nSo how does \"Bitcoin incentive\" play in?\n\nThe 2nd miner only keeps history of, say, the last year only - and everything before that is pruned of all spent \"outputs\".\n\nBoth miners will be able to validate transactions - but operation costs for the 2nd miner is far less.\n\nWill the 2nd miner worry that the chain might be rolled back 1 year? Nah - if a blockchain being used by most of the world can still be rolled back by 1 year, Bitcoin might as well be considered dead.\n\nSo i don't think Bitcoin needs to get a \"protocol change\" ever to optimize for future large block storage.\n\nI think each miner will naturally prune their data to keep costs down.\n\n(edit: if 1 year seems short, make it 10 years - no problem)\n\nThe \"incentive\" here is that a miner is not rewarded for keeping ALL the data, because \"pruned\" miners are just as good at validating as \"full\" miners.  \"Just as good\" being 99.9<repeating many many times>%\n\nIn fact, it is not possible to fake a transaction because all the hashes must match up.\n\n(edit: This is where I am going off on a tangent)\n\nCan someone please explain why pruned blockchain is not the \"standard operating procedure\"?  Why is *anyone* keeping full blockchain data?\n\nEach unspent transaction has its hash included in the hash-tree that leads to the block's hash - you cannot fake a transaction without being able to come up with dozens of hashes that when hashed give you the block hash.",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i9u1s1k",
                     "author": "jessquit",
-                    "score": 10,
+                    "score": 23,
                     "created_utc": 1653415279.0,
                     "response": "Pruning the blockchain was clearly part of the original scaling solution.\n\nSomeone sends you a txn. A txn includes the txids of its inputs. Your wallet's job is to determine if the inputs are valid.\n\nYour SPV wallet already has all the block headers. Using only these, the wallet can tell that (for example) one input is recent, with only 3 confirmations, and two other inputs are older, with over 24,000 confirmations.\n\nThe older txns can be trusted without further verification. For these to be fake would require the attacker to segment your node and feed it half a year of false proof of work. It's not a feasible attack for a casual peer to peer transaction. \n\nThe recent input would \"only\" require an attacker to fake thirty minutes of proof of work. Maybe that's not good enough. The good news is that this is recent data and hasn't been pruned yet. So your wallet requests the txn details from a pruned node, and discovers (for example) that this txn has two inputs, both buried under a ton of work. Validation is done.\n\nThis is the way Bitcoin was designed to work (as explained in the Bitcoin white paper) and is the sort of thing this community should focus harder on building and perfecting.\n\nI think somewhere along the way the idea crept into Bitcoin that unless the entire history is preserved on every node that the system will collapse. It's a toxic idea. This implies that every \"trustless\" user of the Blockchain in 2122 needs to store and constantly revalidate Bob's coffee transaction from over 100 years prior.\n\nIt's a patently silly idea when you frame it correctly. If proof of work was really that easy to undo or fake, then why are we bothering? The point is that we know that the history *can't* be changed without reworking the entire chain. Once something is sufficiently buried under enough work, we shouldn't waste our time questioning its validity.",
                     "depth": 1,
@@ -31,9 +31,18 @@
                         {
                             "id": "i9veeq8",
                             "author": "doramas89",
-                            "score": 1,
+                            "score": 8,
                             "created_utc": 1653436473.0,
                             "response": "This needs to be known more. And pushed for.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9yr25d",
+                            "author": "KallistiOW",
+                            "score": 2,
+                            "created_utc": 1653502207.0,
+                            "response": "> 8, Simplified Payment Verification\n\n> It is possible to verify payments without running a full network node. A user only needs to keep a copy of the block headers of the longest proof-of-work chain, which he can get by querying network nodes until he's convinced he has the longest chain, and obtain the Merkle branch linking the transaction to the block it's timestamped in. He can't check the transaction for himself, **but by linking it to a place in the chain, he can see that a network node has accepted it, and blocks added after it further confirm the network has accepted it.**",
                             "depth": 2,
                             "comments": []
                         }
@@ -42,7 +51,7 @@
                 {
                     "id": "i9u8hzi",
                     "author": "LovelyDayHere",
-                    "score": 5,
+                    "score": 9,
                     "created_utc": 1653418106.0,
                     "response": "> Can someone please explain why pruned blockchain is not the \"standard operating procedure\"? Why is anyone keeping full blockchain data?\n\nBecause our node software have not needed to prioritize this yet, so the pruning we have is very unsophisticated and clients that can fast-sync are really still using their \"own\" protocols to do so. Common specifications for lighter nodes (using UTXO commitments) are still in development (although e.g. BCHD and Bitcoin Verde have implementations of it, but we don't have the on-chain UTXO commitments yet).\n\nThe pruning facilities on BCH nodes that I know are still the old 'Bitcoin Core' variety, which requires validating the complete chain during initial sync, and they keep around the last N blocks (simplifying things a bit). __Therefore, we still need full nodes in order to be able for any nodes to sync from scratch!__ (it's just an implementation deficit)\n\nAgree with you, that should improve, and probably will in time.\n\nAs I wrote in another post, it would be great if pruned nodes could run in a way to form a bittorrent-like swarm so that the pruned node network keeps a complete copy of the blockchain over its distribution if possible. Then, as long as we keep high enough redundancy, we would not even need complete full nodes online in order to retrieve the entire chain. The swarm would provide.\n\nSimilar as to how UTXO commitments are being developed, someone could start a (non-consensus) CHIP for a better pruned node network protocol. Necessary features imo would be to let the user allocate a certain amount of disk space, and the node software would decide which blocks to store in it, based on maximizing availability of all blocks in the network. So it would rebalance itself occasionally as other nodes become available or leave. It would also need to track and exchange this block availability data with other nodes and deprioritize badly behaved peers.",
                     "depth": 1,
@@ -50,26 +59,75 @@
                         {
                             "id": "i9ui5td",
                             "author": "Remora_101",
-                            "score": 1,
+                            "score": 6,
                             "created_utc": 1653422168.0,
                             "response": "Why isn't this a point with more priority then? \n\nFor one this would reduce the scaling problem IMMENSELY. It should also be pretty straight forward afaik.\n\nI can see no downside pushing for this now. And it would make increasing the blocksize much easier since nodes could just start pruning to fit their system.",
                             "depth": 2,
                             "comments": [
                                 {
-                                    "id": "i9uqxuo",
-                                    "author": "LovelyDayHere",
-                                    "score": 2,
-                                    "created_utc": 1653425881.0,
-                                    "response": "Right, there's no downside since it doesn't affect consensus (just pruning,  not utxo commitments).\n\nBut utxo commitments are a more visibly effective way to cut down node initial sync times. Maybe some nodes will perfect those first, and others do better pruning first. Idk.",
-                                    "depth": 3,
-                                    "comments": []
-                                },
-                                {
                                     "id": "i9veqq6",
                                     "author": "doramas89",
-                                    "score": 1,
+                                    "score": 9,
                                     "created_utc": 1653436631.0,
                                     "response": "I assume because scaling is no longer a priority. After the focus should be on onboarding new people, not on making more room on a space currently only 2% filled, in a chain not in the spotlight",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9wwgtc",
+                                            "author": "jessquit",
+                                            "score": 2,
+                                            "created_utc": 1653468867.0,
+                                            "response": "It's a chicken and egg problem because why adopt a currency that hasn't already solved the scaling problem? How can I go out and pitch BCH to large audiences when the solution to the obvious problem remains vaporware? I'm still totally baffled by this community's priorities. For me it's the biggest problem with BCH.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9xsvg2",
+                                                    "author": "doramas89",
+                                                    "score": 2,
+                                                    "created_utc": 1653488690.0,
+                                                    "response": "We're years away from filling 32MB blocks. Some teams should work on scaling, but it's not the priority now. LTC sees more use than BCH. Marketing is the priority, it's obvious",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "i9xnung",
+                                                    "author": "tulasacra",
+                                                    "score": 1,
+                                                    "created_utc": 1653486497.0,
+                                                    "response": "Take action. Organize a scaling conference.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9xxkoh",
+                                                            "author": "jessquit",
+                                                            "score": 1,
+                                                            "created_utc": 1653490631.0,
+                                                            "response": "we don't need a conference, we need people demanding scaling\n\nthe issues are not technical.  they are simply priority issues.  as /u/doramas89 said, \"scaling is no longer a priority.\"    If scaling isn't a priority, who would come to a scaling conference?  If scaling were a priority, we would just build the missing pieces.  No conference needed.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia0riex",
+                                                                    "author": "tulasacra",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653534033.0,
+                                                                    "response": "I don't think scaling has a higher priority than other issues but i would still come.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9uqxuo",
+                                    "author": "LovelyDayHere",
+                                    "score": 6,
+                                    "created_utc": 1653425881.0,
+                                    "response": "Right, there's no downside since it doesn't affect consensus (just pruning,  not utxo commitments).\n\nBut utxo commitments are a more visibly effective way to cut down node initial sync times. Maybe some nodes will perfect those first, and others do better pruning first. Idk.",
                                     "depth": 3,
                                     "comments": []
                                 }
@@ -80,16 +138,36 @@
                 {
                     "id": "i9uhgl1",
                     "author": "Remora_101",
-                    "score": 4,
+                    "score": 5,
                     "created_utc": 1653421874.0,
                     "response": "Yeah thought the same. Some people might not be comfortable with the idea of getting rid of history. So I think, there will always be archiving nodes, and that is fine, but for the actual active network 1-10 years should be fine. \n\nAnd that would also completely negate the whole scaling problem since instead of an ever increasing pile of data, you would have a more or less fixed amount of data.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9x81g2",
+                            "author": "Bagmasterflash",
+                            "score": 1,
+                            "created_utc": 1653478132.0,
+                            "response": "So then Core could potentially enact pruning so that 1mb block sizes are all that is ultimately needed?  (I\u2019d assume after CBDCs are rolled out.  I also assume the narrative of every tx having to exist forever was created so that governments can trace activity until their CBDCs are ready.)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9y8xuc",
+                                    "author": "Remora_101",
+                                    "score": 1,
+                                    "created_utc": 1653495155.0,
+                                    "response": "No that doesn't work. You still need bigger blocks because the size of the block decides how much throughput you get. If you need 1million tx per second the block must have a certain size.\n\nPruning and/or keeping only a 10 year record however changes the size of the whole blockchain from ever increasing to a fixed size, which as I said removes the scaling problem of ever increasing need for storage.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": "i9up8ks",
                     "author": "capistor",
-                    "score": 3,
+                    "score": 4,
                     "created_utc": 1653425155.0,
                     "response": "It\u2019s not standard because someone has to code it basically for free in their spare time, it\u2019s not a problem for anyone yet.",
                     "depth": 1,
@@ -98,7 +176,7 @@
                 {
                     "id": "i9up1f0",
                     "author": "capistor",
-                    "score": 2,
+                    "score": 3,
                     "created_utc": 1653425068.0,
                     "response": "Pruning only gets rid of zero balance addresses and still maintains a chain of digital signatures between the original block and the current block.",
                     "depth": 1,
@@ -107,11 +185,49 @@
                 {
                     "id": "i9vje6v",
                     "author": "tl121",
-                    "score": 1,
+                    "score": 3,
                     "created_utc": 1653438875.0,
                     "response": "Getting rid of enneeded history was described in the whitepaper, before bitcoin even began.  See   7. Reclaiming Disk Space.\n\nhttps://www.bitcoin.com/satoshi-archive/whitepaper/",
                     "depth": 1,
                     "comments": []
+                },
+                {
+                    "id": "i9xlxnk",
+                    "author": "TinosNitso",
+                    "score": 1,
+                    "created_utc": 1653485614.0,
+                    "response": "The cost of a full node shouldn't exceed the cost of a gold [x-ray machine](https://www.alibaba.com/product-detail/Gold-Tester-Machine-Precious-Metal-Analyzer_1600189813819.html), imo. That's about **$7k** for the EDS3900 on Alibaba (after tax). Gold bugs could claim that a **decentralized gold standard** is more decentralized than Bitcoin, if the full node is too expensive. At an official 39kg, the x-ray machine is probably too heavy to even lift!\n\nInternet is still needed for gold to work, because ppl need to check the gold price to settle the payment (like bitcoin price). The cost of replacing **x-ray tubes**, which probably break down under constant use, might be similar to the cost of adding hard drive space. There's an issue of how long the $7k should last.\n\nA gold standard could work by embedding gold in cash. **10mg** & **100mg** notes are worth **60c** & **$6**, and we can always tip to the nearest 10mg (or else stock loads of 1mg notes, too). I wouldn't bother thinking about silver, or anything else, just gold. [Here](https://www.ebay.com/itm/164961330561?hash=item2668762581:g:0PMAAOSwslNg8IcQ)'s a 0.1g \"Cash Gold\" note, $6 gold selling for $19 (after tax+shipping). Current x-ray machines don't fully work, because it needs to get the weight of embedded gold using an x-ray cross-section technique. However, the machinery might be over-priced, so I figure $7k is a fair number.\n\nSo the question is, if I give you a budget of up to **$6k** or $7k for equipment, how big can the blocks get? Is 6000 TPS possible, like Visa? The EDS3900 does come with a 1 year warranty, so I guess it could last 5 years before replacing it ($6k every 5 yrs, with Moore's law, etc).\n\nTechnically, an x-ray machine is just for verifying, analogous to Bitcoin's SPV verification. However, for Bitcoin to work there has to be lots of full nodes. So I figure the x-ray machine is more analogous to a full node. In the worst case scenario, a merchant could wait a day to clear all cash-gold payments, because they have to run the cash through the bank's x-ray machine (at day's end). It depends how big the payment is! It's the bank's x-ray machine which is the \"full node\".",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9xsxg4",
+                            "author": "mrtest001",
+                            "score": 2,
+                            "created_utc": 1653488713.0,
+                            "response": "In some metrics Bitcoin is superior to gold as email is to physical letters.  Gold was unit of exchange at some point (i assume) and it isn't any more.  So why bring it back?  If Gold was subverted once, it will be subverted again.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9z4whm",
+                                    "author": "TinosNitso",
+                                    "score": 1,
+                                    "created_utc": 1653507717.0,
+                                    "response": "I'd like the idea of holding both, but only if I see actual Cash Gold being **used**, otherwise gold might be **over**\\-valued. \n\nOne reason to bring it back is for **diversification**. Crypto alone is too risky & volatile. The gold-cash is what could back bitcoin & BCH, at some level. We might not want to hold fiat, in order to back crypto. Buying the dip requires holding large sums of fiat, unless we all have (and can easily use) gold-cash (embedded gold in polymer). Imo Gold Cash & Bitcoin Cash could fit together, side by side. Some ppl do hate crypto more than they hate fiat.\n\nThe next reason is that the **internet** could go down. Gold-cash is like a backup. It's like a backup decentralized monetary standard to have cheap x-ray machines and spot priced gold-cash, etc. The internet could go down whenever the gov't wants it to, or if StarLink has a problem, etc. Strictly speaking, gold cash requires we know the approx price of gold, and that doesn't actually require the internet.\n\nHypothetically if gold-cash becomes popular, then comparing the price of a bitcoin node to that of an XRF machine seems reasonable, since both would be needed for decentralization. Like bitcoin requires cheap computers, the decentralized gold standard **requires cheap X-Ray machines**. Like how x-rays would be needed to detect a bullet in someone, they're also needed to detect gold impurities (except the process involves a spectral scan).\n\nMaybe El Salvador could have adopted gold cash instead of, or as well as, BTC. But that's like hopeless, which is why I guess some crypto enthusiasts shorted gold. The reason to literally embed gold in polymer is to **decentralize** the gold standard, since no trust is required. But the Salvadoran gov't can just trust themselves, so there's no point. It's just expensive, especially if engineers overcharge for every detail, etc.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9xp08e",
+                            "author": "tulasacra",
+                            "score": 1,
+                            "created_utc": 1653487019.0,
+                            "response": "New tech need to be 10-100x better. So the budget should be 60-600 $.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 }
             ]
         },
@@ -121,16 +237,35 @@
             "url": "https://www.reddit.com/r/btc/comments/uww9lb/design_the_best_marketing_graphic_and_win_025_bch/",
             "author": "jessquit",
             "created_utc": 1653413614.0,
-            "score": 32,
-            "num_comments": 25,
+            "score": 39,
+            "num_comments": 33,
             "subreddit": "btc",
             "selftext": "I'm giving away 0.25 BCH to the person to designs the winning marketing graphic.\n\nGraphic must be an image minimum 6000x4000 (landscape or portrait) featuring NO COPYRIGHTED IMAGES or any other content that would render it unusable in media.\n\nGraphic must include either of the following texts:\n\n#Bitcoin Cash: Bitcoin, Untethered\n\n**or**\n\n#BCH: Bitcoin, Untethered\n\nPoints will be given for\n\n* Imagery tie-in to the theme\n\n* Eye catchiness\n\n* Simplicity\n\nI'm the only judge and I'll chaintip 0.25 BCH to the person who designs the best graphic in my opinion. The contest will be over approximately 48 hours after this post goes live.\n\nHopefully this will be a productive contest that will inspire more in the future. Good luck! I can't wait to see what the community comes up with!",
             "stickied": false,
             "comments": [
                 {
+                    "id": "i9x7py0",
+                    "author": "dingus_snodgrass",
+                    "score": 4,
+                    "created_utc": 1653477923.0,
+                    "response": "here is image that I came up with, it uses only public domain imagery from NASA\n\n&#x200B;\n\nhttps://i.imgur.com/YMs4tJu.jpg",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9y72b7",
+                            "author": "dingus_snodgrass",
+                            "score": 2,
+                            "created_utc": 1653494423.0,
+                            "response": "I made a few adjustments and like this one better\n\n&#x200B;\n\nhttps://i.imgur.com/4kdc0mA.jpg",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
                     "id": "i9wrx0y",
                     "author": "bitcoinjason",
-                    "score": 4,
+                    "score": 5,
                     "created_utc": 1653464742.0,
                     "response": "Hope all goes well for you, I copped a lot of flack promoting a similar contest from ignorant people",
                     "depth": 1,
@@ -139,7 +274,7 @@
                 {
                     "id": "i9uucrj",
                     "author": "Twoehy",
-                    "score": 8,
+                    "score": 10,
                     "created_utc": 1653427353.0,
                     "response": "I got nothing against this contest, I think it's a great idea! \n\nBut also, this may not be enough money to motivate people ($50 USD). Generally  professional graphic design work like this would net the creator a larger (guaranteed) fee for their time and effort than they *might* earn by participating in this contest.\n\nAnyway, I'd love to be wrong. I do hope it's a success. If I had the skills I'd give it a shot just for fun, but I'm basically a toddler without arms when it comes to this stuff.",
                     "depth": 1,
@@ -147,7 +282,7 @@
                         {
                             "id": "i9uvcci",
                             "author": "jessquit",
-                            "score": 4,
+                            "score": 6,
                             "created_utc": 1653427785.0,
                             "response": "I just did this for fun and figured I'd pay for it out of my chaintips. It wasn't my intent to pay someone for their time, just to provide a fun incentive for the winner. Maybe I'm missing the mark?",
                             "depth": 2,
@@ -166,11 +301,20 @@
                     ]
                 },
                 {
-                    "id": "i9x7py0",
-                    "author": "dingus_snodgrass",
+                    "id": "i9wf5oz",
+                    "author": "that_one_indian_dude",
                     "score": 3,
-                    "created_utc": 1653477923.0,
-                    "response": "here is image that I came up with, it uses only public domain imagery from NASA\n\n&#x200B;\n\nhttps://i.imgur.com/YMs4tJu.jpg",
+                    "created_utc": 1653455070.0,
+                    "response": "This is a great idea and I think you are going a great job,\n\n&#x200B;\n\nHere is my submission, its a SVG file which I can mail: https://imgur.com/a/30Ue3tg\n\n&#x200B;\n\nDon't let the negative comments get to you, you're doing great.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9x9lsv",
+                    "author": "rey4486",
+                    "score": 3,
+                    "created_utc": 1653479113.0,
+                    "response": "This is my entry \\^\\^\n\nhttps://drive.google.com/file/d/1wljjbmsbSyLZXuSvS2uJZE6o77aettrf/view?usp=sharing",
                     "depth": 1,
                     "comments": []
                 },
@@ -184,20 +328,11 @@
                     "comments": []
                 },
                 {
-                    "id": "i9wf5oz",
-                    "author": "that_one_indian_dude",
-                    "score": 2,
-                    "created_utc": 1653455070.0,
-                    "response": "This is a great idea and I think you are going a great job,\n\n&#x200B;\n\nHere is my submission, its a SVG file which I can mail: https://imgur.com/a/30Ue3tg\n\n&#x200B;\n\nDon't let the negative comments get to you, you're doing great.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i9x9lsv",
+                    "id": "i9z4ylj",
                     "author": "rey4486",
                     "score": 2,
-                    "created_utc": 1653479113.0,
-                    "response": "This is my entry \\^\\^\n\nhttps://drive.google.com/file/d/1wljjbmsbSyLZXuSvS2uJZE6o77aettrf/view?usp=sharing",
+                    "created_utc": 1653507740.0,
+                    "response": "And this is second entry :)\n\nhttps://drive.google.com/file/d/1C35IfZPTSnHLtktfNj52uuJZ-EgsDHST/view?usp=sharing",
                     "depth": 1,
                     "comments": []
                 },
@@ -211,9 +346,18 @@
                     "comments": []
                 },
                 {
+                    "id": "ia05t6q",
+                    "author": "EleazarMKD",
+                    "score": 1,
+                    "created_utc": 1653523877.0,
+                    "response": "I did one too \n\n[https://imgur.com/TEITWUA](https://imgur.com/TEITWUA)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i9u1yxb",
                     "author": "Da0ptimist",
-                    "score": -15,
+                    "score": -19,
                     "created_utc": 1653415356.0,
                     "response": "I'd rather get LUNA \ud83e\udd23",
                     "depth": 1,
@@ -221,7 +365,7 @@
                         {
                             "id": "i9u2xgx",
                             "author": "jessquit",
-                            "score": 8,
+                            "score": 11,
                             "created_utc": 1653415760.0,
                             "response": "So do you have anything constructive whatsoever to contribute to this sub or are you only here to harass the community and disrupt conversation?\n\nEdit: here's the DM I just received from this account\n\n> You think banning people and then commenting when younknowbthye can't reply is free speech lmao.\n>\n>You're a scared and weak little boy hiding behind a keyboard.\n>\n>It doesn't change reality. You will always be a beta weakling scared qith your tail between your legs.\n>\n>And BCH will always be the joke in crypto up until its completely forgotten. \n>\n>Facts.\n\nEdit: then this modmail\n\n> I just hope you have some emergency funds cause BCH is done. You'll never see any ROI and it will be worth less every day.\n>\n> You know deep inside I'm right. And no banning will change this fact hahahaha",
                             "depth": 2,
@@ -229,7 +373,7 @@
                                 {
                                     "id": "i9u3otl",
                                     "author": "Da0ptimist",
-                                    "score": -10,
+                                    "score": -15,
                                     "created_utc": 1653416082.0,
                                     "response": "On the contrary, not only ly am I brining more visibility to your post by commenting, but I'm also educating new crypto users about the dangers of scam coins. Btw this is/r/BTC \ud83d\udc4c",
                                     "depth": 3,
@@ -237,7 +381,7 @@
                                         {
                                             "id": "i9u9c40",
                                             "author": "jessquit",
-                                            "score": 9,
+                                            "score": 10,
                                             "created_utc": 1653418457.0,
                                             "response": "> I'm also educating new crypto users about the dangers of scam coins\n\nYou literally just promoted a dead scam coin. \n\n> Btw this is/r/BTC \ud83d\udc4c \n\nSo say something positive about BTC. I've looked at your history. You only come here to troll the community. Look around. There are dozens of your peers here who constantly say positive things about BTC, or **thoughtful** negative commentary about BCH. [Their commentary is welcome and upvoted.](https://www.reddit.com/r/btc/comments/urfayr/bitcoin_maxi_ama) Be better next time.",
                                             "depth": 4,
@@ -259,7 +403,7 @@
                         {
                             "id": "i9u401h",
                             "author": "LovelyDayHere",
-                            "score": 4,
+                            "score": 6,
                             "created_utc": 1653416215.0,
                             "response": "Disqualified",
                             "depth": 2,
@@ -267,7 +411,7 @@
                                 {
                                     "id": "i9u49l3",
                                     "author": "Da0ptimist",
-                                    "score": -7,
+                                    "score": -5,
                                     "created_utc": 1653416325.0,
                                     "response": "What's the difference?",
                                     "depth": 3,
@@ -275,7 +419,7 @@
                                         {
                                             "id": "i9u5uwl",
                                             "author": "LovelyDayHere",
-                                            "score": 4,
+                                            "score": 5,
                                             "created_utc": 1653416991.0,
                                             "response": "Wrong sub",
                                             "depth": 4,
@@ -283,7 +427,7 @@
                                                 {
                                                     "id": "i9u6e1u",
                                                     "author": "Da0ptimist",
-                                                    "score": -3,
+                                                    "score": -4,
                                                     "created_utc": 1653417217.0,
                                                     "response": "This post is in the wrong sub bud. This is /r/btc",
                                                     "depth": 5,
@@ -291,7 +435,7 @@
                                                         {
                                                             "id": "i9u6jc9",
                                                             "author": "LovelyDayHere",
-                                                            "score": 7,
+                                                            "score": 11,
                                                             "created_utc": 1653417278.0,
                                                             "response": "This is the uncensored Bitcoin sub, bro.\n\nLearn some history, read the FAQ",
                                                             "depth": 6,
@@ -307,7 +451,7 @@
                                                                         {
                                                                             "id": "i9u7d2z",
                                                                             "author": "LovelyDayHere",
-                                                                            "score": 6,
+                                                                            "score": 8,
                                                                             "created_utc": 1653417627.0,
                                                                             "response": "> This is a bitcoin Cash shill site.\n\nNope, not really, Bitcoin Cash is peer to peer electronic cash and this is just a forum where people who like Bitcoin can talk freely about it.",
                                                                             "depth": 8,
@@ -315,7 +459,7 @@
                                                                                 {
                                                                                     "id": "i9u855z",
                                                                                     "author": "Da0ptimist",
-                                                                                    "score": -4,
+                                                                                    "score": -3,
                                                                                     "created_utc": 1653417954.0,
                                                                                     "response": "LOL no it's not. It's pretty much widely known that this sub is a cult much like /r/buttcoin except the sad part is that they are all losing $ ad this project is dying fast",
                                                                                     "depth": 9,
@@ -323,7 +467,7 @@
                                                                                         {
                                                                                             "id": "i9uyqt9",
                                                                                             "author": "MobTwo",
-                                                                                            "score": 5,
+                                                                                            "score": 4,
                                                                                             "created_utc": 1653429275.0,
                                                                                             "response": "Internet Trolls Are Narcissists, Psychopaths, and Sadists. https://www.psychologytoday.com/sg/blog/your-online-secrets/201409/internet-trolls-are-narcissists-psychopaths-and-sadists\n\nIt also reflects very badly on your parents and upbringing. It shows people that your mom and dad are both assholes too you know?",
                                                                                             "depth": 10,

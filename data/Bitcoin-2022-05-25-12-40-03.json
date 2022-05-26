@@ -9,32 +9,6 @@
     ],
     "posts": [
         {
-            "id": "uxgcdb",
-            "title": "I develop a mobile app which helps people to get familiar with the crypto market and I have an idea to create a fun animation of how Bitcoin\u2019s price has been changing since its launch in 2009. Who knows, is it possible to get historical data about Bitcoin everyday\u2019s price since its launch?",
-            "url": "https://i.redd.it/zm05md3n7m191.png",
-            "author": "litemesa",
-            "created_utc": 1653481941.0,
-            "score": 2,
-            "num_comments": 0,
-            "subreddit": "Bitcoin",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
-        },
-        {
-            "id": "uxgfdn",
-            "title": "Soros buying Bitcoin? Here you can find my tip!",
-            "url": "https://bullranks.com/sorosgyorgy/Is-soros-buy-bitcoin",
-            "author": "misrori",
-            "created_utc": 1653482237.0,
-            "score": 1,
-            "num_comments": 0,
-            "subreddit": "Bitcoin",
-            "selftext": "",
-            "stickied": false,
-            "comments": []
-        },
-        {
             "id": "uxgb23",
             "title": "#LightningDiaries is back with a visit to Bitcoin Ekasi in George, South Africa to see how they're creating their own Bitcoin economy",
             "url": "https://youtu.be/JkP9A2Z3deU",
@@ -46,29 +20,6 @@
             "selftext": "",
             "stickied": false,
             "comments": []
-        },
-        {
-            "id": "uxg8tv",
-            "title": "\"Silent Payment\" Tutorial -private bitcoin transactions [dev]",
-            "url": "https://gist.github.com/w0xlt/72390ded95dd797594f80baba5d2e6ee",
-            "author": "TheGreatMuffin",
-            "created_utc": 1653481619.0,
-            "score": 1,
-            "num_comments": 1,
-            "subreddit": "Bitcoin",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i9xe375",
-                    "author": "TheGreatMuffin",
-                    "score": 1,
-                    "created_utc": 1653481695.0,
-                    "response": "This is a signet (testnet) implementation of an idea proposed by u/rubensomsen, which is explained here in detail: https://gist.github.com/RubenSomsen/c43b79517e7cb701ebf77eec6dbb46b8  \n\nthe TL;DR:  \n\n> Silent Payment is a cryptographic scheme that allows the recipient to publish a public address and the sender to tweak the address, sending coins to a completely unrelated address. The recipient detects payments by verifying mempool, block or UTXO Set transactions.  \n\nDiscussion on bitcoin-dev mailinglist: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2022-May/020513.html",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
         },
         {
             "id": "uxg5u7",
@@ -88,6 +39,189 @@
                     "score": 1,
                     "created_utc": 1653481374.0,
                     "response": "Older post: https://www.reddit.com/r/Bitcoin/comments/ceaca9/if\\_1\\_satoshi\\_1\\_second\\_this\\_is\\_how\\_much\\_time\\_i/",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uxgfdn",
+            "title": "Soros buying Bitcoin? Here you can find my tip!",
+            "url": "https://bullranks.com/sorosgyorgy/Is-soros-buy-bitcoin",
+            "author": "misrori",
+            "created_utc": 1653482237.0,
+            "score": 0,
+            "num_comments": 1,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "uxg8tv",
+            "title": "\"Silent Payment\" Tutorial -private bitcoin transactions [dev]",
+            "url": "https://gist.github.com/w0xlt/72390ded95dd797594f80baba5d2e6ee",
+            "author": "TheGreatMuffin",
+            "created_utc": 1653481619.0,
+            "score": 18,
+            "num_comments": 7,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9xlxv9",
+                    "author": "No-Waltz5090",
+                    "score": 4,
+                    "created_utc": 1653485617.0,
+                    "response": ">The user was able to generate an address ($receiver_address), publish it, receive and spend coins from it and still 0 transaction is shown from this address in a blockchain explorer\n\nI don't think most people understand the implications of this yet.  This is nothing short a quantum leap forward for Bitcoin's on chain privacy.\n\nhttps://gist.github.com/w0xlt/72390ded95dd797594f80baba5d2e6ee",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9xe375",
+                    "author": "TheGreatMuffin",
+                    "score": 3,
+                    "created_utc": 1653481695.0,
+                    "response": "This is a signet (testnet) implementation of an idea proposed by u/rubensomsen, which is explained here in detail: https://gist.github.com/RubenSomsen/c43b79517e7cb701ebf77eec6dbb46b8  \n\nthe TL;DR:  \n\n> Silent Payment is a cryptographic scheme that allows the recipient to publish a public address and the sender to tweak the address, sending coins to a completely unrelated address. The recipient detects payments by verifying mempool, block or UTXO Set transactions.  \n\nDiscussion on bitcoin-dev mailinglist: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2022-May/020513.html",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9xim1q",
+                            "author": "RubenSomsen",
+                            "score": 5,
+                            "created_utc": 1653484031.0,
+                            "response": "There's also a video [here](https://rumble.com/v12kuz7-bitcoin-silent-payments.html)\n\nAnd as always, links to all my work can be found [here](https://gist.github.com/RubenSomsen/c9f0a92493e06b0e29acced61ca9f49a)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ylpq0",
+                                    "author": "garrulous_theory",
+                                    "score": 1,
+                                    "created_utc": 1653500116.0,
+                                    "response": "!lntip 500",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9yls1m",
+                                            "author": "lntipbot",
+                                            "score": 1,
+                                            "created_utc": 1653500141.0,
+                                            "response": "Hi u/garrulous_theory, thanks for tipping u/RubenSomsen **500** satoshis!\n***\n*[^(More info)](https://xnf5cwpq73.execute-api.us-west-2.amazonaws.com/prod/info) ^| [^(Balance)](https://www.reddit.com/message/compose/?to=lntipbot&subject=balance&message=!balance) ^| [^(Deposit)](https://www.reddit.com/message/compose/?to=lntipbot&subject=deposit&message=!deposit 10000) ^| [^(Withdraw)](https://www.reddit.com/message/compose/?to=lntipbot&subject=withdraw&message=!withdraw put_invoice_here) ^| ^(Something wrong?  Have a question?) [^(Send me a message)](https://www.reddit.com/message/compose/?to=drmoore718)*",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9xjmov",
+                    "author": "coinfeeds-bot",
+                    "score": 2,
+                    "created_utc": 1653484529.0,
+                    "response": "tldr; Silent Payment is a cryptographic scheme that allows the recipient to publish a public address and the sender to tweak the address, sending coins to a completely unrelated address. The recipient detects payments by verifying mempool, block or UTXO Set transactions. Currently, it is possible to make silent payments on the signet network.\n\n*This summary is auto generated by a bot and not meant to replace reading the original article. As always, DYOR.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ybmen",
+                    "author": "thefullmcnulty",
+                    "score": 1,
+                    "created_utc": 1653496197.0,
+                    "response": "u/i_sawyer_n00dz",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uxgcdb",
+            "title": "I develop a mobile app which helps people to get familiar with the crypto market and I have an idea to create a fun animation of how Bitcoin\u2019s price has been changing since its launch in 2009. Who knows, is it possible to get historical data about Bitcoin everyday\u2019s price since its launch?",
+            "url": "https://i.redd.it/zm05md3n7m191.png",
+            "author": "litemesa",
+            "created_utc": 1653481941.0,
+            "score": 0,
+            "num_comments": 9,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9yarm5",
+                    "author": "Downtown-Ad-4117",
+                    "score": 2,
+                    "created_utc": 1653495866.0,
+                    "response": "https://www.reddit.com/r/BitcoinMarkets/comments/8281yh/historical\\_minutebyminute\\_prices\\_on\\_bitcoin/",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia1lyl3",
+                            "author": "litemesa",
+                            "score": 1,
+                            "created_utc": 1653556158.0,
+                            "response": "Thank you a lot, this is what I'm looking for!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9yehld",
+                    "author": "igadjeed",
+                    "score": 2,
+                    "created_utc": 1653497310.0,
+                    "response": "There are no published prices before Mtgox. Mtgox prices are unreliable because the Mtgox owner falsely quoted prices to enhance his own trading profits",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia1m2js",
+                            "author": "litemesa",
+                            "score": 1,
+                            "created_utc": 1653556257.0,
+                            "response": ">Mtgox\n\nDidn't know about that, thank you, it's interesting",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9xirhp",
+                    "author": "Amoci",
+                    "score": 2,
+                    "created_utc": 1653484105.0,
+                    "response": "Price is the least interesting aspect of Bitcoin.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9xjfpn",
+                            "author": "litemesa",
+                            "score": 0,
+                            "created_utc": 1653484435.0,
+                            "response": "A lot of people start interesting in Bitcoin when price goes up - and then they discover another aspects of Bitcoin and blockchain technology",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9xme4j",
+                                    "author": "Amoci",
+                                    "score": 1,
+                                    "created_utc": 1653485829.0,
+                                    "response": "I stand by what I said",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9xneao",
+                    "author": "DoodleRoodle",
+                    "score": 0,
+                    "created_utc": 1653486290.0,
+                    "response": "No, there's no historical data, and we don't care. We all are mayflies here...",
                     "depth": 1,
                     "comments": []
                 }

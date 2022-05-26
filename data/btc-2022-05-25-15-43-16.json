@@ -1,0 +1,495 @@
+{
+    "subreddit": "btc",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uxk2xm",
+            "title": "Why can\u2019t there be a full node on every phone?",
+            "url": "https://www.reddit.com/r/btc/comments/uxk2xm/why_cant_there_be_a_full_node_on_every_phone/",
+            "author": "losttraveler36",
+            "created_utc": 1653493086.0,
+            "score": 5,
+            "num_comments": 57,
+            "subreddit": "btc",
+            "selftext": "I\u2019m not super technical but if smart phones with 1tb+ of memory become more common then can you run a full node from your phone?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9ye80z",
+                    "author": "gotamd",
+                    "score": 23,
+                    "created_utc": 1653497208.0,
+                    "response": "It's probably theoretically possible, at least on higher-end phones (especially with pruning enabled), but it would be a terrible user experience. It's also unnecessary. What phones can do is severely limited by the power available to them, in the form of their batteries. If you were to run a live, full-node on a phone, it would chew through the battery extremely quickly. You'd basically need to keep the phone plugged in all the time. At that point you'd be better off just running your full node from a regular PC that's more suited to the task.\n\nYou can run a full node on very cheap and low-power computers, like a Raspberry Pi. If you're concerned about privacy and security, you can have your wallet app on your phone interface with your self-hosted node sitting at home (or wherever else). There's no need to run full nodes on phones.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yhcuw",
+                            "author": "losttraveler36",
+                            "score": 3,
+                            "created_utc": 1653498420.0,
+                            "response": "Thank you, it makes sense that it would chew through battery life. I constantly hear that running a node helps to secure the bitcoin network so in theory if this is true then having a full mode on every phone would do such a thing. Again I am still very non-technical and learning",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ys78d",
+                                    "author": "knowbodynows",
+                                    "score": 9,
+                                    "created_utc": 1653502662.0,
+                                    "response": "> I constantly hear that running a node helps to secure the bitcoin network so in theory if this is true-\n\nIt's not. It doesn't. Mining contributes to secure the network. A nonmining node might be handy for personal use, or fun, but doesn't benefit security.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "ia1zlc5",
+                                    "author": "mrsun3000",
+                                    "score": 1,
+                                    "created_utc": 1653566425.0,
+                                    "response": "Nodes help in the making network centralised, and miners secure the network.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9y5qz8",
+                    "author": "LovelyDayHere",
+                    "score": 6,
+                    "created_utc": 1653493905.0,
+                    "response": "Why run a node on your expensive mobile device when it's far cheaper to run your own node on commodity hardware (like an old laptop or raspberry pi with some USB storage) and just access your node with a light wallet from mobile?\n\nIf everyone runs a full node on their phone, that is an awful waste of energy validating transactions that don't pertain to them, and which could be validated much more efficiently while still being decentralized.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yftky",
+                            "author": "losttraveler36",
+                            "score": 2,
+                            "created_utc": 1653497825.0,
+                            "response": "Because I wanna?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ylbcg",
+                                    "author": "LovelyDayHere",
+                                    "score": 5,
+                                    "created_utc": 1653499958.0,
+                                    "response": "Well, the answer to your question is: because most people don't wanna",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia24o1a",
+                            "author": "RiccaVern1",
+                            "score": 1,
+                            "created_utc": 1653569254.0,
+                            "response": "Yep, that's the point. Running a node on a phone would be really bad.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9y8mpc",
+                    "author": "BewareOfShills",
+                    "score": 5,
+                    "created_utc": 1653495033.0,
+                    "response": "Because it is not necessary. Ever thought about why there is no monetary incentive for running a node?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yg5fi",
+                            "author": "losttraveler36",
+                            "score": 1,
+                            "created_utc": 1653497952.0,
+                            "response": "That\u2019s really terrible reasoning, many things are unnecessary but still exist.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9yrksd",
+                                    "author": "knowbodynows",
+                                    "score": 4,
+                                    "created_utc": 1653502413.0,
+                                    "response": "So run it on your phone. Very doable. Why do you advocate \"every phone?\" \n\nYou can also run a website off your phone, or everyone could, but why??",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9yw5hs",
+                                    "author": "BewareOfShills",
+                                    "score": 2,
+                                    "created_utc": 1653504204.0,
+                                    "response": "That is not an answer to my question. And in fact upside down. \n\nNothing exists (no incentive) and the question is why?\n\n\nMay I ask if you are believing that everyone should run a node?",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9y4dbr",
+                    "author": "Shibinator",
+                    "score": 3,
+                    "created_utc": 1653493363.0,
+                    "response": "In theory, of course there can be.\n\nIn practice, you will need:\n\n- 1tb+ of memory\n- Ideally constant internet connection, not spotty while you travel around\n- Significant upload / download capacity at all times dedicated to Bitcoin network traffic\n- Substantial processing power for validating transactions etc.\n\n... or in other words, a home computer.\n\nSo it's theoretically possible to have phone nodes, but we're a long way away from it being realistic with today's requirements (and by the time it is, the network will have grown and once again be unrealistic).  All for no upside, and the huge downside of taking up your bandwidth and storage space.\n\nHence phone nodes aren't a thing now, and aren't likely to be one in the future barring an absolutely titanic and unexpected leap forward in both mobile hardware and global mobile connective speed and reliability.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yfrth",
+                            "author": "losttraveler36",
+                            "score": 1,
+                            "created_utc": 1653497806.0,
+                            "response": "Can you put specific numbers behind the upload and download capacity or the processing power? I\u2019d like to understand what this would be relative to what a cell phone already does",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ygeg0",
+                                    "author": "Shibinator",
+                                    "score": 3,
+                                    "created_utc": 1653498046.0,
+                                    "response": "I don't know the exact numbers, but you can presumably look up the minimum specs recommended to run a node at the website of your favourite node implementation, or ask their dev team.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "ia2a3kx",
+                                    "author": "miloy8",
+                                    "score": 1,
+                                    "created_utc": 1653571911.0,
+                                    "response": "Yeah that would be interesting to look, can someone do that here please man.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9ygwxf",
+                            "author": "FamousM1",
+                            "score": 1,
+                            "created_utc": 1653498247.0,
+                            "response": "Why would 1tb be needed for a full node? Can't you just prune it?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ylu7o",
+                                    "author": "LovelyDayHere",
+                                    "score": 2,
+                                    "created_utc": 1653500164.0,
+                                    "response": "Pruned nodes aren't really full nodes in the sense that OP is implying... but of course your question is valid regardless, and the answer is the same: those who want to, probably can, even if it makes little sense.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia29e0d",
+                            "author": "vasik510",
+                            "score": 1,
+                            "created_utc": 1653571577.0,
+                            "response": "And those are all the reasons why it doesn't make sense to run a node on a phone.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9yju66",
+                    "author": "rankinrez",
+                    "score": 2,
+                    "created_utc": 1653499383.0,
+                    "response": "Bandwidth, power and storage for starters.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ysu4b",
+                    "author": "forseti_",
+                    "score": 2,
+                    "created_utc": 1653502908.0,
+                    "response": "Your battery will be gone in no time. On mobile devices processor time is not given away lightly. Running a background task? You need to ask the user for permission and if he allows it his battery will be gone very quickly.\n\nOh and when you set up your client at first and sync the blockchain - many countries are very backwards when it comes to mobile internet. In Germany for example you pay 10Euro for 10GB! You would expect much better from a highly developed country like that but this is the reality.\n\nYou want to sync multiple blockchains? Good luck",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9yyy31",
+                    "author": "mrtest001",
+                    "score": 2,
+                    "created_utc": 1653505308.0,
+                    "response": "Weirdly worded question.\n\nWho said there can't be?\n\nAre you asking why isn't there?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ycmoi",
+                    "author": "bitmeister",
+                    "score": 3,
+                    "created_utc": 1653496588.0,
+                    "response": "I will add to /u/BewareOfShills \"not necessary\" and go a step further and explain that they're unwanted on the network.\n\nUnless you're Amazon, Walmart or some other large retailer that needs immediate blockchain data for real-time transactions (see 0-conf) then full nodes don't have much use, don't add to security, and can actually increase miner load and risk.\n\nHere are some past points I've made...\n\n----\n\nMiners don't like non-mining nodes. Miners have a financial incentive to send their winning block only to other miners, so that their peers validate, accept and then begin mining on top of their block. So miner don't want to send their blocks to full nodes because it is a waste of their time.\n\nMiners only want to listen to other miners, and not full nodes. Any hostile full node can send a steady diet of fake blocks. The miner must then validate and reject those blocks and ignore those nodes, when it would rather have only valid blocks from mining peers. If a valid block has been discovered and recorded by a peer, then the miner wants to get their hardware started on the next block ASAP.\n\n----\n\nIf a tree falls in the woods and no one is around to hear it, does it make a sound. Effectively, if you run a full-node, or there are thousands of full nodes, and no miners are listening to those nodes, it doesn't matter what consensus rules they run. Miners only mine on valid blocks and they can't afford to listen to full-nodes for their critical data, i.e. the next block.\n\n... The \"only case\" is the need for applications (client side) or services (server side) programs to have access to chain data. The full nodes offer no other benefit besides a localize copy of the chain for immediate access. This is like a local cache and is necessary, because to my first point, miners don't really want to serve up data to non-miners. Miners want to emit their new blocks to other miners, because they want those other miners to start building on their new blocks quickly to avoid orphans. Sure, they would also like to emit them to some full-nodes, but their outbound bandwidth is prioritized for other miners or pool participants\n\n---\n\nTherefore, miners don't really connect to full nodes, as a malicious full node could spout an endless supply of junk blocks, which the miner would have to waste its time validating. A sort of denial-of-hashing ... scenario. Very strong game-theory arguments have been made that full nodes should be ignored and are largely counter productive and waste resources. The only case for them seems to be if you're running an application or service that requires immediate access to blockchain data.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yfkew",
+                            "author": "jessquit",
+                            "score": 5,
+                            "created_utc": 1653497727.0,
+                            "response": "\n>Therefore, miners don't really connect to full nodes, as a malicious full node could spout an endless supply of junk blocks, \n\nNo they can't. A full node can't produce a block at all. The only way for it to produce a block would be to locally reset the difficulty. But as soon as the full node sends the header, the mining node will reject it because the difficultly is too low.\n\nThis idea that there shouldn't really be full nodes is kind of a BSV thing. They've gone so far as to knock most of their nodes off the network, creating exactly the sort of hypercentralized system the BTC maxis thought BCH would turn into.\n\nIn fact for mass adoption we will need plenty of nodes to serve SPV clients. And as you point out there are all kinds of applications that need access to the full data set.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ymzcw",
+                                    "author": "LovelyDayHere",
+                                    "score": 2,
+                                    "created_utc": 1653500610.0,
+                                    "response": "I also don't believe \"miners don't like non-mining nodes\" except in the sense that miners (pools, actually) will make sure to connect predominantly to other miners (pools) and will curate their peer set more than some random Joe running a hobby node.\n\nSame goes for other economically relevant nodes like payment processors & exchanges.\n\nAs we know from BTC, if they feel the need, miners will run their own relay networks to expedite their blocks amongst each other. The other economic nodes that are not mining aren't really a bother to them.\n\nSuccessful miners are not stupid, and stupid miners are not successful.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9zgayg",
+                                    "author": "bitmeister",
+                                    "score": 2,
+                                    "created_utc": 1653512357.0,
+                                    "response": "> No they can't. A full node can't produce a block at all.\n\nUnderstood. But I'm talking about full nodes as a liability to the network, making the case where malicious nodes/swarm could emit bogus blocks that must be evaluated and rejected by legit nodes and miners. As with any peer networking, countermeasures must eventually be created to avoid denial of service / spam traffic. So adding more full nodes only adds to network overhead with little return. And Op's question, running a full node on a phone, is pure overhead and no return.\n\nAs /u/LovelyDayHere mentions, there is a countermeasure, where (smart) miners naturally cluster with other miners because of profit motives. That motive is probably already strong enough to minimize any threat from a malicious full-node swarm.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9zm93q",
+                                            "author": "jessquit",
+                                            "score": 3,
+                                            "created_utc": 1653514897.0,
+                                            "response": ">> No they can't. A full node can't produce a block at all.\n>\n>Understood. \n\nApparently not.\n\n> malicious nodes/swarm could emit bogus blocks\n\n**A full node can't produce a block at all.**\n\nEven if you reset difficultly to zero it still takes 10 minutes of a CPU time to create a \"bogus block\" and the receiver node only listens to 80 measly bytes and can instantly tell it's bogus. There is no attack vector here whatsoever. All the effort is on the senders side. No effort on the receiver. It's incredibly assymetrical.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia0hb7m",
+                                                    "author": "bitmeister",
+                                                    "score": 1,
+                                                    "created_utc": 1653529214.0,
+                                                    "response": "My point is miners have no economic interest in communicating with non-mining nodes, and full nodes fall into this category.\n\nAll connections look the same, mining and non-mining, so each additional connection represents increased operational liability. Any peer could become become a bad actor, and even 80 (measly) bytes becomes operational debt at scale. But the simple remedy is whitelisting well known peers *based on reputation*, which would be other mining nodes, but could include *reputable* retailers and services running full nodes.\n\nI do understand *a full node doesn't produce a block at all*. My point is a full node is just another non-player character from the miner's perspective. Full nodes and hostile nodes have the same profile; non-mining and no reputation. *There's no incentive to form a connection let alone send or receive data from non-mining nodes.* And even less incentive to connect with an IP-hoping smartphone.\n\n> Even if you reset difficultly to zero it still takes 10 minutes of a CPU time to create a \"bogus block\" \n\nGiven a protocol spec I can create some pretty convincing gibberish in far less than 10 minutes CPU time. Yes, it will be easily detected and rejected within 80 bytes, and my node blacklisted immediately. But at scale, even this simple attack would eventually lead a miner to whitelisting trusted peers and rejecting all other traffic for fear of losing money.\n\nNow if only we could whitelist other services... like email! Never mind, half the spam comes from gmail.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia14nka",
+                                                            "author": "jessquit",
+                                                            "score": 1,
+                                                            "created_utc": 1653541871.0,
+                                                            "response": ">My point is miners have no economic interest in communicating with non-mining nodes, and full nodes fall into this category.\n\nI stopped reading there. The statement is ludicrous. Did Craig Wright take over this account?",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9y74ou",
+                    "author": "ShadowOrson",
+                    "score": 2,
+                    "created_utc": 1653494448.0,
+                    "response": "I'm wondering why you are even broaching this subject...\n\nThere are no, AFAIK, smart phones that have 1tb+ of memory. Are you aware of any?\n\n**Edit:** I learned that there is a phone with 1tb+ of memory, aka storage.\n\nVery few people, IMO, would be interested in maintaining a full node on their phones. Currently the BTC blockchain is over 407GB in size, the BCH blockchain is 216GB. SPV wallets are good enough for mobile phones.\n\nIt really astounds me when individuals (usually BTC Maxis) put forth the idea that everyone should run a full node, but seem to forget that their mobile phones simple cannot do this.\n\n**Edit:** OK, some of them can do it. But, running a full node would likely take a massive amount of electricity since it is always sending/receiving data, effectively making your mobile device tethered to a wall outlet.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9ygmf6",
+                            "author": "losttraveler36",
+                            "score": 1,
+                            "created_utc": 1653498133.0,
+                            "response": "1. The new iPhone 13 has 1tb of memory\n\n2. Yes few people would be interested but people would still be interested if the option was there\n\n3. I\u2019ve heard that people should run a node many times but I\u2019m trying to understand why a phone can\u2019t do it. Hence the question.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ylxt2",
+                                    "author": "LovelyDayHere",
+                                    "score": 3,
+                                    "created_utc": 1653500202.0,
+                                    "response": "People have run nodes on phones in the past. Not sure why you're saying phones can't do it? It's been done.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9ypeae",
+                                            "author": "ShadowOrson",
+                                            "score": 1,
+                                            "created_utc": 1653501555.0,
+                                            "response": "~~> Not sure why you're saying phones can't do it?~~\n\n~~I did not. Please don't do that.~~\n\nMy bad, thought your response was to me.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9ypobj",
+                                                    "author": "LovelyDayHere",
+                                                    "score": 2,
+                                                    "created_utc": 1653501663.0,
+                                                    "response": "ShadowOrson, why are you replying to my response to u/losttraveler36 ? This is highly suspicious.\n\n> >  Not sure why you're saying phones can't do it?\n> \n> I did not. Please don't do that.\n\nI didn't say you were. I was talking to losttraveler, who wrote \n\n> I\u2019m trying to understand why a phone can\u2019t do it",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9yqj35",
+                                                            "author": "ShadowOrson",
+                                                            "score": 2,
+                                                            "created_utc": 1653501998.0,
+                                                            "response": "OHH frick! My bad! I am in the thread, not the the \"messages:unread\". it looked, to me, like your reply was to me. Mea Culpa",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9yqyah",
+                                    "author": "ShadowOrson",
+                                    "score": 2,
+                                    "created_utc": 1653502164.0,
+                                    "response": "> The new iPhone 13 has 1tb of memory\n\nAhhh! Thank you, I was unaware of that.\n\n> Yes few people would be interested but people would still be interested if the option was there\n\nYes, I would guess that some hobbyist might want to.\n\n> I\u2019ve heard that people should run a **[full]** node many times but I\u2019m trying to understand why a phone can\u2019t do it. Hence the question.\n\nFTFY.\n\nNow that I am aware that there are phones that have enough memory to store the blockchain, there is likely no reason why those specific phones cannot. Just because something is possible does not mean it should be done or has any significantly measurable value.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ybxkk",
+                    "author": "jessquit",
+                    "score": 2,
+                    "created_utc": 1653496319.0,
+                    "response": "Why should there be a full node on your phone? This is the perfect application for SPV. Using SPV your phone wallet can **trustlessly** verify that the transactions you care about are confirmed on the blockchain with the most proof of work. The data requirements are incredibly trivial - just 8 **bytes** every minute to stay in sync.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9za4a8",
+                    "author": "WippleDippleDoo",
+                    "score": 1,
+                    "created_utc": 1653509817.0,
+                    "response": "It doesn\u2019t make sense and would drain the battery a lot, not to mention storage.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9y97lf",
+                    "author": "gators939",
+                    "score": -3,
+                    "created_utc": 1653495262.0,
+                    "response": "You don\u2019t need a node on every phone, but everyone should have ability to run a node somewhere, which is why BCH is a shitcoin :)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yc2ti",
+                            "author": "Shibinator",
+                            "score": 3,
+                            "created_utc": 1653496376.0,
+                            "response": "Everyone should have the ability to transact on the Bitcoin blockchain without it costing an entire day's salary in transaction fees, true or false?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ycawu",
+                                    "author": "gators939",
+                                    "score": -3,
+                                    "created_utc": 1653496462.0,
+                                    "response": "Lightning, GGs",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9yel5z",
+                                            "author": "Shibinator",
+                                            "score": 4,
+                                            "created_utc": 1653497349.0,
+                                            "response": "What's that?  I can't find that shitcoin on coinmarketcap.\n\nMy question was, everyone should have the ability to transact **on the Bitcoin blockchain** without it costing an entire day's salary in transaction fees, true or false?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9yfeht",
+                                                    "author": "gators939",
+                                                    "score": -2,
+                                                    "created_utc": 1653497663.0,
+                                                    "response": "Every Lightning channel is on the blockchain, so again, GG.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9yfwf4",
+                                                            "author": "Shibinator",
+                                                            "score": 3,
+                                                            "created_utc": 1653497855.0,
+                                                            "response": "Are you a shitcoiner?  Why can't you answer my question?\n\nI'd just like to know if you think everyone should have the ability to transact on the Bitcoin blockchain without it costing an entire day's salary in transaction fees?\n\nI'm talking about Bitcoin. You seem more interested in LightningCoin, but I'm a Bitcoin maximalist so I believe everyone should hold their own keys and not invest in shitcoins. Not your keys, not your coins. Peer to peer, on the blockchain. Every Bitcoiner knows that.  I'm suspicious of your scam that isn't even listed on coinmarketcap.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9yii9s",
+                                                                    "author": "gators939",
+                                                                    "score": -1,
+                                                                    "created_utc": 1653498872.0,
+                                                                    "response": "Yes, the Bitcoin blockchain! I\u2019m very aware of it and it\u2019s where my Lightning channels live! You should look it up sometime, pretty cool stuff!",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9yiyq8",
+                                                                            "author": "Shibinator",
+                                                                            "score": 4,
+                                                                            "created_utc": 1653499050.0,
+                                                                            "response": "Bro you are definitely getting scammed.  Lightning Channels, whatever they are, are not Bitcoins.  You should cash those in quick.  Sounds like the Ethereum token shitcoinery has sucked you in, hopefully now I've warned you you can get real Bitcoins before things fall apart like they always do.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9yjefx",
+                                                                                    "author": "gators939",
+                                                                                    "score": 0,
+                                                                                    "created_utc": 1653499220.0,
+                                                                                    "response": "No worries, my investment has actually appreciated a ton! Definitely not worth less than it was 5 years ago like BCH, and still falling. I\u2019d have to be a real dumbass to buy that, I\u2019d have already lost most of my money!",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i9yk245",
+                                                                                            "author": "Shibinator",
+                                                                                            "score": 3,
+                                                                                            "created_utc": 1653499467.0,
+                                                                                            "response": "Look I understand you're new to Bitcoin but with experience you will get burned by flavour of the month \"investment\" ponzi schemes and give up on these shitcoins.  Don't come crying to me when you lose your Bitcoins and HFSP, I'm just trying to warn you as a long time Bitcoiner.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9yc5xt",
+                            "author": "jessquit",
+                            "score": 4,
+                            "created_utc": 1653496409.0,
+                            "response": "> everyone should have ability to run a node somewhere, which is why BCH is a shitcoin :)\n\n*Everyone* already can't afford to run a BTC node, which by your logic makes BTC a \"shitcoin\" too.\n\nIn fact the BCH blockchain is smaller than the BTC blockchain, which by your logic makes it a worse \"shitcoin\" than BCH.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -9,13 +9,131 @@
     ],
     "posts": [
         {
+            "id": "ux890s",
+            "title": "ETH-Monero XMR Atomic Swap live on stagenet!",
+            "url": "/r/Monero/comments/ux6lzk/ethxmr_atomic_swap_development_update_live_on/",
+            "author": "stKKd",
+            "created_utc": 1653448942.0,
+            "score": 47,
+            "num_comments": 16,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9wjq46",
+                    "author": "Perleflamme",
+                    "score": 10,
+                    "created_utc": 1653458180.0,
+                    "response": "This is great for the ecosystem.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9wjz7i",
+                            "author": "imperator285",
+                            "score": 6,
+                            "created_utc": 1653458366.0,
+                            "response": "Us Monero folks could not be happier!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9wntqc",
+                    "author": "dynamicallysteadfast",
+                    "score": 5,
+                    "created_utc": 1653461315.0,
+                    "response": "When swapping from XMR to Eth\n\n\nIs it at all evident that the Eth came from an atomic swap?\n\n\nThanks for your work btw, people like you are pioneers, driving the world forwards. Thank you!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9wohab",
+                            "author": "stKKd",
+                            "score": 7,
+                            "created_utc": 1653461837.0,
+                            "response": "I just crossposted. All credits to /u/elizabethereum",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9wqv2t",
+                    "author": "cosmic-comedy",
+                    "score": 3,
+                    "created_utc": 1653463813.0,
+                    "response": "should probably be crossposted in the /r/ethfinance daily",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9xs27r",
+                            "author": "stKKd",
+                            "score": 1,
+                            "created_utc": 1653488351.0,
+                            "response": "Not familiar how the daily works. Can you do it for us please?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9x9c2v",
+                    "author": "frank__costello",
+                    "score": -6,
+                    "created_utc": 1653478947.0,
+                    "response": "My hot take:\n\nNobody wants an ETH/XMR atomic swap, and this will get almost no usage\n\nNot hating, innovation is always good, but just trying to be real",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9xrt60",
+                            "author": "stKKd",
+                            "score": 5,
+                            "created_utc": 1653488243.0,
+                            "response": "Oh, just wait for crazy crackdown on privacy coming from EU and USA. Those politicians want to KYC self-custody wallets. Those of us who wants to keep a minimum of privacy (the same kind of privacy we can have with cash) will rush XMR and will use the easiest way to swap.\n\nDisclaimer: I'm leverage long on XMRBTC since early 2022",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9y1h8k",
+                                    "author": "Sylentwolf8",
+                                    "score": 3,
+                                    "created_utc": 1653492212.0,
+                                    "response": "Honestly this swap might be one of the most important things for XMR. The biggest pain with Monero is going from fiat -> XMR. ETH is easy to acquire via fiat.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9y5isx",
+                                    "author": "frank__costello",
+                                    "score": 2,
+                                    "created_utc": 1653493817.0,
+                                    "response": "I agree, I'm just not sure people are going to use XMR for that privacy.\n\nEspecially when protocols like Aztec and Railgun allow privacy on top of Ethereum, without requiring new, volatile assets",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9xt9uz",
+                                    "author": "Crypto_Economist42",
+                                    "score": 1,
+                                    "created_utc": 1653488858.0,
+                                    "response": "This is correct. \n\nFew understand this\n\nHowever there will be loopholes. I.e. just move to El Salvador",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "id": "ux899e",
             "title": "When I try to mint an NFT on Etherscan/Polygonscan/etc., what is the purpose of the \"metadata (uint256)\" field?",
             "url": "https://www.reddit.com/r/ethereum/comments/ux899e/when_i_try_to_mint_an_nft_on/",
             "author": "FestiveUnderground",
             "created_utc": 1653448966.0,
             "score": 2,
-            "num_comments": 4,
+            "num_comments": 8,
             "subreddit": "ethereum",
             "selftext": "Usually, there's just \"payable amount\" and \"mint number\", but sometimes there's also a 3rd field called \"metadata\". What does this field even do, and what should I put in it to mint my NFT?",
             "stickied": false,
@@ -23,7 +141,7 @@
                 {
                     "id": "i9w73fd",
                     "author": "greatgoogelymoogely",
-                    "score": 1,
+                    "score": 2,
                     "created_utc": 1653450297.0,
                     "response": "You can point to a .json file on ipfs or whatever which would optionally define attributes. In collections this would also serve to define rarities within the marketplace.",
                     "depth": 1,
@@ -31,11 +149,21 @@
                         {
                             "id": "i9wcric",
                             "author": "FestiveUnderground",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1653453563.0,
                             "response": "I'm not the contract owner, I'm asking about when I'm minting from someone else's collection. \n\nhttps://cdn.discordapp.com/attachments/949030462196691014/976610289850146866/Screenshot_2022-05-19_061910.png",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i9x3xhs",
+                                    "author": "WildRacoons",
+                                    "score": 2,
+                                    "created_utc": 1653475254.0,
+                                    "response": "Really depends on the contract implementation. They might use it to generate a rarity/attribute. You could check previous mints on the same contract or look at the code to get an idea",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         }
                     ]
                 },
@@ -56,82 +184,12 @@
             "url": "https://www.reddit.com/r/ethereum/comments/ux8a7l/zhu_su_is_a_modern_day_crypto_snake_oil_salesmen/",
             "author": "lost_civilizations",
             "created_utc": 1653449062.0,
-            "score": 3,
-            "num_comments": 1,
+            "score": 0,
+            "num_comments": 4,
             "subreddit": "ethereum",
             "selftext": "discuss.\n\n[https://www.reddit.com/r/Avax/comments/ux27n7/where\\_is\\_su\\_zhu/](https://www.reddit.com/r/Avax/comments/ux27n7/where_is_su_zhu/)\n\n&#x200B;\n\n&#x200B;\n\nhttps://preview.redd.it/ayr6ojrfjj191.png?width=500&format=png&auto=webp&s=81a43d18652ca1467a0fb27a2fd68feae40aa3e4",
             "stickied": false,
             "comments": []
-        },
-        {
-            "id": "ux890s",
-            "title": "ETH-Monero XMR Atomic Swap live on stagenet!",
-            "url": "/r/Monero/comments/ux6lzk/ethxmr_atomic_swap_development_update_live_on/",
-            "author": "stKKd",
-            "created_utc": 1653448942.0,
-            "score": 39,
-            "num_comments": 8,
-            "subreddit": "ethereum",
-            "selftext": "",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i9wjq46",
-                    "author": "Perleflamme",
-                    "score": 6,
-                    "created_utc": 1653458180.0,
-                    "response": "This is great for the ecosystem.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i9wjz7i",
-                            "author": "imperator285",
-                            "score": 4,
-                            "created_utc": 1653458366.0,
-                            "response": "Us Monero folks could not be happier!",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i9wntqc",
-                    "author": "dynamicallysteadfast",
-                    "score": 5,
-                    "created_utc": 1653461315.0,
-                    "response": "When swapping from XMR to Eth\n\n\nIs it at all evident that the Eth came from an atomic swap?\n\n\nThanks for your work btw, people like you are pioneers, driving the world forwards. Thank you!",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i9wohab",
-                            "author": "stKKd",
-                            "score": 5,
-                            "created_utc": 1653461837.0,
-                            "response": "I just crossposted. All credits to /u/elizabethereum",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i9wqv2t",
-                    "author": "cosmic-comedy",
-                    "score": 1,
-                    "created_utc": 1653463813.0,
-                    "response": "should probably be crossposted in the /r/ethfinance daily",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i9x9c2v",
-                    "author": "frank__costello",
-                    "score": 0,
-                    "created_utc": 1653478947.0,
-                    "response": "My hot take:\n\nNobody wants an ETH/XMR atomic swap, and this will get almost no usage\n\nNot hating, innovation is always good, but just trying to be real",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
         }
     ]
 }

@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/Bitcoin/comments/uxaln4/bitcoin_halving_countdowns_whats_the_difference/",
             "author": "Lifter_Dan",
             "created_utc": 1653457683.0,
-            "score": 1,
-            "num_comments": 8,
+            "score": 5,
+            "num_comments": 11,
             "subreddit": "Bitcoin",
             "selftext": "676 days here: [https://www.buybitcoinworldwide.com/bitcoin-clock/](https://www.buybitcoinworldwide.com/bitcoin-clock/)\n\n745 days here: [https://academy.binance.com/en/halving](https://academy.binance.com/en/halving)\n\nMaybe they assume different block times?\n\nIs the Binance one more accurate because it's adjusting the block time on the fly? Why has the block time increased and can we assume that is temporary?",
             "stickied": false,
@@ -23,16 +23,45 @@
                 {
                     "id": "i9wkfoa",
                     "author": "nullama",
-                    "score": 6,
+                    "score": 10,
                     "created_utc": 1653458703.0,
                     "response": "There's only blocktime, any other date is just a guess.",
                     "depth": 1,
                     "comments": []
                 },
                 {
+                    "id": "i9wo3rx",
+                    "author": "JeremyBF",
+                    "score": 7,
+                    "created_utc": 1653461535.0,
+                    "response": "The halving doesn't happen after a certain amount of time. It happens after a certain number of blocks, 210,000 blocks to be exact. Since we know the average time between blocks the date at which this occurs can be predicted, but fluctuations in the total hash rate and chance effects of finding / not finding a block can affect this prediction.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9wp993",
+                            "author": "Lifter_Dan",
+                            "score": 1,
+                            "created_utc": 1653462463.0,
+                            "response": "Thanks, yeah I was thinking by now there would be a good way to estimate the average block time assuming there's no nuclear war that keeps knocking out hash rate repeatedly.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9wq908",
+                                    "author": "JeremyBF",
+                                    "score": 5,
+                                    "created_utc": 1653463290.0,
+                                    "response": "The hash rate just isn't all that predictable:  \nhttps://data.nasdaq.com/data/BCHAIN/HRATE-bitcoin-hash-rate",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "i9wke20",
                     "author": "menjay28",
-                    "score": 2,
+                    "score": 3,
                     "created_utc": 1653458670.0,
                     "response": "The binance site doesn\u2019t even have the 2020 date on it. It\u2019s incorrect.",
                     "depth": 1,
@@ -49,42 +78,42 @@
                     ]
                 },
                 {
-                    "id": "i9wo3rx",
-                    "author": "JeremyBF",
+                    "id": "i9wrci8",
+                    "author": "dlq84",
+                    "score": 2,
+                    "created_utc": 1653464231.0,
+                    "response": "Read under \"Why Our Estimates Are the Most Accurate\" on the first site.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9yr8x7",
+                    "author": "igadjeed",
                     "score": 1,
-                    "created_utc": 1653461535.0,
-                    "response": "The halving doesn't happen after a certain amount of time. It happens after a certain number of blocks, 210,000 blocks to be exact. Since we know the average time between blocks the date at which this occurs can be predicted, but fluctuations in the total hash rate and chance effects of finding / not finding a block can affect this prediction.",
+                    "created_utc": 1653502281.0,
+                    "response": "The next halving is at block #840000. The exact calendar date is not important  \n\n> can we assume that is temporary?\n\nMore or less. The block time always converges towards 10 minutes because there is a mining target adjustment every 2016 blocks. The adjustment is exactly proportional to the time ratio  \n\n    New Target = Old Target * (Actual Time of Last 2016 Blocks / 20160 minutes)\n\nIn between each adjustment, the block interval could stay above 10 minutes if there are more and more miners retiring. That is, you can assume it is temporary, but there is a scenario where longer block intervals persist  \n\nThe most recent adjustment happened a few hours ago. For several days, it was predicted the difficulty would adjust by -4%, and then the actual adjustment was +0.35%",
                     "depth": 1,
                     "comments": [
                         {
-                            "id": "i9wp993",
-                            "author": "Lifter_Dan",
+                            "id": "i9zc5vw",
+                            "author": "mossgathering",
                             "score": 1,
-                            "created_utc": 1653462463.0,
-                            "response": "Thanks, yeah I was thinking by now there would be a good way to estimate the average block time assuming there's no nuclear war that keeps knocking out hash rate repeatedly.",
+                            "created_utc": 1653510639.0,
+                            "response": ">The most recent adjustment happened a few hours ago. For several days, it was predicted the difficulty would adjust by -4%, and then the actual adjustment was +0.35%\n\nI don't think that's right.  [Looks like it was -4.33%](https://mempool.space/).  Or am I misunderstanding?",
                             "depth": 2,
                             "comments": [
                                 {
-                                    "id": "i9wq908",
-                                    "author": "JeremyBF",
+                                    "id": "i9zgfn2",
+                                    "author": "igadjeed",
                                     "score": 1,
-                                    "created_utc": 1653463290.0,
-                                    "response": "The hash rate just isn't all that predictable:  \nhttps://data.nasdaq.com/data/BCHAIN/HRATE-bitcoin-hash-rate",
+                                    "created_utc": 1653512412.0,
+                                    "response": "https://www.bitrawr.com/difficulty-estimator\n\n> Previous Retarget: Today at 12:54 AM (+0.3457%)",
                                     "depth": 3,
                                     "comments": []
                                 }
                             ]
                         }
                     ]
-                },
-                {
-                    "id": "i9wrci8",
-                    "author": "dlq84",
-                    "score": 1,
-                    "created_utc": 1653464231.0,
-                    "response": "Read under \"Why Our Estimates Are the Most Accurate\" on the first site.",
-                    "depth": 1,
-                    "comments": []
                 }
             ]
         }

@@ -1,0 +1,361 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uxksuw",
+            "title": "The Ethereum beacon chain experienced a 7-block deep reorg. (proposals already exist)",
+            "url": "https://twitter.com/koeppelmann/status/1529458000011972610?cxt=HHwWhMC-2dL83LkqAAAA",
+            "author": "cryptosperm",
+            "created_utc": 1653495117.0,
+            "score": 112,
+            "num_comments": 54,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9yl3ax",
+                    "author": "PinkPuppyBall",
+                    "score": 41,
+                    "created_utc": 1653499871.0,
+                    "response": " \"We suspect this is caused by the implementation of Proposer Boost fork choice has not fully rolled out to the network. This reorg is not an indicator of a flawed fork choice, but a non-trivial segmentation of updated vs out of date client software.\"\n\nhttps://twitter.com/preston_vanloon/status/1529459296668471297",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yluc2",
+                            "author": "bandoonparade",
+                            "score": 49,
+                            "created_utc": 1653500165.0,
+                            "response": "Ok, so in plain English -- a lot of people didn't update their node software?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9zblha",
+                                    "author": "domotheus",
+                                    "score": 53,
+                                    "created_utc": 1653510410.0,
+                                    "response": "in even plainer English, they will have to update it when the merge happens or else they'll be forked off and lose rewards until they do. Post-merge Ethereum is fine.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9zb6x2",
+                                    "author": "cryptOwOcurrency",
+                                    "score": 12,
+                                    "created_utc": 1653510247.0,
+                                    "response": "That is correct.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9y9zwg",
+                    "author": "bluebachcrypto",
+                    "score": 17,
+                    "created_utc": 1653495573.0,
+                    "response": "Explain this to me like I'm five. What is the significance of this event, and what new risks, if any, does it expose or bring to the forefront?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yt4ss",
+                            "author": "Massive_Pin1924",
+                            "score": 23,
+                            "created_utc": 1653503024.0,
+                            "response": "Recent changes to PoS ETH client software intended as safe \"soft fork\" style (and updated checks for good behaving Pos Clients) changes may have caused PoS clients to establish network connections in groups that have similar behavior.\n\nOlder clients generally are connected with other older clients, and newer clients with newer. There would not be many connections between those two groups of clients. So once an older client proposes a block, it's seen and attested to by other older clients. Eventually a large enough group of newer clients comes to a consensus and transmits it through the network to override the block produced by the older client. This produces the reorg.  (Sorry about the inexact terminology but this is probably close to eli5).",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9ytfbv",
+                                    "author": "Massive_Pin1924",
+                                    "score": 13,
+                                    "created_utc": 1653503136.0,
+                                    "response": "This is one argument for continuing to have hard forks vs soft ones.  \nHard forks force people to update their client software.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9z5ppt",
+                                            "author": "Savage_X",
+                                            "score": 1,
+                                            "created_utc": 1653508040.0,
+                                            "response": "Soft forks are generally backwards compatible, so if that is causing a reorg, I am sure it is not by design. A non-optional soft fork would be contentious.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9zaps0",
+                                                    "author": "edmundedgar",
+                                                    "score": 5,
+                                                    "created_utc": 1653510057.0,
+                                                    "response": "Soft forks often cause reorgs when less than 100% of the network is running them. This is the expected behaviour, ie if there's a new rule that 20% of the network doesn't know about, 20% of blocks will get reversed, and sometimes you'll get several in a row and they'll all get reversed.\n\nThere's supposed to be an incentive to quickly upgrade, because otherwise... you'll get your block reorged out. However with this change I guess most of the time you didn't get reorged out, so people felt less urgency to upgrade.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9zd3cq",
+                                                            "author": "Savage_X",
+                                                            "score": 1,
+                                                            "created_utc": 1653511020.0,
+                                                            "response": "I mean, you could design it like that, but you shouldn't.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9zg4h5",
+                                                                    "author": "edmundedgar",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653512281.0,
+                                                                    "response": "No, this is just how soft forks work. \n\nThe \"backwards compatible\" part refers to non-mining nodes: Since a non-mining node isn't making blocks, and blocks that break the new rule are no longer persisting in the longest chain, you can follow the longest chain even if you don't know about the rule. But a mining (or here, staking) node that doesn't know about the rule will make blocks that the majority consider invalid, and the majority will reorg them out.\n\nOne thing you can do is to program the new rule not to take effect until a super-majority of the network has signalled that it's upgraded. But if you set that super-majority threshold at 100% then you'll never get it done, and there's always the possibility that people will signal incorrectly.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9zhbkb",
+                                                                            "author": "Savage_X",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653512777.0,
+                                                                            "response": "It certainly does not have to work that way. IMO it is very wrong if a soft fork introduces a way for older versions to make an invalid block. Pretty sure Bitcoin doesn't do this. Old versions can't include some new transaction types, but they don't make invalid blocks and cause reorgs.\n\nAnything causing a reorg should be a hard fork.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9zjymy",
+                                                                                    "author": "edmundedgar",
+                                                                                    "score": 8,
+                                                                                    "created_utc": 1653513906.0,
+                                                                                    "response": "Introducing a way for older versions to make an invalid block is the *exact definition of a soft fork*. \n\nThis is exactly what Bitcoin does. Bitcoin had quite a long reorg after a change called BIP66. They had a 95% threshold, but one pool, BTCNuggets, wasn't upgraded. BTCNuggets produced a block which broke the new rule introduced in BIP66. Upgraded miners rejected that block and any block built on top of it, causing a reorg. What made it worse on that occasion was that some pools were skipping validation to save time so less than 95% of the hashrate was enforcing the new rule even though 95% had signalled for it, and we ended up with a 6 block reorg, ie a full hour of history was created then erased.\n\nThe difference between a soft fork and a hard fork is that whereas a soft fork makes a block which was valid on the old rules invalid on the new rules, a hard fork makes a block which was invalid on the old rules valid on the new rules. This means that if you have an unupgraded *validating* node it'll still stay on the correct chain after a soft fork, whereas with a hard fork it'll refuse to follow the longest chain with the new rules and stick with a chain that follows the old rules. But if a *mining* node doesn't know what the new validity rules are, it'll obviously make invalid blocks.",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ia0mmk1",
+                                    "author": "Wikilicious",
+                                    "score": 1,
+                                    "created_utc": 1653531704.0,
+                                    "response": "Makes me think clients should refresh their peers. Perhaps an economic incentive to switch peers every so often. Perhaps slightly bias block proposer selection in a way that rewards switching.  \nI\u2019m speaking as an enthusiast not an expert.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9yb4h5",
+                            "author": "cryptosperm",
+                            "score": 28,
+                            "created_utc": 1653496005.0,
+                            "response": "I'm curious too of the significance but Koppelmann (Founder of Gnosis) stated  \n \"This, unfortunately, shows that the analysis by \n@gakonst and @VitalikButerin\n here was too optimistic when the article claimed re-org stability will improve in POS over POW.\nWe have not seen 7 block reorgs on Ethereum mainnet in years.\"\n\nAlso Koppelmann\n \n\"The amount of attention this tweet quickly got - specifically from people not interested in Ethereum success makes me almost regret doing it.\nHowever - I think it is a strength of the Ethereum community to openly discuss all challenges, and spend more energy on finding a better solution, instead of spending time defending an issue.\"",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9ymyty",
+                            "author": "Darius510",
+                            "score": 2,
+                            "created_utc": 1653500604.0,
+                            "response": "As I understand it, something like 1500 transactions ~~were~~ (edit: post-merge, would have ) been cancelled and could be replayed in any order.\n\nIf it was intentional and/or could be repeated, there would be a LOT of money to be made front running DEX trades, etc. 7 blocks is like 84 seconds which is like eternity as these things go. Imagine how much money you could make if you could look 84 seconds into the future and know exactly what was going to happen in terms of pricing. You could buy anything that spiked in price or sell anything that dumped in price.\n\nImagine being the guy who placed the buy order just before the price of something spiked, you start high fiving your bros and then two minutes later, your transaction gets reordered and your buy order goes in after the price spike, not before it. You thought you traded 1000 USDC for 1000 of ShitcoinX at time X, and then two minutes later, it reverses and it turns out you only got 300 of ShitcoinX. And if this could be exploited intentionally, someone could see your transaction, go back in time and buy 300 of shitcoinX for $300 and then force you to buy it for $1000, and there's not a damn thing you can do about it.\n\nIt would basically break DeFi.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9yv3aq",
+                                    "author": "cryptOwOcurrency",
+                                    "score": 25,
+                                    "created_utc": 1653503788.0,
+                                    "response": "> As I understand it, something like 1500 transactions just got cancelled and could be replayed in any order.\n\nNo transactions were canceled or reverted today. The reorg happened on the beacon chain (PoS framework), not the execution chain (Ethereum PoW mainnet).\n\n> If it was intentional and/or could be repeated, there would be a LOT of money to be made front running DEX trades, etc. 7 blocks is like 84 seconds which is like eternity as these things go. Imagine how much money you could make if you could look 84 seconds into the future and know exactly what was going to happen in terms of pricing. You could buy anything that spiked in price or sell anything that dumped in price.\n\nYes, but only post-merge. Only then is the execution chain reliant on the beacon chain, so only then do beacon chain reorgs cause execution chain reorgs.\n\n> Imagine being the guy who placed the buy order just before the price of something spiked, you start high fiving your bros and then two minutes later, your transaction gets reordered and your buy order goes in after the price spike, not before it. You thought you traded 1000 USDC for 1000 of ShitcoinX at time X, and then two minutes later, it reverses and it turns out you only got 300 of ShitcoinX. And if this could be exploited intentionally, someone could see your transaction, go back in time and buy 300 of shitcoinX for $300 and then force you to buy it for $1000, and there's not a damn thing you can do about it.\n\nThat's more an MEV problem than a reorg problem. Either your transaction is front-runnable or it isn't - two minutes of reorg isn't any more useful to a miner than the standard 15 second MEV window between each and every block. This is why dexes have slippage limits (transaction fails if price changes too much before the transaction is included). If you use a sane slippage limit, the situation you described is impossible anyways, as the limit would cancel your transaction.\n\n> It would basically break DeFi.\n\nI think that's really overselling it.\n\nIt's not great news, but it's already fixed in newer client versions, and it's isolated to the beacon chain right now where no real damage can be caused. Plus, it looks to be caused by outdated software, so the problem should fix itself as people update their beacon chain clients. They will be forced to update their clients before the merge anyways, so I believe there is naturally no way this particular issue could ever actually cause any real transactions to revert.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9z51pa",
+                                            "author": "Darius510",
+                                            "score": 2,
+                                            "created_utc": 1653507775.0,
+                                            "response": "I guess I wasn't clear that I meant what I said in a post-merge context. Obv nothing actually happened here because the beacon chain isn't doing anything.\n\nIn either case, this is a prime example of how complexity is the enemy of security. Why didn't they catch this until now? Because its impossible to catch everything, and the more complexity there is, the more opportunity for exploits there will be. The absurd complexity of PoS is a minefield for exploits. Maybe this bug is fixed before it became a problem, but post-merge, there would have been significant repercussions if this happened. Maybe this ONE exploit doesn't break DeFi. What breaks DeFi is the fact that we can't trust that these exploits won't keep happening because the battle tested and dead simple PoW is being replaced by a completely untested in the wild and hyper complex PoS.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia1ynyx",
+                                                    "author": "Perleflamme",
+                                                    "score": 3,
+                                                    "created_utc": 1653565850.0,
+                                                    "response": ">The absurd complexity of PoS is a minefield for exploits.\n\nThen do it. If there's as you claim a minefield of exploits, then exploit. Or rather, reveal it to claim the public bounty. \n\nPeople know that they can't exploit anything yet and have to expose the exploit to get their bounty reward before anyone else does.\n\nYou can't expect collusion between several people who'd know about any exploit, and as such have to expect they'd take the bounty as soon as they spot the vulnerability. The level of collusion you'd need to have people restrain from revealing the exploit would have completely wrecked Bitcoin, as it's the exact same game theory scenario.\n\n>significant repercussions if this happened\n\nThe only repercussion is that some stakers would have their stake slashed for having missed a soft fork. And some transactions would have been regorganized approximately one minute after completion from the point of view of a part of the network. Don't expect stakers to continuously ensure they'd lose their stakes. If anything, this kind of stakers wouldn't matter for long anyway.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "i9zav4i",
+                                                    "author": "cryptOwOcurrency",
+                                                    "score": 11,
+                                                    "created_utc": 1653510115.0,
+                                                    "response": "> Why didn't they catch this until now? \n\nThey caught it in early 2021, [specced it in April of 2021](https://blog.ethereum.org/2021/11/02/finalized-no-31/), and since then implemented a fix into clients.\n\nStakers have been lazy to update their clients because nobody cares and it doesn't really matter to stakers, because the beacon chain doesn't affect the execution chain yet.\n\n> The absurd complexity of PoS is a minefield for exploits.\n\nThe beacon chain's complexity is not absurd by any stretch of that word. If there's anything about it you don't understand, I'm pretty familiar with the specification and would be happy to answer questions to the best of my ability.\n\nEthereum's beacon chain is roughly the same level of complexity as any other PoS protocol. Unless - are you saying that you're a PoW maximalist, and you believe that all blockchains should always use PoW, and no blockchain should ever use any type of PoS?\n\n> Maybe this bug is fixed before it became a problem, but post-merge, there would have been significant repercussions if this happened.\n\nThis is exactly what the testnets are for. Yes, I consider the pre-merge beacon chain to be an incentivized testnet.\n\nPlus, post-merge, stakers would have had strong incentives to prevent this from happening because it would have reverted the execution chain too.\n\n> dead simple PoW\n\nThe current Ethereum chain is not \"dead simple\". While it's true that PoW itself is \"dead simple,\" PoW is only a small component of the existing chain - you can thank the EVM for large amounts of complexity that have led to issues in the past. Even Bitcoin hasn't been immune to consensus bugs - see the value overflow incident and the database fork incident, both of which had a much larger on-chain impact than reverting two minutes of consensus messages on an incentivized testnet.\n\n> completely untested in the wild\n\nBeacon chain PoS is being tested in the wild right now, since December 2020. That's what this is. The pre-merge beacon chain isn't here just for decoration.\n\n> hyper complex PoS\n\nWhat part of it do you not understand? I think it's frankly somewhat lame that you hand wave PoS away with phrases like \"hyper complex\" and \"absurd complexity\" when in reality it's actually a pretty elegant system. Do you want me to link you to an ELI5 on how it works? Do you want me to explain the ethresearch post on this and how it was mitigated in new client releases?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia09zxs",
+                                                            "author": "lorenzomofo",
+                                                            "score": 2,
+                                                            "created_utc": 1653525850.0,
+                                                            "response": "> The beacon chain complexity is not absurd\n\nWhy did it take so many years to release?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia0i7u2",
+                                                                    "author": "cryptOwOcurrency",
+                                                                    "score": 4,
+                                                                    "created_utc": 1653529632.0,
+                                                                    "response": ">Why did it take so many years to release?\n\nIf I remember correctly, the beacon chain was conceptualized some time around 2018-2019, and launched in December 2020, which is a pretty quick turnaround time actually.\n\nEthereum's PoS plans kept being scrapped/redesigned over and over from about 2015 to 2018, and with those revisions, the previous complexity kept being thrown in the trash as they started again from a mostly clean slate.\n\nSince December 2020, it's been all about teaching the execution layer and the beacon chain to talk to each other, and testing that linkage.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "i9ze64q",
+                                                            "author": "Darius510",
+                                                            "score": -2,
+                                                            "created_utc": 1653511464.0,
+                                                            "response": "If there's no transactions on the beacon chain, it's not in the wild in any meaningful way.\n\nIt can't \"not really matter\" and be an \"incentivized testnet\" at the same time. That entire post was one huge contradiction.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9zh4gq",
+                                                                    "author": "cryptOwOcurrency",
+                                                                    "score": 8,
+                                                                    "created_utc": 1653512696.0,
+                                                                    "response": "No transactions \"go on\" the beacon chain. It's a fork choice mechanism. \n\nYou could say that no protocol is safe until it's been fully released in its final environment of economic incentives (\"the wild\"), but follow that logic reducto ad absurdum and you come to the conclusion that no blockchain protocol update is safe, no matter how extensively it has been tested, and that blockchains should never be updated at all.\n\nFrom the perspective of mainnet, it certainly does \"not really matter\" if an \"incentivized testnet\" runs into an issue. The issue was already mitigated in the client version that will be used for the merge. I see no contradiction.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9zqsl5",
+                                                                            "author": "Darius510",
+                                                                            "score": 0,
+                                                                            "created_utc": 1653516883.0,
+                                                                            "response": "Correct. No blockchain protocol update is safe, no matter how extensively it's tested prior to being launched. Once it's launched, the longer it has been running in the wild, the less likely there are to be critical exploits.\n\nNo blockchain should be updated (especially via hard fork) unless it is absolutely necessary and then only after such extensive testing that you're willing to bet your life on it not breaking.\n\nEvery other institution that manages billions of dollars seems to understand the concept of not tinkering with mission critical systems and fixing things that aren't broken. But blockchains seem to get away with it because no one actually cares if it works and builds trust long term, as long as the price keeps going up in the short term.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9zxcjc",
+                                                                                    "author": "cryptOwOcurrency",
+                                                                                    "score": 10,
+                                                                                    "created_utc": 1653519874.0,
+                                                                                    "response": ">No blockchain should be updated (especially via hard fork) unless it is absolutely necessary\n\nIt sounds like you may actually be anti-ethereum. Ethereum has been forward about their pro-hard-fork stance since the network's inception, and the difficulty bomb underpins that ethos - if ETH doesn't undergo a hard fork for a certain amount of time, the chain literally destroys itself. This feature was included in 2015 when Ethereum was launched.\n\nI really wonder whether, with your viewpoints, you might feel more at home with a different cryptocurrency, as those viewpoints run counter to the basic philosophy that the Ethereum dev team has been practicing since launch.\n\nA sampling of Ethereum's many hard forks:\n\n* Tangerine Whistle and Spurious Dragon defended the network against DoS attacks\n\n* Byzantium added opcodes to support Layer 2 networks\n\n* Constantinople added Create2 to support counterfactual contracts\n\n* Istanbul added BLAKE2 \n\n* Berlin added access lists, for contract call optimization\n\n* London added elastic block sizing to help the network deal with bursts in demand\n\nEach of these forks also tweaked opcode pricing, which is very important and can only be done via a hard fork. Basically, Ethereum has undergone many hard forks to tweak parameters, add new features and modify opcodes - the expressiveness of the EVM really necessitates it.\n\n>blockchains seem to get away with it because no one actually cares if it works and builds trust long term\n\nEthereum's hard forks build long term trust. Without these hard forks, Ethereum would be missing many of the features we take for granted today, and a competing network likely would have overtaken it.\n\nGiven your viewpoints, I really wonder what you find attractive enough about Ethereum to bring you to this point of discussion. It seems to me that according to your viewpoints on what a cryptocurrency should be, Ethereum fundamentally doesn't fit the bill - like you're trying to make Ethereum into something that it's never been.",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "ia07cia",
+                                                                                            "author": "Darius510",
+                                                                                            "score": 2,
+                                                                                            "created_utc": 1653524601.0,
+                                                                                            "response": "And there\u2019s the purity test. I\u2019m surprised it took so long. \n\nLet me put it this way - I\u2019ve been in the Ethereum ecosystem in one way or another since the very beginning. Back then it no one thought it would take 7 years to get to the point where we are. There was a lot less big money floating around then and a lot more people who understood the fundamentals of what made crypto special. It seemed well understood back then that the hard forks shouldn\u2019t go on forever. No one thought they\u2019d have to. \n\nIn all that time we\u2019ve seen many shitcoins come and go. Too complex in most cases, typically with founders and dev teams that just couldn\u2019t let go, stop tinkering and just let it harden. They\u2019d get exploited one way or another or ASICs would take over their networks and make them insecure. \n\nSo here we are what, 8 years later, and Ethereum has arguably the most decentralized mining and has proven nearly immune to basic attacks. Exactly what you\u2019d want as a foundation. Where it fails isn\u2019t at the protocol level, it\u2019s typically in poorly tested, too complex dapps. And somehow that mentality has seeped into the protocol level and at this point the developers seem intent to bring that level of uncertainty and vulnerability to the very foundation. And at this point anyone that speaks out against that gets silenced and shooed away and told they don\u2019t belong, just like you\u2019re doing right now. \n\nSo yeah, on some level you\u2019re right. I\u2019m not too happy about what it\u2019s become and where it\u2019s headed. It hasn\u2019t always been this way. To be honest every time I see PoS fail in one way or another I\u2019m happy to see it. If I\u2019m being honest, I hope something so catastrophic happens pre-merge that even the most die hard PoS and hard fork acolyte needs to take a step back and reconsider whether it\u2019s worth it. Its running out, but there\u2019s still time to save it before it\u2019s too late.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "id": "i9zt12e",
+                                                                                    "author": "FreeFactoid",
+                                                                                    "score": 3,
+                                                                                    "created_utc": 1653517888.0,
+                                                                                    "response": "It hurts to read your drivel",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "i9zhnlp",
+                                                                    "author": "cryptOwOcurrency",
+                                                                    "score": 4,
+                                                                    "created_utc": 1653512920.0,
+                                                                    "response": "By the way, congrats you're a celebrity now.\n\nhttps://twitter.com/StakeWithPride/status/1529532632350195713",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "ia0px6s",
+                                                            "author": "New_Builder_7302",
+                                                            "score": 1,
+                                                            "created_utc": 1653533259.0,
+                                                            "response": "Do you have the link handy for an ELI5 on ethereum's PoS?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia0werc",
+                                                                    "author": "cryptOwOcurrency",
+                                                                    "score": 5,
+                                                                    "created_utc": 1653536638.0,
+                                                                    "response": "It's kind of a big topic, but here's a good overview:\n\nhttps://ethmerge.com/\n\nIf you have any specific questions, I can do my best to answer them.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ia162v4",
+                                    "author": "Ok-Nefariousness1340",
+                                    "score": 3,
+                                    "created_utc": 1653542879.0,
+                                    "response": "> You thought you traded 1000 USDC for 1000 of ShitcoinX at time X, and then two minutes later, it reverses and it turns out you only got 300 of ShitcoinX.\n\nFortunately there are pretty good protections against this on the application level. Platforms like Uniswap by default revert transactions if the price changes too much before it goes through.\n\nIt would still suck, making a great trade and then it gets retroactively cancelled, but would not be quite as bad as you are describing.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia1kxaj",
+                    "author": "nootropicat",
+                    "score": 2,
+                    "created_utc": 1653555223.0,
+                    "response": "TIL there was a beacon chain soft fork. But why? Should have been a hard fork - no reason to risk network stability just to allow a minority to keep old versions.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9yh5b6",
+                    "author": "krepkiyoreshek2",
+                    "score": 2,
+                    "created_utc": 1653498336.0,
+                    "response": "Mmmmm Bacon\u2026",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia2315x",
+                    "author": "thecultofoil",
+                    "score": 1,
+                    "created_utc": 1653568387.0,
+                    "response": "Can someone explain this in football terms?",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

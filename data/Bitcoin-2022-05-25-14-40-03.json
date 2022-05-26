@@ -1,0 +1,2471 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uxipjz",
+            "title": "Turning an Old Smartphone into a Wallet",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uxipjz/turning_an_old_smartphone_into_a_wallet/",
+            "author": "extrastone",
+            "created_utc": 1653489168.0,
+            "score": 5,
+            "num_comments": 27,
+            "subreddit": "Bitcoin",
+            "selftext": "Hi.\n\nI'm thinking about reformatting an old smartphone and turning it into a bitcoin wallet.\n\nI'm considering using f-droid.\n\nAny advice?  Is this a bad idea?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9xxxlj",
+                    "author": "DudeIncogneto",
+                    "score": 7,
+                    "created_utc": 1653490777.0,
+                    "response": "Not a very good idea. You're using a general use device to try and protect your bitcoin.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9xz5vj",
+                            "author": "extrastone",
+                            "score": 2,
+                            "created_utc": 1653491277.0,
+                            "response": "I do not understand.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9y0m50",
+                                    "author": "Amoci",
+                                    "score": 6,
+                                    "created_utc": 1653491870.0,
+                                    "response": "Your old phone is meant to do many things. It\u2019s not designed specifically for Bitcoin security.\n\nTo go with this, does your old phone continue to receive updates to address vulnerabilities?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9z9259",
+                                            "author": "Ok_Economics1981",
+                                            "score": 1,
+                                            "created_utc": 1653509383.0,
+                                            "response": "do you think bitcoin will be globablly adopted if they cant use a general use device to carry a wallet over the streets?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9zd75e",
+                                                    "author": "Amoci",
+                                                    "score": 1,
+                                                    "created_utc": 1653511064.0,
+                                                    "response": "You can use a general use device to carry a wallet over the streets. We've been doing that for years now.\n\nI'm talking about an old phone that I'm assuming is not going to be online and receiving updates regularly, which is why I asked if it is going to continue to receive updates to address vulnerabilities.\n\nTwo points:\n\n1. Do not carry the keys to your entire stack of satoshis on your cell phone.  \n\"Would you walk around with $5M in a briefcase just to go to buy some coffee?\"\n2. Do not carry the keys to any of your satoshis on an outdated device.  \n\"Would you walk around with $5M a clear plastic bag?\"",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9y48re",
+                                    "author": "DudeIncogneto",
+                                    "score": 3,
+                                    "created_utc": 1653493312.0,
+                                    "response": "A hardware wallet is a piece of specialized hardware that never connects to the internet and keeps you private keys offline. A old smartphone needs to connect to the internet to download the wallet program and broadcast transactions. It is designed for general use meaning the attack surface is very large because it has many uses.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9yj7nm",
+                                    "author": "life762",
+                                    "score": 2,
+                                    "created_utc": 1653499147.0,
+                                    "response": "An old phone might make a good mobile wallet. It's not an alternative to a special purpose hardware wallet.\n\nI would treat an old phone wallet like any other hot wallet. I wouldn't trust it with more than petty cash, what I might carry around for daily needs. But then I might as well use my regular phone for that. So I don't know of any good use case for an old phone wallet.\n\nFor cold storage, get a real hardware wallet. Or multiple for a multisig. There is no substitute.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9z94bk",
+                                    "author": "Ok_Economics1981",
+                                    "score": 1,
+                                    "created_utc": 1653509408.0,
+                                    "response": "use bitcoin in a phone, but not as a main wallet",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9y1wi9",
+                    "author": "Thanatos_1",
+                    "score": 5,
+                    "created_utc": 1653492385.0,
+                    "response": "You can keep the phone eternally offline by using either Electrum or BlueWallet. Here's my copypasta for that, just substitute \"offline Laptop\" for your smartphone.\n\nOne other thing: To install Electrum, I would either transfer it via a USB-thumb drive (with an adaptor for micro usb or usb-c), a micro-sd-card (if your old phone has such a connector), or make a wifi-hotspot with a unique name and password to once install Electrum. Then go into airplane mode and make the phone forget that hotspot and also delete the hotspot settings, so you don't accidentally turn it on again. Now the phone shouldn't have any knowledge of any wifi networks whatsoever it could accidentally use.\n\nAnd you can encrypt the local Electrum (or BlueWallet) installation on the phone.\n\nNote: Install Electrum ONLY from https://electrum.ORG or, if you use F-Droid or Google Play Store, make doubly sure it's the correct publisher for Electrum. Getting people to install counterfeit Electrum-malware is a very common attack against Bitcoin users. Anyway, here's the copypasta. Watch the videos to get an idea how an eternally offline computer would sign transactions:\n\nYou can either buy an off-the-shelf, cheap laptop or use your existing hardware to achieve cold storage.\n\nDownload Tails (https://tails.boum.org/) and run it from a DVD or USB-drive.\n\nRefrain from connecting to any network.\n\nCreate an Electrum wallet. Make two seed backups (paper, metal, brain,...), because Tails is an amnesiac system, meaning it will forget all settings, including your seed, upon reboot.\n\nHere are old but very explanatory videos of how cold storage with Electrum works:\n\n* Part 1: https://www.youtube.com/watch?v=z9K3CozQpzM\n* Part 2: https://www.youtube.com/watch?v=WK4JmfMCDBg (redundant, because Tails exists)\n* Part 3: https://www.youtube.com/watch?v=SBVyFRb6ZZc\n\nTip: If you're using an Android device (a $50 tablet is enough) as your online-connected watch-only device, you can very handily transport unsigned and signed transactions between the laptop and the Android device using QR-codes.\n\n**ATTENTION:** The only legitimate source from which Electrum can be obtained is https://electrum.org. By using the Electrum installation that comes with Tails (https://tails.boum.org is the only legitimate place to obtain Tails from), you're introducing one possibly weak link into your setup. Same goes for downloading the Electrum app on Android. While the Google Play Store might be relatively secure, as is Tails, relatively secure, you do introduce another point of failure and trust. Learn how to download, verify and use the official Electrum releases from https://electrum.org. You can see Thomas Voegtlin's (the lead developer of Electrum) GPG-fingerprint in this video, where he is giving a lecture: https://www.youtube.com/watch?v=hjYCXOyDy7Y. Here is a reproduction of that fingerprint:\n\n`6694 D8DE 7BE8 EE56 31BE D950 2BD5 824B 7F94 70E6`",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9y238g",
+                    "author": "baloo82",
+                    "score": 2,
+                    "created_utc": 1653492459.0,
+                    "response": "And what\u2019s the idea about how you will be using this wallet? Why the old phone and not your new phone?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ycys8",
+                    "author": "NYKNYb",
+                    "score": 2,
+                    "created_utc": 1653496721.0,
+                    "response": "You might as well use your phone. For everyday change, that's good.\n\nOtherwise you need a cold wallet.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9xxtoy",
+                    "author": "Nada_Lives",
+                    "score": -1,
+                    "created_utc": 1653490733.0,
+                    "response": "It's what I do. \n\nInstall Electrum, and participate over your local wi-fi. Turn the cellphone off, and you have a cold wallet. Even safer is to run it behind a local node.\n\nF-droid is one place you can get your software, but as with EVERYTHING you put on your machine, verify the checksums.\n\n(But how do I do that, Nada? I'm just a newbie!)\n\nRead the instructions. Or get awful advice from the internet.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9y0snr",
+                            "author": "Amoci",
+                            "score": 2,
+                            "created_utc": 1653491944.0,
+                            "response": "That\u2019s not a cold wallet. Cold wallet never touches the internet.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9y82r0",
+                                    "author": "Nada_Lives",
+                                    "score": 0,
+                                    "created_utc": 1653494814.0,
+                                    "response": "Hello? *\"Even safer is to run it behind a local node.\"*\n\nThanks for the downvote. Keeps me honest.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9yahxr",
+                                            "author": "Amoci",
+                                            "score": 2,
+                                            "created_utc": 1653495762.0,
+                                            "response": "Hello. Local node or not, a cold wallet never connects to the internet.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9yd54b",
+                                                    "author": "Nada_Lives",
+                                                    "score": 0,
+                                                    "created_utc": 1653496791.0,
+                                                    "response": "It's behind a proxy that does. Just like locally thru a full node.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9ykkgt",
+                                                            "author": "Amoci",
+                                                            "score": 1,
+                                                            "created_utc": 1653499664.0,
+                                                            "response": "Still not a cold wallet. Google \"what is a cold wallet\", please.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9y0eui",
+                            "author": "extrastone",
+                            "score": 1,
+                            "created_utc": 1653491787.0,
+                            "response": "Just to be clear: you use Electrum on f-droid.   Anything else I should know?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9y7hcl",
+                                    "author": "Nada_Lives",
+                                    "score": 2,
+                                    "created_utc": 1653494585.0,
+                                    "response": "No. That is not what F-Droid does. You download programs from F-Droid, but NOT Electrum. Go to the Electrum.org website and read the sentence at the very top: *Do not download Electrum from another source than electrum.org, and learn to verify GPG signatures.*\n\nWhat's up with the downvotes?",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9y14m4",
+                    "author": "Amoci",
+                    "score": 1,
+                    "created_utc": 1653492074.0,
+                    "response": "https://www.reddit.com/r/Bitcoin/comments/r6q0ov/creating_a_cold_wallet_using_an_old_airgapped",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9y5828",
+                    "author": "BTCMachineElf",
+                    "score": 1,
+                    "created_utc": 1653493701.0,
+                    "response": "It's actually pretty safe. I wouldn't trust the average PC, but an old phone, no problem. I've used them on and off for years and have never heard of anyone getting their wallet hacked out of their phone. Just use a good open source bitcoin only wallet like blockstream green, bluewallet, electrum. \n\nBut if your hodl gets to a few thousand $ worth, it just makes sense to invest in a hardware wallet (coldcard or trezor).",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9yd57j",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1653496792.0,
+                    "response": "This works OK, until the phone decides to enable the network connections you disabled  \nThe Purism phone has physical switches to prevent this, but it's probably too expensive to use as an off-line wallet",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yksj5",
+                            "author": "Amoci",
+                            "score": 1,
+                            "created_utc": 1653499752.0,
+                            "response": "Right, might as well buy a ColdCard or other Offline Signing Device.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9xwa52",
+                    "author": "xxthrow2",
+                    "score": -1,
+                    "created_utc": 1653490104.0,
+                    "response": "its a great idea since for one you know that the electronics have had time to burn in and so a failure right now is very very unlikely.  You do not need to write down a 24 word seed phrase.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yi9h5",
+                            "author": "life762",
+                            "score": 2,
+                            "created_utc": 1653498776.0,
+                            "response": "Such bad advice.\n\nAlways back up your wallet. Unless you don't care about losing your money.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ycj99",
+                    "author": "HeatSeekingPanther",
+                    "score": 0,
+                    "created_utc": 1653496551.0,
+                    "response": "Sounds like a pretty fun task to me. Do it. You\u2019ll learn a whole lot. I\u2019m sure there are ways to air gap the device.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uxio1g",
+            "title": "Portfolio Diversity - What's the point?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uxio1g/portfolio_diversity_whats_the_point/",
+            "author": "SecretBuffaloSound",
+            "created_utc": 1653489045.0,
+            "score": 112,
+            "num_comments": 263,
+            "subreddit": "Bitcoin",
+            "selftext": "When I got into crypto, I sold all my stocks on Robinhood to buy BTC.\n \n I'm 35 and I'm just now getting into \"investing\". Once I came to understand what Bitcoin is, and learning more about the current trainwreck that is the financial system, I started to become pretty anti-corporate, and skeptical of the stock market. Why would I want to invest in these evil corpos when I can buy BTC and invest in myself?\n\n I'm never one to let my rage toward the government and corporations go unchecked. So I guess my question is, what's the point in investing in stocks right now? Or other crypto projects even? BTC seems to be the supreme investment for underdogs like myself.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9xw5s9",
+                    "author": "HeatSeekingPanther",
+                    "score": 90,
+                    "created_utc": 1653490055.0,
+                    "response": "Oops! All bitcoin.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yhy5e",
+                            "author": "UrbanPugEsq",
+                            "score": 14,
+                            "created_utc": 1653498653.0,
+                            "response": "And I\u2019m sitting here eating crunch berries.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9zgewt",
+                            "author": "Vaginosis-Psychosis",
+                            "score": 3,
+                            "created_utc": 1653512403.0,
+                            "response": "Samesies and never felt better. Sleep much better too.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9yo4db",
+                    "author": "MrQ01",
+                    "score": 17,
+                    "created_utc": 1653501053.0,
+                    "response": "The point of diversification is to spread your risk.\n\nIf you don't like to invest in corporations then no one is forcing you. But if you're going to go \"All in\" in BTC because you believe it to be the \"unsinkable ship\" then that's putting yourself at a high level of risk - especially if governments start attacking Bitcoin.\n\nSo if you think about going all in, then its hoped that you're the type of Bitcoin Maxi that doesn't mind the possibility of something causing price to drop to $0 and, in the case of a global ban, your entire net worth only being useful in the black market.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9zzfjg",
+                            "author": "theslapzone",
+                            "score": 2,
+                            "created_utc": 1653520854.0,
+                            "response": "The Black Market... good times.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9z06o5",
+                            "author": "Main_Sergeant_40",
+                            "score": 2,
+                            "created_utc": 1653505810.0,
+                            "response": "Highly unlikely but it\u2019s a solid point.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia0bagb",
+                            "author": "tradincoins",
+                            "score": 1,
+                            "created_utc": 1653526457.0,
+                            "response": "I'm really sorry about the fact that it is not going to work for them it has not really worked for a lot of people as well\n\nWhat we call them that we are going to see a lot of changes in the situation is it had already been changed.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9yggwh",
+                    "author": "donmulatito",
+                    "score": 14,
+                    "created_utc": 1653498073.0,
+                    "response": "40. BTC and Real Estate only.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yyovp",
+                            "author": "Main_Sergeant_40",
+                            "score": 5,
+                            "created_utc": 1653505210.0,
+                            "response": "Pretty solid portfolio right here",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9z18y0",
+                                    "author": "donmulatito",
+                                    "score": 5,
+                                    "created_utc": 1653506239.0,
+                                    "response": "Thanks. it works for me. Not a fan of the idea of diversification for the sake of diversification.  It doesn't make sense to me to invest in a bunch of different things I don't have much conviction in \"just it case\".",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia01va3",
+                            "author": "dalderda",
+                            "score": 1,
+                            "created_utc": 1653522014.0,
+                            "response": "I think that kind of market is totally different from what we had seen.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9xzflt",
+                    "author": "turbosecchia",
+                    "score": 48,
+                    "created_utc": 1653491387.0,
+                    "response": "Wtf does \u201canti-stock market\u201d even mean. \n\nYou\u2019re asking what is the point of diversification. The point for example is that BTC has gone down like 50% over the last few months while energy stocks went up. \n\nThat means that if you had energy stocks rather than fiat, you would be able to buy more BTC with your savings now. \n\nOr for example, some stocks benefit from recession such as discount grocery shops etcetera. If you hold those and a recession hits, then you preserve wealth throughout a bear market and you are able to afford to borrow, invest, spend etc just as much without being stuck waiting for the market to get better, which can even take a decade such as in 2001-2011. \n\nThe point of diversification overall is to stay afloat regardless of whatever the market is doing.\n\nOverall if you have a large stack of wealth, by being diversified you get to be wealthy in all markets conditions rather than being left hoping the market goes your way.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9y3dwv",
+                            "author": "BTCstack3r",
+                            "score": 5,
+                            "created_utc": 1653492976.0,
+                            "response": "I just checked one of the ishares energy etfs and it is down as well...\n\nUSD or a OTM put option on SPX would have been a better \"deworsification\"...",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9y3mx1",
+                                    "author": "turbosecchia",
+                                    "score": 8,
+                                    "created_utc": 1653493075.0,
+                                    "response": "Exxon is up 50% year to date.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9y41dh",
+                                            "author": "Zebleblic",
+                                            "score": 2,
+                                            "created_utc": 1653493233.0,
+                                            "response": "Fuck the oil companies.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9y5nqh",
+                                                    "author": "turbosecchia",
+                                                    "score": 20,
+                                                    "created_utc": 1653493870.0,
+                                                    "response": " Great financial insight. Thanks",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9y6zm2",
+                                                            "author": "Zebleblic",
+                                                            "score": 6,
+                                                            "created_utc": 1653494394.0,
+                                                            "response": "I personally won't invest in companies that I don't morally believe in. I dobt understand how anyone can invest in these corporations. Just a bunch of greedy ass hats I guess.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9y8bi2",
+                                                                    "author": "turbosecchia",
+                                                                    "score": 31,
+                                                                    "created_utc": 1653494910.0,
+                                                                    "response": "Look I understand what you want.\n\nThere is a difference between what you want to be true and what is true.\n\nThe reality as of 2022 is that renewables aren\u2019t ready to substitute oil. Oil is truly remarkable because it\u2019s incredibly dense, from a little bit of it you get an absurd amount of energy, 24/7. \n\nLook up [this research](https://www.drexel.edu/~/media/Files/greatworks/pdf_sum10/WK8_Layton_EnergyDensities.ashx): oil is much more energy dense than all else (except nuclear)  \n\nThat is why people like Joe Biden, who agree with your spirit on clean energy, came into office announcing \u201cthe \u201cGreen New Deal\u201d but as soon as the price of oil went up, suddenly he\u2019s very grateful he\u2019s got his Strategic oil Reserves and is desperate to lower the oil price. \n\nIf you\u2019re interested, the only real candidate to displace Oil in 2022 is Nuclear. But that will take a long time. Renewables will take a few decades, *at least*. \n\nTo make this very clear to you: given the lower energy density of renewable today compared to oil, it is impossible to switch away from oil completely right now unless you are willing to accept a drastically reduced standard of living. \n\nIn the meantime, the reality is this: you are stuck with oil. So either:\n\n- stop using electricity, modern conveniences and transportation or;\n\n- stop being hypocritical and judging morally a company for providing you with something that you need and ask for.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9ya8pz",
+                                                                            "author": "Zebleblic",
+                                                                            "score": 12,
+                                                                            "created_utc": 1653495664.0,
+                                                                            "response": "We should be going with nuclear. I work in the field running boilers. I've worked in a coal power plant, one of my best friends works at a refinery, and  I worked on oil leases building pump Jack's and piping them all together. These companies are super fucked. I chose to get out or the industry on moral grounds and will not go back. I could go work at an oilsite tomorrow and make twice as much money but want nothing to do with it.\n\nI actually work at a geothermal plant now.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9yy7gi",
+                                                                                    "author": "testtech2522",
+                                                                                    "score": 3,
+                                                                                    "created_utc": 1653505015.0,
+                                                                                    "response": "I work at a nuclear supplier I doubt we could handle the demand if dozens of companies wanted them. There are only a handful of companies that are able to do it. Also it takes about a decade for it to come online.",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i9ze6ad",
+                                                                                            "author": "Zebleblic",
+                                                                                            "score": 4,
+                                                                                            "created_utc": 1653511466.0,
+                                                                                            "response": "We should have been building more over the past 20 years and ramping up production to make more.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "i9yx8y3",
+                                                                            "author": "testtech2522",
+                                                                            "score": 2,
+                                                                            "created_utc": 1653504634.0,
+                                                                            "response": "You are spot on!",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        },
+                                                                        {
+                                                                            "id": "ia1esh2",
+                                                                            "author": "229media",
+                                                                            "score": 2,
+                                                                            "created_utc": 1653549738.0,
+                                                                            "response": "I think OIL is the thing that is going to use more and more very the time,\n\nWith the increase in the use case of the oil, the demand never gonna goes down for those companies.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        },
+                                                                        {
+                                                                            "id": "i9ym8b8",
+                                                                            "author": "AskALettuce",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653500317.0,
+                                                                            "response": ">oil is incalculably less energy dense than oil.\n\nI can't agree with that. Can you explain?",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9ynle5",
+                                                                                    "author": "turbosecchia",
+                                                                                    "score": 2,
+                                                                                    "created_utc": 1653500847.0,
+                                                                                    "response": "Yeah it\u2019s a wrong sentence lol. Makes no sense. Should be renewables in first and then oil at the end of the sentence. My bad.",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "ia093mg",
+                                                                            "author": "Alea_Iacta_Est21",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653525427.0,
+                                                                            "response": "Daimmmnnnnnnn \ud83d\ude05",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "i9zp6vi",
+                                                                    "author": "Soi_Boi_13",
+                                                                    "score": 0,
+                                                                    "created_utc": 1653516169.0,
+                                                                    "response": "You don\u2019t believe in oil, the lifeblood of the modern economy that has lifted billions of people out of poverty?  It wouldn\u2019t have happened without oil and fossil fuels.  Truth and fact you can\u2019t deny.  Yes, we should move away from them as we\u2019re able to going forward, but the demonization of oil as if it\u2019s an evil thing is insane!  You wouldn\u2019t be typing on your computer and Bitcoin wouldn\u2019t even be a thing without oil!!!",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "ia1lsb1",
+                                                                            "author": "gi4no88",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653555997.0,
+                                                                            "response": "Oil is the thing that is making the money for some big countries.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        },
+                                                                        {
+                                                                            "id": "i9zpz2w",
+                                                                            "author": "Zebleblic",
+                                                                            "score": 0,
+                                                                            "created_utc": 1653516513.0,
+                                                                            "response": "Well thats pretty obvious, but its also pretty obvious the oil industry has fought against other energy alternatives and has downplayed the effects on the environment for greed. It is a garbage industry making poison. We may need it, but we should be moving away from its use as fast as possible. Fuck the oil industry.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i9z2tbd",
+                                            "author": "CubeBrute",
+                                            "score": 2,
+                                            "created_utc": 1653506871.0,
+                                            "response": "Trying to choose individual stocks as winners is usually a bad idea when you\u2019re trying to diversify",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i9yif2b",
+                                            "author": "GCTD90",
+                                            "score": 1,
+                                            "created_utc": 1653498837.0,
+                                            "response": "SHELL is doing great too, keep buying oil from Russia",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9ymch6",
+                                    "author": "AskALettuce",
+                                    "score": 1,
+                                    "created_utc": 1653500362.0,
+                                    "response": ">I just checked one of the ishares energy etfs and it is down as well...\n\nWhich one? All the ones I follow are way up.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9yw9tt",
+                                    "author": "testtech2522",
+                                    "score": 1,
+                                    "created_utc": 1653504252.0,
+                                    "response": "XLE ATH today.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9ye16n",
+                            "author": "Jean_Claude_Van_Darn",
+                            "score": 1,
+                            "created_utc": 1653497135.0,
+                            "response": "This^",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9zs2u2",
+                                    "author": "zuoke8888",
+                                    "score": 1,
+                                    "created_utc": 1653517460.0,
+                                    "response": "What do you mean by this can you please explain me so that I can understand.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9y6p8b",
+                    "author": "bri8985",
+                    "score": 29,
+                    "created_utc": 1653494280.0,
+                    "response": "If you are 35 and just starting to invest you probably need to research portfolio theory or if you don\u2019t want to take the time just understand risks at a minimum",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9y8id7",
+                            "author": "SecretBuffaloSound",
+                            "score": 12,
+                            "created_utc": 1653494985.0,
+                            "response": "Thank you. This is my first time hearing the term \"portfolio theory\". I will look into it.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9yipai",
+                                    "author": "jonessc8",
+                                    "score": 11,
+                                    "created_utc": 1653498949.0,
+                                    "response": "You just need to consider what your risk/reward tolerance is.  BTC isn\u2019t a sure thing.  There is a lot of manipulation governments can do against it to make it difficult to utilize the value proposition.\n\nYou may not want to be at a 100% concentration if a scenario like that plays out.  In my opinion, I see BTC just as you do.  However, I don\u2019t think the legacy dollar system is going to fail anytime soon and I also have confidence in a company like Tesla to increase in value.  So to hedge against the reality of BTC failing or being manipulated, I think a company like Tesla is another solid place to take a risk on.\n\nThere are no sure bets in monetary systems at this time.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9ynxf0",
+                                            "author": "One_Psychology_6500",
+                                            "score": 9,
+                                            "created_utc": 1653500978.0,
+                                            "response": "Legacy dollar system absolutely does NOT have to \u201cfail\u201d for bitcoin to \u201cwin.\u201d",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i9yyjh8",
+                                            "author": "Main_Sergeant_40",
+                                            "score": 2,
+                                            "created_utc": 1653505149.0,
+                                            "response": "Tesla feels over valued to me. Can you explain why it\u2019s a good investment right now? I understand it was previously but it\u2019s almost $700B. More than BTC!",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9yzhk1",
+                                                    "author": "dj_destroyer",
+                                                    "score": 3,
+                                                    "created_utc": 1653505526.0,
+                                                    "response": "One of the leading and most advanced companies in battery and cell storage.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9z08xa",
+                                                            "author": "Main_Sergeant_40",
+                                                            "score": 1,
+                                                            "created_utc": 1653505835.0,
+                                                            "response": "But is it over inflated from hype?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9z9hku",
+                                                                    "author": "dj_destroyer",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653509558.0,
+                                                                    "response": "It may indeed be, but it's not simply a car company.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9zf7qj",
+                                                                            "author": "Main_Sergeant_40",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653511899.0,
+                                                                            "response": "I know this. I think most investors do to be honest. I don\u2019t think it would\u2019ve gotten that big being a car company. Every car company has electric cars now",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "i9z0xdq",
+                                                            "author": "DavLithium",
+                                                            "score": 1,
+                                                            "created_utc": 1653506109.0,
+                                                            "response": "Dont they take their batteries from Panasonic?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9z9oze",
+                                                                    "author": "dj_destroyer",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653509643.0,
+                                                                    "response": "They make their own batteries for Tesla vehicles as well as Powerwalls and Powerpacks afaik -- Gigafactory isn't just for show!",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "ia1g759",
+                                                            "author": "mikebutrimov",
+                                                            "score": 1,
+                                                            "created_utc": 1653550979.0,
+                                                            "response": "I think we are moving in the future of the electric car and tesla is surely the trend setter.\n\nStill their are many companies who is trying to figure about the electric car, so i would say best bet.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "i9z0f6l",
+                                                    "author": "HeatSeekingPanther",
+                                                    "score": 2,
+                                                    "created_utc": 1653505904.0,
+                                                    "response": "Tesla, right now, is worth about 23 million bitcoin. Outrageously overvalued in bitcoin terms if you ask me.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9z0sqe",
+                                                            "author": "Main_Sergeant_40",
+                                                            "score": 1,
+                                                            "created_utc": 1653506058.0,
+                                                            "response": "I agree. Im way to late to the party to invest in Tesla now. I still think Bitcoin has a huge future and 5x to 25x potential. Tesla has nothing like that to me. Maybe I\u2019m wrong but I can live with it if I am",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9z2t5b",
+                                                                    "author": "Tiggsweld",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653506869.0,
+                                                                    "response": "Tesla is much more than the cars and batteries.  \n\nThe investment is more on the lines of Elon and everything else he does including the cars.  \n\nSolar panels \nNeurolink \nBoring company\nPi phone \nStarlink \n\nMy belief is that  people are pumping money into  Tesla for the R&D for the future.  Give Elon some cash flow to continue to on changing the game.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9z3fcw",
+                                                                            "author": "Main_Sergeant_40",
+                                                                            "score": 2,
+                                                                            "created_utc": 1653507122.0,
+                                                                            "response": "I understand that. But he\u2019s operating under many hats. His next great revolution/innovation might not fall under the Tesla umbrella. It could be another company. It could be Twitter! Haha",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "i9z5rm8",
+                                                                                    "author": "Tiggsweld",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653508061.0,
+                                                                                    "response": "Correct, which he plans on taking private.  \nAs SpaceX is.  So in investors eyes , Tesla is the only way to invest in Elon.",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "i9zenw8",
+                                                                                            "author": "HeatSeekingPanther",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1653511669.0,
+                                                                                            "response": "The argument is that Tesla is not likely to be worth more than 23 million bitcoin in 10 to 20 years. I'm sticking with Bitcoin for that reason.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "ia1fud0",
+                                                                            "author": "Mari0305",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653550664.0,
+                                                                            "response": "True, people thinks its just ca car or batteries company whenever they heard the Tesla.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "ia0svqg",
+                                                                    "author": "trimbandit",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653534721.0,
+                                                                    "response": "You think the bitcoin market cap can grow to more than 15% of the gdp for the entire world?",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "i9zb61p",
+                                                            "author": "jonessc8",
+                                                            "score": 1,
+                                                            "created_utc": 1653510237.0,
+                                                            "response": "Key word, right now.\n\nI would beg to differ that Bitcoin currently offers significantly greater value than Tesla under current markets.  I do agree that BTC offers a greater and quicker financial upside in comparison in the long run but that\u2019s not now.  The point being made was entirely about diversification since we all are merely \u201cthinking\u201d and cannot determine the future",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9zhsb3",
+                                                                    "author": "HeatSeekingPanther",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653512974.0,
+                                                                    "response": "I think my sats will buy me more shares of Tesla in the coming decades than they will right now. So the choice to buy Bitcoin over Tesla is an easy one for me, right now. I may be wrong, and the diversifier would have beaten my portfolio. But that's simply a calculated risk I'm comfortable taking.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "ia0aoim",
+                                                                            "author": "jonessc8",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653526172.0,
+                                                                            "response": "And what if all governments are pressured to ban bitcoin?  It will become black market and the market cap will die instantly.  What is your BTC backup plan?",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "ia1ibo6",
+                                                                    "author": "maxjetic",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653552874.0,
+                                                                    "response": "True, if you watch the previous data bitcoin over shadow infact any other investing sector in terms of the profit.\n\nAnd this is the main reason why people picking the bitcoin as the first choice.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "i9z2m7m",
+                                                    "author": "Angustony",
+                                                    "score": 1,
+                                                    "created_utc": 1653506791.0,
+                                                    "response": "I'd agree. We might even be right. But that's today. Long term a bit over or a bit under valued on a solid foundation like that won't matter at all. Inflation and fiat printing will take care of that for us if nothing else.\n\n I really wish I had a Satoshi for every time I'd heard \"I wish I'd bought sooner\".",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "ia1kzbn",
+                                                    "author": "yusupan777",
+                                                    "score": 1,
+                                                    "created_utc": 1653555275.0,
+                                                    "response": "One of the reason people choosing the Tesla is the Elon Musk.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i9yjaz7",
+                                            "author": "mgd09292007",
+                                            "score": 1,
+                                            "created_utc": 1653499183.0,
+                                            "response": "I think Tesla is going to be great bet post Q2 earnings.  I think we will see its last dip there because of the Shanghai shutdown and Q3 is going to take off like a rocket.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9yi44u",
+                    "author": "concernedcookie999",
+                    "score": 6,
+                    "created_utc": 1653498718.0,
+                    "response": "As a dude in his thirty\u2019s I diversified by doing real estate and BTC. I understand the lack of confidence in buying part of a company run by some clowns and see BTC and real estate as ways I can have more control over my future.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yzkgx",
+                            "author": "Main_Sergeant_40",
+                            "score": 2,
+                            "created_utc": 1653505559.0,
+                            "response": "I like this. Im hoping to do the same but I want to get to 1 BTC first in this bear market before I move to RE",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9z9vbg",
+                                    "author": "concernedcookie999",
+                                    "score": 1,
+                                    "created_utc": 1653509717.0,
+                                    "response": "Totally logical imo. I\u2019m the type of person who doesn\u2019t want other folks making decisions with my money and I just can\u2019t find a better way than this currently. I\u2019m also a small business owner as well, so yeah it\u2019s definitely a control issue but know thyself.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia0fzaa",
+                            "author": "shuaizend",
+                            "score": 1,
+                            "created_utc": 1653528601.0,
+                            "response": "It has been under the great confidence of their bank to understand it.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia0k9zh",
+                            "author": "Lyt_Diamond_Hands",
+                            "score": 1,
+                            "created_utc": 1653530600.0,
+                            "response": "Love this advice.  Bet on yourself!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9y4x32",
+                    "author": "Boodsie",
+                    "score": 14,
+                    "created_utc": 1653493578.0,
+                    "response": "moving to a solely fiat standard has forced anyone wanting to keep up with inflation to become an investor. this has artificially boosted the price of all stocks because people just passively invest in indexes containing companies they've never heard of. This price premium is going to disintegrate into the future now that we have a proper store of value. index investing will die - but if you see a company that you understand, respect, and see potential in - by all means invest..that is capitalism at it's finest. Just ditch the 'S&P 500 Index 7% return BS.  Save your money in BTC, invest in things you like.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9z2ecl",
+                            "author": "HeatSeekingPanther",
+                            "score": 5,
+                            "created_utc": 1653506702.0,
+                            "response": "The standard of investing right now is to habitually give money to a fund that rotates a large basket of public businesses. The investor is almost certainly ignorant about the contents of the basket, as well as the nature of the products / services provided by each business. They are quite likely to even actively dislike some of the businesses contained in that basket.\n\nIt's absolute madness.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9yne4v",
+                            "author": "11thHourSorrow",
+                            "score": 2,
+                            "created_utc": 1653500768.0,
+                            "response": "(1) Are you saying that index investing will inevitably die because having everyone invested in index stocks--as we've all been advised to do--changes the economic situation such that the seemingly perpetual \\~7% rise disappears?\n\n(2) Or are you saying that because bitcoin acts as a *better* store of value, the use of bitcoin as such will cause index investing to go away?\n\nI would very much be interested in your reasoning behind 1, if that's your claim. I'm not doubting it, I just don't know how it would work.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9yrblv",
+                                    "author": "Boodsie",
+                                    "score": 3,
+                                    "created_utc": 1653502310.0,
+                                    "response": "Moreso aligning with #2, And I'm not really saying that index investing will 100% cease to exist...but the cult around it in its current form seems to be more the result of a lack of a liquid/scarce SoV that should move in direct proportion to inflation/general productivity increases (once BTC is firmly stabilized as a world reserve asset). \n\nMost people with disposable savings understand that money under the mattress is losing value day to day. The most available 'savings tool' most people have now is a 401k tied to target index funds. The bulk of this should disappear",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia0bwym",
+                            "author": "andres25d",
+                            "score": 1,
+                            "created_utc": 1653526749.0,
+                            "response": "We actually have to invest in everything we actually want to do as well.\n\nThis is going to be a major problem that we had seen that this is going to be problem in the future as well.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9y0dew",
+                    "author": "Halo22B",
+                    "score": 4,
+                    "created_utc": 1653491771.0,
+                    "response": "Lots of real companies that make things of value....unfortunately they just aren't sexy (right now....wait for it)\nAs for other crypto projects. There is BTC and then there is everything else.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9z3j0w",
+                            "author": "littlemarc2010",
+                            "score": 1,
+                            "created_utc": 1653507163.0,
+                            "response": "When did you are right awarded because it is about everything new,.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9y94aa",
+                    "author": "bitcoin_islander",
+                    "score": 3,
+                    "created_utc": 1653495225.0,
+                    "response": "I agree. Centralized companies are nothing compared to the decentralization and anti-inflation backing that bitcoin provides.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia0abnl",
+                            "author": "lordhobbington",
+                            "score": 1,
+                            "created_utc": 1653526004.0,
+                            "response": "If it is 12 like this only then they are going to provide a lot of new things.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9xugl4",
+                    "author": "Brainsick001",
+                    "score": 7,
+                    "created_utc": 1653489357.0,
+                    "response": "I feel the same way. -a fellow 30\u2019er",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9y76d7",
+                            "author": "Ultimatenub0049",
+                            "score": 3,
+                            "created_utc": 1653494467.0,
+                            "response": "34 here! \ud83d\udc4b\ud83c\udffb",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia1mj8l",
+                                    "author": "btcneeded90",
+                                    "score": 1,
+                                    "created_utc": 1653556672.0,
+                                    "response": "Will I already think that you are not really that you still got the time.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9yelg4",
+                            "author": "GR1189",
+                            "score": 1,
+                            "created_utc": 1653497351.0,
+                            "response": "Started last year at 31",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia1kgg7",
+                                    "author": "rikandbitcoins",
+                                    "score": 1,
+                                    "created_utc": 1653554799.0,
+                                    "response": "Have been working on the same kind of technology from a long time now.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "ia0q55m",
+                                    "author": "Colombian_Meatsmoker",
+                                    "score": 1,
+                                    "created_utc": 1653533367.0,
+                                    "response": "Yup same",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9zrux0",
+                            "author": "rickdehoop",
+                            "score": 1,
+                            "created_utc": 1653517362.0,
+                            "response": "This is more like what we had expected in the future as well.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9y2mwz",
+                    "author": "BTCstack3r",
+                    "score": 7,
+                    "created_utc": 1653492679.0,
+                    "response": "Same. I was pretty big on investments for over 10 years before i dumped it for bitcoin. Once you throughly seen it you can't unsee it and have to act.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia0n7xn",
+                            "author": "hcaahcaa",
+                            "score": 1,
+                            "created_utc": 1653531983.0,
+                            "response": "I sometime go to really understand how they are going to attract a lot of people like this.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9xyzx3",
+                    "author": "DrognorIronfist",
+                    "score": 3,
+                    "created_utc": 1653491210.0,
+                    "response": "I hope you didn\u2019t buy your BTC through Robinhood though..",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9y03px",
+                            "author": "SecretBuffaloSound",
+                            "score": 4,
+                            "created_utc": 1653491662.0,
+                            "response": "Nope! I've been using Coinbase and transferring to Cold Storage",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9y6bn8",
+                                    "author": "LastRecognition4151",
+                                    "score": 4,
+                                    "created_utc": 1653494131.0,
+                                    "response": "Use Strike. Less fees and Bitcoin only approach. Coinbase is \u2018the Facebook of crypto\u2019, an online casino aimed at not further progressing humanity, but suckling off the fat of hopes, wishes, and the greed of \u2018investors\u2019 looking to get rich quick with literally knowing nothing of what they\u2019re buying.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia1e4nh",
+                                            "author": "cerrusit",
+                                            "score": 1,
+                                            "created_utc": 1653549180.0,
+                                            "response": "Vishwas attend it about it because most of the investors are looking for that only.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9y0py7",
+                                    "author": "DrognorIronfist",
+                                    "score": 2,
+                                    "created_utc": 1653491913.0,
+                                    "response": "Good man!",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia1hy2n",
+                                            "author": "schmidtaltenburg",
+                                            "score": 1,
+                                            "created_utc": 1653552528.0,
+                                            "response": "Ishwar it wanted where can you find a lot of different things like this.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "i9yz8nn",
+                                    "author": "Main_Sergeant_40",
+                                    "score": 2,
+                                    "created_utc": 1653505426.0,
+                                    "response": "Smart. Spoken like a true centralized skeptic \ud83d\udc4d\ud83c\udffc",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "ia1ktsp",
+                                    "author": "obedgha",
+                                    "score": 1,
+                                    "created_utc": 1653555133.0,
+                                    "response": "They will have been starting to hold and over and over now.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia03kd3",
+                            "author": "leoslam",
+                            "score": 3,
+                            "created_utc": 1653522819.0,
+                            "response": "I don't really say that anyone is actually using it as of now.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9yf5ur",
+                    "author": "crinkneck",
+                    "score": 3,
+                    "created_utc": 1653497570.0,
+                    "response": "You do you, but I\u2019m not able to predict the future and prefer having a mix of crypto, stocks, and options.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9zvh16",
+                            "author": "kasock",
+                            "score": 1,
+                            "created_utc": 1653519004.0,
+                            "response": "Just only having a lot of options since we have to regret over it.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9yhwy9",
+                    "author": "in4life",
+                    "score": 3,
+                    "created_utc": 1653498640.0,
+                    "response": "The technical reason is having uncorrelated assets is almost always a positive especially if you're willing to sell some assets / take profits.\n\nThe human factor is that if your entire life savings is wrapped up in one asset then it could cause you to act irrationally or otherwise feel like you're riding an emotional roller coaster. HODL works well until your entire net worth is down 80% and that negative thought of going to zero starts to irrationally plague your mind and you sell the low.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yyc51",
+                            "author": "SecretBuffaloSound",
+                            "score": 1,
+                            "created_utc": 1653505067.0,
+                            "response": "Thank you for this bit of wisdom. I can see how diversification could help me anchor my positions. What has kept me from jumping ship this bear market is just keeping myself in the crypto sphere - being up to date on happenings, which in turn has helped me to see the ear market as an opportunity. I'm still on the fence about diversifying into stocks vs crypto.\n Getting into stocks right now feels more risky somehow.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9z1dnf",
+                                    "author": "in4life",
+                                    "score": 2,
+                                    "created_utc": 1653506291.0,
+                                    "response": "Stocks and crypto aren't your only options. In fact, those are both risk assets and correlated.\n\nIf you're asking the diversification question then I think it's a good idea to look into uncorrelated assets. Doing so helps me keep diamond hands on the risk-on assets I like such as BTC.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9zjqji",
+                                    "author": "BitcoinUser263895",
+                                    "score": 1,
+                                    "created_utc": 1653513812.0,
+                                    "response": "> What has kept me from jumping ship this bear market is just keeping myself in the crypto sphere - being up to date on happenings\n\n\"I listen to a lot of shills on youtube\"",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9zla96",
+                                            "author": "SecretBuffaloSound",
+                                            "score": 1,
+                                            "created_utc": 1653514477.0,
+                                            "response": "Pretty harsh",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9zocll",
+                                                    "author": "BitcoinUser263895",
+                                                    "score": 1,
+                                                    "created_utc": 1653515801.0,
+                                                    "response": "So accurate then? ;)",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "ia1k2n5",
+                                            "author": "tmw2442",
+                                            "score": 1,
+                                            "created_utc": 1653554451.0,
+                                            "response": "Have you seen some of the rocket emoji on the thumbnail is well?",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia1j8p5",
+                            "author": "Karapatian",
+                            "score": 1,
+                            "created_utc": 1653553702.0,
+                            "response": "They will have been trying to sell its lonely from the starting as well.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9yp7q6",
+                    "author": "Silly_Objective_5186",
+                    "score": 3,
+                    "created_utc": 1653501483.0,
+                    "response": "you get compensated for taking risk better by diversification.  rebalancing to your chosen allocations  basically let\u2019s you always be able to \u201cbuy the dip\u201d (even when it keeps on dipping) \ne.g. see these portfolios of leveraged stocks/bonds/crypto:  https://www.reddit.com/r/CryptoCurrencyFIRE/comments/rkw0yi/degenerates_frontier/",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia0nelh",
+                            "author": "luna1939",
+                            "score": 0,
+                            "created_utc": 1653532074.0,
+                            "response": "Are you really sorry about the fact that you are going to rebalance is because it is the not being working for them\n\nAmount of complaints are actually coming and it has not been really working for them.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ytqa6",
+                    "author": "Ryanaguirre97",
+                    "score": 3,
+                    "created_utc": 1653503255.0,
+                    "response": "Bitcoin only bad, stock only bad, bitcoin and stock good",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9yvvan",
+                    "author": "mnijs",
+                    "score": 3,
+                    "created_utc": 1653504093.0,
+                    "response": "An old man once said \"You do not need diversification if you know what you are doing\".",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia0etr3",
+                            "author": "Filantus",
+                            "score": 1,
+                            "created_utc": 1653528077.0,
+                            "response": "I don't really know what they are actually going to do do and what they are actually doing but I think it worked for them as they were in the past\n\nAlready have to forget to what and how it is going to work for themselves diversification is important.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9z10if",
+                    "author": "veggiecrunchwrap",
+                    "score": 3,
+                    "created_utc": 1653506143.0,
+                    "response": "I'm with you, I think Bitcoin is and will be the best form of money for the rest of my life so I'd like to acquire as much as possible",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9z2qh4",
+                    "author": "Scrapin-Nee",
+                    "score": 3,
+                    "created_utc": 1653506839.0,
+                    "response": "Their is no point right now. Stocks will be a good risk/return if we ever have a free market again. Maybe after the biggest recession we will ever see. Lots of rich people have borrowed against their inflated stock portfolios to buy other assets like Florida vacation homes. These assets valuation grow faster than the compounding interest of the collaterized loans so it\u2019s basically free as long as the government keeps devaluing the currency. Problem is this system isn\u2019t sustainable and once the dominoes fall the risk cascades and affects everyone because it\u2019s all tethered together with no buffer. Savings accounts would be the buffer here, but who is stupid enough to keep large sums of cash to add collateral to these loans rather than be forced to sell. Bitcoin is the only viable solution, but most haven\u2019t realized it yet. I\u2019d say diversify a little when Bitcoin is \u201cThe Standard\u201d and is worth millions in USD. In a free market environment growth companies actually have to innovate or else becoming solvent. Don\u2019t trust, verify! Source: \u201cThe Cascading of Interconnected risk\u201d by Marty Bent. Featured on Bitcoin Audible Episode 625.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9z3el5",
+                            "author": "SecretBuffaloSound",
+                            "score": 2,
+                            "created_utc": 1653507113.0,
+                            "response": "Hell yeah. Thank you. Your the first person to reply who has an idea of where my head is at.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9z4sml",
+                                    "author": "Scrapin-Nee",
+                                    "score": 2,
+                                    "created_utc": 1653507674.0,
+                                    "response": "It\u2019s hard for experienced investors to adapt when the game changes. A lot do them can\u2019t come to grips with the fact the system that treated them so well is actually corrupt and wasn\u2019t always fair. Compounded by the fact that past performance isn\u2019t always indicative of future results.(Something nocoiners tout about Bitcoin all the time). See: \u201cWhy the Yuppie Elite Dismiss Bitcoin\u201d by Croesus. Featured on Bitcoin Audible Episode 627. Cited sources in case anyone wants to hear for themselves. WAGMI.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9ziyc1",
+                            "author": "BitcoinUser263895",
+                            "score": 1,
+                            "created_utc": 1653513480.0,
+                            "response": "> Stocks will be a good risk/return if we ever have a free market again.\n\nStocks will be good without a free market. So long as they keep printing money to pump them, which they will.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9z81ta",
+                    "author": "MichaelAischmann",
+                    "score": 3,
+                    "created_utc": 1653508974.0,
+                    "response": "Diversification demonstrates a lack of conviction. I don't have 100% conviction for one thing tbh.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9z89cn",
+                            "author": "SecretBuffaloSound",
+                            "score": 2,
+                            "created_utc": 1653509057.0,
+                            "response": "I appreciate that kind of honesty!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9z8690",
+                    "author": "oystermonkeys",
+                    "score": 3,
+                    "created_utc": 1653509022.0,
+                    "response": "A word of warning for you. \n\nPeople like you that invest based on emotions and naive narrative of good and evil will eventually get wrecked because someone will end up coming up with a good enough story to convince you to sell your BTC for some shitcoins. This exact thing happened to a lot of Bcashers because Roger Ver fed them a narrative about Blockstream being evil and tied to the CIA and global elites, etc. Charlatans are very good at selling you nice sounding narratives to part you with your money. They will tell you that you are the underdog fighting the evil corpos and turn off the part of your brain that's supposed to be thinking logically.\n\nDon't just invest in BTC because you think that corporations and governments are evil. Try to understand why BTC is a superior asset based on the property it has, and how it fits into the rest of the world without using a good/evil dichotomy. Good luck.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9zbzmj",
+                            "author": "SecretBuffaloSound",
+                            "score": 1,
+                            "created_utc": 1653510570.0,
+                            "response": "Thank you. I appreciate your perspective.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9znegy",
+                    "author": "proof_in_pudding",
+                    "score": 3,
+                    "created_utc": 1653515393.0,
+                    "response": "I think when you're young and have a higher risk tolerance, diversity is not your friend. When you get older, diversification makes more sense.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9xugsn",
+                    "author": "vitalyevodin",
+                    "score": 5,
+                    "created_utc": 1653489360.0,
+                    "response": "I agree I also started as \u201cinvestor\u201d but this is literally another job the more I get involved into bitcoin and ecosystem I realized that I don\u2019t need nothing of this in future for now, it doesn\u2019t mean that I will never invest but bitcoin help realized how I need to invest to to gain more money but improve understanding and listen to my heart instead of buying some oil or tech or whatever company that I was never interested in",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia0vy7p",
+                            "author": "npr_lakeshore",
+                            "score": 1,
+                            "created_utc": 1653536380.0,
+                            "response": "Interested in this but right now all the ecosystem is changed from top to bottom lol",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9xw4rz",
+                    "author": "potato_for_cooking",
+                    "score": 6,
+                    "created_utc": 1653490044.0,
+                    "response": "I feel like the BTC market is being manipulated as well. But I'd still rather be there than the fiat market.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9y0z5n",
+                            "author": "BTCMachineElf",
+                            "score": 14,
+                            "created_utc": 1653492016.0,
+                            "response": "Whales can make waves but they can't change the tide. On a long enough timeline they just become noise.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9zhgdv",
+                                    "author": "alcasperboy",
+                                    "score": 1,
+                                    "created_utc": 1653512834.0,
+                                    "response": "certainly right wanted because this is the timeline we were waiting for;",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9z630m",
+                            "author": "magnat007",
+                            "score": 2,
+                            "created_utc": 1653508187.0,
+                            "response": "It is more like we are going to see the real kind of market in this scene.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ylwsf",
+                    "author": "A1Crane",
+                    "score": 7,
+                    "created_utc": 1653500192.0,
+                    "response": "You're not investing. Bitcoin is not a company. Its not a tech stock. You're trading away an inferior money for a superior one. Think about it as saving your money in the hardest thing you possibly can to preserve your time you spent to obtain it instead of having it in something that erodes your time.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9z003j",
+                            "author": "Main_Sergeant_40",
+                            "score": 2,
+                            "created_utc": 1653505735.0,
+                            "response": "I like this statement. Problem is that cash is still king and btc is down there. Hopefully bitcoin becomes king one day.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia0g9wx",
+                            "author": "almonds111133",
+                            "score": 1,
+                            "created_utc": 1653528738.0,
+                            "response": "It has greatly been under one kind of stock only since it is about time.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9y0rfi",
+                    "author": "BTCMachineElf",
+                    "score": 8,
+                    "created_utc": 1653491930.0,
+                    "response": "That's right, man. Take true ownership of your wealth with the confidence only Bitcoin provides. True financial soverignty. F' the system, we're going our own way.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia0iiqg",
+                            "author": "nxdesign",
+                            "score": 1,
+                            "created_utc": 1653529777.0,
+                            "response": "What kind of they are going to actually work for them is the thhing.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia1gg5k",
+                                    "author": "ProfessorTe",
+                                    "score": 1,
+                                    "created_utc": 1653551201.0,
+                                    "response": "I think we need to study about something in which we are investing.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9y3r63",
+                    "author": "slvbtc",
+                    "score": 4,
+                    "created_utc": 1653493121.0,
+                    "response": "The cool thing about bitcoin is it isnt investing, its just saving.\n\nStocks bonds realestate is what you need when money is broken, but with a form of money that works you just need to save.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9zivem",
+                            "author": "alextapang",
+                            "score": 4,
+                            "created_utc": 1653513444.0,
+                            "response": "You are actually right about it because they have to actually save it.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9yjjm6",
+                    "author": "LordPrettyMax",
+                    "score": 5,
+                    "created_utc": 1653499273.0,
+                    "response": "There are two perspectives with diversification. \n\n1. Michael saylor actually mentioned something in one of his interviews where he said when people rebalance their portfolio a lot of the time they will sell the winners to buy more losers to balance their risk. With that perspective, it doesn\u2019t make sense to hold anything other than Bitcoin since it is the obvious winner. \n\n2. The reason why you diversify is because Bitcoin has extremely high volatility and a lot of people can\u2019t swallow daily 5%+ swings and sometimes there are even bigger swings like double digit swings. Because of the extremely high volatility you would diversify into some stocks that would be negatively correlated to Bitcoin to balance out the swings. This is mostly for people that aren\u2019t able to swallow the volatility and they just need a steady growing investment over the years. \n\nWith those two points in mind you would have to figure out for yourself if it makes sense to diversify. I am heavily invested in crypto but a lot of these tech stocks are looking really nice rn and I might throw some money in there as well.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yzsbe",
+                            "author": "Main_Sergeant_40",
+                            "score": 2,
+                            "created_utc": 1653505646.0,
+                            "response": "Tech is so correlated with crypto right now. Tech stocks might not be the best diversified option if you know what I mean, maybe something totally different like Commodities",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9z0pjs",
+                                    "author": "LordPrettyMax",
+                                    "score": 2,
+                                    "created_utc": 1653506021.0,
+                                    "response": "Oh ya I forgot to state that buying tech stocks is not diversifying against crypto I just think they\u2019re looking juicy rn cause op said he doesn\u2019t wanna buy stocks",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9z0zu6",
+                                            "author": "Main_Sergeant_40",
+                                            "score": 1,
+                                            "created_utc": 1653506136.0,
+                                            "response": "Fair point \ud83d\udc4d\ud83c\udffc NASDAQ and bitcoin are to closely correlated to me. I chart watch Nasdaq with BTC and I don\u2019t even own the tech stocks lol",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia0zevt",
+                            "author": "erictorn2",
+                            "score": 1,
+                            "created_utc": 1653538426.0,
+                            "response": "I don't really think that they are even considering to diversify as of now.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9xwbja",
+                    "author": "mickeymanz",
+                    "score": 2,
+                    "created_utc": 1653490120.0,
+                    "response": "Speculation, dividends\u2026\nBut still there are stocks that are worth investing if you believe they have good fundamentals.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia1ddg7",
+                            "author": "kotumnik",
+                            "score": 1,
+                            "created_utc": 1653548552.0,
+                            "response": "They are actually having good fundamentals and stock is what we know.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9y61bp",
+                    "author": "Adv3ntur0us_",
+                    "score": 2,
+                    "created_utc": 1653494018.0,
+                    "response": "Why you have to keep your portfolio diverse is so that in case 1 of your crypto failed like (TerraLuna) you won't lose all of your investment, since you still have other cryptocurrencies that you can rely on since your funds are split into many portions. But, do not keep them very diverse, maybe 3-10 coins are enough. Also, make sure to do all the research that you need on the coin, so in case of any news, you will know what to expect. Tip - Keep your crypto off exchanges, and use hardware or software wallets (Prefer Hardware, aka Ledger)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia19ieo",
+                            "author": "myiming",
+                            "score": 3,
+                            "created_utc": 1653545459.0,
+                            "response": "It really depends on how you are going to maintain it as well to be honest if you're asking.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9yds0f",
+                    "author": "Jean_Claude_Van_Darn",
+                    "score": 2,
+                    "created_utc": 1653497037.0,
+                    "response": "Similar boat as you. I diversify because Nothing is a sure thing. Will BTC grow and be the best investment ever? I hope so, but I don\u2019t know so. \nWe know how stocks perform over time, it\u2019s tested. So, mix it up and hope for the best. I \u201cinvest\u201d in Stocks, BTC, 401k etc. because I want long term and short term. I want something I can pull out, move around, etc if I need to. Don\u2019t want to be trapped by one set of rules/regulations or by a slump in one group or another.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yzd27",
+                            "author": "Main_Sergeant_40",
+                            "score": 3,
+                            "created_utc": 1653505475.0,
+                            "response": "What stocks are you in? Asking for a friend \ud83d\ude0f",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9z490u",
+                                    "author": "Jean_Claude_Van_Darn",
+                                    "score": 1,
+                                    "created_utc": 1653507457.0,
+                                    "response": "Enron mostly",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9z0dbw",
+                            "author": "SecretBuffaloSound",
+                            "score": 2,
+                            "created_utc": 1653505884.0,
+                            "response": "That makes a lot of sense to me. Love your username, btw.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9z44cv",
+                                    "author": "Jean_Claude_Van_Darn",
+                                    "score": 2,
+                                    "created_utc": 1653507403.0,
+                                    "response": "Thanks! Good luck \ud83d\udc4d",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i9ze4pj",
+                            "author": "kuvircoming",
+                            "score": 1,
+                            "created_utc": 1653511447.0,
+                            "response": "And you are right since it is not going to be something like this in the future/",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9yjiif",
+                    "author": "DownvoteKink",
+                    "score": 2,
+                    "created_utc": 1653499262.0,
+                    "response": "Well, let's say I invest in an oil company.  That company produces and sells oil, and also owns lots of expensive things to make that happen.  I'm buying a part of all of that.  I'm investing in a company with tangible assets and products. (Oil in this case)\n\nBitcoin or other crypto isn't classic investing.  It's closer to traditional asset arbitrage.  If you own 1 bitcoin, you own 1 bitcoin.  If nobody wants to buy the bitcoin, it's not like you can sell off the mining rigs or something, you don't have any share of ownership in those.\n\nAt the end of the day, it's a lot riskier.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia0mqrv",
+                            "author": "Tophik1991",
+                            "score": 1,
+                            "created_utc": 1653531759.0,
+                            "response": "Yes you are right wanted because you don't know what kind of ownership they are going to ask for.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ys3qj",
+                    "author": "QuirkyGlove3326",
+                    "score": 2,
+                    "created_utc": 1653502624.0,
+                    "response": "The point of diversification is to hedge your bets. Your \u201cbet\u201d is that Bitcoin is the only worthy investment, but in reality there is still a chance it will fail for one reason or another. Traditional stock investors hedge their bets by diversifying their portfolios, meaning they invest smaller portions into many different stocks. If you are anti-stock market, you could diversify by choosing multiple crypto projects that you believe in. But as recent events have shown, not all crypto projects are safe from greed or manipulation either.\n\nIf you were all in on Bitcoin a decade ago you could be very rich now, but nobody knows what the futures holds.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia0g08y",
+                            "author": "rubenvanherpen",
+                            "score": 3,
+                            "created_utc": 1653528614.0,
+                            "response": "This was certainly right about it because all of us are not really old in this this is just the new\n\nAnd in the complete future we also had seen that few years of a resource not then you thing as well lol.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ysmp9",
+                    "author": "UnusualPass",
+                    "score": 2,
+                    "created_utc": 1653502829.0,
+                    "response": "All in on bitcoin only and no stocks etc is very foolish IMHO",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia0dhtl",
+                            "author": "Kadaba974",
+                            "score": 1,
+                            "created_utc": 1653527472.0,
+                            "response": "I think most of the companies don't really believe in their kind of data since it has not been really working for them\n\nSometimes I really wonder what the forget it is going to work for them as it has already been working for them.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9yui8z",
+                    "author": "laner4646",
+                    "score": 2,
+                    "created_utc": 1653503563.0,
+                    "response": "Don\u2019t put all your eggs in one basket. BTC is awesome but very high risk. You could be looking back on today sipping a martini on your yacht reflecting on your financial savvy or you could be looking back on today sipping antifreeze under a bridge wondering why you threw your money away. If you diversify you\u2019ll end up on the dock at your cottage sipping on a cold beer and that sounds pretty good to me!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yzb4i",
+                            "author": "SecretBuffaloSound",
+                            "score": 2,
+                            "created_utc": 1653505454.0,
+                            "response": "Love the imagery in this response \ud83d\ude42",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia0usz0",
+                            "author": "yc0576",
+                            "score": 1,
+                            "created_utc": 1653535740.0,
+                            "response": "It was worth it because it is very important to diversify their investment like this\n\nIs not going to be like that we are going to face a lot of problem which is going to handle the situation further for all.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ywmjn",
+                    "author": "durgadas",
+                    "score": 2,
+                    "created_utc": 1653504390.0,
+                    "response": "My own approach is mostly BTC, but with others for diversification, which is a basic principle of investing. I base mine mostly on the Bitcoin Domination index.\n\nWhile others might mention that \"all other crypto is tied to BTC\" it really isn't. It just TENDS to be. BTC is also tied to many things like world events, etc. just like all investments. \n\nI wish we had a Shitcoin Avoidance Index too instead of a Bitcoin Dominance index. It would be the same but more relevant to newer investors.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9yyyy9",
+                    "author": "keto_brain",
+                    "score": 2,
+                    "created_utc": 1653505318.0,
+                    "response": "Because BTC can go to 0 tomorrow, this is why people diversify. The only asset class that has never gone to 0 is gold. The hope is that by the time you retire one one of the 3 or 4 asset classes you have bought has gone to 0.   \n\n\nAlso if you are buying BTC hopefully you are buying BTC and not a derivative and storing your private keys on a hardware wallet and not on Coinbase or Robinhood.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yzr8j",
+                            "author": "SecretBuffaloSound",
+                            "score": 1,
+                            "created_utc": 1653505634.0,
+                            "response": "BTC through Coinbase and transferring to a Ledger \ud83d\udc4d\ud83c\udffe",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9zjbfd",
+                            "author": "BitcoinUser263895",
+                            "score": 1,
+                            "created_utc": 1653513635.0,
+                            "response": "> Because BTC can go to 0 tomorrow, this is why people diversify.\n\nI diversify for risk-adjusted-reward. \n\nNot because Bitcoin can go to 0, but because it can go down while something else goes up and vise versa.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9z3fuh",
+                    "author": "Ok_Aerie3546",
+                    "score": 2,
+                    "created_utc": 1653507127.0,
+                    "response": "The only diversification I have done is with bitcoin miners.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9z3jqz",
+                            "author": "SecretBuffaloSound",
+                            "score": 1,
+                            "created_utc": 1653507171.0,
+                            "response": "How do I get into that?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9z465e",
+                                    "author": "Ok_Aerie3546",
+                                    "score": 1,
+                                    "created_utc": 1653507423.0,
+                                    "response": "Oh I bought some shares in public bitcoin miners.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9z3ulu",
+                    "author": "Blades_61",
+                    "score": 2,
+                    "created_utc": 1653507294.0,
+                    "response": "Sorry OP I think you are wrong.\nIt's not wise to have all your investments in one vehicle.\n\nCorporation are just entities trying to make a profit that is not evil.  Nothing is perfect we can only work towards improving. \n\nThe best way to change something in a capitalist society is to take ownership and use whatever influence you have to fix it.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9z4kwy",
+                            "author": "SecretBuffaloSound",
+                            "score": 1,
+                            "created_utc": 1653507590.0,
+                            "response": "Thank you for sharing your opinion in a respectful manner. Profiting isn't inherently evil, I think that the lengths that corporation go to to make a profit can be considered evil. Enbridge is a perfect example of this.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9z5wpb",
+                                    "author": "Blades_61",
+                                    "score": 2,
+                                    "created_utc": 1653508116.0,
+                                    "response": "Yes they need to be held to account.\n\nI'm just saying that it's not wise to put all your money on red.\nI work for a corporation and yes they are not perfect but they can change and they do provide to society.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9z3xy0",
+                    "author": "BigPlayCrypto",
+                    "score": 2,
+                    "created_utc": 1653507331.0,
+                    "response": "\ud83c\udd99",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9z4r63",
+                    "author": "ivgur",
+                    "score": 2,
+                    "created_utc": 1653507658.0,
+                    "response": "NFA\n\nOther crypto projects would expose your portfolio even more into crypto (and add more risk as Bitcoin tend to be the least risky). If you buy more crypto it\u2019s the same as if you would buy Tesla and ford: different companies but same industry meaning that if tomorrow people stop driving cars your both stocks tank (same for crypto markets. Most of the time if Bitcoin is down, the whole industry is down).\n\nIf you\u2019re not into stock anymore and have crypto, you can go for less risky investment such as real estate (which is better than holding cash and could perform not too bad on a very long run compared to stocks if you rent it out) or gold to hedge.\n\nYou could check defi for some yield farming or blue chip nfts",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9z598f",
+                            "author": "SecretBuffaloSound",
+                            "score": 1,
+                            "created_utc": 1653507857.0,
+                            "response": "Makes sense. Thank you for your perspective on this. Would Gold truly be a viable hedge? Or just a store of value? Also, what is the best way to get into gold?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9z5qd3",
+                                    "author": "ivgur",
+                                    "score": 2,
+                                    "created_utc": 1653508047.0,
+                                    "response": "Well it is true that if you check it for the past 20 years it\u2019s meh. It could be used during down stocks or crypto markets to sell it and get back into crypto or stocks at discounts. In 2022 don\u2019t expect to make huge money with gold. However it is most likely to be better than just holding cash that is losing value due to inflation.\n\nIt depends on what you are looking for. Some people would say go physically buy gold. Others would get into ETFs. GLD is the oldest one but it depends on where you are located as well",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9z5fs9",
+                    "author": "misternuttywise",
+                    "score": 2,
+                    "created_utc": 1653507929.0,
+                    "response": "Letting your personal beliefs dictate your investment strategy is a sure way to lose what ever you have",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9zbdfu",
+                    "author": "redundantfinish",
+                    "score": 2,
+                    "created_utc": 1653510321.0,
+                    "response": "I\u2019m 24 and don\u2019t see any reason to diversify. BTC is going to keep gaining more than anything else. Once it hits high 6 figures I\u2019ll probably take out a loan and spread it into real estate for the cash flow. Other than that I don\u2019t see a response to diversify.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia0n2um",
+                            "author": "Schlongzz",
+                            "score": 1,
+                            "created_utc": 1653531914.0,
+                            "response": "There\u2019s absolutely no way of knowing if/when Bitcoin will rise that high. Absolutely none.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9zcxxc",
+                    "author": "MiguelLancaster",
+                    "score": 2,
+                    "created_utc": 1653510959.0,
+                    "response": "I got into traditional investing in a serious way around the same time I got into bitcoin (2016/2017) \n\nSpent a few years fully funding a Roth IRA and DCA'ing into equities with a little bit of bitcoin on the side. \n\nHad I done only bitcoin in the same time period, I'd be nearly retired already. \n\nThat's a mistake I don't want to repeat. 2020/2021 I began shifting everything into bitcoin -- my retirement account included.\n\nEven if it fails (it won't) I take immense satisfaction in engaging in a network that is so contrary to the rigged legacy financial system. Instead of participating in a system that I loathe, I put all my money into something I believe wholeheartedly is for the betterment of the world and one of the coolest innovations in all human history.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9zeh89",
+                            "author": "SecretBuffaloSound",
+                            "score": 1,
+                            "created_utc": 1653511594.0,
+                            "response": "This. As much as this is just confirmation bias for me, it does resonate on a deeper level. BTC *could* be a means to transcend the current financial system, not saying that it will, but the possibility is there for an incredible amount of change to happen.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9zmnvp",
+                    "author": "Substantial-Rub1736",
+                    "score": 2,
+                    "created_utc": 1653515073.0,
+                    "response": "For BTC to continue going up you probably need a working economy. \n\nCorporations - unlike what some people believe, create goods and services and generally boost the economy. This primarily happens through employing people, creating commerce and paying taxes. Sometimes they even make cool stuff that you like. \n\n Regardless of your thoughts of fiat money, owning a part of a company (which is what a stock investment is) allows you to take part of that value creation.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9zmvni",
+                            "author": "SecretBuffaloSound",
+                            "score": 1,
+                            "created_utc": 1653515167.0,
+                            "response": "Very well put. Thank you.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9zoy5p",
+                    "author": "Soi_Boi_13",
+                    "score": 2,
+                    "created_utc": 1653516061.0,
+                    "response": "You\u2019re more likely to get rich with a concentrated portfolio, but you\u2019re also more likely to end up underperforming the market or losing everything.  I would definitely not feel comfortable with 100% or my assets in crypto.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia0csr4",
+                    "author": "12LA12",
+                    "score": 2,
+                    "created_utc": 1653527147.0,
+                    "response": "Dude I read your post and I have thought the same way. However I feel like investing in Bitcoin is just investing in a hopeful intermediate. So many things you can't control have to go right for it to work and go up vs. investing in real business or physical assets that everyone wants and needs and uses. \n\nIt's all personal preference at the end of the day and you have material success stories on both sides to look at. \n\nAt the end of the day you got to do a bit of everything and be diverse.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia0jx4j",
+                    "author": "testtech2522",
+                    "score": 2,
+                    "created_utc": 1653530437.0,
+                    "response": "Note I am 100% for capitalism. I disagree with the politicians being bought out.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9yi15s",
+                    "author": "Bright-Ad-4737",
+                    "score": 2,
+                    "created_utc": 1653498686.0,
+                    "response": "Try this. Take any stock, run a discounted cash flow analysis and try to come up with a valuation target for it.\n\nThen do the same with Bitcoin.  \n\n\nYou will probably find in answer in there somewhere.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9yzgu2",
+                            "author": "Main_Sergeant_40",
+                            "score": 2,
+                            "created_utc": 1653505517.0,
+                            "response": "How do you do a discounted cash flow analysis on bitcoin? Or is that a trick question? \ud83d\ude02",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9zygmz",
+                            "author": "jeltete",
+                            "score": 1,
+                            "created_utc": 1653520402.0,
+                            "response": "Jackson has been targeting a literally everything out of it.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9y2vwc",
+                    "author": "DemandUtopia",
+                    "score": 1,
+                    "created_utc": 1653492779.0,
+                    "response": "Diversification is selling your winners to buy losers.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9zrdqf",
+                            "author": "Jenglr",
+                            "score": 1,
+                            "created_utc": 1653517149.0,
+                            "response": "Write about it because they have to buy it eventually as well now.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9yb4u4",
+                    "author": "MinnesnowdaDad",
+                    "score": -1,
+                    "created_utc": 1653496009.0,
+                    "response": "Sounds like you have an axe to grind with \u201ccorporate America\u201d and are just being emotional. Sounds like the stock market isn\u2019t for you, as making emotional decisions is almost always a bad idea in investment. Invest in yourself and get a therapist to work through some of those anger issues. Seriously, it will help you.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9ybbel",
+                            "author": "SecretBuffaloSound",
+                            "score": 7,
+                            "created_utc": 1653496080.0,
+                            "response": "Thanks for the tip, Dad.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9yyre5",
+                                    "author": "Main_Sergeant_40",
+                                    "score": 2,
+                                    "created_utc": 1653505236.0,
+                                    "response": "\ud83d\ude02\ud83d\ude02\ud83d\ude02 literally laughed out loud",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "ia05ibu",
+                                    "author": "Petr1951",
+                                    "score": 2,
+                                    "created_utc": 1653523735.0,
+                                    "response": "I don't really see that any kind of help is going to happen with this kind of tip.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i9ybkn6",
+                                    "author": "MinnesnowdaDad",
+                                    "score": 2,
+                                    "created_utc": 1653496179.0,
+                                    "response": "Yes, use your hate. The dark side is strong with this one \u261d\ufe0f",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9ydeo8",
+                                            "author": "SecretBuffaloSound",
+                                            "score": 2,
+                                            "created_utc": 1653496892.0,
+                                            "response": "Love the Star Wars reference, but I don't understand it as a reply. Your screen name is MinnesnowdaDad, so I called you Dad. I don't see how that is hateful.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9ye2gx",
+                                                    "author": "MinnesnowdaDad",
+                                                    "score": 4,
+                                                    "created_utc": 1653497148.0,
+                                                    "response": "In all seriousness, just try and let some of that shot go. It\u2019s a lot of work being so angry, and it won\u2019t serve you. I can tell you\u2019re holding on to a lot, because I see a lot of where I used to be in your comments. Self work is hard, the enneagram got me started on a lot of it.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9yxejw",
+                                                            "author": "SecretBuffaloSound",
+                                                            "score": 2,
+                                                            "created_utc": 1653504696.0,
+                                                            "response": "4w5sp/sx here. Part of the work I need to do is be ok expressing anger without attaching guilt to it. Consider me tapping into and calling upon my inner type 8. Easy come easy go.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9yzl9k",
+                                                                    "author": "MinnesnowdaDad",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653505568.0,
+                                                                    "response": "A four is basically an inside out eight. Fours move toward 1 in periods of growth and towards 2 in stress. Fours are more comfortable in emotional states like anger, or sadness, but it doesn\u2019t mean it\u2019s where they should be when they are healthy. It\u2019s a lot more complicated than channeling 8.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "i9yz42n",
+                                                            "author": "Main_Sergeant_40",
+                                                            "score": 2,
+                                                            "created_utc": 1653505374.0,
+                                                            "response": "Enneagram is legit. 7W6 here. It\u2019s helped me a lot",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9yzy5z",
+                                                                    "author": "MinnesnowdaDad",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653505713.0,
+                                                                    "response": "It\u2019s helped improve my relationships with a lot of people. Understanding my and others motivations is so key",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9z0jt4",
+                                                                            "author": "Main_Sergeant_40",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653505956.0,
+                                                                            "response": "Im trying to get my HR department to use it",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "i9zld3b",
+                                                    "author": "longgia476505",
+                                                    "score": 1,
+                                                    "created_utc": 1653514512.0,
+                                                    "response": "Yes you are right about it since timing of machine is not going to work for them.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "ia04w3b",
+                                            "author": "willlowe01",
+                                            "score": 1,
+                                            "created_utc": 1653523446.0,
+                                            "response": "More about how strong it is going to get and how long it will take for them.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia013d8",
+                            "author": "astrodog4231",
+                            "score": 1,
+                            "created_utc": 1653521641.0,
+                            "response": "This is just and investment Ltd what we actually expected from this market as well.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9yyw70",
+                            "author": "Main_Sergeant_40",
+                            "score": 0,
+                            "created_utc": 1653505288.0,
+                            "response": "Bro what? He can grind an axe with corporate American without having anger issues \ud83d\ude02\ud83d\ude02",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i9yztcs",
+                                    "author": "MinnesnowdaDad",
+                                    "score": 1,
+                                    "created_utc": 1653505659.0,
+                                    "response": "He said he had \u201cunchecked rage\u201d that shit ain\u2019t healthy. I\u2019m no corporate shill, but I can tell\nWhen people let their anger get the better of them.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i9z0gv9",
+                                            "author": "Main_Sergeant_40",
+                                            "score": 1,
+                                            "created_utc": 1653505924.0,
+                                            "response": "He said \u201cI\u2019m never one to let my rage toward the government and corporations unchecked.\u201d \n\nSounds like he is in a pretty balanced spot to me. Most people just roll over and let the beast run over them without a thought like a sheep",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9z3he1",
+                                                    "author": "MinnesnowdaDad",
+                                                    "score": 1,
+                                                    "created_utc": 1653507145.0,
+                                                    "response": "Sounds like you have some work to do too",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9z6mdc",
+                                                            "author": "Main_Sergeant_40",
+                                                            "score": 1,
+                                                            "created_utc": 1653508401.0,
+                                                            "response": "And you might be a sheep\u2026",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "i9zdcb4",
+                                                                    "author": "MinnesnowdaDad",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653511123.0,
+                                                                    "response": "That\u2019s just something people say when they lack the executive functioning skills required to see the bigger picture. I\u2019m outta here. Good luck with your projecting shit.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "i9zfcnw",
+                                                                            "author": "Main_Sergeant_40",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653511955.0,
+                                                                            "response": "\ud83d\ude02",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i9zid26",
+                    "author": "BitcoinUser263895",
+                    "score": 1,
+                    "created_utc": 1653513223.0,
+                    "response": "#Modern Portfolio Theory.\n\n> I'm never one to let my rage toward the government and corporations go unchecked. \n\nYet here you are making financial decisions which expose you to increased risk based on bias and rage.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9zjlzn",
+                            "author": "SecretBuffaloSound",
+                            "score": 1,
+                            "created_utc": 1653513759.0,
+                            "response": "Thank you for your perspective.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9y33bs",
+                    "author": "kwaker88",
+                    "score": 0,
+                    "created_utc": 1653492861.0,
+                    "response": "BTC is the solution to money. It is the best form of money. Not for its transactional value - transactions are done via currencies. This is something that many people do not understand.\n\nAltcoins are other things. If you want other things, buy altcoins. The fact that altcoins have utility other than simply being money corrupts their value.\n\nIf you want prestine money - money that has no other utility than simply being money, buy Bitcoin.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia1mij8",
+                            "author": "Chaimo1",
+                            "score": 1,
+                            "created_utc": 1653556655.0,
+                            "response": "They also have to buy since this is the only option they have to take.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9yqyz7",
+                    "author": "Ok_Economics1981",
+                    "score": 1,
+                    "created_utc": 1653502172.0,
+                    "response": "to get your bitcoin",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia17t7b",
+                            "author": "sbltcminer",
+                            "score": 1,
+                            "created_utc": 1653544150.0,
+                            "response": "I think they were talking about this thing only since they have been in the same kind of diffusion from a long time\n\nFighting we have to actually see that how long it is going to be like this only and it will be this kind of situation only.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9zj22y",
+                    "author": "octaviovr",
+                    "score": 1,
+                    "created_utc": 1653513524.0,
+                    "response": "all eggs in one basket",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia0elfx",
+                    "author": "testtech2522",
+                    "score": 1,
+                    "created_utc": 1653527975.0,
+                    "response": "Please contact kim jong un I believe he can guide you.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia0j3s1",
+                    "author": "VPNApe",
+                    "score": 1,
+                    "created_utc": 1653530053.0,
+                    "response": "I only invest in things that stand to benefit from the collapse of the traditional financial system. BTC, gme, and SoFi. \n\nWith the way things have been shaping up I get more confident by the week",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia0mxri",
+                    "author": "Schlongzz",
+                    "score": 1,
+                    "created_utc": 1653531848.0,
+                    "response": "Sad to tell ya but Bitcoin is intertwined with the stock market.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia0os5d",
+                    "author": "littleannointedone",
+                    "score": 1,
+                    "created_utc": 1653532723.0,
+                    "response": "Honestly the only thing I'm in ranked by order btc,gamestop,gold and other precious metals",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia0oswr",
+                    "author": "littleannointedone",
+                    "score": 1,
+                    "created_utc": 1653532733.0,
+                    "response": "Honestly the only thing I'm in ranked by order btc,gamestop,gold and other precious metals",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia0qzse",
+                    "author": "PsychedelicHell",
+                    "score": 1,
+                    "created_utc": 1653533774.0,
+                    "response": "It's not about diversing into other coins/stocks, it's about diversifying into *different* **assets** being all in on BTC is great until it drops 50% in a matter of weeks. \n\nWhile a house won't give you the high returns of BTC it gives you a place to live and is unlikely to lose 50% of it's value in a month like BTC does.\n\nMy finacial advice is to go all in on BTC until you have enough to get a down payment on a house, then sell some BTC to get a house, repay the mortgage interest only and continue to stack BTC with what income you have left. \n\nBy 2030 your BTC will be worth enough to repay the mortgage, you'll have a house and BTC left over. That's diversification.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia0tbkz",
+                    "author": "GildedSilverBitcoins",
+                    "score": 1,
+                    "created_utc": 1653534951.0,
+                    "response": "Currently, everything is down. Diversification just means options. Usually, there is some safe refuge, but right now it's a bit of a mess. \n\nSome people trade their assets cyclically, for example, gold goes way up, you sell gold and buy into a downtrending asset, like stocks. It gives you multiple stakes in the fire to move money around to maximize your gains.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia0tvhv",
+                    "author": "Aromatic-Hamster65",
+                    "score": 1,
+                    "created_utc": 1653535240.0,
+                    "response": "Your right, now stay the course.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia14nwk",
+                    "author": "bigbrownbanjo",
+                    "score": 1,
+                    "created_utc": 1653541878.0,
+                    "response": "You ever considered no one on here has any clue what's going to happen?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia15zmv",
+                    "author": "TheGreatest34567",
+                    "score": 1,
+                    "created_utc": 1653542816.0,
+                    "response": "I guess if you don't need the money right now and you are willing to hold your investments for 10-20 years then going all in on BTC is a smart play.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia1kn2q",
+                    "author": "TheUnstoppableBTC",
+                    "score": 1,
+                    "created_utc": 1653554965.0,
+                    "response": " \u201cDiversification is selling the winners to buy the losers\u201d - Michael Saylor",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9y5wap",
+                    "author": "TheBeatdigger",
+                    "score": -2,
+                    "created_utc": 1653493964.0,
+                    "response": "BTC and AAPL is all you need.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9y8ay3",
+                            "author": "SecretBuffaloSound",
+                            "score": 1,
+                            "created_utc": 1653494904.0,
+                            "response": "Why AAPL?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia08okj",
+                                    "author": "Chobostar",
+                                    "score": 2,
+                                    "created_utc": 1653525229.0,
+                                    "response": "I'm not sure about this time because I haven't actually up with music and never research forward it as well\n\nSo cording to me I need to understand and I also have to see that what changes it is going to bring in complete curriculum.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia04rrl",
+                            "author": "bigbadgaz",
+                            "score": 1,
+                            "created_utc": 1653523390.0,
+                            "response": "Your logon to try to do a lot of different in future is not going to work for them as they have to try to do something really different\n\n understand they were expecting and how we are going to handle those changes.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia0rbgf",
+                    "author": "Previous-Pea6642",
+                    "score": 0,
+                    "created_utc": 1653533936.0,
+                    "response": "Diversification lowers the chance of ruin. It might lower your expected returns, but $100 isn't $100. If you have $200, then $100 is a *lot,* and it's very important to secure that. If you are a billionaire, you literally wouldn't notice $100 missing. You should be looking at expected *utility* of money, which becomes extremely large the closer you get to ruin. So to protect against the worst loss, you would want to invest into things that have roughly mutually exclusive ruin conditions. This generally also means that when one of your assets rises in price, your hedge performs worst. Meanwhile you will see the people who aren't diversified get rich so much faster than you, but that is an illusion. They will also get poor faster in a possible crisis.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

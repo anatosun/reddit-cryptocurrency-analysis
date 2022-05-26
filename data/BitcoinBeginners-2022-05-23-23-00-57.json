@@ -14,12 +14,40 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uwci8h/keeping_wallet_seed_phrase_safe/",
             "author": "fckccpandXi",
             "created_utc": 1653345966.0,
-            "score": 4,
-            "num_comments": 28,
+            "score": 5,
+            "num_comments": 37,
             "subreddit": "BitcoinBeginners",
             "selftext": "is it safe to keep my wallet seed phrase on a smart phone I no longer use and set on airplane mode?",
             "stickied": false,
             "comments": [
+                {
+                    "id": "i9qsnq4",
+                    "author": "fakeplasticdaydream",
+                    "score": 8,
+                    "created_utc": 1653348584.0,
+                    "response": "Not a good idea. 5 years from now what if the phone doesnt turn on. Also still vulnerable.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i9quj41",
+                            "author": "fckccpandXi",
+                            "score": 1,
+                            "created_utc": 1653349513.0,
+                            "response": "good call didnt think of that",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9z1hur",
+                            "author": "Remarkable_News2455",
+                            "score": 1,
+                            "created_utc": 1653506337.0,
+                            "response": "It's hard to keep that long",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
                 {
                     "id": "i9qrqbf",
                     "author": "sciencetaco",
@@ -60,30 +88,29 @@
                     ]
                 },
                 {
-                    "id": "i9qsnq4",
-                    "author": "fakeplasticdaydream",
-                    "score": 4,
-                    "created_utc": 1653348584.0,
-                    "response": "Not a good idea. 5 years from now what if the phone doesnt turn on. Also still vulnerable.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i9quj41",
-                            "author": "fckccpandXi",
-                            "score": 1,
-                            "created_utc": 1653349513.0,
-                            "response": "good call didnt think of that",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
                     "id": "i9qqh04",
                     "author": "Harrison_w1fe",
                     "score": 2,
                     "created_utc": 1653347508.0,
                     "response": "No",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9s18x2",
+                    "author": "igadjeed",
+                    "score": 2,
+                    "created_utc": 1653373443.0,
+                    "response": "Phone storage is flash memory, not reliable",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9snyy0",
+                    "author": "aq9600947",
+                    "score": 2,
+                    "created_utc": 1653392671.0,
+                    "response": "I think this is not a good idea. I would do that if I wanted to lose access. LOL",
                     "depth": 1,
                     "comments": []
                 },
@@ -145,7 +172,17 @@
                                                     "created_utc": 1653351078.0,
                                                     "response": ">The solution to bitrot isn't to not store anything digitally. \n\nthe keys would be stored digitally in either the hardware wallet or mobile wallet for smaller amounts . The backup is the physical representation. \n\n> The solution is redundancy \n\nPart of the importance in backups is having the data stored in different media formats , thus the representation digitally in the HW wallet, and the paper backup\n\n    3: Create one primary backup and two copies of your data.\n\n    2: Save your backups to two different types of media.\n\n    1: Keep at least one backup file offsite.\n\n> but it's also extremely low likelihood.\n\ndataloss is very common in DVDRWs , usb flash memory , and hard drives \n\nUsing a RAID solutions mitigates some of these concerns but the data always needs to be represented differently regardless. The fact that you need to write down the passphrase regardless due to human memory being so fallible makes 100% digital representation somewhat pointless and introduces a new set of problems with malware and data integrity checks",
                                                     "depth": 5,
-                                                    "comments": []
+                                                    "comments": [
+                                                        {
+                                                            "id": "i9yv4xz",
+                                                            "author": "cryptoripto123",
+                                                            "score": 1,
+                                                            "created_utc": 1653503805.0,
+                                                            "response": "> the keys would be stored digitally in either the hardware wallet or mobile wallet for smaller amounts . The backup is the physical representation. \n\nSure, but you bring up bitrot everytime anything digital gets brought up. Anything can happen. With quantum mechanics a bowling ball has a finite chance of passing through a bank vault if you try enough times. But that doesn't mean it's likely.\n\nAnd yes I agree with 3-2-1.\n\n>dataloss is very common in DVDRWs , usb flash memory , and hard drives \n\nData loss happens with those forms of media but again you haven't talked probability at all. If you're talking about crypto keys, 3-2-1 absolutely should apply. However for people who aren't that well versed in backups, at a minimum I think this is why cloud is actually more valuable. Physical backups require you to be there. If you're traveling, abroad, or your country is on fire (Ukraine), then accessing physical backups may not be feasible. Cloud backups are a real solution people should consider. The risk of a Google Drive file being corrupted is likely orders of magnitude lower than even if you had a personal 3-2-1 strategy. There's no way your personal backup strategy is going to be more resilient than that of a trillion dollar company.\n\nBottom line is risks are everywhere. My point is to evaluate risks holistically. I think too many people often highlight malware but completely ignore and don't accurately weigh the risks of physical backup loss. The vast majority of people aren't using stamped plates with 3 copies. Paper copies are far easier to lose and mess up with than a digital copy.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }
@@ -201,15 +238,6 @@
                     "comments": []
                 },
                 {
-                    "id": "i9s18x2",
-                    "author": "igadjeed",
-                    "score": 1,
-                    "created_utc": 1653373443.0,
-                    "response": "Phone storage is flash memory, not reliable",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i9sblv8",
                     "author": "ouyangnna",
                     "score": 1,
@@ -228,15 +256,6 @@
                     "comments": []
                 },
                 {
-                    "id": "i9snyy0",
-                    "author": "aq9600947",
-                    "score": 1,
-                    "created_utc": 1653392671.0,
-                    "response": "I think this is not a good idea. I would do that if I wanted to lose access. LOL",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i9st9pa",
                     "author": "pkol_mining",
                     "score": 1,
@@ -251,6 +270,33 @@
                     "score": 1,
                     "created_utc": 1653396126.0,
                     "response": "As long as the wallet is empty you can keep it anywhere",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9th2zp",
+                    "author": "BlockchainBlockhead",
+                    "score": 1,
+                    "created_utc": 1653406800.0,
+                    "response": "It's possible to turn on Bluetooth and WiFi with Airplane mode on. Don't do it.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9u3f9u",
+                    "author": "ApricotAcrobatic7761",
+                    "score": 1,
+                    "created_utc": 1653415970.0,
+                    "response": "I use Guarda (non-custodial wallet, works with private keys and backup files, password protected). I've saved them on a piece of paper, probably will keep those in a plastic container or folder later on. Portfolio may be small but gotta keep it safe.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9wl2ql",
+                    "author": "AskEmberAnything",
+                    "score": 1,
+                    "created_utc": 1653459181.0,
+                    "response": "If you're storing a wallet seed phrase on a smartphone, you should be okay as long as proper precautions are taken. You may actually turn your phone into a keystone! Kindly see the [steps, things to keep in mind, and others' insights here](https://ember.help/questions/505#answer-844) as guide.\n\nNevertheless, always take caution that electronic devices are prone to failure and it's always best to have backup.\n\nFeel free to respond if you have any follow-up questions!",
                     "depth": 1,
                     "comments": []
                 },

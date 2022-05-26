@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/CryptoTechnology/comments/umboty/hows_this_analogy_sound_avalanche_vs_nakamoto/",
             "author": "Interested-Investor",
             "created_utc": 1652162164.0,
-            "score": 9,
-            "num_comments": 10,
+            "score": 18,
+            "num_comments": 14,
             "subreddit": "CryptoTechnology",
             "selftext": "Im trying to understand Avalanche consensus vs Nakamoto consensus better. Does this analogy work well? How can I improve it?\n\nYou're in a room full of strangers and you all need to agree on tacos or BBQ for dinner. \n\nNakamoto Consensus: Each person asks every individual person what they prefer\"\n\nAvalanche Consensus: \"Each person asks 5 others what they prefer and change their vote to side with the majority. Repeat this process a few times until everyone agrees\"",
             "stickied": false,
@@ -23,11 +23,107 @@
                 {
                     "id": "i80vehw",
                     "author": "kellysmith",
-                    "score": 7,
+                    "score": 18,
                     "created_utc": 1652167049.0,
                     "response": "Nakamoto: The person who somehow proves they did more work than all the others gets to choose tacos or bbq for everyone else.\n\nAvalanche: your example is correct.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i80vikl",
+                            "author": "Interested-Investor",
+                            "score": 2,
+                            "created_utc": 1652167143.0,
+                            "response": "Thanks for the correction! That definitely sounds like a better fit",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i80vvb6",
+                            "author": "Interested-Investor",
+                            "score": 2,
+                            "created_utc": 1652167444.0,
+                            "response": "To add onto this, nakamoto consensus (I\u2019ll just use Bitcoin for this example) looks like this? Or am I understanding it wrong?\n\n1. Each node gets sent different transactions and package them into a block\n2. These blocks are then sent to miners \n3. Every miner spends 10 min trying to solve its code\n4. After 10min the solved block is sent to all the nodes to verify that it\u2019s solved\n5. It\u2019s added to the blockchain",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i80wrcr",
+                                    "author": "kellysmith",
+                                    "score": 5,
+                                    "created_utc": 1652168218.0,
+                                    "response": "Unfortunately no. Bitcoin nodes are passive, they don't assemble blocks.\n\n1. A mining pool assembles a block based on TX's it got from the network.\n2. The pool derives the block header hash and sends it to miners\n3. Miners work on the hash + nonce until they solve the block\n4. Once a block is found, the pool broadcasts it onto the network\n5. Everyone who receives the block, verifies it and adds it to their chain\n\nSince the pool won the work contest, there's no one out there with a longer chain, so whoever has the longest chain of valid blocks holds the current consensus.\n\nThe difficulty is tuned every 2 days (I think) to make sure that blocks are found every 10 minutes on average, though this may vary.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i810azg",
+                                            "author": "lanatork",
+                                            "score": 4,
+                                            "created_utc": 1652171357.0,
+                                            "response": "Mining pools are not a necessary part of block production. A single miner can do everything on their own. That is still the supposed design, as it is the most decentralized one. The reality of course looks different, but there are still single miners proposing blocks.\n\nhttps://bitcoinmagazine.com/business/how-small-solo-miners-solve-bitcoin-blocks",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i81h8fj",
+                                                    "author": "kellysmith",
+                                                    "score": 3,
+                                                    "created_utc": 1652184262.0,
+                                                    "response": "You're right. I mentioned pools because they probably create most blocks.\n\nThe working for a solo miner would be just like the pool, but solo miners solve the block hash + nonce on their own, just remove that first step, same process.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "i81oyyl",
+                                            "author": "Explodicle",
+                                            "score": 3,
+                                            "created_utc": 1652188344.0,
+                                            "response": "Tuned every two weeks\n\n^minimum ^character ^counts ^are ^annoying",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "i80wxrb",
+                                            "author": "Interested-Investor",
+                                            "score": 1,
+                                            "created_utc": 1652168374.0,
+                                            "response": "Thank you again for an excellent explanation. Do you have any recommendations for educational research source? I\u2019d love to learn more about Bitcoin. For some reason Im struggling with fully understanding it",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i81hbwv",
+                                                    "author": "kellysmith",
+                                                    "score": 1,
+                                                    "created_utc": 1652184319.0,
+                                                    "response": "This is all you need to fully understand the Bitcoin system: https://github.com/bitcoinbook/bitcoinbook",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i81i061",
+                            "author": "DashingSir",
+                            "score": 2,
+                            "created_utc": 1652184710.0,
+                            "response": "Not exactly.\n1) that person who \"won\" the block may say pineapple pizza, and that block may be orphaned. Nakamoto consensus is achieved after a number of blocks.\n2) Proof of Work is not necessarily the part of consensus that avalanche substitutes.\nPoW/PoS quantify how many \"people\" you really represent in that room (expensive to spam work or coins). With that established, you can proceed to propagate as y'all suggest.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i82uwm8",
+                                    "author": "Maleficent_Plankton",
+                                    "score": 2,
+                                    "created_utc": 1652205566.0,
+                                    "response": "It's also not the person who does the most work. It's the person who wins the lottery where lottery tickets are given proportionally to the amount of work.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
@@ -38,7 +134,7 @@
             "author": "ForbiddenOwl",
             "created_utc": 1652100356.0,
             "score": 6,
-            "num_comments": 9,
+            "num_comments": 12,
             "subreddit": "CryptoTechnology",
             "selftext": "I'm a cyber security specialist and I've been getting into development for a while. When it comes to my field you learn how to properly read code and tell what a program does by looking at it but when it comes to writing my own stuff. Found out that it is a whole other ball game. I've learned Python, rust and solidity. I also learned a ton about developing on web3 from start to finish through Polygon's hackathons and developer resources. As someone who learns by doing, I highly recommend some workshops and hackathons.\n\nI haven't really found any web3 projects yet as this is kind of a side project but I constantly hear about how much in demand Solidity and web3 developers are right now. There's a massive amount of money to be made. My question to you is this, do you think this is just another fad? or could solidity be the new Python or Java? Something that becomes the industry standard. Rust by itself already feels like the new Python if I'm going to be honest.\n\nI personally believe this is the next step forward for a ton of facets of technology. I believe game development is going to move to the blockchain. Security is going to move to the blockchain, web3 hosting, etc. I genuinely don't think this is something that's going to get hype and die out, you might as well get a head start on the learning. Although with that being said, I would love to hear everyone's thoughts and opinions on the matter. Maybe someone out here knows something I don't.",
             "stickied": false,
@@ -46,7 +142,7 @@
                 {
                     "id": "i7wzifs",
                     "author": "Token_Broker",
-                    "score": 4,
+                    "score": 3,
                     "created_utc": 1652102279.0,
                     "response": "I don't think web3 will be a thing. If people wanted privacy or even cared, they wouldn't use Google already. They wouldn't buy android or apple phones.\n\nPeople want ease and convenience. That's all",
                     "depth": 1,
@@ -59,6 +155,35 @@
                             "response": "Many people choose Apple phones _because_ they offer privacy.",
                             "depth": 2,
                             "comments": []
+                        },
+                        {
+                            "id": "i87f5qd",
+                            "author": "funkiestj",
+                            "score": 1,
+                            "created_utc": 1652288169.0,
+                            "response": ">I don't think web3 will be a thing. If people wanted privacy or even cared, they wouldn't use Google already\n\n**tl;dr** \\- I agree.  In the next 15 years blockchain tech will produce nothing of intrinsic value.  (I don't consider zero-sum scams to be of intrinsic value)\n\n\\---\n\nAre there any successful use cases besides the defunct *Silk Road*?  Sure, Silk Road was criminal but it was an actual market providing real service to people (i.e. win/win for both sides of the transaction).\n\nSilk Road aside, I can't think of a functioning example of blockchain tech that is used for something other than speculation / gambling (i.e. investing in tulips because they are going to the moon).\n\nEvariste Galois invented group theory decades before it had practical engineering application.  Likewise, I think blockchain tech has some interesting innovations that will be useful someday in the distant future.  If/when blockchain tech does become useful it's value may be in some unanticipated application and not Web3 as is currently being hyped.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8dltmj",
+                                    "author": "Putrid-Past-3366",
+                                    "score": 2,
+                                    "created_utc": 1652394360.0,
+                                    "response": "I mean most crypto projects only deal with other crypto projects, so unless people are using those assets to purchase things they really have no use. On the flip side, certain projects are meant to work symbiotically with current systems to make them transparent easily validated. Look at VeChain for instance. https://usethebitcoin.com/list-of-vechain-partnerships/",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i8gezsd",
+                                            "author": "funkiestj",
+                                            "score": 1,
+                                            "created_utc": 1652452201.0,
+                                            "response": ">I mean most crypto projects **only deal with other crypto projects**, so unless people are using those assets to purchase things they really have no use\n\nFor a crypto project to be useful it needs to interact with something that matters to a human living in the real world.   A technology needs to provide some benefit -- it must make life better/easier for some set of customers.  Silk road made buying illicit drugs and hiring assassins easier.\n\nAs far as I can tell, the only thing blockchain tech has made easier is running *bigger fool* scams.  Providing value to conmen (and only conmen) is not a good thing.\n\nSmart contracts for real estate escrow would be a real innovation but that seems farther off than all automobiles in the USA being self driving cars.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }

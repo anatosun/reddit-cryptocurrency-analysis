@@ -1,0 +1,117 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uxv6k5",
+            "title": "seed phrases",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uxv6k5/seed_phrases/",
+            "author": "EnvironmentalTrip708",
+            "created_utc": 1653524790.0,
+            "score": 7,
+            "num_comments": 19,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Do seed phrases only work on the original app they were stored or if you enter it into a different wallet app can you recover the coin I'm locked out of an old account I have the seed phrase but not the phone with the original app",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia0mb25",
+                    "author": "blockplate",
+                    "score": 2,
+                    "created_utc": 1653531553.0,
+                    "response": "Seed phrases are not (at least should not be) wallet specific. But only a [seed phrase is not enough](https://www.blockplate.com/blogs/blockplate/seed-phrases-are-not-enough)\n\nYou can import an existing seed phrase into multiple wallet software if they \n\n-\tsupport the specific structure (seed format, i.e. how it was created, BIP39)\n-\tknow how to find those coins (derivation paths, BIP 44, 84, 89)\n-\tsupports the coin itself (bitcoin, etc.)\n\nNote, a \u201cgood\u201d wallet should bare minimum have this information available to you as their supplier documentation.\n\nLuckily, [most wallets do follow BIP39](https://www.blockplate.com/blogs/blockplate/list-of-bip39-wallets-mnemonic-seed) for mnemonic phrases and utilize standard derivation paths.\n\nElectrum does not generate a BIP39 seed phrase but can import one.\n\nIf you\u2019re interested in learning more about seed phrases, check out r/seedstorage",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia0l4ba",
+                    "author": "blaze1234",
+                    "score": 1,
+                    "created_utc": 1653530993.0,
+                    "response": "Depends on the wallet client software and age / version\n\nElectrum's is different, not BIP39 / BIP32.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia08kwc",
+                    "author": "bitusher",
+                    "score": 1,
+                    "created_utc": 1653525180.0,
+                    "response": ">I'm locked out of an old account I\n\nwhat wallet specifically ?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia1dotz",
+                    "author": "BTCMachineElf",
+                    "score": 1,
+                    "created_utc": 1653548813.0,
+                    "response": "It depends on the app. There's usually a way to import it somewhere else to make it work. Bluewallet is pretty good at reading various seeds. But why not download the original app again?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia1uk6c",
+                    "author": "Prior-Huckleberry-43",
+                    "score": 1,
+                    "created_utc": 1653563167.0,
+                    "response": "Create an entirely new account with the same wallet!.  I have done that on several computers and imported the seed phrase.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia23ysn",
+                    "author": "NitronBot106",
+                    "score": 1,
+                    "created_utc": 1653568881.0,
+                    "response": "If it's a BIP32\\BIP39 seed it should work in any popular open source wallet. Download electrum and try to recover your wallet with your seed. Electrum will check many derivation paths at once too making recovery much simpler.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia24id9",
+                    "author": "d3vrandom",
+                    "score": 1,
+                    "created_utc": 1653569171.0,
+                    "response": "use the same app as you originally did for fool proof restoration of the wallet. using a different app may or may not work.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia2lbav",
+                    "author": "OneStepAheadApp",
+                    "score": 1,
+                    "created_utc": 1653576712.0,
+                    "response": "As long as the wallet supports BIP-39 it should be ok.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia07r0q",
+                    "author": "AutoModerator",
+                    "score": 0,
+                    "created_utc": 1653524790.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia08bmt",
+                            "author": "Jetjones",
+                            "score": 1,
+                            "created_utc": 1653525059.0,
+                            "response": "Some wallets use different versions of this system but if you have a 12 or 24 words list, short answer is yes you can open up your fund thru another app. Just make sure it supports the same coins",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

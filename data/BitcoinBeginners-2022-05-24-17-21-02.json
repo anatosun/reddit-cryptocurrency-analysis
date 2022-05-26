@@ -15,7 +15,7 @@
             "author": "PubKeyVin",
             "created_utc": 1653412687.0,
             "score": 7,
-            "num_comments": 4,
+            "num_comments": 12,
             "subreddit": "BitcoinBeginners",
             "selftext": "Hi community, hope you are enjoying your day.\n\n&#x200B;\n\nAnother beginner's question! Thanks especially for your time.\n\nI am trying to understand this notion of P2SH transaction.\n\nFor the P2PKH it's perfect I understand.\n\nBut what I don't understand is when I'm told that a P2SH transaction can be composed in its redeem script of any standard pubkey script except P2SH itself.\n\nThis means that the redeem script of a P2SH transaction may contain a \"P2PKH pkscript\" composed of: OP\\_DUP, OP\\_HASH160, <hash160(pubkey)>, OP\\_EQUALVERIFY, OP\\_CHECKSIG?\n\nBut in this case, (and if I'm not mistaken), how does the redeem script get processed without having the <hash160(pubkey)> reserved for a BTC address?\n\nI don't know if I'm very clear,\n\nOK, I'm a bit confused, anyone have an idea?\n\n&#x200B;\n\nThanks for your help !",
             "stickied": false,
@@ -48,7 +48,7 @@
                                 {
                                     "id": "i9uonlt",
                                     "author": "igadjeed",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1653424906.0,
                                     "response": "Yes. I did a search for P2SH and nearly every result was discussing multisig. Also, P2SH was useful for non-native SegWit",
                                     "depth": 3,

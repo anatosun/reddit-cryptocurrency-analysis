@@ -46,8 +46,8 @@
             "url": "https://www.reddit.com/r/CryptoTechnology/comments/ukwf74/how_can_i_useget_blockchain_for_a_personal_project/",
             "author": "Loudi2918",
             "created_utc": 1651994237.0,
-            "score": 4,
-            "num_comments": 3,
+            "score": 2,
+            "num_comments": 4,
             "subreddit": "CryptoTechnology",
             "selftext": "I have a project that is based on storing information on the Blockchain (The Blockchain technology, not to be confused with the websites for example), it's main use would be for security since the data stored there, by using the Blockchain, the data would be unchangeable, veridic, and in general guarantee a good level of security, however, i can't find anything close to what i need, which is how to access to the Blockchain, or just using it, \u00bfIs there a source code, or a tutorial, or something that explains this?, thanks in advance",
             "stickied": false,
@@ -58,6 +58,15 @@
                     "score": 5,
                     "created_utc": 1652005038.0,
                     "response": "Start from the beginning: https://cryptozombies.io/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i800rsp",
+                    "author": "F0lks_",
+                    "score": 2,
+                    "created_utc": 1652148777.0,
+                    "response": "Storing large amounts of data on-chain is not only expensive, but also mildly inefficient. What you could do  however, is leveraging hashing functions to your advantage:\n\n- first, you'd cut your data into usable chunks, then generate a unique hash for each of them;\n\n- then, you store that hash on-chain,\n\n- and the actual chunk of data goes into a distributed file-system.\n\nWhat's cool about this is that you can transmit blockchain's immutability properties to whatever file you store that way. Since hashing is a one-way function, forging a file with a matching hash but different content is essentially impossible. So, as long as you manage to keep that file available somewhere, you're good to go; and that's where using a distributed file system such as IPFS becomes interesting. \n\nThe most common use-case of this technique is NFTs: each token has an URI (Unique Ressource Identifier) on top of its tokenID, which is essentially a hash of a file stored on IPFS. Posting a file on IPFS returns a hash, and querying IPFS with a hash returns a file, simple as that.\nEven though that technique has mostly been used to store NFT pictures up until now, it has many, *many* other applications.",
                     "depth": 1,
                     "comments": []
                 }

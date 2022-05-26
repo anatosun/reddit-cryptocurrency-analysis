@@ -14,8 +14,8 @@
             "url": "https://i.redd.it/wvalbt321i191.jpg",
             "author": "Martinazzocaetano",
             "created_utc": 1653430772.0,
-            "score": 38,
-            "num_comments": 10,
+            "score": 39,
+            "num_comments": 15,
             "subreddit": "Bitcoin",
             "selftext": "",
             "stickied": false,
@@ -32,7 +32,7 @@
                 {
                     "id": "i9vcopq",
                     "author": "did-i-internet-good",
-                    "score": 15,
+                    "score": 18,
                     "created_utc": 1653435657.0,
                     "response": "The transaction data is hashed together. So transaction 1 is hashed and transaction 2 is hashed. Then the hashes are hashed together. Once all the transactions' hashes are hashed together into 1 hash, you have the merkle root which is a hash representing the transaction data.",
                     "depth": 1,
@@ -40,7 +40,7 @@
                         {
                             "id": "i9vd7kw",
                             "author": "did-i-internet-good",
-                            "score": 6,
+                            "score": 8,
                             "created_utc": 1653435903.0,
                             "response": "And a hash is when you take any size of data and run it through an algorithm, you get back a fixed size of data. This new data is called a hash. You cannot reverse the hash but you can use it to verify the data. So if you are given a hash, you can verify if you have the correct data because if you run the data through the hashing algorithm it should equal that hash.",
                             "depth": 2,
@@ -49,9 +49,18 @@
                         {
                             "id": "i9wwgtz",
                             "author": "fplfreakaaro",
-                            "score": 0,
+                            "score": -1,
                             "created_utc": 1653468867.0,
                             "response": "Hash of previous transactions data",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i9yx7hh",
+                            "author": "igadjeed",
+                            "score": 1,
+                            "created_utc": 1653504617.0,
+                            "response": "> all the transactions' hashes are hashed together into 1 hash\n\nNot exactly. There's a Merkle tree, which is why there's a Merkle root  \nThe tree is a binary data tree, and is upside-down (compared to a botanical tree)  \n\nThe transaction hashes are the leaves of the tree  \nThe transaction hashes are hashed in pairs - tx0 + tx1 ; tx2 + tx3 ...  \nThose pair-hashes are the second-bottom level of the tree  \nThey are hashed in pairs to make the next level  \nThere are half as many hashes at each level  \nHash the pairs in each level of the tree until ...  \nAt the top of the tree, there are two hashes. The left half of the tree is represented by one hash and the right half of the tree is represented by the other hash. The Merkle root hash is the hash of these two hashes  \n\nhttps://developer.bitcoin.org/reference/block_chain.html#merkle-trees  \nhttps://en.bitcoin.it/wiki/Protocol_documentation#Merkle_Trees",
                             "depth": 2,
                             "comments": []
                         }
@@ -60,7 +69,7 @@
                 {
                     "id": "i9vez2f",
                     "author": "Btc300k",
-                    "score": 4,
+                    "score": 3,
                     "created_utc": 1653436743.0,
                     "response": "Its a way to represent a large set of data without taking up much space, easy lookup for inclusion and cryptographically secure.",
                     "depth": 1,
@@ -73,7 +82,17 @@
                     "created_utc": 1653461343.0,
                     "response": "Merkle Roots allow for efficient verification of transactions without storing every single transaction. A lite client can store the block headers alone. \n\nTo verify the transaction then, the person who wants to prove that transaction was included in the blockchain provides a \"proof\". The proof is pretty simple. All you need to provide is the transaction/transaction hash, and it's sibling node, so you can generate the parent node, you then provide the sibling of that parent, to go to the next level of the tree, and so on, until you reach the root. If the root hash matches the merkle root, then you know that payment was included in that block. Assume for example, a block has 128 transactions. To prove one transaction, you will only need around 8 hashes (only 256 bytes).\n\nMerkle Trees are also used in Git and Bittorrent. For Git it makes it efficient to synchronize your local branch with a remote, by comparing root hashes. If the hashes mismatch, then you traverse the tree and find the first mismatch and request that part from the remote.\n\nFor Bittorrent, my understanding may be a bit wrong, but all you need to get information about a torrent is the root hash, which is part of the magnet link usually. A peer that wants to provide you a certain chunk of that torrent can prove to you that that chunk is part of the torrent. It also makes it easy to verify a torrent. If you were to only store the hash of the entire file, and someone sends you the full torrent but it turns out to be invalid, you would have no idea what part of the torrent to re-download.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "i9yywm5",
+                            "author": "igadjeed",
+                            "score": 1,
+                            "created_utc": 1653505292.0,
+                            "response": "> Bittorrent\n\nNot Bitcoin, but I can fill this knowledge gap for you. The torrent hash is the SHA1 hash of the serialized (as stored in the .torrent file) *info* dictionary part of the torrent. That's why it's called *infohash*. The internal hashes are the SHA1 hashes of each data chunk, named *pieces*. These hashes are part of the *info* dictionary. The piece hashes are used to verify the data as it is downloaded. The *infohash* is a unique reference for the torrent. There's no Merkle tree  \n\nThe info dictionary stores the essential components of the torrent's metadata - filenames (or path names), file sizes, piece size, piece hashes  \n\nOutside the info dictionary are non-essential metadata - date created, comments, tracker URLs. Changing these components does not affect the infohash",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i9vs0hf",
@@ -95,7 +114,7 @@
                         {
                             "id": "i9wmxwj",
                             "author": "turick",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1653460615.0,
                             "response": "She has strong roots in Germany.",
                             "depth": 2,
@@ -103,15 +122,33 @@
                                 {
                                     "id": "i9xct1g",
                                     "author": "Danny1878",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1653480986.0,
                                     "response": "Some say she is the real Satoshi Nakamoto.",
                                     "depth": 3,
                                     "comments": []
                                 }
                             ]
+                        },
+                        {
+                            "id": "i9xvmul",
+                            "author": "generateduser29128",
+                            "score": 1,
+                            "created_utc": 1653489843.0,
+                            "response": "Sounds wrong. Her background is in [Physical Chemistry](https://de.wikipedia.org/wiki/Untersuchung_des_Mechanismus_von_Zerfallsreaktionen_mit_einfachem_Bindungsbruch_und_Berechnung_ihrer_Geschwindigkeitskonstanten_auf_der_Grundlage_quantenchemischer_und_statistischer_Methoden)",
+                            "depth": 2,
+                            "comments": []
                         }
                     ]
+                },
+                {
+                    "id": "i9yoez4",
+                    "author": "0x1a3c3e7",
+                    "score": 1,
+                    "created_utc": 1653501168.0,
+                    "response": "You might be familiar with checksums.  A checksum is a unique hash produced from passing a file through a hash algorithm like MD5 or SHA.  The hash enables you to make sure the files you download from remote servers are exact copies, no data corruption.  This is especially necessary for downloading apps and operating systems.\n\nIn Bitcoin, everything is checksumed.  A hash is generated for every transaction.  All the transaction hashes in a block are hashed in pairs.  Each pair of hashes in one row creates a new hash in the next row.  The process repeats in each row until there is just one hash.  The set of intermediate hashes is the Merkle tree and the final hash is the Merkle root.",
+                    "depth": 1,
+                    "comments": []
                 }
             ]
         }

@@ -304,32 +304,6 @@
             ]
         },
         {
-            "id": "ty6r3n",
-            "title": "Why transition to Proof of Stake does not lower the gas fee on Ethereum?",
-            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ty6r3n/why_transition_to_proof_of_stake_does_not_lower/",
-            "author": "tuanquanghpvn",
-            "created_utc": 1649312717.0,
-            "score": 1,
-            "num_comments": 0,
-            "subreddit": "CryptoTechnology",
-            "selftext": "So I read this article in which Tim Beiko, a dev on Ethereum, said that transition to Proof of Stake does not lower the gas fee on Ethereum. I thought that in Proof of Stake, the number of validators will decrease to just a few, so the process to reach consensus will be much shorter and the gas fee will decrease as result. \n\nSo why did he say the Merge will not decrease the gas fee? Am I missing something here?\n\n[https://fortune.com/2022/03/28/3-misconceptions-ethereum-merge/](https://fortune.com/2022/03/28/3-misconceptions-ethereum-merge/)",
-            "stickied": false,
-            "comments": []
-        },
-        {
-            "id": "tx5ekg",
-            "title": "Ryoshis Guard Ryoshis Guard Ryoshis Guard",
-            "url": "https://www.reddit.com/r/CryptoTechnology/comments/tx5ekg/ryoshis_guard_ryoshis_guard_ryoshis_guard/",
-            "author": "expert_marketer2222",
-            "created_utc": 1649193438.0,
-            "score": 1,
-            "num_comments": 1,
-            "subreddit": "CryptoTechnology",
-            "selftext": " Official Links can be found below  \nhttps://linktr.ee/RyoshisGuard  \nOfficial Website: https://ryoshisguard.com/ \n\n&#x200B;\n\n Official Links can be found below  \nhttps://linktr.ee/RyoshisGuard  \nOfficial Website: https://ryoshisguard.com/ \n\n&#x200B;\n\n Official Links can be found below  \nhttps://linktr.ee/RyoshisGuard  \nOfficial Website: https://ryoshisguard.com/",
-            "stickied": false,
-            "comments": []
-        },
-        {
             "id": "twkj66",
             "title": "SOS. Please help! Sent AVAX to the wrong wallet!!",
             "url": "https://www.reddit.com/r/CryptoTechnology/comments/twkj66/sos_please_help_sent_avax_to_the_wrong_wallet/",
@@ -5663,7 +5637,7 @@
             "author": "Interested-Investor",
             "created_utc": 1652248892.0,
             "score": 2,
-            "num_comments": 8,
+            "num_comments": 11,
             "subreddit": "CryptoTechnology",
             "selftext": "I was doing some research and I had a few questions after reading over AVAX whitepapers and other dicussion boards.\n\n1. Why is the required minimum stake 2,000 AVAX? What is the harm in allowing everyone to stake?\n2. Why don't AVAX validators need to store the whole chains history like PoW chains do?\n3. Why is Avalanche Consensus technically probabilistic? What event could cause the chain to overturn itself? (I understand the \"longest chain\" in PoW, but how could a transaction be rolled back in avalanche?)\n\nFurthermore, is this understanding of the consensus protocol and its terminology correct?\n\n1. a transaction is broadcasted to the entire network\n2. the network randomly picks X amount of validators to determine if a transaction is valid \n3. These validators then choose K amount of validators to ask if they think the transaction is valid (subsampled voting?)\n4. This process repeats for a few rounds (network gossip?) until all validators have agreed and the original \"X\" amount of validators have reached a super majority\n5. Once agreed on, the transaction is finalized\n\nThanks everyone for taking a look at this. It means a lot to me!\n\nBONUS QUESTION: Since AVAX has a hard cap, what happens when the staking rewards run out? How will validators be incentivized to continue staking?",
             "stickied": false,
@@ -5671,7 +5645,7 @@
                 {
                     "id": "i85pk7d",
                     "author": "Dormage",
-                    "score": 6,
+                    "score": 5,
                     "created_utc": 1652255415.0,
                     "response": "Didnt we talk about the consensus layer a few days ago? You got it right, except, we know which transactions are valid, so validators dont ask for transaction validity but inclusion.\n\nYou can vew the system so that each transaction is a state change, the system was in state A, and with the new TX its now in state B.\nThe consensus is theee to make sure all nodes agree the system should go from A->B.\nWe all know B is a valid state, but do we transition to it?\n\n\nThe amount of staked coins depends on the design of the protocol. In general, the stake is what allows the protocol to make some game theory assumptions and enforce good behaviour by penalties for bad, and rewards for good.\nThe exact amount is a product of many variables such as:\n- Desired number of validating nodes\n- Decentralization\n- Sybil resistance\n- Rewards / coin issuance\n- Operating costs of running a node\n- etc..\n\nIf theres a fixed supply of AVAX, the protocol must sustain its validators with transaction fees alone. Dont see another way.",
                     "depth": 1,
@@ -5721,11 +5695,57 @@
                             "created_utc": 1652921114.0,
                             "response": "Could you explain probabilistic vs deterministic meaning? I\u2019m interested to hear more",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "i95ea0l",
+                                    "author": "Maleficent_Plankton",
+                                    "score": 2,
+                                    "created_utc": 1652924073.0,
+                                    "response": "Probabilistic finality vs Deterministic finality\n\nIn Nakamoto consensus (e.g. Bitcoin), there are always small forks being produced as miners compete against each other, but honest nodes eventually always settle on the longest chain, which is also called the canonical chain. However, there's always a chance a recent block on the canonical chain could be overwritten if someone else is able to publish a chain that's longer than the canonical chain. This is easily done with a 51% attack if you own the majority of the network hash rate. But assuming that no set of colluding miners owns over 51% of the network hash rate, the probability of a specific block in the past being overwritten becomes progressively lower as more blocks get added to the canonical chain. That's what Probabilistic finality means.\n\nThis is why many exchanges don't consider a Bitcoin transaction final until 3-6 blocks are written after that transaction. There's always a small chance that block could be reversed.\n\nDeterministic finality means that once a block is written, it is final. You cannot undo that block by producing a longer chain on the blockchain. Most DLTs that use BFT-like consensus protocols are deterministic.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "i95iqrr",
+                                            "author": "Interested-Investor",
+                                            "score": 1,
+                                            "created_utc": 1652926137.0,
+                                            "response": " Great explanation!\n\nI understand Avalanche doesn't follow a \"longest chain\" rule like Bitcoin, but can't a transaction still theoretically be overturned? Even if the likelihood is astronomically small?",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
             ]
+        },
+        {
+            "id": "ty6r3n",
+            "title": "Why transition to Proof of Stake does not lower the gas fee on Ethereum?",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ty6r3n/why_transition_to_proof_of_stake_does_not_lower/",
+            "author": "tuanquanghpvn",
+            "created_utc": 1649312717.0,
+            "score": 1,
+            "num_comments": 1,
+            "subreddit": "CryptoTechnology",
+            "selftext": "So I read this article in which Tim Beiko, a dev on Ethereum, said that transition to Proof of Stake does not lower the gas fee on Ethereum. I thought that in Proof of Stake, the number of validators will decrease to just a few, so the process to reach consensus will be much shorter and the gas fee will decrease as result. \n\nSo why did he say the Merge will not decrease the gas fee? Am I missing something here?\n\n[https://fortune.com/2022/03/28/3-misconceptions-ethereum-merge/](https://fortune.com/2022/03/28/3-misconceptions-ethereum-merge/)",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "tx5ekg",
+            "title": "Ryoshis Guard Ryoshis Guard Ryoshis Guard",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/tx5ekg/ryoshis_guard_ryoshis_guard_ryoshis_guard/",
+            "author": "expert_marketer2222",
+            "created_utc": 1649193438.0,
+            "score": 1,
+            "num_comments": 2,
+            "subreddit": "CryptoTechnology",
+            "selftext": " Official Links can be found below  \nhttps://linktr.ee/RyoshisGuard  \nOfficial Website: https://ryoshisguard.com/ \n\n&#x200B;\n\n Official Links can be found below  \nhttps://linktr.ee/RyoshisGuard  \nOfficial Website: https://ryoshisguard.com/ \n\n&#x200B;\n\n Official Links can be found below  \nhttps://linktr.ee/RyoshisGuard  \nOfficial Website: https://ryoshisguard.com/",
+            "stickied": false,
+            "comments": []
         }
     ]
 }

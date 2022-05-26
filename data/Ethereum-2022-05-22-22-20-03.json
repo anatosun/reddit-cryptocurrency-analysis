@@ -750,13 +750,45 @@
             ]
         },
         {
+            "id": "uveowi",
+            "title": "Who is msg.sender when contract calls another contract's function?",
+            "url": "https://www.reddit.com/r/ethereum/comments/uveowi/who_is_msgsender_when_contract_calls_another/",
+            "author": "BoganLord2169",
+            "created_utc": 1653237616.0,
+            "score": 2,
+            "num_comments": 10,
+            "subreddit": "ethereum",
+            "selftext": "If contract A calls transferFrom() of contract B, does contract B think the user or contract A is msg.sender?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9m7nhn",
+                    "author": "International-Yam548",
+                    "score": 3,
+                    "created_utc": 1653258847.0,
+                    "response": "It will be contract A\n\nYou can use tx.origin for the original user that made the tx.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9nwryr",
+                    "author": "Bon_Cloudboy",
+                    "score": 1,
+                    "created_utc": 1653297162.0,
+                    "response": "It depends. Calling with delegatecall() will leave the original user as msg.sender",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
             "id": "uvldcv",
             "title": "A16z on the State of Crypto",
             "url": "https://www.newbiescrypto.com/p/a16z-state-crypto",
             "author": "SuDa2104",
             "created_utc": 1653256933.0,
-            "score": 15,
-            "num_comments": 15,
+            "score": 14,
+            "num_comments": 20,
             "subreddit": "ethereum",
             "selftext": "",
             "stickied": false,
@@ -772,7 +804,7 @@
                         {
                             "id": "i9mvdmq",
                             "author": "InfiniteState",
-                            "score": 8,
+                            "score": 6,
                             "created_utc": 1653271084.0,
                             "response": "\"VC firm pumps VC-backed coin.\"",
                             "depth": 2,
@@ -789,7 +821,7 @@
                                 {
                                     "id": "i9mnrrx",
                                     "author": "VisionGuard",
-                                    "score": 10,
+                                    "score": 8,
                                     "created_utc": 1653267259.0,
                                     "response": "It also has that [sweet sweet premine](https://www.huobi.com/learn/wp-content/uploads/2022/01/Token-distribution.png) that [a16z led](https://www.coindesk.com/business/2021/06/09/solana-labs-raises-314m-in-token-sale-led-by-a16z-polychain/) and will continue to dump on everyone in perpetuity.  Oh yeah, and they're also inflating away the value, which then is given an initial dividend that disproportionately is given to the stakers....who are these insider VC's.\n\nI wonder how much they and electric capital bribe people to be \"active\" on their network to keep this nonsense up.  They're definitely trying in that report to push the narrative that it's \"Ethereum, then Solana, then Bitcoin\".",
                                     "depth": 3,
@@ -825,38 +857,6 @@
                             "comments": []
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "uveowi",
-            "title": "Who is msg.sender when contract calls another contract's function?",
-            "url": "https://www.reddit.com/r/ethereum/comments/uveowi/who_is_msgsender_when_contract_calls_another/",
-            "author": "BoganLord2169",
-            "created_utc": 1653237616.0,
-            "score": 2,
-            "num_comments": 10,
-            "subreddit": "ethereum",
-            "selftext": "If contract A calls transferFrom() of contract B, does contract B think the user or contract A is msg.sender?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i9m7nhn",
-                    "author": "International-Yam548",
-                    "score": 3,
-                    "created_utc": 1653258847.0,
-                    "response": "It will be contract A\n\nYou can use tx.origin for the original user that made the tx.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i9nwryr",
-                    "author": "Bon_Cloudboy",
-                    "score": 1,
-                    "created_utc": 1653297162.0,
-                    "response": "It depends. Calling with delegatecall() will leave the original user as msg.sender",
-                    "depth": 1,
-                    "comments": []
                 }
             ]
         }

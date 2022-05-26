@@ -1,0 +1,44 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uxltav",
+            "title": "Dormancy Flow Clarification Request",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uxltav/dormancy_flow_clarification_request/",
+            "author": "MagneticSoup",
+            "created_utc": 1653497946.0,
+            "score": 0,
+            "num_comments": 2,
+            "subreddit": "Bitcoin",
+            "selftext": "Say I have 10 Bitcoin sitting in a wallet for 1 year (365 coin days). Then say I transfer another 1 Bitcoin to that wallet on Jan 1 2020 and then 2 days later I transfer 1 Bitcoin out of that wallet somewhere. Does that count as 2 days destroyed or 367 days destroyed?\n\nHow do you know WHICH Bitcoin was actually moved out to determine the number of days truly destroyed?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9yh3tv",
+                    "author": "TheGreatMuffin",
+                    "score": 2,
+                    "created_utc": 1653498320.0,
+                    "response": "> How do you know WHICH Bitcoin was actually moved out to determine the number of days truly destroyed?  \n\nYou have to understand how the UTXO model works in bitcoin: https://medium.com/bitbees/what-the-heck-is-utxo-ca68f2651819 (perhaps there are better explainers out there, just from a very quick search). This will hopefully help you understand that there are no such things as wallets on-chain, there are only UTXOs.  \n\nVery simplified (and technically not quite correct), it comes down to which **address** bitcoin moved to and from, not to which **wallet**.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia09ozy",
+                    "author": "savinelli_smoker",
+                    "score": 1,
+                    "created_utc": 1653525706.0,
+                    "response": "Imagine your physical pocket, it has a bunch of loose coins and notes in it. It depends on which coin you picked out of the pocket. You can have a 50 cents coin sitting in there for months and is never used. But the dollar bill you just received 10mins ago you decide to spend it. Every UTXO is like one of these coin and each has its history on the blockchain",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

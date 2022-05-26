@@ -14,16 +14,25 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uxe9fx/how_does_the_lightning_network_work/",
             "author": "SwurveMan",
             "created_utc": 1653474074.0,
-            "score": 4,
-            "num_comments": 3,
+            "score": 6,
+            "num_comments": 16,
             "subreddit": "BitcoinBeginners",
             "selftext": "What are the benefits and flaws that this Layer 2 has over the Bitcoin Network?",
             "stickied": false,
             "comments": [
                 {
+                    "id": "i9xiwsm",
+                    "author": "spiceylizard",
+                    "score": 2,
+                    "created_utc": 1653484178.0,
+                    "response": "It\u2019s faster cheaper Bitcoin payments while giving up some fundamental properties of Base chain Bitcoin.\n\nYou can\u2019t (as of now) have a cold LNBitcoin wallet. Every LN wallet is a constant hot wallet. \nAdditionally If you want full custody of your coins you have to fund your own LN Node. \nYour have to put trust in the LN node operators. Just like you put trust in a bank.\n\nHere\u2019s a very brief slideshow on LN basics\nhttps://docs.google.com/file/d/1ASLFB5gq_LkLNjeJzZmjnBZkKH7GUhSW/edit?usp=docslist_api&filetype=mspresentation",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "i9xa5a5",
                     "author": "bitusher",
-                    "score": 2,
+                    "score": 1,
                     "created_utc": 1653479436.0,
                     "response": "Lightning is a Bitcoin smart contract which pre-approves  a certain set of transactions \n\nSatoshi was the first to propose payment channels here-\n\nhttps://lists.linuxfoundation.org/pipermail/bitcoin-dev/2013-April/002417.html\n\nThis smart contracts primary benefits are:\n\n1) Better privacy where chain analysis is useless\n\n2) Instant confirmations instead of waiting at least ~10 min on average \n\n3) Transactions fees of 0 to a fraction of a penny to send bitcoin \n\n4) Allows bitcoin to scale to handle millions of transactions a second \n\n5) Allows Bitcoin to be divided by 13 decimal places , 1/1000 of a sat for more granular micro transactions \n\n6) Allows for other smart contracts - https://dev.lightning.community/lapps/\n\nmore info \n\nhttps://www.lopp.net/lightning-information.html",
                     "depth": 1,
@@ -44,6 +53,33 @@
                     "score": 1,
                     "created_utc": 1653482614.0,
                     "response": "Asking how lightning works, and asking what are its benefits/flaws are two distinct questions. It's perhaps best to be very careful about your choice of question when trying to understand something, because newcomers end up getting overwhelmed over the technical composition when all they were really after is the use case and service it provides to people.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9y7p99",
+                    "author": "TendieTrades",
+                    "score": 1,
+                    "created_utc": 1653494669.0,
+                    "response": "Subbed so I can look more into this. Thanks.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9yllud",
+                    "author": "BTCMachineElf",
+                    "score": 1,
+                    "created_utc": 1653500074.0,
+                    "response": "Two users create a dynamic smart contract using a bitcoin utxo, that allows them to shift balance between the two of them. This allows for instant payments that can later be settled to the blockchain.\n\nLightning Network is a mesh network of these contracts that creates an instant bitcoin payment network.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9ytov1",
+                    "author": "Lucycv",
+                    "score": 1,
+                    "created_utc": 1653503239.0,
+                    "response": " Bitcoin has lightning and other than the fundamentals it's not too difficult to move money around.",
                     "depth": 1,
                     "comments": []
                 }

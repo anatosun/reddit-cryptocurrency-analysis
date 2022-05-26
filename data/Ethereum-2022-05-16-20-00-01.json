@@ -15,7 +15,7 @@
             "author": "MMasterMMind",
             "created_utc": 1652730446.0,
             "score": 5,
-            "num_comments": 6,
+            "num_comments": 8,
             "subreddit": "ethereum",
             "selftext": "I've been researching eth execution clients and it seems (please do correct my if I'm wrong) that currently geth's snap sync is by far the fastest and most widely used.  \n\nSo my question is, what are some disadvantages of using it (over full sync)? I've read the official blog posts and taken a look at its GitHub and the most obvious one seems to be the inability of a node that's synced with it to (easily) respond to historical questions dating before the pivot block, e.g. \"What was X's balance a year ago?\". Of course, for many users who are not block explorers, such a use might never be necessary. \n\nAre there any more serious drawbacks to using snap sync? Perhaps any in terms of network security if we assume that most of the network's clients are using it? Since it still results in a full node as opposed to a light one I would assume not, in which case is there any practical reason for a new node that wants to join the Ethereum *not* to use geth's snap sync?",
             "stickied": false,

@@ -356,7 +356,7 @@
             "author": "shaunskips",
             "created_utc": 1653211689.0,
             "score": 14,
-            "num_comments": 20,
+            "num_comments": 27,
             "subreddit": "ethereum",
             "selftext": "Setting up my full node for the first time! Does anyone know what block and when the first smart contract was created on ethereum?",
             "stickied": false,
@@ -364,7 +364,7 @@
                 {
                     "id": "i9jwtb4",
                     "author": "Questbelly",
-                    "score": 16,
+                    "score": 14,
                     "created_utc": 1653219416.0,
                     "response": "There be monsters there boy best ye turn back and forget about the thing ye seek",
                     "depth": 1,
@@ -373,7 +373,7 @@
                 {
                     "id": "i9k7cli",
                     "author": "coranos2",
-                    "score": 6,
+                    "score": 9,
                     "created_utc": 1653226029.0,
                     "response": "Frontier was released July 30, 2015. So probably blocks in that timeframe.\n\nUSDT contract was created in 2017, block 4634748.\n\nhttps://etherscan.io/tx/0x2f1c5c2b44f771e942a8506148e256f94f1a464babc938ae0690c6e34cd79190\n\nI looked for the dao smart contract, but didn\u2019t find it, and ethers can only lists the most recent 500.\n\nEdit: dao is in block 1428757, thanks for the help \n\nhttps://etherscan.io/tx/0xe9ebfecc2fa10100db51a4408d18193b3ac504584b51a4e55bdef1318f0a30f9",
                     "depth": 1,
@@ -408,11 +408,31 @@
                                 {
                                     "id": "i9pcmel",
                                     "author": "domotheus",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1653325506.0,
                                     "response": "the fork didn't actually undo any transactions that happened on chain, so all that stuff is still there",
                                     "depth": 3,
-                                    "comments": []
+                                    "comments": [
+                                        {
+                                            "id": "i9q3ro5",
+                                            "author": "paul_tu",
+                                            "score": 1,
+                                            "created_utc": 1653337076.0,
+                                            "response": "You won't see transactions that happened in the ETC network via ETH etherscan.\nCause these chains are different",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "i9qaoq1",
+                                                    "author": "domotheus",
+                                                    "score": 1,
+                                                    "created_utc": 1653340096.0,
+                                                    "response": "of course but all the pre-fork transactions are still in ETH's history, including the one where the guy stole all the ETH from the dao",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -475,7 +495,7 @@
                         {
                             "id": "i9kik9l",
                             "author": "Savage_X",
-                            "score": 10,
+                            "score": 12,
                             "created_utc": 1653231468.0,
                             "response": "Many thousands before The DAO.\n\nThe solidity language was a basic feature of Ethereum when it launched and the tutorial had you create an ERC20 token smart contract.\n\nPeople were literally playing ponzi games through smart contracts in 2015 through postings on this sub :)",
                             "depth": 2,
