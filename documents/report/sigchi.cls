@@ -1549,6 +1549,7 @@
    \color@endgroup}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
+
 \ps@plain
 \baselineskip=11pt
 \let\thepage\relax % For  NO page numbers - Gerry Nov. 30th. 1999
