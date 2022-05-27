@@ -45,7 +45,7 @@ class CurrentPriceFetcher():
 
             print(f'fetching: day {i} for {symbol}')
             l.append(self.fetch_daily_data(symbol, s))
-            time.sleep(1)
+            time.sleep(.2)
 
         return pd.concat(l)
     
