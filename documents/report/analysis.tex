@@ -52,9 +52,9 @@ After this, we get a list of 260 communities. Knowing that there are 10 subreddi
 
 After that, it can be interesting to know if some communities are formed by people from different subreddits. For this, we create the histogram of the number of different subreddits that people in a Louvain community belong to (see figure \ref{fig:louvainrepartition}).
 
-\begin{figure}[H]
+\begin{figure}[ht!]
     \centering
-    \includegraphics[width=0.3\textwidth]{figures/inner_communities_repartition.pdf}
+    \includegraphics[width=0.4\textwidth]{figures/inner_communities_repartition.pdf}
     \caption{Repartition of Louvain communities in the subreddits.}
     \label{fig:louvainrepartition}
 \end{figure}
@@ -63,9 +63,9 @@ With this histogram, we can observe that for the majority, the Louvain communiti
 
 Consequently, communities tend to spread over multiple subreddits but the majority of each community has a foot in one unique subreddit. This can be explained by the tree-like topology of our graph. Indeed, the commenter forms the root and the subcommenters the children until the last commenters being leafs. Those trees have a foothold in one particular subreddit and only few elements are shared among other posts and even less among other subreddits.
 
-\begin{figure}[H]
+\begin{figure}[ht!]
     \centering
-    \includegraphics[width=0.3\textwidth]{figures/communities_repartition_by_size.pdf}
+    \includegraphics[width=0.4\textwidth]{figures/communities_repartition_by_size.pdf}
     \caption{Repartition of Louvain communities in the subreddits according to size.}
     \label{fig:louvainsizerepartition}
 \end{figure}
@@ -77,7 +77,7 @@ $$ G_0 \subset G_1 \subset  ... \subset G_{n-1},$$
 where $n$ is the number of time windows, and $G_i$ a graph based on the \textit{Deep Link No Merge} data model.
 Then, we use the degree centrality to compare each graph with its subsequent graph. This results into a table where we have for each user (node) the development of its activity (degree). With this huge dataset, it is now possible to track users and also identify the most active users. However, since this requires lots of computation power and much more work to get something meaningful from this, we opted for the option to sum each time frame (e.g. 1 hour in our case). 
 
-\begin{figure}[H]
+\begin{figure}[ht!]
     \centering
     \includegraphics[width=0.5\textwidth]{figures/activity_x_price.pdf}
     \caption{The Reddit activity and the BTC price, normalized, from 01.04 to 22.05.2022.}
