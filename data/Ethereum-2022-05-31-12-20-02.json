@@ -1,0 +1,25 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v1oros",
+            "title": "In-depth analysis for impermanent loss of uniswap V2",
+            "url": "https://www.reddit.com/r/ethereum/comments/v1oros/indepth_analysis_for_impermanent_loss_of_uniswap/",
+            "author": "x3finance",
+            "created_utc": 1653998854.0,
+            "score": 1,
+            "num_comments": 0,
+            "subreddit": "ethereum",
+            "selftext": " Let\u2019s take the ETH-USDT fund pool as an example to quantitatively analyze the risk of AMM. Suppose that the market maker deposits x0 ETH and y0 USDT into the fund pool at the price of P0, and the market maker\u2019s assets will become xn ETH and yn USDT at the price of Pn. There are the following five market-making groups: \n\n \n\n1. . **Group 1** who want to hold USDT for a long time participate in market making, hoping to convert into USDT to maintain positive returns;Under the xyk AMM model, its rate of return = yn/y0 -1 = (Pn/P0)\\^.5 -1 for the market-making group without considering the fee income.\n\n&#x200B;\n\n[ ](https://preview.redd.it/htlj9jmzxs291.png?width=700&format=png&auto=webp&s=175e9cdaec67cc7e31d1625b7b5d08d91d1c81d1)\n\nFigure 1 Mining profit and loss of market maker group 1\n\n \n\n2) **Group 2** who want to hold ETH for a long time participate in market making, hoping to convert it into ETH to maintain a positive income;\n\nUnder the xyk AMM, its rate of return = xn/x0 -1 =(P0/Pn)\\^.5 -1 for the group 2 without considering the fee income.\n\n&#x200B;\n\n[ ](https://preview.redd.it/au68jjo1ys291.png?width=700&format=png&auto=webp&s=35ac5493a6cbb16f98215a73e545b116169ff7e9)\n\nFigure 2 Mining profit and loss of market maker group 2\n\n \n\n3). **Group 3** who want to hold both ETH and USDT for a long time participate in market making, hoping to convert into USDT to maintain a positive return;\n\nits rate of return = 2yn/(x0\\*Pn + y0)-1=2\\*(P0Pn)\\^.5/(Pn+P0) -1 for the group 3 without considering the fee income.\n\n&#x200B;\n\nhttps://preview.redd.it/3hwrmpv3ys291.png?width=700&format=png&auto=webp&s=c9f9ecec3a0ce3cdd42ec7e33556fd83e3ea0527\n\n \n\nFigure 3 Mining profit and loss of market maker group 3\n\n4). **Group 4** who want to hold both ETH and USDT for a long time participate in market making, hoping to convert into ETH to maintain a positive return;\n\nits rate of return = 2yn/(x0\\*Pn + y0)-1=2\\*(P0Pn)\u2070.5/(Pn+P0) -1 for the group 4 without considering the fee income.\n\n&#x200B;\n\nhttps://preview.redd.it/oyqhqjq5ys291.png?width=700&format=png&auto=webp&s=62bcca59cb0f3a304a6b35c7527cd88207640c8e\n\n \n\nFigure 4 Mining profit and loss of market maker group 4\n\n5). **Group 5** sushiswap single-sided solution: depositing ETH, borrowing equivalent SIL, and returning SIL when withdrawing.\n\nits rate of return = (2xn - (y0)/Pn))/x0 -1= 2(P0/Pn)\\^.5 \u2014 P0/Pn -1, for the group 5 without considering the fee income.\n\nHowever, the sushiswap single-sided solution not only cannot hedge impermanent losses, but the market maker\u2019s assets will have the risk of returning to zero.when the price falls by 75%.\n\n&#x200B;\n\nhttps://preview.redd.it/vu5gh2z7ys291.png?width=700&format=png&auto=webp&s=cac8501d4c107e9d7c144c2539ba74e88dc9d271\n\n \n\nBased on the quantitative analysis of the above five groups, the profit and loss of automatic market makers is related to price. Group 1 bears the risk of price falling, group 2 bears the risk of price rising, and groups 3 and 4 face losses whether price rising or falling which is known as impermanent loss in the industry.\n\n[https://x3finance.medium.com/in-depth-analysis-for-impermanent-losses-ac948e5bb892](https://x3finance.medium.com/in-depth-analysis-for-impermanent-losses-ac948e5bb892)",
+            "stickied": false,
+            "comments": []
+        }
+    ]
+}

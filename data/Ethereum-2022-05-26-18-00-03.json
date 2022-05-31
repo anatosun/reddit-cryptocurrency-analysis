@@ -1,0 +1,168 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uyd7rw",
+            "title": "Will the minimum amount of 32 ETH required to run a node be reduced agter the merge?",
+            "url": "https://www.reddit.com/r/ethereum/comments/uyd7rw/will_the_minimum_amount_of_32_eth_required_to_run/",
+            "author": "PeeCola",
+            "created_utc": 1653587273.0,
+            "score": 10,
+            "num_comments": 21,
+            "subreddit": "ethereum",
+            "selftext": "I tried to search for an answer to this with no avail. I understand that someone who runs a node already, will become able to unstake after.the merge. But is there any other effect to the staking system that will take place after the merge? Like minimum amount required to run a node for example",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia3d241",
+                    "author": "MinimalGravitas",
+                    "score": 11,
+                    "created_utc": 1653587758.0,
+                    "response": "Probably not natively, but with RocketPool you can run a node with only 16 ether and they are discussing the possibility of reducing this to 4, 6 or 8... though I'm not up to date with how slashing would be dealt with in these kinds of low collateral options.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia3npaa",
+                            "author": "FaceDeer",
+                            "score": 5,
+                            "created_utc": 1653592111.0,
+                            "response": "My understanding was that the highest possible slashing penalty for a validator was 16 ETH, so if you're going to pool your resources with other people and trust one of them to be the guy who risks losing your pooled stake by actually running the physical validator machine you'd want him to put up at least 16 Ether. Otherwise if he screws up through no fault of your own you'll be on the hook for some of the slashing penalty.\n\nBeen a while since I read up on why there needed to be a pool participant with 16 Ether, though, I might be misremembering. The other pool members can contribute smaller portions of the stake, though presumably won't be getting as big a percentage of the rewards as the 16 Ether contributor since they're not risking as much or doing the actual work of running a validator.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia3ogvz",
+                                    "author": "MinimalGravitas",
+                                    "score": 3,
+                                    "created_utc": 1653592430.0,
+                                    "response": "That's how it works now, but I think there is discussion around reducing that and having lower collateralized pools slashed with leverage... but I've not read more than just Reddit/Discord comments  (e.g. https://www.reddit.com/r/rocketpool/comments/uum9er/concerns_about_decreased_eth_no_bond/)",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia6wa97",
+                            "author": "shim__",
+                            "score": 1,
+                            "created_utc": 1653658376.0,
+                            "response": "It might be possible with SSV validators in the future since there won't be one person solely responsible for a slashing event.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia3jhtd",
+                    "author": "eastsideski",
+                    "score": 9,
+                    "created_utc": 1653590387.0,
+                    "response": "Just to clarify:\n\nRunning a node on PoS Ethereum is free, just like running a node on PoW Ethereum\n\nOnly running a _validator_ requires 32 ETH.\n\nBut the answer is no, it's unlikely to decrease. Just like nobody _actually_ mines directly on Bitcoin, people mine in mining pools, you can join a staking pool like RocketPool if you want to stake less than 32 ETH.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia3sy97",
+                            "author": "Perleflamme",
+                            "score": 6,
+                            "created_utc": 1653594286.0,
+                            "response": "This is a concise and yet very thorough answer. Thank you.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia5yo95",
+                    "author": "Nonocoiner",
+                    "score": 4,
+                    "created_utc": 1653633975.0,
+                    "response": "Not directly after the merge, but there are ideas to lower the amount.\n\nI think this would work by cycling validators, so that the total amount of validators at any point will never get too large",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia64igg",
+                            "author": "Olmops",
+                            "score": 3,
+                            "created_utc": 1653639018.0,
+                            "response": "Yes, I read something along those lines as well (like a year ago).\n\nIf the amount necessary to stake is lowered, we would have a much greater number of validators. At some point the coordination overhead gets problematic.\n\nHaving validators \"fall asleep\" and keeping only a defined set active would avoid the problem. E.g. 1/4 validator would only need 8 ETH and be active 25% of the time.\n\nHowever, I do not see such an upgrade in the near (1-2 years) future, since it is not mission critical and the bare necessities already eat up all the development time.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia4v5ph",
+                    "author": "mini_dreamz",
+                    "score": 3,
+                    "created_utc": 1653611558.0,
+                    "response": "Well if ETH continues to dip maybe there will be no need to decrease the current minimum amount of 32...",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia62pl1",
+                            "author": "henkgaming",
+                            "score": 1,
+                            "created_utc": 1653637419.0,
+                            "response": "I\u2019ve definitely been hitting myself for not putting in more, I welcome the dip",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia681qd",
+                                    "author": "mini_dreamz",
+                                    "score": 1,
+                                    "created_utc": 1653642209.0,
+                                    "response": "We all welcome the dip, but what's the dip",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia6akg0",
+                                            "author": "mickpegz",
+                                            "score": 1,
+                                            "created_utc": 1653644502.0,
+                                            "response": "Has to be guacamole",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "ia6azq1",
+                                            "author": "henkgaming",
+                                            "score": 1,
+                                            "created_utc": 1653644879.0,
+                                            "response": "Im just putting in fixed dollar amounts every month until we hit >2500 usd again, can be a month can be two years, we\u2019ll see",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia48u6i",
+                    "author": "Testecles",
+                    "score": 1,
+                    "created_utc": 1653601073.0,
+                    "response": "Not sure how they're doing it.. But I was thinking that it is kinda nice to have 1/4 of the 32-bit space available to be reserved for headers or whatever.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia4z61w",
+                    "author": "Educational-Spread41",
+                    "score": -2,
+                    "created_utc": 1653613527.0,
+                    "response": "2.5 Polygon",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

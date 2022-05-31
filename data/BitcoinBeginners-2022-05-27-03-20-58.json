@@ -1,0 +1,451 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uyonoi",
+            "title": "Way to store seed phrases",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uyonoi/way_to_store_seed_phrases/",
+            "author": "Pots454",
+            "created_utc": 1653620939.0,
+            "score": 20,
+            "num_comments": 54,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Been starting to accumulate a few lists of seed words and have been thinking of ways to store them.\n\nI\u2019m sure someone has thought of this before but wondering if I\u2019m missing something.\n\nI could put the lists in a word document and encrypt it.\n\nThen put it on a Bitlocker encrypted thumb drive. Could have as many as you want. Still have to stash it but if lost or stolen or whatever, highly unlikely anyone will be able to use it.\n\nYou lose the paper and your done.\n\nYou could also email the encrypted document to yourself. I have like 50 or 60 thousand emails. It would just be sitting there amongst them.\n\nHave accounts on google, Microsoft, & yahoo so it would always be out there.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia5gdme",
+                    "author": "blockplate",
+                    "score": 18,
+                    "created_utc": 1653622050.0,
+                    "response": "Consider [using a passphrase](https://www.blockplate.com/blogs/blockplate/what-is-a-bip39-passphrase) instead if you're going to store something online with multiple offline (paper) copies of your seed phrase.\n\nThat way you need both the seed phrase and the passphrase to access your coins.\n\nIf someone got access to your seed phrase, they wouldn't know there would be passphrase attached since the seed phrase by itself is a valid wallet.\n\nIf someone got access to your passphrase, they again would still need your seed phrase.\n\nIf you're interested in more seed security tips, check out r/seedstorage",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia5glrv",
+                            "author": "OrangeHODLr",
+                            "score": 6,
+                            "created_utc": 1653622171.0,
+                            "response": "God this all day long.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia708ho",
+                                    "author": "Pots454",
+                                    "score": 0,
+                                    "created_utc": 1653660209.0,
+                                    "response": "This is a beginner\u2019s forum. You should expect this kind of stuff. Lol",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia71prt",
+                                            "author": "OrangeHODLr",
+                                            "score": 2,
+                                            "created_utc": 1653660872.0,
+                                            "response": "I may have forgotten momentarily",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia618b2",
+                            "author": "tabac-en-paris",
+                            "score": 4,
+                            "created_utc": 1653636104.0,
+                            "response": "This is such a simple and effective idea that I wish my Ledger had offered it to me whilst I was setting it up. Now I\u2019m going to have to faff around to get it working.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia93fo8",
+                            "author": "Cultural_Bit9176",
+                            "score": 2,
+                            "created_utc": 1653693521.0,
+                            "response": "I have heard putting them in a capsule and storing them in your ass is best.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia5jt75",
+                    "author": "Plane_Baby",
+                    "score": 9,
+                    "created_utc": 1653623933.0,
+                    "response": "Storing them electronically opens you up to several risks. Hacking, technology improvements, your drive losing the charge (drives don't last forever). If you embed it in a photo (there is technology to find it). Too much is getting hacked nowadays to make that a great choice. If you think about it, you could make an AI program to look for seed phrase words in a document (Google is not hack proof). You would be better off scratching it in metal and hiding it in the cement on the floor. lol",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia76sdf",
+                            "author": "ItaSha1",
+                            "score": 2,
+                            "created_utc": 1653663041.0,
+                            "response": "Apparently there are titanium plates you can buy especially for that purpose",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia7bj2k",
+                                    "author": "Plane_Baby",
+                                    "score": 1,
+                                    "created_utc": 1653665006.0,
+                                    "response": "There are so many cheap hacks.  All you need is a metal stamper.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia5rpo0",
+                    "author": "CrypoFiend",
+                    "score": 7,
+                    "created_utc": 1653628857.0,
+                    "response": "The crocodile of wall street got caught by storing encrypted documents online. So if you think encryption will keep you safe, then think again.\n\nhttps://nakedsecurity.sophos.com/2022/02/09/self-styled-crocodile-of-wall-street-arrested-with-husband-over-bitcoin-megaheist/\n\nI feel like a hidden metal seed plate is safer.\n\nKeep half the seed phrase is one location the second half in another location.\n\nI am surprised the suggestions of keeping your seedphrase online is gettig up votes. DO NOT store your seed  pharse electronically.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia5slwq",
+                            "author": "ballsonrawls",
+                            "score": 3,
+                            "created_utc": 1653629485.0,
+                            "response": "For real",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iab6auv",
+                            "author": "kurnaso184",
+                            "score": 1,
+                            "created_utc": 1653743935.0,
+                            "response": "> Keep half the seed phrase is one location the second half in another location.\n\nThis drastically compromises the security of a seedphrase.\n\nBetter to add a passphrase and keep it separately.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia5zr2r",
+                    "author": "ndgoLiberty",
+                    "score": 5,
+                    "created_utc": 1653634857.0,
+                    "response": "If there is one thing we learned in the 13 years of bitcoin it\u2019s that computers and digital storage can\u2019t be trusted to store seed phrases.\n\nEtching it into your favorite durable non-flammable material is the way.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia601vy",
+                    "author": "bftimn1tb",
+                    "score": 3,
+                    "created_utc": 1653635101.0,
+                    "response": "Honestly considering getting mine tattooed on an inconspicuous area of my skin. Only once i have enough money in there to justify that \ud83d\ude02",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia8k8ux",
+                            "author": "ballsonrawls",
+                            "score": 1,
+                            "created_utc": 1653684197.0,
+                            "response": "On your taint",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia6ubgr",
+                    "author": "blaze1234",
+                    "score": 3,
+                    "created_utc": 1653657430.0,
+                    "response": "Never digitise your Seed Recovery information, except to a hardware wallet or other dedicated airgapped device. Certainly never on anything capable of connecting to the internet.\n\nEtched onto steel plates, stored in multiple secure locations far from home, secure passphrase separately from 24-word mnemonic",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia7mbmz",
+                    "author": "cryptoripto123",
+                    "score": 3,
+                    "created_utc": 1653669410.0,
+                    "response": "I know this isn't popular but I actually think digitization is fine if you do it properly. If you aren't as technically adept, using a simplified method such as a reputable password manager (1Password, Bitwarden, LastPass), isn't that bad of an idea. They're well trusted by Fortune 500 enterprises and have gone through audits and have a proven record of storing your credentials using zero knowledge encryption.\n\nIf you are comfortable encrypting files yourself, encrypting a seed phrase text file, then storing it in cloud storage such as DropBox, Drive, OneDrive, etc (similar to how KeePass works) is fine too.\n\nLook, there's obviously risks with digitization of passphrases--but for those using software wallets, you already did it when you decided to use software wallets. Everyone acting like you'll suddenly get hacked is absurd. Malware, key loggers, etc do exist, but they're less common than people think. So many things are digitized on a regular basis, and people take photos of things too. We need to stop mixing what is technically possible (AI photo processing and stealing seed phrases) versus what is actually happening. If all your photos are constantly being scanned and its contents actually revealed to others, we'd be screwed already. Apple,Microsoft, Google, Amazon are trillion dollar companies that store likely exabytes of photos. Of course your photos are being scanned, but these are companies that stake their entire revenue on using your data in a way that doesn't reveal to everyone else the contents. If employees were looking at your nudes, if employees were stealing home secrets, business secrets, etc, that would immediately signal a downfall in these companies.\n\nNow I'm not saying that you should take photos of your seed phrases, but if my point is its not as dangerous as you think. If you think you will automatically get compromised, I'd be willing to test it out with you. Put $1 in a disposable seed phrase. Type it in your computer. Does it automatically disappear? TAke a photo of the words. Does it automatically disappear? I'm willing to bet unless you [deliberately infect your computer](https://www.youtube.com/shorts/mVLnKx9K_Aw) with a bunch of malware ahead of time, it will be fine.\n\nWhat people advocate with physical storage almost never account for the odds of physical loss, and then treat the probability of loss via digitization as 100%. Look, your home is more likely to burn down. Your safe is more likely to be broken into. Your handwritten note is more likely to be lost or misplaced. Someone is likely to stumble upon your seed phrases hidden in your home. All of this is far more likely than encryption being broken provided you used a strong passphrase.\n\nAnd the advantages of digitization never get talked about too:\n\n1. In a Ukraine like situation, smuggling physical goods is tough and you CAN be caught. What are you going to do then? I'd rather trust my data in the cloud and flee with nothing. Do you think you want to take the chance that Russian soldiers find you with a USB stick and torture you for that information? Or worse yet see your cryptosteel? Good luck with that.\n\n2. You are vacationing and your home gets burglarized. Your neighbor calls you and tells you they called the cops, but a lot of stuff was stolen already. What are you going to do then? Fly home? Cut your vacation short? Or guess what? Instead of wondering if your Trezor got stolen or if your backup phrases  got discovered, I load up my backup, create a new software wallet via an open source wallet, move my funds over and I stop worrying. Once I return home, I can assess the situation--buy a new hardware wallet if needed, but at least for a temporary basis, my funds are safe.\n\n3. People who come up with \"creative\" key splitting schemes like putting half at their mom's basement, giving a copy to their brother/sister, best friend, etc are likely doing more harm than good. There's actually [a term for it](https://en.bitcoin.it/wiki/Shamir_Secret_Snakeoil). Most of you think you're smart, but compared to a full seed phrase, you already cut your entropy orders of magnitude by breaking it up and handing it to people. Moreover, you're now fully trusting that people won't combine them to screw you over. Is that trust really a lower probability than encryption being broken?\n\nI'm disturbed how many of you are so anti-digitization when Blockchain is based on encryption and math. So many of you don't use password managers, which is why I see so many CeFi hackings on a daily basis. If you talk to people who actually value digital security, almost everyone is comfortable with crypto seed phrases in their password managers.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia640e0",
+                    "author": "aq9600947",
+                    "score": 2,
+                    "created_utc": 1653638576.0,
+                    "response": "This question has always greatly worried me. One day I couldn't find this fra. It's good that I lost quite a bit. But now I have become more responsible. Crypto does not forgive such mistakes.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia6bszl",
+                    "author": "mozzo00",
+                    "score": 2,
+                    "created_utc": 1653645589.0,
+                    "response": "Tattoo them.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia7y0re",
+                    "author": "Euphorix126",
+                    "score": 2,
+                    "created_utc": 1653674280.0,
+                    "response": "Nope. Do not store them electronically. Period.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia5xswe",
+                    "author": "MrQ01",
+                    "score": 2,
+                    "created_utc": 1653633285.0,
+                    "response": "Dont forget to memorize your seed phrase and recite it every day, so that if anything happens to your hard copy, you can immediately write it somewhere else. Also means you dont have to carry your phrase to every country you travel to.\n\nTyping it onto any computer that is connected to the internet usually compromises it.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia6dscq",
+                    "author": "0dds0cket",
+                    "score": 3,
+                    "created_utc": 1653647234.0,
+                    "response": "Buy a hard copy of a book, not one people know you like or own. Take the first letters of the first 8 words from the Nth chapter, N being a number you won\u2019t forget. If you lose the book, buy another copy of the same edition.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia7n3ki",
+                            "author": "merkletwig",
+                            "score": 2,
+                            "created_utc": 1653669729.0,
+                            "response": "Wait, what do you do with the 8 words?",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia6sg29",
+                            "author": "testtech2522",
+                            "score": 2,
+                            "created_utc": 1653656502.0,
+                            "response": "I was actually thinking about something similar. I will use a static popular document like the Declaration of Independence and assign each letter a number.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia5e77r",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653620941.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia7tg6w",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1653672346.0,
+                    "response": "> thumb drive\n\nFlash memory is unreliable  \n\nThis was written recently  \nhttps://blog.lopp.net/how-to-back-up-a-seed-phrase/  \n\nThere's no one answer which suits everybody",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia8tk2p",
+                    "author": "feedmeliver",
+                    "score": 1,
+                    "created_utc": 1653688637.0,
+                    "response": "Probably stupid but I recorded mine on steel tablets or steel gang box covers (engraved) and put in a safe in my home. Also, for backup engraved some acrylic sheets and put in plastic weatherproof electrical enclosure and buried it in a secure but accessible spot on my property.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia5g2ll",
+                    "author": "OrangeHODLr",
+                    "score": -1,
+                    "created_utc": 1653621891.0,
+                    "response": "I mean.  If you can\u2019t trust cryptography to protect your cryptocurrency\u2026 just watch out for the folks who want to sell you wallets and metal plates. If you\u2019re into craft projects or just want a convenient way to use the send feature get a ledger but it\u2019s hardly necessary.  Just imagine all the people out there who have plaintext copies of their seeds etched into metal ready to be stolen when they aren\u2019t looking. Have you considered encrypting them with a private key and then using steganography to hide them in vacation photos and then store the photos in iPhoto?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia5rwv9",
+                            "author": "CBizCool",
+                            "score": 1,
+                            "created_utc": 1653628995.0,
+                            "response": ">Just imagine all the people out there who have plaintext copies of their seeds etched into metal ready to be stolen when they aren\u2019t looking.\n\nSo you're saying etching seed phrase into metal plate is a bad approach? Why ?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia5s4do",
+                                    "author": "OrangeHODLr",
+                                    "score": 0,
+                                    "created_utc": 1653629140.0,
+                                    "response": "It\u2019s not a bad a approach so long as no one ever finds it.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia6xdca",
+                                            "author": "Pots454",
+                                            "score": 0,
+                                            "created_utc": 1653658890.0,
+                                            "response": "That\u2019s kind of the bottom line to the whole thing. \u201cAs long as no ever finds it\u201d.\n\nif it is found, if it\u2019s paper or metal plate, it\u2019s over.\n\nif it\u2019s something that can\u2019t be used \u201cas found\u201c you at least have a chance It can\u2019t be used.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia5hzux",
+                            "author": "Pots454",
+                            "score": 0,
+                            "created_utc": 1653622910.0,
+                            "response": "I think I would feel better with a good encrypted copy vs piece of paper.\n\nLike I said I was just wondering if I\u2019m missing something but it sounds OK to me.  \nFunny you mentioned the photo. I did think of something like that. Take a picture of the list. (Of course be sure your camera is not sending it anywhere).\n\nThen encrypt photo with a pattern and merge it with another but it was getting to complicated and it was going a bit overboard.\n\nFun thinking about it.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia5i79i",
+                                    "author": "OrangeHODLr",
+                                    "score": 1,
+                                    "created_utc": 1653623025.0,
+                                    "response": "Read ken Thompsons paper \u201creflections on trusting trust \u201c at some point you have to trust something in the chain of trust.  The alternative is to live completely paranoid and scratch words into metal plates.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia5j8xl",
+                                            "author": "Pots454",
+                                            "score": 0,
+                                            "created_utc": 1653623609.0,
+                                            "response": "I\u2019m not being paranoid, I just don\u2019t feel good about trusting a piece of paper with the keys to my entire crypto empire.\n\nMetal plates need to be treated the same as a piece of paper.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia5skj0",
+                                                    "author": "ballsonrawls",
+                                                    "score": 2,
+                                                    "created_utc": 1653629458.0,
+                                                    "response": "How? Get the right one, no rust, fire proof, waterproof and other proofs.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia6zn41",
+                                                            "author": "Pots454",
+                                                            "score": 0,
+                                                            "created_utc": 1653659941.0,
+                                                            "response": "As far as someone being able to find it. Metal, paper, plastic, whatever, if it\u2019s found it\u2019s found.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia7ai5k",
+                                                                    "author": "ballsonrawls",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653664592.0,
+                                                                    "response": "Bip, different types of encryption.  Make your own encryption.  Lol I'm sorry but you're totally wrong",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ia5j13b",
+                                    "author": "OrangeHODLr",
+                                    "score": 0,
+                                    "created_utc": 1653623487.0,
+                                    "response": "I love how setup instructions for hardware wallets tell you to write down your \u201crecovery phrase\u201d. It\u2019s not a recovery phrase it\u2019s entropy derived key data.  It\u2019s more important than the wallet but they have you write it down in plaintext on a piece of cardboard??",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia5qwa5",
+                                            "author": "sciencetaco",
+                                            "score": 3,
+                                            "created_utc": 1653628297.0,
+                                            "response": "A piece of paper wont have a keylogger running on it.\n\nUse a BIP39 passphrase in addition to your seed and it doesn't matter if your bit of paper gets stolen. Encrypting a seed electronically is functionally the same as using a passphrase, but the passphrase enabled the whole process to be done offline and hardware wallets have built-in support for it.\n\nhttps://www.ledger.com/academy/passphrase-an-advanced-security-feature",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia6qp7r",
+                    "author": "damirsalov",
+                    "score": 0,
+                    "created_utc": 1653655595.0,
+                    "response": "Can someone advise a amazing Play and Earn game? What do ya feel about Fulbo Galaxy? The first project to represent Football game with a distinct punk theme that satirically introduces well-known characters",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia7893w",
+                            "author": "irie25",
+                            "score": 1,
+                            "created_utc": 1653663652.0,
+                            "response": "Can you link me to their website?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia7iyoy",
+                    "author": "aktiveradio",
+                    "score": 0,
+                    "created_utc": 1653668044.0,
+                    "response": "White them all down except for 1 you memories then store the paper copy in a safe place. This way even if someone else finds the paper they won't be able to use it.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia8ki69",
+                            "author": "ballsonrawls",
+                            "score": 0,
+                            "created_utc": 1653684317.0,
+                            "response": "Lol. I you wrote 23 of the 24 words down and it was found, there's 256 chances to solve it.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia8mg1f",
+                                    "author": "Pots454",
+                                    "score": 0,
+                                    "created_utc": 1653685230.0,
+                                    "response": "24 are written down. 1 is no good. How do you know which one?\n\nHow would  you even know one is bad in the first place?\n\nI believe the list of words used to generate the keys contains 2056 words?",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia858wp",
+                    "author": "Pots454",
+                    "score": 0,
+                    "created_utc": 1653677428.0,
+                    "response": "Thanks for all the responses.Think I have come up with my personal solution at this point. Overkill, stupid, funny, or whatever, sounds good to me at this time.Presently have 5 or six word lists.Going to put all lists in a Microsoft word document.One word in each list is fake. Always the same number in the list.The 5th, 14th, 21st, or whatever.Also one complete list is fake. (Only I know which one)The correct words are in the fake list and only I know where they are.Document then encrypted.Then email it to myself and it will be sitting amongst thousands of others in my inbox accessible from anywhere If I need it.Don\u2019t see why anyone would go looking for it or even know what it was if they somehow got ahold of it.And if someone did get it, no list would work.\n\nWill also keep a thumb drive around.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

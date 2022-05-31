@@ -1,0 +1,73 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v0810g",
+            "title": "What could a vector engine be useful for in general algorithmic operations related to cryptocurrencies?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/v0810g/what_could_a_vector_engine_be_useful_for_in/",
+            "author": "Unique_Lake",
+            "created_utc": 1653818506.0,
+            "score": 0,
+            "num_comments": 11,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I have once stumbled upon an elusive piece of modern pc hardware that it's used pretty much in servers and workstations called a \"vector engine\" \n\nGenerally, a vector engine is a scalable component that could be useful to maximize the ability of a computer to read or execute operations as quickly as it can. They are a bit like graphic cards and a bit like microprocessors, except that they are mostly dedicated to increase efficiency in overral mathematical operations and can be scaled accordingly to one own needs.\n\nBut the true question is, what could be a vector engine be useful for in the world of cryptocurrencies? Can they be useful to be used on a thundernode or just simply to aid you during bitcoin mining?\n\nPS: Even if this may not be related to this reddit community at all, can vector engines be useful in gaming where mathematical execution is a must for handling complex software?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iaetcgx",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653818507.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iagn9vy",
+                    "author": "JivanP",
+                    "score": 1,
+                    "created_utc": 1653853334.0,
+                    "response": "Presumably you mean a [vector processor](https://en.wikipedia.org/wiki/Vector_processor), in which case: any parallelisible or array-summarising operation (anything conducive to being expressed using [*map*](https://en.wikipedia.org/wiki/Map_%28higher-order_function%29) or [*fold*](https://en.wikipedia.org/wiki/Fold_%28higher-order_function%29)) can be made more efficient using a vector processor. In general, cryptocurrency consensus models are designed to *not* be conducive to this, so that two execution threads are not really better than one. You could very well create a vector ASIC to perform many SHA-256 computations in parallel, but why bother with a vector ASIC capable of handling vectors up to 16 elements wide when you can just have 16 scalar ASICs? It is my understanding that, in general, the computation in question needs to involve using the same variables in different combinations with each other (as in a matrix multiplication) or folding over an array (as in computing the sum of the elements of a vector) to warrant using a vector processor, else you may as well just run the different elements of the computation on different processors.\n\nTo address your PS: we are increasingly seeing such sorts of processors become prevalent again in the form of processors designed to perform matrix and tensor computations as quickly as possible to benefit machine learning / AI algorithms, e.g. see [Tensor Processing Unit](https://en.wikipedia.org/wiki/Tensor_Processing_Unit).",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iah50vk",
+                            "author": "Unique_Lake",
+                            "score": 1,
+                            "created_utc": 1653861990.0,
+                            "response": "what are some examples of everyday applications that make uses of \"map\" and \"fold\" operations?\n\nI've saw this vector processor offered by NEC for servers architectures and I wonder how good could it be for operating thundernodes or for doing basic mining.\n\nhttps://www.nec.com/en/global/solutions/hpc/sx/vector_engine.html",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iahbtl2",
+                                    "author": "JivanP",
+                                    "score": 1,
+                                    "created_utc": 1653865479.0,
+                                    "response": "*map* and *fold* are almost considered primitives in [functional programming](https://en.wikipedia.org/wiki/Functional_programming). They are ways of describing what would otherwise be iteration in the more common [imperative programming](https://en.wikipedia.org/wiki/Imperative_programming) style. In other words, they are functional programming's way of doing [for-loops](https://en.wikipedia.org/wiki/For_loop).\n\nAs already mentioned, vector processors will not help at all with what you're interested in. Bitcoin mining is dominated by ASICs, which are specifically designed to do one job: execute SHA-256 as quickly as possible. Other proof-of-work models are usually designed to *reduce* the benefit of specialised hardware, if not eliminate it completely. For example, RandomX is best run on commodity CPUs, and Chia PoST on commodity SSDs.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iahqluj",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1653873277.0,
+                    "response": "> this may not be related to this reddit community\n\nIt's not. Please delete it",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

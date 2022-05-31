@@ -1,0 +1,235 @@
+{
+    "subreddit": "btc",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uzt6bi",
+            "title": "Electron Cash 4.2.10 (with CashFusion) is now available for Windows, Mac, and Linux",
+            "url": "https://electroncash.org/#download",
+            "author": "NilacTheGrim",
+            "created_utc": 1653762410.0,
+            "score": 67,
+            "num_comments": 27,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iac8in3",
+                    "author": "NilacTheGrim",
+                    "score": 11,
+                    "created_utc": 1653762448.0,
+                    "response": "## Release Notes\n\nThis is a maintenance release of Electron Cash. It simply rights the \"wrong\" of temporary non-reproducibility in the Windows build. Additionally, an update to the internal compiler tools used to build the Windows version should improve performance and stability for Windows users.  ***It is strongly recommended*** that Windows users update to this version at their earliest convenience.  Also in this release: a fix-up for dark mode on Linux & Windows.\n\n# What's New in 4.2.10\n\n- Windows build: Restored reproducibility of the Windows build #2444 (Axel Gembe)\n- Removal of dead code (cculianu)\n- Fixup for dark mode on some Linux and Windows systems (Pierre K)\n\n---\n\n## Download Notes\n\n- **`.AppImage`** is for any **Linux 64 bit** (it's a self-contained app bundle with everything inside) \n  - **Note**: Be sure to set this to executable to run it (`chmod +x`)\n- **`.dmg`** is for **macOS** (Mojave or above is required otherwise it may not run)\n- **`.exe`** is for **Windows**\n- **Srcdist** is provided as **`.tar.gz`** and/or **`.zip`** files \n  - Includes Python dependencies inside in `packages/`\n  - This is built on a **Linux 64-bit** system, and also includes `libsecp256k1.so.0` and the embedded `tor` static binary.\n- **ShaSums and Signatures:** Sha256 hashes and pgp signatures for the below release [are available here](https://github.com/Electron-Cash/keys-n-hashes/tree/master/sigs-and-sums).",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iafbkli",
+                            "author": "mtps93",
+                            "score": 2,
+                            "created_utc": 1653831269.0,
+                            "response": "Oversimplified: CashFusion \u201cfuses\u201d your wallet\u2019s funds with countless other wallets.\n\nIn reality it\u2019s fusing the UTXOs. So when you make a transaction, it\u2019s impossible to see who sent what money where, since the UTXOs are being sent from and returned to all wallets.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iackn5i",
+                    "author": "LovelyDayHere",
+                    "score": 8,
+                    "created_utc": 1653768278.0,
+                    "response": "Woot! Every EC release day is a good day. Thanks to you, Calin, and everyone working on EC.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iagfnuh",
+                            "author": "KartoffelCommand",
+                            "score": 1,
+                            "created_utc": 1653849779.0,
+                            "response": "If you want privacy you could always use CashFusion .",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iagoq39",
+                                    "author": "LovelyDayHere",
+                                    "score": 1,
+                                    "created_utc": 1653854020.0,
+                                    "response": "you got it",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iacje8j",
+                    "author": "supremelummox",
+                    "score": 5,
+                    "created_utc": 1653767667.0,
+                    "response": "Is there an EC without cash fusion anymore?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iacnfd1",
+                            "author": "NilacTheGrim",
+                            "score": 13,
+                            "created_utc": 1653769633.0,
+                            "response": "Well there is Electron Cash SLP (no cashfusion). Maybe we should stop saying \"With CasFusion\" but we want to advertise it.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iae23o8",
+                                    "author": "gotamd",
+                                    "score": 3,
+                                    "created_utc": 1653796493.0,
+                                    "response": "I don\u2019t mind it being advertised as part of the wallet. It\u2019s a great feature that most wallets lack.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "iagzs1m",
+                                    "author": "schweertob",
+                                    "score": 1,
+                                    "created_utc": 1653859390.0,
+                                    "response": "Maybe it should be opt-out.  It's good for organizations that want to be auditable.\n\nPrivacy is also optional in BCH, although on Electron Cash it is just one click away, on the CashFusion icon at the bottom right.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "iafg4zc",
+                            "author": "Bviktor2635",
+                            "score": 1,
+                            "created_utc": 1653833546.0,
+                            "response": "Now could you evaluate transacting privately using BCH and CashFusion, and Dash?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iacwpfl",
+                    "author": "FamousM1",
+                    "score": 4,
+                    "created_utc": 1653774005.0,
+                    "response": "Thanks for all the updates! is there any necessary reason to upgrade from 4.2.6 on linux?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iadqc7o",
+                            "author": "NilacTheGrim",
+                            "score": 13,
+                            "created_utc": 1653789497.0,
+                            "response": "Only if you notice glitches with dark mode.  We fixed some dark mode issues in this release.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iae63wc",
+                                    "author": "FamousM1",
+                                    "score": 4,
+                                    "created_utc": 1653799139.0,
+                                    "response": "cool! I saw some other features were added like BCH LNS resolving too",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iaes9o9",
+                                            "author": "tr9mum",
+                                            "score": 2,
+                                            "created_utc": 1653817533.0,
+                                            "response": "CBDC isn\u2019t privacy. Buy Bitcoin cash while you can and run your own node .",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "iagtlmr",
+                                    "author": "wyc83189510",
+                                    "score": 1,
+                                    "created_utc": 1653856361.0,
+                                    "response": "By the time the Gov finishes their CBDC, bitcoin cash will be a household name.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "iaffrdd",
+                            "author": "gola8234",
+                            "score": 1,
+                            "created_utc": 1653833362.0,
+                            "response": "Agree! Amazing tool everyone should use it! Cheers to it .",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iaf6iv5",
+                    "author": "hegjon",
+                    "score": 2,
+                    "created_utc": 1653828514.0,
+                    "response": "Fedora users are welcome to test before pushed to official Fedora stable repository:\n\n* Fedora 34: https://bodhi.fedoraproject.org/updates/FEDORA-2022-e902c6be9f\n* Fedora 35: https://bodhi.fedoraproject.org/updates/FEDORA-2022-74e53ecb6f\n* Fedora 36: https://bodhi.fedoraproject.org/updates/FEDORA-2022-e3ea92eb11",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iahbxmr",
+                    "author": "AsashoryuMaryBerry",
+                    "score": 2,
+                    "created_utc": 1653865537.0,
+                    "response": "[https://old.reddit.com/r/btc/comments/uzt6bi/electron_cash_4210_with_cashfusion_is_now/](https://old.reddit.com/r/btc/comments/uzt6bi/electron_cash_4210_with_cashfusion_is_now/)\n\nBot:\n\n[https://old.reddit.com/user/KartoffelCommand](https://old.reddit.com/user/KartoffelCommand)\n\n/u/MobTwo",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iahi8m4",
+                            "author": "NilacTheGrim",
+                            "score": 1,
+                            "created_utc": 1653868868.0,
+                            "response": "What the hell is this? I might delete this comment since it looks like some bot comment.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iai0biy",
+                                    "author": "MobTwo",
+                                    "score": 2,
+                                    "created_utc": 1653878262.0,
+                                    "response": "He is helping me with cleaning up the bots. Usually his comment contains a list of the bots but nowadays it's less and less (today just one), which meant the cleanup is working.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iai62ys",
+                                            "author": "NilacTheGrim",
+                                            "score": 2,
+                                            "created_utc": 1653881168.0,
+                                            "response": "Oh I see. Ok, nevermind then.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iafhq1m",
+                    "author": "elliotthill",
+                    "score": 1,
+                    "created_utc": 1653834346.0,
+                    "response": "Smartbch Is far Better than dark market. With cashfusion you can decide going private or not.\n\nWe have the Choice, monero dont.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

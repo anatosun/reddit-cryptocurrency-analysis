@@ -9,38 +9,6 @@
     ],
     "posts": [
         {
-            "id": "ulk7h1",
-            "title": "Avalanche Consensus overview",
-            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ulk7h1/avalanche_consensus_overview/",
-            "author": "Interested-Investor",
-            "created_utc": 1652074582.0,
-            "score": 16,
-            "num_comments": 9,
-            "subreddit": "CryptoTechnology",
-            "selftext": "I\u2019m trying to learn the avalanche consensus and avalanche network architecture but have been struggling just a bit. I feel like I\u2019ve sifted through white papers, blog posts, and  AVAX developer YT vids but can\u2019t quite wrap my head around it. Would anyone out there be willing to take a stab or does anyone know some oversimplified educational resources? I\u2019m looking for an unbiased overview not just \u201cavalanche is perfect. Zero concerns here\u201d \n\nThanks everyone and happy late Mother\u2019s Day to all the mothers out there!",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7w4mzg",
-                    "author": "Dormage",
-                    "score": 10,
-                    "created_utc": 1652079240.0,
-                    "response": "It is an adaptation of one of the oldest and most simple consensus protocols. The idea is simply, the majority opinion wins. Since there is no central party that gathers the votes and counts them to obtain the opinion of the majority, nodes select a random subset of nodes and asks them for their opinion, if the majority says A, the node changes its opinion to A. \n\nIt is called probabilistic as there is a high probability that if the majority of the network is of opnion A, the entire network will converge to adopt A.\nHowever, there is a small probability that even if a small subset of the network is of opnion B, the nodes with A may change their opinion to B if by chance their quorum is randomly chosen to be nodes of opinion B.\n\nTo avoid this as much as possible, the selection and query is done multiple times thereby reducing the probability the chance for a minority opinion to prevaile due to random sampling.\n\nThere are some specific changes avalanche made to the original algorithm but the idea behind it remains the same.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i7w5m7y",
-                    "author": "remind_me_later",
-                    "score": 3,
-                    "created_utc": 1652080045.0,
-                    "response": "[This image](https://docs.avax.network/assets/images/howavalancheconsensusworks-a37dc2bdf67c7c2997dcbfd01ee28e64.png) is from their website, & is as simple as it can get in terms of confirming a transaction. It fundamentally relies on 2 core pillars:\n\n1. Is the transaction valid?\n2. Do others also think that the transaction is valid?\n\nAs more nodes confirm the transaction as valid, it'll eventually cross a set treshold for acceptance & be included into the chain. If there turns out to be any conflict, the the node verifies with other nodes to see if they accept the conflicting transaction. Over a long enough period of time, [the network will make up its mind on the conflict](https://docs.avax.network/overview/getting-started/avalanche-consensus#finality) & come to the same conclusion on whether to accept or reject a given transaction. As more blocks are added to the DAG, the confidence of a transaction being correct increases over time.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "ukwf74",
             "title": "\u00bfHow can i use/get Blockchain for a personal project?",
             "url": "https://www.reddit.com/r/CryptoTechnology/comments/ukwf74/how_can_i_useget_blockchain_for_a_personal_project/",
@@ -67,6 +35,95 @@
                     "score": 2,
                     "created_utc": 1652148777.0,
                     "response": "Storing large amounts of data on-chain is not only expensive, but also mildly inefficient. What you could do  however, is leveraging hashing functions to your advantage:\n\n- first, you'd cut your data into usable chunks, then generate a unique hash for each of them;\n\n- then, you store that hash on-chain,\n\n- and the actual chunk of data goes into a distributed file-system.\n\nWhat's cool about this is that you can transmit blockchain's immutability properties to whatever file you store that way. Since hashing is a one-way function, forging a file with a matching hash but different content is essentially impossible. So, as long as you manage to keep that file available somewhere, you're good to go; and that's where using a distributed file system such as IPFS becomes interesting. \n\nThe most common use-case of this technique is NFTs: each token has an URI (Unique Ressource Identifier) on top of its tokenID, which is essentially a hash of a file stored on IPFS. Posting a file on IPFS returns a hash, and querying IPFS with a hash returns a file, simple as that.\nEven though that technique has mostly been used to store NFT pictures up until now, it has many, *many* other applications.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ulk7h1",
+            "title": "Avalanche Consensus overview",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ulk7h1/avalanche_consensus_overview/",
+            "author": "Interested-Investor",
+            "created_utc": 1652074582.0,
+            "score": 23,
+            "num_comments": 12,
+            "subreddit": "CryptoTechnology",
+            "selftext": "I\u2019m trying to learn the avalanche consensus and avalanche network architecture but have been struggling just a bit. I feel like I\u2019ve sifted through white papers, blog posts, and  AVAX developer YT vids but can\u2019t quite wrap my head around it. Would anyone out there be willing to take a stab or does anyone know some oversimplified educational resources? I\u2019m looking for an unbiased overview not just \u201cavalanche is perfect. Zero concerns here\u201d \n\nThanks everyone and happy late Mother\u2019s Day to all the mothers out there!",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7w4mzg",
+                    "author": "Dormage",
+                    "score": 13,
+                    "created_utc": 1652079240.0,
+                    "response": "It is an adaptation of one of the oldest and most simple consensus protocols. The idea is simply, the majority opinion wins. Since there is no central party that gathers the votes and counts them to obtain the opinion of the majority, nodes select a random subset of nodes and asks them for their opinion, if the majority says A, the node changes its opinion to A. \n\nIt is called probabilistic as there is a high probability that if the majority of the network is of opnion A, the entire network will converge to adopt A.\nHowever, there is a small probability that even if a small subset of the network is of opnion B, the nodes with A may change their opinion to B if by chance their quorum is randomly chosen to be nodes of opinion B.\n\nTo avoid this as much as possible, the selection and query is done multiple times thereby reducing the probability the chance for a minority opinion to prevaile due to random sampling.\n\nThere are some specific changes avalanche made to the original algorithm but the idea behind it remains the same.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7w6hmr",
+                            "author": "fgiveme",
+                            "score": 1,
+                            "created_utc": 1652080793.0,
+                            "response": "> nodes select a random subset of nodes and asks them for their opinion \n\nHow do they get a list of nodes, and how do they randomly pick a subset out of that list (true randomness).\n\nWon't this vulnerable to gerrymandering?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7w7q8d",
+                                    "author": "Dormage",
+                                    "score": 1,
+                                    "created_utc": 1652081892.0,
+                                    "response": "This is where I lack concrete knowledge on their implementation. However, in general for nodes to participate in consensus they must stake coins, by doing so, the data about which nodes are consensus nodes is in the chain/dag.\n\nOne could do the same via a DHT.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "i7wnl4y",
+                                    "author": "kellysmith",
+                                    "score": 1,
+                                    "created_utc": 1652095469.0,
+                                    "response": "> How do they get a list of nodes, and how do they randomly pick a subset out of that list (true randomness).\n\nOn startup, avalanchego goes to a random seed host and retrieves a list of hosts. Then it connects to each of those and begins to \"gossip\", retrieving a larger and larger list.\n\n\n> Won't this vulnerable to gerrymandering?\n\n\nYou can't control host selection, so unless you run a large amount of nodes, you can't really influence the vote in any way.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i7xb3k3",
+                            "author": "Interested-Investor",
+                            "score": 1,
+                            "created_utc": 1652107439.0,
+                            "response": "Correct me if I\u2019m wrong, but what I\u2019m understanding is that there are classical and nakamoto consensus approaches. These two approaches focus on how many validators are in the network. \n\nAvalanche is different because it focuses on improving how information is spread between validators?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i7xo3of",
+                                    "author": "Dormage",
+                                    "score": 1,
+                                    "created_utc": 1652112692.0,
+                                    "response": "From academia, before blockchains were a thing, the general explanation of a consensus mechanism was that each node in the network has a relative truth. The problem is how to agree on an absolute truth using those relative truths.\n\n\nIn blockchains these relative truths are analouge to blocks. Nakamoto is just one of many consensus mechainsms that uses PoW with a fork choice rule to reach consensus. \n\nIn PoW, if an alternative chain is found, the longest chain is considered truth by consensus.\nThis boils down to which chain has the most PoW. If you assume 1 hash, 1 vote, you almost have a democratic system where we vote on each dissagreement and majority wins.\n\n\nAvalance in that regard is the same, but probabilistic. Instead of actually haveing some verifiable vote count(PoW) we just ask our peers what they would vote if we had an ellection, if most of your peers are of a different opinion then you, you switch yours.\nProbability says that if the majority was of opinion A, minority will switch to A eventually.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i7w5m7y",
+                    "author": "remind_me_later",
+                    "score": 3,
+                    "created_utc": 1652080045.0,
+                    "response": "[This image](https://docs.avax.network/assets/images/howavalancheconsensusworks-a37dc2bdf67c7c2997dcbfd01ee28e64.png) is from their website, & is as simple as it can get in terms of confirming a transaction. It fundamentally relies on 2 core pillars:\n\n1. Is the transaction valid?\n2. Do others also think that the transaction is valid?\n\nAs more nodes confirm the transaction as valid, it'll eventually cross a set treshold for acceptance & be included into the chain. If there turns out to be any conflict, the the node verifies with other nodes to see if they accept the conflicting transaction. Over a long enough period of time, [the network will make up its mind on the conflict](https://docs.avax.network/overview/getting-started/avalanche-consensus#finality) & come to the same conclusion on whether to accept or reject a given transaction. As more blocks are added to the DAG, the confidence of a transaction being correct increases over time.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i7wdepm",
+                    "author": "thatlur",
+                    "score": 2,
+                    "created_utc": 1652087131.0,
+                    "response": "When a node receives a transaction it then asks a random subset of nodes (weighted so nodes with a high stake get selected more often) if they like the txn or not. Based on how many liked the txn or not it will create a confidence score for if the txn should be accepted or not. \n\nIt will continue to do multiple rounds of asking random subsets of nodes for their opinion of the txn until it has a high enough confidence score for the txn to be approved.\n\nThis is for the x chain only which uses a DAG as a data structure. They have adapted this consensus for the c chain which uses a normal blockchain but I'm not 100% sure on the differences. They claim the c chain is still leaderless but I don't really see how that is possible on a blockchain as there is only 1 valid tip where new blocks can be attached so there are bound to be a ton of forks. I've also found it difficult to find out how the c chain works",
                     "depth": 1,
                     "comments": []
                 }

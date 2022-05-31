@@ -1,0 +1,25 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v1m79z",
+            "title": "WETH911: Improved Wrapped Ether",
+            "url": "https://www.reddit.com/r/ethereum/comments/v1m79z/weth911_improved_wrapped_ether/",
+            "author": "lapalissiano",
+            "created_utc": 1653988790.0,
+            "score": 1,
+            "num_comments": 1,
+            "subreddit": "ethereum",
+            "selftext": "Taking advantage of the low gas fees these days, I published an **Improved Wrapped Ether** smart contract, called **WETH911** ([https://etherscan.io/address/0x6BE7EF70b35FdB9042d704c920d003b414385c76](https://etherscan.io/address/0x6BE7EF70b35FdB9042d704c920d003b414385c76)).\n\nGive it a try ;) You can also check the repo here:\u00a0[https://github.com/InternetOfPeers/improved-canonical-weth](https://github.com/InternetOfPeers/improved-canonical-weth)\n\n## Description\n\nCanonical Wrapped Ether ([WETH9, 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2)) has at least two major flaws:\n\n* You can lock your WETH in the contract (at the moment of writing, 2022.05.31, they are **\\~644 ethers** [and counting](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2#tokentxns))\n* You cannot recover other tokens sent to this contract\n\nIt has one minor issue as well:\n\n* It uses a custom event for minting, so it emits `Deposit` instead of `Transfer` from `address(0)` when minting and `Withdrawal` instead of `Transfer` to `address(0)` when burning tokens. Not too big an issue indeed, but the contract wants to be a standard [EIP20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md) token, so better to avoid custom events.\n\nWrapped Ether 911 fixes those flaws:\n\n* You cannot send WETH911 to the contract (tx reverts)\n* Anyone can recover lost tokens assigned to this contract (happy front running to everybody )\n* The contract emits {Transfer} events when minting or burning WETH911\n\n## Deployed contract addresses\n\n* Mainnet: [0x6be7ef70b35fdb9042d704c920d003b414385c76](https://etherscan.io/token/0x6be7ef70b35fdb9042d704c920d003b414385c76)\n* Goerli: [0x1989920574186c5564f89850740b5181770f599f](https://goerli.etherscan.io/address/0x1989920574186c5564f89850740b5181770f599f)\n* Kovan: [0x914179daf1e1edcd052eb4096a622fbabaa37a8b](https://kovan.etherscan.io/address/0x914179daf1e1edcd052eb4096a622fbabaa37a8b)\n* Ropsten: [0x7c44b54fc7da66d50e39799be22caba38ac60d94](https://ropsten.etherscan.io/address/0x7c44b54fc7da66d50e39799be22caba38ac60d94)\n* Rinkeby: [0xb31700e30f03a0a1c54411f54cb5d5ac94a80ab8](https://rinkeby.etherscan.io/address/0xb31700e30f03a0a1c54411f54cb5d5ac94a80ab8)",
+            "stickied": false,
+            "comments": []
+        }
+    ]
+}

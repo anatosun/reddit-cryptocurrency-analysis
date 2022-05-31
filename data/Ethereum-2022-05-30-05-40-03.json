@@ -1,0 +1,259 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v0t2ld",
+            "title": "How does PoS effect gas prices?",
+            "url": "https://www.reddit.com/r/ethereum/comments/v0t2ld/how_does_pos_effect_gas_prices/",
+            "author": "mooserider2",
+            "created_utc": 1653888469.0,
+            "score": 1,
+            "num_comments": 28,
+            "subreddit": "ethereum",
+            "selftext": "I have seen conflicting info on this, seemingly related to some conflation between PoS and sharding. Is there any expected effect once this rolls out that we would expect in theory or experimentation? Would we expect it to effect L1 and the various L2s differently? I can\u2019t seem to find any straight answers on this.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iaijg0i",
+                    "author": "jcm2606",
+                    "score": 18,
+                    "created_utc": 1653889421.0,
+                    "response": "It doesn't. Gas prices are determined by the total amount of gas available in each block (block space), and the speed at which the network is producing new blocks (block time). Both of these things aren't changing with PoS (not in any meaningful way, PoS *is* reducing block time by around 10%-ish, but that'll be instantly cancelled out by an equivalent increase in network usage), so PoS cannot and will not affect gas prices.\n\nSharding also won't affect L1 gas prices, as its been repurposed to instead offer a scalable *data storage* layer for the network, when the bottleneck right now is *computation.* L2 gas prices *will* be affected by sharding, though, as L2s can make use of the extra data storage that shards provide to pack more transactions within each batch, driving the individual user's cost of settlement down, which is one of the main things that users pay for within L2s.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iajek43",
+                            "author": "mooserider2",
+                            "score": 1,
+                            "created_utc": 1653914609.0,
+                            "response": "Thanks for this! I had figured this was the case with PoS, but every now and again I would see some site or video claim otherwise. Edit: I found something on ethereum.org that suggests it will [discussed here](https://www.reddit.com/r/ethereum/comments/v0t2ld/how_does_pos_effect_gas_prices/iajgmh2)\n\nNow I am a bit surprised that sharding is not expected to drop L1 gas prices. I had assumed that sharding would drop cpu requirements, meaning more efficient use of resources on the network, and thus smaller block sizes. But I admit that I have not dove into the implementation details of sharding much at all. Typing this out is making me doubt my uninformed assumption that block size is related to the capacity of nodes.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iajl6ku",
+                                    "author": "jcm2606",
+                                    "score": 2,
+                                    "created_utc": 1653918294.0,
+                                    "response": "> I had assumed that sharding would drop cpu requirements, meaning more efficient use of resources on the network, and thus smaller block sizes.\n\nExecution sharding would have resulted in this, but it was dropped from the roadmap as far back as October 2020 (see [\"a rollup-centric Ethereum roadmap\"](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698)), replaced with newer sharding models that are now focused on sharding data storage, as opposed to execution/computation.\n\nThe reasoning why it was dropped and replaced is outlined in the linked discussion, but the tl;dr is that sharding data storage is *much* easier and safer than sharding execution, and gives the exact same throughput increase *for L2s/rollups* that execution sharding would bring, so, in a future where the majority of end user activity is on L2s/rollups, sharding data storage is just the better approach.\n\n> But I admit that I have not dove into the implementation details of sharding much at all.\n\nHonestly, I wouldn't fault you for not knowing, even if you did, as things are changing so rapidly that even those who are in the know can quickly get left behind.\n\n> Typing this out is making me doubt my uninformed assumption that block size is related to the capacity of nodes.\n\nIt is, but it's not just about how much work each node can perform, it's also about how much space each node has to store the blockchain, and how quickly data can move around the network.\n\nIn general, bigger blocks *are* slower to process, but they're also larger to store and slower to propagate, so they hit scalability on multiple fronts. Ethereum is keeping them intentionally small for this reason, to allow a *wide* range of devices to participate in the network.\n\nI believe the intended minimum requirements post-merge are hovering around a Raspberry Pi equipped with a 1-2TB SSD and a 10/10 Mbps internet connection (10Mbps both for upload and download), or somewhere around there.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iajy6tr",
+                                            "author": "mooserider2",
+                                            "score": 1,
+                                            "created_utc": 1653924526.0,
+                                            "response": "Thanks so much for the answers here. I am about 4 days in on an information binge to learn what I need to start developing Dapps. I am slowly learning that if an article mentions eth2.0 it is almost certainly out of date. \n\nOne more question comes to mind about this though:\n\n> I believe the intended minimum requirements post-merge are hovering around a Raspberry Pi equipped with a 1-2TB SSD and a 10/10 Mbps internet connection (10Mbps both for upload and download), or somewhere around there.\n\nThis makes me wonder if gas scales based on the number of nodes in the network. Presumably if a node becomes trivial to spin up for compute costs we would see many more on the network.\n\nEdit: I can\u2019t find anything that would suggest it does, and thinking about it I can\u2019t think of how it would without execution sharding. Ok it is L2 for me!",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iaj8fzu",
+                    "author": "frank__costello",
+                    "score": 3,
+                    "created_utc": 1653910585.0,
+                    "response": "L1 gas fees will never significantly drop\n\nThe future (and present) of Ethereum is L2",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iajeqwz",
+                            "author": "mooserider2",
+                            "score": 1,
+                            "created_utc": 1653914722.0,
+                            "response": "There is nothing on the roadmap that is expected to drop L1 gas prices?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iajtzu4",
+                                    "author": "frank__costello",
+                                    "score": 2,
+                                    "created_utc": 1653922593.0,
+                                    "response": "No, there's no way (at this time) to substantially scale L1 without losing decentralization.\n\nEthereum is valuable due to it's security and decentralization, and L2s allow low fees without trading off security or decentralization. The only downside is the slow transition of users and applications from L1 to L2.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iak117r",
+                                            "author": "LiveDirtyEatClean",
+                                            "score": 1,
+                                            "created_utc": 1653925805.0,
+                                            "response": "Is there some trade off of security with L2? Like if other transactions are grouped and \"rolled up\" is there some sort of issues that can arise there?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iallp9v",
+                                                    "author": "frank__costello",
+                                                    "score": 1,
+                                                    "created_utc": 1653952323.0,
+                                                    "response": "Theoretically, no, L2s will inherit the security of Ethereum L1\n\nIn practice, L2s are still in early stages, and many have upgrade keys and other additional security assumptions. You can read about all the risks at https://l2beat.com",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "iajh7bc",
+                                    "author": "hashzzz",
+                                    "score": 1,
+                                    "created_utc": 1653916135.0,
+                                    "response": "Sharding",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iajhm5j",
+                                            "author": "mooserider2",
+                                            "score": 2,
+                                            "created_utc": 1653916370.0,
+                                            "response": "The top comment right now disagrees, and I thought that was the case. Is there something you can point me to that can show me that sharding should help?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iajhy2i",
+                                                    "author": "hashzzz",
+                                                    "score": 1,
+                                                    "created_utc": 1653916554.0,
+                                                    "response": "https://www.coindesk.com/layer2/2022/02/17/why-ethereum-users-tolerate-exorbitant-gas-fees/",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "iajjpv2",
+                                                            "author": "jcm2606",
+                                                            "score": 3,
+                                                            "created_utc": 1653917518.0,
+                                                            "response": "This is outdated and is using a sharding model that has been dropped from the roadmap, replaced with an entirely different model that is designed to scale L2 networks that settle on Ethereum, rather than the L1 Ethereum network itself. I'd recommend looking into proto-danksharding, danksharding and the various changes to the sharding model that will be coming with danksharding, ideally starting from [the \"A rollup-centric Ethereum roadmap\" discussion](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698) which outlines the core changes in the philosophy behind sharding, and why they've decided to go this route.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "iajlvqc",
+                                                                    "author": "hashzzz",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653918654.0,
+                                                                    "response": "This sucks, why scale L2 when we can scale L1 and all use it",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "iajmg1e",
+                                                                            "author": "jcm2606",
+                                                                            "score": 2,
+                                                                            "created_utc": 1653918944.0,
+                                                                            "response": "Because scaling the L1 network is difficult and unsafe, and would bring *less* improvements than even what L2s currently bring, when we could scale L2s relatively easily and safely, and allow them to improve well beyond what the L1 network alone would ever be capable of. I don't believe scaling the L1 network via sharding is *completely* off the table, but for now it's been put on indefinite hold, with the focus being on scaling L2s via sharding.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "iajvtjb",
+                                                                                    "author": "hashzzz",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653923441.0,
+                                                                                    "response": "Which L2 do you suggest I start using?",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "iajzwbn",
+                                                                                            "author": "frank__costello",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1653925295.0,
+                                                                                            "response": "Arbitrum\n\nIt's the most secure, it's battle-tested (running for almost a year, with lots of TVL), is supported by many CEXs (Binance, FTX, Crypto.com), and it has the most apps.\n\nAlso, it doesn't have a token yet, so you might get lucky and get an airdrop if you play around there \ud83d\ude09",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "iaju8yb",
+                                                                            "author": "frank__costello",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653922713.0,
+                                                                            "response": "> we can scale L1 and all use it\n\nThe consensus is that there's no way to scale L1 substantially without trading off decentralization",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "iaju1bq",
+                                            "author": "frank__costello",
+                                            "score": 2,
+                                            "created_utc": 1653922613.0,
+                                            "response": "Sharding will lower fees on L2, but won't affect L1",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iaisy0j",
+                    "author": "AESTHTK",
+                    "score": 2,
+                    "created_utc": 1653897123.0,
+                    "response": "Unrelated.\n\nGas price is set by blockspace demand.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iajgmh2",
+                            "author": "mooserider2",
+                            "score": 1,
+                            "created_utc": 1653915808.0,
+                            "response": "Thanks! I just found a big source of my confusion on this however on [ethereum.org gas docs](https://ethereum.org/en/developers/docs/gas/#top).\n\nUnder the section titled \u201cInitiatives to reduce gas cost\u201d it says:\n\n> The new proof-of-stake model, introduced on the Beacon Chain, should reduce high power consumption and reliance on specialized hardware. This chain will allow the decentralized Ethereum network to agree and keep the network secure, while limiting energy consumption by instead requiring a financial commitment.\n\nIt doesn\u2019t say this actually will reduce gas, but then why put it in that section?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iajli10",
+                                    "author": "jcm2606",
+                                    "score": 3,
+                                    "created_utc": 1653918460.0,
+                                    "response": "This isn't talking about gas, rather it's talking about the energy usage of the network as a whole. Gas isn't determined by energy usage (if it were, it'd be **much** higher), but the inflation of Ether *is.* By reducing the energy usage of the network as a whole (which PoS is meant to reduce it by over 99%), you're making the network more energy efficient, *and* reducing Ether's inflation. These two reasons, plus the fact that PoS is theoretically more cost-effective as a means of securing the network, is why Ethereum is switching to PoS, and is why that was included in the docs.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iajv53i",
+                                            "author": "mooserider2",
+                                            "score": 1,
+                                            "created_utc": 1653923125.0,
+                                            "response": "Yea I get that now, but that feels like a documentation bug to put it in a section about future efforts to reduce gas. I might see if I can put in a PR to get that fixed.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iakpi6q",
+                    "author": "BlazingHotFireFox",
+                    "score": 1,
+                    "created_utc": 1653936709.0,
+                    "response": "I don't think it affects the gas prices.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uybx55",
+            "title": "How to calculate tax on rollups (L2s)",
+            "url": "https://www.reddit.com/r/ethereum/comments/uybx55/how_to_calculate_tax_on_rollups_l2s/",
+            "author": "LeinM",
+            "created_utc": 1653583663.0,
+            "score": 0,
+            "num_comments": 8,
+            "subreddit": "ethereum",
+            "selftext": "Gm everyone! I was wondering if any of you can help me on how crypto tax is calculated on L2s. For L1, I calculated everything using FIFO method.\n1. Is bridging taxable event?\n2. How are realized and unrealized gains calculated? If I spend some ETH on L2, do I need to know its origin and calculate gains based on that info?\nFor more information: Let\u2019s say I earned 1 ETH on L1, when price was $1000, and for sake of simple calculations, let\u2019s say that there are no gas fees. If I bridge that 1 ETH to Optimism, when price is $1500, did I trigger a taxable event, in which case I realized gain of $500? Later, if I spend that whole ETH, when price is $3000, did I realize a gain of $2000 (sell price $3000 - origin price $1000), or $1500 (sell price $3000 - price at the time of bridging $1500, in case bridging is taxable and bridged tokens are looked as received), or something else? Thanks \ud83d\ude42",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia3bdhl",
+                    "author": "Sterlingz",
+                    "score": 2,
+                    "created_utc": 1653587082.0,
+                    "response": "Bridging is considered a taxable event, as stupid as that is. Some countries haven't issued guidance on this, so you could technically not declare it, and fight it, but you know how fights against the tax authorities usually go.\n\nThat also means there's a loophole where you can use bridging to realize losses without losing exposure to eth, which is what I did.\n\nIn your case, you have a $500 realized gain when bridging, followed by a $1500 gain when spending at $3000.\n\nEdit: fixed math",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia3dsog",
+                            "author": "LeinM",
+                            "score": 2,
+                            "created_utc": 1653588058.0,
+                            "response": "Hey thanks for the reply, could you follow up on how you calculated that 1000$ gain?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia3pp6o",
+                                    "author": "Sterlingz",
+                                    "score": 1,
+                                    "created_utc": 1653592937.0,
+                                    "response": "Sorry that should have been $1500 ($3000 - $1500). Wrote too hastily.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia504ao",
+                            "author": "Always_Question",
+                            "score": 1,
+                            "created_utc": 1653614000.0,
+                            "response": ">Bridging is considered a taxable event, as stupid as that is. \n\nThere have been no statements from the IRS or otherwise about this.  Arguably, this is akin to a transfer, like moving from your MM to Coinbase.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

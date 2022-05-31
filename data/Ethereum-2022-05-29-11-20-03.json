@@ -1,0 +1,198 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v092ed",
+            "title": "[Question] over collateralized borrowing",
+            "url": "https://www.reddit.com/r/ethereum/comments/v092ed/question_over_collateralized_borrowing/",
+            "author": "MerchantMojo",
+            "created_utc": 1653823096.0,
+            "score": 0,
+            "num_comments": 27,
+            "subreddit": "ethereum",
+            "selftext": "Could someone explain why this exists? I saw an example that read: \"*Consider the case where you own ETH and need liquidity, but you do not want to sell your ETH. You might consider collateralizing ETH in order to borrow stablecoins.*\" Excuse my language but what kind of fucking problem does this actually solve? You want to sell ETH; fine - but because you dont want to \"get rid of your tokens\" you come up with this \"\"\"ingenious\"\"\" idea to lock up your tokens which fulfills the exact same thing you were trying to avoid in the first place only to ON TOP OF THAT pay EXTRA INTEREST. In what world does this actually make any sense what so ever?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iaeztuj",
+                    "author": "Knurlinger",
+                    "score": 2,
+                    "created_utc": 1653823997.0,
+                    "response": "I don\u2019t know what part you don\u2019t understand. You get liquidity or can even cash out without selling the tokens so you still gain or lose value from the base asset.\n\nThe point is to NOT sell.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaf0nox",
+                            "author": "MerchantMojo",
+                            "score": -6,
+                            "created_utc": 1653824606.0,
+                            "response": "So you are telling me the collateral doesnt have to be ETH? Any ERC20 token is fine as long as it has a \"value\"? What if that value plummets before its able to be liquidated? What would stop me from building my own ERC20 token that much like the squid game token cannot be sold which would inflate the price - only so it could be used as \"collateral\"?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaf0s1h",
+                                    "author": "Knurlinger",
+                                    "score": 3,
+                                    "created_utc": 1653824694.0,
+                                    "response": "Your shitcoin won\u2019t be accepted as collateral. There is a loan to value ratio, for BTC it is about 50%, for lower ranked coins 5-20% depending on the service you use.\n\nTheres enough room to liquidate you ;)",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "iaf63dn",
+                                    "author": "Perleflamme",
+                                    "score": 2,
+                                    "created_utc": 1653828254.0,
+                                    "response": "Why are you thinking anyone would want to lend you money collateralized by a worthless token, exactly? The collateral is here to ensure the lender is nearly sure to have his funds protected: either because the collateral is liquidated to buy back from the market whatever was lended to you (which is exactly why there is a need for a Loan To  Value ratio) or because you pay back before that. This ensures the lender doesn't need to know anything from you: either way, they'll be paid for the service they provide.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iafg3sc",
+                    "author": "MaxusTheScientist",
+                    "score": 2,
+                    "created_utc": 1653833530.0,
+                    "response": "Main reason is to create a leveraged position.\n\nLong Example: \nYou lend $2000 of ETH, \nBorrow $1500 USDC, \nSwap the USDC for ETH on a dex, \nLend the $1500 of ETH,  \nBorrow more usdc and repeat. \n\nShort example:\nYou lend $2000 of USDC, \nBorrow $1500 of ETH, \nSwap the ETH for USDC, \nLend the USDC, \nBorrow more eth and repeat. \n\nIn either case, unravelling when the price moves favorably up or down will net you more collateral than you started with.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaf9mnu",
+                    "author": "thetastycookie",
+                    "score": 2,
+                    "created_utc": 1653830249.0,
+                    "response": "You can use it as a mechanism to go short or long on a coin.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iafecrx",
+                            "author": "MerchantMojo",
+                            "score": 1,
+                            "created_utc": 1653832684.0,
+                            "response": "Could you? I am still in the learning-phase but i would assume that it is the locked-up tokens that is payed and not the once you took out as a loan - therefor it would not matter if i take out a loan in X-coin, sell the X-coin only to repurchase it at a later date and repay the borrower since he/she will be paid in the Y-coin that i locked up in the smart contract, no?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iafednm",
+                                    "author": "Paid-Not-Payed-Bot",
+                                    "score": 2,
+                                    "created_utc": 1653832697.0,
+                                    "response": "> that is *paid* and not\n\nFTFY.\n\nAlthough *payed* exists (the reason why autocorrection didn't help you), it is only correct in:\n\n * Nautical context, when it means to paint a surface, or to cover with something like tar or resin in order to make it waterproof or corrosion-resistant. *The deck is yet to be payed.*\n\n * *Payed out* when letting strings, cables or ropes out, by slacking them. *The rope is payed out! You can pull now.*\n\nUnfortunately, I was unable to find nautical or rope-related words in your comment.\n\n*Beep, boop, I'm a bot*",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "iafeset",
+                                    "author": "thetastycookie",
+                                    "score": 1,
+                                    "created_utc": 1653832901.0,
+                                    "response": "Coin Y in this case is just the collateral. The loan is denominated in coin X hence should be repaid in coin X not coin Y.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iaffgs5",
+                                            "author": "MerchantMojo",
+                                            "score": 2,
+                                            "created_utc": 1653833234.0,
+                                            "response": "Makes sense, thanks!",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iaffcad",
+                    "author": "mindoflines",
+                    "score": 1,
+                    "created_utc": 1653833172.0,
+                    "response": "Do you think that leverage is unique to crypto? How do you think the economy functions ?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iafgkwr",
+                            "author": "MerchantMojo",
+                            "score": 0,
+                            "created_utc": 1653833772.0,
+                            "response": "No i am just fascinated over the fact that no laws need to be in place to make sure people dont commit fraud. But i also understand the limitions: I would not be able finance a house or any other expensive investments since i would need to have enough liquidity to cover these loans unlike a mortgage, etc. I wounder if there is a solution to this although i find it hard to belive.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iafhdiy",
+                                    "author": "mindoflines",
+                                    "score": 2,
+                                    "created_utc": 1653834169.0,
+                                    "response": "What fraud? Huh? You're not making any sense, I truly think you need to go read up on leverage and how it works in practice.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iafilxs",
+                                            "author": "MerchantMojo",
+                                            "score": 2,
+                                            "created_utc": 1653834789.0,
+                                            "response": "I mean i am new to smart contracts, i somewhat know how leverage works and i belive my point still holds true.\n\nIf we were to live in a world run by the ethereum block-chain, traditional loans like mortgages would not work in pratice since a hypothetical family that wants to purchase a home would need enough liquidity (and then some) in order to get a loan - in this scenario the family would just purchase the home straight away - but a family that does not have enough liquidity to purchase a home to beguin with wont be able to seek out a loan - and maybe that is the way it should be, i dont know.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iaikh5m",
+                    "author": "asosao_2416",
+                    "score": 1,
+                    "created_utc": 1653890180.0,
+                    "response": "Because it\u2019s more tax efficient. Why sell and pay tax, when you can borrow a lot lower interest rates?\n\nBillionaires do this all the time (borrow against their equities portfolio) instead of selling.\n\nEDIT: if you live in a country with no cap gains tax, then sell, of course.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaixprn",
+                            "author": "MerchantMojo",
+                            "score": 1,
+                            "created_utc": 1653901439.0,
+                            "response": "This\\^ + being able to short, i am starting to realize the possbilities now.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iaj4q9l",
+                    "author": "Rayblox",
+                    "score": 1,
+                    "created_utc": 1653907705.0,
+                    "response": "LOL OP. This made me laugh. You seriously need to spend time in finance (in general) first it seems.\n\nTo simplify...\n\nForget crypto or anything decentralized for now. Let's say, you have a car. Like any asset, it has liquidity to an extent, right? Now imagine if you need to cash NOW (but you are not gonna get paid in a month) but don't necessarily want to sell your car. You can then find someone who will lend you the money you need with your car as a collateral (assurance in case you run away with the loan). So long as you pay the loan back (granted with some sort of arrangement on the interest), you don't have to sell your car and you get the cash that you needed at the time. It's like being able to get the money that you can get in the future (but want to use it now) by paying a bit more money (interest).",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iajuq0c",
+                            "author": "MerchantMojo",
+                            "score": 1,
+                            "created_utc": 1653922933.0,
+                            "response": "i know its hard to belive but i have known that for god knows how long now. Had some good people in the comments help me understand and give some use-cases for why someone would be willing to pay gas fees + interest to take a loan. It basicly comes down to shorting and leverage. I was thinking too much in terms of 'mortgage type' loans where you DONT need enough liquidity to cover the entire loan if payments where to stall - which again, would not work in the crypto world since you actually need to be able to cover 100% since there is no other way to penalize someone who does not furfil their promise to repay.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

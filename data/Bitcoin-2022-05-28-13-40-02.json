@@ -1,0 +1,189 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uzna2l",
+            "title": "Tor update 0.4.7\u2014the first stable version of Tor with support for congestion control\u2014finally after years of work. Effects on the Bitcoin network layers.",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uzna2l/tor_update_047the_first_stable_version_of_tor/",
+            "author": "xeaxant",
+            "created_utc": 1653744248.0,
+            "score": 72,
+            "num_comments": 18,
+            "subreddit": "Bitcoin",
+            "selftext": "**TL;WR** (Too lazy; won't read)  \nCongestion control arrives in Tor 0.4.7. It means a faster Tor. Exit relay operators: Please Upgrade!. What effects might it have on Bitcoin base/upper layers?\n\n**TS;WM** (Too short; want more)\n\n* **Congestion Control Arrives in Tor 0.4.7-stable** [\\[1\\]](https://blog.torproject.org/congestion-contrl-047/)Congestion control will eliminate the speed limit of current Tor, as well as **reduce latency** by minimizing queue lengths at relays. It will result in significant performance improvements in Tor, as well as increased utilization of our network capacity.\n* **Congestion Control Means a Faster Tor** [\\[2\\]](http://pzhdfe7jraknpj2qgu5cz2u3i4deuyfwmonvzu5i3nyw4t4bmg7o5pad.onion/congestion-contrl-047/index.html)Users of Tor versions 0.4.7 and above will experience **faster performance** when using Exits or Onion Services that have upgraded to 0.4.7. This means that in order for users to see the benefits of these improvements, we need our Exit relay operators to **upgrade to the new Tor 0.4.7 stable series, asap!**\n* **Exit Relay Operators: Please Upgrade!** [\\[3\\]](https://forum.torproject.net/t/stable-release-0-4-7-7/3108)The faster performance and increased utilization of congestion control means that we will soon be able to use the full capacity of the Tor network. This means that all relays will soon experience new bottlenecks. Congestion control should prevent these bottlenecks from overwhelming relays completely, but this behavior may come as a surprise to operators who were used to the last several years of low CPU and bandwidth utilization.\n* **The Future** [\\[4\\]](https://gitlab.torproject.org/tpo/core/torspec/-/blob/main/proposals/339-udp-over-tor.md)\\[...\\] this does not mean that Tor will never carry UDP traffic. On the contrary, congestion control deployment means that queue delay and latency will be much more stable and predictable. **This will enable us to** **carry UDP without packet drops in the network**, and only drop UDP at the edges, when the congestion window becomes full. We are hopeful that this new behavior will match what existing UDP protocols expect, allowing their use over Tor.\n* **What effects might it have on Bitcoin layers?**Is there already or will there be any improvement in Bitcoin data transmission caused by this improvement. What sounded like something desirable, but non-existent 4 years ago, would be on the table today, e.g.: [Why doesn\u2019t Bitcoin use UDP to do Blockpropagation?](https://bitcoin.stackexchange.com/questions/79167/why-doesn-t-bitcoin-use-udp-to-do-blockpropagation) and [Can someone please explain FIBRE to me like I'm 5 and why is it useful?](https://bitcoin.stackexchange.com/questions/56485/can-someone-please-explain-fibre-to-me-like-im-5-and-why-is-it-useful)\n\nMany questions cross my mind on the edge of metaphysics, others remain only in physics. Tor, layers, money, BTC, layers, atomic orbitals of the electron with different energy levels, layers, bureaucracy, excessive artificial and unjustified layers, liers, lawyers, von der Leyens... life: layers.\n\nSome of these ideas/words are influenced/copied by some of you in this sub. Maybe you can recognise your words and know that they have not been totally overlooked. Thank you.\n\nThe first thing that comes to mind is the LN\u26a1\ufe0f. This network is already today practically instantaneous. However, I think that in the eyes of uneducated and/or disinterested users, the faster the better.\n\nI would very much like to experiment with LN, but due to limitations of my available hardware resources I cannot yet enable my own node. Then I could speak with data and numbers on this particular topic. In the meantime I can only do research, but with advances like these I allow myself in the meantime to dream of better transmissions ~~at quantum speeds~~ just by optimising what we already have. It seems obvious to me that both networks should work together and benefit us with their speed and privacy and layers and everything else. Pure engineering.\n\n&#x200B;\n\n^(\\*Facts\\* and \\*Opinions\\*, as malformed/biased as read/interpreted/misunderstood from available \\*info\\*. Inaccuracies are to be expected. Flaws in logic are guaranteed. Not to mention grammatical and spelling errors and horrors.)",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iabjzni",
+                    "author": "Nada_Lives",
+                    "score": 11,
+                    "created_utc": 1653750890.0,
+                    "response": "Tor is a very useful component for the Bitcoin system. I use its hidden services to reliably connect an Android to my Bitcoin node from anywhere in the world. Otherwise there would need to be a static IP.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iabmzaa",
+                            "author": "xeaxant",
+                            "score": 3,
+                            "created_utc": 1653752288.0,
+                            "response": "Very useful, I agree. I only use onion connections on my node, which in turn powers my electrumx server, all locally for now. I already tested making them accessible via Tor though. The next step I want to take is my LN\u26a1\ufe0f node and a block explorer.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iab9e4k",
+                    "author": "Dormage",
+                    "score": 4,
+                    "created_utc": 1653745650.0,
+                    "response": "Looking forward to a comparison with Lokinet.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iabito8",
+                            "author": "xeaxant",
+                            "score": 2,
+                            "created_utc": 1653750351.0,
+                            "response": "Wonderful. I just found out about Fibre and already another option appears, Lokinet. This is a real snowball. Thanks.\n\nNo comparison, just according to the source \\[1\\]:\n\n>We are already seeing an increase in the Advertised Bandwidth of relays as a result of some higher-throughput congestion control circuit use, similar to our previous flooding experiments, even though most clients are not yet using congestion control.  \n>  \n>This increase is because Advertised Bandwidth is computed from the   \nhighest 7-day burst of traffic seen, where as Consumed Bandwidth is the   \naverage byte rate. As more clients upgrade, particularly after a Tor   \nBrowser Stable release with 0.4.7 is made, the Consumed Bandwidth of the  \n network should also rise.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iabk5e7",
+                                    "author": "Dormage",
+                                    "score": 1,
+                                    "created_utc": 1653750964.0,
+                                    "response": "Eventually I will find the tine to compare them. Lokinet is very close to Tor with the exception it uses a blockchain to reward routing nodes and protect it against Sybil tyoe attacks Tor is open to to some extent.\n\nI wonder if rewarding node operators trully does beat Tors system which is based on altruism in terms of bandwidth.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iaei8l2",
+                                            "author": "Bitcoin__Hodler",
+                                            "score": 2,
+                                            "created_utc": 1653808519.0,
+                                            "response": "> Lokinet is very close to Tor with the exception it uses a blockchain to reward routing nodes and protect it against Sybil tyoe attacks Tor is open to to some extent.\n\nand an extra shitcoin token right?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iaeiav9",
+                                                    "author": "Dormage",
+                                                    "score": 1,
+                                                    "created_utc": 1653808576.0,
+                                                    "response": "Yes ofc, has bit more utility then BTC and the rest but ultimatly a shitcoin.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "iafrda1",
+                            "author": "Nada_Lives",
+                            "score": 1,
+                            "created_utc": 1653838774.0,
+                            "response": "Has me interested too! But Lokinet's website gives almost no information, just great graphics and where to download. When I DuckDuckGo, it appears to be all about some shitcoin. No working implementation on Arch/Majanro so I'll wait for someone else to take the lead.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iafrs66",
+                                    "author": "Dormage",
+                                    "score": 1,
+                                    "created_utc": 1653838957.0,
+                                    "response": "Binaries for arch dont come prebuilt, you need to build it your self. Everything of importance is on github. It works well, but its a bit different then Tor. I have it running on my router and once theres a good amount of nodes, the paths are built, its okay.\n\nIm not shilling it, just wanted to see how it compares with Tor since its rather recent.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iafzvgn",
+                                            "author": "Nada_Lives",
+                                            "score": 1,
+                                            "created_utc": 1653842536.0,
+                                            "response": "Truth is, I'm not smart enough for Arch, so I use Manjaro. I like the convenience of Pamac, and there's been a snag in the AUR package since last year. \n\nAre you routing everything thru Lokinet? Interesting!",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iag05oo",
+                                                    "author": "Dormage",
+                                                    "score": 1,
+                                                    "created_utc": 1653842664.0,
+                                                    "response": "Im routing most of my web traffic and some private chat stuff but even that is now migrated to Session.\n\nThe community driven package manager manjaro has is quite amazing I must say. I my self am still mostly debian based but mostly because im lazy and uses to it ;)",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iabp1oh",
+                    "author": "simplelifestyle",
+                    "score": 2,
+                    "created_utc": 1653753250.0,
+                    "response": "Great post. Thank you!\n\n!lntip 500",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iabr3xi",
+                            "author": "xeaxant",
+                            "score": 3,
+                            "created_utc": 1653754214.0,
+                            "response": "Hey! Thank you very much! The limitations of my available hardware will not resolve themselves, but I am now 500 satoshis closer ;)",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iabp2ty",
+                            "author": "lntipbot",
+                            "score": 1,
+                            "created_utc": 1653753266.0,
+                            "response": "Hi u/simplelifestyle, thanks for tipping u/xeaxant **500** satoshis!\n***\n*[^(More info)](https://xnf5cwpq73.execute-api.us-west-2.amazonaws.com/prod/info) ^| [^(Balance)](https://www.reddit.com/message/compose/?to=lntipbot&subject=balance&message=!balance) ^| [^(Deposit)](https://www.reddit.com/message/compose/?to=lntipbot&subject=deposit&message=!deposit 10000) ^| [^(Withdraw)](https://www.reddit.com/message/compose/?to=lntipbot&subject=withdraw&message=!withdraw put_invoice_here) ^| ^(Something wrong?  Have a question?) [^(Send me a message)](https://www.reddit.com/message/compose/?to=drmoore718)*",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iaei674",
+                    "author": "Bitcoin__Hodler",
+                    "score": 1,
+                    "created_utc": 1653808462.0,
+                    "response": "thanks for sharing, i love TOR",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iabevvo",
+                    "author": "vvillehelm",
+                    "score": 0,
+                    "created_utc": 1653748444.0,
+                    "response": "\"TL;DR:\" stands for \"Too Long, Didn't Read\"",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iabgkmy",
+                            "author": "xeaxant",
+                            "score": 2,
+                            "created_utc": 1653749270.0,
+                            "response": "Fixed. Thanks.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

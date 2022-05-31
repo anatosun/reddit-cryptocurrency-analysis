@@ -165,47 +165,6 @@
             ]
         },
         {
-            "id": "uxmdyp",
-            "title": "Buy high sell low :D",
-            "url": "https://www.reddit.com/r/Bitcoin/comments/uxmdyp/buy_high_sell_low_d/",
-            "author": "SickBoyNoFuture",
-            "created_utc": 1653499512.0,
-            "score": 5,
-            "num_comments": 4,
-            "subreddit": "Bitcoin",
-            "selftext": "&#x200B;\n\nhttps://preview.redd.it/vv9lc8mcpn191.png?width=1397&format=png&auto=webp&s=1cc1ecef62723c97d368bbc724fa3db032d946ba",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i9yp2xa",
-                    "author": "RealUrbanRebel",
-                    "score": 3,
-                    "created_utc": 1653501430.0,
-                    "response": "This is the way",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i9ypiee",
-                    "author": "potato_for_cooking",
-                    "score": 2,
-                    "created_utc": 1653501600.0,
-                    "response": "The reddit way",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i9z2dpm",
-                    "author": "d3lta8",
-                    "score": 1,
-                    "created_utc": 1653506695.0,
-                    "response": "Buy high sell higher",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "uxmerp",
             "title": "H O D L ! !",
             "url": "https://i.redd.it/8bz9c9cnpn191.gif",
@@ -276,7 +235,7 @@
             "author": "aemmeroli",
             "created_utc": 1653500185.0,
             "score": 8,
-            "num_comments": 15,
+            "num_comments": 22,
             "subreddit": "Bitcoin",
             "selftext": "I read some articles that claim that UTXO commitments (adding the hash of the current state to every block) would remove the need to download the whole blockchain and a new node would be able to verify that a pruned state is correct based on the commitment.\n\nI don't understand how this works in detail but I wondered why this isn't discussed here more often or why this doesn't add anything to Bitcoin.",
             "stickied": false,
@@ -284,9 +243,9 @@
                 {
                     "id": "i9yxmh1",
                     "author": "Acceptable-Analyst30",
-                    "score": 5,
+                    "score": 6,
                     "created_utc": 1653504784.0,
-                    "response": "Hi\n\nThis is an interesting idea and I\u2019m using something similar internally to quickly deploy bitcoin nodes. I had a few bad experience with hardware failing like 5 times in a row forcing me to redownload re confirm everything from the beginning which is annoying.\n\nWhen connected for the first time a new node do two things: It first download the complete history of the blockchain and then confirms everything block by block ensuring all UTXO are valid. Even when running a pruned node this process will be done. Pruning will only reduce the size on the hard drive. This can take several days if the hardware is not powerful enough and will always grow over time.\n\nIn theory, to reduce the bandwidth usage we could simply download the last few GB of blocks and an up to date UTXO set. The problem now becomes, who will you trust with this UTXO set. What is the guarantee that nothing was tempered with? And the answer is nothing, of course I can put on Dropbox an updated UTXO set but you would have to trust me to not modify anything in it.\n\nThis is why everything is downloaded and validated in the first place, to make sure nothing was modified. Adding the current state of the UTXO set to every block would change the dynamic of mining and be a potentially intensive process, furthermore the internal state of mempool across all nodes are slightly different, some transactions are not yet relayed to all node, etc so it would be impractical.\n\nNow, let me introduce a hybrid approach. Through a Bitcoin softfork we could every 2 weeks when there is the difficulty adjustment introduce the hash of the UTXO set a few blocks before (eg: 50 blocks before) to avoid any uncertainty in case of history rewriting. This periodical commitment would introduce a reference that can be later used to speed up the initial sync. The way this would be done to be backward compatible is to have an OP RETURN transaction signed by address of the miner who mined the block with the hash of the UTXO set. We let this run for 6 months so it becomes ossified. Because it would only happens roughly every 2 weeks and for the UTXO set 50 blocks before it could be easily recomputed by miners and node without adding too much computing overhead.\n\nNow when you spin up a new node, you have a new option called Fast track UTXO commitment. A node with this enabled would download a few recent blocks, then figure out the current block height, then it would go around 6 months in the past and start downloading the UTXO set from 6 months ago + all the blocks until now.\n\nThe validation process would be the following: Check that the UTXO hash of the set correspond to the hash that was published 6 months ago and start validating everything from 6 months ago until now. This would reduce the amount of bandwidth and computing power to run your own node and could open the door to have nodes inside phones and very low power hardware in places where high bandwidth access is limited.\n\nThe 6 month ossification window ensure that the cost of attacking a node during this initial synchronization would be at least of 6 months of producing a fake chain. Depending on the threat model this could be extended however I think its acceptable. If during initial block download someone faces an adversary powerful enough to have the majority of nodes sending fake data, they could as well fake it from the beginning.\n\nWhat I do internally is something similar, I have a backup of the UTXO set of a few months ago and I use it to quickly restore nodes in case of failure.\n\nIMHO this could even be proposed as a Bip so we could discuss about the implication of periodical UTXO commitment.",
+                    "response": "Hi\n\nThis is an interesting idea and I\u2019m using something similar internally to quickly deploy bitcoin nodes. I had a few bad experience with hardware failing like 5 times in a row forcing me to redownload re confirm everything from the beginning which is annoying.\n\nWhen connected for the first time a new node do two things: It first download the complete history of the blockchain and then confirms everything block by block ensuring all UTXO are valid. Even when running a pruned node this process will be done. Pruning will only reduce the size on the hard drive. This can take several days if the hardware is not powerful enough and will always grow over time.\n\nIn theory, to reduce the bandwidth usage we could simply download the last few GB of blocks and an up to date UTXO set. The problem now becomes, who will you trust with this UTXO set. What is the guarantee that nothing was tempered with? And the answer is nothing, of course I can put on Dropbox an updated UTXO set but you would have to trust me to not modify anything in it.\n\nThis is why everything is downloaded and validated in the first place, to make sure nothing was modified. Adding the current state of the UTXO set to every block would change the dynamic of mining and be a potentially intensive process, furthermore the internal state of mempool across all nodes are slightly different, some transactions are not yet relayed to all node, etc so it would be impractical.\n\nNow, let me introduce a hybrid approach. Through a Bitcoin softfork we could every 2 weeks when there is the difficulty adjustment introduce the hash of the UTXO set a few blocks before (eg: 50 blocks before) to avoid any uncertainty in case of history rewriting. This periodical commitment would introduce a reference that can be later used to speed up the initial sync. The way this would be done to be backward compatible is to have an OP RETURN transaction signed by address of the miner who mined the block with the hash of the UTXO set. We let this run for 6 months so it becomes ossified. Because it would only happens roughly every 2 weeks and for the UTXO set 50 blocks before it could be easily recomputed by miners and node without adding too much computing overhead.\n\nTo enforce this rule, the consensus must be changed through a soft fork to enforce the correct hash is embedded into the block.\n\nNow when you spin up a new node, you have a new option called Fast track UTXO commitment. A node with this enabled would download a few recent blocks, then figure out the current block height, then it would go around 6 months in the past and start downloading the UTXO set from 6 months ago + all the blocks until now.\n\nThe validation process would be the following: Check that the UTXO hash of the set correspond to the hash that was published 6 months ago and start validating everything from 6 months ago until now. This would reduce the amount of bandwidth and computing power to run your own node and could open the door to have nodes inside phones and very low power hardware in places where high bandwidth access is limited.\n\nThe 6 month ossification window ensure that the cost of attacking a node during this initial synchronization would be at least of 6 months of producing a fake chain. Depending on the threat model this could be extended however I think its acceptable. If during initial block download someone faces an adversary powerful enough to have the majority of nodes sending fake data, they could as well fake it from the beginning.\n\nWhat I do internally is something similar, I have a backup of the UTXO set of a few months ago and I use it to quickly restore nodes in case of failure.\n\nIMHO this could even be proposed as a Bip so we could discuss about the implication of periodical UTXO commitment.",
                     "depth": 1,
                     "comments": [
                         {
@@ -300,11 +259,58 @@
                                 {
                                     "id": "ia0wjva",
                                     "author": "jtoomim",
-                                    "score": 2,
+                                    "score": 3,
                                     "created_utc": 1653536720.0,
                                     "response": "> My node is not built to verify a hash of a database containing 50 million entries within the time it normally takes to validate and propagate a new block\n\nLet's add some data to this. Here are results from my node:\n\n    ~$ time bitcoin-cli gettxoutsetinfo\n    {\n      \"height\": 737930,\n      \"bestblock\": \"00000000000000000002e6cae9fb55f131b619dd72ec5bc2242bd10b6c164be9\",\n      \"transactions\": 49497197,\n      \"txouts\": 82083387,\n      \"bogosize\": 6127690147,\n      \"hash_serialized_2\": \n    \"1f965ae02e0277c79a7fb64245eaac13cc090bc74b0a19cee895a7d82e4ca745\",\n      \"disk_size\": 5033459269,\n      \"total_amount\": 19049354.67914707\n    }\n    \n    real\t1m15.244s\n    user\t0m0.005s\n    sys\t0m0.000s\n\nSo it currently takes a little over 1.25 minutes (75 seconds) for my node to hash all UXTO set entries. The proposal that /u/Acceptable-Analyst30 put forth would give *50* average block intervals (30,000 seconds) for this to be computed -- e.g. the UTXO set from block 800,000 would only be committed in block 800,050. Since 75 seconds is a lot shorter than 30,000 seconds, my node is about 400 times faster than the minimum speed necessary to compute or verify a hash of the current UTXO set within the time it normally takes to validate and propagate that 50th block.\n\nMind you, this can also be improved. For reference, this is on a Core i7 4790k (released 8 years ago) with an old SATA SSD. The `gettxoutsetinfo` RPC call is single-threaded and not well optimized, as it's rarely used, so it should be taken as an upper bound for the amount of time it takes to compute a UTXO commitment. With some work, this could probably be dropped to 1/4 of the current time. For example, another way I can compute a hash of the UTXO set is to simply hash the entire database files using Blake2B:\n\n    ~$ time cat .bitcoin/chainstate/* | b2sum\n    4d9733f88e0a6c12f4922ee0e9a0bfc87bc3be1026aa7d92db3ae64e3310364638259ec0eb98f90a7d0d9c6cf7e9a6f7b59c558fa61aac17b1e9b43638363252  -\n        \n    real\t0m33.462s\n    user\t0m8.363s\n    sys\t0m3.855s\n\nThis is *still* single-threaded, and (at least on my machine) purely I/O bound (`cat`ing the data to `/dev/null` takes 32 seconds while reading at 142 MB/s), but it's already about 2x as fast.",
                                     "depth": 3,
-                                    "comments": []
+                                    "comments": [
+                                        {
+                                            "id": "ia22j8h",
+                                            "author": "Acceptable-Analyst30",
+                                            "score": 1,
+                                            "created_utc": 1653568114.0,
+                                            "response": "That matches my own tests. And as I said I forgot to add this new rule of adding the UTXO checkpoint would be a soft fork consensus so we enforce the miner to be honest and include the correct hash, else their  block is gonna be rejected.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "ia338r9",
+                                            "author": "igadjeed",
+                                            "score": 1,
+                                            "created_utc": 1653583860.0,
+                                            "response": "> would give 50 average block intervals (30,000 seconds) for this to be computed\n\nSo, if it's not valid, all the nodes are going to revert a 50-block chain tip?",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "ia34i7q",
+                                            "author": "igadjeed",
+                                            "score": 1,
+                                            "created_utc": 1653584352.0,
+                                            "response": "> hash the entire database files\n\nThat won't produce a consistent value between nodes",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ia21xnv",
+                                    "author": "Acceptable-Analyst30",
+                                    "score": 1,
+                                    "created_utc": 1653567782.0,
+                                    "response": "Oh you can trust the UTXO checkpoint hash (I forgot to add) but this would be part of the soft fork consensus. Those block would not be valid if they do not include the correct UTXO hash which can be verified by all nodes.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia32v2b",
+                                            "author": "igadjeed",
+                                            "score": 1,
+                                            "created_utc": 1653583713.0,
+                                            "response": "> correct UTXO hash which can be verified by all nodes\n\nNot quickly enough",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -317,7 +323,17 @@
                     "created_utc": 1653514030.0,
                     "response": "Not implemented because it's centralized. There's no decentralized way to discover a consistent checkpoint at a specific block height  \n\nAlso, the main project to build checkpoints for the UTXO database seems to have been abandoned  \nhttps://dci.mit.edu/utreexo\n\n> why this doesn't add anything to Bitcoin\n\nIt does. It allows the chainstate to be shared instead of being built transaction by transaction, block by block from genesis. Currently, it's possible to copy a chainstate valid at a specific block height from another person's node (MyNode does this), with the big downside that you're trusting the other node operator, not verifying  \n\nIf there was a decentralized proof of validity of an externally acquired chainstate, node initialization would take a few hours (block download time) instead of 3-5 days  \n\nOr a few minutes, for a pruned node, instead of 3-5 days",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "ia232fa",
+                            "author": "Acceptable-Analyst30",
+                            "score": 1,
+                            "created_utc": 1653568406.0,
+                            "response": "It can be decentralized if the UTXO checkpoint is enforced as part of the block validity. This would require a soft fork to work.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "i9z6fma",
@@ -372,7 +388,17 @@
                             "created_utc": 1653505632.0,
                             "response": "The main downside would be increased mining complexity because you need to compute the hash of the current ever changing UTXO set to include it in the block. However an hybrid approach of a periodic commitment (every few days / few weeks) would be doable and would not increase by too much the complexity of the block validation process.",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "ia2u9i4",
+                                    "author": "sepharose",
+                                    "score": 1,
+                                    "created_utc": 1653580337.0,
+                                    "response": "Thanks. I had thought the hash of the utxo set would be much quicker, but I saw someone else tested it at 75 seconds.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         }
                     ]
                 },
@@ -406,7 +432,7 @@
                         {
                             "id": "ia0y4df",
                             "author": "jtoomim",
-                            "score": 2,
+                            "score": 3,
                             "created_utc": 1653537644.0,
                             "response": "It's computationally very easy to validate all block *headers*. Checking the work done only requires validating headers, not the blocks themselves. Using UTXO commitments, you can validate all headers since the genesis block, and only validate a semi-recent UTXO commitment plus the contents of the blocks since that commitment.",
                             "depth": 2,
@@ -427,13 +453,73 @@
             ]
         },
         {
+            "id": "uxmdyp",
+            "title": "Buy high sell low :D",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uxmdyp/buy_high_sell_low_d/",
+            "author": "SickBoyNoFuture",
+            "created_utc": 1653499512.0,
+            "score": 5,
+            "num_comments": 6,
+            "subreddit": "Bitcoin",
+            "selftext": "&#x200B;\n\nhttps://preview.redd.it/vv9lc8mcpn191.png?width=1397&format=png&auto=webp&s=1cc1ecef62723c97d368bbc724fa3db032d946ba",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9yp2xa",
+                    "author": "RealUrbanRebel",
+                    "score": 5,
+                    "created_utc": 1653501430.0,
+                    "response": "This is the way",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9z2dpm",
+                    "author": "d3lta8",
+                    "score": 2,
+                    "created_utc": 1653506695.0,
+                    "response": "Buy high sell higher",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia18ybp",
+                    "author": "Neinfu",
+                    "score": 2,
+                    "created_utc": 1653545024.0,
+                    "response": "Buy high & HODL",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia3x6b5",
+                            "author": "SickBoyNoFuture",
+                            "score": 1,
+                            "created_utc": 1653596053.0,
+                            "response": "XD",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i9ypiee",
+                    "author": "potato_for_cooking",
+                    "score": 2,
+                    "created_utc": 1653501600.0,
+                    "response": "The reddit way",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
             "id": "uxmlg0",
             "title": "The future!",
             "url": "https://i.redd.it/1ehsi748rn191.gif",
             "author": "GaliboControl2310",
             "created_utc": 1653500106.0,
-            "score": 221,
-            "num_comments": 11,
+            "score": 262,
+            "num_comments": 27,
             "subreddit": "Bitcoin",
             "selftext": "",
             "stickied": false,
@@ -441,9 +527,66 @@
                 {
                     "id": "ia0bagj",
                     "author": "PopLock-N-Hold-it",
-                    "score": 4,
+                    "score": 3,
                     "created_utc": 1653526457.0,
                     "response": "Please Include planets in the list of consumables",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia29l9k",
+                            "author": "SecondDumbUsername",
+                            "score": 3,
+                            "created_utc": 1653571672.0,
+                            "response": "And an image of Peter Schiff",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia5kss6",
+                                    "author": "e642367",
+                                    "score": 1,
+                                    "created_utc": 1653624497.0,
+                                    "response": "Damn man I wanna add that shit so bad, you can't even.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia4cvgk",
+                            "author": "yusupan777",
+                            "score": 3,
+                            "created_utc": 1653602847.0,
+                            "response": "Can't wait to see the planets in BTC's mouth right now lol.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia1jtim",
+                    "author": "bobbyv137",
+                    "score": 5,
+                    "created_utc": 1653554221.0,
+                    "response": "I'm watching the live Binance BTC trades right now.\n\nThere's multiple bids going through at around 1,300 BTC per bid. Someone is buying hundreds of millions of dollars of BTC literally right before my eyes.\n\nQuite the sight.\n\nEdit: this is compulsive viewing. Yes, I'm a nerd. Something is brewing. Something's about to give.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia58z9d",
+                            "author": "daniilbodrov",
+                            "score": 1,
+                            "created_utc": 1653618302.0,
+                            "response": "That is a freaking good comment mate, thanks for that lol.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia494ax",
+                    "author": "fafa100",
+                    "score": 3,
+                    "created_utc": 1653601198.0,
+                    "response": "You forgot to include the people who doesn't like BTC, they should be the first one of the fucking list of BTC, they have to be disappear right now and we will love to see that shit for sure lol.",
                     "depth": 1,
                     "comments": []
                 },
@@ -454,7 +597,17 @@
                     "created_utc": 1653523405.0,
                     "response": "Imagine how better the world will be then",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "ia3hz06",
+                            "author": "frztst1032",
+                            "score": 1,
+                            "created_utc": 1653589757.0,
+                            "response": "This is the real future of all of us and we have to accept it, this will bring so many good things, the best part would be progress, the only thing that matters to most of us right now my man.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "ia0pr02",
@@ -463,7 +616,17 @@
                     "created_utc": 1653533174.0,
                     "response": "Let\u2019s hope so, today was my DCA day! Only $250 but every little bit counts.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "ia5g7j6",
+                            "author": "waxminer",
+                            "score": 2,
+                            "created_utc": 1653621963.0,
+                            "response": "DCA more every fucking day or every fucking week, DCA is the only thing which will save us and we really want that right now, we can't even wait to see the future with our eyes mate.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "ia19lss",
@@ -472,16 +635,17 @@
                     "created_utc": 1653545532.0,
                     "response": "I can\u2019t get over the fact that the things aren\u2019t being chomped if they don\u2019t disappear after he closes his mouth on them.",
                     "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "ia1jtim",
-                    "author": "bobbyv137",
-                    "score": 2,
-                    "created_utc": 1653554221.0,
-                    "response": "I'm watching the live Binance BTC trades right now.\n\nThere's multiple bids going through at around 1,300 BTC per bid. Someone is buying hundreds of millions of dollars of BTC literally right before my eyes.\n\nQuite the sight.\n\nEdit: this is compulsive viewing. Yes, I'm a nerd. Something is brewing. Something's about to give.",
-                    "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "ia5zq60",
+                            "author": "buzz52817",
+                            "score": 1,
+                            "created_utc": 1653634837.0,
+                            "response": "Well this is just a gif but I must tell you that BTC is here to swallow every fucking thing for real and we can't argue with that shit, this is something real as hell for me man lol.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "ia1kkyx",
@@ -489,6 +653,64 @@
                     "score": 2,
                     "created_utc": 1653554915.0,
                     "response": "Imagine the total transaction fees globally \ud83e\udd23\ud83e\udd23\ud83e\udd23",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia4fuyj",
+                            "author": "askme2222",
+                            "score": 1,
+                            "created_utc": 1653604216.0,
+                            "response": "Damn man, I can't even imagine things like that right now, that would be so great for all of us for sure, I really want to be in the future and we can't wait for that shit for sure lol.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia64zsj",
+                                    "author": "tipstony59",
+                                    "score": 0,
+                                    "created_utc": 1653639456.0,
+                                    "response": "I can't ever see it happening. Quantum computing power will hit 1,000,000 qbits in 10-15 years and BTC will be dead along with a lot of Crypto.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia67rre",
+                                            "author": "squareOfTwo",
+                                            "score": 1,
+                                            "created_utc": 1653641962.0,
+                                            "response": "Ah the good old quantum BS FUD which will probably never happen.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia8xsl5",
+                                                    "author": "tipstony59",
+                                                    "score": 1,
+                                                    "created_utc": 1653690701.0,
+                                                    "response": "Ye you tell um Marty",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia34u13",
+                    "author": "Mortgage-Pitiful",
+                    "score": 2,
+                    "created_utc": 1653584477.0,
+                    "response": "Software eating the world!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia4u359",
+                    "author": "nosvicius",
+                    "score": 2,
+                    "created_utc": 1653611041.0,
+                    "response": "Seriously I can't wait to witness the fucking future right now lol, I want to see the future with full of BTC in my portfolio and the value should be higher than ever, that's what I want/",
                     "depth": 1,
                     "comments": []
                 }

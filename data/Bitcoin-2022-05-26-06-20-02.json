@@ -27,16 +27,16 @@
             "url": "https://www.reddit.com/r/Bitcoin/comments/uy0zlz/lightning_thursday_may_26_2022_explore_the/",
             "author": "rBitcoinMod",
             "created_utc": 1653545294.0,
-            "score": 19,
-            "num_comments": 13,
+            "score": 36,
+            "num_comments": 30,
             "subreddit": "Bitcoin",
             "selftext": "The lightning network is a second-layer solution on top of the Bitcoin blockchain that enables quick, cheap and scalable Bitcoin payments.\n\nHere is the place to discuss and learn more about lightning!\n\nAsk your questions about lightning\n\nProvide reviews, feedback, comparisons of LN apps, services, websites etc\n\nLearn about new LN features, development, apps\n\nLink to good quality resources (articles, wikis etc)\n\nResources:\n\n* Here is an awesome list of resources compiled by Jameson Lopp: https://www.lopp.net/lightning-information.html\n\n* Want to test out your lightning fire power? tip the Bitcoin devs! https://bitcoindevlist.com/\n\n* Previous threads: [Search](https://www.reddit.com/r/Bitcoin/search?q=Lightning+Thursday&restrict_sr=on&include_over_18=on&sort=new&t=all)\n\n* Lnbook getting closer towards being finished and can already be seen at: https://github.com/lnbook/lnbook\n\n* Lightning Dedicated YouTube Channel: https://youtube.com/renepickhardt\n\n* Also there is the playlist by chaincode labs: https://youtube.com/playlist?list=PLpLH33TRghT17_U3as2P3vHfAGL8pSOOY\n\n* Lightning stores: https://www.lightningnetworkstores.com/\n\n* Learn more and talk about lightning right here in r/Bitcoin, r/bitcoinbeginners, r/thelightningnetwork, and [the r/Bitcoin chat](https://discord.gg/qE3rWBRNqh)",
-            "stickied": true,
+            "stickied": false,
             "comments": [
                 {
                     "id": "ia1fha3",
                     "author": "Starbackr",
-                    "score": 3,
+                    "score": 5,
                     "created_utc": 1653550344.0,
                     "response": "Happy Lightning Thursday \ud83e\udde1\u26a1\ufe0f",
                     "depth": 1,
@@ -65,7 +65,7 @@
                 {
                     "id": "ia1jub4",
                     "author": "IIamII",
-                    "score": 1,
+                    "score": 3,
                     "created_utc": 1653554241.0,
                     "response": "Hi there amazing bitcoin and lightning people from the internet!\n\nI have a question recording general layer 2 solutions:\nlightning and the liquid network are two networks that run on bitcoin, do they have any interoperability or do we need to see them as completely separate networks with different functions?\n\nThanks",
                     "depth": 1,
@@ -73,13 +73,81 @@
                         {
                             "id": "ia24n5w",
                             "author": "johndoeisback",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1653569242.0,
                             "response": "They are completely different. Liquid is a sidechain, i.e. a separate chain from the bitcoin main chain. You can lock up bitcoins in the main chain in such a way that new tokens are generated in the sidechain, you can move them around in the sidechain and then they can be recovered in the main chain.\n\nLightning Network is a protocol that allows you to send off-chain bitcoins between participating nodes through payment channels. Two nodes create a channel by committing a certain amount of bitcoins, and then the balance in this channel can move from one side to the other without touching the main chain. Payments can traverse multiple channels until the destination. When a channel is closed the bitcoins committed are distributed to the nodes.",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "ia2kbhu",
+                                    "author": "dantebayer",
+                                    "score": 1,
+                                    "created_utc": 1653576302.0,
+                                    "response": "There was an article on Bitcoin Magazine the other day where it is speculated that you can go via lightning to different chains/scaling solutions if i understand correctly.\n\nhttps://bitcoinmagazine.com/technical/ways-to-upgrade-lightning-payment-routing",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         }
                     ]
+                },
+                {
+                    "id": "ia1yki7",
+                    "author": "Fiach_Dubh",
+                    "score": 3,
+                    "created_utc": 1653565790.0,
+                    "response": "0 lightning fee on a channel opened with kraken exchange, when sending lightning/bitcoin to kraken as a deposit using that channel",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia1zy85",
+                            "author": "bitcoin_barry",
+                            "score": 2,
+                            "created_utc": 1653566638.0,
+                            "response": "How do you find the details?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia22mbh",
+                                    "author": "Fiach_Dubh",
+                                    "score": 2,
+                                    "created_utc": 1653568161.0,
+                                    "response": "https://lightningnetwork.plus/",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia27upn",
+                                            "author": "bitcoin_barry",
+                                            "score": 2,
+                                            "created_utc": 1653570848.0,
+                                            "response": "I misunderstood I thought you were saying that Kraken offered to open a channel to your node for 0 fees if you did it in a certain way.\n\nYou're just highlighting that if you have a direct channel with them, there are no middle men to take a fee when depositing funds via lightning.\n\nBut you do pay an on chain fee for the initial tx and unless you are depositing and withdrawing, you may be limited to the channel size as to how much you can deposit.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia2gk6a",
+                                                    "author": "Fiach_Dubh",
+                                                    "score": 1,
+                                                    "created_utc": 1653574736.0,
+                                                    "response": "correct!",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia2ntb0",
+                    "author": "quickscope1337",
+                    "score": 2,
+                    "created_utc": 1653577744.0,
+                    "response": "Phoenix Wallet is the best LN wallet\n\nChange my mind",
+                    "depth": 1,
+                    "comments": []
                 },
                 {
                     "id": "ia1pa63",
@@ -92,7 +160,7 @@
                         {
                             "id": "ia1z61f",
                             "author": "johndoeisback",
-                            "score": 2,
+                            "score": 3,
                             "created_utc": 1653566163.0,
                             "response": ">And in one part it said you can loss your funds doing this\n\nYou can lose your funds every time you manipulate bitcoins, so yeah. But it sounds like a generic warning. Just stay alert and don't do anything stupid. That's all.\n\n>how btc is the minimum i can put to run my own node, but make it run well\n\nWhat do you mean \"run well\"? Profit? At this moment only the very top nodes are generating real profits, the rest doesn't even cover the cost of running the node. But at least it's fun.\n\nYou should put an amount that you are more or less comfortable in losing. I'm not saying you will lose it, but at least it's a metric that you can use to decide. For example, if you lose $200, do you go nuts and start having suicidal thoughts? If so then repeat the exercise with a lower amount. If instead you are more like *\"meh it's a pain but at least I learned something\"* then repeat the exercise with a higher amount. You will soon find the sweet spot.",
                             "depth": 2,
@@ -104,46 +172,84 @@
                                     "created_utc": 1653570889.0,
                                     "response": ">What do you mean \"run well\"? Profit?\n\nNo, i meant. As i never ran a node LN before maybe there is an amount of btc \"required\" as a standar to put in. Not sure of this. This is my question. Like, is recommended to put more than ..... etc?\n\nI know the profits can be very minimum, but just wanted to do it for fun, help the community and to learn more.\n\n&#x200B;\n\n>You can lose your funds every time you manipulate bitcoins, so yeah. But it sounds like a generic warning. Just stay alert and don't do anything stupid. That's all.\n\nI know the basics of security when transact with btc. Now, when setting up the node, what can make me loss my funds? So i can avoid this risks...Thx for reply",
                                     "depth": 3,
-                                    "comments": []
+                                    "comments": [
+                                        {
+                                            "id": "ia2g7xc",
+                                            "author": "johndoeisback",
+                                            "score": 2,
+                                            "created_utc": 1653574594.0,
+                                            "response": ">No, i meant. As i never ran a node LN before maybe there is an amount of btc \"required\" as a standar to put in. Not sure of this. This is my question. Like, is recommended to put more than ..... etc?\n\nThere is no such minimum as far as I know. Each node sets the minimum (and maximum) channel size that they accept, but in most cases the minimum is quite small so this is normally not a limitation. But you will want to open multiple channels so plan accordingly.\n\n>I know the basics of security when transact with btc. Now, when setting up the node, what can make me loss my funds? So i can avoid this risks...Thx for reply\n\nWith LND (the only software I've used so far) it's a bit hard to lose funds (excluding obvious mistakes like erasing your wallet or things like that). I think there are two main LN-only errors that may be catastrophic:\n\n1. **Restoring a channel state from an old backup.** Both ends of a channel must agree on the balance, so if you restore an old channel state the other party will think you are trying to cheat and will steal all your funds from that channel.\n2. **Keeping your node offline for extended periods while channels are open.** Normally if the other party tries to steal your funds your node will punish it. But if your node is offline it can't do it, so it's good to open your node at least once during the punishment window (normally \\~2 weeks). But of course an offline node cannot route payments so it's pointless to build an LN node and keep it offline.\n\nIt would be good if you read the [disaster recovery guide](https://docs.lightning.engineering/lightning-network-tools/lnd/disaster-recovery) so you understand the procedure.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia5wkhz",
+                                                    "author": "Evilgrade",
+                                                    "score": 1,
+                                                    "created_utc": 1653632352.0,
+                                                    "response": "Ok. Thank you so much for your enlightenment. I will save your message to remeber it. Thanks!",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             ]
                         }
                     ]
                 },
                 {
-                    "id": "ia1yki7",
-                    "author": "Fiach_Dubh",
+                    "id": "ia35khh",
+                    "author": "thats_just_right",
                     "score": 1,
-                    "created_utc": 1653565790.0,
-                    "response": "0 lightning fee on a channel opened with kraken exchange, when sending lightning/bitcoin to kraken as a deposit using that channel",
+                    "created_utc": 1653584768.0,
+                    "response": "I want to set up my own LN node and support the community, but I don't have anybody I want to send or receive payments to at the moment. If I set up a node with that mindset will the network be able to use my node to facilitate payments? How does that work? \n\nHow much does that purpose of facilitating payments depend on the nodes I open channels with?",
                     "depth": 1,
                     "comments": [
                         {
-                            "id": "ia1zy85",
-                            "author": "bitcoin_barry",
+                            "id": "ia3jxol",
+                            "author": "dantebayer",
+                            "score": 3,
+                            "created_utc": 1653590565.0,
+                            "response": "It depends. Many people are shutting down their nodes atm. probably because they weren't seeing the payments flows they had hoped for. That being said you can use for example \n\nhttps://amboss.space/magma or https://lightningnetwork.plus/\n\nTo get started. Just dont expect alot of action unless you put in the effort. That being said, there are reliable reports of people making 2% APY on a LN node, but they are experts.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia47kzo",
+                            "author": "sciencetaco",
+                            "score": 2,
+                            "created_utc": 1653600513.0,
+                            "response": "If you set up a node, make it public, and open channels to multiple other nodes then you might see some payments routed through you. \n\nYou\u2019ll need to have inbound liquidity which generally means having somebody else open a channel *to* you. There are communities for this at r/TheLightningNetwork or  https://lightningnetwork.plus. Or using a service such as Lightning Loop to buy the liquidity for a small fee.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia5bfd4",
+                    "author": "Altruistic-Summer302",
+                    "score": 0,
+                    "created_utc": 1653619530.0,
+                    "response": "Anyone interested in getting $10 in bitcoin just for creating an account using Strike lightning network? Message me for referral code & set up. \n\nEasiest $10 in bitcoin you\u2019ll ever make. No games, #hodl #planB",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia5o712",
+                            "author": "bramvh",
                             "score": 1,
-                            "created_utc": 1653566638.0,
-                            "response": "How do you find the details?",
+                            "created_utc": 1653626539.0,
+                            "response": "I feel like receiving today",
                             "depth": 2,
                             "comments": [
                                 {
-                                    "id": "ia22mbh",
-                                    "author": "Fiach_Dubh",
+                                    "id": "ia5ve5k",
+                                    "author": "Altruistic-Summer302",
                                     "score": 1,
-                                    "created_utc": 1653568161.0,
-                                    "response": "https://lightningnetwork.plus/",
+                                    "created_utc": 1653631474.0,
+                                    "response": "message me now brother",
                                     "depth": 3,
-                                    "comments": [
-                                        {
-                                            "id": "ia27upn",
-                                            "author": "bitcoin_barry",
-                                            "score": 1,
-                                            "created_utc": 1653570848.0,
-                                            "response": "I misunderstood I thought you were saying that Kraken offered to open a channel to your node for 0 fees if you did it in a certain way.\n\nYou're just highlighting that if you have a direct channel with them, there are no middle men to take a fee when depositing funds via lightning.\n\nBut you do pay an on chain fee for the initial tx and unless you are depositing and withdrawing, you may be limited to the channel size as to how much you can deposit.",
-                                            "depth": 4,
-                                            "comments": []
-                                        }
-                                    ]
+                                    "comments": []
                                 }
                             ]
                         }

@@ -1,0 +1,178 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uycnct",
+            "title": "How does it work when you don\u2019t reuse addresses?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uycnct/how_does_it_work_when_you_dont_reuse_addresses/",
+            "author": "260418141086",
+            "created_utc": 1653585663.0,
+            "score": 6,
+            "num_comments": 15,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Let\u2019s say I receive 1 btc ten times on my Ledger.\n\nThe 10 btc go to 10 different addresses derived from the same seed. Am I able to send the entire amount of 10 btc in one transaction? \n\nIf so, does that mean that my wallet sums up all the small amounts of bitcoin into one balance? How does that work?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia3886e",
+                    "author": "bitusher",
+                    "score": 5,
+                    "created_utc": 1653585822.0,
+                    "response": ">Am I able to send the entire amount of 10 btc in one transaction? \n\nYes , the wallet automatically adds up the requires UTXOs as needed or you can manually select UTXOs with coin control features in certain wallets \n\nBitcoin transactions are comprised of inputs and outputs and you always end up spending or sending unspent outputs(UTXOs)\nSo say you have a Bitcoin wallet\nAnd you receive 3 transactions \u2013\n\nTx 1 = 0.5 BTC sent to Address A\n\nTx 2 = 0.3 BTC sent to Address B\n\nTx 3 = 0.45 BTC sent to Address C\n\nNow you have a total balance of 1.25 BTC. You than decide to buy something worth 1 BTC. The wallet is forced to take 3 inputs from these 3 addresses and send to one address leaving this :\n\n**The inputs**\n\nAddress A = 0 BTC\n\nAddress B = 0 BTC\n\nAddress C = 0 BTC\n\n**The outputs**\n\nAddress D(in another wallet) = 1 BTC\n\nAddress E( Back to your wallet) = 0.24999472 btc change going back to a new change address in your wallet\n\nWait, you may ask why didn\u2019t you get 0.25 btc back in change? = You paid a miner fee of 31 pennies of btc to include the tx in a block",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia3851a",
+                    "author": "ndgoLiberty",
+                    "score": 3,
+                    "created_utc": 1653585788.0,
+                    "response": "Yes. All your UTXOs can be piled up into one really big transaction. \n\nThere is a small problem that the transaction will be very large in terms of data size, but what can you do? Not much.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia3b3gc",
+                    "author": "igadjeed",
+                    "score": 3,
+                    "created_utc": 1653586971.0,
+                    "response": "A Bitcoin address is not an account, or an accumulator. The Bitcoin blockchain stores transactions. Bitcoin coins are the outputs of the transactions. An address belong to a coin, not the other way around  \n\nA coin can be only spent once, completely. Bitcoin has no partial spends  \n\nThe balance of a wallet is the sum of the amounts of the wallet's unspent coins\n\n> Am I able to send the entire amount of 10 btc in one transaction?\n\nA transaction has one or more inputs and one or more outputs. Each input spends a coin from an older transaction. In your example, your spending transaction has 10 inputs  \n\nIf your 10 coins had the same address, your spending transaction still has 10 inputs. Amounts do not accumulate to an address",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia37to2",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653585663.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia3x2zm",
+                    "author": "sos755",
+                    "score": 1,
+                    "created_utc": 1653596013.0,
+                    "response": ">The 10 btc go to 10 different addresses derived from the same seed. Am I able to send the entire amount of 10 btc in one transaction?\n\nYes. A transaction can send from one or more addresses to zero or more addresses.\n\n&#x200B;\n\n>If so, does that mean that my wallet sums up all the small amounts of bitcoin into one balance? How does that work?\n\nYes. That is exactly how it works. The wallet tracks all of its addresses.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uyccva",
+            "title": "Calculating capital gains",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uyccva/calculating_capital_gains/",
+            "author": "Brickinatorium",
+            "created_utc": 1653584866.0,
+            "score": 3,
+            "num_comments": 20,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Is there an easy way to calculate capital gains when you sell Bitcoin? I know generally you just subtract the average price paid from the price you sold it for, but it looks like it'd be a bit harder to keep track of that average since sometimes you're buying multiple times and moving currencies between hot and cold wallets.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia36zw1",
+                    "author": "bitusher",
+                    "score": 3,
+                    "created_utc": 1653585338.0,
+                    "response": "> and moving currencies between hot and cold wallets.\n\nMoving the bitcoin has nothing to do with taxes. You just export out the CSV from the exchange of when you purchased and compare when you sold and do a FIFO in most cases \n\nFor the US, if you sell, trade for another asset, or spend it becomes a taxable event. One reason, of many, why day trading is a nightmare. \n**Yes, Every single trade on an exchange is a taxable event!**\n\nNow this has several implications. Day trading becomes tax nightmare because every transaction is a taxable event. So someone that daytrades or invests in altcoins may be forced to use specialized software or hire an accountant for thousands of dollars and someone that just makes an occasional purchase of Bitcoin and withdraws it has a much easier task of calculated any taxes especially if they don't make large purchases giving them an excuse to simply not report. Not the same if you are daytrading on exchanges , especially if you have made over 200 trades in a year.\n\nAlso there is a distinction between short term and long term capital gains taxes so its much wiser to not sell your BTC for at least 1 year so at worst you have to pay the much lower long term capital gains -\n\nLook at this chart -\n\nhttps://www.fool.com/investing/2021-capital-gains-tax-rates-and-how-to-minimize-t/\nTL;DR - most people will need to pay 15% in the USA for selling BTC after a year.\n\n**Buy Bitcoin , record the price you bought it for and the date in a spreadsheet and wait at least 1 year before selling it or taking profits so if you do decide to pay taxes on profits you are at least in the lower tax category of long term capital gains.**\n\nMany people do not pay taxes when they spend BTC or sell it in person for cash but if you sell on any exchange like coinbase in the future , buy a car, boat, atv, house , land with Bitcoin , you better pay your taxes\n\nExamples - \n\n**Example 1 legal**: Say you bought 10 BTC for 1k USD each and want to sell them over a year later. Those BTC are now worth 10k each so you have a realized profit of 90k USD, thus your taxable income is now 90k if you have no other income. This would means you are in the 15% tax bracket thus are subject to 13,500 USD in taxes on the profit - deductions and writeoffs. So lets say with your writeoffs and deductions you now have to pay 6.5k in taxes , leaving you with 83,500 USD to put a down payment on a home.\n\n**Example 2 legal** - You have 10 BTC purchased or mined at 1k each when you received them. This is now worth 100k USD. You wait a year to sell them and never sell more than the amount where your total income exceeds 39,375 usd per year and than file your taxes where you pay none due to being in the first capital gains bracket **if you have no other sources of income as you state** . This will take several years or much longer(as btc continues to appreciate) to slowly sell off your bitcoin\n\n\n**Example 3 technically illegal**  - You have 10 BTC purchased or mined at 1k each when you received them. This is now worth 100k USD. You decide to use your reported income from your occupation to buy a home and keep the BTC spending separate on other items. You slowly spend your BTC on amazon, plane trips, hotels, selling small amounts in person or in atms without ID , restaurants in a private manner(personal wallet that you control private keys and you have done the minimum to wash the BTC). Technically you need to report taxes on every tx , but since you are not day trading the exchange you bought the BTC from does not report you and it is unenforceable for the IRS to even know you are spending those BTC. Since you are not buying large items registered to your identity you are also not targeted as well.\n\nHere are other ways people avoid taxes -\n\nspend btc directly for non registered items \u2013technically illegal if you don\u2019t pay taxes but difficult to enforce\n\nsell at 2 way atms without ID (coinatmradar.com) \u2013technically illegal if you don\u2019t pay taxes but difficult to enforce\n\n\nsell p2p with others\u2013technically illegal if you don\u2019t pay taxes but difficult to enforce\n\n\nsell on a DEX like BISQ\u2013technically illegal if you don\u2019t pay taxes but difficult to enforce\n\n\nSell the minimum in a country like the USA where you can get in the 0% long term cap gains rate - legal\n\nKeep the btc as collateral and take on debt that is not taxable - legal\n\nGift bitcoin with a gift tax exemption - legal\n\nDonate bitcoin to charities - legal\n\n\nFor countries like the USA you can use any accounting method as long as you are consistent\n\nIf you were to use FIFO(first in , first out) it would look like this\n\nBuy 1- 0.12 BTC @ 1000 USD\n\nBuy 2 - 0.5 BTC @ 3540 USD\n\nBuy 3 - 0.025 @ 4512 USD\n\nBuy 4 - 0.0054 @ 8004 USD\n\nSay you decide to sell 0.5 BTC for fiat(USD) when Bitcoin is valued at 40k usd\nThis would mean you would take your first in 2 purchases\n\n0.12x40k = 4,800 usd in value - 120 initial purchase price = 4680 in profit\n\n0.38 btc x 40k = 15,200 - original purchase rate of 0.38 (1345.2) = 13,854.2 profit\n\nTotal taxable profit = 18,534.8 usd\n\nIf its over a year , you are looking at the lower long term cap gains ... most people this would be 15% so you pay 2,780.22 usd in taxes if you decide to pay them\nIf under a year you will have the much higher ordinary tax rate (22-40% for most people)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia3du0s",
+                            "author": "Brickinatorium",
+                            "score": 2,
+                            "created_utc": 1653588072.0,
+                            "response": "Thank you for the detailed explanation!",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia3rq8n",
+                            "author": "clevariant",
+                            "score": 1,
+                            "created_utc": 1653593783.0,
+                            "response": "You're my hero.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia39s5v",
+                    "author": "igadjeed",
+                    "score": 2,
+                    "created_utc": 1653586445.0,
+                    "response": "Why use the average purchase price? Keep a record of each purchase and assign the purchase amounts to the sale amount in FIFO sequence, or some other sequence which suits the cost basis you prefer. Don't count the same purchase for more than one sale",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia3dchr",
+                            "author": "Brickinatorium",
+                            "score": 1,
+                            "created_utc": 1653587875.0,
+                            "response": "That sounds a lot more reasonable. The reason I assumed you averaged was because of an article I found when I was trying to figure this out for myself.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia4ix91",
+                                    "author": "Brettanomyces78",
+                                    "score": 1,
+                                    "created_utc": 1653605648.0,
+                                    "response": "Sounds like you found a bad article, or one that applies to people in a different jurisdiction.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia35tdl",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653584867.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia3re5b",
+                    "author": "clevariant",
+                    "score": 1,
+                    "created_utc": 1653593644.0,
+                    "response": "You don't just subtract the average basis cost.  It's far more complicated.  You have to calculate exact basis costs per transaction on a first-in-first-out basis, which is really hard when your buys and sells are broken into several parts.  You'll probably even end up splitting up the last relevant transaction, and then you have to remember what remains for next time.\n\nSo, you really need to do it with software.  Get your transaction histories from your exchange(s), and feed them into some crypto tax software.  Doing it by hand is no bueno.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia4yuh2",
+                    "author": "HardUseKink",
+                    "score": 1,
+                    "created_utc": 1653613368.0,
+                    "response": "turbo tax online",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia73rjo",
+                    "author": "Pots454",
+                    "score": 1,
+                    "created_utc": 1653661762.0,
+                    "response": "I believe unless an exchange is sending you a 1099 there should be no way anyone would know what you are doing. Profit or loss.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

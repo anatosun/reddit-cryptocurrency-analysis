@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/btc/comments/uy7ned/bitcoin_cash_merchant_idea/",
             "author": "stewbits22",
             "created_utc": 1653571723.0,
-            "score": 0,
-            "num_comments": 2,
+            "score": 11,
+            "num_comments": 19,
             "subreddit": "btc",
             "selftext": "Is it possible to give away BCH that can only be spent at your online store?\n\nFor example if I do a mailshot with free BCH.\n\nThe recipient has to scan a qr code and install a wallet but a smart contract only makes it spendable at a specific address.",
             "stickied": false,
@@ -23,9 +23,105 @@
                 {
                     "id": "ia2cws0",
                     "author": "MobTwo",
-                    "score": 4,
+                    "score": 19,
                     "created_utc": 1653573168.0,
                     "response": "If it can only be spent at a single place, then you might as well just use SLP tokens (that you issued), which achieves what you want and only has redeemable value at your store.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia2eliv",
+                            "author": "stewbits22",
+                            "score": 5,
+                            "created_utc": 1653573897.0,
+                            "response": "Yes I guess that works.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia2psf6",
+                                    "author": "CDSagain",
+                                    "score": 6,
+                                    "created_utc": 1653578540.0,
+                                    "response": "When SLP first came out I looked into the possibility of \"local currency\". \nThe idea being quite a old one but using cryptocurrency to bring the idea into modern era. So instead of your town printing easily faked local currency to try and promote local shopping in participating local shops, you used a SLP token on top of BCH. \n\nI think it would have worked but it would have needed a wallet that could be \"locked\" to only use the designated SLP token and be simple to use and unfortunately I don't have the skills to make that so unfortunately it was only ever a idea but yeah, I believe it would have worked and been a excellent tool for local business groups to use to try encourage the local economy.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia32f1g",
+                                            "author": "jessquit",
+                                            "score": 1,
+                                            "created_utc": 1653583538.0,
+                                            "response": "The problem with using SLP to create a currency is that AFAIK the creator can always mint new currency at will.\n\nWorks great for store coupons or store currency, but bad at the community level.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia44v5x",
+                                                    "author": "tulasacra",
+                                                    "score": 3,
+                                                    "created_utc": 1653599323.0,
+                                                    "response": "you can have fixed supply tokens on SLP",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia46gub",
+                                                            "author": "jessquit",
+                                                            "score": 1,
+                                                            "created_utc": 1653600025.0,
+                                                            "response": "Sorry if I'm ignorant, but how? And how do I know if an SLP token is fixed or if the creator can mint more?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia4jjrp",
+                                                                    "author": "LovelyDayHere",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653605948.0,
+                                                                    "response": "If there is no minting baton, it's fixed supply.\n\nThis could be inspected via SLP explorers and I do think Electron Cash SLP edition would also show it in the token info.\n\nThe choice whether to create a minting baton was fairly straightforward in EC SLP; but there were other minting sites where it might not have been so clear.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "ia47p6r",
+                                                    "author": "CDSagain",
+                                                    "score": 1,
+                                                    "created_utc": 1653600565.0,
+                                                    "response": "Yes but your reputation for setting up these local currency schemes wouldn't last very long if you created more tokens !! It would be very obvious too \ud83d\ude02",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia3vyme",
+                    "author": "capistor",
+                    "score": 1,
+                    "created_utc": 1653595537.0,
+                    "response": "You could do multi sig and sign it to a specific address.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia4xlk3",
+                    "author": "big--if-true",
+                    "score": 1,
+                    "created_utc": 1653612753.0,
+                    "response": "Gotto give incentives to reward people who pay with crypto, no fees, no chargebacks, no bank issues for the merchant.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaenbbq",
+                    "author": "TinosNitso",
+                    "score": 1,
+                    "created_utc": 1653813023.0,
+                    "response": "There can be a more advanced version which allows the BCH to be spent to other addresses which can only be spent to your store. If output address starts with *q* or *1*, it has to be your address, otherwise it has to be a hash of the correct smart contract. The idea there is we can start trading the merchant's BCH with its own exchange rate - like how Amazon $ are typically worth 20% less. A blockchain may be safer than relying on gift card codes.\n\nEven if SLP is more convenient and practical, using smart contracts instead might be **less risky**, if there's a high chance of an exit scam. In that case the BCH stuck in smart contracts might still have some sentimental value in the future, as half-burnt BCH (like a shredded USD) and the victims have their money burnt instead of stolen. There's an SLP solution, but it wouldn't let us trade the store credit (revealing the secret to spend the token, allows the BCH to be released, so we can't trade).",
                     "depth": 1,
                     "comments": []
                 }

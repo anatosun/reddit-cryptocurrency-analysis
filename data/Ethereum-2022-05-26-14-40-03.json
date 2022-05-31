@@ -14,8 +14,8 @@
             "url": "http://bordel.wtf",
             "author": "Crypto_Economist42",
             "created_utc": 1653575638.0,
-            "score": 4,
-            "num_comments": 2,
+            "score": 210,
+            "num_comments": 64,
             "subreddit": "ethereum",
             "selftext": "",
             "stickied": false,
@@ -23,11 +23,536 @@
                 {
                     "id": "ia2j3kp",
                     "author": "Crypto_Economist42",
-                    "score": 1,
+                    "score": 51,
                     "created_utc": 1653575798.0,
                     "response": "I imagine the first reaction will be to postpone the merge, but on second thought, perhaps they should just let it happen.  \n\nIt can be a  good \"unexpected outcome\" test for devs to see what would happen in real-world scenario if TTD is hit sooner than expected.",
                     "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia2sfio",
+                            "author": "frank__costello",
+                            "score": 17,
+                            "created_utc": 1653579609.0,
+                            "response": "> the first reaction will be to postpone the merge\n\nWhy?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia2uw4p",
+                                    "author": "bandoonparade",
+                                    "score": 27,
+                                    "created_utc": 1653580587.0,
+                                    "response": "I think he means postpone the Ropsten \"merge\" so that it actually happens on June 8 or thereabouts, not postpone the mainnet implementation.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia2zqu8",
+                                            "author": "frank__costello",
+                                            "score": 14,
+                                            "created_utc": 1653582500.0,
+                                            "response": "The context I got from the other thread is that the \"Ropsten Beacon Chain\" hasn't started yet, therefore this will break Ropsten.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia2zzsq",
+                                                    "author": "bandoonparade",
+                                                    "score": 9,
+                                                    "created_utc": 1653582597.0,
+                                                    "response": "Sure, IF nothing is done about it. But even if that were to happen -- and it won't, the devs are fully aware -- it's just a testnet. It doesn't matter if Ropsten breaks, especially if it happens before they even start testing the merge.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia3txoe",
+                                                            "author": "wildlight",
+                                                            "score": 4,
+                                                            "created_utc": 1653594691.0,
+                                                            "response": "testnet going down means devs cant test their code, setting them behind. it could end up being a lot of work to fix the testnet as well. its not inconsequential for things to break, just might not be the end of the world.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia44d9p",
+                                                                    "author": "Tarkedo",
+                                                                    "score": 3,
+                                                                    "created_utc": 1653599106.0,
+                                                                    "response": "You don't need a public testnet to test your code. Just saying.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "ia4allj",
+                                                                            "author": "wildlight",
+                                                                            "score": 2,
+                                                                            "created_utc": 1653601844.0,
+                                                                            "response": "i mean thats dependent on what you are doing.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        },
+                                                                        {
+                                                                            "id": "ia44jf8",
+                                                                            "author": "cosmic-comedy",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653599180.0,
+                                                                            "response": "that's true. don't people use truffle/ganache or something for local environment?",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        },
+                                                                        {
+                                                                            "id": "ia4qji0",
+                                                                            "author": "wildlight",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653609301.0,
+                                                                            "response": "if the features you are testing are for the update and you dont have a private testnet might.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "ia49502",
+                                                                    "author": "chillinewman",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653601207.0,
+                                                                    "response": "Any speculative downtime will be temporary, if it happens.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "ia34mzw",
+                                                            "author": "flygoing",
+                                                            "score": 2,
+                                                            "created_utc": 1653584404.0,
+                                                            "response": "You say that, and I agree, but there has been quite the uproar from dapp devs in the past when testnets went down unexpectedly (or even expectedly)",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        },
+                                                        {
+                                                            "id": "ia3m9l8",
+                                                            "author": "hanniabu",
+                                                            "score": 0,
+                                                            "created_utc": 1653591519.0,
+                                                            "response": ">It doesn't matter if Ropsten breaks\n\nExcept it does",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia3rzhh",
+                                                                    "author": "Perleflamme",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653593889.0,
+                                                                    "response": "I guess different people have different opinions about what matters. To some devs, it probably matters. To some short term investors or heavily leveraged people, it probably matters.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia3be6i",
+                            "author": "xMrDeex",
+                            "score": -2,
+                            "created_utc": 1653587090.0,
+                            "response": "good thinking",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia2lkyl",
+                            "author": "dantebayer",
+                            "score": -1,
+                            "created_utc": 1653576825.0,
+                            "response": "All this effort being spent on merging when they could have just launched Ethereum 2.0 2 years ago with full EVM, and kept Ethereum 1.0 running in low maintenance mode :) i actually think someone should just launch Ethereum 2.0 immediately and have it run separately from Ethereum 1.0. This is the way to get out of this merge swamp.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia4pbrk",
+                                    "author": "Trixteri",
+                                    "score": 1,
+                                    "created_utc": 1653608704.0,
+                                    "response": "eth 2 is already launched seperately from eth 1..",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia3fvuf",
+                    "author": "px403",
+                    "score": 7,
+                    "created_utc": 1653588910.0,
+                    "response": "Ha, less than 2 hours away at the current rate: https://wenmerge.com\n\nedit:\n\nOkay, looks like the TDD got hit. Ropsten had an emergency fork adjusting the target TDD to something super high, and they're going to be re-forking once the PoS network is actually in place next Monday or so.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia3ievy",
+                            "author": "tgejesse",
+                            "score": 3,
+                            "created_utc": 1653589941.0,
+                            "response": "Site down",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia3nnm2",
+                                    "author": "px403",
+                                    "score": 5,
+                                    "created_utc": 1653592091.0,
+                                    "response": "Looks like it died right as TDD got hit, so probably some bug in how they had that all set up.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia2stgj",
+                    "author": "lanatork",
+                    "score": 40,
+                    "created_utc": 1653579761.0,
+                    "response": "The problem is that Ropsten is not ready yet. The beacon chain (where the Eth for validators is staked) will not be up until Monday the 30th, to upgrade it to make it Merge ready will happen on the 2nd or the 3rd.\n\nIf the core devs are not doing something about it VERY soon, things will break in unexpected ways. This scenario was never tested, as it is impossible to occur on mainnet, because the beacon chain is running since a few years now.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia2ulth",
+                            "author": "cosmic-comedy",
+                            "score": 14,
+                            "created_utc": 1653580472.0,
+                            "response": "Just seems odd that client teams would release ropsten update before the beaconchain is even up, to allow a situation like this to happen.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia2vlt9",
+                                    "author": "lanatork",
+                                    "score": 17,
+                                    "created_utc": 1653580871.0,
+                                    "response": "The hash rate has increased by a factor of around 30. The devs did not assume such an increase would be likely. The planning was based on having several weeks until the Merge. That was definitely a wrong assumption. Now some emergency measures need to be taken to deal with the issue.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia35ta2",
+                                            "author": "Crypto_Economist42",
+                                            "score": 13,
+                                            "created_utc": 1653584866.0,
+                                            "response": "Pretty bad assumption. According to this chart, there was only 600MH/s of hasrate before.\n\nThanks like 20 GPUs.\n\nThere are somewhere between 15-20 Million GPU's mining Ethereum mainnet.  \n\nJust takes a fraction of a fraction of a fraction of mainnet miners to mine Ropsten for fun and start the merge whenever they want.\n\nObviously, the devs should have set the beacon chain up FIRST before setting TTD.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia3ider",
+                                                    "author": "lanatork",
+                                                    "score": 4,
+                                                    "created_utc": 1653589924.0,
+                                                    "response": "Sure, they should have. But hindsight is 20/20. In the end that\u2019s what tests are for, to find flaws in your planning and execution.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia3j4na",
+                                                            "author": "Crypto_Economist42",
+                                                            "score": 2,
+                                                            "created_utc": 1653590235.0,
+                                                            "response": "Since it's impossible to tell how much hashrate will come off from mainnet even if they postpone, they shouldn't set a new date until the Beacon chain is up and running.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia3p1rr",
+                                                                    "author": "lanatork",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653592669.0,
+                                                                    "response": "That\u2019s more or less the plan. They have set a new target that\u2019s impossible to reach and will lower it to the real one next week when everything is ready",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "ia3ejqh",
+                                                    "author": "px403",
+                                                    "score": 2,
+                                                    "created_utc": 1653588363.0,
+                                                    "response": "I guess this is why we have testnets :-D  Definitely a fun experiment.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "ia3sd40",
+                                            "author": "AusIV",
+                                            "score": 3,
+                                            "created_utc": 1653594045.0,
+                                            "response": "\\> The hash rate has increased by a factor of around 30. The devs did not assume such an increase would be likely. \n\nThey should have. The old hash rate was just a handful of CPU miners. A couple of GPUs was all it took to increase it by a factor of 30.\n\nI called this in a conversation with friends a couple of weeks ago. Miners who want to delay the merge to keep their mining hardware active as long as possible only needed to divert a tiny fraction of their hashing power over to Ropsten to hit the TTD before the beacon chain was ready. If diverting a just couple of GPUs for a couple of days delays the merge for a week, they'll more than recoup the cost of the hashing power later.\n\nI didn't say anything publicly because I want the merge to happen and didn't want to give anyone ideas on how to delay it, but I'm not the least bit surprised that someone else figured it out.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "ia2za6h",
+                                            "author": "nelusbelus",
+                                            "score": 9,
+                                            "created_utc": 1653582317.0,
+                                            "response": "It's a funny prank by miners tho",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia38hn6",
+                                                    "author": "FaceDeer",
+                                                    "score": 20,
+                                                    "created_utc": 1653585927.0,
+                                                    "response": "I usually hew to Hanlon's Law, but this strikes me as a little suspicious. If Ropsten suffers a significant failure due to the PoS upgrade and the result is that the main net merge gets delayed again that puts more money into the pockets of PoW miners. PoW miners who have plenty of GPUs to devote to boosting Ropsten's hashrate like this.\n\nOver the years I've always argued that PoW miners are incapable of stopping the PoS transition, they have no actual capability to change the outcome or stop users from upgrading. But there are still ways they can *try* to mess with it, so care should be taken not to leave easy exploits like this open for them. Miners are self-interested by design so this is to be expected.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia3ae4t",
+                                                            "author": "nelusbelus",
+                                                            "score": 1,
+                                                            "created_utc": 1653586689.0,
+                                                            "response": "It is a good way to stress test though. If nobody did then we wouldn't know if it's really safe. I'll at least be mining until PoS, regardless of difficulty",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia3e3ae",
+                                                                    "author": "FaceDeer",
+                                                                    "score": 8,
+                                                                    "created_utc": 1653588177.0,
+                                                                    "response": "In this case, though, it's \"testing\" a scenario that is literally impossible to have happen on the main chain. The main chain has had a beacon chain running for over a year now, Ropsten doesn't.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "ia44mmv",
+                                                                            "author": "cosmic-comedy",
+                                                                            "score": 2,
+                                                                            "created_utc": 1653599220.0,
+                                                                            "response": "lulz https://nitter.net/TimBeiko/status/1529922974538534913#m",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "ia44zec",
+                                                            "author": "Tarkedo",
+                                                            "score": 1,
+                                                            "created_utc": 1653599375.0,
+                                                            "response": "Who knows, maybe next time devs learn the lesson and don't set clients to use a feature that doesn't exist, which is triggered by causes outside their control.\n\nOne does not trust user input, and miners are users.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        },
+                                                        {
+                                                            "id": "ia3pfa3",
+                                                            "author": "THEMerrHeLL",
+                                                            "score": -4,
+                                                            "created_utc": 1653592824.0,
+                                                            "response": "the POS devs and stakeholder are the self interested ones... the entire plan is to get more themselves and take from the Miners. What POS has done to Crypto so far is erase a $Trillion in value. Everyone involved should be fired. if this was Wall Street they already would have been.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia4ml6y",
+                                                                    "author": "cosmic-comedy",
+                                                                    "score": 3,
+                                                                    "created_utc": 1653607395.0,
+                                                                    "response": "PoS was the entire idea from the beginning, soo...",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                },
+                                                                {
+                                                                    "id": "ia4ke7u",
+                                                                    "author": "FaceDeer",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653606346.0,
+                                                                    "response": "Of course stakers are self-interested, that also is by design. A cryptocurrency that relies on validators operating out of altruism isn't going to survive for very long.\n\nThe transition to PoS doesn't take anything away from PoW miners. It just *stops paying* them. They keep everything they've earned and can do whatever they want with it.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ia3smxk",
+                                    "author": "AusIV",
+                                    "score": 3,
+                                    "created_utc": 1653594157.0,
+                                    "response": "The way these teams coordinate it was kind of inevitable. They had to agree to a TTD (and a handful of other parameters) so that all of the client teams could bake it into their code. Ropsten's hashing power is super low, so once those numbers are established it becomes very easy to throw a few GPUs at the network and hit the TTD faster than the client teams could prepare.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia3gixb",
+                            "author": "minimumopinium",
+                            "score": 2,
+                            "created_utc": 1653589175.0,
+                            "response": "I just realized the 27 is tomorrow",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia35ed8",
+                    "author": "Atyzze",
+                    "score": 16,
+                    "created_utc": 1653584701.0,
+                    "response": "I can see this leading to news in the style of \"Ethereum merge test failed horribly due to unforeseen circumstances! How will merging the main net ever be safe?! Ethereum is too complicated!\"",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia3d9vo",
+                            "author": "jgilbs",
+                            "score": 7,
+                            "created_utc": 1653587846.0,
+                            "response": "Im pretty sure thats their plan",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia2upo5",
+                    "author": "bandoonparade",
+                    "score": 12,
+                    "created_utc": 1653580515.0,
+                    "response": "https://twitter.com/superphiz/status/1529834042769694721?s=20&t=lZYLQ0LK2SZPlus-KoT7yw\n\nThis doesn't matter. It's mildly inconvenient at worst.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia2ysy3",
+                            "author": "lanatork",
+                            "score": 1,
+                            "created_utc": 1653582128.0,
+                            "response": "Without any changes Ropsten could stop to produce blocks for around 6 days. It is just a testnet, but I would argue that is does matter.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia2yydb",
+                                    "author": "bandoonparade",
+                                    "score": 3,
+                                    "created_utc": 1653582189.0,
+                                    "response": "Sure, but there will be changes, and it's easy to make them because it's just a testnet.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia2pl3t",
+                    "author": "erosphere",
+                    "score": 5,
+                    "created_utc": 1653578458.0,
+                    "response": "I'm curious why the devs choose TTD instead of blocknumber as the \"switch off\" mechanism for merge. Wouldn't the blocknumber be more predictable?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia2rfve",
+                            "author": "Yeopaa",
+                            "score": 13,
+                            "created_utc": 1653579209.0,
+                            "response": "Some info on that here if you follow the link:\n\nhttps://twitter.com/trent_vanepps/status/1501193570295992321?t=fFxchyg7AnF35tS8zjcFCA&s=19",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia3e3az",
+                                    "author": "px403",
+                                    "score": 3,
+                                    "created_utc": 1653588177.0,
+                                    "response": "Okay, so I guess an attacker could mine their private fork, but fake out the timestamps to make it look like a ton of time is passing, so they can reduce the difficulty as quickly as possible while also mining all the way up to the target block. That makes sense I guess.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia2rqod",
+                            "author": "Lets_go_ride_bikes",
+                            "score": 16,
+                            "created_utc": 1653579329.0,
+                            "response": "I thought I heard a podcast (maybe uncommon core?) where they said block number could be disputed. As several blocks could get proposed over a short period of time and it could be hard to determine which one is \u201ccannonical\u201d. The TTD makes sure the switch happens in a \u201ccannonical\u201d way that uses difficulty as a proxy for \u201cyeah this is cannonical not just some node front running the first block of the merge\u201d",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia2z0ia",
+                            "author": "nelusbelus",
+                            "score": 1,
+                            "created_utc": 1653582212.0,
+                            "response": "Afaik it's because of security concerns if it's a predictable block number",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia3m9lo",
+                    "author": "ibbysquish",
+                    "score": -4,
+                    "created_utc": 1653591519.0,
+                    "response": "Eth2 dropping on the 27th?",
+                    "depth": 1,
                     "comments": []
+                },
+                {
+                    "id": "ia320tc",
+                    "author": "Uberg33k",
+                    "score": 0,
+                    "created_utc": 1653583385.0,
+                    "response": "I thought the 7 block restructuring event a few days ago was going to push the merge back until a new/modified consensus mechanism is approved.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia38ypt",
+                            "author": "FaceDeer",
+                            "score": 13,
+                            "created_utc": 1653586117.0,
+                            "response": "That restructuring was due to a large number of clients getting sloppy and failing to upgrade a soft-fork change. Since it was a soft fork they could get away with it, leaving the network vulnerable to a reorg like this. The merge is going to be a hard fork, though, rendering something like this impossible.\n\nI've always been dubious of the merit of soft forking, even back in the pre-Ethereum Bitcoin days. It'd be nice if the outcome of this is to make soft forks even rarer.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia39yk0",
+                                    "author": "Uberg33k",
+                                    "score": 1,
+                                    "created_utc": 1653586514.0,
+                                    "response": "That eases my mind a bit, but won't this still cause some time to be burned by validators and developers arguing if it matters or not and how to proceed?  I guess there won't a concrete answer to that until the next Eth core dev call, right?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia3auv4",
+                                            "author": "FaceDeer",
+                                            "score": 1,
+                                            "created_utc": 1653586876.0,
+                                            "response": "Yeah, I don't mean to minimize this as something that isn't worth thinking about. It's possible that some future soft-fork that's deployed post-PoS merge could result in another reorg like this, which would hurt a lot more badly at that point. But it's not something that could affect the Merge fork itself, so this is a \"what if eventually someone does something dumb like this again in the indeterminate future?\" Question. It can be avoided by simply not doing any soft-fork changes until a better solution comes along.\n\nAs you say, though, we'll see if there's further updates from devs. Maybe there's more to this than I'm aware of.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia3ecch",
+                            "author": "cryptOwOcurrency",
+                            "score": 5,
+                            "created_utc": 1653588281.0,
+                            "response": "The modified consensus mechanism was already implemented in the clients last year. People were just too lazy to update.\n\nThe merge will force them to update, though, unless they want to start accruing inactivity penalties.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 }
             ]
         }

@@ -1,0 +1,73 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uyet0i",
+            "title": "No partial spending in bitcon UTXO question #2",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uyet0i/no_partial_spending_in_bitcon_utxo_question_2/",
+            "author": "kaioken1986",
+            "created_utc": 1653591640.0,
+            "score": 2,
+            "num_comments": 15,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Hey guys and gals I have another question about utxo's. I understand that UTXO is its own instance but what does it mean by it has no partial spends. When you send a fraction of a coin to another wallet lets say like 0.0032 btc to wallet x and you have x amount left over in wallet didn't you just spend a partial amount of coin not the whole thing?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia3nggh",
+                    "author": "bitusher",
+                    "score": 4,
+                    "created_utc": 1653592009.0,
+                    "response": ">wallet didn't you just spend a partial amount of coin not the whole thing?\n\nNo. If you look at the example I provided before -\n\nhttps://www.reddit.com/r/BitcoinBeginners/comments/uwa5jv/utxo_question/i9qaukc/\n\n100% of the UTXO is always spent every time and a new UTXO is created with the change and sent back to a new address in your wallet",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia3oq1d",
+                            "author": "vitalyevodin",
+                            "score": 0,
+                            "created_utc": 1653592534.0,
+                            "response": "Is it possible to change a cashback receiving address to the same one you send from?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia3p9mr",
+                                    "author": "bitusher",
+                                    "score": 2,
+                                    "created_utc": 1653592760.0,
+                                    "response": "Wallets don't do this by default because its bad for privacy and doesn't offer any benefits, but you could design a wallet to do this foolish behavior as there is no restriction against it",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia3mk92",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653591641.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia3pc2z",
+                    "author": "Coco_Ardo",
+                    "score": 1,
+                    "created_utc": 1653592788.0,
+                    "response": "this explains most pretty well\nhttps://youtu.be/bBC-nXj3Ng4",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

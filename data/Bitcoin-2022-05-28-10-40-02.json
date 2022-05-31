@@ -1,0 +1,198 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uzkhtg",
+            "title": "What is the current consensus about L1 scaling?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uzkhtg/what_is_the_current_consensus_about_l1_scaling/",
+            "author": "aemmeroli",
+            "created_utc": 1653733352.0,
+            "score": 1,
+            "num_comments": 18,
+            "subreddit": "Bitcoin",
+            "selftext": "This topic is being discussed less compared to a couple years ago when the block size wars were still in peoples minds.\n\nI know the lightning network is the most promising plan for scaling and I agree that it is a good solution. Imo this doesn't change the fact that L1 needs to be improved too while keeping it as secure as it is. Taproot was the last improvement which, as far as I understand, made multisig transactions (needed to enter the lightning network) cheaper.\n\nWhat is the next step and what are ideas for the far away future?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iabphru",
+                    "author": "No-Waltz5090",
+                    "score": 6,
+                    "created_utc": 1653753461.0,
+                    "response": "The current consensus appears to be that L1 can already more than handle the current level of demand.\n\n>Imo this doesn't change the fact that L1 needs to be improved too while keeping it as secure as it is.\n\n1 sat/byte has been clearing rapidly for about a year now.  What makes you think that L1 needs to scale to process more than it can currently handle?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iabr1ri",
+                            "author": "aemmeroli",
+                            "score": 1,
+                            "created_utc": 1653754186.0,
+                            "response": "Maybe not now but it might be necessairy in the future",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iadnog8",
+                                    "author": "igadjeed",
+                                    "score": 2,
+                                    "created_utc": 1653787998.0,
+                                    "response": "Did you learn nothing from the history? The \"scaling problem\" was always a fake issue - in 2013, in 2015, and in 2017 it was finally put to bed when the big blockers made BCash which always has empty blocks, 5 years later  \n\nA rational observation of Bitcoin use reveals that the current block size is too high. The proposal to reduce it from 1 vMB to 300 vkB is likely to be implemented",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iack6hs",
+                    "author": "Verallendingen",
+                    "score": 2,
+                    "created_utc": 1653768052.0,
+                    "response": "not needed atm.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iacsf6z",
+                    "author": "life762",
+                    "score": 2,
+                    "created_utc": 1653771980.0,
+                    "response": "Scaling will mostly happen on L2, but at some point there won't be enough L1 throughout to handle the demand. There wouldn't be enough L1 throughout to handle, for example, the managing of Lightning channels if there were as many users as there are people in a large country like the United States, much less the whole world, even if that were the only thing transacting on L1.\n\nSo yes, scaling on L1 is (or will be) an issue. A competing value that is very important and why the block size was not increased is that we need everyone to be able to run a node. Which means we need the disk space requirements of the block chain to not grow faster than there is availability of cheap disk space. This is important because we don't want Bitcoin to be like other crypto where running a node is so expensive that only few can do it.\n\nI don't know how we will scale L1, but I'm confident we will be able to do it. There are proposals like Lightning channels factories which will help. I suspect this is how we will scale: as-needed, one adopted proposal at a time. I'm sorry I don't know what the next step is. It's a good question that I don't have the answer to, but I will also be looking forward to new proposals and discussion around this issue.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iacuegs",
+                            "author": "aemmeroli",
+                            "score": 1,
+                            "created_utc": 1653772939.0,
+                            "response": ">\tA competing value that is very important and why the block size was not increased is that we need everyone to be able to run a node. Which means we need the disk space requirements of the block chain to not grow faster than there is availability of cheap disk space.\n\nI recently had a discussion with a guy on r/btc and he was absolutely sure that it's possible to discard old transactions that have long been spent. Do you think that will be a possibility in the future if disk space ever becomes an issue?\n\nSaying that old transactions don't need to be kept makes sense when you first hear it but I wonder where the issue lies with this approach.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iad2i9e",
+                                    "author": "BitcoinUser263895",
+                                    "score": 2,
+                                    "created_utc": 1653776734.0,
+                                    "response": "> I recently had a discussion with a guy on rbtc \n\nThat's your problem right there. You're talking to jessquit for crying out loud, one of the main shills who has pages and pages of copy-paste propaganda to feed you.\n\nThese are liars or people deeply affected by years of being lied to. They've been buying bags from Roger Ver and Jihan Wu all the way to the bottom. Nothing you read there can be taken seriously.\n\n> Do you think that will be a possibility in the future if disk space ever becomes an issue?\n\n\nBcash had to add centralising checkpoints every 10 blocks so they could avoid replay attacks on their insecure chain. That's why they're telling you \"It's fine\".\n\n> makes sense when you first hear it\n\nLike most lies.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iad3gev",
+                                            "author": "aemmeroli",
+                                            "score": 1,
+                                            "created_utc": 1653777197.0,
+                                            "response": "Lmao I didn't expect this guy to be known. I asked him to source his claims multiple times and he just didn't.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iad3kdy",
+                                                    "author": "BitcoinUser263895",
+                                                    "score": 1,
+                                                    "created_utc": 1653777252.0,
+                                                    "response": "He's one of the moderators of the censored little bcash circlejerk where they pretend to be open and honest, with a little persecuted victim-hood to go with.\n\nThey like to keep the choir singing to the same song sheet and have lots of talking-points all lined up.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "iadoh1m",
+                                    "author": "igadjeed",
+                                    "score": 2,
+                                    "created_utc": 1653788440.0,
+                                    "response": "> it's possible to discard old transactions that have long been spent\n\nIt's possible. It was even written into Satoshi's white paper. Read it. It's only 9 pages, very informative  \n\n> if disk space ever becomes an issue\n\nWhy would it? The Bitcoin blockchain grows at a controlled rate, about 70GB-80GB per year. You can pay $200 for a HDD today and that will store the Bitcoin blockchain for more than 100 years  \n\n---\n\nWhen you set up your Bitcoin node, what was the most frustrating aspect of the job?  \n\nSome advice: do not form opinions without understanding the facts. It's trivial to calculate Bitcoin's long-term disk space requirements. It's very lazy to believe other people without doing simple fact checking",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iae0wxf",
+                                            "author": "garrulous_theory",
+                                            "score": 1,
+                                            "created_utc": 1653795738.0,
+                                            "response": "!lntip 500",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iae0y7m",
+                                                    "author": "lntipbot",
+                                                    "score": 1,
+                                                    "created_utc": 1653795760.0,
+                                                    "response": "Hi u/garrulous_theory, thanks for tipping u/igadjeed **500** satoshis!\n***\n*[^(More info)](https://xnf5cwpq73.execute-api.us-west-2.amazonaws.com/prod/info) ^| [^(Balance)](https://www.reddit.com/message/compose/?to=lntipbot&subject=balance&message=!balance) ^| [^(Deposit)](https://www.reddit.com/message/compose/?to=lntipbot&subject=deposit&message=!deposit 10000) ^| [^(Withdraw)](https://www.reddit.com/message/compose/?to=lntipbot&subject=withdraw&message=!withdraw put_invoice_here) ^| ^(Something wrong?  Have a question?) [^(Send me a message)](https://www.reddit.com/message/compose/?to=drmoore718)*",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "iadiqb7",
+                            "author": "whitslack",
+                            "score": 0,
+                            "created_utc": 1653785255.0,
+                            "response": ">Which means we need the disk space requirements of the block chain to not grow faster than there is availability of cheap disk space.\n\nIt's never been about disk space. It's about network capacity. Much of the world still has very narrow pipes to the Internet. If Bitcoin is going to include them, we can't make it so throughput-intensive that they can't keep up.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iaazm6t",
+                    "author": "Mikgezo",
+                    "score": 1,
+                    "created_utc": 1653739909.0,
+                    "response": "This is a great question and normally I thought I would be able to answer it, but I guess not! Since the whole taproot and Schorr signature thing has happened, I'm not sure what the future holds for Bitcoin L1 scaling, I would also be interested to hear about it if anyone knows.\n\nSomething to have a look at is the list of Bitcoin Improvement Protocols (BIPs) and see what is in the pipeline here: [https://github.com/bitcoin/bips](https://github.com/bitcoin/bips)\n\nIt is worth noting that any time a BIP suggested to change the block size it was rejected, so I'm pretty sure that isn't changing any time soon.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iabn8hn",
+                    "author": "midizzz",
+                    "score": 1,
+                    "created_utc": 1653752407.0,
+                    "response": "There is some scaling potential with CVT type stuff I think because companies could use it to batch and stack transactions in a way that you could be pretty sure they were going to be fully confirmed in a later block. Not sure if I am for or against this kind of thing.. I have not heard much else though about scaling L1\u2026 fees are low right now so there is no pressure and lightning is amazing!! It would actually be nice to see fees rise so we could really see what develops in the stack there. My opinion is we can develop ideas now but wait until we see what lightning does with a few years of high L1 fees until we roll anything major out, we may not even need to. Consensus?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iabqyhv",
+                            "author": "aemmeroli",
+                            "score": 0,
+                            "created_utc": 1653754143.0,
+                            "response": "I'm curious how L2 develops too but that shouldn't be because of pressure from high L1 fees. A regular person should still be able to pay fees for a L1 tx.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iad2och",
+                                    "author": "BitcoinUser263895",
+                                    "score": 1,
+                                    "created_utc": 1653776818.0,
+                                    "response": "> A regular person should still be able to pay fees for a L1 tx.\n\nChannel Factories, Eltoo, Inherited IDs. This isn't a problem.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iad24c1",
+                    "author": "BitcoinUser263895",
+                    "score": 1,
+                    "created_utc": 1653776544.0,
+                    "response": "Bitcoin is Bitcoin. The consensus is that it is and remains Bitcoin.\n\nWe have scaling solutions which will continue to scale. To unlimited numbers of transactions per second.\n\n> What is the next step and what are ideas for the far away future?\n\nEltoo and/or Inherited IDs.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

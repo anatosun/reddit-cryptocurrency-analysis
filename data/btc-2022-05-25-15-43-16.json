@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/btc/comments/uxk2xm/why_cant_there_be_a_full_node_on_every_phone/",
             "author": "losttraveler36",
             "created_utc": 1653493086.0,
-            "score": 5,
-            "num_comments": 57,
+            "score": 6,
+            "num_comments": 75,
             "subreddit": "btc",
             "selftext": "I\u2019m not super technical but if smart phones with 1tb+ of memory become more common then can you run a full node from your phone?",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i9ye80z",
                     "author": "gotamd",
-                    "score": 23,
+                    "score": 22,
                     "created_utc": 1653497208.0,
                     "response": "It's probably theoretically possible, at least on higher-end phones (especially with pruning enabled), but it would be a terrible user experience. It's also unnecessary. What phones can do is severely limited by the power available to them, in the form of their batteries. If you were to run a live, full-node on a phone, it would chew through the battery extremely quickly. You'd basically need to keep the phone plugged in all the time. At that point you'd be better off just running your full node from a regular PC that's more suited to the task.\n\nYou can run a full node on very cheap and low-power computers, like a Raspberry Pi. If you're concerned about privacy and security, you can have your wallet app on your phone interface with your self-hosted node sitting at home (or wherever else). There's no need to run full nodes on phones.",
                     "depth": 1,
@@ -43,7 +43,27 @@
                                     "created_utc": 1653502662.0,
                                     "response": "> I constantly hear that running a node helps to secure the bitcoin network so in theory if this is true-\n\nIt's not. It doesn't. Mining contributes to secure the network. A nonmining node might be handy for personal use, or fun, but doesn't benefit security.",
                                     "depth": 3,
-                                    "comments": []
+                                    "comments": [
+                                        {
+                                            "id": "ia2q402",
+                                            "author": "titelibo",
+                                            "score": 1,
+                                            "created_utc": 1653578671.0,
+                                            "response": "But it makes the network more decentralised which is the goal too man.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia2qq7o",
+                                                    "author": "knowbodynows",
+                                                    "score": 1,
+                                                    "created_utc": 1653578918.0,
+                                                    "response": "Not in any useful or meaningful way. That is a story. Happy to listen to an explanation if I'm not catching your meaning of \"decentralized.\" Please define.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 },
                                 {
                                     "id": "ia1zlc5",
@@ -55,13 +75,32 @@
                                     "comments": []
                                 }
                             ]
+                        },
+                        {
+                            "id": "ia2eqyf",
+                            "author": "kostas_ck",
+                            "score": 1,
+                            "created_utc": 1653573962.0,
+                            "response": "How are you going to add more memory if the old memory fills up tho?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia2eu9w",
+                                    "author": "gotamd",
+                                    "score": 1,
+                                    "created_utc": 1653574001.0,
+                                    "response": "Pruning.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "id": "i9y5qz8",
                     "author": "LovelyDayHere",
-                    "score": 6,
+                    "score": 5,
                     "created_utc": 1653493905.0,
                     "response": "Why run a node on your expensive mobile device when it's far cheaper to run your own node on commodity hardware (like an old laptop or raspberry pi with some USB storage) and just access your node with a light wallet from mobile?\n\nIf everyone runs a full node on their phone, that is an awful waste of energy validating transactions that don't pertain to them, and which could be validated much more efficiently while still being decentralized.",
                     "depth": 1,
@@ -81,6 +120,25 @@
                                     "created_utc": 1653499958.0,
                                     "response": "Well, the answer to your question is: because most people don't wanna",
                                     "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia4koxo",
+                                            "author": "excelich",
+                                            "score": 1,
+                                            "created_utc": 1653606489.0,
+                                            "response": "I mean what would be the point? I just don't see it. Only a crazy person would do that.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ia3lf5h",
+                                    "author": "hnhdam",
+                                    "score": 1,
+                                    "created_utc": 1653591173.0,
+                                    "response": "Well then if you try enough, I'm sure You'll be able to run that one day. You just gotta try man.",
+                                    "depth": 3,
                                     "comments": []
                                 }
                             ]
@@ -99,7 +157,7 @@
                 {
                     "id": "i9y8mpc",
                     "author": "BewareOfShills",
-                    "score": 5,
+                    "score": 6,
                     "created_utc": 1653495033.0,
                     "response": "Because it is not necessary. Ever thought about why there is no monetary incentive for running a node?",
                     "depth": 1,
@@ -119,7 +177,17 @@
                                     "created_utc": 1653502413.0,
                                     "response": "So run it on your phone. Very doable. Why do you advocate \"every phone?\" \n\nYou can also run a website off your phone, or everyone could, but why??",
                                     "depth": 3,
-                                    "comments": []
+                                    "comments": [
+                                        {
+                                            "id": "ia4n092",
+                                            "author": "alanthinker",
+                                            "score": 1,
+                                            "created_utc": 1653607593.0,
+                                            "response": "If something can be done, doesn't mean You'll have to do it man.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
                                 },
                                 {
                                     "id": "i9yw5hs",
@@ -128,9 +196,37 @@
                                     "created_utc": 1653504204.0,
                                     "response": "That is not an answer to my question. And in fact upside down. \n\nNothing exists (no incentive) and the question is why?\n\n\nMay I ask if you are believing that everyone should run a node?",
                                     "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia4x9ny",
+                                            "author": "jbrown1331",
+                                            "score": 1,
+                                            "created_utc": 1653612591.0,
+                                            "response": "Yep, if someone wants to run a node then they should definitely do it man.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ia4hj4g",
+                                    "author": "Seamni",
+                                    "score": 1,
+                                    "created_utc": 1653604991.0,
+                                    "response": "It's necessary only if you care about the btc network, else it's not that important man.\n\nAnd if you care about the security then you should be running a node man. Everyone should try to run a node man.",
+                                    "depth": 3,
                                     "comments": []
                                 }
                             ]
+                        },
+                        {
+                            "id": "ia3i8gi",
+                            "author": "choiceandchang",
+                            "score": 1,
+                            "created_utc": 1653589867.0,
+                            "response": "No one is forcing you to run a node, you run a node because it's cool to run a node man.",
+                            "depth": 2,
+                            "comments": []
                         }
                     ]
                 },
@@ -153,7 +249,7 @@
                                 {
                                     "id": "i9ygeg0",
                                     "author": "Shibinator",
-                                    "score": 3,
+                                    "score": 4,
                                     "created_utc": 1653498046.0,
                                     "response": "I don't know the exact numbers, but you can presumably look up the minimum specs recommended to run a node at the website of your favourite node implementation, or ask their dev team.",
                                     "depth": 3,
@@ -186,6 +282,25 @@
                                     "response": "Pruned nodes aren't really full nodes in the sense that OP is implying... but of course your question is valid regardless, and the answer is the same: those who want to, probably can, even if it makes little sense.",
                                     "depth": 3,
                                     "comments": []
+                                },
+                                {
+                                    "id": "ia4737m",
+                                    "author": "vccsell",
+                                    "score": 1,
+                                    "created_utc": 1653600294.0,
+                                    "response": "Yeah but that will not be a full node tho, pruned nodes ainr the full nodes dude.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia4qzhg",
+                                            "author": "FamousM1",
+                                            "score": 1,
+                                            "created_utc": 1653609522.0,
+                                            "response": "a pruned node is a full node, a pruned node is not an archival node though\n        \n\"Pruned nodes will verify new blocks and they are classified as full nodes\n\nThey keep the complete database of all UTXOs. This is enough to verify new blocks. What is required for validation is that the tx in the new blocks are spending only the current unspent transaction outputs        \n\nThey store mempool and check blocks to make sure they comply with all bitcoin protocol rules, just like other nodes        \n\nSince, they don't keep older block data, only thing that they can't do is to return older block data to other nodes. They still keep latest block data for reogranization, which they can share with other nodes\"",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -230,7 +345,7 @@
                 {
                     "id": "i9ycmoi",
                     "author": "bitmeister",
-                    "score": 3,
+                    "score": 2,
                     "created_utc": 1653496588.0,
                     "response": "I will add to /u/BewareOfShills \"not necessary\" and go a step further and explain that they're unwanted on the network.\n\nUnless you're Amazon, Walmart or some other large retailer that needs immediate blockchain data for real-time transactions (see 0-conf) then full nodes don't have much use, don't add to security, and can actually increase miner load and risk.\n\nHere are some past points I've made...\n\n----\n\nMiners don't like non-mining nodes. Miners have a financial incentive to send their winning block only to other miners, so that their peers validate, accept and then begin mining on top of their block. So miner don't want to send their blocks to full nodes because it is a waste of their time.\n\nMiners only want to listen to other miners, and not full nodes. Any hostile full node can send a steady diet of fake blocks. The miner must then validate and reject those blocks and ignore those nodes, when it would rather have only valid blocks from mining peers. If a valid block has been discovered and recorded by a peer, then the miner wants to get their hardware started on the next block ASAP.\n\n----\n\nIf a tree falls in the woods and no one is around to hear it, does it make a sound. Effectively, if you run a full-node, or there are thousands of full nodes, and no miners are listening to those nodes, it doesn't matter what consensus rules they run. Miners only mine on valid blocks and they can't afford to listen to full-nodes for their critical data, i.e. the next block.\n\n... The \"only case\" is the need for applications (client side) or services (server side) programs to have access to chain data. The full nodes offer no other benefit besides a localize copy of the chain for immediate access. This is like a local cache and is necessary, because to my first point, miners don't really want to serve up data to non-miners. Miners want to emit their new blocks to other miners, because they want those other miners to start building on their new blocks quickly to avoid orphans. Sure, they would also like to emit them to some full-nodes, but their outbound bandwidth is prioritized for other miners or pool participants\n\n---\n\nTherefore, miners don't really connect to full nodes, as a malicious full node could spout an endless supply of junk blocks, which the miner would have to waste its time validating. A sort of denial-of-hashing ... scenario. Very strong game-theory arguments have been made that full nodes should be ignored and are largely counter productive and waste resources. The only case for them seems to be if you're running an application or service that requires immediate access to blockchain data.",
                     "depth": 1,
@@ -283,7 +398,47 @@
                                                             "created_utc": 1653541871.0,
                                                             "response": ">My point is miners have no economic interest in communicating with non-mining nodes, and full nodes fall into this category.\n\nI stopped reading there. The statement is ludicrous. Did Craig Wright take over this account?",
                                                             "depth": 6,
-                                                            "comments": []
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia2skp7",
+                                                                    "author": "bitmeister",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653579666.0,
+                                                                    "response": "> Did Craig Wright take over this account?\n\nYikes, the premise is really that ludicrous that you'd cast me as CSW? :)  (I wasn't aware this was his doctrine.) **I value your opinion and appreciate your time on the subject, so I will reconsider this premise. Thanks.**\n\n---\n\nBut for the curious, and my closure, an additional thought on my (naive) premise...\n\nIf the baser motives of a miner are to maximize rewards, minimize competition, and minimize service, a miner's ideal operation would be to simply collect mining rewards by mining empty blocks on their own private blockchain. (hmm, that kind of sounds like BSV). But fee revenues, and the coin's prosperity (value), require miners to capitulate and actually provide service by recording and transmitting transactions.\n\nThen aside from whitelisting select reputable retailers, exchanges or service providers, what incentive exists for communicating with arbitrary, non-mining peers? What stops a miner from simply rejecting all traffic outside those miners and reputable peers in their whitelist? From another perspective, if you operated a full node to support your trade or service, what incentive do *you* have to serve other full-node peers? *So any insights would be helpful in identifying my missing incentive that could motivate a miner to serve all full nodes, rather than selected peers.*",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "ia2ty4s",
+                                                                            "author": "jessquit",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653580213.0,
+                                                                            "response": "1. A miner who finds a block wants the whole world to know about it, not just other miners.\n\n2. In a properly decentralized mining network there should be so many block creators that whitelisting is impractical\n\n3. Mining is fundamentally anonymous.  We only think we know who mines what block, but that's because they voluntarily put a message in the blocks they mine.  That message could be truthful or deceitful or might not exist at all.\n\nConsider that every so often a majority of the hashpower on the network is anonymous.  If you only send your blocks to known peers, you've self-segmented into a minority hashpower segment.\n\n> Then aside from whitelisting select reputable retailers, exchanges or service providers\n\nwhy segment yourself like this?  A miner is like a radio transmitter.  The more nodes it can reach faster than other nodes can broadcast, the better off it is.\n\nYou don't have to be a full node to DoS a miner.  You can DoS a miner with any sort of networking flood attack.  The idea that full nodes represent a special sort of attack vector is an error imo.\n\nThe reason I made the CSW crack is that these ideas sound like some of the goofy stuff they come up with over there.  No offense meant.  They're into MinerID where every miner is KYCed or whatever so every possible block producer is already known to the network, that's a completely toxic idea.  Mining should be diffuse and anonymous for best results.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "ia3bcc6",
+                                                                                    "author": "bitmeister",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653587069.0,
+                                                                                    "response": "Thanks again for your time and sound reasoning! ^^^/u/chaintip \n\n>  If you only send your blocks to known peers, you've self-segmented into a minority hashpower segment.\n\nFrom experience, hub-and-spoke is inevitable in all mature networks. It's a byproduct of both network optimization and defense. I would expect these forces to play out in any distributed system. With that, I offer a counterpoint, that whitelisting is a deliberate effort to avoid hashpower segmentation, and hence the need to prioritize mining peers.\n\n> You don't have to be a full node to DoS a miner.\n\nCorrect. The DDoS I mentioned was a general attack, not specifically coming from other full nodes. Although an effective attack would likely include first masquerading as legit nodes before dropping the hammer. It's simply that access by pedestrian full nodes would be the first casualty of any DDoS event. Over time hard decisions are made about firewall policies, and unfortunately solutions involve some sort of reputation management tools.\n\n> Mining is fundamentally anonymous. We only think we know who mines what block, but that's because they voluntarily put a message in the blocks they mine.\n\n**This is strong point.** How can you whitelist miners, or blacklist non-mining peers, when all connected peers are homogeneous?\n\nI think they start out as anonymous actors but the benefits of forming cartels outweigh the need for anonymity. Mining pools and at-scale miners benefit more from being well known.\n\nSo perhaps it's better said; miners (will eventually) prioritize their network peers and traffic, starting with well known highly available mining nodes down to anonymous pedestrian nodes. This means *low-bandwidth anonymous nodes, mining or not, are the last served by the network.* It's not to say that it's required (as BSV), only that it's the effect of prioritization by mature network operations.\n\n> They're into MinerID where every miner is KYCed \n\nThey're bonkers. Sounds like their positioning their solution for gov't blessings and favorable litigation.",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "ia3bl8w",
+                                                                                            "author": "chaintip",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1653587169.0,
+                                                                                            "response": "***\nu/jessquit, you've [been sent](https://www.blockchain.com/bch/address/bitcoincash:qrelay225wephjttla6tn54rnt7vmx7v2y2du8zj3r) `0.05 BCH` | `~9.33 USD` by u/bitmeister\nvia [chaintip](http://www.chaintip.org).\n***",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 }
@@ -392,7 +547,7 @@
                         {
                             "id": "i9yc2ti",
                             "author": "Shibinator",
-                            "score": 3,
+                            "score": 5,
                             "created_utc": 1653496376.0,
                             "response": "Everyone should have the ability to transact on the Bitcoin blockchain without it costing an entire day's salary in transaction fees, true or false?",
                             "depth": 2,
@@ -408,7 +563,7 @@
                                         {
                                             "id": "i9yel5z",
                                             "author": "Shibinator",
-                                            "score": 4,
+                                            "score": 5,
                                             "created_utc": 1653497349.0,
                                             "response": "What's that?  I can't find that shitcoin on coinmarketcap.\n\nMy question was, everyone should have the ability to transact **on the Bitcoin blockchain** without it costing an entire day's salary in transaction fees, true or false?",
                                             "depth": 4,
@@ -424,7 +579,7 @@
                                                         {
                                                             "id": "i9yfwf4",
                                                             "author": "Shibinator",
-                                                            "score": 3,
+                                                            "score": 4,
                                                             "created_utc": 1653497855.0,
                                                             "response": "Are you a shitcoiner?  Why can't you answer my question?\n\nI'd just like to know if you think everyone should have the ability to transact on the Bitcoin blockchain without it costing an entire day's salary in transaction fees?\n\nI'm talking about Bitcoin. You seem more interested in LightningCoin, but I'm a Bitcoin maximalist so I believe everyone should hold their own keys and not invest in shitcoins. Not your keys, not your coins. Peer to peer, on the blockchain. Every Bitcoiner knows that.  I'm suspicious of your scam that isn't even listed on coinmarketcap.",
                                                             "depth": 6,
@@ -456,7 +611,7 @@
                                                                                         {
                                                                                             "id": "i9yk245",
                                                                                             "author": "Shibinator",
-                                                                                            "score": 3,
+                                                                                            "score": 5,
                                                                                             "created_utc": 1653499467.0,
                                                                                             "response": "Look I understand you're new to Bitcoin but with experience you will get burned by flavour of the month \"investment\" ponzi schemes and give up on these shitcoins.  Don't come crying to me when you lose your Bitcoins and HFSP, I'm just trying to warn you as a long time Bitcoiner.",
                                                                                             "depth": 10,
@@ -481,7 +636,7 @@
                         {
                             "id": "i9yc5xt",
                             "author": "jessquit",
-                            "score": 4,
+                            "score": 3,
                             "created_utc": 1653496409.0,
                             "response": "> everyone should have ability to run a node somewhere, which is why BCH is a shitcoin :)\n\n*Everyone* already can't afford to run a BTC node, which by your logic makes BTC a \"shitcoin\" too.\n\nIn fact the BCH blockchain is smaller than the BTC blockchain, which by your logic makes it a worse \"shitcoin\" than BCH.",
                             "depth": 2,

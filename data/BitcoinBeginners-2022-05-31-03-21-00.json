@@ -1,0 +1,44 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v1grn1",
+            "title": "Is the \"final\" word of a Seed Phrase deterministic due to the BIP39 checksum requirement?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/v1grn1/is_the_final_word_of_a_seed_phrase_deterministic/",
+            "author": "BlockchainBlockhead",
+            "created_utc": 1653966659.0,
+            "score": 1,
+            "num_comments": 2,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "In other words, if I select the first 23 words of a 24 word phrase, is the last word going to be a specific word of the list of 2048 words or is there a sub-set of values that will satisfy the BIP39 checksum?\n\nWhat fraction of that 2048 list can satisfy that criteria?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iamdb77",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653966660.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iamfrvc",
+                    "author": "blockplate",
+                    "score": 1,
+                    "created_utc": 1653968091.0,
+                    "response": "A 24 word seed phrase can have a potential 8 words based on the previous 23.\n\nA 24 word seed phrase has 256 bits of entropy. Each 11 bits \u201crepresents\u201d a word. Thus, you have 3 bits leftover (256-(11*23)). These 3 bits have 8 possible combinations and thus 8 possible words.\n[If you\u2019re interested in how a seed phrase is created incl it\u2019s checksum](https://www.blockplate.com/blogs/blockplate/how-a-seed-phrase-is-created).\n\nOr if your interested in learning more about seed phrases, checkout /r/seedstorage",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

@@ -89,61 +89,6 @@
             ]
         },
         {
-            "id": "ul1utb",
-            "title": "When it comes to zero knowledge proofs, how does it practically work in a private chain?",
-            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ul1utb/when_it_comes_to_zero_knowledge_proofs_how_does/",
-            "author": "RedEagle_MGN",
-            "created_utc": 1652016906.0,
-            "score": 30,
-            "num_comments": 10,
-            "subreddit": "CryptoTechnology",
-            "selftext": "I get that ZK can allow you to share info without sharing the exact info, e.g.:\n\nQuestion: Does Bob drink 10 cups of coffee a day\n\nAnswer: Yes, Bob drinks more than 10 cups of coffee a day but I am not going to tell you how many.\n\n&#x200B;\n\nBut how do ZK proofs practically work in a private chain?\n\nAs I see it the Blockchain is like a paper. Each node is a copy of the piece of paper and transactions are validates across nodes. With ZK proofs, is all the transaction data (who is sending what to who, how much is in each wallet, who requested the info and who verified it), is that all private or is the meta data still exposed?  \nIf the above is the case, why isn't ZK used in all cases on all blockchains?\n\nIs all the validation or just the info sent to companies private? \n\nWould not the 20x number of calculations needed for ZK for everything cause HUGE efficiency problems?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i7t6tg0",
-                    "author": "DATY4944",
-                    "score": 8,
-                    "created_utc": 1652025974.0,
-                    "response": "I thought zk proofs is like proving you control a private key without giving away the private key. Your example doesn't quite fit the intent that I'm familiar with.\n\nIt's like.. I can unlock a safe and let you have some of the contents without telling you the safe key.\n\nOr a better example: I can prove I know the safe key without even opening the safe.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i7t84ay",
-                            "author": "T0Bii",
-                            "score": 4,
-                            "created_utc": 1652026546.0,
-                            "response": "That's one use case but you can proof lots of different things without sharing the information.",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i7tvrd2",
-                    "author": "Dormage",
-                    "score": 5,
-                    "created_utc": 1652036853.0,
-                    "response": "Zkp are just cryptographic protocols. They dont enforce a particular use. You can use them for many things but in general the protocols can be used for what you say.\n\nYou can prove you have some data, without sending the data. But not just any data, we need ana greement on that as well. Unkess your protocol is about coffee cups, you cant verify hoe many someone drank. In public chains, the data is transactions. In a private chain setup, it depends on the usecase.\n\nThere isnt realy much value to be gained by a private blockchain anyway. I suppose you could come up with some type of application where users need to provide a proof they have some digital information without violating ther privacy but the security considerations of the private network will outweight the privacy concerns.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "ukpwr4",
-            "title": "In Less Than 7 Hours, Decred Will Make a Radical Consensus Change",
-            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ukpwr4/in_less_than_7_hours_decred_will_make_a_radical/",
-            "author": "Corp-Por",
-            "created_utc": 1651968708.0,
-            "score": 17,
-            "num_comments": 4,
-            "subreddit": "CryptoTechnology",
-            "selftext": "Decred is a project conceived by ex-Bitcoin devs,  the same devs who wrote the btcd node that is used by Lightning Labs.   The fundamental difference between Bitcoin and Decred is that the latter uses a hybrid PoW/PoS consensus.   Currently, 60% of rewards go to proof-of-work miners, 30% to proof-of-stake, and 10% to a Treasury (Decred stakeholders then vote on how the Treasury is spent, which development projects to fund, etc.)\n\nThe consensus will change on 4 points.  The most popular one is that the subsidy to PoS will increase to 80%, while the subsidy to PoW decreases to 10%.  This will give DCR stakers a 10% APY, which is very high, and DCR staking doesn't require custody, so there's no counterparty risk.  Prima facie this may sound like the stakeholders trying to enrich themselves, but it's not the case; the reasoning behind it is provided [here, in the original proposal for](https://proposals.decred.org/record/427e1d4) the change (that was voted upon by the DCR coin holders/stakeholders).  Keep in mind that reducing PoW subsidy does not reduce Decred's security, as [Decred is, apples to apples, 20x harder to 51% attack than Bitcoin](https://medium.com/@0xmzz/apples-to-apples-decred-is-20x-more-expensive-to-attack-than-bitcoin-68bafeb4546f)\n\n[This website](https://voting.decred.org/) contains updates about the consensus change, the timing, and the details about each of the 4 consensus changes.",
-            "stickied": false,
-            "comments": []
-        },
-        {
             "id": "ukvhvw",
             "title": "ZK Rollups are the missing piece to complete the blockchain scaling solution puzzle",
             "url": "https://www.reddit.com/r/CryptoTechnology/comments/ukvhvw/zk_rollups_are_the_missing_piece_to_complete_the/",
@@ -273,6 +218,88 @@
                     "comments": []
                 }
             ]
+        },
+        {
+            "id": "ul1utb",
+            "title": "When it comes to zero knowledge proofs, how does it practically work in a private chain?",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ul1utb/when_it_comes_to_zero_knowledge_proofs_how_does/",
+            "author": "RedEagle_MGN",
+            "created_utc": 1652016906.0,
+            "score": 30,
+            "num_comments": 14,
+            "subreddit": "CryptoTechnology",
+            "selftext": "I get that ZK can allow you to share info without sharing the exact info, e.g.:\n\nQuestion: Does Bob drink 10 cups of coffee a day\n\nAnswer: Yes, Bob drinks more than 10 cups of coffee a day but I am not going to tell you how many.\n\n&#x200B;\n\nBut how do ZK proofs practically work in a private chain?\n\nAs I see it the Blockchain is like a paper. Each node is a copy of the piece of paper and transactions are validates across nodes. With ZK proofs, is all the transaction data (who is sending what to who, how much is in each wallet, who requested the info and who verified it), is that all private or is the meta data still exposed?  \nIf the above is the case, why isn't ZK used in all cases on all blockchains?\n\nIs all the validation or just the info sent to companies private? \n\nWould not the 20x number of calculations needed for ZK for everything cause HUGE efficiency problems?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i7t6tg0",
+                    "author": "DATY4944",
+                    "score": 7,
+                    "created_utc": 1652025974.0,
+                    "response": "I thought zk proofs is like proving you control a private key without giving away the private key. Your example doesn't quite fit the intent that I'm familiar with.\n\nIt's like.. I can unlock a safe and let you have some of the contents without telling you the safe key.\n\nOr a better example: I can prove I know the safe key without even opening the safe.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i7t84ay",
+                            "author": "T0Bii",
+                            "score": 3,
+                            "created_utc": 1652026546.0,
+                            "response": "That's one use case but you can proof lots of different things without sharing the information.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i7tg4xe",
+                            "author": "dvodelenup",
+                            "score": 2,
+                            "created_utc": 1652030016.0,
+                            "response": "Because of what I've read about ZK and some privacy protocols, I believe you are absolutely correct.\n\nThrough ZK proof, using the example of (zk-SNARKs) technology that's used by Railgun, users' wallet addresses will be removed from any actions and transactions on Blockchains where that information was previously available for anyone who cares to look. This is similar to having your bank balance and spending history revealed whenever you use a debit card.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i7vrtte",
+                            "author": "Treyzania",
+                            "score": 2,
+                            "created_utc": 1652069937.0,
+                            "response": "It's not really about any particular keys unless you're building some circuit that talks about keys.  It's really about proving you know a solution to a mathematical relation without revealing anything about the solution.  You can prove for some n that you know a p and q where p*q=n without revealing what p or q are.  You build together more complicated circuits out of those basic primitives with a few tricks.\n\nNow sure, you can define ECDSA in those terms, but the trick is that it's very general.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "i8mpew2",
+                            "author": "6uRku2va",
+                            "score": 1,
+                            "created_utc": 1652568711.0,
+                            "response": "You are absolutely correct; using ZK tech, users' privacy is protected, and users' addresses are wiped from any activities and transactions where that information was previously exposed, all without ever having to leave the safety and liveliness of any chain. Railgun's implementation will not only deliver revolutionary benefits to other blockchain ecosystems, but it will do so rapidly.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i7tvrd2",
+                    "author": "Dormage",
+                    "score": 8,
+                    "created_utc": 1652036853.0,
+                    "response": "Zkp are just cryptographic protocols. They dont enforce a particular use. You can use them for many things but in general the protocols can be used for what you say.\n\nYou can prove you have some data, without sending the data. But not just any data, we need ana greement on that as well. Unkess your protocol is about coffee cups, you cant verify hoe many someone drank. In public chains, the data is transactions. In a private chain setup, it depends on the usecase.\n\nThere isnt realy much value to be gained by a private blockchain anyway. I suppose you could come up with some type of application where users need to provide a proof they have some digital information without violating ther privacy but the security considerations of the private network will outweight the privacy concerns.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "ukpwr4",
+            "title": "In Less Than 7 Hours, Decred Will Make a Radical Consensus Change",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/ukpwr4/in_less_than_7_hours_decred_will_make_a_radical/",
+            "author": "Corp-Por",
+            "created_utc": 1651968708.0,
+            "score": 18,
+            "num_comments": 6,
+            "subreddit": "CryptoTechnology",
+            "selftext": "Decred is a project conceived by ex-Bitcoin devs,  the same devs who wrote the btcd node that is used by Lightning Labs.   The fundamental difference between Bitcoin and Decred is that the latter uses a hybrid PoW/PoS consensus.   Currently, 60% of rewards go to proof-of-work miners, 30% to proof-of-stake, and 10% to a Treasury (Decred stakeholders then vote on how the Treasury is spent, which development projects to fund, etc.)\n\nThe consensus will change on 4 points.  The most popular one is that the subsidy to PoS will increase to 80%, while the subsidy to PoW decreases to 10%.  This will give DCR stakers a 10% APY, which is very high, and DCR staking doesn't require custody, so there's no counterparty risk.  Prima facie this may sound like the stakeholders trying to enrich themselves, but it's not the case; the reasoning behind it is provided [here, in the original proposal for](https://proposals.decred.org/record/427e1d4) the change (that was voted upon by the DCR coin holders/stakeholders).  Keep in mind that reducing PoW subsidy does not reduce Decred's security, as [Decred is, apples to apples, 20x harder to 51% attack than Bitcoin](https://medium.com/@0xmzz/apples-to-apples-decred-is-20x-more-expensive-to-attack-than-bitcoin-68bafeb4546f)\n\n[This website](https://voting.decred.org/) contains updates about the consensus change, the timing, and the details about each of the 4 consensus changes.",
+            "stickied": false,
+            "comments": []
         }
     ]
 }

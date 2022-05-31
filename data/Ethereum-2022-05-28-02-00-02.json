@@ -1,0 +1,1613 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uzd4wt",
+            "title": "I'm screwed. WARNING TO ALL. Do NOT try to use the Polygon bridge to move ETH between Polygon and Ethereum",
+            "url": "https://www.reddit.com/r/ethereum/comments/uzd4wt/im_screwed_warning_to_all_do_not_try_to_use_the/",
+            "author": "FreeFactoid",
+            "created_utc": 1653702524.0,
+            "score": 409,
+            "num_comments": 231,
+            "subreddit": "ethereum",
+            "selftext": "I tried to move 209 ETH from Polygon to Ethereum using the Polygon bridge but it wouldn't let me because Eth PoS was missing. \n\nSo I added the Polygon Weth address to the bridge and clicked on transfer.\n\nWhat I didn't realise is that the team changed the contract destination address to null without telling anyone or putting any warnings or disabling the transfer contract.\n\nUnless the team reimburses me, I'm screwed.\n\nTx Id. https://polygonscan.com/tx/0x6bb0910770184de1b33eaa61bcfea8a2c9b49f65f757f47401f4061e2256258d\n\nEdit: someone just pointed out that the Weth should be burned so that Eth on the Ethereum side can be released. I panicked for nothing (my bad). Hopefully, the Polygon team will release the Eth on the Ethereum side for me.\n\nEdit2: for anyone in my situation. Pressing confirm on the bridge explorer didn't work for me. I had to manually go to here, https://withdraw.polygon.technology/\nEnter the transaction hash and trigger the withdrawal. Hope that helps.\n\nEdit3: after triggering the withdrawal, the tx completed and the 209 ETH arrived on the Ethereum side.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia9q2ap",
+                    "author": "Tazoid",
+                    "score": 106,
+                    "created_utc": 1653705421.0,
+                    "response": "What is the problem here? That tx looks just like any other bridge withdrawal. The ETH on Polygon has to get burnt (sent to NULL address) for you to be able to withdraw it on mainnet.\n\nGo to the polygon bridge again and finish the withdrawal to mainnet. It takes more than 1 transaction and the burning is one of them.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia9s84k",
+                            "author": "allsilent",
+                            "score": 28,
+                            "created_utc": 1653706546.0,
+                            "response": "Yeah, agreed. If you\u2019ve used this bridge a lot then you ought to be familiar with the process, and I\u2019m pretty sure that process invokes the null address to burn your polygon assets before releasing them to mainnet. You can explore the contract on polygonscan and I bet you\u2019ll see that as part of it. \n\nI think you\u2019re fine.\n\nEdit: I recognize I\u2019m not replying to OP. Just piling on.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia9stz4",
+                            "author": "Yeopaa",
+                            "score": 8,
+                            "created_utc": 1653706878.0,
+                            "response": "This makes a lot more sense. Everything might be A-OK OP.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia9rzpn",
+                            "author": "robsredditaccount",
+                            "score": 8,
+                            "created_utc": 1653706420.0,
+                            "response": "I hope this worked, OP let us know",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia9xanq",
+                                    "author": "FreeFactoid",
+                                    "score": 27,
+                                    "created_utc": 1653709321.0,
+                                    "response": "Yes, finally got it sorted. Had to use withdrawal.polygon.technology to trigger the release. Thank you for your concern \ud83d\ude4f",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia9wurp",
+                            "author": "FreeFactoid",
+                            "score": 21,
+                            "created_utc": 1653709063.0,
+                            "response": "The Polygon bridge interface did not pick up the transaction for me to confirm so I guess I panicked. Someone posted the bridge-explorer.polygon.technology address and I tried to confirm from there and it didn't work.\n\nFinally, someone posted the withdrawal.polygon.technology link which I ended up using to trigger the withdrawal. And that worked!",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia9xzmm",
+                                    "author": "fastinguy11",
+                                    "score": 44,
+                                    "created_utc": 1653709732.0,
+                                    "response": "I hope you learned your lesson and never transfer a large amount of money without testing it first.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iaaduvt",
+                                            "author": "sammyhats",
+                                            "score": 6,
+                                            "created_utc": 1653721403.0,
+                                            "response": "Why is this guy getting downvoted? He's right lol.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "iablsv4",
+                                            "author": "spicybright",
+                                            "score": 1,
+                                            "created_utc": 1653751732.0,
+                                            "response": "A 5 year old would probably make less mistakes on the stock market than most of the people in these crypto \"horror\" stories.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "iablu0h",
+                                    "author": "FeelTheFish",
+                                    "score": 1,
+                                    "created_utc": 1653751748.0,
+                                    "response": "Gratz on heart attack solution",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "iac188d",
+                            "author": "Ruzhyo04",
+                            "score": 2,
+                            "created_utc": 1653758945.0,
+                            "response": "400 upvotes on OP, this is how misinformation spreads.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia9l966",
+                    "author": "kmanifold",
+                    "score": 623,
+                    "created_utc": 1653702872.0,
+                    "response": "Dude wtf, how rich are you? \n\nI would never move 1 ETH without doing a test transaction first, much less 209 ETH.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia9ldb2",
+                            "author": "DimensionOdd2164",
+                            "score": 229,
+                            "created_utc": 1653702935.0,
+                            "response": "Have to agree.  If you're moving that kind of money around why wouldn't you do a test run first?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaa146n",
+                                    "author": "pinglamb",
+                                    "score": 348,
+                                    "created_utc": 1653711697.0,
+                                    "response": "209 ETH is the test",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iaaafq5",
+                                            "author": "_JohnWisdom",
+                                            "score": 60,
+                                            "created_utc": 1653718539.0,
+                                            "response": "Pocket change is pocket change",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iaabttm",
+                                                    "author": "ReachingForVega",
+                                                    "score": 37,
+                                                    "created_utc": 1653719673.0,
+                                                    "response": "Only 9 btc, who cares /s",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "iaathng",
+                                            "author": "AggressiveLocation2",
+                                            "score": 18,
+                                            "created_utc": 1653735502.0,
+                                            "response": "More money than brains",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ia9w3cl",
+                                    "author": "xcalibre",
+                                    "score": 23,
+                                    "created_utc": 1653708637.0,
+                                    "response": "heckin deckin gosh darn fees man\n\n(which are quite low right now \ud83e\udd23)",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "iaainid",
+                                    "author": "Zakarovski",
+                                    "score": 8,
+                                    "created_utc": 1653725715.0,
+                                    "response": "He can test with 1 eth and it wouldn't even break the bank",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "iaa1aug",
+                            "author": "JollySno",
+                            "score": 19,
+                            "created_utc": 1653711821.0,
+                            "response": "209 ETH is the test transaction",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia9nhds",
+                            "author": "Girafferage",
+                            "score": 31,
+                            "created_utc": 1653704069.0,
+                            "response": "came here to say this. You always do a test transaction, even if you have done it a hundred times. Lots of things can go wrong. clipboard attack, input wrong address, send to the wrong crypto, etc.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia9qv1e",
+                            "author": "Junglee_Monster",
+                            "score": 17,
+                            "created_utc": 1653705826.0,
+                            "response": "Not as rich as was yesterday lol",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia9wj7u",
+                                    "author": "FreeFactoid",
+                                    "score": 0,
+                                    "created_utc": 1653708881.0,
+                                    "response": "All good now. Thanks for your concern though",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iac87nu",
+                                            "author": "IamAFlaw",
+                                            "score": 1,
+                                            "created_utc": 1653762299.0,
+                                            "response": "Man it sucks how people don't care because they think you are rich anyway.\n\nI care buddy and I feel terrible for you. Screw these guys.\n\nI hope you get it back.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ia9sxw1",
+                                    "author": "Vaginosis-Psychosis",
+                                    "score": 1,
+                                    "created_utc": 1653706939.0,
+                                    "response": "ha ha",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "iaa6fo6",
+                            "author": "Tommannerr",
+                            "score": 5,
+                            "created_utc": 1653715437.0,
+                            "response": "Maybe he bought ETH when it was 1\u20ac",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iaa5f5c",
+                            "author": "NumerousHelicopter6",
+                            "score": 4,
+                            "created_utc": 1653714690.0,
+                            "response": "I moved about 2 ETH this week and the first transaction was for $25.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iaaed8i",
+                            "author": "ripbum",
+                            "score": 3,
+                            "created_utc": 1653721841.0,
+                            "response": "Yep, paying those high fees to do a test transaction isn't such a bad idea after all.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iab3gom",
+                                    "author": "KINGGS",
+                                    "score": 0,
+                                    "created_utc": 1653742302.0,
+                                    "response": "What high fees? Eth fees are like a fucking dollar per simple transaction right now",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia9mgkh",
+                            "author": "FreeFactoid",
+                            "score": 20,
+                            "created_utc": 1653703513.0,
+                            "response": "I have used the bridge many times before with no issues",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia9w7r0",
+                                    "author": "xcalibre",
+                                    "score": 5,
+                                    "created_utc": 1653708704.0,
+                                    "response": "thats fair dude. thank you for sharing the retrieval info, nice to have a happy ending for once! \ud83e\udd23",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "ia9msn9",
+                                    "author": "kmanifold",
+                                    "score": 11,
+                                    "created_utc": 1653703694.0,
+                                    "response": "I\u2019m amazed by how you are simultaneously intelligent enough to accumulate that much wealth and stupid enough to move 209 ETH all at once.\n\nThat is just poor risk management.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iaahyyq",
+                                            "author": "Cow_Tipping_Olympian",
+                                            "score": 1,
+                                            "created_utc": 1653725075.0,
+                                            "response": "Dumb luck \ud83d\ude02",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ia9sxjq",
+                                    "author": "Vaginosis-Psychosis",
+                                    "score": 8,
+                                    "created_utc": 1653706933.0,
+                                    "response": "You should always do test transactions in case you didn't know.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iabbca9",
+                                            "author": "_lostarts",
+                                            "score": 2,
+                                            "created_utc": 1653746675.0,
+                                            "response": "I've done the same transactions multiple times, but I ALWAYS do a test run. Sending to an exchange, or withdrawing. Even coinbase pro to coinbase. \n\nThe time and cost of an extra transaction fee is nothing compared to the potential losses.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "iaaee53",
+                            "author": "lina_d_inrahd",
+                            "score": 2,
+                            "created_utc": 1653721865.0,
+                            "response": "Upvotes on your comment are now 209.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaagk4b",
+                                    "author": "lslpotsky",
+                                    "score": 1,
+                                    "created_utc": 1653723795.0,
+                                    "response": "Lol",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "iaai410",
+                            "author": "Kappaengo",
+                            "score": 1,
+                            "created_utc": 1653725204.0,
+                            "response": "IKR I could retire with 209 ETH",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaakwa4",
+                                    "author": "cmedeiros22",
+                                    "score": 1,
+                                    "created_utc": 1653727781.0,
+                                    "response": "I could stake it and live off the interest",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "iaamkla",
+                            "author": "ciadra",
+                            "score": 1,
+                            "created_utc": 1653729334.0,
+                            "response": "Why would you even have to mess with L2 if that rich",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iabazt3",
+                            "author": "bigslimvdub",
+                            "score": 1,
+                            "created_utc": 1653746498.0,
+                            "response": "Mining ETH in 2016/17 with RX480\u2019s rich",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iabb0v6",
+                            "author": "Icy-Perspective-0420",
+                            "score": 1,
+                            "created_utc": 1653746513.0,
+                            "response": "go big or go home lol",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iabdmbv",
+                            "author": "cockypock_aioli",
+                            "score": 1,
+                            "created_utc": 1653747830.0,
+                            "response": "Lol yeah I always test my transactions with whatever the minimum is first. God I can't imagine how it must feel to have over 200 eth. So jealous. Was this post a humble-brag perhaps?",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iablolc",
+                            "author": "FeelTheFish",
+                            "score": 1,
+                            "created_utc": 1653751677.0,
+                            "response": "He lost perspective haha\n\nThere are lots of OG eth people that participated either on the presale, or bought it for gas for development at the right time",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iabm45t",
+                            "author": "akirbydrinks",
+                            "score": 1,
+                            "created_utc": 1653751882.0,
+                            "response": "He's only half as rich as he was a month ago....",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iac6ejc",
+                            "author": "1HappyGuy1",
+                            "score": 1,
+                            "created_utc": 1653761425.0,
+                            "response": "Maybe he bought in early?",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iac7rkl",
+                            "author": "MachineElf432",
+                            "score": 1,
+                            "created_utc": 1653762082.0,
+                            "response": "Some people just don\u2019t consider these things for whatever reason before-hand i think.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iaarg4d",
+                            "author": "KingTut747",
+                            "score": 0,
+                            "created_utc": 1653733811.0,
+                            "response": "Not as rich as he was before ETH dropped 50%+ haha",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iaatwo0",
+                            "author": "lorenzomofo",
+                            "score": 0,
+                            "created_utc": 1653735840.0,
+                            "response": "Why not suggest to send funds 1 ETH at a time for 209 times for extra security in case the merge suddenly happens when you least expect like the second coming.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia9ozop",
+                    "author": "thetastycookie",
+                    "score": 41,
+                    "created_utc": 1653704855.0,
+                    "response": "Are you sure your coins are burnt?\n\nIf you are bridging to mainnet than shouldn't it be normal to burn the eth on the polygon network? \n\nTry checking your balance on mainnet.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia9rx39",
+                            "author": "FreeFactoid",
+                            "score": 22,
+                            "created_utc": 1653706380.0,
+                            "response": "You know what? You could be right lol.\n\nBest response so far and someone with a brain and thinking caps on.\n\nThank you, thank you, thank you.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia9syv5",
+                                    "author": "Yeopaa",
+                                    "score": 9,
+                                    "created_utc": 1653706953.0,
+                                    "response": "I'm pleased for you. Thats an unfathomable amount of eth to lose for me. Still, I hope you take the hint about double checking to heart. Good luck OP let us know that everything worked out peachy. \ud83d\ude01",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia9srwq",
+                    "author": "allsilent",
+                    "score": 20,
+                    "created_utc": 1653706846.0,
+                    "response": "Dude others have pointed it out. You\u2019re not screwed. The ETH is on its way. You\u2019ve used this contract before. Look at line 1521 of the contract. It tells you that when you call the withdraw function to get back to mainnet, it burns your assets on poly and then they\u2019re released to mainnet. It\u2019s right in there. \n\nTo everyone else acting like OP is an idiot, I\u2019d invite each of you to review that smart contract too before telling him he missed something big.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia9u02h",
+                            "author": "FreeFactoid",
+                            "score": 2,
+                            "created_utc": 1653707518.0,
+                            "response": "Yes, thanks for pointing this out",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia9sw1p",
+                    "author": "AlgoRhythm17",
+                    "score": 11,
+                    "created_utc": 1653706910.0,
+                    "response": "Regarding your edit, all you have to do is click the \"confirm exit\" button on the bridge explorer ([https://bridge-explorer.polygon.technology/](https://bridge-explorer.polygon.technology/)) and pay the \\~$20 in ETH gas to get your tokens. The team doesn't have to do anything, it's in your hands.\n\n(For completeness) A quick note about the bridge, when you bridge from Ethereum -> Polygon, new tokens are minted on the Polygon chain while your original tokens are locked on Ethereum. When you bridge back from Polygon -> Ethereum, those tokens are burnt and your tokens are released on Ethereum. That is what you're seeing in your transaction. To note: this is how the bridge has always worked; the Polygon team has not modified any contracts.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia9tyf9",
+                            "author": "FreeFactoid",
+                            "score": 4,
+                            "created_utc": 1653707493.0,
+                            "response": "Thanks for this. The issue is that it's not showing up on the usual bridge interface for whatever reason.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia9u29w",
+                                    "author": "AlgoRhythm17",
+                                    "score": 5,
+                                    "created_utc": 1653707550.0,
+                                    "response": "Happy to help :). Yeah we get this a lot on the discord. The bridge explorer is a lifesaver.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia9uxf8",
+                                            "author": "FreeFactoid",
+                                            "score": 3,
+                                            "created_utc": 1653708009.0,
+                                            "response": "Life saver",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia9tgp7",
+                            "author": "ChazSchmidt",
+                            "score": 1,
+                            "created_utc": 1653707219.0,
+                            "response": "You're correct. It looks like OP just needs to head here ([https://bridge-explorer.polygon.technology/tx/0x6bb0910770184de1b33eaa61bcfea8a2c9b49f65f757f47401f4061e2256258d/withdrawals](https://bridge-explorer.polygon.technology/tx/0x6bb0910770184de1b33eaa61bcfea8a2c9b49f65f757f47401f4061e2256258d/withdrawals)) and confirm their exit.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia9x3cw",
+                                    "author": "FreeFactoid",
+                                    "score": 3,
+                                    "created_utc": 1653709203.0,
+                                    "response": "The confirm button on bridge explorer didn't work for me but using withdrawal.polygon.technology did end up triggering the release of Eth. Thanks for all your helps. I'm humbled \ud83d\ude4f",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia9rdif",
+                    "author": "aznar",
+                    "score": 32,
+                    "created_utc": 1653706094.0,
+                    "response": "The team didn't change anything, that tx looks ok, this post is likely BS",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iabbqk9",
+                            "author": "o_teu_sqn",
+                            "score": 4,
+                            "created_utc": 1653746879.0,
+                            "response": "yup, he got his coins  \n\n\nhttps://etherscan.io/tx/0xbfb5eb7fdedc0c6d686511fefeacdbb3b41d9d7e55941bb30e9bbfaf775b207d",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia9tqk7",
+                            "author": "FreeFactoid",
+                            "score": 19,
+                            "created_utc": 1653707373.0,
+                            "response": "I just realized that the tokens are meant to be burnt. My bad. Panicked for nothing. Majorly embarrassed. Still waiting on Eth being deposited on my end though.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaau2jd",
+                                    "author": "lorenzomofo",
+                                    "score": 4,
+                                    "created_utc": 1653735968.0,
+                                    "response": "No worries. Actually your post should be pinned so that others learn this too.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia9tco7",
+                    "author": "domotheus",
+                    "score": 11,
+                    "created_utc": 1653707156.0,
+                    "response": "That's strange, I looked up a year old transaction of mine when I used that same bridge to send ETH from Polygon to Mainnet, and I'm pretty sure there is hope for you.\n\nMy transaction definitely looks the same as you: My Polygon-WETH was sent to the null address with the `withdraw()` call (same as you), but on the Ethereum side on I got all that ETH back with an `exit()` call, initiated by me on that second step where the bridge asks you to switch MetaMask to mainnet and sign another transaction\n\nSo I think you're missing the second `exit()` call on Ethereum mainnet. From my understanding the Polygon transaction burns the WETH and issues a receipt that gets sync'd to mainnet that lets you withdraw the actual ETH to mainnet with that `exit()` call. Maybe there's been an issue with the UI that didn't let you initiate that second transaction from mainnet. But I'm pretty sure as a last resort the Polygon team can work out the data you need to make that call and get your ETH back on mainnet",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia9ur2s",
+                            "author": "FreeFactoid",
+                            "score": 2,
+                            "created_utc": 1653707917.0,
+                            "response": "Exactly this. I just need to hit confirm. I couldn't do that before because that interface was missing from the usual polygon bridge interface. Someone just posted the bridge explorer address to do this.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia9myqn",
+                    "author": "Yeopaa",
+                    "score": 3,
+                    "created_utc": 1653703786.0,
+                    "response": "I hope you can get in contact with the team. They're usually pretty on the ball about this sort of thing. Good luck, and as others said, no matter how many times you've used a bridge (or anything else) before - if you're moving thar much eth always do a test transaction first.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9nzsc",
+                    "author": "OkOriginal1383",
+                    "score": 3,
+                    "created_utc": 1653704338.0,
+                    "response": "That\u2019s a lot of money. An amount I can\u2019t even comprehend having.. hoping the best for you bud.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia9rv3m",
+                            "author": "FreeFactoid",
+                            "score": 1,
+                            "created_utc": 1653706350.0,
+                            "response": "Thank you",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia9q5i9",
+                    "author": "Not_Snow_Jon",
+                    "score": 3,
+                    "created_utc": 1653705469.0,
+                    "response": "How tf do people have this much eth, j barely have one.\n\nOn top of that, he doesnt even do a test transaction lol what are you thinking? I do test transactions and I have a tiny amount compared to you",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia9so9q",
+                            "author": "FreeFactoid",
+                            "score": 3,
+                            "created_utc": 1653706791.0,
+                            "response": "I bought in 2015 16 17. And God was kind.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iaa4ppo",
+                    "author": "codeboss911",
+                    "score": 3,
+                    "created_utc": 1653714178.0,
+                    "response": "well that deescalated quickly",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaafbrw",
+                    "author": "cosmic-comedy",
+                    "score": 3,
+                    "created_utc": 1653722690.0,
+                    "response": "It's good that you figured it out, but I bet some random crypto blog is going to report this with complete misinformation.\n\n\"USER LOSES ALL ETH! POLYGON TO BLAME\"",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9oec7",
+                    "author": "wheezl",
+                    "score": 2,
+                    "created_utc": 1653704547.0,
+                    "response": "Is there any real use case for any transfer to a null address?  I guess I am asking why this could ever be allowed to happen.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia9v9o0",
+                            "author": "FreeFactoid",
+                            "score": 2,
+                            "created_utc": 1653708194.0,
+                            "response": "My bad. The Polygon network is meant to burn the tokens so that the Ethereum side can then release the same number of tokens.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia9vcb1",
+                                    "author": "wheezl",
+                                    "score": 2,
+                                    "created_utc": 1653708232.0,
+                                    "response": "Thanks for the explanation!",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "iab78el",
+                            "author": "Bruzzly",
+                            "score": 1,
+                            "created_utc": 1653744458.0,
+                            "response": "Any time you see something referred to as being \u201cburned\u201d it means it\u2019s transferred to the null address and is effectively gone forever.  Plenty of protocols utilize burn mechanisms.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iabvgxb",
+                                    "author": "wheezl",
+                                    "score": 1,
+                                    "created_utc": 1653756260.0,
+                                    "response": "I thought I understood the basic concept of \u201cburning\u201d but couldn\u2019t wrap my head around why an individual holder would want to do it.  It makes sense in this context now.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia9sw6h",
+                    "author": "_k182",
+                    "score": 2,
+                    "created_utc": 1653706912.0,
+                    "response": "Dang bro sorry",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9tki7",
+                    "author": "Dankmanchilliwilli",
+                    "score": 2,
+                    "created_utc": 1653707277.0,
+                    "response": "Idk how people are so bold to move hundreds of thousands of dollars in crypto and launching hundreds of thousands of dollars of smart contracts when the software is still under development. Why not start small or move crypto in chunks instead?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9uw0n",
+                    "author": "imjesusbitch",
+                    "score": 2,
+                    "created_utc": 1653707988.0,
+                    "response": ">I panicked for nothing (my bad).\n\nDude just thought he lost nearly half a mil, and casually posts a warning for people, not begging for help or freaking out, and then apologizes for the slight over reaction. Holy fuck what a roller coaster. \n\nYa got some balls, I'll say that. Smooth casual balls. Hope it works out. Now to go find my jaw.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9x8p8",
+                    "author": "BitcoinSatosh",
+                    "score": 2,
+                    "created_utc": 1653709288.0,
+                    "response": "Rich and dumb. As a dev for Eth mainnet, I always get this type of wallet users complaining about the system without studying how things work.  Just a reminder don't be like the OP, always research first before complaining. Sometimes money can not improve one's ignorance.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9y71s",
+                    "author": "stupidcupid112",
+                    "score": 2,
+                    "created_utc": 1653709853.0,
+                    "response": "Then I think you should remove your post since it misleads people into thinking that polygon is at fault whereas your issue is already resolved.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9zok6",
+                    "author": "AmericanDervish",
+                    "score": 2,
+                    "created_utc": 1653710769.0,
+                    "response": "You didn\u2019t do a test transaction? 209 ETH? What?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaak8mp",
+                    "author": "grimonce",
+                    "score": 2,
+                    "created_utc": 1653727186.0,
+                    "response": "Just another prove being rich is mostly luck...",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaalz65",
+                    "author": "Castle789",
+                    "score": 2,
+                    "created_utc": 1653728769.0,
+                    "response": "you are moving 209 ETH just casually around ?!.......wth",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaamff8",
+                    "author": "ThenOwl9",
+                    "score": 2,
+                    "created_utc": 1653729196.0,
+                    "response": "should prob put edit #3 at the top",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9roif",
+                    "author": "Zescapespj",
+                    "score": 3,
+                    "created_utc": 1653706252.0,
+                    "response": "More money than wisdom. Bridged $350,000 with no test?\n\nSorry that happened to you, expensive lesson. \n\nSend a test transaction first next time. We are in the wild west beta test version of the Blockchain. Nothing is certain and nothing can be taken for granted.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9ldj3",
+                    "author": "Euphoric111",
+                    "score": 2,
+                    "created_utc": 1653702938.0,
+                    "response": "That's messed up! So sorry to see this , only question I have is did you do a test run with a small amt?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9q3w8",
+                    "author": "human_steak",
+                    "score": 1,
+                    "created_utc": 1653705445.0,
+                    "response": "Everyone's giving you shit, but I just want to say I'm sorry this happened. Stories like yours just remind us how far we are from being able to rely on these things. I hope you can get your money back.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia9tuwh",
+                            "author": "FreeFactoid",
+                            "score": 1,
+                            "created_utc": 1653707440.0,
+                            "response": "Just realised that the contract is meant to do that so it can release 209 ETH on the Ethereum side.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iaammxf",
+                            "author": "Casino_Insider",
+                            "score": 1,
+                            "created_utc": 1653729397.0,
+                            "response": "How far we are from seeing mass adoption outside of centralised exchanges.\n\nWe'll replace banks that have their head office in our own country and are subject to local laws with \"banks\" established in Singapore, Hong Kong and the Cayman that don't have to follow any laws.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia9paaf",
+                    "author": "ImInYinz",
+                    "score": 1,
+                    "created_utc": 1653705010.0,
+                    "response": "Not trying to sound like an asshole but I personally wouldn\u2019t move anything until after the transition. Too many tests and too much going on",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia9prcf",
+                            "author": "FreeFactoid",
+                            "score": 2,
+                            "created_utc": 1653705261.0,
+                            "response": "I'm moving from Polygon to Ethereum. There's no merge on Polygon",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia9rykw",
+                    "author": "jfcmfer",
+                    "score": 1,
+                    "created_utc": 1653706402.0,
+                    "response": "Should've done a test transaction.... based on basically every comment, that is the general rule. You keep explaining to everyone why you not doing that is right but there are 209 reasons and a shit ton of money proving you're wrong. Tough lesson and you don't even sound like you've learned it. It sucks, hope you get your money back, but sheesh.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9xpaj",
+                    "author": "GardinerAndrew",
+                    "score": 1,
+                    "created_utc": 1653709559.0,
+                    "response": "Yea, just a casual half million dollar transfer. No big deal.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9yqrd",
+                    "author": "jacklucas_",
+                    "score": 1,
+                    "created_utc": 1653710192.0,
+                    "response": "Yeah, agreed. If you\u2019ve used this bridge a lot then you ought to be familiar with the process, and I\u2019m pretty sure that process invokes the null address to burn your polygon assets before releasing them to mainnet. You can explore the contract on polygonscan and I bet you\u2019ll see that as part of it. 100%",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9yvt6",
+                    "author": "rtheiss",
+                    "score": 1,
+                    "created_utc": 1653710280.0,
+                    "response": "Glad it worked out OP. Not gonna lie that bridge was scary when I first used it.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9zvza",
+                    "author": "player_1111",
+                    "score": 1,
+                    "created_utc": 1653710900.0,
+                    "response": "Wtf why peope gotta go thru all this to transfer some ETH? Lol",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaa0cok",
+                    "author": "TopAlert2383",
+                    "score": 1,
+                    "created_utc": 1653711204.0,
+                    "response": "Hope in the near future there will be an actual bridge that takes nothing from the user but to copy an address and send to any chain. I think ETH will be number one, but there's more than one bank in every city and I think there will be room for the top 30 for a long time. They need to communicate with each other without scaring the user in the process. Also for us to get true adoption everything needs to be simple.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaa3hqt",
+                    "author": "_Zazu95_",
+                    "score": 1,
+                    "created_utc": 1653713312.0,
+                    "response": "That\u2019s a lot of ETH!!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaa3zp3",
+                    "author": "AIannaAaron584546",
+                    "score": 1,
+                    "created_utc": 1653713661.0,
+                    "response": "As the number of blockchains in the cryptocurrency space continues to grow, sharing data and tokens between different networks becomes a challenge. Some projects are solving this problem by improving asset transfers through network bridges.\r  \n\r  \nThe Polygon Bridge aims to improve interoperability between Polygon and the Ether blockchain. With a compatible cryptocurrency wallet, users can easily transfer tokens back and forth.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaa7zwx",
+                    "author": "kuracoin",
+                    "score": 1,
+                    "created_utc": 1653716617.0,
+                    "response": "I am happy for you that you didn\u2019t just get screwed over, but this is probably a good lesson lol. All the more lucky that it didn\u2019t have any real consequences for you to have it.\n\nI think being in the space for a while we seem to kind of just expect things to go without a hitch, especially when it does for so long. But the reality is that things can go wrong whenever with whatever it is so you need to always test and verify or take whatever measures to be sure and safe. This is a good reminder for me, too.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaa8oi3",
+                    "author": "Secret-Addition0",
+                    "score": 1,
+                    "created_utc": 1653717140.0,
+                    "response": "Always make a test run",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaa9fs4",
+                    "author": "alanpartridge69",
+                    "score": 1,
+                    "created_utc": 1653717734.0,
+                    "response": "Lesson learned for you hopefully, always do a test run",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaa9g9z",
+                    "author": "Mefilius",
+                    "score": 1,
+                    "created_utc": 1653717746.0,
+                    "response": "Save some ETH for the rest of us, lol\n\nGlad to see you got this solved though",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaa9gx7",
+                            "author": "haikusbot",
+                            "score": 1,
+                            "created_utc": 1653717760.0,
+                            "response": "*Save some ETH for the*\n\n*Rest of us, lol Glad to see*\n\n*You got this solved though*\n\n\\- Mefilius\n\n---\n\n^(I detect haikus. And sometimes, successfully.) ^[Learn&#32;more&#32;about&#32;me.](https://www.reddit.com/r/haikusbot/)\n\n^(Opt out of replies: \"haikusbot opt out\" | Delete my comment: \"haikusbot delete\")",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iaafarj",
+                    "author": "c0smixOP",
+                    "score": 1,
+                    "created_utc": 1653722665.0,
+                    "response": "We are building wagpay.xyz, bridge aggregator, we extract all the complexities of bridging tokens between evm chains\n\ndm me for access or https://twitter.com/0xWagPay",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaafaxg",
+                    "author": "Rompod1984",
+                    "score": 1,
+                    "created_utc": 1653722669.0,
+                    "response": "Next time use hop.exchange",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaafwx6",
+                    "author": "MrVodnik",
+                    "score": 1,
+                    "created_utc": 1653723212.0,
+                    "response": "OP or Mods, please change the title. This is very misleading and I KNOW many people don't read much more than title and maybe first paragraph. The bridge is working fine, don't need to FUD.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaagxii",
+                    "author": "romboot123",
+                    "score": 1,
+                    "created_utc": 1653724133.0,
+                    "response": "Always do a small transaction first. In saying that. This type of shit puts the average Joe off! If crypto transactions were easy like bank transfers it would definitely be more popular.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaaju6c",
+                    "author": "Puddingbuks26",
+                    "score": 1,
+                    "created_utc": 1653726815.0,
+                    "response": "209 ETH, congrats!!!\nAnd\u2026.. fuck you \ud83d\ude0e\ud83d\ude09",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaake4o",
+                    "author": "Bpool91",
+                    "score": 1,
+                    "created_utc": 1653727324.0,
+                    "response": "Jesus, reading that was a rollercoaster of emotions.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaakgg1",
+                    "author": "Sal_T_Nuts",
+                    "score": 1,
+                    "created_utc": 1653727382.0,
+                    "response": "Hardware and hot wallets need a built in database that updates itself before initiating a transfer to alert users that the address you want to send to is compromised,not active,malicious,scammer. Etherscan already flags certain addresses, they should open up that data set so wallets can read from them and give proper warnings. Can't flag all the bad addresses but at least it would prevent most mishaps like these. Good thing this user was kind of lucky and managed to get the funds back.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaakp41",
+                    "author": "Noob313373",
+                    "score": 1,
+                    "created_utc": 1653727599.0,
+                    "response": "209 ETH? I can't afford 0.1 ETH",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaal800",
+                    "author": "Phi_Or_Alpha",
+                    "score": 1,
+                    "created_utc": 1653728075.0,
+                    "response": "I'm not really familiar with Polygon Bridge but how does ether get unlocked on the ethereum chain. Is it a batch they have running?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaald48",
+                    "author": "coladh_samh",
+                    "score": 1,
+                    "created_utc": 1653728211.0,
+                    "response": "woah dude that's intense. i would be losing my mind, not warning the community, so kudos man! and congrats!!!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaap0mv",
+                    "author": "SquirtingWoman",
+                    "score": 1,
+                    "created_utc": 1653731584.0,
+                    "response": "Sorry brother...",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaartuu",
+                    "author": "BJJnoob1990",
+                    "score": 1,
+                    "created_utc": 1653734126.0,
+                    "response": "1) for the love of all that is sacred why would you move 209 eth without a test transaction\n\n2) delighted you got your eth in the end. Stories about lost crypto break my heart",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaavql2",
+                    "author": "D3th2Aw3",
+                    "score": 1,
+                    "created_utc": 1653737252.0,
+                    "response": "Nothing to contribute. Just letting you know I'm glad you got your ETH. I was devastated over losing the keys to a few hundred worth of crypto last year, I can't imagine 209 ETH... Lol",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaawnxo",
+                    "author": "60minutesmoreorless",
+                    "score": 1,
+                    "created_utc": 1653737911.0,
+                    "response": "I did this back in the Spring, and it resulted in the permanent stranding of a small chunk of ETH. I can still see it floating in the blockchain somewhere, but honestly I get so completely confused about moving between chains and transaction hashes and WETH and all that crap that i\u2019ve completely given up on ever seeing my ETH again. Every time I try to retrieve it, it tells me the fees are 5x the value of the ETH i\u2019m trying to retrieve, so F it",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaaxc1a",
+                    "author": "dubtrainz-next",
+                    "score": 1,
+                    "created_utc": 1653738381.0,
+                    "response": "Maybe send 1 ETH over for testing again? /s \nJokes aside. 1 ETH would really help me out. Ty\n\nTake care of your assets.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaay1xd",
+                    "author": "Admirable_Sugar_4227",
+                    "score": 1,
+                    "created_utc": 1653738876.0,
+                    "response": "While I agree that we need more user friendly solutions for adoption. The eth polygon bridge is actually trash. There are many other bridges that work with greater efficiency.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iab19oa",
+                    "author": "LiveDirtyEatClean",
+                    "score": 1,
+                    "created_utc": 1653740982.0,
+                    "response": "So how many validator nodes do you plan to run after the merge?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iab202m",
+                    "author": "TheWhizBro",
+                    "score": 1,
+                    "created_utc": 1653741437.0,
+                    "response": "Why would you ever send 200 Ethereum to the polygon ETH address you should retire from crypto. Just clickin send on random shit LMAO",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iab2frp",
+                    "author": "Apetardo",
+                    "score": 1,
+                    "created_utc": 1653741703.0,
+                    "response": "Holy balls fren!! I have some questions like the commenter way TF up there, how rich are you??? \n\nI get sketched when I send .05 eth!!  No test sends?\n\nIf you ever want to test send, lmk, my L2 is cryptoz.loopring.eth. I am a poor, and a single dad. My son decided to make invest $500 of his own money back in 2021 shortly after I entered the cryptosphere. \n\nIt was May.....\n\nHis wallet is worth $247 now :(\nThis is his eth addy: 0xBfB1d03630507B7e96563183c22C7C940C86C940",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iab5rfs",
+                    "author": "leroooyyyyyyjenkins",
+                    "score": 1,
+                    "created_utc": 1653743631.0,
+                    "response": "Thk goodness. I rarely use bridges bc of these issues and if i do. I would rather do multiple smaller tx once one goes confirmed",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iab62vz",
+                    "author": "PhiMarHal",
+                    "score": 1,
+                    "created_utc": 1653743811.0,
+                    "response": "I've had to use withdraw.polygon.technology for a recent outbound transfer, too. \n\nNothing special like adding a contract address on my end. I simply started the transfer, then it disappeared. I transferred that particular asset dozens of times before.\n\nNo info anywhere on the website. Had to go hunt for that URL in the Polygon Discord.\n\nIt seems like there's recent issues with bridge transfers not showing up properly in the interface. Which begs the question, why not add a banner pointing to this withdraw.polygon.technology directly from the bridge interface. Seems like an unnecessary stressful situation for bridge users.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iab6uu8",
+                    "author": "Dr_Bendova420",
+                    "score": 1,
+                    "created_utc": 1653744248.0,
+                    "response": "Crypto is ded, jk but this needs to be regulated badly. Glad ur ETH is okay sir.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iab7tj7",
+                    "author": "theobscuregeek",
+                    "score": 1,
+                    "created_utc": 1653744789.0,
+                    "response": "Crypto needs to be regulated properly. That must have been a sigh of relief when you know your ETH is okay.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iab9463",
+                    "author": "Regular_Astronaut944",
+                    "score": 1,
+                    "created_utc": 1653745501.0,
+                    "response": "Happy for you!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iab9dnr",
+                    "author": "mottbox",
+                    "score": 1,
+                    "created_utc": 1653745643.0,
+                    "response": "Insanely stupid or insanely rich or both.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iab9gyu",
+                    "author": "bitfeng",
+                    "score": 1,
+                    "created_utc": 1653745692.0,
+                    "response": "I like the first edit. \n\nWaiting for polygon team to release my funds on the side of eth\u2026\n\nSeems bright for the DeFi future \ud83d\ude4f\ud83e\udd23\ud83e\udd23\ud83e\udd23",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iabaygk",
+                    "author": "cjbrigol",
+                    "score": 1,
+                    "created_utc": 1653746478.0,
+                    "response": "You just lost ~~$627,000~~ ~~$418,000~~ $355,300?!?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iabcz4y",
+                    "author": "azsxdcfvg",
+                    "score": 1,
+                    "created_utc": 1653747515.0,
+                    "response": "Why the hell aren't you doing test transactions first?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iabdcms",
+                    "author": "StapleVelvet",
+                    "score": 1,
+                    "created_utc": 1653747696.0,
+                    "response": "209 ETH test transaction....\n\n\nTell me you're a whale without telling me you're a whale\ud83d\ude05\ud83e\udd72 \n\nI feel sorry for you I do but... Come on, \ud83d\ude02\ud83e\udd23",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iabecft",
+                    "author": "seouljabo-e",
+                    "score": 1,
+                    "created_utc": 1653748183.0,
+                    "response": "Glad to hear you got your Eth! You're obviously a rich dude so not sure how much of a hit it would have been to you to lose....but that's still a lot of coin.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iabiolm",
+                    "author": "Swole_Bodry",
+                    "score": 1,
+                    "created_utc": 1653750285.0,
+                    "response": "I\u2019m glad it worked out in the end!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iabivti",
+                    "author": "TheseTryingTimes1",
+                    "score": 1,
+                    "created_utc": 1653750378.0,
+                    "response": "This is what happens when trust fund babies have zero respect for the value of a dollar. Imagine having the mind set of moving over 400k of ETH without atleast doing a small test first.\n\nThe crazy thing, this guy probably wasn't really panicking THAT much.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iabkx6t",
+                    "author": "allbirdssongs",
+                    "score": 1,
+                    "created_utc": 1653751324.0,
+                    "response": "Hey op how did u get all that eth? What u do?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iablwdx",
+                    "author": "Calm-Limit-37",
+                    "score": 1,
+                    "created_utc": 1653751779.0,
+                    "response": "Only 209 ETH?! What is this? Investment for ants?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iablyks",
+                    "author": "IndefiniteHypoaction",
+                    "score": 1,
+                    "created_utc": 1653751809.0,
+                    "response": "The future is L2 ladies and gentleman! What blockchains need are *more complexity* like this!\n\n^^^/s",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iabrdwd",
+                    "author": "NeatAvocado4845",
+                    "score": 1,
+                    "created_utc": 1653754346.0,
+                    "response": "Why would you transfer that much ? Smfh smart and yet so stupid",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iabsxmn",
+                    "author": "DrewsterDoobyDoo",
+                    "score": 1,
+                    "created_utc": 1653755069.0,
+                    "response": "How do I do this lol",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iabutlm",
+                    "author": "paystoy",
+                    "score": 1,
+                    "created_utc": 1653755958.0,
+                    "response": "That's crazy be careful with that type of money next time, do a test transaction....",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iabuwkk",
+                    "author": "paystoy",
+                    "score": 1,
+                    "created_utc": 1653755996.0,
+                    "response": "Casualy losing half a million on Smart Contracts not understood..",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iabve6y",
+                    "author": "taobaolover",
+                    "score": 1,
+                    "created_utc": 1653756225.0,
+                    "response": "You always do small first",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaby635",
+                    "author": "awesomeplenty",
+                    "score": 1,
+                    "created_utc": 1653757508.0,
+                    "response": "Whale hello there",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iac6yiv",
+                    "author": "Satoshiman256",
+                    "score": 1,
+                    "created_utc": 1653761697.0,
+                    "response": "Here is me getting nervous sending $25 Eth.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iac8cvv",
+                    "author": "Extremely-Bad-Idea",
+                    "score": 1,
+                    "created_utc": 1653762370.0,
+                    "response": "MORAL OF STORY:  Always send a tiny test transfer first.  Try sending 0.001 ETH to see if it arrives properly.\n\nSECOND MORAL OF STORY:  Never send a huge single transfer.  Break it up into multiple medium sized transfers.  For example, instead transferring 209 ETH at once, send 10 ETH at a time.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iac8ksb",
+                    "author": "SuddenMight6",
+                    "score": 1,
+                    "created_utc": 1653762478.0,
+                    "response": "Glad, your drama got a happy ending. But this is also a good documentation of how hard-to-access all innovative blockchain transactions are.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaca1fr",
+                    "author": "BTCwatcher92",
+                    "score": 1,
+                    "created_utc": 1653763193.0,
+                    "response": "2 pieces of advice\nTEST TRANSACTION \nand always wait 20-30 min befor worrying\nI\u2019ve had that stroke/heart attack a few times, I\u2019ve learned to just double check everything and be patient",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9lhci",
+                    "author": "mrdeezy",
+                    "score": -20,
+                    "created_utc": 1653702995.0,
+                    "response": "I call bullshit. People on Reddit got like .209 eth more like",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia9mn70",
+                            "author": "Yeopaa",
+                            "score": 15,
+                            "created_utc": 1653703611.0,
+                            "response": "The tx ID is literally posted. The fuck do you mean you call bullshit? I assure you Reddit has whales with more than 200 eth. \ud83d\ude10",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia9mkgz",
+                            "author": "FreeFactoid",
+                            "score": 4,
+                            "created_utc": 1653703571.0,
+                            "response": "https://polygonscan.com/tx/0x6bb0910770184de1b33eaa61bcfea8a2c9b49f65f757f47401f4061e2256258d",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iac3gdx",
+                            "author": "Nonocoiner",
+                            "score": 1,
+                            "created_utc": 1653760008.0,
+                            "response": "Typical troll, not even trying to understand what's going on, ha ha ha.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia9pn7u",
+                    "author": "catcircusringmaster",
+                    "score": -1,
+                    "created_utc": 1653705201.0,
+                    "response": "Why would they set it to null? That seems crazy. Very sorry to hear.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia9sq9z",
+                            "author": "FreeFactoid",
+                            "score": 2,
+                            "created_utc": 1653706822.0,
+                            "response": "Just realised that the contract is meant to do that so it can release 209 ETH on the Ethereum side.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia9pwe4",
+                    "author": "wood8",
+                    "score": -1,
+                    "created_utc": 1653705333.0,
+                    "response": "So where are the non wrapped ETH? I suppose you send ETH to WETH foundation, they hold the ETH and give you WETH. Now that the WETH is in black hole, shouldn't it be possible to ask WETH foundation to refund the ETH?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia9srom",
+                            "author": "FreeFactoid",
+                            "score": 1,
+                            "created_utc": 1653706843.0,
+                            "response": "Just realised that the contract is meant to do that on the Polygon side so it can release 209 ETH on the Ethereum side.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iaa1oep",
+                    "author": "ShowerWide7800",
+                    "score": -1,
+                    "created_utc": 1653712070.0,
+                    "response": "Pretty centralized for a \"decentralized\" platform",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9q57l",
+                    "author": "FiveHole23",
+                    "score": 0,
+                    "created_utc": 1653705464.0,
+                    "response": "Man you just burned 209 ETH. That nuts.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia9smp6",
+                            "author": "FreeFactoid",
+                            "score": 1,
+                            "created_utc": 1653706767.0,
+                            "response": "Just realised that the contract is meant to do that so it can release 209 ETH on the Ethereum side.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaars6y",
+                                    "author": "FiveHole23",
+                                    "score": 1,
+                                    "created_utc": 1653734088.0,
+                                    "response": "Awesome man. Happy for you.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iaac2kz",
+                    "author": "eduwhat",
+                    "score": 0,
+                    "created_utc": 1653719877.0,
+                    "response": "Holy fuck, like how complicated is this shit lol.\nThis is how you guys see mass adoption ? I think self-serv catheters are gonna see more adoption then this shit.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaae90i",
+                            "author": "sammyhats",
+                            "score": 1,
+                            "created_utc": 1653721736.0,
+                            "response": "At the end of the day this tech is still a very much a beta product, and a lot of it will get abstracted out.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "uzd6qr",
+            "title": "\u27e0 Latest Week in Ethereum News: Uniswap $1 trillion cumulative trading volume; Ethereum roadmap deep dive; GameStop L1 & Loopring L2 wallet",
+            "url": "https://weekinethereumnews.com/week-in-ethereum-news-may-28-2022",
+            "author": "abcoathup",
+            "created_utc": 1653702703.0,
+            "score": 27,
+            "num_comments": 8,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia9nn2w",
+                    "author": "coinfeeds-bot",
+                    "score": -3,
+                    "created_utc": 1653704151.0,
+                    "response": "tldr; PoW switch off (the Merge) on May 31. Mainnet-shadow-fork-6 transition to PoS on June 8. Ropsten testnet reached Terminal Total Difficulty (TTD) before genesis. TTD overridden to very large value to prevent merge override.\n\n*This summary is auto generated by a bot and not meant to replace reading the original article. As always, DYOR.*",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia9olvt",
+                            "author": "abcoathup",
+                            "score": 5,
+                            "created_utc": 1653704652.0,
+                            "response": "Wrong wrong wrong. Bad bot.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaa74b1",
+                                    "author": "Goodgod88",
+                                    "score": 2,
+                                    "created_utc": 1653715957.0,
+                                    "response": "What the bot doing",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iaa7ux8",
+                                            "author": "abcoathup",
+                                            "score": 5,
+                                            "created_utc": 1653716512.0,
+                                            "response": "Mainnet shadow fork 6 merge is on May 31. \nRopsten testnet merge is around June 8. \n\nMainnet merge doesn\u2019t have a date yet.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

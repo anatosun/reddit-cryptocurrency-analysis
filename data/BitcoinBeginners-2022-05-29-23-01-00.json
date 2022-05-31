@@ -1,0 +1,128 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v0mmax",
+            "title": "How are ledgers decentralized?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/v0mmax/how_are_ledgers_decentralized/",
+            "author": "Muted_Original",
+            "created_utc": 1653865237.0,
+            "score": 6,
+            "num_comments": 25,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "**TL;DR: How can blockchain nodes communicate to tell each other to update the ledger without the use of a centralized server?**\n\nHi everyone,\n\nI\u2019m a bit of a bitcoin noob, so correct me if anything I say here doesn\u2019t make sense or is just completely wrong.\n\nI\u2019m interested primarily in blockchains and decentralization in general. As part of my research on blockchains, the concept of keeping decentralized ledgers eluded me.\n\nMainly, I\u2019m wondering how each node in the blockchain receives a new copy of the ledger to validate. Wouldn\u2019t they need\n\nA) a central ledger to grab and validate locally\n\nOr\n\nB) some sort of communication protocol (which would mean a server storing connected nodes).\n\nI\u2019m sure I\u2019m missing something really simple, like I said, I\u2019m an absolute beginner in all of this. Any expert out there that can help?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iahbyr6",
+                    "author": "Rannasha",
+                    "score": 10,
+                    "created_utc": 1653865553.0,
+                    "response": "When a new client is first started, it will connect to a number of peers that are hardcoded in the software. If you want, you can override this by manually providing addresses to other nodes.\n\nFrom that point on, the client will exchange lists of peers it knows are online with all the peers it is connected to. Each time the client is restarted, it will use its list of known peers, ordered by when they were last seen online and with some randomization to prevent always getting the same ones, to set up connections. At this stage, it will no longer use the hardcoded peers as those are only for the very first startup or as a last resort fallback.\n\nA fresh client will request the full blockchain from the peers it is connected to and it will validate everything it receives to ensure it's all correct.\n\nSo there's a little bit of centralization in the bootstrapping process where the client first discovers peers to connect with. This is hard to avoid, because a completely new client needs to have some starting point. But, if you want, you can always override the predetermined starting point by providing your own set of peer addresses.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iahcldm",
+                            "author": "Muted_Original",
+                            "score": 2,
+                            "created_utc": 1653865885.0,
+                            "response": "Ok, that\u2019s the part I was missing. Thanks so much!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iamwxne",
+                    "author": "benjaminsjsjs65",
+                    "score": 5,
+                    "created_utc": 1653980296.0,
+                    "response": "I hope you sorted it right. by the way, you should check out nakamoto too. i am sure you will be happy",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iamwn8r",
+                    "author": "Cryptohunterss",
+                    "score": 4,
+                    "created_utc": 1653980050.0,
+                    "response": "My advice to you is to check out the nakamoto games site.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iamyw31",
+                    "author": "kubraturna",
+                    "score": 4,
+                    "created_utc": 1653981987.0,
+                    "response": "When I play other games, it is not possible to earn money, but nakamato again showed the difference because it is really possible to make money",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaihz4i",
+                    "author": "BTCMachineElf",
+                    "score": 3,
+                    "created_utc": 1653888385.0,
+                    "response": ">Mainly, I\u2019m wondering how each node in the blockchain receives a new copy of the ledger to validate. \n\nHopefully it's understood that blockchain *is* the ledger.\n\nNodes propagate blocks to eachother in a purely peer-to-peer decentralized manner much like the bittorrent network.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iajjow4",
+                            "author": "Muted_Original",
+                            "score": 5,
+                            "created_utc": 1653917504.0,
+                            "response": "Yes, that part is understood. My main question was where the starting point is. From a technical standpoint, a 3rd party must initialize the P2P discovery process, or else the P2P clients must have a hard coded path to an always-online client which can point them to other clients. In the case of Bitcoin, it seems it is the latter :)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iajlymb",
+                                    "author": "BTCMachineElf",
+                                    "score": 3,
+                                    "created_utc": 1653918694.0,
+                                    "response": "Ah, yes. There is a DNS seed. That is the extent of Bitcoin's centralization, and it has no power to influence the network.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iamzsds",
+                    "author": "Street-Opportunity38",
+                    "score": 3,
+                    "created_utc": 1653982784.0,
+                    "response": "There are P2E games recently, I discovered NAKATOMO GAMES and nakacoin among them, you can have a look if you wish.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iahbctt",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653865238.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ian26rp",
+                    "author": "LegitimateFun569",
+                    "score": 1,
+                    "created_utc": 1653984968.0,
+                    "response": "I was wondering, I looked, it's really nice project Nakatomo Games",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

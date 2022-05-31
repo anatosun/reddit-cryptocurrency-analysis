@@ -1,0 +1,172 @@
+{
+    "subreddit": "btc",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v0m6s9",
+            "title": "SPV Wallet vs Bitcoin.com Wallet",
+            "url": "https://www.reddit.com/r/btc/comments/v0m6s9/spv_wallet_vs_bitcoincom_wallet/",
+            "author": "Aggravated-Bread489",
+            "created_utc": 1653863834.0,
+            "score": 15,
+            "num_comments": 20,
+            "subreddit": "btc",
+            "selftext": "Can someone explain the difference between and SPV wallet like electron cash and a \"regular wallet\" like bitcoin.com?\n\nDoes the bitcoin.com wallet require more trust than an SPV wallet? If so, why?\n\nIt seems to me like the bitcoin.com wallet works great and I hold my own keys, why would I even need an SPV wallet?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iahbo6v",
+                    "author": "2q_x",
+                    "score": 8,
+                    "created_utc": 1653865401.0,
+                    "response": "In brief, an SPV wallet gets information obtained from servers to validate that the transaction is in the block. With an API wallet, you're trusting the service to do that.\n\nIf a malicious ElectrumX or Fulcrum server provided you with a transaction that wasn't in a block, the wallet should show that it's bogus automatically.  \n\nIf there was a problem with bitcoin.com's API, you'd know when you went to spend coins that weren't actually there.\n\nIf there was ever an issue, in this case, you could simply import your keys into an SPV wallet to get that security.  I think bitcoin.com uses the m/44'/0'/0' BIP44 derivation path, for historical reasons, which you may need to import into an SPV wallet.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaiqh6j",
+                            "author": "Aggravated-Bread489",
+                            "score": 1,
+                            "created_utc": 1653894982.0,
+                            "response": "So bitcoin.com is running a full node and they have a server that verifies and sends transactions from that node, right?\n\nIs electron cash running a full node as well? Or is their server just downloading the blockchain?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iajk4de",
+                                    "author": "2q_x",
+                                    "score": 2,
+                                    "created_utc": 1653917736.0,
+                                    "response": "Not sure about the internals of bitcoin.com, I would imagine they are running multiple full nodes.\n\nThere is a different type of service, a server layer specifically for SPV between clients and full nodes.  These servers provide the ElectrumX protocol for SPV clients, by connecting to full nodes to cache the data in advance.\n\nThese are the servers for bitcoin cash:\nhttps://1209k.com/bitcoin-eye/ele.php?chain=bch\n\nand btc:\nhttps://1209k.com/bitcoin-eye/ele.php?chain=btc\n\nFulcrum is one such service developed for BCH, Rostrum and Electrum Verde are others.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iajlwea",
+                                            "author": "Aggravated-Bread489",
+                                            "score": 1,
+                                            "created_utc": 1653918663.0,
+                                            "response": "So are we still trusting that Electron Cash isn't a bad actor if we use an SPV wallet? Or does the SPV wallet make it trustless?\n\nBasically, can those servers be manipulated? Or will our SPV wallet confirm that the data has not been manipulated when it is validating transactions?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iajrmkz",
+                                                    "author": "2q_x",
+                                                    "score": 1,
+                                                    "created_utc": 1653921482.0,
+                                                    "response": "If the electrumX/fulcrum servers are giving bad or manipulated data, an SPV wallet should catch it.  \n\nYou can trust Electron Cash will catch it, or you can review the code. Or you could try to make a case that it doesn't catch, which might be interesting.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "iajs64u",
+                                                            "author": "Aggravated-Bread489",
+                                                            "score": 1,
+                                                            "created_utc": 1653921738.0,
+                                                            "response": "Thanks for your responses!\n\nSo it sounds like if I run and SPV wallet I don't need to entirely trust Electron Cash servers because my wallet will validate the transactions.\n\nWith a bitcoin.com style wallet, I am fully trusting that bitcoin.com is not malicious and I would have no way of verifying until I discover that my coins aren't actually there.\n\nThanks!",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "iak44um",
+                                                                    "author": "2q_x",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653927183.0,
+                                                                    "response": "Right, the people who maintain the Electron-Cash wallet also run a few ElectrumX servers, but many more are running ElectrumX servers that serve SPV data, clearnet and .onion, completely different version written in Rust, a new high-perf C++, but you don't have to trust people running ElectrumX servers about stealing your coins if the SPV wallet checks the data correctly.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iahzl92",
+                    "author": "tl121",
+                    "score": 7,
+                    "created_utc": 1653877882.0,
+                    "response": "If the bitcoin.com wallet goes down you will lose access to your funds until it comes back up.  An SPV wallet like electroncash will switch between servers automatically if one goes off line.\n\nSPV wallets, e.g. electroncash, also support hardware wallets, which are important security tools if you have large amounts of cryptocurrency to keep safe.\n\nI use electron cash with a hardware wallet to hold most of my funds.  I use the bitcoin.com wallet for pocket change, and use this from my phone because it is much safer than carrying my hardware wallet around. It is easy, fast and cheap to move money between these two  wallets.\n\nIt is also possible to recover funds put in one of these wallets using completely different wallet software, e.g. bitcoin.com vs. electroncash or other wallets, as all the ones you should use will accept the same seed words.   (As others have pointed out there may be various magic incantations, a.k.a. derivation strings, required to effect this.)\n\nIt\u2019s fine to play around with various wallets and use them for toy amounts of transactions, but it is a good idea to test recovery funds across multiple wallets from seed words before playing with significant amount of funds.  For life changing amounts of funds you definitely need to use a hardware wallet.  Since you don\u2019t want to be subject to a [\u201cfive dollar wrench\u201d](https://xkcd.com/538/) attack you should keep the bulk of your funds physically in a safe place and use a separate wallet for daily spending.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iakc4ps",
+                            "author": "as364136341h424",
+                            "score": 1,
+                            "created_utc": 1653930697.0,
+                            "response": "Most light wallets get their blockchain data from APIs offered by public, centralized servers.\n\nThis has pros and cons. It's fast and convenient, but at the cost of security, resilience, and privacy.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iaix6z4",
+                            "author": "YeOldDoc",
+                            "score": -1,
+                            "created_utc": 1653900967.0,
+                            "response": "> If the bitcoin.com wallet goes down you will lose access to your funds until it comes back up.\n\nCould you explain this in more detail because I am pretty sure /u/MemoryDealers and u/jessquit will disagree.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaji5p1",
+                                    "author": "tl121",
+                                    "score": 2,
+                                    "created_utc": 1653916675.0,
+                                    "response": "The bitcoin.com wallet uses a dedicated cloud service run by bitcoin.com.  The app in your phone does very little on its own, the main function being keeping the seed words and private keys. If you disconnect your internet service you can observe this.\n\nThe electroncash SPV wallet has more functionality performed locally.  For example, your phone keeps all the details of past transactions locally.  You can compose new transactions locally, scan QR codes, etc.  You can see the difference while your internet service is disconnected. In addition, the electron cash wallet comes configured with a list of servers run by separate organizations or people. If one of these goes down your app will automatically switch to another server on the list.  If all the servers on the list go down you can add new servers to the list manually.  You can even select a private server you run yourself on your own property, which is what I have done, running a BCHN node behind a Fulcrum SPV server on a Raspberry Pi.\n\nI have never seen my bitcoin.com wallet down except when my personal internet service was out for some reason.  This means that Roger Ver is doing a good job with his servers.  But there are many ways cloud services can go down despite the best efforts of operators.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iakmcv3",
+                                            "author": "YeOldDoc",
+                                            "score": 1,
+                                            "created_utc": 1653935278.0,
+                                            "response": "Thanks for the detailed response, if you have the keys from the bitcoin.com wallet, why would you lose access to the funds until their servers come back up? AFAIK the funds are not in a 2/2-multisig or similar structure that would require their cooperation?",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iajn8uv",
+                    "author": "jinkv06",
+                    "score": 0,
+                    "created_utc": 1653919350.0,
+                    "response": "By contrast, SPV wallets connect to the same network as full nodes, and keep connections to many peers at a time.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iajx0un",
+                            "author": "ShadowOrson",
+                            "score": 2,
+                            "created_utc": 1653923993.0,
+                            "response": "hey u/MobTwo ,the comment I am replying to I suspect is bot/ai.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iakj989",
+                                    "author": "MobTwo",
+                                    "score": 2,
+                                    "created_utc": 1653933875.0,
+                                    "response": "Thanks.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

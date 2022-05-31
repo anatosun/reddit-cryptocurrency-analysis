@@ -1,0 +1,35 @@
+{
+    "subreddit": "Binance",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v0c71l",
+            "title": "How to calculate as precise as possible the amount you receive in a spot order api",
+            "url": "https://www.reddit.com/r/binance/comments/v0c71l/how_to_calculate_as_precise_as_possible_the/",
+            "author": "Massive_Ad7038",
+            "created_utc": 1653834100.0,
+            "score": 1,
+            "num_comments": 7,
+            "subreddit": "binance",
+            "selftext": "I'm using the binance API from Python to place spot orders, I've noticed a difference between how much I expect to receive and how much I receive.\n\nFor example I want to trade 1000 ADA with the pair ADA/BTC with a value of 0.000016. I've got a standard account without BNB fee discount, so the fee should be 0.10%\n\nNew_btc_amount = (1000 * 0.000016) * 0.999\n\nOtherwise if I want to trade 0.01 BTC in the same pair I do:\n\nNew_ada_amount = (0.01 / 0.000016) * 0.999\n\nAm I missing something? Is there a round problem? How can i calculate this with more precise results?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iafhut4",
+                    "author": "genesis_crazy_one",
+                    "score": 1,
+                    "created_utc": 1653834413.0,
+                    "response": "Each pair have different precision , it's mentioned somewhere in API documentation",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

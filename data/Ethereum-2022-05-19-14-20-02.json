@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/ethereum/comments/ut436q/i_built_a_universal_nft_virtual_machine/",
             "author": "skogard",
             "created_utc": 1652968870.0,
-            "score": 66,
-            "num_comments": 28,
+            "score": 73,
+            "num_comments": 37,
             "subreddit": "ethereum",
             "selftext": "Hey Reddit, just wanted to share something cool I\u2019ve been working on.\n\nIt\u2019s an NFT protocol, but different from the usual NFT contracts you\u2019ve seen. \n\nMost NFT contracts hardcode their minting logic directly into the contract. What I\u2019ve built (It\u2019s called \u201cCell\u201d) is not really an \u201cNFT contract\u201d, but an \u201cNFT virtual machine contract\u201d. There is no NFT collection-specific logic built into the contract. The contract acts as an operating system that interprets and executes offchain signed messages called \u201cscript\u201d and authorizes whether to mint them into NFTs or not. Which means you can use this offchain scripts to print as many NFTs as you want for free. And it lets you do all that without relying on a 3rd party. If you want to quickly see what it is, I recommend checking out this video: https://www.youtube.com/watch?v=AVvwy3JuCKo\n\nAnother important part of Cell is its \u201cuniversal tokenId\u201d system. Unlike most NFT collections where the NFT creator arbitrarily assigns tokenIds, the universal tokenId ensures that every single unique NFT will have EXACTLY the same tokenId across space and time, regardless of which blockchain it\u2019s stored on, regardless of which contract it\u2019s stored on, and regardless of when it was minted, both relatively and absolutely. This is achieved by implementing an onchain IPFS encoder that makes the NFT tokenIds \u201cIPFS native\u201d. Essentially, the tokenId is a UINT256 encoded version of the tokenURI. You can imagine how this can make the management of cross-chain swaps and managements of NFTs much simpler, as well as making the management of L1-L2 NFT bridging much simpler. Just to be clear I have no interest in building these bridge systems myself, but am thinking about various options to experiment or integrate with existing bridge/L2 solutions, and excited to see where we can go.\n\nLastly, I\u2019ve built this protocol to be a completely open and free public utility protocol, with no owner. Any company or hobbyist can just start using it without worrying about licensing issues, just treat it like node.js or ruby on rails.\n\nIf you want to learn more, check out:\n\n- an intro tweet thread https://twitter.com/skogard/status/1526605161610858496?s=20&t=FJBdXteejVat06Bi-CgkcA\n- website: https://cell.computer\n\nIt\u2019s currently in beta on Rinkeby with fully open sourced/verified code (more in the tweet thread), and planning to go live on ETH mainnet soon. \n\nWould appreciate any feedback. Thanks!",
             "stickied": false,
@@ -58,7 +58,7 @@
                         {
                             "id": "i9aiyz1",
                             "author": "skogard",
-                            "score": 7,
+                            "score": 8,
                             "created_utc": 1653022512.0,
                             "response": "> Maybe this is just my personal bias, but doesn't it defeat the point of smart contracts if the dev can make whatever changes they like to them? By doing this it seems like you make yourself a point of centralized control and users have to trust you to the same extent that they would if you were instead doing all this through an offchain server.\n\nYou and I would get along. Yes, I completely agree with your point, and I am pretty obsessive about decentralization and getting rid of trusted 3rd parties. In fact, for the same reason you were concerned about this, you will absolutely love what I am doing here with Cell.\n\nCell is completely trustless and ownerless. But you were wondering how that can be:\n\n> I notice that your contract implements upgrade functionality. \n\nLong story short, Cell is making use of Openzeppelin's ERC721Upgradeable as its base, which may have given you that impression. But ERC721Upgradeable does NOT necessarily mean it's an upgradeable contract.\n\nInstead, it's simply a template contract used to implement a \"proxy pattern\" smart contract architecture. Originally the proxy pattern was created for mutable and upgradeable contracts (which I dislike for the same reason you brought up), but since then, people have come up with some other useful proxy patterns. \n\nOne such pattern is what's called a \"minimal proxy\" (https://eips.ethereum.org/EIPS/eip-1167), which is ABSOLUTELY IMMUTABLE and super cheap to deploy. Cell uses the minimal proxy pattern so people can easily and cheaply deploy contracts like starting a blog (at the time of writing, it costs around $10 to deploy a cell contract, not thousands of dollars).\n\nTherefore, there is no admin for this protocol once deployed, and anyone can openly use it like public goods.\n\nOn top of that, many people don't realize that it's not enough to simply decentralized the protocol. The entire workflow should be decentralizable. I've built everything to make sure everything is portable and decentralizable as well.\n\nHope this makes sense. If you are interested in this concept, feel free to check out the intro documentation https://intro.cell.computer/ you will notice that there are many details here and there to ensure that there is zero reliance or dependence on some third party.",
                             "depth": 2,
@@ -172,45 +172,7 @@
                                             "created_utc": 1652991226.0,
                                             "response": "it is 100% ERC721. \n\nI think you misunderstand what this is and how this is different. If you are really interested, please read through the documentation https://intro.cell.computer",
                                             "depth": 4,
-                                            "comments": [
-                                                {
-                                                    "id": "i99eba4",
-                                                    "author": "KlopKlop10293",
-                                                    "score": -2,
-                                                    "created_utc": 1653001146.0,
-                                                    "response": ">it is 100% ERC721.\n\nErc721 is an Eth standard, you cant call with the same name just because you claim it has the same methods\n\n\\> I think you misunderstand what this is and how this is different. \n\nhow did I misunderstan? Any other nft contract have mint that can be called by anyone on chain, literally just out the \\_mint on public and anyone not just the creator can call it.",
-                                                    "depth": 5,
-                                                    "comments": [
-                                                        {
-                                                            "id": "i9a1ah3",
-                                                            "author": "Perleflamme",
-                                                            "score": 2,
-                                                            "created_utc": 1653012630.0,
-                                                            "response": ">Erc721 is an Eth standard, you cant call with the same name just because you claim it has the same methods\n\nActually, you can. That's the very concept of standards and the reason for standards to exist in the first place. \n\nWhatever implements a standard, if it has the same behaviors described by the standards, then it matches the same standards. You can then completely ignore implementation details and abstract it away.\n\nFor instance, the fact a standard is first described on Ethereum doesn't mean it can only exist on Ethereum.",
-                                                            "depth": 6,
-                                                            "comments": []
-                                                        },
-                                                        {
-                                                            "id": "i9al2lq",
-                                                            "author": "1solate",
-                                                            "score": 2,
-                                                            "created_utc": 1653023964.0,
-                                                            "response": "> Erc721 is an Eth standard, you cant call with the same name just because you claim it has the same methods\n\nIt's a \"standard\" that defines an *interface*.",
-                                                            "depth": 6,
-                                                            "comments": []
-                                                        },
-                                                        {
-                                                            "id": "i9au5fr",
-                                                            "author": "T0Bii",
-                                                            "score": 2,
-                                                            "created_utc": 1653030957.0,
-                                                            "response": ">Erc721 is an Eth standard, you cant call with the same name just because you claim it has the same methods\n\nThat's exactly what those standards are for. They're interfaces so all other smart contracts can deal with erc721 tokens the same way.",
-                                                            "depth": 6,
-                                                            "comments": []
-                                                        }
-                                                    ]
-                                                }
-                                            ]
+                                            "comments": []
                                         }
                                     ]
                                 }

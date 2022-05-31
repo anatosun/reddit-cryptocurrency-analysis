@@ -1,0 +1,640 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "l3b176",
+            "title": "If you have a hardware wallet, does it have to be plugged in to receive BTC, or will it just download the information the next time you connect? If someone could expand on how this works, that would be great.",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/l3b176/if_you_have_a_hardware_wallet_does_it_have_to_be/",
+            "author": "benjiTRAVEL",
+            "created_utc": 1611403890.0,
+            "score": 173,
+            "num_comments": 76,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "gkd7ox6",
+                    "author": "FieserKiller",
+                    "score": 164,
+                    "created_utc": 1611408359.0,
+                    "response": "basic bitcoin transactions work like this: You give someone a public address of yours. lets say its ABC. \n\nThen someone creates a transaction which basically says \"I transfer 1 BTC to anyone who can prove that he owns ABC\". This is saved in the blockchain. \n\nThis 1 BTC is now yours because you are the only one who can prove that ABC is your address. \n\nNow les say you want to send  this 1 BTC to my Address XYZ. Then you create a transaction which says: \"Here is the proof I own 1 BTC on address ABC and I transfer this 1 BTC to anyone who can prove that he owns XYZ\". \n\nWhat your hardware wallet does is it creates the proof that you own ABC by signing the transaction. It can create a valid signature because it knows the private key to ABC.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gkdkj5v",
+                            "author": "Eeji_",
+                            "score": 34,
+                            "created_utc": 1611411964.0,
+                            "response": "so you don't really need a hardware wallet so long as you have a private key?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "gkdrvb7",
+                                    "author": "pirateninjamonkey",
+                                    "score": 61,
+                                    "created_utc": 1611414103.0,
+                                    "response": "A hardware wallet protects your private key.  You can use a software wallet on any computer, but if you have some spyware and someone can pull your private key from your computer, you instantly lose everythnig without any way or method of getting it back.   A hardware wallet makes it so your private key never shows on your computer so you can't get hacked basically.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "gkg1cwv",
+                                            "author": "notapersonaltrainer",
+                                            "score": 4,
+                                            "created_utc": 1611435888.0,
+                                            "response": "Could spyware steal the signature you make with the hardware wallet? I get that the hardware wallet keeps the key off the computer but when it \"signs\" through the computer can't whatever the \"signature\" is be stolen? I still don't get what the signature actually is and why that part isn't hackable like a software wallet would be.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "gkg9igx",
+                                                    "author": "Doc-984",
+                                                    "score": 6,
+                                                    "created_utc": 1611438355.0,
+                                                    "response": "A signature is visible to everyone. It's a way of proving that you are the owner of that key. What happens is you encrypt some text with the private key and others can decrypt it with your public key.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "gkh646m",
+                                                    "author": "pirateninjamonkey",
+                                                    "score": 3,
+                                                    "created_utc": 1611451132.0,
+                                                    "response": "No one can steal your private keys with spyware on a computer with a hardware wallet. It is a complicated process, but they cant.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "gkduwdt",
+                                    "author": "Advanced-Prototype",
+                                    "score": 8,
+                                    "created_utc": 1611414792.0,
+                                    "response": "Yes. The hardware wallet is for securely storing your keys and for conveniently accessing them when performing transactions. \n\nYou don\u2019t want to store or type you private key using your computer because it may be infected with malware specifically designed to steal your crypto keys. The hardware wallet stores the keys for you and allows safe access.\n\nYou could, in theory, write your keys on a piece of paper but you will lose all your crypto if the paper is lost, damaged, or a single digit/letter misspelled. *not recommended *",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "gkkbe4m",
+                                            "author": "Son_ofA_Mitch",
+                                            "score": 3,
+                                            "created_utc": 1611495825.0,
+                                            "response": "So how should one secure their key with a hardware wallet? Trezor etc recommend writing it down and storing safely in case you lose the wallet to recover. What is the best practise if not keeping a backup?\n*edit I think I\u2019m mistaking keys for recovery key. I\u2019m so new to this and working through it.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "gkdzz4f",
+                                    "author": "audigex",
+                                    "score": 10,
+                                    "created_utc": 1611415959.0,
+                                    "response": "Not at all - the key is the important part, a hardware wallet is just a good way to keep your key safe",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "gkdt32c",
+                                    "author": "BitAmp-Official",
+                                    "score": 5,
+                                    "created_utc": 1611414381.0,
+                                    "response": "You don't need to do anything ever as long as you own the private key (and as well the public addresses you'd need to give people to send you BTC).\n\nYou only need to connect to the network if you want to broadcast a transaction (that is, to spend your BTC or send it somewhere else). You in fact could even create a tx, sign it, and broadcast it from another device.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "gkeft6h",
+                                            "author": "PandaKOST",
+                                            "score": 4,
+                                            "created_utc": 1611419584.0,
+                                            "response": "OP, to the point above, you just need the public address/QR code to receive. Once you have this, and it\u2019s good practice to create a new one for every transaction though not strictly necessary, you don\u2019t need the hardware wallet. So for example, you can create a few receiving addresses with the trezor, keep a photo on your phone, use the photo to receive BTC at some other time/location, then delete the photo. The private keys corresponding to each public address are stored on the trezor, which you\u2019d need to plug in to send.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "gkj0xl2",
+                                                    "author": "BitAmp-Official",
+                                                    "score": 1,
+                                                    "created_utc": 1611483459.0,
+                                                    "response": "Agreed. In fact, perfect for storing, since you never even need to fire it up or ever access it. Just keep a series of public addresses or QR codes.\n\nYou may only need to do maintenance by consolidating inputs every now and then though (unless you don't mind fee bloat).",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "gknmxs8",
+                                                            "author": "Misformisfortune",
+                                                            "score": 1,
+                                                            "created_utc": 1611536033.0,
+                                                            "response": "How would consolidating inputs reduce fees?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "gksuemz",
+                                                                    "author": "BitAmp-Official",
+                                                                    "score": 3,
+                                                                    "created_utc": 1611644660.0,
+                                                                    "response": "Every input takes up data. Think of it as different coins or different notes. A single $10 note takes up less space than 10 pieces of $1 notes. Miner fees in Bitcoin are paid based on your transaction size, ie., the amount of data it takes up. Because every Bitcoin block has a size limit, the bigger your transaction's size, the more you have to pay to have it included (confirmed). During low network use, best to consolidate your inputs into single ones.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "gkdlkcl",
+                                    "author": "Significant_Swan_320",
+                                    "score": 1,
+                                    "created_utc": 1611412230.0,
+                                    "response": "Well what can I actually do if I own the asset, but I am not interested in going to the trading platform at the moment, could someone please give me advice",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "gkds3i6",
+                                            "author": "pirateninjamonkey",
+                                            "score": 3,
+                                            "created_utc": 1611414155.0,
+                                            "response": "Where is it now?  If it is on your computer, I'd buy a hardware wallet, and transfer it there.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "gkfr3j9",
+                                                    "author": "jimmyz561",
+                                                    "score": 1,
+                                                    "created_utc": 1611432609.0,
+                                                    "response": "I have a ballet wallet. It\u2019s pretty nice.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "gkdset3",
+                                    "author": "Significant_Swan_320",
+                                    "score": 1,
+                                    "created_utc": 1611414225.0,
+                                    "response": "Yes",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "gkecdby",
+                            "author": "nickname432",
+                            "score": 5,
+                            "created_utc": 1611418833.0,
+                            "response": "That's a neat way to describe it!",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "gkg12g2",
+                            "author": "notapersonaltrainer",
+                            "score": 1,
+                            "created_utc": 1611435778.0,
+                            "response": "What exactly is the signature? And why can't that signature be stolen by spyware?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "gkgi4fh",
+                                    "author": "FieserKiller",
+                                    "score": 2,
+                                    "created_utc": 1611441432.0,
+                                    "response": "A valid cryptographic signature is data which can only be created by the owner of the private key but - and thats the whole trick - everyone can check if its valid with the public key.  \n[https://www.tutorialspoint.com/cryptography/cryptography\\_digital\\_signatures.htm](https://www.tutorialspoint.com/cryptography/cryptography_digital_signatures.htm)  \nSo you create the transaction to move 1 BTC somewhere and broadcast it to the network. The miner sees that this transaction is valid, because only the owner of the adresses private key could have signed it so he puts the transaction into next block.\n\nEveryone can steal signatures because they are public in the blockchain, but old signatures are of no use. you can't alter a transaction because then the transaction data changes and the signature becomes invalid.  Only the private key owner would be the one who could create an new valid signature for a modified transation.\n\nAnd thats why hardware wallets are very safe against malware: the private key never leaves the device. The software sends an unsigned transaction to the hardware wallet and receives a signed one back.   \nWhat malware could do in the worst case is alter the unsigned transaction before it is sent to the hardware wallet, eg by changing the receiving address to attackers address.  \n\nAnd thats why hardware wallets usually show you the receiving address on their display and you have to confirm manually that it really is the address you want to transfer to.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "gkdzs9t",
+                    "author": "audigex",
+                    "score": 29,
+                    "created_utc": 1611415916.0,
+                    "response": "Imagine a street with houses that have every possible address. You have a key that allows you to open one of those houses\n\nYou don\u2019t need to be stood next to the house in order for someone to send you mail, you only need your key when you want to go to your house and use your mail: until then it will sit at your house waiting for you\n\nThat\u2019s essentially how Bitcoin keys work",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gkcuar1",
+                    "author": "armantheparman",
+                    "score": 22,
+                    "created_utc": 1611404435.0,
+                    "response": "Read this to see how bitcoin works then you'll realise your hww has no bitcoin in it and \"receives\" nothing.\n\nhttps://armantheparman.com/a-not-too-technical-overview-of-this-bitcoin-thing/",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gke7qcr",
+                            "author": "MrBoosure",
+                            "score": 12,
+                            "created_utc": 1611417813.0,
+                            "response": "I'm so glad you said that (receives nothing).  Brilliant! Now I get it.\nEverything (transaction) is stored on the block chain, encrypted, and if one ever loses their private key, the bitcoin stays encrypted, never to be claimed again.\nIs this correct?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "gkeee15",
+                                    "author": "haight6716",
+                                    "score": 8,
+                                    "created_utc": 1611419270.0,
+                                    "response": "Yes, except the word \"encrypted\" which implies secrecy. The transactions are public, but \"cryptographically signed\" by the sender. Other than that terminology, what you said is exactly right.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "gken3m3",
+                                            "author": "armantheparman",
+                                            "score": 5,
+                                            "created_utc": 1611421309.0,
+                                            "response": "Cryptographic signature vs encryption confuses a lot of people until they really look into it",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "gkg6s79",
+                                                    "author": "MrBoosure",
+                                                    "score": 3,
+                                                    "created_utc": 1611437648.0,
+                                                    "response": "I get it, thanks!!!!",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "gkeipob",
+                                            "author": "MrBoosure",
+                                            "score": 3,
+                                            "created_utc": 1611420209.0,
+                                            "response": "Awesome!!!!",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "gkgzhji",
+                                    "author": "bird2473",
+                                    "score": 3,
+                                    "created_utc": 1611448259.0,
+                                    "response": " [Billions in lost Bitcoin: the buried treasure that people can never get back : Planet Money : NPR](https://www.npr.org/2020/12/30/951460511/bitcoin-losers-classic) \n\nThis episode of Planet Money covers how much Bitcoin is lost because of people losing their private key. Definitely worth a listen.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "gkdiunz",
+                    "author": "exab",
+                    "score": 12,
+                    "created_utc": 1611411528.0,
+                    "response": "Coins exist on the blockchain, not in the wallets. Wallets manage keys, which access the coins.\n\nNo, wallets don't need to be plugged or online to receive coins.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gkgxh50",
+                            "author": "squidjibo1",
+                            "score": 3,
+                            "created_utc": 1611447393.0,
+                            "response": "So you never send bitcoin to your hardware wallet, or to cold storage, you are just sending it to an address that is publicly available, but you have the private keys for that address stored on your wallet. Cool.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "gkcux2j",
+                    "author": "carnosaur",
+                    "score": 9,
+                    "created_utc": 1611404616.0,
+                    "response": "A hardware wallet doesn't actually connect to the internet at all - this is part of the reason it's so safe. All the device does is store the keys you use to access your BTC, which is stored on the blockchain. A \"cold wallet\" is an offline wallet like a hardware wallet, versus a \"hot wallet\" which stores your keys online and is less secure.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gkdsygm",
+                            "author": "SquidProJoe",
+                            "score": 5,
+                            "created_utc": 1611414350.0,
+                            "response": "A trezor one would be considered a hardware wallet, right? Is it a hot wallet or a cold wallet? Also it doesn\u2019t connect to the internet? But I plug it in and go to the trezor website and I\u2019ll my info is there. Could you explain?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "gke3ui9",
+                                    "author": "DamnItBrother",
+                                    "score": 3,
+                                    "created_utc": 1611416849.0,
+                                    "response": "You are the only person that has your 24 word seed phrase generated when you create your wallet like the trezor wallet. You could in theory lose the treasure wallet and as long as you have your 24 words written down on a piece of paper somewhere safe you'll always be able to access that wallet from other companies as well such as ledger and that's just in case someone steals your physical wallet and you still have your private keys written down on your paper in a safe place hopefully fireproof",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "gkef471",
+                                    "author": "nickname432",
+                                    "score": 1,
+                                    "created_utc": 1611419433.0,
+                                    "response": "Cold wallet means that it never connects to the internet I think. Mostly all hardware wallets are cold wallets I think.\n\nHot wallets are typically software wallets.\n\nYour wallet never goes online. It only stores your private key. When you send a transaction, it is signed via your hardware wallet. The wallet itself is never online though. Your wallet is basically your private key. Your public key is derived from your private key. Addresses are derived from the public key.\n\nSoftware wallets store your private key on your computer, which is connected to the internet. That's dangerous. Hardware wallets always keep your private key offline.\n\nCheck out Cold Card. It's an air gapped hardware wallet. Maybe this will make it more clear to you.\n\nSorry, I'm also swimming a bit here ;))",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "gkek1n2",
+                            "author": "rowebenj",
+                            "score": 3,
+                            "created_utc": 1611420555.0,
+                            "response": "Just an FYI, you're TRUSTING a company not to connect your wallet to a server. Even with a cold wallet like Coldcard, you're trusting Coinkite not to connect to a server if you decided not to air-gap your Coldcard.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "gke34ks",
+                    "author": "GiletScotch",
+                    "score": 3,
+                    "created_utc": 1611416643.0,
+                    "response": "Follow up question: is it possible (or would the be dumb?) to make a backup of whats stored on a cold wallet?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gkekg3x",
+                            "author": "rowebenj",
+                            "score": 3,
+                            "created_utc": 1611420662.0,
+                            "response": "Most wallets allow you to make backups. You must treat these backups the same as you'd treat your physical wallet or your passphrase though.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "gkf9hpc",
+                    "author": "BTCMachineElf",
+                    "score": 3,
+                    "created_utc": 1611427134.0,
+                    "response": "Your wallet software can generate receive addresses without the hardware wallet plugged in (using your public key). The bitcoin gets sent to that address on the blockchain locked to your private key. You only need to plug in your hardware device to send bitcoin.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gkgyzxh",
+                    "author": "going_up_stream",
+                    "score": 3,
+                    "created_utc": 1611448048.0,
+                    "response": "The hardware wallet just keeps your keys to sign transactions. You don't need to have your wallet connected to see your balance or receive BTC.\n\nWhen you want to send btc you will need to connect the wallet. Your computer will send the potential transaction to the device, the device will ask for your confirmation, then it will sign the transaction and give it back to your computer. Your computer will then broadcast the transaction.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gkdvpj5",
+                    "author": "Significant_Swan_320",
+                    "score": 2,
+                    "created_utc": 1611414981.0,
+                    "response": "Yes, all the coins are very safe in my warm hand",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gkeboew",
+                    "author": "erittainvarma",
+                    "score": 2,
+                    "created_utc": 1611418685.0,
+                    "response": "Don't think crypto wallets as normal wallets, as they are not. The closest analogy is probably email service, like google's gmail, but this is still a bad analogy.\n\n&#x200B;\n\nYou crypto wallet only contains your private keys. The keys control the funds you have in the blockchain. The most important thing in crypto is to keep your private keys (= seed words) safe. That's what hardware wallets are designed for. To be the easiest and safest way to control your private keys, meaning controlling your funds. This is why the seed words you get are so important and it's important you store them in a very safe place and never take digital backup of them.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gkflfyu",
+                    "author": "jobby23",
+                    "score": 2,
+                    "created_utc": 1611430823.0,
+                    "response": "No. The BTC is on the blockchain. The hardware just generates keys for when you want to move your BTC. You could trash your wallet and still do it all, as long as you have your seed phrase. To receive BTC, the sender just needs your wallet address, which is on the blockchain, not on your hardware wallet.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gkgenw2",
+                    "author": "kalkisrevenge",
+                    "score": 2,
+                    "created_utc": 1611440086.0,
+                    "response": "No, it doesn't at all. If the sender has your correct wallet information, it will be stored to the blockchain. You will see the transaction posted next time you connect.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gkgw5lg",
+                    "author": "slump_g0d",
+                    "score": 2,
+                    "created_utc": 1611446854.0,
+                    "response": "Everything is done on the blockchain, the only thing a hardware wallet does is protect the private key.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gkg1bo3",
+                    "author": "BeneficialFly5857",
+                    "score": 2,
+                    "created_utc": 1611435875.0,
+                    "response": "Love all the strange analogies that don\u2019t answer a simple yes or no question",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gkgwbn8",
+                            "author": "slump_g0d",
+                            "score": 1,
+                            "created_utc": 1611446927.0,
+                            "response": "OP asked to expand further",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "gkgyp2q",
+                                    "author": "BeneficialFly5857",
+                                    "score": -1,
+                                    "created_utc": 1611447918.0,
+                                    "response": "Not sure talking about Bitcoin being like a house key is helping explain it",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "gkgz6l9",
+                                            "author": "slump_g0d",
+                                            "score": 1,
+                                            "created_utc": 1611448129.0,
+                                            "response": "Idk some analogies might help for those who don\u2019t yet understand bitcoin \ud83e\udd37\u200d\u2642\ufe0f",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "gkdv6sp",
+                    "author": "d3vrandom",
+                    "score": 1,
+                    "created_utc": 1611414861.0,
+                    "response": "no. transactions are recorded on the blockchain which is maintained by miners and watched over by full nodes. you don't need to be online to receive coins.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gke46m4",
+                            "author": "DamnItBrother",
+                            "score": 2,
+                            "created_utc": 1611416980.0,
+                            "response": "Could miners ever mine coins from someone's wallet? I don't get how mining works obviously lol.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "gkea0mp",
+                                    "author": "d3vrandom",
+                                    "score": 3,
+                                    "created_utc": 1611418312.0,
+                                    "response": "no they can't",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "gkdvhbm",
+                    "author": "Significant_Swan_320",
+                    "score": 1,
+                    "created_utc": 1611414929.0,
+                    "response": "Do I have to re-cache the who bucket of the transaction history",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gkebmks",
+                    "author": "Crypto4Canadians",
+                    "score": 1,
+                    "created_utc": 1611418673.0,
+                    "response": "No, doing so just allows you to generate a new receiving address for privacy purposes.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gkedrnc",
+                    "author": "nickname432",
+                    "score": 1,
+                    "created_utc": 1611419138.0,
+                    "response": "Your wallet does not have to be connected to the internet to receive funds.\n\nIf someone sends you btc, they broadcast this transaction via a node to the network, from where it will be included in one of the coming blocks. As long as you keep your private key private, the btc is now yours. As soon as you connect your wallet via a node (you can also run your own node), you can see that indeed, you have the btc.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gkez87y",
+                    "author": "TheElusiveNinJay",
+                    "score": 1,
+                    "created_utc": 1611424274.0,
+                    "response": "It does not need to. The public consensus is that, yes, it was a valid transaction and now whoever owns that address has those coins. Your wallet doesn't have to be online for that!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gkf3ort",
+                    "author": "nini1423",
+                    "score": 1,
+                    "created_utc": 1611425513.0,
+                    "response": "No, but you should really be using a fresh receive address every time you send Bitcoin to your hardware wallet for privacy purposes.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gkfkmr6",
+                            "author": "benjiTRAVEL",
+                            "score": 1,
+                            "created_utc": 1611430602.0,
+                            "response": "Can you expand or explain?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "gkfpfy8",
+                                    "author": "nini1423",
+                                    "score": 1,
+                                    "created_utc": 1611431949.0,
+                                    "response": "https://blog.trezor.io/wallet-accounts-and-addresses-bdfa6b66b037\n\n> By using different addresses for every transaction you are maintaining a high level of privacy, as you make it more difficult to track where your coins go. It is not possible to deduce that this and that address belong to the same account.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "gkhuu20",
+                    "author": "HenryTCat",
+                    "score": 1,
+                    "created_utc": 1611464090.0,
+                    "response": "Right, think of your keys as your email address and password. Your public key is like your email address and lets you receive email/BTC. Your private key is like your password - if you have it, you can retrieve your email. So if you don\u2019t keep your private key safe, it\u2019s like letting someone have your email password, etc. a hardware wallet is one way to keep your private key safe. \n\nIf you are smart and paranoid, you will also get a new public wallet / address every time you receive Bitcoin. This way nobody can track your movements in the blockchain or associate a large number of transactions with one wallet. The blockchain is encrypted/anonymous, but someone who was really trying could find you - especially if they sent you a little BTC and marked where it was on the blockchain, and from there just keep finding that key on the blockchain. \n\nAnyway.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "gkkfxj0",
+                            "author": "Son_ofA_Mitch",
+                            "score": 1,
+                            "created_utc": 1611496877.0,
+                            "response": "When you say \u201ckeys\u201d do you really mean the public/private addresses your wallet generates to send and receive? I get confused with keys/addresses etc. The key to me is the recovery key you set for your wallet backup. Or am I missing something? Thanks",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "gkksb52",
+                                    "author": "HenryTCat",
+                                    "score": 1,
+                                    "created_utc": 1611499607.0,
+                                    "response": "Yes, that\u2019s right.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "glkdmdr",
+                    "author": "goldenstyles888",
+                    "score": 1,
+                    "created_utc": 1612156253.0,
+                    "response": "Hi guys\n\nI just want to know how many coins can the wallet hold. For instance if I have like 1mil bitcoin, can a wallet hold it all?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "gkcscy6",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1611403890.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They mostly operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "h3v5xy7",
+                    "author": "Archipelag0h",
+                    "score": 1,
+                    "created_utc": 1625268652.0,
+                    "response": "So maybe instead of calling it a hardware wallet, we just refer to it as your hardware keys or hardware keyring? Like you\u2019d refer to your car keys or whatever",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

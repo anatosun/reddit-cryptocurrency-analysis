@@ -1,0 +1,104 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uzg8xy",
+            "title": "Questions about how Ethereum works",
+            "url": "https://www.reddit.com/r/ethereum/comments/uzg8xy/questions_about_how_ethereum_works/",
+            "author": "nocturnien",
+            "created_utc": 1653714269.0,
+            "score": 10,
+            "num_comments": 11,
+            "subreddit": "ethereum",
+            "selftext": "Just read Preethi Kasireddy's [paper](https://www.preethikasireddy.com/post/how-does-ethereum-work-anyway) on how Ethereum works.  Great deep dive article.  But have a few questions after reading the article.  Would appreciate if anyone can help me fill in the gaps or point me to another paper that covers my questions but is non-dev friendly :).  \n\n1) Each block has a state trie.  However, does the state trie include the current state of all Ethereum accounts or only the states of accounts that are updated during the current block?   \n\n2) if a node wants to verify a transaction, it can do a Merkle proof.  But to do so it needs the branch of partner hashes leading up to the root.  If it is a light node, where does it get all the branch data?  Is it possible?  Or is Merkle proof only feasible for full nodes?\n\n3) when a miner mines a block, do the other nodes/miners validate the transactions in the block or just accept them?\n\nThanks!",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iaak3uc",
+                    "author": "thomas_m_k",
+                    "score": 3,
+                    "created_utc": 1653727061.0,
+                    "response": "I can only answer question 3: yes, every full node in the network (not just miners) validates every block to make sure all the transactions in it are valid. A miner cannot just include invalid transactions (to send themselves money that doesn't belong to them for example) in a mined block. The only power that miners have is to decide which transactions to include. So if they don't like you they could try to censor you, but they can never steal your money.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iagn143",
+                            "author": "nocturnien",
+                            "score": 1,
+                            "created_utc": 1653853225.0,
+                            "response": "Thanks.  So if a miner injects an invalid txn in a block, and the other full nodes notice the txn, what happens?  do they ignore that block and wait for the 1st miner that solved the nounce AND produced a fully valid block?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iahfvan",
+                                    "author": "thomas_m_k",
+                                    "score": 2,
+                                    "created_utc": 1653867613.0,
+                                    "response": "They ignore the block, yes. The miner can send a new, valid block but if the miner doesn't, then eventually another miner will solve the nonce and produce the block instead. Miners will try to solve the nonce until they have seen a valid block.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iaa9kcy",
+                    "author": "VRoid",
+                    "score": 1,
+                    "created_utc": 1653717833.0,
+                    "response": "tldr,\n\n1. Include the current state of all Ethereum accounts in single block?  NO\n2. **If it is a light node, where does it get all the branch data --> light node does not get all the branch(must be block) data but it gets incremental block data since the node's inception. That is why we call it light node.**\n3. **when a miner mines a block,  others are just rest as it is mined by the miner. Blockchain does not allow multiple miners mine same block at the same time.**\n\n**You are asking something not natively related to Ethereum but to blockchain in general. Other blocks are not referred as branches as block are all equal and there's no trunk or branches on blockchain. Compared to BTC ETH has full of shit and they are fixing it all the time but usually ended up rebugging. Be careful on that!**",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iagnfk7",
+                            "author": "nocturnien",
+                            "score": 1,
+                            "created_utc": 1653853408.0,
+                            "response": "Thanks.\n\n1) if each block does not have the state for all accounts, and suppose a given account has not created a txn for many blocks, how will a light node be able to valid the amount on that given account?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iahkb4m",
+                                    "author": "AusIV",
+                                    "score": 2,
+                                    "created_utc": 1653869964.0,
+                                    "response": "Light nodes have the headers, which gives them the state root. When running RPC calls, they make requests values from the state trie from their peers, and their peers can return a proof of the value from the state trie, which can be verified given only the state root included with each block's header.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iahw404",
+                                            "author": "nocturnien",
+                                            "score": 1,
+                                            "created_utc": 1653876094.0,
+                                            "response": "Thx.  So are you saying that light nodes have to rely on peer full nodes to verify txns?  that seems slow?  what applications are ideally suited for using light nodes?\n\nAlso, do light nodes randomly connect to multiple full nodes?  is that how it knows if is not being fed fake data?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iaj73sd",
+                                                    "author": "AusIV",
+                                                    "score": 1,
+                                                    "created_utc": 1653909591.0,
+                                                    "response": "Light nodes don't verify transactions. They verify the proof-of-work for block headers, and assume that the bulk of the network's hashing power is honest.\n\nIf someone tried to mine a block with an invalid transaction, they might be able to produce one block that could trick light clients, but unless they have a majority of hashing power, moments later the network produces a block that's better under consensus rules, and the invalid block is discarded.\n\nWhere light clients get information from peers are thing like eth_call. It will request contract code for a peer, begin executing it, when it gets to a storage value it requests that from a peer and so on.\n\nAnd yes, light clients try to connect to multiple peers to collect as many headers as possible, so they're always operating on the most difficult block.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

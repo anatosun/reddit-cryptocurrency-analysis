@@ -1,0 +1,100 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v0p5hg",
+            "title": "Which Bitcoin blockchain/mempool visualization site do you prefer?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/v0p5hg/which_bitcoin_blockchainmempool_visualization/",
+            "author": "HappyDadOfFourJesus",
+            "created_utc": 1653874095.0,
+            "score": 4,
+            "num_comments": 8,
+            "subreddit": "Bitcoin",
+            "selftext": "I've long been a fan of [bitlisten.io](https://bitlisten.io) for a calming background but when I'm answering someone's question \"Who uses Bitcoin?\", I show them [https://blocks.wizb.it/](https://blocks.wizb.it/) to help them see that it's being used worldwide.\n\nWhich Bitcoin blockchain/mempool visualization site do you prefer?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iahwn8p",
+                    "author": "SmoothGoing",
+                    "score": 8,
+                    "created_utc": 1653876362.0,
+                    "response": "Mempool.space is cool",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iai41zi",
+                            "author": "WritingFun8769",
+                            "score": 5,
+                            "created_utc": 1653880170.0,
+                            "response": "i use that one. the ones op mentioned look cool, but mempool.space is actually functional",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iai0r9l",
+                    "author": "BitcoinUser263895",
+                    "score": 3,
+                    "created_utc": 1653878479.0,
+                    "response": "https://jochen-hoenicke.de/queue/#1,24h",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaip5w1",
+                    "author": "Blimpleton",
+                    "score": 2,
+                    "created_utc": 1653893890.0,
+                    "response": "Txstreet is pretty dope",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iahstfv",
+                    "author": "BTC-maxi",
+                    "score": 2,
+                    "created_utc": 1653874425.0,
+                    "response": "How is the IP address of the transaction being acquired? I didn't think that info was in the blocks?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iail1ug",
+                            "author": "caploves1019",
+                            "score": 5,
+                            "created_utc": 1653890613.0,
+                            "response": "It's the relay location where the node is being reported to come from that sends the transaction. Thankfully, Tor and VPN popularity makes that information relatively inaccurate.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iainjua",
+                            "author": "Rannasha",
+                            "score": 2,
+                            "created_utc": 1653892572.0,
+                            "response": "You can't determine the IP address with certainty. If you run a node, you know which other node is sending you a transaction, but there's no way to know if that node is the original source of the transaction or if it's just relaying it from another node.\n\nIf you run many nodes in different locations, you may get a better idea of what the original source is, as you can use things like timing information (the node you receive the earliest copy of a transaction from is likely closest to the source) to improve your estimate. However, there's never any certainty. A user in country A could run a node that's permanently connected to just one other node, in country B, and send all their transactions that way. Since the source node never makes any connections except for that one other node, you'll never see it as the origin.\n\nAlso, many users use light wallets, that aren't full nodes. These wallets connect to full nodes elsewhere and those nodes will be seen as transmitting the transaction. So a user might be sending a transaction from a light wallet in country A, but through a full node in country B. Any tracing attempt using public information will stop at country B.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iaj6ta7",
+                    "author": "2-bit-tipper",
+                    "score": 1,
+                    "created_utc": 1653909367.0,
+                    "response": "[https://bits.monospace.live/](https://bits.monospace.live/)",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v09ntf",
+            "title": "Could someone walk me through a transaction occurring on Ethereum involving danksharding and rollups?",
+            "url": "https://www.reddit.com/r/ethereum/comments/v09ntf/could_someone_walk_me_through_a_transaction/",
+            "author": "VLADIMIROVIC_L",
+            "created_utc": 1653825453.0,
+            "score": 6,
+            "num_comments": 8,
+            "subreddit": "ethereum",
+            "selftext": "I think I understand the classic idea of sharding relatively well. But I fail to really understand how \"data sharding\" works. Are the shards still actually blockchains? If they don't receive transactions are they updating their state or what is really happening? What data is stored where and when? Would really love to understand this finally. \n\nLet me summarise my understanding of traditional sharding (including transactions) so that you can correct me on this in case I got even that wrong :). \n\nThe core idea of blockchains generally is that we want as many independent validators as possible so that they are incredibly unlikely to collude as they would need to collaborate to perform something in the direction of a 51% attack. \nSo while we want as many different validators as possible we do not want them all to store all the data. We just want X amount of them to store the data to be sure that SOMEONE always has it. So basically everyone storing everything is simply an inefficient overkill of security because each validator that has the data makes it much less likely that all the data is lost. Instead, we could trade that inefficient security for scalability by having validators run subchains or shards. By doing so we run into two issues that we need to fix. \n1) achieve shared security once again (prevent single shard takeover attack) \n2) allow the shards to communicate so that the entire thing feels like one system again.\n\nTo do so we can shuffle the validators around which results in APPROXIMATELY the same game theoretic incentives as if the whole system was one Blockchain.\n\nAnd we can allow the shard chains to prove to a chain maintained by everyone (the beacon chain) what their state is so that transactions on one shard chain can depend on that state. So that basically allows shards to communicate with each other.\n\nBut as I said before I have no clue how \"data-sharding\" really works.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iah1td5",
+                    "author": "dawnraid101",
+                    "score": 4,
+                    "created_utc": 1653860397.0,
+                    "response": "https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum\n\nRead that, it is a god send.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iah8yq4",
+                    "author": "edmundedgar",
+                    "score": 4,
+                    "created_utc": 1653863996.0,
+                    "response": "Rollups take a bunch of transactions, compress them into the minimum data that you'd need to prove that what happened and how it changed the state, and send them to L1 as a single transaction. Most of the data that they send to L1 doesn't need to go into contract storage, you just need to prove that you published it.\n\nOriginally sharding was supposed to be what you said, you have lots of little subsets of the validator set each responsible for validating part of the system. The original plan was that you'd shard execution, so it would be like you had lots of copies of the current ethereum running in parallel each verified by a different set, plus a way for them to communicate with each other. This is quite complicated.\n\nData sharding is barely sharding at all, you only use subsets of the validator set to make sure that different bits of data are available, and everything else runs as a single system. This is much simpler.\n\nWhere the two things came together is that it turns out that if everybody's using rollups, the bottleneck for the capacity of the system is data that doesn't need to go into contract storage, you just need to prove that it's available. So it seems like most of the benefit will come from data sharding, which is pretty simple, and hardly any of it from execution sharding, which is pretty complicated. So Ethereum is doing data sharding first, and execution sharding later or not at all.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iahvqc8",
+                    "author": "domotheus",
+                    "score": 3,
+                    "created_utc": 1653875892.0,
+                    "response": ">Are the shards still actually blockchains? \n\nNo, it's only data blobs now. The chain isn't sharded, but the data is. Validators are shuffled around, a subset of them are assigned to various blobs and are in charge of ensuring their availability for a given period of time, getting challenged with random data sampling checks to make sure they did store the data and can broadcast it to whoever wants it\n\n>What data is stored where and when? \n\nThe beacon chain block contains a *commitment* of the data in the blob, which is very short and can be used to prove that a given blob's data was committed in a given block at a specific time and there was a honest majority consensus that guarantees the data is legit and was available for a specific period of time\n\nThis is why the actual data in blob can safely expire and then it's just a 1-of-n trust assumption to use it later (e.g. to reconstruct a rollup's state and send a fraud proof or something) and the rest of the network only has to store the actual beacon blocks that only contain the short commitments (alongside normal transactions)",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

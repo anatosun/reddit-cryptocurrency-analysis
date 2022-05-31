@@ -32,13 +32,184 @@
             ]
         },
         {
+            "id": "uy3v83",
+            "title": "I just sent $15 worth of BTC to Binance and it's saying it'll cost me 0.002 BTC (around $70 USD)",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uy3v83/i_just_sent_15_worth_of_btc_to_binance_and_its/",
+            "author": "_-psyduck-_",
+            "created_utc": 1653558092.0,
+            "score": 44,
+            "num_comments": 27,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Someone please help!!!\n\nUpdate: Apparently this exists: https://coinguides.org/1-input-2-outputs/",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia1u7no",
+                    "author": "Desperate-Barnacle-4",
+                    "score": 10,
+                    "created_utc": 1653562923.0,
+                    "response": "Transaction ID? From which wallet? If you sent from your own wallet you should be able to choose the fee yourself. Checkout sites like [https://mempool.space/](https://mempool.space/) to see the current queue and pick a fee matching the speed you want. Right now 1sat/vb transactions are clearing in the next block so you could pay <$0.10.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia2bfri",
+                            "author": "MyOtherAcctsAPorsche",
+                            "score": 3,
+                            "created_utc": 1653572516.0,
+                            "response": "I remember not too long ago that bitcoin had crazy $60 fees or something. \n\nIs the fee paid proportional to network use? \n\nI guess what I'm asking is... where there 600x more transactions as there are now?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia2j14w",
+                                    "author": "Narmotur",
+                                    "score": 6,
+                                    "created_utc": 1653575770.0,
+                                    "response": "The fee you pay is the fee you want to pay for how fast you want the transaction to go through. You can nearly always pay 1 sat/vByte, but you may be waiting a couple of weeks in the very worst case.\n\n$60 sounds a bit high, I'm not sure it ever actually got that high but I don't pay much attention.\n\nThe website https://mempool.space/ shows the current state of the mempool, and you can see approximately how many blocks worth of transactions are currently waiting and a rough cost for Low/Medium/High priority based on the distribution of waiting transactions and the fees they're paying.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia2ov7b",
+                                            "author": "MyOtherAcctsAPorsche",
+                                            "score": 4,
+                                            "created_utc": 1653578171.0,
+                                            "response": "I understand that, my question was if the huge fee was a direct consequence of there being proportionately more transactions (so many that you HAD to outbid some to not be pushed into next month), or if instead is caused by a relatively small amount of transactions trying to outbid eachother instead.\n\nBasically wondering if fees are proportional to transaction count, or if there's a \"hurry\" effect at play.\n\nNot sure if I make sense, english is not my native language so it doesn't help :)",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia3bfow",
+                                                    "author": "MostBoringStan",
+                                                    "score": 2,
+                                                    "created_utc": 1653587107.0,
+                                                    "response": "Yes, it's the total transaction count.  A block can only handle so many transactions at a time, so they will choose the transactions with the highest fees.  If the network isn't busy, pretty much all transactions will go through with each block. So in that case it wouldn't matter how high your fee is.  A 1 sat/b fee will go through just as quickly as a 100 sat/b fee.\n\nIt's only when there are more transactions than can be completed in a block that the lower fees will have to wait.  And if there are always more new transactions than a block can handle, the fees will eventually get pushed higher and higher because people will always want to put higher fees so their transactions get included without waiting too long.\n\nHopefully that answers your question.  If not let me know, and I'll try again.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia2161d",
+                    "author": "Zwiada",
+                    "score": 6,
+                    "created_utc": 1653567354.0,
+                    "response": "I think 20,000 sat is their withdrawal fee but that would be 0.00**0**20000 btc (~$5.8). Anything else doesn't make sense.\n\nEDIT: Oh, I just read your update. Seems like you got confused about your change address.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia1tvi6",
+                    "author": "BTCMachineElf",
+                    "score": 11,
+                    "created_utc": 1653562683.0,
+                    "response": "You are not making sense.\n\nYou sent it from your personal wallet to binance? That should cost you cents.\n\nBinance(?) is saying it will cost you 0.002 to do what?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia1o5fh",
+                    "author": "AutoModerator",
+                    "score": 2,
+                    "created_utc": 1653558092.0,
+                    "response": "FYI Binance withdrawal fees are very high for BTC, our FAQ has a list of suggested exchanges, with their corresponding withdrawal fees. https://www.reddit.com/r/BitcoinBeginners/comments/g42ijd/faq_for_beginners/\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia2fr78",
+                    "author": "murderedcats",
+                    "score": 1,
+                    "created_utc": 1653574395.0,
+                    "response": "Binance is a scam",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia1o5eq",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653558092.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia1o5f5",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653558092.0,
+                    "response": "For trading related topics, there is also /r/bitcointrading\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia275y8",
+                    "author": "DudeIncogneto",
+                    "score": 1,
+                    "created_utc": 1653570513.0,
+                    "response": "Sender pays the fee, so set the fee to 1 sat v/b ~ 6 cents. If you wallet doesn't allow that use a better one",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia2houc",
+                    "author": "um-i-forget",
+                    "score": 1,
+                    "created_utc": 1653575207.0,
+                    "response": "It'll cost you 0.002 to do what? Exchanges charge withdrawal fees, but not deposit fees. \n\n[https://withdrawalfees.com/coins/bitcoin](https://withdrawalfees.com/coins/bitcoin)\n\nYou will need to pay network fees to send from your personal wallet to binance, but those fees should be like $0.20 at most.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia39a7c",
+                    "author": "kicixz",
+                    "score": 1,
+                    "created_utc": 1653586242.0,
+                    "response": "For next one send everything on an stable coin(binance chain fee is 1 bug) and after buy btc (btc fees are expensive).",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia3pbc1",
+                    "author": "Omega3568",
+                    "score": 1,
+                    "created_utc": 1653592779.0,
+                    "response": "Setup a native segwit wallet, my transactions are about .70",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia1we0a",
+                    "author": "Maadshroom91",
+                    "score": -19,
+                    "created_utc": 1653564407.0,
+                    "response": "Oh sweet summer child, why you messin with bitcoin now?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia3ncmv",
+                    "author": "MADBEASTSSF",
+                    "score": 0,
+                    "created_utc": 1653591967.0,
+                    "response": "A long time ago they said crypto was decentralized for faster and cheaper transactions, now they kick out the miners, place the fees they want, it\u2019s expensive to cash out",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
             "id": "uy3z54",
             "title": "Noob Miner Fee Questions",
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uy3z54/noob_miner_fee_questions/",
             "author": "Chongzy",
             "created_utc": 1653558575.0,
-            "score": 1,
-            "num_comments": 11,
+            "score": 2,
+            "num_comments": 20,
             "subreddit": "BitcoinBeginners",
             "selftext": "When making a btc payment of a specific amount should you send a little more than the specific amount to make up for the miner/transaction fee deduction to avoid underpaying?\n\n*Edit - Answered*",
             "stickied": false,
@@ -46,7 +217,7 @@
                 {
                     "id": "ia1yl4c",
                     "author": "BTCMachineElf",
-                    "score": 2,
+                    "score": 3,
                     "created_utc": 1653565801.0,
                     "response": "No. The wallet will take care of that. You choose exactly how many sats go to the recipient, and then you choose a mining fee to go on top of that. \n\nThe best thing for fees is to choose \"custom,\" and choose a low fee based on what you see at [mempool.space](https://mempool.space). Do not use your wallets built-in estimate, you will overpay. Often, including right now, the minimum payment of 1 sat/vbyte is enough to clear within 30 minutues. \n\nIf you you do underpay the fee and get stuck in the mempool, your wallet should have a function called RBF that allows you to increase the TX fee.",
                     "depth": 1,
@@ -129,102 +300,6 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "uy3v83",
-            "title": "I just sent $15 worth of BTC to Binance and it's saying it'll cost me 0.002 BTC (around $70 USD)",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uy3v83/i_just_sent_15_worth_of_btc_to_binance_and_its/",
-            "author": "_-psyduck-_",
-            "created_utc": 1653558092.0,
-            "score": 19,
-            "num_comments": 14,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "Someone please help!!!\n\nUpdate: Apparently this exists: https://coinguides.org/1-input-2-outputs/",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "ia1u7no",
-                    "author": "Desperate-Barnacle-4",
-                    "score": 5,
-                    "created_utc": 1653562923.0,
-                    "response": "Transaction ID? From which wallet? If you sent from your own wallet you should be able to choose the fee yourself. Checkout sites like [https://mempool.space/](https://mempool.space/) to see the current queue and pick a fee matching the speed you want. Right now 1sat/vb transactions are clearing in the next block so you could pay <$0.10.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "ia2bfri",
-                            "author": "MyOtherAcctsAPorsche",
-                            "score": 1,
-                            "created_utc": 1653572516.0,
-                            "response": "I remember not too long ago that bitcoin had crazy $60 fees or something. \n\nIs the fee paid proportional to network use? \n\nI guess what I'm asking is... where there 600x more transactions as there are now?",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "ia1tvi6",
-                    "author": "BTCMachineElf",
-                    "score": 9,
-                    "created_utc": 1653562683.0,
-                    "response": "You are not making sense.\n\nYou sent it from your personal wallet to binance? That should cost you cents.\n\nBinance(?) is saying it will cost you 0.002 to do what?",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "ia1o5fh",
-                    "author": "AutoModerator",
-                    "score": 2,
-                    "created_utc": 1653558092.0,
-                    "response": "FYI Binance withdrawal fees are very high for BTC, our FAQ has a list of suggested exchanges, with their corresponding withdrawal fees. https://www.reddit.com/r/BitcoinBeginners/comments/g42ijd/faq_for_beginners/\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "ia2161d",
-                    "author": "Zwiada",
-                    "score": 2,
-                    "created_utc": 1653567354.0,
-                    "response": "I think 20,000 sat is their withdrawal fee but that would be 0.00**0**20000 btc (~$5.8). Anything else doesn't make sense.\n\nEDIT: Oh, I just read your update. Seems like you got confused about your change address.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "ia1o5eq",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1653558092.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "ia1o5f5",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1653558092.0,
-                    "response": "For trading related topics, there is also /r/bitcointrading\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "ia275y8",
-                    "author": "DudeIncogneto",
-                    "score": 1,
-                    "created_utc": 1653570513.0,
-                    "response": "Sender pays the fee, so set the fee to 1 sat v/b ~ 6 cents. If you wallet doesn't allow that use a better one",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "ia1we0a",
-                    "author": "Maadshroom91",
-                    "score": -15,
-                    "created_utc": 1653564407.0,
-                    "response": "Oh sweet summer child, why you messin with bitcoin now?",
-                    "depth": 1,
-                    "comments": []
                 }
             ]
         }

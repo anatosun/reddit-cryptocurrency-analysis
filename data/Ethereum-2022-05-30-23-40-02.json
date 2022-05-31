@@ -1,0 +1,45 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v1cssp",
+            "title": "Amassing Erc20 coins in metamask",
+            "url": "https://www.reddit.com/r/ethereum/comments/v1cssp/amassing_erc20_coins_in_metamask/",
+            "author": "Blackwrench",
+            "created_utc": 1653953473.0,
+            "score": 1,
+            "num_comments": 4,
+            "subreddit": "ethereum",
+            "selftext": "Is there a way to mass transfer an ERC20 coin to a single wallet (amass) from hundreds of metamask addresses in a single metamask session (same private key)? Something like disperse.app but the opposite? Or should I loop a transaction through a script somehow? Can somebody help me out, I'm not a programmer.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iam4als",
+                    "author": "pearli",
+                    "score": 1,
+                    "created_utc": 1653961894.0,
+                    "response": "No, each will incur individual gas fees, no way around it. You can create \"recipe transactions\" on defi saver but the purpose of these kind of \"first, then, next\" transactions is you need the swap or exchange to occur immediately to avoid or incur arbitrage. Fees for each action must be paid on ETH.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iamqo71",
+                            "author": "Blackwrench",
+                            "score": 1,
+                            "created_utc": 1653975315.0,
+                            "response": "I don't care about tx fees, just convenience. Obviously I'll need to do 100's of tx but I just want to somehow automate it.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,231 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uyilap",
+            "title": "Does anyone care to share",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uyilap/does_anyone_care_to_share/",
+            "author": "TerpOnaut",
+            "created_utc": 1653602171.0,
+            "score": 4,
+            "num_comments": 22,
+            "subreddit": "Bitcoin",
+            "selftext": "Where the OG investors stored their bitcoins ? I\u2019ve always wondered this not only because I\u2019m sure in the earlier days we didn\u2019t have these fancy cold wallet( I don\u2019t think correct me if I\u2019m wrong.) Someone who has say like 5 plus coins. They must want them to have the ultimate security so what\u2019re the absolute best options out there. Is there a fancy device that\u2019s been developed that completely stores your coin? Besides a ledger or Trezor.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia4k69p",
+                    "author": "frequent_heron_2102",
+                    "score": 10,
+                    "created_utc": 1653606241.0,
+                    "response": "The Bitcoin Core software was both a miner and a wallet.\n\nFor real security, you'd use Bitcoin Core to create a wallet on a fresh, non-internet-connected computer.\n\nThis was even before things like BIP-39 which is where the 12/24 word seeds came from.\n\nFun story: I first heard of Bitcoin when there was a story posted about it on Slashdot (a tech news site), shortly after Satoshi posted the software to a crypto mailing list. I thought it seemed cool and ran it in the background on my PC. After a few days I saw I mined a block of 50 BTC and thought that was cool. Then I was reading forums and saw other people had 10's of thousands of BTC and my 50 wasn't worth shit. I forgot about it for a while after that, then uninstalled the Bitcoin Core client from my PC because it was wasting energy and making my computer room hot. I have no idea how many blocks I mined but it was at least one. I ended up wiping that hard drive a bunch of times when reinstalling and testing various OS's so it wouldn't be possible to recover the wallet.dat that had my original wallet.\n\nI'm not too bitter though, I ended up getting back into BTC a few years later when I bought some on an exchange. I still have most of it. I'm doing okay.\n\nHell, if I still held that wallet I probably would have sold the BTC on an exchange before it even got to $1000. I remember when people were selling it for $1 and thought that was nuts. Then it went to $10 and back down to $1.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia4e9um",
+                    "author": "NiceDoctorBeam",
+                    "score": 6,
+                    "created_utc": 1653603484.0,
+                    "response": "You generated (private-key, receive-address) pairs, using a computer which never gets connected to the Internet.  \n\nYou sent BTC from the exchange to one or more of your receive addresses.  \n\nYou wrote them onto paper, memorized them, then hid the papers where nobody has any chance of finding them.  \n\nModern hardware wallets are nice.  You can back up a \"gazillion\" private keys with one 24-word seed phrase, which is way easier to remember than a set of private keys.  Hardware wallets can generate all the receive addresses you'll ever need.  Hardware wallets can sign Bitcoin transactions for you.  Hardware wallets might have a long PIN and be capable of bricking themselves after a certain number of bad PIN guesses.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia4g91z",
+                    "author": "SmoothGoing",
+                    "score": 4,
+                    "created_utc": 1653604399.0,
+                    "response": "Desktop wallets like Multibit and Electrum. Not everyone runs Windblowz. Not everyone is clueless about decent opsec. If your PC is infected and coins disappear you've got bigger problems right there. How is it acceptable if your desktop is compromised? Nowadays you have hardware wallets so buy one and don't worry.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia4mgx8",
+                            "author": "OrangeHODLr",
+                            "score": 1,
+                            "created_utc": 1653607338.0,
+                            "response": "Imagine being so bad at security that you are boot up tails os to do everything because somehow that\u2019s \u201csafe\u201d.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia4bj7l",
+                    "author": "JaTheRed",
+                    "score": 8,
+                    "created_utc": 1653602255.0,
+                    "response": "Paper wallets",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia4cy83",
+                            "author": "sail3r",
+                            "score": 2,
+                            "created_utc": 1653602881.0,
+                            "response": "This. They\u2019re the OG & safest wallet option.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia4g6a6",
+                                    "author": "garrulous_theory",
+                                    "score": 2,
+                                    "created_utc": 1653604362.0,
+                                    "response": "Not anymore. Hardware wallets are safer. \n\nYou can add bitcoin to a paper wallet easily, but to spend/send bitcoin you have to go all at once.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia4kbi1",
+                                            "author": "danuker",
+                                            "score": 1,
+                                            "created_utc": 1653606310.0,
+                                            "response": "> Hardware wallets are safer.\n\nMore moving parts and more attack surface. Such as an unauditable RNG.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "ia4gkbt",
+                                            "author": "JaTheRed",
+                                            "score": 1,
+                                            "created_utc": 1653604538.0,
+                                            "response": "Spend? \ud83d\ude1c",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia5yn2r",
+                    "author": "pagex",
+                    "score": 3,
+                    "created_utc": 1653633949.0,
+                    "response": "Laminated Paper wallets. Securely kept there for almost 9 years",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia6dbiv",
+                            "author": "Verallendingen",
+                            "score": 1,
+                            "created_utc": 1653646855.0,
+                            "response": "chad",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia6ooue",
+                            "author": "TerpOnaut",
+                            "score": 1,
+                            "created_utc": 1653654490.0,
+                            "response": "Woah these paper wallets are that secure ?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia4e86i",
+                    "author": "BitcoinWell",
+                    "score": 2,
+                    "created_utc": 1653603463.0,
+                    "response": "Originally it was paper wallets. Nowadays its in paper wallets, hardware wallets and at an institutional level its stored with custody solutions.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia4khfj",
+                    "author": "danuker",
+                    "score": 2,
+                    "created_utc": 1653606388.0,
+                    "response": "Check out Glacier Protocol. https://glacierprotocol.org/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia4l1bl",
+                    "author": "vitalyevodin",
+                    "score": 2,
+                    "created_utc": 1653606654.0,
+                    "response": "I like paper + handmade SeedSigner idea",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia4pffl",
+                    "author": "DryTechnology5224",
+                    "score": 2,
+                    "created_utc": 1653608754.0,
+                    "response": "Paper wallets",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia56s1n",
+                    "author": "BeansBakerNumber5",
+                    "score": 1,
+                    "created_utc": 1653617229.0,
+                    "response": "Electrum on an airgapped netbook with webcam for QR code import/export",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia573kx",
+                    "author": "Normann1000",
+                    "score": 1,
+                    "created_utc": 1653617388.0,
+                    "response": "Paper wallet or air-gapped bitcoin core wallet. Paper wallets you have to sweep before you can spend. On air-gapped wallet you just sign a transaction, put the raw hash on a usb stick and then broadcast it from another pc that is connected to the internet.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia6gom0",
+                    "author": "ramblerandgambler",
+                    "score": 1,
+                    "created_utc": 1653649409.0,
+                    "response": "Won't be a popular answer, but I've been in for ten years and keep it on an online non-custodial wallet, not had any issues in all that time.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia6ongu",
+                            "author": "TerpOnaut",
+                            "score": 1,
+                            "created_utc": 1653654468.0,
+                            "response": "Woah that sounds cool how does this work never heard of that",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia6p38l",
+                                    "author": "ramblerandgambler",
+                                    "score": 1,
+                                    "created_utc": 1653654715.0,
+                                    "response": "This resource is biased and shilling their own wallet but the info is useful\nhttps://www.bitcoin.com/get-started/custodial-non-custodial-bitcoin-wallets/ \n\nalso biased:\nhttps://www.coindesk.com/learn/custodial-wallets-vs-non-custodial-crypto-wallets/",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia6gr67",
+                    "author": "ramblerandgambler",
+                    "score": 1,
+                    "created_utc": 1653649458.0,
+                    "response": ">Someone who has say like 5 plus coins \n\nJust to point out, to an OG investor, 5 BTC could have been worth a few hundred dollars or less at the time they bought them.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

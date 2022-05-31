@@ -14,12 +14,21 @@
             "url": "https://www.reddit.com/r/ethereum/comments/uxzwl1/how_to_get_an_alert_when_there_is_activity_on_a/",
             "author": "bangatard",
             "created_utc": 1653540901.0,
-            "score": 2,
-            "num_comments": 2,
+            "score": 5,
+            "num_comments": 7,
             "subreddit": "ethereum",
             "selftext": "I would like to track some smart contracts and get alerts when the mint functions are called.  Any idea if etherscan has this functionality built in?",
             "stickied": false,
             "comments": [
+                {
+                    "id": "ia5eu4o",
+                    "author": "abcoathup",
+                    "score": 2,
+                    "created_utc": 1653621274.0,
+                    "response": "You can use OpenZeppelin Defender: https://docs.openzeppelin.com/defender/sentinel",
+                    "depth": 1,
+                    "comments": []
+                },
                 {
                     "id": "ia18zfx",
                     "author": "Forcent",
@@ -27,7 +36,17 @@
                     "created_utc": 1653545048.0,
                     "response": "You can use tenderly for this, works well",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "ia2o0rz",
+                            "author": "bangatard",
+                            "score": 1,
+                            "created_utc": 1653577830.0,
+                            "response": "Thank you!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 }
             ]
         }

@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uvz5si/whats_the_best_way_to_store_btc_in_cold_storage/",
             "author": "ToughNefariousness23",
             "created_utc": 1653309253.0,
-            "score": 27,
-            "num_comments": 54,
+            "score": 31,
+            "num_comments": 71,
             "subreddit": "BitcoinBeginners",
             "selftext": "Also, how does one go about doing that?  Probably a stupid question, but inquiring minds want to know.  Thanks everyone.",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i9oo043",
                     "author": "jmg000",
-                    "score": 26,
+                    "score": 27,
                     "created_utc": 1653314922.0,
                     "response": "Per Andreas Antonopoulos, the best balance between security and recoverability is just a single signature Hardware Wallet plus a Passphrase.  With 2x backups of your Mnemonic seed secured in separate locations, and a letter with recovery instructions for trusted family or executors (estate) if you die.",
                     "depth": 1,
@@ -40,9 +40,18 @@
                         {
                             "id": "i9rqeps",
                             "author": "BTCMachineElf",
-                            "score": 2,
+                            "score": 3,
                             "created_utc": 1653365724.0,
                             "response": "Store your passphrases separately. A thief would need to find both the seed and the passphrase to steal your stack. Use a complicated passphrase that would be near impossible to buteforce.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia2mimz",
+                            "author": "OneStepAheadApp",
+                            "score": 1,
+                            "created_utc": 1653577210.0,
+                            "response": ">2x backups of your Mnemonic seed secured in separate locations\n\nmmm... I would argue this is the best way.  I respect Andreas Antonopoulos, but honestly making 2 full backups will only increase the chance of exposure. My point is obviously beyond passphrase.",
                             "depth": 2,
                             "comments": []
                         }
@@ -51,7 +60,7 @@
                 {
                     "id": "i9odf35",
                     "author": "bitusher",
-                    "score": 7,
+                    "score": 5,
                     "created_utc": 1653309555.0,
                     "response": "For most people a hardware wallet and following something like this \n\nhttps://www.reddit.com/r/BitcoinBeginners/comments/g42ijd/faq_for_beginners/fouo3kh/\n\nOnce you have a very large amount of bitcoin you might start to consider multisig as a solution",
                     "depth": 1,
@@ -70,7 +79,7 @@
                 {
                     "id": "i9ojwht",
                     "author": "blockplate",
-                    "score": 6,
+                    "score": 4,
                     "created_utc": 1653312959.0,
                     "response": "Never a stupid question when it comes to security.\n\nTypically cold storage refers to utilizing hardware wallets to hold your keys in an offline environment.\n\nIf your interested in the exact steps to do that, see here: https://www.blockplate.com/blogs/blockplate/beginners-guide-to-bitcoin-wallet-set-up-security",
                     "depth": 1,
@@ -79,7 +88,7 @@
                 {
                     "id": "i9owdip",
                     "author": "GibbsSamplePlatter",
-                    "score": 6,
+                    "score": 5,
                     "created_utc": 1653318672.0,
                     "response": "Another vote for keeping it simple.\n\nSingle key, hardware wallet, redundant backups of seed phrase.\n\nI would not add a passphrase, or caution that it should be *SIMPLE* so its never forgotten.",
                     "depth": 1,
@@ -95,7 +104,7 @@
                                 {
                                     "id": "i9py9w6",
                                     "author": "GibbsSamplePlatter",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1653334719.0,
                                     "response": "Lack of checksum really makes me uncomfortable with the passphrase solution.",
                                     "depth": 3,
@@ -185,15 +194,6 @@
                     ]
                 },
                 {
-                    "id": "i9ppe4x",
-                    "author": "kaacaSL",
-                    "score": 3,
-                    "created_utc": 1653330915.0,
-                    "response": "Hi, the best is to store your coins with a hardware wallet. Follow our Trezor subreddit if you want to learn more about how this wallet works! [https://www.reddit.com/r/TREZOR/](https://www.reddit.com/r/TREZOR/)  \nWe are discussing different topics there, sharing manuals and security tips etc.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
                     "id": "i9or6jd",
                     "author": "subduderecords",
                     "score": 13,
@@ -212,7 +212,7 @@
                                 {
                                     "id": "i9oxiv5",
                                     "author": "subduderecords",
-                                    "score": 8,
+                                    "score": 10,
                                     "created_utc": 1653319175.0,
                                     "response": "I'm glad someone else got the joke \ud83d\ude06",
                                     "depth": 3,
@@ -229,8 +229,26 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "id": "ia2n90c",
+                            "author": "OneStepAheadApp",
+                            "score": 1,
+                            "created_utc": 1653577508.0,
+                            "response": "Why does Ledger recommends -8C ? Anyone can explain?",
+                            "depth": 2,
+                            "comments": []
                         }
                     ]
+                },
+                {
+                    "id": "i9ppe4x",
+                    "author": "kaacaSL",
+                    "score": 3,
+                    "created_utc": 1653330915.0,
+                    "response": "Hi, the best is to store your coins with a hardware wallet. Follow our Trezor subreddit if you want to learn more about how this wallet works! [https://www.reddit.com/r/TREZOR/](https://www.reddit.com/r/TREZOR/)  \nWe are discussing different topics there, sharing manuals and security tips etc.",
+                    "depth": 1,
+                    "comments": []
                 },
                 {
                     "id": "i9on3wo",
@@ -283,7 +301,7 @@
                 {
                     "id": "i9odmt0",
                     "author": "never-give-up-every1",
-                    "score": 3,
+                    "score": 4,
                     "created_utc": 1653309676.0,
                     "response": "You can try using **Ledger Nano S**, I think most people know this but I still recommend it to you. because I've been using this in **Canada** to transfer my Coins on **Netcoins** to the ledger.",
                     "depth": 1,
@@ -299,7 +317,7 @@
                                 {
                                     "id": "i9or3bk",
                                     "author": "bitusher",
-                                    "score": 4,
+                                    "score": 6,
                                     "created_utc": 1653316340.0,
                                     "response": "I own all of trezors and ledgers and here is my 2 cents :\n\nledger nano x is a must if you need to use it with an ipad or iphone because bluetooth is the only way to pair it \n\nI prefer the trezor over ledgers because its open source , its company has better history and ethics and unlike ledger is more responsible with disclosures. I also think the UX of the trezor is superior",
                                     "depth": 3,
@@ -377,7 +395,7 @@
                         {
                             "id": "i9r6dvc",
                             "author": "uclamutt",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1653355326.0,
                             "response": "This is a fantastic list! Seedsigner is really intriguing but beyond my capabilities right now!",
                             "depth": 2,
@@ -412,7 +430,7 @@
                                         {
                                             "id": "i9osv15",
                                             "author": "bitusher",
-                                            "score": 5,
+                                            "score": 6,
                                             "created_utc": 1653317126.0,
                                             "response": "Stay far away from trustwallet . Use one of the open source wallets recommended in the links \n\nhttps://walletscrutiny.com\n\nhttps://docs.google.com/spreadsheets/d/1aZ1zbaUEzCo9NCctN8-eL2VLIiSdY009tTJvRXDUWEw/edit#gid=0\n\nhttps://www.reddit.com/r/BitcoinBeginners/comments/g42ijd/faq_for_beginners/",
                                             "depth": 4,

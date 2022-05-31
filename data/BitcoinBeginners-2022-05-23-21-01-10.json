@@ -15,7 +15,7 @@
             "author": "kaioken1986",
             "created_utc": 1653339325.0,
             "score": 3,
-            "num_comments": 19,
+            "num_comments": 33,
             "subreddit": "BitcoinBeginners",
             "selftext": "Is unspent transaction output just the data of the wallets that have not initiated a transaction to another wallet? So like user A recieves x amount bitcoin or sats and just holds it in the wallet? Or am I completely wrong? Please let me know.",
             "stickied": false,
@@ -163,7 +163,57 @@
                     "created_utc": 1653373260.0,
                     "response": "The Bitcoin blockchain only stores transactions, not wallets. A Bitcoin coin is not stored in a wallet. A coin is the output of a transaction. A UTXO is an unspent coin. A coin can only be spent once. A coin can only be spent completely. Bitcoin has no partial spends",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "ia3m27r",
+                            "author": "kaioken1986",
+                            "score": 1,
+                            "created_utc": 1653591434.0,
+                            "response": "What do you mean by no partial spends?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia3ockl",
+                                    "author": "igadjeed",
+                                    "score": 1,
+                                    "created_utc": 1653592380.0,
+                                    "response": "If you have a coin with an amount of 1 BTC, you can not spend part of that coin's value",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia3os93",
+                                            "author": "kaioken1986",
+                                            "score": 1,
+                                            "created_utc": 1653592560.0,
+                                            "response": "couldn't you spend half of that coins value when you want to send a portion to someone else though?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia3q1v4",
+                                                    "author": "igadjeed",
+                                                    "score": 1,
+                                                    "created_utc": 1653593083.0,
+                                                    "response": "The Bitcoin spending method is designed to prevent double spending. It's very simple. Create a coin. Spend a coin  \n\nWhen you want to send a smaller amount that the coin you're spending, your transaction makes a new coin, for the change amount",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia3ru3t",
+                                                            "author": "kaioken1986",
+                                                            "score": 1,
+                                                            "created_utc": 1653593827.0,
+                                                            "response": "Alright that makes sense now thanks for the help!",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
@@ -174,7 +224,7 @@
             "author": "FuelWild665",
             "created_utc": 1653338677.0,
             "score": 0,
-            "num_comments": 10,
+            "num_comments": 19,
             "subreddit": "BitcoinBeginners",
             "selftext": "For instance, why do some exchanges still use legacy addresses to receive and send bitcoin? Aren't all formats compatible or how shall I call it?",
             "stickied": false,

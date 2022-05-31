@@ -1,0 +1,316 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v01xpb",
+            "title": "Total Prysm client usage has finally gone below 50%!",
+            "url": "https://i.redd.it/vtvp48txub291.jpg",
+            "author": "RomanJIsraelBro",
+            "created_utc": 1653791918.0,
+            "score": 291,
+            "num_comments": 40,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iae2k0v",
+                    "author": "Old_Sale7961",
+                    "score": 29,
+                    "created_utc": 1653796790.0,
+                    "response": "What does this mean ?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaemp4k",
+                            "author": "Wheeler_Dealer1",
+                            "score": 28,
+                            "created_utc": 1653812465.0,
+                            "response": "It means that should there be a bug in the prysm Client for ETH 2.0, there will not be as bad as a slashing event, so people that use the prysm client won\u2019t lose as much ETH. Before you would lose everything if you were using the prysm client.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaeop5l",
+                                    "author": "hujkkjji",
+                                    "score": 48,
+                                    "created_utc": 1653814284.0,
+                                    "response": "Now I am more confused.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iaepqxa",
+                                            "author": "eastsideski",
+                                            "score": 32,
+                                            "created_utc": 1653815239.0,
+                                            "response": "Tldr: the beacon chain is safer than before",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iaf7gow",
+                                                    "author": "gingerballs45",
+                                                    "score": 7,
+                                                    "created_utc": 1653829076.0,
+                                                    "response": "But, why?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "iafbc6n",
+                                                            "author": "TimbukNine",
+                                                            "score": 45,
+                                                            "created_utc": 1653831148.0,
+                                                            "response": "Imagine if 66% of validators ran client X. 34% run client Y.\n\nA bug appears in client X that causes bad transactions to go through. Blocks from client X are bad and should be ignored. Unfortunately client X always wins because it's a supermajority and client Y cannot get good blocks through.\n\nA patch for fixing client X is issued. However to fix the bad transactions a chain reorg must take place. But anyone running client X has already voted on previous blocks and double voting in the same epoch is a slashable offence.\n\nNobody running client X will voluntarily allow themselves to get slashed so the bad transactions will remain unless a special exemption is put in place.\n\nTo avoid this scenario no single client should ever have more than 50% network share. This includes execution layer and consensus layer clients.\n\nBoth problems are easily mitigated for large scale operators by running the free open source Vouch service, by Attestant.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "iafkg9n",
+                                                                    "author": "gingerballs45",
+                                                                    "score": 14,
+                                                                    "created_utc": 1653835657.0,
+                                                                    "response": "Thank you ser have a silver",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "iaflpg5",
+                                                                            "author": "PorchBear816",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653836216.0,
+                                                                            "response": "Thank you ser for being wholesome",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "iafom0g",
+                                                                                    "author": "gingerballs45",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653837520.0,
+                                                                                    "response": "It\u2019s a bear market, learning sessions are in :D",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "iaflm1e",
+                                                                            "author": "TimbukNine",
+                                                                            "score": 0,
+                                                                            "created_utc": 1653836174.0,
+                                                                            "response": "Very kind of you. \ud83d\udc4d",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "iafni1d",
+                                                                    "author": "PhysicalJoe3011",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653837023.0,
+                                                                    "response": "Does this mean, also Geth should also only have at most 50% ?",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "iagjetj",
+                                                                            "author": "eastsideski",
+                                                                            "score": 2,
+                                                                            "created_utc": 1653851532.0,
+                                                                            "response": "Yes, there will be a push for more adoption of alternative execution clients like Nethermind",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "iafyrxb",
+                                                    "author": "Mallardshead",
+                                                    "score": -6,
+                                                    "created_utc": 1653842045.0,
+                                                    "response": "The Beacon Chain is screwed",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "iafr0ha",
+                            "author": "Cartosys",
+                            "score": 3,
+                            "created_utc": 1653838616.0,
+                            "response": "A huge achievement by the staking community and the Ethereum community as a whole, I'd say.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iaeqlma",
+                    "author": "DarkmessageCH",
+                    "score": 13,
+                    "created_utc": 1653816003.0,
+                    "response": "Cool, now we need to move away from Geth: https://ethernodes.org/",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaf2nj2",
+                            "author": "nishinoran",
+                            "score": 5,
+                            "created_utc": 1653826022.0,
+                            "response": "It sounds like post-Merge that will be the case if this headline is correct?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaffy5h",
+                                    "author": "AusIV",
+                                    "score": 6,
+                                    "created_utc": 1653833451.0,
+                                    "response": "Nope. Beacon nodes and execution nodes are independent, and post merge will need eachother.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iafjoeg",
+                                            "author": "nishinoran",
+                                            "score": 1,
+                                            "created_utc": 1653835304.0,
+                                            "response": "Ah, gotcha, didn't realize the beacon clients wouldn't be able to handle execution.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iafuww7",
+                                                    "author": "Cryptolution",
+                                                    "score": 1,
+                                                    "created_utc": 1653840351.0,
+                                                    "response": ">Ah, gotcha, didn't realize the beacon clients wouldn't be able to handle execution.\n\nA validator node can earn rewards for validating but lose out on block proposals if the eth1 node (geth) is down (and if there is no backup configuration specifying a external mode).",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "iafqgr5",
+                            "author": "InternetPersonv6",
+                            "score": 1,
+                            "created_utc": 1653838369.0,
+                            "response": "Unfortunately for me running a validator on a raspberry pi 4 I don't have many options.  I'm hoping that ARM architecture gets some love so I can switch away from geth but I'm not holding my breath.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iafwerd",
+                                    "author": "DarkmessageCH",
+                                    "score": 3,
+                                    "created_utc": 1653841000.0,
+                                    "response": "They are testing Nethermind, Besu and Erigon already: [Ethereum on ARM link](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/kiln/kiln-testnet.html#what-s-included)",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iaelomm",
+                    "author": "purple3301green4039",
+                    "score": 4,
+                    "created_utc": 1653811562.0,
+                    "response": "What does it means?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iafz5d7",
+                    "author": "Mallardshead",
+                    "score": -13,
+                    "created_utc": 1653842212.0,
+                    "response": "This means that the money lost in Beacon after merging it won't be as bad. But it's irrelevant. They'll lose control of the state, get attacked, fork until they shut things down, and leave Ethereans shell-shocked bag holders like LUNAtics wishing they'd have listened to maxis.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iag05w4",
+                            "author": "abzzdev",
+                            "score": 9,
+                            "created_utc": 1653842667.0,
+                            "response": "lol, looks like all you do is FUD ETH. Why spend so much time in a sub you clearly dislike when you could just go stack sats in r/bitcoin?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iag1849",
+                                    "author": "Mallardshead",
+                                    "score": -8,
+                                    "created_utc": 1653843147.0,
+                                    "response": "Because as your conscience, I have an obligation to you.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iag1e6k",
+                                            "author": "abzzdev",
+                                            "score": 6,
+                                            "created_utc": 1653843223.0,
+                                            "response": "XD, you do you, I ain't here to judge",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iag241m",
+                                                    "author": "Mallardshead",
+                                                    "score": -6,
+                                                    "created_utc": 1653843550.0,
+                                                    "response": "Thank you. What's your biggest doubt with ethereum?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "iag4agj",
+                                                            "author": "JCmollyrock420",
+                                                            "score": 3,
+                                                            "created_utc": 1653844528.0,
+                                                            "response": "You\u2019re pathetic go troll somewhere else",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "iagalwd",
+                                                                    "author": "Mallardshead",
+                                                                    "score": -1,
+                                                                    "created_utc": 1653847422.0,
+                                                                    "response": "And what about you? What's your biggest doubt with ethereum?",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "iagm7d2",
+                                            "author": "jamanatron",
+                                            "score": 1,
+                                            "created_utc": 1653852840.0,
+                                            "response": "Ahhh, when you\u2019re so blind to your own enormous ego and self importance that you make silly statements like ^ that one",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

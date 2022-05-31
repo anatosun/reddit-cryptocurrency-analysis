@@ -37,8 +37,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uy8kay/can_bitcoin_be_reset/",
             "author": "ClassicRedSparkle",
             "created_utc": 1653574402.0,
-            "score": 1,
-            "num_comments": 8,
+            "score": 3,
+            "num_comments": 20,
             "subreddit": "BitcoinBeginners",
             "selftext": "It\u2019s just software so why is there a finite amount of coins? Can\u2019t we just restart/re-upload whatever and either make new coins or continue on?\n\nI don\u2019t understand what actually got started to begin mining coins and creating the blockchain - everything seems to begin with, \u201cand the blockchain was created\u201d. Okay, to where? How? Why can\u2019t we do it again and have 42 million coins?",
             "stickied": false,
@@ -46,25 +46,81 @@
                 {
                     "id": "ia2ggjv",
                     "author": "BTCMachineElf",
-                    "score": 2,
+                    "score": 5,
                     "created_utc": 1653574695.0,
                     "response": "Satoshi Nakamoto built the Genesis Block on Jan 4th, 2009. This is a special block that, unlike any other, has no previous block hash, and the mining reward is unspendable.\n\nYou could make a new bitcoin clone with a new genesis block, but nobody will care. Agreeing that the bitcoin ledger is the definitive ledger is fundamental to the value proposition of all crypto.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "ia2w4uv",
+                            "author": "_nformant",
+                            "score": 2,
+                            "created_utc": 1653581079.0,
+                            "response": "Something I want to add to your answer: BTC can\u2019t be altered/resetted as well, because the miners and node operators probably won\u2019t use the new required code (update).\n\nReading about hardforks could help OP here (:\n\nhttps://www.investopedia.com/tech/history-bitcoin-hard-forks/",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 },
                 {
                     "id": "ia2gr7g",
                     "author": "bitusher",
-                    "score": 2,
+                    "score": 6,
                     "created_utc": 1653574818.0,
                     "response": "Theoretically , yes. Practically , No.\n\nThe reason for this is the 21 million limit is considered as sacrosanct and unchangeable by the Bitcoin community.\n\nhttps://en.bitcoin.it/wiki/Prohibited_changes#:~:text=These%20changes%20are%20considered%20to,much%20from%20the%20original%20design.\n\nThis type of change would require a \"Hard Fork\" and Bitcoin is setup where all full nodes(not merely the miners) enforce these consensus rules\n\nhttps://en.bitcoin.it/wiki/Protocol_rules\n\nIf any of these rules (like the 21 million limit) is removed or changed than all nodes will reject that block and ban the peer sending it automatically regardless how much hashpower is enforcing the change. This means that **such a change would require unanimous support which would be an impossible task** especially since the 21 limit is considered part of Bitcoins ethos and brand.\n\nThe most that would happen if some group did this is create an altcoin that people ignored and dumped their split coins on which would drive the price of that altcoin into the ground. The Game theory would also support the scarcer and original coin being desired while the altcoin being dumped and exchanged for real Bitcoins.",
                     "depth": 1,
                     "comments": []
                 },
                 {
+                    "id": "ia3av11",
+                    "author": "BlocksDAO",
+                    "score": 3,
+                    "created_utc": 1653586878.0,
+                    "response": "This video can answer your questions. It is set in a library with an older audience. https://twitter.com/calvinweight/status/1527355864906027027?s=21&t=vHldOfXbozqTQnM4ZR1kjQ",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia2frtf",
+                    "author": "AutoModerator",
+                    "score": 2,
+                    "created_utc": 1653574403.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia2gilb",
+                    "author": "ts_wrathchild",
+                    "score": 2,
+                    "created_utc": 1653574718.0,
+                    "response": "If you can convince 51% of the nodes to do your bidding, you can do anything. Good luck!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia2h53r",
+                            "author": "bitusher",
+                            "score": 3,
+                            "created_utc": 1653574977.0,
+                            "response": "It would have to be closer to 99% of full nodes and almost all hashrate because exchanges would be very wary about assigning the BTC/XBT ticker to any new hardfork that didn't have almost complete consensus on such a delicate matter that overturns bitcoin's whole ethos they would open themselves up to litigation",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia2h2i9",
+                    "author": "NitronBot106",
+                    "score": 2,
+                    "created_utc": 1653574947.0,
+                    "response": "Bitcoin in its current form exists as it is because the vast majority of nodes all agree on the same set of rules. You could reset it, increase the supply, write a version where you have half coins or do whatever you want. However if no one else spins up a node with your rules you'll just out on an island all by yourself. You'll be completely cut off from the other Bitcoin nodes because they do not recognize your version of Bitcoin as valid and therefore will just ignore you.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "ia2h1hj",
                     "author": "AvailableAd4969",
-                    "score": 2,
+                    "score": 1,
                     "created_utc": 1653574935.0,
                     "response": "NO\ud83d\ude01",
                     "depth": 1,
@@ -81,41 +137,22 @@
                     ]
                 },
                 {
-                    "id": "ia2h2i9",
-                    "author": "NitronBot106",
-                    "score": 2,
-                    "created_utc": 1653574947.0,
-                    "response": "Bitcoin in its current form exists as it is because the vast majority of nodes all agree on the same set of rules. You could reset it, increase the supply, write a version where you have half coins or do whatever you want. However if no one else spins up a node with your rules you'll just out on an island all by yourself. You'll be completely cut off from the other Bitcoin nodes because they do not recognize your version of Bitcoin as valid and therefore will just ignore you.",
+                    "id": "ia38ss9",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1653586050.0,
+                    "response": "Bitcoin is decentralized. If you choose software for your node which has different rules to all the other nodes, then you're not participating. You're alone",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "ia2frtf",
-                    "author": "AutoModerator",
+                    "id": "ia4b2fj",
+                    "author": "Away_Future913",
                     "score": 1,
-                    "created_utc": 1653574403.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "created_utc": 1653602050.0,
+                    "response": "* We've made a lot of noise about the Arkiragal LandSale's achievements, but amazing things need to be disseminated out and seen.",
                     "depth": 1,
                     "comments": []
-                },
-                {
-                    "id": "ia2gilb",
-                    "author": "ts_wrathchild",
-                    "score": 1,
-                    "created_utc": 1653574718.0,
-                    "response": "If you can convince 51% of the nodes to do your bidding, you can do anything. Good luck!",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "ia2h53r",
-                            "author": "bitusher",
-                            "score": 1,
-                            "created_utc": 1653574977.0,
-                            "response": "It would have to be closer to 99% of full nodes and almost all hashrate because exchanges would be very wary about assigning the BTC/XBT ticker to any new hardfork that didn't have almost complete consensus on such a delicate matter that overturns bitcoin's whole ethos they would open themselves up to litigation",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
                 }
             ]
         }

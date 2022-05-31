@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/CryptoTechnology/comments/uy0q9i/i_believe_i_have_a_winning_candidate_hypothesis/",
             "author": "Tasty-Lobster-8915",
             "created_utc": 1653544225.0,
-            "score": 13,
-            "num_comments": 12,
+            "score": 24,
+            "num_comments": 21,
             "subreddit": "CryptoTechnology",
             "selftext": "I believe I have made some significant improvements to some existing consensus algorithms that make them faster without sacrificing security. I will not go so far as to say it is \"revolutionary\" or anything, as it is just an improvement on existing published theory, modified to fit a specific niche case in finance (the improvements come with tradeoffs which I deem acceptable for my use case). \n\nI have created a small proof of concept in order to test my theory. It has passed all scenarios I can think of, but obviously there are people out there who are much smarter than me.\n\nAre there any scripts or papers out there that compiles a list of the most common attack vectors to a consensus algorithm so I can stress test my algorithm?",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "ia1bj2e",
                     "author": "Dormage",
-                    "score": 10,
+                    "score": 23,
                     "created_utc": 1653547056.0,
                     "response": "There are a few generic ones but the exact execution is always tailored to the specific system in production.\n\nA few generic attack vectors are a category of Sybil attacks, eclipse attacks, DoS based attacks, mallability attacks, etc..\n\nWithout knowing the underlying network stack, and consensus protocol its hard to even think about how these would apply to your implementation.\n\nIt would be helpful to describe your idea in some abstract way at least before we can reason about the security aspects.",
                     "depth": 1,
@@ -31,7 +31,7 @@
                         {
                             "id": "ia1xyif",
                             "author": "Tasty-Lobster-8915",
-                            "score": 3,
+                            "score": 10,
                             "created_utc": 1653565411.0,
                             "response": "It\u2019s a modified version or practical Byzantine fault tolerance. Draws some inspiration from the Solana implementation",
                             "depth": 2,
@@ -39,11 +39,21 @@
                                 {
                                     "id": "ia1zh2u",
                                     "author": "Dormage",
-                                    "score": 5,
+                                    "score": 15,
                                     "created_utc": 1653566354.0,
                                     "response": "PBFT is very old and well researched mechanism. Since you borrow from Solana I would assume you use VDFs to have a proof of history and then voting using PBFT. If true, then the attack vectors are outlined in Solana WP. For PBFT, scalability is an issue, which hinders decentralization. \nYou may not be able to run PBFT on thousands od nodes due to it being a 3 phase protocol that requires a lot of message passing.",
                                     "depth": 3,
-                                    "comments": []
+                                    "comments": [
+                                        {
+                                            "id": "ia3d83p",
+                                            "author": "JoystickMonkey",
+                                            "score": 10,
+                                            "created_utc": 1653587826.0,
+                                            "response": "This is what it would be like to overhear wizards having a conversation.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -52,36 +62,54 @@
                 {
                     "id": "ia1ithk",
                     "author": "mikaball",
-                    "score": 8,
+                    "score": 15,
                     "created_utc": 1653553313.0,
                     "response": "I would start by trying to publish a paper, at least to check the concept before start implementing. If you don't want to go through peer-review, write a white paper and try to find people to review it.",
                     "depth": 1,
                     "comments": []
                 },
                 {
+                    "id": "ia2fmif",
+                    "author": "flygoing",
+                    "score": 11,
+                    "created_utc": 1653574340.0,
+                    "response": "You could go the route that many alt L1s take these days: launch with little assurance that it will work, sell half a $billy in tokens, and blame someone else when it gets rekt",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "ia22z8k",
                     "author": "Slipping_Dog_of_War",
-                    "score": 5,
+                    "score": 8,
                     "created_utc": 1653568358.0,
                     "response": "Release it Open Source right along with those claims.",
                     "depth": 1,
                     "comments": []
                 },
                 {
+                    "id": "ia45tos",
+                    "author": "Karyo_Ten",
+                    "score": 6,
+                    "created_utc": 1653599744.0,
+                    "response": "Write a paper.\n\nCompare it to:\n\n- Ethereum's Casper FFG\n- Polkadot's (?) Consensus\n- Cosmos' Tendermint\n- Avalanche's\n- Fantom's Lachesis\n- Solana's\n- Tezos's\n\nMany dimensions:\n\n- Bandwidth\n- Latency\n- Malicious actors threshold for soundness\n- Number of validators\n- Finality speed\n- Block time",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
                     "id": "ia1mfbm",
                     "author": "Aggressive-Pay2406",
-                    "score": -2,
+                    "score": -7,
                     "created_utc": 1653556574.0,
                     "response": "Send me 1 btc I\u2019ll see if the rails work \ud83d\ude02",
                     "depth": 1,
                     "comments": []
                 },
                 {
-                    "id": "ia2fmif",
-                    "author": "flygoing",
-                    "score": 1,
-                    "created_utc": 1653574340.0,
-                    "response": "You could go the route that many alt L1s take these days: launch with little assurance that it will work, sell half a $billy in tokens, and blame someone else when it gets rekt",
+                    "id": "ia7sbh7",
+                    "author": "wanglubaimu",
+                    "score": 0,
+                    "created_utc": 1653671876.0,
+                    "response": "Proof of Work is still unbeatable. You show us you've done actual work and we comment on it. \n\nBtw, Ethereum just suffered a multi block reorg in the beacon chain. Turns out despite dozens of devs working on it for years, these systems are complicated and things can go wrong if they aren't battle-hardened. Bitcoin had a lot of issues and bugs when it was first released, despite Satoshi being a really smart guy. You can't firgure this out on your own, it's way too complex. There is no checklist. Also I doubt your breakthrough idea is as simple as the original Bitcoin spec so this is even more true for whatever novel mechanisms people come up with. Nakamoto consensus is arguable fairly easy to understand, and yet even most of the Bitcoin users don't really have any idea about it.",
                     "depth": 1,
                     "comments": []
                 }

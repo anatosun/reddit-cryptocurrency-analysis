@@ -78,34 +78,15 @@
             "author": "makejau",
             "created_utc": 1653568994.0,
             "score": 2,
-            "num_comments": 6,
+            "num_comments": 28,
             "subreddit": "Bitcoin",
             "selftext": "I keep seeing people (i.e. Odell) discouraging this method for crearing a seed and don't understand why. I would think it provides good entropy if done well (all words are equal in paper size, returning each word to the hat after picking, shaking the hat after each pick, etc). Then you calculate the last word offline using BitcoinQ&A seedtool, or Seedsigner and that's it. What am I missing?",
             "stickied": false,
             "comments": [
                 {
-                    "id": "ia263al",
-                    "author": "savinelli_smoker",
-                    "score": 5,
-                    "created_utc": 1653569989.0,
-                    "response": "All 2048 pieces of papers in a hat?",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "ia2lr9e",
-                            "author": "makejau",
-                            "score": 1,
-                            "created_utc": 1653576897.0,
-                            "response": "yep",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
                     "id": "ia27ggc",
                     "author": "Starbackr",
-                    "score": 5,
+                    "score": 8,
                     "created_utc": 1653570657.0,
                     "response": "Why not use dice?",
                     "depth": 1,
@@ -113,7 +94,7 @@
                         {
                             "id": "ia2lqoc",
                             "author": "makejau",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1653576890.0,
                             "response": "sure, dice works. I want to know why the hat method doesn't",
                             "depth": 2,
@@ -122,9 +103,194 @@
                     ]
                 },
                 {
+                    "id": "ia33hwj",
+                    "author": "randbtcacct",
+                    "score": 3,
+                    "created_utc": 1653583958.0,
+                    "response": "diceware version that avoids a long craft project: https://github.com/sarpulhu/dicebip39",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia50rv0",
+                    "author": "classic_aut0",
+                    "score": 3,
+                    "created_utc": 1653614325.0,
+                    "response": "You can do it.  It will work just fine.  It will also be impossible to convince others it has no flaws.  So whatever floats your boat(ing accident)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia5mpxd",
+                            "author": "makejau",
+                            "score": 1,
+                            "created_utc": 1653625629.0,
+                            "response": "not trying to convince anyone, I barely know what I'm talking about \ud83d\ude05 I just wabted to understand why this method isconsidered  flawed",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia263al",
+                    "author": "savinelli_smoker",
+                    "score": 3,
+                    "created_utc": 1653569989.0,
+                    "response": "All 2048 pieces of papers in a hat?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia2lr9e",
+                            "author": "makejau",
+                            "score": 2,
+                            "created_utc": 1653576897.0,
+                            "response": "yep",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia4o658",
+                                    "author": "savinelli_smoker",
+                                    "score": 3,
+                                    "created_utc": 1653608149.0,
+                                    "response": "Wouldn\u2019t flipping a coin 256 times be less work? At least you don\u2019t need to cut up the papers\u2026\n\nEdit: I\u2019m here to learn, personally don\u2019t see anything obviously wrong with your method though, as long as you thoroughly mix it and so on. \nPerhaps you randomise the list even before printing on paper, so the little pieces don\u2019t line up in alphabetical order after you cut\u2026 tell us how it goes",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia5mjq9",
+                                            "author": "makejau",
+                                            "score": 1,
+                                            "created_utc": 1653625522.0,
+                                            "response": "yes I just want to learn too. I'm not defending this method, I just don't understand how it is flawed",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia2quq5",
+                    "author": "SmoothGoing",
+                    "score": 1,
+                    "created_utc": 1653578969.0,
+                    "response": "Get a hardware wallet. Let it pick the words.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia2sh8m",
+                            "author": "makejau",
+                            "score": 2,
+                            "created_utc": 1653579627.0,
+                            "response": "why trust the hardware wallet?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia3v5kd",
+                                    "author": "fawnside",
+                                    "score": 2,
+                                    "created_utc": 1653595202.0,
+                                    "response": "Why trust the hat?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia5mqjh",
+                                            "author": "makejau",
+                                            "score": 1,
+                                            "created_utc": 1653625639.0,
+                                            "response": "touch\u00e9",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia2rqjx",
+                    "author": "SolventAssetsGone",
+                    "score": 1,
+                    "created_utc": 1653579328.0,
+                    "response": "I don\u2019t think it can just be any random words, the last word is a checksum.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia2sk1p",
+                            "author": "makejau",
+                            "score": 2,
+                            "created_utc": 1653579658.0,
+                            "response": "yes, as indicated in the title",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia3b4a2",
+                                    "author": "pink_raya",
+                                    "score": 1,
+                                    "created_utc": 1653586980.0,
+                                    "response": "because after you create this seed, you're going to input it into a device with an OS.\n\nAlso, it's not practical, may work fine once, but if you need/want to move seeds more frequently this will become a drag.\n\nedit: replied to wrong comment but hey",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia3kfzq",
+                                            "author": "makejau",
+                                            "score": 3,
+                                            "created_utc": 1653590773.0,
+                                            "response": "the question is if the hat thing is a good method to get enough entropy when creating a seed. what you do with the seed after the fact is a different topic (anyway, you just put it on an airgapped memoryless SeedSigner to sign txs, and back it up on a metal plate)",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia3lq6r",
+                                                    "author": "pink_raya",
+                                                    "score": 2,
+                                                    "created_utc": 1653591297.0,
+                                                    "response": "it creates an opportunity for a fuckup when converting the seed to a QR code for seedsigner. Of course, if you are skilled enough to navigate all this and trust yourself there is no downside on its own from security perspective, just comfort. \n\nBut over time, discomfort can perhaps make you be more likely to make a mistake.\n\nmaybe one can argue that your hand will not pick as randomly, because you will exclude the papers stuck in corners from the set etc, while algo has an equal chance of each word.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia3nhd5",
+                                                            "author": "skeptical-0ptimist",
+                                                            "score": 4,
+                                                            "created_utc": 1653592020.0,
+                                                            "response": "I would think that the randomness of your hand is not as important as the randomness of the seeds in the hat.  Doesn't matter if you always pick \"top and middle\" as long as whatever occupies that position is effectively random.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia3p2tl",
+                                                                    "author": "pink_raya",
+                                                                    "score": 3,
+                                                                    "created_utc": 1653592681.0,
+                                                                    "response": "yeah that makes sense. glad I said maybe.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "ia3tl9t",
+                                                                            "author": "makejau",
+                                                                            "score": 3,
+                                                                            "created_utc": 1653594549.0,
+                                                                            "response": "yes, I should have framed the question like: why is it considered not good entropy to randomly pick a word from a hat, put it back, **shake the hell out of the hat**, pick the next one, blabla. I can't thing of anything more random than this.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "ia2htjz",
                     "author": "cryptolulz",
-                    "score": 1,
+                    "score": 0,
                     "created_utc": 1653575262.0,
                     "response": "Maybe you should elaborate on what done well actually entails since I can't see it having good entropy at all lmfao... Like straight orders of magnitude off.",
                     "depth": 1,
@@ -132,9 +298,57 @@
                         {
                             "id": "ia2mcy3",
                             "author": "makejau",
-                            "score": 1,
+                            "score": 3,
                             "created_utc": 1653577145.0,
                             "response": "I'll try:\n1. print 2048 bip39 words\n2. cut each word\n3. put in a hat/bowl/bag wathever\n4. closed eyes, shake it well, pick one word, write it down, put it back\n5. repeat 22 more times\n6. calculate checksum\n\nI see total absolute randonmess, just as with dice",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia2mn1t",
+                                    "author": "cryptolulz",
+                                    "score": -2,
+                                    "created_utc": 1653577258.0,
+                                    "response": "\ud83e\udd28 absolutely no way that'll be good entropy though lol",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia2mttz",
+                                            "author": "makejau",
+                                            "score": 3,
+                                            "created_utc": 1653577333.0,
+                                            "response": "ok but why?? \ud83e\udd72",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "ia3avj9",
+                                            "author": "randbtcacct",
+                                            "score": 2,
+                                            "created_utc": 1653586884.0,
+                                            "response": "I'm also curious. Drawing from a hat is random.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia3xndj",
+                    "author": "igadjeed",
+                    "score": 0,
+                    "created_utc": 1653596255.0,
+                    "response": "> What am I missing?\n\nYou need to reshuffle after each word pick. Physical shuffling can never be as random as a computer operating system's entropy generator",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia5nlm7",
+                            "author": "makejau",
+                            "score": 1,
+                            "created_utc": 1653626166.0,
+                            "response": ">> Physical shuffling can never be as random as a computer operating system's entropy generator\n\nmaybe this is the reason...I don't see exactly why though",
                             "depth": 2,
                             "comments": []
                         }

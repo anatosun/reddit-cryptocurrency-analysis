@@ -1,0 +1,88 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v10hqc",
+            "title": "EIP-1202: Voting Standard with Zainan Victor Zhou",
+            "url": "https://www.reddit.com/r/ethereum/comments/v10hqc/eip1202_voting_standard_with_zainan_victor_zhou/",
+            "author": "poojaranjan19",
+            "created_utc": 1653918152.0,
+            "score": 8,
+            "num_comments": 2,
+            "subreddit": "ethereum",
+            "selftext": " \u26a1\ufe0f[EIP-1202: Voting Standard](https://youtu.be/3PLYW644kG0)\u26a1\ufe0f\n\nCheckout recording of a proposed voting standard with Zainan Victor Zhou on [PEEPanEIP](https://www.youtube.com/watch?v=3PLYW644kG0).\n\n**Summary**\n\n* ERC Interface \n* Interface overall, Core, Metadata and Status part \n* Highlight design decisions \n* Implementations \n* Notable prior art and Q&A \n\n**Resources**\n\n* Slides - https://docs.google.com/presentation/d/1pNrb3aLrClE64TUM4VWk1IM3kRQl-XOtNidtSVK\\_2AY/edit?resourcekey=0-JGtrUhxfv2Nf5jKL41QnQw#slide=id.g12cbe0c938f\\_1\\_82 \n* EIP - https://eips.ethereum.org/EIPS/eip-1202 \n* Discussion - https://github.com/ethereum/EIPs/issues/1202",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "v10ogh",
+            "title": "Is decentralizing upgradeability possible?",
+            "url": "https://www.reddit.com/r/ethereum/comments/v10ogh/is_decentralizing_upgradeability_possible/",
+            "author": "aemmeroli",
+            "created_utc": 1653918727.0,
+            "score": 5,
+            "num_comments": 7,
+            "subreddit": "ethereum",
+            "selftext": "Currently a lot of the big sidechains (polygon, arbitrum, etc) use ownable upgradeable smart contracts. They all have the goal to scale the ethereum network and they actually are scalining it and making transactions faster and cheaper. But so are centralized exchanges like binance. A handful of polygon or arbitrum devs can remove your ability to withdraw your funds and in some cases actually steal your money. I'm not saying they will but it's very easily possible. This will only be fixed if upgradeability is removed or becomes decentralized.\n\nSince the sidechains and all the used contracts are very complex it will never be possible to be 100% sure that there are no bugs. Removing upgradeability could be very risky.\n\nImplementing decentralized upgradeability introduces a lot of questions to which seemingly [no one has a good answer](https://streameth.tv/event/l2-amsterdam) (morning 1:39:20)\n\nWhat do you think how this will develop? I like using sidechains but it honestly feels like using ethereum on a AWS server at the moment. It might run on multiple nodes and everything seems decentralized but as long as a small amount of people can change the code just like that, it will never be decentralized and is therefore insecure.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ial47c5",
+                    "author": "Perleflamme",
+                    "score": 1,
+                    "created_utc": 1653943647.0,
+                    "response": "I don't see why decentralized upgradability would be hard to implement or decide about.\n\nDecentralized smart contract owner creates any upgrade they want about any of its smart contracts implemented according to a decentrally upgradable interface, some EIP that isn't yet created. \n\nThen, anyone interacting with the smart contract can choose whatever upgraded smart contract they want. \n\nWhat's difficult is ensuring compatibility between versions. Though backward compatibility isn't needed, for obvious reasons, which means it's a way easier problem to solve.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ial4my8",
+                            "author": "aemmeroli",
+                            "score": 1,
+                            "created_utc": 1653943849.0,
+                            "response": "I don't know if I understand you correctly but I don't think that works. If there's a bug in one of implementations an attacker would use this implementation and steal your funds on L1.\n\nAlso the current way upgradability works involves proxies which hold the state. You can't have multiple implementations of the upgradable contract.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ial5h39",
+                                    "author": "Perleflamme",
+                                    "score": 1,
+                                    "created_utc": 1653944251.0,
+                                    "response": "If you upgrade before he steals you, your funds become safe. \n\nIf he steals you before you upgrade, well, there's no way to prevent that anyway, whatever you do.\n\n>Also the current way upgradability works involves proxies which hold the state. You can't have multiple implementations of the upgradable contract.\n\nI agree. That's why I talked about needing to create a new EIP. Diamond isn't suitable for that, clearly. It's too one sided and forces reintroduction of trust into the smart contract owner, which hurts interaction by removing trustlessness.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ial64d6",
+                                            "author": "aemmeroli",
+                                            "score": 1,
+                                            "created_utc": 1653944559.0,
+                                            "response": "If I understand you correctly this is what you mean: If there is a bug in a contract and it's not known to the public yet, the devs upload a fixed version of the contract and then the user can decide himself which version to use. \n\nThe problem I see is that the user still has to be faster than any attacker in the world. As soon as the fixed version is out, every attack will know the bug and exploit it.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ial77me",
+                                                    "author": "Perleflamme",
+                                                    "score": 1,
+                                                    "created_utc": 1653945080.0,
+                                                    "response": "I see. You're right. It means users would need to have ways to be faster, notably by having tools to automatically browse code, execute it and decide on their behalf whether to upgrade or not.\n\nBut there's no way to guarantee one is faster than the other, even then. \n\nWhich means any fund also needs to be protected by a time frame that allows upgrade but not fund retrieval (a bit like what some L2s do for their own mandatory upgrades, but the other way around as it's now optional upgrade).",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

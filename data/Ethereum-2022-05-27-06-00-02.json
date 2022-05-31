@@ -1,0 +1,83 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uyrhp2",
+            "title": "The Hitchhiker's Guide to Ethereum",
+            "url": "https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum/",
+            "author": "AESTHTK",
+            "created_utc": 1653631164.0,
+            "score": 50,
+            "num_comments": 17,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia61x7q",
+                    "author": "armaver",
+                    "score": 2,
+                    "created_utc": 1653636717.0,
+                    "response": "Centralized block production?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia6apx0",
+                            "author": "Perleflamme",
+                            "score": 3,
+                            "created_utc": 1653644635.0,
+                            "response": "Basically, I guess it's because each L2 is mostly centralized, even though there's no reason they'd need to be so in the end. Or because of sharding, maybe? I haven't yet checked their most recent thoughts on this. \n\nBut it doesn't change the fact the whole chain is decentralized, due to the fact L2s can't, by definition, take away your funds (just know and be careful about the temporary vulnerabilities of each of them, right now) and you can still copy paste their smart contracts and compete. \n\nIf governments try to push for harder and harder regulations, I'd totally expect some L2s to stop it all and completely decentralize their processes. Sure, they'd still need a pretty small number of people to process the transactions so that it's still scalable, but it would still be pretty secure compared to centralized L2s. It's not very different from the size you'd need for a DAO. And since decentralized smart contract management is classically handled by a DAO anyway, you could even have L2s specialized for a given DAO and smart contracts it handles.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia63fv5",
+                            "author": "AESTHTK",
+                            "score": 2,
+                            "created_utc": 1653638074.0,
+                            "response": "The answer to this question and justification is somewhat complex... so I\u2019m just going to say, yes.\n\nBut I recommend you read the whole article.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia67mck",
+                                    "author": "armaver",
+                                    "score": 1,
+                                    "created_utc": 1653641819.0,
+                                    "response": "Ok, I will. But can you try to ELI5? Centralized anything doesn't sound like the Ethereum I know and love.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia6q368",
+                                            "author": "domotheus",
+                                            "score": 5,
+                                            "created_utc": 1653655268.0,
+                                            "response": "Centralized block production - you need beefy hardware to build a block, but decentralized block verification - a light client with little ram and bandwidth is enough to keep the block builder in check and preserve the decentralized vision\n\nit's gonna happen regardless because being the one to build a block lets you extract so much value that block building will always converge towards centralization. The next best thing is to tweak things so that even the most centralized builder can't do evil stuff like censor transactions or shut the whole network down.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "ia6ejv0",
+                                            "author": "AESTHTK",
+                                            "score": 2,
+                                            "created_utc": 1653647839.0,
+                                            "response": "ELI5: because block production is such a specialised task, it will naturally centralise due to network effects - but we can have a design where this is ok, because it\u2019s censorship resistant.\n\nhttps://vitalik.eth.limo/general/2021/12/06/endgame.html",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

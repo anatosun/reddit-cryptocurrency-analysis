@@ -1,0 +1,254 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uz3a0b",
+            "title": "Ethereum 2.0 network unintentionally forks for the first time",
+            "url": "https://www.reddit.com/r/ethereum/comments/uz3a0b/ethereum_20_network_unintentionally_forks_for_the/",
+            "author": "Bourneser",
+            "created_utc": 1653672458.0,
+            "score": 16,
+            "num_comments": 10,
+            "subreddit": "ethereum",
+            "selftext": "Yesterday, May 25, the Ethereum 2.0 network had an involuntary fork that lasted 7 blocks (approximately 2 minutes). \n\nThis event is the first to occur in this new version of the network created by Vitalik Buretin.\n\nSuch a scenario occurs when there is a desynchronization between nodes. \n\nWhat happened was that some of them did not share the same number of blocks as the others, and this caused those that were out of sync to momentarily create a new chain. After 7 blocks, the network detected the mismatch and automatically reorganized itself.\n\nIt seems that this may delay the blockchain migration from the BNB to Ethereum of some projects that are in pre-launch phase, such as CHO, Minosis Token or LunaFi (projects of all kinds) projects that drive the blockchain development, but due to this unexpected event we must wait for news from the Ethereum team to continue.\n\nMartin K\u00f6ppelmann, co-founder of the Gnosis platform, indicated that a reorganization of this magnitude had not been seen in years in Ethereum (in this case Ethereum 1.0).\n\nTo better understand what happened, it is necessary to know that, in a blockchain network, each mined block has information about the number (header) of the previous block. When a reorganization occurs, it means that there is no chaining between blocks, because a block is not pointing directly to the previous block.\n\n In the case of the current incident, as shown in the image above, the block was pointing to a block that was 7 blocks behind.\n\nSince the Ethereum 2.0 network is not yet validating transactions (and will not do so until the merge occurs), Ethereum users did not notice any irregularities. However, in an operational network, a reorganization means that transactions that were validated on the rejected blocks are cancelled.\n\nReorganizations can be considered common behavior, of 1 block, or even 2. However, as K\u00f6lppelmann himself points out, 7-block reorganizations should not exist, and developers should take measures that counter these scenarios. \n\nIn this case, Tsao commented, \"I'm sure we will see less of this when more nodes are updated for the boost-enabled version.\"",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia7wjmd",
+                    "author": "Nonocoiner",
+                    "score": 9,
+                    "created_utc": 1653673647.0,
+                    "response": ">as shown in the image above\n\nWhat image?\n\n>the network created by Vitalik Buretin.\n\nOf course, we all know the famous mr Buretin!\n\nThis post is a weird mix of sense and nonsense.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia80enb",
+                            "author": "bandoonparade",
+                            "score": 3,
+                            "created_utc": 1653675319.0,
+                            "response": "The image from the post the bot stole this from, obviously.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia82qqo",
+                            "author": "ScroogeMcDuck3000",
+                            "score": 1,
+                            "created_utc": 1653676340.0,
+                            "response": "Indeed! Some facts without context nor sources sprinkled with fud...",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia7ucun",
+                    "author": "ShabbaLaFlare",
+                    "score": 1,
+                    "created_utc": 1653672727.0,
+                    "response": "This happened on the Ropsten testnet, NOT Eth mainnet.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia7wcag",
+                            "author": "CryptoMonger",
+                            "score": 3,
+                            "created_utc": 1653673561.0,
+                            "response": "No, it was the PoS chain not the testnet.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia82m72",
+                            "author": "Kike328",
+                            "score": 1,
+                            "created_utc": 1653676283.0,
+                            "response": "Nope, you\u2019re referring to the other incident",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia802it",
+                    "author": "DifficultScience2303",
+                    "score": 1,
+                    "created_utc": 1653675170.0,
+                    "response": "Of course, we all know the famous mr Buretin!",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uz36b4",
+            "title": "Where are stolen NFTs listed?",
+            "url": "https://www.reddit.com/r/ethereum/comments/uz36b4/where_are_stolen_nfts_listed/",
+            "author": "TheRealFloomby",
+            "created_utc": 1653672156.0,
+            "score": 0,
+            "num_comments": 4,
+            "subreddit": "ethereum",
+            "selftext": "I know OpenSea will freeze NFTs that are stolen, but this obviously does not preclude it being sold elsewhere. Are there platforms out there that allow sale of stolen NFTs? I don't much like NFTs, but I dislike the idea of a central actor exerting censorship like this even more.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia7u35t",
+                    "author": "Terror3y3z",
+                    "score": 3,
+                    "created_utc": 1653672616.0,
+                    "response": "There are P2P Nft trading platforms. Just like P2P crypto",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia7ujg1",
+                    "author": "Rey_Mezcalero",
+                    "score": 0,
+                    "created_utc": 1653672803.0,
+                    "response": "You looking to sell your stolen NFTs?\n\nIn some ways it good if you have something stolen you have a way to get it back or at least prevent them from profiting from it. \n\nThere are several new NFT markets out there and on the way. But I suspect they will have ban list as well. \n\nI really don\u2019t have a problem with that.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia810gu",
+                            "author": "TheRealFloomby",
+                            "score": 0,
+                            "created_utc": 1653675586.0,
+                            "response": "I don't but I keep reading about stolen nfts and wonder what people are doing with them. It seems that stealing one and then having it get blacklisted on the centralized marketplaces would mean it would not be very profitable to steal them.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia8g7jv",
+                    "author": "Mallardshead",
+                    "score": 0,
+                    "created_utc": 1653682349.0,
+                    "response": "[https://www.reddit.com/r/Bitcoin/comments/uybyho/fat\\_protocol\\_thesis/?utm\\_source=share&utm\\_medium=web2x&context=3](https://www.reddit.com/r/Bitcoin/comments/uybyho/fat_protocol_thesis/?utm_source=share&utm_medium=web2x&context=3)",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uz3g1o",
+            "title": "L2 and L1 eth and sending crypto",
+            "url": "https://www.reddit.com/r/ethereum/comments/uz3g1o/l2_and_l1_eth_and_sending_crypto/",
+            "author": "A_curious_fish",
+            "created_utc": 1653672936.0,
+            "score": 0,
+            "num_comments": 14,
+            "subreddit": "ethereum",
+            "selftext": "I recently got the gamestop wallet for chrome and had $250 in L2 eth and I sent 100 to coinbase and 150 to roobet (i know i know i enjoy blackjack from time to time) but i sent eth to each address and its been hours and everything says it was verified and sent but i see nothing on the other end. Did i fuck up royally and lose my money?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia7zl2n",
+                    "author": "shaggy_shiba",
+                    "score": 2,
+                    "created_utc": 1653674957.0,
+                    "response": "I don't believe Coinbase has a L2 footprint yet, especially Loopring. Just as with sending transactions on different chains, only send things to addresses that are *on your layer 2*. Layer 1 address doesn't mean they're listening on Layer 2. I don't know about Roobet, but my assumption here is they also are not running on Loopring L2.\n\nBig takeaway here is to always send a $0.01 transaction first, to make sure you'll be able to get it.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia84izq",
+                            "author": "A_curious_fish",
+                            "score": 1,
+                            "created_utc": 1653677116.0,
+                            "response": "damn. so basically, my moneys gone.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia84v38",
+                                    "author": "shaggy_shiba",
+                                    "score": 2,
+                                    "created_utc": 1653677263.0,
+                                    "response": "Not technically. The money is sitting in a wallet controlled by coinbase. Should they add Loopring L2 as a supported chain in the future, you should gain access to it then.\n\nThe private keys that created the address you tried to send to still holds your money. Coinbase holds that private key, and it's assigned to you. Eventually, they'll add Loopring, and hopefully they'll respect the address you already have. At that time, you'll see it in there.\n\nBig note, this stuff is early, be very careful, know that the chain your on matters, and always send test transactions.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia860in",
+                                            "author": "A_curious_fish",
+                                            "score": 1,
+                                            "created_utc": 1653677767.0,
+                                            "response": "Ok, so I should contact Coinbase I suppose? Yeah I was under the assumption same address it's good. Guess the mistake could have been worse. Thank for for your help",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia869bp",
+                                                    "author": "shaggy_shiba",
+                                                    "score": 3,
+                                                    "created_utc": 1653677880.0,
+                                                    "response": "You could try, I haven't heard about tons of success, but it might be worth a shot.\n\nI'd clarify some details, get the Transaction ID in question, provide them with a block explorer link to the tx, figure out exactly both the destination and source address, as well as *on what chain*. Was the transaction on Mainnet L1, Loopring L2 or what. Bring all of those details to light before asking them.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia8bs36",
+                                                            "author": "A_curious_fish",
+                                                            "score": 1,
+                                                            "created_utc": 1653680348.0,
+                                                            "response": "I appreciate your help thank you",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia8g6cs",
+                    "author": "Mallardshead",
+                    "score": 0,
+                    "created_utc": 1653682333.0,
+                    "response": "Here's a link explaining the L1 & L2 \n\n[https://www.reddit.com/r/Bitcoin/comments/uybyho/fat\\_protocol\\_thesis/?utm\\_source=share&utm\\_medium=web2x&context=3](https://www.reddit.com/r/Bitcoin/comments/uybyho/fat_protocol_thesis/?utm_source=share&utm_medium=web2x&context=3)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia9932c",
+                            "author": "mooremo",
+                            "score": 2,
+                            "created_utc": 1653696427.0,
+                            "response": "This isn't how the ETH L1 and L2s work. This is Bitcoin only, not really relevant to the OPs post.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia9z51u",
+                                    "author": "Mallardshead",
+                                    "score": 1,
+                                    "created_utc": 1653710437.0,
+                                    "response": "Correct, the Lighting Network doesn't require ZEUS tokens to send, ACHILLES tokens to receive, and HERCULES tokens to settle. It does away with the tokenized orgy that ETH scaling goes for, even though the LN is made of a bunch of different implementations. This  is an enormous challenge for ETH. You'd need network effects to unite under a single solution, but that solution has a speculative token, a DAO, or serious centralization problems. It doesn't work, and as a developer, I'd argue that anytime you see complexity like that, it's built wrong.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iaesimz",
+                                            "author": "edmundedgar",
+                                            "score": 1,
+                                            "created_utc": 1653817760.0,
+                                            "response": "Optimism uses ETH, Arbitrum uses ETH, ZKSync uses ETH or any token of the user's choice - which L2s are you thinking of where you need a bunch of other tokens?",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

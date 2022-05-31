@@ -9,13 +9,54 @@
     ],
     "posts": [
         {
+            "id": "uvs0bt",
+            "title": "does ethereum support multiple concensus methods?",
+            "url": "https://www.reddit.com/r/ethereum/comments/uvs0bt/does_ethereum_support_multiple_concensus_methods/",
+            "author": "cc672012",
+            "created_utc": 1653279508.0,
+            "score": 7,
+            "num_comments": 15,
+            "subreddit": "ethereum",
+            "selftext": "Hi, I'm starting on reading about Blockhains and their applications.\n\nTwo papers I've read claimed that they used a private/permissioned blockchain that uses a proof of authority concensus mechanism. However, they also mention that they're using Ethereum smart contracts and as far as I know, Ethereum is a proof-of-work public blockchain.\n\nMy questions are:\n1) How is this possible? Did they fork Ethereum and modified the source?\n2) If Ethereum somehow supports this, is this possible with all blockchains that support Smart contracts, say Cardano?\n\nPapers I've read:\nG\u00fcrsoy, G., Brannon, C.M. & Gerstein, M. Using Ethereum blockchain to store and query pharmacogenomics data via smart contracts. BMC Med Genomics 13, 74 (2020). https://doi.org/10.1186/s12920-020-00732-x\n\nAicha Fatrah, Said El Kafhali, Abdelkrim Haqiq, and Khaled Salah. 2019. Proof of Concept Blockchain-based Voting System. In Proceedings of the 4th International Conference on Big Data and Internet of Things (BDIoT'19). Association for Computing Machinery, New York, NY, USA, Article 31, 1\u20135. https://doi.org/10.1145/3372938.3372969",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i9np3yf",
+                    "author": "edmundedgar",
+                    "score": 3,
+                    "created_utc": 1653290080.0,
+                    "response": "The Ethereum software implementations like Geth generally support multiple types of consensus mechanisms. So it's the software built to run Ethereum, and it runs the Ethereum Virtual Machine and contracts written for Ethereum, but it's not the Ethereum network.\n\nGenerally you shouldn't need to modify the source code to do this since several consensus mechanisms are supported by default, but they might have done that if they wanted a feature that it didn't have.\n\nCardano doesn't support the Ethereum Virtual Machine, so Cardano software wouldn't help you with this specific case. You could do something similar where you took the Cardano software and used it to make a different network (I'm not sure how much you could do by configuring it and how much you'd need to change the source code) but if the goal is to run smart contracts then I can't think why you'd use that platform, there are lots of better smart contract platforms aside from the EVM.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9nuq78",
+                    "author": "thomas_m_k",
+                    "score": 2,
+                    "created_utc": 1653295266.0,
+                    "response": "In addition to what the other comment said, there were multiple Proof of Authority test nets for Ethereum. Currently the Goerli test net runs with PoA.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9nyvfk",
+                    "author": "AESTHTK",
+                    "score": 2,
+                    "created_utc": 1653299125.0,
+                    "response": "That would probably be Hyperledger Besu or Quorum or similar, which allows you to set multiple consensus methods when deploying Ethereum as a private network. \n\nIf it\u2019s a permissioned system there\u2019s no need for Byzantine fault tolerance, so POA is much faster.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
             "id": "uvugnu",
             "title": "Why is it gas less / free to read the block chain like ethscan? or other way?",
             "url": "https://www.reddit.com/r/ethereum/comments/uvugnu/why_is_it_gas_less_free_to_read_the_block_chain/",
             "author": "personplaygames",
             "created_utc": 1653289558.0,
-            "score": 3,
-            "num_comments": 15,
+            "score": 4,
+            "num_comments": 20,
             "subreddit": "ethereum",
             "selftext": "Why is it free to read data? I understand writing data to the blockchain is not free because space is consumed and logic is computed or something.\n\nIs it free because its just it?",
             "stickied": false,
@@ -23,7 +64,7 @@
                 {
                     "id": "i9nrgzx",
                     "author": "Perleflamme",
-                    "score": 19,
+                    "score": 20,
                     "created_utc": 1653292191.0,
                     "response": "What's scarce is writing, because there's only so much space in any block and only so many blocks per minute (notably ~15M gas per block for 30M gas max, with a block every ~13s). That's the blockspace, a pretty scarce resource. \n\nReading is just you reading the chain. You're already paying for your electricity and computer to read the chain. You can do that as much as you want without impacting anyone else. \n\nBut when you write, you need to ask for the consensus to add your content onto the chain and to be stored by everyone having a node. It means someone else may not be able to store their own content because you've out priced them. As I've already said, it's scarce space, so you need to prove to the network your content is worth being stored, by paying for it. \n\nOtherwise, that scarce resource that blockspace is could be spammed by malevolent actors for free. Gas costing something is a security measure, even though being cheap is a possibility brought by L2s.",
                     "depth": 1,
@@ -62,47 +103,6 @@
                     "score": 4,
                     "created_utc": 1653290846.0,
                     "response": "> Is it free because its just it?\n\nyeah exactly anyone can be a node you cann participate in writing by being a miner but you must agree to the consensus rules, that is unless you are trying to attack the blockchain.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "uvs0bt",
-            "title": "does ethereum support multiple concensus methods?",
-            "url": "https://www.reddit.com/r/ethereum/comments/uvs0bt/does_ethereum_support_multiple_concensus_methods/",
-            "author": "cc672012",
-            "created_utc": 1653279508.0,
-            "score": 6,
-            "num_comments": 11,
-            "subreddit": "ethereum",
-            "selftext": "Hi, I'm starting on reading about Blockhains and their applications.\n\nTwo papers I've read claimed that they used a private/permissioned blockchain that uses a proof of authority concensus mechanism. However, they also mention that they're using Ethereum smart contracts and as far as I know, Ethereum is a proof-of-work public blockchain.\n\nMy questions are:\n1) How is this possible? Did they fork Ethereum and modified the source?\n2) If Ethereum somehow supports this, is this possible with all blockchains that support Smart contracts, say Cardano?\n\nPapers I've read:\nG\u00fcrsoy, G., Brannon, C.M. & Gerstein, M. Using Ethereum blockchain to store and query pharmacogenomics data via smart contracts. BMC Med Genomics 13, 74 (2020). https://doi.org/10.1186/s12920-020-00732-x\n\nAicha Fatrah, Said El Kafhali, Abdelkrim Haqiq, and Khaled Salah. 2019. Proof of Concept Blockchain-based Voting System. In Proceedings of the 4th International Conference on Big Data and Internet of Things (BDIoT'19). Association for Computing Machinery, New York, NY, USA, Article 31, 1\u20135. https://doi.org/10.1145/3372938.3372969",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i9np3yf",
-                    "author": "edmundedgar",
-                    "score": 3,
-                    "created_utc": 1653290080.0,
-                    "response": "The Ethereum software implementations like Geth generally support multiple types of consensus mechanisms. So it's the software built to run Ethereum, and it runs the Ethereum Virtual Machine and contracts written for Ethereum, but it's not the Ethereum network.\n\nGenerally you shouldn't need to modify the source code to do this since several consensus mechanisms are supported by default, but they might have done that if they wanted a feature that it didn't have.\n\nCardano doesn't support the Ethereum Virtual Machine, so Cardano software wouldn't help you with this specific case. You could do something similar where you took the Cardano software and used it to make a different network (I'm not sure how much you could do by configuring it and how much you'd need to change the source code) but if the goal is to run smart contracts then I can't think why you'd use that platform, there are lots of better smart contract platforms aside from the EVM.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i9nuq78",
-                    "author": "thomas_m_k",
-                    "score": 2,
-                    "created_utc": 1653295266.0,
-                    "response": "In addition to what the other comment said, there were multiple Proof of Authority test nets for Ethereum. Currently the Goerli test net runs with PoA.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i9nyvfk",
-                    "author": "AESTHTK",
-                    "score": 2,
-                    "created_utc": 1653299125.0,
-                    "response": "That would probably be Hyperledger Besu or Quorum or similar, which allows you to set multiple consensus methods when deploying Ethereum as a private network. \n\nIf it\u2019s a permissioned system there\u2019s no need for Byzantine fault tolerance, so POA is much faster.",
                     "depth": 1,
                     "comments": []
                 }

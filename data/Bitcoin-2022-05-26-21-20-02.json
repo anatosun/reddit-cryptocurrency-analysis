@@ -1,0 +1,111 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uyhsky",
+            "title": "What is a second layer?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uyhsky/what_is_a_second_layer/",
+            "author": "alsonotjohnmalkovich",
+            "created_utc": 1653599903.0,
+            "score": 3,
+            "num_comments": 10,
+            "subreddit": "Bitcoin",
+            "selftext": "So I've been wondering as to what exactly is the \"second layer\" in the context of the Lightning Network. The way I understand it, it's actually independent from the Bitcoin Network. You send your bitcoin to a \"large wallet\" where it joins a different network that follows its own rules and eventually you withdraw from that large wallet back into your own BTC wallet over the Bitcoin Network.\n\nMy understanding of the second layer is thus :\n\nBTC Network -> Large wallet within which ownership is determined by a different system -> BTC Network\n\nIn that sense, an exchange would be a second layer, unless we add decentralisation as a part of the definition.\n\nWhat do you think?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia4cylb",
+                    "author": "NiceDoctorBeam",
+                    "score": 1,
+                    "created_utc": 1653602886.0,
+                    "response": "> The way I understand it, it's actually independent from the Bitcoin Network. Y  \n\nThat is not correct.  \n\nLightning Network, for example, uses partially signed Bitcoin transactions, which can eventually be executed on the Bitcoin main net, using actual Bitcoin.  \n\nLearn more here, for example:  \nhttps://www.youtube.com/watch?v=zG8PZsHLung",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia47m19",
+                    "author": "AlternativeYou8664",
+                    "score": 1,
+                    "created_utc": 1653600526.0,
+                    "response": "Satoshu Nachomofo designed Bitcoin to allow for subsequent compartmental and structural delineation in anticipation of evolving use cases and demand for the future.  To this end, below the \"main layer\" (the bitcoin prime that we see mined today), which exists as a stable ionic compound of charged coins recorded in 'blocks', is a fluid layer of isogeometrically directed coin traffic that doesn't have to conform to the same rules that the main layer does.\n\nThis is the \"second layer' about which you ask, and is much more suitable for faster transactions or numerous smaller transactions because it doesn't have to be mined or verified on the blockchoon and behaves according to fluid dynamics.  There are many benefits to this layer which you can google.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia4bn59",
+                            "author": "TerpOnaut",
+                            "score": 1,
+                            "created_utc": 1653602303.0,
+                            "response": "So scientific \ud83e\udd13",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia4c47p",
+                                    "author": "AlternativeYou8664",
+                                    "score": 1,
+                                    "created_utc": 1653602509.0,
+                                    "response": "I've taken much time to research this fasinating subject.  Sakamoto Nachamochi is a genius.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia4cw9v",
+                                            "author": "TerpOnaut",
+                                            "score": 1,
+                                            "created_utc": 1653602857.0,
+                                            "response": "truly is a legend",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia485d1",
+                    "author": "savinelli_smoker",
+                    "score": 1,
+                    "created_utc": 1653600768.0,
+                    "response": "It\u2019s second layer because lightning uses bitcoin natively. It\u2019s not another token. Exchange by definition is place where you swap tokens to another or to fiat. Also you don\u2019t need a \u201cbig wallet\u201d to run lightning you can open a small channel. It\u2019s just that more traffic will go through the thick pipes rather than the small pipes.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia48hk7",
+                    "author": "SmoothGoing",
+                    "score": 1,
+                    "created_utc": 1653600918.0,
+                    "response": "It's not a different network. It's not a large wallet. Exchanges are not second layer. Find a few articles about lightning network and read up on it.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia49ynq",
+                    "author": "taumaturgo",
+                    "score": 1,
+                    "created_utc": 1653601566.0,
+                    "response": "The end of suffering.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia4d4mb",
+                            "author": "NiceDoctorBeam",
+                            "score": 1,
+                            "created_utc": 1653602961.0,
+                            "response": "I like what you did just there.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

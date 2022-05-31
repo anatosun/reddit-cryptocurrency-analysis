@@ -1,0 +1,73 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v03pw7",
+            "title": "Understanding block time?",
+            "url": "https://www.reddit.com/r/ethereum/comments/v03pw7/understanding_block_time/",
+            "author": "ngb_jr",
+            "created_utc": 1653798915.0,
+            "score": 1,
+            "num_comments": 8,
+            "subreddit": "ethereum",
+            "selftext": "According to Ethereum Org, \" Block time refers to the time it takes to mine a new block. \" Due to the recent debacle with Solana's block time delay, may I know what the significance and impact of such delay? From my poor understanding, a delay in blocktime just means block gets pushed back and mined later?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iaeh0t1",
+                    "author": "hyena_axr",
+                    "score": 5,
+                    "created_utc": 1653807480.0,
+                    "response": "the Block time in proof-of-work based Networks is an average value, which means that sometimes a block is mined e.g. in 10sec, then 20sec, then 15sec and so on resulting in an average block time of 15 seconds. most of the chains rely on a synchronized clock when they read the current timestamp and therefore, block time does not matter when a dapp or whatever reads the time.\n\nSolana uses proof-of-history and they rely on a time based on the block time ( e.g. 1.1.2022 + 100 blocks x 400ms). if there is a delay in the block creation and the 400 ms block time is no longer valid, also the current time is no longer calculated correctly.\nsee: https://medium.com/solana-labs/proof-of-history-a-clock-for-blockchain-cf47a61a9274\n\nSo...for most of the chains, this is not an issue and its basically standard behaviour that block time differs. Solana is designed differently and therefore there is the issue that the calculation of the current time no longer matches the time of the real world if block time differs. dapps rely on this time and will therefore use a timestamp that does not Match the current time. thats not an issue for many dapps, but some need the correct time and will potentially fail or not work that well anymore.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaenl1d",
+                            "author": "edmundedgar",
+                            "score": 2,
+                            "created_utc": 1653813273.0,
+                            "response": "> So...for most of the chains, this is not an issue and its basically standard behaviour that block time differs.\n\nThe rule in Ethereum is that nodes won't accept a block with a timestamp more than 15 seconds in the future, and the block timestamp must advance from the previous block. In practice this means that the block timestamp is a fairly reliable indicator of the time the block was mined to within a tolerance of a minute or so, although miners can game it a little bit.\n\nSolana seems to have a lot of quite bold design decisions like assuming block creation will never be delayed. I don't know it well enough to say whether they're very clever or very stupid.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iaep009",
+                            "author": "thomas_m_k",
+                            "score": 1,
+                            "created_utc": 1653814562.0,
+                            "response": "Not that you claimed differently, but Ethereum's targeted average block time is 13 seconds, not 15.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iag51v2",
+                                    "author": "nelusbelus",
+                                    "score": 2,
+                                    "created_utc": 1653844872.0,
+                                    "response": "Not anymore \ud83d\udc48\ud83d\ude0e\ud83d\udc48",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "iaeyjbp",
+                            "author": "dennisdennison",
+                            "score": 1,
+                            "created_utc": 1653822990.0,
+                            "response": "Which dapps rely on Solana's clock time?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

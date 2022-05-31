@@ -1,0 +1,73 @@
+{
+    "subreddit": "CryptoTechnology",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v1knyr",
+            "title": "Very quick question regarding NFT sales over different blockchain networks",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/v1knyr/very_quick_question_regarding_nft_sales_over/",
+            "author": "AnxietyStrikes",
+            "created_utc": 1653981668.0,
+            "score": 2,
+            "num_comments": 6,
+            "subreddit": "CryptoTechnology",
+            "selftext": "Is it possible at all to have the same token (maybe not the same hash) exist on two networks at the same time? For instance, If I wanted to sell an NFT but wouldnt mind it being sold either over ethereum or hedera, can I have the token exist on both networks, and then moved around on either one based on which platforms it sells in? Im developing an NFT storage platform, and Im just trying to grasp all possibilities.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iamyy7n",
+                    "author": "zigizagazigizagahoy",
+                    "score": 4,
+                    "created_utc": 1653982038.0,
+                    "response": "Yea you can copy/paste or mint the same thing in every chain. Ofc that wouldnt make it valuable",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iamz4zb",
+                            "author": "AnxietyStrikes",
+                            "score": 0,
+                            "created_utc": 1653982206.0,
+                            "response": "Thanks for the reply! Is it possible if you have any source I can send my boss? That'd be greatly appreciated!",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ian9j5g",
+                                    "author": "bitsconnected",
+                                    "score": 1,
+                                    "created_utc": 1653991609.0,
+                                    "response": "Just mint/deploy the same token on both chains.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ian1exh",
+                    "author": "olstrak",
+                    "score": 3,
+                    "created_utc": 1653984251.0,
+                    "response": "It is possible. You would probably want a ZK proof oracle to verify the state of the token on other chains, plus bridge contracts to transfer between them. You could also take a centralized approach in which any burn, mint, or transfer between networks requires your signature. In that case you would query the state of the token on each of the networks before you sign.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ian6grw",
+                    "author": "NonaDarden",
+                    "score": 0,
+                    "created_utc": 1653988892.0,
+                    "response": "Exactly you can do such. Anticipating the first NFT drop to happen on the Autobahn Network in June. A limited number of 1,000 unique on-chain \u201cAutobahn Genesis Cars\u201d with different rarities will be minted",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

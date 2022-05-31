@@ -1,0 +1,374 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v04j6j",
+            "title": "Noob Bitcoin questions",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/v04j6j/noob_bitcoin_questions/",
+            "author": "Fixmuhcar",
+            "created_utc": 1653802384.0,
+            "score": 0,
+            "num_comments": 37,
+            "subreddit": "Bitcoin",
+            "selftext": "Guys Ive read all the introductory posts, but still cant wrap my head around it. Here is me rambling off in my head trying to piece it together:\n\nWe basically use an exchange to buy / sell bitcoin. A key is needed to buy / sell bitcoin. So when you buy on an exchange, they have your password, right? Because otherwise you couldnt make transactions on those exhanges? So who is to say that one day these exchanges who hold so many peoples money, told everyone to screw off and told people \"we don't have your money\" and just kept it for themselves?\n\nNow another point of confusion I have is regarding \"moving\" your bitcoin out of the exchange. So first we buy it into  the exchange, and then we ask the exchange to give it to us? Ok but where are you moving it to? As far as I know, a cold wallet holds your \"keys\" not your bitcoins. \n\nSecond of all, how does an exchange interact with your \"own storage\", if we are \"moving\" our bitcoin?\n\nEdit: why are people downvoting my comments? Why are you guys so butthurt that this stuff doesn't make sense. Who actually downvotes this stuff? Only folks who are threatened or offended. Otherwise you wouldn't care to put in the effort to downvote, lol. You guys prolly just convinced yourself it all makes sense. You opened a coinbase account like you were told, \"bought\" bitcoins, then bought a device, created some passwords, and that's as far as you know. Anyone can do that. But do you really understand all of this stuff? SMH",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iaedflj",
+                    "author": "tuyguy",
+                    "score": 10,
+                    "created_utc": 1653804506.0,
+                    "response": "Bitcoins exist on the bitcoin network at any number of addresses. Each address has a private key. The owner of the keys owns the address and the bitcoin. Exchanges custody other people's bitcoins in their own controlled addresses. When you transfer off exchange you move it to an address that you control. Wallets are just the user interface to addresses/keys. Make sense?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaee7be",
+                            "author": "Fixmuhcar",
+                            "score": 2,
+                            "created_utc": 1653805133.0,
+                            "response": "By far the answer that makes the most sense. We are getting somewhere. I have some follow up questions. Too tired. Will sleep for now \ud83d\ude34",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iaebaat",
+                    "author": "caploves1019",
+                    "score": 6,
+                    "created_utc": 1653802848.0,
+                    "response": "You have not, in fact, read any of the introduction info if you're asking these questions.\n\n* Create a Bitcoin wallet via BlueWallet or Samourai wallet or Bitcoin core or Electrum.\n\n* Buy Bitcoin, it doesn't matter from where, central, private party, whatever, you can earn it from an employer from working or from a person by selling them a service or good/object you wish to sell they wish to buy... BTC is money.\n\n* Receive/withdraw that Bitcoin to the wallet you created.\n\n* Don't overthink it.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaecaq9",
+                            "author": "Fixmuhcar",
+                            "score": 1,
+                            "created_utc": 1653803612.0,
+                            "response": "Okay Im back. Let's not venture too far as to why this is so confusing. Lets just look at the term\"wallet\". In everyday usage, \"wallet\" means something that holds your money. In the bitcoin world, a wallet holds the keys to your bitcoin (money). What kind of mental gymnastics is this? Whose idea was this terminology. I see no sense in calling something that holds your keys, a wallet. Why not call it a lockbox?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaedqdn",
+                                    "author": "codece",
+                                    "score": 1,
+                                    "created_utc": 1653804746.0,
+                                    "response": "The bitcoin wallet does hold your money, it's not a \"key.\" It's more like a unique account number. You can look up the amount of bitcoin in any wallet publicly.\n\nTo address your other questions, you don't need to use an exchange to use bitcoin. You can buy and sell bitcoin peer-to-peer. You create your own wallet, and only you have the keys *to* your wallet. We meet in a coffee shop, give me $100 and I sell you $100 of bitcoin. Or, you could scan the QR code for your wallet at a bitcoin atm and buy crypto using cash that way. (terrible fees and pricing at the atm btw, but it's an option that exists.)\n\nAs a practical matter exchanges are useful and offer the best fees and pricing. If you leave money on an exchange, it's not exactly \"your\" wallet, it' *their* wallet that they give you access to. If you want to move bitcoin from an exchange to another wallet that you 100% control, just send the bitcoin from the exchange to the bitcoin address of your private wallet.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "iaectq8",
+                                    "author": "caploves1019",
+                                    "score": -1,
+                                    "created_utc": 1653804025.0,
+                                    "response": "BlueWallet app has \"vaults\", Samourai has \"dojos\". Why are you hung up on the verbiage?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iaed1gw",
+                                            "author": "Fixmuhcar",
+                                            "score": 1,
+                                            "created_utc": 1653804196.0,
+                                            "response": "Because I don't call the mayo I add to my sandwich a car. If anything, I'd call it ketchup. Not dinosaur or flip flops.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iaed9em",
+                                                    "author": "dat9553",
+                                                    "score": 6,
+                                                    "created_utc": 1653804368.0,
+                                                    "response": "the term you may want to is \"Unspent Transaction Output private key storage\"/ As you can see, that name is far harder to use than \"wallet\"",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "iaee3bi",
+                                                            "author": "Fixmuhcar",
+                                                            "score": 0,
+                                                            "created_utc": 1653805043.0,
+                                                            "response": "How about \"lockbox\"?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "iaef6bu",
+                                                                    "author": "dat9553",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653805938.0,
+                                                                    "response": "it's kinda an advanced wallet, that you can program, such as allow 3 out of 5 private keys to access the wallet, or something similar",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                },
+                                                                {
+                                                                    "id": "iaf5v60",
+                                                                    "author": "Ok_Aerie3546",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653828114.0,
+                                                                    "response": "Keychain",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                },
+                                                                {
+                                                                    "id": "iaerw1a",
+                                                                    "author": "AskALettuce",
+                                                                    "score": 0,
+                                                                    "created_utc": 1653817185.0,
+                                                                    "response": "Key-holder",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "iaeddd9",
+                                                    "author": "caploves1019",
+                                                    "score": 1,
+                                                    "created_utc": 1653804456.0,
+                                                    "response": "When you need cash, you open the leather wallet in your pocket and pull out a couple Benjamins....\n\nWhen you need Bitcoin (real money, not fiat debt scam paper garbage), you open your BlueWallet, Samourai, Core, Electrum, zap, or wtfever and you send BTC/SATs.\n\n\nThey are the same. It is a wallet in the traditional sense of providing access to your money. In the digital world, it's also your bank to send money digitally. I honestly can't tell if you're trolling at this point or not but I'm trying to be patient here.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "iaedzuk",
+                                                            "author": "Fixmuhcar",
+                                                            "score": 1,
+                                                            "created_utc": 1653804964.0,
+                                                            "response": "At this point, I have to think that either everyone here is a genius, or I'm a hardcase learner. What would you consider a good resource? The links in the side bar suck. It jumps right into \"oh.youll need to pay taxes on your bitcoin profits or earnings blahblahblah\". Like, can we begin from the start of what the hell a bitcoin is, how it is transferred, and the inner mechanics? Not \"come on lets get you a wallet, oh and youll need to pay taxes\" \ud83d\ude02 this stuff is a joke",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "iaeffiv",
+                                                                    "author": "caploves1019",
+                                                                    "score": 4,
+                                                                    "created_utc": 1653806147.0,
+                                                                    "response": "Read the Bitcoin standard.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "iaefg26",
+                                                                            "author": "caploves1019",
+                                                                            "score": 2,
+                                                                            "created_utc": 1653806160.0,
+                                                                            "response": "The listen to the Fiat Standard.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "iaefkt0",
+                                                                                    "author": "caploves1019",
+                                                                                    "score": 3,
+                                                                                    "created_utc": 1653806269.0,
+                                                                                    "response": "Also another community is dedicated more heartily to these questions \n\nhttps://www.reddit.com/r/BitcoinBeginners?utm_medium=android_app&utm_source=share",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "iaebpy7",
+                            "author": "Fixmuhcar",
+                            "score": 0,
+                            "created_utc": 1653803172.0,
+                            "response": "I mean, I read it. But they don't break it down. Those resources do a poor job of breaking things down. I'll get you an example in a second, bear with me. I'll be right back.\n\nAlso,I added some details to my question (posted as a comment).",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaezjry",
+                                    "author": "Xylogy_D",
+                                    "score": 1,
+                                    "created_utc": 1653823783.0,
+                                    "response": "Here is a great video answering the question 'What is a Blockchain'? https://youtu.be/kHybf1aC-jE \nIts necessary to understand what a blockchain is if you want to understand bitcoin. The channel 'WhiteBoard Crypto' does lots of great informational videos on coins tokens and more in the cryptoverse",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "iag2wxc",
+                                    "author": "Rude_Advance3747",
+                                    "score": 1,
+                                    "created_utc": 1653843908.0,
+                                    "response": "Please bear something in mind, and this comes from a Bitcoin skeptic who, like you, was open minded about Bitcoin a year ago and then started asking questions in this sub, as well as having a go at reading the book.\n\nNow. The bitcoin standard is not a good book from an academic standpoint. It only has a handful of references for each chapter and they seem to reference other bitcoiners a lot. Also, it relies on Austrian economics which is promising but underdeveloped as hell. Also, check out the author. He is not an acclaimed economist at all (but certainly a smart person) and if you look at his website, you can see he is reeeaaally cashing in on the success of the book. Like offering courses and audiobooks and all sorts of bullshit for money. And of course he wrote another book, the \u201cfiat standard\u201d. Like what is even that, I thought the Bitcoin standard would be THE book. So there\u2019s another one? Why? Well, because there was a lot of money in a sequel, like the Marvel universe. Also his website looks like one of those old eBook places where you pay 10 dollars for \u201c3 secrets that will make you rich\u201d. Not credible at all.\n\nAs per this sub, I have respect for a lot of the members but in my opinion when you ask a question, the answers you get (even from veterans) just lead to more questions. You are welcome to look through my posts and comments in this sub to see my journey of trying to get to the bottom of the case for bitcoin, only to get answers that are based on half baked economic theories and conspiracies.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "iaecddn",
+                                    "author": "FigTreeMike",
+                                    "score": 0,
+                                    "created_utc": 1653803670.0,
+                                    "response": "Just open up a coinbase account, and buy some bitcoin.  Slowly integrate your bitcoin into a cold wallet.  Check out how to set up a Trezor wallet on youtube.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iaeia92",
+                    "author": "MrQ01",
+                    "score": 3,
+                    "created_utc": 1653808561.0,
+                    "response": "Generally speaking, it would be beneficial for yourself to structure your posts so the questions are a bit distinct from each other.\n\nExchanges dont need a wallet for you personally - the only reason they ever need to interact with \"physical\" bitcoin is whenever you decide to want to transfer Bitcoin to an external wallet, and transfer bitcoin from an external wallet to your exchange account.\n\nThe Bitcoin amount displayed on your exchange account is basically an IOU from the exchange. They are extremely unlikely to have a wallet dedicated to yourself, and far more likely to have a pot of Bitcoin reserves for the usage of dealing with aforementioned transfers.\n\nWhat's to stop them keeping your money (and you need to distinguish whether you're talking about cash or bitcoin)? Well, that's the big debate going on and why governments are calling for regulations. By the way, most exchanges are not insured by the FDIC: if the exchange rugpulls you then that's a problem... for you.\n\nBut big exchanges however are trying to get mainstream adoption and are too big to attempt criminal activity without the CEO being too well known. Regulation would probably lead to auditing of their reserves eventually.\n\nBut the recommendation anyway is to not keep your Bitcoin on the exchange - buy it and immediately transfer it. The cold wallet holds your allocation to Bitcoin on the blockchain, and so for it to show up on your wallet means it's no longer with the exchange. \n\nAnd of course, you can always personally verify this via looking at the transaction on the blockchain. This is referring to the transaction between your cold wallet and the exchange.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaef01w",
+                    "author": "Bostonparis",
+                    "score": 2,
+                    "created_utc": 1653805792.0,
+                    "response": "The exchanges have their own wallet. When you buy BTC on an exchange you are essentially given an IOU, not the actual coin. When you transfer it off exchange to for example, a hardware wallet, then the actual coins are sent out. Since exchanges control the assets and just hand out IOUs they technically could run off but that would be a legal nightmare for them. That is not to say that smaller less reputable exchanges haven't ran off with everyone's money before.\n\nTo the other question about where it's moving to when transferred out. It is transferred to whatever address is associated with the hardware wallet on the Blockchain. You're right that the hardware wallet has the keys. Essentially like the key to your house, which allows you to access the funds at the associated address.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iag29w4",
+                    "author": "thepropertyinvestor",
+                    "score": 2,
+                    "created_utc": 1653843624.0,
+                    "response": "> We basically use an exchange to buy / sell bitcoin. A key is needed to buy / sell bitcoin. So when you buy on an exchange, they have your password, right? Because otherwise you couldnt make transactions on those exhanges? So who is to say that one day these exchanges who hold so many peoples money, told everyone to screw off and told people \"we don't have your money\" and just kept it for themselves?\n\nYes. The exchange controls the coins, and you're trusting them. \n\n> Now another point of confusion I have is regarding \"moving\" your bitcoin out of the exchange. So first we buy it into  the exchange, and then we ask the exchange to give it to us? Ok but where are you moving it to? As far as I know, a cold wallet holds your \"keys\" not your bitcoins.\n\nBitcoins are just lockboxes in a file. The exchange controls a bunch of these lockboxes. When they \"give it to you\", they're creating a new lockbox that is locked to your key. A wallet manages these keys for you. \n\n> Second of all, how does an exchange interact with your \"own storage\", if we are \"moving\" our bitcoin?\n\nBitcoins \"move\" within the blockchain, and they move from one lockbox to another. The exchange creates a transaction and it gets written to the blockchain, and thats how coins \"move\". Every exchange and wallet is working from the blockchain.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaebk96",
+                    "author": "slvdr007",
+                    "score": 1,
+                    "created_utc": 1653803053.0,
+                    "response": "Oh boy.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaec16w",
+                            "author": "Intfamous",
+                            "score": 3,
+                            "created_utc": 1653803406.0,
+                            "response": "Oh boy indeed",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iaechpv",
+                            "author": "Fixmuhcar",
+                            "score": -1,
+                            "created_utc": 1653803762.0,
+                            "response": "Lets have a smart discussion. If you arent adding anything of value, dont comment at all. Your comment adds nothing. Move along.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaihcrg",
+                                    "author": "slvdr007",
+                                    "score": 1,
+                                    "created_utc": 1653887961.0,
+                                    "response": "Ever heard of sarcasm?",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iaelvhd",
+                    "author": "Blimpleton",
+                    "score": 0,
+                    "created_utc": 1653811726.0,
+                    "response": "This guy is an unhinged troll. I feel bad for his mental state but i wouldnt waste time arguing with him",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaee4ue",
+                    "author": "dat9553",
+                    "score": 1,
+                    "created_utc": 1653805078.0,
+                    "response": "BTC wallets are created by using a private key, which is a random string made of 256 1s and zeros. Run that private key to some cryptographic algorithm and you will have a public address.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaeeopk",
+                    "author": "Into_The_Wilderness1",
+                    "score": 1,
+                    "created_utc": 1653805530.0,
+                    "response": "Try watching some of the early videos here, it's basically a free course in BTC.\n\nhttps://youtube.com/c/aantonop\n\nThink of BTC as a house (the blockchain) made of bricks (SATS/BTC). The exchange holds access codes that determine what bricks they can buy and sell, and those codes are unique to a set position on the house. The exchange is merely a way to sell fiat for and buy BTC.\n\nWhen you buy a brick from the exchange, your \"wallet\" generates a key that is unique to you, and that then logs the brick on the house that you now own. But neither the brick, nor the house has moved. It just registers that your key corresponds to the coded brick on that house, and you can only transfer ownership to someone else using your keys, \"held\" by your \"wallet\".\n\nIt might not be the perfect analogy, but it might just help highlight that in reality, nothing moves, and nothing is stored in the wallet.\n\nI am new to this, and anyone feel free to correct me!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaehmjn",
+                    "author": "wood8",
+                    "score": 1,
+                    "created_utc": 1653807986.0,
+                    "response": "Exchange is not part of Bitcoin. Bitcoin is just wallet to wallet sending. Every wallet has a key consists of 24 words. If you don't have it, that's not a real wallet,  just an exchange user account.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaekhau",
+                    "author": "Creative-Molasses-60",
+                    "score": 1,
+                    "created_utc": 1653810494.0,
+                    "response": "You\u2019re getting downvoted because you don\u2019t understand Bitcoin - nobody is threatened. \n\nSpend some of your own time learning as you are very misinformed.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iafuovx",
+                    "author": "Sealobo",
+                    "score": 1,
+                    "created_utc": 1653840258.0,
+                    "response": "You haven\u2019t read enough \u201cintroductions\u201d.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaeberx",
+                    "author": "Fixmuhcar",
+                    "score": -1,
+                    "created_utc": 1653802939.0,
+                    "response": "Here is some further detail to clarify what Im asking:\n\nLet's say the exchange is my parents. I give my money to my parents so that my parents buy me bitcoin. When they buy it, it is theirs. The next step is to \"move\" my bitcoin to MY possession. So I trust that my parents will give me my bitcoin? Assuming this analogy is correct (let me know if its not), are there not evil parents out there who keep it for themselves? \n\nSecond of all, how is a person's bitcoins associated to \"him/her\" in the blockchain? What is the association of a \"password I hold\" with funds in a blockchain. And who is overseeing the assignment of these passwords to these bitcoins? Nobody? How? How can I just have a password and that suddenly means that my password is associated to some bitcoins? Who oversees this system? Who ensures that no two people have the same password?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaeci2h",
+                            "author": "vanmarcel",
+                            "score": 2,
+                            "created_utc": 1653803770.0,
+                            "response": "The exchange \"having your bitcoin\" just means they are able to move the bitcoin from one address to another because they know the answer to a riddle on the blockchain (the private key of that address). Now you generate a new private key purely by chance (like throwing a dice 256 times). No one else can know that private key because it was generated by chance. From the private key a bitcoin address is derived. Now the exchange \"moves\" the bitcoin from their address to your address which they can because they now the answer to the riddle on the blockchain. Now you are the only one who knows the answer to the riddle on the blockchain to move the bitcoin again when necessary.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iaecato",
+                            "author": "caploves1019",
+                            "score": 1,
+                            "created_utc": 1653803614.0,
+                            "response": "Central exchange has a bunch of Bitcoin in their possession. They have an Excel spreadsheet associated to user credentials. Users post buy/sell orders and trades occur amongst that spreadsheet, no Bitcoin is being moved until users withdraw to their own private wallet addresses.\n\nPrior to withdrawal, btc simply gets assigned from user1 to user2 on the spreadsheet.\n\nPost withdrawal, BTC moves from bc1qcexwallet1 to bc1quser1privatewallet.\n\nThis is a super oversimplified perspective but trying to help walk you through the process.\n\nAnother example is you go to a grocery store and buy orange juice and a brick of cheese. You can leave the purchased items at the grocery store and go home then come back and drink OJ and nibble the cheese hoping the grocery store is open and grants you access when you want... Or you can bring the items home with you to enjoy at your will in your own privacy.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

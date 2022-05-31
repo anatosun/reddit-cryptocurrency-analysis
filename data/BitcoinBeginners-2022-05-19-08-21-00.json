@@ -56,7 +56,7 @@
             "author": "Guuus",
             "created_utc": 1652947299.0,
             "score": 3,
-            "num_comments": 28,
+            "num_comments": 37,
             "subreddit": "BitcoinBeginners",
             "selftext": "Hello, I want to build a small BTC position and I am carefully trying every step of the process.\nBut one thing is troubling me...  when I tried to transfer my coins to the wallet, the tx indicated like 11$ fees but the amount received was the same and nothing was debited. I thought it was using the lightning network but it's a different process to request the funds with a special code and I did not do that.\n\nSo how are fees paid? \n\nHere are the steps I did:\n\n- create Kraken account\n\n- create BlockStream wallet\n\n- buy 15$ crypto on kraken\n\n- transfer 0.0005 BTC to the BlockStream address (0.00001btc fee deducted)\n\n- 0.00049 BTC received, no tx fees paid \ud83e\udd37\ud83c\udffc\u200d\u2642\ufe0f\n\nI tried with a slightly bigger amount and still only the Kraken withdrawal fee was paid.",
             "stickied": false,
@@ -80,7 +80,7 @@
                                 {
                                     "id": "i96llia",
                                     "author": "Rannasha",
-                                    "score": 5,
+                                    "score": 4,
                                     "created_utc": 1652953082.0,
                                     "response": "The sending party always pays the network fee. In this case, that's Kraken.\n\nWhen the sending party is an exchange or similar business, they can decide to push that fee to the customer. In this case, Kraken charged you 0.00001 BTC. Some exchanges charge no fees to the customer to withdraw and pay the network fees out of their own pocket. Other exchanges charge a fee that is far higher than the network fee and profit from the difference (Binance is notorious for this).\n\nNote that some exchanges will group withdrawals from many customers into a single transaction. This reduces the size of the transaction compared to what it would be if each withdrawal had been a separate transaction. And that reduces the network fee per withdrawal, although the network fee paid for the entire combined transaction is relatively high.",
                                     "depth": 3,

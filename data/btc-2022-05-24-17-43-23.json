@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/btc/comments/uww3nw/bitcoin_is_a_system_of_incentives_from_this/",
             "author": "mrtest001",
             "created_utc": 1653413166.0,
-            "score": 23,
-            "num_comments": 25,
+            "score": 24,
+            "num_comments": 33,
             "subreddit": "btc",
             "selftext": "Imagine 2 miners.  \n\nOne is \"ideologically pure\" \n\n> Every byte of every transaction that ever was needs to be on the blockchain forever.\n\nWell, just the fees alone make this a non-issue as far as maintenance.  but if we play devil's advocate and say \"we might run out of space someday...\" , ok.  \n\nSo how does \"Bitcoin incentive\" play in?\n\nThe 2nd miner only keeps history of, say, the last year only - and everything before that is pruned of all spent \"outputs\".\n\nBoth miners will be able to validate transactions - but operation costs for the 2nd miner is far less.\n\nWill the 2nd miner worry that the chain might be rolled back 1 year? Nah - if a blockchain being used by most of the world can still be rolled back by 1 year, Bitcoin might as well be considered dead.\n\nSo i don't think Bitcoin needs to get a \"protocol change\" ever to optimize for future large block storage.\n\nI think each miner will naturally prune their data to keep costs down.\n\n(edit: if 1 year seems short, make it 10 years - no problem)\n\nThe \"incentive\" here is that a miner is not rewarded for keeping ALL the data, because \"pruned\" miners are just as good at validating as \"full\" miners.  \"Just as good\" being 99.9<repeating many many times>%\n\nIn fact, it is not possible to fake a transaction because all the hashes must match up.\n\n(edit: This is where I am going off on a tangent)\n\nCan someone please explain why pruned blockchain is not the \"standard operating procedure\"?  Why is *anyone* keeping full blockchain data?\n\nEach unspent transaction has its hash included in the hash-tree that leads to the block's hash - you cannot fake a transaction without being able to come up with dozens of hashes that when hashed give you the block hash.",
             "stickied": false,
@@ -45,13 +45,32 @@
                             "response": "> 8, Simplified Payment Verification\n\n> It is possible to verify payments without running a full network node. A user only needs to keep a copy of the block headers of the longest proof-of-work chain, which he can get by querying network nodes until he's convinced he has the longest chain, and obtain the Merkle branch linking the transaction to the block it's timestamped in. He can't check the transaction for himself, **but by linking it to a place in the chain, he can see that a network node has accepted it, and blocks added after it further confirm the network has accepted it.**",
                             "depth": 2,
                             "comments": []
+                        },
+                        {
+                            "id": "ia1q2ny",
+                            "author": "fergalius",
+                            "score": 1,
+                            "created_utc": 1653559733.0,
+                            "response": "Not 100% sure that I agree. Some pruned nodes, maybe even a majority of pruned nodes, would be fine but we need to keep a full blockchain somewhere.\n\nWhy?\n\nWell if I spin up a new node, then the only way I can create a UTXO set is to trawl through the entire blockchain, transaction by transaction, block by block, following each coin from its coinbase to its final UTXOs. If I don't do that, then I'd need to trust someone else's UTXO set which really just breaks the \"trustless\" part of bitcoin.\n\nFor example, suppose I know you're a new shop with a new pruning node set up, I happen to have known about that beforehand, and I made sure you're connected you only to my node. So I give you the last 12 months of blockchain, plus the UTXO set dated today.\n\nNow, I happen to have an old wallet in which I received 1 BCH (in txA) two years ago which I spent shortly afterwards (in txB). Cunningly I add my 1 BCH to the UTXO set that I send to you - since my spending transaction doesn't appear in the last year of blocks you won't ever know.\n\nNext I create a transaction from the output of txA and pay you. Since your node doesn't have a good UTXO set, you'll accept the transaction, and so I get my coffee for freeeeeeee.\n\nAnd if I want to steal the lambo from you ('cos you're a lambo+coffee shop!), then yeah, maybe I'd need to mine your transaction into a block or six, and keep your node segregated as you say.\n\nSo, a difficult attack, but not impossible. But *way more difficult* if you have downloaded the full blockchain from the very start - as you say in that case I'd need to present many months of proof-of-work to your node (i.e. a blockchain without that txB) instead of just zero to six blocks.\n\nInterestingly, I wonder would this be a good way to attack a POW coin: 1) get some malware into the software which re-adds an old spent output back to the UTXO set; 2) since most (all?) clients trust the UTXO set which they wrote to disk when shutting down and then check only the last few blocks for consistency, then on upgrade time, the 2-year-old output will become de-facto part of the UTXO set going forward.\n\nI can see problems; software like electrum which keeps coin histories would probably catch it, and anyone spinning up a new node or reindexing the blockchain would catch it; so the attack would have a limited lifetime just after a network upgrade or risk severely forking the chain. Crucially, however, the only nodes that can resolve the discrepancy would be full nodes; pruning nodes wouldn't be able to.\n\nAm I making sense?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia1r8gd",
+                                    "author": "jessquit",
+                                    "score": 1,
+                                    "created_utc": 1653560684.0,
+                                    "response": ">If I don't do that, then I'd need to trust someone else's UTXO set which really just breaks the \"trustless\" part of bitcoin.\n\nThe point of UTXO commitments is that they're hashed into the blockchain and therefore don't require trust.\n\n> I made sure you're connected you only to my node.\n\nSegmentation attacks can be used to break all kinds of things. If you're running a full archival node and I can segment it, I can reduce the difficulty and send you an entirely bogus blockchain of my own creation. You'll think all your transactions are valid and mined but really nobody else saw them. Bitcoin's security model depends on being able to \"see\" the entire network.\n\nI kinda stopped reading here, sorry.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "id": "i9u8hzi",
                     "author": "LovelyDayHere",
-                    "score": 9,
+                    "score": 10,
                     "created_utc": 1653418106.0,
                     "response": "> Can someone please explain why pruned blockchain is not the \"standard operating procedure\"? Why is anyone keeping full blockchain data?\n\nBecause our node software have not needed to prioritize this yet, so the pruning we have is very unsophisticated and clients that can fast-sync are really still using their \"own\" protocols to do so. Common specifications for lighter nodes (using UTXO commitments) are still in development (although e.g. BCHD and Bitcoin Verde have implementations of it, but we don't have the on-chain UTXO commitments yet).\n\nThe pruning facilities on BCH nodes that I know are still the old 'Bitcoin Core' variety, which requires validating the complete chain during initial sync, and they keep around the last N blocks (simplifying things a bit). __Therefore, we still need full nodes in order to be able for any nodes to sync from scratch!__ (it's just an implementation deficit)\n\nAgree with you, that should improve, and probably will in time.\n\nAs I wrote in another post, it would be great if pruned nodes could run in a way to form a bittorrent-like swarm so that the pruned node network keeps a complete copy of the blockchain over its distribution if possible. Then, as long as we keep high enough redundancy, we would not even need complete full nodes online in order to retrieve the entire chain. The swarm would provide.\n\nSimilar as to how UTXO commitments are being developed, someone could start a (non-consensus) CHIP for a better pruned node network protocol. Necessary features imo would be to let the user allocate a certain amount of disk space, and the node software would decide which blocks to store in it, based on maximizing availability of all blocks in the network. So it would rebalance itself occasionally as other nodes become available or leave. It would also need to track and exchange this block availability data with other nodes and deprioritize badly behaved peers.",
                     "depth": 1,
@@ -59,7 +78,7 @@
                         {
                             "id": "i9ui5td",
                             "author": "Remora_101",
-                            "score": 6,
+                            "score": 4,
                             "created_utc": 1653422168.0,
                             "response": "Why isn't this a point with more priority then? \n\nFor one this would reduce the scaling problem IMMENSELY. It should also be pretty straight forward afaik.\n\nI can see no downside pushing for this now. And it would make increasing the blocksize much easier since nodes could just start pruning to fit their system.",
                             "depth": 2,
@@ -67,7 +86,7 @@
                                 {
                                     "id": "i9veqq6",
                                     "author": "doramas89",
-                                    "score": 9,
+                                    "score": 8,
                                     "created_utc": 1653436631.0,
                                     "response": "I assume because scaling is no longer a priority. After the focus should be on onboarding new people, not on making more room on a space currently only 2% filled, in a chain not in the spotlight",
                                     "depth": 3,
@@ -125,7 +144,7 @@
                                 {
                                     "id": "i9uqxuo",
                                     "author": "LovelyDayHere",
-                                    "score": 6,
+                                    "score": 5,
                                     "created_utc": 1653425881.0,
                                     "response": "Right, there's no downside since it doesn't affect consensus (just pruning,  not utxo commitments).\n\nBut utxo commitments are a more visibly effective way to cut down node initial sync times. Maybe some nodes will perfect those first, and others do better pruning first. Idk.",
                                     "depth": 3,
@@ -237,16 +256,16 @@
             "url": "https://www.reddit.com/r/btc/comments/uww9lb/design_the_best_marketing_graphic_and_win_025_bch/",
             "author": "jessquit",
             "created_utc": 1653413614.0,
-            "score": 39,
-            "num_comments": 33,
+            "score": 40,
+            "num_comments": 43,
             "subreddit": "btc",
-            "selftext": "I'm giving away 0.25 BCH to the person to designs the winning marketing graphic.\n\nGraphic must be an image minimum 6000x4000 (landscape or portrait) featuring NO COPYRIGHTED IMAGES or any other content that would render it unusable in media.\n\nGraphic must include either of the following texts:\n\n#Bitcoin Cash: Bitcoin, Untethered\n\n**or**\n\n#BCH: Bitcoin, Untethered\n\nPoints will be given for\n\n* Imagery tie-in to the theme\n\n* Eye catchiness\n\n* Simplicity\n\nI'm the only judge and I'll chaintip 0.25 BCH to the person who designs the best graphic in my opinion. The contest will be over approximately 48 hours after this post goes live.\n\nHopefully this will be a productive contest that will inspire more in the future. Good luck! I can't wait to see what the community comes up with!",
+            "selftext": "EDIT: THANKS EVERYONE WE HAVE A WINNER!\n\n____\n\nI'm giving away 0.25 BCH to the person to designs the winning marketing graphic.\n\nGraphic must be an image minimum 6000x4000 (landscape or portrait) featuring NO COPYRIGHTED IMAGES or any other content that would render it unusable in media.\n\nGraphic must include either of the following texts:\n\n#Bitcoin Cash: Bitcoin, Untethered\n\n**or**\n\n#BCH: Bitcoin, Untethered\n\nPoints will be given for\n\n* Imagery tie-in to the theme\n\n* Eye catchiness\n\n* Simplicity\n\nI'm the only judge and I'll chaintip 0.25 BCH to the person who designs the best graphic in my opinion. The contest will be over approximately 48 hours after this post goes live.\n\nHopefully this will be a productive contest that will inspire more in the future. Good luck! I can't wait to see what the community comes up with!",
             "stickied": false,
             "comments": [
                 {
                     "id": "i9x7py0",
                     "author": "dingus_snodgrass",
-                    "score": 4,
+                    "score": 5,
                     "created_utc": 1653477923.0,
                     "response": "here is image that I came up with, it uses only public domain imagery from NASA\n\n&#x200B;\n\nhttps://i.imgur.com/YMs4tJu.jpg",
                     "depth": 1,
@@ -265,7 +284,7 @@
                 {
                     "id": "i9wrx0y",
                     "author": "bitcoinjason",
-                    "score": 5,
+                    "score": 3,
                     "created_utc": 1653464742.0,
                     "response": "Hope all goes well for you, I copped a lot of flack promoting a similar contest from ignorant people",
                     "depth": 1,
@@ -334,12 +353,61 @@
                     "created_utc": 1653507740.0,
                     "response": "And this is second entry :)\n\nhttps://drive.google.com/file/d/1C35IfZPTSnHLtktfNj52uuJZ-EgsDHST/view?usp=sharing",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "ia2vjfd",
+                            "author": "jessquit",
+                            "score": 2,
+                            "created_utc": 1653580845.0,
+                            "response": "Loved it.  Congratulations!!!  Great job.\n\n/u/chaintip",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia40lum",
+                                    "author": "rey4486",
+                                    "score": 2,
+                                    "created_utc": 1653597505.0,
+                                    "response": "Thank you so much <3\n\nI appreciate it \\^\\^",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia415hp",
+                                            "author": "jessquit",
+                                            "score": 2,
+                                            "created_utc": 1653597734.0,
+                                            "response": "People seem to really dig this image. You should offer to do a few different formats in exchange for tips if it isn't too much trouble.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia449nq",
+                                                    "author": "rey4486",
+                                                    "score": 2,
+                                                    "created_utc": 1653599063.0,
+                                                    "response": "Not at all \\^\\^ I am working on it",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ia2vv9q",
+                                    "author": "chaintip",
+                                    "score": 1,
+                                    "created_utc": 1653580975.0,
+                                    "response": "***\nu/rey4486, you've [been sent](https://www.blockchain.com/bch/address/bitcoincash:qrelay2j2f3y39sl9t3qkeydm0hs8f7lt5f7dhn698) `0.25 BCH` | `~46.08 USD` by u/jessquit\nvia [chaintip](http://www.chaintip.org).\n***",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": "i9ulusv",
                     "author": "CDSagain",
-                    "score": 3,
+                    "score": 4,
                     "created_utc": 1653423727.0,
                     "response": "Just making a comment, any comment so the limp dick trollin this sub is not the first fuckin comment.",
                     "depth": 1,
@@ -357,7 +425,7 @@
                 {
                     "id": "i9u1yxb",
                     "author": "Da0ptimist",
-                    "score": -19,
+                    "score": -18,
                     "created_utc": 1653415356.0,
                     "response": "I'd rather get LUNA \ud83e\udd23",
                     "depth": 1,
@@ -365,7 +433,7 @@
                         {
                             "id": "i9u2xgx",
                             "author": "jessquit",
-                            "score": 11,
+                            "score": 10,
                             "created_utc": 1653415760.0,
                             "response": "So do you have anything constructive whatsoever to contribute to this sub or are you only here to harass the community and disrupt conversation?\n\nEdit: here's the DM I just received from this account\n\n> You think banning people and then commenting when younknowbthye can't reply is free speech lmao.\n>\n>You're a scared and weak little boy hiding behind a keyboard.\n>\n>It doesn't change reality. You will always be a beta weakling scared qith your tail between your legs.\n>\n>And BCH will always be the joke in crypto up until its completely forgotten. \n>\n>Facts.\n\nEdit: then this modmail\n\n> I just hope you have some emergency funds cause BCH is done. You'll never see any ROI and it will be worth less every day.\n>\n> You know deep inside I'm right. And no banning will change this fact hahahaha",
                             "depth": 2,
@@ -373,7 +441,7 @@
                                 {
                                     "id": "i9u3otl",
                                     "author": "Da0ptimist",
-                                    "score": -15,
+                                    "score": -16,
                                     "created_utc": 1653416082.0,
                                     "response": "On the contrary, not only ly am I brining more visibility to your post by commenting, but I'm also educating new crypto users about the dangers of scam coins. Btw this is/r/BTC \ud83d\udc4c",
                                     "depth": 3,
@@ -381,7 +449,7 @@
                                         {
                                             "id": "i9u9c40",
                                             "author": "jessquit",
-                                            "score": 10,
+                                            "score": 11,
                                             "created_utc": 1653418457.0,
                                             "response": "> I'm also educating new crypto users about the dangers of scam coins\n\nYou literally just promoted a dead scam coin. \n\n> Btw this is/r/BTC \ud83d\udc4c \n\nSo say something positive about BTC. I've looked at your history. You only come here to troll the community. Look around. There are dozens of your peers here who constantly say positive things about BTC, or **thoughtful** negative commentary about BCH. [Their commentary is welcome and upvoted.](https://www.reddit.com/r/btc/comments/urfayr/bitcoin_maxi_ama) Be better next time.",
                                             "depth": 4,
@@ -390,7 +458,7 @@
                                         {
                                             "id": "i9ubb5j",
                                             "author": "jessquit",
-                                            "score": 9,
+                                            "score": 10,
                                             "created_utc": 1653419291.0,
                                             "response": "By the way, since I know you can't wait to tell everyone \"I GoT bAnnEd FrOm rbTc\" like I told you in the mod mail, **it isn't censorship when you are ejected from the free speech public forum for pulling down your pants and taking a dump.**\n\nFreedom of Speech != Freedom of Behavior\n\nYou got your content removed in r/cryptocurrency too but I bet any amount of money you won't complain anywhere about that.",
                                             "depth": 4,
@@ -411,7 +479,7 @@
                                 {
                                     "id": "i9u49l3",
                                     "author": "Da0ptimist",
-                                    "score": -5,
+                                    "score": -6,
                                     "created_utc": 1653416325.0,
                                     "response": "What's the difference?",
                                     "depth": 3,
@@ -427,7 +495,7 @@
                                                 {
                                                     "id": "i9u6e1u",
                                                     "author": "Da0ptimist",
-                                                    "score": -4,
+                                                    "score": -2,
                                                     "created_utc": 1653417217.0,
                                                     "response": "This post is in the wrong sub bud. This is /r/btc",
                                                     "depth": 5,
@@ -435,7 +503,7 @@
                                                         {
                                                             "id": "i9u6jc9",
                                                             "author": "LovelyDayHere",
-                                                            "score": 11,
+                                                            "score": 10,
                                                             "created_utc": 1653417278.0,
                                                             "response": "This is the uncensored Bitcoin sub, bro.\n\nLearn some history, read the FAQ",
                                                             "depth": 6,
@@ -443,7 +511,7 @@
                                                                 {
                                                                     "id": "i9u702g",
                                                                     "author": "Da0ptimist",
-                                                                    "score": -1,
+                                                                    "score": -2,
                                                                     "created_utc": 1653417473.0,
                                                                     "response": "This is a bitcoin Cash shill sub\n\nI literally just said pay me in Luna and you replied its the wrong sub.\n\nThat's the definition of Censorship",
                                                                     "depth": 7,
@@ -459,7 +527,7 @@
                                                                                 {
                                                                                     "id": "i9u855z",
                                                                                     "author": "Da0ptimist",
-                                                                                    "score": -3,
+                                                                                    "score": -1,
                                                                                     "created_utc": 1653417954.0,
                                                                                     "response": "LOL no it's not. It's pretty much widely known that this sub is a cult much like /r/buttcoin except the sad part is that they are all losing $ ad this project is dying fast",
                                                                                     "depth": 9,
@@ -467,7 +535,7 @@
                                                                                         {
                                                                                             "id": "i9uyqt9",
                                                                                             "author": "MobTwo",
-                                                                                            "score": 4,
+                                                                                            "score": 5,
                                                                                             "created_utc": 1653429275.0,
                                                                                             "response": "Internet Trolls Are Narcissists, Psychopaths, and Sadists. https://www.psychologytoday.com/sg/blog/your-online-secrets/201409/internet-trolls-are-narcissists-psychopaths-and-sadists\n\nIt also reflects very badly on your parents and upbringing. It shows people that your mom and dad are both assholes too you know?",
                                                                                             "depth": 10,

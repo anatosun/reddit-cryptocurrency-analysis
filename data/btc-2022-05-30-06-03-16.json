@@ -1,0 +1,175 @@
+{
+    "subreddit": "btc",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v0telk",
+            "title": "Announcing Bitcoin Cash Node v24.1.0",
+            "url": "https://read.cash/@bitcoincashnode/announcing-bitcoin-cash-node-v2410-551434d1",
+            "author": "imaginary_username",
+            "created_utc": 1653889860.0,
+            "score": 70,
+            "num_comments": 22,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iaj3u9y",
+                    "author": "ftrader",
+                    "score": 22,
+                    "created_utc": 1653906952.0,
+                    "response": "I would like to give a shout out here as well to the fine folks at GitLab, where we have been hosting this project since 2020.\n\nTheir service has been pretty consistently great for us, we've been able to use the platform on free tier for more than 2 years now, and they have a dedicated program for open source projects, into which Bitcoin Cash Node has recenctly been recently accepted. This program offers very generous access to GitLab's Ultimate tier for accepted OSS projects. So I would encourage other projects to check them out!\n\nFor those who don't know, our project's main repository is here:\n\nhttps://gitlab.com/bitcoin-cash-node/bitcoin-cash-node\n\nor you can find us via\n\nhttps://bitcoincashnode.org",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ianaiqm",
+                            "author": "bitsanctuary",
+                            "score": 1,
+                            "created_utc": 1653992460.0,
+                            "response": "The next mode has a second node 0.226 from the free end; the next, nodes at 0.132 and 0 .",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iaj8uzw",
+                    "author": "ftrader",
+                    "score": 15,
+                    "created_utc": 1653910886.0,
+                    "response": "Copy of release announcement for those who can't access readcash: (I also don't like clicking through to things ;-)\n\n---\n\n__Release announcement: Bitcoin Cash Node v24.1.0__\n\nThe Bitcoin Cash Node (BCHN) project is pleased to announce its minor release version 24.1.0.\n\nThis release implements some interface enhancements (notably TORv3 support) and includes a number of corrections and performance improvements.\n\nInterface changes are fully backward compatible except in these instances:\n\n1. Netmasks that are invalid per RFC 4632 are no longer accepted\n\n2. The -whitelistrelay default has been restored to enabled\n\n3. MacOSX users need at least OSX 10.14 (Mojave)\n\nUsers who are running any of our previous releases are recommended to upgrade to v24.1.0, except for Mac OSX users who are not able to run 10.14 or later - we ask those to remain on v24.0.0 until they are able to upgrade to Mojave.\n\nFor the full release notes, please visit:\n\nhttps://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/tag/v24.1.0\n\nExecutables and source code for supported platforms are available at the\nabove link, or via the download page on our project website at \n\nhttps://bitcoincashnode.org\n\nWe hope you enjoy our latest release and invite you to join us to improve Bitcoin Cash.\n\nSincerely,\n\nThe [Bitcoin Cash Node team](https://bitcoincashnode.org/en/team).\n\n---\n\nParticular thanks from me to the other maintainers and our project dev contributors who have put in a lot of effort in the months leading up this release.\n\nThanks Calin, imaginary_username, emergent_reasons, Axel Gembe, Dagur, sickpig, matricz, SlowRiot, Andrew#128, Josh Wong, Corentin, Tracy, Fernando Pelliccioni, Josh Ellithorpe, Josh Green (our point of contact with Verde for the testing collaboration), the translators at Satoshi's Angels, our regular discussion partners and business users with whom we interact at times, and the many contributors from other projects whose backports we include in our software.\n\nI would like to invite anybody who wants to participate with BCHN, to join our Slack or Telegram and get to know us. We are an open project, we have lots of (exciting, we think!) work for interested developers or testers, and we are open to various forms of collaboration.\n\nWe're in the process of setting up a more formal description of our [bounty process](https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/merge_requests/1327) - comments welcome.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iak9frh",
+                    "author": "hegjon",
+                    "score": 6,
+                    "created_utc": 1653929508.0,
+                    "response": "Builds for Fedora and EPEL9: https://copr.fedorainfracloud.org/coprs/jonny/BitcoinCash/build/4458117/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaitrip",
+                    "author": "simon-v",
+                    "score": 10,
+                    "created_utc": 1653897849.0,
+                    "response": "Come to think of it, it's been a while since BCHN published a financial report. How is stuff going? The radical transparency was a major selling point when the project started.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaj2jdm",
+                            "author": "ftrader",
+                            "score": 13,
+                            "created_utc": 1653905816.0,
+                            "response": "Hello Simon,\n\nI'll be doing a financial report in the next few days.\nThis will then include our spending until the end of May.\n\nu/bitcoincashautist is right, the spending is not much different to previous months / reports, the only difference I see is we have contracted Software Verde to do some wider scaling tests (not just focused on the bchn software), and that kicked off in May and will be going on for a few months.\n\nI will publish a link to the report in the sub as soon as it comes out in a few days time.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaj74e8",
+                                    "author": "simon-v",
+                                    "score": 8,
+                                    "created_utc": 1653909603.0,
+                                    "response": "Great to hear! Keep up the good work!",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "ianfskr",
+                                    "author": "Rollovann1996",
+                                    "score": 1,
+                                    "created_utc": 1653996428.0,
+                                    "response": "When one end is clamped and the other is free the clamped end is always a node.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "iaix57l",
+                            "author": "bitcoincashautist",
+                            "score": 12,
+                            "created_utc": 1653900921.0,
+                            "response": "Looks good, about $870k at current price. All the funds are held here: https://blockchair.com/bitcoin-cash/address/prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk so you don't need to wait for a financial report to see ins/outs.\n\nLast financial report: https://bitcoincashnode.org/en/newsroom/bchn-financial-report-2021-11-24\n\nso they're at +767 BCH, I think there was news of some big donation recently ([this tx](https://blockchair.com/bitcoin-cash/transaction/dc6315035d45033b195a180617a62137cf56f971972ed271e87d02aa9322b35d))",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaizivc",
+                                    "author": "simon-v",
+                                    "score": 7,
+                                    "created_utc": 1653903093.0,
+                                    "response": "That's great! What are they spending that *on*, though? One of the major benefits of having an orderly report is demonstrating that the funds are being used responsibly.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iaj01vz",
+                                            "author": "bitcoincashautist",
+                                            "score": 4,
+                                            "created_utc": 1653903584.0,
+                                            "response": "Financial reports show that, dunno what's the schedule for releasing those. 5 months since last one isn't a terribly long time, and I think we could expect boring \"same old\": dev manhours, some bounties, website maintenance, etc.\n\nThis was for the period June-Nov 2021\n\n>Below are the project's expenses since the last overview on June 11, 2021. They amount to 132.11905171 BCH over that period. The mining fees have been excluded.\n\n    2021-07-01 ex:development:website:general  0.19493177 BCH\n    2021-07-01 ex:pr:representative            2.44618400 BCH\n    2021-07-01 ex:development:general          4.33925050 BCH\n    2021-07-01 ex:development:general          3.55029590 BCH\n    2021-07-02 ex:development:general          8.13008130 BCH\n    2021-07-03 ex:development:website:general  0.72016461 BCH\n    2021-08-01 ex:pr:representative            2.31764744 BCH\n    2021-08-02 ex:development:general          0.18269845 BCH\n    2021-09-01 ex:development:general          1.55523414 BCH\n    2021-09-01 ex:pr:representative            1.94576756 BCH\n    2021-09-01 ex:development:general         20.70759706 BCH\n    2021-09-01 ex:development:general         26.70440369 BCH\n    2021-09-01 ex:development:general          0.92784461 BCH\n    2021-10-01 ex:pr:representative            2.43664720 BCH\n    2021-10-01 ex:development:general         13.65348400 BCH\n    2021-10-01 ex:development:general          4.33962260 BCH\n    2021-10-01 ex:development:general         16.00753300 BCH\n    2021-10-02 ex:development:general          0.73576459 BCH\n    2021-11-01 ex:pr:representative            2.09590878 BCH\n    2021-11-01 ex:development:general          2.02350639 BCH\n    2021-11-01 ex:development:general          2.54604090 BCH\n    2021-11-01 ex:development:general         11.47432301 BCH\n    2021-11-02 ex:development:general          0.16798817 BCH\n    2021-11-03 ex:development:general          2.91613204 BCH\n\n>In the time since the last report, BCHN activity was focused on the May 15, 2022 upgrade work, draft implementation of other CHIPs, general optimization, bug fixing and user support.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "iaj3cbo",
+                                    "author": "ftrader",
+                                    "score": 13,
+                                    "created_utc": 1653906522.0,
+                                    "response": "Our project financial situation is at a good level thanks to all previous donations.\n\nI would like to send some specific __big thanks to the person who donated the 200 BCH recently__. We truly appreciate it! We know you (long time Bitcoin Cash supporter), but I will keep your identity confidential for now, unless you wish to out yourself here.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "iajvb67",
+                                    "author": "WippleDippleDoo",
+                                    "score": 1,
+                                    "created_utc": 1653923203.0,
+                                    "response": "Nice to hear!",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ian8olr",
+                            "author": "Caesar91core",
+                            "score": 1,
+                            "created_utc": 1653990884.0,
+                            "response": "This can be either the node itself or one of its preceding siblings.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iaky7xz",
+                    "author": "mrenouf",
+                    "score": 1,
+                    "created_utc": 1653940801.0,
+                    "response": "Another superpower BCH provides, unlimited scalability, both in combination -> exponential growth.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iakb6lm",
+                    "author": "bgsngg",
+                    "score": 0,
+                    "created_utc": 1653930278.0,
+                    "response": "It\u2019s problems are pale in comparison to everything else . Cheers .",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

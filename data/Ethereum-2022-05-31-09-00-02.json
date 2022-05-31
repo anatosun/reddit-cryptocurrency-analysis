@@ -1,0 +1,35 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v1lqb3",
+            "title": "Help with REWARD SYSTEM for STREAMING dapp",
+            "url": "https://www.reddit.com/r/ethereum/comments/v1lqb3/help_with_reward_system_for_streaming_dapp/",
+            "author": "John200xw",
+            "created_utc": 1653986676.0,
+            "score": 1,
+            "num_comments": 3,
+            "subreddit": "ethereum",
+            "selftext": " Hello,\n\nfor my thesis, I am writing a PoC (a prototype) dapp \u2013 content production services and with content streaming, such as Netflix and Hulu. It's going to use permissionless public network on the streaming side and private permissioned on the production side.\n\nI have researched a good number of aspects of a dapp like this (at least to be good enough for the PoC) but one thing I haven't been able to figure out:\n\nI really liked **Bittube's legacy reward system** \\- when a streamer streamed a particular video, he and the content uploader received cryptocurrency rewards (now they call it airtime rewards).\n\n**How to implement this with video streaming of video files being stored on IPFS?** I think Filecoin provides something similar in a way that if a user engages in the network as a host (a seeder in torrent terms), he receives rewards but I would like to implement it on the streamer's side and, ideally, with my own token.\n\n**Does it require its own consensus algorithm and so on?**\n\nMy thought was to create an ERC-20 (or 777) token, and possibly by the amount of downloaded data, the smart contract distributes the token to the user... But I have little to no idea how to link the amount of downloaded data to the user during the stream. Some research mentions proving the contributions by recording into the blockchain.\n\nI would also like to implement a mechanism, where early watchers are rewarded, meaning the sooner you stream, the more rewards you get.\n\n**ANY HELP WOULD BE MUCH APPRECIATED. Thank you :)**",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ianhsy1",
+                    "author": "1Types",
+                    "score": 1,
+                    "created_utc": 1653997768.0,
+                    "response": "I am ready for the bullrun after this. \ud83d\ude4f\ud83d\udc9f https://youtu.be/WHGEa-hImUY",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

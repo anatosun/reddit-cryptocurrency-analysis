@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/ethereum/comments/uxtk0l/question_how_do_cexes_store_private_keys/",
             "author": "psycho_qt",
             "created_utc": 1653519696.0,
-            "score": 2,
-            "num_comments": 4,
+            "score": 1,
+            "num_comments": 6,
             "subreddit": "ethereum",
             "selftext": "Hey guys, I am doing some research and I'm wondering how do CeXes secure the custodial wallets' private keys?\n\nFor example: let's say I'm building a CeX. I need to generate an address from a seed for each user and save that address and its seed (or PPK) somewhere so I can forward tokens from those addresses as users deposit in them, meaning I will need the seed phrase. Or if the funds stay in those wallets, I need the seedphrase for when they want to withdraw. \n\nWhat is the best way to secure these seeds or PPKs? Any reading material or suggestions you might have is very much appreciated.",
             "stickied": false,
@@ -27,7 +27,17 @@
                     "created_utc": 1653525250.0,
                     "response": "They\u2019ll work with institutional grade custody providers on cold storage, key management and MPC for access permissioning (ie a big multi-sig).\n\nNamespace and address management is typically also managed here for secure settlement.\n\nTake a look at the websites of Fireblocks, Hex trust, Cactus or Copper etc as examples.\n\nhttps://www.fireblocks.com/\n\nhttps://hextrust.com/\n\nhttps://copper.co/custody\n\nThey\u2019ll all have slightly different services, but similar models.\n\nThey might typically use omnibus accounts for asset deposits and clearing rather than individual PPK key management. Retail and OTC execution is often architecturally separated as well. \n\nI hope that helps.",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "ia15g1k",
+                            "author": "psycho_qt",
+                            "score": 2,
+                            "created_utc": 1653542433.0,
+                            "response": "Thank you for the answer, much appreciated. Sheds a bit of light on the whole thing!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 }
             ]
         },
@@ -37,8 +47,8 @@
             "url": "https://www.reddit.com/r/ethereum/comments/uxtnyz/geth_error/",
             "author": "notooth1",
             "created_utc": 1653520013.0,
-            "score": 3,
-            "num_comments": 4,
+            "score": 2,
+            "num_comments": 6,
             "subreddit": "ethereum",
             "selftext": "Geth gave me this error. Can anyone help?\n\n    INFO [05-26|03:55:50.844] State heal in progress                   accounts=11503@602.32KiB slots=16221@1.22MiB   codes=436@3.38MiB nodes=6,342,816@1.78GiB pending=0\n    INFO [05-26|03:55:50.847] Imported new block receipts              count=1  elapsed=1.453ms   number=14,843,920 hash=a79a74..af56b9 age=25m46s   size=61.11KiB\n    INFO [05-26|03:55:50.848] Rebuilding state snapshot \n    INFO [05-26|03:55:50.849] Committed new head block                 number=14,843,920 hash=a79a74..af56b9\n    INFO [05-26|03:55:50.849] Resuming state snapshot generation       root=9f9b38..a4990a accounts=0               slots=0               storage=0.00B   elapsed=1.394ms\n    panic: runtime error: invalid memory address or nil pointer dereference\n    [signal SIGSEGV: segmentation violation code=0x1 addr=0x50 pc=0x5e1596]\n    \n    goroutine 132373 [running]:\n    github.com/ethereum/go-ethereum/params.(*BorConfig).CalculateBurntContract(0x0, 0xe28011)\n            github.com/ethereum/go-ethereum/params/config.go:565 +0x36\n    github.com/ethereum/go-ethereum/core.(*StateTransition).TransitionDb(0xc04445c100)\n            github.com/ethereum/go-ethereum/core/state_transition.go:344 +0xb65\n    github.com/ethereum/go-ethereum/core.ApplyMessage(0x1800a60, {0x1800a60, 0xc02a4601b0}, 0xc34be8e8e0)\n            github.com/ethereum/go-ethereum/core/state_transition.go:181 +0x2a\n    github.com/ethereum/go-ethereum/core.applyTransaction({0xc09da37f80, {0x6, 0x9a, 0xcf, 0x90, 0x4f, 0x61, 0xc, 0xbf, 0x8e, ...}, ...}, ...)\n            github.com/ethereum/go-ethereum/core/state_processor.go:101 +0x1c5\n    github.com/ethereum/go-ethereum/core.(*StateProcessor).Process(0xc0001ef620, 0xc0805463f0, 0xc02a474340, {0x0, {0x0, 0x0}, 0x0, 0x0, 0x0, {0x0, ...}})\n            github.com/ethereum/go-ethereum/core/state_processor.go:82 +0x898\n    github.com/ethereum/go-ethereum/core.(*BlockChain).insertChain(0xc0003fe500, {0xc3d8bfdc00, 0xa5a977111466022b, 0x71}, 0x1, 0x1)\n            github.com/ethereum/go-ethereum/core/blockchain.go:1693 +0x1f05\n    github.com/ethereum/go-ethereum/core.(*BlockChain).InsertChain(0xc0003fe500, {0xc3d8bfdc00, 0x71, 0x71})\n            github.com/ethereum/go-ethereum/core/blockchain.go:1448 +0xb57\n    github.com/ethereum/go-ethereum/eth/downloader.(*Downloader).importBlockResults(0xc00016a900, {0xc0acead000, 0x71, 0x0})\n            github.com/ethereum/go-ethereum/eth/downloader/downloader.go:1523 +0x487\n    github.com/ethereum/go-ethereum/eth/downloader.(*Downloader).processSnapSyncContent(0xc00016a900)\n            github.com/ethereum/go-ethereum/eth/downloader/downloader.go:1656 +0xb66\n    github.com/ethereum/go-ethereum/eth/downloader.(*Downloader).syncWithPeer.func8()\n            github.com/ethereum/go-ethereum/eth/downloader/downloader.go:594 +0x1d\n    github.com/ethereum/go-ethereum/eth/downloader.(*Downloader).spawnSync.func1()\n            github.com/ethereum/go-ethereum/eth/downloader/downloader.go:608 +0x70\n    created by github.com/ethereum/go-ethereum/eth/downloader.(*Downloader).spawnSync\n            github.com/ethereum/go-ethereum/eth/downloader/downloader.go:608 +0x65",
             "stickied": false,
@@ -50,7 +60,17 @@
                     "created_utc": 1653573535.0,
                     "response": "Please open an issue here: https://github.com/ethereum/go-ethereum/issues",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "ia646iq",
+                            "author": "notooth1",
+                            "score": 1,
+                            "created_utc": 1653638720.0,
+                            "response": "I did, but they refused to help.\n\nhttps://github.com/ethereum/go-ethereum/issues/24981",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 }
             ]
         }

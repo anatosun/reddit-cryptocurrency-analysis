@@ -1,0 +1,80 @@
+{
+    "subreddit": "CoinBase",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uyhdrx",
+            "title": "Coinbase API Returning Invalid JSON",
+            "url": "https://www.reddit.com/r/CoinBase/comments/uyhdrx/coinbase_api_returning_invalid_json/",
+            "author": "DomNeagle",
+            "created_utc": 1653598770.0,
+            "score": 7,
+            "num_comments": 47,
+            "subreddit": "CoinBase",
+            "selftext": "Has anyone else using the Coinbase API noticed over the last 24 hours that it periodically returns invalid JSON in the response?\n\nI've typically seen it when calling the endpoints for retrieving account info for various coins, such as my BTC balance.\n\nThe response that's returned from the API contains all the correct JSON, but it seems to be duplicated. As an example, if I expect a response like the following:\n\n{ \"coin\": \"BTC\", \"balance\": 123 }\n\n...what I often get back looks like this:\n\n{ \"coin\": \"BTC\", \"balance\": 123 }{ \"coin\": \"BTC\", \"balance\": 123 }\n\nSo the JSON is there, but it's duplicated.\n\nAnyone else noticed this happening, or have any idea where to report it?\n\nThanks in advance.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia49fn5",
+                    "author": "coinbasesupport",
+                    "score": 1,
+                    "created_utc": 1653601335.0,
+                    "response": "Hey u/DomNeagle, we have gone ahead and gathered some links for you to look through regarding this, and if you are unable to address your question within these links, we would recommend maybe reaching out to our support team, via the [contact us page](https://help.coinbase.com/en/contact-us).  \n\n\nThe Coinbase Cloud Docs, has a hub for questions related to API. [Link](https://docs.cloud.coinbase.com/sign-in-with-coinbase/docs/api-transactions)  \nWe might also recommend reaching out on our developer forums, [here](https://forums.coinbasecloud.dev/).  \n\n\nLet us know if any of this is helpful for this situation!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia43kx5",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653598771.0,
+                    "response": "This subreddit is a public forum. For your security, do not post personal information to a public forum, including your Coinbase account email. If you\u2019re experiencing an issue with your Coinbase account, please [contact us](https://help.coinbase.com/en/contact-us.html) directly. \n\nIf you have a case number for your support request please respond to this message with that case number.\n\nYou should only trust [verified Coinbase staff](https://help.coinbase.com/en/coinbase/other-topics/other/is-coinbase-present-on-social-media.html). Please report any individual impersonating Coinbase staff to the moderators.\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/CoinBase) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia4khph",
+                    "author": "RaversPT",
+                    "score": 1,
+                    "created_utc": 1653606392.0,
+                    "response": "I am having the same exact issue.\n\nIn my case, I was getting this error at the transfer method. The thing is that it throws the error, but the transfer still went trought. Some users have noticed that and exploited the hell of my app.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia4qxcz",
+                    "author": "CryptoPonies",
+                    "score": 1,
+                    "created_utc": 1653609493.0,
+                    "response": "We are seeing some really strange problems going on with the coinbase API at the moment as well.\n\nMy system hasn't changed, My app is suppose to send BTC but doge is now sent instead so I created another API key which seemed to have fix it.  However I am seeing a lot of duplicate sends just as the OP has reported.\n\nETH send seems not functioning at all.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia5h4ag",
+                    "author": "Derek4aty1",
+                    "score": 1,
+                    "created_utc": 1653622439.0,
+                    "response": "Same here!  I use the \"coinbase\" Python package to access account balances and started getting errors today - JSON response is duplicated :(",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia4tiyi",
+                    "author": "Wendy0214",
+                    "score": 0,
+                    "created_utc": 1653610770.0,
+                    "response": "It is now easier to lock coins",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

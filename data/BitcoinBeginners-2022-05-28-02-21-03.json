@@ -1,0 +1,80 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uzdjvc",
+            "title": "I found some seed words from years ago and I\u2019m not sure where they are from, can anyone help?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uzdjvc/i_found_some_seed_words_from_years_ago_and_im_not/",
+            "author": "itsnoteasybutitsfine",
+            "created_utc": 1653703998.0,
+            "score": 32,
+            "num_comments": 21,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Some words are antiquarian skimming elijah feelings tricks interviewer rubber winter base \n\nThese words are from 3 separate sets I have and they are in no order. I know not to answer dms, also they look to be made of 14 words, 15 words, and 9 words. It doesn\u2019t make much sense to me.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia9p6ir",
+                    "author": "Narmotur",
+                    "score": 19,
+                    "created_utc": 1653704956.0,
+                    "response": "If your words are on this list: https://login.blockchain.com/legacy-pages/js/mnemonic/mnemonic_words_v3.txt\n\nyou may have one or more blockchain.info/.com mnemonics. These mnemonics predate BIP 39 and usually encode either a blockchain.info wallet password or a password and uuid. The easiest way to recover them is using blockchain.com's legacy recovery page.\n\n**The biggest problem with this is typing your words into a webpage. Obviously this is extremely ill advised if you have some other mnemonic, so try to make sure this is actually what you have.** Also, typing single words into the recovery page won't work to see if they are on the list, as the mnemonic has a built in checksum that will fail if the phrase is not complete in the right order.\n\nThe recovery page is here: https://login.blockchain.com/wallet/forgot-password",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iabgwr6",
+                    "author": "pgh_ski",
+                    "score": 4,
+                    "created_utc": 1653749429.0,
+                    "response": "Ian Coleman's [BIP39 tool](https://iancoleman.io/bip39/) (download and run offline!) is a good place to start, and I second the person talking about legacy blockchain.com mnemonics. It was a non-standard (non BIP39) thing.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9p74d",
+                    "author": "spiceylizard",
+                    "score": 6,
+                    "created_utc": 1653704965.0,
+                    "response": "Download blue wallet and try to generate a wallet using the words",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iac4g2u",
+                    "author": "Qewbicle",
+                    "score": 2,
+                    "created_utc": 1653760484.0,
+                    "response": "What you have is definitely from blockchain dot info.  \nExtending u/Narmotur answer.  \n\nhttps://bitcoin.stackexchange.com/questions/70613/recover-keys-from-legacy-blockchain-wallets-mnemonic#70620 \n\nSpoiler, it's not a wallet seed phrase, it's for password recovery into a wallet.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9ncmx",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653703998.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iad26rm",
+                    "author": "Crypto_bro999",
+                    "score": 1,
+                    "created_utc": 1653776577.0,
+                    "response": "Yeah bro just send them to mee and I'm gonna helo you out haha",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

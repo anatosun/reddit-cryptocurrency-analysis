@@ -1,0 +1,467 @@
+{
+    "subreddit": "btc",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uyhxiu",
+            "title": "Andreas Brekken with some truth bombs about Bitcoin (BTC) development",
+            "url": "https://twitter.com/MKjrstad/status/1529886974416498692",
+            "author": "sandakersmann",
+            "created_utc": 1653600295.0,
+            "score": 46,
+            "num_comments": 58,
+            "subreddit": "btc",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia600cj",
+                    "author": "mtrycz",
+                    "score": 7,
+                    "created_utc": 1653635067.0,
+                    "response": "This is funny to me because true engineers cherish simplicity.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia5tk2u",
+                    "author": "gnahor",
+                    "score": 7,
+                    "created_utc": 1653630147.0,
+                    "response": "He is right, simplicity is always to be preferred. That's what made me choose a simple blocksize increase over complicated SegWit in 2017.\nIdeally most (not all) of BCH's dev work would be boring: optimize the node software to allow for scaling without inventing new overcomplicated stuff.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia7qrna",
+                            "author": "Denfreeman",
+                            "score": 3,
+                            "created_utc": 1653671231.0,
+                            "response": "but bolt12 servers a real need? the one for recurring payments, static tip jars, etc etc etc in a decentralized way.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia494uj",
+                    "author": "Aggravated-Bread489",
+                    "score": 10,
+                    "created_utc": 1653601205.0,
+                    "response": "BTC is turning into a Rube Goldberg machine \ud83e\udd23",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia6kkiq",
+                            "author": "chainxor",
+                            "score": 3,
+                            "created_utc": 1653652038.0,
+                            "response": "Turning into? It already is with SegShit and Lightning Notwork.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia6qkd3",
+                            "author": "RobMeijer",
+                            "score": 1,
+                            "created_utc": 1653655522.0,
+                            "response": "Tbf, that has very little to nothing to do with the point he's making ;)",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia5su9k",
+                    "author": "jessquit",
+                    "score": 9,
+                    "created_utc": 1653629647.0,
+                    "response": "He also wrote:\n\n> I think the Bitcoin forks (BCH, BSV, etc) have done much worse than Bitcoin. Unnecessary features, forks, address formats, DAAs, refactoring.\n\nHe's only half wrong. Improving the DAA was a categorical improvement. And no BCH engineer \"designed\" a fork. CSW caused one because, well, he's CSW. Amaury caused one because he wanted to levy a tax.\n\nBut he's 100% right about the others. It seems like nobody wants to build the stuff we came here for: scaling. Where are universal UTXO commitments? Where is a pure SPV implementation? Where is advanced pruning? BlockTorrent was announced *years* ago. \n\nInstead we fiddled around with native nonmonetary car wash tokens, building social media sites on the L1 BLOCKCHAIN smh. Etc.  Not really much better than CSW stuffing weather data and cat photos into his blockchain.\n\nIt's a fair criticism and I hope we heed it and refocus.\n\n\\* I know some of you are still working on scaling, I'm not frustrated with you, I'm frustrated you aren't getting more help from your peers",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia60h3z",
+                            "author": "mtrycz",
+                            "score": 7,
+                            "created_utc": 1653635460.0,
+                            "response": "> It seems like nobody wants to build the stuff we came here for: scaling\n\nSounds unfair. I'm doing work for reorganizing BCHN's network infrastructure before tackling block validation and optimizing database. Verde is doing performance assessments of the infrastructure. Fulcrum and Electron Cash are constantly improving. \n\nVerde has their own version of commitments, but I'm unsure it's finalized yet. The one thing we are short of is people taking ownership (becoming champions) of the new features. You got the stuff to become owner of something you want see done, commitments for example. Why not?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia62irz",
+                                    "author": "jessquit",
+                                    "score": 4,
+                                    "created_utc": 1653637251.0,
+                                    "response": "* I know some of you are still working on scaling, I'm not frustrated with you, I'm frustrated you aren't getting more help from your peers \n\n> The one thing we are short of is people taking ownership (becoming champions) of the new features. You got the stuff to become owner of something you want see done, commitments for example. Why not?\n\nPM me pls",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia7yjp8",
+                                            "author": "emergent_reasons",
+                                            "score": 2,
+                                            "created_utc": 1653674504.0,
+                                            "response": "I agree with /u/mtrycz on this point. For people with the knowledge, vision and wisdom to see something that is important, for better or worse it's on them to be the leader. There are ways to get resources if that is the bottleneck. Hope you will decide to jump in.\n\nAlso this phrase is simply wrong. I'd hope you edit your post:\n\n> It seems like nobody wants to build the stuff we came here for: scaling.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ia655vj",
+                                    "author": "ThomasZander",
+                                    "score": 3,
+                                    "created_utc": 1653639604.0,
+                                    "response": "> I'm doing work for reorganizing BCHN's network infrastructure before tackling block validation and optimizing database\n\nHonest question.\n\nWe **have** a client that did all this work (over the course of 7 years (2016-now)) which already has done all the refactors and has done the research.\n\nHere is the question; why are you insisting on re-doing this work (on the supposed-to-be-stable client) instead of using the work already done?\n\nSome seem to use the excuse of flowee using GPL, which makes no sense as GPL is still the most used open source license in the world. If you don't like GPL, stop using LInux (including Android), KDE, most webservers etc etc etc.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia65z2w",
+                                            "author": "mtrycz",
+                                            "score": 4,
+                                            "created_utc": 1653640333.0,
+                                            "response": "Hey Mr Zander!\n\nI tried to ask you a straight question thrice (if I can read and study and describe flowee's code) and didn't get a straight yes/no answer, so I prefer to thread on the safe side. Sorry if there is misunderstanding, but I did try to undo it, and failed. \n\nStill, I'm checking out a [variety of softwares](https://gitlab.com/bitcoin-cash-node/announcements/-/merge_requests/51/diffs), and it's possible that we converge to a different solution than flowee.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia7r7d7",
+                                                    "author": "ThomasZander",
+                                                    "score": 1,
+                                                    "created_utc": 1653671412.0,
+                                                    "response": "> Sorry if there is misunderstanding\n\nThe question is simple.\n\nWhy are you not extending or testing or using the Flowee the Hub project which has already done all the work you are planning to do?\n\n(edit) The advantages are;\n\n1. the work is already done. It is stable and it has been used in production (including mining).\n2. the basis of the codebase is the Satoshi one (just like BCHN is), which gives maximum compatibility.\n3. it is better to do such optimizations on an independent codebase than on the one that miners use. Doing speed ups on the BCHN codebase is like replacing a 747 engine in-flight. Dangerous to the point of irresponsible.\n\nWhat is the advantage to re-do 7 man years of work on BCHN?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia8hh3e",
+                                                            "author": "mtrycz",
+                                                            "score": 1,
+                                                            "created_utc": 1653682925.0,
+                                                            "response": "1. I have interest in BCHN *because* of its history of being the reliable mining node (would be great to see miners switch more and more)\n2. I have a loose but established relationship with BCHN. \n3. I find you to be a difficult person to work with, most of the time, which transfers to flowee as a project.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia8ljma",
+                                                                    "author": "ThomasZander",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653684806.0,
+                                                                    "response": "I guess you just proved the point of Andreas (and Jessquit) that this is not about doing good for BCH, just about having fun doing something \"hard\".  \nIf it were about scaling, you'd build on top of the work already done.\n\nOn nr 3, I would argue that if you open your first pull request you might actually be surprised. You never tried. Don't blame me.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "ia8oeqx",
+                                                                            "author": "mtrycz",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653686162.0,
+                                                                            "response": "BCHN is a real world project, needing real work to be done. \n\nI cannot work at the same time on both a MIT and a GPL project doing the same thing.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "iabdss8",
+                                                                                    "author": "ThomasZander",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653747917.0,
+                                                                                    "response": "> BCHN is a real world project, needing real work to be done.\n\nAbsolutely.\n\n> I cannot work at the same time on both a MIT and a GPL project doing the same thing.\n\nIf you think that this is so because of legal reasons, then you are incorrect.\n\nThink of all the open source programmers that have (programming) day jobs as a clear example of how many manage this just fine.",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ia832z3",
+                                    "author": "tl121",
+                                    "score": 2,
+                                    "created_utc": 1653676485.0,
+                                    "response": "While optimizing the networking is important, it is not the hardest part of the scaling problem, because network performance is easily parallelized.  Similarly, sigops processing, e.g. doing the modular arithmetic that is the inner loop of EC cryptography, is not the hard problem.  The hard problem is the database problem, which is the \u201cinner loop\u201d of the main function of a node, namely detecting and preventing double spending.  Actually, the hardest problem of all is integrating the three components harmoniously: network, CPU and database.  This became apparent to me in the early days watching nodes choke when blocks were orphaned.  \n\nMy rule when starting a new project, or evaluating someone else\u2019s project, is to answer the questions:  What can we leave out and still succeed in the market?  What is the hardest problem to solve that\u2019s left?  Do we know how to solve it?\n\nAs to the network portion,  there were two portions that were hard.  The first was effectively solved, namely latency of bursty block propagation.  The second, to my knowledge, has yet to be solved efficiently,  the reliable flooding of transactions, where each transaction is received only once, but the availability of a transaction is advertised to all a node\u2019s neighbors.  This at one time accounted for 90% of all network traffic by bitcoin nodes.  I also observed this effect when running early bitcoin nodes, indeed it was obvious with my then pathetic DSL internet service.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia8gwwp",
+                                            "author": "mtrycz",
+                                            "score": 1,
+                                            "created_utc": 1653682671.0,
+                                            "response": "I had taken a bite both at dB and processing, but figured out that, for BCHN at least, networking is the biggest bottleneck, and any gains in the former regions would be mostly moot without network messages management improvement.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia8meka",
+                                                    "author": "ThomasZander",
+                                                    "score": 1,
+                                                    "created_utc": 1653685211.0,
+                                                    "response": "> for BCHN at least, networking is the biggest bottleneck\n\nthat is debatable.\n\nAs the block size goes up the actual raw (wall) time of its download is going to be the majority factor. A 256MB block downloaded at 40MB/sec is not going to care at all about some small messages that were in the pipeline or whatever. The actual time it takes to pump the data is going to be the limit.\n\nAnd, as /u/tl121 said, the other bottleneck is the UTXO database. (which is why Flowee wrote a new one)",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "iabaugf",
+                                                            "author": "tl121",
+                                                            "score": 1,
+                                                            "created_utc": 1653746423.0,
+                                                            "response": "What is the IO performance of the Flowee database?  Of the entire node?  What are your benchmarks?  What numbers do they show?  What are the bottlenecks in various cases?",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia648cv",
+                            "author": "nazarserdyuk",
+                            "score": 3,
+                            "created_utc": 1653638763.0,
+                            "response": "Simplicity is the ultimate form of \u2026\u2026nah needs to be complex and impractical xD",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia64tq2",
+                            "author": "ThomasZander",
+                            "score": 2,
+                            "created_utc": 1653639300.0,
+                            "response": "> But he's 100% right about the others. It seems like nobody wants to build the stuff we came here for: scaling. \n\n\nNobody but me^[1](https://flowee.org/news/2021-01-scale/) ^[2](https://flowee.org/news/2020-10-scaling-bitcoin-cash/). And the dev community doesn't seem to be that interested to be professional and instead send rude people as I try to avoid us making new fancy things on-chain that actually hurt the coin^[1](https://bitcoincashresearch.org/t/asymmetric-moving-maxblocksize-based-on-median/197/59).\n\n> Where are universal UTXO commitments?\n\nThey turn out to have a rather big downside, SPV wallets become either impossible or (with lots of protocol work) much much more complex.\n\n> Where is a pure SPV implementation?\n\nhttps://flowee.org/products/pay/\n\n> Where is advanced pruning?\n\nSame problem, SPV requires the node to have all transactions since it can ask for a random transaction. Pruning actively deletes those transactions. Maybe we can focus on convincing virtual servers to have cheap and slow hard drives for the chain and fast SSDs for the rest (like the UTXO).\n\n> BlockTorrent was announced years ago. \n\nYeah.\n\nMy list of annoyances is based on people coming up with \"great things\" (or_reverse, anyone) that then get ignored. A company that produces a feature which then never is shown in an **end-user-facing** product is quickly going bankrupt.\n\nEnd user facing products is not something anyone is really making. The best wallet we have is a closed source one from Roger. That will go well until it doesn't, and then we are royally F-ed. \n\nAnyway, I'm on summer holidays so I'm not going to worry to much about this. But the worry you have is something I echo 100%.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia6nef2",
+                                    "author": "don2468",
+                                    "score": 2,
+                                    "created_utc": 1653653753.0,
+                                    "response": ">> Where are universal UTXO commitments?\n> \n> They turn out to have a rather big downside, SPV wallets become either impossible or (with lots of protocol work) much much more complex.\n\n\nHi Thomas, can you elaborate? or point to a post/blog on the subject.\n\n\nIs it a problem of filling out the whole history of the wallet? Spent & unspent coins.\n\n\nSurely what's important are the coins one has in the wallet now and a UTXO commitment only node could supply that information, though not prove it (without a full merkle tree type commitment), is this the issue?\n\n\nOr something completely different!\n\n\nLook forward to your reply",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia7xu0t",
+                                            "author": "tl121",
+                                            "score": 2,
+                                            "created_utc": 1653674199.0,
+                                            "response": "A UTXO-only node can store and provide a full Merkle tree proof at a cost of a log(N) factor in the size of its  UTXO database. (N is the number of transactions in the original containing block.) Normally, an SPV wallet will be accessing near the blockchain tip, so it will be requesting data all nodes have.  To accommodate exceptions archival storage can be provided by full nodes.  However, archival storage doesn\u2019t have to be in the form of nodes.  If a user of an SPV node needs a proof of a rescan from seed it can choose the extra cost of accessing  archival storage and constructing the missing proofs.  (This also applies to data and proofs of spent coins and other wallet transaction history.)\n\nUsers should be expected to backup their wallet data,  and this could be aided by wallet software that uses encryption derived from seed words, coupled with normal backup methods, e.g. cloud storage.  However, in rare cases archival services could provide the needed data and these could be funded many ways that can avoid the tragedy of the commons. \n\nKeeping proofs and other historical data in all nodes is a bad idea. For example, mining nodes, is probably a bad idea, because mining nodes need to be fast and overbuilt to prevent creation of orphans, and hence far more costly than other nodes that do not have to provide hard real time verification.  \n\nA scalable infrastructure will have many types of bitcoin nodes, servers and clients, optimized for different purposes and funded by different mechanisms.   This becomes the polar opposite of the \u201cevery user has to run a full node\u201d bitcoin core vision, which if accepted guarantees that the system can not scale.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "ia7taww",
+                                            "author": "ThomasZander",
+                                            "score": 1,
+                                            "created_utc": 1653672284.0,
+                                            "response": "> Is it a problem of filling out the whole history of the wallet? Spent & unspent coins.\n\nIn a nutshell, yes.\n\nAn SPV wallet gets its transactions by asking for each historical block if there are transactions matching a bloom filter. Which gives the SPV wallet the historical transactions.\n\nNotice that you can't just get the latest transaction while skipping the earlier ones as they are chained.  So you need them from the start.\n\n> Surely what's important are the coins one has in the wallet now and a UTXO commitment only node could supply that information, though not prove it (without a full merkle tree type commitment), is this the issue?\n\nIn part, yes.\n\nSPV would become trusted if nobody could provide the history towards a coin. The 99% of the users (SPV wallets) would suddenly have no way to validate anything anymore. It would **effectively** make the coin trusted because if the majority does not validate, the balance of trust is gone. And we can look at the current banking system to see how a system that is becomes a black-box ends up being unfair.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia9w0by",
+                                                    "author": "don2468",
+                                                    "score": 2,
+                                                    "created_utc": 1653708592.0,
+                                                    "response": "> An SPV wallet gets its transactions by asking for each historical block if there are transactions matching a bloom filter. Which gives the SPV wallet the historical transactions.\n\n\nThanks for the reply, (please forgive any ignorance on my part, only an armchair quarterback) u/chaintip\n\n\nLike u/jessquit, I thought the only important coins are the ***'currently spendable ones'*** (still do, but it seems to be a more complex task of finding them than I first thought)\n\n\n> Notice that you can't just get the latest transaction while skipping the earlier ones as they are chained. So you need them from the start.\n\n\nApologies but I don't really understand this, don't you only need the data needed to spend them - TXID? & vout? & Amount (satoshi's)\n\n\n**When re-syncing a wallet from just the seed** (you have no other data than the seed)\n\n\nI had initially thought I could just present a ***'UTXO Set Only Node'*** with a list of addresses (perhaps my xpub) and it could go through the UTXO set indexed (by output addresses) collecting the **relevant data needed to spend any valid output it finds**. TXID? & vout? & Amount (satoshi's) and returning that to me.\n\n\nBut I quickly realised while writing this reply that we don't know where the **first current** valid address generated by the the xpub would be it may be the 1000th generated address or much later (if in deed there even is a used address). this seems like quite a computationally intensive task.\n\n\nCould the network have a fairly fine grained (low ish false positives) bloom filter for the *current* whole UTXO set, (would it's generation be prohibitive)\n\n\nAnd then your wallet locally tests it's xpub addresses against this finding candidates and submitting them to the ***'UTXO Set Only Node'*** for confirmation or not and if confirmed then returning the actual data needed to spend them.\n\n\nAre there other issues?\n\n\n----------------------------------------------------------------------------------\n\n\nI believe the current approach to UTXO commitments is an 'Elliptic Curve Multiset Hash' where one would need the **whole** UTXO set + the ECMH Commitment to verify that they agree, the other approach is a 'full merkle tree UTXO commitment' whose production would? be prohibitive for every block at scale. but would allow a compact proof that a particular UTXO was current and importantly **accepted by the whole network**.\n\n\n\nWithout a full merkle tree UTXO commitment the  ***'UTXO Set Only Node'*** cannot **prove** to us *compactly*  that the whole network agrees that any particular UTXO is valid. \n\n\nOnce a node replies with UTXO's it *says* are valid\n\n\nOne could query a number of nodes to see if they agree, \n\n\n~~**or just try to spend the UTXO back to oneself which would give definitive proof** ***relatively cheaply***~~ edit: bad idea if you are told a low amount then you will be donating an unspecified amount to miners oof.\n\n----------------------------------------------------------------------------------------------\n\n\n**Edit X**^lost_count **spending back to yourself as means of proving UTXO is legitimate**, maybe not such a bad idea *IFF* the node also supplies you with the **full transaction** it cannot effectively lie to you about the amount in that UTXO, it is either valid or it isn't. A transaction that the node just made up on the spot would be rejected by the network, and **proof** of a valid one would currently cost 0.1\u00a2. **remember this would mainly happen when re-syncing a wallet JUST FROM THE SEED** and no other historical data is available to the wallet locally\n\n\nAlso the spend back to yourself to **prove** UTXO is valid could be incorporated in a Cashfusion transaction, win win? (might cause too many failed fusions attack vector)\n\n\n\n-------------------------------------------------------------------------\n\nI like u/tl121's take that wallets should take on some responsibility and regularly back up the current state using the wallet seed to encrypt the data and perhaps place the file on the cloud, \n\n\nperhaps even a public one where you are not going to get locked out of because you lost access to your google account. or even multiple places. (this sentence was mine as it may be a bad idea to back up publicly and don't want to imply that t121 thought this was a good idea, though they may or may not)\n\n\n> SPV would become trusted if nobody could provide the history towards a coin. The 99% of the users (SPV wallets) would suddenly have no way to validate anything anymore. \n\n\npossibly prohibitive but could one store the full merkle proof of a particular UTXO's TXID ~22x32 bytes for Gigabyte blocks **per UTXO**\n\n\nThough this doesn't prove that that UTXO was not spent at some later date. Though isn't this the case for SPV now.\n\n\n> It would effectively make the coin trusted because if the majority does not validate, the balance of trust is gone. And we can look at the current banking system to see how a system that is becomes a black-box ends up being unfair.\n\n\nIs this workable?\n\n\n1. Given any type of UTXO Commitment enforced by PoW. (miners don't build on a block that has a Commitment different from theirs)\n\n\n2. You have at least 1 **honest** node (there could be many different ones but the **active** time of running their nodes has to overlap) and honest in the sense that they will whistle blow if they see malfeasance\n\n\nThe honest node would be able to **fairly compactly** prove to the World that miner malfeasance has occurred\n\n\n* **In order to ensure proof is 'compact'** UTXO commitments are split into 2 parts, UTXO's touched by the current block + UTXO's not touched by the current block and the 'addition' of the 2 parts 'adds' to the Full UTXO commitment of the whole UTXO set.\n\n\n* Now **just** by saving and publishing 2 **consecutive** blocks + UTXO commitments touched by the first block, an honest whistle blower can prove to the **whole** World - Miner malfeasance, either the first block will be invalid or 2nd UTXO Commitment will not follow from (1st UTXO Commitment + the state changes created by the first block)\n\n\n\nFunnily enough it seems to me that the above trust model is not too far away from Bitcoin Cores trust model,\n\n\n* There is at least 1 honest developer/code reviewer that will blow the whistle on any dev malfeasance.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia9w659",
+                                                            "author": "chaintip",
+                                                            "score": 1,
+                                                            "created_utc": 1653708679.0,
+                                                            "response": "***\nu/ThomasZander, you've [been sent](https://www.blockchain.com/bch/address/bitcoincash:qrelay2whkj4kysd5w0eef89msucn9v27vm9xn5uta) `0.00573033 BCH` | `~1.00 USD` by u/don2468\nvia [chaintip](http://www.chaintip.org).\n***",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "ia8p8nu",
+                                                    "author": "jessquit",
+                                                    "score": 1,
+                                                    "created_utc": 1653686559.0,
+                                                    "response": "\n>SPV would become trusted if nobody could provide the history towards a coin. \n\nMaybe I don't understand your point, but why do I need to validate the entire history of a coin that I receive?\n\nAlice sends me a transaction. It has two inputs. My wallet has all of the block headers. I can see that both inputs were mined 59,000 blocks ago. Who cares what *their* inputs are? They're valid. End.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "iabdk7v",
+                                                            "author": "ThomasZander",
+                                                            "score": 1,
+                                                            "created_utc": 1653747801.0,
+                                                            "response": "> Maybe I don't understand your point, but why do I need to validate the entire history of a coin that I receive?\n\nThat was indeed not what I meant. You need to download (and via merkle-tree validate) every transaction that deposits or spends money in your wallet only. This is because otherwise you can't build your wallet-local UTXO (without trusting someone else). \n\nMore in the reply I wrote 10 min ago.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "iab8mem",
+                                                    "author": "tl121",
+                                                    "score": 1,
+                                                    "created_utc": 1653745231.0,
+                                                    "response": " The confusion by what you mean by \u201ctrusted\u201d stuck me too, perhaps I am a bit dyslexic. It was clear in context after a reread. \n\nSPV users need to able to see an accurate representation of their balance and history.  They need to be able to trust the information their client software provides.  They must be able to go off line for days, perhaps weeks, and then get back to up to date information reasonably quickly. (Try doing this with light wallets on some privacy coins.)  This off line capability and quick recovery is a key part of the user experience.  The offline capability is also a key part of scalability as it affects the cost of SPV server nodes.  Bloom filters do not completely eliminate the scanning of the blockchain for each user.\n\nAt massive scale, recovering an SPV wallet from seed will have a massive cost. This cost includes having a sufficient number of servers to store the needed data and providing sufficient processing thereof.  This can be practical only by minimizing the recovery traffic and passing these costs off to the users,  especially those that need quick service, with large wallets, or large gap limits.  \n\nDealing with wallet backups should be an SPV client matter, and not something that the ecosystem provides.  The best solution to a hard problem is to replace it with an easy problem.  In this regard, the reason for creating a blockchain in the first place is for preventing double spends and creating, enforcing and auditing the coin issuance schedule.  It is not, and can not be, a general purpose backup system.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "iabf2l5",
+                                                            "author": "ThomasZander",
+                                                            "score": 1,
+                                                            "created_utc": 1653748535.0,
+                                                            "response": ">  Bloom filters do not completely eliminate the scanning of the blockchain for each user.\n\nThe measurements show that using a bloom filter and scanning a blockchain is not a bottleneck for usage of SPV. True, some nodes are slower than others, but the network time (time it takes between me sending a message and you replying) seems to be the main bottleneck.\n\nI typically send 10 request in one go to a peer, who then responds with 10 block-headers (and any transactions that I might be interested in).\n\nIf I send 100 request in one go, the time it takes to get those blocks back is much less than a magnitude more. Probably only 10% more.\n\n\nIn my experience one full node can serve a massive (say, a million) number of SPV wallets.  \nThey connect briefly and get a small amount of information. The main cost, really, to the full node is the reading of the historical blocks from (typically slow) disk.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "iadba4v",
+                                                                    "author": "tl121",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653781211.0,
+                                                                    "response": "How does a user of an SPV wallet which has lost its file recover his wallet from seed?  Doesn\u2019t this require accessing the entire blockchain from genesis, or at least from the wallet birthday?  This question can be answered by measurements of IO activity under benchmark tests.\n\nIf a million users are sharing an SPV server and each has to recover their wallet every 1000 days, then there will be 1000 passes over the entire blockchain each day,  unless these can be batched, sharded, or indexed.\n\nBottom line:  the SPV infrastructure is as important as the node infrastructure.  I have seen no analysis or modeling of SPV client server traffic patterns and resulting client server performance.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "iaets38",
+                                                                            "author": "ThomasZander",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653818888.0,
+                                                                            "response": "> How does a user of an SPV wallet which has lost its file recover his wallet from seed? Doesn\u2019t this require accessing the entire blockchain from genesis, or at least from the wallet birthday?\n\nIf you use pure SPV, you need to access the blockchain from wallet-birthday.\n\nUseful is the idea to ask an address indexer about the usages some addresses and then start at that point.\n\n> If a million users are sharing an SPV server and each has to recover their wallet every 1000 days, then there will be 1000 passes over the entire blockchain each day\n\nunlikely scenario, but your numbers are not wrong.\n\nIn reality the vast majority of wallets never get restored from backup. The vast majority of people make a wallet, use it and empty it before discarding it. Meaning there is never a need to restore from backup.\n\n> I have seen no analysis or modeling of SPV client server traffic patterns and resulting client server performance.\n\nYou can set that up with a pure SPV wallet, like Flowee Pay, would indeed be interesting to see the results.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "iaackm1",
+                                    "author": "jessquit",
+                                    "score": 1,
+                                    "created_utc": 1653720302.0,
+                                    "response": ">>Where is advanced pruning?\n>\n>Same problem, SPV requires the node to have all transactions since it can ask for a random transaction.\n\nI want to reply with a two part answer.\n\n**ONE**\n\nI realized my error was being vague about what I meant by \"advanced\" pruning, and in hindsight should have said \"conservative pruning.\"  I'm referring to pruning the way Satoshi described it in the white paper. In that scheme, *unspent* outputs are never pruned.\n\nAFAIK that's never been implemented in any of our clients. AFAIK the only kind of pruning we have today is what I would call \"aggressive\" pruning, in which all the data prior to block X are discarded. (If I'm wrong and someone has already implemented conservative pruning, I apologize in advance for my error).\n\nI'm not sure SPV needs *all* transactions. SPV needs a node that has all transactions *since last sync* so it can learn about any new inbound transactions to the wallet. These are, by definition, unspent outputs.\n\nIf conservative pruning were implemented then we wouldn't need to worry about losing data that SPV wallets might care about. Even if you had created an SPV wallet in 2012 and then turned off your machine for ten years, and worst case *every* node on the network was conservatively pruned, your wallet would still be able to find all the new transactions sent to it over the last ten years -- because all of them would be preserved according to the scheme Satoshi described.\n\n**TWO**\n\nWe already have the \"brute force\" version of pruning in (AFAIK) all of our clients. Any users can implement it today. This sort of pruning is categorically more destructive that what Satoshi described. Any bad things that pruning might cause are already with us.\n\n/u/don2468",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iabd8w9",
+                                            "author": "ThomasZander",
+                                            "score": 1,
+                                            "created_utc": 1653747646.0,
+                                            "response": "> I'm not sure SPV needs all transactions. SPV needs a node that has all transactions since last sync so it can learn about any new inbound transactions to the wallet. These are, by definition, unspent outputs.\n\nSPV needs all transactions because you don't know how far back the wallet is synched. In the extreme case you are importing a private key from 2012 and you need to download all transactions that apply to it (both depositing as well as spending ones).\n\nSo if I sync my SPV wallet using a plain node (not some index like fulcrum[1]) I in actual fact need to download spent transactions in order to get the current saldo. For instance a transaction that deposits money on my key which I then spent and the change goes back to my key. I could never find that second transaction without the first (spent) one.\n\nTransactions are chained, to get a current saldo for any wallet you need to walk through the entire history of the wallet.\n\nA pruned node can no longer create a merkle tree for blocks it has removed even one transaction from, it can also no longer send transactions it pruned (that one is obvious).\n\nTherefore a pruned node can not serve an SPV wallet.\n\nTo be clearer (and not make it black/white) a node that has pruned (in any way) transactions from certain blocks can no longer serve [merkleblock](https://flowee.org/docs/spec/network/messages/merkleblock/) P2P messages. And those are the basis of trustless SPV wallets.\n\nfootnote;  \n1: electron cash syncs with fulcrum, and electron cash still downloads from fulcrum the historical (and maybe spent) transaction on sync.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia6pnkw",
+                            "author": "TinosNitso",
+                            "score": 1,
+                            "created_utc": 1653655027.0,
+                            "response": "I actually think [memo.cash](https://memo.cash) doesn't even count as spam, compared to other blockchains. The TPS figures for the others seem ridiculous, and even with everything we do BCH is only 0.3 to **0.4 TPS**. With Visa operating at well over **6000 TPS**, the others all figure they need to max out their TPS. However if my theory is correct, someone should be able to \"break\" the Memo protocol, just by spamming it. But spammers would try to make the spam less obvious (there's no financial incentive to specifically break Memo with 50 thousand+ memos per day).",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia5njot",
+                    "author": "MountainousFog",
+                    "score": 3,
+                    "created_utc": 1653626133.0,
+                    "response": "https://pbs.twimg.com/media/FTtACjKXsAcOruu?format=png&name=900x900\n\nIs Andreas being sarcastic/facetious? \n\nI'm not a tech-person so I don't know if he's poking fun or being serious.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia75nuz",
+                            "author": "saleris",
+                            "score": 1,
+                            "created_utc": 1653662568.0,
+                            "response": "I agree with him , Lightning probably would have gotten much further.\n\n if the focus was on products, businesses and users.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia7z333",
+                                    "author": "tl121",
+                                    "score": 1,
+                                    "created_utc": 1653674737.0,
+                                    "response": "I would put it differently.  If the focus had been on specific users, usage, and other assumptions it would have become obvious that Lightning was not going to be a viable solution.  This might not have been obvious to a junior engineer, but it would have been obvious to a senior engineer, senior engineering manager or senior product manager, if not individually at least as a team.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia5vfgw",
+                    "author": "JonathanSilverblood",
+                    "score": 3,
+                    "created_utc": 1653631500.0,
+                    "response": "> Whether anyone asked for or need the feature is of second importance\n\nIsn't this why the CHIP process has a list of stakeholders and need commitment from other than oneself to even be entertained as viable upgrade candidates?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia7azv2",
+                            "author": "fusio23",
+                            "score": 1,
+                            "created_utc": 1653664791.0,
+                            "response": "None of the developers of Lightning protocol are real businesses trying to develop a product market fit.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia8paax",
+                            "author": "ThomasZander",
+                            "score": 0,
+                            "created_utc": 1653686581.0,
+                            "response": "The original intention was that the CHIP is a sales-pitch with the CHIP itself as the find-all-the-details page for it.\n\nAs all sales pitches go, at one point the proposal is made to include it (because it got enough support) and more discussion happens, as now more people learn about it becoming real and as these things go, they suddenly start to care. Those people should have influence, otherwise it would be a cabal deciding things.\n\nThis is the theory and it would be nice to do it that way.\n\nFor instance the last November announcement of which CHIPS were going to be used in the upgrade had the effect of being final. No public debate was possible (I tried to fix some missing things, it was denied).\n\nThe idea of a CHIP is great, but I really hope the ideas will turn into the implied process in a future upgrade.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia5h230",
+                    "author": "iamnotaclown",
+                    "score": 6,
+                    "created_utc": 1653622407.0,
+                    "response": "I\u2019m an engineer-turned-manager and this is 100% true. This is why we have [product managers](https://en.wikipedia.org/wiki/Product_manager).",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia67m38",
+                            "author": "oliagust",
+                            "score": 2,
+                            "created_utc": 1653641813.0,
+                            "response": "It's mistakes forever until it is completely unmaintainable.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia8ij41",
+                    "author": "garysimms",
+                    "score": 1,
+                    "created_utc": 1653683407.0,
+                    "response": "Very succinct truth here on why so many protocols (including BTC) get so messed up.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

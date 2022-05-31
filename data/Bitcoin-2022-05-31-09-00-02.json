@@ -1,0 +1,66 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v1lts9",
+            "title": "What a scum I am ! I didn't buy a gain and not going up again ? Please confirm that I am a retard :-)",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/v1lts9/what_a_scum_i_am_i_didnt_buy_a_gain_and_not_going/",
+            "author": "bucopa",
+            "created_utc": 1653987131.0,
+            "score": 0,
+            "num_comments": 0,
+            "subreddit": "Bitcoin",
+            "selftext": "What a scum I am ! I didn't buy a gain and not going up again ? Please confirm that I am a retard :-)",
+            "stickied": false,
+            "comments": []
+        },
+        {
+            "id": "v1lpq8",
+            "title": "How many nodes would it take to be able to handle every financial transaction ?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/v1lpq8/how_many_nodes_would_it_take_to_be_able_to_handle/",
+            "author": "count-alucard",
+            "created_utc": 1653986598.0,
+            "score": 2,
+            "num_comments": 3,
+            "subreddit": "Bitcoin",
+            "selftext": "Hello everybody! Kinda of a crypto noob here, about 1.1billion transactions are made every day through credit cards, how many nodes would it take to accommodate that? And how could one go about calculating the required hash rate? Would the lightning network be able to reduce that number?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ian45u3",
+                    "author": "Starbackr",
+                    "score": 5,
+                    "created_utc": 1653986769.0,
+                    "response": "You are mixing up things here. Increasing hashrate does not increase transaction throughput, neither does increasing the number of fullnodes.\n\nLightning does help, as it puts money off chain, where the throughput is not limited by blockspace.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ian71wl",
+                    "author": "Rannasha",
+                    "score": 3,
+                    "created_utc": 1653989438.0,
+                    "response": "The Bitcoin blockchain can accommodate about 7 transactions per second. That number is completely independent from the network hashrate. A single Raspberry Pi could handle that, if needed (although it wouldn't be very secure).\n\nTrue scalability comes with the lightning network, where there are no hard limits on transaction capacity. The network topology can impose constraints though. Two people transacting back and forth on a dedicated LN channel will only have their transaction rate be limited by their internet connection. For multi-hop LN payments, the limit may be reached more quickly, but it's hard to see exactly where and how.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ianehyp",
+                    "author": "BTCMachineElf",
+                    "score": 1,
+                    "created_utc": 1653995521.0,
+                    "response": "Nodes don't handle transactions, miners do. More miners wouldn't mean more transactions. The blockchain has a very limited throughput of 7 transactions per second *in order to ensure proper decentralization.* \n\nThe lightning network, bitcoin's premier layer 2 network, however, fixes this.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

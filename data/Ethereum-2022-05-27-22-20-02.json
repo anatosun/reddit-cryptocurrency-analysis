@@ -1,0 +1,985 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "pmvbbh",
+            "title": "Addressing common rollup misconceptions",
+            "url": "https://www.reddit.com/r/ethereum/comments/pmvbbh/addressing_common_rollup_misconceptions/",
+            "author": "Liberosist",
+            "created_utc": 1631462289.0,
+            "score": 1114,
+            "num_comments": 1577,
+            "subreddit": "ethereum",
+            "selftext": "Awareness about rollups is increasing exponentially, but there are still too many bad takes. Here, I'll address some of these myths and misconceptions to the best of my knowledge. Feel free to ask more questions, I'll edit them in. Also, please correct me if I get something wrong.\n\nI believe a lot of misconceptions are because people are stuck with the old monolithic blockchain ways where it is assumed that there's only one way to do things, and that is that one blockchain will do everything. So, let's begin with that, and also, thanks to r/ethfinance users for contributing these misconceptions.\n\n**Addendum**: Now that this post is pinned, I'm adding a couple of links so you can learn what rollups are. This is how Ethereum & the wider blockchain industry will scale.\n\n[An Incomplete Guide to Rollups (vitalik.ca)](https://vitalik.ca/general/2021/01/05/rollup.html)\n\n[https://www.youtube.com/watch?v=7pWxCklcNsU](https://www.youtube.com/watch?v=7pWxCklcNsU&t=1s)\n\nUpdated on 14th October 2021. \n\n# Rollups are a temporary band aid fix - X, Y, Z blockchain can do it on L1 so they don't need rollups\n\n(by u/hehechibby, u/ec265)\n\nRollups are the present and future of the blockchain industry.\n\nBut first, a brief perspective shift is required to understand why rollups are essential. Until now, blockchains have had to do it all - execution, consensus/security and data availability. This has led to significant bottlenecks and inefficiencies, reflected in the blockchain trilemma. Rollups are blockchains that are laser focused on one thing, and one thing exclusively: executing transactions as fast as possible, while \"outsourcing\" the hard work of security and data availability to a different L1 chain that is better at it. It's simple division of labour or specialization in action. Just like it led exponential growth in the industrial revolution, so will it lead exponential increase in scalability for the blockchain industry.\n\nNow, X, Y, Z blockchain may have compromised significant amounts of decentralization and security to get high scalability, and Ethereum and Bitcoin may have compromised scalability to get high security and decentralization. Rollups are simply constructions that can get the best of all worlds - with high scalability, security, *and* decentralization.\n\nThe important point is that it doesn't matter if it's an L1 or a rollup - to the user they are just interacting with an execution layer. **Execution layers - L1s and rollups - should be directly compared with each other.** Solana and Avalanche are not competing with Ethereum - they are competing with Arbitrum One and StarkNet. \\[Unless they pivot to a rollup-centric roadmap focusing on security and data availability, rather than execution - like Ethereum and Tezos have.\\]\n\n**Tl;dr: Whatever any L1 execution layer can do, a rollup can do it better.**\n\n# X, Y, Z blockchain is still faster than rollups\n\n[No.](https://www.reddit.com/r/ethfinance/comments/pk57n7/why_rollups_data_shards_are_the_only_sustainable/) Once again, whatever any L1 can do, a rollup can do it better long term. I'll point out that there's a wide-open design space with rollups, and some rollups will opt to have conservative rate limits - especially optimistic rollups. But with zkRs, they don't *have* to - they can push past the limits of L1s as described in the article linked above.\n\n# Lack of composability is bad\n\n(by u/Whovillage)\n\nThis is a common argument about rollups but it actually makes very little sense. As mentioned twice already, whatever any L1 can do, a rollup can do it better. I don't see anyone complaining about lack of composability between L1s?\n\nA rollup remains fully composable, even if it's settled across multiple data shards or external data availability sources.\n\nLike L1s are not composable with each other, so are rollups not composable with each other. But there are many interoperability solutions live like Hop, Connext, cBridge and Biconomy, and many more in the works. Indeed, there's amazing innovations [like dAMM that lets multiple zkRollups share liquidity](https://medium.com/starkware/damm-decentralized-amm-59b329fb4cc3)! In addition, eventually we can have internally sharded zk rollups which retain full synchronous composability - a feat nigh impossible on L1s. \n\n**Tl;dr: Rollup composability is superior to L1s.**\n\n# Fragmentation of liquidity is bad\n\n(by u/Beef_Lamborghinion)\n\nSee above, all of the same applies. Rollups may not share liquidity, but neither do L1s. Except, unlike L1s, they actually can with innovations like dAMM!\n\n**Tl;dr: Rollup liquidity fragmentation is less than L1 fragmentation.**\n\n# Rollups are centralized\n\n(by u/Whovillage)\n\nAll transaction data (in compressed form) and proofs are published on L1, which enable exiting a rollup directly from L1 even if the rollup itself is compromised. So, security and decentralization of rollups = security and decentralization of L1. Now, it's certainly true that rollups [may have centralized controls in the early days](https://www.reddit.com/r/ethfinance/comments/nl9cum/early_rollup_training_wheels/), but most if not all rollup projects are committed to progressive decentralization. The final form of rollups: zk rollups with decentralized sequencers, decentralized provers, decentralized L1 smart contracts and light unassisted exits - **you have security and decentralization that's practically identical to the most secure and decentralized security layer (currently Ethereum), except with the massive scalability**.\n\n# Casual users will never be able to execute the CEX - Ethereum mainnet - rollup journey / it's too expensive\n\n(by u/Whovillage, u/stevieraykatz)\n\nTop CEXs like OKEx, Huobi and Coinbase have committed to support withdrawals directly to (and deposits from) Arbitrum One and other rollups with very low fees. Bitfinex already supports withdrawals to Hermez.\n\nMeanwhile, going through Ethereum is not the only way into rollups. cBridge, for example, lets you enter Arbitrum One through Optimism, Polygon PoS, Binance Smart Chain, xDai, Avalanche or Fantom. So, there are plenty of options already, and there'll be many more over time as CEXs and fiat ramps integrate, and liquidity builds up for these various solutions. Argent is releasing with direct fiat on-ramps to zkSync and other rollups soon. With account abstraction, innovative fee models, and meta-transactions - the user experience can actually be better. We can already see this on dYdX - all gas is abstracted from the user. All the user sees is instant transactions without ever having to worry about gas - a UX better than any L1. \n\n**Tl;dr: The UX is better than any L1.** \n\n# It takes too long to withdraw from rollups\n\nThis is true for optimistic rollups - take 7 days to withdraw from rollup to L1 using the default bridge. However, as mentioned above, there are multiple options available that let you make a fast withdrawal for fungible assets. Of course, zkRollups don't have this limitation. For NFTs, zkRs are thus a preferred solution. \n\n# Rollups will be obsolete after \"Eth 2.0\"\n\nFirstly, [\"Eth2\" is deprecated nomenclature](https://notes.ethereum.org/@timbeiko/great-renaming). The two major upgrades coming to Ethereum next are The Merge which merges the consensus layer (previously eth2) with the execution layer (previously eth1) - so we're all one Ethereum again! The next major upgrade after that is data sharding on the consensus layer side. Data sharding is actually focused on accelerating rollups. So, Ethereum L1 scalability will be limited for the foreseeable future, while rollups will scale through the roof!\n\n**Tl;dr: Ethereum's roadmap is rollup-centric and designed to accelerate and empower rollups.**\n\n# Rollups are still too expensive\n\nThis is true, in the short term. Optimistic rollups like Arbitrum One and Optimistic Ethereum are reducing fees by 90%-95% currently, which while a huge improvement over Ethereum is still too expensive. With some optimizations like signature aggregation, better batching and calldata compression, this can be reduced to 99%. Indeed, zkRollups are already seeing 99% reductions getting fees down to the $0.10-$1 range even when L1 fees are high. dYdX is already doing transaction fees in the \\~$0.10 for complex DeFi derivative trades - although this is abstracted away from the end users to be gas-free. \n\nBut it doesn't stop here! When Ethereum releases data shards, rollup costs will absolutely plummet, with over a magnitude greater capacity unlocked overnight, scaling up to several orders of magnitude long term.\n\nYou can get a preview of that with validiums like Immutable X, where it costs less than a cent to mint an NFT. Indeed, it's so cheap that Immutable X is subsidizing it, so it currently costs $0.00 to mint an NFT with your Ethereum wallet! [Try it out for yourself on SwiftMint](https://swiftmint.io/). I'll note that validiums are not as secure as rollups, but they are more secure than sidechains and other L1s. Volitions further extend this by giving users the choice between rollup and validium - best of all worlds!\n\n**Tl;dr: In the long term, rollups + data shards will offer the greatest scale and lowest fees possible for given demand.**\n\n# Rollup finality is slow\n\nRollup sequencers give you \"soft confirmations\" nearly instantly - for me this is \\~0.3 seconds on average for a Uniswap trade on Arbitrum or Optimism. For most people, this soft confirmation is fine. But it's true that L1 finality is often delayed, especially in the case of zkRs. StarkNet has a great solution [with checkpoints achieving effective finality](https://ethresear.ch/t/checkpoints-for-faster-finality-in-starknet/9633) on the rollup side very quickly, at which point the finality is as fast as the L1 can finalize. As zk tech improves, Ethereum implements single-slot finality and data shards are staggered, we will see finality drop to a few seconds. You can also have a consensus mechanism on a rollup that finalizes fast - just like any L1 would - so you get the same experience, but additional security. But this gives up efficiencies gained from being a rollup. \n\nAll that said, there may be some niche usecases where settling directly on L1 still makes sense without bolstering security - but this is a very small niche.\n\n# Rollups are an Ethereum thing and bound by EVM and Solidity\n\nRollups are definitely not just an Ethereum thing. Indeed, [Tezos is embracing](https://www.youtube.com/watch?v=oqBSs0DSuzQ) a rollup-centric roadmap. Arthur Breitman, founder of Tezos, actually makes one of the best arguments for why rollups are the ultimate scalability solution, in tandem with data shards. [NEAR is also designing for sharded data availability](https://twitter.com/ilblackdragon/status/1437323779420696578). Celestia is building a security & DA layer exclusively for rollups. \n\nFurther, rollups have a wide open design space. They can experiment with VMs, fee models, coordination mechanisms, governance etc. Indeed, the room for innovation is much wider than L1s - given they always have a fallback on the most secure L1. Want a quantum-resistant VM? Use StarkNet. Like your UTXOs? Use Fuel V2. Like LLVM and Rust? Use zkSync 2.0. Just want a chain optimized for one specific application? Sure, use Immutable X for NFTs. Want a fully private chain: use Aztec. WASM? Arbitrum. Any VM, any programming language, any data model - a rollup can do it all. Indeed, it can innovate beyond any L1 with clever fee & tokenomics models (see: Immutable X's IMX token), governance structures, etc. \n\n**Tl;dr: Rollups have a wide-open design space, and anything any L1 can do, so can rollups, and then some.**\n\n# Why is Ethereum special, if you can deploy rollups elsewhere?\n\nRollups will leverage whatever is the most secure and decentralized L1 with the highest data availability that can support it.\n\nIt's clear Ethereum is orders of magnitude more secure and decentralized than any smart contract platform. Realistically, Bitcoin is the only other chain that's comparable, but of course, they lack the ability to host rollups.\n\nEthereum doesn't currently have the highest data availability, but it will, with data sharding. Meanwhile, we have validiums offering ample data availability with security that's still superior to other L1s. Data sharding inverts the trilemma - the more decentralized your network is, the more data shards you can deploy, and the more scalable your rollups will be. This is how rollups that deploy on Ethereum will scale to millions of TPS over the years, [speculatively up to 15 million TPS by 2030](https://www.reddit.com/r/ethfinance/comments/ojafms/conjecture_how_far_can_rollups_data_shards_scale/). The only area where Ethereum can be improved is the execution layer - to make it more friendly for verifying zk-SN(T)ARKs. I'm sure it will, once The Merge, data shards and statelessness are done.\n\nIt's clear, then, that Ethereum is uniquely positioned to be the best host for rollups. But this is not to say that there can't be other contenders. If Ethereum's data shards are saturated, we'll see data availability chains like Celestia or Avail potentially taking up the slack. Other L1s who are embracing a rollup-centric model, like Tezos, may also benefit if there's an overflow of demand from Ethereum-based rollups. And of course, the elephant in the room is an unexpected new competitor, though realistically, the only real competitor is if Bitcoin somehow adds the functionality to verify zk-SNARKs and implements data sharding.\n\nFor the rollups, it doesn't really matter. They'll just leverage whatever L1 offers them the best security, decentralization, network effect and data availability.\n\n**Tl;dr: Ethereum is uniquely positioned to offer the highest security, decentralization, and data availability - making it the defacto standard host for rollups.**\n\n# Rollups are stealing traffic from Ethereum\n\nEthereum execution is fully saturated, and has had full blocks for years now. All activity on rollups is net additive. Now, some may argue sharding would have expanded Ethereum's capacity - but rollups + data shards in tandem increase the overall capacity of the Ethereum ecosystem by several orders of magnitude more than the previous sharding solution.\n\n# Rollups are too complicated, no one will understand it\n\nMight I just point out I'm writing this on the day that Arbitrum One has proven to be the fastest growing smart contract platform in history? In reality, the UX for using a rollup is identical to that of using an L1, as covered before. Users need not care about the underlying architecture - to them it's just another smart contract platform. Do YouTube users care about what programming language it was written in, what OS the servers run on, what hardware the servers implement, what internet connection they use etc.? Of course not. Indeed, [I expect things will improve significantly with smart contract wallets and centralized frontends](https://polynya.medium.com/a-vision-of-ethereum-2025-bb92a0d4dc4f).\n\n# When rollups get big enough they will just abandon the base chain and create their own blockchain\n\n(by u/Whovillage)\n\nTechnically, this is possible. However, what makes a rollup special is that it's backed by the most secure and decentralized L1. This is the hardest bit, evidently so as only Bitcoin and Ethereum have managed to achieve it. Arbitrum One has already demonstrated that there's exponentially more demand for a chain backed by Ethereum's security than a more centralized consensus mechanism. On a related note, as alluded to earlier, if there's a competitor that offers better security and data availability than Ethereum, then rollups will be well incentivized to migrate. Which is fine, and will keep Ethereum core researchers and developers honest.\n\n# There are no rollup tokens, so people won't be invested in the ecosystems\n\nThis is not quite true. While there are many rollup projects in their early stage and do not yet have a token, I expect most rollups to eventually release a token. Many rollup projects do have tokens, and are using them in innovative ways - like Immutable X. Just another advantage for rollups over L1s - you can have unique and clever token and fee models.\n\n# It's too expensive to compute a zero-knowledge proof\n\nTrue, but by amortizing this over many transactions, the costs become negligible relative to gas paid for transaction calldata. Of course, we're still in the early days of zero-knowledge tech, and we'll see costs and time for computing zk proofs plummet over time. Software optimizations, GPU/FPGAs/ASICs, Moore's Law, and growing adoption with more transactions means things will only get better for zkRollups, which have already proved to be sustainable.\n\n# Can NFTs transfer easily between L1 and rollups and between rollups?\n\n(by u/Datacruncha)\n\nThis is a great question that I had overlooked. While there are multiple bridges for fungible tokens, as mentioned above, NFTs are more complicated because you can't have liquidity bridges. Currently, yes, you can transfer NFTs between L1s and rollups, but the solutions are definitely early workarounds. For example, on zkSync 1.x, you can mint an NFT there, and when you withdraw to L1, it's simply burned on zkSync 1.x and minted as an ERC-721 on L1. Cross-rollup is definitely an unresolved problem. Fortunately, this is being actively researched, and there's a lot of discussion on a [recent wrapped NFTs proposal by Vitalik](https://ethresear.ch/t/cross-rollup-nft-wrapper-and-migration-ideas/10507) to make NFTs easily transferable cross rollups. Jordi Baylina from Polygon Hermez [further expands upon it](https://ethresear.ch/t/cross-rollup-nft-wrapper-and-migration-ideas/10507/28) but really there are many insightful comments in that thread (and some low-quality trolling too!).\n\n# You're talking about the future, execution risks remain\n\nThis is absolutely true. Rollups are nascent technology, and [it'll take a couple of years to mature](https://www.reddit.com/r/ethfinance/comments/paipgj/why_the_transition_to_rollupcentric_ethereum_is_a/) and live up to their potential. Things can go wrong. Fair enough, but I do make it very clear what the current shortcomings are and how they will be fixed in the future.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "hcl75ym",
+                    "author": "CosmicCollusion",
+                    "score": 135,
+                    "created_utc": 1631469182.0,
+                    "response": "Each of your posts could easily send anyone down a deep, deep rabbit-hole. So much info and side-quests condensed into each post. It's great!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcp3ue7",
+                            "author": "CharityWhale",
+                            "score": 13,
+                            "created_utc": 1631544855.0,
+                            "response": "Exactly!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hcl8lzx",
+                    "author": "franzperdido",
+                    "score": 35,
+                    "created_utc": 1631469718.0,
+                    "response": "Awesome compilation of information. I'm excited for the next months. Arbitrum, zkSync, Optimism... It's all up and running. Hopefully, there is no more reason for boring old \"fees too high\" posts...",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcm155i",
+                    "author": "NabyK8ta",
+                    "score": 23,
+                    "created_utc": 1631480905.0,
+                    "response": "Here\u2019s an article I posted just now on rollups. Warning it is long. \n\nhttps://polynya.medium.com/why-rollups-data-shards-are-the-only-sustainable-solution-for-high-scalability-c9aabd6fbb48\n\nAnd I loved this post.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcmf3ti",
+                            "author": "Crispyshores",
+                            "score": 12,
+                            "created_utc": 1631486839.0,
+                            "response": "That article is by the same author as this post!  Seriously they're a gold mine and everything they post is worth reading",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hclbuqu",
+                    "author": "Crispyshores",
+                    "score": 54,
+                    "created_utc": 1631470961.0,
+                    "response": "Really need some of the defi big guns to start rolling out on Arbitrum asap.  There's like $2 billion bridged over already to farm meme tokens alone.  Proper dApps should blast that TVL into the stratosphere.\n\n&#x200B;\n\nI'd encourage anyone to bridge a bit of eth over and just play around, the instant transactions feel like a dream.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hclcu67",
+                            "author": "Liberosist",
+                            "score": 45,
+                            "created_utc": 1631471336.0,
+                            "response": "Uniswap, SushiSwap, Chainlink, Balancer are already there. Other heavy-hitters: Curve, Maker, Aave are committed to deploying there. And given the exponential growth I'm seeing, I'm fairly certain the stragglers are preparing to deploy too. Though I was disappointed that many of them weren't ready for launch - they had 3 months in whitelisted mainnet!",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hcljgs0",
+                            "author": "cryptolicious501",
+                            "score": 39,
+                            "created_utc": 1631473916.0,
+                            "response": "It's posts like this from the ETH community that seperate ETH from the \"eth killers\"\n\nScreen capping n saving.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hcnviyx",
+                            "author": "amberlove01",
+                            "score": 5,
+                            "created_utc": 1631515015.0,
+                            "response": "Composable finance seems working on something for this.They are about to launch Polygon-Arbitrum Cross-Layer Transferral system today if I'm not mistaken,this will ensure a seamless and symbiotic space free of liquidity limitations for DeFi users.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hcllyfy",
+                    "author": "Mission_Count_5619",
+                    "score": 14,
+                    "created_utc": 1631474895.0,
+                    "response": "Several new wrinkles formed in the old grey matter today. I\u2019ll need to follow up on some of these ideas myself as I\u2019m still newish to the space and also trust but verify. \n\nLong winded way of saying thanks for the post!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hclnwev",
+                    "author": "SpiceAutist",
+                    "score": 13,
+                    "created_utc": 1631475644.0,
+                    "response": "Honest question from a noob - why are other smart contract coins not competitive w Eth on rollups? Is it a matter of some extra effort to support rollups, or something more fundamental about their structures?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hclqeb3",
+                            "author": "Liberosist",
+                            "score": 20,
+                            "created_utc": 1631476615.0,
+                            "response": "That's a great question - it's a bit of both. Ethereum has gone for a rollup-centric roadmap focusing on a high security consensus mechanism and a massive data availability layer. I cover some of this in the OP, and some links given to expand on them.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hcm85uf",
+                                    "author": "edmundedgar",
+                                    "score": 2,
+                                    "created_utc": 1631483871.0,
+                                    "response": "You don't need something to be on the core dev roadmap to build it, that's the entire point of Layer 2. You could deploy Arbitrum or Optimism directly on Ava-C or Polygon without even changing the code, and a new system wouldn't be fundamentally harder to build on Solana. If the L1 fees are lower, the L2 fees will be lower.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hcnjfwo",
+                                            "author": "Liberosist",
+                                            "score": 13,
+                                            "created_utc": 1631506614.0,
+                                            "response": "In the short term, you may get lower fees but also lower security and decentralization, and I'm sure some rollup developers will take that compromise. But so far, all rollup chains are building on Ethereum because the high security is what makes rollup special.\n\nAlso, long term, with Ethereum data shards, rollups on Ethereum will be much cheaper than on any other solution. The smartest rollup developers know this, and are building for the long term.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "hcmze4o",
+                                            "author": "Always_Question",
+                                            "score": 7,
+                                            "created_utc": 1631496275.0,
+                                            "response": ">and a new system wouldn't be fundamentally harder to build on Solana\n\nBut with much less economic security.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "hcoji3q",
+                                            "author": "SwagtimusPrime",
+                                            "score": 5,
+                                            "created_utc": 1631534925.0,
+                                            "response": "You could, but Ethereum is uniquely positioned to have more data shards than any other chain, which means Ethereum will scale rollups to insane numbers unreachable by any other chain.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hcn2ckc",
+                                    "author": "jekpopulous2",
+                                    "score": 1,
+                                    "created_utc": 1631497675.0,
+                                    "response": "Great write up. One thing that I think you kinda overlooked regarding composability is that zk-rollups are chain agnostic. That\u2019s to say ETH, SOL, and AVAX could theoretically all use the same rollup at the same time - so someone could be using a Dapp on Starkware and never ever even have to worry about what chain is being used as a settlement later. We\u2019re clearly not there yet, but zk-rollups could eventually give the term \u201ccross-chain dapp\u201d an entirely new meaning.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hcnml3v",
+                                            "author": "Liberosist",
+                                            "score": 5,
+                                            "created_utc": 1631508552.0,
+                                            "response": "I'm not sure we're talking about the same thing, but this is indeed possible with volitions. However, they'll be using data availability chains like Celestia and Avail, or perhaps their own data availability committees or consensus. Don't see much point in them using traditional L1s like Solana or Avalanche in the long term.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hcnpt5n",
+                                                    "author": "jekpopulous2",
+                                                    "score": 5,
+                                                    "created_utc": 1631510739.0,
+                                                    "response": "Yeah maybe I didn\u2019t word it properly. What I mean to say is that other chains could potentially use Ethereum\u2019s zk-rollups to scale while maintaining their own security models. By the time zkEVM is complete or devs start migrating to Starkware\u2019s Cairo there there will already be a web of chains with unique ecosystems. With various L1s converging on zk-rollups, users will be able to access the same dapps regardless of which chain they\u2019re coming from. Layer 2 Ethereum will likely just become a hub that all these other chains plug into for interoperability and scalability.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "hj1qj3g",
+                                                    "author": "dopef123",
+                                                    "score": 1,
+                                                    "created_utc": 1635880458.0,
+                                                    "response": "I mean Solana is a unique project with its own language that can do a lot more than eth. There are good reasons to use it.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hcmfzld",
+                            "author": "Treyzania",
+                            "score": 16,
+                            "created_utc": 1631487213.0,
+                            "response": "Rollups really *are* more complicated than just changing some parameters and increasing block sizes or gas limits.  It's really easy to just turn the numbers up and get more performance out of L1, but eventually they get screwed later due to induced demand and the strong centralizing force that just turning the numbers up causes.  But a lot of chains don't really care about the latter so they're happy to compromise on it if it gives the impression of improvement in the short term.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hcnmmxe",
+                                    "author": "Liberosist",
+                                    "score": 5,
+                                    "created_utc": 1631508583.0,
+                                    "response": "Well said!",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hcllyhi",
+                    "author": "Furlz",
+                    "score": 9,
+                    "created_utc": 1631474896.0,
+                    "response": "Thanks for the info and research.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcmeyrj",
+                    "author": "Bkeeneme",
+                    "score": 9,
+                    "created_utc": 1631486775.0,
+                    "response": "Okay, ELI 5. I'm retarded.  So, we have Loopring (LRC) which I assume is still a zkrollup solution but you're excited about about \"plain?\" rollups.  \n\nBecause i have a lot of Ape in me, I don't get why you'd hang your hat on Arbitrum One when LRC seems to be moving forward with a better solution.  Granted, I can clearly see the volume you mention but don't get why they'd not use something like LRC?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hco7yfp",
+                            "author": "dmihal",
+                            "score": 10,
+                            "created_utc": 1631526371.0,
+                            "response": "Loopring is awesome, but it's an application-specific rollup. All it can do are token swaps & transfers.\n\nArbitrum is a general-purpose rollup, it allows anybody to create applications, just like Ethereum.\n\nBoth are great, but they serve very different purposes.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hcok4f1",
+                                    "author": "flufylobster1",
+                                    "score": 7,
+                                    "created_utc": 1631535310.0,
+                                    "response": "Loopring can get to L1 next block.\n\nAnd has the cheapest transfers.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hcphhbk",
+                                            "author": "Bkeeneme",
+                                            "score": 5,
+                                            "created_utc": 1631550499.0,
+                                            "response": "This is what I thought as well which is what confuses the hell out of me about LRC. I can't figure out what I am missing and why LRC is not on fire price-wise. It seems to solve so many issues users are bitching about.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hctudcs",
+                                                    "author": "frank__costello",
+                                                    "score": 6,
+                                                    "created_utc": 1631632391.0,
+                                                    "response": "Loopring is awesome, I've been using it for over a year for almost-free DEX trading.\n\nHowever:\n\n1. Can't deploy applications on the chain\n2. Whitelisted access to adding tokens to Loopring\n3. Not supported by CEXs\n4. Their \"wallet\" app is super cool, but requires an expensive L1 transaction to set up (they're fixing this by moving the wallet to Arbitrum)\n5. The LRC token doesn't do very much",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hcm0iyl",
+                    "author": "notrealAI",
+                    "score": 9,
+                    "created_utc": 1631480651.0,
+                    "response": "Thank you for the write up. But I feel like the main stumbling block for layer-2 is transfer times and costs between rollups/to mainnet. \n\nI feel that this problem has been swept under the rug until now. I believe if any layer-2 wants to convince people to use it, this should be their headline feature. \n\nOr to put it more simply, the first layer-2 that can claim \u201cCheap and fast deposit/withdrawal of NFTs and tokens\u201d will start the flood of layer-2 usage.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcm2otl",
+                            "author": "SwagtimusPrime",
+                            "score": 16,
+                            "created_utc": 1631481561.0,
+                            "response": "OKEx, Huobi and Coinbase have already announced direct deposits and withdrawals to and from Arbitrum. Which means you can entirely circumvent L1 gas fees.\n\nBridging to Arbitrum at 100 gwei is around $15 - not the end of the world. As L2s pick up steam, L1 fees will drop and bridging becomes cheaper.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hcm30cr",
+                                    "author": "notrealAI",
+                                    "score": 3,
+                                    "created_utc": 1631481692.0,
+                                    "response": "That\u2019s awesome. Glad to hear that. \n\nGetting assets onto a particular rollup is not so bad. I\u2019m more curious about the costs/times of getting assets off of a rollup and on to another one, or on to ethereum mainnet.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hcm381q",
+                                            "author": "SwagtimusPrime",
+                                            "score": 7,
+                                            "created_utc": 1631481780.0,
+                                            "response": "there's solutions for that live as well: https://hop.exchange, the Celer network has several bridges\n\nhopping between rollups is very fast + cheap, no need to pay L1 fees for that :)",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hcm4405",
+                                                    "author": "notrealAI",
+                                                    "score": 3,
+                                                    "created_utc": 1631482153.0,
+                                                    "response": "Okay I will look into these more thoroughly. Appreciate you taking the time to answer!",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hcm463i",
+                                                            "author": "SwagtimusPrime",
+                                                            "score": 2,
+                                                            "created_utc": 1631482176.0,
+                                                            "response": "you're welcome!",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hig4rf4",
+                                    "author": "jvdizzle",
+                                    "score": 2,
+                                    "created_utc": 1635464899.0,
+                                    "response": "Keep in mind that many CEXs will simply keep a reserve of assets on their L2 of choice and send the assets to the wallet on that L2, totally circumventing the L1 -> L2 bridge. That means fees for them could be so cheap the CEX may even cover it for free, or free-ish.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hj1r2iy",
+                            "author": "dopef123",
+                            "score": 1,
+                            "created_utc": 1635880669.0,
+                            "response": "I also dont really understand the security aspect. Like the tx data is compressed and on the eth Blockchain... But only in certain time intervals and it's not like eth enforces any of it right?\n\nYou're almost wholely dependent on this roll-up for security. Yeah, the data is on Ethereum Blockchain once every 6 minutes or whatever but what impact does that have really?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hcm8b8l",
+                    "author": "sfultong",
+                    "score": 7,
+                    "created_utc": 1631483938.0,
+                    "response": ">Now, X, Y, Z blockchain may have compromised significant amounts of decentralization and security to get high scalability\n\nHow much decentralization, quantitatively? It would be nice if we could move beyond opinions about decentralization to something solid that it is impossible to argue about.\n\nI take a fairly dismal view, in that I believe inevitably all block chains will be controlled by plutocracy, and so not really end up being decentralized. The people most invested in a token will end up running the most validating nodes and therefore controlling the network.\n\nOn the bright side, the community always has the option of forking and destroying the stake of the rich.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcnjmph",
+                            "author": "Liberosist",
+                            "score": 10,
+                            "created_utc": 1631506726.0,
+                            "response": "The good news is that validators don't control the network - users do. That's why Bitcoin and Ethereum make such a big deal about decentralization and security, and ensuring regular users can run nodes. If validators decide to be malicious, the full nodes on the network run by users, wallets, CEXs, developers can reject the corrupt consensus changes.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hcovz7j",
+                                    "author": "sfultong",
+                                    "score": 2,
+                                    "created_utc": 1631541438.0,
+                                    "response": "There are some things that non-validating nodes can't do. Validating nodes can choose to censor certain transactions, and orphan blocks if they contain transactions they don't like.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hcnb401",
+                            "author": "akarub",
+                            "score": 8,
+                            "created_utc": 1631502001.0,
+                            "response": "For example, you can't run a Solana node at home. You can't sync a node from genesis, even with 256GB of RAM.\n\nOn Ethereum, you can run a node even with a Raspberry Pi. Actually, you can even run an Ethereum archival node with a Raspberry Pi and a 2TB disk using Erigon client. That's decentralization.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hcnsdhn",
+                    "author": "DubiousSpeculation",
+                    "score": 6,
+                    "created_utc": 1631512587.0,
+                    "response": "Arbitrum One has been such a huge success that I'm fairly confident we'll see another defi surge. When evaluating alternative L1s always ask yourself: Do users actually want an alt L1 or do they actually want cheaper ethereum? Arbitrum One will probably answer this question within the next couple months.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hj1tj10",
+                            "author": "dopef123",
+                            "score": 2,
+                            "created_utc": 1635881627.0,
+                            "response": "As someone who has worked on solidity apps and web3 stuff I think eth does still leave enough to be desired that there will be other smart contract L1s that will do very well. The ones that are evm clones might get killed by rollups but the ones that bring new things to the table should do well.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hgp2hs7",
+                    "author": "flufylobster1",
+                    "score": 5,
+                    "created_utc": 1634268325.0,
+                    "response": "Actually check out dAMM for shared liquidity across L2's \nLoopring :)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcmqoje",
+                    "author": "busterrulezzz",
+                    "score": 4,
+                    "created_utc": 1631492175.0,
+                    "response": "Quality content. Thanks for sharing!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcnqsv6",
+                    "author": "dentonnn",
+                    "score": 4,
+                    "created_utc": 1631511442.0,
+                    "response": "Thank you for taking the time to educate us, MVP !",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcok5mu",
+                    "author": "flufylobster1",
+                    "score": 4,
+                    "created_utc": 1631535330.0,
+                    "response": "Loopring,",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcon23x",
+                    "author": "MillennialBets",
+                    "score": 5,
+                    "created_utc": 1631536982.0,
+                    "response": "You are an absolute legend for putting such detailed posts together on the most cutting edge tech for this block chain. Thank you.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcvmwpk",
+                    "author": "Dusty23007",
+                    "score": 3,
+                    "created_utc": 1631658513.0,
+                    "response": "How do interoperability ecosystems like DOT fit into this picture long term? Is it primarily allowing separate smart contract and Defi platforms would be able to communicate with ethereum?  Why would users want a whole separate ecosystem that connects with a similar functioning ecosystem outside of scaling issues and some of the vetting process DOT provides.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcvoa60",
+                            "author": "Liberosist",
+                            "score": 6,
+                            "created_utc": 1631659141.0,
+                            "response": "Good question, I don't really know. Rollups seem to do everything parachains can, and then some.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hcvqx0r",
+                                    "author": "Dusty23007",
+                                    "score": 2,
+                                    "created_utc": 1631660354.0,
+                                    "response": "Thanks I'm pretty heavily invested in both eth and dot and am learning more about both every day. Perhaps some of this is a speed to market question with dot getting ready to roll out pararchains which would be similar to ethereum sharding correct? I'm still not quite understanding the difference between sharding and Rollups.\n\nAlso this is an incredible post. I've saved and will probably have to read it 10 times later to put all the pieces into something looking like a picture lol.\n\nEdit 1: additionally, I guess it's not an all or nothing space either. We could have several ecosystems similar to every other industry with competitors.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "hj2dpb8",
+                                    "author": "dopef123",
+                                    "score": 1,
+                                    "created_utc": 1635889345.0,
+                                    "response": "I mean rollups have a long way to go. Tons of other cryptos will fill in the gaps for years potentially.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hcmtbak",
+                    "author": "Datacruncha",
+                    "score": 3,
+                    "created_utc": 1631493428.0,
+                    "response": "One of my main concerns is nft transfers. Can nft's transfer easily between L1 and rollups and between rollups?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcn6ueh",
+                            "author": "secret_wool",
+                            "score": 6,
+                            "created_utc": 1631499848.0,
+                            "response": "that's the plan right now, eventually NFTs should be minted on L2s with lower gas costs than L1s where it's just settlement focused. Vitalik had a good article on this, although I think in the end UI/UX is still important for onboarding new users into the space  \n[Cross Rollup NFT Wrapper and Migration Ideas](https://ethresear.ch/t/cross-rollup-nft-wrapper-and-migration-ideas/10507)",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hcnj5va",
+                            "author": "Liberosist",
+                            "score": 4,
+                            "created_utc": 1631506447.0,
+                            "response": "Good question. I'll add that.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hj2djs0",
+                            "author": "dopef123",
+                            "score": 2,
+                            "created_utc": 1635889284.0,
+                            "response": "It'll depend on the complexity unfortunately. You can always wrap an nft and move it over but if it has more complex features they won't move over. You should still be able to transfer ownership and buy and sell them on rollups easily.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hcmxumg",
+                    "author": "KaiserMerkle",
+                    "score": 3,
+                    "created_utc": 1631495553.0,
+                    "response": "I love you... And Rollups.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcp3s4d",
+                    "author": "CharityWhale",
+                    "score": 3,
+                    "created_utc": 1631544829.0,
+                    "response": "Thank you for sharing this! You have explained such complex concept in laymen's term which made this post even more insightful.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hd69eaa",
+                    "author": "blackburrow_gnoll",
+                    "score": 3,
+                    "created_utc": 1631855505.0,
+                    "response": "shoulda started with \"whats a rollup\"",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hd6sitc",
+                            "author": "Papazio",
+                            "score": 4,
+                            "created_utc": 1631871595.0,
+                            "response": "ELI5: rolling up bunches of transactions using some cool math into a single batch on Ethereum main net. Instead of one tx paying one fee, many txs share the cost of one fee.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "he555lb",
+                    "author": "Razultull",
+                    "score": 3,
+                    "created_utc": 1632519404.0,
+                    "response": "Hey what kind of literature would you recommend such that I can self educate myself on stuff at this level of detail? \n\nI want to understand what the moving parts are in the newest crypto tech and to keep up with developments.\n\nThanks for your post, enjoyed reading it a lot.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "he6nvka",
+                            "author": "Liberosist",
+                            "score": 4,
+                            "created_utc": 1632545555.0,
+                            "response": "You just have to keep up with the space, understand the projects, read their social / blog posts, engage with their discord etc. The Daily Gwei is a great place to stay in touch with the latest developments daily.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "he6tld6",
+                                    "author": "Razultull",
+                                    "score": 3,
+                                    "created_utc": 1632549246.0,
+                                    "response": "Ok understood thanks",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "he75tyg",
+                                            "author": "15kisFUD",
+                                            "score": 2,
+                                            "created_utc": 1632558341.0,
+                                            "response": "Additionally, just check in on OPs comments and posts periodically. It\u2019s a goldmine",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hfc36m9",
+                    "author": "danseidansei",
+                    "score": 3,
+                    "created_utc": 1633343516.0,
+                    "response": "This needs to be posted in r/cc!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hfgju5s",
+                    "author": "carl_von_linne",
+                    "score": 3,
+                    "created_utc": 1633425141.0,
+                    "response": "Thanks for this!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hgm5fup",
+                    "author": "Megabyte7637",
+                    "score": 3,
+                    "created_utc": 1634221809.0,
+                    "response": "Interesting.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hh261jg",
+                    "author": "ChaoticNeutralNephew",
+                    "score": 3,
+                    "created_utc": 1634522441.0,
+                    "response": "thaknds for the great content",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hcmeorm",
+                    "author": "rshap1",
+                    "score": 5,
+                    "created_utc": 1631486655.0,
+                    "response": "Such an informative post, thank you!\nu/chaintip",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcmer80",
+                            "author": "chaintip",
+                            "score": 3,
+                            "created_utc": 1631486685.0,
+                            "response": "***\nu/Liberosist, you've [been sent](https://explorer.bitcoin.com/bch/address/bitcoincash:qrelay242pa0htydfglcvkz90v9a62jlpvf6v7w4lc) `0.00076985 BCH` | `~0.50 USD` by u/rshap1\nvia [chaintip](http://www.chaintip.org).\n***",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hclvu8h",
+                    "author": "fipasi",
+                    "score": 2,
+                    "created_utc": 1631478776.0,
+                    "response": "How does recovering of funds work? Do you have to pay alot of gas, and is it only funds you bridged in specifcially from layer1 that can be recovered since they have a footprint on layer1. Or can you also recover funds that never touched layer1 yet.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hd6srum",
+                            "author": "Papazio",
+                            "score": 1,
+                            "created_utc": 1631871823.0,
+                            "response": "I cannot explain in too much detail because this is not my expertise, but all L2 assets will have \u2018touched\u2019 L1 because they are secured by it. \n\nAs an example, even an NFT minted on a L2 platform will have a root on L1, it will just be a much smaller footprint in terms of data than the L1 mints.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hcmfn1d",
+                    "author": "Holdihold",
+                    "score": 2,
+                    "created_utc": 1631487068.0,
+                    "response": "Great read! I feel enlightened after reading that and I only understood about 2 words in each sentence .  Thanks OP",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hgemr6f",
+                    "author": "Darius-was-the-goody",
+                    "score": 2,
+                    "created_utc": 1634074674.0,
+                    "response": "Are rollups as trust based as the lightning network? full question here: https://www.reddit.com/r/ethereum/comments/q6w7i7/help\\_a\\_noob\\_understand\\_are\\_rollups\\_analogous\\_to/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hgti1ds",
+                    "author": "Excellent_Solid1200",
+                    "score": 2,
+                    "created_utc": 1634353642.0,
+                    "response": "Watch redpanda token",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hhk3iyw",
+                    "author": "a1000p",
+                    "score": 2,
+                    "created_utc": 1634861195.0,
+                    "response": ">Why is Ethereum special, if you can deploy rollups elsewhere?  \nRollups will leverage whatever is the most secure and decentralized L1 with the highest data availability that can support it.  \nIt's clear Ethereum is orders of magnitude more secure and decentralized than any smart contract platform. Realistically, Bitcoin is the only other chain that's comparable, but of course, they lack the ability to host rollups.  \n\n\nYou are making a fatal assumption here: that the Ethereum of today which is \"orders of magnitude more secure and decentralized than any smart contract platform\" will retain those properties post-merge. A PoW-to-PoS transition of this magnitude is \\*unprecedented\\* so it's far from clear that Eth will keep the same security and decentralization once it transitions into PoS or even that the PoS transition will happen without major problems or more delays. Vitalik has referred to the risk associated with this unprecedented transition to PoS as being \"existential\" (Lex podcast). \n\nEthereum is restarting its security and decentralization advantage with the merge. No one knows how secure and decentralized it will really be at that point, and after that point. We can guess, and we can speculate but no one knows for sure because (1) it is a fundamentally different architecture that is untested without \\*real, live transactions\\* and smart contracts (2) who knows what the stake distribution/validator distribution will be over the next 6-24 months post-merge?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hhkv5ot",
+                            "author": "Liberosist",
+                            "score": 6,
+                            "created_utc": 1634874546.0,
+                            "response": "True, execution risks remain, but IMO consensus mechanisms are the least important aspect for security & decentralization: [https://polynya.medium.com/security-layers-or-qualifying-security-decentralization-7a5c93a36ba3](https://polynya.medium.com/security-layers-or-qualifying-security-decentralization-7a5c93a36ba3)",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hhrd3rw",
+                    "author": "farukahmed1231",
+                    "score": 2,
+                    "created_utc": 1635009291.0,
+                    "response": "he program will run for just one month: from 18 October to 14 November",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hhyohx9",
+                    "author": "EvolvedPlanemo",
+                    "score": 2,
+                    "created_utc": 1635149662.0,
+                    "response": "How does Truebit fit in this topic?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hia7e8f",
+                    "author": "d_m_916",
+                    "score": 2,
+                    "created_utc": 1635361590.0,
+                    "response": "Great post. I didn't see anything on ERC-20 token compatibility (although I may have missed it...). Do Layer 2 solutions like Arbitrum support all ERC-20 tokens?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hiabzzg",
+                            "author": "Liberosist",
+                            "score": 4,
+                            "created_utc": 1635363372.0,
+                            "response": "Yes! Arbitrum recently introduced permissionless bridging.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hibas0m",
+                    "author": "Nogo10",
+                    "score": 2,
+                    "created_utc": 1635377525.0,
+                    "response": "<<Optimistic L2 Ethereum block production is primarily managed by a single party, called the \"sequencer,\">>\nEli5 : If L2 is decentralized why does the document mention single party? A centralized server running somewhere? Or can anyone run a node?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hicf7og",
+                            "author": "Liberosist",
+                            "score": 3,
+                            "created_utc": 1635396780.0,
+                            "response": "Note, a sequencer has limited duties - just collecting and ordering transactions. The decentralization properties are inherited from Ethereum. So, to run a node of a rollup is really just running an Ethereum node - you can verify all your transactions there.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hidcp55",
+                                    "author": "Nogo10",
+                                    "score": 1,
+                                    "created_utc": 1635422499.0,
+                                    "response": "Yes, but how many are there?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hiddg4n",
+                                            "author": "Liberosist",
+                                            "score": 2,
+                                            "created_utc": 1635422943.0,
+                                            "response": "That depends on the rollup. Some may choose to run just 1, while another may choose to run 1,000.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hifn8pr",
+                                                    "author": "Nogo10",
+                                                    "score": 1,
+                                                    "created_utc": 1635456934.0,
+                                                    "response": "\nWho chooses how many rollups to run? Are you saying there can be up to 1000 decentralized nodes? Can anyone run a node?\n\nOptimistic Ethereum \n\nRisk summary\nFunds can be stolen if\u2026\n\nan invalid state root is submitted to the system (CRITICAL),\na contract receives a malicious code upgrade. There is no delay on code upgrades (CRITICAL).\nFunds can be lost if\u2026\n\nthere are mistakes in the highly complex OVM implementation.\nFunds can be frozen if\u2026\n\nthe centralized validator goes down. Users cannot produce blocks themselves and exiting the system requires new block production (CRITICAL).\nMEV can be extracted if\u2026\n\nthe operator exploits their centralized position and frontruns user transactions.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hifwd8e",
+                                                            "author": "Nogo10",
+                                                            "score": 3,
+                                                            "created_utc": 1635461016.0,
+                                                            "response": "Ok I found my answer: in the docs  https://l2beat.com/projects/optimism/#reference-4\n\n**Presently the unique sequencer is operated by the developers, but eventually there will be a permissionless setup with multiple sequencers.**\n\nThat's encouraging,",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hlmsyhd",
+                    "author": "Jazzlike_Coyote850",
+                    "score": 2,
+                    "created_utc": 1637585589.0,
+                    "response": "Wow.  I am still learning this stuff and this is a tremendous resource.  An overarching question I have is how does the rollup adoption translate into increased price for the related tokens.  For instance, there is a lot of talk recently about Loopring and the use case seems very compelling.  But how should I think about the impact of continued adoption on the Loopring token price.  Loopring tokens aren\u2019t burned to facilitate transactions, right?  So what is the mechanism that leads to increased demand?\n\nSorry if this is an elementary question.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hme2tku",
+                    "author": "da_nn_iel",
+                    "score": 2,
+                    "created_utc": 1638099513.0,
+                    "response": "Join The Cursed Dolls Discord server.  \n\nJoin and get presale spot for one of the most exclusive NFTs. \nHurry!!!\n$voodoo airdrop to first 2k members worth $100\nDiscord: discord.gg/snzK9GdA63\n\n #airdrop #Ethereum #SolanaAirdrop #SolanaNFT #NFTGiveaway #NFTAirdrop",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hkvxw4m",
+                    "author": "wkk230",
+                    "score": 1,
+                    "created_utc": 1637088878.0,
+                    "response": "With the knowledge of today - do you think the Ethereum community would still steer this gigantic ship called Ethereum towards a PoS solution?\n\nI\u2019m referring to the technical possibilities that rollups can provide to a L1 solution on a PoW. With the assistance of these rollup solutions these L1\u2019s don\u2019t have to try (and forced) to be a transaction processor and could (from this perspective) stick to a PoW, or am I missing something?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hkwd9vd",
+                            "author": "Liberosist",
+                            "score": 3,
+                            "created_utc": 1637094965.0,
+                            "response": "Yes, PoW is unsustainable long term, and PoS makes data shards much easier - which will be crucial to scale rollups. However, one could have made an argument that The Merge should have happened after data shards, as was initially planned.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hkwn4vh",
+                                    "author": "wkk230",
+                                    "score": 1,
+                                    "created_utc": 1637098836.0,
+                                    "response": "Thanks! What makes it unsustainable in the long run?",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hcm7dow",
+                    "author": "edmundedgar",
+                    "score": 0,
+                    "created_utc": 1631483534.0,
+                    "response": "> I'll note that validiums are not as secure as rollups, but they are more secure than sidechains and other L1s.\n\nThey may be more secure than sidechains *with respect to interactions with assets on ethereum*. But there's another solution, which is to use a different blockchain and not keep your assets on ethereum.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcnmw8b",
+                            "author": "Liberosist",
+                            "score": 4,
+                            "created_utc": 1631508747.0,
+                            "response": "The assets do not have to be Ethereum - they can be native to the validium. \n\nWhat you're suggesting is less secure than validiums, which defeats the whole premise of improving security.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hcm6uqx",
+                    "author": "edmundedgar",
+                    "score": -4,
+                    "created_utc": 1631483312.0,
+                    "response": "> Ethereum doesn't currently have the highest data availability, but it will, with data sharding. \n\nI don't really feel like you can assume an unbreachable moat from a feature that hasn't been built or even fully designed yet. It may fail to ship, or it may ship but somebody else may ship something better sooner.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hcni7ga",
+                            "author": "Liberosist",
+                            "score": 5,
+                            "created_utc": 1631505889.0,
+                            "response": "There's [detailed specifications](https://github.com/ethereum/consensus-specs/blob/dev/specs/sharding/beacon-chain.md) and client implementers even had working prototypes. The only reason it's not being implemented right now is because of a community consensus to focus on The Merge first. Either way, Ethereum's data shards are furthest along, and it's beacon chain with a wide token distribution and a large number of validators makes it uniquely positioned to offer massive data availability. For other chains to attempt, it'll take at least a decade. The only realistic option is if Bitcoin goes for data sharding, but that will also take several years and there are currently no plans to do it. The dark horses are data availability chains like Celestia and Avail but they are also starting from scratch. \n\nBut fair enough, execution risk remains.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hcnfmls",
+                            "author": "red1407c",
+                            "score": 1,
+                            "created_utc": 1631504426.0,
+                            "response": "Fair point. \n\nMy thoughts on where OP is coming from is in the absence of another legit team who have presented a viable plan to scale to hundreds of thousands within the next 3years we are left with RADS as the main contender. The eth team have demonstrated some ability to execute on wholesale changes to the system.\n\nOther L1s still remain in infancy of adoption and decentralization. They may have vague notions of their large plan but none are past POC and actively building out specs yet as each are just focusing on attracting user adoption.\n\nI share some skepticism that rollups are the only path to a scaled decentralized system but in my view I haven't heard of any other competing ideas being implemented on the horizon to objectively believe otherwise. I'm all ears if there are though.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hcm7p9s",
+                    "author": "hootahsesh",
+                    "score": 1,
+                    "created_utc": 1631483675.0,
+                    "response": "Are you familiar with Celer Network?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hdpl82u",
+                    "author": "-Aporia",
+                    "score": 1,
+                    "created_utc": 1632227614.0,
+                    "response": "Thanks a lot for the information my man. Very well fleshed out boys. MATIC is dropping Polygon Nightfall. A rollup that's combining ZK rollup with Optimistic rollups. I didn't know how big this was until I read this post. Thanks a lot OP.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hjnl514",
+                    "author": "Afnaankhan",
+                    "score": 1,
+                    "created_utc": 1636276325.0,
+                    "response": "Ethereum \ud83d\ude80\ud83d\ude80",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hjp8lf0",
+                    "author": "knuck1e",
+                    "score": 1,
+                    "created_utc": 1636308105.0,
+                    "response": "Remind me to read this",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hjzg4gk",
+                    "author": "Arctic_splitz",
+                    "score": 1,
+                    "created_utc": 1636492029.0,
+                    "response": "New shib wallet has arrived, it's actually quite good. Seems to hae a good team behind it too. If you use it you get shib for nothing aswell, its a pretty sweet deal hahaha. If anyone needs its https://www.shibmax.net/?SHIBx",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hk8d8jo",
+                    "author": "mmaatt78",
+                    "score": 1,
+                    "created_utc": 1636655201.0,
+                    "response": "Assuming that ethereum is deflationary, so if I understood correctly there will be less and less L1 in circulation with time\u2026isn\u2019t the L1 going to zero in the future? How the L2 will work efficiently with less and less L1 in circulation? I understand the execution will move completely to L2 but with less token will the L1 be adeguate to do the consensus and security assuming that the use of blockchains will grow exponentially in the coming years?",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,229 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v1b335",
+            "title": "Will the merge makes Ethereum secured by \u2018only\u2019 12M Ethers?",
+            "url": "https://www.reddit.com/r/ethereum/comments/v1b335/will_the_merge_makes_ethereum_secured_by_only_12m/",
+            "author": "banaanigasuki",
+            "created_utc": 1653948193.0,
+            "score": 5,
+            "num_comments": 24,
+            "subreddit": "ethereum",
+            "selftext": "Currently about 10% of all supply is staked, does it mean Ethereum beacon chain will be secured by 12M Ethers?\n\nWell that is still more secure than alt L1s ([by a low margin](https://www.stakingrewards.com/)), but isn\u2019t it much less secure than current PoW?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ialenmh",
+                    "author": "edmundedgar",
+                    "score": 9,
+                    "created_utc": 1653948763.0,
+                    "response": "What's the reasoning for your comparison with the current PoW? Generally for the same amount of security PoS should need far less capital in terms of tokens staked than PoW has for hardware deployed, because in PoS you risk your whole stake, whereas in PoW you only risk the output of blocks you just mined.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ialgs1x",
+                            "author": "Ilaypipe0012",
+                            "score": 1,
+                            "created_utc": 1653949818.0,
+                            "response": "To get enough hash to attack a network you either rent an astronomical amount of hashrate for a quite expensive price or build millions in infrastructure to buy millions in hardware to attempt an attack. Either way you are risking alot of money just in electric and loss mining revenue at those levels. Also what you rented might be null and void as you said.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iali9q7",
+                                    "author": "Perleflamme",
+                                    "score": 12,
+                                    "created_utc": 1653950567.0,
+                                    "response": "The ETH needed is just as astronomical if not even more, though. Let's not forget buying lots of ETH costs a lot more than current market price. We're talking about 10% of all ETH. You'd first have to be able to buy that many ETH. Most of the daily volume is a volume of ETH that is recirculated, because it's managed by daily traders. If you get the ETH out of circulation because you want to stake it, you end up with way less ETH in daily volume.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ialmut2",
+                                            "author": "shostakofiev",
+                                            "score": 7,
+                                            "created_utc": 1653952922.0,
+                                            "response": "Not to mention it would take 5-6 months to onboard that many validators.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ialn1k8",
+                                                    "author": "Perleflamme",
+                                                    "score": 2,
+                                                    "created_utc": 1653953018.0,
+                                                    "response": "Yep. \n\nAnd PoW mining isn't endangered by mechanisms like slashing, forking and such. Forking doesn't protect a PoW-based network from someone with lots of hashing power.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                },
+                                                {
+                                                    "id": "ian0ue8",
+                                                    "author": "Glum-Bookkeeper1836",
+                                                    "score": 1,
+                                                    "created_utc": 1653983737.0,
+                                                    "response": "Why so many months?",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iamqf86",
+                    "author": "AdvocatusDiabo",
+                    "score": 3,
+                    "created_utc": 1653975134.0,
+                    "response": "First you need to understand what this security budget refers to. In no normal blockchain (bitcoin and ethereum included) can you break the rules. i.e. no number of miners or stakers can make an update that takes your money without your signature. **What miners and stakers can do is play with the timing of events, and in an attacks, do it retrospectively (re-org).** In PoW chains, a 51% attack pays for itself, and the attacker gets the block reward, fees and the gains from the re-org. So the main hurdle is the huge up-front capital (and in the case of bitcoin, of machines that can do little else). In PoS, after finality (normally <15 minutes), any re-org will cause slashing of at least 1/3 of stakers, so 4M ETH will be burned. So to make a relatively short re-org, one would need to burn >$8B, which is significantly more than the economic gains that one can have. A few minor points - you can see a re-org coming, as the number of stakers signing will go down from 99.9% to \\~66%. Setting up such an attack will take not only money, but time, at which the preparations may be very visible (need to buy/deposit for a 2/3 majority), so if you plan an attack today, and haven't deposited ETH yet, you need 24M ETH (double the current stake), plus 2x whatever ETH flow in until you attack, plus the time to deposit all of this (at \\~1300 validators = \\~41,000ETH per day ATM). Attacking bitcoin without a factory for ASIC is similarly very hard.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iamtmxa",
+                            "author": "Perleflamme",
+                            "score": 4,
+                            "created_utc": 1653977575.0,
+                            "response": ">In PoW chains, a 51% attack pays for itself, and the attacker gets the block reward, fees and the gains from the re-org. \n\nIt's important to note that you're talking about a full block reward: 51% of power provides 100% of the reward through reorg and ensures every other miner receives 0%. This means competing against a successful 51% attack isn't sustainable and that you can't get rid of such attack through a fork. In such circumstances, a PoW-based network is lost to centralized censorship. \n\nAnd that's what China could have done last year. When they forbid mining activities, they had more than 50% of the mining power on their soil. Within months, they reduced it to nearly 0%. Instead of shutting it all down, they could very well have seized all the equipment and mined themselves, essentially succeeding at a 51% attack. They didn't seize the opportunity, which is very fortunate, but it's an opportunity that could easily happen again. \n\nWithin a PoS-based chain, you can always count on Layer 0 to fork away the attacker, destroying ~100% of their staked funds in the process.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iamufs7",
+                                    "author": "AdvocatusDiabo",
+                                    "score": 2,
+                                    "created_utc": 1653978217.0,
+                                    "response": "I mostly agree with this analysis. There are nuances, like taking over a chain completely isn't profitable, and mining power can slightly fluctuate, as older miners can be used at lower efficiency, giving a costly temporary boost. \n\nAbout China, banning is one thing, collecting all machines is another. This couldn't be done in a short time period, or in secret, or with any good compliance. People in China aren't robots, even if the government sometimes looks at them as such.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iamuxr5",
+                                            "author": "Perleflamme",
+                                            "score": 2,
+                                            "created_utc": 1653978628.0,
+                                            "response": ">There are nuances, like taking over a chain completely isn't profitable\n\nUnprofitability assumes censorship itself isn't profitable. Many countries have shown they're willing to spend much for such power. Profitability is more than just a question of money. \n\n>About China, banning is one thing, collecting all machines is another.\n\nIf you ban the equipment itself from leaving the country and criminalize anyone who doesn't deliver it to the government, you have all the time you want to seize it. Even more so if you incentivize voluntary gifting to the state through money and social points. Different degrees of such measures have already been successfully used in the past regarding gold, in several countries that are believed to be way less oppressive than China.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "iamt3qo",
+                            "author": "vomittspit",
+                            "score": 1,
+                            "created_utc": 1653977151.0,
+                            "response": "I\u2019m a noob with the fancy talk and most of this made sense so thanks. To the moon \ud83d\ude80",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ialri8f",
+                    "author": "Kike328",
+                    "score": 5,
+                    "created_utc": 1653955351.0,
+                    "response": "no",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ialvb62",
+                            "author": "Yoldark",
+                            "score": 4,
+                            "created_utc": 1653957309.0,
+                            "response": "Clear, neat and precise. Lack of arguments though :)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ialvov7",
+                                    "author": "Kike328",
+                                    "score": 2,
+                                    "created_utc": 1653957504.0,
+                                    "response": "The same amount as OP",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ialwe4z",
+                                            "author": "Yoldark",
+                                            "score": 1,
+                                            "created_utc": 1653957858.0,
+                                            "response": "At least you tried. Have a nice day :).",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ialv6qe",
+                    "author": "rowsebay",
+                    "score": -7,
+                    "created_utc": 1653957246.0,
+                    "response": "Rug pull of rug pulls. \ud83d\udca5",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iam00qg",
+                            "author": "domingo_mon",
+                            "score": 3,
+                            "created_utc": 1653959710.0,
+                            "response": "Are you saying that this is the biggest rug pull of rug pulls? Or are you saying that this will rug pull the rug pulls?  \n\n\nI get the feeling that you are anti merge and possibly anti Ethereum. Care to explain why?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iam0ocr",
+                                    "author": "rowsebay",
+                                    "score": -6,
+                                    "created_utc": 1653960047.0,
+                                    "response": "It's sloppy software, a sloppy protocol, and a lot of people are getting hurt from the sloppy results.\n\nIf bitcoin is bittorrent, ethereum is all the malware that looked like adware that said it was \"bittorrent\"",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iamtpnr",
+                                            "author": "Perleflamme",
+                                            "score": 2,
+                                            "created_utc": 1653977637.0,
+                                            "response": "Then, care to provide any argument, now that you've provided your claims?",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iam05vc",
+                    "author": "comradeOak2020",
+                    "score": 0,
+                    "created_utc": 1653959785.0,
+                    "response": "I\u2019m worried about the folks who had 32 Eth tied up, dumping asap",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ian2oul",
+                            "author": "joenastyness",
+                            "score": 1,
+                            "created_utc": 1653985422.0,
+                            "response": "Rewards are expected to rise after the merge.  I doubt many dump their stake.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

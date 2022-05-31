@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uvn6yi/why_is_it_often_advised_against_keeping_bitcoin/",
             "author": "Emergency_Error_9362",
             "created_utc": 1653262736.0,
-            "score": 37,
-            "num_comments": 49,
+            "score": 40,
+            "num_comments": 64,
             "subreddit": "BitcoinBeginners",
             "selftext": "",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i9mmcod",
                     "author": "spiceylizard",
-                    "score": 36,
+                    "score": 35,
                     "created_utc": 1653266517.0,
                     "response": "\u201cThey claim\u201d\n\nDon\u2019t trust. Verify",
                     "depth": 1,
@@ -42,7 +42,7 @@
                 {
                     "id": "i9mw3q3",
                     "author": "nullama",
-                    "score": 17,
+                    "score": 18,
                     "created_utc": 1653271446.0,
                     "response": "You shouldn't even write your seed phrase on an internet connected device.\n\nThat's the first reason.\n\nThe second reason is that you have to trust a third party.\n\nWith Bitcoin you don't need to trust anyone. You can have a wallet in an offline device, and you will be the only person with access to it, and you don't have to trust anyone.",
                     "depth": 1,
@@ -50,7 +50,7 @@
                         {
                             "id": "i9mwcqv",
                             "author": "d3vrandom",
-                            "score": -2,
+                            "score": -1,
                             "created_utc": 1653271571.0,
                             "response": "you only trust blockchain.info for the interface to the blockchain. you don't trust it with your private keys. they only have access to an encrypted version of your wallet.",
                             "depth": 2,
@@ -107,7 +107,7 @@
                                                                         {
                                                                             "id": "i9oomsn",
                                                                             "author": "haight6716",
-                                                                            "score": 2,
+                                                                            "score": 3,
                                                                             "created_utc": 1653315218.0,
                                                                             "response": "Professionals reviewing code can't find all bugs, let alone ones hidden on purpose. People would find out... After some time... When their wallets get drained.",
                                                                             "depth": 8,
@@ -139,7 +139,7 @@
                 {
                     "id": "i9mg4kp",
                     "author": "sos755",
-                    "score": 18,
+                    "score": 17,
                     "created_utc": 1653263222.0,
                     "response": "Web-based non-custodial wallets are better than custodial wallets, but there are still issues.\n\nInteracting with your wallet through a browser gives scammers and thieves many ways to take your coins.\n\nAlso, blockchain.com has had security problems in the past.",
                     "depth": 1,
@@ -169,6 +169,15 @@
                     "score": 2,
                     "created_utc": 1653309936.0,
                     "response": "This episode of the podcast [Darknet Diaries - dirty comes](https://open.spotify.com/episode/5Snektk5Z2nUzM7DgoEBSx?si=EL-ZHqu7RamGF2Aa5hwvkA&utm_source=copy-link) explains it really well with a real life example.\n\nBasically, people will target those with high amounts in their crypto exchange and an entire team of people will work together to empty your exchange and disappear using a combination of database dumps, social engineering, exploits, and more.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9p9hp9",
+                    "author": "pgh_ski",
+                    "score": 2,
+                    "created_utc": 1653324201.0,
+                    "response": "Attack surface is the biggest reason. A web wallet has the highest amount of things that can go wrong: client-side attacks, JavaScript crypto vulnerabilities, server-side vulnerabilities, phishing attacks (like fake blockchain.info links that ask for credentials), malware, and more. \n\nDesktop wallets suffer from some of the same problems. Mobile wallets are a bit better due to the OS/app stores being a bit more locked down, but are provide more attack surface than offline (hardware) wallets since they are general purpose, networked devices. \n\nBut a dedicated hardware wallet provides the safest interface as the keys are generated and stored completely offline, and cannot be retrieved off the device when connected for signing transactions.",
                     "depth": 1,
                     "comments": []
                 },
@@ -227,11 +236,20 @@
                     "comments": []
                 },
                 {
-                    "id": "i9p9hp9",
-                    "author": "pgh_ski",
+                    "id": "i9q2pnb",
+                    "author": "ntfx_org",
                     "score": 1,
-                    "created_utc": 1653324201.0,
-                    "response": "Attack surface is the biggest reason. A web wallet has the highest amount of things that can go wrong: client-side attacks, JavaScript crypto vulnerabilities, server-side vulnerabilities, phishing attacks (like fake blockchain.info links that ask for credentials), malware, and more. \n\nDesktop wallets suffer from some of the same problems. Mobile wallets are a bit better due to the OS/app stores being a bit more locked down, but are provide more attack surface than offline (hardware) wallets since they are general purpose, networked devices. \n\nBut a dedicated hardware wallet provides the safest interface as the keys are generated and stored completely offline, and cannot be retrieved off the device when connected for signing transactions.",
+                    "created_utc": 1653336616.0,
+                    "response": "[https://ntfx.org](https://ntfx.org) has good info -- basically it's a matter of accessibility, exposure, or \"attack surface\".  Online is easier, faster to attack and rob, versus in-your-pocket or on-your-desk USB stick.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9q6yfi",
+                    "author": "Gimmora",
+                    "score": 1,
+                    "created_utc": 1653338461.0,
+                    "response": "The seeds are stored online, and are secured cos only you have them. But for an extra layer of security it's advisable to store them on an offline wallet. You can set up a free offline wallet like the AirGap wallet/vault pair",
                     "depth": 1,
                     "comments": []
                 },

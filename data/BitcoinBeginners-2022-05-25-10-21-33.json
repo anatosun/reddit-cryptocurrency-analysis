@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uxe9fx/how_does_the_lightning_network_work/",
             "author": "SwurveMan",
             "created_utc": 1653474074.0,
-            "score": 6,
-            "num_comments": 16,
+            "score": 8,
+            "num_comments": 21,
             "subreddit": "BitcoinBeginners",
             "selftext": "What are the benefits and flaws that this Layer 2 has over the Bitcoin Network?",
             "stickied": false,
@@ -26,6 +26,15 @@
                     "score": 2,
                     "created_utc": 1653484178.0,
                     "response": "It\u2019s faster cheaper Bitcoin payments while giving up some fundamental properties of Base chain Bitcoin.\n\nYou can\u2019t (as of now) have a cold LNBitcoin wallet. Every LN wallet is a constant hot wallet. \nAdditionally If you want full custody of your coins you have to fund your own LN Node. \nYour have to put trust in the LN node operators. Just like you put trust in a bank.\n\nHere\u2019s a very brief slideshow on LN basics\nhttps://docs.google.com/file/d/1ASLFB5gq_LkLNjeJzZmjnBZkKH7GUhSW/edit?usp=docslist_api&filetype=mspresentation",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i9yllud",
+                    "author": "BTCMachineElf",
+                    "score": 2,
+                    "created_utc": 1653500074.0,
+                    "response": "Two users create a dynamic smart contract using a bitcoin utxo, that allows them to shift balance between the two of them. This allows for instant payments that can later be settled to the blockchain.\n\nLightning Network is a mesh network of these contracts that creates an instant bitcoin payment network.",
                     "depth": 1,
                     "comments": []
                 },
@@ -62,15 +71,6 @@
                     "score": 1,
                     "created_utc": 1653494669.0,
                     "response": "Subbed so I can look more into this. Thanks.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i9yllud",
-                    "author": "BTCMachineElf",
-                    "score": 1,
-                    "created_utc": 1653500074.0,
-                    "response": "Two users create a dynamic smart contract using a bitcoin utxo, that allows them to shift balance between the two of them. This allows for instant payments that can later be settled to the blockchain.\n\nLightning Network is a mesh network of these contracts that creates an instant bitcoin payment network.",
                     "depth": 1,
                     "comments": []
                 },

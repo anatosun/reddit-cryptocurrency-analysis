@@ -1,0 +1,53 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v0w4f0",
+            "title": "How do I know the content of a smart contract?",
+            "url": "https://www.reddit.com/r/ethereum/comments/v0w4f0/how_do_i_know_the_content_of_a_smart_contract/",
+            "author": "wood8",
+            "created_utc": 1653901786.0,
+            "score": 3,
+            "num_comments": 6,
+            "subreddit": "ethereum",
+            "selftext": "I use metamask and does some cross chain transfer. Every time a contract pops up, I just click sign. What if the contract actually says send all my money to the dev?\n\nThere are some machine code in the pop up window. I am a programmer so I can read code. But I can't find any readable stuff that describe what this contract does in the pop up window.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iaj1kil",
+                    "author": "thomas_m_k",
+                    "score": 3,
+                    "created_utc": 1653904953.0,
+                    "response": "The contract on the chain is just the machine code, so it's hard to read, but usually, projects also publish their source code and then you can confirm that their source code actually compiles to the machine code that you see on the chain. This is of course a lot of work, but luckily Etherscan does it for you. [Here for example](https://etherscan.io/address/0xe592427a0aece92de3edee1f18e0157c05861564#code#F1#L1) is the source code for Uniswap's contracts. Etherscan has verified that it compiles to the on-chain machine code.\n\nHowever, the thing that metamask's pop-up shows you is actually a transaction I think. You'd have to look up which functions in the contract the transaction calls, and then you'd need to look at the contract source code to understand what that does.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaj1waq",
+                    "author": "RC0305",
+                    "score": 3,
+                    "created_utc": 1653905241.0,
+                    "response": "In the pop-up, it should show the address of the contract, the function its calling and the arguments that's passing in to the function.\n\nYou can find the contract on Etherscan and check the code and see what exactly happens when that method is called with the given parameters. \n\nFor example: https://etherscan.io/address/0xdac17f958d2ee523a2206206994597c13d831ec7#code",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iakzduq",
+                    "author": "Ok-Nefariousness1340",
+                    "score": 1,
+                    "created_utc": 1653941356.0,
+                    "response": "Here's an overview of Metamask message signing and the risks involved: https://docs.metamask.io/guide/signing-data.html#a-brief-history\n\nBasically it *is* possible that a signature request could be malicious and steal your money, but if the type of request where this is possible is used, Metamask will prominently display a warning along with it that it is risky. If you see such a warning you should only sign the message if you are absolutely sure you can trust the relevant service and that their website is secure and not compromised, but you probably just shouldn't. Newer signing methods have built-in protections against phishing signatures to use maliciously.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,295 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v0g0ov",
+            "title": "Digital currency for dummies.",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/v0g0ov/digital_currency_for_dummies/",
+            "author": "Harkenfark",
+            "created_utc": 1653845284.0,
+            "score": 1,
+            "num_comments": 1,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Is there a YouTube channel that talks about \u201cbitcoin\u201d in a language that anyone new can understand wtf they are talking about? \n\nI understand the basics, like what it actually is and how blockchain works; but obtaining and using it (as an investment or to buy stuff)  is still somewhat an enigma and seemingly a royal pain in the ass. \n\nAlso, there are so many scams out there\u2026 and with it being unregulated, there are a lot of concerns with that as well. Reading the \u201crules\u201d on this stuff is messy. \n\nThanks.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iag5ye6",
+                    "author": "AutoModerator",
+                    "score": 2,
+                    "created_utc": 1653845285.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "v0g0jc",
+            "title": "Transaction and logging Question",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/v0g0jc/transaction_and_logging_question/",
+            "author": "kaioken1986",
+            "created_utc": 1653845271.0,
+            "score": 3,
+            "num_comments": 8,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Are the transactions in a block hashed before they are added to a block. When I am looking at block explorer there are hashes for the transactions? This is confusing because I heard that transactions are put through a hash? Just the addresses and dig sigs are?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iag5xc1",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653845272.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iag9kkj",
+                    "author": "BTCMachineElf",
+                    "score": 1,
+                    "created_utc": 1653846946.0,
+                    "response": "Those are two separate hash functions. Private key signature is a hash function of the senders wallet. Mining is a hash of the whole block.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iahcd5y",
+                    "author": "Rannasha",
+                    "score": 1,
+                    "created_utc": 1653865765.0,
+                    "response": "Transactions are included in blocks in full, with all the gory details. This is necessary to ensure that anyone can later play back the entire transaction history and validate current balances.\n\nHowever, from the set of transactions, the miner also constructs a data structure known as a Merkle Tree, which uses hash functions to build a binary tree of all transaction hashes. This tree has a root node, also called the Merkle Root and this root is included in the block header, which is then run through the hashing function in the mining process.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iahssus",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1653874417.0,
+                    "response": "The transactions are hashed. A transaction's hash is its unique ID. The transaction hashes are hashed in a Merkle tree. The Merkle root hash is one of the 6 fields in the block header. The hash of the previous block's header is another of the 6 fields in the block header  \n\nIn transactions which spend SegWit outputs, the witness part of a SegWit tx is not included in the transaction data which is hashed, to prevent signature malleability from modifying the txID hash  \n\nhttps://bitcoincore.org/en/segwit_wallet_dev/  \nSearch down to \"Transaction Serialization\" and \"Transaction ID\"",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "v0g414",
+            "title": "(help) Didn't write down my recovery phrases and now regret it",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/v0g414/help_didnt_write_down_my_recovery_phrases_and_now/",
+            "author": "Erik10035",
+            "created_utc": 1653845559.0,
+            "score": 20,
+            "num_comments": 28,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "I committed a terrible mistake. I was using a software wallet (Trust Wallet) for convenience sake, because I needed to do lots of transactions. I was changing wallets every week, and these wallets were meant to be disposable, so at one point I became lazy and stopped writing down the recovery phrases.\n\nYesterday my Trust Wallet app crashed, upon trying to make a coin transfer, and the next thing I know when I open the app again is my wallets are gone.\n\nI know I should have written off my phrases, but I'm hoping I can do either one of two things, and I'll explain why I think it's possible later:\n\n\u2022 Temper the app data so it can read the previous state and my wallets are visible to me again.\n\u2022 Find and decrypt the seed phrases from the app data\n\nThe reason why I think this is possible is because I'm on a rooted Android. So whenever I was using the app it would warn me about the risk of applications or attackers with root permission accessing my wallets info and seed phrases. By the same principle I think it's possible for me to access these files. The thing is I don't quite have the knowledge required for that.\n\nI may be hoping for a miracle but maybe some of you guys can help me. If you know any other subreddit where I can get better assistance please let me know. Any help will be greatly appreciated. Please don't pound on me to much for not writing the precious recovery phrases down. Thanks",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iag9goo",
+                    "author": "bitusher",
+                    "score": 18,
+                    "created_utc": 1653846897.0,
+                    "response": "Well that was indeed a horrible mistake for multiple reasons(using a buggy , closed source, not peer reviewed , wide attack surface wallet  on a rooted phone is another big mistake too). Perhaps ask dave if he can help\n\nhttps://www.walletrecoveryservices.com/",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iagbcqv",
+                            "author": "Erik10035",
+                            "score": 2,
+                            "created_utc": 1653847768.0,
+                            "response": "I need a hacker I think. I know the information is contained in the data partition, just don't have the knowledge to extract it. But everyone that contacted me is trying to steal, won't help me recover my funds",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iagbqz1",
+                                    "author": "bitusher",
+                                    "score": 22,
+                                    "created_utc": 1653847953.0,
+                                    "response": "Which is why I recommended dave , who is trusted in the community",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iai0v1p",
+                                            "author": "DigitaleDukaten",
+                                            "score": 2,
+                                            "created_utc": 1653878534.0,
+                                            "response": "Good to know!",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "iahj1b3",
+                                    "author": "haight6716",
+                                    "score": 2,
+                                    "created_utc": 1653869285.0,
+                                    "response": "Can confirm, this is the one you can actually trust. The OG recovery expert.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "iahahlm",
+                                    "author": "bigeyedfish041",
+                                    "score": 2,
+                                    "created_utc": 1653864785.0,
+                                    "response": "Hacker gonna Rob you.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "iahtgmz",
+                                    "author": "Jolly-Hovercraft220",
+                                    "score": -1,
+                                    "created_utc": 1653874754.0,
+                                    "response": "Maybe I can help you.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "iahtokr",
+                                    "author": "non-nominato",
+                                    "score": -1,
+                                    "created_utc": 1653874865.0,
+                                    "response": "Have you tried posting it to r/hacking ?  Someone there may be able to tell you what you can do (if anything can be done)",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iagt41y",
+                    "author": "3i1bo3aggins",
+                    "score": 4,
+                    "created_utc": 1653856120.0,
+                    "response": "Recently I also went back to two old phones to find somehow my wallets were reset on them. I was able to recover them via hypnosis. You might want to give it a try .",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iah5exp",
+                            "author": "VulfgangPeck",
+                            "score": 3,
+                            "created_utc": 1653862189.0,
+                            "response": "At first I thought hypnosis was an app",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iagu9sd",
+                            "author": "drdavidchi",
+                            "score": 2,
+                            "created_utc": 1653856690.0,
+                            "response": "Is it worth reliving the moment your uncle was touching you on your 7th bday tho?",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iaiwi6k",
+                            "author": "braavosbabe",
+                            "score": 1,
+                            "created_utc": 1653900338.0,
+                            "response": "Actual hypnosis? \nHow did your first conversation with the hypnotist go?",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iaifqo3",
+                            "author": "Erik10035",
+                            "score": 0,
+                            "created_utc": 1653886870.0,
+                            "response": "Should I take the comment seriously?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iag6jv3",
+                    "author": "AutoModerator",
+                    "score": 2,
+                    "created_utc": 1653845559.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iagbu93",
+                    "author": "bartoque",
+                    "score": 2,
+                    "created_utc": 1653847995.0,
+                    "response": "https://community.trustwallet.com/t/what-to-do-if-the-app-is-not-working/260\n\nThe first step advised is to restart your phone. That was already done?\n\n\"Step 1: Restart your Device\n\nThis is the most overlooked step. A simple restart or turning the device off and on can clear any issues with the phone or with the app itself.\"\n\nOr submit a ticket (step 8)?\n\nhttps://community.trustwallet.com/c/asktrust",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iagcy3d",
+                            "author": "Erik10035",
+                            "score": 2,
+                            "created_utc": 1653848507.0,
+                            "response": "Yes. Step 1 was the first thing I did. Already contacted trust, waiting on their response",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iahtkdu",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1653874807.0,
+                    "response": "Unfortunately, the Trust wallet developer does not publish the source code  \n\nI think the main problem to solve is the general one - where do Android apps hide files which are usually hidden from file browser apps? Maybe you can see the answer in the source code for another Android wallet app. I'd try Schildbach's Bitcoin wallet app first  \n\nAnd then, how to see those hidden files in a rooted Android? That should be trivial",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaifpmg",
+                            "author": "Erik10035",
+                            "score": 1,
+                            "created_utc": 1653886852.0,
+                            "response": "I already know where the app stores at least some hidden files. It's usually in the data partition, which is hidden. And also know how to access it, with root access. Still there are a bunch of encrypted files and don't know what to look for",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iajamag",
+                    "author": "blaze1234",
+                    "score": 1,
+                    "created_utc": 1653912112.0,
+                    "response": "Never digitise your Seed Recovery information, except to a hardware wallet or other dedicated airgapped device. Certainly never on anything capable of connecting to the internet.\n\nEtched onto steel plates, stored in multiple secure locations far from home, secure passphrase separately from 24-word mnemonic",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iahsq1d",
+                    "author": "SGAShepp",
+                    "score": -5,
+                    "created_utc": 1653874375.0,
+                    "response": "Send me all the appdata and I'll get your money back.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaifsrj",
+                            "author": "Erik10035",
+                            "score": 1,
+                            "created_utc": 1653886908.0,
+                            "response": "Yeah nice try. Help and I might reward you tho",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

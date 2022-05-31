@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uxts7t/seed_phrase_with_25th_word_is_this/",
             "author": "BlockchainBlockhead",
             "created_utc": 1653520369.0,
-            "score": 2,
-            "num_comments": 11,
+            "score": 3,
+            "num_comments": 20,
             "subreddit": "BitcoinBeginners",
             "selftext": "If I create a hidden wallet with Trezor and supply a 25th word and then Trezor goes out of business *AND* my Trezor breaks, can I restore the same wallet on a Ledger without any major issues? Are the keys generated the same according to BIP32?\n\nEdit: I understand that the passphrase/25th word isn't supposed to be stored with the seed phrase. I'm just wondering if we could get in a situation where a wallet is not recoverable because the original hardware manufacturer goes out of business.",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "i9zz1p5",
                     "author": "bitusher",
-                    "score": 6,
+                    "score": 8,
                     "created_utc": 1653520677.0,
                     "response": ">and supply a 25th word \n\nThis is a horrible term Ledger started marketing which confuses many new users into believing the 25th word passphrase is a single word. \n\nThe passphrase should be 5 or more random words at minimum to be secure.\n\nThere is another problem here with that term as well, it insinuates that users should keep the passphrase backed up with the existing 24 words because its simply another \"word\" needed to recover the wallet along with the other words (12 to 24) which is incorrect. The passphrase would be backed up but kept separately from the 12 to 24 word seed.\n\nAlso there is a third problem with that term as it insinuates that there are only 24 word seed backups and the passphrase is the \"25th word\" which is also wrong. Seed word backups can be 12, 15, 18, 21, or 24 , with 12 being the most common.\n\n>can I restore the same wallet on a Ledger without any major issues?\n\nyes, or on cold card, or on bitbox, or any BIP39 hardware wallet as well",
                     "depth": 1,
@@ -31,9 +31,18 @@
                         {
                             "id": "ia0ukn2",
                             "author": "tictaktoee",
-                            "score": 3,
+                            "score": 4,
                             "created_utc": 1653535613.0,
                             "response": "This post should be seen by more users.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia2lzzc",
+                            "author": "OrangeHODLr",
+                            "score": 1,
+                            "created_utc": 1653576996.0,
+                            "response": "The so called 25th word is actually the SALT.",
                             "depth": 2,
                             "comments": []
                         }

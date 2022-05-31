@@ -1,0 +1,254 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v1346x",
+            "title": "Have you seen any statistics where they show politicians' view on Bitcoin or crypto sorted by the politicians' age?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/v1346x/have_you_seen_any_statistics_where_they_show/",
+            "author": "SunRev",
+            "created_utc": 1653925710.0,
+            "score": 6,
+            "num_comments": 4,
+            "subreddit": "Bitcoin",
+            "selftext": "I'm guessing that the younger upcoming politicians' would be more pro-crypto. So as the old powerful politicians' retire and die, the younger (pro-crypto) politicians' will start to take over.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iak1t6k",
+                    "author": "kai-zar",
+                    "score": 6,
+                    "created_utc": 1653926153.0,
+                    "response": "Politicians are never old or young, they are snakes that go with the flow of the times. Expect the \"young politicians\" to quickly change sides when some nice incentives are offered to them.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iakfow6",
+                            "author": "RobbyMcRobbertons",
+                            "score": 1,
+                            "created_utc": 1653932273.0,
+                            "response": "100%",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iakmfvk",
+                            "author": "SunRev",
+                            "score": 1,
+                            "created_utc": 1653935316.0,
+                            "response": "Who will offer them the incentives? Old thinking people will continue to die faster than new thinking people.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iaksbjt",
+                    "author": "NiceDoctorBeam",
+                    "score": 1,
+                    "created_utc": 1653938029.0,
+                    "response": "I don't care what professional liars say or don't say.  \n\nThey cannot confiscate my Bitcoin, nor can they debase it via \"money printing\".",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "v131m0",
+            "title": "Nonce question",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/v131m0/nonce_question/",
+            "author": "ParticularSurvey8",
+            "created_utc": 1653925505.0,
+            "score": 4,
+            "num_comments": 19,
+            "subreddit": "Bitcoin",
+            "selftext": "I've been taking the MIT course on blockchain and don't fully understand the nonce. My understanding is that a miner is changing the nonce over and over again, from 1, 2, 3, 4 to x until it solves for the hash that has, let's say, 10 leading 0's. What's confusing me is that why is that considered accurate? Because there could be a hash that has 10 leading zeros but what about the rest of the hash, there's a gigantic number of possibilities even with10 leading zeros.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iak2gyv",
+                    "author": "motud2",
+                    "score": 5,
+                    "created_utc": 1653926445.0,
+                    "response": "It\u2019s not a question of accuracy but difficulty.  The number of leading zeros defines how difficult, i.e. how many attempts it takes to find the hash.  Once the hash has the correct number of leading zeros, the rest of the hash doesn\u2019t matter.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iakw55x",
+                    "author": "bitcoin_barry",
+                    "score": 3,
+                    "created_utc": 1653939825.0,
+                    "response": "From a scale of 1 to 100, if you want a mathematical problem that can be solved 10% of the time, you make 10 of the answers correct.\n\nTo turn probability into time, you need to ensure that every guess has an equal chance of being right or wrong and you then need to measure the time it takes for each guess or at least get a reliable average.\n\nThis is what bitcoin does. The problem of \"find a number under 10 out of a range of 100\" can be restated as \"find a three digit number with one leading 0 (i.e. 06)\". Note we are dealing with a range beginning with 0 and ending in 99, that is still a range of 100 possible answers.\n\nThe unpredictability yet uniformity of the hash function (sha256) plays into the \"equal chance for every nonce guess\" factor.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ialycfk",
+                            "author": "ParticularSurvey8",
+                            "score": 1,
+                            "created_utc": 1653958855.0,
+                            "response": "This is helpful, thank you!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iak1fps",
+                    "author": "Willy_The-Kid",
+                    "score": 4,
+                    "created_utc": 1653925986.0,
+                    "response": "That word should not be crypto related. \ud83e\udd23",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iak239m",
+                            "author": "bighanq",
+                            "score": 2,
+                            "created_utc": 1653926278.0,
+                            "response": "Can we ban all nonce questions?  It\u2019s not going to make crypto look good to the wider world",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ial9qin",
+                                    "author": "andytoshi",
+                                    "score": 3,
+                                    "created_utc": 1653946313.0,
+                                    "response": "It can't be any worse than the damage done to cryptography by \"crypto\" being hijacked to refer to all manner of shitcoins and scams..",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ian846e",
+                                            "author": "Willy_The-Kid",
+                                            "score": 1,
+                                            "created_utc": 1653990385.0,
+                                            "response": "Oh, other than BTC?",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "iallt9l",
+                            "author": "igadjeed",
+                            "score": 0,
+                            "created_utc": 1653952382.0,
+                            "response": "What word? Willy?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ian090k",
+                                    "author": "Willy_The-Kid",
+                                    "score": 1,
+                                    "created_utc": 1653983200.0,
+                                    "response": "Shhhhh",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iak7nf3",
+                    "author": "na3than",
+                    "score": 2,
+                    "created_utc": 1653928720.0,
+                    "response": ">What's confusing me is that why is that considered accurate?\n\nWhat do you mean by 'accurate'? The point of the nonce is to add something to the hash input that results in a hash output smaller than a prescribed value. Due to the nature of the hashing algorithm, the only way to find such a value is to guess an input value over and over again until you find one that produces a satisfactory output. The smaller the prescribed target, the more difficult this needle-in-a-haystack challenge is. That's what keeps the blockchain safe: it's computationally expensive, so a malicious participant would need tremendous computing power to beat all of the honest participants in this race.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iakdloz",
+                    "author": "Mallardshead",
+                    "score": 2,
+                    "created_utc": 1653931341.0,
+                    "response": "The rest of the numbers after the 0's is irrelevant, and the difficulty adjustment (every 2016 blocks) is what determines the number of leading 0's. Miners hash through sha-256 twice with every hash trying to find the golden nonce.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iakusb1",
+                    "author": "pintoffootball",
+                    "score": 2,
+                    "created_utc": 1653939185.0,
+                    "response": "You wot",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ialls16",
+                    "author": "igadjeed",
+                    "score": 2,
+                    "created_utc": 1653952363.0,
+                    "response": "Minor corrections  \n\n*    the Bitcoin mining winning condition is not a count of leading zero bits. The winning miner has a block which has a header which has a hash which is smaller than the current target. Counting leading zero bits only allows for power of 2 adjustments, which is too coarse. The numeric principle is the same, but the difference is significant  \n\n*    the nonce is only one part of the block header. The block header is hashed repeatedly, making a change each time. The nonce isn't big enough to be the only piece which changes during mining. Your question isn't really a nonce question  \n\nMathematically the miner's winning condition is to discover a hash within a range. The hash represents the block. The 80-byte block header is the hash input  \n\n> gigantic number of possibilities\n\nThat's the point. The winning hash has to fall within a range of values, and the size of the range has to be large enough for the miners to find it in an average time of 10 minutes. Finding a single 256-bit hash would require 2^255 guesses which would take billions of years  \n\nTo turn hashing from a single impossible guess result into a guessing competition, define the winning condition as a large range of values  \n\nThe bottom value of the range is zero. This means that the target number defines the size of the range. Then, the average number of guesses required is the size of the SHA256 number range ( 2^256 ) divided by the size of the target range  \n\nThe target is automatically adjusted every 2016 blocks  \n\nIf the blocks are created faster than 10 minutes, the target is made smaller, to make mining more difficult, restore the 10 minute average block time. And vice versa, if the blocks are slower than 10 minutes, the target is made larger  \n\nThe adjustment is a simple time ratio\n\n    New Target = Old Target * (Actual Time of Last 2016 Blocks / 20160 minutes)\n\nThe proof of work is  \n\n*    the hash is instantly provable by hashing the block header  \n*    the hash being smaller than target proves that the miners did the work",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ialylrf",
+                            "author": "ParticularSurvey8",
+                            "score": 1,
+                            "created_utc": 1653958986.0,
+                            "response": "Awesome explanation!",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iak7gqt",
+                    "author": "BTCMachineElf",
+                    "score": 1,
+                    "created_utc": 1653928636.0,
+                    "response": "The hash isn't data of any sort. It's simply proof of work. The rest of the numbers are irrelevant.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaksum4",
+                    "author": "NiceDoctorBeam",
+                    "score": 1,
+                    "created_utc": 1653938278.0,
+                    "response": "Go here:  \n\nhttps://emn178.github.io/online-tools/sha256.html  \n\nTry to find a 6 or 7 character input such that the last (rightmost) two digits are less than or equal to \"22\".  \n\nThat is very similar to what the mining rigs are doing.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iakvhp3",
+                    "author": "mpem___",
+                    "score": 1,
+                    "created_utc": 1653939518.0,
+                    "response": "Hash don\u2019t need to have exact number of zero\u2019s. It need to be number less than threshold (which in binary representation means less zeros)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ialynr2",
+                    "author": "ParticularSurvey8",
+                    "score": 1,
+                    "created_utc": 1653959016.0,
+                    "response": "Thank you guys for the responses, this has been helpful in my understanding!",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iamodv9",
+                    "author": "theoretical_hipster",
+                    "score": 1,
+                    "created_utc": 1653973678.0,
+                    "response": "https://podcasts.apple.com/us/podcast/coin-stories-with-natalie-brunell/id1569130932?i=1000562570400\n\nD++ does a pretty good job explaining in here somewhere.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

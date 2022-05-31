@@ -1,0 +1,743 @@
+{
+    "subreddit": "CryptoTechnology",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uyd52y",
+            "title": "The best arguments for or against Proof of Stake",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/uyd52y/the_best_arguments_for_or_against_proof_of_stake/",
+            "author": "Matt-ayo",
+            "created_utc": 1653587049.0,
+            "score": 60,
+            "num_comments": 93,
+            "subreddit": "CryptoTechnology",
+            "selftext": "Often times critiques against Proof of Stake boil down to some form of \"you are letting the richest holders control the network,\" and while that makes sense to me, I wonder if those who argue in favor of Proof of Stake acknowledge or reject that assertion, and how they justify that. I tend to think \"Bitcoin Maxxis\" or more broadly PoW > PoS arguments get many things right but I do notice they sometimes don't feel the need to take their arguments too deeply, so I would like to offer the opportunity to do that.\n\nThere are surely many interesting arguments on both sides that are rarely explored, like:\n\n* Don't the wealthiest miners also have the ability to control Bitcoin in a similar fashion? How significant is the fact that hash power is external to the network while stake is internal?\n\n* Slashing solves the fundamental attack of PoS, the \"nothing at stake attack.\" What are the downsides to slashing and why isn't PoS with slashing the standard if it readily makes PoS secure?\n\n* Do staking pools which offer liquid capital in exchange for the staked native token/coin threaten to centralize the network?\n\n* Similarly, do DeFi protocols which offer more return on the base asset than staking does threaten to funnel coins away from staking, where they bolster security, to lending protocols, where they do not?\n\nI'm not looking to affirm any preconceptions, but if you feel passionately about any of this I'd like to hear why and I'm willing to read or watch anything offering to go in depth into this discussion. I understand Ethereum is the de-facto leader on the subject (even if they aren't quite there yet) and that their proposals aren't always simple; I personally have decent experience researching blockchain technology and cryptography and am willing to go  down any rabbit holes offered, so don't be shy to get technical. \n\nThanks in advance.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia48p51",
+                    "author": "AltExplainer",
+                    "score": 18,
+                    "created_utc": 1653601011.0,
+                    "response": "The biggest downside of proof of stake is how it distributes tokens.\n\nWith proof of work, miners have to pay a lot for equipment maintenance and electricity so usually end up selling (redistributing) most of the tokens they mine. This means that in general you don't have miners hoarding all the tokens.\n\nFor Proof of Stake there is no reason for a staker to sell the tokens they receive. This is great for price as it means people hold their tokens but means that the tokens end up less distributed than proof of work tokens. It also means that over time, stakers end up with a larger and larger share of the tokens as staking rewards are higher than the inflation level of tokens. This means the stakers also get more control of the network over time.\n\nWith proof of work, miners have to constantly invest more and more if they want to gain more control of the network but with staking it just happens naturally\n\nThere are many advantages to proof of stake but I think people forget about the advantages of proof of work",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia4ib9b",
+                            "author": "FaceDeer",
+                            "score": 11,
+                            "created_utc": 1653605358.0,
+                            "response": "Ethereum's proof of stake is designed to have diminishing returns as a larger percentage of the total Ether supply is staked. IIRC the target is to have around 20% of the total Ether supply staked - once that much is staked the rate of return becomes small enough that it's not really worth it to stake any more, there are better returns to be had by doing things other than staking with that money. At that point any staking rewards being paid to stakers will be expected to flow out into the general ecosystem.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia4lmam",
+                                    "author": "Matt-ayo",
+                                    "score": 3,
+                                    "created_utc": 1653606935.0,
+                                    "response": "That's interesting. Do you have any official posts or resources from the team discussing these plans?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia4vi2o",
+                                            "author": "FaceDeer",
+                                            "score": 7,
+                                            "created_utc": 1653611724.0,
+                                            "response": "Took a bit of rummaging, there's a lot of chaff on Google when searching for these terms. But I found [this document](https://docs.ethhub.io/ethereum-roadmap/ethereum-2.0/eth-2.0-economics/) that has a table in the \"Staking Rewards\" section that shows how the rate of return goes down as the amount staked goes up.\n\nStaking isn't \"free money\", a stake that is locked up on Ethereum represents an opportunity cost. You could use that Ether for all sorts of other things, including selling it and buying traditional investments like government bonds or whatnot. So when the rate of return for staking dips below the return you get for those other options there's going to be a pressure driving some stakers to withdraw their stakes.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia4wiz7",
+                                                    "author": "Matt-ayo",
+                                                    "score": 1,
+                                                    "created_utc": 1653612234.0,
+                                                    "response": "> Staking isn't \"free money\", a stake that is locked up on Ethereum represents an opportunity cost.\n\nThat's the idea at least. Protocols which allow pooled staking and distribute a liquid token in return already exist, however. \n\nRegarding the document, it appears there is a slight contradiction. Staking is rewarded less the more stake is online, but the bottom cites the risk of lending protocols offering competitive returns against staking, implying that network security will suffer as stakers *lend* instead. If accruing stake to increase security is important, it seems slippery that they have to decrease the incentive to stake as more stake accrues. Seems like that favors existing large stakers.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia4yhud",
+                                                            "author": "FaceDeer",
+                                                            "score": 3,
+                                                            "created_utc": 1653613198.0,
+                                                            "response": "Yes, that's the point I was making in my second paragraph. As the staked amount goes up the staking reward goes down, and other things become competitive. This prevents additional stakes being added because people have better things to do with their money.\n\nThe goal is not to try to get every single Ether possible locked up in the staking contract. That would result in poor liquidity for the ecosystem as a whole. So the rewards are set up to try to achieve a natural equilibrium, where people only add new stake if the amount staked is \"too low\" and withdraw stake if it's \"too high.\"\n\nWhether this favors large stakers is debatable. I would expect large stakers to be more adept at moving their money between whatever makes them the most return, for example, so I'd expect them to be quicker to withdraw stake if the returns become unfavorable. Small stakers would seem more likely to me to just \"let it ride\". Regardless, though, there isn't a way to distinguish large stakers from small stakers on a protocol level. It shouldn't really matter, PoS works fine either way.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia5amu2",
+                                                                    "author": "Matt-ayo",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653619130.0,
+                                                                    "response": "> I would expect large stakers to be more adept at moving their money between whatever makes them the most return, for example, so I'd expect them to be quicker to withdraw stake if the returns become unfavorable. Small stakers would seem more likely to me to just \"let it ride\"\n\nLarge stakers also have greater ability to drive small stakers away, if all it takes to reduce the incentive to stake is to add a large amount to the table. Seems trivially easy to discourage existing small stakers from remaining  when they could go to whatever  DeFi protocol becomes competitive after large stakers drive returns down. Small stakers doing the same maneuver would have nothing to gain and not even have the same powers of dissuasion in the first place.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ia7mbhk",
+                                    "author": "DATY4944",
+                                    "score": 2,
+                                    "created_utc": 1653669409.0,
+                                    "response": "So once the first 20% whales get staking, nobody will ever be able to unseat them. \n\nThat's actually worse than other versions..",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia7n2yb",
+                                            "author": "FaceDeer",
+                                            "score": 1,
+                                            "created_utc": 1653669722.0,
+                                            "response": "No, the returns are the same for all stakers. So if more stakers join and push the returns to less-profitable levels, the whales become less-profitable just as much as the smaller stakers become less-profitable. The whales are just as \"unseatable\" as anyone else.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iaa03hb",
+                                                    "author": "DATY4944",
+                                                    "score": 1,
+                                                    "created_utc": 1653711036.0,
+                                                    "response": "But only 20% of the entire float can be staked if I'm understanding correctly, so how would new stakers dillute existing stakers? Not quite following this yet.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "iaa17ij",
+                                                            "author": "FaceDeer",
+                                                            "score": 1,
+                                                            "created_utc": 1653711759.0,
+                                                            "response": "The ~20% goal isn't a \"hard\" limit, it's an approximate equilibrium that the protocol aims for (and it was a number dredged from memory so might be a bit off of the actual target). As the amount of Ether staked goes up the rate of staking return goes down, so eventually it becomes unprofitable to add new stake. You still *can*, but it's like running a PoW ASIC when the electricity costs more than the mining rewards. Once the network reaches that point some stakers would likely withdraw their stake to go do something more profitable with it.\n\n[This document](https://docs.ethhub.io/ethereum-roadmap/ethereum-2.0/eth-2.0-economics/) has a table with the return rate vs. total stake values.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "iaa2sjn",
+                                                                    "author": "DATY4944",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653712827.0,
+                                                                    "response": "Ah that makes sense! Thanks a lot for clarifying",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia6djcl",
+                            "author": "tromp",
+                            "score": 2,
+                            "created_utc": 1653647032.0,
+                            "response": "In short, PoS is not a coin distribution mechanism.\n\nTo avoid wealth concentration, coin ownership must be slowly diluted, which PoW achieves (ideally with a tail emission), but PoS prevents, since stakers can maintain their share of the pie.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia7meem",
+                                    "author": "DATY4944",
+                                    "score": 1,
+                                    "created_utc": 1653669443.0,
+                                    "response": "So PoS disincentives people from actually using the coin?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia8i07z",
+                                            "author": "FaceDeer",
+                                            "score": 2,
+                                            "created_utc": 1653683168.0,
+                                            "response": "No, Ethereum's PoS system does actually distribute new coins and it has mechanisms that would prevent an ever-increasing amount of Ether from being locked up in the staking contract. [This document](https://docs.ethhub.io/ethereum-roadmap/ethereum-2.0/eth-2.0-economics/) has a table showing how the staking returns are reduced as the total amount staked goes up, at some point it will be worth more to a staker to sell his rewards rather than ploughing them back into making his stake larger.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia41nou",
+                    "author": "coolstorynerd",
+                    "score": 13,
+                    "created_utc": 1653597949.0,
+                    "response": "I really liked [this bankless episode](https://www.youtube.com/watch?v=1m12zgJ42dI) on the pos vs pow topic",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia4lc74",
+                            "author": "Matt-ayo",
+                            "score": 1,
+                            "created_utc": 1653606798.0,
+                            "response": "Awesome. Really excited to hear Lyn Alden debate this.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia5tbi1",
+                                    "author": "Spacesider",
+                                    "score": 1,
+                                    "created_utc": 1653629980.0,
+                                    "response": "I feel like she is a very big BTC maxi, so take what she says objectively.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia781vi",
+                                            "author": "Matt-ayo",
+                                            "score": 3,
+                                            "created_utc": 1653663569.0,
+                                            "response": "The only reason I like her in the first place is because she is very objective and makes no, or at least ineffectual attempts to mislead. Also much smarter than most people in the space.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia3tfmd",
+                    "author": "LankeeM9",
+                    "score": 26,
+                    "created_utc": 1653594485.0,
+                    "response": "PoW is extremely simple and robust because it uses energy.\n\nPoS try\u2019s to replicate the nuances of PoW by replacing energy usage with extreme code complexity.\n\nIn PoW if you mine an invalid block you slash yourself because you wasted the electricity you used to mine the block.\n\nIf an entity accumulates 51%+ of the stake and doesn\u2019t do anything to get slashed, they will retain this control because nobody can unseat them ever, this can lead to an \u201cinvisible capture\u201d scenario.\n\nIn PoW you can introduce an \u201cinfinite\u201d amount of hashrate so this isn\u2019t an issue.\n\nIf someone is validating 2 different chains but the second one isn\u2019t publicly known they can\u2019t be slashed by other validators.\n\nDoesn\u2019t LIDO have like ~30% of staked Eth?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia3vnze",
+                            "author": "Matt-ayo",
+                            "score": 3,
+                            "created_utc": 1653595414.0,
+                            "response": "> If an entity accumulates 51%+ of the stake and doesn\u2019t do anything to get slashed, they will retain this control because nobody can unseat them ever, this can lead to an \u201cinvisible capture\u201d scenario.\n\nI'd never considered it that way. It does make sense though that hashing has a far more elastic supply than the stake in a PoS network, and can actually deal with 51% threats by simply generating more hash. Easier said than done but that market force does exist in PoW but not necessarily PoS.\n\nThe counter argument is that you can just buy more stake, obviously an attacker may refuse to give it up but again its a market dynamic and their ability to control the network will be priced in - of course, the premium one would pay for stake that can be used to 51% attack to the last owner, but not necessarily the new owner, doesn't justify paying it unless you are buying to control majority stake yourself.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia47kfp",
+                            "author": "Karyo_Ten",
+                            "score": 14,
+                            "created_utc": 1653600506.0,
+                            "response": ">If an entity accumulates 51%+ of the stake and doesn\u2019t do anything to get slashed, they will retain this control because nobody can unseat them ever, this can lead to an \u201cinvisible capture\u201d scenario.\n\nThe community can reach social consensus, hardfork and eliminate the attacker stake.\n\n>In PoW you can introduce an \u201cinfinite\u201d amount of hashrate so this isn\u2019t an issue.\n\nIf one captures 51% of hashrate, the chain is fucked, there is no social consensus backup, there is no possibility of burning their hardware.\n\nIn PoW, bigger fishes have an unfair advantage with bulk prices, datacenter cooling and security. In PoW there is no economies of scale.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia6yere",
+                                    "author": "Maleficent_Plankton",
+                                    "score": 2,
+                                    "created_utc": 1653659373.0,
+                                    "response": "> If one captures 51% of hashrate, the chain is fucked, there is no social consensus backup, there is no possibility of burning their hardware.\n\nI'm reality, everyone joins mining pools, so miners just shift pools. Only the lesser-known PoW blockchains have single entities big enough to take anywhere near 50%, in which case, yes, they are fucked. Of course, mining pools could secretly collide, which is always a security problem with PoW and even Bitcoin for the longest time.",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "ia4dsum",
+                                    "author": "LankeeM9",
+                                    "score": 2,
+                                    "created_utc": 1653603272.0,
+                                    "response": ">\tIf one captures 51% of hashrate, the chain is fucked, there is no social consensus backup, there is no possibility of burning their hardware.\n\nHard fork and swap the mining algorithm.\n\nEDIT: It\u2019s in the other miners vested interest (to protect their profits) to prevent the attack by getting more hash power online and unseat the 51% attacker.\n\nGame theory is very interesting in PoW.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia4h1xu",
+                                            "author": "FaceDeer",
+                                            "score": 11,
+                                            "created_utc": 1653604769.0,
+                                            "response": "That burns *every* miner, not just the \"guilty.\" With PoS you can eliminate the bad actor without harming any of the honest stakers.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia4ux06",
+                                                    "author": "LankeeM9",
+                                                    "score": 3,
+                                                    "created_utc": 1653611441.0,
+                                                    "response": "A mining algorithm hard fork is a nuclear option just like hard forking out a validators.\n\nIf you read my scenario you would see that the 51% staker never did any malicious activity otherwise they would get slashed.\n\nSo in that case your hard forking out someone just for being rich.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia4wgw8",
+                                                            "author": "FaceDeer",
+                                                            "score": 3,
+                                                            "created_utc": 1653612206.0,
+                                                            "response": "I assumed you were proposing that the 51% staker was doing something wrong that the slashing conditions weren't able to catch for some reason. If not, what's the problem? There's no need for a fork in that case.\n\nA hard fork to counter malicious miners in PoS can be a surgical strike rather than a \"nuclear\" one. It's still an extreme situation, of course, but the fact that it's *possible* is still a strong deterrent without having to actually do it.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia43d6o",
+                            "author": "Simple_Yam",
+                            "score": -4,
+                            "created_utc": 1653598679.0,
+                            "response": "\"In PoW you can introduce an infinite amount of hashrate\"\n\nAre you for real?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia44oma",
+                                    "author": "LankeeM9",
+                                    "score": 6,
+                                    "created_utc": 1653599244.0,
+                                    "response": "You conveniently forgot to put the quotes around infinite like I did.\n\nThe max stake is the supply in PoS.\n\nTheoretically you can introduce an unlimited amount of hashrate that\u2019s what the quotes around infinite are for.\n\nhttps://youtu.be/S9JGmA5_unY\n\nThis video is why I say \u201cinfinite.\u201d",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia45ywm",
+                                            "author": "Simple_Yam",
+                                            "score": 1,
+                                            "created_utc": 1653599807.0,
+                                            "response": "Your argument is weak though because an entity with enough resources to reach 51% of the hashrate can grow at the same pace or even faster than honest hashrate. At that point they're the prime customer of ASIC producers, meaning low hardware cost due to bulk buying, logistics figured out etc.\n\nIt's the same shit in both cases",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia4lp72",
+                    "author": "raulbloodwurth",
+                    "score": 7,
+                    "created_utc": 1653606973.0,
+                    "response": "People should understand that the purpose of POW in Bitcoin is to provide transaction ordering and finality within the rules enforced by the node network. POW miners have no control over the rules. Miners have NO role in governance aside from their dual role as a user. That was the whole point of the blocksize wars. Compare/contrast POS and POW as you may but at least get that straight.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia4pjn9",
+                            "author": "ianw11",
+                            "score": 2,
+                            "created_utc": 1653608813.0,
+                            "response": "in PoW, isn't governance literally derived from where the hashrate is?\n\nIf a protocol change is offered, the miners vote with their hashrate.\n\nThat sounds like they're directly governing the system...",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia4qte4",
+                                    "author": "raulbloodwurth",
+                                    "score": 3,
+                                    "created_utc": 1653609437.0,
+                                    "response": "No. In Bitcoin, miners don\u2019t vote. There is no fixed way of governance, but once a rule change reaches a very high threshold of social consensus, the miners (pools in reality) are asked to signal for or against it. Signaling is not voting. If the change is extremely popular, then the users enact a user activated soft fork (UASF) via the node network. Miners who don\u2019t update their node will have their blocks rejected by the node network and be essentially mining another blockchain.\n\nIn a sense, participants in the node network are like stakeholders without the formal staking mechanism of POS (and no reward). It functions like governance via a super duper majority since no one wants to enact a UASF. All of this is specific to Bitcoin and I am not commenting on other POW chains. \n\nThis robust node network is essential in Bitcoin\u2019s decentralization because it separates the roles of confirmation/consensus(nodes) and security (miners). Moreover, while confirmation is driven by social consensus, security is driven by physics. \n\nIn POS the roles of confirmation and security are combined into a single role. And POS is solely driven by social consensus. IMO this is the key difference between POS and the POW used by Bitcoin.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia5dn8m",
+                                            "author": "domotheus",
+                                            "score": 5,
+                                            "created_utc": 1653620650.0,
+                                            "response": "On-chain governance is not a requirement of proof of stake though? In Ethereum specifically, validators provide economic finality to transactions, but you can still run your own full node for free just like you can run a full node that doesn't mine. Non-mining and non-staking nodes play an important role in both cases of verifying what miners/stakers do.\n\n>Moreover, while confirmation is driven by social consensus, security is driven by physics.\n\nYou can call it physics if you want, but it's mostly economic in the end. There is a dollar amount you can invest to buy all the stuff you need to 51% attack Bitcoin, but it's (1) a ridiculously high amount and (2) playing by the rules and getting honest mining rewards is more lucrative, so that's what most people will do, further driving up the cost of (1).\n\nSame is true in PoS, the collateral held by stakers *is* the ridiculously high amount required to do a 51% attack since it'll be taken away from you if you don't play by the rules. And staking rewards just need to be high enough to attract more honest stakers to drive up the cost of attacking and getting a 51% stake slashed.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia4obxw",
+                    "author": "frank__costello",
+                    "score": 6,
+                    "created_utc": 1653608225.0,
+                    "response": "> \"you are letting the richest holders control the network,\"\n\nThis is only true in chains with on-chain governance, like Cosmos, Polkadot and Cardano\n\nEthereum PoS has no governance, having a large stake only gives you the power to order transactions within a block.\n\nValidators & miners don't control networks, nodes control networks",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia6jbix",
+                    "author": "i_kant_spal",
+                    "score": 2,
+                    "created_utc": 1653651232.0,
+                    "response": "To attack a PoS system, you need to acquire a huge part of that system. Therefore, by hurting the system, you would hurt yourself since you would be a major holder of the token. So, there is that negative incentive involved. While with a PoW system, you don't have to have skin in the game to attack the system. You can buy some powerful GPUs, attack the blockchain and then re-purpose those GPUs for some other task or just sell them. It would still be expensive, yeah, but there wouldn't be that negative incentive involved as there would with a PoS system.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia776bi",
+                            "author": "Matt-ayo",
+                            "score": 2,
+                            "created_utc": 1653663203.0,
+                            "response": "To the extent that it isn't true for PoS as well, that is only true for PoW systems which share a hash algorithm with a much larger PoW blockchain or perhaps for consumer hardware focused work functions. It *is* possible for Bitcoin miners to easily pillage select smaller chains through 51% attacks, but if miners were to damage the reputation of the largest chain (Bitcoin in this case), the only chain which can compensate their total mining effort, it would similarly have the same self-destructive effects.\n\nSimilarly, their hardware as well as their coins would become worthless, where as in PoS the coins are the cost of attack but the sole consequence a loss in faith in the attacked network brings - it seems like their is less invested and less to lose in PoS at this level. You only consider proof of work through the scope of GPU, consumer hardware bound work, which is myopic. ASICs will not have notable value outside of mining the most biggest chain featuring their algorithm, and any other chain with that algorithm after the attack will lose value as well.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia3iswn",
+                    "author": "rshap1",
+                    "score": 8,
+                    "created_utc": 1653590102.0,
+                    "response": "The main thing I don't like about proof of stake is that it doesn't tie down value to the real world. For someone to become a pow miner, they have to invest real world money in real world scarce resources.\nIt's very hard to create a new proof of work coin from scratch because of this and many small pow coins get 51% attacked because the up front cost to create a brand new network is too high.\n\nBut if I was in it to get rich quick, I'd make a new token or coin that's proof of stake, premine it and give myself a significant percentage, trade it back and forth with some dummy accounts to generate buzz, get it on an exchange, use 20% of the money I now have from the premine to blast social media with marketing and fake hype, ride the train till I exit and get rich. Rinse and repeat the greater fool theory.\n\nWith proof of work, that's impossible to do because having a high enough hashrate to resist a 51% attack takes too many resources. So that's why I think BTC, BCH, Monero, LTC and even doge have real world value. Their network effect is valuable even if some of these projects aren't that interesting to me personally.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia4d7ty",
+                            "author": "rshap1",
+                            "score": 7,
+                            "created_utc": 1653603002.0,
+                            "response": "Another point to add, if a PoS chain splits, the stakers retain equal control of both chains since the value isn't tied to the real world. When it comes to PoW, the miners must choose which coins to mine. I like that a lot.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia4inq8",
+                                    "author": "FaceDeer",
+                                    "score": 3,
+                                    "created_utc": 1653605521.0,
+                                    "response": "That's not the case with Ethereum's PoS, though. If the chain splits then a staker who tries to sign blocks on both forks will be slashed on both of them, since they'll have signed blocks that each fork considers to be invalid. Stakers must chose one side or the other, they can't follow both of them.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iackmcn",
+                                            "author": "wanglubaimu",
+                                            "score": 1,
+                                            "created_utc": 1653768267.0,
+                                            "response": "You need to set up a new validator of course but the original point stands, the cost is trivial. Might even be able to run it on the same machine, depending on the setup. \n\nThat said I'm not sure if that's a crucial concern in the first place. There's nothing inherently wrong with forks. And at least as important as the tech, if not more, is the community. Attention is limited, there's only so many projects a person can actively participate in. There is no risk of endless splits just like the ease of writing new code outside of the blockchain space isn't a danger. People can code whatever they like, doesn't mean anyone is going to use it. The same way that we already have thousands of crypo projects but most of these aren't going to go anywhere because no one even pays attention if your project is simply the 50th copy of Bitcoin. The attention and value will stay with the main winning projects, not necessarily the same ones.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ia5t5rp",
+                                    "author": "Spacesider",
+                                    "score": 2,
+                                    "created_utc": 1653629868.0,
+                                    "response": "> Another point to add, if a PoS chain splits, the stakers retain equal control of both chains since the value isn't tied to the real world.\n\nNot with Ethereum - 66% of the vote is needed to finalise a chain.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia3wpxb",
+                            "author": "UncertainOutcome",
+                            "score": 3,
+                            "created_utc": 1653595859.0,
+                            "response": "That's only a valid concern for newly created coins, though it is a good point. I'd propose that an evolution system might be the best way - start PoW to ensure broad distribution, then switch to PoS once energy consumption gets too high. Ethereum is doing it and it seems to be working well.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia3cxe6",
+                    "author": "humbleElitist_",
+                    "score": 3,
+                    "created_utc": 1653587705.0,
+                    "response": "I don\u2019t think I\u2019d seen that third bullet point. Interesting point!\n\nUnfortunately I don\u2019t have any real information or argument to share. Just wanted to express that, and also that I think this is a good post.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia5p25u",
+                    "author": "bdjilka",
+                    "score": 1,
+                    "created_utc": 1653627079.0,
+                    "response": "The POS blockchain is run by those who have more stake (more money), this is the biggest problem.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia70t8a",
+                            "author": "missquentin",
+                            "score": 4,
+                            "created_utc": 1653660469.0,
+                            "response": "I can't get over how naive of a take this is.  The whole point of bitcoin is game theory and not trusting anyone to behave honestly, but aligning incentives to entice people to behave honestly.\n\nBTC does not have diminishing returns on investment.  \"The rich get richer\" on BTC just as much as any PoS coin.  Whomever has unlimited money can trivially attack either network.  Whatever security differences there are between PoW and PoS, favoring the rich is not a difference between them.  How much capital you are willing to invest into securing the network is directly proportional to how much the network will reward you in bother schemes.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia8if0g",
+                                    "author": "FaceDeer",
+                                    "score": 1,
+                                    "created_utc": 1653683355.0,
+                                    "response": "Indeed, I would argue that \"the rich get richer\" *more* on a PoW chain than a PoS one. Proof of work has built-in economies of scale that don't exist for proof of stake. If you're running a huge warehouse of ASICs on an industrial scale then it costs you fewer dollars to add one more megahash to your operation than it would cost for a guy mining out of his apartment closet.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia8omu3",
+                                            "author": "missquentin",
+                                            "score": 3,
+                                            "created_utc": 1653686272.0,
+                                            "response": "I do think there's some nuance in that operating, say 10% of hash power at time t doesn't mean you will have 10% of hash power at time t + 1.  Someone with 10% of Eth can stake and retain their stake forever without buying new equipment ever.  But this also has some interesting properties from a security standpoint.  If there is an honest majority at time t, then there is probably an honest majority at time t + 1.  Rich individuals could be bribed, perhaps, but that's no different than PoW.  Idk, it's a complicated problem, and for simplicity's sake I choose to be a PoS maxi.  I can understand the opposite opinion and PoW maxis, but I can't understand it through the lens of hating the rich.  Blockchain is all about economic value securing data.  You literally must have money to participate.  In the old days you could mine BTC on a potato, but now you can't.  So yeah, if your only problem with PoS is that the rich get richer, then I don't really take your opinion seriously.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iacb14k",
+                                                    "author": "wanglubaimu",
+                                                    "score": 1,
+                                                    "created_utc": 1653763674.0,
+                                                    "response": "I think what most are forgetting is that the biggest cost is the electricity, which large miners get cheaper. Even at cheap Canadian prices it would cost you around 2000 USD in residential electricity per year just to run a 1600W miner. The large farms have special deals. There's a reason the mining is done almost exclusively by large farms. With increasing hash power the difficulty rose. The centralization was sort of backed in the design, although it's unlikely that was the original intention. Satoshi probably didn't foresee Bitcoin ASICs.\n\nThis problem doesn't exist in PoS in the same way, but of course there are other ways of centralization PoS can  be susceptible to.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia78jma",
+                            "author": "Matt-ayo",
+                            "score": 1,
+                            "created_utc": 1653663773.0,
+                            "response": "They certainly get more control, but the scope of that control ranges from full governance down to transaction ordering and censorship at the low end. \"Run by\" is broad, and power exists across the whole spectrum, but its worth knowing the difference.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia6t7kc",
+                    "author": "MMinjin",
+                    "score": 1,
+                    "created_utc": 1653656883.0,
+                    "response": "I think the biggest problem with these POW vs POS arguments/debates is that often times both sides are arguing completely different traits and are talking past each other.\n\nPOW advocates like the security but probably most importantly, they like the idea that being rich doesn't make you automatically richer over time, i.e. that coins will naturally trend towards the biggest holders.\n\nPOS advocates talk about energy efficiency and security as well and completely dodge the philosophical/idealistic argument about the rich getting richer that is considered a key element to the POW scheme.\n\nAny time these debates come up, you have to pick apart the different pieces that each side is talking about and address each separately. Security, governance, incentives, etc. I haven't seen anyone do a good job of that yet.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia8jlg0",
+                            "author": "FaceDeer",
+                            "score": 2,
+                            "created_utc": 1653683896.0,
+                            "response": "> POW advocates like the security but probably most importantly, they like the idea that being rich doesn't make you automatically richer over time, i.e. that coins will naturally trend towards the biggest holders.\n\nThis is the *opposite* of what's really the case, though. Under proof of work you can mine more efficiently using an expensive industrial-scale mining operation than you can with an ASIC in your apartment closet, so the rich earn a higher rate of return under PoW than the poor do.\n\nUnder Ethereum's PoS there's just the flat cost of the computer you're running the validating node software on, which can be an ordinary laptop or whatever. It's pretty cheap. Beyond that there are no costs associated with validating, so the rate of return is almost exactly the same for a rich staker as a poor one. Someone who's staked 3200 Ether and someone who's staked 32 Ether will both get the same percentage return on their investment.\n\nBelow 32 Ether staked the rate of return does go down because then you're having to stake as part of a pool, and there'll be pool fees on top. But that's on a layer above the protocol itself so it's hard to consider an inherent problem.\n\nWhenever \"the rich get richer\" brought up as an argument against PoS, it's actually much more of an argument against PoW.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia8lve9",
+                                    "author": "MMinjin",
+                                    "score": 2,
+                                    "created_utc": 1653684961.0,
+                                    "response": "The scaling advantage is minimal unless they own their own power plant and their own ASIC fab. What overhead costs do you have? Your ASIC in the closet has better margins than they could have. But none of that matters. They are in the security and transaction processing business. They have actual costs and overhead. They try to earn their money and they need to sell earned coins in order to stay in business. Right now most are making going money but there is no guarantee of it. There is no work done in POS. They don't need to do anything other than sit still and grow richer. There are no costs. No friction. The price doesn't even need to go up for them to just keep getting richer and create generational wealth.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia8nj0c",
+                                            "author": "FaceDeer",
+                                            "score": 0,
+                                            "created_utc": 1653685738.0,
+                                            "response": "Which is why the rewards issued under PoS are much, much smaller than the rewards issued under PoW. Since stakers don't have the large ongoing expenses of PoW miners that part of the reward was eliminated.\n\nStaking does have a cost, mind you. There is an [opportunity cost](https://en.wikipedia.org/wiki/Opportunity_cost) that comes with locking your wealth up in the staking contract. This opportunity cost is directly proportional to the size of the stake, though, so it affects large stakers and small ones equally. There's also a risk of slashing in the event that your validator malfunctions, so you need to put effort into ensuring that your setup is robust and correct.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "iac4ts7",
+                                            "author": "wanglubaimu",
+                                            "score": 1,
+                                            "created_utc": 1653760666.0,
+                                            "response": "> There is no work done in POS. They don't need to do anything other than sit still and grow richer. There are no costs.\n\nTell me you've not even looked into the technicalities of staking without saying so. What you're describing might using staking as a service (and paying a fee for that). Running an actual validator is a lot more complicated than that, and comes with costs and risks. In Ethereum you can get slashed for example.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia3ners",
+                    "author": "Simple_Yam",
+                    "score": -6,
+                    "created_utc": 1653591990.0,
+                    "response": "PoW is PoS but with energy and electronic waste. The thing it does best is having the possibility to NOT premine coins - which was detrimental to the success of Bitcoin. But that being said, does it matter if after launching, the richest entities can mine most of it anyway?\n\nLiquid staking does not threaten the integrity of the network if done right. Because in its true form it's just a permissionless smart contract that delegates coins to many validators (unless you're ethereum and decide that delegated PoS sucks so you don't implement it and later on solutions like Lido take over...).",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia3w2wl",
+                            "author": "Matt-ayo",
+                            "score": 5,
+                            "created_utc": 1653595586.0,
+                            "response": "I don't agree that PoW and PoS are the same except for 'one is stake one is hash.' If that were true the whole system around slashing wouldn't be necessary, and while that isn't necessarily a deal breaker I believe it demonstrates that they are not so similar as you describe. \n\n> Liquid staking does not threaten the integrity of the network if done right. Because in its true form it's just a permissionless smart contract that delegates coins to many validators\n\nThat's fair, though the source I've seen (and admittedly haven't looked much deeper than one article) was criticizing the semi-centralized nature of one of these staking pool contracts (multi-sig administrator control etc.) and citing its network effect as a reason to think majority stake will accumulate in that contract.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia46b34",
+                    "author": "rmczpp",
+                    "score": 0,
+                    "created_utc": 1653599957.0,
+                    "response": "Both PoW and PoS have pros and cons, but I'm really hoping to see something unseat them both. Like a PoS that requires some on-chain proof that one wallet belongs to one person. This would mean blockchains can apply their own restrictions, like whale limits to help promote decentralisation. \n\nHaven't found anything satisfying this yet. Worldcoin sounds interesting but too dystopian. And then I got excited when I heard about StepN (GMT), as I assumed they were using GPS data for some sort of proof of identity for validating/delegating, but then it turned out to be something less interesting and a bit more sketchy.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia4lxa1",
+                            "author": "Matt-ayo",
+                            "score": 2,
+                            "created_utc": 1653607082.0,
+                            "response": "There is a term for that: \"Sybils.\" It refers to the practice of making one agent appear as multiple and the reason we needed proof of work in the first place - otherwise people could just spin up a ton of virtual machines to rig votes.\n\nIt's a problem every blockchain needs to solve, and most attempts to identify users don't work because they break centralization or because identifying users is just not something a computer can reliably do. Just think about how much work the government does to issue credible IDs and identify theft still occurs.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia666vw",
+                                    "author": "rmczpp",
+                                    "score": 1,
+                                    "created_utc": 1653640527.0,
+                                    "response": "Thanks, I'd never come across that term before. I actually had an idea last night to use captcha to solve this problem, but it seems someone else beat me to it by at least 8 months [https://www.coindesk.com/business/2021/08/16/human-protocol-is-bringing-captcha-to-earn-to-ethereum/](https://www.coindesk.com/business/2021/08/16/human-protocol-is-bringing-captcha-to-earn-to-ethereum/)\n\nWonder why I've never heard of this and why it wasn't more successful.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia78cee",
+                                            "author": "Matt-ayo",
+                                            "score": 1,
+                                            "created_utc": 1653663690.0,
+                                            "response": "It's not a great replacement for proof of work or proof of stake. The \"Turing Test\" is the rough criteria for artificial intelligence stating that if a human cannot tell a human  apart from a computer, it has passed. The fact that machine learning has so much fire behind it and is so powerful should give you a lot of pause when trusting any human recognition system at scale and at high stakes.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia7e85x",
+                                                    "author": "rmczpp",
+                                                    "score": 1,
+                                                    "created_utc": 1653666109.0,
+                                                    "response": " I agree that deep learning etc is unbelievably advanced right now. The thing is, it doesn't have to be specifically captcha, and it doesn't have to be the same thing every week. The key is finding a task that replaces computer load with human load (ew), then we can just assume that the top validators will be people who are literally spending 18 hours a day completing these tasks. Perhaps there are some problems AI is struggling with? Jumbled music identification? Interpreting nonsense sentences?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia8lzan",
+                                                            "author": "FaceDeer",
+                                                            "score": 1,
+                                                            "created_utc": 1653685012.0,
+                                                            "response": "The problems that AI is struggling with today may at any point suddenly become problems that AI has solved better than humans, though, so there'd need to be a mechanism for constantly changing what the problems are. And someday, perhaps sooner than you'd think, there may be no problems at all left in the first category. So I really don't see this as a viable approach.\n\nWhy is it necessary in the first place? The purpose of a blockchain's proof-of mechanism is not some sort of grand endeavor to make the world more egalitarian or such, the purpose is to solve the Byzantine generals problem. The goal of the proof-of mechanism is to ensure that the blockchain's state can be updated in a trust-free environment. You can add other goals to the blockchain too if you like, Ethereum's got smart contracts for example, but that's a separate issue from the consensus mechanism.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia8yxk2",
+                                                                    "author": "rmczpp",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653691261.0,
+                                                                    "response": "\n>Why is it necessary in the first place?\n\nIt's purely to solve the PoW energy problem without sacrificing decentralisation in the way PoS does. It would effectively be PoS with an addition on it so I don't think it would work worse than PoS, I'm just interested in what the potential options are.\n\nThere may one say be no problems that ai can't solve (no guarantees of this though), but I wouldn't say this plan is a no go. If it does then we are effectively back to PoS.",
+                                                                    "depth": 7,
+                                                                    "comments": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia6tlu2",
+                    "author": "josh2751",
+                    "score": 1,
+                    "created_utc": 1653657080.0,
+                    "response": "Why would you think Eth is the \"de-facto leader\" on the subject when they don't have anything deployed?\n\nTezos, Cardano, and Algorand are the *actual* leaders in the space of Proof of Stake coins, as all three have running POS blockchains and in Tezos' case have for years.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia8mtxl",
+                            "author": "FaceDeer",
+                            "score": 0,
+                            "created_utc": 1653685409.0,
+                            "response": "[Ethereum has been running PoS in parallel with PoW on its main chain for a year and a half now, since December 1 2020](https://ethereum.org/en/upgrades/beacon-chain/). That's why the upcoming fork to get rid of PoW is called the \"merge\" - it's going to merge the PoW portion of the protocol into the already-existing PoS portion.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia8wphv",
+                                    "author": "josh2751",
+                                    "score": 2,
+                                    "created_utc": 1653690161.0,
+                                    "response": "Lol. ETH is a POW chain. Maybe someday they\u2019ll become a POS chain, but there\u2019s no reason to believe that as they keep pushing it off.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia904a3",
+                                            "author": "FaceDeer",
+                                            "score": 0,
+                                            "created_utc": 1653691848.0,
+                                            "response": "Did you read the URL I linked? Ethereum's been running PoS for a year and a half now. That's an actual fact that is real, not a \"belief.\" Stakers have been earning actual Ether as a result of staking on Ethereum.\n\nIt is also a PoW chain right now, but the next upgrade - which has been fully coded and is now in the final phases of testing - will remove the PoW component. There is no other upgrade scheduled before the one that removes PoW, it's next in the queue.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia913qk",
+                                                    "author": "josh2751",
+                                                    "score": 2,
+                                                    "created_utc": 1653692337.0,
+                                                    "response": "You realize they\u2019ve been telling this story for three years, right?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia91g30",
+                                                            "author": "FaceDeer",
+                                                            "score": 0,
+                                                            "created_utc": 1653692510.0,
+                                                            "response": "Yes, and? The fact that something hasn't been finished yet doesn't mean progress towards finishing it isn't being made, or that it won't eventually finish. If it did then nothing at all would ever be finished because it all starts in a non-finished state.\n\nYou can check up on the progress yourself. [Here's the merge readiness checklist](https://github.com/ethereum/pm/blob/master/Merge/mainnet-readiness.md).\n\nDownvoting me isn't going to slow down that progress either, BTW.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia91r5u",
+                                                                    "author": "josh2751",
+                                                                    "score": 2,
+                                                                    "created_utc": 1653692666.0,
+                                                                    "response": "And yet my original point stands. Why would anyone pretend ETH is leading in this space. There are three premiere blockchains that are running POS right now and have been since before ETH even thought of it. \n\nETH is years behind, not \u201cleading\u201d anything. Even if the story you tell - which no one believes - were to be true.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "ia92hgw",
+                                                                            "author": "FaceDeer",
+                                                                            "score": 0,
+                                                                            "created_utc": 1653693038.0,
+                                                                            "response": "They're running different kinds of PoS than what Ethereum is working on. Ethereum's PoS system is much more sophisticated.\n\nIf \"no one believes\" that Ethereum is rolling out the merge, what's with all the merging of testnets that's been going on? People are pretending?",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "ia9404w",
+                                                                                    "author": "josh2751",
+                                                                                    "score": 2,
+                                                                                    "created_utc": 1653693808.0,
+                                                                                    "response": "More sophisticated?\n\nLOL.\n\nYou're a shill and you have *no* idea what you're talking about.  \n\nI don't give a fuck what the ETH heads are doing on testnets, they've been fucking around on testnets for years.  Show me a working POS chain and we'll see.  Tezos figured it out years ago, Algorand figured it out years ago, and Caradano figured it out years ago.",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia7j9rg",
+                    "author": "0x1a3c3e7",
+                    "score": 1,
+                    "created_utc": 1653668171.0,
+                    "response": "Staking can't be stored in a blockchain and used by new nodes to differentiate the genuine blockchain from all fakes, like work is.  So, POS blockchains require new nodes to use a different, and probably less secure, method of blockchain authentication.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

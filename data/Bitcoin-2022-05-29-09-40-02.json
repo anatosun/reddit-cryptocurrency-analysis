@@ -1,0 +1,160 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v07jrl",
+            "title": "Bitcoin references inputs by transaction hash and an index. What disadvantages are there to referencing inputs by block height?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/v07jrl/bitcoin_references_inputs_by_transaction_hash_and/",
+            "author": "XiPingTing",
+            "created_utc": 1653816305.0,
+            "score": 9,
+            "num_comments": 15,
+            "subreddit": "Bitcoin",
+            "selftext": "The outputs of a block can be summarised as a height and {public keys, values} pairs.\nIf I make a transaction later, I need to include my public key anyway, so I feel I should be able to summarise my inputs as simply a height (or a series of them).\nI appreciate this isn\u2019t what bitcoin does, but could it? It would compress transaction inputs down to single a number, and UTXO entries down to a public key and a list of {height, value} pairs.\n\nThis feels like a good which means I haven\u2019t invented it. Can anyone point me to any information on it or maybe let me know why it doesn\u2019t work?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iafhfhx",
+                    "author": "pwuille",
+                    "score": 12,
+                    "created_utc": 1653834197.0,
+                    "response": "One obvious downside of this is that you cannot reference transactions which have not been mined yet. Any protocol which involves multiple dependent unbroadcast but presigned transactions cannot work with such a change.\n\nBeyond that, it depends on where you want this applied:\n\n* As just a reference scheme (not in the Bitcoin P2P protocol or algorithms itself, but just in higher-level protocols that wish to somehow communicate which transactions they mean): that's perfectly feasible, and is in fact in use. Lightning's protocol references transaction outputs using height/txnumber/outputnumber instead of txids.\n* In the transaction serialization between Bitcoin peers (but txids are still computed using the actual previous transaction's hash and index). This obviously wouldn't change the cryptographic properties as it's just a communication compression scheme. It can work (if you have a workaround for the issue above; e.g. making it optional, and still permit the \"uncompressed\" encoding when spending unconfirmed outputs). It could work, though it comes at a cost (an additional lookup nodes need to do on receipt to convert to the txid/index).\n* In both the transaction serialization and txid computation. This would completely rule out the ability to spend unconfirmed outputs (no way to reference them) as well as break reorg safety (during a reorg a different transaction could end up in the same location, so the reference you claim to spend now refers to something else, and your transaction is invalidated).\n\nAlso note that it isn't generally true that you need to reveal your public key again later. While it's true that for P2PKH and P2WPKH outputs the output contains a hash of a public key, and the input spending it the full public key, that is not a requirement for all scripts. In particular, the new P2TR (taproot) constructions permits outputs that are just a public key, and inputs that contain just a signature.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iafr677",
+                            "author": "Bitcoin__Hodler",
+                            "score": 4,
+                            "created_utc": 1653838687.0,
+                            "response": "Thanks for everyhing Peter.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iagvjwv",
+                            "author": "XiPingTing",
+                            "score": 1,
+                            "created_utc": 1653857313.0,
+                            "response": "So if you have a chain of transactions but the first transaction isn\u2019t fully signed, whoever has the key to sign that transaction has the ability to release the other transactions. I can see this being useful in situations where you want prove an arbiter has the power to control whether a series of transactions occurs, but not to claim the coins for themselves.\n\nI feel any dishonest party could just prespend those coins and so you lose nothing by just sending the trusted arbiter the signed transactions via some secure tunnel.\n\nDo you have any other examples of where you might want signed but unbroadcast transactions?\n\nFor the P2TR case, I guess Schnorr signatures can be shorter than the list of public keys. It\u2019s a nice option to have but it still sounds generally bulkier than what I\u2019ve described.\n\n(Hugely appreciate you taking the time to respond to my first question Peter)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iajeorw",
+                                    "author": "pwuille",
+                                    "score": 2,
+                                    "created_utc": 1653914688.0,
+                                    "response": "I believe that Eltoo (a proposed alternative to the penalty mechanism used in Lightning, dependent on the ANYPREVOUT script feature) uses pairs of dependent, pre-signed, unbroadcast transactions, which are only broadcast in case the other party is acting dishonestly. I'm not an expert on this though.\n\nA simpler example is just the CPFP (\"child-pays-for-parent\") concept, where if someone receives a transaction with low transaction fee (\"the parent\"), they can move those coins with a new transaction with higher fee (\"the child\"), and miners will consider the collection of both unconfirmed parent and child at once, causing the priority for the parent to be included in a block to go up (as the child can't be mined without also mining the parent).",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iaklk34",
+                                            "author": "XiPingTing",
+                                            "score": 2,
+                                            "created_utc": 1653934915.0,
+                                            "response": "Thank you for this. CPFP is clearly superior with UTXO (although you could achieve the same by preempting mined block heights but that smells).\nWhat I\u2019ve described is not a good network representation of transactions. I think your view of it as a compression algorithm for internal node representations is enlightening.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iamxn6b",
+                                                    "author": "igadjeed",
+                                                    "score": 1,
+                                                    "created_utc": 1653980889.0,
+                                                    "response": "> you could achieve the same by preempting mined block heights\n\nYour input sigs would break",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iafh4jo",
+                    "author": "na3than",
+                    "score": 3,
+                    "created_utc": 1653834047.0,
+                    "response": "All miners are working on the next block simultaneously. If miner A says your transaction was confirmed in block 765432 while miner B says block 765432 doesn't include your transaction, it's a lot more informative to have a unique fingerprint for the block that you think your transaction should be in than just a block height in an unnamed fork of the chain.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaersgx",
+                    "author": "Dormage",
+                    "score": 1,
+                    "created_utc": 1653817095.0,
+                    "response": "So instead of referencing the actual transaction you would reference the block hight and then have the nodes validate the transaction by searching the referenced block for trasactions in order to validate they are indeed unspent?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaeu2w9",
+                            "author": "XiPingTing",
+                            "score": 1,
+                            "created_utc": 1653819156.0,
+                            "response": "Correct, but a sensible implementation would index unspent public key block heights. \u2018Search\u2019 suggests an O(N) penalty.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaevi4n",
+                                    "author": "Dormage",
+                                    "score": 1,
+                                    "created_utc": 1653820429.0,
+                                    "response": "Naturally. So the suggestion is to reduce block storage of transactions by replacing referenced transaction currently a sha256 of 33bytes with and index to a block, and a transction index within the block?\n\nThinking out loud:\n\nAfaik, bitcoin does not store heights in blocks. A reference to a block is a sha256 hash. Clients do not index the linked list by the hash. This woulf imply searching for the block ?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iaex1xe",
+                                            "author": "XiPingTing",
+                                            "score": 1,
+                                            "created_utc": 1653821771.0,
+                                            "response": "When building up the index, yeah you need to look in all the blocks.\n\nBut in that index, you just store the unspent amounts for each public key at each height.\n\nThat index has enough information for both verification of inputs and transaction generation.\n\nIn terms of keeping track of block heights, you would just use a counter, which might involve an extra traversal of the chain while indexing?\n\nI guess if you need to unpick an orphan, you need to rebuild your index. Is that what you\u2019re getting at? You probably need to keep the top few blocks of the chain unindexed and perform the long search you\u2019re describing to prevent this happening too often.\nSorry if I\u2019ve missed your point.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iamyrwn",
+                                                    "author": "igadjeed",
+                                                    "score": 1,
+                                                    "created_utc": 1653981881.0,
+                                                    "response": "> You probably need to keep the top few blocks of the chain unindexed\n\nA chain tip reorg can be arbitrarily deep, deeper than a \"few blocks\"",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "iamy3h2",
+                                            "author": "igadjeed",
+                                            "score": 1,
+                                            "created_utc": 1653981289.0,
+                                            "response": "> Afaik, bitcoin does not store heights in blocks. A reference to a block is a sha256 hash\n\nThe block height is mandatory in the coinbase transaction, after a specific BIP was implemented. That means the OP's scheme doesn't work for older transactions  \n\nApart from that, everything you said about block header hash being the block ID is important. Even though the height is recorded, it's not the block ID, and can not be pressed into that role",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iamx7c8",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1653980518.0,
+                    "response": "I think it works that way in Mimblewimble. Part of the Mimblewimble privacy protocol is to store a block as a list of inputs and outputs, strip out the transactions. This makes a block into something like a giant CoinJoin transaction, removes the implied link between a transaction's inputs and its outputs  \n\nThis is implemented in the GRIN coin  \n\nI suggest block height is unreliable, and block hash should be used, because a tied mining race, followed by a tip reorg, requires processing 2 different blocks at the same height  \n\nAlso, as a general principle, a Bitcoin block is identified by its header hash. The block height is part of the data, has a role, but is not a block ID. It is an unwise person who thinks this should be changed\n\n> Bitcoin references inputs by transaction hash and an index\n\nNot accurate. A Bitcoin tx input references its outpoint (the coin being spent by the input) by txID hash and output number\n\n> It would compress transaction inputs down to single a number\n\nOnly the outpoint part of the tx input. The big part of a tx input is the scriptSig\n\n---\n\nTo add to the /u/pwuille comment, Bitcoin nodes accept new unconfirmed transactions which spend the outputs of existing unconfirmed transactions. Bitcoin consensus allows a dependency pair (parent and child) to be confirmed in the same block (not just a pair, but a chain). CPFP is one use of this, but it is also common to send multiple payments to multiple recipients, where each transaction spends the change output of the previous. In your design, a transaction can only spend outputs from confirmed transactions. This would delay the confirmation of a dependency chain for as many blocks as there are transactions, where all can currently be confirmed in a single block",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

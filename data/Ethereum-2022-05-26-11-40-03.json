@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/ethereum/comments/uy5ewa/how_hard_is_it_to_find_out_the_correct_seed/",
             "author": "hegedis",
             "created_utc": 1653564365.0,
-            "score": 6,
-            "num_comments": 27,
+            "score": 13,
+            "num_comments": 49,
             "subreddit": "ethereum",
             "selftext": "I have two wallet, one with 12 words (hot wallet) and the other one has 24 words seed (ledger). I wrote the 36 words on a paper in a random order. And the correct ordering on a separate paper.\n\nHow hard would it be to someone to calculate the correct wallet from this randomized 36 words table?\n\nI plan to store the words in separete houses and the order numbering also in different places.",
             "stickied": false,
@@ -23,16 +23,36 @@
                 {
                     "id": "ia23dyp",
                     "author": "UbiquitousLedger",
-                    "score": 6,
+                    "score": 17,
                     "created_utc": 1653568575.0,
-                    "response": "36!/( 12! * ( 36 - 12 )! )\n\n36!/( 24! * ( 36 - 24 )! )",
+                    "response": "12! * 36!/( 12! * ( 36 - 12 )! )\n\n24! * 36!/( 24! * ( 36 - 24 )! )",
                     "depth": 1,
-                    "comments": []
+                    "comments": [
+                        {
+                            "id": "ia3g568",
+                            "author": "ItsAConspiracy",
+                            "score": 5,
+                            "created_utc": 1653589017.0,
+                            "response": "That's just the number of ways to select 12 (or 24) words out of 36 words. The order of words matters, so you have to multiply your result by the number of orderings, which is 12! (or 24!).",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia562j2",
+                                    "author": "UbiquitousLedger",
+                                    "score": 1,
+                                    "created_utc": 1653616886.0,
+                                    "response": "Ah, thats right, good catch! Edited, thanks!",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": "ia26ji9",
                     "author": "mooremo",
-                    "score": 3,
+                    "score": 11,
                     "created_utc": 1653570209.0,
                     "response": "This is unlikely to provide any additional security for you and it makes your back up and recovery process more complicated. I would not advise this.",
                     "depth": 1,
@@ -40,9 +60,57 @@
                         {
                             "id": "ia2hp7g",
                             "author": "test_1111",
-                            "score": 1,
+                            "score": 2,
                             "created_utc": 1653575211.0,
                             "response": "Yeh it seems like a bad idea all round. One of the houses has the full answer, the other has a near useless version which could confuse the whole process, however many years or decades down the track they're needed. \n\nPlus if OP loses the full answer... Well, good luck with the useless/confusing/random one.\n\nIt's basically a system of 1 proper copy and 1 curve-ball useless one which is more of a problem than it's worth (it's worth being less than nothing)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia3gidi",
+                                    "author": "ItsAConspiracy",
+                                    "score": 1,
+                                    "created_utc": 1653589168.0,
+                                    "response": "One possibility would be to store the words in two houses, and the orderings in two different houses.\n\n(Or in a safe deposit box, or buried in a field, etc.)",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia54u41",
+                                            "author": "mooremo",
+                                            "score": 1,
+                                            "created_utc": 1653616286.0,
+                                            "response": "Again, way more complicated than it needs to be. Keep it simple.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia54n5j",
+                            "author": "HuntersAvenue",
+                            "score": 1,
+                            "created_utc": 1653616199.0,
+                            "response": "yep, it's way more complicated for the security added.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia2im2n",
+                    "author": "NinjAsylum",
+                    "score": 5,
+                    "created_utc": 1653575596.0,
+                    "response": "I think you're going a little overboard for $20 lol",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia2jnmh",
+                            "author": "hegedis",
+                            "score": 2,
+                            "created_utc": 1653576031.0,
+                            "response": "ive gotta save those $20 for later, it might worth a whole hamburger sometime in the future",
                             "depth": 2,
                             "comments": []
                         }
@@ -51,7 +119,7 @@
                 {
                     "id": "ia2a2xd",
                     "author": "revrund_H",
-                    "score": 2,
+                    "score": 3,
                     "created_utc": 1653571903.0,
                     "response": "If you are using a \"two location storage\" strategy to protect a seed phrase, I think there are more secure ways of dividing the phrase...although I haven't done the math!\n\n&#x200B;\n\nOne possibility is to divide the phrase in half, randomize the order, add a enough dummies to make it look like you are storing a complete seed.   So each location would have a seed that looks complete, and a decoder  for the other stored list.  Anyone finding the the scrambled seed would assume it is a complete seed...not knowing that you had really divided the seed into two seeds.\n\n&#x200B;\n\nA bit complicated....and that's perhaps the downfall...",
                     "depth": 1,
@@ -59,7 +127,7 @@
                         {
                             "id": "ia2ituz",
                             "author": "cryptolulz",
-                            "score": 1,
+                            "score": 3,
                             "created_utc": 1653575686.0,
                             "response": "Why not use shamir seed 3/5? Same effect but no need to memorize what the silly words are.",
                             "depth": 2,
@@ -70,7 +138,7 @@
                 {
                     "id": "ia2axx0",
                     "author": "_JohnWisdom",
-                    "score": 2,
+                    "score": 3,
                     "created_utc": 1653572297.0,
                     "response": "The order would be of little to no importance for security. Separating chunks of seeds in different locations is where you add security. Having all the seed words in one location, in any order, would be trivial to brute force",
                     "depth": 1,
@@ -87,18 +155,96 @@
                         {
                             "id": "ia2fuik",
                             "author": "ItsAConspiracy",
-                            "score": 1,
+                            "score": 0,
                             "created_utc": 1653574435.0,
                             "response": "80 bits of entropy for 24 words in scrambled order. That's marginal against a sophisticated and well-funded attacker, but it's not trivial.",
                             "depth": 2,
-                            "comments": []
+                            "comments": [
+                                {
+                                    "id": "ia2stin",
+                                    "author": "_JohnWisdom",
+                                    "score": 1,
+                                    "created_utc": 1653579762.0,
+                                    "response": "A couple billion of combination is trivial for a modern gpu\u2026 what is your point?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia3fbdv",
+                                            "author": "ItsAConspiracy",
+                                            "score": 0,
+                                            "created_utc": 1653588678.0,
+                                            "response": "That 2^80 is a couple billion *times 64 trillion*. It'd take about a century to brute force, if you got as many attempts per second as a decent bitcoin ASIC.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia2hsyf",
+                    "author": "HeatSeekingPanther",
+                    "score": 2,
+                    "created_utc": 1653575256.0,
+                    "response": "24!. It would take a high end 4GHz gaming computer 4,915,017 years to crack the seed.\n\nSo with that said. Be careful splitting the seed phrase up. Lose part of it and you lose all of it. Multisig is the way.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia2rs5f",
+                    "author": "LogicalT54",
+                    "score": 2,
+                    "created_utc": 1653579345.0,
+                    "response": "Give me the 36 words and I'll tell you how long it would take. Can even break it down to high performance computing versus home computer. Note I would need these to be real accounts with real tokens.    :)",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia2tqpn",
+                            "author": "hegedis",
+                            "score": 2,
+                            "created_utc": 1653580132.0,
+                            "response": "Sure, let me find them",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia3naj0",
+                                    "author": "LogicalT54",
+                                    "score": 2,
+                                    "created_utc": 1653591942.0,
+                                    "response": "I'll be waiting!     :)\n\nSeriously though. I offer wallet recovery services and what you are proposing is not a good idea. Given all the seed words but in random order, I can usually brute force it in less than a day...",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia3pf45",
+                                            "author": "hegedis",
+                                            "score": 1,
+                                            "created_utc": 1653592822.0,
+                                            "response": "What about adding 12 more words to it?\nWould it make your job harder? How much harder?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia4d194",
+                                                    "author": "LogicalT54",
+                                                    "score": 1,
+                                                    "created_utc": 1653602919.0,
+                                                    "response": "Should still be able to brute force it in a reasonable amount of time. I can easily rent HPC instances in the cloud that are many times more powerful than  a good gaming computer at home.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "id": "ia1zpvw",
                     "author": "gcofilyvkqwgsgn",
-                    "score": 5,
+                    "score": 6,
                     "created_utc": 1653566500.0,
                     "response": "[https://www.hackmath.net/en/calculator/combinations-and-permutations?n=36&k=24&order=0&repeat=0](https://www.hackmath.net/en/calculator/combinations-and-permutations?n=36&k=24&order=0&repeat=0)\n\nNumber of combinations (for both 12 and 24): 1251677700\n\n(Not much)",
                     "depth": 1,
@@ -114,7 +260,7 @@
                                 {
                                     "id": "ia23e1v",
                                     "author": "anythingapplicable",
-                                    "score": 0,
+                                    "score": 1,
                                     "created_utc": 1653568576.0,
                                     "response": "Yes, the order is important. But take into account that there are CPU's and GPU's and ASIC's which are specialized in parallel processing which can generate trillions of guesses per second which will brute force their way into your wallet given enough time when they have a relatively small sample size to guess from.",
                                     "depth": 3,
@@ -122,7 +268,7 @@
                                         {
                                             "id": "ia2468n",
                                             "author": "hegedis",
-                                            "score": 3,
+                                            "score": 4,
                                             "created_utc": 1653568992.0,
                                             "response": "They still have to check onchain whether the account has any balance or not, which would take more time (because i dont store the public addy with the word table)",
                                             "depth": 4,
@@ -130,7 +276,7 @@
                                                 {
                                                     "id": "ia27s4k",
                                                     "author": "gcofilyvkqwgsgn",
-                                                    "score": 3,
+                                                    "score": 5,
                                                     "created_utc": 1653570814.0,
                                                     "response": "You're right, the order is important. However, they don't have to check on chain because the chain could be local and the necessary information cached.",
                                                     "depth": 5,
@@ -139,7 +285,7 @@
                                                 {
                                                     "id": "ia2b9on",
                                                     "author": "ItsAConspiracy",
-                                                    "score": 2,
+                                                    "score": 4,
                                                     "created_utc": 1653572443.0,
                                                     "response": "Not much time. Load up all the addresses with balances in a local lookup table, with only enough bits each to distinguish them. Can probably fit it all in CPU cache, especially if you leave out the ones with small balances.",
                                                     "depth": 5,
@@ -147,7 +293,7 @@
                                                         {
                                                             "id": "ia2fbw9",
                                                             "author": "hegedis",
-                                                            "score": 2,
+                                                            "score": 3,
                                                             "created_utc": 1653574213.0,
                                                             "response": "I hope the burgrals are not that sophisticated around here.   \nBut reading comments i def will try to change this set up later this year",
                                                             "depth": 6,
@@ -164,11 +310,31 @@
                                                                 {
                                                                     "id": "ia2f7fm",
                                                                     "author": "ItsAConspiracy",
-                                                                    "score": 1,
+                                                                    "score": 2,
                                                                     "created_utc": 1653574160.0,
                                                                     "response": "I don't really know how that works but I would think one hash per address. You'd probably only need to check the first few.",
                                                                     "depth": 7,
-                                                                    "comments": []
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "ia3ann7",
+                                                                            "author": "hanniabu",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653586797.0,
+                                                                            "response": ">You'd probably only need to check the first few.\n\nYeah that's what I was thinking, and at what point do you quit before assuming the rest are empty. Unless it's deterministic and the order of addresses generated is always the same.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "ia3fmu0",
+                                                                                    "author": "ItsAConspiracy",
+                                                                                    "score": 2,
+                                                                                    "created_utc": 1653588807.0,
+                                                                                    "response": "It's deterministic. You always get the same sequence.",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
                                                                 }
                                                             ]
                                                         }
@@ -181,7 +347,7 @@
                                 {
                                     "id": "ia22rrh",
                                     "author": "maximusIota",
-                                    "score": 1,
+                                    "score": 0,
                                     "created_utc": 1653568243.0,
                                     "response": "Thanks, I would be curious at the math for 24 words in random order, and one of the word is a dummy one, that is, one word that is not part of the seed (1 word out of 23 need to be guessed in the Ledger dictionary)",
                                     "depth": 3,
@@ -189,7 +355,7 @@
                                         {
                                             "id": "ia23dna",
                                             "author": "hegedis",
-                                            "score": 3,
+                                            "score": 2,
                                             "created_utc": 1653568571.0,
                                             "response": "I think it should be calculated similarly:\n\n25 x 24 x 23 x 22 x 21 x 20 x 19 x ... x 2 = 15511210043330985984000000 (pretty big number)\n\nedit: i thought the question was 25 words with 1 dummy.   \nso the calculation above is not correct.",
                                             "depth": 4,
@@ -199,7 +365,7 @@
                                                     "author": "maximusIota",
                                                     "score": 1,
                                                     "created_utc": 1653575909.0,
-                                                    "response": "Great! thanks for the calculation.It is actually 24 with 1 dummy,  and one is missing (one of BIP 0039 possibility) So probably even bigger number!\n\nin other words, 24 permutations with a word that you have to guess (23 words already known, the dummy one can probably be ruled out easily since not bip-0039. but order is not known)  \nhttps://github.com/bitcoin/bips/blob/master/bip-0039/english.txt#L2048",
+                                                    "response": "Great! thanks for the calculation.It is actually 24 with 1 dummy,  and one is missing (one of BIP 0039 possibility - 2048 possible words in english) So probably even bigger number!\n\nin other words, 24 permutations with a word that you have to guess (23 words already known, but order unknown, the dummy one can probably be ruled out easily since not bip-0039, my bad, now you know how I store my seed haha  \n\n\n[https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt#L2048](https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt#L2048)",
                                                     "depth": 5,
                                                     "comments": []
                                                 }
@@ -220,31 +386,32 @@
                                 {
                                     "id": "ia2gc6g",
                                     "author": "Inkriegel",
-                                    "score": 1,
+                                    "score": 2,
                                     "created_utc": 1653574644.0,
                                     "response": "More like 100.000 or 1.000.000 if done correctly",
                                     "depth": 3,
-                                    "comments": []
+                                    "comments": [
+                                        {
+                                            "id": "ia46hqe",
+                                            "author": "No-Experience-3609",
+                                            "score": 1,
+                                            "created_utc": 1653600036.0,
+                                            "response": "How long to check 1 set of words?\n\nWith 640 cpu-days (10 x 32 CPU machines for 2 days), feels easy to plow through a few billion guesses.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
                                 }
                             ]
                         }
                     ]
                 },
                 {
-                    "id": "ia2hsyf",
-                    "author": "HeatSeekingPanther",
+                    "id": "ia4q6cf",
+                    "author": "RadishCertain241",
                     "score": 1,
-                    "created_utc": 1653575256.0,
-                    "response": "24!. It would take a high end 4GHz gaming computer 4,915,017 years to crack the seed.\n\nSo with that said. Be careful splitting the seed phrase up. Lose part of it and you lose all of it. Multisig is the way.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "ia2im2n",
-                    "author": "NinjAsylum",
-                    "score": 1,
-                    "created_utc": 1653575596.0,
-                    "response": "I think you're going a little overboard for $20 lol",
+                    "created_utc": 1653609120.0,
+                    "response": "Just truly mixing the 24 words would make it way too hard to brute force it with current technology. \n\nAccording to most calculations a 3090 can guess 50billion combinations a second. Now let\u2019s say you have 300,000 of these cards. It would still need more than one year to brute force the 24 words.\n\nAssuming that someone can buy a card for $2,000, this brute force attack would cost them $600 million in hardware plus an additional couple million in electricity. So the real question is, do you think someone would do that just to get to your wallet. \n\nBut let\u2019s go even further, let\u2019s say they do. Just do what others suggested, put in a fake word. With 25 words, the attacker with the same hardware will need 33 years. \n\nWith 23 words + 1 that is not written down and it goes upto 110+ years.",
                     "depth": 1,
                     "comments": []
                 }

@@ -1,0 +1,82 @@
+{
+    "subreddit": "Binance",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v0wofd",
+            "title": "How to fix \"Price cannot be greater than\" and sell at the price I want? Even if it's 5000% above market?",
+            "url": "https://www.reddit.com/r/binance/comments/v0wofd/how_to_fix_price_cannot_be_greater_than_and_sell/",
+            "author": "Buzzcoin",
+            "created_utc": 1653904259.0,
+            "score": 1,
+            "num_comments": 10,
+            "subreddit": "binance",
+            "selftext": "I want to take the opportunity to sell in spikes but it's been impossible for me to set the price I want above a certain percentage.  \nIs there a way to solve this?  \nTIA",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iaj6dcj",
+                    "author": "littlegreenfish",
+                    "score": 6,
+                    "created_utc": 1653909018.0,
+                    "response": "If you are using tradingview, you could setup a chart to trigger an alert at whatever price you want. You can then use the alert to send a webhook to a 3commas free account and trigger your sell using binance API.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iak4w1a",
+                            "author": "Buzzcoin",
+                            "score": 1,
+                            "created_utc": 1653927518.0,
+                            "response": "Think will have to contract someone to build a bot for me :)",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iaj14iq",
+                    "author": "daRaam",
+                    "score": 3,
+                    "created_utc": 1653904559.0,
+                    "response": "Binance limits how far you can set limit orders, presumably to stop people cashing in on low liquidity flash crashes or pnd.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iajf2fs",
+                    "author": "Lost-Salary4224",
+                    "score": 1,
+                    "created_utc": 1653914911.0,
+                    "response": "Use \"Stop Limit\" orders to trigger the buy/sell order once a certain price has been reached.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iak4p91",
+                            "author": "Buzzcoin",
+                            "score": 1,
+                            "created_utc": 1653927434.0,
+                            "response": "Doesn\u2019t work too.\n\nNever allows me to go beyond that limit price",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iakjihp",
+                    "author": "Daikataro",
+                    "score": 1,
+                    "created_utc": 1653933990.0,
+                    "response": "You'd need to use a trading bot that automatically placed the order as soon as possible",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

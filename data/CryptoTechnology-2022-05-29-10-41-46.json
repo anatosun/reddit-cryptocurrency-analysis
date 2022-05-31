@@ -1,0 +1,144 @@
+{
+    "subreddit": "CryptoTechnology",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v08jlp",
+            "title": "Which is the best choice for creating a private document management system?",
+            "url": "https://www.reddit.com/r/CryptoTechnology/comments/v08jlp/which_is_the_best_choice_for_creating_a_private/",
+            "author": "MrDenisPenis",
+            "created_utc": 1653820844.0,
+            "score": 27,
+            "num_comments": 20,
+            "subreddit": "CryptoTechnology",
+            "selftext": "Recently, I am thinking about a system that deals with students' degrees. These documents have private parts which shared with a third party only if the owner wants.\n\nMy personal opinion is that there are two options. The first one is using an existing permissionless blockchain ecosystem where some encryption is necessary to hide private information on a public blockchain. Besides, I guess off-chain storing or the usage of a layer 2 solution is necessary for this solution. Another solution is that create a permissioned or hybrid blockchain that has the capability to deal with private information by default.\n\nI do not know which is better because the first solution has a better value from the decentralization point of view, but the whole document management stuff seems to be pretty permissioned,  and just some part of the information is public. But, in the permissioned case, the corporations must also deal with the hardware part of the system.\n\nJust for the future, I am thinking about creating a cryptocurrency for this document management system. Is it possible that a permissioned blockchain has its own crypto which is tradable on a CEX?\n\nAt this point, I would like to hear other people's opinions and ideas about choosing the framework or system for storing private data.\n\nEdit 1: The system has further functionalities which will be implemented via smart contracts.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iaf0q87",
+                    "author": "Dormage",
+                    "score": 14,
+                    "created_utc": 1653824658.0,
+                    "response": "Just use a database? A permissioned blockchain is much worse then a sharded database or a clustered one.\n\nTechnically you can list it, but why would any exchange put it self under such risk if its permissioned?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaf4bje",
+                            "author": "MrDenisPenis",
+                            "score": 2,
+                            "created_utc": 1653827151.0,
+                            "response": "Okay. There are untrusted entities in this system that want to operate with each other via smart contracts. This requirement cannot be adapted into a shared database or a clustered one. \n\nYeah, the second one is a good point.\n\nCan you know permissionless blockchain with the ability to deal with private data? Is it possible?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaf4kle",
+                                    "author": "Dormage",
+                                    "score": 3,
+                                    "created_utc": 1653827314.0,
+                                    "response": "You can run a PBFT consensus as most federated databases have done before?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iaf4x19",
+                                            "author": "MrDenisPenis",
+                                            "score": 2,
+                                            "created_utc": 1653827530.0,
+                                            "response": "and how do you share an executable code in this system with proof?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iaf7a2p",
+                                                    "author": "Dormage",
+                                                    "score": 5,
+                                                    "created_utc": 1653828966.0,
+                                                    "response": "Okay lets think about it. To avoid technical and implementation details lets keep it a bit more abstract.\n\nWe have some sofware running(a node in blockchains) executing a network protocol. Each node has a state(the chain of blocks in blockchains). To change the state, a node appends some data to the chain changing the state from A to B.\nNow, we cant have B be anything, so we agree by protocol to implement a state transition function( like in finite automata ) which given a state A, and an input determins it the resulting state B is valid. In blockchains this would be checking if transactions are valid.\n\nThe problem now is to have the protocol such that if a node changes its state from A to B, all other nodes do it as well and at the \"same time\".\n\nThis can be done in many ways, but being a permissioned system any two phase commit scheme would do just fine.\n\nNow smart contract, are nothing more then a peace of deterministic executable code, which produces a new state. In other words, contracts are just programs with a predefined set of deterministic instructions that given the same input ( state ) produce the same output (new state). So the problem does not change, we still need to simply agree that all nodes switch from state A to state B.\nThe only difference is, that in order to obtain state B, nodes execute a program which outputs a new state, the rest is reaching agreement to transition to this new state.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "iaf98x0",
+                                                            "author": "MrDenisPenis",
+                                                            "score": 2,
+                                                            "created_utc": 1653830040.0,
+                                                            "response": "Yep and blockchain technology can provide a framework for tracking the actual state and the state transition function.\n\nSorry, perhaps my fault, but I do not understand your argument for using a shared database.  Or how do you share the state transition function between parties during using shared database?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "iaf9sec",
+                                                                    "author": "Dormage",
+                                                                    "score": 5,
+                                                                    "created_utc": 1653830338.0,
+                                                                    "response": "Since it is a permissioned system, you give nodes(database instwnces) permission to enter the system and execute the protocol. This is done by simply having an authentication system and giving operators keys for signing transactions so they are trusted.\n\nBlockchains solve a different problem in which those parties are unknown, and there are many, practically infinite number of them that can fill up your dstabase with spam.\n\nBy having a currency in the system, you can make such attacks of anonymous bad actors too expenssive to practically execute. This problem goes away if you have a permissioned system. You only need to guarantee the state synchronization.\n\nThe actual algorithm to achieve state synchronization can be practical byzantine fault tolerance, paxos or any other two phase commit scheme.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "iaftbyo",
+                                                                            "author": "DefintelyNotAShrimp",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653839652.0,
+                                                                            "response": "Do you do this for a living? Because you seem like you do this for a living \ud83d\ude02",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "iaftspg",
+                                                                                    "author": "Dormage",
+                                                                                    "score": 2,
+                                                                                    "created_utc": 1653839865.0,
+                                                                                    "response": "Hey, if someone wants to pay me for ity they are more then welcome. Looking forward to the day. \n\nUnfortunatly I do not work for crypto. I did some research on blockchain networks and consensus protocols. I like helping people where I can.",
+                                                                                    "depth": 9,
+                                                                                    "comments": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "iagc6b0",
+                                                                            "author": "MrDenisPenis",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653848151.0,
+                                                                            "response": "First of all, thanks for your time! You have pretty great points and I totally understand the advantage of your statement, but I have a question. \n\nLet us say, there is a student. This student receives her degree then the university generates a file with private data and stores it in the shared database. After that, if a company wants to validate this student's degree it can do only one way. Moreover, this company has to trust fully the owner of the API that is used for validation. This company cannot know anything without the trust of an untrusted third party. Besides, without storing the history in blocks (perhaps, a part of the system is public) the system has bigger security concerns with using a shared database. Nothing is published for the outside world. The outside world has only an assumption about the correctness.\n\nHow do you prove the validity of your document by using a shared database without an untrusted third party?",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "iago6sc",
+                                                                                    "author": "Dormage",
+                                                                                    "score": 2,
+                                                                                    "created_utc": 1653853766.0,
+                                                                                    "response": "I think you may have stubled on one of the biggest problems with blockchain, it's inability to make any assumptions about external systems. Blockchains are self contained and operate well for things contained within the system. The currency they run, is made up and exists within the system, it can be trustless because it trusts it self.\n\nAnything that exists outside of the system cannot have the same level of trust. This is what oracle networks are trying to solve. Give some level of certainty about something that lives outside the system.\n\nYou can have a system in which the University publishes a document and signes it with its private key, eeveryone can verify that indeed the document was signed by the University using their public key.\n\nThis would work as long as the University keeps its keys safe, AND everybody else trusts that this key belongs to them.\n\nSo in general you notary systems like this work as follows:\n1. Given document A create a hash h(A)\n2. Store A in a decentralized hashmap (i.e. IPFS) using h(A) as key and A as value.\n3. Sign document A with private key to obtain signature sig(A)\n4. Store sig(A) as value, and h(A) as key in a smart contract.\n\nNow presented document A, we can check the validity by:\n1. Hash A to obtain h(A) or if given h(A) do s lookup to IPFS to obtain A\n2. Call a contract to obtain sig(A) using h(A)\n3. Using the public key of the university, verify if sig(A) is signed with the corresponding pvt kay.\n4. If the signature is verified, we know this document was signed using the private key of the university, else it was not.\n\nSimple prtocol, likely implemented many times as a proof of concept. A permissioned system you suggested may be even better for this since universities can generate their keys and given access. You can keep a register of authoritative nodes with somethint like proof of authority ethereum private uses.",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "iagrdb7",
+                                                                                            "author": "MrDenisPenis",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1653855278.0,
+                                                                                            "response": "Yeah, I know this oracle problem. Therefore, my intention is that every corresponding data must be stored in-chain. Therefore, a file's bytes can be generated and stored in-chain, and then it is used for calculating the corresponding hash. But, I do not know the right system for them. I know, maybe it is too many operations in-chain.\n\nI think a private chain is not enough, because companies cannot validate the documents on their own. What is your opinion about hybrid blockchains or a private layer 2 solution? I mean, I am just thinking about a solution wherein a blockchain system has a public and a private part as well. Or using a public blockchain ecosystem.\n\nI guess, your suggested solution with using i.e. IPFS has a vulnerability concern because there is a time window when a modification in the file is possible and this modification remains imperceptible.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

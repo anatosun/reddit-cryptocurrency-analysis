@@ -1,0 +1,285 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uyxlzi",
+            "title": "Can someone explain how to make sense of this? 2014 article by Vitalik Buterin",
+            "url": "https://www.reddit.com/r/ethereum/comments/uyxlzi/can_someone_explain_how_to_make_sense_of_this/",
+            "author": "slowblogger",
+            "created_utc": 1653656105.0,
+            "score": 0,
+            "num_comments": 16,
+            "subreddit": "ethereum",
+            "selftext": "I cannot understand the following from an article by u/vbuterin.\n\n**Question: Why would a solo miner accept a transaction with the tx fee of $0.00002?**\n\nHere is my thought. The miner's expected revenue is $0.00002 / 5000 (# of nodes) = $0.000000004. That's far smaller than the miner's cost per tx of $0.00001. It does not seem to make sense to accept it.\n\n&#x200B;\n\n>It gets worse. Suppose that the net cost to the network of processing a transaction is close to $0.05. In theory, even if the costs are not borne by exactly the same people who set the prices, as long as the transaction fee is close to $0.05 the system would still be in balance. But what is the equilibrium transaction fee going to be? Right now, fees are around $0.09 simply because miners are too lazy to switch. But then, in the future, what happens once fees become a larger share of a miner\u2019s revenue and miners have a large incentive to try to maximize their take? The obvious answer is, for a solo miner the equilibrium transaction fee is $0.00001. If a transaction with a fee of $0.00002 comes in, and the miner adds it, the miner will have earned a profit of $0.00001, and the remaining $0.04999 worth of costs will be paid by the rest of the network together \u2013 a cryptographic tragedy of the commons. \n\nSource: [https://blog.ethereum.org/2014/02/01/on-transaction-fees-and-the-fallacy-of-market-based-solutions/](https://blog.ethereum.org/2014/02/01/on-transaction-fees-and-the-fallacy-of-market-based-solutions/)",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia6t2zr",
+                    "author": "Mango-is-Mango",
+                    "score": 2,
+                    "created_utc": 1653656821.0,
+                    "response": "Base fee that you\u2019re talking about is different than the total fee. If we use the gas analogy the base fee is price per gallon of gas but transactions use many many gallons of gas to complete\n\nEdit: is this even what you\u2019re asking?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia9gjee",
+                            "author": "slowblogger",
+                            "score": 1,
+                            "created_utc": 1653700381.0,
+                            "response": "I am not sure if this was what Vitalik was talking about.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia9r45a",
+                    "author": "domotheus",
+                    "score": 1,
+                    "created_utc": 1653705954.0,
+                    "response": "The paragraph just above outlines the idea of a \"social cost\" of each transaction:\n\n>For each individual transaction that a miner includes, the costs are borne not just by that miner, but by every single node in the entire network. The cost per transaction is tiny; a miner can process a transaction and include it in a block for less than $0.00001 worth of electricity and data storage. The reason why transaction fees need to be high is because that $0.00001 is being paid by thousands of nodes all around the world.\n\nBasically the miner gets all the fee revenue, but every participant in the network pays for it: That transaction used some bandwidth while in the mempool, it's added history that every node has to store, it's added state bloat that makes it harder to sync for everyone, etc. These \"computational load\" costs are abstract and tiny for each transaction, but still non-zero and they add up. But for the miner who's only interested in making money, bundling an extra transaction with a tiny fee in his block costs him basically nothing. If there's extra space in the block, then it still makes sense to include that transaction even if it's only a tiny fee barely above the \"basically nothing\" cost of including it.\n\nHe then explores other solutions to price transactions more fairly by considering burning some kind of a basefee. interesting innit",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaai0u1",
+                            "author": "slowblogger",
+                            "score": 1,
+                            "created_utc": 1653725122.0,
+                            "response": "Would you add a tx under this economics?\n\n* Expected revenue = $0.00002 / 5000 (# of nodes) = $0.000000004\n* Cost per tx = $0.00001",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iahpgjy",
+                                    "author": "Perleflamme",
+                                    "score": 1,
+                                    "created_utc": 1653872681.0,
+                                    "response": "From what I see in the quote, it's the other way around: the miner gets a full reward of $0.00002 with a cost of $0.00001, hence a profit of $0.00001. \n\nIt's just that there are many nodes in the network who don't earn anything because they're not miners, yet they still have to execute the transaction just the same and have to pay for a small cost too, but without any reward for it. \n\nThough, I'm wondering why they'd need to pay as much as the miner, since they're only checking the result by executing again the computation asked by the user requested transactions, aka not mining new hashes. To me, it seems that the cost each node has to pay is very minimal, but Vitalik seems to consider the cost of all nodes as a whole. It makes sense in the perspective of the network itself, but that's not the cost each individual has to weight when they decide whether to keep being nodes or not.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iahr8z3",
+                                            "author": "slowblogger",
+                                            "score": 1,
+                                            "created_utc": 1653873610.0,
+                                            "response": "For simplicity let's assume all nodes = miners, and the incremental cost for a single miner to process a tx as $0.00001.\n\nDo you think it's rational for the miner to view $0.00002 as the expected revenue, not taking account the probability?\n\nIf you behave that way for a long enough time, you will lose money.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iahs3ys",
+                                                    "author": "Perleflamme",
+                                                    "score": 1,
+                                                    "created_utc": 1653874051.0,
+                                                    "response": ">For simplicity let's assume all nodes = miners\n\nThat's clearly not what Vitalik talks about. If you change the scenario to make it become non sensical, how do you expect to understand anything that you quoted? \n\nWhat is your goal here, exactly? I thought you were trying to understand the quote, but it now seems not to be the case. Is it to understand the dynamics of how mining economics work, maybe? \n\nIn your scenario, miners with the biggest expenses would stop mining, while others would still mine (and would add that transaction, because it's better than nothing anyway), which would decrease mining difficulty and thus decrease mining cost until cost is slightly lower than reward, ensuring a small profit, notably to those who can cut their costs the most.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "iaia2ug",
+                                                            "author": "slowblogger",
+                                                            "score": 1,
+                                                            "created_utc": 1653883342.0,
+                                                            "response": "Let's forget the quote for now, to clarify what I want to understand. If the tx fee is 1 usd, and there are 1000 equally powerful miners, my expected revenue for a tx would be 0.001 usd. Correct?\n\nIf that is lower than my cost of processing a tx, I would not include the tx in my block. What do you think?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "iaicna1",
+                                                                    "author": "Perleflamme",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653884897.0,
+                                                                    "response": "Why wouldn't you include the tx in your block? What are you expecting to gain by excluding the tx? The only result you'd achieve would be to reduce even more your profitability and ensure someone else grabs the reward. \n\nMiners are mostly paid by block reward. Miner's fee only is marginal. But it's still a pretty good additional profit to grab nonetheless. The alternative only is earning less.\n\nAs I said, if your overall profitability is negative, you're supposed to stop mining, which will reduce costs for other miners and ensure it becomes once again profitable to mine.\n\nThat's because mining costs completely depend on mining difficulty, which depends on the total hashrate of the chain. It's a self-regulated cost.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "iaiewqr",
+                                                                            "author": "slowblogger",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653886321.0,
+                                                                            "response": "I wouldn't because the expected tx fee is lower than the marginal cost of processing the tx.\n\nFor simplicity, let's assume no mining revenue. Let's for now just assume we only have tx fees.\n\nYou would process a tx, if your expected marginal revenue is larger than your marginal cost of doing it. And your expected revenue is tx fee divided by # of miners. Agreed?",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "iaif7qh",
+                                                                                    "author": "Perleflamme",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653886525.0,
+                                                                                    "response": "Yes, indeed, as a selfish miner, since that's the expected behavior. Some miners go beyond that, but sure. So what? I don't see your point. \n\nBack in the days, there were miners who would process completely free transactions, because they didn't care about the cost. It's such a minimal cost that many miners don't care. It's cheaper than giving sugar to your neighbor from time to time.",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "iaikhp0",
+                                                                                            "author": "slowblogger",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1653890191.0,
+                                                                                            "response": "So back to my original question. The article is Vitalik's argument that blockchain is not a market. And he seems to be pointing that a miner's cost is not all as all the other miners have to process the same tx that whoever picked up.\n\nHe seems to suggest that the right cost in this economics is the entire network's cost of one tx not one miner's.\n\nBut, my point is that because your expected revenue is 1/n of the tx fee, that's taken care of when you act selfishly like I described. In other words, your selfish behavior seems to result in an economically sound decision for the entire network.\n\nSo either u/vbutetin was wrong, or I am not interpreting his arguments correctly.",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "uyxh6d",
+            "title": "Bridges to L2s, do they all have similar risks?",
+            "url": "https://www.reddit.com/r/ethereum/comments/uyxh6d/bridges_to_l2s_do_they_all_have_similar_risks/",
+            "author": "Ok-Employ-1029",
+            "created_utc": 1653655639.0,
+            "score": 11,
+            "num_comments": 15,
+            "subreddit": "ethereum",
+            "selftext": "It crossed my mind recently I didn't know if there were different methods to create bridges between Ethereum and layer 2 blockchains. \n\nIsn't it the case that bridges will be the most lucrative zone to attack for hackers, and if so, how can the ethereum method of scaling cope with this?\n\nThe solana wormhole bridge exploit was a disaster. Furthermore, the degree of trust involved in bridge developers is surely a huge problem?\n\nI can see why Vitalk is talking about social tokens representing trust, since we seem to be discovering more and more that supposedly decentralised systems are really controlled by a few people, hence the need for those people to have a type of 'social ranking'.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia7y5qn",
+                    "author": "Nonocoiner",
+                    "score": 2,
+                    "created_utc": 1653674338.0,
+                    "response": "Not all bridges have similar risks.\n\nBridges between L1 networks are complex, depend on the security of multiple chains and contracts, and (usually) are not trustless.\n\nBridges between L1 and L2 can be simple and trustless.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia8r0c6",
+                            "author": "Ok-Employ-1029",
+                            "score": 1,
+                            "created_utc": 1653687407.0,
+                            "response": "Are you saying it doesn't rely on the standard practice of locking tokens in a smart contract and minting on the other chain?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia7bvtd",
+                    "author": "ProteusXists",
+                    "score": 1,
+                    "created_utc": 1653665151.0,
+                    "response": "This is very true, bridges are also my biggest worry. \n\nI also find it funny that the term L2 has been basically assassinated. There are no real L2s, Lightning is maybe the only real L2. All of these are just separate chains with a bridge. BSC is an L2 by this definition, they all are. The only \"settling\" any of these \"L2s\" do on the L1 chain is centralized bridge transactions.... This isn't what crypto devs were really talking about when L2s became a topic lol... Yet, a lot of new people jumped in and many things have changed... this is one of them, sadly the changes are going in the wrong direction. NFTs used to be something that actually stored the correlated \"asset\" on the blockchain, now they're just id numbers and people upload what the id is supposed to be to centralized clouds like google lol... Nothing about that is immutable, there is literally no value... but thanks again new guys!",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaityem",
+                            "author": "edmundedgar",
+                            "score": 1,
+                            "created_utc": 1653898017.0,
+                            "response": "Ethereum people generally wouldn't consider the current Polygon or BSC an L2. \"L2\" doesn't just mean that you can transfer assets to it via a bridge. The word people here use for that (correctly or not, I don't have a strong opinion) is \"sidechain\".\n\nWhat \"L2\" means to us is that the system gets its security from the main chain, and therefore doesn't need its own set of decentralized validators. This is true of the designs of ZKSync, Arbitrum, Optimism and [don't use this one because it has a proprietary license] Starknet. With these systems provided the L1 is working correctly, it should either be impossible to confirm an invalid transaction (zk rollup), or possible but any single user should be able to prevent it (optimistic rollup).\n\nThese systems either already have or will have bridges that share the same property, they're not just multisigs.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iaitjwp",
+                    "author": "edmundedgar",
+                    "score": 1,
+                    "created_utc": 1653897665.0,
+                    "response": "In theory you should be able to trustlessly bridge assets between the main chain and the L2. This is a key difference between L2 systems and sidechains.\n\nHowever, a lot of the systems that have been shipped so far still have various admin backdoors, or haven't yet shipped the trustless bridging capability. Check the \"risks\" section on l2beat to see the risks of what's actually available right now for any given system, as opposed to the final design.\nhttps://l2beat.com/?view=risk",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia72uro",
+                    "author": "Mallardshead",
+                    "score": -17,
+                    "created_utc": 1653661369.0,
+                    "response": "Ethereum is a Rube Goldberg Machine. It'll be dead by this fall after regulations. There is bitcoin, and there is crypto. Crypto is a scam.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia7ayrc",
+                            "author": "gharvhel",
+                            "score": 7,
+                            "created_utc": 1653664778.0,
+                            "response": "As the market matures, baseless arguments like this hold no weight.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia7e69o",
+                                    "author": "Mallardshead",
+                                    "score": -5,
+                                    "created_utc": 1653666088.0,
+                                    "response": "LOL.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia8v2mw",
+                            "author": "Simple_Yam",
+                            "score": 1,
+                            "created_utc": 1653689367.0,
+                            "response": "Ayo, wasn't Bitcoin and LN supposes to make altcoins obsolete by 2018?",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "iab45k0",
+                            "author": "cjeans23",
+                            "score": 1,
+                            "created_utc": 1653742714.0,
+                            "response": "Lol. Bitcoin maxi in an eth sub. Well done. I don't think ETH is dying or anything like that, in fact, most chains including QAN and DOT are EVM compatible. ETH controls 99% of this space.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iab7riu",
+                                    "author": "Mallardshead",
+                                    "score": 1,
+                                    "created_utc": 1653744757.0,
+                                    "response": "Why would you want them to to be \"compatible\"? VC's and exchanges certainly do. Makes their exit liquidity and manipulation easier. They can also send/trade/collateralize assets for cheaper, keeping those savings for themselves. They can afford bots, you can't. Just a big scam.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "uyxies",
+            "title": "NFT Marketplace Like SuperRare- Shifting Your Focus Towards Super Rare Collections Of Art",
+            "url": "https://medium.com/geekculture/nft-marketplace-like-superrare-shifting-your-focus-towards-super-rare-collections-of-art-812451454942",
+            "author": "allanjackob",
+            "created_utc": 1653655758.0,
+            "score": 1,
+            "num_comments": 4,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia73xmv",
+                    "author": "coinfeeds-bot",
+                    "score": 2,
+                    "created_utc": 1653661834.0,
+                    "response": "tldr; NFT marketplaces like SuperRare allow creators and artists to publish and sell their digital works in non-fungible tokens. The platform is based on the ERC-721 token standard, which is currently the most widely used NFT token standard. SuperRare charges creators a 15% commission on main sales and a 3% transaction fee on secondary sales.\n\n*This summary is auto generated by a bot and not meant to replace reading the original article. As always, DYOR.*",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

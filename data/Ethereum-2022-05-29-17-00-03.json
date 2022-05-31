@@ -1,0 +1,94 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "v0fdhg",
+            "title": "Diamonds Are Multi-Faceted Proxy Contracts Plus Transparency",
+            "url": "https://eips.ethereum.org/EIPS/eip-2535",
+            "author": "mudgen",
+            "created_utc": 1653843413.0,
+            "score": 1,
+            "num_comments": 11,
+            "subreddit": "ethereum",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "iag8x5x",
+                    "author": "Drewsapple",
+                    "score": 14,
+                    "created_utc": 1653846644.0,
+                    "response": "Dude, I love your enthusiasm for this EIP, but can you put some content or updates about it? It feels like you\u2019re spamming diamonds into the void without sharing *why*. Anyone who has clicked your links before knows what you\u2019re trying to get across, but why now?\n\nWas there an important bit of feedback to the EIP? Tell us that.\n\nDid someone implement it in a contract gaining traction? Tell us that.\n\nOtherwise, it just feels like spam and, at least for me, puts a bad taste in my mouth when I think of the EIP.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iagdmhe",
+                            "author": "mudgen",
+                            "score": 3,
+                            "created_utc": 1653848826.0,
+                            "response": "Okay, good to know, I will think and work with that. A lot of people still have not heard of EIP2535 which is why I post the EIP every once in awhile, but it may be too much. I apologize and thank you for the helpful input. Here are some recent news and articles which may be more useful:\n\n* [ERC721A implementation uses Diamond Storage](https://twitter.com/mudgen/status/1529208311379263490)\n* [OpenZeppelin is planning to use Diamond Storage in its next major version for upgradeable contracts.](https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable/issues/158)\n* [Building a Smart Contract Operating System for DAOs using EIP2535](https://0xhabitat.substack.com/p/smart-contracts-as-apps?s=r)\n* [Handling multiple tokens, with a modern solidity architecture via Diamonds & ERC1155](https://dev.to/nohehf/handling-multiple-tokens-with-a-modern-solidity-architecture-via-diamonds-erc1155-1h7e). \n* [Why Gotchivault is upgrading to the Diamond standard](https://medium.com/@bearded.eth/diamonds-are-a-proxys-best-friends-c302cca82203)",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaim810",
+                                    "author": "ice0nine",
+                                    "score": 2,
+                                    "created_utc": 1653891523.0,
+                                    "response": "Thanks for this info, as drewsapple mentiones the repeating \"general info\" about Diamond Storage felt too bot-like to me as well. \n\nWhat would help me is a FAQ-style list about\n\n* why use Diamond instead of some other proxy pattern?\n* pros/cons of using Diamond\n* typical workflow of what to do when (eg. start with mutable, then switch to immutable at what point?)\n* costs of using Diamond (like cons): gas costs, complexity\n\nall this could be exemplified with a simple project with/without Diamond. To me, it is a crucial decision to go with some proxy pattern and I'd have to be able to evaluate the risks and chances.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iajtyme",
+                                            "author": "mudgen",
+                                            "score": 2,
+                                            "created_utc": 1653922578.0,
+                                            "response": "Okay, thanks. Here are the answers to your questions:\n\n>why use Diamond instead of some other proxy pattern? The reason to use a Diamond instead of a different proxy pattern is because a diamond can do some things that other proxy patterns cannot.\n\n* Specifically a Diamonds enables you to have unlimited smart contract functionality at a single Ethereum address, by passing the 24KB smart contract size limit.  So if you want more functionality at an Ethereum address than can fit in a single contract then use a Diamond.\n* A Diamond enables a project to develop and deploy incrementally without hitting a contract size limitation. In other proxy patterns you can upgrade the implementation contract to add new functionality but eventually the proxy pattern will hit the max contract size limit. A Diamond let's a project deploy something useful and extend the diamond over time in a standard and organized way.\n\n>Pros and cons of using a Diamond\n\nPros:\n\n* Unlimited smart contract functionality at a single Ethereum address. This is useful for organizing a larger smart contract code base and integrating with user interfaces and other smart contract systems and 3rd party projects.\n* Fine-grained and incremental upgrades. With a Diamond you can just upgrade the parts that need to be upgraded and leave the other parts alone, instead of having to redeploy everything.\n* The capability to create independent, reusable deployed smart contracts. This is a level of modularity that did not exist before.\n* Introspection and transparency of a smart contract system (a Diamond) with its loupe functions. The [louper.dev](https://louper.dev/) user interface uses this capability to show and use diamond functionality.\n* A Diamond provides an organized way to extend a smart contract system after it has been deployed.\n* Joining a group of enthusiastic and experienced smart smart contract developers.\n\nCons:\n\n* OpenZeppelin contracts do not currently work with diamonds. But this is changing because OpenZeppelin plans to use Diamond Storage in its next major version. Diamond Storage is a technique for organizing and managing state variables, particularly in upgradeable contracts. Note that OpenZeppelin Solidity libraries do work in Diamonds. Other smart contract libraries such as [solidstate-solidity](https://github.com/solidstate-network/solidstate-solidity) and [ERC721A-Upgradable](https://github.com/chiru-labs/ERC721A-Upgradeable) can be used with diamonds.\n* Learning curve to understand the Diamonds standard and Solidity techniques that are used.\n\n>typical workflow of what to do when\n\nDiamonds is a flexible and general purpose solution to implement many kinds of smart contract projects. Many projects start with a reference implementation and build on top of that or from there. Here is such a reference implementation: [diamond-1-hardhat](https://github.com/mudgen/diamond-1-hardhat).\n\n>costs of using Diamond (like cons): gas costs, complexity\n\n**Gas cost:** The runtime gas cost to call functions on a diamond is about the same as other proxy contract patterns. Sometimes a diamond can reduce runtime gas costs in larger systems because it can share internal functions between its internal contracts (called facets) and use other techniques. More information about gas costs of diamonds is in an article [here](https://eip2535diamonds.substack.com/p/how-eip2535-diamonds-reduces-gas?s=w).\n\n**Complexity cost:** A single diamond has multiple implementation contracts called facets. The facets can be isolated and independent from each other, in which case you can manage and think of each facet separately, which can reduce complexity. However it is possible to implement facets in a way that they share state variables between each other, in which case facets can affect each other and you need to think of and manage the facets together to the degree that they are integrated.\n\n>all this could be exemplified with a simple project with/without Diamond. To me, it is a crucial decision to go with some proxy pattern and I'd have to be able to evaluate the risks and chances.\n\nDiamonds are useful for organizing larger projects which may not be considered simple because of the larger code base. To give an example of how a diamond can organize a code base, checkout the \"Facets\" documentation for the Aavegotchi project here: [https://docs.aavegotchi.com/overview/facets](https://docs.aavegotchi.com/overview/facets)",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ial02ak",
+                                                    "author": "ice0nine",
+                                                    "score": 2,
+                                                    "created_utc": 1653941685.0,
+                                                    "response": "Nice, thanks! That's all very interesting, if it is not already, I would put it up to a FAQ page to have it not buried here in reddit.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ial5nnu",
+                                                            "author": "mudgen",
+                                                            "score": 1,
+                                                            "created_utc": 1653944340.0,
+                                                            "response": "Yes, I agree,  so I posted it here: https://eip2535diamonds.substack.com/p/answering-some-diamond-questions?s=w",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iagv4qj",
+                    "author": "TovarishFin",
+                    "score": 2,
+                    "created_utc": 1653857108.0,
+                    "response": "https://imgflip.com/i/68w66a",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

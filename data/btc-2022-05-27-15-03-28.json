@@ -1,0 +1,306 @@
+{
+    "subreddit": "btc",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uz06n6",
+            "title": "In 100 years, Bitcoin block rewards goes to zero, why worry today?",
+            "url": "https://www.reddit.com/r/btc/comments/uz06n6/in_100_years_bitcoin_block_rewards_goes_to_zero/",
+            "author": "wisequote",
+            "created_utc": 1653663824.0,
+            "score": 20,
+            "num_comments": 33,
+            "subreddit": "btc",
+            "selftext": "In 100 years it goes to zero, but it will be reduced substantially WELL before that, next halving is coming up in 2 years actually. \n\nSo no, I disagree I won\u2019t sit and relax while the experiment is being butchered by rent-seekers and usurpers, Bitcoin has very intricate Game Theory parameters and the hash-rate provided by miners is literally the solution to the previously unsolved Byzantine fault. \n\nSo to assume that \u201cpeople will mine just to make sure the system keeps going\u201d in an incentives-heavy system is not only wishful thinking and gambling, it\u2019s a pure uneducated approach to experimentation and systems scaling.\n\nL2 and LN do not solve the Byzantine fault, if LN worked we won\u2019t even need Bitcoin nor mining. All this proof of stake and L2 scaling and all those new experiments taking place might or might not fail, but everything similar to them previously failed (see banks, liberty dollar, etc) so anecdotal evidence suggests that the only safe bet is Bitcoin, on-chain, exactly as Satoshi created and left it.\n\nAdam Back and Charlie are charlatans, one is selling Liquid and rent-seeking solutions , the other just wants to copy said rent-seeking solutions like he unimaginatively copied Bitcoin. \n\nStay vigilant and good luck.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia798jf",
+                    "author": "mrtest001",
+                    "score": 13,
+                    "created_utc": 1653664064.0,
+                    "response": "block rewards does not have to *literally* go to zero for it to have a enormous impact on mining.\n\nUnless the price of BTC doubles along, we will see the effects of fees not taking over block reward in another 4 halvings...",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia83fc8",
+                            "author": "bonafidebob",
+                            "score": 2,
+                            "created_utc": 1653676634.0,
+                            "response": "> we will see the effects of fees not taking over block reward in another 4 halvings\n\nCurious, why 4 halvings exactly?   Is there some threshold that's crossed when the block rewards are 1/16th of what they are now?\n\nSeems to me that the essence of the issue is that the system is set up so that the majority of the current value of block rewards will more or less equal the cost of compute, electricity, and bandwidth needed to close that block.   Competition among miners is what drives that -- if it's cheap to close block relative to the award, more miners will pile on.  If it's expensive, miners will either shut down their rigs or use their compute for other things.  So ultimately the block reward gets converted to electricity and bandwidth and is effectively taken out of the system.\n\nThis makes the economics of mining very dependent on not just the block award but the current coin price -- how much you get for selling the mined coins.\n\nYou've put the tipping point at 4 halvings, or about 14 years from now.  I'd be worried it's much closer.  Since the price is entirely based on speculation (what people will pay) a tipping point in investor confidence could happen virtually any time, and the resulting falling price will influence miners much more quickly than an event 2, 6, 10, or 14 years away.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia8inrs",
+                            "author": "wisequote",
+                            "score": 1,
+                            "created_utc": 1653683466.0,
+                            "response": "Exactly, hence my point on that it will be an issue well before block rewards reach zero.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia8si0d",
+                                    "author": "bonafidebob",
+                                    "score": 1,
+                                    "created_utc": 1653688126.0,
+                                    "response": "> my point on that it will be an issue well before block rewards reach zero\n\nWhen do you think it will be an issue and why then?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iab8o1p",
+                                            "author": "WippleDippleDoo",
+                                            "score": 1,
+                                            "created_utc": 1653745256.0,
+                                            "response": "Because these network needs incentives to be resilient and sustainable.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia78sam",
+                    "author": "wisequote",
+                    "score": 3,
+                    "created_utc": 1653663874.0,
+                    "response": "From a thread I\u2019m entrenched in elsewhere, a point I wanted to share with the larger BTC crowd: np.reddit.com/r/LitecoinMarkets/comments/ux3jvs/_/ia78bs1/?context=1",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaaki7s",
+                    "author": "lugaxker",
+                    "score": 3,
+                    "created_utc": 1653727426.0,
+                    "response": "A solution to this problem could be to have a [progressive fee policy](https://memo.cash/a/7521ddbbf5) in wallets: the fee paid by the user would no longer be based solely on the size on the transaction but also on the sent amount. $1,000,000 transactions could pay 1000 sats/B, and transactions transferring $100 (or less) would pay 1 sat/B. Of course, this policy would only be enforced by wallets as a default setting, so it would be 100% voluntary (i.e. not included in the protocol rules).\n\nI doubt that people transferring $1,000,000 care about paying $1 (0.0001% fee) or $10 (0.001% fee) or more. Furthermore, this fee would pay for censorship-resistance: as regulations become more stringent, the risk of confirming high-value transfers will increase, and miners will want to be compensated for this.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iabtnym",
+                            "author": "FamousM1",
+                            "score": 1,
+                            "created_utc": 1653755417.0,
+                            "response": "I made a post about this exact thing a couple months back but it seemed like the general reddit was against it. I don't know why\n         \nhttps://www.reddit.com/r/btc/comments/tggltw/what_would_you_think_about_a_001_per_1_bch\n\n\n\n          \nSomething like        \n\n\u2022 $0.0001 for 0.01BCH ($2.9)\n\n\n \u2022 $0.001 for 0.1 BCH ($29)\n\n\n \u2022 $0.10 for 10 BCH ($2900)\n\n\n \u2022 $1 for 100 BCH ($29,000)\n\nA fee structure similar to this would retain Bitcoin Cash's low transaction fee usability while also increasing overall block security",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iabyca0",
+                                    "author": "lugaxker",
+                                    "score": 2,
+                                    "created_utc": 1653757589.0,
+                                    "response": "You marketed it as \"a tax on the rich\", no wonder people were against it X)\n\nThe point is that it is voluntary. And (IMO) it will necessarily emerge as the block subsidy disappears.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iabzp6h",
+                                            "author": "FamousM1",
+                                            "score": 1,
+                                            "created_utc": 1653758224.0,
+                                            "response": "I don't think there's anything wrong with taxing the people who have more money more than the people who have less money. I think if you can spend tens of thousands of US dollars in a transaction you can afford to support the chain with a $1 fee.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "iacv0ui",
+                                    "author": "fiendishcrypro",
+                                    "score": 2,
+                                    "created_utc": 1653773246.0,
+                                    "response": "Jesus this would be an awful solution. There goes cashfusion for large amounts. There goes using your large utxo for making a small purchase.\n\nThis is litterally BTC, but with another name.\n\nAdoption and onchain use needs to increase, or fees per byte needs to go up with each halvening to ensure the same level of security.\n\nHacky solutions like 'tax the rich', or rather 'tax a transaction more for zero reason despite it using same bytes becuase the transaction has a higher utxo input' will kill or split the chain.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iaczlq7",
+                                            "author": "FamousM1",
+                                            "score": 2,
+                                            "created_utc": 1653775329.0,
+                                            "response": "> Adoption and onchain use needs to increase, or fees per byte needs to go up with each halvening to ensure the same level of security.\n\nThose are good points I hadn't thought of and I agree but this won't work with our current fees\n       \nCurrently, BTC tx fees in 1 day is about $420,000, to have equal transaction income at $0.005 each tx would need about 90,000,000 tx a day *just* to match what BTC makes now",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "iaeecwu",
+                                                    "author": "fiendishcrypro",
+                                                    "score": 1,
+                                                    "created_utc": 1653805255.0,
+                                                    "response": "So we need 600x more on-chain transactions per day than currently? That is otally manageable. The economy is not using crypto at all, and there are some mass user products that are coming out that will help the entire eco system.\n\nOnce they have been released and have expanded, maybe we only need 150x more throughput to get to that level.\n\nTher is much work to be done I agree, but there are projects close to release that will help this tremendously, and will help demonstrate use cases for blockchains such as BCH, that allow for thousands of instant purchases to occur.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "iab8krf",
+                    "author": "WippleDippleDoo",
+                    "score": 2,
+                    "created_utc": 1653745206.0,
+                    "response": "By 2040 99% of the supply will exist.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iabbkst",
+                    "author": "mcgravier",
+                    "score": 2,
+                    "created_utc": 1653746797.0,
+                    "response": "This was considered by other projects, and currently the only known solution is to keep perpetual tail emission forever. \n\nIMO the other non perfect solution would be to have large blocks with >1000tps so the cost per transaction is low enough that users won't care about fees.\n\nThere's a separate issue of selfish mining tactics when fees dominate the block reward and again, without the tail emissions, there doesn't seem to be a clean solution to that. There might be a Tit-for-tat balance emerging in such an environment, but this is rough nonetheless",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "iaejhwr",
+                            "author": "TooDenseForXray",
+                            "score": 1,
+                            "created_utc": 1653809641.0,
+                            "response": "It is true that even with a tail emission game-theory problem can a-raise if the fees revenue far out weight the block reward...",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iaec1q2",
+                    "author": "Long_Chemistry_XMR",
+                    "score": 1,
+                    "created_utc": 1653803417.0,
+                    "response": "Satoshi likely screwed up the long-term network security by having the supply hard capped at 21 million coins. It's a great marketing pitch and makes it an easy sell but once the block rewards fall off to zero (or close enough to it) you either need massive fees (which is what the BTC people want) or gargantuan numbers of people transacting at all times. \n\nIt's less \"sexy\", but the kind of obvious solution that doesn't rely on charity or hopium is to just implement some form of tail emissions so that miners are guaranteed to get paid. And that seems particularly important on a chain like BCH where low-fees are a priority.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia7p3ow",
+                    "author": "bonafidebob",
+                    "score": -2,
+                    "created_utc": 1653670549.0,
+                    "response": "> Bitcoin has very intricate Game Theory parameters and the hash-rate provided by miners is literally the solution to the previously unsolved Byzantine fault.\n\nPreviously unsolved??!  This problem has been studied and understood for decades.\n\nIf you're making a coherent point here I don't know what it is.   Honestly it sounds like nonsense.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia7uvo4",
+                            "author": "wisequote",
+                            "score": 3,
+                            "created_utc": 1653672945.0,
+                            "response": "Studied and understood, but how does that mean it was solved in the context of money and without trusted third parties? \n\nGo ahead and solve it for me without proof of work and with no trusted third parties, I\u2019m all ears.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "iaaffoe",
+                                    "author": "lugaxker",
+                                    "score": 1,
+                                    "created_utc": 1653722787.0,
+                                    "response": "PBFT: https://pmg.csail.mit.edu/papers/osdi99.pdf\n\nIt wasn't really robust though.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "iaaz7ew",
+                                            "author": "wisequote",
+                                            "score": 2,
+                                            "created_utc": 1653739641.0,
+                                            "response": "It theorized on how to solve it, but the practical costs of any such solution were always such a problem, until proof of work arrived to incentivize such costs, hence my original post on how taking away fees from miners is an experiment on top of an experiment and is a dire path forward. From the article you linked:\n\n\u201cOne problem of special interest is reducing the amount of resources required to implement our algorithm. The number of replicas can be reduced by using   replicas as witnesses that are involved in the protocol only when some full replica fails. We also believe that it is possible to reduce the number of copies of the state to     1 but the details remain to be worked out.\u201d",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ia7wxnk",
+                                    "author": "bonafidebob",
+                                    "score": -1,
+                                    "created_utc": 1653673814.0,
+                                    "response": "> Go ahead and solve it for me without proof of work and with no trusted third parties, I\u2019m all ears.\n\nSo what you\u2019re referring to is a very specific distributed trust problem, but you mention an old computer science problem?  And then get snarky when someone calls you on it?   And you\u2019re saying as little as possible about the specifics of the problem that\u2019s in your head right now, so that you could pull out new constraints whenever you want?\n\nSounds like a rock fetching exercise, I\u2019m not playing.\n\nAre you trying to make a specific point about the bitcoin algorithm as compared to other crypto algorithms?   If so, can you make it more precisely and concisely?   \u2026\u2019cause right now it sounds like a bunch of hot air.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia8iauz",
+                                            "author": "wisequote",
+                                            "score": 2,
+                                            "created_utc": 1653683302.0,
+                                            "response": "Yes, a very specific distributed trust problem for which a solution didn\u2019t exist before in the context of money, prior to Bitcoin. \n\nWho got snarky? Maybe you\u2019re projecting here cupcake? I asked you to go ahead and present a different trustless solution to double spending, you made the claim that Bitcoin didn\u2019t solve it and that it was always \u201cunderstood \u201c. I asked you to provide the solution, you went haywire.\n\nMaybe relax and try to understand technical problems and arguments before you come across as a fool?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia8iyvv",
+                                                    "author": "bonafidebob",
+                                                    "score": -2,
+                                                    "created_utc": 1653683608.0,
+                                                    "response": "Still not fetching your rocks.\n\nI get the sense you\u2019re putting words together but you don\u2019t know what you want to say.   You haven\u2019t presented any \u201ctechnical problems or arguments\u201d here.  Say something that\u2019s not nonsense or ask a specific question if you want a real answer!\n\nIt\u2019s not my fault you don\u2019t make any sense, and it\u2019s not my problem to try to make sense of you.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia8kv2k",
+                                                            "author": "wisequote",
+                                                            "score": 1,
+                                                            "created_utc": 1653684486.0,
+                                                            "response": "Go ahead and present your practical non-expensive solution to this paper, other than PoW or piss off:\n\nhttps://www.microsoft.com/en-us/research/uploads/prod/2016/12/The-Byzantine-Generals-Problem.pdf\n\nIf you don\u2019t present a solution, don\u2019t waste my time, I won\u2019t respond to you further.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia8ms1y",
+                                                                    "author": "bonafidebob",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653685384.0,
+                                                                    "response": "Pasting a google search result into reddit does not demonstrate any understanding of why this old CS problem relates to crypto, *especially* in the thread you brought it up in!\n\nIt\u2019s not my job to figure out what you may or may not mean.  You were trying to make a point.  You threw out some words.  That didn\u2019t work.\n\nWhat is the point *you* want to make here??",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "ia8nbeq",
+                                                                            "author": "wisequote",
+                                                                            "score": 0,
+                                                                            "created_utc": 1653685639.0,
+                                                                            "response": "Piss. Off.",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "ia8oo46",
+                                                                                    "author": "bonafidebob",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653686289.0,
+                                                                                    "response": "Ha, great rebuttal, that clearly demonstrates you know what you're talking about and your ego isn't fragile at all.  <slow clap>",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "ia8s02b",
+                                                                                            "author": "wisequote",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1653687884.0,
+                                                                                            "response": "\ud83d\udc4d\ud83c\udffb",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

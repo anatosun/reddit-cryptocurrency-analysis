@@ -14,8 +14,8 @@
             "url": "https://www.reddit.com/r/btc/comments/uy6yst/bitcoin_cash_clarification_and_bitcoin_sv/",
             "author": "NeTinhabitant",
             "created_utc": 1653569626.0,
-            "score": 4,
-            "num_comments": 2,
+            "score": 11,
+            "num_comments": 19,
             "subreddit": "btc",
             "selftext": "Fairly new to Bitcoin Cash and I am getting sold on it. I'm not sure why things went the way they did through the hard fork. Now from what I hear, the downside increasing block sizes comes with a drawback in security. How serious is this drawback and has there ever been any issues? \n\nNow learning about Bitcoin SV.. Further expanding the block limit and perhaps rendering the chain unsustainable by decreasing the incentive to sell hash power to the network. Plus the multiple 51% attacks the network encountered. Did BCH find the optimal blocksize for current times?",
             "stickied": false,
@@ -23,7 +23,7 @@
                 {
                     "id": "ia2bo5q",
                     "author": "mtrycz",
-                    "score": 6,
+                    "score": 32,
                     "created_utc": 1653572622.0,
                     "response": "Increasing blocks isn't a threat to security as long as it's made in an safe manner. Currently 32MB blocks are perfectly safe. The cap will be increased as needed. \n\nSV split because Mr Wrigth wouldn't have his way in BCH. He is a proven liar, albeit a charismatic one. Like all con artists. \n\nCurrently, a simple Raspberry Pi 4 could easily handle the traffic of 32MB blocks. My own testings say that it can handle up to 128MB blocks, and up to 256MB block with some difficulty. \n\nThere have been performance issues, because we inherited the code from small-blockers, but more and more work is being made to improve the performance. \n\nYou will hear people say that non-mining nodes \"secure the network\". They actually do nothing. \n\nCurrently there is not a big demand for BCH's blocks, and we're ok for the immediate future. Work is being done to remove further bottlenecks and increase the blocksize further, if need arises.",
                     "depth": 1,
@@ -32,11 +32,105 @@
                 {
                     "id": "ia2du8l",
                     "author": "LovelyDayHere",
-                    "score": 1,
+                    "score": 15,
                     "created_utc": 1653573573.0,
                     "response": "> Did BCH find the optimal blocksize for current times?\n\nThe miners put whatever transactions there are, into the blocks.\n\nThe block size reflects the demand, and the thing to ensure is that if demand grows, blocks can get bigger without becoming full and leading to network congestion.\n\nBCH is far away from being congested, and scaling research is happening to ensure that in future, blocks can get much bigger.\n\nBSV changed their strategy to being a general data storage blockchain. It has not worked out well for them.",
                     "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia2xv9t",
+                            "author": "jessquit",
+                            "score": 9,
+                            "created_utc": 1653581764.0,
+                            "response": "\n>BSV changed their strategy to being a general data storage blockchain. It has not worked out well for them.\n\nOP, this. BSV decided to make their blockchain just a place to store any arbitrary amount of data. In no time flat the chain was full of weather data and dog pictures.\n\nIt's a strange community with very odd, upside-down ideas about Bitcoin. It's my personal opinion that BS is or was created / supported by certain actors in the BTC community. The reason I think this is because key small block thought leaders had made all kinds of dire predictions about all the awful things that were going to happen when we raised the block size. They also accused us of worshipping Satoshi like a deity. None of these things came true and they're wrong about the worship stuff. We couldn't care less who Satoshi is, what we care about is his idea, and not because it's *his* idea, but because it's the *best* idea.\n\nThen along comes this guy claiming to be Satoshi who creates a fork and LO! like a caricature he creates a fork that manages to do (or try to do) every bad thing that the small blockers incorrectly said we'd do. \n\n\u2705 Bloat the chain with dog pictures\n\n\u2705 Centralized mining\n\n\u2705 Almost no node network\n\n\u2705 Catastrophic chain reorgs\n\n\u2705 KYC mining (miner ID)\n\n\u2705 Strong support for censorship\n\nEtc.\n\nMaybe there was no relationship at all between BSV and the political team controlling BTC but if not then it's got to be the luckiest coincidence for the small blockers that BSV came along and rescued their narrative.\n\nTo be BSV is a meme puffed up buy a billionaire, nothing more.\n\n/u/netinhabitant",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia2q8wj",
+                    "author": "Shibinator",
+                    "score": 8,
+                    "created_utc": 1653578725.0,
+                    "response": "What you will find is Bitcoin SV forked away from BCH because they have a very binary view of everything.  According to them, it either has to be \"infinite\" scale, or you're not scaling at all.  This is of course ridiculous and delusional, but a lot of it comes from Craig Wright and his fake claims to be Satoshi.  There is clearly a sensible middle ground where we increase the blocksize as demand and technology allows, rather than just removing all limits and assuming the chain can handle any amount of bot spam to facilitate pointless \"our blocks are bigger\" boasting.\n\nFortunately, although it was painful, the BCH community was able to kick them out onto their own chain where they can have \"infinite\" scale.  The result has been that their chain has mostly centralised on one company CoinGeek / TAAL run by a guy called Calvin Ayre and Craig Wright.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia2y8uy",
+                            "author": "jessquit",
+                            "score": 5,
+                            "created_utc": 1653581913.0,
+                            "response": ">  There is clearly a sensible middle ground where we increase the blocksize as demand and technology allows, rather than just removing all limits and assuming the chain can handle any amount of bot spam to facilitate pointless \"our blocks are bigger\" boasting.\n\n\nThe Goldilocks blocksize\n\nNot so small it drives away users, not so big it blows up the network. Just right.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia33v3a",
+                                    "author": "LovelyDayHere",
+                                    "score": 3,
+                                    "created_utc": 1653584101.0,
+                                    "response": "BCH has goldiblocks\n\n:D",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia3ix6o",
+                    "author": "Twoehy",
+                    "score": 4,
+                    "created_utc": 1653590151.0,
+                    "response": "Craig Wright is a grifter who claimed to be Satoshi Nakamoto, and convinced billionaire Calvin Ayre to bankroll him. He thought he could use this lie to launch a hostile takeover of BCH.\n\nONLY WHEN THAT FAILED did they alter their narrative, and pretend that they wanted to create their own chain all along. This was a failed, bad faith effort to attack BCH.\n\nEvery justification for why BSV exists is a post-hoc rationalization because their initial investment is trapped in BSV. They can't sell and recoup the initial investment without crashing the coin to 0 (or close to it). So instead they scramble for reasons to exist.At first they were the \"original BTC\" and going to roll back various upgrades and improvements that had been made.\n\nThen they were the \"banker coin\" that was friendly to government regulation because reasons.\n\nNow they've settled on general data storage I guess? It's all just made up because they never even wanted their own coin in the first place.",
+                    "depth": 1,
                     "comments": []
+                },
+                {
+                    "id": "ia46ykf",
+                    "author": "Remora_101",
+                    "score": 1,
+                    "created_utc": 1653600239.0,
+                    "response": ">Now from what I hear, the downside increasing block sizes comes with a drawback in security. How serious is this drawback and has there ever been any issues?\n\nCore Devs and Blockstream tried many arguments against bigger blocks and looked what worked. Bigger blocks are totally secure. Therefore there never has been a problem. \n\nTo understand that we need to get into the mechanics of the blockchain. Let me know if this interests you. \n\n\n\n\n>Did BCH find the optimal blocksize for current times?\n\nThe optimal blocksize is what we currently need plus some surplus. As long as blocks are not constantly full the blockchain works perfectly. \n\nBCH is basically surrounded by bad engineering solutions.   \n\n- BTC: 1MB forever! no matter our technical ability.\n- BSV unLiMiTEd BloCkSiZe not matter the technical abilities. \n\nCompare that to BCH:\n\n- As much as we need and can currently technically master.\n\nBCH is the sane scaling approach. \n\n\nThere is a nice image from Mr-Zwets that illustrates this nicely :)\n\nhttps://cdn.rcimg.net/Mr-Zwets/47b38dc9/bf48d9ca240ffcc0facac66c558acbc0.png",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia5tspy",
+                    "author": "zdch3",
+                    "score": 1,
+                    "created_utc": 1653630317.0,
+                    "response": "You will need to do your own research. \nPeople here are biased towards BCH, so they will lean toward BCH being the best blockchain. You need to see the other side and check what they say about BCH and BSV. Then you can have reasonably fair view.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaahn4h",
+                    "author": "LucSr",
+                    "score": 1,
+                    "created_utc": 1653724786.0,
+                    "response": "See here http://np.reddit.com/r/btc/comments/tfqz5i/bitcoin_cash_transaction_capacity_should_be_a_thousand_times_larger_than_bi/i14hf0i?context=3 for block size logic.\n\nBe full or not be full, it is never the question.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia3w7wa",
+                    "author": "Leithm",
+                    "score": -3,
+                    "created_utc": 1653595644.0,
+                    "response": "The technical difference between BCH and BSV are not meaningful at this point and for the forseable future.  What matters is the culture of the teams supporting the 2 projects and which is likely to garner the support and interest of the wider world.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia4nh7u",
+                            "author": "chainxor",
+                            "score": 1,
+                            "created_utc": 1653607821.0,
+                            "response": "Oh they are meaningful. BCHs smart contract features are much better in very important places when it comes to building real decentralized p2p monetary applications. The importance of that cannot be overstated.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
                 }
             ]
         }

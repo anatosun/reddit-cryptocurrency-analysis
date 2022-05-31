@@ -1,0 +1,565 @@
+{
+    "subreddit": "Ethereum",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "rj4abi",
+            "title": "Claim a specific eth address",
+            "url": "https://www.reddit.com/r/ethereum/comments/rj4abi/claim_a_specific_eth_address/",
+            "author": "doesntspank",
+            "created_utc": 1639821281.0,
+            "score": 26,
+            "num_comments": 103,
+            "subreddit": "ethereum",
+            "selftext": "Hi! I recently made a mistake and sent some tokens to a valid and unclaimed but incorrect 0x address.\nI was hoping I could figure out how to claim that address to recover my funds. Thx ddy",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "hp17bcq",
+                    "author": "RoBiK75",
+                    "score": 78,
+                    "created_utc": 1639821671.0,
+                    "response": "There is no such thing as \"claiming\" an Ethereum address - you either have the private key or you don't.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hp2jimp",
+                            "author": "Good_Extension_9642",
+                            "score": 30,
+                            "created_utc": 1639849639.0,
+                            "response": "Bingo! If that was the case I'll claim the address that has the most ETH \ud83e\udd23",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hp3hssr",
+                                    "author": "NHLroyrocks",
+                                    "score": 6,
+                                    "created_utc": 1639865156.0,
+                                    "response": "I feel for OP, but it\u2019s kinda funny he thought there was some master centralized entity handing out ETH address like food rations or something.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hp5si5d",
+                            "author": "doesntspank",
+                            "score": 1,
+                            "created_utc": 1639915967.0,
+                            "response": "No one owns it",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hp16xn7",
+                    "author": "viezelex",
+                    "score": 73,
+                    "created_utc": 1639821336.0,
+                    "response": "It is gone",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hp1bjfd",
+                    "author": "PinkPuppyBall",
+                    "score": 48,
+                    "created_utc": 1639825285.0,
+                    "response": "If you could figure out how to \"claim\" an address you could steal money from any wallet.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hp5sisz",
+                            "author": "doesntspank",
+                            "score": 1,
+                            "created_utc": 1639915981.0,
+                            "response": "Hahaha address without an owner",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hp5va2o",
+                                    "author": "PinkPuppyBall",
+                                    "score": 1,
+                                    "created_utc": 1639918021.0,
+                                    "response": "The blockchain is just a big ledger. All addresses always exist. When you create a wallet you only pick one of all the infinite keys that exist. The concept of owning an address doesn't exist in that sense, you have access to it. But it was always there.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hp8d9xj",
+                                            "author": "doesntspank",
+                                            "score": 1,
+                                            "created_utc": 1639958260.0,
+                                            "response": "So there isn\u2019t a way that I can choose the 0x address that I have access to IF no one else has access?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hpa1lvd",
+                                                    "author": "PinkPuppyBall",
+                                                    "score": 1,
+                                                    "created_utc": 1639993971.0,
+                                                    "response": "No. It's the same thing I wrote the first time, if you could figure out a private key from a public key (address) then the whole system breaks down.\n\nIf you are interested then you should try to get a basic understanding of cryptography, otherwise just accept that this is the way it is. It doesn't work like a normal database where you can just say account name taken.",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hpaxenb",
+                                                            "author": "doesntspank",
+                                                            "score": 1,
+                                                            "created_utc": 1640013863.0,
+                                                            "response": "I understand that concept. I\u2019ve heard of people getting the private key for a specific address that is a free agent. \nDo you know how metamask makes private keys available to its users? They obviously don\u2019t get the private key from the public key, yet the end user gets access to it.",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "hpay1xg",
+                                                                    "author": "PinkPuppyBall",
+                                                                    "score": 1,
+                                                                    "created_utc": 1640014148.0,
+                                                                    "response": "As I wrote before, when you create a wallet it just randomly picks one of all the possible private keys. From that private key you get the public key.\n\nThe private key always leads to the same public key. That's why copies of Ethereum like polygon, bsc and avax have the same addresses. If you have access to 0xabc123 on Ethereum you also have it on all the copies.",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "hpb05uj",
+                                                                            "author": "doesntspank",
+                                                                            "score": 1,
+                                                                            "created_utc": 1640015074.0,
+                                                                            "response": "Ahhhh, private key then public key. Thank you",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hp22m7x",
+                    "author": "satoshisfeverdream",
+                    "score": 33,
+                    "created_utc": 1639842094.0,
+                    "response": "Just guess the private key and it\u2019s yours.. simple as that.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hp2jrgh",
+                            "author": "Good_Extension_9642",
+                            "score": 10,
+                            "created_utc": 1639849741.0,
+                            "response": "Quantum computing crypto terminator has entered the chat \ud83e\udd23",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hp39xfs",
+                            "author": "xplaya",
+                            "score": 3,
+                            "created_utc": 1639861399.0,
+                            "response": ": Hold my beer.\n\n: 20 years Later.\n\n: Ok, back now, Ill try again next week.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hp2ojzj",
+                    "author": "Battlehenkie",
+                    "score": 21,
+                    "created_utc": 1639851806.0,
+                    "response": "Thank you OP for doing your part in strengthening Ethereum's deflation.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hp2e1sj",
+                    "author": "NeonThunderHawk",
+                    "score": 14,
+                    "created_utc": 1639847244.0,
+                    "response": "Fucking lol",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hp2oe1s",
+                    "author": "Zaitton",
+                    "score": 7,
+                    "created_utc": 1639851735.0,
+                    "response": "Send me your current wallet address and key. I'll recover them for you.\n\n(Just kidding, don't do that, ever)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hp197fi",
+                    "author": "Any_Credit8271",
+                    "score": 23,
+                    "created_utc": 1639823301.0,
+                    "response": "F",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hp2coso",
+                            "author": "JeremyMSI",
+                            "score": 3,
+                            "created_utc": 1639846641.0,
+                            "response": "F",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hp3hvpf",
+                                    "author": "NHLroyrocks",
+                                    "score": 4,
+                                    "created_utc": 1639865196.0,
+                                    "response": "F",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hp4de3k",
+                                            "author": "WallytheGuru",
+                                            "score": 2,
+                                            "created_utc": 1639880856.0,
+                                            "response": "F",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hp2lg7c",
+                    "author": "call4gdsquanch",
+                    "score": 4,
+                    "created_utc": 1639850468.0,
+                    "response": "I hope it wasn\u2019t too much, sorry that happened to you",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hp1u6ka",
+                    "author": "bakerstirregular100",
+                    "score": 11,
+                    "created_utc": 1639837883.0,
+                    "response": "So will whoever eventually gets this random wallet just have a little bonus in it? Or now that the address has something in it would it never get assigned as a new wallet?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hp1v0b1",
+                            "author": "UnknownEssence",
+                            "score": 22,
+                            "created_utc": 1639838314.0,
+                            "response": "The number of possible addresses is larger than the number of atoms in the universe. \n\nThat address will never be owned by anyone",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hp2dkul",
+                                    "author": "cfcstar",
+                                    "score": 7,
+                                    "created_utc": 1639847036.0,
+                                    "response": "My favorite way to describe the odds is that the likelihood of guessing an address is the same as if there were an earth for every grain of sand on earth and then picking the correct grain of sand on the correct earth",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hp2qysn",
+                                            "author": "tbjfi",
+                                            "score": 8,
+                                            "created_utc": 1639852854.0,
+                                            "response": "So yes it's possible?",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hp3mi7a",
+                                                    "author": "cfcstar",
+                                                    "score": 3,
+                                                    "created_utc": 1639867420.0,
+                                                    "response": "So you\u2019re telling there\u2019s a chance\u2026",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "hp2jyqu",
+                                    "author": "Good_Extension_9642",
+                                    "score": 7,
+                                    "created_utc": 1639849825.0,
+                                    "response": "In other words he sent his ETH to a burn wallet \ud83e\udd23",
+                                    "depth": 3,
+                                    "comments": []
+                                },
+                                {
+                                    "id": "hp1vsyp",
+                                    "author": "bakerstirregular100",
+                                    "score": 2,
+                                    "created_utc": 1639838731.0,
+                                    "response": "But is that because it\u2019s super unlikely or is there a protocol in the system that now won\u2019t allow it?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hp1w0sg",
+                                            "author": "UnknownEssence",
+                                            "score": 15,
+                                            "created_utc": 1639838844.0,
+                                            "response": "It\u2019s super unlikely. \n\nTheoretically someone could create a new address and get that one, or get mine or yours. But the odds so super slim it\u2019s basically impossible.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "hp1wqrp",
+                                                    "author": "bakerstirregular100",
+                                                    "score": 4,
+                                                    "created_utc": 1639839211.0,
+                                                    "response": "Interesting. I always assumed there was some protocol to make it so an address wasn\u2019t available as a new option",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "hp26j6h",
+                                                            "author": "tyrilu",
+                                                            "score": 16,
+                                                            "created_utc": 1639843906.0,
+                                                            "response": "Much of cryptography is based on nearly impossible things not happening.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        },
+                                                        {
+                                                            "id": "hp3bbx3",
+                                                            "author": "exjackly",
+                                                            "score": 1,
+                                                            "created_utc": 1639862065.0,
+                                                            "response": "The protocol doesn't know what private keys (and hence addressed) have already been generated by somebody.  You can do that action in any number of wallets, in your own code, or even offline (or by hand on paper, if you are bored enough)\n\nSo there is no way for it to permissively or preemptively grant or withhold addresses.",
+                                                            "depth": 6,
+                                                            "comments": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hp3ikm7",
+                            "author": "NHLroyrocks",
+                            "score": 2,
+                            "created_utc": 1639865528.0,
+                            "response": "I\u2019m no authority on the matter but given how unlikely it is for someone to have an address clash, I would be dumbfounded to hear devs bother adding any code to they wallet to check if there is a balance before dishing out an address. Any wallet app that works \u2018offline\u2019 obviously isn\u2019t checking and there is nothing stopping people from just guessing private keys hoping to find this \u2018unclaimed\u2019 wallet.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hp2myv8",
+                    "author": "ArtSchoolRejectedMe",
+                    "score": 2,
+                    "created_utc": 1639851123.0,
+                    "response": "Well if you have access to all the world quantum and super computers. You might be able to calculate the private key for it. Just saying.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hp31rwu",
+                    "author": "Swole_Bodry",
+                    "score": 1,
+                    "created_utc": 1639857653.0,
+                    "response": "Hate to say this, but it\u2019s gone. Unless you have those private keys, you cannot access that wallet",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hp36v3z",
+                    "author": "gilg2",
+                    "score": 1,
+                    "created_utc": 1639859970.0,
+                    "response": "Your funds gone :)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hp3exy1",
+                    "author": "jakey2112",
+                    "score": 1,
+                    "created_utc": 1639863783.0,
+                    "response": "Excuse me what?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hp3h8qo",
+                    "author": "lemacfeast",
+                    "score": 1,
+                    "created_utc": 1639864886.0,
+                    "response": "They are gone forever unfortunately :( I don't understand why blockchains don't implement a mechanism for preventing this. One way to solve it could be to introduce the concept of \"activated\" and \"not activated\" addresses. One would \"activate\" an address by sending any amount out from that address (or by sending 0 ETH from the address to itself). And then let the wallet (or the blockchain) prevent anyone from sending money to a \"not activated\" address. That would make it impossible to send money to an address for which nobody has the keys (or at least have had the keys at some point :) )",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hp461ck",
+                            "author": "jessecurry",
+                            "score": 3,
+                            "created_utc": 1639877177.0,
+                            "response": "It\u2019s totally possible to build a smart contract that does something like that, but forcing all addresses to be activated would break the ability for someone to create a wallet \u201con paper\u201d for access later.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hp5c26d",
+                                    "author": "lemacfeast",
+                                    "score": 1,
+                                    "created_utc": 1639902122.0,
+                                    "response": "Sure, you'll have to weigh pros and cons. How big the value is of added foolproofness versus the ability to create addresses \"on paper\". A weaker solution would be to just add a message in the wallet: \"Warning: The address you are trying to send to has never been used. It might be an address which nobody can access, or a mistyped address. Do you really want to proceed?\"",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "hp3pb2g",
+                    "author": "CoinPatrol",
+                    "score": 1,
+                    "created_utc": 1639868781.0,
+                    "response": "Okay well what if you just started making billions of random wallets would you happen upon one with some funds? You're not looking for a specific wallet, just waving billions of magnets over a giant hay pile",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hp3v1b0",
+                    "author": "369isreal",
+                    "score": 1,
+                    "created_utc": 1639871570.0,
+                    "response": "Let me check my wallet!\n\nNop is not mine?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hp4al8g",
+                    "author": "jmh300",
+                    "score": 1,
+                    "created_utc": 1639879473.0,
+                    "response": "Well you can go to court, like that Satoshi guy",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iae1u3z",
+                    "author": "dcarmona",
+                    "score": 1,
+                    "created_utc": 1653796323.0,
+                    "response": "this was actually very helpful for me, i did the same sent 400 to NOBODY... :) funnn, fuckin A",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "hp1picr",
+                    "author": "StockDaddt696969",
+                    "score": -28,
+                    "created_utc": 1639835327.0,
+                    "response": "contact a \u201clocksmith\u201d for crypto.\n\nbrute forcing their password is probably the only way.\n\npay that trustworthy locksmith a % of recovered coins\n\ndon\u2019t take more than what your funds are\n\nif anything leave a few coins in the wallet for their inconvenience",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hp27m39",
+                            "author": "whatisausername711",
+                            "score": 8,
+                            "created_utc": 1639844392.0,
+                            "response": "LMAO brute force SHA256 \ud83e\udd23\ud83e\udd23\ud83e\udd23",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "hp1wbxa",
+                            "author": "Tooboukou",
+                            "score": 10,
+                            "created_utc": 1639839002.0,
+                            "response": "The fbi cant brute force it, but I know a guy that can...",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "hp1wjsn",
+                                    "author": "StockDaddt696969",
+                                    "score": -22,
+                                    "created_utc": 1639839113.0,
+                                    "response": "the fbi can absolutely force it brother",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "hp23xqy",
+                                            "author": "MrQot",
+                                            "score": 17,
+                                            "created_utc": 1639842706.0,
+                                            "response": "yeah all they gotta do is turn all the matter in the observable universe into chips specifically designed to compute Ethereum's private-public key cryptography and then extract all the energy from all black holes and it's a simple matter of waiting several times the age of the universe before you get a match",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "hp27qc9",
+                                            "author": "whatisausername711",
+                                            "score": 5,
+                                            "created_utc": 1639844444.0,
+                                            "response": "No the fuck they cannot lmfao\n\nYou'd need a cluster of the most powerful computers in the world + several thousand years to brute force sha256.",
+                                            "depth": 4,
+                                            "comments": []
+                                        },
+                                        {
+                                            "id": "hp2rzcc",
+                                            "author": "danarchist",
+                                            "score": 2,
+                                            "created_utc": 1639853301.0,
+                                            "response": "What in cop worship tarnation is this illogical garbage?\n\nIf it was possible to brute force it then crypto would be worthless. It's literally the one thing that makes this all work, the fact that nobody has the power to control your shit.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hp3spew",
+                            "author": "CryptoRoast_",
+                            "score": 2,
+                            "created_utc": 1639870431.0,
+                            "response": "This isnt a thing. Lol",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "hp325xr",
+                    "author": "Pleb-SoBayed",
+                    "score": 0,
+                    "created_utc": 1639857832.0,
+                    "response": "All those people who claim their metamask got hacked on this and other ethereum reddits, when they fell for a scam has entered the chat.\n\n\nLike yes karen im sure some scammer used a $100 000 quantum super computer which would have a good chance at hacking government data bases. Instead of hacking governments they broke the encryption and\"hacked\" your metamask all for your $3 worth of ethereum\n\nWhats more likely is you gave them your key\n\nLol",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "hp5sw1z",
+                            "author": "doesntspank",
+                            "score": 1,
+                            "created_utc": 1639916269.0,
+                            "response": "Thanks. Very helpful. Not scammed, wrong network. Thank you king god. Very funny and helpful.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

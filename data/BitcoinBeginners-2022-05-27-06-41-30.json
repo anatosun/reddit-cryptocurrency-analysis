@@ -1,0 +1,199 @@
+{
+    "subreddit": "BitcoinBeginners",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uyrxx1",
+            "title": "Bitcoin Core, after starting up the application, does not show the wallet",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uyrxx1/bitcoin_core_after_starting_up_the_application/",
+            "author": "janissary2016",
+            "created_utc": 1653632944.0,
+            "score": 3,
+            "num_comments": 42,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "Hi.\n\nWhen I installed bitcoin core and created my wallet, I did download 13 years of blockchain data but now I can't see my wallet when I try to open it. Where would I be able to find this?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia5xcv2",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1653632944.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia5ym1y",
+                    "author": "BTCMachineElf",
+                    "score": 0,
+                    "created_utc": 1653633926.0,
+                    "response": "You should not be using Bitcoin core as a wallet. Nobody does that anymore. Bitcoin core is used to run nodes, which you can use to check your wallets balance. But even that is unnecessary for a new user.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia5ypeb",
+                            "author": "janissary2016",
+                            "score": 1,
+                            "created_utc": 1653634000.0,
+                            "response": "Ok but that's not helping this situation..",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia605ei",
+                                    "author": "bitusher",
+                                    "score": 1,
+                                    "created_utc": 1653635183.0,
+                                    "response": "what OS is core installed in?",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia6078v",
+                                            "author": "janissary2016",
+                                            "score": 1,
+                                            "created_utc": 1653635228.0,
+                                            "response": "Ubuntu 22.04",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia60cfk",
+                                                    "author": "bitusher",
+                                                    "score": 1,
+                                                    "created_utc": 1653635349.0,
+                                                    "response": "multiple screens?\n\nrestart the computer?",
+                                                    "depth": 5,
+                                                    "comments": [
+                                                        {
+                                                            "id": "ia60oie",
+                                                            "author": "janissary2016",
+                                                            "score": 1,
+                                                            "created_utc": 1653635636.0,
+                                                            "response": "No multiple screens..",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia60w3v",
+                                                                    "author": "bitusher",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653635818.0,
+                                                                    "response": "I asked 2 questions above and you only replied to one of them. You are going to make me ask twice? I understand it seems a very basic question but many people don't even attempt the very basic steps in troubleshooting so its important to start with the basics",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "ia61b27",
+                                                                            "author": "janissary2016",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653636171.0,
+                                                                            "response": "I'll be restarting the computer in a bit. I got a file uploading the drive. I'm curious about how to find my wallet files to upload to Google Drive as well because I'm going to do a fresh install (for a different reason) and I don't want to lose my coins.",
+                                                                            "depth": 8,
+                                                                            "comments": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "ia61576",
+                                                            "author": "janissary2016",
+                                                            "score": 1,
+                                                            "created_utc": 1653636030.0,
+                                                            "response": "Where can I find my wallet files on my computer so I can back it up to my Google Drive?",
+                                                            "depth": 6,
+                                                            "comments": [
+                                                                {
+                                                                    "id": "ia61c9z",
+                                                                    "author": "bitusher",
+                                                                    "score": 1,
+                                                                    "created_utc": 1653636201.0,
+                                                                    "response": "https://en.bitcoin.it/wiki/Data_directory",
+                                                                    "depth": 7,
+                                                                    "comments": [
+                                                                        {
+                                                                            "id": "ia62rge",
+                                                                            "author": "janissary2016",
+                                                                            "score": 1,
+                                                                            "created_utc": 1653637466.0,
+                                                                            "response": "I found wallet-backup.dat. Would I be able to load my wallet from that? I tried but it doesn't see the file..",
+                                                                            "depth": 8,
+                                                                            "comments": [
+                                                                                {
+                                                                                    "id": "ia62wvo",
+                                                                                    "author": "bitusher",
+                                                                                    "score": 1,
+                                                                                    "created_utc": 1653637602.0,
+                                                                                    "response": "That is where your keys are stored if you backed it up , save that off the computer than restart it \n\nYou couldn't fine wallet.dat either with that search?",
+                                                                                    "depth": 9,
+                                                                                    "comments": [
+                                                                                        {
+                                                                                            "id": "ia6324i",
+                                                                                            "author": "janissary2016",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1653637731.0,
+                                                                                            "response": "still searching..",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "ia63ifx",
+                                                                                            "author": "janissary2016",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1653638140.0,
+                                                                                            "response": "Just found it but how does one load it in Bitcoin-core?",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "ia8qjal",
+                                                                                            "author": "janissary2016",
+                                                                                            "score": 1,
+                                                                                            "created_utc": 1653687180.0,
+                                                                                            "response": "Restarting did nothing",
+                                                                                            "depth": 10,
+                                                                                            "comments": []
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia676cd",
+                            "author": "GibbsSamplePlatter",
+                            "score": 1,
+                            "created_utc": 1653641416.0,
+                            "response": "I do",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia85yam",
+                            "author": "jususlarinus",
+                            "score": 1,
+                            "created_utc": 1653677740.0,
+                            "response": "I think it is a beter to store your funds on core wallet, whay you think oposite?",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -20295,123 +20295,6 @@
             ]
         },
         {
-            "id": "up1hev",
-            "title": "confused noon question about wallet and addresses",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/up1hev/confused_noon_question_about_wallet_and_addresses/",
-            "author": "nom_nomenclature",
-            "created_utc": 1652476078.0,
-            "score": 1,
-            "num_comments": 30,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "So a wallet can have multiple addresses. Does each address have its own private key? Or is the private key per wallet? If its my wallet and there are 10 addresses in it, do I have access to all the btc in the 10 addresses?\n\nRelated: I watched a YouTube vid of a guy buying using the decentralised exchange Bisq. He had no funds so I transferred from a private wallet to his Bisq wallet. It appeared in the video that no fee was charged. How is this possible? (it may be that I misunderstood the vid)...",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8i322z",
-                    "author": "BitcoinWell",
-                    "score": 2,
-                    "created_utc": 1652476928.0,
-                    "response": "Every single public address has its own private key but your wallet has whats called a master private key which mathematically creates each private keys for each public address. So you can have BTC in every address and your master private key will be able to create the private key for the individual public addresses that have bitcoin on them so you can send.\n\nAs for your BISQ question, fees are charged on top of the amount being sent. So if I wanted to send you 1 BTC and paid 0.01 to send it, you will receive 1 BTC and not 0.99 BTC. Unless the video showed something else.",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8js9by",
-                            "author": "nom_nomenclature",
-                            "score": 1,
-                            "created_utc": 1652509706.0,
-                            "response": "Thank you, great explanation, that's clear to me now.",
-                            "depth": 2,
-                            "comments": []
-                        }
-                    ]
-                },
-                {
-                    "id": "i8i167a",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652476079.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8i2rsu",
-                    "author": "DudeIncogneto",
-                    "score": 1,
-                    "created_utc": 1652476801.0,
-                    "response": "Multiple addresses are derived from the x/y/zpub depending on which derivation path you use. It is known as the extended public key and all receiving address in that wallet are associated with that extended public key.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8jud2x",
-                    "author": "igadjeed",
-                    "score": 1,
-                    "created_utc": 1652511396.0,
-                    "response": "> do I have access to all the btc in the 10 addresses?\n\nBitcoin is not in an address. An address is a property of a coin. A Bitcoin address is single-use. It is not an account, not for accumulating a balance",
-                    "depth": 1,
-                    "comments": [
-                        {
-                            "id": "i8jvfmp",
-                            "author": "nom_nomenclature",
-                            "score": 1,
-                            "created_utc": 1652512274.0,
-                            "response": "What do you mean by single use? If I send to an address, that address is no longer usable?",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i8k51p0",
-                                    "author": "igadjeed",
-                                    "score": 1,
-                                    "created_utc": 1652520778.0,
-                                    "response": "https://en.bitcoin.it/wiki/Address_reuse",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        },
-                        {
-                            "id": "i8jvnld",
-                            "author": "nom_nomenclature",
-                            "score": 1,
-                            "created_utc": 1652512461.0,
-                            "response": "And what can be considered an account? The wallet?",
-                            "depth": 2,
-                            "comments": [
-                                {
-                                    "id": "i8k56hb",
-                                    "author": "igadjeed",
-                                    "score": 1,
-                                    "created_utc": 1652520893.0,
-                                    "response": "Bitcoin has no accounts. The blockchain stores transactions. A transaction has one or more inputs and one or more outputs. A transaction output is a coin  \n\nBitcoin is like cash in your pocket, a set of coins, each with a different value, each with a different unlocking mechanism (address)",
-                                    "depth": 3,
-                                    "comments": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "i8k67hv",
-                    "author": "nom_nomenclature",
-                    "score": 1,
-                    "created_utc": 1652521814.0,
-                    "response": "The wallet holds the private keys for the public addresses these coins are associated with. So cant the wallet can be considered the account?",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8l3cxk",
-                    "author": "nom_nomenclature",
-                    "score": 1,
-                    "created_utc": 1652542036.0,
-                    "response": "If addresses are single use, what happens with donations? A company like Wikileaks has a public address you can donate to. Multiple people donate to this over time. How is this possible if addresses are single use?",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
             "id": "uodihc",
             "title": "Buying through Coinbase vs Trezor",
             "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uodihc/buying_through_coinbase_vs_trezor/",
@@ -20788,38 +20671,6 @@
                     "score": 1,
                     "created_utc": 1652373830.0,
                     "response": "\n$FLURRY do not require expert crypto traders to earn but rather, just a few steps and you are ready to go. FlurryFinance has made it possible through their platform. Join us.",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "uoutqe",
-            "title": "any bitcoin only tech subs ?",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uoutqe/any_bitcoin_only_tech_subs/",
-            "author": "vitalyevodin",
-            "created_utc": 1652457238.0,
-            "score": 1,
-            "num_comments": 19,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "looking for bitcoin development and protocol subs",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8gtf55",
-                    "author": "bitusher",
-                    "score": 7,
-                    "created_utc": 1652458010.0,
-                    "response": "Reddit is a very poor place for development focused information.\n\nFor those wanting to help become a developer - \nhttps://medium.com/@rajarshi149/from-hello-world-to-bitcoin-core-dd233ce99f72\n\nhttps://bitcoin.org/en/developer-reference\n\nhttps://github.com/minium/Bitcoin-Spec\n\nhttps://github.com/bitcoin/bips#readme\n\nhttps://lists.linuxfoundation.org/pipermail/bitcoin-dev\n\nhttps://bitcoincore.org\n\nhttps://bitcoinops.org\n\nhttps://bitcoinacks.com\n\nhttps://github.com/bitcoin/bitcoin/projects\n\n\nhttps://www.lopp.net/bitcoin-information/technical-resources.html\n\nhttps://bitcointechtalk.com/a-gentle-introduction-to-bitcoin-core-development-fdc95eaee6b8\n\n\n\nOr take a one on one course with core developer Jimmy Song -\n\nhttp://programmingblockchain.com/\n\nhttps://hackernoon.com/how-to-become-a-blockchain-developer-with-jimmy-song-a1333072a2e3\n\n------------\n\nDevelopment focused podcasts and youtube channels -\n\n**Bitcoin and Cryptocurrency Technologies Online Course**\n\nhttps://www.youtube.com/channel/UCNcSSleedtfyDuhBvOQzFzQ\n\n**Scaling Bitcoin**\n\nhttps://www.youtube.com/channel/UCmwaDulmQtX-H8FOSQTKqMg\n\n**SF Bitcoin Meetup**\n\nhttps://www.youtube.com/channel/UCOLeHoKV7SHwAAS0zBwsV-A\n\n**SF Bitcoin Developers**\n\nhttps://www.youtube.com/channel/UCREs0ConyCR2sEFf-DrLRMw\n\n**Off Chain with Jimmy Song**\n\nhttps://www.youtube.com/channel/UCEFJVYNiPp8xeIUyfaPCPQw\n\n**Bitcoin lectures**\n\nhttps://www.youtube.com/channel/UC5nVX9C2vM1dFg0BvatKEOg/videos\n\n**Bitcoin Edge**\n\nhttps://www.youtube.com/channel/UCywSzGiWWcUG1gTp45YdPUQ/videos\n\n**Ren\u00e9 Pickhardt**\n\nhttps://www.youtube.com/user/renepickhardt/videos\n\n**Chaincode Labs**\n\nhttps://www.youtube.com/channel/UC9OcX1kIjsowRRZzl8tD27w/videos\n\n**Bitcoin Milano**\n\nhttps://www.youtube.com/channel/UC8oWjgG__6AH8BV3UETwuJw/videos",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8grgwe",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652457238.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
                     "depth": 1,
                     "comments": []
                 }
@@ -21641,74 +21492,6 @@
                     "score": 0,
                     "created_utc": 1652651211.0,
                     "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                }
-            ]
-        },
-        {
-            "id": "uq0zto",
-            "title": "Is the a way to see the price of Bitcoin on all exchanges in a single live list?",
-            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uq0zto/is_the_a_way_to_see_the_price_of_bitcoin_on_all/",
-            "author": "TwistedHelixis",
-            "created_utc": 1652600440.0,
-            "score": 0,
-            "num_comments": 25,
-            "subreddit": "BitcoinBeginners",
-            "selftext": "The title says it all....\n\nIs the a way to see the price of Bitcoin on all exchanges in a single live list?",
-            "stickied": false,
-            "comments": [
-                {
-                    "id": "i8o8p5w",
-                    "author": "MaxSan",
-                    "score": 4,
-                    "created_utc": 1652601678.0,
-                    "response": "[cryptowat.ch](https://cryptowat.ch) is quite nice.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8o9hy5",
-                    "author": "Kno010",
-                    "score": 5,
-                    "created_utc": 1652602354.0,
-                    "response": "CoinGecko",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8o78uh",
-                    "author": "AutoModerator",
-                    "score": 1,
-                    "created_utc": 1652600441.0,
-                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8o7ro2",
-                    "author": "Noto987",
-                    "score": 1,
-                    "created_utc": 1652600890.0,
-                    "response": "Im guessing you can open up multiple windows on tradingview desktop software",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8rwf6p",
-                    "author": "Brettanomyces78",
-                    "score": 1,
-                    "created_utc": 1652669295.0,
-                    "response": "All?  No.  But you can see most on sites like CoinGecko or CoinMarketCap.",
-                    "depth": 1,
-                    "comments": []
-                },
-                {
-                    "id": "i8odtca",
-                    "author": "reedroland600",
-                    "score": 0,
-                    "created_utc": 1652606061.0,
-                    "response": "That would probably be interesting. But I prefer to trade cryptocurrencies on Bitfinex because they have a user-friendly interface.",
                     "depth": 1,
                     "comments": []
                 }
@@ -23221,6 +23004,223 @@
                     "score": 1,
                     "created_utc": 1652436733.0,
                     "response": "Write the transaction down in a ledger. Don\u2019t buy at ath. Remember your gambling. Crypto has turned into a casino.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uoutqe",
+            "title": "any bitcoin only tech subs ?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uoutqe/any_bitcoin_only_tech_subs/",
+            "author": "vitalyevodin",
+            "created_utc": 1652457238.0,
+            "score": 1,
+            "num_comments": 25,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "looking for bitcoin development and protocol subs",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8gtf55",
+                    "author": "bitusher",
+                    "score": 5,
+                    "created_utc": 1652458010.0,
+                    "response": "Reddit is a very poor place for development focused information.\n\nFor those wanting to help become a developer - \nhttps://medium.com/@rajarshi149/from-hello-world-to-bitcoin-core-dd233ce99f72\n\nhttps://bitcoin.org/en/developer-reference\n\nhttps://github.com/minium/Bitcoin-Spec\n\nhttps://github.com/bitcoin/bips#readme\n\nhttps://lists.linuxfoundation.org/pipermail/bitcoin-dev\n\nhttps://bitcoincore.org\n\nhttps://bitcoinops.org\n\nhttps://bitcoinacks.com\n\nhttps://github.com/bitcoin/bitcoin/projects\n\n\nhttps://www.lopp.net/bitcoin-information/technical-resources.html\n\nhttps://bitcointechtalk.com/a-gentle-introduction-to-bitcoin-core-development-fdc95eaee6b8\n\n\n\nOr take a one on one course with core developer Jimmy Song -\n\nhttp://programmingblockchain.com/\n\nhttps://hackernoon.com/how-to-become-a-blockchain-developer-with-jimmy-song-a1333072a2e3\n\n------------\n\nDevelopment focused podcasts and youtube channels -\n\n**Bitcoin and Cryptocurrency Technologies Online Course**\n\nhttps://www.youtube.com/channel/UCNcSSleedtfyDuhBvOQzFzQ\n\n**Scaling Bitcoin**\n\nhttps://www.youtube.com/channel/UCmwaDulmQtX-H8FOSQTKqMg\n\n**SF Bitcoin Meetup**\n\nhttps://www.youtube.com/channel/UCOLeHoKV7SHwAAS0zBwsV-A\n\n**SF Bitcoin Developers**\n\nhttps://www.youtube.com/channel/UCREs0ConyCR2sEFf-DrLRMw\n\n**Off Chain with Jimmy Song**\n\nhttps://www.youtube.com/channel/UCEFJVYNiPp8xeIUyfaPCPQw\n\n**Bitcoin lectures**\n\nhttps://www.youtube.com/channel/UC5nVX9C2vM1dFg0BvatKEOg/videos\n\n**Bitcoin Edge**\n\nhttps://www.youtube.com/channel/UCywSzGiWWcUG1gTp45YdPUQ/videos\n\n**Ren\u00e9 Pickhardt**\n\nhttps://www.youtube.com/user/renepickhardt/videos\n\n**Chaincode Labs**\n\nhttps://www.youtube.com/channel/UC9OcX1kIjsowRRZzl8tD27w/videos\n\n**Bitcoin Milano**\n\nhttps://www.youtube.com/channel/UC8oWjgG__6AH8BV3UETwuJw/videos",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8grgwe",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652457238.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "up1hev",
+            "title": "confused noon question about wallet and addresses",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/up1hev/confused_noon_question_about_wallet_and_addresses/",
+            "author": "nom_nomenclature",
+            "created_utc": 1652476078.0,
+            "score": 1,
+            "num_comments": 40,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "So a wallet can have multiple addresses. Does each address have its own private key? Or is the private key per wallet? If its my wallet and there are 10 addresses in it, do I have access to all the btc in the 10 addresses?\n\nRelated: I watched a YouTube vid of a guy buying using the decentralised exchange Bisq. He had no funds so I transferred from a private wallet to his Bisq wallet. It appeared in the video that no fee was charged. How is this possible? (it may be that I misunderstood the vid)...",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8i322z",
+                    "author": "BitcoinWell",
+                    "score": 2,
+                    "created_utc": 1652476928.0,
+                    "response": "Every single public address has its own private key but your wallet has whats called a master private key which mathematically creates each private keys for each public address. So you can have BTC in every address and your master private key will be able to create the private key for the individual public addresses that have bitcoin on them so you can send.\n\nAs for your BISQ question, fees are charged on top of the amount being sent. So if I wanted to send you 1 BTC and paid 0.01 to send it, you will receive 1 BTC and not 0.99 BTC. Unless the video showed something else.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8js9by",
+                            "author": "nom_nomenclature",
+                            "score": 1,
+                            "created_utc": 1652509706.0,
+                            "response": "Thank you, great explanation, that's clear to me now.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "i8i167a",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652476079.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8i2rsu",
+                    "author": "DudeIncogneto",
+                    "score": 1,
+                    "created_utc": 1652476801.0,
+                    "response": "Multiple addresses are derived from the x/y/zpub depending on which derivation path you use. It is known as the extended public key and all receiving address in that wallet are associated with that extended public key.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8jud2x",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1652511396.0,
+                    "response": "> do I have access to all the btc in the 10 addresses?\n\nBitcoin is not in an address. An address is a property of a coin. A Bitcoin address is single-use. It is not an account, not for accumulating a balance",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "i8jvfmp",
+                            "author": "nom_nomenclature",
+                            "score": 1,
+                            "created_utc": 1652512274.0,
+                            "response": "What do you mean by single use? If I send to an address, that address is no longer usable?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8k51p0",
+                                    "author": "igadjeed",
+                                    "score": 1,
+                                    "created_utc": 1652520778.0,
+                                    "response": "https://en.bitcoin.it/wiki/Address_reuse",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "i8jvnld",
+                            "author": "nom_nomenclature",
+                            "score": 1,
+                            "created_utc": 1652512461.0,
+                            "response": "And what can be considered an account? The wallet?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "i8k56hb",
+                                    "author": "igadjeed",
+                                    "score": 1,
+                                    "created_utc": 1652520893.0,
+                                    "response": "Bitcoin has no accounts. The blockchain stores transactions. A transaction has one or more inputs and one or more outputs. A transaction output is a coin  \n\nBitcoin is like cash in your pocket, a set of coins, each with a different value, each with a different unlocking mechanism (address)",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "i8k67hv",
+                    "author": "nom_nomenclature",
+                    "score": 1,
+                    "created_utc": 1652521814.0,
+                    "response": "The wallet holds the private keys for the public addresses these coins are associated with. So cant the wallet can be considered the account?",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8l3cxk",
+                    "author": "nom_nomenclature",
+                    "score": 1,
+                    "created_utc": 1652542036.0,
+                    "response": "If addresses are single use, what happens with donations? A company like Wikileaks has a public address you can donate to. Multiple people donate to this over time. How is this possible if addresses are single use?",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uq0zto",
+            "title": "Is the a way to see the price of Bitcoin on all exchanges in a single live list?",
+            "url": "https://www.reddit.com/r/BitcoinBeginners/comments/uq0zto/is_the_a_way_to_see_the_price_of_bitcoin_on_all/",
+            "author": "TwistedHelixis",
+            "created_utc": 1652600440.0,
+            "score": 0,
+            "num_comments": 33,
+            "subreddit": "BitcoinBeginners",
+            "selftext": "The title says it all....\n\nIs the a way to see the price of Bitcoin on all exchanges in a single live list?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "i8o8p5w",
+                    "author": "MaxSan",
+                    "score": 4,
+                    "created_utc": 1652601678.0,
+                    "response": "[cryptowat.ch](https://cryptowat.ch) is quite nice.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8o9hy5",
+                    "author": "Kno010",
+                    "score": 3,
+                    "created_utc": 1652602354.0,
+                    "response": "CoinGecko",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8o78uh",
+                    "author": "AutoModerator",
+                    "score": 1,
+                    "created_utc": 1652600441.0,
+                    "response": "WassaWassaWassup! Scam Alert! Scammers are particularly active on this sub. They operate via private messages and private chat. If you receive private messages, be extremely careful. Use the **report** link to report any suspicious private message to Reddit.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/BitcoinBeginners) if you have any questions or concerns.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8o7ro2",
+                    "author": "Noto987",
+                    "score": 1,
+                    "created_utc": 1652600890.0,
+                    "response": "Im guessing you can open up multiple windows on tradingview desktop software",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8rwf6p",
+                    "author": "Brettanomyces78",
+                    "score": 1,
+                    "created_utc": 1652669295.0,
+                    "response": "All?  No.  But you can see most on sites like CoinGecko or CoinMarketCap.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "i8odtca",
+                    "author": "reedroland600",
+                    "score": 0,
+                    "created_utc": 1652606061.0,
+                    "response": "That would probably be interesting. But I prefer to trade cryptocurrencies on Bitfinex because they have a user-friendly interface.",
                     "depth": 1,
                     "comments": []
                 }

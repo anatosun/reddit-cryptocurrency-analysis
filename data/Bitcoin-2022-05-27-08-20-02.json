@@ -1,0 +1,318 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uytb7s",
+            "title": "Learning programming on top of L1",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uytb7s/learning_programming_on_top_of_l1/",
+            "author": "Hodlesterol",
+            "created_utc": 1653638783.0,
+            "score": 3,
+            "num_comments": 3,
+            "subreddit": "Bitcoin",
+            "selftext": "Is there a beginner guide how to create programs that would ultimately verify any ownership on L1?",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia661w3",
+                    "author": "Massive-News-7068",
+                    "score": 1,
+                    "created_utc": 1653640405.0,
+                    "response": "To verify the integrity of a transaction you must decrypt the transaction's signature using the sender public key. As a result you will have the hash of the transaction payment. You must check this hash is equal to the one you get by hashing the payment by yourself (with sha256)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia6cibr",
+                    "author": "Raphae1",
+                    "score": 1,
+                    "created_utc": 1653646175.0,
+                    "response": "For ultimate verification, you\u2018d have to get [https://bitcoincore.org/](https://bitcoincore.org/) and download and verify the whole blockchain (which takes about a week). If you don\u2018t want to do that, you\u2018d have to trust someone, who did that for you (i.e. some electrum server)\n\n[https://electrumx-spesmilo.readthedocs.io/en/latest/protocol.html](https://electrumx-spesmilo.readthedocs.io/en/latest/protocol.html)  \n\n\nIn fact how much you can trust any ownership, is a function of time. If an incoming transaction is buried deep down in the blockchain (i.e. 6 blocks in the past), it is much more trusted than a transaction, that is just in the mempool or confirmed only once. So there is no 100% ultimate, but confirmed 6 blocks in the past is about 99.99999999% ultimate.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia7q6m2",
+                    "author": "c_games_official",
+                    "score": 1,
+                    "created_utc": 1653670990.0,
+                    "response": "I suggest running umbrel, which runs bitcoind and lnd in docker containers. From there you can easily access blockchain info (including unspent transactions/\"ownership\") via simple APIs.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uytdzc",
+            "title": "Most NoCoiners Simply Don't Understand Bitcoin, Finds Block Study",
+            "url": "https://cryptoadventure.com/most-nocoiners-simply-dont-understand-bitcoin-finds-block-study/",
+            "author": "bdinu89",
+            "created_utc": 1653639147.0,
+            "score": 78,
+            "num_comments": 28,
+            "subreddit": "Bitcoin",
+            "selftext": "",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia6f0t5",
+                    "author": "plug_and_pray",
+                    "score": 51,
+                    "created_utc": 1653648198.0,
+                    "response": "Looking at what's going on in the crypto space, I'd say the same about 90% of coiners too.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia6gxlv",
+                            "author": "1025scrap",
+                            "score": 6,
+                            "created_utc": 1653649582.0,
+                            "response": "Was just going to post the same sentiment",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia6xyx4",
+                            "author": "SHA256dynasty",
+                            "score": 5,
+                            "created_utc": 1653659169.0,
+                            "response": "if you have never made an on-chain tx, you probably don't understand how bitcoin works.\n\nif you have never run a node, you probably don't understand why bitcoin matters.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia6yi73",
+                                    "author": "plug_and_pray",
+                                    "score": 4,
+                                    "created_utc": 1653659416.0,
+                                    "response": "True. But for mass adoption it's not really necessary to understand how Bitcoin and blockchain works from the technical perspective, same like people don't need to understand how websites or email protocols work to use them.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia71hmx",
+                                            "author": "SHA256dynasty",
+                                            "score": 4,
+                                            "created_utc": 1653660770.0,
+                                            "response": "most people don't understand the technicals of how torrents work either. but there's a big difference between downloading any torrent yourself anytime vs. asking your friend to use bittorrent to get you that new movie you want to watch. you benefit from bittorrent either way, but in relying on your friend as a middleman *you* haven't really adopted the technology.\n\nwith p2p open source software you don't need to know every line of code, but the point is to participate in the network directly rather than by proxy.",
+                                            "depth": 4,
+                                            "comments": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia668i9",
+                    "author": "Amoci",
+                    "score": 7,
+                    "created_utc": 1653640568.0,
+                    "response": "most flat-earthers don't fly",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia8vudq",
+                            "author": "gooru59",
+                            "score": 1,
+                            "created_utc": 1653689744.0,
+                            "response": "Listen here sheep,, we all know planes are just a globalist lizard hoax to trick ppl into thinking the world isn't flat.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia64txa",
+                    "author": "coinfeeds-bot",
+                    "score": 5,
+                    "created_utc": 1653639305.0,
+                    "response": "tldr; Jack Dorsey\u2019s financial company Block has unveiled a survey from January examining the top reasons that people don\u2019t buy Bitcoin. The top reason, cited by 51% of respondents, was that they simply don't understand it well enough. Other common reasons for avoiding Bitcoin included cybersecurity risks and price volatility.\n\n*This summary is auto generated by a bot and not meant to replace reading the original article. As always, DYOR.*",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia6ipws",
+                    "author": "rldr",
+                    "score": 4,
+                    "created_utc": 1653650830.0,
+                    "response": "In all fairness, they probably do not understand most investment vehicles. I'm surprised \u201cI don'tunderstand it\u201d responses are not higher than 50% of responses.\n\nFor example, ask a nocoiner if they understand an ETF, REIT, or a mutual fund?",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia6yebz",
+                            "author": "HitMePat",
+                            "score": 3,
+                            "created_utc": 1653659367.0,
+                            "response": "Ask them if they understand the dollar.  \n\nMost car drivers don't understand combustion engines.  Most internet users don't understand computer science.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia7bpxy",
+                                    "author": "cutoffs89",
+                                    "score": 2,
+                                    "created_utc": 1653665084.0,
+                                    "response": "Exactly, more important to understand the WHY?",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia8ug7f",
+                            "author": "Key-Conversation-677",
+                            "score": 1,
+                            "created_utc": 1653689065.0,
+                            "response": "Dunning-Kruger most likely",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia7oa1l",
+                    "author": "InspectionMission115",
+                    "score": 2,
+                    "created_utc": 1653670212.0,
+                    "response": "Thats why I educate people when they ask instead of treating them like they are stupid. I have had many friends and family members come over for dinner to have me teach them about bitcoin",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia7rt5n",
+                    "author": "PumperNikel0",
+                    "score": 2,
+                    "created_utc": 1653671664.0,
+                    "response": "It takes time. I urge most people to keep reading until they understand and not give up.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia66qxy",
+                    "author": "squareOfTwo",
+                    "score": 1,
+                    "created_utc": 1653641028.0,
+                    "response": "Some of them will never understand",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia6u7gl",
+                    "author": "SacksOfPhone",
+                    "score": 1,
+                    "created_utc": 1653657376.0,
+                    "response": "I know them, I short them.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia7y664",
+                    "author": "consloan47",
+                    "score": 1,
+                    "created_utc": 1653674344.0,
+                    "response": "Many people do not understand Bitcoin and will never understand it. There are a lot of people who don't understand among my friends.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia6th1d",
+                    "author": "VPNApe",
+                    "score": 0,
+                    "created_utc": 1653657015.0,
+                    "response": "They really don't have to get it. There will be a point where Bitcoin adoption is so widespread that people will just use it without question.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia6s4jy",
+                    "author": "AlternativeGazelle",
+                    "score": -1,
+                    "created_utc": 1653656341.0,
+                    "response": "Most people simply don't understand Bitcoin",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia6nvyt",
+                    "author": "Numnums81",
+                    "score": 1,
+                    "created_utc": 1653654035.0,
+                    "response": "I own 0.099 bitcoin and I have to say I should have a better understanding of it.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia7dsis",
+                            "author": "MilesPower",
+                            "score": 2,
+                            "created_utc": 1653665933.0,
+                            "response": "Honestly it's a lot of fun learning about it from the ground up. [https://nakamotoinstitute.org/](https://nakamotoinstitute.org/) it's always fun deep diving into the original satoshi posts.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia7e1bc",
+                                    "author": "Numnums81",
+                                    "score": 1,
+                                    "created_utc": 1653666034.0,
+                                    "response": "Thanks for the share!",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia889fx",
+                    "author": "crushfield",
+                    "score": 1,
+                    "created_utc": 1653678772.0,
+                    "response": "Most people don't even know what money is",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9gkpk",
+                    "author": "SnooPandas3965",
+                    "score": 1,
+                    "created_utc": 1653700401.0,
+                    "response": "I should understand it better, yet find motivation for crypto from a strong dislike of banks, among other things. I think NoCoiners simply don't understand how to go about acquiring it, and have other things in life that are more important.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9jq90",
+                    "author": "Vipu2",
+                    "score": 1,
+                    "created_utc": 1653702064.0,
+                    "response": "Can we even expect too many people to understand it? \n\nIts not easy at all to understand all the things needed for that \"click\"",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaaiop0",
+                    "author": "cocoabeachbrews",
+                    "score": 1,
+                    "created_utc": 1653725747.0,
+                    "response": "Most people don\u2019t understand fiat either.  Probably at least half the people still think there is a gold coin in Ft Knox backing every US Dollar.  If you understand fiat or Bitcoin and are still a no-coiner that would be the shocking news.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia6alg9",
+                    "author": "Alicehowold",
+                    "score": -7,
+                    "created_utc": 1653644526.0,
+                    "response": "It is fantastic! Bitcoin determines stupid people so simple! I would never believe that there are so many so stupid people in the world! It really becomes scary to see it, to aware it.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}

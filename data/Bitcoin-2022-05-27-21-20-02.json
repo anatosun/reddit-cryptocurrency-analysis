@@ -1,0 +1,264 @@
+{
+    "subreddit": "Bitcoin",
+    "limit": 1000,
+    "minimum_score": -5000,
+    "sorting_options": [
+        "hot",
+        "top",
+        "new"
+    ],
+    "posts": [
+        {
+            "id": "uz7tsm",
+            "title": "Bitcoin mining: What am I missing about understanding how the nonce value is used?",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uz7tsm/bitcoin_mining_what_am_i_missing_about/",
+            "author": "Throwaway55731587",
+            "created_utc": 1653685561.0,
+            "score": 3,
+            "num_comments": 20,
+            "subreddit": "Bitcoin",
+            "selftext": "So I understand more or less how bitcoin mining works, but I'm missing something.\n\nI get that bitcoin miners change the nonce in order to vary the hash. But why are the nonces so low? Before seeing the nonce value displayed on a blockchain explorer, I thought that the nonce was a 256 bit number, and people would just randomly generate values to try. This would obviously never cause collisions, and seemed fairly simple.\n\nBut I realise now, that the nonce values are incredibly small (around a billion). So is something changing in the data to mean that nonces are reset quickly enough to not exhaust the nonce range? Is it the timestamp, or something else as well?\n\nI would love to know how this works, please.",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia8oe1d",
+                    "author": "NiceDoctorBeam",
+                    "score": 4,
+                    "created_utc": 1653686152.0,
+                    "response": "You seem to be getting the nonce confused with the hash.  \n\nThe hash of the block (including its nonce) must be less than the current difficulty level.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia8om6s",
+                    "author": "SmoothGoing",
+                    "score": 3,
+                    "created_utc": 1653686264.0,
+                    "response": "Nonce doesn't need to be big. It's just something to hash together with transaction data. Other things can change too, like a transaction can be added or dropped and nonce restarted.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia8urde",
+                            "author": "Throwaway55731587",
+                            "score": 1,
+                            "created_utc": 1653689212.0,
+                            "response": "OK, but I was imagining that when the mining pool is saturated with transactions, people fill the blocks with the highest fees so the transaction data might not change that quickly. You say transactions will be dropped, but I'm failing to see how this can be guaranteed to change faster than someone can exhaust the possible nonce values. I mean how long exactly does it actually take to check 4 billion hashes? I thought some mining rigs could get TH/s rates?",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia9073b",
+                                    "author": "ljapa",
+                                    "score": 2,
+                                    "created_utc": 1653691886.0,
+                                    "response": "I believe the nonce is one of the last things to get hashed into the Merkle tree has of transactions and the hash from the last block. So, miners pick transactions and their order to get a final hash, then run through all possible 32 bits of the nonce. When done, if they haven\u2019t found a valid block, they make a change in the transactions or the ordering and start through all the possible nonces. \n\nI\u2019d assume there\u2019s optimization, like just changing a transaction in that final step of the merkle tree, but I have no clue.",
+                                    "depth": 3,
+                                    "comments": [
+                                        {
+                                            "id": "ia9a6q6",
+                                            "author": "Throwaway55731587",
+                                            "score": 1,
+                                            "created_utc": 1653697003.0,
+                                            "response": "Oh I see. So actively changing the data is part of the process. I get it now. And I forgot the ordering of the transactions can be changed which would easily give enough entropy to not cause collisions.",
+                                            "depth": 4,
+                                            "comments": [
+                                                {
+                                                    "id": "ia9c5hg",
+                                                    "author": "ljapa",
+                                                    "score": 1,
+                                                    "created_utc": 1653698050.0,
+                                                    "response": "Remember, for a valid block you are looking for a hash of the transactions, the previous block hash, the nonce, the reward address. \n\nBecause of the nature of the sha256 hashing algorithm, change one bit anywhere in the input and you get effectively a random 256 bit number. The nonce is 32 bits. So, effectively they are changing one bit at at time and seeing if there are enough leading zeroes to be a valid block. If they\u2019ve checked all possible nonce combinations for the other inputs and not found a valid block, they change something in the other inputs they can control, which is everything but the previous block.\n\nThat\u2019s why you\u2019ll occasionally see empty blocks even though there are transactions. Someone is playing with payment addresses and nonces and not wasting cycles computing a merkle tree of transactions.",
+                                                    "depth": 5,
+                                                    "comments": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "iaa283x",
+                                    "author": "igadjeed",
+                                    "score": 1,
+                                    "created_utc": 1653712442.0,
+                                    "response": "> how long exactly does it actually take to check 4 billion hashes?\n\n40 microseconds, more or less",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ia8p2av",
+                    "author": "ikkatop",
+                    "score": 4,
+                    "created_utc": 1653686475.0,
+                    "response": "I have no idea why that word was used. \nIn English, ( vernacular? )\nA \"nonce\" is a term used to describe a kiddy fiddler.\n\nhttps://dictionary.cambridge.org/dictionary/english/nonce",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia8tj8w",
+                            "author": "konokonohamaru",
+                            "score": 4,
+                            "created_utc": 1653688625.0,
+                            "response": "nonce stands for number used once",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia8ttot",
+                                    "author": "ikkatop",
+                                    "score": 1,
+                                    "created_utc": 1653688764.0,
+                                    "response": "I'm aware of it's use, I mention it in my other post.",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia8phzj",
+                            "author": "The_Available_Name",
+                            "score": 2,
+                            "created_utc": 1653686683.0,
+                            "response": "Yep, I was also stunned when I read this. Bizarre choice of phrase.",
+                            "depth": 2,
+                            "comments": []
+                        },
+                        {
+                            "id": "ia8py8t",
+                            "author": "DatBuridansAss",
+                            "score": 2,
+                            "created_utc": 1653686900.0,
+                            "response": "Probably a clue that Satoshi is not British.",
+                            "depth": 2,
+                            "comments": [
+                                {
+                                    "id": "ia8qhxt",
+                                    "author": "ikkatop",
+                                    "score": 2,
+                                    "created_utc": 1653687161.0,
+                                    "response": "The choice of name gives it away... ha ha but no, a nonce is actually a word relating to numbers, so it's legit, even if it does seem odd for some. Not related but I roar with laughter when I hear Americans call the little bag around their waist a \"fanny pack\" \ud83d\ude0a",
+                                    "depth": 3,
+                                    "comments": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ia9cgl1",
+                            "author": "savinelli_smoker",
+                            "score": 1,
+                            "created_utc": 1653698211.0,
+                            "response": "I think it represents a Number that you use only Once. In the sense that you put one in, hash, then change it, hash, repeat",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "ia90jw3",
+                    "author": "Narmotur",
+                    "score": 2,
+                    "created_utc": 1653692062.0,
+                    "response": "You can twiddle with the order of the transactions in the merkle tree to generate a new root, as well as the timestamp (you have a 2 hour window I believe?). I believe you can also change the address of the block reward.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9oqam",
+                    "author": "sciencetaco",
+                    "score": 2,
+                    "created_utc": 1653704717.0,
+                    "response": "The nonce is a 32bit integer so the numbers are going to be \u201csmall\u201d (under 4 billion). \n\nThere is other data the miners can adjust though. \n\nhttps://www.reddit.com/r/Bitcoin/comments/4ifyex/why_is_a_32bit_nonce_enough/",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia8nhx6",
+                    "author": "Infinite_Chest_3141",
+                    "score": 2,
+                    "created_utc": 1653685724.0,
+                    "response": "I really don\u2019t know. It\u2019s all nonce-sense to me :)",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9dqv3",
+                    "author": "grndslm",
+                    "score": 1,
+                    "created_utc": 1653698901.0,
+                    "response": "I've wondered not so much about the nonce, but how exactly the \"target hash\" or lower threshold is KNOWN.\n\nI've tried rephrasing this question a few times, but I haven't really found a successful way to do that I guess.\n\nNobody knows the correct block hash, right?  There can be multiple block hashes that are correct, right?  But how could the TARGET hash be known BEFORE the correct block hash is guessed?\n\nTHIS is the biggest thing I can't comprehend about Bitcoin.  I'm sure the answer is \"just math\", but wish I had a better handle on it...",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "ia9gguw",
+                    "author": "Lumix3",
+                    "score": 1,
+                    "created_utc": 1653700343.0,
+                    "response": "Every transaction can contain a message. The Genesis block is famous for having a message about the bank bailout. If you look at any block, the coinbase transaction to the miner contains a bunch of strange characters, like https://blockchair.com/bitcoin/block/738199. Modifying this message is an easy way to change the hash.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iaa1kuh",
+                    "author": "igadjeed",
+                    "score": 1,
+                    "created_utc": 1653712006.0,
+                    "response": "> Is it the timestamp, or something else as well?\n\nBoth, but mainly something else, because the nonce rolls over about 25,000 times per second, and the timestamp has 1-second precision  \n\nThe nonce is 32 bits, which is a value between 0 and 4,294,967,295. That's a touch over 4 billion  \n\nA current generation Bitcoin mining device hashes 110 trilllion or 140 trillion hashes per second  \n\nThose are the numbers. What about the process?  \n\nBitcoin mining is a guessing competition. The winning condition is to have a block of transactions which has a header (the first 80 bytes of the block) which has a hash which is smaller than the current target  \n\nThe nonce is one of the 6 fields in the 80-byte block header  \n\n*    version  \n*    previous block header hash  \n*    Merkle root hash  \n*    time  \n*    target, known as nBits, a 32-bit compressed expression of the 256-bit target  \n*    nonce  \n\nhttps://developer.bitcoin.org/reference/block_chain.html#block-headers  \n\nWhy a nonce? Because incrementing by 1 is computationally fast. Cryptographic hashes are designed to produce an unpredictable result with any change to the input, even the smallest possible change, flipping a single bit from 0 to 1. The consequence of this behavior is that a hashing algorithm has a random distribution of results. That's why hashing is a good choice for a guessing competition  \n\nFrom a different direction: there are 5 header fields apart from the nonce, each of which has a purpose. The guessing competition requires the miner to change the block header repetitively to get a different hash, without changing the functional contents of the block - the other 5 header fields, and the transaction set. Repeatedly incrementing the nonce is the simplest computation for changing the header for each hashing calculation  \n\nOK so far, but as mining processors got fast and faster, the 32-bit nonce rolled around to its starting value after about 4 billion guesses, and the miner attempts more than 4 billion guesses in the race to win the next block  \n\nSo the miner has to change something else, one of the other header fields. But (see above) those 5 header fields all have their own purposes. What about the timestamp? Yes, that works. The miner is able to modify the timestamp once per second or less frequently. If the miner is guessing less than 4 billion hashes per second, he can vary the timestamp every time the nonce rolls over  \n\nASIC mining devices kept getting faster, exceeded 4 GH/sec fairly early in Bitcoin's history. The smart mining pool techs invented extranonce  \n\nWe've run out of fields to change directly, but the Merkle root hash can be changed indirectly, because it is calculated by building a Merkle tree of the block's transaction set, and because the first transaction in every block (transaction #0, coinbase transaction) belongs to the miner  \n\nThe first transaction in every block pays the block reward. Unlike other transactions it has exactly one transaction input, and the transaction input does not spend an older transaction output. It can be seen as a dummy input, or placeholder. The coinbase tx input has space for up to 100 bytes of arbitrary data. Mining pools chose to allocate 8 of those bytes for extranonce. The contents of extranonce are random, extracted from the entropy generator of the miner's computer's operating system  \n\nHow does extranonce change the 80-byte block header? Each transaction in the block is hashed. The tx hashes are arranged in pairs and the hash pairs are hashed in a binary tree structure called a Merkle tree. At the top of the tree, the Merkle root hash is one of the 6 header fields. Its purpose in the header is to immutably represent all the transactions in the block  \n\nAs with all hashing, a small change to the input causes a completely different hash. Changing the 8 bytes of extranonce in the coinbase tx input changes the coinbase transaction's tx hash, which in turn changes the Merkle tree and the Merkle root hash  \n\nhttps://github.com/bitcoinbook/bitcoinbook/blob/develop/ch10.asciidoc  \nSearch down to \"The Extra Nonce Solution\"  \n\nSummary of the mining process  \n\n*    select transactions, calculate Merkle tree, populate the other 4 header fields, leave the nonce as it ended the previous round of mining  \n*    hash the header, if hash less than target, winner!  \n*    increment nonce  \n*    repeat previous 2 steps 4294967295 more times  \n*    in parallel with the nonce increment and hashing work, find the next extranonce, recalculate the Merkle tree, and Merkle root hash (in parallel because we don't want to delay hashing while these calculations are done)  \n*    repeat previous 3 steps until the clock time advances one second, change timestamp in header  \n*    repeat previous 4 steps until one miner wins the race  \n*    start hashing the next block",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        },
+        {
+            "id": "uz7v3u",
+            "title": "One in ten households in the center of the eurozone population now owns cryptocurrencies",
+            "url": "https://www.reddit.com/r/Bitcoin/comments/uz7v3u/one_in_ten_households_in_the_center_of_the/",
+            "author": "AIannaAaron584546",
+            "created_utc": 1653685666.0,
+            "score": 12,
+            "num_comments": 4,
+            "subreddit": "Bitcoin",
+            "selftext": ", the European Central Bank (ECB) published the results of a new survey conducted in six regions of the Eurozone: the Netherlands, Spain, Italy, Belgium, France and Germany. About 10% of respondents in the countries surveyed said they owned cryptocurrencies. Within this group, only 6% of respondents said they owned digital assets worth more than \u20ac30,000. Meanwhile, 37% of respondents said they owned up to \u20ac999 in cryptocurrencies.\n\n&#x200B;\n\nAcross all countries surveyed, the richest 20% of the population consistently had the highest percentage of investors holding cryptocurrencies relative to other income groups. The survey asked adults between the ages of 18 and 70 whether they or anyone in their household owned various categories of financial assets, such as crypto assets.\n\n&#x200B;\n\nThe survey is included in a new report released by the ECB on the same day on the growing adoption of crypto assets despite the risk factors. As cited by the ECB, 56% of respondents to a recent Fidelity survey said they held some exposure to crypto assets, up from 45% in 2020. The growing availability of cryptocurrency-based derivatives and securities on regulated exchanges, such as futures, exchange-traded notes, exchange-traded funds and OTC trusts, are driving this momentum.\n\n&#x200B;\n\nTranslated with [www.DeepL.com/Translator](https://www.DeepL.com/Translator) (free version)",
+            "stickied": false,
+            "comments": [
+                {
+                    "id": "ia8s6q6",
+                    "author": "88eth",
+                    "score": 1,
+                    "created_utc": 1653687975.0,
+                    "response": "> About 10% of respondents in the countries surveyed said they owned cryptocurrencies. Within this group, only 6% of respondents said they owned digital assets worth more than \u20ac30,000\n  \nSo essentially less than 2 million people in the Eurozone out of 350 million people own 1 Bitcoin or more.",
+                    "depth": 1,
+                    "comments": [
+                        {
+                            "id": "ia98l3v",
+                            "author": "CelestialTrace",
+                            "score": 2,
+                            "created_utc": 1653696167.0,
+                            "response": "Those numbers include shitcoins as well I guess.\n\nAlso, 2 million people owning 1+ bitcoins would already be ~more than 10% of the supply, and this is only a part of Europe. That number couldn't realistically get much higher under almost any circumstance.\n\nIn any case, OP did not bother to share a source so the discussion is sort of pointless.",
+                            "depth": 2,
+                            "comments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "iabopco",
+                    "author": "adamlindsay",
+                    "score": 1,
+                    "created_utc": 1653753092.0,
+                    "response": "https://www.ecb.europa.eu/pub/financial-stability/fsr/special/html/ecb.fsrart202205_02~1cc6b111b4.en.html\n\nI think OP is referring to this pub.",
+                    "depth": 1,
+                    "comments": []
+                },
+                {
+                    "id": "iacng8l",
+                    "author": "Verallendingen",
+                    "score": 1,
+                    "created_utc": 1653769643.0,
+                    "response": "no.",
+                    "depth": 1,
+                    "comments": []
+                }
+            ]
+        }
+    ]
+}
