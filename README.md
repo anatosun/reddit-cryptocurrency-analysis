@@ -1,6 +1,4 @@
-# Social Media Analytics Project
-
-by AA, FXW, GR
+# Reddit Cryptocurrency Analysis
 
 ## Description
 In this work, we make an attempt to analyse ten cryptocurrency subreddits to yield results and conclusions. We discovered that the discussion in those subreddits attract a long-term attention from different users. Also, individuals tend to gather together with an anchor in a particular subreddit but also spread over the other nine subreddits. Furthermore, there seems to be a correlation between the activity in said subreddits and Bit- coin price movement and we managed to highlight it over a comprehensive process.
